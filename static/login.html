@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
-    <!-- Add your CSS styles here -->
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #fff;
+        }
+        main {
+            text-align: center;
+            padding: 50px;
+            border: 1px solid #fff;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Login Page</h1>
-    <form action="/login" method="post">
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <input type="submit" value="Submit">
-    </form>
+    <header>
+        <h1>Welcome to the Obscure</h1>
+    </header>
+    <main>
+
+        <form action="/login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 202 Obscure Website</p>
+    </footer>
 </body>
 </html>

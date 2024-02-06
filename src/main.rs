@@ -1,69 +1,26 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
 use rocket::{get, post, routes, State};
-use rocket::request::{Form, FromForm};
-use rocket::http::{Cookies, Cookie};
-use rocket::response::Redirect;
-use rocket::response::NamedFile;
-use std::path::Path;
 use std::sync::Mutex;
+use std::collections::HashMap;
+use std::fs;
 
-struct User {
-    logged_in: Mutex<bool>,
-}
-
-#[derive(FromForm)]
-struct Login {
-    password: String,
-}
-
-#[get("/")]
-fn index(cookies: Cookies) -> Result<Redirect, &'static str> {
-    match cookies.get("user_id") {
-        Some(_) => Ok(Redirect::to("/internal")),
-        None => Ok(Redirect::to("/login")),
-    }
-}
-
-#[get("/login")]
-fn login(cookies: Cookies) -> Result<NamedFile, Redirect> {
-    if cookies.get("user_id").is_some() {
-        Err(Redirect::to("/internal"))
-    } else {
-        Ok(NamedFile::open(Path::new("static/login.html")).unwrap())
-    }
-}
-
-#[post("/login", data = "<login_form>")]
-fn login_post(login_form: Form<Login>, mut cookies: Cookies, user: State<User>) -> Redirect {
-    if login_form.password == "cats" {
-        cookies.add(Cookie::new("user_id", "1"));
-        let mut logged_in = user.logged_in.lock().unwrap();
-        *logged_in = true;
-        Redirect::to("/internal")
-    } else {
-        Redirect::to("/login")
-    }
-}
-
-#[post("/logout")]
-fn logout(mut cookies: Cookies) -> Redirect {
-    cookies.remove(Cookie::named("user_id"));
-    Redirect::to("/login")
-}
-
-#[get("/internal")]
-fn internal(cookies: Cookies) -> Result<NamedFile, Redirect> {
-    if cookies.get("user_id").is_some() {
-        Ok(NamedFile::open(Path::new("static/internal.html")).unwrap())
-    } else {
-        Err(Redirect::to("/login"))
-    }
-}
+mod auth;
 
 fn main() {
+    let users_data = fs::read_to_string("users.txt").expect("Unable to read file");
+    let mut users_map: HashMap<String, String> = HashMap::new();
+
+    for line in users_data.lines() {
+        let parts: Vec<&str> = line.split(' ').collect();
+        if parts.len() == 2 {
+            users_map.insert(parts[0].to_string(), parts[1].to_string());
+        }
+    }
+
     rocket::ignite()
-        .mount("/", routes![index, login, login_post, logout, internal])
-        .manage(User { logged_in: Mutex::new(false) })
+        .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal])
+        .manage(auth::User { logged_in: Mutex::new(false) })
+        .manage(users_map)
         .launch();
 }
