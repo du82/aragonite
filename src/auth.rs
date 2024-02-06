@@ -52,7 +52,7 @@ pub fn login_post(login_form: Form<LoginForm>, mut cookies: Cookies, users_map: 
     println!("Username: {}, Password: {}", login_form.username, login_form.password);
     println!("{:?}", *users_map);
 
-    // Check if the password is at least 3 characters long
+    // Check if the password is between 3 and 64 characters long
     if login_form.password.len() < 3 || login_form.password.len() > 64 {
         return Redirect::to("/login"); // Password is too short or too long
     }
