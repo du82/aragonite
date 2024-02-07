@@ -35,9 +35,6 @@ fn load_users() -> Result<HashMap<String, (String, String)>, Box<dyn std::error:
 fn main() {
     let users_map = load_users().expect("Unable to load users");
 
-    // Print out the users_map to check if Alice's data is loaded correctly
-    println!("{:?}", users_map);
-
     rocket::ignite()
         .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal, search::search_get, search::search_post])
         .manage(auth::User { logged_in: Mutex::new(false) })
