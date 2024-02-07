@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        header, footer {
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #fff;
-        }
-        main {
-            text-align: center;
-            padding: 50px;
-            border: 1px solid #fff;
-        }
-        img {
-            width: 200px;
-            height: 200px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to the Obscure</h1>
-    </header>
-    <main>
-
-        <form action="/login" method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Submit">
-        </form>
-    </main>
-    <footer>
-        <p>&copy; 202 Obscure Website</p>
-    </footer>
-</body>
+    <head>
+        <style>
+            body {
+                background-color: #000;
+                color: #fff;
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header {
+                text-align: center;
+                margin-bottom: 50px;
+                margin-right: 40px;
+                text-align: right;
+            }
+            line {
+                width: 1px;
+                height: 100%;
+                background-color: #fff;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin: auto;
+                margin-left: 40px;
+            }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            label, input {
+                margin-bottom: 20px;
+            }
+            input[type="submit"] {
+                cursor: pointer;
+                background-color: #fff;
+                color: #000;
+                border: none;
+                padding: 10px;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Obscura super</h1>
+            <p>Infinite knowledge awaits</p>
+        </header>
+        <line>
+            <div>
+            </div>
+        </line>
+        <main>
+            <form action="/login" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
 </html>

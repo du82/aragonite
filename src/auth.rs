@@ -82,7 +82,7 @@ pub fn internal(cookies: Cookies, sessions: State<Mutex<HashMap<String, String>>
             let mut file = File::open("static/internal.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
-            contents = contents.replace("{{ display_name }}", display_name);
+            contents = contents.replace("{{display_name}}", display_name);
             let response = Response::build()
                 .header(ContentType::HTML)
                 .sized_body(Cursor::new(contents))

@@ -5,9 +5,17 @@
     <!-- Add your CSS styles here -->
 </head>
 <body>
-    <h1>Logged in as: {{ display_name }}</h1>
+    <h1>Logged in as: {{display_name}}</h1>
     <form action="/logout" method="post">
         <input type="submit" value="Logout">
     </form>
+
+    <nav>
+        <ul>
+            <li><a href="/page1">Page 1</a></li>
+            <li><a href="/page2">Page 2</a></li>
+            <!-- Add more pages as needed -->
+        </ul>
+    </nav>
 </body>
 </html>
