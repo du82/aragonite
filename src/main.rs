@@ -7,6 +7,7 @@ use std::fs;
 use toml::Value;
 
 mod auth;
+mod search;
 
 fn load_users() -> Result<HashMap<String, (String, String)>, Box<dyn std::error::Error>> {
     let mut users_map = HashMap::new();
@@ -38,7 +39,7 @@ fn main() {
     println!("{:?}", users_map);
 
     rocket::ignite()
-        .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal])
+        .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal, search::search_get, search::search_post])
         .manage(auth::User { logged_in: Mutex::new(false) })
         .manage(users_map)
         .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store

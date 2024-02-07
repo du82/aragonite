@@ -48,10 +48,7 @@ pub fn login(cookies: Cookies) -> Result<NamedFile, Redirect> {
 
 #[post("/login", data = "<login_form>")]
 pub fn login_post(login_form: Form<LoginForm>, mut cookies: Cookies, users_map: State<HashMap<String, (String, String)>>, sessions: State<Mutex<HashMap<String, String>>>) -> Redirect {
-    // Print out the entered username and password and the users_map
-    println!("Username: {}, Password: {}", login_form.username, login_form.password);
-    println!("{:?}", *users_map);
-
+    
     // Check if the password is between 3 and 64 characters long
     if login_form.password.len() < 3 || login_form.password.len() > 64 {
         return Redirect::to("/login"); // Password is too short or too long
