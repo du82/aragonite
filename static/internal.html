@@ -3,13 +3,11 @@
 <head>
     <style>
 
-        /* This will affect the scrollbar across the entire page */
         html {
             scrollbar-width: thin;
             scrollbar-color: black black;
         }
 
-        /* For Webkit browsers like Chrome and Safari */
         html::-webkit-scrollbar {
             width: 12px;
         }
@@ -22,6 +20,7 @@
             background-color: black;
             border: 2px solid white;
         }
+
         body {
             background-color: #000;
             color: #fff;
@@ -31,30 +30,36 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         .main-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 4px;
         }
+
         line {
             width: 2px;
             height: 100%;
             background-color: #fff;
         }
+
         .search-container {
             display: flex;
             align-items: center;
         }
+
         form {
             display: flex;
             flex-direction: column;
             margin: auto;
         }
+
         label, input {
             margin-bottom: 20px;
             border-radius: 0px;
         }
+
         input {
             cursor: pointer;
             background-color: #000;
@@ -66,15 +71,18 @@
             font-size: 16px;
             width: fit-content;
         }
+
         input[type="submit"]:hover {
             background-color: #2b2b2b;
         }
+
         .search-container {
             width: 72%;
             display: flex;
             justify-content: space-between;
             margin-top: 25px;
         }
+
         .search-result {
             height: fit-content;
             width: 70%;
@@ -84,11 +92,13 @@
             border-bottom-width: 0px;
             padding: 10px;
         }
+
         .results-container {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+        
         h3 span {
             margin-top: 5px;
             font-size: 12px;
