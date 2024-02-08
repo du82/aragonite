@@ -7,11 +7,7 @@ use std::fs::File;
 use std::io::Read;
 use toml::value::Table;
 use rocket::http::Cookies;
-
-#[derive(FromForm)]
-pub struct SearchForm {
-    query: String,
-}
+use std::collections::HashSet;
 
 #[derive(FromForm)]
 struct SearchData {
@@ -21,8 +17,8 @@ struct SearchData {
 #[post("/search", data = "<search_data>")]
 pub fn search_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<String> {
     let trimmed_query = search_data.query.trim_start();
-    if trimmed_query.len() < 3 || search_data.query.len() > 50 {
-        return Html("<h1>Error: Search query must be between 3 and 50 characters long.</h1>".to_string());
+    if trimmed_query.len() < 2 || search_data.query.len() > 50 {
+        return Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string());
     }
     let start_time = std::time::Instant::now();
     let search_results = perform_search(&search_data.query);
@@ -46,8 +42,8 @@ pub fn search_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<
 #[get("/search?<results>")]
 pub fn search_get(results: String) -> Html<String> {
     let trimmed_results = results.trim_start();
-    if trimmed_results.len() < 3 || results.len() > 50 {
-        return Html("<div id='search-results'>Error: Search query must be between 3 and 50 characters long.</div>".to_string());
+    if trimmed_results.len() < 2 || results.len() > 50 {
+        return Html("<div id='search-results'>Error: Search query must be between 2 and 50 characters long.</div>".to_string());
     }
     let search_results = perform_search(&results);
     let num_results = search_results.len();
@@ -72,32 +68,55 @@ fn format_toml_table(table: &Table) -> String {
                 format!("{}{}", first_char, rest)
             };
             let value = match v {
-                Value::String(s) => s.clone(),
+                Value::String(s) => {
+                    // Check if the string is a URL
+                    if s.starts_with("http://") || s.starts_with("https://") {
+                        // If it is, format it as an HTML link
+                        format!("<a href=\"{}\">{}</a>", s, s)
+                    } else {
+                        s.clone()
+                    }
+                },
                 _ => v.to_string(),
             };
             format!("{}: {}", key, value)
         })
-        .collect::<Vec<_>>()
-        .join("\n");
-    format!("Title: {}\n{}", title, other_fields)
+        .collect::<Vec<_>>();
+    format!("<h3>{}</h3>\n{}", title, other_fields.join("\n"))
 }
 
-pub fn perform_search(query: &str) -> Vec<String> {
+pub fn perform_search(query: &str) -> HashSet<String> {
     // Read the TOML file
     let data = fs::read_to_string("Data.toml").unwrap();
     let toml: Value = toml::from_str(&data).unwrap();
 
     // Perform the search in the TOML file
-    let mut results = Vec::new();
+    let mut results = HashSet::new();
     let query = query.to_lowercase(); // Convert the query to lowercase
     for (search_result, info) in toml.as_table().unwrap().iter() {
         if let Some(title) = info.get("title") {
             let title = title.as_str().unwrap().to_lowercase(); // Convert the title to lowercase
             if title.contains(&query) {
                 let formatted_info = format_toml_table(info.as_table().unwrap());
-                results.push(format!("{}\n", formatted_info));
+                results.insert(format!("{}\n", formatted_info));
+                continue;
+            }
+        }
+        if let Some(description) = info.get("description") {
+            let description = description.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
+            if description.contains(&query) {
+                let formatted_info = format_toml_table(info.as_table().unwrap());
+                results.insert(format!("{}\n", formatted_info));
+            }
+        }
+        if let Some(author) = info.get("author") {
+            let author = author.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
+            if author.contains(&query) {
+                let formatted_info = format_toml_table(info.as_table().unwrap());
+                results.insert(format!("{}\n", formatted_info));
             }
         }
     }
+
     results
 }
