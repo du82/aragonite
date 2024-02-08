@@ -28,6 +28,7 @@ pub fn search_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<
     let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
     let search_results = search_results.join("");
     let search_results = format!("<div class='results-container'>{}</div>", search_results);
+    let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
     let mut file = File::open("static/internal.html").unwrap();
     let mut contents = String::new();
     file.read_to_string(&mut contents).unwrap();
@@ -35,7 +36,7 @@ pub fn search_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<
     contents = contents.replace("{{display_name}}", &display_name);
     let statistics = format!("<div><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, search_data.query, elapsed_time.as_millis());
     contents = contents.replace("{{statistics}}", &statistics);
-    contents = format!("{}{}", contents, search_results);
+    contents = format!("{}{}{}", contents, search_results, search_results_footer);
     Html(contents)
 }
 
