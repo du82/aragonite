@@ -72,7 +72,7 @@ fn format_toml_table(table: &Table) -> String {
                     // Check if the string is a URL
                     if s.starts_with("http://") || s.starts_with("https://") {
                         // If it is, format it as an HTML link
-                        format!("<a href=\"{}\">{}</a>", s, s)
+                        format!("<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>", s, s)
                     } else {
                         s.clone()
                     }
