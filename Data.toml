@@ -5,6 +5,7 @@ year_published = 2024
 year_updated = 2024
 onion = "https://example.com"
 status = "Defunct"
+tags = ["monero", "cryptocurrency"]
 
 ["wvht6a6qfjoenlxcifbx64jwnfvjcbirtegn2qh6ss5u4o6x4daimyyd.onion"]
 title = "Obscura super"
@@ -13,6 +14,7 @@ year_published = 2024
 year_updated = 2024
 onion = "http://wvht6a6qfjoenlxcifbx64jwnfvjcbirtegn2qh6ss5u4o6x4daimyyd.onion"
 status = "Operational"
+tags = ["privacy", "research", "search engines"]
 
 ["g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion"]
 title = "Dread"
@@ -21,6 +23,7 @@ year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion"
 status = "Operational"
+tags = ["dread", "social media"]
 
 ["g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Monero"]
 title = "Monero - Dread"
@@ -28,6 +31,7 @@ description = "Secure • Private • Untraceable"
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Monero"
+tags = ["dread", "monero", "cryptocurrency"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/e582125bfb5094d1cb8a"]
 title = "How bad is this OpSec? : /d/OpSec - Dread"
@@ -36,6 +40,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/MrKotter"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/e582125bfb5094d1cb8a"
+tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/9de7efacaf0ae2a64825"]
 title = "Common Lies the Police will try : /d/OpSec - Dread"
@@ -44,6 +49,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/SonOfAugust"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/9de7efacaf0ae2a64825"
+tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/OpSec"]
 title = "OpSec - Dread"
@@ -52,6 +58,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/SonOfAugust"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/OpSec"
+tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/5c6acc89c3ff049454b1"]
 title = "Would owning/ordering clothing with Tor graphics on it be suspicious? : /d/OpSec - Dread"
@@ -60,6 +67,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/KonaCokeHead"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/5c6acc89c3ff049454b1"
+tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/HiddenService"]
 title = "Hidden Service - Dread"
@@ -67,6 +75,7 @@ description = "The best parts of the anonymous internet! Post all your I2P, free
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/HiddenService"
+tags = ["dread", "hidden service"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Linux"]
 title = "Linux - Dread"
@@ -74,6 +83,7 @@ description = "The Dread Community resource for troubleshooting Linux problems. 
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Linux"
+tags = ["dread", "linux"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/f7ce264e59baf985b905"]
 title = "Raspberry Pi 5 with Ubuntu trying to use PCIe : /d/Linux - Dread"
@@ -82,14 +92,15 @@ year_published = 2024
 year_updated = 2024
 author = "/u/under6ahah"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/f7ce264e59baf985b905"
+tags = ["dread", "linux"]
 
 ["http://darkfailenbsdla5mal2mxn2uz66od5vtzd5qozslagrfzachha3f3id.onion"]
 title = "dark.fail: Is a .onon site online?"
 description = "Knowledge of .onion site uptime is important to many cybersecurity researchers. This site is provided for information only. No endorsements are made or implied regarding any sites or organizations mentioned here."
 year_published = 2024
 year_updated = 2024
-author = "/u/under6ahah"
 onion = "http://darkfailenbsdla5mal2mxn2uz66od5vtzd5qozslagrfzachha3f3id.onion"
+tags = ["onion"]
 
 ["https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/"]
 title = "BBC - Home"
@@ -106,6 +117,7 @@ year_published = 2024
 year_updated = 2024
 onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
 clearnet = "https://archive.today"
+tags = ["archive"]
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
 title = "Riseup"
@@ -120,50 +132,59 @@ title = "VPN - Riseup"
 description = "Riseup offers Personal VPN service for censorship circumvention, location anonymization and traffic encryption. To make this possible, it sends all your internet traffic through an encrypted connection to riseup.net, where it then goes out onto the public internet. Unlike most other VPN providers, Riseup does not log your IP address. "
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"
 clearnet = "https://riseup.net"
+tags = ["privacy", "vpn"]
 
 ["http://nehdddktmhvqklsnkjqcbpmb63htee2iznpcbs5tgzctipxykpj6yrid.onion/"]
 title = "LocalMonero"
 description = "Buy Monero. Sell Monero. Cash or online. Anywhere."
 onion = "http://nehdddktmhvqklsnkjqcbpmb63htee2iznpcbs5tgzctipxykpj6yrid.onion/"
 clearnet = "https://localmonero.co"
+tags = ["monero", "cryptocurrency", "no KYC"]
 
 ["https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"]
 title = "DuckDuckGo"
 description = "Privacy, simplified. Help Spread DuckDuckGo!"
 onion = "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
 clearnet = "https://duckduckgo.com"
+tags = ["privacy", "search engines"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"]
 title = "Proton: Privacy by default | Proton"
 description = "A better internet starts with privacy and freedom"
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"
 clearnet = "https://protonmail.com"
+tags = ["privacy"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"]
 title = "Proton Mail: Get a private, secure, and encrypted email account | Proton"
 description = "Secure email that protects your privacy"
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"
 clearnet = "https://protonmail.com/mail"
+tags = ["privacy", "email"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"]
 title = "Proton Drive: Free secure cloud storage | Proton"
 description = "End-to-end encryption ensures that no one, not even us, can access your files. Files, file names, and folder names and more, are all fully encrypted at rest and in transit to your secure cloud."
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"
 clearnet = "https://protonmail.com/mail"
+tags = ["privacy", "storage"]
 
 ["http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"]
 title = "We are the Nation's first line of defense - CIA"
 description = "CIA is the first line of defense for the United States. We collect and analyze intelligence to further national security and preempt threats."
 onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
 clearnet = "https://cia.gov"
+tags = ["CIA", "glowies", "government", "surveillance"]
 
 ["http://rk63tc3isr7so7ubl6q7kdxzzws7a7t6s467lbtw2ru3cwy6zu6w4jad.onion/monerica/"]
 title = "Welcome To Monerica!"
 description = "The goal of Monerica is to reflect the freedom ideals of the United States of America in the age of cryptocurrency by using Monero. There are no borders to Monerica. One has the ability to transact freely and privately without the need for a bank account, without the permission of any third party, and without the prying eyes of those who wish to control the thoughts and behaviors of others through surveillance and overreaching regulations."
 onion = "http://rk63tc3isr7so7ubl6q7kdxzzws7a7t6s467lbtw2ru3cwy6zu6w4jad.onion/monerica/"
 clearnet = "https://monerica.com"
+tags = ["monero", "cryptocurrency"]
 
 ["http://rk63tc3isr7so7ubl6q7kdxzzws7a7t6s467lbtw2ru3cwy6zu6w4jad.onion/"]
 title = "Mysu: Monero Wallet"
 description = "A no-bullshit, pure Monero wallet suitable for both newcomers and experienced users."
 onion = "http://rk63tc3isr7so7ubl6q7kdxzzws7a7t6s467lbtw2ru3cwy6zu6w4jad.onion/"
+tags = ["monero", "cryptocurrency", "privacy"]
