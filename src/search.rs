@@ -94,27 +94,45 @@ pub fn perform_search(query: &str) -> HashSet<String> {
     // Perform the search in the TOML file
     let mut results = HashSet::new();
     let query = query.to_lowercase(); // Convert the query to lowercase
-    for (search_result, info) in toml.as_table().unwrap().iter() {
-        if let Some(title) = info.get("title") {
-            let title = title.as_str().unwrap().to_lowercase(); // Convert the title to lowercase
-            if title.contains(&query) {
-                let formatted_info = format_toml_table(info.as_table().unwrap());
-                results.insert(format!("{}\n", formatted_info));
-                continue;
+
+    if query.starts_with("author=") {
+        let author_query = &query[7..]; // Remove "author=" from the query
+        for (search_result, info) in toml.as_table().unwrap().iter() {
+            if let Some(author) = info.get("author") {
+                let author = author.as_str().unwrap().to_lowercase(); // Convert the author to lowercase
+                if author == author_query {
+                    let formatted_info = format_toml_table(info.as_table().unwrap());
+                    results.insert(format!("{}\n", formatted_info));
+                }
             }
         }
-        if let Some(description) = info.get("description") {
-            let description = description.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
-            if description.contains(&query) {
-                let formatted_info = format_toml_table(info.as_table().unwrap());
-                results.insert(format!("{}\n", formatted_info));
+    } if query.starts_with("clearnet=") {
+        let clearnet_query = &query[9..]; // Remove "clearnet=" from the query
+        for (search_result, info) in toml.as_table().unwrap().iter() {
+            if let Some(clearnet) = info.get("clearnet") {
+                let clearnet = clearnet.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
+                if clearnet.contains(clearnet_query) {
+                    let formatted_info = format_toml_table(info.as_table().unwrap());
+                    results.insert(format!("{}\n", formatted_info));
+                }
             }
         }
-        if let Some(author) = info.get("author") {
-            let author = author.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
-            if author.contains(&query) {
-                let formatted_info = format_toml_table(info.as_table().unwrap());
-                results.insert(format!("{}\n", formatted_info));
+    } else {
+        for (search_result, info) in toml.as_table().unwrap().iter() {
+            if let Some(title) = info.get("title") {
+                let title = title.as_str().unwrap().to_lowercase(); // Convert the title to lowercase
+                if title.contains(&query) {
+                    let formatted_info = format_toml_table(info.as_table().unwrap());
+                    results.insert(format!("{}\n", formatted_info));
+                    continue;
+                }
+            }
+            if let Some(description) = info.get("description") {
+                let description = description.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
+                if description.contains(&query) {
+                    let formatted_info = format_toml_table(info.as_table().unwrap());
+                    results.insert(format!("{}\n", formatted_info));
+                }
             }
         }
     }
