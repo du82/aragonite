@@ -58,32 +58,43 @@ pub fn search_get(results: String) -> Html<String> {
 
 fn format_toml_table(table: &Table) -> String {
     let title = table.get("title").unwrap().as_str().unwrap();
-    let other_fields = table.iter()
-        .filter(|&(k, _)| k != "title")
-        .map(|(k, v)| {
-            let key = {
-                let k = k.replace("_", " ");
-                let mut chars = k.chars();
-                let first_char = chars.next().unwrap().to_uppercase();
-                let rest = chars.collect::<String>();
-                format!("{}{}", first_char, rest)
-            };
-            let value = match v {
-                Value::String(s) => {
-                    // Check if the string is a URL
-                    if s.starts_with("http://") || s.starts_with("https://") {
-                        // If it is, format it as an HTML link
-                        format!("<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>", s, s)
-                    } else {
-                        s.clone()
-                    }
-                },
-                _ => v.to_string(),
-            };
-            format!("{}: {}", key, value)
-        })
-        .collect::<Vec<_>>();
-    format!("<h3>{}</h3>\n{}", title, other_fields.join("\n"))
+    let mut url_fields = Vec::new();
+    let mut other_fields = Vec::new();
+
+    for (k, v) in table.iter() {
+        if k == "title" {
+            continue;
+        }
+
+        let key = {
+            let k = k.replace("_", " ");
+            let mut chars = k.chars();
+            let first_char = chars.next().unwrap().to_uppercase();
+            let rest = chars.collect::<String>();
+            format!("{}{}", first_char, rest)
+        };
+
+        let value = match v {
+            Value::String(s) => {
+                // Check if the string is a URL
+                if s.starts_with("http://") || s.starts_with("https://") {
+                    // If it is, format it as an HTML link
+                    let url = format!("<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>", s, s);
+                    url_fields.push(format!("{}: {}", key, url));
+                    continue;
+                } else {
+                    s.clone()
+                }
+            },
+            _ => v.to_string(),
+        };
+        other_fields.push(format!("{}: {}", key, value));
+    }
+
+    let url_fields = url_fields.join("\n");
+    let other_fields = other_fields.join("\n");
+
+    format!("<h3>{}</h3>\n{}\n{}", title, url_fields, other_fields)
 }
 
 pub fn perform_search(query: &str) -> HashSet<String> {
