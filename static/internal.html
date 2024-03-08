@@ -114,6 +114,10 @@
             padding: 10px;
             margin-bottom: 20px;
         }
+
+        .search-box {
+            width: 300%;
+        }
         
         span {
             margin-top: 5px;
@@ -143,16 +147,16 @@
 <body>
     <div class="main-container">
         <div class="search-container">
+            <form action="/search" method="post" style="margin: 0; padding: 0;">
+                <div style="display: flex;">
+                    <input class="search-box" type="text" name="query" placeholder="Search" style="margin-right: 15px;">
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+            <p>{{statistics}}</p>
             <form action="/logout" method="post" style="margin: 0; padding: 0;">
                 <input type="submit" value="Logout from {{display_name}}">
             </form>
-            <p>{{statistics}}</p>
-            <form action="/search" method="post" style="margin: 0; padding: 0;">
-                <div style="display: flex;">
-                    <input type="text" name="query" placeholder="Search" style="margin-right: 15px;">
-                    <input type="submit" value="Search">
-                </div>
-            </form> 
         </div>
     </div>
 </body>
