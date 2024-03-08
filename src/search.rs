@@ -34,7 +34,7 @@ pub fn search_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<
     file.read_to_string(&mut contents).unwrap();
     let display_name = cookies.get_private("display_name").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "Guest".to_string());
     contents = contents.replace("{{display_name}}", &display_name);
-    let statistics = format!("<div><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, search_data.query, elapsed_time.as_millis());
+    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, search_data.query, elapsed_time.as_millis());
     contents = contents.replace("{{statistics}}", &statistics);
     contents = format!("{}{}{}", contents, search_results, search_results_footer);
     Html(contents)
@@ -52,12 +52,18 @@ pub fn search_get(results: String) -> Html<String> {
     let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
     let search_results = search_results.join("");
     let search_results = format!("<div class='results-container'>{}</div>", search_results);
-    let html = format!("<html><body><h1>{} {}:</h1>{}<br></body></html>", num_results, result_word, search_results);
+    let html = format!("<html><body><h1>{} {}:</h1>{}</body></html>", num_results, result_word, search_results);
     Html(html)
 }
 
 fn format_toml_table(table: &Table) -> String {
     let title = table.get("title").unwrap().as_str().unwrap();
+    let description = table.get("description").unwrap().as_str().unwrap();
+    let description = if description.len() > 200 {
+        format!("{}...", description.chars().take(200).collect::<String>())
+    } else {
+        description.to_string()
+    };
     let mut url_fields = Vec::new();
     let mut other_fields = Vec::new();
 
@@ -94,7 +100,7 @@ fn format_toml_table(table: &Table) -> String {
     let url_fields = url_fields.join("\n");
     let other_fields = other_fields.join("\n");
 
-    format!("<h3>{}</h3>\n{}\n{}", title, url_fields, other_fields)
+    format!("{}<h3>{}</h3>\n{}<details class='more-info'><summary>More Info (metadata)</summary><div>{}</div></details>", url_fields, title, description, other_fields)
 }
 
 pub fn perform_search(query: &str) -> HashSet<String> {

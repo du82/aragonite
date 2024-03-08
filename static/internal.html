@@ -2,30 +2,26 @@
 <html>
 <head>
     <style>
-
-        html {
-            scrollbar-width: thin;
-            scrollbar-color: black black;
+        .header {
+        padding: 10px;
+        background: #fff;
+        color: #3b3b3b;
+        position: fixed;
+        width: 100%;
+        border-width: 5px;
+        border-bottom: solid #e7e7e7;
+        border-bottom-width: 1px;
         }
 
-        html::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        html::-webkit-scrollbar-track {
-            background: black;
-        }
-
-        html::-webkit-scrollbar-thumb {
-            background-color: black;
-            border: 2px solid white;
+        .content {
+        padding: 16px;
         }
 
         body {
-            background-color: #000;
-            color: #fff;
+            background-color: #fff;
+            color: #3b3b3b;
             font-family: Arial, sans-serif;
-            height: fit-content;
+            height: wrap-content;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -36,17 +32,24 @@
             flex-direction: column;
             align-items: center;
             margin: 4px;
+            position: fixed;
         }
 
         line {
             width: 2px;
-            height: 100%;
+            height: 10%;
             background-color: #fff;
         }
 
-        .search-container {
+        .search-row {
             display: flex;
             align-items: center;
+            margin-left: 100px;
+        }
+
+        .search-buttons-row {
+            display: flex;
+            margin-left: 100px;
         }
 
         form {
@@ -62,11 +65,12 @@
 
         input {
             cursor: pointer;
-            background-color: #000;
-            color: #fff;
-            border-color: white;
+            background-color: #fff;
+            color: black;
+            border-color: lightgray;
             border-width: 2px;
             border-style: solid;
+            border-radius: 8px;
             padding: 10px;
             font-size: 16px;
             width: fit-content;
@@ -77,26 +81,27 @@
         }
 
         .search-container {
-            width: 72%;
             display: flex;
             justify-content: space-between;
-            margin-top: 25px;
         }
 
         .search-result {
             height: fit-content;
-            width: 70%;
-            border-color: white;
-            border-width: 2px;
-            border-style: solid;
-            border-bottom-width: 0px;
+            width: 550px;
             padding: 10px;
         }
 
-        .results-container {
+        .more-info {
             display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .results-container {
             flex-direction: column;
-            align-items: center;
+            padding-top: 120px;
+            margin-left: 100px;
+            max-width: fit-content;
         }
 
         .footer-container {
@@ -116,20 +121,20 @@
         }
 
         .search-box {
-            width: 300%;
+            width: 500px;
+            border-radius: 8px;
         }
         
         span {
-            margin-top: 5px;
             font-size: 12px;
             font-weight: normal;
             float: center;
-            text-align: center;
+            text-align: right;
         }
 
         h3 {
             margin-top: 0px;
-            margin-bottom: 1px;
+            margin-bottom: -10px;
             padding: 0;
         }
 
@@ -144,19 +149,53 @@
         }
     </style>
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- You won't find any JavaScript here, just a staticly generated SERP! -->
 <body>
-    <div class="main-container">
-        <div class="search-container">
+    <div class="header">
+        <div class="search-row">
             <form action="/search" method="post" style="margin: 0; padding: 0;">
                 <div style="display: flex;">
                     <input class="search-box" type="text" name="query" placeholder="Search" style="margin-right: 15px;">
                     <input type="submit" value="Search">
                 </div>
             </form>
-            <p>{{statistics}}</p>
-            <form action="/logout" method="post" style="margin: 0; padding: 0;">
+            <form action="/logout" method="post" style="position: fixed; right: 10px; margin: 0; padding: 0;">
                 <input type="submit" value="Logout from {{display_name}}">
             </form>
+        </div>
+        <div class="search-buttons-row">
+            <a href="/search" style="display: flex; align-items: center; margin: 0; padding: 0; margin-right: 15px; border-bottom: solid #7d4698; border-width: 2px;">
+                <svg fill="black" height="30px" viewBox="0 0 28 28">
+                    <rect y="0.00001" width="24" height="24" fill="none"/><path d="M13.5,14,9.79289,10.2929A1,1,0,0,0,9.08579,10H8.00134a1,1,0,0,0-.88833,1.4592L8.42642,14" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M22,11H18.25A1.25,1.25,0,0,1,17,9.75v-1A1.25,1.25,0,0,0,15.75,7.5h-1A1.25,1.25,0,0,1,13.5,6.25v-4.235" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M5.76038,7A8.49614,8.49614,0,0,1,22,10.5V11" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M12.5,18,8.79289,21.70712A1,1,0,0,1,8.08579,22H7.00134a1,1,0,0,1-.88833-1.4592L7.42642,18H5.05486a2,2,0,0,1-1.89737-1.36754L2.05208,13.31624A1,1,0,0,1,3.00077,12h.99454a1,1,0,0,1,.89442.55279L5.61334,14H16a2,2,0,0,1,2,2h0a2,2,0,0,1-2,2Z" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </svg>
+                Web
+            </a>
+            <a href="/images" style="display: flex; align-items: center; margin: 0; padding: 0; margin-right: 15px;">
+                <svg fill="black" height="30px" viewBox="0 0 28 28">
+                    <path d="M3,13.3a6.70117,6.70117,0,0,1,.97222-.07778h0a6.80555,6.80555,0,0,1,6.80555,6.80556A6.9099,6.9099,0,0,1,10.7,21" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><rect x="3" y="7.00001" width="14" height="14" rx="3" stroke-width="1.5" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M6,7V6A3,3,0,0,1,9,3h9a3,3,0,0,1,3,3v9a3,3,0,0,1-3,3H17" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </svg>
+                Images
+            </a>
+            <a href="/videos" style="display: flex; align-items: center; margin: 0; padding: 0; margin-right: 15px;">
+                <svg fill="black" height="30px" viewBox="0 0 28 28">
+                    <path d="M9.75,10.00152a1,1,0,0,1,1.51446-.85747l3.33079,1.99848a1,1,0,0,1,0,1.71494L11.26447,14.856A1,1,0,0,1,9.75,13.99848Z" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><rect x="3" y="3" width="18" height="18" rx="5" stroke-width="1.5" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                Videos
+            </a>
+            <a href="/news" style="display: flex; align-items: center; margin: 0; padding: 0; margin-right: 15px;">
+                <svg fill="black" height="30px" viewBox="0 0 28 28">
+                    <line x1="12" y1="10" x2="15" y2="10" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="12" y1="7" x2="15" y2="7" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><rect x="6" y="7" width="3" height="3" rx="0.5" stroke-width="1.5" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" fill="none"/><line x1="6" y1="13.5" x2="15" y2="13.5" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="15" y1="17" x2="6" y2="17" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M18,8h1a2,2,0,0,1,2,2v9a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V5A2,2,0,0,1,5,3H16a2,2,0,0,1,2,2V21" fill="none" stroke="#323232" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><rect width="24" height="24" fill="none"/>
+                </svg>
+                News
+            </a>
+            <a href="/news" style="display: flex; align-items: center; margin: 0; padding: 0; margin-right: 15px;">
+                <svg fill="black" height="30px" viewBox="0 0 28 28">
+                    <path d="M19.704,15.014c-1.195,2.916 -4.058,4.971 -7.405,4.971c-4.42,0 -8.003,-3.583 -8.003,-8.003c0,-4.186 3.215,-7.616 7.31,-7.968c-2.039,2.806 -1.801,6.751 0.729,9.281c1.994,1.994 4.867,2.562 7.369,1.719Z" stroke-linecap="round" stroke-width="1.5" stroke="#323232" fill="none" stroke-linejoin="round"></path>
+                </svg>
+                Dark Web
+            </a>
+            <p>{{statistics}}</p>
         </div>
     </div>
 </body>
