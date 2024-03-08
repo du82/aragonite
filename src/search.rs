@@ -56,6 +56,32 @@ pub fn search_get(results: String) -> Html<String> {
     Html(html)
 }
 
+#[post("/news", data = "<search_data>")]
+pub fn search_news_post(mut cookies: Cookies, search_data: Form<SearchData>) -> Html<String> {
+    let trimmed_query = search_data.query.trim_start();
+    if trimmed_query.len() < 2 || search_data.query.len() > 50 {
+        return Html("<h1>Error: You're searching news!</h1>".to_string());
+    }
+    let start_time = std::time::Instant::now();
+    let search_results = perform_search(&search_data.query);
+    let elapsed_time = start_time.elapsed();
+    let num_results = search_results.len();
+    let result_word = if num_results == 1 { "result" } else { "results" };
+    let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
+    let search_results = search_results.join("");
+    let search_results = format!("<div class='results-container'>{}</div>", search_results);
+    let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
+    let mut file = File::open("static/internal.html").unwrap();
+    let mut contents = String::new();
+    file.read_to_string(&mut contents).unwrap();
+    let display_name = cookies.get_private("display_name").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "Guest".to_string());
+    contents = contents.replace("{{display_name}}", &display_name);
+    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, search_data.query, elapsed_time.as_millis());
+    contents = contents.replace("{{statistics}}", &statistics);
+    contents = format!("{}{}{}", contents, search_results, search_results_footer);
+    Html(contents)
+}
+
 fn format_toml_table(table: &Table) -> String {
     let title = table.get("title").unwrap().as_str().unwrap();
     let description = table.get("description").unwrap().as_str().unwrap();

@@ -1,19 +1,146 @@
+.header {
+padding: 10px;
+background: #fff;
+color: #3b3b3b;
+position: fixed;
+width: 100%;
+border-width: 5px;
+border-bottom: solid #e7e7e7;
+border-bottom-width: 1px;
+}
+
+.content {
+padding: 16px;
+}
+
 body {
-    background-color: #000;
+    background-color: #fff;
+    color: #3b3b3b;
+    font-family: Arial, sans-serif;
+    height: wrap-content;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+    position: fixed;
+}
+
+line {
+    width: 2px;
+    height: 10%;
+    background-color: #fff;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.search-buttons-row {
+    display: flex;
+    margin-left: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+label, input {
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+
+input {
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    border-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: fit-content;
+}
+
+input[type="submit"]:hover {
+    background-color: #7d4698;
     color: #fff;
-    font-family: 'Courier New', Courier, monospace;
 }
-header, footer {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #fff;
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
 }
-main {
-    text-align: center;
-    padding: 50px;
-    border: 1px solid #fff;
+
+.search-result {
+    height: fit-content;
+    width: 550px;
+    padding: 5px 10px 5px 10px;
 }
-img {
-    width: 200px;
-    height: 200px;
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.results-container {
+    flex-direction: column;
+    padding-top: 120px;
+    margin-left: 100px;
+    max-width: fit-content;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-box {
+    height: fit-content;
+    width: 70%;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 500px;
+    border-radius: 8px;
+}
+
+span {
+    font-size: 12px;
+    font-weight: normal;
+    float: center;
+    text-align: right;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding: 0;
+}
+
+a {
+    color: #7d4698;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a325e3;
+    text-decoration: none;
 }

@@ -42,7 +42,7 @@ pub fn login(cookies: Cookies) -> Result<NamedFile, Redirect> {
     if cookies.get("user_id").is_some() {
         Err(Redirect::to("/internal"))
     } else {
-        Ok(NamedFile::open(Path::new("static/login.html")).unwrap())
+        Ok(NamedFile::open(Path::new("static/serps/web.html")).unwrap())
     }
 }
 
@@ -71,12 +71,47 @@ pub fn logout(mut cookies: Cookies) -> Redirect {
     Redirect::to("/login")
 }
 
+#[get("/")]
+pub fn root() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/web.html"))
+}
+
+#[get("/images")]
+pub fn images() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/images.html"))
+}
+
+#[get("/videos")]
+pub fn videos() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/videos.html"))
+}
+
+#[get("/news")]
+pub fn news() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/news.html"))
+}
+
+#[get("/porn")]
+pub fn porn() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/porn.html"))
+}
+
+#[get("/dw")]
+pub fn dw() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/serps/dw.html"))
+}
+
+#[get("/main.css")]
+pub fn stylingcss() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/main.css"))
+}
+
 #[get("/internal")]
 pub fn internal(cookies: Cookies, sessions: State<Mutex<HashMap<String, String>>>) -> Result<Response<'static>, Redirect> {
     if let Some(cookie) = cookies.get("user_id") {
         let session_id = cookie.value();
         if let Some(display_name) = sessions.lock().unwrap().get(session_id) {
-            let mut file = File::open("static/internal.html").unwrap();
+            let mut file = File::open("static/serps/web.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
             contents = contents.replace("{{display_name}}", display_name);
