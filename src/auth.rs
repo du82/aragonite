@@ -102,7 +102,7 @@ pub fn dw() -> Result<NamedFile, std::io::Error> {
 }
 
 #[get("/main.css")]
-pub fn stylingcss() -> Result<NamedFile, std::io::Error> {
+pub fn css_styling() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/main.css"))
 }
 

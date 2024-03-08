@@ -36,7 +36,7 @@ fn main() {
     let users_map = load_users().expect("Unable to load users");
 
     rocket::ignite()
-        .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal, auth::images, auth::videos, auth::news, auth::porn, auth::dw, auth::stylingcss, search::search_get, search::search_post])
+        .mount("/", routes![auth::index, auth::login, auth::login_post, auth::logout, auth::internal, auth::images, auth::videos, auth::news, auth::porn, auth::dw, auth::css_styling, search::search_get, search::search_post])
         .manage(auth::User { logged_in: Mutex::new(false) })
         .manage(users_map)
         .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store
