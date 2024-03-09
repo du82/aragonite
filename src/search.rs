@@ -48,7 +48,6 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
             file.read_to_string(&mut contents).unwrap();
             let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
             let theme = current_theme(&cookies);
-            contents = contents.replace("{{theme}}", &format!("themes/{}", theme));
             contents = contents.replace("{{statistics}}", &statistics);
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))
@@ -216,8 +215,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
             }
         }
 
-    } if query.starts_with("year=") {
-        let year_query = &query[4..]; // Remove "clearnet=" from the query
+    } if query.starts_with("year:") {
+        let year_query = &query[5..]; // Remove "clearnet=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(year_published) = info.get("year_published") {
                 let year_published = year_published.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
@@ -239,6 +238,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
+
+    
         
     } else {
         for (search_result, info) in toml.as_table().unwrap().iter() {

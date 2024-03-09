@@ -8,6 +8,8 @@ use toml::Value;
 
 mod auth;
 mod search;
+mod middleware;
+use middleware::ThemeMiddleware;
 
 fn load_users() -> Result<HashMap<String, (String, String)>, Box<dyn std::error::Error>> {
     let mut users_map = HashMap::new();
@@ -37,6 +39,7 @@ fn main() {
 
     rocket::ignite()
         .mount("/", routes![auth::index, auth::internal, auth::images, auth::videos, auth::news, auth::porn, auth::obscure, auth::dw, auth::theme_selector, auth::light_theme, auth::dark_theme, auth::high_contrast_theme, search::search_get, search::search_post, search::news_get, search::news_post])
+        .attach(ThemeMiddleware)
         .manage(auth::User { logged_in: Mutex::new(false) })
         .manage(users_map)
         .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store

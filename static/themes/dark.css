@@ -1,7 +1,7 @@
 .header {
     padding: 10px;
-    background: #fff;
-    color: #3b3b3b;
+    background: #1d1d1d;
+    color: #747474;
     position: fixed;
     width: 100%;
     border-width: 5px;
@@ -41,8 +41,8 @@
     }
     
     body {
-        background-color: #fff;
-        color: #3b3b3b;
+        background: #1d1d1d;
+        color: #747474;
         font-family: Arial, sans-serif;
         height: wrap-content;
         margin: 0;
@@ -105,8 +105,8 @@
     
     input {
         cursor: pointer;
-        background-color: #fff;
-        color: black;
+        background: #1d1d1d;
+        color: #747474;
         border-color: lightgray;
         border-width: 2px;
         border-style: solid;
