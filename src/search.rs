@@ -1,5 +1,5 @@
 use rocket::{get, post, routes, State};
-use rocket::request::{Form, FromForm};
+use rocket::request::{Form, FromForm, Query};
 use rocket::response::content::Html;
 use toml::Value;
 use std::fs;
@@ -37,7 +37,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
             let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
             let num_results = search_results.len();
-            let result_word = if num_results == 1 { "result" } else { "results" };
+            let result_word = if num_results == 1 { "results" } else { "results" };
             let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
             let search_results = search_results.join("");
             let search_results = format!("<div class='results-container'>{}</div>", search_results);
@@ -56,7 +56,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
 
 #[post("/news", data = "<search_form>")]
 pub fn news_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(search_get: q = search_form.into_inner().query))
+    Redirect::to(uri!(news_get: q = search_form.into_inner().query))
 }
 
 #[get("/news?<q>")]
@@ -68,25 +68,10 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 return Ok(Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string()));
             }
             let start_time = std::time::Instant::now();
-            let mut search_results = perform_search(&query);
-            search_results = search_results.into_iter().filter_map(|entry| {
-                let data: Result<Table, _> = toml::from_str(&entry);
-                match data {
-                    Ok(table) => {
-                        if table.get("category").unwrap().as_str().unwrap() == "news" {
-                            Some(entry)
-                        } else {
-                            None
-                        }
-                    },
-                    Err(_) => None,
-                }
-            }).collect();
-
-
+            let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
             let num_results = search_results.len();
-            let result_word = if num_results == 1 { "news result" } else { "news results" };
+            let result_word = if num_results == 1 { "article" } else { "articles" };
             let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
             let search_results = search_results.join("");
             let search_results = format!("<div class='results-container'>{}</div>", search_results);
@@ -99,7 +84,53 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))
         },
-        None => Err(Redirect::to("/")),
+        None => {
+            // Return the news page here
+            let mut file = File::open("static/serps/news.html").unwrap();
+            let mut contents = String::new();
+            file.read_to_string(&mut contents).unwrap();
+            Ok(Html(contents))
+        },
+    }
+}
+
+#[post("/obscure", data = "<search_form>")]
+pub fn obscure_post(search_form: Form<SearchForm>) -> Redirect {
+    Redirect::to(uri!(obscure_get: q = search_form.into_inner().query))
+}
+
+#[get("/obscure?<q>")]
+pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
+    match q {
+        Some(query) => {
+            let trimmed_query = query.trim_start();
+            if trimmed_query.len() < 2 || query.len() > 50 {
+                return Ok(Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string()));
+            }
+            let start_time = std::time::Instant::now();
+            let search_results = perform_search(&query);
+            let elapsed_time = start_time.elapsed();
+            let num_results = search_results.len();
+            let result_word = if num_results == 1 { "obscurity" } else { "obscurities" };
+            let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
+            let search_results = search_results.join("");
+            let search_results = format!("<div class='results-container'>{}</div>", search_results);
+            let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
+            let mut file = File::open("static/serps/obscure.html").unwrap();
+            let mut contents = String::new();
+            file.read_to_string(&mut contents).unwrap();
+            let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+            contents = contents.replace("{{statistics}}", &statistics);
+            contents = format!("{}{}{}", contents, search_results, search_results_footer);
+            Ok(Html(contents))
+        },
+        None => {
+            // Return the news page here
+            let mut file = File::open("static/serps/obscure.html").unwrap();
+            let mut contents = String::new();
+            file.read_to_string(&mut contents).unwrap();
+            Ok(Html(contents))
+        },
     }
 }
 
@@ -159,7 +190,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
     let mut results = HashSet::new();
     let query = query.to_lowercase(); // Convert the query to lowercase
 
-    if query.starts_with("author=") {
+    if query.starts_with("author:") {
         let author_query = &query[7..]; // Remove "author=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(author) = info.get("author") {
@@ -170,8 +201,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-    } if query.starts_with("url=") {
-        let clearnet_query = &query[4..]; // Remove "clearnet=" from the query
+    } if query.starts_with("site:") {
+        let clearnet_query = &query[5..]; // Remove "clearnet=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(clearnet) = info.get("clearnet") {
                 let clearnet = clearnet.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
@@ -188,6 +219,18 @@ pub fn perform_search(query: &str) -> HashSet<String> {
             if let Some(year_published) = info.get("year_published") {
                 let year_published = year_published.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
                 if year_published.contains(year_query) {
+                    let formatted_info = format_toml_table(info.as_table().unwrap());
+                    results.insert(format!("{}\n", formatted_info));
+                }
+            }
+        }
+
+    } if query.starts_with("category:") {
+        let category_query = &query[9..]; // Remove "clearnet=" from the query
+        for (search_result, info) in toml.as_table().unwrap().iter() {
+            if let Some(category) = info.get("category") {
+                let category = category.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
+                if category.contains(category_query) {
                     let formatted_info = format_toml_table(info.as_table().unwrap());
                     results.insert(format!("{}\n", formatted_info));
                 }
