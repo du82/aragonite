@@ -103,7 +103,7 @@ pub fn current_theme(cookies: &Cookies) -> String {
     let theme_cookie = cookies.get("theme").map(|cookie| cookie.value().to_string());
     match theme_cookie {
         Some(theme) => theme,
-        None => "light".to_string(),
+        None => "light.css".to_string(),
     }
 }
 

@@ -48,7 +48,7 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
             file.read_to_string(&mut contents).unwrap();
             let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
             let theme = current_theme(&cookies);
-            contents = contents.replace("{{theme}}", &theme);
+            contents = contents.replace("{{theme}}", &format!("themes/{}", theme));
             contents = contents.replace("{{statistics}}", &statistics);
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))

@@ -7,6 +7,7 @@ width: 100%;
 border-width: 5px;
 border-bottom: solid #e7e7e7;
 border-bottom-width: 1px;
+max-height: 85px;
 }
 
 .content {
@@ -69,9 +70,26 @@ line {
     margin-left: 100px;
 }
 
-.search-buttons-row {
+.search-tabs-row {
     display: flex;
     margin-left: 100px;
+}
+
+.search-tab {
+    display: flex;
+    align-items: center;
+    margin: 0; padding: 0;
+    margin-right: 15px;
+}
+
+.search-tab-selected {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    border-bottom: solid #7d4698;
+    border-width: 2px;
 }
 
 form {
