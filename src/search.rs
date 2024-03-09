@@ -10,6 +10,7 @@ use rocket::http::Cookies;
 use std::collections::HashSet;
 use rocket::response::Redirect;
 use rocket::uri;
+use crate::auth::current_theme;
 
 #[derive(FromForm)]
 struct SearchData {
@@ -26,7 +27,7 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 }
 
 #[get("/search?<q>")]
-pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
+pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
     match q {
         Some(query) => {
             let trimmed_query = query.trim_start();
@@ -46,6 +47,8 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
             let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+            let theme = current_theme(&cookies);
+            contents = contents.replace("{{theme}}", &theme);
             contents = contents.replace("{{statistics}}", &statistics);
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))

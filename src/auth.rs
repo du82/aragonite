@@ -64,10 +64,49 @@ pub fn dw() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/serps/dw.html"))
 }
 
-#[get("/main.css")]
-pub fn css_styling() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/main.css"))
+#[get("/themes/light.css")]
+pub fn light_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/light.css"))
 }
+
+#[get("/themes/dark.css")]
+pub fn dark_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/dark.css"))
+}
+
+#[get("/themes?<selection>")]
+pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<NamedFile, std::io::Error> {
+    let theme = match selection {
+        Some(theme) => theme,
+        None => "light".to_string(),
+    };
+
+    let file_path = match theme.as_str() {
+        "light" => {
+            cookies.add(Cookie::new("theme", "light"));
+            "themes/light.css"
+        },
+        "dark" => {
+            cookies.add(Cookie::new("theme", "dark"));
+            "themes/dark.css"
+        },
+        _ => {
+            cookies.add(Cookie::new("theme", "light"));
+            "themes/light.css"
+        },
+    };
+
+    NamedFile::open(Path::new(file_path))
+}
+
+pub fn current_theme(cookies: &Cookies) -> String {
+    let theme_cookie = cookies.get("theme").map(|cookie| cookie.value().to_string());
+    match theme_cookie {
+        Some(theme) => theme,
+        None => "light".to_string(),
+    }
+}
+
 
 #[get("/internal")]
 pub fn internal(cookies: Cookies, sessions: State<Mutex<HashMap<String, String>>>) -> Result<Response<'static>, Redirect> {

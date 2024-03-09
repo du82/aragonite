@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/themes/light.css">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- You won't find any JavaScript here, just a staticly generated SERP! -->
@@ -61,12 +61,27 @@
                 </svg>
                 Dark Web
             </a>
+            <p>{{theme}}</p>
             <p style="visibility: hidden;">{{statistics}}</p>
+            <div style="position: fixed; right: 10px; margin: 0; padding: 0;">
+                <form action="/themes">
+                    <label for="selection">Choose a theme:</label>
+                    <select name="selection" id="theme-set">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="hc">High Contrast</option>
+                    <option value="pb">Pitch Black</option>
+                    <option value="legacy">Legacy</option>
+                    </select>
+                    <input type="submit" value="Set">
+                </form>
+            </div>
+            
         </div>
     </div>
     <div class="content">
         <div class="landing">
-            <h2>Welcome to the search engine</h2>
+            <h2>Welcome to the search engine (needs a name)</h2>
             <p>This is a fully independent search engine, written in Rust and extensively red-team tested, built for privacy conscious individuals. It has absolutely no JavaScript, and everything that runs on your machine is auditable with the F12 key.<br>We collect the minimum amount of data to provide results, and nothing is stored on disk. We collect your IP address, search query, and nothing else.</p>
             <p>To combat bias and clear up the mystery behind our results, you can view the metadata for any result to see the factors that led to it showing up on your screen.</p>
             <p>Use the search bar above to get started.</p>
@@ -75,6 +90,7 @@
             <ul>
                 <li><b>author:</b> followed by a username will let you search for post authors.</li>
                 <li><b>site:</b> followed by a URL will return results only from that website.</li>
+                <li><b>category:</b> followed by a name will return results only from that category. You might find hidden categories this way ;)</li>
                 <li><b>year:</b> followed by a year will show results from that year.</li>
             </ul>
         </div>

@@ -118,6 +118,10 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 8px;
+    line-height: 1.2;
 }
 
 .results-container {
@@ -144,7 +148,7 @@ input[type="submit"]:hover {
 }
 
 .search-box {
-    width: 500px;
+    width: 525px;
     border-radius: 8px;
 }
 
