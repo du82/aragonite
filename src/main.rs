@@ -51,6 +51,7 @@ fn main() {
             auth::light_theme, 
             auth::dark_theme, 
             auth::high_contrast_theme,
+            auth::midnight_theme,
             auth::party_theme, 
             search::search_get, 
             search::search_post, 

@@ -84,6 +84,11 @@ pub fn party_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/party.css"))
 }
 
+#[get("/themes/midnight.css")]
+pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/midnight.css"))
+}
+
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<NamedFile, std::io::Error> {
     let theme = match selection {
