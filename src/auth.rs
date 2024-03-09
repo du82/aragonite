@@ -30,50 +30,8 @@ fn generate_random_session_id() -> String {
 }
 
 #[get("/")]
-pub fn index(cookies: Cookies) -> Result<Redirect, &'static str> {
-    match cookies.get("user_id") {
-        Some(_) => Ok(Redirect::to("/internal")),
-        None => Ok(Redirect::to("/login")),
-    }
-}
-
-#[get("/login")]
-pub fn login(cookies: Cookies) -> Result<NamedFile, Redirect> {
-    if cookies.get("user_id").is_some() {
-        Err(Redirect::to("/internal"))
-    } else {
-        Ok(NamedFile::open(Path::new("static/serps/web.html")).unwrap())
-    }
-}
-
-#[post("/login", data = "<login_form>")]
-pub fn login_post(login_form: Form<LoginForm>, mut cookies: Cookies, users_map: State<HashMap<String, (String, String)>>, sessions: State<Mutex<HashMap<String, String>>>) -> Redirect {
-    
-    // Check if the password is between 3 and 64 characters long
-    if login_form.password.len() < 3 || login_form.password.len() > 64 {
-        return Redirect::to("/login"); // Password is too short or too long
-    }
-
-    if let Some((display_name, password)) = users_map.get(&login_form.username) {
-        if password == &login_form.password {
-            let session_id = generate_random_session_id();
-            cookies.add(Cookie::new("user_id", session_id.clone()));
-            sessions.lock().unwrap().insert(session_id, display_name.clone());
-            return Redirect::to("/internal");
-        }
-    }
-    Redirect::to("/login") // Incorrect username or password
-}
-
-#[post("/logout")]
-pub fn logout(mut cookies: Cookies) -> Redirect {
-    cookies.remove(Cookie::named("user_id"));
-    Redirect::to("/login")
-}
-
-#[get("/")]
-pub fn root() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/web.html"))
+pub fn index() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/landing.html"))
 }
 
 #[get("/images")]

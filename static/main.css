@@ -10,7 +10,33 @@ border-bottom-width: 1px;
 }
 
 .content {
-padding: 16px;
+padding: 10px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    background-color: #7d4698;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 130px;
+    max-width: 600px;
+    padding: 15px;
+}
+
+.landing2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #763596;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 15px;
 }
 
 body {
@@ -102,9 +128,9 @@ input[type="submit"]:hover {
 }
 
 .footer-container {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 100px;
+    max-width: fit-content;
 }
 
 .footer-box {
