@@ -74,6 +74,11 @@ pub fn dark_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/dark.css"))
 }
 
+#[get("/themes/high-contrast.css")]
+pub fn high_contrast_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/high-contrast.css"))
+}
+
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<NamedFile, std::io::Error> {
     let theme = match selection {
@@ -89,6 +94,10 @@ pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result
         "dark" => {
             cookies.add(Cookie::new("theme", "dark"));
             "themes/dark.css"
+        },
+        "high-contrast" => {
+            cookies.add(Cookie::new("theme", "dark"));
+            "themes/high-contrast.css"
         },
         _ => {
             cookies.add(Cookie::new("theme", "light"));
