@@ -38,7 +38,26 @@ fn main() {
     let users_map = load_users().expect("Unable to load users");
 
     rocket::ignite()
-        .mount("/", routes![auth::index, auth::internal, auth::images, auth::videos, auth::news, auth::porn, auth::obscure, auth::dw, auth::theme_selector, auth::light_theme, auth::dark_theme, auth::high_contrast_theme, search::search_get, search::search_post, search::news_get, search::news_post])
+        .mount("/", routes![
+            auth::index, 
+            auth::internal, 
+            auth::images, 
+            auth::videos, 
+            auth::news, 
+            auth::porn, 
+            auth::obscure, 
+            auth::dw, 
+            auth::theme_selector, 
+            auth::light_theme, 
+            auth::dark_theme, 
+            auth::high_contrast_theme,
+            auth::party_theme, 
+            search::search_get, 
+            search::search_post, 
+            search::news_get, 
+            search::news_post
+            ]
+        )
         .attach(ThemeMiddleware)
         .manage(auth::User { logged_in: Mutex::new(false) })
         .manage(users_map)

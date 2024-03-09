@@ -79,6 +79,11 @@ pub fn high_contrast_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/high-contrast.css"))
 }
 
+#[get("/themes/party.css")]
+pub fn party_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/party.css"))
+}
+
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<NamedFile, std::io::Error> {
     let theme = match selection {
