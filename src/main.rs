@@ -31,7 +31,7 @@ fn main() {
             auth::weed_theme, 
             search::search_get, 
             search::search_post, 
-            search::news_get, 
+            search::news_get,
             search::news_post
             ]
         )
