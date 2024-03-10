@@ -143,6 +143,14 @@
         padding: 8px;
         line-height: 1.2;
     }
+
+    .border-box {
+        border-color: #02F4DF;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 6px;
+        padding: 10px;
+    }
     
     .results-container {
         flex-direction: column;
