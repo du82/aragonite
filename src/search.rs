@@ -41,58 +41,60 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
-    
     match tantivy_processor(q.as_deref().unwrap_or("")) {
-        Ok(results) => println!("{:#?}", results),
-        Err(e) => println!("Error creating index: {:?}", e),
-    }
-    
-    
-    
-    match q {
-        Some(query) => {
-            let trimmed_query = query.trim_start();
-            if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html(
-                    "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
-                        .to_string(),
-                ));
+        Ok(results) => {
+            println!("{:#?}", results);
+            match q {
+                Some(query) => {
+                    let trimmed_query = query.trim_start();
+                    if trimmed_query.len() < 2 || query.len() > 50 {
+                        return Ok(Html(
+                            "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
+                                .to_string(),
+                        ));
+                    }
+                    let start_time = std::time::Instant::now();
+                    let search_results = perform_search(&query);
+                    let elapsed_time = start_time.elapsed();
+                    let num_results = search_results.len();
+                    let result_word = if num_results == 1 {
+                        "results"
+                    } else {
+                        "results"
+                    };
+                    let search_results = search_results
+                        .iter()
+                        .map(|s| {
+                            format!(
+                                "<div class='search-result'>{}</div>",
+                                s.replace("\n", "<br>")
+                            )
+                        })
+                        .collect::<Vec<_>>();
+                    let search_results = search_results.join("");
+                    let search_results = format!("<div class='results-container'>{}</div>", search_results);
+                    let search_results_footer = format!(
+                        "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
+                    );
+                    let mut file = File::open("static/serps/web.html").unwrap();
+                    let mut contents = String::new();
+                    file.read_to_string(&mut contents).unwrap();
+                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+                    let theme = current_theme(&cookies);
+                    contents = contents.replace("{{statistics}}", &statistics);
+                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
+                    Ok(Html(contents))
+                },
+                None => Err(Redirect::to("/"))
             }
-            let start_time = std::time::Instant::now();
-            let search_results = perform_search(&query);
-            let elapsed_time = start_time.elapsed();
-            let num_results = search_results.len();
-            let result_word = if num_results == 1 {
-                "results"
-            } else {
-                "results"
-            };
-            let search_results = search_results
-                .iter()
-                .map(|s| {
-                    format!(
-                        "<div class='search-result'>{}</div>",
-                        s.replace("\n", "<br>")
-                    )
-                })
-                .collect::<Vec<_>>();
-            let search_results = search_results.join("");
-            let search_results = format!("<div class='results-container'>{}</div>", search_results);
-            let search_results_footer = format!(
-                "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
-            );
-            let mut file = File::open("static/serps/web.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
-            let theme = current_theme(&cookies);
-            contents = contents.replace("{{statistics}}", &statistics);
-            contents = format!("{}{}{}", contents, search_results, search_results_footer);
-            Ok(Html(contents))
+        },
+        Err(e) => {
+            println!("Error creating index: {:?}", e);
+            Err(Redirect::to("/"))
         }
-        None => Err(Redirect::to("/")),
     }
 }
+
 
 #[post("/news", data = "<search_form>")]
 pub fn news_post(search_form: Form<SearchForm>) -> Redirect {
