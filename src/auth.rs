@@ -90,32 +90,13 @@ pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
 }
 
 #[get("/themes?<selection>")]
-pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<NamedFile, std::io::Error> {
-    let theme = match selection {
-        Some(theme) => theme,
-        None => "light".to_string(),
-    };
+pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<Redirect, std::io::Error> {
+    if let Some(theme) = selection {
+        cookies.add(Cookie::new("theme", theme));
+    }
 
-    let file_path = match theme.as_str() {
-        "light" => {
-            cookies.add(Cookie::new("theme", "light"));
-            "themes/light.css"
-        },
-        "dark" => {
-            cookies.add(Cookie::new("theme", "dark"));
-            "themes/dark.css"
-        },
-        "high-contrast" => {
-            cookies.add(Cookie::new("theme", "dark"));
-            "themes/high-contrast.css"
-        },
-        _ => {
-            cookies.add(Cookie::new("theme", "light"));
-            "themes/light.css"
-        },
-    };
-
-    NamedFile::open(Path::new(file_path))
+    // Redirect to the home page or another appropriate page after setting the theme
+    Ok(Redirect::to("/"))
 }
 
 pub fn current_theme(cookies: &Cookies) -> String {
