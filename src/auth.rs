@@ -13,17 +13,6 @@ use std::fs::File;
 use std::io::Read;
 use uuid::Uuid;
 
-
-pub struct User {
-    pub logged_in: Mutex<bool>,
-}
-
-#[derive(FromForm)]
-pub struct LoginForm {
-    username: String,
-    password: String,
-}
-
 // Place the function here, outside of any other functions
 fn generate_random_session_id() -> String {
     Uuid::new_v4().to_string()
@@ -109,28 +98,5 @@ pub fn current_theme(cookies: &Cookies) -> String {
     match theme_cookie {
         Some(theme) => theme,
         None => "light.css".to_string(),
-    }
-}
-
-
-#[get("/internal")]
-pub fn internal(cookies: Cookies, sessions: State<Mutex<HashMap<String, String>>>) -> Result<Response<'static>, Redirect> {
-    if let Some(cookie) = cookies.get("user_id") {
-        let session_id = cookie.value();
-        if let Some(display_name) = sessions.lock().unwrap().get(session_id) {
-            let mut file = File::open("static/serps/web.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            contents = contents.replace("{{display_name}}", display_name);
-            let response = Response::build()
-                .header(ContentType::HTML)
-                .sized_body(Cursor::new(contents))
-                .finalize();
-            Ok(response)
-        } else {
-            Err(Redirect::to("/login"))
-        }
-    } else {
-        Err(Redirect::to("/login"))
     }
 }

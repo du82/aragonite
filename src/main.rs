@@ -15,8 +15,7 @@ fn main() {
 
     rocket::ignite()
         .mount("/", routes![
-            auth::index, 
-            auth::internal, 
+            auth::index,
             auth::images, 
             auth::videos, 
             auth::news, 
@@ -37,7 +36,6 @@ fn main() {
             ]
         )
         .attach(ThemeMiddleware)
-        .manage(auth::User { logged_in: Mutex::new(false) })
         .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store
         .launch();
 }
