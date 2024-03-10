@@ -88,6 +88,17 @@ pub fn weed_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/420.css"))
 }
 
+#[get("/themes/monokai.css")]
+pub fn monokai_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/monokai.css"))
+}
+
+
+#[get("/themes/ristretto.css")]
+pub fn ristretto_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/ristretto.css"))
+}
+
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<Redirect, std::io::Error> {
     if let Some(theme) = selection {

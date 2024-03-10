@@ -30,6 +30,8 @@ fn main() {
             auth::midnight_theme,
             auth::clown_theme,
             auth::weed_theme, 
+            auth::monokai_theme, 
+            auth::ristretto_theme, 
             search::search_get, 
             search::search_post, 
             search::news_get,
