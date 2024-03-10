@@ -41,6 +41,14 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
+    
+    match tantivy_processor(q.as_deref().unwrap_or("")) {
+        Ok(results) => println!("{:#?}", results),
+        Err(e) => println!("Error creating index: {:?}", e),
+    }
+    
+    
+    
     match q {
         Some(query) => {
             let trimmed_query = query.trim_start();
@@ -211,11 +219,6 @@ fn format_toml_table(table: &Table) -> String {
     let mut url_fields = Vec::new();
     let mut other_fields = Vec::new();
 
-    match tantivy_processor("dread") {
-        Ok(results) => println!("{:#?}", results),
-        Err(e) => println!("Error creating index: {:?}", e),
-    }
-
     for (k, v) in table.iter() {
         if k == "title" {
             continue;
@@ -334,8 +337,10 @@ pub fn perform_search(query: &str) -> HashSet<String> {
     results
 }
 
+
 pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
-    // Define the schema for the index
+
+    let index_dir = "index";
     let mut schema_builder = Schema::builder();
     let title = schema_builder.add_text_field("title", TEXT | STORED);
     let description = schema_builder.add_text_field("description", TEXT | STORED);
@@ -346,6 +351,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
     let status = schema_builder.add_text_field("status", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
+    let schema = schema_builder.build();
+    let index = if fs::read_dir(index_dir)?.count() == 0 {
+        // Define the schema for the index
+    let mut schema_builder = Schema::builder();
 
     // Create the index
     let schema = schema_builder.build();
@@ -382,9 +391,11 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
             index_writer.add_document(doc);
         }
     }
-
-    // Commit the changes to the index
     index_writer.commit()?;
+    index
+    } else {
+        Index::open_in_dir(index_dir)?
+    };
 
     // Searching the index
     let reader = index
