@@ -79,14 +79,19 @@ pub fn high_contrast_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/high-contrast.css"))
 }
 
+#[get("/themes/midnight.css")]
+pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/midnight.css"))
+}
+
 #[get("/themes/party.css")]
 pub fn party_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/party.css"))
 }
 
-#[get("/themes/midnight.css")]
-pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/midnight.css"))
+#[get("/themes/420.css")]
+pub fn weed_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/420.css"))
 }
 
 #[get("/themes?<selection>")]
