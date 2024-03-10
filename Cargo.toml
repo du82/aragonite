@@ -7,3 +7,6 @@ edition = "2021"
 toml = "0.5"
 rocket = "0.4.10"
 uuid = { version = "0.8", features = ["v4"] }
+
+tantivy = "0.21.1"
+tempfile = "3.10.1"

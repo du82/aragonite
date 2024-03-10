@@ -12,6 +12,12 @@ use rocket::response::Redirect;
 use rocket::uri;
 use crate::auth::current_theme;
 
+// Experimental
+use tantivy::Index;
+use tantivy::schema::{Schema, TEXT, STORED};
+use tantivy::doc;
+use tantivy::Document;
+
 #[derive(FromForm)]
 struct SearchData {
     query: String,
@@ -147,6 +153,18 @@ fn format_toml_table(table: &Table) -> String {
     let mut url_fields = Vec::new();
     let mut other_fields = Vec::new();
 
+
+
+
+    match create_index_from_toml() {
+        Ok(_) => println!("Index created successfully"),
+        Err(e) => println!("Error creating index: {:?}", e),
+    }
+
+
+
+    
+
     for (k, v) in table.iter() {
         if k == "title" {
             continue;
@@ -238,9 +256,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-
-    
-        
+ 
     } else {
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(title) = info.get("title") {
@@ -262,4 +278,38 @@ pub fn perform_search(query: &str) -> HashSet<String> {
     }
 
     results
+}
+
+
+
+pub fn create_index_from_toml() -> tantivy::Result<()> {
+    // Define the schema for the index
+    let mut schema_builder = Schema::builder();
+    let body = schema_builder.add_text_field("body", TEXT | STORED);
+
+    // Create the index
+    let schema = schema_builder.build();
+    let index = Index::create_in_dir("index", schema.clone())?;
+
+    // Parse the TOML file
+    let data = fs::read_to_string("Data.toml").map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+    let value: Value = toml::from_str(&data).map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+
+    // Add data to the index
+    let mut index_writer = index.writer(50_000_000)?;
+    for item in value.as_array().unwrap() {
+        let item = item.as_table().unwrap();
+        let mut doc = Document::new();
+        for (key, value) in item {
+            if let Some(value) = value.as_str() {
+                doc.add_text(schema.get_field(key).unwrap(), value);
+            }
+        }
+        index_writer.add_document(doc);
+    }
+
+    // Commit the changes to the index
+    index_writer.commit()?;
+
+    Ok(())
 }
