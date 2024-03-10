@@ -73,9 +73,9 @@ pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/midnight.css"))
 }
 
-#[get("/themes/party.css")]
-pub fn party_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/party.css"))
+#[get("/themes/clown.css")]
+pub fn clown_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/clown.css"))
 }
 
 #[get("/themes/420.css")]

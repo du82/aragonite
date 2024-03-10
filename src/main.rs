@@ -27,7 +27,7 @@ fn main() {
             auth::dark_theme, 
             auth::high_contrast_theme,
             auth::midnight_theme,
-            auth::party_theme,
+            auth::clown_theme,
             auth::weed_theme, 
             search::search_get, 
             search::search_post, 
