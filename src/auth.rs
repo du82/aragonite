@@ -63,6 +63,11 @@ pub fn dark_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/dark.css"))
 }
 
+#[get("/themes/graphite.css")]
+pub fn graphite_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/graphite.css"))
+}
+
 #[get("/themes/high-contrast.css")]
 pub fn high_contrast_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/high-contrast.css"))
