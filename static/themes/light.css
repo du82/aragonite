@@ -167,6 +167,11 @@
         border-radius: 6px;
         padding: 10px;
     }
+
+    .drop-down {
+        background: #FFF;
+        color: #000;
+    }
     
     .results-container {
         flex-direction: column;

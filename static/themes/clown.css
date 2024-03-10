@@ -107,7 +107,7 @@
     
     input {
         cursor: pointer;
-        background-color: #433740;
+        background-color: #251a22;
         color: #F425A6;
         border-color: #F425A6;
         border-width: 2px;
@@ -150,6 +150,11 @@
         border-style: solid;
         border-radius: 6px;
         padding: 10px;
+    }
+
+    .drop-down {
+        background: #c085c7;
+        color: #311826;
     }
     
     .results-container {

@@ -151,6 +151,11 @@
         border-radius: 6px;
         padding: 10px;
     }
+
+    .drop-down {
+        background: #000;
+        color: #EBA500;
+    }
     
     .results-container {
         flex-direction: column;
