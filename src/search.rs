@@ -14,9 +14,12 @@ use crate::auth::current_theme;
 
 // Experimental
 use tantivy::Index;
-use tantivy::schema::{Schema, TEXT, STORED};
+use tantivy::schema::{Schema, TEXT, STORED, FAST};
 use tantivy::doc;
 use tantivy::Document;
+use tantivy::ReloadPolicy;
+use tantivy::query::QueryParser;
+use tantivy::collector::TopDocs;
 
 #[derive(FromForm)]
 struct SearchData {
@@ -282,10 +285,19 @@ pub fn perform_search(query: &str) -> HashSet<String> {
 
 
 
+
 pub fn create_index_from_toml() -> tantivy::Result<()> {
     // Define the schema for the index
     let mut schema_builder = Schema::builder();
-    let body = schema_builder.add_text_field("body", TEXT | STORED);
+    let title = schema_builder.add_text_field("title", TEXT | STORED);
+    let description = schema_builder.add_text_field("description", TEXT | STORED);
+    let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
+    let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+    let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
+    let onion = schema_builder.add_text_field("onion", TEXT | STORED);
+    let status = schema_builder.add_text_field("status", TEXT | STORED);
+    let category = schema_builder.add_text_field("category", TEXT | STORED);
+    let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
 
     // Create the index
     let schema = schema_builder.build();
@@ -297,19 +309,53 @@ pub fn create_index_from_toml() -> tantivy::Result<()> {
 
     // Add data to the index
     let mut index_writer = index.writer(50_000_000)?;
-    for item in value.as_array().unwrap() {
-        let item = item.as_table().unwrap();
-        let mut doc = Document::new();
-        for (key, value) in item {
-            if let Some(value) = value.as_str() {
-                doc.add_text(schema.get_field(key).unwrap(), value);
+    if let Some(tables) = value.as_table() {
+        for (_name, table) in tables {
+            let mut doc = Document::new();
+            for (key, value) in table.as_table().unwrap() {
+                match schema.get_field(key) {
+                    Ok(field) => {
+                        match value {
+                            Value::String(s) => doc.add_text(field, s),
+                            Value::Integer(i) => doc.add_i64(field, *i),
+                            Value::Array(a) => {
+                                for v in a {
+                                    if let Value::String(s) = v {
+                                        doc.add_text(field, s);
+                                    }
+                                }
+                            },
+                            _ => continue,
+                        }
+                    },
+                    Err(_) => continue,
+                }
             }
+            index_writer.add_document(doc);
         }
-        index_writer.add_document(doc);
     }
 
     // Commit the changes to the index
     index_writer.commit()?;
 
+    // Searching the index
+    let reader = index
+        .reader_builder()
+        .reload_policy(ReloadPolicy::OnCommit)
+        .try_into()?;
+
+    let searcher = reader.searcher();
+    let searcher = reader.searcher();
+
+    // Querying the index
+    let query_parser = QueryParser::for_index(&index, vec![title, description]);
+    let query = query_parser.parse_query("terraria")?;
+
+    // Collectors
+    let top_docs = searcher.search(&query, &TopDocs::with_limit(10))?;
+    for (_score, doc_address) in top_docs {
+        let retrieved_doc = searcher.doc(doc_address)?;
+        println!("{}", schema.to_json(&retrieved_doc));
+    }
     Ok(())
 }
