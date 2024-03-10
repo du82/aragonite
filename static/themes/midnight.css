@@ -112,7 +112,7 @@
         border-color: #081da7;
         border-width: 2px;
         border-style: solid;
-        border-radius: 8px;
+        border-radius: 6px;
         padding: 10px;
         font-size: 16px;
         width: fit-content;
@@ -139,9 +139,17 @@
         justify-content: space-between;
         margin-top: 10px;
         background-color: #211e30;
-        border-radius: 8px;
+        border-radius: 6px;
         padding: 8px;
         line-height: 1.2;
+    }
+
+    .border-box {
+        border-color: #3b3b3b;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 6px;
+        padding: 10px;
     }
     
     .results-container {
@@ -169,7 +177,7 @@
     
     .search-box {
         width: 525px;
-        border-radius: 8px;
+        border-radius: 6px;
     }
     
     span {
