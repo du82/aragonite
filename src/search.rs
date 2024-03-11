@@ -54,25 +54,13 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                         ));
                     }
                     let start_time = std::time::Instant::now();
-                    let search_results = perform_search(&query);
                     let elapsed_time = start_time.elapsed();
-                    let num_results = search_results.len();
+                    let num_results = results.len();
                     let result_word = if num_results == 1 {
                         "results"
                     } else {
                         "results"
                     };
-                    let search_results = search_results
-                        .iter()
-                        .map(|s| {
-                            format!(
-                                "<div class='search-result'>{}</div>",
-                                s.replace("\n", "")
-                            )
-                        })
-                        .collect::<Vec<_>>();
-                    let search_results = search_results.join("");
-                    let search_results = format!("<div class='results-container'>{:?}</div>", search_results);
                     let mut search_results_new = format!("<div class='results-container'>{:?}</div>", results);
                     //let search_results_footer = format!(
                     //    "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
@@ -84,7 +72,7 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     let theme = current_theme(&cookies);
                     contents = contents.replace("{{statistics}}", &statistics);
                     search_results_new = search_results_new.replace("test", "");
-                    contents = format!("{}{}{}", contents, search_results_new, search_results);
+                    contents = format!("{}{}", contents, search_results_new);
                     Ok(Html(contents))
                 },
                 None => Err(Redirect::to("/"))
@@ -115,34 +103,14 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 ));
             }
             let start_time = std::time::Instant::now();
-            let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
-            let num_results = search_results.len();
-            let result_word = if num_results == 1 {
-                "article"
-            } else {
-                "articles"
-            };
-            let search_results = search_results
-                .iter()
-                .map(|s| {
-                    format!(
-                        "<div class='search-result'>{}</div>",
-                        s.replace("\n", "")
-                    )
-                })
-                .collect::<Vec<_>>();
-            let search_results = search_results.join("");
-            let search_results = format!("<div class='results-container'>{}</div>", search_results);
             let search_results_footer = format!(
                 "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
             );
             let mut file = File::open("static/serps/news.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
-            let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
-            contents = contents.replace("{{statistics}}", &statistics);
-            contents = format!("{}{}{}", contents, search_results, search_results_footer);
+            contents = format!("{}{}", contents, search_results_footer);
             Ok(Html(contents))
         }
         None => {
@@ -172,34 +140,14 @@ pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 ));
             }
             let start_time = std::time::Instant::now();
-            let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
-            let num_results = search_results.len();
-            let result_word = if num_results == 1 {
-                "obscurity"
-            } else {
-                "obscurities"
-            };
-            let search_results = search_results
-                .iter()
-                .map(|s| {
-                    format!(
-                        "<div class='search-result'>{}</div>",
-                        s.replace("\n", "")
-                    )
-                })
-                .collect::<Vec<_>>();
-            let search_results = search_results.join("");
-            let search_results = format!("<div class='results-container'>{}</div>", search_results);
             let search_results_footer = format!(
                 "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
             );
             let mut file = File::open("static/serps/obscure.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
-            let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
-            contents = contents.replace("{{statistics}}", &statistics);
-            contents = format!("{}{}{}", contents, search_results, search_results_footer);
+            contents = format!("{}{}", contents, search_results_footer);
             Ok(Html(contents))
         }
         None => {
@@ -260,85 +208,6 @@ fn format_toml_table(table: &Table) -> String {
     let other_fields = other_fields.join("");
 
     format!("{}<h3>{}</h3>\n{}<details class='more-info'><summary>More Info (metadata)</summary><div>{}</div></details>", url_fields, title, description, other_fields)
-}
-
-pub fn perform_search(query: &str) -> HashSet<String> {
-    // Read the TOML file
-    let data = fs::read_to_string("Data.toml").unwrap();
-    let toml: Value = toml::from_str(&data).unwrap();
-
-    // Perform the search in the TOML file
-    let mut results = HashSet::new();
-    let query = query.to_lowercase(); // Convert the query to lowercase
-
-    if query.starts_with("author:") {
-        let author_query = &query[7..]; // Remove "author=" from the query
-        for (search_result, info) in toml.as_table().unwrap().iter() {
-            if let Some(author) = info.get("author") {
-                let author = author.as_str().unwrap().to_lowercase(); // Convert the author to lowercase
-                if author == author_query {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}", formatted_info));
-                }
-            }
-        }
-    }
-    if query.starts_with("site:") {
-        let clearnet_query = &query[5..]; // Remove "clearnet=" from the query
-        for (search_result, info) in toml.as_table().unwrap().iter() {
-            if let Some(clearnet) = info.get("clearnet") {
-                let clearnet = clearnet.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
-                if clearnet.contains(clearnet_query) {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}", formatted_info));
-                }
-            }
-        }
-    }
-    if query.starts_with("year:") {
-        let year_query = &query[5..]; // Remove "clearnet=" from the query
-        for (search_result, info) in toml.as_table().unwrap().iter() {
-            if let Some(year_published) = info.get("year_published") {
-                let year_published = year_published.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
-                if year_published.contains(year_query) {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}", formatted_info));
-                }
-            }
-        }
-    }
-    if query.starts_with("category:") {
-        let category_query = &query[9..]; // Remove "clearnet=" from the query
-        for (search_result, info) in toml.as_table().unwrap().iter() {
-            if let Some(category) = info.get("category") {
-                let category = category.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
-                if category.contains(category_query) {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}", formatted_info));
-                }
-            }
-        }
-    } else {
-        for (search_result, info) in toml.as_table().unwrap().iter() {
-            if let Some(title) = info.get("title") {
-                let title = title.as_str().unwrap().to_lowercase(); // Convert the title to lowercase
-                if title.contains(&query) {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
-                    continue;
-                }
-            }
-            if let Some(description) = info.get("description") {
-                let description = description.as_str().unwrap().to_lowercase(); // Convert the description to lowercase
-                if description.contains(&query) {
-                    let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
-                }
-            }
-        }
-    }
-
-    results
 }
 
 
