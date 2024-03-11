@@ -1,15 +1,13 @@
 use crate::auth::current_theme;
 use rocket::http::Cookies;
-use rocket::request::{Form, FromForm, Query};
+use rocket::request::{Form, FromForm};
 use rocket::response::content::Html;
 use rocket::response::Redirect;
 use rocket::uri;
-use rocket::{get, post, routes, State};
-use std::collections::HashSet;
+use rocket::{get, post};
 use std::fs;
 use std::fs::File;
 use std::io::Read;
-use toml::value::Table;
 use toml::Value;
 use tantivy::collector::TopDocs;
 use tantivy::doc;
@@ -26,10 +24,6 @@ struct SearchData {
 #[derive(FromForm)]
 struct SearchForm {
     query: String,
-}
-
-pub struct Searcher {
-    pub results: Vec<String>,
 }
 
 #[post("/search", data = "<search_form>")]
@@ -121,44 +115,6 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
         }
     }
 }
-
-#[post("/obscure", data = "<search_form>")]
-pub fn obscure_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(obscure_get: q = search_form.into_inner().query))
-}
-
-#[get("/obscure?<q>")]
-pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
-    match q {
-        Some(query) => {
-            let trimmed_query = query.trim_start();
-            if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html(
-                    "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
-                        .to_string(),
-                ));
-            }
-            let start_time = std::time::Instant::now();
-            let elapsed_time = start_time.elapsed();
-            let search_results_footer = format!(
-                "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
-            );
-            let mut file = File::open("static/serps/obscure.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            contents = format!("{}{}", contents, search_results_footer);
-            Ok(Html(contents))
-        }
-        None => {
-            // Return the news page here
-            let mut file = File::open("static/serps/obscure.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            Ok(Html(contents))
-        }
-    }
-}
-
 
 pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 

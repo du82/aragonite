@@ -3,8 +3,6 @@
 use rocket::routes;
 use std::sync::Mutex;
 use std::collections::HashMap;
-use std::fs;
-use toml::Value;
 
 mod auth;
 mod search;
