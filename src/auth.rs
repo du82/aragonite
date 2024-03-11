@@ -1,22 +1,8 @@
-use rocket::{get, post, routes, State};
-use rocket::request::{Form, FromForm};
+use rocket::get;
 use rocket::http::{Cookies, Cookie};
 use rocket::response::Redirect;
 use rocket::response::NamedFile;
-use std::collections::HashMap;
-use rocket::response::Response;
-use rocket::http::ContentType;
-use std::io::Cursor;
 use std::path::Path;
-use std::sync::Mutex;
-use std::fs::File;
-use std::io::Read;
-use uuid::Uuid;
-
-// Place the function here, outside of any other functions
-fn generate_random_session_id() -> String {
-    Uuid::new_v4().to_string()
-}
 
 #[get("/")]
 pub fn index() -> Result<NamedFile, std::io::Error> {
