@@ -18,9 +18,9 @@
 
     .donate-button {
         cursor: pointer;
-        background: #272822;
-        color: #59daed;
-        border-color: #90908a;
+        background: #211e30;
+        color: #6f7edf;
+        border-color: #081da7;
         border-width: 1px;
         border-style: solid;
         border-radius: 6px;
@@ -30,7 +30,8 @@
     }
     
     .donate-button:hover {
-        background-color: #3e3d33;
+        background-color: #6f7edf;
+        color: #F0EBB3;
     }  
     
     .landing {
