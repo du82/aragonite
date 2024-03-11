@@ -282,5 +282,5 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
 
-    format!("<div class='search-result'><h3><a href='{}'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
+    format!("<div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
 }
