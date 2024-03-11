@@ -26,6 +26,7 @@ fn main() {
             auth::graphite_theme,
             auth::high_contrast_theme,
             auth::midnight_theme,
+            auth::dracula_theme,
             auth::clown_theme,
             auth::weed_theme, 
             auth::monokai_theme, 
