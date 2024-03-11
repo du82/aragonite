@@ -133,6 +133,14 @@
         width: 550px;
         padding: 5px 10px 5px 10px;
     }
+
+    .search-result-url-row {
+        margin: 0;
+    }
+
+    .search-result-url {
+        color: #8d8d8d;
+    }
     
     .more-info {
         display: flex;

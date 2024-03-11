@@ -149,6 +149,14 @@
         padding: 10px 10px 10px 10px;
         word-wrap: break-word;
     }
+
+    .search-result-url-row {
+        margin: 0;
+    }
+
+    .search-result-url {
+        color: #8d8d8d;
+    }
     
     .more-info {
         display: flex;

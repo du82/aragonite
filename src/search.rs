@@ -69,8 +69,9 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
                     let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+                    let search_box_statistics = format!("Search results for '{}'", query);
                     let theme = current_theme(&cookies);
-                    contents = contents.replace("{{statistics}}", &statistics);
+                    contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results_new = search_results_new.replace("test", "");
                     contents = format!("{}{}", contents, search_results_new);
                     Ok(Html(contents))
@@ -233,7 +234,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let query = query_parser.parse_query(query)?;
 
     // Collectors
-    let top_docs = searcher.search(&query, &TopDocs::with_limit(10))?;
+    let top_docs = searcher.search(&query, &TopDocs::with_limit(25))?;
     let mut results = Vec::new();
     for (_score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
@@ -278,9 +279,23 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let default_value = "".to_string();
     let title = fields.get("title").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let description = fields.get("description").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let description = if description.len() > 200 {
+        format!("{}...", &description.chars().take(200).collect::<String>())
+    } else {
+        description
+    };
     let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let onion = fields.get("onion").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
 
-    format!("<div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
+    let url_html = match (onion.is_empty(), url.is_empty()) {
+        (false, false) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a> | {}</p>", onion, url),
+        (false, true) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a></p>", onion),
+        (true, false) => format!("<p class='search-result-url-row'>{}</p>", url),
+        (true, true) => "".to_string(),
+    };
+
+    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url_html, url, title, description, tags, category)
 }

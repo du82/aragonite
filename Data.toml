@@ -1,6 +1,7 @@
 ["templatetemplatetemplate.onion"]
 title = "Template"
 description = "This is a template for a dark."
+
 year_published = 2024
 year_updated = 2024
 onion = "https://example.com"
@@ -11,6 +12,7 @@ tags = ["monero", "cryptocurrency"]
 ["wvht6a6qfjoenlxcifbx64jwnfvjcbirtegn2qh6ss5u4o6x4daimyyd.onion"]
 title = "Obscura super"
 description = "Obscura is a modern search engine for the dark web, written in Rust. It utilizes AI to analyze the contents of webpages and solve captchas to get you the most complete results."
+full_description = ""
 year_published = 2024
 year_updated = 2024
 onion = "http://wvht6a6qfjoenlxcifbx64jwnfvjcbirtegn2qh6ss5u4o6x4daimyyd.onion"
@@ -21,6 +23,7 @@ tags = ["privacy", "research", "search engines"]
 ["g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion"]
 title = "Dread"
 description = "Dread is a Reddit-like dark web discussion forum featuring news and discussions around darknet markets."
+full_description = ""
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion"
@@ -30,6 +33,7 @@ tags = ["dread", "social media"]
 ["g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Monero"]
 title = "Monero - Dread"
 description = "Secure • Private • Untraceable"
+full_description = ""
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Monero"
@@ -229,8 +233,8 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://store.steampowered.com/app/105600/Terraria/"
 status = "Operational"
-category = "storefront"
-tags = ["game", "storefront", "steampowered"]
+category = "digital downloads"
+tags = ["game", "digital downloads", "steampowered"]
 
 ["https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid&hl=en_US&gl=US"]
 title = "Terraria - Apps on Google Play"
@@ -239,7 +243,7 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid&hl=en_US&gl=US"
 status = "Operational"
-category = "storefront"
+category = "digital downloads"
 tags = ["merchandise", "games"]
 
 ["https://veloren.net"]
@@ -251,9 +255,6 @@ clearnet = "https://veloren.net"
 status = "Operational"
 category = "games"
 tags = ["games", "voxels"]
-
-
-
 
 ["https://status.app"]
 title = "Status - Make the jump to web3"
@@ -304,3 +305,97 @@ clearnet = "https://status.app/team"
 status = "Operational"
 category = "software"
 tags = ["software", "open source", "about", "cryptocurrency"]
+
+["https://www.torproject.org/"]
+title = "Tor Project | Anonymity Online"
+description = "We believe everyone should be able to explore the internet with privacy. We are the Tor Project, a 501(c)(3) US nonprofit. We advance human rights and defend your privacy online through free software and open networks."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://www.torproject.org/"
+status = "Operational"
+category = "software"
+tags = ["software", "open source", "privacy", "anonymity"]
+
+["https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"]
+title = "Tor Browser - Apps on Google Play"
+description = "Tor Browser for Android is the only official mobile browser supported by the Tor Project, developers of the world's strongest tool for privacy and freedom."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"
+status = "Operational"
+category = "digital downloads"
+tags = ["software", "open source", "privacy", "anonymity"]
+
+["https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"]
+title = "What is the dark web? How to use Tor to access the dark web"
+description = "Tor refers to the onion router, which is a network that bounces your traffic through random nodes, wrapping it in encryption each time, making it difficult to track it's managed and accessed via the Tor browser."
+year_published = 2019
+year_updated = 2019
+clearnet = "https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"
+status = "Operational"
+category = "article"
+tags = ["privacy", "anonymity", "tor", "tutorial"]
+
+
+
+
+
+# Cat 1
+["fluffy.onion"]
+title = "Fluffy's Corner"
+description = "A blog dedicated to Fluffy, the most adorable cat on the dark web."
+full_description = ""
+year_published = 2022
+year_updated = 2022
+clearnet = "http://fluffy.onion"
+status = "Operational"
+category = "blogs"
+tags = ["cats", "pets", "blogs"]
+
+# Cat 2
+["whiskers.onion"]
+title = "Whiskers' World"
+description = "Join Whiskers on his daily adventures and explore the world from a cat's perspective."
+full_description = ""
+year_published = 2021
+year_updated = 2022
+clearnet = "http://whiskers.onion"
+status = "Operational"
+category = "blogs"
+tags = ["cats", "adventures", "pets"]
+
+# Cat 3
+["mittens.onion"]
+title = "Mittens' Mews"
+description = "Mittens shares her thoughts and mews on life, food, and everything in between."
+full_description = ""
+year_published = 2020
+year_updated = 2022
+clearnet = "http://mittens.onion"
+status = "Operational"
+category = "blogs"
+tags = ["cats", "thoughts", "pets"]
+
+# Cat 4
+["shadow.onion"]
+title = "Shadow's Secrets"
+description = "Shadow, the mysterious black cat, shares his secrets and wisdom."
+full_description = ""
+year_published = 2023
+year_updated = 2023
+clearnet = "http://shadow.onion"
+status = "Operational"
+category = "blogs"
+tags = ["cats", "mystery", "pets"]
+
+# Cat 5
+["patches.onion"]
+title = "Patches' Purrfections"
+description = "Patches, the calico cat, showcases her purrfect life and style."
+full_description = ""
+year_published = 2022
+year_updated = 2022
+clearnet = "http://patches.onion"
+status = "Operational"
+category = "blogs"
+tags = ["cats", "style", "pets"]
