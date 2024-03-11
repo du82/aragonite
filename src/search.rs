@@ -11,8 +11,6 @@ use std::fs::File;
 use std::io::Read;
 use toml::value::Table;
 use toml::Value;
-
-// Experimental
 use tantivy::collector::TopDocs;
 use tantivy::doc;
 use tantivy::query::QueryParser;
