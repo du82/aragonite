@@ -266,6 +266,16 @@ status = "Operational"
 category = "digital downloads"
 tags = ["games", "voxels", "download"]
 
+["https://veloren.net/blog/devblog-228/"]
+title = "Two Weeks in Veloren 228"
+description = "The merged work includes more beginner balancing, shaderc optimization fixes, attack blocking, terracotta tweaks, glider buffs, sword vs speed buff balancing, more sword balancing, translation updates, cave updates 💎, more flexible asset autocompletion, a bunch of Weblate translations, generating worlds from the command line, body transformation, translation fixes, enemy balancing in terracotta ruins, lots of translation enhancements, chat window updates, glider fixes, gliding travelers, admin broom improvements, beam aiming fixes, dependency vulnerability fixes, loot table simplifications, dropped item merge, better character loading debugging, admin glider, and pets for NPCs."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://veloren.net/blog/devblog-228/"
+status = "Operational"
+category = "blog post"
+tags = ["devlog", "games", "voxels"]
+
 ["https://status.app"]
 title = "Status - Make the jump to web3"
 description = "Customise your Status! Pick an avatar and colour to represent yourself, choose from light or dark mode, pick emojis to represent your accounts, and see the app"
