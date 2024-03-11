@@ -248,5 +248,5 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p>Related: <a class='pill' href='/search?q={}'>{}</a><a class='pill' href='/search?q={}'>{}</a><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'></details></div>", url_html, url, title, description, tags, tags, category, category)
+    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p>Related: <a class='pill' href='/search?q={}'>{}</a><a class='pill' href='/search?q={}'>{}</a></div>", url_html, url, title, description, tags, tags, category, category)
 }
