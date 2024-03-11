@@ -4,8 +4,6 @@ use rocket::response::Redirect;
 use rocket::response::NamedFile;
 use std::path::Path;
 
-// <------ Routes ----->
-
 #[get("/")]
 pub fn index() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/landing.html"))
@@ -45,8 +43,6 @@ pub fn dw() -> Result<NamedFile, std::io::Error> {
 pub fn donate() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/donate.html"))
 }
-
-// <------ Themes ----->
 
 #[get("/themes/light.css")]
 pub fn light_theme() -> Result<NamedFile, std::io::Error> {
@@ -93,8 +89,6 @@ pub fn monokai_theme() -> Result<NamedFile, std::io::Error> {
 pub fn ristretto_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/ristretto.css"))
 }
-
-// <------ Theme Handlers ----->
 
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<Redirect, std::io::Error> {
