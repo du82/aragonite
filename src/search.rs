@@ -236,7 +236,7 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     } else {
         description
     };
-    let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let tags = fields.get("tags").unwrap_or_else(|| &&default_value);
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
     let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let onion = fields.get("onion").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
@@ -248,5 +248,5 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url_html, url, title, description, tags, category)
+    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p>Related: <a class='pill' href='/search?q={}'>{}</a><a class='pill' href='/search?q={}'>{}</a><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'></details></div>", url_html, url, title, description, tags, tags, category, category)
 }
