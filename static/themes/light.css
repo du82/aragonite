@@ -30,6 +30,24 @@
     .content {
     padding: 10px;
     }
+
+    .donate-button {
+        cursor: pointer;
+        background: #fff;
+        color: #3b3b3b;
+        border-color: lightgrey;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 16px;
+        width: fit-content;
+    }
+    
+    .donate-button:hover {
+        background-color: #763596;
+        color: #fff;
+    }  
     
     .landing {
         display: flex;
