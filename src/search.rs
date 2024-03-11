@@ -1,16 +1,25 @@
-use rocket::{get, post, routes, State};
+use crate::auth::current_theme;
+use rocket::http::Cookies;
 use rocket::request::{Form, FromForm, Query};
 use rocket::response::content::Html;
-use toml::Value;
+use rocket::response::Redirect;
+use rocket::uri;
+use rocket::{get, post, routes, State};
+use std::collections::HashSet;
 use std::fs;
 use std::fs::File;
 use std::io::Read;
 use toml::value::Table;
-use rocket::http::Cookies;
-use std::collections::HashSet;
-use rocket::response::Redirect;
-use rocket::uri;
-use crate::auth::current_theme;
+use toml::Value;
+
+// Experimental
+use tantivy::collector::TopDocs;
+use tantivy::doc;
+use tantivy::query::QueryParser;
+use tantivy::schema::{Schema, FAST, STORED, TEXT};
+use tantivy::Document;
+use tantivy::Index;
+use tantivy::ReloadPolicy;
 
 #[derive(FromForm)]
 struct SearchData {
@@ -21,6 +30,10 @@ struct SearchForm {
     query: String,
 }
 
+pub struct Searcher {
+    pub results: Vec<String>,
+}
+
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
     Redirect::to(uri!(search_get: q = search_form.into_inner().query))
@@ -28,33 +41,60 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
-    match q {
-        Some(query) => {
-            let trimmed_query = query.trim_start();
-            if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string()));
+    match tantivy_processor(q.as_deref().unwrap_or("")) {
+        Ok(results) => {
+            println!("{:#?}", results);
+            match q {
+                Some(query) => {
+                    let trimmed_query = query.trim_start();
+                    if trimmed_query.len() < 2 || query.len() > 50 {
+                        return Ok(Html(
+                            "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
+                                .to_string(),
+                        ));
+                    }
+                    let start_time = std::time::Instant::now();
+                    let search_results = perform_search(&query);
+                    let elapsed_time = start_time.elapsed();
+                    let num_results = search_results.len();
+                    let result_word = if num_results == 1 {
+                        "results"
+                    } else {
+                        "results"
+                    };
+                    let search_results = search_results
+                        .iter()
+                        .map(|s| {
+                            format!(
+                                "<div class='search-result'>{}</div>",
+                                s.replace("\n", "<br>")
+                            )
+                        })
+                        .collect::<Vec<_>>();
+                    let search_results = search_results.join("");
+                    let search_results = format!("<div class='results-container'>{}</div>", search_results);
+                    let search_results_footer = format!(
+                        "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
+                    );
+                    let mut file = File::open("static/serps/web.html").unwrap();
+                    let mut contents = String::new();
+                    file.read_to_string(&mut contents).unwrap();
+                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+                    let theme = current_theme(&cookies);
+                    contents = contents.replace("{{statistics}}", &statistics);
+                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
+                    Ok(Html(contents))
+                },
+                None => Err(Redirect::to("/"))
             }
-            let start_time = std::time::Instant::now();
-            let search_results = perform_search(&query);
-            let elapsed_time = start_time.elapsed();
-            let num_results = search_results.len();
-            let result_word = if num_results == 1 { "results" } else { "results" };
-            let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
-            let search_results = search_results.join("");
-            let search_results = format!("<div class='results-container'>{}</div>", search_results);
-            let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
-            let mut file = File::open("static/serps/web.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
-            let theme = current_theme(&cookies);
-            contents = contents.replace("{{statistics}}", &statistics);
-            contents = format!("{}{}{}", contents, search_results, search_results_footer);
-            Ok(Html(contents))
         },
-        None => Err(Redirect::to("/")),
+        Err(e) => {
+            println!("Error creating index: {:?}", e);
+            Err(Redirect::to("/"))
+        }
     }
 }
+
 
 #[post("/news", data = "<search_form>")]
 pub fn news_post(search_form: Form<SearchForm>) -> Redirect {
@@ -67,17 +107,34 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
         Some(query) => {
             let trimmed_query = query.trim_start();
             if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string()));
+                return Ok(Html(
+                    "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
+                        .to_string(),
+                ));
             }
             let start_time = std::time::Instant::now();
             let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
             let num_results = search_results.len();
-            let result_word = if num_results == 1 { "article" } else { "articles" };
-            let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
+            let result_word = if num_results == 1 {
+                "article"
+            } else {
+                "articles"
+            };
+            let search_results = search_results
+                .iter()
+                .map(|s| {
+                    format!(
+                        "<div class='search-result'>{}</div>",
+                        s.replace("\n", "<br>")
+                    )
+                })
+                .collect::<Vec<_>>();
             let search_results = search_results.join("");
             let search_results = format!("<div class='results-container'>{}</div>", search_results);
-            let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
+            let search_results_footer = format!(
+                "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
+            );
             let mut file = File::open("static/serps/news.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
@@ -85,14 +142,14 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
             contents = contents.replace("{{statistics}}", &statistics);
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))
-        },
+        }
         None => {
             // Return the news page here
             let mut file = File::open("static/serps/news.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
             Ok(Html(contents))
-        },
+        }
     }
 }
 
@@ -107,17 +164,34 @@ pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
         Some(query) => {
             let trimmed_query = query.trim_start();
             if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html("<h1>Error: Search query must be between 2 and 50 characters long.</h1>".to_string()));
+                return Ok(Html(
+                    "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
+                        .to_string(),
+                ));
             }
             let start_time = std::time::Instant::now();
             let search_results = perform_search(&query);
             let elapsed_time = start_time.elapsed();
             let num_results = search_results.len();
-            let result_word = if num_results == 1 { "obscurity" } else { "obscurities" };
-            let search_results = search_results.iter().map(|s| format!("<div class='search-result'>{}</div>", s.replace("\n", "<br>"))).collect::<Vec<_>>();
+            let result_word = if num_results == 1 {
+                "obscurity"
+            } else {
+                "obscurities"
+            };
+            let search_results = search_results
+                .iter()
+                .map(|s| {
+                    format!(
+                        "<div class='search-result'>{}</div>",
+                        s.replace("\n", "<br>")
+                    )
+                })
+                .collect::<Vec<_>>();
             let search_results = search_results.join("");
             let search_results = format!("<div class='results-container'>{}</div>", search_results);
-            let search_results_footer  = format!("<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>");
+            let search_results_footer = format!(
+                "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
+            );
             let mut file = File::open("static/serps/obscure.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
@@ -125,14 +199,14 @@ pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
             contents = contents.replace("{{statistics}}", &statistics);
             contents = format!("{}{}{}", contents, search_results, search_results_footer);
             Ok(Html(contents))
-        },
+        }
         None => {
             // Return the news page here
             let mut file = File::open("static/serps/obscure.html").unwrap();
             let mut contents = String::new();
             file.read_to_string(&mut contents).unwrap();
             Ok(Html(contents))
-        },
+        }
     }
 }
 
@@ -165,13 +239,16 @@ fn format_toml_table(table: &Table) -> String {
                 // Check if the string is a URL
                 if s.starts_with("http://") || s.starts_with("https://") {
                     // If it is, format it as an HTML link
-                    let url = format!("<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>", s, s);
+                    let url = format!(
+                        "<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>",
+                        s, s
+                    );
                     url_fields.push(format!("{}: {}", key, url));
                     continue;
                 } else {
                     s.clone()
                 }
-            },
+            }
             _ => v.to_string(),
         };
         other_fields.push(format!("{}: {}", key, value));
@@ -203,7 +280,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-    } if query.starts_with("site:") {
+    }
+    if query.starts_with("site:") {
         let clearnet_query = &query[5..]; // Remove "clearnet=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(clearnet) = info.get("clearnet") {
@@ -214,8 +292,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-
-    } if query.starts_with("year:") {
+    }
+    if query.starts_with("year:") {
         let year_query = &query[5..]; // Remove "clearnet=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(year_published) = info.get("year_published") {
@@ -226,8 +304,8 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-
-    } if query.starts_with("category:") {
+    }
+    if query.starts_with("category:") {
         let category_query = &query[9..]; // Remove "clearnet=" from the query
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(category) = info.get("category") {
@@ -238,9 +316,6 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 }
             }
         }
-
-    
-        
     } else {
         for (search_result, info) in toml.as_table().unwrap().iter() {
             if let Some(title) = info.get("title") {
@@ -262,4 +337,88 @@ pub fn perform_search(query: &str) -> HashSet<String> {
     }
 
     results
+}
+
+
+pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
+
+    let index_dir = "index";
+    let mut schema_builder = Schema::builder();
+    let title = schema_builder.add_text_field("title", TEXT | STORED);
+    let description = schema_builder.add_text_field("description", TEXT | STORED);
+    let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
+    let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+    let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
+    let onion = schema_builder.add_text_field("onion", TEXT | STORED);
+    let status = schema_builder.add_text_field("status", TEXT | STORED);
+    let category = schema_builder.add_text_field("category", TEXT | STORED);
+    let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
+    let schema = schema_builder.build();
+    let index = if fs::read_dir(index_dir)?.count() == 0 {
+        // Define the schema for the index
+    let mut schema_builder = Schema::builder();
+
+    // Create the index
+    let schema = schema_builder.build();
+    let index = Index::create_in_dir("index", schema.clone())?;
+
+    // Parse the TOML file
+    let data = fs::read_to_string("Data.toml")
+        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+    let value: Value = toml::from_str(&data)
+        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+
+    // Add data to the index
+    let mut index_writer = index.writer(50_000_000)?;
+    if let Some(tables) = value.as_table() {
+        for (_name, table) in tables {
+            let mut doc = Document::new();
+            for (key, value) in table.as_table().unwrap() {
+                match schema.get_field(key) {
+                    Ok(field) => match value {
+                        Value::String(s) => doc.add_text(field, s),
+                        Value::Integer(i) => doc.add_i64(field, *i),
+                        Value::Array(a) => {
+                            for v in a {
+                                if let Value::String(s) = v {
+                                    doc.add_text(field, s);
+                                }
+                            }
+                        }
+                        _ => continue,
+                    },
+                    Err(_) => continue,
+                }
+            }
+            index_writer.add_document(doc);
+        }
+    }
+    index_writer.commit()?;
+    index
+    } else {
+        Index::open_in_dir(index_dir)?
+    };
+
+    // Searching the index
+    let reader = index
+        .reader_builder()
+        .reload_policy(ReloadPolicy::OnCommit)
+        .try_into()?;
+
+    let searcher = reader.searcher();
+
+    // Querying the index
+    let query_parser = QueryParser::for_index(&index, vec![title, description, category, tags]);
+    let query = query_parser.parse_query(query)?;
+
+    // Collectors
+    let top_docs = searcher.search(&query, &TopDocs::with_limit(10))?;
+    let mut results = Vec::new();
+    for (_score, doc_address) in top_docs {
+        let retrieved_doc = searcher.doc(doc_address)?;
+        println!("{}", schema.to_json(&retrieved_doc));
+        results.push(retrieved_doc)
+    }
+    println!("{:?}", results);
+    Ok(results)
 }
