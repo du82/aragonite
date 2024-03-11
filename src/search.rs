@@ -284,7 +284,6 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     } else {
         description
     };
-    let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
     let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");

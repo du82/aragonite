@@ -336,7 +336,55 @@ status = "Operational"
 category = "article"
 tags = ["privacy", "anonymity", "tor", "tutorial"]
 
+["https://signal.org"]
+title = "Signal >> Home"
+description = "Signal is a messaging app that uses end-to-end encryption to protect your privacy and data. You can share text, voice, photos, videos, and files for free, make voice and video calls, and add encrypted stickers to your conversations. Signal is free, independent, and open source."
+year_published = 2018
+year_updated = 2024
+clearnet = "https://signal.org"
+status = "Operational"
+category = "software"
+tags = ["privacy", "chat app", "messenger"]
 
+["https://signal.org/download/"]
+title = "Signal >> Download Signal"
+description = "Signal is a messaging app that uses end-to-end encryption to protect your privacy and data. You can share text, voice, photos, videos, and files for free, make voice and video calls, and add encrypted stickers to your conversations. Signal is free, independent, and open source."
+year_published = 2018
+year_updated = 2024
+clearnet = "https://signal.org/download/"
+status = "Operational"
+category = "digital downloads"
+tags = ["privacy", "chat app", "messenger", "download"]
+
+["https://signal.org/download/android/"]
+title = "Signal >> Download Signal for Android"
+description = "Signal is a messaging app that uses end-to-end encryption to protect your privacy and data. You can share text, voice, photos, videos, and files for free, make voice and video calls, and add encrypted stickers to your conversations. Signal is free, independent, and open source."
+year_published = 2018
+year_updated = 2024
+clearnet = "https://signal.org/download/android/"
+status = "Operational"
+category = "digital downloads"
+tags = ["privacy", "chat app", "messenger", "download"]
+
+["https://signal.org/blog/"]
+title = "Signal >> Blog"
+description = ""
+year_published = 2018
+year_updated = 2024
+clearnet = "https://signal.org/blog/"
+status = "Operational"
+category = "digital downloads"
+tags = ["privacy", "chat app", "messenger", "download"]
+
+["https://signal.org/bigbrother/"]
+title = "Signal >> Government Communication"
+description = "When legally forced to provide information to government or law enforcement agencies, we'll disclose the transcripts of that communication here."
+year_published = 2018
+year_updated = 2024
+clearnet = "https://signal.org/blog/"
+status = "Operational"
+category = "software"
+tags = ["privacy", "chat app", "messenger", "warrant canary"]
 
 
 
