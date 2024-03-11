@@ -160,56 +160,6 @@ pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     }
 }
 
-fn format_toml_table(table: &Table) -> String {
-    let title = table.get("title").unwrap().as_str().unwrap();
-    let description = table.get("description").unwrap().as_str().unwrap();
-    let description = if description.len() > 200 {
-        format!("{}...", description.chars().take(200).collect::<String>())
-    } else {
-        description.to_string()
-    };
-    let mut url_fields = Vec::new();
-    let mut other_fields = Vec::new();
-
-    for (k, v) in table.iter() {
-        if k == "title" {
-            continue;
-        }
-
-        let key = {
-            let k = k.replace("_", " ");
-            let mut chars = k.chars();
-            let first_char = chars.next().unwrap().to_uppercase();
-            let rest = chars.collect::<String>();
-            format!("{}{}", first_char, rest)
-        };
-
-        let value = match v {
-            Value::String(s) => {
-                // Check if the string is a URL
-                if s.starts_with("http://") || s.starts_with("https://") {
-                    // If it is, format it as an HTML link
-                    let url = format!(
-                        "<a href=\"{}\" target=\"_blank\" rel=\"noopener noreferrer\">{}</a>",
-                        s, s
-                    );
-                    url_fields.push(format!("{}: {}", key, url));
-                    continue;
-                } else {
-                    s.clone()
-                }
-            }
-            _ => v.to_string(),
-        };
-        other_fields.push(format!("{}: {}", key, value));
-    }
-
-    let url_fields = url_fields.join("");
-    let other_fields = other_fields.join("");
-
-    format!("{}<h3>{}</h3>\n{}<details class='more-info'><summary>More Info (metadata)</summary><div>{}</div></details>", url_fields, title, description, other_fields)
-}
-
 
 pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
@@ -264,6 +214,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
         }
     }
     index_writer.commit()?;
+    println!("Indexing complete!");
     index
     } else {
         Index::open_in_dir(index_dir)?
@@ -278,7 +229,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let searcher = reader.searcher();
 
     // Querying the index
-    let query_parser = QueryParser::for_index(&index, vec![title, description, category, tags]);
+    let query_parser = QueryParser::for_index(&index, vec![title, description, category, tags, url]);
     let query = query_parser.parse_query(query)?;
 
     // Collectors
@@ -331,5 +282,5 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
 
-    format!("<div class='search-result'><h3><a href='{}'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div><br>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
+    format!("<div class='search-result'><h3><a href='{}'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div class='more-info-summary'>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
 }
