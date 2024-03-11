@@ -1,4 +1,3 @@
-use crate::auth::current_theme;
 use rocket::http::Cookies;
 use rocket::request::{Form, FromForm};
 use rocket::response::content::Html;
@@ -62,7 +61,6 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     file.read_to_string(&mut contents).unwrap();
                     let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
-                    let theme = current_theme(&cookies);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results_new = search_results_new.replace("test", "");
                     contents = format!("{}{}", contents, search_results_new);

@@ -99,11 +99,3 @@ pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result
     // Redirect to the home page or another appropriate page after setting the theme
     Ok(Redirect::to("/"))
 }
-
-pub fn current_theme(cookies: &Cookies) -> String {
-    let theme_cookie = cookies.get("theme").map(|cookie| cookie.value().to_string());
-    match theme_cookie {
-        Some(theme) => theme,
-        None => "light.css".to_string(),
-    }
-}
