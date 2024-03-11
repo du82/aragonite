@@ -359,7 +359,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
     let mut schema_builder = Schema::builder();
 
     // Create the index
-    let schema = schema_builder.build();
     let index = Index::create_in_dir("index", schema.clone())?;
 
     // Parse the TOML file

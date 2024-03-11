@@ -12,7 +12,6 @@ mod middleware;
 use middleware::ThemeMiddleware;
 
 fn main() {
-
     rocket::ignite()
         .mount("/", routes![
             auth::index,
