@@ -67,22 +67,24 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                         .map(|s| {
                             format!(
                                 "<div class='search-result'>{}</div>",
-                                s.replace("\n", "<br>")
+                                s.replace("\n", "")
                             )
                         })
                         .collect::<Vec<_>>();
                     let search_results = search_results.join("");
-                    let search_results = format!("<div class='results-container'>{}</div>", search_results);
-                    let search_results_footer = format!(
-                        "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
-                    );
+                    let search_results = format!("<div class='results-container'>{:?}</div>", search_results);
+                    let mut search_results_new = format!("<div class='results-container'>{:?}</div>", results);
+                    //let search_results_footer = format!(
+                    //    "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
+                    //);
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
                     let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
                     let theme = current_theme(&cookies);
                     contents = contents.replace("{{statistics}}", &statistics);
-                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
+                    search_results_new = search_results_new.replace("test", "");
+                    contents = format!("{}{}{}", contents, search_results_new, search_results);
                     Ok(Html(contents))
                 },
                 None => Err(Redirect::to("/"))
@@ -126,7 +128,7 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 .map(|s| {
                     format!(
                         "<div class='search-result'>{}</div>",
-                        s.replace("\n", "<br>")
+                        s.replace("\n", "")
                     )
                 })
                 .collect::<Vec<_>>();
@@ -183,7 +185,7 @@ pub fn obscure_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 .map(|s| {
                     format!(
                         "<div class='search-result'>{}</div>",
-                        s.replace("\n", "<br>")
+                        s.replace("\n", "")
                     )
                 })
                 .collect::<Vec<_>>();
@@ -254,8 +256,8 @@ fn format_toml_table(table: &Table) -> String {
         other_fields.push(format!("{}: {}", key, value));
     }
 
-    let url_fields = url_fields.join("\n");
-    let other_fields = other_fields.join("\n");
+    let url_fields = url_fields.join("");
+    let other_fields = other_fields.join("");
 
     format!("{}<h3>{}</h3>\n{}<details class='more-info'><summary>More Info (metadata)</summary><div>{}</div></details>", url_fields, title, description, other_fields)
 }
@@ -276,7 +278,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 let author = author.as_str().unwrap().to_lowercase(); // Convert the author to lowercase
                 if author == author_query {
                     let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
+                    results.insert(format!("{}", formatted_info));
                 }
             }
         }
@@ -288,7 +290,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 let clearnet = clearnet.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
                 if clearnet.contains(clearnet_query) {
                     let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
+                    results.insert(format!("{}", formatted_info));
                 }
             }
         }
@@ -300,7 +302,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 let year_published = year_published.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
                 if year_published.contains(year_query) {
                     let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
+                    results.insert(format!("{}", formatted_info));
                 }
             }
         }
@@ -312,7 +314,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
                 let category = category.as_str().unwrap().to_lowercase(); // Convert the clearnet URL to lowercase
                 if category.contains(category_query) {
                     let formatted_info = format_toml_table(info.as_table().unwrap());
-                    results.insert(format!("{}\n", formatted_info));
+                    results.insert(format!("{}", formatted_info));
                 }
             }
         }
@@ -340,7 +342,7 @@ pub fn perform_search(query: &str) -> HashSet<String> {
 }
 
 
-pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
+pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
@@ -415,9 +417,50 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
     let mut results = Vec::new();
     for (_score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
-        println!("{}", schema.to_json(&retrieved_doc));
-        results.push(retrieved_doc)
+        let html = document_to_html(&retrieved_doc, &schema);
+        let html_without_quotes = html.replace(", ", "");
+        results.push(html_without_quotes)
     }
-    println!("{:?}", results);
+    for result in &results {
+        println!("{}", result);
+    }
+
+    tantivy_renderer(&results);
+
+    let results_str = results.join("\n");
+    println!("{}", results_str);
     Ok(results)
+}
+
+pub fn tantivy_renderer(results: &Vec<String>) {
+    for result in results {
+        let result_without_json_formatting = result.replace("{", "")
+            .replace("}", "")
+            .replace(":", "")
+            .replace("\"", "")
+            .replace(", ", "");
+        println!("{}", result_without_json_formatting);
+    }
+}
+
+use std::collections::HashMap;
+
+fn document_to_html(doc: &Document, schema: &Schema) -> String {
+    let mut fields = HashMap::new();
+    for field_value in doc.field_values() {
+        let field_name = schema.get_field_name(field_value.field());
+        if let tantivy::schema::Value::Str(value) = field_value.value() {
+            let value_without_newlines = value.replace("\n", "").replace("[", "");
+            fields.insert(field_name, value_without_newlines);
+        }
+    }
+
+    let default_value = "".to_string();
+    let title = fields.get("title").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let description = fields.get("description").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let tags = fields.get("tags").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
+
+    format!("<div class='search-result'><h3><a href='{}'>{}</a></h3><p>{}</p><details class='more-info'><summary>More Info (metadata)</summary><div><br>Tags: {}<br>Category: {}</div></details></div>", url, title, description, tags, category)
 }
