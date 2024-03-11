@@ -29,7 +29,7 @@
         width: fit-content;
     }
     
-    .donate-button[type="submit"]:hover {
+    .donate-button:hover {
         background-color: #3e3d33;
         color: #59daed;
     }
