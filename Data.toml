@@ -1,13 +1,22 @@
 ["templatetemplatetemplate.onion"]
 title = "Template"
 description = "This is a template for a dark."
-
 year_published = 2024
 year_updated = 2024
 onion = "https://example.com"
 status = "Defunct"
 category = "news"
 tags = ["monero", "cryptocurrency"]
+
+["https://speed.cloudflare.com/"]
+title = "Internet speed test - Cloudflare"
+description = "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge network."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://speed.cloudflare.com/"
+status = "Operational"
+category = "software"
+tags = ["testing", "test", "speed test"]
 
 ["wvht6a6qfjoenlxcifbx64jwnfvjcbirtegn2qh6ss5u4o6x4daimyyd.onion"]
 title = "Obscura super"
@@ -272,6 +281,26 @@ description = "The merged work includes more beginner balancing, shaderc optimiz
 year_published = 2024
 year_updated = 2024
 clearnet = "https://veloren.net/blog/devblog-228/"
+status = "Operational"
+category = "blog post"
+tags = ["devlog", "games", "voxels"]
+
+["https://veloren.net/blog/devblog-227/"]
+title = "Two Weeks in Veloren 227"
+description = "The merged work includes a Rust tool-chain update, weapon crafting hints, a chat display fix, server command extensions, many dependency updates, SRV DNS lookup, critical chance RON cleanups, separate event busses, wind affect on gliders, aiming tweaks, WIT based plugins using wasmtime, removing debug output, a metal shader fix, Italian translation updates, loot localization, entity deletion fixes, more signals for shutdown, beginner balancing, terracotta ruins, shader optimizations, contagious burning, and Phoenix tweaks."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://veloren.net/blog/devblog-227/"
+status = "Operational"
+category = "blog post"
+tags = ["devlog", "games", "voxels"]
+
+["https://veloren.net/blog/devblog-226/"]
+title = "Two Weeks in Veloren 226"
+description = "The merged work includes an adlet elder sword fix, many many translation updates, kill_npc targeting pets, enter/return equivalence in chats, battlemode time fixes, digging tooltip fixes, recipes for charms, sword balancing, toggling lanterns on ground, item tiering fixes, more price entries, no cursor jump when un-grabbing, updated furniture models, terrain persistence crash fix, better network compression of sprites, sea decor block fix, weather optimization, better tab completion for items, hot reload fixes, random colored trees, new LoD tree types, WGPU 0.18🥳, better aiming, inventory overflow logic, more cursor position fixes, proper grammatical gender in chat messages, and item tooltip size."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://veloren.net/blog/devblog-226/"
 status = "Operational"
 category = "blog post"
 tags = ["devlog", "games", "voxels"]
