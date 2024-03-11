@@ -786,8 +786,8 @@ name = "obscura"
 version = "0.1.0"
 dependencies = [
  "rocket",
+ "serde_json",
  "tantivy",
- "tempfile",
  "toml 0.5.11",
  "uuid 0.8.2",
 ]

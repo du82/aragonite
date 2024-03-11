@@ -408,7 +408,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<Document>> {
     let searcher = reader.searcher();
 
     // Querying the index
-    let query_parser = QueryParser::for_index(&index, vec![title, description]);
+    let query_parser = QueryParser::for_index(&index, vec![title, description, category, tags]);
     let query = query_parser.parse_query(query)?;
 
     // Collectors
