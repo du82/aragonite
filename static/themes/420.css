@@ -20,7 +20,7 @@
         cursor: pointer;
         background: #8ba189;
         color: #F0EBB3;
-        border-color: #1f5c1a;
+        border-color: #738d76;
         border-width: 1px;
         border-style: solid;
         border-radius: 6px;
@@ -30,7 +30,8 @@
     }
     
     .donate-button:hover {
-        background-color: #3e3d33;
+        background-color: #1f5c1a;
+        color: #ffffff;
     }  
     
     .landing {
