@@ -43,7 +43,7 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok(results) => {
-            println!("{:#?}", results);
+            //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
@@ -291,13 +291,13 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
         results.push(html_without_quotes)
     }
     for result in &results {
-        println!("{}", result);
+        //println!("{}", result);
     }
 
     tantivy_renderer(&results);
 
     let results_str = results.join("\n");
-    println!("{}", results_str);
+    //println!("{}", results_str);
     Ok(results)
 }
 
@@ -308,7 +308,7 @@ pub fn tantivy_renderer(results: &Vec<String>) {
             .replace(":", "")
             .replace("\"", "")
             .replace(", ", "");
-        println!("{}", result_without_json_formatting);
+        //println!("{}", result_without_json_formatting);
     }
 }
 
