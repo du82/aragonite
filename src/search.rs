@@ -120,6 +120,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let mut schema_builder = Schema::builder();
     let title = schema_builder.add_text_field("title", TEXT | STORED);
     let description = schema_builder.add_text_field("description", TEXT | STORED);
+    let author = schema_builder.add_text_field("author", TEXT | STORED);
     let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
     let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
     let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
@@ -182,7 +183,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let searcher = reader.searcher();
 
     // Querying the index
-    let query_parser = QueryParser::for_index(&index, vec![title, description, category, tags, url]);
+    let query_parser = QueryParser::for_index(&index, vec![title, description, author, category, tags, url]);
     let query = query_parser.parse_query(query)?;
 
     // Collectors
@@ -236,8 +237,24 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     } else {
         description
     };
+    let author = fields.get("author").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let author_html = if !author.is_empty() {
+        format!("<a class='pill' href='/search?q={}'>author: {}</a>", author, author)
+    } else {
+        "".to_string()
+    };
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value);
+    let tags_html = if !tags.is_empty() {
+        format!("<a class='pill' href='/search?q={}'>{}</a>", tags.to_lowercase(), tags.to_lowercase())
+    } else {
+        "".to_string()
+    };
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let category_html = if !category.is_empty() {
+        format!("<a class='pill' href='/search?q={}'>{}</a>", category.to_lowercase(), category.to_lowercase())
+    } else {
+        "".to_string()
+    };
     let url = fields.get("clearnet").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let onion = fields.get("onion").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
 
@@ -248,5 +265,6 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p>Related: <a class='pill' href='/search?q={}'>{}</a><a class='pill' href='/search?q={}'>{}</a></div>", url_html, url, title, description, tags, tags, category, category)
+    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p>{}</p>Related: {}{}{}</div>",
+    url_html, url, title, description, author_html, category_html, tags_html)
 }
