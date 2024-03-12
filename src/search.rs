@@ -62,7 +62,7 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
-                    search_results_new = search_results_new.replace("\", ", "").replace("\",", "").replace("\"", "").trim_start_matches("[").trim_end_matches("]").to_string();
+                    search_results_new = search_results_new.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
                     contents = format!("{}{}", contents, search_results_new);
                     Ok(Html(contents))
                 },

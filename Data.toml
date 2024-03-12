@@ -65,6 +65,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/SonOfAugust"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/9de7efacaf0ae2a64825"
+category = "forum"
 tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/OpSec"]
@@ -74,6 +75,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/SonOfAugust"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/OpSec"
+category = "forum"
 tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/5c6acc89c3ff049454b1"]
@@ -83,6 +85,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/KonaCokeHead"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/5c6acc89c3ff049454b1"
+category = "forum"
 tags = ["dread", "opsec"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/HiddenService"]
@@ -91,6 +94,7 @@ description = "The best parts of the anonymous internet! Post all your I2P, free
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/HiddenService"
+category = "forum"
 tags = ["dread", "hidden service"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Linux"]
@@ -99,6 +103,7 @@ description = "The Dread Community resource for troubleshooting Linux problems. 
 year_published = 2024
 year_updated = 2024
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/d/Linux"
+category = "forum"
 tags = ["dread", "linux"]
 
 ["http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/f7ce264e59baf985b905"]
@@ -108,6 +113,7 @@ year_published = 2024
 year_updated = 2024
 author = "/u/under6ahah"
 onion = "http://g66ol3eb5ujdckzqqfmjsbpdjufmjd5nsgdipvxmsh7rckzlhywlzlqd.onion/post/f7ce264e59baf985b905"
+category = "forum"
 tags = ["dread", "linux"]
 
 ["http://darkfailenbsdla5mal2mxn2uz66od5vtzd5qozslagrfzachha3f3id.onion"]
@@ -125,6 +131,7 @@ year_published = 2024
 year_updated = 2024
 onion = "https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/"
 clearnet = "https://bbc.com"
+category = "news"
 
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
 title = "Archive.today"
@@ -133,7 +140,8 @@ year_published = 2024
 year_updated = 2024
 onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
 clearnet = "https://archive.today"
-tags = ["archive"]
+category = "archive"
+tags = ["archival", "storage"]
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
 title = "Riseup"
