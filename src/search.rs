@@ -204,18 +204,31 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
     // Collectors
     let top_docs = searcher.search(&query, &TopDocs::with_limit(25))?;
-    let mut results = Vec::new();
-    for (_score, doc_address) in top_docs {
-        let retrieved_doc = searcher.doc(doc_address)?;
-        let html = document_to_html(&retrieved_doc, &schema);
-        let html_without_quotes = html.replace(", ", "");
-        results.push(html_without_quotes)
+let mut scored_results = Vec::new();
+for (mut score, doc_address) in top_docs {
+    let retrieved_doc = searcher.doc(doc_address)?;
+    let html = document_to_html(&retrieved_doc, &schema);
+    let html_without_quotes = html.replace(", ", "");
+    if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
+        if url.contains("reddit.com") {
+            score *= 0.5; // Decrease score by 50%
+        }
     }
-    for result in &results {
-        //println!("{}", result);
+    if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
+        if title.contains("Linux") {
+            score *= 5.0; // Increase score by 500%
+        }
     }
+    scored_results.push((score, html_without_quotes));
+}
 
-    tantivy_renderer(&results);
+// Sort the results by score in descending order
+scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unwrap());
+
+// Extract the html_without_quotes for each pair
+let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
+
+tantivy_renderer(&results);
 
     let results_str = results.join("\n");
     //println!("{}", results_str);
