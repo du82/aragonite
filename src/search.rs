@@ -230,22 +230,7 @@ scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unw
 // Extract the html_without_quotes for each pair
 let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
 
-tantivy_renderer(&results);
-
-    let results_str = results.join("\n");
-    //println!("{}", results_str);
-    Ok(results)
-}
-
-pub fn tantivy_renderer(results: &Vec<String>) {
-    for result in results {
-        let result_without_json_formatting = result.replace("{", "")
-            .replace("}", "")
-            .replace(":", "")
-            .replace("\"", "")
-            .replace(", ", "");
-        //println!("{}", result_without_json_formatting);
-    }
+Ok(results)
 }
 
 use std::collections::HashMap;
