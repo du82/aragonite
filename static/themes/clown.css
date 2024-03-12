@@ -177,6 +177,25 @@
         line-height: 1.2;
     }
 
+    .pill {
+        cursor: pointer;
+        background-color: #251a22;
+        color: #F425A6;
+        border-color: #F425A6;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 16px;
+        width: fit-content;
+        margin-right: 5px;
+    }
+    
+    .pill[type="submit"]:hover {
+        background-color: #360f58;
+        color: #cdd5ff;
+    }
+
     .border-box {
         border-color: rgb(226, 255, 4);
         border-width: 2px;
