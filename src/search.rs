@@ -53,9 +53,25 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                         "results"
                     };
                     let mut search_results_new = format!("<div class='results-container'>{:?}</div>", results);
-                    //let search_results_footer = format!(
-                    //    "<div class='footer-container'><div class='footer-box'><p>{:?}</p></div></div>", results
-                    //);
+                    let search_results_footer = format!(
+                        "<footer>
+                        <div class='footer-container'>
+                            <a href='about'>
+                            About Us
+                            </a>|
+                            <a href='privacy-policy'>
+                            Privacy Policy
+                            </a>|
+                            <a href='careers'>
+                            Careers
+                            </a>|
+                            <a href='donate'>
+                            Donate
+                            </a>
+                            <p>@StillNeedsAname, All rights reserved</p>
+                        </div>
+                    </footer>"
+                    );
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
@@ -63,7 +79,7 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results_new = search_results_new.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
-                    contents = format!("{}{}", contents, search_results_new);
+                    contents = format!("{}{}{}", contents, search_results_new, search_results_footer);
                     Ok(Html(contents))
                 },
                 None => Err(Redirect::to("/"))

@@ -224,11 +224,7 @@
         max-width: fit-content;
     }
     
-    .footer-container {
-        flex-direction: column;
-        margin-left: 100px;
-        max-width: fit-content;
-    }
+    
     
     .footer-box {
         height: fit-content;
@@ -276,4 +272,16 @@
     .donate-link:hover {
         color: #fee67e;
         text-decoration: none;
+    }
+
+    footer {
+        border-top: solid #3b3b3b;
+        border-top-width: 1px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        margin-left: 100px;
+        margin-top: 10px;
+        max-width: fit-content;
     }
