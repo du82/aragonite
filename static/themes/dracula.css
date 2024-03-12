@@ -165,7 +165,8 @@
         height: fit-content;
         width: 550px;
         padding: 10px 10px 10px 10px;
-        word-wrap: break-word;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .search-result-description {
