@@ -166,6 +166,12 @@
         width: 550px;
         padding: 10px 10px 10px 10px;
         word-wrap: break-word;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .search-result-description {
+        margin-bottom: 0px;
     }
 
     .search-result-url-row {
@@ -174,6 +180,11 @@
 
     .search-result-url {
         color: #8d8d8d;
+    }
+
+    .search-result-related-row {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .more-info {

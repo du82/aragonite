@@ -436,12 +436,12 @@ status = "Operational"
 category = "software"
 tags = ["privacy", "chat app", "messenger", "warrant canary"]
 
-["https://www.wikipedia.org/"]
+["https://en.wikipedia.org/"]
 title = "English Wikipedia"
 description = "Wikipedia is a free-content online encyclopedia written and maintained by a community of volunteers, known as Wikipedians, through open collaboration and the use of the wiki-based editing system MediaWiki."
 year_published = 2018
 year_updated = 2024
-clearnet = "https://www.wikipedia.org/"
+clearnet = "https://en.wikipedia.org/"
 status = "Operational"
 category = "wiki"
 tags = ["open source", "research", "information"]

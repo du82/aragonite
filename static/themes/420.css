@@ -152,8 +152,17 @@
         padding: 5px 10px 5px 10px;
     }
 
+    .search-result-description {
+        margin-bottom: 0px;
+    }
+
     .search-result-url-row {
         margin: 0;
+    }
+
+    .search-result-related-row {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .more-info {
