@@ -204,23 +204,25 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
     // Collectors
     let top_docs = searcher.search(&query, &TopDocs::with_limit(25))?;
-let mut scored_results = Vec::new();
-for (mut score, doc_address) in top_docs {
-    let retrieved_doc = searcher.doc(doc_address)?;
-    let html = document_to_html(&retrieved_doc, &schema);
-    let html_without_quotes = html.replace(", ", "");
-    if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
-        if url.contains("reddit.com") {
-            score *= 0.5; // Decrease score by 50%
+    let mut scored_results = Vec::new();
+    for (mut score, doc_address) in top_docs {
+        let retrieved_doc = searcher.doc(doc_address)?;
+        let html = document_to_html(&retrieved_doc, &schema);
+        let html_without_quotes = html.replace(", ", "");
+
+        // Modify the search ranking based on the content
+        if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
+            if url.contains("reddit.com") || url.contains("quora.com") {
+                score *= 0.5; // Decrease score by 50%
+            }
         }
+        //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
+        //    if title.contains("Linux") {
+        //        score *= 5.0; // Increase score by 500%
+        //   }
+        //}
+        scored_results.push((score, html_without_quotes));
     }
-    if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
-        if title.contains("Linux") {
-            score *= 5.0; // Increase score by 500%
-        }
-    }
-    scored_results.push((score, html_without_quotes));
-}
 
 // Sort the results by score in descending order
 scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unwrap());
