@@ -4,9 +4,11 @@ use rocket::response::Redirect;
 use rocket::response::NamedFile;
 use std::path::Path;
 
+// -----Routes-----
+
 #[get("/")]
 pub fn index() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/landing.html"))
+    NamedFile::open(Path::new("static/pages/landing.html"))
 }
 
 #[get("/images")]
@@ -41,8 +43,30 @@ pub fn dw() -> Result<NamedFile, std::io::Error> {
 
 #[get("/donate")]
 pub fn donate() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/donate.html"))
+    NamedFile::open(Path::new("static/pages/donate.html"))
 }
+
+#[get("/about")]
+pub fn about() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/about.html"))
+}
+
+#[get("/privacy")]
+pub fn privacy() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/privacy.html"))
+}
+
+#[get("/tos")]
+pub fn tos() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/tos.html"))
+}
+
+#[get("/jobs")]
+pub fn jobs() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/jobs.html"))
+}
+
+// -----Themes-----
 
 #[get("/themes/light.css")]
 pub fn light_theme() -> Result<NamedFile, std::io::Error> {
@@ -88,7 +112,6 @@ pub fn weed_theme() -> Result<NamedFile, std::io::Error> {
 pub fn monokai_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/monokai.css"))
 }
-
 
 #[get("/themes/ristretto.css")]
 pub fn ristretto_theme() -> Result<NamedFile, std::io::Error> {

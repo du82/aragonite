@@ -14,6 +14,10 @@ fn main() {
         .mount("/", routes![
             auth::index,
             auth::donate,
+            auth::about,
+            auth::privacy,
+            auth::tos,
+            auth::jobs,
             auth::images, 
             auth::videos,
             auth::news,
