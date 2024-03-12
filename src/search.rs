@@ -15,6 +15,12 @@ use tantivy::schema::{Schema, FAST, STORED, TEXT};
 use tantivy::Document;
 use tantivy::Index;
 use tantivy::ReloadPolicy;
+use tantivy::query::BooleanQuery;
+use tantivy::query::Occur;
+use tantivy::query::Query;
+use tantivy::Term;
+use tantivy::query::TermQuery;
+use tantivy::schema::IndexRecordOption;
 
 #[derive(FromForm)]
 struct SearchData {
@@ -52,7 +58,7 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     } else {
                         "results"
                     };
-                    let mut search_results_new = format!("<div class='results-container'>{:?}</div>", results);
+                    let mut search_results = format!("<div class='results-container'>{:?}</div>", results);
                     let search_results_footer = format!(
                         "<footer>
                         <div class='footer-container'>
@@ -78,8 +84,8 @@ pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, R
                     let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
-                    search_results_new = search_results_new.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
-                    contents = format!("{}{}{}", contents, search_results_new, search_results_footer);
+                    search_results = search_results.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
+                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
                     Ok(Html(contents))
                 },
                 None => Err(Redirect::to("/"))
@@ -200,10 +206,77 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
     // Querying the index
     let query_parser = QueryParser::for_index(&index, vec![title, description, author, category, tags, url]);
-    let query = query_parser.parse_query(query)?;
+    
+    
+    
+    
+    // Split the query into words
+    let words: Vec<&str> = query.split_whitespace().collect();
+
+    // Separate the words to include, exclude, and mandatory
+    let (include_words, exclude_words, mandatory_words, field_queries): (Vec<&str>, Vec<&str>, Vec<&str>, Vec<(String, String)>) = words.iter().fold((Vec::new(), Vec::new(), Vec::new(), Vec::new()), |(mut include, mut exclude, mut mandatory, mut field), &word| {
+        if word.starts_with('-') {
+            exclude.push(&word[1..]);
+        } else if word.starts_with('+') {
+            mandatory.push(&word[1..]);
+        } else if word.contains(':') {
+            let mut split = word.splitn(2, ':');
+            let field_name = split.next().unwrap().to_string();
+            let field_value = split.next().unwrap_or("").to_string();
+            field.push((field_name, field_value));
+        } else {
+            include.push(word);
+        }
+        (include, exclude, mandatory, field)
+    });
+
+    // Create a query for the words to include
+    let include_query = if !include_words.is_empty() {
+        Some(query_parser.parse_query(&include_words.join(" "))?)
+    } else {
+        None
+    };
+
+    // Create a query for the words to exclude
+    let exclude_query = if !exclude_words.is_empty() {
+        Some(query_parser.parse_query(&exclude_words.join(" "))?)
+    } else {
+        None
+    };
+
+    // Create a query for the mandatory words
+    let mandatory_query = if !mandatory_words.is_empty() {
+        Some(query_parser.parse_query(&mandatory_words.join(" "))?)
+    } else {
+        None
+    };
+
+    // Combine the queries
+    let mut final_query: Vec<(Occur, Box<dyn Query>)> = Vec::new();
+
+    if let Some(include_query) = include_query {
+        final_query.push((Occur::Should, include_query));
+    }
+
+    if let Some(exclude_query) = exclude_query {
+        final_query.push((Occur::MustNot, exclude_query));
+    }
+
+    if let Some(mandatory_query) = mandatory_query {
+        final_query.push((Occur::Must, mandatory_query));
+    }
+
+    for (field_name, field_value) in field_queries {
+        let field = schema.get_field(&field_name).map_err(|_| tantivy::TantivyError::SchemaError(format!("Unknown field: {}", field_name)))?;
+        let term = Term::from_field_text(field, &field_value);
+        let field_query = TermQuery::new(term, IndexRecordOption::Basic);
+        final_query.push((Occur::Must, Box::new(field_query)));
+    }
+
+    let final_query = BooleanQuery::from(final_query);
 
     // Collectors
-    let top_docs = searcher.search(&query, &TopDocs::with_limit(25))?;
+    let top_docs = searcher.search(&final_query, &TopDocs::with_limit(25))?;
     let mut scored_results = Vec::new();
     for (mut score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
