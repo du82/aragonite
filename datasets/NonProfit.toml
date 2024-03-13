@@ -1,0 +1,63 @@
+["https://water.org/"]
+title = "Water.org: A Global Charity for Water & Sanitation | Water.org"
+description = "Water.org is a global nonprofit organization working to bring water and sanitation to the world. We want to make it safe, accessible, and cost-effective."
+clearnet = "https://water.org/"
+status = "Operational"
+founding_date = 2009
+nonprofit_status = "Nonprofit501c20"
+category = "nonprofit"
+tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+
+["https://www.kiva.org/"]
+title = "Make a loan, change a life | Kiva"
+description = "Kiva lets you lend as little as $25 to entrepreneurs and causes around the world. Join Kiva's community of 1.9M lenders and support borrowers with a 96% repayment rate."
+clearnet = "https://www.kiva.org/"
+status = "Operational"
+founding_date = 2005
+nonprofit_status = "Nonprofit501c20"
+category = "nonprofit"
+tags = ["microfinance", "charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+
+["https://sharethemeal.org/"]
+title = "Feed people in need | ShareTheMeal | Charity donate"
+description = "Share meals with people in need, and the UN World Food Programme delivers them."
+clearnet = "https://sharethemeal.org/"
+status = "Operational"
+founding_date = 2014
+nonprofit_status = "NGO"
+parent_organization = "https://www.wfp.org/"
+category = "nonprofit"
+tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+
+["https://www.wfp.org/"]
+title = "UN World Food Programme (WFP)"
+description = "WFP provides food assistance and relief to over 160 million people in emergencies and conflicts worldwide. Learn about WFP's mission, activities, partners, numbers, stories and more."
+clearnet = "https://www.wfp.org/"
+status = "Operational"
+founding_date = 1961
+nonprofit_status = "NGO"
+sub_organization = "https://sharethemeal.org/"
+category = "nonprofit"
+tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+
+["https://www.fairtrade.net/"]
+title = "Fairtrade International"
+description = "Fairtrade International is a global movement that promotes fair and ethical trade with farmers and workers in developing countries. Learn about its policy, impact, products, producers and how to get involved as a consumer, producer or business."
+clearnet = "https://www.fairtrade.net/"
+status = "Operational"
+founding_date = 1997
+nonprofit_status = "multi-stakeholder association"
+sub_organization = "https://www.fairtradeamerica.org/"
+category = "nonprofit"
+tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+
+["https://www.fairtradeamerica.org/"]
+title = "Fairtrade America | Creating a More Equitable World | Fair Trade"
+description = "Issues like fair incomes, environmental practices and human rights are top of mind. Fairtrade Certification is a powerful way to prioritize the lives of farmers and workers in your supply chain, all while strengthening your relationship with shoppers. As the U.S. branch of the Fairtrade International,"
+clearnet = "https://www.fairtradeamerica.org/"
+status = "Operational"
+founding_date = 2012
+nonprofit_status = "Nonprofit501c20"
+parent_organization = "https://www.fairtrade.net/"
+category = "nonprofit"
+tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
