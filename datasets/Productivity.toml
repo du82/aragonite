@@ -4,6 +4,7 @@ description = "Privacy, simplified. Help Spread DuckDuckGo!"
 full_description = ""
 onion = "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
 clearnet = "https://duckduckgo.com"
+category = "productivity"
 tags = ["privacy", "search engines"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"]
@@ -12,6 +13,7 @@ description = "A better internet starts with privacy and freedom"
 full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"
 clearnet = "https://proton.me"
+category = "productivity"
 tags = ["privacy"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"]
@@ -20,6 +22,7 @@ description = "Secure email that protects your privacy"
 full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"
 clearnet = "https://protonmail.com/mail"
+category = "productivity"
 tags = ["privacy", "email"]
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"]
@@ -28,6 +31,7 @@ description = "End-to-end encryption ensures that no one, not even us, can acces
 full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"
 clearnet = "https://protonmail.com/drive"
+category = "productivity"
 tags = ["privacy", "storage"]
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
@@ -38,6 +42,7 @@ year_published = 2024
 year_updated = 2024
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"
 clearnet = "https://riseup.net"
+category = "productivity"
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"]
 title = "VPN - Riseup"
@@ -45,6 +50,7 @@ description = "Riseup offers Personal VPN service for censorship circumvention, 
 full_description = ""
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"
 clearnet = "https://riseup.net"
+category = "productivity"
 tags = ["privacy", "vpn"]
 
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
@@ -55,8 +61,8 @@ year_published = 2024
 year_updated = 2024
 onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
 clearnet = "https://archive.today"
-category = "archive"
-tags = ["archival", "storage"]
+category = "productivity"
+tags = ["archive", "archival", "storage"]
 
 ["https://www.canva.com"]
 title = "Canva: Visual Suite for Everyone"
@@ -72,6 +78,7 @@ description = "Gmail is email that's intuitive, efficient, and useful. 15 GB of 
 full_description = ""
 clearnet = "https://www.google.com/gmail/"
 status = "Operational"
+parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "email", "storage"]
 
@@ -81,5 +88,5 @@ description = "DeepL Translator is a neural machine translation service that was
 full_description = ""
 clearnet = "https://www.deepl.com/translator"
 status = "Operational"
-category = "software"
-tags = ["education", "productivity", "translation", "information", "research", "API"]
+category = "productivity"
+tags = ["software", "education", "productivity", "translation", "information", "research", "API"]

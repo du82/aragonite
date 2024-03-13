@@ -1,0 +1,51 @@
+["https://www.digitalocean.com/"]
+title = "DigitalOcean | Cloud Infrastructure for Developers"
+description = "DigitalOcean offers simple, powerful and cost-effective cloud solutions for startups and SMBs. Build, scale and grow your vision with predictable pricing, reliable platform and dedicated support."
+clearnet = "https://www.digitalocean.com/"
+status = "Operational"
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]
+
+["https://aws.amazon.com/"]
+title = "Cloud Computing Services - Amazon Web Services (AWS)"
+description = "AWS provides a range of cloud products and solutions for various industries and use cases. Learn how to build, train, and certify on AWS, and explore its global network of regions and availability zones."
+clearnet = "https://aws.amazon.com/"
+status = "Operational"
+parent_organization = "Amazon.com, Inc."
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]
+
+["https://azure.microsoft.com/en-us"]
+title = "Cloud Computing Services | Microsoft Azure"
+description = "Azure is a cloud platform that offers various services and tools for AI, cloud migration, data and analytics, app development, and more. Learn how Azure can help you adapt and thrive with customer stories, product features, and free trials."
+clearnet = "https://azure.microsoft.com/en-us"
+status = "Operational"
+parent_organization = "Microsoft Corporation"
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]
+
+["https://cloud.google.com"]
+title = "Cloud Computing Services | Google Cloud"
+description = "Google Cloud offers over 150 products and services for cloud computing, data analytics, AI and machine learning, and more. Learn how to build, deploy, and scale generative AI apps with Vertex AI and Duet AI."
+clearnet = "https://cloud.google.com"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]
+
+["https://www.linode.com/pricing/"]
+title = "Cloud Computing Services | Linode (now Akamai) Pricing"
+description = "Compare CPU, transfer, storage, and RAM bundled into one flat price for dedicated, shared, and high memory virtual machines. See the plans, prices, and features of Linode (now Akamai) cloud computing services."
+clearnet = "https://www.linode.com/pricing/"
+status = "Operational"
+parent_organization = "	Akamai Technologies"
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]
+
+["https://vercel.com/"]
+title = "Vercel: Build and deploy the best Web experiences with The Frontend Cloud."
+description = "Vercel is a platform that lets you build, scale, and secure a faster, personalized web with your favorite tools and frameworks. Deploy from Git or CLI, enjoy fast loading times, zero overhead, security, and collaboration with Vercel."
+clearnet = "https://vercel.com/"
+status = "Operational"
+category = "Cloud computing"
+tags = ["software", "developer", "servers", "hosting", "infrastructure"]

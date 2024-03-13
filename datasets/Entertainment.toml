@@ -4,8 +4,8 @@ description = "Netflix is a streaming service that offers a wide variety of awar
 full_description = ""
 clearnet = "https://www.netflix.com/"
 status = "Operational"
-category = "videos"
-tags = ["software", "education", "entertainment", "film", "media", "movies", "television", "subscription"]
+category = "entertainment"
+tags = ["videos", "software", "education", "entertainment", "film", "media", "movies", "television", "subscription"]
 
 ["https://odysee.com/"]
 title = "Odysee"
@@ -13,8 +13,8 @@ description = "Explore a whole universe of videos on Odysee from regular people 
 full_description = ""
 clearnet = "https://odysee.com/"
 status = "Operational"
-category = "videos"
-tags = ["software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+category = "entertainment"
+tags = ["videos", "livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
 
 ["https://rumble.com/"]
 title = "Rumble"
@@ -22,8 +22,8 @@ description = "Rumble is a video platform that features live streams, podcasts, 
 full_description = ""
 clearnet = "https://rumble.com/"
 status = "Operational"
-category = "videos"
-tags = ["livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+category = "entertainment"
+tags = ["videos", "livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
 
 ["https://www.twitch.tv"]
 title = "Twitch.tv - Official Site"
@@ -31,5 +31,5 @@ description = "Twitch is the world`s leading video platform and community for ga
 full_description = ""
 clearnet = "https://www.twitch.tv"
 status = "Operational"
-category = "livestream"
-tags = ["videos", "software", "music", "education", "tutorial", "games", "community", "research", "information", "entertainment"]
+category = "entertainment"
+tags = ["videos", "livestream", "software", "music", "education", "tutorial", "games", "community", "research", "information", "entertainment"]

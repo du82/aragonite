@@ -3,8 +3,9 @@ title = "YouTube"
 description = "Share your videos with friends, family, and the world."
 clearnet = "https://www.youtube.com/"
 status = "Operational"
+parent_organization = "Alphabet Inc."
 category = "videos"
-tags = ["software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+tags = ["livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
 
 ["https://www.youtube.com/@veritasium/videos"]
 title = "Veratasium - YouTube"

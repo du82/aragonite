@@ -25,7 +25,7 @@ clearnet = "https://sharethemeal.org/"
 status = "Operational"
 founding_date = 2014
 nonprofit_status = "NGO"
-parent_organization = "https://www.wfp.org/"
+parent_organization = "UN World Food Programme"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
 
@@ -36,7 +36,7 @@ clearnet = "https://www.wfp.org/"
 status = "Operational"
 founding_date = 1961
 nonprofit_status = "NGO"
-sub_organization = "https://sharethemeal.org/"
+sub_organization = "ShareTheMeal"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
 
@@ -47,7 +47,7 @@ clearnet = "https://www.fairtrade.net/"
 status = "Operational"
 founding_date = 1997
 nonprofit_status = "multi-stakeholder association"
-sub_organization = "https://www.fairtradeamerica.org/"
+sub_organization = "Fairtrade America"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
 
@@ -58,6 +58,6 @@ clearnet = "https://www.fairtradeamerica.org/"
 status = "Operational"
 founding_date = 2012
 nonprofit_status = "Nonprofit501c20"
-parent_organization = "https://www.fairtrade.net/"
+parent_organization = "Fairtrade International"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]

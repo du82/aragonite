@@ -5,7 +5,7 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://www.torproject.org/"
 status = "Operational"
-category = "software"
+category = "technology"
 tags = ["software", "open source", "privacy", "anonymity"]
 
 ["https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"]
@@ -15,8 +15,9 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"
 status = "Operational"
-category = "digital downloads"
-tags = ["software", "open source", "privacy", "anonymity"]
+parent_organization = "Google LLC"
+category = "technology"
+tags = ["software", "open source", "privacy", "anonymity", "digital downloads"]
 
 ["https://speed.cloudflare.com/"]
 title = "Internet speed test - Cloudflare"
@@ -25,17 +26,8 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://speed.cloudflare.com/"
 status = "Operational"
-category = "software"
-tags = ["testing", "test", "speed test"]
-
-["https://github.com/"]
-title = "GitHub: Let's build from here · GitHub"
-description = "GitHub is the world's leading platform for software development, collaboration, and security. Sign up for GitHub to access features like GitHub Actions, Codespaces, Mobile, Sponsors, and more."
-full_description = ""
-clearnet = "https://github.com/"
-status = "Operational"
-category = "software"
-tags = ["developer", "programming", "productivity", "community", "open source", "education"]
+category = "technology"
+tags = ["software", "testing", "test", "speed test"]
 
 ["https://etherscan.io/"]
 title = "Ethereum (ETH) Blockchain Explorer - Etherscan"
@@ -43,44 +35,8 @@ description = "Etherscan allows you to explore and search the Ethereum blockchai
 full_description = ""
 clearnet = "https://etherscan.io/"
 status = "Operational"
-category = "cryptocurrency"
-tags = ["ethereum", "software"]
-
-["https://vuejs.org/"]
-title = "Vue.js - The Progressive JavaScript Framework | Vue.js"
-description = "Vue.js is an approachable, performant and versatile framework for building web user interfaces. It builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation."
-full_description = ""
-clearnet = "https://vuejs.org/"
-status = "Operational"
-category = "software"
-tags = ["framework", "javascript", "programming"]
-
-["https://crates.io/"]
-title = "crates.io: Rust Package Registry"
-description = "crates.io is the official site for finding, installing and publishing Rust crates. Cargo is the command-line tool that manages your Rust projects and dependencies."
-full_description = ""
-clearnet = "https://crates.io/"
-status = "Operational"
-category = "software"
-tags = ["rust", "developer", "programming"]
-
-["https://huggingface.co/"]
-title = "Hugging Face - The AI community building the future."
-description = "More than 50,000 organizations are using Hugging Face Allen Institute for AI."
-full_description = ""
-clearnet = "https://huggingface.co/"
-status = "Operational"
-category = "software"
-tags = ["developer", "programming", "community", "open source"]
-
-["https://www.digitalocean.com/"]
-title = "DigitalOcean | Cloud Infrastructure for Developers"
-description = "DigitalOcean offers simple, powerful and cost-effective cloud solutions for startups and SMBs. Build, scale and grow your vision with predictable pricing, reliable platform and dedicated support."
-full_description = ""
-clearnet = "https://www.digitalocean.com/"
-status = "Operational"
-category = "software"
-tags = ["developer", "servers", "cloud", "infrastructure"]
+category = "technology"
+tags = ["cryptocurrency", "ethereum", "software"]
 
 ["https://status.app"]
 title = "Status - Make the jump to web3"
@@ -89,7 +45,7 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://status.app"
 status = "Operational"
-category = "software"
+category = "technology"
 tags = ["software", "open source"]
 
 ["https://status.app/manifesto"]
@@ -99,7 +55,7 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://status.app/manifesto"
 status = "Operational"
-category = "software"
+category = "technology"
 tags = ["software", "open source", "manifesto"]
 
 ["https://status.app/blog/announcing-keycard-v2-enhanced-security-and-a-striking-new-look"]
@@ -109,8 +65,8 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://status.app/blog/announcing-keycard-v2-enhanced-security-and-a-striking-new-look"
 status = "Operational"
-category = "news"
-tags = ["software", "open source", "blog post"]
+category = "technology"
+tags = ["news", "software", "open source", "blog post"]
 
 ["https://status.app/blog/tokenised-community-ownership-in-status-2-0"]
 title = "Tokenised Community Ownership in Status 2.0"
@@ -119,8 +75,8 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://status.app/blog/tokenised-community-ownership-in-status-2-0"
 status = "Operational"
-category = "news"
-tags = ["software", "open source", "blog post", "cryptocurrency"]
+category = "technology"
+tags = ["news", "software", "open source", "blog post", "cryptocurrency"]
 
 ["https://status.app/team"]
 title = "Status - Team"
@@ -129,7 +85,7 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://status.app/team"
 status = "Operational"
-category = "software"
+category = "technology"
 tags = ["software", "open source", "about", "cryptocurrency"]
 
 ["https://signal.org"]
@@ -139,8 +95,8 @@ year_published = 2018
 year_updated = 2024
 clearnet = "https://signal.org"
 status = "Operational"
-category = "software"
-tags = ["privacy", "chat app", "messenger"]
+category = "technology"
+tags = ["software", "privacy", "chat app", "messenger"]
 
 ["https://signal.org/download/"]
 title = "Signal >> Download Signal"
@@ -149,8 +105,8 @@ year_published = 2018
 year_updated = 2024
 clearnet = "https://signal.org/download/"
 status = "Operational"
-category = "digital downloads"
-tags = ["privacy", "chat app", "messenger", "download"]
+category = "technology"
+tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
 
 ["https://signal.org/download/android/"]
 title = "Signal >> Download Signal for Android"
@@ -159,8 +115,8 @@ year_published = 2018
 year_updated = 2024
 clearnet = "https://signal.org/download/android/"
 status = "Operational"
-category = "digital downloads"
-tags = ["privacy", "chat app", "messenger", "download"]
+category = "technology"
+tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
 
 ["https://signal.org/blog/"]
 title = "Signal >> Blog"
@@ -169,7 +125,7 @@ year_published = 2018
 year_updated = 2024
 clearnet = "https://signal.org/blog/"
 status = "Operational"
-category = "blog"
+category = "technology"
 tags = ["privacy", "chat app", "messenger", "blog"]
 
 ["https://signal.org/bigbrother/"]
@@ -179,5 +135,5 @@ year_published = 2018
 year_updated = 2024
 clearnet = "https://signal.org/blog/"
 status = "Operational"
-category = "software"
-tags = ["privacy", "chat app", "messenger", "warrant canary"]
+category = "technology"
+tags = ["software", "privacy", "chat app", "messenger", "warrant canary"]
