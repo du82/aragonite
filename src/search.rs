@@ -207,7 +207,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
             }
         }
     }
-
     println!("Indexing complete!");
     index
     } else {
