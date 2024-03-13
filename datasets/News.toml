@@ -1,0 +1,44 @@
+["https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/"]
+title = "BBC - Home"
+description = "Welcome to the BBC"
+full_description = ""
+year_published = 2024
+year_updated = 2024
+onion = "https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/"
+clearnet = "https://bbc.com"
+category = "news"
+
+["https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"]
+title = "What is the dark web? How to use Tor to access the dark web"
+description = "Tor refers to the onion router, which is a network that bounces your traffic through random nodes, wrapping it in encryption each time, making it difficult to track it's managed and accessed via the Tor browser."
+year_published = 2019
+year_updated = 2019
+clearnet = "https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"
+status = "Operational"
+category = "article"
+tags = ["privacy", "anonymity", "tor", "tutorial"]
+
+["https://news.ycombinator.com/"]
+title = "Hacker News"
+description = "Hacker News is a website where people can share and discuss the latest news and links from the tech community. You can find topics such as OpenAI, Meta, electric vehicles, text adventures, and more. You can also vote, comment, and upvote other posts."
+full_description = ""
+clearnet = "https://news.ycombinator.com/"
+status = "Operational"
+category = "news"
+tags = ["research", "information", "community", "discussion", "software", "tech", "startup"]
+
+["https://www.theverge.com/"]
+title = "The Verge"
+description = "The Verge covers the latest trends and innovations in technology, culture, and entertainment."
+clearnet = "https://www.theverge.com/"
+status = "Operational"
+category = "news"
+tags = ["information", "electronics", "software", "tech", "startup", "articles"]
+
+["https://www.reuters.com/"]
+title = "Reuters | Breaking International News & Views"
+description = "Reuters, the news and media division of Thomson Reuters, is the world's largest multimedia news provider, reaching billions of people worldwide every day."
+clearnet = "https://www.reuters.com/"
+status = "Operational"
+category = "news"
+tags = ["information", "global", "current news", "media", "articles"]
