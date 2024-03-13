@@ -31,11 +31,6 @@ pub fn obscure() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/serps/obscure.html"))
 }
 
-#[get("/porn")]
-pub fn porn() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/porn.html"))
-}
-
 #[get("/dw")]
 pub fn dw() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/serps/dw.html"))

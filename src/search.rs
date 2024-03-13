@@ -1,4 +1,4 @@
-use rocket::http::Cookies;
+
 use rocket::request::{Form, FromForm};
 use rocket::response::content::Html;
 use rocket::response::Redirect;
@@ -31,13 +31,24 @@ struct SearchForm {
     query: String,
 }
 
+use std::time::SystemTime;
+
+#[get("/random")]
+pub fn random_search() -> Result<Redirect, std::io::Error> {
+    let content = fs::read_to_string("random.txt")?;
+    let queries: Vec<&str> = content.lines().collect();
+    let time = SystemTime::now().duration_since(SystemTime::UNIX_EPOCH).unwrap().as_secs();
+    let query = queries[(time as usize) % queries.len()];
+    Ok(Redirect::to(uri!(search_get: q = query.to_string())))
+}
+
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
     Redirect::to(uri!(search_get: q = search_form.into_inner().query))
 }
 
 #[get("/search?<q>")]
-pub fn search_get(q: Option<String>, cookies: Cookies) -> Result<Html<String>, Redirect> {
+pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok(results) => {
             //println!("{:#?}", results);

@@ -21,7 +21,6 @@ fn main() {
             auth::images, 
             auth::videos,
             auth::news,
-            auth::porn,
             auth::obscure,
             auth::dw,
             auth::theme_selector,
@@ -38,7 +37,8 @@ fn main() {
             search::search_get, 
             search::search_post, 
             search::news_get,
-            search::news_post
+            search::news_post,
+            search::random_search,
             ]
         )
         .attach(ThemeMiddleware)
