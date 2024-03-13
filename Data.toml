@@ -472,75 +472,533 @@ status = "Operational"
 category = "wiki"
 tags = ["open source", "research", "information"]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Cat 1
-["fluffy.onion"]
-title = "Fluffy's Corner"
-description = "A blog dedicated to Fluffy, the most adorable cat on the dark web."
+["https://www.airbnb.com/"]
+title = "Airbnb | Vacation rentals, cabins, beach houses, & more"
+description = "Find the perfect place to stay at an amazing price in 191 countries. Belong anywhere with Airbnb."
 full_description = ""
-year_published = 2022
-year_updated = 2022
-clearnet = "http://fluffy.onion"
+clearnet = "https://www.airbnb.com/"
 status = "Operational"
-category = "blogs"
-tags = ["cats", "pets", "blogs"]
+category = "travel"
+tags = ["vacation", "hotel", "rent", "startup"]
 
-# Cat 2
-["whiskers.onion"]
-title = "Whiskers' World"
-description = "Join Whiskers on his daily adventures and explore the world from a cat's perspective."
+["https://www.google.com/travel/flights/"]
+title = "Book flights with confidence | Google Flights"
+description = "Find cheap flights and airline tickets. Google Flights helps you compare and track airfares on hundreds of airlines to help you find the best flight deals."
 full_description = ""
-year_published = 2021
-year_updated = 2022
-clearnet = "http://whiskers.onion"
+clearnet = "https://www.google.com/travel/flights/"
 status = "Operational"
-category = "blogs"
-tags = ["cats", "adventures", "pets"]
+category = "travel"
+tags = ["vacation", "flight", "hotel", "rent"]
 
-# Cat 3
-["mittens.onion"]
-title = "Mittens' Mews"
-description = "Mittens shares her thoughts and mews on life, food, and everything in between."
+["https://www.united.com/en/us"]
+title = "United Airlines - Airline Tickets, Travel Deals and Flights"
+description = "Find flights. Find your travel credits. Find the latest travel deals on flights, hotels and rental cars. Book airline tickets and MileagePlus award tickets to worldwide destinations."
 full_description = ""
-year_published = 2020
-year_updated = 2022
-clearnet = "http://mittens.onion"
+clearnet = "https://www.united.com/en/us"
 status = "Operational"
-category = "blogs"
-tags = ["cats", "thoughts", "pets"]
+category = "travel"
+tags = ["vacation", "flight", "hotel", "rent"]
 
-# Cat 4
-["shadow.onion"]
-title = "Shadow's Secrets"
-description = "Shadow, the mysterious black cat, shares his secrets and wisdom."
+["https://www.jetblue.com/"]
+title = "JetBlue"
+description = "JetBlue is a leading airline that offers flights to 90+ destinations with free inflight entertainment, free brand-name snacks and drinks, lots of legroom and award-winning service. Whether you are looking for a flight, a vacation package, or a destination guide, JetBlue has it all."
 full_description = ""
-year_published = 2023
-year_updated = 2023
-clearnet = "http://shadow.onion"
+clearnet = "https://www.jetblue.com/"
 status = "Operational"
-category = "blogs"
-tags = ["cats", "mystery", "pets"]
+category = "travel"
+tags = ["vacation", "flight", "hotel", "rent"]
 
-# Cat 5
-["patches.onion"]
-title = "Patches' Purrfections"
-description = "Patches, the calico cat, showcases her purrfect life and style."
+["https://www.delta.com/"]
+title = "Delta Air Lines - Airline Tickets and Airfare to Worldwide Destinations"
+description = "Delta Air Lines. Book a trip. Check in, change seats, track your bag, check flight status, and more."
 full_description = ""
-year_published = 2022
-year_updated = 2022
-clearnet = "http://patches.onion"
+clearnet = "https://www.delta.com/"
 status = "Operational"
-category = "blogs"
-tags = ["cats", "style", "pets"]
+category = "travel"
+tags = ["vacation", "flight", "hotel", "rent"]
+
+["https://www.booking.com/"]
+title = "Booking.com | Official site | The best hotels, flights, car rentals, & more"
+description = "Find deals for any season, from cozy bed & breakfasts to luxury hotels. Compare and book flights with flexibility, and explore trending destinations around the world."
+full_description = ""
+clearnet = "https://www.booking.com/"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "flight", "hotel", "rent"]
+
+["https://www.oneworldobservatory.com/"]
+title = "One World Observatory"
+description = "Best of New York City Attractions"
+full_description = "One World Observatory is located at One World Trade Center at the corner of West and Vesey Streets in Downtown Manhattan. One World Trade Center 117 West Street New York, New York 10007. Open Daily 9:00 AM - 9:00 PM Hours change seasonally*"
+clearnet = "https://www.oneworldobservatory.com/"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "urban"]
+
+["https://www.si.edu/"]
+title = "Smithsonian Institution | Home"
+description = "Explore the world's largest museum, education, and research complex with 21 museums, 9 research centers, and affiliates. Discover millions of digital items, podcasts, events, exhibitions, and more."
+full_description = ""
+clearnet = "https://www.si.edu/"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "museum"]
+
+["https://www.si.edu/Museums/national-zoo"]
+title = "Current Exhibitions | Smithsonian Institution"
+description = "Always free of charge, the Smithsonian's National Zoo is one of Washington D.C.'s, and the Smithsonian's, most popular tourist destinations, with more than 2 million visitors from all over the world each year."
+full_description = ""
+clearnet = "https://www.si.edu/Museums/national-zoo"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "museum"]
+
+["https://www.fws.gov/refuge/jn-ding-darling"]
+title = "J.N. Ding Darling National Wildlife Refuge"
+description = "Learn about the history, wildlife, and activities of this refuge on the subtropical barrier island of Sanibel, Florida. Explore the Wildlife Drive, the Visitor and Education Center, and the diverse habitats of migratory birds and endangered species."
+full_description = ""
+clearnet = "https://www.fws.gov/refuge/jn-ding-darling"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "wildlife"]
+
+["https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/"]
+title = "Travel Advisories"
+description = "TRAVEL ADVISORIES AND ALERTS: THE DETAILS Enroll in STEP. Subscribe to get up-to-date safety and security information and help us reach you in an emergency abroad."
+full_description = "Please enroll in the Smart Traveler Enrollment Program (STEP) to receive alerts and be located in an emergency. Please call 1 (888) 407-4747 (U.S. and Canada) or 1 (202) 501-4444 (overseas) or contact the nearest U.S. embassy or consulate."
+clearnet = "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/"
+status = "Operational"
+category = "travel"
+tags = ["vacation"]
+
+["https://www.eaa.org/en/airventure"]
+title = "EAA AirVenture Oshkosh | Oshkosh Air Show | Oshkosh, WI"
+description = "Official website of the EAA AirVenture Oshkosh fly-in convention in Oshkosh, Wisconsin, attracting more than 600,000 people and 10,000 airplanes"
+full_description = ""
+clearnet = "https://www.eaa.org/en/airventure"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "flight", "museum"]
+
+["https://www.choicehotels.com/country-inn-suites"]
+title = "Country Inn & Suites® by Radisson - Official Site - Choice Hotels"
+description = "At Country Inn & Suites® by Choice Hotels, we offer amenities like free breakfast & free Wi-Fi. Whether for business or leisure, relax & stay awhile."
+full_description = ""
+clearnet = "https://www.choicehotels.com/country-inn-suites"
+status = "Operational"
+category = "travel"
+tags = ["vacation", "hotel"]
+
+["https://unsplash.com"]
+title = "Beautiful Free Images & Pictures | Unsplash"
+description = "Unsplash is the internet's source for visuals powered by creators everywhere. Download and use beautiful, free images and photos for any project without royalty or stock fees."
+full_description = ""
+clearnet = "https://unsplash.com"
+status = "Operational"
+category = "images"
+tags = ["community", "download"]
+
+["https://www.deepl.com/translator"]
+title = "DeepL Translate: The world's most accurate translator"
+description = "DeepL Translator is a neural machine translation service that was launched in August 2017 and is owned by Cologne-based DeepL SE."
+full_description = ""
+clearnet = "https://www.deepl.com/translator"
+status = "Operational"
+category = "software"
+tags = ["education", "productivity", "translation", "information", "research", "API"]
+
+["https://rust-book.cs.brown.edu/"]
+title = "The Rust Programming Language - Brown University"
+description = "The Rust Programming Language. by Steve Klabnik and Carol Nichols, with contributions from the Rust Community."
+full_description = ""
+clearnet = "https://rust-book.cs.brown.edu/"
+status = "Operational"
+category = "education"
+tags = ["rust", "developer", "software"]
+
+["https://www.princetonreview.com/medical/mcat-test-prep"]
+title = "MCAT Prep Options | The Princeton Review"
+description = "Find your best fit for MCAT success with various courses, tutoring, and practice materials. The Princeton Review guarantees score improvement and has top-rated instructors and AAMC materials."
+full_description = ""
+clearnet = "https://www.princetonreview.com/medical/mcat-test-prep"
+status = "Operational"
+category = "education"
+tags = ["college", "exam", "information"]
+
+["https://www.princetonreview.com/law/lsat-test-prep"]
+title = "LSAT Test Prep with Results Guaranteed | The Princeton Review"
+description = "Choose from various courses and options to prepare for the LSAT exam, with official LSAC questions, expert instructors, and money back guarantee. Learn about the LSAT format changes, read student reviews, and get discounts and installment plans."
+full_description = ""
+clearnet = "https://www.princetonreview.com/law/lsat-test-prep"
+status = "Operational"
+category = "education"
+tags = ["college", "exam", "information"]
+
+["https://algs4.cs.princeton.edu/home/"]
+title = "Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne"
+description = "The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne [ Amazon · Pearson · InformIT ] surveys the most important algorithms and data structures in use today."
+full_description = ""
+clearnet = "https://algs4.cs.princeton.edu/home/"
+status = "Operational"
+category = "education"
+tags = ["software"]
+
+["https://www.babbel.com/"]
+title = "Language for Life - Babbel.com | Babbel"
+description = "Babbel is a language learning platform that offers app courses, live online classes, and content to help you speak a new language faster. Choose from Spanish, French, German, Italian and more, and join millions of satisfied users."
+full_description = ""
+clearnet = "https://www.babbel.com/"
+status = "Operational"
+category = "education"
+tags = ["software", "translation", "information"]
+
+["https://www.google.com/maps/"]
+title = "Google Maps"
+description = "Find local businesses, view maps and get driving directions in Google Maps."
+full_description = ""
+clearnet = "https://www.google.com/maps/"
+status = "Operational"
+category = "travel"
+tags = ["software", "vacation", "productivity"]
+
+["https://www.google.com/gmail/"]
+title = "Gmail - Email from Google"
+description = "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+full_description = ""
+clearnet = "https://www.google.com/gmail/"
+status = "Operational"
+category = "productivity"
+tags = ["software", "email", "storage"]
+
+["https://www.youtube.com/"]
+title = "YouTube"
+description = "Share your videos with friends, family, and the world."
+full_description = ""
+clearnet = "https://www.youtube.com/"
+status = "Operational"
+category = "videos"
+tags = ["software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+
+["https://www.netflix.com/"]
+title = "Netflix - Watch TV Shows Online, Watch Movies Online"
+description = "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want - all for one low monthly price."
+full_description = ""
+clearnet = "https://www.netflix.com/"
+status = "Operational"
+category = "videos"
+tags = ["software", "education", "entertainment", "film", "media", "movies", "television", "subscription"]
+
+["https://odysee.com/"]
+title = "Odysee"
+description = "Explore a whole universe of videos on Odysee from regular people just like you!"
+full_description = ""
+clearnet = "https://odysee.com/"
+status = "Operational"
+category = "videos"
+tags = ["software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+
+["https://rumble.com/"]
+title = "Rumble"
+description = "Rumble is a video platform that features live streams, podcasts, vlogs, sports, viral, and power slap content. Watch, upload, and monetize your videos on Rumble, or browse by categories, channels, and playlists."
+full_description = ""
+clearnet = "https://rumble.com/"
+status = "Operational"
+category = "videos"
+tags = ["livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information", "entertainment"]
+
+["https://www.twitch.tv"]
+title = "Twitch.tv - Official Site"
+description = "Twitch is the world`s leading video platform and community for gamers."
+full_description = ""
+clearnet = "https://www.twitch.tv"
+status = "Operational"
+category = "livestream"
+tags = ["videos", "software", "music", "education", "tutorial", "games", "community", "research", "information", "entertainment"]
+
+["https://github.com/"]
+title = "GitHub: Let's build from here · GitHub"
+description = "GitHub is the world's leading platform for software development, collaboration, and security. Sign up for GitHub to access features like GitHub Actions, Codespaces, Mobile, Sponsors, and more."
+full_description = ""
+clearnet = "https://github.com/"
+status = "Operational"
+category = "software"
+tags = ["developer", "programming", "productivity", "community", "open source", "education"]
+
+["https://etherscan.io/"]
+title = "Ethereum (ETH) Blockchain Explorer - Etherscan"
+description = "Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)."
+full_description = ""
+clearnet = "https://etherscan.io/"
+status = "Operational"
+category = "cryptocurrency"
+tags = ["ethereum", "software"]
+
+["https://vuejs.org/"]
+title = "Vue.js - The Progressive JavaScript Framework | Vue.js"
+description = "Vue.js is an approachable, performant and versatile framework for building web user interfaces. It builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation."
+full_description = ""
+clearnet = "https://vuejs.org/"
+status = "Operational"
+category = "software"
+tags = ["framework", "javascript", "programming"]
+
+["https://crates.io/"]
+title = "crates.io: Rust Package Registry"
+description = "crates.io is the official site for finding, installing and publishing Rust crates. Cargo is the command-line tool that manages your Rust projects and dependencies."
+full_description = ""
+clearnet = "https://crates.io/"
+status = "Operational"
+category = "software"
+tags = ["rust", "developer", "programming"]
+
+["https://huggingface.co/"]
+title = "Hugging Face - The AI community building the future."
+description = "More than 50,000 organizations are using Hugging Face Allen Institute for AI."
+full_description = ""
+clearnet = "https://huggingface.co/"
+status = "Operational"
+category = "software"
+tags = ["developer", "programming", "community", "open source"]
+
+["https://www.digitalocean.com/"]
+title = "DigitalOcean | Cloud Infrastructure for Developers"
+description = "DigitalOcean offers simple, powerful and cost-effective cloud solutions for startups and SMBs. Build, scale and grow your vision with predictable pricing, reliable platform and dedicated support."
+full_description = ""
+clearnet = "https://www.digitalocean.com/"
+status = "Operational"
+category = "software"
+tags = ["developer", "servers", "cloud", "infrastructure"]
+
+["https://www.amazon.com/"]
+title = "Amazon.com. Spend less. Smile more."
+description = "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime."
+full_description = "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the largest selection of everyday essentials and other products, including fashion, home, beauty, electronics, Alexa Devices, sporting goods, toys, automotive, pets, baby, books and more."
+clearnet = "https://www.amazon.com/"
+status = "Operational"
+category = "shopping"
+tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
+
+["https://www.walmart.com/"]
+title = "Walmart | Save Money. Live better."
+description = "Shop online for a wide range of products at low prices and enjoy free delivery with Walmart+ membership. Find deals on floor care, toys, furniture, personal care, sports, and more."
+full_description = ""
+clearnet = "https://www.walmart.com/"
+status = "Operational"
+category = "shopping"
+tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
+
+["https://www.microcenter.com/"]
+title = "Micro Center - Computer & Electronics Retailer - Shop Now"
+description = "Micro Center offers a wide range of products, from laptops and desktops to monitors and TVs, with in-store pickup and same-day tech support. Find top deals, build your own PC, or get expert advice on gaming, 3D printing, and more."
+full_description = ""
+clearnet = "https://www.microcenter.com/"
+status = "Operational"
+category = "shopping"
+tags = ["productivity", "ecommerce", "marketplace", "computers", "3D Print", "electronics"]
+
+["https://www.canva.com"]
+title = "Canva: Visual Suite for Everyone"
+description = "Try Canva for Teams, the all-in-one solution for teams of all sizes to create and collaborate together. Team folders help you stay organized, store brand assets, and manage content. Plan, create, schedule, and publish your social media posts directly from Canva."
+full_description = ""
+clearnet = "https://www.canva.com"
+status = "Operational"
+category = "productivity"
+tags = ["design", "software", "startup", "edit", "freemium", "subscription"]
+
+["https://www.chase.com/"]
+title = "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.com"
+description = "Chase offers a range of financial services, including credit cards, mortgages, auto loans, investing and retirement planning. You can also access your accounts, pay bills, transfer funds and more with Chase online."
+full_description = ""
+clearnet = "https://www.chase.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.bankofamerica.com/"]
+title = "Bank of America - Banking, Credit Cards, Loans and Merrill Investing"
+description = "Explore the products and services of Bank of America, including credit cards, checking accounts, loans and Merrill Investing. Learn how to achieve your financial goals with Better Money Habits® and secure, convenient banking with the mobile app."
+full_description = ""
+clearnet = "https://www.bankofamerica.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.citi.com/"]
+title = "Credit Cards, Banking, Mortgage, Personal Loans | Citi.com"
+description = "Citi.com offers a range of financial products and services, including personal loans, credit cards, checking and savings accounts, mortgage and investing options. Explore the benefits of Citi Financial Pathways, Costco Anywhere Visa Card, Diamond Preferred Card and more."
+full_description = ""
+clearnet = "https://www.citi.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.wellsfargoadvisors.com/"]
+title = "Wells Fargo Advisors: Financial Advisors, Investing, Retirement"
+description = "Wells Fargo Advisors offers financial advice, retirement planning, brokerage services and online trading. Find an advisor, access market commentary, listen to podcasts and learn about fraud prevention."
+full_description = ""
+clearnet = "https://www.wellsfargoadvisors.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.wellsfargo.com/"]
+title = "Wells Fargo Bank | Financial Services & Online Banking"
+description = "Wells Fargo offers a range of banking products and services, including checking and savings accounts, credit cards, home and personal loans, and investing. Learn how to simplify your life, manage your money, and access digital tools with Wells Fargo."
+full_description = ""
+clearnet = "https://www.wellsfargo.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.capitalone.com/"]
+title = "Capital One | Credit Cards, Checking, Savings & Auto Loans"
+description = "Capital One offers a range of financial products and services, such as credit cards, checking and savings accounts, auto loans, and online shopping tools. Explore your options, check your pre-approval status, and get tips on managing your money and credit."
+full_description = ""
+clearnet = "https://www.capitalone.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.americanexpress.com/"]
+title = "American Express Credit Cards, Rewards & Banking"
+description = "American Express is a global company that provides various financial services and products, such as credit cards, gift cards, rewards, travel, banking and insurance. Whether you are an individual or a business, you can find the right solution for your needs and enjoy exclusive benefits and offers."
+full_description = ""
+clearnet = "https://www.americanexpress.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.usbank.com/index.html"]
+title = "Consumer banking | Personal banking | U.S. Bank"
+description = "U.S. Bank offers a range of personal and business banking products, such as checking and savings accounts, credit cards, loans, mortgages, and wealth management. Find rates, apply online, and access mobile and online banking features."
+full_description = ""
+clearnet = "https://www.usbank.com/index.html"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://www.truist.com/"]
+title = "Truist Bank | Checking, Savings, Lending, and Financial Services"
+description = "Truist Bank offers checking, savings, credit cards, loans, mortgages, insurance, and investing products and services. Learn more about Truist's rewards, discounts, tips, app, and community impact."
+full_description = ""
+clearnet = "https://www.truist.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+
+["https://robinhood.com/"]
+title = "Commission-free Stock Trading & Investing App | Robinhood"
+description = "Robinhood offers a range of services to help you invest, trade, and earn money on your money. You can buy and sell stocks, crypto, options, and more, with no commissions, and access free stocks, cash sweep, and Stock Lending opportunities."
+full_description = ""
+clearnet = "https://robinhood.com/"
+status = "Operational"
+category = "finance"
+tags = ["cash", "interest rate", "investing", "investment", "money", "debit", "savings account", "software", "startup"]
+
+["https://venmo.com/"]
+title = "Venmo - Share Payments"
+description = "Venmo is a social payment app that lets you send and receive money with friends, shop at your favorite brands, and manage your money on Venmo. You can also get a Venmo Credit Card, Debit Card, and invest in crypto with Venmo."
+full_description = ""
+clearnet = "https://venmo.com/"
+status = "Operational"
+category = "finance"
+tags = ["payment", "cash", "money", "banking", "bills", "utility", "debit", "software"]
+
+["https://www.bls.gov/data/inflation_calculator.htm"]
+title = "CPI Inflation Calculator - U.S. Bureau of Labor Statistics"
+description = "Calculate the change in price of a good or service over a period of time using the Consumer Price Index for All Urban Consumers (CPI-U). The CPI-U measures the average change in prices of all goods and services purchased by urban households."
+full_description = ""
+clearnet = "https://www.bls.gov/data/inflation_calculator.htm"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+
+["https://fred.stlouisfed.org/series/fedfunds"]
+title = "Federal Funds Effective Rate (FEDFUNDS) | FRED | St. Louis Fed"
+description = "The federal funds rate is the interest rate at which banks trade federal funds overnight. It influences other interest rates and is set by the Federal Reserve to achieve its dual mandate of maximum employment and price stability."
+full_description = ""
+clearnet = "https://fred.stlouisfed.org/series/fedfunds"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+
+["https://www.newyorkfed.org/microeconomics/hhdc.html"]
+title = "Household Debt and Credit Report - FEDERAL RESERVE BANK of NEW YORK"
+description = "Total household debt rose by $212 billion to reach $17.5 trillion in the fourth quarter of 2023, according to the latest Quarterly Report on Household Debt and Credit. Credit card balances increased by $50 billion to $1.13 trillion over the quarter, while mortgage balances rose by $112 billion to $12.25 trillion."
+full_description = ""
+clearnet = "https://www.newyorkfed.org/microeconomics/hhdc.html"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "visual data"]
+
+["https://www.federalreserve.gov/releases/z1/dataviz/household_debt/"]
+title = "The Fed - Household Debt Overview - Federal Reserve Board"
+description = "Board of Governors of the Federal Reserve System. The Federal Reserve, the central bank of the United States, provides the nation with a safe, flexible, and stable monetary and financial system."
+full_description = "A growing body of research documents the importance of household debt to the Great Recession and subsequent sluggish recovery. Notably, counties in which households were heavily indebted relative to their income at the beginning of the downturn experienced sharper declines in consumption expenditure and employment. The tables and interactive maps below allow users to explore the ratio of debt to income by state, metropolitan statistical area, and county for each year since 1999. Household debt is calculated from FRBNY Consumer Credit Panel/Equifax Data, and household income is reported by the Bureau of Labor Statistics. "
+clearnet = "https://www.federalreserve.gov/releases/z1/dataviz/household_debt/"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "visual data"]
+
+["https://gasprices.aaa.com/"]
+title = "AAA Gas Prices"
+description = "Find the national and state average gas prices for regular, mid-grade, premium, diesel and E85 fuel. Compare prices from different locations and dates, and see the highest recorded average price."
+full_description = ""
+clearnet = "https://gasprices.aaa.com/"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "travel", "visual data"]
+
+["https://tradingeconomics.com/united-states/inflation-cpi"]
+title = "United States Inflation Rate - TRADING ECONOMICS"
+description = "Get the latest data and forecasts on the annual and monthly inflation rate in the US, based on the Consumer Price Index. See how energy, food, shelter and other components affect the inflation trend."
+full_description = ""
+clearnet = "https://tradingeconomics.com/united-states/inflation-cpi"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+
+["https://tradingeconomics.com/united-states/money-supply-m2"]
+title = "United States Money Supply M2 - TRADING ECONOMICS"
+description = "Money Supply M2 in the United States decreased to 20781.80 USD Billion in January from 20827.20 USD Billion in December of 2023. This page provides - United States Money Supply M2 - actual values, historical data, forecast, chart, statistics, economic calendar and news."
+full_description = ""
+clearnet = "https://tradingeconomics.com/united-states/money-supply-m2"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+
+["https://fred.stlouisfed.org/series/CCLACBW027SBOG"]
+title = "Consumer Loans: Credit Cards and Other Revolving Plans, All Commercial Banks"
+description = "Graph and download economic data for Consumer Loans: Credit Cards and Other Revolving Plans, All Commercial Banks (CCLACBW027SBOG) from 2000-06-28 to 2024-02-28 about revolving, credit cards, loans, consumer, banks, depository institutions, and USA."
+full_description = ""
+clearnet = "https://fred.stlouisfed.org/series/CCLACBW027SBOG"
+status = "Operational"
+category = "finance"
+tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+
+["https://layoffs.fyi/"]
+title = "Layoffs.fyi - Tech Layoff Tracker and Startup Layoff Lists"
+description = "Find out which tech companies have laid off employees since COVID-19 and see the lists of affected employees. Sort, filter, search and view the data on a desktop or join the newsletter for monthly updates."
+full_description = ""
+clearnet = "https://layoffs.fyi/"
+status = "Operational"
+category = "news"
+tags = ["employment", "finance", "research", "information", "data", "statistics", "economics", "economy", "visual data", "labor", "tech", "startup"]
+
+["https://news.ycombinator.com/"]
+title = "Hacker News"
+description = "Hacker News is a website where people can share and discuss the latest news and links from the tech community. You can find topics such as OpenAI, Meta, electric vehicles, text adventures, and more. You can also vote, comment, and upvote other posts."
+full_description = ""
+clearnet = "https://news.ycombinator.com/"
+status = "Operational"
+category = "news"
+tags = ["research", "information", "community", "discussion", "software", "tech", "startup"]
+
+["https://www.theverge.com/"]
+title = "The Verge"
+description = "The Verge covers the latest trends and innovations in technology, culture, and entertainment."
+full_description = ""
+clearnet = "https://www.theverge.com/"
+status = "Operational"
+category = "news"
+tags = ["information", "electronics", "software", "tech", "startup", "articles"]
