@@ -169,38 +169,45 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     // Create the index
     let index = Index::create_in_dir("index", schema.clone())?;
 
-    // Parse the TOML file
-    let data = fs::read_to_string("Data.toml")
-        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
-    let value: Value = toml::from_str(&data)
-        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+    // Parse the TOML files
+    let paths = fs::read_dir("datasets")?;
+    for path in paths {
+        let path = path?.path();
+        if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+            let data = fs::read_to_string(path)
+                .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+            let value: Value = toml::from_str(&data)
+                .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
 
-    // Add data to the index
-    let mut index_writer = index.writer(50_000_000)?;
-    if let Some(tables) = value.as_table() {
-        for (_name, table) in tables {
-            let mut doc = Document::new();
-            for (key, value) in table.as_table().unwrap() {
-                match schema.get_field(key) {
-                    Ok(field) => match value {
-                        Value::String(s) => doc.add_text(field, s),
-                        Value::Integer(i) => doc.add_i64(field, *i),
-                        Value::Array(a) => {
-                            for v in a {
-                                if let Value::String(s) = v {
-                                    doc.add_text(field, s);
+            // Add data to the index
+            let mut index_writer = index.writer(50_000_000)?;
+            if let Some(tables) = value.as_table() {
+                for (_name, table) in tables {
+                    let mut doc = Document::new();
+                    for (key, value) in table.as_table().unwrap() {
+                        match schema.get_field(key) {
+                            Ok(field) => match value {
+                                Value::String(s) => doc.add_text(field, s),
+                                Value::Integer(i) => doc.add_i64(field, *i),
+                                Value::Array(a) => {
+                                    for v in a {
+                                        if let Value::String(s) = v {
+                                            doc.add_text(field, s);
+                                        }
+                                    }
                                 }
-                            }
+                                _ => continue,
+                            },
+                            Err(_) => continue,
                         }
-                        _ => continue,
-                    },
-                    Err(_) => continue,
+                    }
+                    index_writer.add_document(doc);
                 }
+                index_writer.commit()?;
             }
-            index_writer.add_document(doc);
         }
     }
-    index_writer.commit()?;
+
     println!("Indexing complete!");
     index
     } else {
@@ -217,9 +224,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
 
     // Querying the index
     let query_parser = QueryParser::for_index(&index, vec![title, description, author, category, tags, url]);
-    
-    
-    
     
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
