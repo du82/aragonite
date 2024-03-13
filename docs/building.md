@@ -7,4 +7,5 @@
 6. Wait for it to load, you should see results in the browser. The `index` folder that you created should have files in it now. Every time you change something in datasets, you must delete the contents of the `datasets` folder (but not the folder itself) to make your changes appear.
 
 ## Things to note
-- Your datasets must be in this path: `/datasets/Example.toml` where `Example.toml` is the name of your dataset. Do not use special characters in the dataset names, this slows down performance.
+- Your datasets must be in this path: `/datasets/Example.toml` where `Example.toml` is the name of your dataset. Do not use special characters or spaces in the dataset names, this slows down performance. Pascal case is recommended.
+- You can name the datasets whatever you want. It's recommended to name them with categories of content that you wish to index. You might have one called `Movies.toml` which includes data about movies, alongside one called `Sports.toml` which includes data about sports.
