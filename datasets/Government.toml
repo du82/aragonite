@@ -1,8 +1,48 @@
 ["http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"]
 title = "We are the Nation's first line of defense - CIA"
 description = "CIA is the first line of defense for the United States. We collect and analyze intelligence to further national security and preempt threats."
-full_description = ""
 onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
 clearnet = "https://cia.gov"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
 category = "government"
 tags = ["CIA", "glowies", "surveillance"]
+
+["https://www.state.gov/"]
+title = "U.S. Department of State - Home"
+description = "The official website of the U.S. Department of State, led by Secretary Antony J. Blinken. Find information on U.S. foreign policy, travel, embassies, and more."
+clearnet = "https://www.state.gov/"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+
+["https://www.ed.gov/"]
+title = "Home | U.S. Department of Education"
+description = "Find information and resources on student loans, grants, laws, data, and more from the federal agency that oversees education in the United States. Learn about the latest news, policies, and initiatives from Secretary Cardona and his team."
+clearnet = "https://www.ed.gov/"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
+regulates_entity = ["Virginia Deparment of Education, Wisconsin Department of Public Instruction"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+
+["https://www.doe.virginia.gov/"]
+title = "Virginia Department of Education | Home"
+description = "The official website of the Virginia Department of Education, providing resources, news, events and information for parents, educators and students. Find out about the Virginia Literacy Act, tutoring programs, college lab schools and more."
+clearnet = "https://www.doe.virginia.gov/"
+jurisdiction = "United states of america"
+jurisdiction_level = "state"
+regulator_entity = "U.S. Department of Education"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+
+["https://dpi.wi.gov/"]
+title = "Wisconsin Department of Public Instruction"
+description = "The state agency that advances public education and libraries in Wisconsin. Learn about the mission, vision, and leadership of the department, as well as the latest news and resources for educators and learners."
+clearnet = "https://dpi.wi.gov/"
+jurisdiction = "United states of america"
+jurisdiction_level = "state"
+regulator_entity = "U.S. Department of Education"
+category = "state"
+tags = ["bureacracy", "resource", "official"]
