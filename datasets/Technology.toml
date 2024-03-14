@@ -137,3 +137,11 @@ clearnet = "https://signal.org/blog/"
 status = "Operational"
 category = "technology"
 tags = ["software", "privacy", "chat app", "messenger", "warrant canary"]
+
+["https://grapheneos.org/"]
+title = "GrapheneOS: the private and secure mobile OS"
+description = "GrapheneOS is a non-profit open source project that improves the privacy and security of Android apps and devices. It offers features such as app sandboxing, exploit mitigations, permission model, and Google Play compatibility without Google services or apps."
+clearnet = "https://grapheneos.org/"
+status = "Operational"
+category = "technology"
+tags = ["software", "privacy", "android", "mobile operating system", "OS", "google pixel", "surveillance"]
