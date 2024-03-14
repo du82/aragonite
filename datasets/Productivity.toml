@@ -171,9 +171,34 @@ parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "visual data", "data", "statistics", "analysis", "business intelligence"]
 
-["Hootsuite | Social Media Marketing and Management Tool"]
-title = "Hootsuite is the no. 1 social media platform that helps you schedule, create, publish, and analyze content across all your networks. Learn how Hootsuite can save you time, increase your reach, and drive revenue with its features, reports, and case studies."
-clearnet = "https://lookerstudio.google.com/navigation/reporting"
+["https://www.hootsuite.com/"]
+title = "Hootsuite | Social Media Marketing and Management Tool"
+description = "Hootsuite is the no. 1 social media platform that helps you schedule, create, publish, and analyze content across all your networks. Learn how Hootsuite can save you time, increase your reach, and drive revenue with its features, reports, and case studies."
+clearnet = "https://www.hootsuite.com/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "marketing", "marketing manager", "social media", "advertising"]
+
+["https://ublockorigin.com/"]
+title = "uBlock Origin - Free, open-source ad content blocker."
+description = "In 2014 uBlock Origin's founder, original author and lead developer, Raymond Hill, created the original uBlock extension, with its development initiated by forking the codebase of HTTP Switchboard with a separate blocking extension, uMatrix, which had been previously designed for advanced users."
+clearnet = "https://ublockorigin.com/"
+status = "Operational"
+category = "productivity"
+tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
+
+["https://darkreader.org/"]
+title = "Dark Reader"
+description = "Dark Reader is a browser extension that lets you enable dark mode (night mode) on any website. You can configure the brightness, contrast and sepia of the dark theme, and choose to apply it to all websites or particular domains."
+clearnet = "https://darkreader.org/"
+status = "Operational"
+category = "productivity"
+tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
+
+["https://sponsor.ajay.app/"]
+title = "SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper"
+description = "SponsorBlock is an open-source project that lets you skip over sponsor segments in YouTube videos automatically. You can also skip intros, outros and subscribe reminders, and check the leaderboard of users and skip segments."
+clearnet = "https://sponsor.ajay.app/"
+status = "Operational"
+category = "productivity"
+tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
