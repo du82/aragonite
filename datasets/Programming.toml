@@ -124,3 +124,19 @@ clearnet = "https://zed.dev/"
 status = "Operational"
 category = "programming"
 tags = ["tools", "software", "developer", "productivity", "IDE"]
+
+["https://www.r-project.org/"]
+title = "R: The R Project for Statistical Computing"
+description = "The R Project for Statistical Computing Getting Started. R is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. To download R, please choose your preferred CRAN mirror."
+clearnet = "https://www.r-project.org/"
+status = "Operational"
+category = "programming"
+tags = ["software", "statistical analysis", "statistical computing", "programming language"]
+
+["https://www.python.org/"]
+title = "Welcome to Python.org"
+description = "Python is a versatile and powerful language that lets you work quickly and integrate systems more effectively. Learn how to get started, download the latest version, access documentation, find jobs, and join the Python community."
+clearnet = "https://www.python.org/"
+status = "Operational"
+category = "programming"
+tags = ["software", "scripting", "scripting language", "high level", "programming language"]
