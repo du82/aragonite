@@ -19,5 +19,15 @@ title = "Merriam-Webster: America's Most Trusted Dictionary"
 description = "Find definitions, examples, podcasts, games, quizzes, and more from the most authoritative English dictionary. Learn new words, improve your vocabulary, and explore the history and usage of language."
 clearnet = "https://www.merriam-webster.com/"
 status = "Operational"
-category = "education"
-tags = ["research", "information", "learn", "wiki"]
+category = "wiki"
+tags = ["research", "information", "learn", "education"]
+
+["https://minecraft.wiki"]
+title = "Minecraft Wiki - The ultimate resource for Minecraft"
+description = "Welcome to the most comprehensive wiki about the Minecraft franchise! We are a community-run, publicly accessible and editable website that can be improved by everyone."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://minecraft.wiki"
+status = "Operational"
+category = "wikis"
+tags = ["information", "video games", "minecraft"]
