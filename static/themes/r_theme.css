@@ -23,7 +23,7 @@
         border-color: #19282d;
         border-width: 1px;
         border-style: solid;
-        border-radius: 6px;
+        border-radius: 100px;
         padding: 10px;
         font-size: 16px;
         width: fit-content;
@@ -125,15 +125,19 @@
     
     input {
         cursor: pointer;
-        background: #19282d;
-        color: #81959b;
+        background: #ff3d17;
+        color: #feffff;
         border-color: #19282d;
         border-width: 2px;
         border-style: solid;
-        border-radius: 6px;
+        border-radius: 100px;
         padding: 10px;
         font-size: 16px;
         width: fit-content;
+    }
+
+    input[type="search"] {
+        width: 525px;
     }
     
     input[type="submit"]:hover {
@@ -233,8 +237,10 @@
     }
     
     .search-box {
+        background-color: #19282d;
+        color: #e9eced;
         width: 525px;
-        border-radius: 6px;
+        border-radius: 100px;
     }
     
     span {
