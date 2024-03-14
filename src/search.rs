@@ -388,10 +388,18 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    let instant_answer = fields.get("instant_answer").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    // Only display one instant answer per query
+    let mut instant_answer_sent = false;
+    let instant_answer = if !instant_answer_sent {
+        instant_answer_sent = true;
+        fields.get("instant_answer").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("")
+    } else {
+        "".to_string()
+    };
 
+    // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {
-        format!("<div class='instant-answer'><details open><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}</div></div></details></div>",
+        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}</div></div></details></div>",
         url, title, description, author_html, category_html, tags_html)
     } else {
         format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}</div></div>",
