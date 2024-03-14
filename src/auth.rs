@@ -118,6 +118,12 @@ pub fn r_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/r_theme.css"))
 }
 
+#[get("/themes/stealth.css")]
+pub fn stealth_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/stealth.css"))
+}
+
+
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<Redirect, std::io::Error> {
     if let Some(theme) = selection {

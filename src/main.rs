@@ -9,6 +9,7 @@ mod search;
 mod middleware;
 use middleware::ThemeMiddleware;
 
+
 fn main() {
     rocket::ignite()
         .mount("/", routes![
@@ -35,6 +36,7 @@ fn main() {
             auth::monokai_theme, 
             auth::ristretto_theme, 
             auth::r_theme, 
+            auth::stealth_theme, 
             search::search_get, 
             search::search_post, 
             search::news_get,
