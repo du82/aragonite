@@ -261,11 +261,11 @@
     }
 
     .donate-link {
-        color: #0d0c23;
+        color: #629fff;
         text-decoration: none;
     }
 
     .donate-link:hover {
-        color: #fee67e;
-        text-decoration: none;
+        color: #629fff;
+        text-decoration: underline;
     }
