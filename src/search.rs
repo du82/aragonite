@@ -168,8 +168,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
-        // Define the schema for the index
-    let mut schema_builder = Schema::builder();
 
     // Create the index
     let index = Index::create_in_dir("index", schema.clone())?;
@@ -307,8 +305,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
         // Modify the search ranking based on the content
         if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
-            if url.contains("reddit.com") || url.contains("quora.com") {
+            if url.contains("reddit.com") || url.contains("quora.com") || url.contains("youtube.com/shorts") {
                 score *= 0.5; // Decrease score by 50%
+            } else if url.contains("onlyfans.com") || url.contains("fansly.com") || url.contains("linktr.ee") || url.contains("t.me") {
+                score *= 0.9; // Decrease score by 90%
             }
         }
         //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
