@@ -1,7 +1,6 @@
 ["https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"]
 title = "DuckDuckGo"
 description = "Privacy, simplified. Help Spread DuckDuckGo!"
-full_description = ""
 onion = "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/"
 clearnet = "https://duckduckgo.com"
 category = "productivity"
@@ -10,7 +9,6 @@ tags = ["privacy", "search engines"]
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"]
 title = "Proton: Privacy by default | Proton"
 description = "A better internet starts with privacy and freedom"
-full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"
 clearnet = "https://proton.me"
 category = "productivity"
@@ -19,7 +17,6 @@ tags = ["privacy"]
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"]
 title = "Proton Mail: Get a private, secure, and encrypted email account | Proton"
 description = "Secure email that protects your privacy"
-full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"
 clearnet = "https://protonmail.com/mail"
 category = "productivity"
@@ -28,7 +25,6 @@ tags = ["privacy", "email"]
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"]
 title = "Proton Drive: Free secure cloud storage | Proton"
 description = "End-to-end encryption ensures that no one, not even us, can access your files. Files, file names, and folder names and more, are all fully encrypted at rest and in transit to your secure cloud."
-full_description = ""
 onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"
 clearnet = "https://protonmail.com/drive"
 category = "productivity"
@@ -37,7 +33,6 @@ tags = ["privacy", "storage"]
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
 title = "Riseup"
 description = "Riseup provides online communication tools for people and groups working on liberatory social change. We are a project to create democratic alternatives and practice self-determination by controlling our own secure means of communications."
-full_description = ""
 year_published = 2024
 year_updated = 2024
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"
@@ -47,7 +42,6 @@ category = "productivity"
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"]
 title = "VPN - Riseup"
 description = "Riseup offers Personal VPN service for censorship circumvention, location anonymization and traffic encryption. To make this possible, it sends all your internet traffic through an encrypted connection to riseup.net, where it then goes out onto the public internet. Unlike most other VPN providers, Riseup does not log your IP address. "
-full_description = ""
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"
 clearnet = "https://riseup.net"
 category = "productivity"
@@ -56,7 +50,6 @@ tags = ["privacy", "vpn"]
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
 title = "Archive.today"
 description = "Archive.today is a time capsule for web pages! It takes a 'snapshot' of a webpage that will always be online even if the original page disappears. It saves a text and a graphical copy of the page for better accuracy and provides a short and reliable link to an unalterable record of any web page"
-full_description = ""
 year_published = 2024
 year_updated = 2024
 onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
@@ -75,7 +68,6 @@ tags = ["design", "software", "startup", "edit", "freemium", "subscription"]
 ["https://www.google.com/gmail/"]
 title = "Gmail - Email from Google"
 description = "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
-full_description = ""
 clearnet = "https://www.google.com/gmail/"
 status = "Operational"
 parent_organization = "Google LLC"
@@ -85,8 +77,103 @@ tags = ["software", "email", "storage"]
 ["https://www.deepl.com/translator"]
 title = "DeepL Translate: The world's most accurate translator"
 description = "DeepL Translator is a neural machine translation service that was launched in August 2017 and is owned by Cologne-based DeepL SE."
-full_description = ""
 clearnet = "https://www.deepl.com/translator"
 status = "Operational"
 category = "productivity"
 tags = ["software", "education", "productivity", "translation", "information", "research", "API"]
+
+["https://www.google.com/sheets/"]
+title = "Google Sheets: Online Spreadsheet Editor | Google Workspace"
+description = "Google Sheets lets you create and collaborate on online spreadsheets in real-time and from any device. You can also use built-in intelligence, comments, action items, and Smart Fill to analyze and visualize your data, and connect to other Google apps and Excel files."
+clearnet = "https://www.google.com/sheets/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "productivity"
+tags = ["software", "spreadsheet", "data", "storage"]
+
+["https://www.google.com/document/"]
+title = "Google Docs"
+description = "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+clearnet = "https://www.google.com/document/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "productivity"
+tags = ["software", "word processing doc", "text", "documents", "storage"]
+
+["https://www.google.com/slides/"]
+title = "Google Slides: Online Slideshow Maker | Google Workspace"
+description = "Google Slides lets you create, present, and collaborate on online presentations in real-time and from any device. You can also edit PowerPoint files, use assistive features, and access Slides offline or with other Google apps."
+clearnet = "https://www.google.com/slides/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "productivity"
+tags = ["software", "slideshow", "slides", "presentation", "storage"]
+
+["https://workspace.google.com/products/meet/"]
+title = "Google Meet: Online Web and Video Conferencing Calls | Google Workspace"
+description = "Google Meet lets you connect and collaborate with anyone, anywhere, on any device. Enjoy high-quality video, live captions, integrations, and premium features with Google Workspace plans."
+clearnet = "https://workspace.google.com/products/meet/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "productivity"
+tags = ["software", "video call", "video conference", "collaboration", "vidoe conferencing"]
+
+["https://zoom.us/"]
+title = "One platform to connect | Zoom"
+description = "Zoom is a unified platform that offers meetings, chat, phone, whiteboard, events, contact center, and more. Zoom AI Companion is a digital assistant that empowers you with AI within your workflows."
+clearnet = "https://zoom.us/"
+status = "Operational"
+category = "productivity"
+tags = ["software", "video call", "video conference", "collaboration", "vidoe conferencing"]
+
+["https://www.microsoft.com/en-us/microsoft-teams/group-chat-software?ms.url=teamscom&rtc=1"]
+title = "Microsoft Teams"
+description = "Microsoft Teams is a powerful and versatile tool for online collaboration, communication, and creation. Whether you are a small business, a large enterprise, or an individual user, you can sign up for Microsoft Teams and access its features from any device."
+clearnet = "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software?ms.url=teamscom&rtc=1"
+status = "Operational"
+parent_organization = "Microsoft Corporation"
+category = "productivity"
+tags = ["software", "communication", "messenger", "video call", "video conference", "collaboration", "vidoe conferencing"]
+
+["https://slack.com/"]
+title = "Slack is your productivity platform | Slack"
+description = "Slack is a platform that integrates your tools, automates tasks, and enables flexible communication. Whether you work remotely, in an office, or across companies, Slack helps you connect and collaborate with your team."
+clearnet = "https://slack.com/"
+status = "Operational"
+parent_organization = "Salesforce, Inc."
+category = "productivity"
+tags = ["software", "communication", "messenger", "collaboration"]
+
+["https://www.salesforce.com/crm/"]
+title = "CRM Software from Salesforce.com - Customer Relationship Management"
+description = "Learn how Salesforce CRM helps you manage and grow your customer relationships across marketing, sales, commerce, service, and IT. Discover the benefits of Salesforce Customer 360, the world's #1 CRM platform, and get a free trial of its apps and services."
+clearnet = "https://www.salesforce.com/crm/"
+status = "Operational"
+parent_organization = "Salesforce, Inc."
+category = "productivity"
+tags = ["software", "crm", "customer relationship management", "business development", "BDM", "sales", "account manager", "sales rep", "account management", "business intelligence"]
+
+["https://www.tableau.com/"]
+title = "Business Intelligence and Analytics Software | Tableau"
+description = "Tableau is a visual analytics platform that helps people see, understand and act on data. Learn how Tableau can transform your data culture, integrate with Salesforce CRM, and offer AI-powered analytics."
+clearnet = "https://www.tableau.com/"
+status = "Operational"
+parent_organization = "Salesforce, Inc."
+category = "productivity"
+tags = ["software", "visual data", "data", "statistics", "analysis", "business intelligence"]
+
+["https://lookerstudio.google.com/navigation/reporting"]
+title = "Looker Studio Overview - Google Search"
+description = "Looker Studio is a web-based tool that lets you create and share interactive dashboards and reports from your data. You can connect to various data sources, visualize your data in different ways, and collaborate with others on your insights."
+clearnet = "https://lookerstudio.google.com/navigation/reporting"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "productivity"
+tags = ["software", "visual data", "data", "statistics", "analysis", "business intelligence"]
+
+["Hootsuite | Social Media Marketing and Management Tool"]
+title = "Hootsuite is the no. 1 social media platform that helps you schedule, create, publish, and analyze content across all your networks. Learn how Hootsuite can save you time, increase your reach, and drive revenue with its features, reports, and case studies."
+clearnet = "https://lookerstudio.google.com/navigation/reporting"
+status = "Operational"
+category = "productivity"
+tags = ["software", "marketing", "marketing manager", "social media", "advertising"]
