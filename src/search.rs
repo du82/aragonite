@@ -21,6 +21,7 @@ use tantivy::query::Query;
 use tantivy::Term;
 use tantivy::query::TermQuery;
 use tantivy::schema::IndexRecordOption;
+use std::time::{Duration, Instant};
 
 #[derive(FromForm)]
 struct SearchData {
@@ -50,19 +51,17 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
-        Ok(results) => {
+        Ok((results, duration)) => {
             //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
-                    if trimmed_query.len() < 2 || query.len() > 50 {
+                    if trimmed_query.len() < 1 || query.len() > 128 {
                         return Ok(Html(
-                            "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
+                            "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
                                 .to_string(),
                         ));
                     }
-                    let start_time = std::time::Instant::now();
-                    let elapsed_time = start_time.elapsed();
                     let num_results = results.len();
                     let result_word = if num_results == 1 {
                         "results"
@@ -92,7 +91,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, elapsed_time.as_millis());
+                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results = search_results.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
@@ -147,8 +146,9 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     }
 }
 
-pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
+pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)> {
 
+    // Define the schema and how to index it
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
     let title = schema_builder.add_text_field("title", TEXT | STORED);
@@ -159,7 +159,12 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
     let onion = schema_builder.add_text_field("onion", TEXT | STORED);
     let status = schema_builder.add_text_field("status", TEXT | STORED);
-    let category = schema_builder.add_text_field("category", TEXT | STORED);
+    let parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
+    let sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
+    let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
+    let nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
+    let identifier = schema_builder.add_text_field("identifier", TEXT | STORED);
+    let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
@@ -218,6 +223,9 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
         .reader_builder()
         .reload_policy(ReloadPolicy::OnCommit)
         .try_into()?;
+
+    let start = Instant::now();
+
 
     let searcher = reader.searcher();
 
@@ -290,7 +298,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<Vec<String>> {
     let final_query = BooleanQuery::from(final_query);
 
     // Collectors
-    let top_docs = searcher.search(&final_query, &TopDocs::with_limit(25))?;
+    let top_docs = searcher.search(&final_query, &TopDocs::with_limit(50))?;
     let mut scored_results = Vec::new();
     for (mut score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
@@ -317,7 +325,8 @@ scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unw
 // Extract the html_without_quotes for each pair
 let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
 
-Ok(results)
+let duration = start.elapsed();
+Ok((results, duration))
 }
 
 use std::collections::HashMap;
