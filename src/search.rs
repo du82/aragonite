@@ -166,6 +166,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let identifier = schema_builder.add_text_field("identifier", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
+    let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
 
@@ -311,6 +312,11 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                 score *= 0.9; // Decrease score by 90%
             }
         }
+        if let Some(tantivy::schema::Value::Str(instant_answer)) = retrieved_doc.get_first(instant_answer) {
+            if !instant_answer.is_empty() {
+                score *= 100.0; // Increase by 100x
+            }
+        }
         //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
         //    if title.contains("Linux") {
         //        score *= 5.0; // Increase score by 500%
@@ -343,6 +349,11 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
 
     let default_value = "".to_string();
     let title = fields.get("title").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
+    let title = if title.len() > 200 {
+        format!("{}...", &title.chars().take(100).collect::<String>())
+    } else {
+        title
+    };
     let description = fields.get("description").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("");
     let description = if description.len() > 200 {
         format!("{}...", &description.chars().take(200).collect::<String>())
@@ -377,6 +388,23 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}</div></div>",
-    url_html, url, title, description, author_html, category_html, tags_html)
+    // Only display one instant answer per query
+    let mut instant_answer_sent = false;
+    let instant_answer = if !instant_answer_sent {
+        instant_answer_sent = true;
+        fields.get("instant_answer").unwrap_or_else(|| &&default_value).replace("[", "").split(',').collect::<Vec<&str>>().join("")
+    } else {
+        "".to_string()
+    };
+
+    // Conditionally show the instant answer or search results list
+    let result_html = if instant_answer == "sports" {
+        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}</div></div></details></div>",
+        url, title, description, author_html, category_html, tags_html)
+    } else {
+        format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}</div></div>",
+        url_html, url, title, description, author_html, category_html, tags_html, instant_answer)
+    };
+
+    result_html
 }
