@@ -24,10 +24,6 @@ use tantivy::schema::IndexRecordOption;
 use std::time::{Duration, Instant};
 
 #[derive(FromForm)]
-struct SearchData {
-    query: String,
-}
-#[derive(FromForm)]
 struct SearchForm {
     query: String,
 }
