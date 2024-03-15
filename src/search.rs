@@ -157,6 +157,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let status = schema_builder.add_text_field("status", TEXT | STORED);
     let parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
     let sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
+    let regulates_entity = schema_builder.add_text_field("regulates_entity", TEXT | STORED);
+    let regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
     let nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
     let identifier = schema_builder.add_text_field("identifier", TEXT | STORED);
