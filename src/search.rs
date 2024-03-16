@@ -71,10 +71,10 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             <a href='about'>
                             About Us
                             </a>|
-                            <a href='privacy-policy'>
+                            <a href='privacy'>
                             Privacy Policy
                             </a>|
-                            <a href='careers'>
+                            <a href='jobs'>
                             Careers
                             </a>|
                             <a href='donate'>

@@ -123,6 +123,17 @@ pub fn stealth_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/stealth.css"))
 }
 
+#[get("/themes/gigachad.css")]
+pub fn gigachad_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/gigachad.css"))
+}
+
+#[get("/themes/media/gigachad.png")]
+pub fn gigachad_image() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/media/gigachad.png"))
+}
+
+// -----Theme Selector-----
 
 #[get("/themes?<selection>")]
 pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result<Redirect, std::io::Error> {
