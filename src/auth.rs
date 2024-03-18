@@ -11,6 +11,11 @@ pub fn index() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/landing.html"))
 }
 
+#[get("/favicon.ico")]
+pub fn favicon() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("favicon.ico"))
+}
+
 #[get("/images")]
 pub fn images() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/serps/images.html"))

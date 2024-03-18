@@ -14,6 +14,7 @@ fn main() {
     rocket::ignite()
         .mount("/", routes![
             auth::index,
+            auth::favicon,
             auth::donate,
             auth::about,
             auth::privacy,
