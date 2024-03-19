@@ -312,3 +312,21 @@ status = "Operational"
 youtube_type = "upload"
 category = "youtube"
 tags = ["videos", "community", "information", "entertainment"]
+
+["https://www.youtube.com/@NileRed/videos"]
+title = "NileRed"
+description = "Capturing the natural beauty of chemistry"
+clearnet = "https://www.youtube.com/@NileRed/videos"
+status = "Operational"
+youtube_type = "channel"
+category = "youtube"
+tags = ["videos", "community", "information", "entertainment"]
+
+["https://www.youtube.com/@NileBlue/videos"]
+title = "NileBlue"
+description = "Exploring science through sheer incompetence... Sponsorships and related business inquiries: nilered@endcard.com Other inquiries: admin@nilered.ca"
+clearnet = "https://www.youtube.com/@NileBlue/videos"
+status = "Operational"
+youtube_type = "channel"
+category = "youtube"
+tags = ["videos", "community", "information", "entertainment"]
