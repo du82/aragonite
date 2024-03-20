@@ -25,6 +25,7 @@ fn main() {
             auth::news,
             auth::obscure,
             auth::dw,
+            auth::settings,
             auth::theme_selector,
             auth::light_theme,
             auth::dark_theme,

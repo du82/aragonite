@@ -66,6 +66,11 @@ pub fn jobs() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/jobs.html"))
 }
 
+#[get("/settings")]
+pub fn settings() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/settings.html"))
+}
+
 // -----Themes-----
 
 #[get("/themes/light.css")]
