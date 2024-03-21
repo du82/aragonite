@@ -78,10 +78,9 @@ pub fn landing_theme_route() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/landing.css"))
 }
 
-
-#[get("/themes/media/landing.png")]
-pub fn landing_image() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/media/landing.png"))
+#[get("/themes/media/logo.png")]
+pub fn logo_image() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/media/logo.png"))
 }
 
 #[get("/themes/light.css")]
