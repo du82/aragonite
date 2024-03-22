@@ -107,37 +107,65 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
 
 #[post("/news", data = "<search_form>")]
 pub fn news_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(news_get: q = search_form.into_inner().query))
+    Redirect::to(uri!(news_get: q = search_form.into_inner().query + " category:news"))
 }
 
 #[get("/news?<q>")]
 pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
-    match q {
-        Some(query) => {
-            let trimmed_query = query.trim_start();
-            if trimmed_query.len() < 2 || query.len() > 50 {
-                return Ok(Html(
-                    "<h1>Error: Search query must be between 2 and 50 characters long.</h1>"
-                        .to_string(),
-                ));
+    match tantivy_processor(q.as_deref().unwrap_or("")) {
+        Ok((results, duration)) => {
+            //println!("{:#?}", results);
+            match q {
+                Some(query) => {
+                    let trimmed_query = query.trim_start();
+                    if trimmed_query.len() < 1 || query.len() > 128 {
+                        return Ok(Html(
+                            "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
+                                .to_string(),
+                        ));
+                    }
+                    let num_results = results.len();
+                    let result_word = if num_results == 1 {
+                        "results"
+                    } else {
+                        "results"
+                    };
+                    let mut search_results = format!("<div class='results-container'>{:?}</div>", results);
+                    let search_results_footer = format!(
+                        "<footer>
+                        <div class='footer-container'>
+                            <a href='about'>
+                            About Us
+                            </a>|
+                            <a href='privacy'>
+                            Privacy Policy
+                            </a>|
+                            <a href='jobs'>
+                            Careers
+                            </a>|
+                            <a href='donate'>
+                            Donate
+                            </a>
+                            <p>@StillNeedsAname, All rights reserved</p>
+                        </div>
+                    </footer>"
+                    );
+                    let mut file = File::open("static/serps/web.html").unwrap();
+                    let mut contents = String::new();
+                    file.read_to_string(&mut contents).unwrap();
+                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
+                    let search_box_statistics = format!("Search results for '{}'", query);
+                    contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
+                    search_results = search_results.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
+                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
+                    Ok(Html(contents))
+                },
+                None => Err(Redirect::to("/"))
             }
-            let start_time = std::time::Instant::now();
-            let elapsed_time = start_time.elapsed();
-            let search_results_footer = format!(
-                "<div class='footer-container'><div class='footer-box'><p>Footer</p></div></div>"
-            );
-            let mut file = File::open("static/serps/news.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            contents = format!("{}{}", contents, search_results_footer);
-            Ok(Html(contents))
-        }
-        None => {
-            // Return the news page here
-            let mut file = File::open("static/serps/news.html").unwrap();
-            let mut contents = String::new();
-            file.read_to_string(&mut contents).unwrap();
-            Ok(Html(contents))
+        },
+        Err(e) => {
+            println!("Error creating index: {:?}", e);
+            Err(Redirect::to("/"))
         }
     }
 }
@@ -149,6 +177,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let mut schema_builder = Schema::builder();
     let title = schema_builder.add_text_field("title", TEXT | STORED);
     let description = schema_builder.add_text_field("description", TEXT | STORED);
+    let full_description = schema_builder.add_text_field("full_description", TEXT | STORED);
     let author = schema_builder.add_text_field("author", TEXT | STORED);
     let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
     let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
@@ -161,7 +190,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
     let nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
-    let identifier = schema_builder.add_text_field("identifier", TEXT | STORED);
+    let religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
@@ -227,7 +256,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let searcher = reader.searcher();
 
     // Querying the index
-    let query_parser = QueryParser::for_index(&index, vec![title, description, author, category, tags, url]);
+    let query_parser = QueryParser::for_index(&index, vec![title, description, full_description, author, category, tags, url]);
     
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
