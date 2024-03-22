@@ -66,7 +66,22 @@ pub fn jobs() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/jobs.html"))
 }
 
+#[get("/settings")]
+pub fn settings() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/settings.html"))
+}
+
 // -----Themes-----
+
+#[get("/themes/landing.css")]
+pub fn landing_theme_route() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/landing.css"))
+}
+
+#[get("/themes/media/logo.png")]
+pub fn logo_image() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/media/logo.png"))
+}
 
 #[get("/themes/light.css")]
 pub fn light_theme() -> Result<NamedFile, std::io::Error> {
@@ -128,16 +143,6 @@ pub fn stealth_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/stealth.css"))
 }
 
-#[get("/themes/gigachad.css")]
-pub fn gigachad_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/gigachad.css"))
-}
-
-#[get("/themes/media/gigachad.png")]
-pub fn gigachad_image() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/media/gigachad.png"))
-}
-
 // -----Theme Selector-----
 
 #[get("/themes?<selection>")]
@@ -146,6 +151,5 @@ pub fn theme_selector(selection: Option<String>, mut cookies: Cookies) -> Result
         cookies.add(Cookie::new("theme", theme));
     }
 
-    // Redirect to the home page or another appropriate page after setting the theme
-    Ok(Redirect::to("/"))
+    Ok(Redirect::to("/settings"))
 }

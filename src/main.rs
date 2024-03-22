@@ -13,6 +13,8 @@ use middleware::ThemeMiddleware;
 fn main() {
     rocket::ignite()
         .mount("/", routes![
+            auth::landing_theme_route,
+            auth::logo_image, 
             auth::index,
             auth::favicon,
             auth::donate,
@@ -25,6 +27,7 @@ fn main() {
             auth::news,
             auth::obscure,
             auth::dw,
+            auth::settings,
             auth::theme_selector,
             auth::light_theme,
             auth::dark_theme,
@@ -38,8 +41,6 @@ fn main() {
             auth::ristretto_theme, 
             auth::r_theme, 
             auth::stealth_theme, 
-            auth::gigachad_theme, 
-            auth::gigachad_image, 
             search::search_get, 
             search::search_post, 
             search::news_get,

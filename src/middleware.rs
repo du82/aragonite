@@ -19,11 +19,21 @@ impl Fairing for ThemeMiddleware {
             return;
         }
     
-        let theme = request.cookies().get("theme").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "dark.css".to_string());
-    
+        let theme = request.cookies().get("theme")
+        .map(|cookie| cookie.value().to_string())
+        .unwrap_or_else(|| "dark.css".to_string());
+
+        let landing_theme = "landing.css";
+
         if let Some(body) = response.body().and_then(|b| b.into_string()) {
-            let modified_body = body.replace("{{theme}}", &format!("themes/{}", theme));
+            let modified_body = if body.contains("{{landing_theme}}") {
+                body.replace("{{landing_theme}}", &format!("themes/{}", landing_theme))
+            } else {
+                body.replace("{{theme}}", &format!("themes/{}", theme))
+            };
+
             response.set_sized_body(Cursor::new(modified_body));
         }
+
     }
 }
