@@ -79,7 +79,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             </a>|
                             <a href='donate'>
                             Donate
-                            </a>
+                            </a>|
                             <a href='settings'>
                             Settings
                             </a>
