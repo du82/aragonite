@@ -217,12 +217,12 @@
     }
     
     .pill[type="submit"]:hover {
-        background-color: #7d4698;
-        color: #fff;
+        background-color: #bdf4e4;
+        color: #323232;
     }
 
     .border-box {
-        border-color: #3b3b3b;
+        border-color: #323232;
         border-width: 1px;
         border-style: solid;
         border-radius: 6px;
@@ -283,12 +283,12 @@
     
 
     .donate-link {
-        color: #00fbff;
+        color: #db2266;
         text-decoration: none;
     }
 
     .donate-link:hover {
-        color: #fee67e;
+        color: #bdf4e4;
         text-decoration: none;
     }
 
@@ -300,5 +300,6 @@
     .footer-container {
         flex-direction: column;
         margin-top: 10px;
+        margin-left: 100px;
         max-width: fit-content;
     }
