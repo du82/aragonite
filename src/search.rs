@@ -80,7 +80,10 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             <a href='donate'>
                             Donate
                             </a>
-                            <p>@StillNeedsAname, All rights reserved</p>
+                            <a href='settings'>
+                            Settings
+                            </a>
+                            <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
                         </div>
                     </footer>"
                     );
