@@ -7,6 +7,7 @@ clearnet = "https://www.torproject.org/"
 status = "Operational"
 category = "technology"
 tags = ["software", "open source", "privacy", "anonymity"]
+ptr = "excellent"
 
 ["https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"]
 title = "Tor Browser - Apps on Google Play"
@@ -47,6 +48,7 @@ clearnet = "https://status.app"
 status = "Operational"
 category = "technology"
 tags = ["software", "open source"]
+ptr = "excellent"
 
 ["https://status.app/manifesto"]
 title = "Status - Manifesto"
@@ -57,26 +59,6 @@ clearnet = "https://status.app/manifesto"
 status = "Operational"
 category = "technology"
 tags = ["software", "open source", "manifesto"]
-
-["https://status.app/blog/announcing-keycard-v2-enhanced-security-and-a-striking-new-look"]
-title = "Announcing Keycard v2: Enhanced Security and a Striking New Look!"
-description = "We’re thrilled to announce Keycard v2. Along with a new look, we’ve improved the product’s security against supply chain attacks with a new applet to verify the authenticity of Keycards. We’ve also removed the ability to upgrade the card to stop anyone, including Status, from being able to alter the way your Keycard behaves."
-year_published = 2024
-year_updated = 2024
-clearnet = "https://status.app/blog/announcing-keycard-v2-enhanced-security-and-a-striking-new-look"
-status = "Operational"
-category = "technology"
-tags = ["news", "software", "open source", "blog post"]
-
-["https://status.app/blog/tokenised-community-ownership-in-status-2-0"]
-title = "Tokenised Community Ownership in Status 2.0"
-description = "Unpacking the engineering effort behind our secure, decentralised solution to Community ownership. As you know, our principles guide everything we build at Status. Among them is a commitment to ensuring absolute user sovereignty. In designing our super app’s features, we put you, the users, in control of everything, including Community ownership. In this post, we discuss our solution to ensure Status Communities remain sovereign, secure spaces, even during the transfer of ownership. Let’s talk tokenised Community ownership!"
-year_published = 2024
-year_updated = 2024
-clearnet = "https://status.app/blog/tokenised-community-ownership-in-status-2-0"
-status = "Operational"
-category = "technology"
-tags = ["news", "software", "open source", "blog post", "cryptocurrency"]
 
 ["https://status.app/team"]
 title = "Status - Team"
@@ -97,6 +79,7 @@ clearnet = "https://signal.org"
 status = "Operational"
 category = "technology"
 tags = ["software", "privacy", "chat app", "messenger"]
+ptr = "excellent"
 
 ["https://signal.org/download/"]
 title = "Signal >> Download Signal"
@@ -107,6 +90,7 @@ clearnet = "https://signal.org/download/"
 status = "Operational"
 category = "technology"
 tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
+ptr = "excellent"
 
 ["https://signal.org/download/android/"]
 title = "Signal >> Download Signal for Android"
@@ -117,6 +101,7 @@ clearnet = "https://signal.org/download/android/"
 status = "Operational"
 category = "technology"
 tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
+ptr = "excellent"
 
 ["https://signal.org/blog/"]
 title = "Signal >> Blog"
@@ -145,6 +130,7 @@ clearnet = "https://grapheneos.org/"
 status = "Operational"
 category = "technology"
 tags = ["software", "privacy", "android", "mobile operating system", "OS", "google pixel", "surveillance"]
+ptr = "excellent"
 
 ["https://www.softwareheritage.org/"]
 title = "Software Heritage"
@@ -153,3 +139,37 @@ clearnet = "https://www.softwareheritage.org/"
 status = "Operational"
 category = "technology"
 tags = ["software", "archive", "code bases", "old codebase of", "software preservation"]
+ptr = "excellent"
+
+["https://telegram.org/"]
+title = "Telegram Messenger"
+description = "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+year_published = 2013
+year_updated = 2024
+clearnet = "https://telegram.org"
+status = "Operational"
+category = "technology"
+tags = ["software", "chat app", "messenger", "messaging", "telegram"]
+ptr = "terrible"
+
+["https://telegram.org/android"]
+title = "Telegram for Android"
+description = "You can download Telegram for your Android device here. This version has fewer restrictions and receives automatic updates directly from telegram.org"
+year_published = 2013
+year_updated = 2024
+clearnet = "https://telegram.org/android"
+status = "Operational"
+category = "technology"
+tags = ["software", "chat app", "messenger", "messaging", "telegram", "digital download"]
+ptr = "terrible"
+
+["https://simplex.chat"]
+title = "SimpleX - The first messenger without user IDs"
+description = "Other apps have user IDs. SimpleX does not, not even random numbers. This radically improves your privacy."
+year_published = 2019
+year_updated = 2024
+clearnet = "https://simplex.chat"
+status = "Operational"
+category = "technology"
+tags = ["software", "chat app", "messenger", "messaging", "haskell", "privacy"]
+ptr = "excellent"

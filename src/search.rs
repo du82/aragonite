@@ -193,6 +193,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
+    let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
+    let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
@@ -401,7 +403,19 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     };
     let category = fields.get("category").unwrap_or_else(|| &&default_value).replace(", ", "");
     let category_html = if !category.is_empty() {
-        format!("<a class='pill' href='/search?q={}'>{}</a>", category.to_lowercase(), category.to_lowercase())
+        format!("<a class='pill' href='/search?q=category:{}'>{}</a>", category.to_lowercase(), category.to_lowercase())
+    } else {
+        "".to_string()
+    };
+    let privacy_track_record = fields.get("ptr").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let ptr_html = if !privacy_track_record.is_empty() {
+        format!("<a title='Privacy track record' class='pill' href='/search?q=ptr:{}'>PTR: {}</a>", privacy_track_record.to_lowercase(), privacy_track_record.to_lowercase())
+    } else {
+        "".to_string()
+    };
+    let human_rights_track_record = fields.get("hrr").unwrap_or_else(|| &&default_value).replace(", ", "");
+    let hrr_html = if !human_rights_track_record.is_empty() {
+        format!("<a title='Human rights track record' class='pill' href='/search?q=hrr:{}'>HRR: {}</a>", human_rights_track_record.to_lowercase(), human_rights_track_record.to_lowercase())
     } else {
         "".to_string()
     };
@@ -426,11 +440,11 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
 
     // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {
-        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}</div></div></details></div>",
-        url, title, description, author_html, category_html, tags_html)
+        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}{}{}</div></div></details></div>",
+        url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html)
     } else {
-        format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}</div></div>",
-        url_html, url, title, description, author_html, category_html, tags_html, instant_answer)
+        format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}{}{}</div></div>",
+        url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, instant_answer)
     };
 
     result_html
