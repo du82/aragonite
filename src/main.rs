@@ -29,6 +29,7 @@ fn main() {
             auth::dw,
             auth::settings,
             auth::theme_selector,
+            auth::obscura_theme,
             auth::light_theme,
             auth::dark_theme,
             auth::graphite_theme,
