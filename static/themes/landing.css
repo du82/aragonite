@@ -15,12 +15,12 @@
     }
 
     .logo {
-        position: fixed;
-        margin-right: 600px;
-        margin-bottom: 75px;
-        width: 70px;  
-        height: 75px; 
-        display: flex;
+    position: fixed;
+    margin-right: 600px;
+    margin-bottom: 75px;
+    width: 70px;  
+    height: 75px; 
+    display: flex;
     }
 
 /*----------------Body----------------*/
@@ -82,9 +82,9 @@
     }
 
     .landing-text {
-        margin-left: 100px; 
-        margin-top: 150px; 
-        margin-bottom: 25px;
+    margin-left: 100px; 
+    margin-top: 150px; 
+    margin-bottom: 25px;
     }
 
 /*----------------Results Container----------------*/
@@ -288,7 +288,6 @@
     }     
 
 /*----------------Footer----------------*/
-
 
     footer {
     border-top-width: 1px;
