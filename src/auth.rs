@@ -128,11 +128,10 @@ pub fn r_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/r_theme.css"))
 }
 
-#[get("/themes/obscura.css")]
-pub fn obscura_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/obscura.css"))
+#[get("/themes/gemstone.css")]
+pub fn gemstone_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/gemstone.css"))
 }
-
 
 // -----Theme Selector-----
 
