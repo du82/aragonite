@@ -66,7 +66,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     };
                     let mut search_results = format!("<div class='results-container'>{:?}</div>", results);
                     let search_results_footer = format!(
-                        "<footer>
+                        "<div class='main-footer'>
                         <div class='footer-container'>
                             <a href='about'>
                             About Us
@@ -85,7 +85,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             </a>
                             <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
                         </div>
-                    </footer>"
+                    </div>"
                     );
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
