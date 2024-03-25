@@ -143,6 +143,12 @@ pub fn stealth_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/stealth.css"))
 }
 
+#[get("/themes/obscura.css")]
+pub fn obscura_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/obscura.css"))
+}
+
+
 // -----Theme Selector-----
 
 #[get("/themes?<selection>")]

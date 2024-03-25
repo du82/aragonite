@@ -79,8 +79,11 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             </a>|
                             <a href='donate'>
                             Donate
+                            </a>|
+                            <a href='settings'>
+                            Settings
                             </a>
-                            <p>@StillNeedsAname, All rights reserved</p>
+                            <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
                         </div>
                     </footer>"
                     );
