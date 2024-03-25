@@ -85,7 +85,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             </a>
                             <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
                         </div>
-                    </div>"
+                        </div>"
                     );
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
