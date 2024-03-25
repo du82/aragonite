@@ -7,20 +7,20 @@
     <meta property="og:description" content="A soverign search engine">
     <meta property="og:image" content="static/themes/media/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/themes/landing.css">
+    <link rel="stylesheet" href="{{theme}}">
 </head>
-<body>
-        <div class="outer-container">
-            <form class="container" action="/search" method="post">
-                <img src="/themes/media/logo.png" class="logo">
-                <h1 class="gradient-text">Project Obscura</h1>
+<body class="landing-body">
+        <div class="landing-outer-container">
+            <form class="landing-container" action="/search" method="post">
+                <img src="/themes/media/logo.png" class="landing-logo">
+                <h1 class="landing-gradient-text">Project Obscura</h1>
                 <div style="display: flex;">
-                    <input class="search-box" type="search" name="query" placeholder="Search, the way it was intended" >
-                    <input type="submit" value="Search">
+                    <input class="landing-search-box" name="query" placeholder="Search, the way it was intended">
+                    <input type="submit" value="Search" style="margin-top: 15px;">
                 </div>
             </form>          
-    <footer class="container">
-        <div class="footer-container">
+    <footer class="landing-container">
+        <div class="landing-footer-container">
             <a href="about">
             About
             </a>|

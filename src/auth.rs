@@ -113,19 +113,9 @@ pub fn dracula_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/dracula.css"))
 }
 
-#[get("/themes/clown.css")]
-pub fn clown_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/clown.css"))
-}
-
 #[get("/themes/420.css")]
 pub fn weed_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/420.css"))
-}
-
-#[get("/themes/monokai.css")]
-pub fn monokai_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/monokai.css"))
 }
 
 #[get("/themes/ristretto.css")]
@@ -136,11 +126,6 @@ pub fn ristretto_theme() -> Result<NamedFile, std::io::Error> {
 #[get("/themes/r_theme.css")]
 pub fn r_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/r_theme.css"))
-}
-
-#[get("/themes/stealth.css")]
-pub fn stealth_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/stealth.css"))
 }
 
 #[get("/themes/obscura.css")]

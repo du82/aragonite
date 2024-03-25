@@ -1,5 +1,56 @@
 /*--Light Theme--*/
 
+/*----------------Landing Page----------------*/
+
+    .landing-logo {
+    position: fixed;
+    margin-right: 600px;
+    margin-bottom: 75px;
+    width: 70px;  
+    height: 75px; 
+    display: flex;
+    }
+
+    .landing-body {
+    background: #1d1d1d;
+    background-size: cover;
+    height: 100vh;
+    color: #d9e8fe;
+    font-family: Arial, sans-serif;
+    height: wrap-content;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    .landing-gradient-text {
+    font-size: 40px;
+    background: radial-gradient(ellipse at center, #db2266, #493b54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    .landing-outer-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 75vh; 
+    }
+
+    .landing-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .landing-footer-container {
+    flex-direction: column;
+    align-content: center;
+    margin-top: 10px;
+    max-width: fit-content;
+    text-align: center;
+    }
+
 /*----------------Header----------------*/
 
     .header {
@@ -38,6 +89,7 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 130px;
+    margin-bottom: 25px;
     max-width: 600px;
     padding: 15px;
     }
@@ -226,12 +278,6 @@
     max-width: fit-content;
     }
 
-    .search-box {
-    width: 525px;
-    border-radius: 6px;
-    }
-
-
 /*----------------Buttons & Bars----------------*/
 
     .donate-button {
@@ -251,6 +297,20 @@
     background-color: #763596;
     color: #fff;
     }  
+
+    .landing-search-box {
+    width: 500px;
+    border-radius: 6px;
+    margin-top: 15px;
+    color: #d9e8fe; 
+    margin-right: 15px;
+    }
+
+    .search-box {
+    width: 525px;
+    border-radius: 6px;
+    margin-right: 15px;
+    }
 
     input {
     cursor: pointer;
@@ -273,22 +333,28 @@
 
 /*----------------Footer----------------*/
 
+    footer {
+    border-top-width: 1px;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%
+    }
+
+    .main-footer {
+    border-top-width: 1px;
+    position: flex; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%
+    }
+
     .footer-container {
     flex-direction: column;
+    margin-top: 10px;
     margin-left: 100px;
     max-width: fit-content;
     }
-
-    .footer-box {
-    height: fit-content;
-    width: 70%;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    margin-bottom: 20px;
-    }
-
 
 /*----------------Bloat----------------*/
 
