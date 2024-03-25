@@ -12,10 +12,10 @@
     }
 
     .landing-body {
-    background: #1d1d1d;
+    background: #222;
     background-size: cover;
     height: 100vh;
-    color: #d9e8fe;
+    color: #d1d1d1;
     font-family: Arial, sans-serif;
     height: wrap-content;
     margin: 0;
@@ -25,7 +25,7 @@
 
     .landing-gradient-text {
     font-size: 40px;
-    background: radial-gradient(ellipse at center, #db2266, #493b54);
+    background: radial-gradient(ellipse at center, #7222db, #493b54);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -307,7 +307,6 @@
     width: 500px;
     border-radius: 6px;
     margin-top: 15px;
-    color: #d9e8fe; 
     margin-right: 15px;
     }
 
