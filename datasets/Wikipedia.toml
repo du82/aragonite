@@ -149,3 +149,21 @@ status = "Operational"
 subject_type = "Operating system"
 category = "wikipedia"
 tags = ["technology", "computers", "software", "open source", "research", "information", "learn", "education"]
+
+["https://en.wikipedia.org/wiki/Nth_Room_case"]
+title = "Nth Room case - Wikipedia"
+description = "The Nth Room case is a criminal case involving blackmail, cybersex trafficking, and the spread of sexually exploitative videos via the Telegram app between 2018 and 2020 in South Korea. A man nicknamed god god (later identified as Moon Hyung-wook, Korean: 문형욱) sold sexual exploitation videos on Telegram channels and groups."
+clearnet = "https://en.wikipedia.org/wiki/Nth_Room_case"
+status = "Operational"
+subject_type = "Historical event"
+category = "wikipedia"
+tags = ["god god", "the doctor", "telegram", "child abuse", "harm", "pain", "suffering"]
+
+["https://en.wikipedia.org/wiki/Telegram_(software)"]
+title = "Telegram (software) - Wikipedia"
+description = "Telegram Messenger, commonly known as Telegram, is a cloud-based, cross-platform, encrypted instant messaging (IM) service. It was originally launched for iOS on 14 August 2013 and Android in October 2013. It allows users to exchange messages, share media and files, and hold private and group voice or video calls as well as public livestreams. It is available for Android, iOS, Windows, macOS, Linux, and web browsers. Telegram also offers end-to-end encryption in voice and video calls,[10] and in optional private chats, which Telegram calls Secret Chats. The registration to Telegram requires a smartphone."
+clearnet = "https://en.wikipedia.org/wiki/Telegram_(software)"
+status = "Operational"
+subject_type = "Software product"
+category = "wikipedia"
+tags = ["instant messaging", "software", "telegram", "messenger"]

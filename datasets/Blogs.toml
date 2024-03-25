@@ -87,3 +87,33 @@ clearnet = "https://status.app/blog/tokenised-community-ownership-in-status-2-0"
 status = "Operational"
 category = "technology"
 tags = ["news", "software", "open source", "blog post", "cryptocurrency"]
+
+["https://simplex.chat/blog/20240323-simplex-network-privacy-non-profit-v5-6-quantum-resistant-e2e-encryption-simple-migration.html"]
+title = "SimpleX network: real privacy and stable profits, non-profits for protocols, v5.6 released with quantum resistant e2e encryption and simple profile migration"
+description = "Some people in our users' community believe that there is a conflict between the business and the community interests. This view fails to see a bigger picture of how these interests are aligned. I wrote a blog post about it here. Our goal is to grow the network and the ecosystem while enriching all stakeholders involved, both the community and the business shareholders. This strategy relies on the strengths and opportunities of both the business and the decentralized network we build, with its vibrant community of individuals and organizations. It positions the business not as a controller but as a supporter of the community growth, resilience and sustainability."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simplex.chat/blog/20240323-simplex-network-privacy-non-profit-v5-6-quantum-resistant-e2e-encryption-simple-migration.html"
+status = "Operational"
+category = "technology"
+tags = ["news", "software", "open source", "blog post", "simplex", "post-quantum encryption"]
+
+["https://simplex.chat/blog/20240314-simplex-chat-v5-6-quantum-resistance-signal-double-ratchet-algorithm.html"]
+title = "SimpleX Chat v5.6 beta: adding quantum resistance to Signal double ratchet algorithm"
+description = "The objective of end-to-end encryption is to make any potential attackers, such as traffic observers or communication providers who pass the messages between senders and recipients, unable to recover any message content or meaningful information about the messages, even if these attackers possess very advanced computing and mathematical capabilities."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simplex.chat/blog/20240314-simplex-chat-v5-6-quantum-resistance-signal-double-ratchet-algorithm.html"
+status = "Operational"
+category = "technology"
+tags = ["news", "software", "open source", "blog post", "simplex", "post-quantum encryption"]
+
+["https://simplex.chat/blog/20240124-simplex-chat-infrastructure-costs-v5-5-simplex-ux-private-notes-group-history.html"]
+title = "SimpleX Chat: free infrastructure from Linode, v5.5 released with private notes, group history and a simpler UX to connect."
+description = "We chose Linode as our hosting provider as and they have been consistently reliable, cheaper than alternatives, with excellent support and great documentation. When Linode was acquired by Akamai, we were a bit nervous about how it may affect service quality. So far it's been working out quite well. As the usage of SimpleX network was growing, so did our hosting costs, and from being really small they started to become significant, particularly as we didn't yet manage to optimize the servers last year."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simplex.chat/blog/20240124-simplex-chat-infrastructure-costs-v5-5-simplex-ux-private-notes-group-history.html"
+status = "Operational"
+category = "technology"
+tags = ["news", "software", "open source", "blog post", "simplex", "group history", "private notes"]
