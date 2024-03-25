@@ -7,6 +7,6 @@ edition = "2021"
 toml = "0.5"
 rocket = "0.4.10"
 uuid = { version = "0.8", features = ["v4"] }
-
+rand = "0.8.5"
 tantivy = "0.21.1"
 serde_json = "1.0.114"

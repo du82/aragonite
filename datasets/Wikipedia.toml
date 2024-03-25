@@ -222,3 +222,29 @@ subject_type = "Athlete"
 category = "wikipedia"
 tags = ["football", "the goat", "footballer", "soccer", "Portugal national team", "world cup"]
 
+["https://en.wikipedia.org/wiki/Privacy"]
+title = "Privacy - Wikipedia"
+description = "Privacy is the ability of an individual or group to seclude themselves or information about themselves, and thereby express themselves selectively. The domain of privacy partially overlaps with security, which can include the concepts of appropriate use and protection of information. Privacy may also take the form of bodily integrity."
+clearnet = "https://en.wikipedia.org/wiki/Privacy"
+status = "Operational"
+subject_type = "Privacy"
+category = "wikipedia"
+tags = ["freedom", "privacy", "security", "opsec", "human rights", "digital freedom"]
+
+["https://en.wikipedia.org/wiki/Security"]
+title = "Security - Wikipedia"
+description = "Security is protection from, or resilience against, potential harm (or other unwanted coercion). Beneficiaries (technically referents) of security may be persons and social groups, objects and institutions, ecosystems, or any other entity or phenomenon vulnerable to unwanted change."
+clearnet = "https://en.wikipedia.org/wiki/Security"
+status = "Operational"
+subject_type = "Security"
+category = "wikipedia"
+tags = ["freedom", "privacy", "anonymity", "security", "opsec", "human rights", "digital freedom"]
+
+["https://en.wikipedia.org/wiki/Anonymity"]
+title = "Anonymity - Wikipedia"
+description = "Anonymity describes situations where the acting person's identity is unknown. Some writers have argued that namelessness, though technically correct, does not capture what is more centrally at stake in contexts of anonymity. The important idea here is that a person be non-identifiable, unreachable, or untrackable. Anonymity is seen as a technique, or a way of realizing, a certain other values, such as privacy, or liberty. Over the past few years, anonymity tools used on the dark web by criminals and malicious users have drastically altered the ability of law enforcement to use conventional surveillance techniques."
+clearnet = "https://en.wikipedia.org/wiki/Anonymity"
+status = "Operational"
+subject_type = "Anonymity"
+category = "wikipedia"
+tags = ["freedom", "privacy", "anonymity", "anonymous", "security", "opsec", "human rights", "digital freedom"]

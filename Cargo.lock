@@ -785,6 +785,7 @@ dependencies = [
 name = "obscura"
 version = "0.1.0"
 dependencies = [
+ "rand",
  "rocket",
  "serde_json",
  "tantivy",
