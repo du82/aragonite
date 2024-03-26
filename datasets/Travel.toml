@@ -4,6 +4,7 @@ description = "Find local businesses, view maps and get driving directions in Go
 clearnet = "https://www.google.com/maps/"
 status = "Operational"
 parent_organization = "Google LLC"
+subject_type = "Maps"
 category = "travel"
 tags = ["software", "vacation", "productivity"]
 
@@ -12,6 +13,7 @@ title = "Airbnb | Vacation rentals, cabins, beach houses, & more"
 description = "Find the perfect place to stay at an amazing price in 191 countries. Belong anywhere with Airbnb."
 clearnet = "https://www.airbnb.com/"
 status = "Operational"
+subject_type = "Rental"
 category = "travel"
 tags = ["vacation", "hotel", "rent", "startup"]
 
@@ -21,6 +23,7 @@ description = "Find cheap flights and airline tickets. Google Flights helps you 
 clearnet = "https://www.google.com/travel/flights/"
 status = "Operational"
 parent_organization = "Google LLC"
+subject_type = "Flight booking"
 category = "travel"
 tags = ["vacation", "flight", "hotel", "rent"]
 
@@ -29,6 +32,7 @@ title = "United Airlines - Airline Tickets, Travel Deals and Flights"
 description = "Find flights. Find your travel credits. Find the latest travel deals on flights, hotels and rental cars. Book airline tickets and MileagePlus award tickets to worldwide destinations."
 clearnet = "https://www.united.com/en/us"
 status = "Operational"
+subject_type = "Airline"
 category = "travel"
 tags = ["vacation", "flight", "hotel", "rent"]
 
@@ -37,6 +41,7 @@ title = "JetBlue"
 description = "JetBlue is a leading airline that offers flights to 90+ destinations with free inflight entertainment, free brand-name snacks and drinks, lots of legroom and award-winning service. Whether you are looking for a flight, a vacation package, or a destination guide, JetBlue has it all."
 clearnet = "https://www.jetblue.com/"
 status = "Operational"
+subject_type = "Airline"
 category = "travel"
 tags = ["vacation", "flight", "hotel", "rent"]
 
@@ -45,6 +50,7 @@ title = "Delta Air Lines - Airline Tickets and Airfare to Worldwide Destinations
 description = "Delta Air Lines. Book a trip. Check in, change seats, track your bag, check flight status, and more."
 clearnet = "https://www.delta.com/"
 status = "Operational"
+subject_type = "Airline"
 category = "travel"
 tags = ["vacation", "flight", "hotel", "rent"]
 
@@ -53,6 +59,7 @@ title = "Booking.com | Official site | The best hotels, flights, car rentals, & 
 description = "Find deals for any season, from cozy bed & breakfasts to luxury hotels. Compare and book flights with flexibility, and explore trending destinations around the world."
 clearnet = "https://www.booking.com/"
 status = "Operational"
+subject_type = "Booking"
 category = "travel"
 tags = ["vacation", "flight", "hotel", "rent"]
 
@@ -62,6 +69,7 @@ description = "Best of New York City Attractions"
 full_description = "One World Observatory is located at One World Trade Center at the corner of West and Vesey Streets in Downtown Manhattan. One World Trade Center 117 West Street New York, New York 10007. Open Daily 9:00 AM - 9:00 PM Hours change seasonally*"
 clearnet = "https://www.oneworldobservatory.com/"
 status = "Operational"
+subject_type = "Travel destination"
 category = "travel"
 tags = ["vacation", "urban"]
 
@@ -70,6 +78,7 @@ title = "Smithsonian Institution | Home"
 description = "Explore the world's largest museum, education, and research complex with 21 museums, 9 research centers, and affiliates. Discover millions of digital items, podcasts, events, exhibitions, and more."
 clearnet = "https://www.si.edu/"
 status = "Operational"
+subject_type = "Museum"
 category = "travel"
 tags = ["vacation", "museum"]
 
@@ -78,6 +87,7 @@ title = "Current Exhibitions | Smithsonian Institution"
 description = "Always free of charge, the Smithsonian's National Zoo is one of Washington D.C.'s, and the Smithsonian's, most popular tourist destinations, with more than 2 million visitors from all over the world each year."
 clearnet = "https://www.si.edu/Museums/national-zoo"
 status = "Operational"
+subject_type = "Zoo"
 category = "travel"
 tags = ["vacation", "museum"]
 
@@ -86,6 +96,7 @@ title = "J.N. Ding Darling National Wildlife Refuge"
 description = "Learn about the history, wildlife, and activities of this refuge on the subtropical barrier island of Sanibel, Florida. Explore the Wildlife Drive, the Visitor and Education Center, and the diverse habitats of migratory birds and endangered species."
 clearnet = "https://www.fws.gov/refuge/jn-ding-darling"
 status = "Operational"
+subject_type = "Wildlife refuge"
 category = "travel"
 tags = ["vacation", "wildlife"]
 
@@ -95,6 +106,7 @@ description = "TRAVEL ADVISORIES AND ALERTS: THE DETAILS Enroll in STEP. Subscri
 full_description = "Please enroll in the Smart Traveler Enrollment Program (STEP) to receive alerts and be located in an emergency. Please call 1 (888) 407-4747 (U.S. and Canada) or 1 (202) 501-4444 (overseas) or contact the nearest U.S. embassy or consulate."
 clearnet = "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html/"
 status = "Operational"
+subject_type = "Travel advisory"
 category = "travel"
 tags = ["vacation"]
 
@@ -103,6 +115,7 @@ title = "EAA AirVenture Oshkosh | Oshkosh Air Show | Oshkosh, WI"
 description = "Official website of the EAA AirVenture Oshkosh fly-in convention in Oshkosh, Wisconsin, attracting more than 600,000 people and 10,000 airplanes"
 clearnet = "https://www.eaa.org/en/airventure"
 status = "Operational"
+subject_type = "Regional attraction"
 category = "travel"
 tags = ["vacation", "flight", "museum"]
 
@@ -111,5 +124,6 @@ title = "Country Inn & Suites® by Radisson - Official Site - Choice Hotels"
 description = "At Country Inn & Suites® by Choice Hotels, we offer amenities like free breakfast & free Wi-Fi. Whether for business or leisure, relax & stay awhile."
 clearnet = "https://www.choicehotels.com/country-inn-suites"
 status = "Operational"
+subject_type = "Hotel"
 category = "travel"
 tags = ["vacation", "hotel"]
