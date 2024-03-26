@@ -5,6 +5,8 @@ onion = "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/
 clearnet = "https://duckduckgo.com"
 category = "productivity"
 tags = ["privacy", "search engines"]
+ptr = "excellent"
+hrr = "excellent"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"]
 title = "Proton: Privacy by default | Proton"
@@ -13,6 +15,8 @@ onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/
 clearnet = "https://proton.me"
 category = "productivity"
 tags = ["privacy"]
+ptr = "excellent"
+hrr = "excellent"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"]
 title = "Proton Mail: Get a private, secure, and encrypted email account | Proton"
@@ -21,6 +25,8 @@ onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/
 clearnet = "https://protonmail.com/mail"
 category = "productivity"
 tags = ["privacy", "email"]
+ptr = "excellent"
+hrr = "excellent"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"]
 title = "Proton Drive: Free secure cloud storage | Proton"
@@ -29,6 +35,8 @@ onion = "https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/
 clearnet = "https://protonmail.com/drive"
 category = "productivity"
 tags = ["privacy", "storage"]
+ptr = "excellent"
+hrr = "excellent"
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
 title = "Riseup"
@@ -38,6 +46,8 @@ year_updated = 2024
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"
 clearnet = "https://riseup.net"
 category = "productivity"
+ptr = "excellent"
+hrr = "excellent"
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"]
 title = "VPN - Riseup"
@@ -46,6 +56,8 @@ onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/e
 clearnet = "https://riseup.net"
 category = "productivity"
 tags = ["privacy", "vpn"]
+ptr = "excellent"
+hrr = "excellent"
 
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
 title = "Archive.today"
@@ -56,6 +68,8 @@ onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
 clearnet = "https://archive.today"
 category = "productivity"
 tags = ["archive", "archival", "storage"]
+ptr = "excellent"
+hrr = "good"
 
 ["https://www.canva.com"]
 title = "Canva: Visual Suite for Everyone"
@@ -64,6 +78,8 @@ clearnet = "https://www.canva.com"
 status = "Operational"
 category = "productivity"
 tags = ["design", "software", "startup", "edit", "freemium", "subscription"]
+ptr = "bad"
+hrr = "average"
 
 ["https://www.google.com/gmail/"]
 title = "Gmail - Email from Google"
@@ -73,6 +89,8 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "email", "storage"]
+ptr = "terrible"
+hrr = "bad"
 
 ["https://www.deepl.com/translator"]
 title = "DeepL Translate: The world's most accurate translator"
@@ -81,6 +99,8 @@ clearnet = "https://www.deepl.com/translator"
 status = "Operational"
 category = "productivity"
 tags = ["software", "education", "productivity", "translation", "information", "research", "API"]
+ptr = "good"
+hrr = "average"
 
 ["https://www.google.com/sheets/"]
 title = "Google Sheets: Online Spreadsheet Editor | Google Workspace"
@@ -90,6 +110,8 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "spreadsheet", "data", "storage"]
+ptr = "terrible"
+hrr = "bad"
 
 ["https://www.google.com/document/"]
 title = "Google Docs"
@@ -125,6 +147,8 @@ clearnet = "https://zoom.us/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "video call", "video conference", "collaboration", "vidoe conferencing"]
+ptr = "terrible"
+hrr = "bad"
 
 ["https://www.microsoft.com/en-us/microsoft-teams/group-chat-software?ms.url=teamscom&rtc=1"]
 title = "Microsoft Teams"
@@ -134,6 +158,8 @@ status = "Operational"
 parent_organization = "Microsoft Corporation"
 category = "productivity"
 tags = ["software", "communication", "messenger", "video call", "video conference", "collaboration", "vidoe conferencing"]
+ptr = "terrible"
+hrr = "bad"
 
 ["https://slack.com/"]
 title = "Slack is your productivity platform | Slack"
@@ -143,6 +169,8 @@ status = "Operational"
 parent_organization = "Salesforce, Inc."
 category = "productivity"
 tags = ["software", "communication", "messenger", "collaboration"]
+ptr = "terrible"
+hrr = "bad"
 
 ["https://www.salesforce.com/crm/"]
 title = "CRM Software from Salesforce.com - Customer Relationship Management"
