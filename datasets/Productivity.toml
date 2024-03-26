@@ -246,3 +246,47 @@ clearnet = "https://howlongagogo.com/"
 status = "Operational"
 category = "productivity"
 tags = ["how long ago", "how many years ago", "how long ago was", "how many years ago was"]
+
+["https://www.marinetraffic.com/en/ais/home"]
+title = "MarineTraffic Live Ships Map. Discover information and vessel positions for vessels around the world. Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. Search for popular ships globally. Find locations of ports and ships using the near Real Time ships map."
+clearnet = "https://www.marinetraffic.com/en/ais/home"
+status = "Operational"
+category = "productivity"
+tags = ["visaul data", "oil tanker", "global shipping", "shipping routes", "ship collision", "shipwreck", "ship crash", "shipping"]
+
+["https://www.flightaware.com/"]
+title = "FlightAware - Flight Tracker / Flight Status"
+description = "Live flight status, flight tracking, and predictive data powered by Hyperfeed®. Crunching hundreds of gigabytes a day and enriched by artificial intelligence (AI) and machine learning (ML) algorithms, FlightAware's HyperFeed engine delivers a complete picture of historical and predictive global aircraft"
+clearnet = "https://www.flightaware.com/"
+status = "Operational"
+category = "productivity"
+tags = ["visual data", "travel", "track flights", "airports", "flight number", "private jet", "flight"]
+
+["https://www.cloudflare.com/"]
+title = "Connect, Protect and Build Everywhere | Cloudflare"
+description = "Cloudflare is a unified platform that offers SASE, SSE, app, infrastructure, and developer services to help you work, deliver, and innovate everywhere. Learn how Cloudflare can improve security, performance, and cost for your business."
+clearnet = "https://howlongagogo.com/"
+status = "Operational"
+category = "productivity"
+tags = ["cybersecurity", "CDN", "Condent delivery network", "DDoS", "DDoS mitigation", "SASE", "SSE", "Internet infrastructure"]
+
+["https://speed.cloudflare.com/"]
+title = "Internet Speed Test - Measure Network Performance | Cloudflare"
+description = "Test your Internet connection with Cloudflare's global edge network. Check your download, upload, latency, jitter, packet loss and network quality score."
+clearnet = "https://speed.cloudflare.com/"
+status = "Operational"
+parent_organization = "Cloudflare"
+category = "productivity"
+tags = ["speed test", "what is my internet speed", "connection test", "connection speed", "network performance"]
+
+["https://radar.cloudflare.com/"]
+title = "Cloudflare Radar"
+description = "Cloudflare Radar. Search. Overview Traffic Security & Attacks Adoption & Usage Internet Quality Routing Domain Rankings Email Security New Outage Center URL Scanner My Connection Reports API About Press Glossary Collapse sidebar. Overview Location. Date range. Internet traffic trends."
+clearnet = "https://radar.cloudflare.com/"
+status = "Operational"
+parent_organization = "Cloudflare"
+category = "productivity"
+tags = ["visual data", "internet traffic", "internet usage", "domain ranking", "outages", "URL scanner", "cybersecurity attacks", "recent hack", "anomaly", "traffic security"]
+
+
+
