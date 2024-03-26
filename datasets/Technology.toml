@@ -9,6 +9,7 @@ subject_type = "Anonymity software"
 category = "technology"
 tags = ["software", "open source", "privacy", "anonymity"]
 ptr = "excellent"
+hrr = "excellent"
 
 ["https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"]
 title = "Tor Browser - Apps on Google Play"
@@ -32,6 +33,8 @@ status = "Operational"
 subject_type = "Internet speed test"
 category = "technology"
 tags = ["software", "testing", "test", "speed test"]
+ptr = "bad"
+hrr = "good"
 
 ["https://etherscan.io/"]
 title = "Ethereum (ETH) Blockchain Explorer - Etherscan"
@@ -54,6 +57,7 @@ subject_type = "Cryptocurrency superapp"
 category = "technology"
 tags = ["software", "open source"]
 ptr = "excellent"
+hrr = "excellent"
 
 ["https://status.app/manifesto"]
 title = "Status - Manifesto"
