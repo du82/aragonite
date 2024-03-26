@@ -90,7 +90,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
+                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results = search_results.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");
@@ -107,14 +107,13 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     }
 }
 
-
-#[post("/news", data = "<search_form>")]
-pub fn news_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(news_get: q = search_form.into_inner().query + " category:news"))
+#[post("/mobile", data = "<search_form>")]
+pub fn mobile_search_post(search_form: Form<SearchForm>) -> Redirect {
+    Redirect::to(uri!(mobile_search_get: q = search_form.into_inner().query))
 }
 
-#[get("/news?<q>")]
-pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
+#[get("/mobile?<q>")]
+pub fn mobile_search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok((results, duration)) => {
             //println!("{:#?}", results);
@@ -135,7 +134,7 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     };
                     let mut search_results = format!("<div class='results-container'>{:?}</div>", results);
                     let search_results_footer = format!(
-                        "<footer>
+                        "<div class='main-footer'>
                         <div class='footer-container'>
                             <a href='about'>
                             About Us
@@ -148,15 +147,18 @@ pub fn news_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             </a>|
                             <a href='donate'>
                             Donate
+                            </a>|
+                            <a href='settings'>
+                            Settings
                             </a>
-                            <p>@StillNeedsAname, All rights reserved</p>
+                            <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
                         </div>
-                    </footer>"
+                        </div>"
                     );
-                    let mut file = File::open("static/serps/web.html").unwrap();
+                    let mut file = File::open("static/serps/mobile.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div style='position: fixed; right: 10px; margin: 0; padding: 0;'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
+                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents.replace("{{statistics}}", &statistics).replace("{{search_box_statistics}}", &search_box_statistics);
                     search_results = search_results.replace("\", ", "").replace("\",", "").replace("\"", "").replace(">[<", "><").replace(">]<", "");

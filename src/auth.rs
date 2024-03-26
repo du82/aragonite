@@ -16,31 +16,6 @@ pub fn favicon() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("favicon.ico"))
 }
 
-#[get("/images")]
-pub fn images() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/images.html"))
-}
-
-#[get("/videos")]
-pub fn videos() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/videos.html"))
-}
-
-#[get("/news")]
-pub fn news() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/news.html"))
-}
-
-#[get("/obscure")]
-pub fn obscure() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/obscure.html"))
-}
-
-#[get("/dw")]
-pub fn dw() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/serps/dw.html"))
-}
-
 #[get("/donate")]
 pub fn donate() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/donate.html"))

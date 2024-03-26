@@ -18,7 +18,7 @@ impl Fairing for ThemeMiddleware {
             return;
         }
 
-        let theme = request.cookies().get("theme").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "dark.css".to_string());
+        let theme = request.cookies().get("theme").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "gemstone.css".to_string());
 
         if let Some(body) = response.body().and_then(|b| b.into_string()) {
             let modified_body = body.replace("{{theme}}", &format!("themes/{}", theme));
