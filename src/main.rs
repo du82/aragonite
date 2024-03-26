@@ -13,7 +13,6 @@ use middleware::ThemeMiddleware;
 fn main() {
     rocket::ignite()
         .mount("/", routes![
-            auth::landing_theme_route,
             auth::logo_image, 
             auth::index,
             auth::favicon,

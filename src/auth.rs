@@ -48,11 +48,6 @@ pub fn settings() -> Result<NamedFile, std::io::Error> {
 
 // -----Themes-----
 
-#[get("/themes/landing.css")]
-pub fn landing_theme_route() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/landing.css"))
-}
-
 #[get("/themes/media/logo.png")]
 pub fn logo_image() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/media/logo.png"))
