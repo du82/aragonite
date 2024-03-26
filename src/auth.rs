@@ -58,19 +58,14 @@ pub fn logo_image() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/media/logo.png"))
 }
 
-#[get("/themes/light.css")]
-pub fn light_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/light.css"))
+#[get("/themes/gemstone.css")]
+pub fn gemstone_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/gemstone.css"))
 }
 
-#[get("/themes/dark.css")]
-pub fn dark_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/dark.css"))
-}
-
-#[get("/themes/graphite.css")]
-pub fn graphite_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/graphite.css"))
+#[get("/themes/gemstone_light.css")]
+pub fn gemstone_light_theme() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/themes/gemstone_light.css"))
 }
 
 #[get("/themes/high-contrast.css")]
@@ -81,31 +76,6 @@ pub fn high_contrast_theme() -> Result<NamedFile, std::io::Error> {
 #[get("/themes/midnight.css")]
 pub fn midnight_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/midnight.css"))
-}
-
-#[get("/themes/dracula.css")]
-pub fn dracula_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/dracula.css"))
-}
-
-#[get("/themes/420.css")]
-pub fn weed_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/420.css"))
-}
-
-#[get("/themes/ristretto.css")]
-pub fn ristretto_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/ristretto.css"))
-}
-
-#[get("/themes/r_theme.css")]
-pub fn r_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/r_theme.css"))
-}
-
-#[get("/themes/gemstone.css")]
-pub fn gemstone_theme() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/themes/gemstone.css"))
 }
 
 // -----Theme Selector-----
