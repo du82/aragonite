@@ -246,3 +246,18 @@ clearnet = "https://howlongagogo.com/"
 status = "Operational"
 category = "productivity"
 tags = ["how long ago", "how many years ago", "how long ago was", "how many years ago was"]
+
+["https://www.marinetraffic.com/en/ais/home"]
+title = "MarineTraffic Live Ships Map. Discover information and vessel positions for vessels around the world. Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. Search for popular ships globally. Find locations of ports and ships using the near Real Time ships map."
+clearnet = "https://www.marinetraffic.com/en/ais/home"
+status = "Operational"
+category = "productivity"
+tags = ["visaul data", "oil tanker", "global shipping", "shipping routes", "ship collision", "shipwreck", "ship crash", "shipping"]
+
+["https://www.flightaware.com/"]
+title = "FlightAware - Flight Tracker / Flight Status"
+description = "Live flight status, flight tracking, and predictive data powered by Hyperfeed®. Crunching hundreds of gigabytes a day and enriched by artificial intelligence (AI) and machine learning (ML) algorithms, FlightAware's HyperFeed engine delivers a complete picture of historical and predictive global aircraft"
+clearnet = "https://www.flightaware.com/"
+status = "Operational"
+category = "productivity"
+tags = ["visual data", "travel", "track flights", "airports", "flight number", "private jet", "flight"]
