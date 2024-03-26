@@ -42,3 +42,21 @@ clearnet = "https://www.reuters.com/"
 status = "Operational"
 category = "news"
 tags = ["information", "global", "current news", "media", "articles"]
+
+["https://www.theverge.com/2024/3/25/24111818/telegram-peer-to-peer-login-otp-two-factor-volunteer"]
+title = "Telegram’s Peer-to-Peer Login system is a risky way to save $5 a month"
+description = "Telegram is offering a new way to earn a premium subscription free of charge: all you have to do is volunteer your phone number to relay one-time passwords (OTP) to other users. This, in fact, sounds like an awful idea — particularly for a messaging service based around privacy."
+clearnet = "https://www.theverge.com/2024/3/25/24111818/telegram-peer-to-peer-login-otp-two-factor-volunteer"
+status = "Operational"
+subject_type = "Messaging app"
+category = "news"
+tags = ["SMS code", "security", "2FA", "otp", "privacy", "telegram"]
+
+["https://www.androidpolice.com/telegram-use-your-phone-send-other-people-login-codes/"]
+title = "Telegram's new peer-to-peer SMS relay is an absolute privacy nightmare"
+description = "Telegram has started offering some of its users free access to its Premium subscription in exchange for access to their phones for sending out login verification codes via SMS. The feature is potentially a privacy and spam nightmare, as participants will presumably be able to see the numbers that their phones are sending out codes to. Even though they’re not allowed to contact these numbers as per the terms of service, Telegram shouldn’t provide random users with other users’ phone numbers for whatever reason."
+clearnet = "https://www.androidpolice.com/telegram-use-your-phone-send-other-people-login-codes/"
+status = "Operational"
+subject_type = "Messaging app"
+category = "news"
+tags = ["SMS code", "security", "2FA", "otp", "privacy", "telegram"]
