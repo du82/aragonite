@@ -259,11 +259,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
     let start = Instant::now();
 
-
     let searcher = reader.searcher();
 
     // Querying the index
-    let query_parser = QueryParser::for_index(&index, vec![title, description, full_description, author, category, tags, url]);
+    let query_parser = QueryParser::for_index(&index, vec![title, description, full_description, author, subject_type, category, tags, url]);
     
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
@@ -349,6 +348,28 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         if let Some(tantivy::schema::Value::Str(instant_answer)) = retrieved_doc.get_first(instant_answer) {
             if !instant_answer.is_empty() {
                 score *= 100.0; // Increase by 100x
+            }
+        }
+        if let Some(tantivy::schema::Value::Str(privacy_track_record)) = retrieved_doc.get_first(privacy_track_record) {
+            if privacy_track_record == "excellent" {
+                score *= 0.2; // Increase score by 20%
+            } else if privacy_track_record == "good" {
+                score *= 0.1; // Increase score by 10%
+            } else if privacy_track_record == "bad" {
+                score *= -0.1; // Decrease score by 10%
+            } else if privacy_track_record == "terrible" {
+                score *= -0.2; // Decrease score by 20%
+            }
+        }
+        if let Some(tantivy::schema::Value::Str(human_rights_track_record)) = retrieved_doc.get_first(human_rights_track_record) {
+            if human_rights_track_record == "excellent" {
+                score *= 0.2; // Increase score by 20%
+            } else if human_rights_track_record == "good" {
+                score *= 0.1; // Increase score by 10%
+            } else if human_rights_track_record == "bad" {
+                score *= -0.1; // Decrease score by 10%
+            } else if human_rights_track_record == "terrible" {
+                score *= -0.2; // Decrease score by 20%
             }
         }
         //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
