@@ -265,10 +265,12 @@ tags = ["visual data", "travel", "track flights", "airports", "flight number", "
 ["https://www.cloudflare.com/"]
 title = "Connect, Protect and Build Everywhere | Cloudflare"
 description = "Cloudflare is a unified platform that offers SASE, SSE, app, infrastructure, and developer services to help you work, deliver, and innovate everywhere. Learn how Cloudflare can improve security, performance, and cost for your business."
-clearnet = "https://howlongagogo.com/"
+clearnet = "https://www.cloudflare.com/"
 status = "Operational"
 category = "productivity"
 tags = ["cybersecurity", "CDN", "Condent delivery network", "DDoS", "DDoS mitigation", "SASE", "SSE", "Internet infrastructure"]
+ptr = "bad"
+hrr = "good"
 
 ["https://speed.cloudflare.com/"]
 title = "Internet Speed Test - Measure Network Performance | Cloudflare"
@@ -278,6 +280,8 @@ status = "Operational"
 parent_organization = "Cloudflare"
 category = "productivity"
 tags = ["speed test", "what is my internet speed", "connection test", "connection speed", "network performance"]
+ptr = "bad"
+hrr = "good"
 
 ["https://radar.cloudflare.com/"]
 title = "Cloudflare Radar"
@@ -287,6 +291,7 @@ status = "Operational"
 parent_organization = "Cloudflare"
 category = "productivity"
 tags = ["visual data", "internet traffic", "internet usage", "domain ranking", "outages", "URL scanner", "cybersecurity attacks", "recent hack", "anomaly", "traffic security"]
-
+ptr = "bad"
+hrr = "good"
 
 
