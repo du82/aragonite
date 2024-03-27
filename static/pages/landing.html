@@ -12,22 +12,23 @@
 <body class="landing-body">
         <div class="landing-outer-container">
             <form class="landing-container" action="/search" method="post">
-                <h1 class="landing-gradient-text">Project Obscura</h1>
+                <h1 class="landing-gradient-text">Project Obscura<sup>(alpha)</sup></h1>
                 <div style="display: flex;">
                     <input class="search-box" type="search" name="query" placeholder="{{search_string}}" >
                     <input type="submit" value="Search">
                 </div>
+                <div class="search-result-related-row">Trending: <a class="pill" href="/search?q=privacy">privacy</a><a class="pill" href="/search?q=signal+messenger">signal messenger</a><a class="pill" href="/search?q=glowies">glowies</a><a class="pill" href="/search?q=rust+lang">rust lang</a></div>
             </form>          
     <footer class="landing-container">
         <div class="landing-footer-container">
             <a href="about">
             About
             </a>|
+            <a href="blog">
+            Blog
+            </a>|
             <a href="canary">
             Canary
-            </a>|
-            <a href="jobs">
-            Careers
             </a>|
             <a href="donate">
             Donate
