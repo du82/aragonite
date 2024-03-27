@@ -1,0 +1,35 @@
+["https://www.reddit.com/"]
+title = "Reddit"
+description = "Reddit is home to thousands of communities, endless conversation, and authentic human connection. Whether you're into breaking news, sports, TV fan theories, or a never-ending stream of the internet's cutest animals, there's a community on Reddit for you."
+clearnet = "https://www.reddit.com/"
+status = "Operational"
+subject_type = "Online forum"
+category = "reddit"
+tags = ["forum", "community", "communities", "proprietary", "front page of the internet", "news"]
+
+["https://www.reddit.com/r/rust"]
+title = "The Rust Programming Language - Reddit"
+description = "A place for all things related to the Rust programming language—an open-source systems language that emphasizes performance, reliability, and productivity."
+clearnet = "https://www.reddit.com/r/rust"
+status = "Operational"
+subject_type = "Subreddit discussing the Rust programming language"
+category = "reddit"
+tags = ["forum", "community", "communities", "proprietary", "front page of the internet", "rust lang"]
+
+["https://www.reddit.com/r/privacy"]
+title = "Privacy in the digital age - Reddit"
+description = "Privacy in the digital age (this is not a SECURITY subreddit, and PUBLIC data, closed source, etc is off-topic)"
+clearnet = "https://www.reddit.com/r/privacy"
+status = "Operational"
+subject_type = "Subreddit discussing privacy"
+category = "reddit"
+tags = ["forum", "community", "communities", "open source", "front page of the internet", "privacy"]
+
+["https://www.reddit.com/r/opsec"]
+title = "r/opsec - Reddit"
+description = "OPSEC is the process and practice of Operations Security. Although it has roots in the military, OPSEC can be applied to any venture requiring secrecy and survival, from business security to personal safety. OPSEC is a mindset of critical thinking and safe habits."
+clearnet = "https://www.reddit.com/r/opsec"
+status = "Operational"
+subject_type = "Subreddit discussing operational security"
+category = "reddit"
+tags = ["forum", "community", "communities", "opsec", "front page of the internet", "operational security"]

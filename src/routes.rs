@@ -36,9 +36,9 @@ pub fn tos() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/tos.html"))
 }
 
-#[get("/jobs")]
-pub fn jobs() -> Result<NamedFile, std::io::Error> {
-    NamedFile::open(Path::new("static/pages/jobs.html"))
+#[get("/mirrors")]
+pub fn mirrors() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/mirrors.html"))
 }
 
 #[get("/settings")]

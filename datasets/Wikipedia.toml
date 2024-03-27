@@ -250,3 +250,12 @@ status = "Operational"
 subject_type = "Anonymity"
 category = "wikipedia"
 tags = ["freedom", "privacy", "anonymity", "anonymous", "security", "opsec", "human rights", "digital freedom"]
+
+["https://en.wikipedia.org/wiki/Donald_Trump"]
+title = "Donald Trump - Wikipedia"
+description = "Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who served as the 45th president of the United States from 2017 to 2021."
+clearnet = "https://en.wikipedia.org/wiki/Donald_Trump"
+status = "Operational"
+subject_type = "45th president of the United States"
+category = "wikipedia"
+tags = ["donald trump", "45th president"]

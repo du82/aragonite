@@ -20,7 +20,7 @@ fn main() {
             routes::about,
             routes::privacy,
             routes::tos,
-            routes::jobs,
+            routes::mirrors,
             routes::settings,
             routes::theme_selector,
             routes::gemstone_theme,
