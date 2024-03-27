@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <!-- You won't find any JavaScript here, just a staticly generated SERP! -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Project Obscura</title>
-    <meta property="og:description" content="A soverign search engine">
-    <meta property="og:image" content="static/themes/media/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{theme}}">
-</head>
-<body class="landing-body">
-        <div class="landing-outer-container">
-            <form class="landing-container" action="/search" method="post">
-                <h1 class="landing-gradient-text">Project Obscura<sup>(alpha)</sup></h1>
-                <div style="display: flex;">
-                    <input class="search-box" type="search" name="query" placeholder="{{search_string}}" >
-                    <input type="submit" value="Search">
-                </div>
-                <div class="search-result-related-row">Trending: <a class="pill" href="/search?q=privacy">privacy</a><a class="pill" href="/search?q=signal+messenger">signal messenger</a><a class="pill" href="/search?q=glowies">glowies</a><a class="pill" href="/search?q=rust+lang">rust lang</a></div>
-            </form>          
-    <footer class="landing-container">
-        <div class="landing-footer-container">
-            <a href="about">
-            About
-            </a>|
-            <a href="blog">
-            Blog
-            </a>|
-            <a href="canary">
-            Canary
-            </a>|
-            <a href="donate">
-            Donate
-            </a>|
-            <a href="privacy">
-            Privacy
-            </a>|
-            <a href="/settings">
-            Settings
-            </a>
-            <p class="centered-text">Don't be Hypocrites // Mirror last updated: Mar 27, 2024</p>
+    <meta property="og:description" content="A soverign search engine" />
+    <meta property="og:image" content="static/themes/media/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{theme}}" />
+  </head>
+  <body class="landing-body">
+    <div class="landing-outer-container">
+      <form class="landing-container" action="/search" method="post">
+        <h1 class="landing-gradient-text">Project Obscura<sup>(alpha)</sup></h1>
+        <div style="display: flex">
+          <input
+            class="search-box"
+            type="search"
+            name="query"
+            placeholder="{{search_string}}"
+          />
+          <input type="submit" value="Search" />
         </div>
+        <div class="search-result-related-row">
+          Trending: <a class="pill" href="/search?q=privacy">privacy</a
+          ><a class="pill" href="/search?q=signal+messenger">signal messenger</a
+          ><a class="pill" href="/search?q=glowies">glowies</a
+          ><a class="pill" href="/search?q=rust+lang">rust lang</a>
+        </div>
+      </form>
+    </div>
+    <footer class="landing-container">
+      <div class="landing-footer-container">
+        <a href="about"> About </a>| <a href="blog"> Blog </a>|
+        <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
+        <a href="privacy"> Privacy </a>|
+        <a href="/settings"> Settings </a>
+        <p class="centered-text">
+          Don't be Hypocrites // Mirror last updated: Mar 27, 2024
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
