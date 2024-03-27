@@ -15,7 +15,7 @@
         <div class="search-row">
             <form action="/search" method="post" style="margin: 0; padding: 0;">
                 <div style="display: flex;">
-                    <input class="search-box" name="query" placeholder="Search">
+                    <input class="search-box" name="query" placeholder="{{search_string}}">
                     <input type="submit" value="Search">
                 </div>
             </form>
@@ -41,7 +41,7 @@
     <div class="content">
         <div class="landing">
             <h2>Privacy Policy</h2>
-            <h5 style="margin-top: 0px;">Last Update: March 12th, 2024</h5>
+            <h5 style="margin-top: 0px;">Last Update: March 26th, 2024</h5>
                 <!----->
                 <u>Information We Collect:</u>
                     <p>We collect personal data when you enter a search query, and only collect the following information:</p>
@@ -50,9 +50,9 @@
                     <br>
                 <!----->
                 <u>How We Collect and Use Your Personal Data:</u>
-                <p>IP Addresses are temporarily stored in RAM when you visit our website.
+                <p>IP Addresses are temporarily stored in RAM (for at most 2 minutes) when you visit our website. This is to help us identify and prevent abuse so all can enjoy our product. Please use the Tor version if you wish to remain anonymous.
                     <br><br>
-                    Search Queries are temporarily stored in RAM when you input a query and click `Search` or press `Enter`. 
+                    Search Queries are temporarily stored in RAM (until a 16kb block is filled) when you input a query and click `Search` or press `Enter`. This helps us identify demand for certain topics and increase indexing on them.
                     <br><br>
                     We <b>do not</b> associate IP Addresses with Search Queries. These are strictly isolated from one another.
                     This information is only used to the extent necessary to provide the service. 
@@ -76,7 +76,7 @@
                 <!----->
                 <u>Contact:</u>
                 <p>
-                    We may store your message and your email address for some time as a reference to help us help you in case of a follow-up. 
+                    If you send us an email, we may store your message and your email address for some time as a reference to help us help you in case of a follow-up. 
                     If you have any questions about this Privacy Policy, please reach out: 
                     <br><br>
                     <a class="donate-link" href="mailto:wizardxwoah@proton.me">wizardxwoah@proton.me</a>
