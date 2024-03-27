@@ -1,0 +1,26 @@
+["https://ubuntu.com/desktop"]
+title = "Ubuntu for desktops"
+description = "The open source Ubuntu desktop operating system powers millions of PCs and laptops around the world."
+clearnet = "https://ubuntu.com/desktop"
+subject_type = "Ubuntu linux distribution"
+category = "linux"
+tags = ["ubuntu linux", "OS", "operating system", "server", "linux distro"]
+ptr = "good"
+
+["https://ubuntu.com/server"]
+title = "Ubuntu for servers"
+description = "Ubuntu Server brings economic and technical scalability to your data centre, public or private cloud. Whether you want to deploy an OpenStack cloud, a Kubernetes cluster or a 50,000-node render farm, Ubuntu Server delivers the best value scale-out performance available."
+clearnet = "https://ubuntu.com/server"
+subject_type = "Ubuntu linux server distribution"
+category = "linux"
+tags = ["ubuntu linux", "OS", "operating system", "server", "linux distro"]
+ptr = "good"
+
+["https://pop.system76.com/"]
+title = "PopOS by System76"
+description = "Pop!_OS is an operating system for STEM and creative professionals who use their computer as a tool to discover and create. Unleash your potential on secure, reliable open source software. Based on your exceptional curiosity, we sense you have a lot of it."
+clearnet = "https://pop.system76.com/"
+subject_type = "PopOS linux distribution"
+category = "linux"
+tags = ["Pop OS", "operating system", "server", "linux distro"]
+ptr = "excellent"
