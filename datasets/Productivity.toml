@@ -54,10 +54,33 @@ title = "VPN - Riseup"
 description = "Riseup offers Personal VPN service for censorship circumvention, location anonymization and traffic encryption. To make this possible, it sends all your internet traffic through an encrypted connection to riseup.net, where it then goes out onto the public internet. Unlike most other VPN providers, Riseup does not log your IP address. "
 onion = "http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"
 clearnet = "https://riseup.net"
+subject_type = "Virtual Private Network"
 category = "productivity"
 tags = ["privacy", "vpn"]
 ptr = "excellent"
 hrr = "excellent"
+
+["https://veilock.com/"]
+title = "Veilock | Affordable Ad & Malware Blocking VPN"
+description = "Affordable, Fast, & Secure VPN Service for Professionals. We are a next-generation VPN service for individuals and businesses alike. Our product does more than mask your personal IP address, we go to great lengths to block digital threats through Vortex and route optimization with WarpSpeed."
+clearnet = "https://veilock.com/"
+status = "Operational"
+subject_type = "Virtual Private Network"
+category = "technology"
+tags = ["VPN", "software", "privacy", "security"]
+ptr = "excellent"
+hrr = "good"
+
+["https://nordvpn.com/"]
+title = "The best online VPN service for speed | NordVPN"
+description = "Thanks to all kinds of nifty, cutting-edge technology, NordVPN keeps your devices malware free and your browsing safe from strangers’ eyes. How safe? It would take the world’s most powerful computer billions of years to unencrypt your data — that safe."
+clearnet = "https://nordvpn.com/"
+status = "Operational"
+subject_type = "Virtual Private Network"
+category = "technology"
+tags = ["VPN", "software", "privacy", "security"]
+ptr = "bad"
+hrr = "bad"
 
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
 title = "Archive.today"
@@ -66,6 +89,7 @@ year_published = 2024
 year_updated = 2024
 onion = "http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"
 clearnet = "https://archive.today"
+subject_type = "Website archiver"
 category = "productivity"
 tags = ["archive", "archival", "storage"]
 ptr = "excellent"

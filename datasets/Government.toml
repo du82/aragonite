@@ -5,10 +5,41 @@ onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
 clearnet = "https://cia.gov"
 jurisdiction = "United states of america"
 jurisdiction_level = "federal"
+subject_type = "Federal investigative agency"
 category = "government"
-tags = ["CIA", "glowies", "surveillance"]
+tags = ["CIA", "glowies", "intelligence", "surveillance"]
 ptr = "bad"
 hrr = "bad"
+
+["https://fbi.gov"]
+title = "Welcome to fbi.gov - FBI"
+description = "We protect the American people and uphold the U.S. Constitution."
+clearnet = "https://fbi.gov"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
+subject_type = "Federal domestic investigative agency"
+category = "government"
+tags = ["FBI", "glowies", "surveillance", "investigation"]
+
+["https://dea.gov"]
+title = "United States Drug Enforcement Administration"
+description = "In 2023, DEA seized more than 79.5 million fentanyl-laced fake pills and nearly 12,000 pounds of fentanyl powder. The 2023 seizures are equivalent to more than 376.7 million lethal doses of fentanyl."
+clearnet = "https://dea.gov"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
+subject_type = "Federal domestic drug prevention agency"
+category = "government"
+tags = ["FBI", "glowies", "surveillance", "investigation", "drugs"]
+
+["https://cisa.gov"]
+title = "Home Page | CISA"
+description = ""
+clearnet = "https://cisa.gov"
+jurisdiction = "United states of america"
+jurisdiction_level = "federal"
+subject_type = "Federal cybersecurity agency"
+category = "government"
+tags = ["CISA", "glowies", "surveillance", "investigation", "infrastructure", "cybersecurity"]
 
 ["https://www.state.gov/"]
 title = "U.S. Department of State - Home"
@@ -17,7 +48,7 @@ clearnet = "https://www.state.gov/"
 jurisdiction = "United states of america"
 jurisdiction_level = "federal"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureacracy", "glowies", "resource", "official"]
 
 ["https://www.ed.gov/"]
 title = "Home | U.S. Department of Education"
