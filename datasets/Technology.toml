@@ -23,19 +23,6 @@ subject_type = "Anonymity software"
 category = "technology"
 tags = ["software", "open source", "privacy", "anonymity", "digital downloads"]
 
-["https://speed.cloudflare.com/"]
-title = "Internet speed test - Cloudflare"
-description = "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge network."
-year_published = 2024
-year_updated = 2024
-clearnet = "https://speed.cloudflare.com/"
-status = "Operational"
-subject_type = "Internet speed test"
-category = "technology"
-tags = ["software", "testing", "test", "speed test"]
-ptr = "bad"
-hrr = "good"
-
 ["https://etherscan.io/"]
 title = "Ethereum (ETH) Blockchain Explorer - Etherscan"
 description = "Etherscan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH)."
