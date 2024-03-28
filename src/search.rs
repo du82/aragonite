@@ -212,8 +212,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
     let nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
-    let religious_affiliation =
-        schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
+    let religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
