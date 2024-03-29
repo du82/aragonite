@@ -3,6 +3,7 @@ use rocket::{Request, Response};
 use rocket::http::ContentType;
 use rand::seq::SliceRandom;
 use std::io::Cursor;
+use std::process::Command;
 use std::fs;
 pub struct ThemeMiddleware;
 impl Fairing for ThemeMiddleware {
@@ -35,6 +36,25 @@ impl Fairing for ThemeMiddleware {
         
             // Replace {{search_string}} with the random line
             let modified_body = body.replace("{{search_string}}", random_line);
+            response.set_sized_body(Cursor::new(modified_body));
+        }
+
+        if let Some(body) = response.body().and_then(|b| b.into_string()) {
+            // Execute neofetch command
+            let neofetch_output = Command::new("neofetch")
+                .arg("--stdout")
+                .output()
+                .expect("failed to execute process");
+        
+            // Format the output
+            let formatted_output = String::from_utf8_lossy(&neofetch_output.stdout)
+                .lines()
+                .skip(2)
+                .collect::<Vec<&str>>()
+                .join("<br>");
+        
+            // Replace {{neofetch}} with the command output
+            let modified_body = body.replace("{{neofetch}}", &formatted_output);
             response.set_sized_body(Cursor::new(modified_body));
         }
     }
