@@ -157,3 +157,22 @@ clearnet = "https://www.w3schools.com/html/"
 status = "Operational"
 category = "programming"
 tags = ["software", "scripting", "w3s", "html", "javascript", "css", "programming language"]
+
+["https://developer.android.com/"]
+title = "Android Mobile App Developer Tools - Android Developers"
+description = "Discover the latest app development tools, platform updates, training, and documentation for developers across every Android device. Essentials Modern Android; Quickly bring your app to life with less code, using a modern declarative approach to UI, and the simplicity of Kotlin. ..."
+clearnet = "https://developer.android.com/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "programming"
+tags = ["software", "google play", "google play store", "google policy", "google policy chagne", "android"]
+
+["https://mp.weixin.qq.com/cgi-bin/wx"]
+title = "WeChat Mini Programs"
+description = "Mini Programs are a new way of connecting users and services. They are easy to access and share on WeChat, delivering excellent user experience."
+clearnet = "https://mp.weixin.qq.com/cgi-bin/wx"
+status = "Operational"
+parent_organization = "Tencent"
+category = "programming"
+tags = ["software", "mini programs", "chinese software", "wechat application", "wechat developer", "wechat"]
+
