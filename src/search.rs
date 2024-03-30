@@ -544,6 +544,19 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     } else {
         "".to_string()
     };
+    let language = fields
+        .get("language")
+        .unwrap_or_else(|| &&default_value)
+        .replace(", ", "");
+    let language_html = if !language.is_empty() {
+        format!(
+            "<a class='pill' href='/search?q=language:{}'>language: {}</a>",
+            language.to_lowercase(),
+            language.to_lowercase()
+        )
+    } else {
+        "".to_string()
+    };
     let url = fields
         .get("clearnet")
         .unwrap_or_else(|| &&default_value)
@@ -583,14 +596,14 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
 
     // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {
-        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}{}{}</div></div></details></div>",
-        url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html)
+        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>Related: {}{}{}{}{}{}</div></div></details></div>",
+        url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
     } else if instant_answer == "linux" {
         format!("<div class='instant-answer'><details><summary>System Info</summary><h1>{}</h1><p class='search-result-description'>{}</p></details></div>",
         title, description)
     } else {
         format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}{}{}</div></div>",
-        url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, instant_answer)
+        url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
     };
     
     result_html
