@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <meta charset="utf-8"><title>Table preview</title>
+            <style type="text/css">
+            body {
+                font-family: -apple-system,Helvetica,Arial,sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                word-wrap: break-word;
+                background: #F9F9F9;
+            }
+            a {
+                color: #0366d6;
+                text-decoration: none;
+            }
+            table { border-collapse: collapse;
+                    border-spacing: 0; }
+            td, th { border: 1px lightgray solid; 
+                     padding: 6px 13px;}
+            code:not([class]) {
+                background-color: rgba(27,31,35,0.05);
+                border-radius: 3px;
+                font-size: 90%;
+                margin: 0;
+                padding: 0.2em 0.4em;
+            }
+            </style>
+            </head>
+            <body><table>
+<thead>
+<tr>
+<th>Schema</th>
+<th>Data Type</th>
+<th>Operations</th>
+<th>Query method</th>
+<th>Possible Entries</th>
+<th>Description</th>
+<th>Example query</th>
+<th>Example query effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>title</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Title of the webpage or entity</td>
+<td><code>title:dread</code> encryption</td>
+<td>Returns results for encryption with "dread" (dark web forum) in&nbsp;&nbsp;&nbsp;the title</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Description of the webpage or entity</td>
+<td><code>description:privacy</code> messaging apps</td>
+<td>Returns results for messaging apps that have the word "privacy"&nbsp;&nbsp;&nbsp;in their description</td>
+</tr>
+<tr>
+<td><code>full_description</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Full description of the webpage or entity</td>
+<td><code>full_description:cats</code></td>
+<td>Returns results where the full description contains the word&nbsp;&nbsp;&nbsp;"cats"</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>Author of the content on the webpage</td>
+<td>blog posts about privacy where <code>author:ducheng</code></td>
+<td>Returns blog posts about privacy from the author "ducheng"</td>
+</tr>
+<tr>
+<td><code>founding_date</code></td>
+<td>Unsigned Integer</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion)</td>
+<td>Exact match</td>
+<td>Any unsigned ineger ≤8 chars</td>
+<td>Founding date of the primary entity mentioned</td>
+<td>news companies where <code>founding_date:1985</code></td>
+<td>Returns results from news companies founded in 1985</td>
+</tr>
+<tr>
+<td><code>year_published</code>&nbsp; (to be replaced with <code>date_published</code>)</td>
+<td>Unsigned Integer</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion)</td>
+<td>Exact match</td>
+<td>Any unsigned ineger ≤8 chars</td>
+<td>Date the content was published</td>
+<td><code>category:news</code> articles where <code>year_published:2024</code></td>
+<td>Returns news articles published in 2024</td>
+</tr>
+<tr>
+<td><code>year_updated</code>&nbsp;&nbsp;&nbsp; (to be replaced with <code>date_updated</code>)</td>
+<td>Unsigned Integer</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion)</td>
+<td>Exact match</td>
+<td>Any unsigned ineger ≤8 chars</td>
+<td>Date the content was updated</td>
+<td><code>category:news</code> articles where <code>year_published:2020</code></td>
+<td>Returns news articles updated in 2024</td>
+</tr>
+<tr>
+<td><code>clearnet</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (to be replaced with <code>url</code>)</td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains domain</td>
+<td>Any string ≤64 chars</td>
+<td>Clearnet address of the content in URL format</td>
+<td><code>clearnet:flights.google.com flights to Mexico</code></td>
+<td>Returns results from Google Flights for flights to Mexico</td>
+</tr>
+<tr>
+<td><code>onion</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion)</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>Onion address of the content in Onion V3 format</td>
+<td><code>+drugs</code> on <code>+onion:&lt;address&gt;</code></td>
+<td>Returns pages containing the term "drugs" on a Tor hidden&nbsp;&nbsp;&nbsp;service</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>operational</code>, <code>defunct</code></td>
+<td>Status of the webpage</td>
+<td><code>+status:defunct</code></td>
+<td>Returns only defunct webpages</td>
+</tr>
+<tr>
+<td><code>parent_organization</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Parent organization of the entity</td>
+<td>companies where <code>parent_organization:Google</code></td>
+<td>Returns results from companies owned by Google</td>
+</tr>
+<tr>
+<td><code>sub_organization</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Child organization of the entity</td>
+<td>companies where <code>sub_organization:WolframAlpha</code></td>
+<td>Returns results from the parent organization of WolframAlpha which is&nbsp;&nbsp;&nbsp;Wolfram.com</td>
+</tr>
+<tr>
+<td><code>jurisdiction</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>What laws govern the entity</td>
+<td>cloud providers where <code>jurisdiction:UnitedStates</code></td>
+<td>Returns cloud providers based in the United States</td>
+</tr>
+<tr>
+<td><code>jurisdiction_level</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>What level the entity is goverened at</td>
+<td>government agencies where <code>jurisdiction_level:federal</code></td>
+<td>Returns a list of federal agencies and their websites. Spooky!</td>
+</tr>
+<tr>
+<td><code>regulates_entity</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>What other entity the subject entity regulates</td>
+<td>government agencies where <code>regulates_entity:ChicagoPolice</code></td>
+<td>Returns entities that regulate the Chicago police</td>
+</tr>
+<tr>
+<td><code>regulator_entity</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>What the entity is regulated by</td>
+<td>companies where <code>regulator_entity:dea</code></td>
+<td>Returns companies regulated by the DEA</td>
+</tr>
+<tr>
+<td><code>subject_type</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Description of the subject of the webpage</td>
+<td>forums where <code>subject_type:Terraria</code></td>
+<td>Returns a list of results from forums that discuss Terraria (video game)</td>
+</tr>
+<tr>
+<td><code>nonprofit_status</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>Any string ≤64 chars</td>
+<td>Nonprofit status of the entity</td>
+<td>Humanitarian organizations where <code>nonprofit_status:Nonprofit501c20</code></td>
+<td>Returns Nonprofit501c20 organizations</td>
+</tr>
+<tr>
+<td><code>religious_affiliation</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>christianity</code>, <code>islam</code>, <code>judaism</code>, <code>falun gong</code></td>
+<td>Religious affiliation of the entity</td>
+<td>book sellers where <code>+religious_affiliation:christianity</code></td>
+<td>Only returns Christian book sellers</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>animals</code>, <code>art</code>, <code>blogs</code>, <code>cloud computing</code>, <code>dark web</code>,&nbsp;&nbsp;&nbsp;<code>dictionary</code>, <code>drugs</code>, <code>education</code>, <code>entertainment</code>, <code>faith</code>, <code>fediverse</code>,&nbsp;&nbsp;&nbsp;<code>finance</code>, <code>gitrepo</code>, <code>government</code>, <code>images</code>, <code>linux</code>, <code>medical</code>, <code>news</code>,&nbsp;&nbsp;&nbsp;<code>nonprofit</code>, <code>obscure</code>, <code>politics</code>, <code>productivity</code>, <code>programming</code>, <code>reddit</code>,&nbsp;&nbsp;&nbsp;<code>shopping</code>, <code>sports</code>, <code>technology</code>, <code>travel</code>, <code>uncensored</code>, <code>video games</code>,&nbsp;&nbsp;&nbsp;<code>wikipedia</code>, <code>wikis</code>, <code>youtube</code></td>
+<td>Category of content that the result is in</td>
+<td><code>-category:news</code> articles about bridge collapse</td>
+<td>Returns results about bridge collapse with news articles removed</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>Array of Strings</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Contains</td>
+<td>Any string ≤64 chars</td>
+<td>Tags related to the search result</td>
+<td><code>tags:privacy</code> messaging apps</td>
+<td>Returns results for messaging apps with <code>privacy</code> in the tags</td>
+</tr>
+<tr>
+<td><code>ptr</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>excellent</code>, <code>good</code>, <code>average</code>, <code>bad</code>, <code>terrible</code></td>
+<td>Privacy track record of the entity</td>
+<td>companies in <code>jurisdiction:UnitedStates</code> where <code>ptr:good</code></td>
+<td>Returns companies in the United States with a good track record of&nbsp;&nbsp;&nbsp;respecting privacy</td>
+</tr>
+<tr>
+<td><code>hrr</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>excellent</code>, <code>good</code>, <code>average</code>, <code>bad</code>, <code>terrible</code></td>
+<td>Human rights track record of the entity</td>
+<td>companies in <code>jurisdiction:China</code> where <code>hrr:good</code></td>
+<td>Returns companies in China with a good track record of respecting human&nbsp;&nbsp;&nbsp;rights</td>
+</tr>
+<tr>
+<td><code>instant_answer</code></td>
+<td>String</td>
+<td>None</td>
+<td>Exact match</td>
+<td>One of <code>sports</code>, <code>linux</code></td>
+<td>Internal schema for handling instant answer contextual UIs</td>
+<td>For internal use only</td>
+<td>Does nothing</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>String</td>
+<td><code>+</code> (mandatory inclusion), <code>-</code> (mandatory exclusion), Best Judgement</td>
+<td>Exact match</td>
+<td>One of <code>english</code>, <code>spanish</code>, <code>french</code>, <code>german</code>, <code>russian</code>, <code>polish</code>,&nbsp;&nbsp;&nbsp;<code>tagalog</code>, <code>indonesian</code>, <code>chinese</code>, <code>japanese</code>, <code>korean</code>, <code>vietnamese</code></td>
+<td>Language that the content is in</td>
+<td><code>category:news</code> in <code>language:spanish</code></td>
+<td>Returns news articles in Spanish</td>
+</tr>
+<tr>
+<td><code>neofetch</code></td>
+<td>String</td>
+<td>None</td>
+<td>Exact match</td>
+<td>None</td>
+<td>Output of the <code>neofetch</code> command on the host</td>
+<td><code>neofetch</code></td>
+<td>Output of the <code>neofetch</code> command on the host</td>
+</tr>
+</tbody></table>
+</body></html>
