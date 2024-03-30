@@ -10,6 +10,7 @@ status = "Operational"
 subject_type = "Internet culture webring"
 category = "obscure"
 tags = ["forum", "webring", "internet culture"]
+language = "english"
 
 ["https://dkwc.org"]
 title = "Digital Kowloon Walled City"
@@ -19,6 +20,7 @@ jurisdiction = "United states of america"
 subject_type = "Network state"
 category = "obscure"
 tags = ["privacy", "encryption", "communications", "infrastructure", "whistleblower"]
+language = "english"
 
 ["https://element.dkwc.org"]
 title = "Encrypted chat | DKWC.org"
@@ -36,6 +38,7 @@ clearnet = "https://wiby.org/"
 subject_type = "Small web search engine"
 category = "obscure"
 tags = ["small web", "search engine"]
+language = "english"
 
 ["https://home.snafu.de/tilman/krasel/filter/index.html"]
 title = "Scientology censors WWW for members"
@@ -44,3 +47,4 @@ clearnet = "https://home.snafu.de/tilman/krasel/filter/index.html"
 subject_type = "Discussion on censorshp by the church of scientology"
 category = "obscure"
 tags = ["scientology", "Scientologist", "censorship"]
+language = "english"

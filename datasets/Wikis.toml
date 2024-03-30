@@ -5,6 +5,7 @@ clearnet = "https://www.britannica.com/"
 status = "Operational"
 category = "wiki"
 tags = ["research", "information", "learn", "education"]
+language = "english"
 
 ["https://www.conservapedia.com/"]
 title = "Conservapedia"
@@ -14,6 +15,7 @@ status = "Operational"
 subject_type = "Conservative politics"
 category = "wiki"
 tags = ["open source", "research", "information", "learn", "education"]
+language = "english"
 
 ["https://www.merriam-webster.com/"]
 title = "Merriam-Webster: America's Most Trusted Dictionary"
@@ -22,6 +24,7 @@ clearnet = "https://www.merriam-webster.com/"
 status = "Operational"
 category = "wiki"
 tags = ["research", "information", "learn", "education"]
+language = "english"
 
 ["https://minecraft.wiki"]
 title = "Minecraft Wiki - The ultimate resource for Minecraft"
@@ -33,3 +36,4 @@ status = "Operational"
 subject_type = "Minecraft documentation"
 category = "wikis"
 tags = ["information", "video games", "minecraft"]
+language = "english"

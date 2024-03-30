@@ -9,6 +9,7 @@ subject_type = "Veloren"
 category = "Video games"
 tags = ["games", "voxels"]
 ptr = "excellent"
+language = "english"
 
 ["https://veloren.net/download"]
 title = "Download Veloren"
@@ -20,6 +21,7 @@ status = "Operational"
 subject_type = "Veloren"
 category = "Video games"
 tags = ["games", "voxels", "download", "digital downloads"]
+language = "english"
 
 ["https://veloren.net/blog/devblog-228/"]
 title = "Two Weeks in Veloren 228"
@@ -31,6 +33,7 @@ status = "Operational"
 subject_type = "Veloren"
 category = "Video games"
 tags = ["devlog", "games", "voxels", "blog"]
+language = "english"
 
 ["https://veloren.net/blog/devblog-227/"]
 title = "Two Weeks in Veloren 227"
@@ -42,6 +45,7 @@ status = "Operational"
 subject_type = "Veloren"
 category = "Video games"
 tags = ["devlog", "games", "voxels", "blog"]
+language = "english"
 
 ["https://veloren.net/blog/devblog-226/"]
 title = "Two Weeks in Veloren 226"
@@ -50,9 +54,10 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://veloren.net/blog/devblog-226/"
 status = "Operational"
-subject_type = "Veloren"
+subject_type = "Multi-platform video game"
 category = "Video games"
 tags = ["devlog", "games", "voxels", "blog"]
+language = "english"
 
 ["https://terraria.org/"]
 title = "Terraria"
@@ -61,10 +66,11 @@ year_published = 2024
 year_updated = 2024
 clearnet = "https://terraria.org/"
 status = "Operational"
-subject_type = "Terraria"
+subject_type = "Multi-platform video game"
 category = "Video games"
 tags = ["games", "landing page"]
 ptr = "average"
+language = "english"
 
 ["https://forums.terraria.org/index.php?threads/terraria-state-of-the-game-january-2024.132500/"]
 title = "Terraria State of the Game"
@@ -76,6 +82,7 @@ status = "Operational"
 subject_type = "Terraria"
 category = "Video games"
 tags = ["games", "community", "news"]
+language = "english"
 
 ["https://forums.terraria.org/index.php"]
 title = "Terraria Community Forums"
@@ -87,6 +94,7 @@ status = "Operational"
 subject_type = "Terraria"
 category = "Video games"
 tags = ["community", "discussion", "forum"]
+language = "english"
 
 ["https://store.steampowered.com/app/105600/Terraria/"]
 title = "Terraria on Steam"
@@ -98,6 +106,7 @@ status = "Operational"
 subject_type = "Terraria"
 category = "Video games"
 tags = ["game", "digital downloads", "steampowered"]
+language = "english"
 
 ["https://play.google.com/store/apps/details?id=com.and.games505.TerrariaPaid&hl=en_US&gl=US"]
 title = "Terraria - Apps on Google Play"
@@ -109,3 +118,4 @@ status = "Operational"
 subject_type = "Terraria"
 category = "Video games"
 tags = ["merchandise", "games", "digital downloads"]
+language = "english"

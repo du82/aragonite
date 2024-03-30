@@ -5,6 +5,7 @@ clearnet = "https://mastodon.social/"
 status = "Operational"
 category = "fediverse"
 tags = ["community", "online communities", "social media"]
+language = "english"
 
 ["https://joinmastodon.org/"]
 title = "Mastodon - Decentralized social media"
@@ -13,6 +14,7 @@ clearnet = "https://joinmastodon.org/"
 status = "Operational"
 category = "fediverse"
 tags = ["community", "online communities", "social media"]
+language = "english"
 
 ["https://join-lemmy.org/"]
 title = "Lemmy - A link aggregator for the fediverse"
@@ -21,6 +23,7 @@ clearnet = "https://join-lemmy.org/"
 status = "Operational"
 category = "fediverse"
 tags = ["community", "online communities", "social media"]
+language = "english"
 
 ["https://lemmy.one/c/privacyguides"]
 title = "Privacy Guides - Lemmy.one - Possum Pat"
@@ -29,3 +32,4 @@ clearnet = "https://lemmy.one/c/privacyguides"
 status = "Operational"
 category = "fediverse"
 tags = ["community", "online communities", "social media", "privacy"]
+language = "english"

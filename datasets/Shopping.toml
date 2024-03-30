@@ -9,6 +9,7 @@ category = "shopping"
 tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.walmart.com/"]
 title = "Walmart | Save Money. Live better."
@@ -20,6 +21,7 @@ category = "shopping"
 tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.microcenter.com/"]
 title = "Micro Center - Computer & Electronics Retailer - Shop Now"
@@ -29,3 +31,4 @@ clearnet = "https://www.microcenter.com/"
 status = "Operational"
 category = "shopping"
 tags = ["productivity", "ecommerce", "marketplace", "computers", "3D Print", "electronics"]
+language = "english"

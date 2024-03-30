@@ -7,6 +7,7 @@ category = "productivity"
 tags = ["privacy", "search engines"]
 ptr = "average"
 hrr = "good"
+language = "english"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/"]
 title = "Proton: Privacy by default | Proton"
@@ -17,6 +18,7 @@ category = "productivity"
 tags = ["privacy"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/mail"]
 title = "Proton Mail: Get a private, secure, and encrypted email account | Proton"
@@ -27,6 +29,7 @@ category = "productivity"
 tags = ["privacy", "email"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/drive"]
 title = "Proton Drive: Free secure cloud storage | Proton"
@@ -37,6 +40,7 @@ category = "productivity"
 tags = ["privacy", "storage"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion"]
 title = "Riseup"
@@ -48,6 +52,7 @@ clearnet = "https://riseup.net"
 category = "productivity"
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/en/vpn"]
 title = "VPN - Riseup"
@@ -59,6 +64,7 @@ category = "productivity"
 tags = ["privacy", "vpn"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["https://veilock.com/"]
 title = "Veilock | Affordable Ad & Malware Blocking VPN"
@@ -70,6 +76,7 @@ category = "technology"
 tags = ["VPN", "software", "privacy", "security"]
 ptr = "excellent"
 hrr = "good"
+language = "english"
 
 ["https://nordvpn.com/"]
 title = "The best online VPN service for speed | NordVPN"
@@ -81,6 +88,7 @@ category = "technology"
 tags = ["VPN", "software", "privacy", "security"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/"]
 title = "Archive.today"
@@ -94,6 +102,7 @@ category = "productivity"
 tags = ["archive", "archival", "storage"]
 ptr = "excellent"
 hrr = "good"
+language = "english"
 
 ["https://www.canva.com"]
 title = "Canva: Visual Suite for Everyone"
@@ -104,6 +113,7 @@ category = "productivity"
 tags = ["design", "software", "startup", "edit", "freemium", "subscription"]
 ptr = "bad"
 hrr = "average"
+language = "english"
 
 ["https://www.google.com/gmail/"]
 title = "Gmail - Email from Google"
@@ -115,6 +125,7 @@ category = "productivity"
 tags = ["software", "email", "storage"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.deepl.com/translator"]
 title = "DeepL Translate: The world's most accurate translator"
@@ -123,8 +134,10 @@ clearnet = "https://www.deepl.com/translator"
 status = "Operational"
 category = "productivity"
 tags = ["software", "education", "productivity", "translation", "information", "research", "API"]
+subject_type = "Online translation software"
 ptr = "good"
 hrr = "average"
+language = "english"
 
 ["https://www.google.com/sheets/"]
 title = "Google Sheets: Online Spreadsheet Editor | Google Workspace"
@@ -136,6 +149,7 @@ category = "productivity"
 tags = ["software", "spreadsheet", "data", "storage"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.google.com/document/"]
 title = "Google Docs"
@@ -145,6 +159,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "word processing doc", "text", "documents", "storage"]
+language = "english"
 
 ["https://www.google.com/slides/"]
 title = "Google Slides: Online Slideshow Maker | Google Workspace"
@@ -154,6 +169,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "slideshow", "slides", "presentation", "storage"]
+language = "english"
 
 ["https://workspace.google.com/products/meet/"]
 title = "Google Meet: Online Web and Video Conferencing Calls | Google Workspace"
@@ -163,6 +179,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "video call", "video conference", "collaboration", "vidoe conferencing"]
+language = "english"
 
 ["https://zoom.us/"]
 title = "One platform to connect | Zoom"
@@ -173,6 +190,7 @@ category = "productivity"
 tags = ["software", "video call", "video conference", "collaboration", "vidoe conferencing"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.microsoft.com/en-us/microsoft-teams/group-chat-software?ms.url=teamscom&rtc=1"]
 title = "Microsoft Teams"
@@ -184,6 +202,7 @@ category = "productivity"
 tags = ["software", "communication", "messenger", "video call", "video conference", "collaboration", "vidoe conferencing"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://slack.com/"]
 title = "Slack is your productivity platform | Slack"
@@ -195,6 +214,7 @@ category = "productivity"
 tags = ["software", "communication", "messenger", "collaboration"]
 ptr = "terrible"
 hrr = "bad"
+language = "english"
 
 ["https://www.salesforce.com/crm/"]
 title = "CRM Software from Salesforce.com - Customer Relationship Management"
@@ -204,6 +224,7 @@ status = "Operational"
 parent_organization = "Salesforce, Inc."
 category = "productivity"
 tags = ["software", "crm", "customer relationship management", "business development", "BDM", "sales", "account manager", "sales rep", "account management", "business intelligence"]
+language = "english"
 
 ["https://www.tableau.com/"]
 title = "Business Intelligence and Analytics Software | Tableau"
@@ -213,6 +234,7 @@ status = "Operational"
 parent_organization = "Salesforce, Inc."
 category = "productivity"
 tags = ["software", "visual data", "data", "statistics", "analysis", "business intelligence"]
+language = "english"
 
 ["https://lookerstudio.google.com/navigation/reporting"]
 title = "Looker Studio Overview - Google Search"
@@ -222,6 +244,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "productivity"
 tags = ["software", "visual data", "data", "statistics", "analysis", "business intelligence"]
+language = "english"
 
 ["https://www.hootsuite.com/"]
 title = "Hootsuite | Social Media Marketing and Management Tool"
@@ -230,6 +253,7 @@ clearnet = "https://www.hootsuite.com/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "marketing", "marketing manager", "social media", "advertising"]
+language = "english"
 
 ["https://ublockorigin.com/"]
 title = "uBlock Origin - Free, open-source ad content blocker."
@@ -238,6 +262,7 @@ clearnet = "https://ublockorigin.com/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
+language = "english"
 
 ["https://darkreader.org/"]
 title = "Dark Reader"
@@ -246,6 +271,7 @@ clearnet = "https://darkreader.org/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
+language = "english"
 
 ["https://sponsor.ajay.app/"]
 title = "SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper"
@@ -254,6 +280,7 @@ clearnet = "https://sponsor.ajay.app/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "browser plugin", "plugins", "addons", "extension", "extensions"]
+language = "english"
 
 ["https://excalidraw.com/"]
 title = "Excalidraw | Hand-drawn look & feel • Collaborative • Secure"
@@ -262,6 +289,7 @@ clearnet = "https://excalidraw.com/"
 status = "Operational"
 category = "productivity"
 tags = ["software", "drawing", "diagram", "schema", "whiteboarding", "design", "collaborative", "collaboration"]
+language = "english"
 
 ["https://howlongagogo.com/"]
 title = "Home of the countdown | howlongagogo.com"
@@ -270,6 +298,7 @@ clearnet = "https://howlongagogo.com/"
 status = "Operational"
 category = "productivity"
 tags = ["how long ago", "how many years ago", "how long ago was", "how many years ago was"]
+language = "english"
 
 ["https://www.marinetraffic.com/en/ais/home"]
 title = "MarineTraffic Live Ships Map."
@@ -278,6 +307,7 @@ clearnet = "https://www.marinetraffic.com/en/ais/home"
 status = "Operational"
 category = "productivity"
 tags = ["visaul data", "oil tanker", "global shipping", "shipping routes", "ship collision", "shipwreck", "ship crash", "shipping"]
+language = "english"
 
 ["https://www.flightaware.com/"]
 title = "FlightAware - Flight Tracker / Flight Status"
@@ -286,6 +316,7 @@ clearnet = "https://www.flightaware.com/"
 status = "Operational"
 category = "productivity"
 tags = ["visual data", "travel", "track flights", "airports", "flight number", "private jet", "flight"]
+language = "english"
 
 ["https://www.cloudflare.com/"]
 title = "Connect, Protect and Build Everywhere | Cloudflare"
@@ -296,6 +327,7 @@ category = "productivity"
 tags = ["cybersecurity", "CDN", "Condent delivery network", "DDoS", "DDoS mitigation", "SASE", "SSE", "Internet infrastructure"]
 ptr = "bad"
 hrr = "good"
+language = "english"
 
 ["https://speed.cloudflare.com/"]
 title = "Internet Speed Test - Measure Network Performance | Cloudflare"
@@ -307,6 +339,7 @@ category = "productivity"
 tags = ["speed test", "what is my internet speed", "connection test", "connection speed", "network performance"]
 ptr = "bad"
 hrr = "good"
+language = "english"
 
 ["https://radar.cloudflare.com/"]
 title = "Cloudflare Radar"
@@ -318,6 +351,7 @@ category = "productivity"
 tags = ["visual data", "internet traffic", "internet usage", "domain ranking", "outages", "URL scanner", "cybersecurity attacks", "recent hack", "anomaly", "traffic security"]
 ptr = "bad"
 hrr = "good"
+language = "english"
 
 ["https://analytics.usa.gov/"]
 title = "analytics.usa.gov | The US government's web traffic."
@@ -326,6 +360,7 @@ clearnet = "https://analytics.usa.gov/"
 status = "Operational"
 category = "productivity"
 tags = ["us internet activity", "government", "internet traffic", "internet usage", "visual data"]
+language = "english"
 
 ["https://telegra.ph/"]
 title = "Telegraph API - Telegraph"
@@ -334,6 +369,7 @@ clearnet = "https://telegra.ph/"
 status = "Operational"
 category = "productivity"
 tags = ["note taking", "post formatting", "web publishing"]
+language = "english"
 
 ["https://www.proxmox.com/en/"]
 title = "Proxmox - Powerful open-source server solutions"
@@ -342,6 +378,7 @@ clearnet = "https://www.proxmox.com/en/"
 status = "Operational"
 category = "productivity"
 tags = ["virtualization", "open source", "virtual environment", "virtual machine", "containers", "VM"]
+language = "english"
 
 ["https://grabify.org/"]
 title = "Grabify IP Logger - Log and Track IP addresses. URL tracker. IP tracker"
@@ -349,7 +386,8 @@ description = "Grabify IP Logger is a tool that lets you shorten and monitor any
 clearnet = "https://grabify.org/"
 status = "Operational"
 category = "productivity"
-tags = ["IP log", "URL log", "URL shorten", "URL shortener"]
+tags = ["IP log", "IP grabber", "URL log", "URL shorten", "URL shortener"]
+language = "english"
 
 ["https://www.wigle.net/"]
 title = "WiGLE: Wireless Network Mapping"
@@ -358,6 +396,7 @@ clearnet = "https://www.wigle.net/"
 status = "Operational"
 category = "productivity"
 tags = ["wireless network", "internet activity", "wireless network mapping", "visual data"]
+language = "english"
 
 ["https://easyappicon.com/"]
 title = "EasyAppIcon - Create Mobile App Icon"
@@ -366,3 +405,4 @@ clearnet = "https://easyappicon.com/"
 status = "Operational"
 category = "productivity"
 tags = ["app icon", "app development", "adaptive icon"]
+language = "english"

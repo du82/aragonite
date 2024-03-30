@@ -6,6 +6,8 @@ subject_type = "Ubuntu linux distribution"
 category = "linux"
 tags = ["ubuntu linux", "OS", "operating system", "server", "linux distro"]
 ptr = "good"
+language = "english"
+
 
 ["https://ubuntu.com/server"]
 title = "Ubuntu for servers"
@@ -24,3 +26,4 @@ subject_type = "PopOS linux distribution"
 category = "linux"
 tags = ["Pop OS", "operating system", "server", "linux distro"]
 ptr = "excellent"
+language = "english"

@@ -6,6 +6,7 @@ status = "Operational"
 parent_organization = "Microsoft Corporation"
 category = "programming"
 tags = ["develop", "software", "developer", "productivity", "community", "open source", "education"]
+language = "english"
 
 ["https://vuejs.org/"]
 title = "Vue.js - The Progressive JavaScript Framework | Vue.js"
@@ -14,6 +15,7 @@ clearnet = "https://vuejs.org/"
 status = "Operational"
 category = "programming"
 tags = ["software", "framework", "javascript"]
+language = "english"
 
 ["https://go.dev/"]
 title = "The Go Programming Language"
@@ -23,6 +25,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
 tags = ["develop", "software", "low level", "programming language"]
+language = "english"
 
 ["https://flutter.dev/"]
 title = "Flutter - Build apps for any screen"
@@ -32,6 +35,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
 tags = ["develop", "software", "framework", "mobile", "app", "mobile app", "app development", "mobile app development"]
+language = "english"
 
 ["https://angular.io/"]
 title = "Angular"
@@ -41,6 +45,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
 tags = ["software", "framework", "javascript"]
+language = "english"
 
 ["https://react.dev/"]
 title = "React"
@@ -50,6 +55,7 @@ status = "Operational"
 parent_organization = "Meta Platforms, Inc."
 category = "programming"
 tags = ["software", "framework", "javascript"]
+language = "english"
 
 ["https://svelte.dev"]
 title = "Svelte • Cybernetically enhanced web apps"
@@ -58,6 +64,7 @@ clearnet = "https://svelte.dev"
 status = "Operational"
 category = "programming"
 tags = ["software", "framework", "javascript", "open source"]
+language = "english"
 
 ["https://www.solidjs.com/"]
 title = "Simple and performant reactivity for building user interfaces."
@@ -66,6 +73,7 @@ clearnet = "https://www.solidjs.com/"
 status = "Operational"
 category = "programming"
 tags = ["software", "framework", "javascript", "open source"]
+language = "english"
 
 ["https://nodejs.org/en"]
 title = "Node.js"
@@ -74,6 +82,7 @@ clearnet = "https://nodejs.org/en"
 status = "Operational"
 category = "programming"
 tags = ["develop", "software", "javascript", "open source", "runtime environment"]
+language = "english"
 
 ["https://crates.io/"]
 title = "crates.io: Rust Package Registry"
@@ -81,7 +90,9 @@ description = "crates.io is the official site for finding, installing and publis
 clearnet = "https://crates.io/"
 status = "Operational"
 category = "programming"
+subject_type = "Package manager for the Rust programming language"
 tags = ["software", "rust", "developer"]
+language = "english"
 
 ["https://www.rust-lang.org/"]
 title = "Rust Programming Language"
@@ -89,8 +100,10 @@ description = "Rust is a fast, memory-safe, and productive programming language 
 clearnet = "https://www.rust-lang.org/"
 status = "Operational"
 parent_organization = "Rust Foundation"
+subject_type = "Programming language"
 category = "programming"
 tags = ["develop", "software", "low level", "programming language"]
+language = "english"
 
 ["https://huggingface.co/"]
 title = "Hugging Face - The AI community building the future."
@@ -98,7 +111,9 @@ description = "More than 50,000 organizations are using Hugging Face Allen Insti
 clearnet = "https://huggingface.co/"
 status = "Operational"
 category = "programming"
+subject_type = "Git-based AI model host"
 tags = ["software", "developer", "community", "open source"]
+language = "english"
 
 ["https://code.visualstudio.com/"]
 title = "Visual Studio Code - Code Editing. Redefined"
@@ -106,25 +121,31 @@ description = "VS Code is a lightweight but powerful code editor that runs on Wi
 clearnet = "https://code.visualstudio.com/"
 status = "Operational"
 parent_organization = "Microsoft Corporation"
+subject_type = "Code editor"
 category = "programming"
 tags = ["tools", "software", "developer", "productivity", "IDE"]
+language = "english"
 
 ["https://lapce.dev/"]
 title = "Lapce"
 description = "Lapce is a modern and fast code editor with native GUI, remote development, syntax highlighting, Vim mode and WASI plugins. Download for macOS or other platforms and formats."
 clearnet = "https://lapce.dev/"
 status = "Operational"
+subject_type = "Code editor"
 category = "programming"
 tags = ["tools", "software", "developer", "productivity", "IDE"]
+language = "english"
 
 ["https://zed.dev/"]
 title = "Zed - Code at the speed of thought"
 description = "Zed is an open source tool that combines the power of an IDE with the responsiveness of a lightweight editor. It supports GitHub Copilot, language-aware features, integrated terminal, Vim mode, and collaboration with your team in channels."
 clearnet = "https://zed.dev/"
 status = "Operational"
+subject_type = "Code editor"
 category = "programming"
 tags = ["tools", "software", "developer", "productivity", "IDE"]
 ptr = "excellent"
+language = "english"
 
 ["https://www.r-project.org/"]
 title = "R: The R Project for Statistical Computing"
@@ -133,6 +154,7 @@ clearnet = "https://www.r-project.org/"
 status = "Operational"
 category = "programming"
 tags = ["software", "statistical analysis", "statistical computing", "programming language"]
+language = "english"
 
 ["https://www.python.org/"]
 title = "Welcome to Python.org"
@@ -141,6 +163,7 @@ clearnet = "https://www.python.org/"
 status = "Operational"
 category = "programming"
 tags = ["develop", "software", "scripting", "scripting language", "high level", "programming language"]
+language = "english"
 
 ["https://www.w3schools.com/"]
 title = "W3Schools - Learn to code"
@@ -149,6 +172,7 @@ clearnet = "https://www.w3schools.com/"
 status = "Operational"
 category = "programming"
 tags = ["software", "scripting", "w3s", "html", "javascript", "css", "programming language"]
+language = "english"
 
 ["https://www.w3schools.com/html/"]
 title = "W3Schools - HTML Tutorial"
@@ -157,6 +181,7 @@ clearnet = "https://www.w3schools.com/html/"
 status = "Operational"
 category = "programming"
 tags = ["software", "scripting", "w3s", "html", "javascript", "css", "programming language"]
+language = "english"
 
 ["https://developer.android.com/"]
 title = "Android Mobile App Developer Tools - Android Developers"
@@ -166,6 +191,7 @@ status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
 tags = ["develop", "software", "google play", "google play store", "google policy", "google policy chagne", "android"]
+language = "english"
 
 ["https://mp.weixin.qq.com/cgi-bin/wx"]
 title = "WeChat Mini Programs"
@@ -175,4 +201,4 @@ status = "Operational"
 parent_organization = "Tencent"
 category = "programming"
 tags = ["develop", "software", "mini programs", "chinese software", "wechat application", "wechat developer", "wechat"]
-
+language = "english"

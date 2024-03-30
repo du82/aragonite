@@ -5,6 +5,7 @@ clearnet = "https://rust-book.cs.brown.edu/"
 status = "Operational"
 category = "education"
 tags = ["rust", "developer", "software"]
+language = "english"
 
 ["https://www.princetonreview.com/medical/mcat-test-prep"]
 title = "MCAT Prep Options | The Princeton Review"
@@ -13,6 +14,7 @@ clearnet = "https://www.princetonreview.com/medical/mcat-test-prep"
 status = "Operational"
 category = "education"
 tags = ["college", "exam", "information"]
+language = "english"
 
 ["https://www.princetonreview.com/law/lsat-test-prep"]
 title = "LSAT Test Prep with Results Guaranteed | The Princeton Review"
@@ -21,6 +23,7 @@ clearnet = "https://www.princetonreview.com/law/lsat-test-prep"
 status = "Operational"
 category = "education"
 tags = ["college", "exam", "information"]
+language = "english"
 
 ["https://algs4.cs.princeton.edu/home/"]
 title = "Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne"
@@ -29,6 +32,7 @@ clearnet = "https://algs4.cs.princeton.edu/home/"
 status = "Operational"
 category = "education"
 tags = ["software"]
+language = "english"
 
 ["https://www.babbel.com/"]
 title = "Language for Life - Babbel.com | Babbel"
@@ -37,6 +41,7 @@ clearnet = "https://www.babbel.com/"
 status = "Operational"
 category = "education"
 tags = ["software", "translation", "information"]
+language = "english"
 
 ["https://paulgraham.com/ds.html?ref=creatorscience.com"]
 title = "Do Things that Don't Scale - paulgraham.com"
@@ -45,6 +50,7 @@ clearnet = "https://paulgraham.com/ds.html?ref=creatorscience.com"
 status = "Operational"
 category = "education"
 tags = ["building", "startup", "innovation", "iterating", "iteration", "getting started"]
+language = "english"
 
 ["https://www.taylorfrancis.com/books/edit/10.4324/9781315186238/rethinking-neoliberalism-sanford-schram-marianna-pavlovskaya"]
 title = "Rethinking Neoliberalism | Resisting the Disciplinary Regime | Sanford"
@@ -55,6 +61,7 @@ year_published = 2017
 author = ["Sanford F. Schram", "Marianna Pavlovskaya"]
 category = "education"
 tags = ["publication", "book", "books"]
+language = "english"
 
 ["https://theyoungtreps.com/wp-content/uploads/2021/02/Autobiography-of-Malcolm-X-The-Malcolm-X-_-Alex-Haley.pdf"]
 title = "The Autobiography of Malcolm X"
@@ -62,5 +69,5 @@ description = "The Autobiography of Malcolm X - Online PDF free"
 clearnet = "https://theyoungtreps.com/wp-content/uploads/2021/02/Autobiography-of-Malcolm-X-The-Malcolm-X-_-Alex-Haley.pdf"
 status = "Operational"
 category = "education"
-tags = ["black american","black historical figure", "black history", "self reliance", "books"]
-
+tags = ["black american", "black historical figure", "black history", "self reliance", "books"]
+language = "english"

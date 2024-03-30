@@ -7,6 +7,7 @@ founding_date = 2009
 nonprofit_status = "Nonprofit501c20"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"
 
 ["https://thorn.org/"]
 title = "Defend Children from Sexual Abuse | Thorn"
@@ -19,6 +20,7 @@ category = "nonprofit"
 tags = ["humanitarian", "social impact", "children", "prevent child abuse", "child safety"]
 ptr = "terrible"
 hrr = "average"
+language = "english"
 
 ["https://www.kiva.org/"]
 title = "Make a loan, change a life | Kiva"
@@ -29,6 +31,7 @@ founding_date = 2005
 nonprofit_status = "Nonprofit501c20"
 category = "nonprofit"
 tags = ["microfinance", "charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"
 
 ["https://sharethemeal.org/"]
 title = "Feed people in need | ShareTheMeal | Charity donate"
@@ -40,6 +43,7 @@ nonprofit_status = "NGO"
 parent_organization = "UN World Food Programme"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"
 
 ["https://www.wfp.org/"]
 title = "UN World Food Programme (WFP)"
@@ -51,6 +55,7 @@ nonprofit_status = "NGO"
 sub_organization = "ShareTheMeal"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"
 
 ["https://www.fairtrade.net/"]
 title = "Fairtrade International"
@@ -62,6 +67,7 @@ nonprofit_status = "multi-stakeholder association"
 sub_organization = "Fairtrade America"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"
 
 ["https://www.fairtradeamerica.org/"]
 title = "Fairtrade America | Creating a More Equitable World | Fair Trade"
@@ -73,3 +79,4 @@ nonprofit_status = "Nonprofit501c20"
 parent_organization = "Fairtrade International"
 category = "nonprofit"
 tags = ["charity", "humanitarian", "social impact", "donation", "altruism", "aid", "poverty", "economy"]
+language = "english"

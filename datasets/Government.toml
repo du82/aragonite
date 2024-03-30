@@ -8,7 +8,7 @@
 title = "The White House"
 description = "Learn about President Biden's agenda, policies, and achievements on topics such as infrastructure, clean energy, reproductive rights, and more. Find out how to contact the White House, get involved, and explore its history and resources."
 clearnet = "https://www.whitehouse.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = ["Congress", "Supreme Court"]
 regulates_entity = ["Congress", "Supreme Court", "US Department of Defense", "US Department of State", "US Department of Homeland Security", "US Department of Education", "US Department of Justice", "FBI", "CIA", "CDC", "DEA", "CISA", "TSA", "ATF", "NSA"]
@@ -17,12 +17,13 @@ category = "government"
 tags = ["politics", "regulation", "executive branch", "executive order", "signed", "election", "agenda", "propaganda", "policies", "President", "history", "official"]
 ptr = "bad"
 hrr = "bad"
+lang = "en"
 
 ["https://www.congress.gov/"]
 title = "Congress.gov | Library of Congress"
 description = "Find the latest information on bills, laws, hearings, and activities of the U.S. Congress. Browse by date, sponsor, status, or topic and get email alerts and updates."
 clearnet = "https://www.congress.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = ["White House", "Supreme Court"]
 regulates_entity = ["White House", "Supreme Court"]
@@ -31,12 +32,13 @@ category = "government"
 tags = ["politics", "regulation", "legislative branch", "law", "signed", "election", "agenda", "propaganda", "policies", "President", "history", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://www.supremecourt.gov/"]
 title = "Home - Supreme Court of the United States"
 description = "The official website of the U.S. Supreme Court provides information on opinions, filings, arguments, case documents, news, and media. Learn about the Court's history, current justices, and recent decisions."
 clearnet = "https://www.supremecourt.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = ["White House", "Congress"]
 regulates_entity = ["White House", "Congress"]
@@ -45,27 +47,29 @@ category = "government"
 tags = ["law degree", "legal efficacy", "elction fraud", "lawsuit", "abortion", "voting rights", "courtroom", "judicial branch", "law", "signed", "election", "agenda", "law of the land", "justices", "policies", "President", "history", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://www.defense.gov/"]
 title = "U.S. Department of Defense"
 description = "Get the latest news and information from the U.S. Department of Defense, including its missions, programs, policies and events. Learn about the department's work with Congress, support for Ukraine, focus on Indo-Pacific, and more."
 clearnet = "https://www.defense.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 regulates_entity = "NSA"
-subject_type = "Federal domestic investigative agency"
+subject_type = "Federal domestic defense agency"
 category = "government"
 tags = ["military", "DOD", "defense budget", "cybersecurity", "national security", "war", "propaganda", "glowies", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"]
 title = "We are the Nation's first line of defense - CIA"
 description = "CIA is the first line of defense for the United States. We collect and analyze intelligence to further national security and preempt threats."
 onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
 clearnet = "https://cia.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 subject_type = "Federal investigative agency"
@@ -73,12 +77,13 @@ category = "government"
 tags = ["three letter agency", "CIA", "cybersecurity", "national security", "glowies", "intelligence", "surveillance", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://fbi.gov"]
 title = "Welcome to fbi.gov - FBI"
 description = "We protect the American people and uphold the U.S. Constitution."
 clearnet = "https://fbi.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 subject_type = "Federal domestic investigative agency"
@@ -86,12 +91,13 @@ category = "government"
 tags = ["three letter agency", "FBI", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://www.nsa.gov/"]
 title = "National Security Agency | Central Security Service"
 description = "NSA Cybersecurity prevents and eradicates threats to U.S. national security systems with a focus on the Defense Industrial Base and the improvement of our weapons' security. Through our Cybersecurity Collaboration Center, NSA partners with allies, private industry, academics, and researchers to"
 clearnet = "https://www.nsa.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = ["White House", "US Department of Defense"]
 subject_type = "Federal domestic investigative agency"
@@ -99,12 +105,13 @@ category = "government"
 tags = ["three letter agency", "NSA", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://atf.gov"]
 title = "Bureau of Alcohol, Tobacco, Firearms and Explosives"
 description = "ATF protects communities from violent criminals, illegal firearms, explosives, arson, terrorism, and alcohol or tobacco trafficking. Learn about ATF's mission, services, regulations, careers, and how to submit a tip."
 clearnet = "https://atf.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 subject_type = "Federal domestic investigative agency"
@@ -112,24 +119,26 @@ category = "government"
 tags = ["three letter agency", "ATF", "glowies", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://fda.gov"]
 title = "U.S. Food and Drug Administration"
 description = "The FDA is responsible for protecting the public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, and medical devices; and by ensuring the ..."
 clearnet = "https://fda.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 subject_type = "Federal domestic regulatory agency"
 category = "government"
 tags = ["three letter agency", "FDA", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://cdc.gov"]
 title = "Centers for Disease Control and Prevention"
 description = "CDC is the nation's leading science-based, data-driven, service organization that protects the public's health. For more than 70 years, we've put science into action to help children stay healthy so they can grow and learn; to help families, businesses, and communities fight disease and stay strong; and to"
 clearnet = "https://cdc.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 subject_type = "Federal domestic regulatory agency"
@@ -137,12 +146,13 @@ category = "government"
 tags = ["three letter agency", "CDC", "glowies", "vaccine", "surveillance", "investigation", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://dea.gov"]
 title = "United States Drug Enforcement Administration"
 description = "In 2023, DEA seized more than 79.5 million fentanyl-laced fake pills and nearly 12,000 pounds of fentanyl powder. The 2023 seizures are equivalent to more than 376.7 million lethal doses of fentanyl."
 clearnet = "https://dea.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 subject_type = "Federal domestic drug prevention agency"
@@ -150,12 +160,13 @@ category = "government"
 tags = ["three letter agency", "DEA", "glowies", "national security", "surveillance", "investigation", "drugs", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://www.dhs.gov/"]
 title = "Home | Homeland Security"
 description = "Learn about the mission, vision, and priorities of the Department of Homeland Security (DHS), which safeguards the American people, homeland, and values. Find news, updates, resources, and opportunities on topics such as migration, borders, cybersecurity, climate change, and more."
 clearnet = "https://www.dhs.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 regulates_entity = ["CISA", "TSA"]
@@ -163,40 +174,44 @@ category = "government"
 tags = ["DHS", "cybersecurity", "national security", "border patrol", "airport security", "border security", "southern border", "northern border", "glowies", "resource", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://cisa.gov"]
 title = "Home Page | CISA"
 description = ""
 clearnet = "https://cisa.gov"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = ["White House", "DHS"]
 subject_type = "Federal cybersecurity agency"
 category = "government"
 tags = ["CISA", "glowies", "surveillance", "investigation", "infrastructure", "national security", "cybersecurity", "official"]
+language = "english"
 
 ["https://www.state.gov/"]
 title = "U.S. Department of State - Home"
 description = "The official website of the U.S. Department of State, led by Secretary Antony J. Blinken. Find information on U.S. foreign policy, travel, embassies, and more."
 clearnet = "https://www.state.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 category = "government"
 tags = ["bureacracy", "glowies", "resource", "official"]
 ptr = "bad"
 hrr = "bad"
+language = "english"
 
 ["https://www.ed.gov/"]
 title = "Home | U.S. Department of Education"
 description = "Find information and resources on student loans, grants, laws, data, and more from the federal agency that oversees education in the United States. Learn about the latest news, policies, and initiatives from Secretary Cardona and his team."
 clearnet = "https://www.ed.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 regulates_entity = ["Virginia Department of Education, Wisconsin Department of Public Instruction"]
 category = "government"
 tags = ["bureacracy", "resource", "official"]
+language = "english"
 
 #---------- 🇺🇸 U.S. STATE AGENCIES & REGULATORY BODIES ------- >
 
@@ -204,21 +219,23 @@ tags = ["bureacracy", "resource", "official"]
 title = "Virginia Department of Education | Home"
 description = "The official website of the Virginia Department of Education, providing resources, news, events and information for parents, educators and students. Find out about the Virginia Literacy Act, tutoring programs, college lab schools and more."
 clearnet = "https://www.doe.virginia.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "state"
 regulator_entity = "US Department of Education"
 category = "government"
 tags = ["bureacracy", "resource", "official"]
+language = "english"
 
 ["https://dpi.wi.gov/"]
 title = "Wisconsin Department of Public Instruction"
 description = "The state agency that advances public education and libraries in Wisconsin. Learn about the mission, vision, and leadership of the department, as well as the latest news and resources for educators and learners."
 clearnet = "https://dpi.wi.gov/"
-jurisdiction = "United states of america"
+jurisdiction = "United States of America"
 jurisdiction_level = "state"
 regulator_entity = "US Department of Education"
 category = "state"
 tags = ["bureacracy", "resource", "official"]
+language = "english"
 
 #---------- 🇨🇦 CANADA AGENCIES & REGULATORY BODIES ------- >
 
@@ -296,6 +313,7 @@ category = "government"
 tags = ["international security", "surveillance", "military aid", "joint operations", "official"]
 ptr = "bad"
 hrr = "terrible"
+language = "english"
 
 ["https://www.un.org/en/"]
 title = "United Nations | Peace, dignity and equality on a healthy planet"
@@ -307,6 +325,7 @@ category = "government"
 tags = ["international law", "international treaty", "war crimes", "international security", "refugee camps", "international aid", "crisis response", "international cooperation", "official"]
 ptr = "bad"
 hrr = "good"
+language = "english"
 
 ["https://brics2023.gov.za/"]
 title = "BRICS"
@@ -316,6 +335,7 @@ jurisdiction = "International"
 subject_type = "Intergovernmental organization"
 category = "government"
 tags = ["economic growth", "IGO", "international organization", "political cooperation", "security cooperation", "official"]
+language = "english"
 
 ["https://www.ndb.int/"]
 title = "Home - New Development Bank"
@@ -325,3 +345,4 @@ jurisdiction = "International"
 subject_type = "multilateral development institution"
 category = "government"
 tags = ["economic outcomes", "social outcomes", "sustainable development", "international investment bank", "official"]
+language = "english"

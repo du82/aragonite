@@ -5,6 +5,7 @@ clearnet = "https://www.chase.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.bankofamerica.com/"]
 title = "Bank of America - Banking, Credit Cards, Loans and Merrill Investing"
@@ -13,6 +14,7 @@ clearnet = "https://www.bankofamerica.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.citi.com/"]
 title = "Credit Cards, Banking, Mortgage, Personal Loans | Citi.com"
@@ -21,6 +23,7 @@ clearnet = "https://www.citi.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.wellsfargoadvisors.com/"]
 title = "Wells Fargo Advisors: Financial Advisors, Investing, Retirement"
@@ -29,6 +32,7 @@ clearnet = "https://www.wellsfargoadvisors.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.wellsfargo.com/"]
 title = "Wells Fargo Bank | Financial Services & Online Banking"
@@ -37,6 +41,7 @@ clearnet = "https://www.wellsfargo.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.capitalone.com/"]
 title = "Capital One | Credit Cards, Checking, Savings & Auto Loans"
@@ -45,6 +50,7 @@ clearnet = "https://www.capitalone.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.americanexpress.com/"]
 title = "American Express Credit Cards, Rewards & Banking"
@@ -53,6 +59,7 @@ clearnet = "https://www.americanexpress.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.usbank.com/index.html"]
 title = "Consumer banking | Personal banking | U.S. Bank"
@@ -61,6 +68,7 @@ clearnet = "https://www.usbank.com/index.html"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://www.truist.com/"]
 title = "Truist Bank | Checking, Savings, Lending, and Financial Services"
@@ -69,6 +77,7 @@ clearnet = "https://www.truist.com/"
 status = "Operational"
 category = "finance"
 tags = ["payment", "cash", "interest rate", "investing", "investment", "mortgage", "money", "banking", "bills", "utility", "credit card", "debit", "checking account", "savings account", "credit score", "loans"]
+language = "english"
 
 ["https://robinhood.com/"]
 title = "Commission-free Stock Trading & Investing App | Robinhood"
@@ -77,6 +86,7 @@ clearnet = "https://robinhood.com/"
 status = "Operational"
 category = "finance"
 tags = ["cash", "interest rate", "investing", "investment", "money", "debit", "savings account", "software", "startup"]
+language = "english"
 
 ["https://newsroom.aboutrobinhood.com/demystifying-payment-for-order-flow/"]
 title = "Demystifying payment for order flow - Robinhood Newsroom"
@@ -86,6 +96,7 @@ status = "Operational"
 parent_organization = "Robinhood"
 category = "finance"
 tags = ["order flow", "buy sell option", "how to trade stocks", "cash", "interest rate", "investing", "investment", "money", "debit", "savings account", "software", "startup"]
+language = "english"
 
 ["https://newsroom.aboutrobinhood.com/what-exactly-is-high-frequency-trading-and-is-it-bad/"]
 title = "What exactly is high-frequency trading? And is it bad?"
@@ -95,6 +106,7 @@ status = "Operational"
 parent_organization = "Robinhood"
 category = "finance"
 tags = ["cash", "interest rate", "investing", "investment", "money", "debit", "savings account", "software", "startup"]
+language = "english"
 
 ["https://venmo.com/"]
 title = "Venmo - Share Payments"
@@ -111,6 +123,7 @@ clearnet = "https://www.bls.gov/data/inflation_calculator.htm"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+language = "english"
 
 ["https://fred.stlouisfed.org/series/fedfunds"]
 title = "Federal Funds Effective Rate (FEDFUNDS) | FRED | St. Louis Fed"
@@ -119,6 +132,7 @@ clearnet = "https://fred.stlouisfed.org/series/fedfunds"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+language = "english"
 
 ["https://www.newyorkfed.org/microeconomics/hhdc.html"]
 title = "Household Debt and Credit Report - FEDERAL RESERVE BANK of NEW YORK"
@@ -127,6 +141,7 @@ clearnet = "https://www.newyorkfed.org/microeconomics/hhdc.html"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "visual data"]
+language = "english"
 
 ["https://www.federalreserve.gov/releases/z1/dataviz/household_debt/"]
 title = "The Fed - Household Debt Overview - Federal Reserve Board"
@@ -136,6 +151,7 @@ clearnet = "https://www.federalreserve.gov/releases/z1/dataviz/household_debt/"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "visual data"]
+language = "english"
 
 ["https://gasprices.aaa.com/"]
 title = "AAA Gas Prices"
@@ -144,6 +160,7 @@ clearnet = "https://gasprices.aaa.com/"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy", "travel", "visual data"]
+language = "english"
 
 ["https://tradingeconomics.com/united-states/inflation-cpi"]
 title = "United States Inflation Rate - TRADING ECONOMICS"
@@ -152,6 +169,7 @@ clearnet = "https://tradingeconomics.com/united-states/inflation-cpi"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+language = "english"
 
 ["https://tradingeconomics.com/united-states/money-supply-m2"]
 title = "United States Money Supply M2 - TRADING ECONOMICS"
@@ -160,6 +178,7 @@ clearnet = "https://tradingeconomics.com/united-states/money-supply-m2"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+language = "english"
 
 ["https://fred.stlouisfed.org/series/CCLACBW027SBOG"]
 title = "Consumer Loans: Credit Cards and Other Revolving Plans, All Commercial Banks"
@@ -168,6 +187,7 @@ clearnet = "https://fred.stlouisfed.org/series/CCLACBW027SBOG"
 status = "Operational"
 category = "finance"
 tags = ["research", "information", "education", "data", "statistics", "economics", "economy"]
+language = "english"
 
 ["https://layoffs.fyi/"]
 title = "Layoffs.fyi - Tech Layoff Tracker and Startup Layoff Lists"
@@ -176,6 +196,7 @@ clearnet = "https://layoffs.fyi/"
 status = "Operational"
 category = "finance"
 tags = ["employment", "finance", "research", "information", "data", "statistics", "economics", "economy", "visual data", "labor", "tech", "startup"]
+language = "english"
 
 ["https://www.biopharmcatalyst.com/"]
 title = "Biotech Stocks for investors and traders • BioPharmCatalyst"
@@ -184,4 +205,4 @@ clearnet = "https://www.biopharmcatalyst.com/"
 status = "Operational"
 category = "finance"
 tags = ["biotech", "pharma", "research drugs", "pharmaceutical", "FDA calendar", "life science", "investing"]
-
+language = "english"

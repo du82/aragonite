@@ -5,6 +5,7 @@ clearnet = "https://www.netflix.com/"
 status = "Operational"
 category = "entertainment"
 tags = ["videos", "software", "education", "film", "media", "movies", "television", "subscription"]
+language = "english"
 
 ["https://odysee.com/"]
 title = "Odysee"
@@ -13,6 +14,7 @@ clearnet = "https://odysee.com/"
 status = "Operational"
 category = "entertainment"
 tags = ["videos", "livestream", "software", "productivity", "music", "education", "tutorial", "games", "news", "community", "research", "information"]
+language = "english"
 
 ["https://rumble.com/"]
 title = "Rumble"
@@ -29,6 +31,7 @@ clearnet = "https://www.twitch.tv"
 status = "Operational"
 category = "entertainment"
 tags = ["livestream", "streaming", "music", "video games", "games", "community"]
+language = "english"
 
 ["https://www.ratingraph.com/"]
 title = "Find your next binge-watch! - Rating Graph"
@@ -37,3 +40,4 @@ clearnet = "https://www.ratingraph.com/"
 status = "Operational"
 category = "entertainment"
 tags = ["TV review", "Movie review", "TV shows", "Movies", "visual data"]
+language = "english"

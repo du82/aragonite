@@ -6,6 +6,7 @@ status = "Operational"
 subject_type = "Online forum"
 category = "reddit"
 tags = ["forum", "community", "communities", "proprietary", "front page of the internet", "news"]
+language = "english"
 
 ["https://www.reddit.com/r/rust"]
 title = "The Rust Programming Language - Reddit"
@@ -15,6 +16,7 @@ status = "Operational"
 subject_type = "Subreddit discussing the Rust programming language"
 category = "reddit"
 tags = ["forum", "community", "communities", "proprietary", "front page of the internet", "rust lang"]
+language = "english"
 
 ["https://www.reddit.com/r/privacy"]
 title = "Privacy in the digital age - Reddit"
@@ -24,6 +26,7 @@ status = "Operational"
 subject_type = "Subreddit discussing privacy"
 category = "reddit"
 tags = ["forum", "community", "communities", "open source", "front page of the internet", "privacy"]
+language = "english"
 
 ["https://www.reddit.com/r/opsec"]
 title = "r/opsec - Reddit"
@@ -33,3 +36,4 @@ status = "Operational"
 subject_type = "Subreddit discussing operational security"
 category = "reddit"
 tags = ["forum", "community", "communities", "opsec", "front page of the internet", "operational security"]
+language = "english"

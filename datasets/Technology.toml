@@ -10,6 +10,7 @@ category = "technology"
 tags = ["software", "open source", "privacy", "anonymity"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["https://play.google.com/store/apps/details?id=org.torproject.torbrowser&hl=en_US&gl=US"]
 title = "Tor Browser - Apps on Google Play"
@@ -22,6 +23,7 @@ parent_organization = "Google LLC"
 subject_type = "Anonymity software"
 category = "technology"
 tags = ["software", "open source", "privacy", "anonymity", "digital downloads"]
+language = "english"
 
 ["https://etherscan.io/"]
 title = "Ethereum (ETH) Blockchain Explorer - Etherscan"
@@ -32,6 +34,7 @@ status = "Operational"
 subject_type = "Cryptocurrency tracker"
 category = "technology"
 tags = ["cryptocurrency", "ethereum", "software"]
+language = "english"
 
 ["https://status.app"]
 title = "Status - Make the jump to web3"
@@ -45,6 +48,7 @@ category = "technology"
 tags = ["software", "open source"]
 ptr = "excellent"
 hrr = "excellent"
+language = "english"
 
 ["https://status.app/manifesto"]
 title = "Status - Manifesto"
@@ -56,6 +60,7 @@ status = "Operational"
 subject_type = "Cryptocurrency superapp"
 category = "technology"
 tags = ["software", "open source", "manifesto"]
+language = "english"
 
 ["https://status.app/team"]
 title = "Status - Team"
@@ -67,6 +72,7 @@ status = "Operational"
 subject_type = "Cryptocurrency superapp"
 category = "technology"
 tags = ["software", "open source", "about", "cryptocurrency"]
+language = "english"
 
 ["https://signal.org"]
 title = "Signal >> Home"
@@ -79,6 +85,7 @@ subject_type = "Private messenger"
 category = "technology"
 tags = ["software", "privacy", "chat app", "messenger"]
 ptr = "excellent"
+language = "english"
 
 ["https://signal.org/download/"]
 title = "Signal >> Download Signal"
@@ -91,6 +98,7 @@ subject_type = "Private messenger"
 category = "technology"
 tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
 ptr = "excellent"
+language = "english"
 
 ["https://signal.org/download/android/"]
 title = "Signal >> Download Signal for Android"
@@ -103,6 +111,7 @@ subject_type = "Private messenger"
 category = "technology"
 tags = ["privacy", "chat app", "messenger", "download", "digital downloads"]
 ptr = "excellent"
+language = "english"
 
 ["https://signal.org/blog/"]
 title = "Signal >> Blog"
@@ -114,6 +123,7 @@ status = "Operational"
 subject_type = "Private messenger"
 category = "technology"
 tags = ["privacy", "chat app", "messenger", "blog"]
+language = "english"
 
 ["https://signal.org/bigbrother/"]
 title = "Signal >> Government Communication"
@@ -125,6 +135,7 @@ status = "Operational"
 subject_type = "Private messenger"
 category = "technology"
 tags = ["software", "privacy", "chat app", "messenger", "warrant canary"]
+language = "english"
 
 ["https://grapheneos.org/"]
 title = "GrapheneOS: the private and secure mobile OS"
@@ -135,6 +146,7 @@ subject_type = "Operating system"
 category = "technology"
 tags = ["software", "privacy", "android", "mobile operating system", "OS", "google pixel", "surveillance"]
 ptr = "excellent"
+language = "english"
 
 ["https://www.softwareheritage.org/"]
 title = "Software Heritage"
@@ -145,6 +157,7 @@ subject_type = "Git archiver"
 category = "technology"
 tags = ["software", "archive", "code bases", "old codebase of", "software preservation"]
 ptr = "excellent"
+language = "english"
 
 ["https://telegram.org/"]
 title = "Telegram Messenger"
@@ -157,6 +170,7 @@ subject_type = "Messaging app"
 category = "technology"
 tags = ["software", "chat app", "messenger", "messaging", "telegram"]
 ptr = "terrible"
+language = "english"
 
 ["https://telegram.org/android"]
 title = "Telegram for Android"
@@ -169,6 +183,7 @@ subject_type = "Messaging app"
 category = "technology"
 tags = ["software", "chat app", "messenger", "messaging", "telegram", "digital download"]
 ptr = "terrible"
+language = "english"
 
 ["https://simplex.chat"]
 title = "SimpleX - The first messenger without user IDs"
@@ -181,6 +196,7 @@ subject_type = "Encrypted messaging app"
 category = "technology"
 tags = ["software", "chat app", "messenger", "messaging", "haskell", "privacy"]
 ptr = "excellent"
+language = "english"
 
 ["https://xdaforums.com/"]
 title = "XDA Forums"
@@ -190,6 +206,7 @@ status = "Operational"
 subject_type = "Tech forum"
 category = "technology"
 tags = ["android development", "adb", "android software","android", "forum"]
+language = "english"
 
 ["https://www.producthunt.com/"]
 title = "Product Hunt - The best new products in tech."
@@ -198,3 +215,4 @@ clearnet = "https://www.producthunt.com/"
 status = "Operational"
 category = "technology"
 tags = ["startup", "new product", "latest app", "cool new tech", "tech news"]
+language = "english"

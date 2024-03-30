@@ -7,6 +7,7 @@ year_updated = 2024
 onion = "https://www.bbcnewsd73hkzno2ini43t4gblxvycyac5aw4gnv7t2rccijh7745uqd.onion/"
 clearnet = "https://bbc.com"
 category = "news"
+language = "english"
 
 ["https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"]
 title = "What is the dark web? How to use Tor to access the dark web"
@@ -17,6 +18,7 @@ clearnet = "https://www.wired.co.uk/article/what-is-the-dark-web-how-to-access"
 status = "Operational"
 category = "article"
 tags = ["privacy", "anonymity", "tor", "tutorial"]
+language = "english"
 
 ["https://news.ycombinator.com/"]
 title = "Hacker News"
@@ -26,6 +28,7 @@ clearnet = "https://news.ycombinator.com/"
 status = "Operational"
 category = "news"
 tags = ["research", "information", "community", "discussion", "software", "tech", "startup"]
+language = "english"
 
 ["https://www.theverge.com/"]
 title = "The Verge"
@@ -34,6 +37,7 @@ clearnet = "https://www.theverge.com/"
 status = "Operational"
 category = "news"
 tags = ["information", "electronics", "software", "tech", "startup", "articles"]
+language = "english"
 
 ["https://www.reuters.com/"]
 title = "Reuters | Breaking International News & Views"
@@ -42,6 +46,7 @@ clearnet = "https://www.reuters.com/"
 status = "Operational"
 category = "news"
 tags = ["information", "global", "current news", "media", "articles"]
+language = "english"
 
 ["https://www.theverge.com/2024/3/25/24111818/telegram-peer-to-peer-login-otp-two-factor-volunteer"]
 title = "Telegram’s Peer-to-Peer Login system is a risky way to save $5 a month"
@@ -51,6 +56,7 @@ status = "Operational"
 subject_type = "Messaging app"
 category = "news"
 tags = ["SMS code", "security", "2FA", "otp", "privacy", "telegram"]
+language = "english"
 
 ["https://www.androidpolice.com/telegram-use-your-phone-send-other-people-login-codes/"]
 title = "Telegram's new peer-to-peer SMS relay is an absolute privacy nightmare"
@@ -60,6 +66,7 @@ status = "Operational"
 subject_type = "Messaging app"
 category = "news"
 tags = ["SMS code", "security", "2FA", "otp", "privacy", "telegram"]
+language = "english"
 
 ["https://www.reuters.com/world/africa/world-bank-says-ugandas-anti-lgbtq-law-violates-its-values-2023-08-08/"]
 title = "World Bank halts new lending to Uganda over anti-LGBTQ law"
@@ -68,6 +75,7 @@ clearnet = "https://www.reuters.com/world/africa/world-bank-says-ugandas-anti-lg
 status = "Operational"
 category = "news"
 tags = ["world bank", "uganda", "current events"]
+language = "english"
 
 ["https://abcnews4.com/news/local/if-anything-happens-its-not-suicide-boeing-whistleblowers-prediction-before-death-south-carolina-abc-news-4-2024"]
 title = "'If anything happens, it's not suicide': Boeing whistleblower's prediction before death"
@@ -76,6 +84,7 @@ clearnet = "https://abcnews4.com/news/local/if-anything-happens-its-not-suicide-
 status = "Operational"
 category = "news"
 tags = ["boeing", "boeing engieer", "didnt kill himself", "john barnett", "current events"]
+language = "english"
 
 ["https://www.taipeitimes.com/News/front/archives/2024/03/30/2003815684"]
 title = "Haiti crisis requires foreign police, UN expert O’Neill says"
@@ -84,6 +93,7 @@ clearnet = "https://www.taipeitimes.com/News/front/archives/2024/03/30/200381568
 status = "Operational"
 category = "news"
 tags = ["haiti", "haiti crisis", "Port-au-Prince", "Ariel Henry", "current events"]
+language = "english"
 
 ["https://hotair.com/karen-townsend/2024/03/08/joe-biden-called-laken-rileys-killer-an-illegal-and-the-left-lost-its-mind-n3784335"]
 title = "Joe Biden Called Laken Riley's Killer an Illegal and the Left Lost Its Mind"
@@ -92,6 +102,7 @@ clearnet = "https://hotair.com/karen-townsend/2024/03/08/joe-biden-called-laken-
 status = "Operational"
 category = "news"
 tags = ["southern border", "laken riley", "illegal", "illegal immigration", "illegal alien", "undocumented", "migrant", "current events"]
+language = "english"
 
 ["https://www.westernjournal.com/arrest-affidavit-illegal-immigrant-charged-murdering-laken-riley-adds-sickening-details-case/"]
 title = "Arrest Affidavit for Illegal Immigrant Charged with Murdering Laken Riley Adds Sickening Details to Case"
@@ -100,6 +111,7 @@ clearnet = "https://www.westernjournal.com/arrest-affidavit-illegal-immigrant-ch
 status = "Operational"
 category = "news"
 tags = ["southern border", "laken riley", "illegal", "illegal immigration", "illegal alien", "undocumented", "migrant", "current events"]
+language = "english"
 
 ["https://www.latimes.com/entertainment-arts/tv/story/2022-07-19/jak-knight-cause-of-death-suicide"]
 title = "Death of 28-year-old comedian Jak Knight ruled a suicide"
@@ -108,6 +120,7 @@ clearnet = "https://www.latimes.com/entertainment-arts/tv/story/2022-07-19/jak-k
 status = "Operational"
 category = "news"
 tags = ["jakim maulana", "jak knight", "black panther political party", "didnt kill himself", "current events"]
+language = "english"
 
 ["https://www.dailywire.com/"]
 title = "The Daily Wire"
@@ -116,6 +129,7 @@ clearnet = "https://www.dailywire.com/"
 status = "Operational"
 category = "news"
 tags = ["ben shapiro", "conservative", "current events"]
+language = "english"
 
 ["https://nypost.com/2022/09/26/black-gun-rights-activists-demand-closed-borders-in-austin-protest/"]
 title = "Black gun rights activists demand 'closed borders' in Austin protest"
@@ -124,4 +138,4 @@ clearnet = "https://nypost.com/2022/09/26/black-gun-rights-activists-demand-clos
 status = "Operational"
 category = "news"
 tags = ["southern border", "gun rights", "black power", "illegal", "illegal immigration", "illegal alien", "undocumented", "migrant", "current events"]
-
+language = "english"

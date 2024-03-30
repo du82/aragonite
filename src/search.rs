@@ -7,6 +7,7 @@ use std::fs;
 use std::fs::File;
 use std::io::Read;
 use std::time::{Duration, Instant};
+use std::collections::HashMap;
 use tantivy::collector::TopDocs;
 use tantivy::doc;
 use tantivy::query::BooleanQuery;
@@ -208,6 +209,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let status = schema_builder.add_text_field("status", TEXT | STORED);
     let parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
     let sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
+    let jurisdiction = schema_builder.add_text_field("jurisdiction", TEXT | STORED);
+    let jurisdiction_level = schema_builder.add_text_field("jurisdiction_level", TEXT | STORED);
     let regulates_entity = schema_builder.add_text_field("regulates_entity", TEXT | STORED);
     let regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
@@ -218,6 +221,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
     let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
+    let language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
         // Create the index
@@ -440,8 +444,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let duration = start.elapsed();
     Ok((results, duration))
 }
-
-use std::collections::HashMap;
 
 fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let mut fields = HashMap::new();
