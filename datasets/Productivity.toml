@@ -319,4 +319,50 @@ tags = ["visual data", "internet traffic", "internet usage", "domain ranking", "
 ptr = "bad"
 hrr = "good"
 
+["https://analytics.usa.gov/"]
+title = "analytics.usa.gov | The US government's web traffic."
+description = "About this Site. These data provide a window into how people are interacting with the government online. The data come from a unified Google Analytics account for U.S. federal government agencies known as the Digital Analytics Program.This program helps government agencies understand how..."
+clearnet = "https://analytics.usa.gov/"
+status = "Operational"
+category = "productivity"
+tags = ["us internet activity", "government", "internet traffic", "internet usage", "visual data"]
 
+["https://telegra.ph/"]
+title = "Telegraph API - Telegraph"
+description = "Telegra.ph is a minimalist publishing tool that allows you to create richly formatted posts and push them to the Web in just a click. Telegraph posts also get beautiful Instant View pages on Telegram. To maintain the purity of the basic interface, we launched the @Telegraph bot for those who require advanced features."
+clearnet = "https://telegra.ph/"
+status = "Operational"
+category = "productivity"
+tags = ["note taking", "post formatting", "web publishing"]
+
+["https://www.proxmox.com/en/"]
+title = "Proxmox - Powerful open-source server solutions"
+description = "Proxmox Virtual Environment. Proxmox Virtual Environment is a complete open-source platform for enterprise virtualization. With the built-in web interface you can easily manage VMs and containers, software-defined storage and networking, high-availability clustering, and multiple out-of-the-box tools"
+clearnet = "https://www.proxmox.com/en/"
+status = "Operational"
+category = "productivity"
+tags = ["virtualization", "open source", "virtual environment", "virtual machine", "containers", "VM"]
+
+["https://grabify.org/"]
+title = "Grabify IP Logger - Log and Track IP addresses. URL tracker. IP tracker"
+description = "Grabify IP Logger is a tool that lets you shorten and monitor any URL, and get the IP address and location of the user who clicks on it. You can also collect consent, analyze device and browser data, and access paths and origins of your visitors."
+clearnet = "https://grabify.org/"
+status = "Operational"
+category = "productivity"
+tags = ["IP log", "URL log", "URL shorten", "URL shortener"]
+
+["https://www.wigle.net/"]
+title = "WiGLE: Wireless Network Mapping"
+description = "Mouse-over graphs to interact with data. Select a range to zoom in, double click to zoom back out. Modify the number in the corner to smooth over multiple days. Full-screen graphs available! Maps and database of 802.11 wireless networks, with statistics, submitted by wardrivers, netstumblers, and net..."
+clearnet = "https://www.wigle.net/"
+status = "Operational"
+category = "productivity"
+tags = ["wireless network", "internet activity", "wireless network mapping", "visual data"]
+
+["https://easyappicon.com/"]
+title = "EasyAppIcon - Create Mobile App Icon"
+description = "EasyAppIcon is a web tool that lets you generate and download app icons for your mobile app in various sizes and densities. You can choose from different formats, such as legacy round, full bleed, or adaptive, and preview your app icon in real time."
+clearnet = "https://easyappicon.com/"
+status = "Operational"
+category = "productivity"
+tags = ["app icon", "app development", "adaptive icon"]

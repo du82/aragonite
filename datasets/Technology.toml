@@ -181,3 +181,20 @@ subject_type = "Encrypted messaging app"
 category = "technology"
 tags = ["software", "chat app", "messenger", "messaging", "haskell", "privacy"]
 ptr = "excellent"
+
+["https://xdaforums.com/"]
+title = "XDA Forums"
+description = "XDA Forums. New posts. General Discussion. View all. General Topics. This is a forum for discussion, guides, accessories etc., relating to phones generally or for which we do not have a dedicated phone / device forum. As such this is not a general Question and Answer forum."
+clearnet = "https://xdaforums.com/"
+status = "Operational"
+subject_type = "Tech forum"
+category = "technology"
+tags = ["android development", "adb", "android software","android", "forum"]
+
+["https://www.producthunt.com/"]
+title = "Product Hunt - The best new products in tech."
+description = "Product Hunt is a curation of the best new products, every day. Discover the latest mobile apps, websites, and technology products that everyone's talking about."
+clearnet = "https://www.producthunt.com/"
+status = "Operational"
+category = "technology"
+tags = ["startup", "new product", "latest app", "cool new tech", "tech news"]

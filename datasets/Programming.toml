@@ -5,7 +5,7 @@ clearnet = "https://github.com/"
 status = "Operational"
 parent_organization = "Microsoft Corporation"
 category = "programming"
-tags = ["software", "developer", "productivity", "community", "open source", "education"]
+tags = ["develop", "software", "developer", "productivity", "community", "open source", "education"]
 
 ["https://vuejs.org/"]
 title = "Vue.js - The Progressive JavaScript Framework | Vue.js"
@@ -22,7 +22,7 @@ clearnet = "https://go.dev/"
 status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
-tags = ["software", "low level", "programming language"]
+tags = ["develop", "software", "low level", "programming language"]
 
 ["https://flutter.dev/"]
 title = "Flutter - Build apps for any screen"
@@ -31,7 +31,7 @@ clearnet = "https://flutter.dev/"
 status = "Operational"
 parent_organization = "Google LLC"
 category = "programming"
-tags = ["software", "framework", "mobile", "app", "mobile app", "app development", "mobile app development"]
+tags = ["develop", "software", "framework", "mobile", "app", "mobile app", "app development", "mobile app development"]
 
 ["https://angular.io/"]
 title = "Angular"
@@ -73,7 +73,7 @@ description = "Node.js® is an open-source, cross-platform JavaScript runtime en
 clearnet = "https://nodejs.org/en"
 status = "Operational"
 category = "programming"
-tags = ["software", "javascript", "open source", "runtime environment"]
+tags = ["develop", "software", "javascript", "open source", "runtime environment"]
 
 ["https://crates.io/"]
 title = "crates.io: Rust Package Registry"
@@ -90,7 +90,7 @@ clearnet = "https://www.rust-lang.org/"
 status = "Operational"
 parent_organization = "Rust Foundation"
 category = "programming"
-tags = ["software", "low level", "programming language"]
+tags = ["develop", "software", "low level", "programming language"]
 
 ["https://huggingface.co/"]
 title = "Hugging Face - The AI community building the future."
@@ -140,7 +140,7 @@ description = "Python is a versatile and powerful language that lets you work qu
 clearnet = "https://www.python.org/"
 status = "Operational"
 category = "programming"
-tags = ["software", "scripting", "scripting language", "high level", "programming language"]
+tags = ["develop", "software", "scripting", "scripting language", "high level", "programming language"]
 
 ["https://www.w3schools.com/"]
 title = "W3Schools - Learn to code"
@@ -157,3 +157,22 @@ clearnet = "https://www.w3schools.com/html/"
 status = "Operational"
 category = "programming"
 tags = ["software", "scripting", "w3s", "html", "javascript", "css", "programming language"]
+
+["https://developer.android.com/"]
+title = "Android Mobile App Developer Tools - Android Developers"
+description = "Discover the latest app development tools, platform updates, training, and documentation for developers across every Android device. Essentials Modern Android; Quickly bring your app to life with less code, using a modern declarative approach to UI, and the simplicity of Kotlin. ..."
+clearnet = "https://developer.android.com/"
+status = "Operational"
+parent_organization = "Google LLC"
+category = "programming"
+tags = ["develop", "software", "google play", "google play store", "google policy", "google policy chagne", "android"]
+
+["https://mp.weixin.qq.com/cgi-bin/wx"]
+title = "WeChat Mini Programs"
+description = "Mini Programs are a new way of connecting users and services. They are easy to access and share on WeChat, delivering excellent user experience."
+clearnet = "https://mp.weixin.qq.com/cgi-bin/wx"
+status = "Operational"
+parent_organization = "Tencent"
+category = "programming"
+tags = ["develop", "software", "mini programs", "chinese software", "wechat application", "wechat developer", "wechat"]
+
