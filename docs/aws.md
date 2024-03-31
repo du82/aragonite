@@ -2,7 +2,7 @@
 
 Create instance 
     -> Amazon Linux
-    
+
 Security 
     -> Open ports / set inbound rules
 
