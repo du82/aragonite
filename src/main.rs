@@ -22,6 +22,7 @@ fn main() {
             routes::tos,
             routes::mirrors,
             routes::settings,
+            routes::syntax,
             routes::theme_selector,
             routes::gemstone_theme,
             routes::gemstone_light_theme,

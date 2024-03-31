@@ -46,6 +46,11 @@ pub fn settings() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/settings.html"))
 }
 
+#[get("/syntax")]
+pub fn syntax() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/pages/syntax.html"))
+}
+
 // -----Themes-----
 
 #[get("/themes/media/logo.png")]
