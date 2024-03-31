@@ -8,4 +8,5 @@
 3. `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 4.  `sudo dnf install make automake gcc gcc-c++ kernel-devel`
 5.  `rustup override set nightly`
-6.  `ROCKET_ENV=staging cargo run`
+6.  `sudo chown -R ec2-user /home/ec2-user/rust-login-page/`
+7.  `ROCKET_ENV=staging cargo run`
