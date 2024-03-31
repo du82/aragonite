@@ -4,20 +4,32 @@
 
 #---------- 🇺🇸 U.S. FEDERAL AGENCIES & REGULATORY BODIES ------- >
 
+#Executive Branch
+
 ["https://www.whitehouse.gov/"]
 title = "The White House"
 description = "Learn about President Biden's agenda, policies, and achievements on topics such as infrastructure, clean energy, reproductive rights, and more. Find out how to contact the White House, get involved, and explore its history and resources."
 clearnet = "https://www.whitehouse.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
-regulator_entity = ["Congress", "Supreme Court"]
-regulates_entity = ["Congress", "Supreme Court", "US Department of Defense", "US Department of State", "US Department of Homeland Security", "US Department of Education", "US Department of Justice", "FBI", "CIA", "CDC", "DEA", "CISA", "TSA", "ATF", "NSA"]
+regulator_entity = ["US Congress", "US Supreme Court"]
+regulates_entity = ["US Congress", 
+                    "Supreme Court", 
+                    "US Department of Defense", 
+                    "US Department of State", 
+                    "US Department of Homeland Security", 
+                    "US Department of Education", 
+                    "US Department of Commerce",
+                    "US Department of Justice",
+                    "US Department of Labor"]
 subject_type = "Federal branch of government"
 category = "government"
 tags = ["politics", "regulation", "executive branch", "executive order", "signed", "election", "agenda", "propaganda", "policies", "President", "history", "official"]
 ptr = "bad"
-hrr = "bad"
+hrr = "terrible"
 lang = "en"
+
+#Legislative Branch
 
 ["https://www.congress.gov/"]
 title = "Congress.gov | Library of Congress"
@@ -25,8 +37,8 @@ description = "Find the latest information on bills, laws, hearings, and activit
 clearnet = "https://www.congress.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
-regulator_entity = ["White House", "Supreme Court"]
-regulates_entity = ["White House", "Supreme Court"]
+regulator_entity = ["White House", "US Supreme Court"]
+regulates_entity = ["White House", "US Supreme Court"]
 subject_type = "Federal branch of government"
 category = "government"
 tags = ["politics", "regulation", "legislative branch", "law", "signed", "election", "agenda", "propaganda", "policies", "President", "history", "official"]
@@ -34,20 +46,24 @@ ptr = "bad"
 hrr = "bad"
 language = "english"
 
+#Judicial Branch
+
 ["https://www.supremecourt.gov/"]
 title = "Home - Supreme Court of the United States"
 description = "The official website of the U.S. Supreme Court provides information on opinions, filings, arguments, case documents, news, and media. Learn about the Court's history, current justices, and recent decisions."
 clearnet = "https://www.supremecourt.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
-regulator_entity = ["White House", "Congress"]
-regulates_entity = ["White House", "Congress"]
+regulator_entity = ["White House", "US Congress"]
+regulates_entity = ["White House", "US Congress"]
 subject_type = "Federal branch of government"
 category = "government"
 tags = ["law degree", "legal efficacy", "elction fraud", "lawsuit", "abortion", "voting rights", "courtroom", "judicial branch", "law", "signed", "election", "agenda", "law of the land", "justices", "policies", "President", "history", "official"]
 ptr = "bad"
 hrr = "bad"
 language = "english"
+
+#--- 🇺🇸 Executive Branch Departments
 
 ["https://www.defense.gov/"]
 title = "U.S. Department of Defense"
@@ -56,110 +72,12 @@ clearnet = "https://www.defense.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = "NSA"
+regulates_entity = ["NSA", "DIA"]
 subject_type = "Federal domestic defense agency"
 category = "government"
 tags = ["military", "DOD", "defense budget", "cybersecurity", "national security", "war", "propaganda", "glowies", "surveillance", "investigation", "official"]
 ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"]
-title = "We are the Nation's first line of defense - CIA"
-description = "CIA is the first line of defense for the United States. We collect and analyze intelligence to further national security and preempt threats."
-onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
-clearnet = "https://cia.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = "White House"
-subject_type = "Federal investigative agency"
-category = "government"
-tags = ["three letter agency", "CIA", "cybersecurity", "national security", "glowies", "intelligence", "surveillance", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://fbi.gov"]
-title = "Welcome to fbi.gov - FBI"
-description = "We protect the American people and uphold the U.S. Constitution."
-clearnet = "https://fbi.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = "White House"
-subject_type = "Federal domestic investigative agency"
-category = "government"
-tags = ["three letter agency", "FBI", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://www.nsa.gov/"]
-title = "National Security Agency | Central Security Service"
-description = "NSA Cybersecurity prevents and eradicates threats to U.S. national security systems with a focus on the Defense Industrial Base and the improvement of our weapons' security. Through our Cybersecurity Collaboration Center, NSA partners with allies, private industry, academics, and researchers to"
-clearnet = "https://www.nsa.gov/"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = ["White House", "US Department of Defense"]
-subject_type = "Federal domestic investigative agency"
-category = "government"
-tags = ["three letter agency", "NSA", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://atf.gov"]
-title = "Bureau of Alcohol, Tobacco, Firearms and Explosives"
-description = "ATF protects communities from violent criminals, illegal firearms, explosives, arson, terrorism, and alcohol or tobacco trafficking. Learn about ATF's mission, services, regulations, careers, and how to submit a tip."
-clearnet = "https://atf.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = "White House"
-subject_type = "Federal domestic investigative agency"
-category = "government"
-tags = ["three letter agency", "ATF", "glowies", "surveillance", "investigation", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://fda.gov"]
-title = "U.S. Food and Drug Administration"
-description = "The FDA is responsible for protecting the public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, and medical devices; and by ensuring the ..."
-clearnet = "https://fda.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-subject_type = "Federal domestic regulatory agency"
-category = "government"
-tags = ["three letter agency", "FDA", "surveillance", "investigation", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://cdc.gov"]
-title = "Centers for Disease Control and Prevention"
-description = "CDC is the nation's leading science-based, data-driven, service organization that protects the public's health. For more than 70 years, we've put science into action to help children stay healthy so they can grow and learn; to help families, businesses, and communities fight disease and stay strong; and to"
-clearnet = "https://cdc.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = "White House"
-subject_type = "Federal domestic regulatory agency"
-category = "government"
-tags = ["three letter agency", "CDC", "glowies", "vaccine", "surveillance", "investigation", "official"]
-ptr = "bad"
-hrr = "bad"
-language = "english"
-
-["https://dea.gov"]
-title = "United States Drug Enforcement Administration"
-description = "In 2023, DEA seized more than 79.5 million fentanyl-laced fake pills and nearly 12,000 pounds of fentanyl powder. The 2023 seizures are equivalent to more than 376.7 million lethal doses of fentanyl."
-clearnet = "https://dea.gov"
-jurisdiction = "United States of America"
-jurisdiction_level = "federal"
-regulator_entity = "White House"
-subject_type = "Federal domestic drug prevention agency"
-category = "government"
-tags = ["three letter agency", "DEA", "glowies", "national security", "surveillance", "investigation", "drugs", "official"]
-ptr = "bad"
-hrr = "bad"
+hrr = "terrible"
 language = "english"
 
 ["https://www.dhs.gov/"]
@@ -171,21 +89,23 @@ jurisdiction_level = "federal"
 regulator_entity = "White House"
 regulates_entity = ["CISA", "TSA"]
 category = "government"
-tags = ["DHS", "cybersecurity", "national security", "border patrol", "airport security", "border security", "southern border", "northern border", "glowies", "resource", "official"]
-ptr = "bad"
+tags = ["DOJ", "resource", "official"]
+ptr = "terrible"
 hrr = "bad"
 language = "english"
 
-["https://cisa.gov"]
-title = "Home Page | CISA"
-description = ""
-clearnet = "https://cisa.gov"
+["https://www.justice.gov/"]
+title = "Department of Justice | Homepage | United States Department of Justice"
+description = "The DOJ is the federal agency that upholds the rule of law, protects civil rights, and fights crime in the United States. Learn about its mission, values, history, components, news, and most wanted fugitives."
+clearnet = "https://www.justice.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
-regulator_entity = ["White House", "DHS"]
-subject_type = "Federal cybersecurity agency"
+regulator_entity = "White House"
+regulates_entity = ["FBI", "DEA", "ATF"]
 category = "government"
-tags = ["CISA", "glowies", "surveillance", "investigation", "infrastructure", "national security", "cybersecurity", "official"]
+tags = ["DHS", "cybersecurity", "national security", "border patrol", "airport security", "border security", "southern border", "northern border", "glowies", "resource", "official"]
+ptr = "terrible"
+hrr = "terrible"
 language = "english"
 
 ["https://www.state.gov/"]
@@ -209,6 +129,320 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 regulates_entity = ["Virginia Department of Education, Wisconsin Department of Public Instruction"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.commerce.gov/"]
+title = "U.S. Department of Commerce"
+description = "Learn about the mission, news, and programs of the Department of Commerce, which creates the conditions for economic growth and opportunity for all communities. Find out how the Department supports American innovation, competitiveness, and trade."
+clearnet = "https://www.commerce.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+regulates_entity = ["US Census Bureau"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.dol.gov/"]
+title = "Home | U.S. Department of Labor"
+description = "Find information and resources on worker rights, benefits, unemployment, training, and more. Learn about the department's initiatives on mental health, good jobs, migrant workers, and veterans."
+clearnet = "https://www.dol.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+regulates_entity = ["US Bureau of Labor Statistics"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.hhs.gov/"]
+title = "Department of Health & Human Services | HHS.gov"
+description = "Explore our agencies. This mission of the U.S. Department of Health and Human Services (HHS) is to enhance the health and well-being of all Americans, HHS' programs and services are administered by the Office of the Secretary Staff Divisions, Operating Divisions, and Regional Offices. HHS agencies &"
+clearnet = "https://www.hhs.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+regulates_entity = ["US Food and Drug Administration", "CDC"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#--- 🇺🇸 Nested agencies [Inside Executive Departments]
+
+#DOD
+
+["https://www.marines.mil/"]
+title = "Marines.mil - Official website of the United States Marine Corps"
+description = "U.S. Marines participate in exercise Arctic Edge 2024 across various training locations in Alaska from Feb. 23, 2024 to March 11, 2024. Watch Video."
+clearnet = "https://www.marines.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["oorah", "resource", "official", "US Military"]
+language = "english"
+
+["https://www.army.mil/"]
+title = "The Official Home Page of the United States Army"
+description = "The latest news, images, videos, career information, and links from the U.S. Army"
+clearnet = "https://www.army.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["resource", "official", "US Military"]
+language = "english"
+
+["https://www.navy.mil/"]
+title = "United States Navy - Home"
+description = "Learn about the Navy's roles, missions, priorities, and news. See photos and videos of naval operations, exercises, and events around the world."
+clearnet = "https://www.navy.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["resource", "official", "US Military"]
+language = "english"
+
+["https://www.af.mil/"]
+title = "The Official Home Page of the U.S. Air Force"
+description = "The official website of the U.S. Air Force provides information about its mission, vision, leadership, and operations. Find the latest news, videos, photos, and stories about the Air Force and its partners around the world."
+clearnet = "https://www.af.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["resource", "official", "US Military"]
+language = "english"
+
+["https://www.nsa.gov/"]
+title = "National Security Agency | Central Security Service"
+description = "NSA Cybersecurity prevents and eradicates threats to U.S. national security systems with a focus on the Defense Industrial Base and the improvement of our weapons' security. Through our Cybersecurity Collaboration Center, NSA partners with allies, private industry, academics, and researchers to"
+clearnet = "https://www.nsa.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+subject_type = "Federal domestic investigative agency"
+category = "government"
+tags = ["three letter agency", "NSA", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+["https://www.dia.mil/"]
+title = "Defense Intelligence Agency > Home"
+description = "DIA provides intelligence on foreign militaries and their operating environments to prevent and decisively win wars. Learn about DIA's mission, museum, news, careers, and small business programs."
+clearnet = "https://www.dia.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.darpa.mil/"]
+title = "Defense Advanced Research Projects Agency - DARPA"
+description = "DARPA is a U.S. government agency that creates breakthrough technologies and capabilities for national security. Learn about DARPA's news, events, programs, and communities in various sectors and domains."
+clearnet = "https://www.darpa.mil/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Defense"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#DOJ
+
+["https://fbi.gov"]
+title = "Welcome to fbi.gov - FBI"
+description = "We protect the American people and uphold the U.S. Constitution."
+clearnet = "https://fbi.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Justice"
+subject_type = "Federal domestic investigative agency"
+category = "government"
+tags = ["three letter agency", "FBI", "cybersecurity", "national security", "glowies", "surveillance", "investigation", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+["https://atf.gov"]
+title = "Bureau of Alcohol, Tobacco, Firearms and Explosives"
+description = "ATF protects communities from violent criminals, illegal firearms, explosives, arson, terrorism, and alcohol or tobacco trafficking. Learn about ATF's mission, services, regulations, careers, and how to submit a tip."
+clearnet = "https://atf.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Justice"
+subject_type = "Federal domestic investigative agency"
+category = "government"
+tags = ["three letter agency", "ATF", "glowies", "surveillance", "investigation", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+["https://dea.gov"]
+title = "United States Drug Enforcement Administration"
+description = "In 2023, DEA seized more than 79.5 million fentanyl-laced fake pills and nearly 12,000 pounds of fentanyl powder. The 2023 seizures are equivalent to more than 376.7 million lethal doses of fentanyl."
+clearnet = "https://dea.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Justice"
+subject_type = "Federal domestic drug prevention agency"
+category = "government"
+tags = ["three letter agency", "DEA", "glowies", "national security", "surveillance", "investigation", "drugs", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+#DHS
+
+["https://cisa.gov"]
+title = "Home Page | CISA"
+description = ""
+clearnet = "https://cisa.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Homeland Security"
+subject_type = "Federal cybersecurity agency"
+category = "government"
+tags = ["CISA", "glowies", "surveillance", "investigation", "infrastructure", "national security", "cybersecurity", "official"]
+language = "english"
+
+["https://www.tsa.gov/"]
+title = "Transportation Security Administration"
+description = "TSA is the federal agency that secures the U.S. transportation systems. Find out what you can bring, how to apply for TSA PreCheck®, and get assistance for travelers with disabilities and medical conditions."
+clearnet = "https://www.tsa.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Homeland Security"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#HHS
+
+["https://fda.gov"]
+title = "U.S. Food and Drug Administration"
+description = "The FDA is responsible for protecting the public health by ensuring the safety, efficacy, and security of human and veterinary drugs, biological products, and medical devices; and by ensuring the ..."
+clearnet = "https://fda.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Health and Human Services"
+subject_type = "Federal domestic regulatory agency"
+category = "government"
+tags = ["FDA", "resource", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+["https://cdc.gov"]
+title = "Centers for Disease Control and Prevention"
+description = "CDC is the nation's leading science-based, data-driven, service organization that protects the public's health. For more than 70 years, we've put science into action to help children stay healthy so they can grow and learn; to help families, businesses, and communities fight disease and stay strong; and to"
+clearnet = "https://cdc.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Health and Human Services"
+subject_type = "Federal domestic regulatory agency"
+category = "government"
+tags = ["three letter agency", "CDC", "glowies", "vaccine", "surveillance", "investigation", "official"]
+ptr = "bad"
+hrr = "bad"
+language = "english"
+
+#DOC
+
+["https://www.census.gov/"]
+title = "Census.gov"
+description = "Census data covers dozen of topics across 130+ surveys and programs. Get in the weeds with more than 2.5 million tables of raw data, maps, profiles, and more at data.census.gov — the Census Bureau's premiere data dissemination platform. Visit data.census.gov."
+clearnet = "https://www.census.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Commerce"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#DOL
+
+["https://www.bls.gov/"]
+title = "U.S. Bureau of Labor Statistics"
+description = "Find the latest data and news on labor statistics, such as unemployment, inflation, wages, productivity, and more. Explore regional, state, and local information, charts, reports, and publications from BLS."
+clearnet = "https://www.bls.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Labor"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#--- 🇺🇸 Independent Agencies
+
+["http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"]
+title = "We are the Nation's first line of defense - CIA"
+description = "CIA is the first line of defense for the United States. We collect and analyze intelligence to further national security and preempt threats."
+onion = "http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion/"
+clearnet = "https://cia.gov"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+subject_type = "Federal investigative agency"
+category = "government"
+tags = ["three letter agency", "CIA", "cybersecurity", "national security", "glowies", "intelligence", "surveillance", "official"]
+ptr = "bad"
+hrr = "terrible"
+language = "english"
+
+["https://www.nasa.gov/"]
+title = "NASA"
+description = "Earth Information Center. For more than 50 years, NASA satellites have provided data on Earth's land, water, air, temperature, and climate. NASA's Earth Information Center allows visitors to see how our planet is changing in six key areas: sea level rise and coastal impacts, health and air quality, wildfires,"
+clearnet = "https://www.nasa.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["moon landing", "apollo", "apollo mission", "voyager", "voyager sattelite", "space race", "resource", "official"]
+language = "english"
+
+["https://www.archives.gov/"]
+title = "National Archives | Home"
+description = "The U.S. National Archives and Records Administration 1-86-NARA-NARA or 1-866-272-6272."
+clearnet = "https://www.archives.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["bill of rights", "US constitution", "resource", "official"]
+language = "english"
+
+["https://www.federalreserve.gov/"]
+title = "Federal Reserve Board - Home"
+description = "The Federal Reserve System is the central bank of the United States. It performs five general functions to promote the effective operation of the U.S. economy and, more generally, the public interest."
+clearnet = "https://www.federalreserve.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["bureacracy", "interest rates", "the fed", "FOMC", "FOMC meeting", "resource", "official"]
+language = "english"
+
+["https://www.nsf.gov/"]
+title = "NSF - National Science Foundation"
+description = "NSF is a federal agency that supports science and engineering in all 50 states and U.S. territories. It offers funding opportunities, explores discoveries, and focuses on accelerating new technologies and big ideas."
+clearnet = "https://www.nsf.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Congress"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.ssa.gov/"]
+title = "The United States Social Security Administration | SSA"
+description = "Learn how to apply for benefits, check eligibility, manage your account, and more on the official website of the U.S. Social Security Administration. Find answers to frequently asked questions, access online services, and get the latest news and updates."
+clearnet = "https://www.ssa.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Congress"
 category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
