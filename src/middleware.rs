@@ -59,7 +59,7 @@ impl Fairing for ThemeMiddleware {
                     response.set_sized_body(Cursor::new(modified_body));
                 },
                 Err(_) => {
-                    let modified_body = body.replace("{{neofetch}}", "Neofetch is not installed");
+                    let modified_body = body.replace("{{neofetch}}", "Neofetch is not installed on the host");
                     response.set_sized_body(Cursor::new(modified_body));
                 }
             }
