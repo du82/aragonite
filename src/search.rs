@@ -229,6 +229,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let language = schema_builder.add_text_field("language", TEXT | STORED);
     let visualization = schema_builder.add_text_field("visualization", TEXT | STORED);
+    let v_title = schema_builder.add_text_field("v_title", TEXT | STORED);
+    let v_measured = schema_builder.add_text_field("v_measured", TEXT | STORED);
+    let v_radar_bounds = schema_builder.add_text_field("v_radar_bounds", TEXT | STORED);
+    let v_radar_result = schema_builder.add_text_field("v_radar_result", TEXT | STORED);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
         // Create the index
@@ -614,10 +618,26 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .collect::<Vec<&str>>()
         .join("");
 
+    let v_title = fields
+        .get("v_title")
+        .unwrap_or_else(|| &&default_value)
+        .replace("[", "")
+        .split(',')
+        .collect::<Vec<&str>>()
+        .join("");
+
+    let v_measured = fields
+        .get("v_measured")
+        .unwrap_or_else(|| &&default_value)
+        .replace("[", "")
+        .split(',')
+        .collect::<Vec<&str>>()
+        .join("");
+
     if visualization == "radar" {
         let chart =Chart::new()
-        .title(Title::new().text("Basic Radar Chart"))
-        .legend(Legend::new().data(vec!["Allocated Budget", "Actual Spending"]))
+        .title(Title::new().text(v_title))
+        .legend(Legend::new().data(vec![v_measured.to_string(), "Actual Spending".to_string()]))
         .radar(RadarCoordinate::new().indicator(vec![
             ("College", 0, 1000),
             ("Software Development", 0, 1000),

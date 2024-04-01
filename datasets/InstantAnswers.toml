@@ -15,23 +15,51 @@ description = "{{neofetch}}"
 instant_answer = "linux"
 
 ["graphs"]
-Title = "What I do all day"
+title = "What I do all day"
 description = "I make graphs all day"
-instant_answer = "graphs"
+instant_answer = "visualization"
 visualization = "radar"
-radar_maximum = [
-  ["Work", 18],
-  ["Eat", 17],
-  ["Sleep", 84],
-  ["Play", 65],
-  ["Exercise", 14],
-  ["Socialize", 13]
+v_title = "Time spent on activities"
+v_measured = "Time spent"
+v_radar_bounds = [
+  ["Work", 0, 18],
+  ["Eat", 0, 17],
+  ["Sleep", 0, 84],
+  ["Play", 0, 65],
+  ["Exercise", 0, 14],
+  ["Socialize", 0, 13]
 ]
-radar_actual = [
+v_radar_result = [
   ["Work", 8],
   ["Eat", 2],
   ["Sleep", 8],
   ["Play", 6],
   ["Exercise", 1],
   ["Socialize", 1]
+]
+
+
+
+["graphs2"]
+title = "How I spent my time programming"
+description = "I work on rust code"
+instant_answer = "visualization"
+visualization = "radar"
+v_title = "Time spent writing rust code"
+v_measured = "Time spent"
+v_radar_bounds = [
+  ["Documentation", 0, 18],
+  ["Backend", 0, 17],
+  ["Frontend", 0, 84],
+  ["Debugging", 0, 65],
+  ["Security", 0, 14],
+  ["Crying", 0, 13]
+]
+v_radar_result = [
+  ["Documentation", 18],
+  ["Backend", 5],
+  ["Frontend", 76],
+  ["Debugging", 58],
+  ["Security", 10],
+  ["Crying", 9]
 ]
