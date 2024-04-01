@@ -16,7 +16,7 @@ instant_answer = "linux"
 
 ["graphs"]
 title = "What I do all day"
-description = "I make graphs all day"
+description = "{{radar_graph}}"
 instant_answer = "visualization"
 visualization = "radar"
 v_title = "Time spent on activities"
@@ -42,7 +42,7 @@ v_radar_result = [
 
 ["graphs2"]
 title = "How I spent my time programming"
-description = "I work on rust code"
+description = "{{radar_graph}}"
 instant_answer = "visualization"
 visualization = "radar"
 v_title = "Time spent writing rust code"

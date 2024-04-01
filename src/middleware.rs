@@ -24,6 +24,15 @@ impl Fairing for ThemeMiddleware {
             return;
         }
 
+        // Read the SVG file
+        let svg_content = fs::read_to_string("radar.svg").unwrap_or_else(|_| String::new());
+
+        // Replace {{radar_graph}} with the SVG content
+        if let Some(body) = response.body().and_then(|b| b.into_string()) {
+            let modified_body = body.replace("{{radar_graph}}", &svg_content);
+            response.set_sized_body(Cursor::new(modified_body));
+        }
+
         // Inject the theme if the cookie is different from default
         let theme = request.cookies().get("theme").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "gemstone.css".to_string());
         if let Some(body) = response.body().and_then(|b| b.into_string()) {

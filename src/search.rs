@@ -654,8 +654,8 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         ]
     ));
 
-    let mut renderer = ImageRenderer::new(1000, 800);
-    renderer.save(&chart, "nightingal.svg");
+    let mut renderer = ImageRenderer::new(500, 400);
+    renderer.save(&chart, "radar.svg");
     }
 
     // Conditionally show the instant answer or search results list
