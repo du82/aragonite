@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- You won't find any JavaScript here, just a staticly generated SERP! -->
+<!-- You won't find any JavaScript here, just a dynamically generated page! -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Aragonite</title>
+    <title>{{name}}</title>
     <meta property="og:description" content="A soverign search engine" />
     <meta property="og:image" content="static/themes/media/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
   <body class="landing-body">
     <div class="landing-outer-container">
       <form class="landing-container" action="/search" method="post">
-        <h1 class="landing-gradient-text">Aragonite<sup>α</sup></h1>
+        <h1 class="landing-gradient-text">{{name}}<sup>{{greek}}</sup></h1>
         <div style="display: flex">
           <input
             class="search-box"
@@ -30,12 +30,11 @@
     </div>
     <footer class="landing-container">
       <div class="landing-footer-container">
-        <a href="about"> About </a>| <a href="blog"> Blog </a>|
         <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
         <a href="privacy"> Privacy </a>|
         <a href="/settings"> Settings </a>
         <p class="centered-text">
-          Don't be Hypocrites // Mirror updated: Mar 30, 2024
+          Don't be Hypocrites // Mirror updated: {{mirror_updated}}
         </p>
       </div>
     </footer>

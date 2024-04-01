@@ -24,13 +24,46 @@ impl Fairing for ThemeMiddleware {
             return;
         }
 
+        // Inject the theme if the cookie is different from default
         let theme = request.cookies().get("theme").map(|cookie| cookie.value().to_string()).unwrap_or_else(|| "gemstone.css".to_string());
-
         if let Some(body) = response.body().and_then(|b| b.into_string()) {
             let modified_body = body.replace("{{theme}}", &format!("themes/{}", theme));
             response.set_sized_body(Cursor::new(modified_body));
         }
 
+        // Set name
+        if let Some(branding) = config.get("branding") {
+            if let Some(name) = branding.get("name").and_then(Value::as_str) {
+                if let Some(body) = response.body().and_then(|b| b.into_string()){
+                    // Replace {{search_string}} with the random line
+                    let modified_body = body.replace("{{name}}", name);
+                    response.set_sized_body(Cursor::new(modified_body));
+                }
+            }
+        }
+
+        // Set greek letter
+        if let Some(branding) = config.get("branding") {
+            if let Some(greek) = branding.get("greek").and_then(Value::as_str) {
+                if let Some(body) = response.body().and_then(|b| b.into_string()){
+                    // Replace {{search_string}} with the random line
+                    let modified_body = body.replace("{{greek}}", greek);
+                    response.set_sized_body(Cursor::new(modified_body));
+                }
+            }
+        }
+
+        // Set mirror updated date
+        if let Some(branding) = config.get("branding") {
+            if let Some(mirror_updated) = branding.get("mirror_updated").and_then(Value::as_str) {
+                if let Some(body) = response.body().and_then(|b| b.into_string()){
+                    // Replace {{search_string}} with the random line
+                    let modified_body = body.replace("{{mirror_updated}}", mirror_updated);
+                    response.set_sized_body(Cursor::new(modified_body));
+                }
+                
+            }
+        }
 
         if let Some(features) = config.get("features") {
             if let Some(search_string_enabled) = features.get("search_string_enabled").and_then(Value::as_bool) {

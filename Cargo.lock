@@ -787,10 +787,8 @@ version = "0.1.0"
 dependencies = [
  "rand",
  "rocket",
- "serde_json",
  "tantivy",
  "toml 0.5.11",
- "uuid 0.8.2",
 ]
 
 [[package]]
@@ -1296,7 +1294,7 @@ dependencies = [
  "tempfile",
  "thiserror",
  "time 0.3.34",
- "uuid 1.7.0",
+ "uuid",
  "winapi",
 ]
 
@@ -1646,15 +1644,6 @@ name = "utf8-ranges"
 version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7fcfc827f90e53a02eaef5e535ee14266c1d569214c6aa70133a624d8a3164ba"
-
-[[package]]
-name = "uuid"
-version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc5cf98d8186244414c848017f0e2676b3fcb46807f6668a97dfe67359a3c4b7"
-dependencies = [
- "getrandom",
-]
 
 [[package]]
 name = "uuid"
