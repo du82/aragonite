@@ -8,6 +8,7 @@ use std::fs::File;
 use std::io::Read;
 use std::time::{Duration, Instant};
 use std::collections::HashMap;
+use std::time::SystemTime;
 use tantivy::collector::TopDocs;
 use tantivy::doc;
 use tantivy::query::BooleanQuery;
@@ -23,12 +24,17 @@ use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
 
+use charming::{
+    component::{Legend, RadarCoordinate, Title},
+    element::ItemStyle,
+    series::{Radar},
+    Chart, ImageRenderer
+};
+
 #[derive(FromForm)]
 struct SearchForm {
     query: String,
 }
-
-use std::time::SystemTime;
 
 #[get("/random")]
 pub fn random_search() -> Result<Redirect, std::io::Error> {
@@ -222,6 +228,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let language = schema_builder.add_text_field("language", TEXT | STORED);
+    let visualization = schema_builder.add_text_field("visualization", TEXT | STORED);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
         // Create the index
@@ -437,11 +444,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                 score *= -0.2; // Decrease score by 20%
             }
         }
-        //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
-        //    if title.contains("Linux") {
-        //        score *= 5.0; // Increase score by 500%
-        //   }
-        //}
         scored_results.push((score, html_without_quotes));
     }
 
@@ -603,6 +605,38 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     } else {
         "".to_string()
     };
+
+    let visualization = fields
+        .get("visualization")
+        .unwrap_or_else(|| &&default_value)
+        .replace("[", "")
+        .split(',')
+        .collect::<Vec<&str>>()
+        .join("");
+
+    if visualization == "radar" {
+        let chart =Chart::new()
+        .title(Title::new().text("Basic Radar Chart"))
+        .legend(Legend::new().data(vec!["Allocated Budget", "Actual Spending"]))
+        .radar(RadarCoordinate::new().indicator(vec![
+            ("College", 0, 1000),
+            ("Software Development", 0, 1000),
+            ("Exercize", 0, 1000),
+            ("Eating", 0, 1000),
+            ("Sleeping", 0, 1000),
+            ("Video Games", 0, 1000),
+        ]))
+        .series(Radar::new().name("Budget vs spending").data(vec![
+            (
+                vec![100, 800, 140, 60, 250, 70],
+                "Allocated Budget",
+            ),
+        ]
+    ));
+
+    let mut renderer = ImageRenderer::new(1000, 800);
+    renderer.save(&chart, "nightingal.svg");
+    }
 
     // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {

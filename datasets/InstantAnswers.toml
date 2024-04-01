@@ -13,3 +13,25 @@ instant_answer = "sports"
 title = "$ neofetch"
 description = "{{neofetch}}"
 instant_answer = "linux"
+
+["graphs"]
+Title = "What I do all day"
+description = "I make graphs all day"
+instant_answer = "graphs"
+visualization = "radar"
+radar_maximum = [
+  ["Work", 18],
+  ["Eat", 17],
+  ["Sleep", 84],
+  ["Play", 65],
+  ["Exercise", 14],
+  ["Socialize", 13]
+]
+radar_actual = [
+  ["Work", 8],
+  ["Eat", 2],
+  ["Sleep", 8],
+  ["Play", 6],
+  ["Exercise", 1],
+  ["Socialize", 1]
+]
