@@ -2,7 +2,7 @@
 
  We are a data science company building a search engine for from scratch that values your privacy, while providing a programming-style syntax for more accurate results.
 
- `http://aragonite.xyx:12345`
+ `http://aragonite.xyz:12345/`
 
  ### The 'Why'
 
