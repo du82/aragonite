@@ -369,10 +369,20 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         final_query.push((Occur::Must, Box::new(field_query)));
     }
 
+    // Output of the final query after parsing
     let final_query = BooleanQuery::from(final_query);
 
+    let config_str = fs::read_to_string("Config.toml").unwrap();
+    let config: Value = config_str.parse().unwrap();
+
+    // Get the number of results per query from Config.toml
+    let results_per_query = config.get("engine")
+    .and_then(|engine| engine.get("results_per_query"))
+    .and_then(Value::as_integer)
+    .unwrap_or(50) as usize;  // Default to 50 if not found
+
     // Collectors
-    let top_docs = searcher.search(&final_query, &TopDocs::with_limit(50))?;
+    let top_docs = searcher.search(&final_query, &TopDocs::with_limit(results_per_query))?;
     let mut scored_results = Vec::new();
     for (mut score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
