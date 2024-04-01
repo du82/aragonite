@@ -27,5 +27,9 @@ Install neofetch (optional)
 `rm -rf neofetch`
 `neofetch`
 
+Make the index directory
+`cd rust-login-page`
+`mkdir index`
+
 Run the project with the staging config
 `ROCKET_ENV=staging cargo run`
