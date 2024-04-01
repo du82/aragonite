@@ -40,22 +40,28 @@ impl Fairing for ThemeMiddleware {
         }
 
         if let Some(body) = response.body().and_then(|b| b.into_string()) {
-            // Execute neofetch command
+            // Try to execute neofetch command
             let neofetch_output = Command::new("neofetch")
                 .arg("--stdout")
-                .output()
-                .expect("failed to execute process");
+                .output();
         
-            // Format the output
-            let formatted_output = String::from_utf8_lossy(&neofetch_output.stdout)
-                .lines()
-                .skip(2)
-                .collect::<Vec<&str>>()
-                .join("<br>");
+            match neofetch_output {
+                Ok(output) => {
+                    // Format the output
+                    let formatted_output = String::from_utf8_lossy(&output.stdout)
+                        .lines()
+                        .skip(2)
+                        .collect::<Vec<&str>>()
+                        .join("<br>");
         
-            // Replace {{neofetch}} with the command output
-            let modified_body = body.replace("{{neofetch}}", &formatted_output);
-            response.set_sized_body(Cursor::new(modified_body));
+                    // Replaces {{neofetch}} with the command output
+                    let modified_body = body.replace("{{neofetch}}", &formatted_output);
+                    response.set_sized_body(Cursor::new(modified_body));
+                },
+                Err(_) => {
+                    eprintln!("Warning: neofetch is not installed, proceeding without it.");
+                }
+            }
         }
     }
 }
