@@ -634,32 +634,32 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .collect::<Vec<&str>>()
         .join("");
 
-        let data = r#"
-        v_radar_bounds = [
-          ["Work", 0, 1000],
-          ["Eat", 0, 1000],
-          ["Sleep", 0, 1000],
-          ["Play", 0, 1000],
-          ["Exercise", 0, 1000],
-          ["Socialize", 0, 1000]
-        ]
-        "#;
+    let data = r#"
+    v_radar_bounds = [
+        ["Work", 0, 1000],
+        ["Eat", 0, 1000],
+        ["Sleep", 0, 1000],
+        ["Play", 0, 1000],
+        ["Exercise", 0, 1000],
+        ["Socialize", 0, 1000]
+    ]
+    "#;
         
-        let value: Value = data.parse().unwrap();
-        
-        let v_radar_bounds: Vec<(&str, i64, i64)> = value["v_radar_bounds"]
-            .as_array()
-            .unwrap()
-            .iter()
-            .map(|v| {
-                let arr = v.as_array().unwrap();
-                (
-                    arr[0].as_str().unwrap(),
-                    arr[1].as_integer().unwrap() as i64,
-                    arr[2].as_integer().unwrap() as i64,
-                )
-            })
-            .collect();
+    let value: Value = data.parse().unwrap();
+    
+    let v_radar_bounds: Vec<(&str, i64, i64)> = value["v_radar_bounds"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .map(|v| {
+            let arr = v.as_array().unwrap();
+            (
+                arr[0].as_str().unwrap(),
+                arr[1].as_integer().unwrap() as i64,
+                arr[2].as_integer().unwrap() as i64,
+            )
+        })
+        .collect();
 
     if visualization == "radar" {
         let chart =Chart::new()
