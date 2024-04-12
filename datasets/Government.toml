@@ -21,7 +21,16 @@ regulates_entity = ["US Congress",
                     "US Department of Education", 
                     "US Department of Commerce",
                     "US Department of Justice",
-                    "US Department of Labor"]
+                    "US Department of Labor",
+                    "US Dpeartment of the Treasury",
+                    "US Department of Agriculture",
+                    "US Department of the Interior",
+                    "US Department of Health and Human Services",
+                    "US Department of Housing and Urban Development",
+                    "US Department of Transportation",
+                    "US Department of Energy",
+                    "US Department of Veterans Affairs",
+                    "CIA"]
 subject_type = "Federal branch of government"
 category = "government"
 tags = ["politics", "regulation", "executive branch", "executive order", "signed", "election", "agenda", "propaganda", "policies", "President", "history", "official"]
@@ -72,7 +81,13 @@ clearnet = "https://www.defense.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["NSA", "DIA"]
+regulates_entity = ["Marines",
+                    "Army",
+                    "Navy",
+                    "Air Force",
+                    "NSA", 
+                    "DIA",
+                    "DARPA"]
 subject_type = "Federal domestic defense agency"
 category = "government"
 tags = ["military", "DOD", "defense budget", "cybersecurity", "national security", "war", "propaganda", "glowies", "surveillance", "investigation", "official"]
@@ -87,7 +102,8 @@ clearnet = "https://www.dhs.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["CISA", "TSA"]
+regulates_entity = ["CISA", 
+                    "TSA"]
 category = "government"
 tags = ["DOJ", "resource", "official"]
 ptr = "terrible"
@@ -101,7 +117,9 @@ clearnet = "https://www.justice.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["FBI", "DEA", "ATF"]
+regulates_entity = ["FBI", 
+                    "DEA", 
+                    "ATF"]
 category = "government"
 tags = ["DHS", "cybersecurity", "national security", "border patrol", "airport security", "border security", "southern border", "northern border", "glowies", "resource", "official"]
 ptr = "terrible"
@@ -128,7 +146,8 @@ clearnet = "https://www.ed.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["Virginia Department of Education, Wisconsin Department of Public Instruction"]
+regulates_entity = ["Virginia Department of Education", 
+                    "Wisconsin Department of Public Instruction"]
 category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
@@ -140,7 +159,10 @@ clearnet = "https://www.commerce.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["US Census Bureau"]
+regulates_entity = ["US Census Bureau", 
+                    "NIST",
+                    "NOAA",
+                    "USPTO"]
 category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
@@ -164,14 +186,32 @@ clearnet = "https://www.hhs.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["US Food and Drug Administration", "CDC"]
+regulates_entity = ["US Food and Drug Administration", 
+                    "CDC"]
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://home.treasury.gov/"]
+title = "Front page | U.S. Department of the Treasury"
+description = "The Treasury Department is responsible for promoting economic growth, financial stability, and national security. Find data, news, and resources on the American Rescue Plan, sanctions, interest rates, and more."
+clearnet = "https://home.treasury.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+regulates_entity = ["Internal Revenue Service", 
+                    "Financical Crimes Enforcement Network",
+                    "US Mint",
+                    "Office of the Comptroller of the Currency",
+                    "Bureau of Engraving and Printing",
+                    "Alcohol and Tobacco Tax and Trade Bureau"]
 category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
 
 #--- 🇺🇸 Nested agencies [Inside Executive Departments]
 
-#DOD
+#Defense
 
 ["https://www.marines.mil/"]
 title = "Marines.mil - Official website of the United States Marine Corps"
@@ -253,7 +293,7 @@ category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
 
-#DOJ
+#Justice
 
 ["https://fbi.gov"]
 title = "Welcome to fbi.gov - FBI"
@@ -297,7 +337,7 @@ ptr = "bad"
 hrr = "bad"
 language = "english"
 
-#DHS
+#Homeland Security
 
 ["https://cisa.gov"]
 title = "Home Page | CISA"
@@ -322,7 +362,7 @@ category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
 
-#HHS
+#Health and Human Services
 
 ["https://fda.gov"]
 title = "U.S. Food and Drug Administration"
@@ -352,7 +392,7 @@ ptr = "bad"
 hrr = "bad"
 language = "english"
 
-#DOC
+#Commerce
 
 ["https://www.census.gov/"]
 title = "Census.gov"
@@ -365,7 +405,40 @@ category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
 
-#DOL
+["https://www.uspto.gov/"]
+title = "United States Patent and Trademark Office"
+description = "The USPTO is the federal agency that grants and manages patents and trademarks in the U.S. Learn about its latest news, programs, services, and resources for inventors, businesses, and the public."
+clearnet = "https://www.uspto.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Commerce"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.noaa.gov/"]
+title = "National Oceanic and Atmospheric Administration - Official Site"
+description = "How farming in water could reshape the seafood industry . Learn how to prepare for spring weather. NOAA Science Report highlights research accomplishments"
+clearnet = "https://www.noaa.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Commerce"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.nist.gov/"]
+title = "National Institute of Standards and Technology"
+description = "NIST is a federal agency that works with industry and academia to enhance economic security and improve our quality of life. NIST provides services and resources for measurements, standards, and technology in various fields, such as artificial intelligence, cybersecurity, and quantum science."
+clearnet = "https://www.nist.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Commerce"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+#Labor
 
 ["https://www.bls.gov/"]
 title = "U.S. Bureau of Labor Statistics"
@@ -377,6 +450,75 @@ regulator_entity = "US Department of Labor"
 category = "government"
 tags = ["bureacracy", "resource", "official"]
 language = "english"
+
+#Treasury
+
+["https://www.irs.gov/"]
+title = "Internal Revenue Service | An Official website of the United States government"
+description = "The IRS provides online tools and services to help you file your taxes, check your refund status, get your tax records, and more. Find out the latest news and updates on tax credits, deductions, and penalties."
+clearnet = "https://www.irs.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.fincen.gov/"]
+title = "FinCEN.gov - United States Department of the Treasury Financial Crimes Enforcement Network"
+description = "FinCEN is a bureau of the U.S. Department of the Treasury that collects and analyzes financial intelligence to combat money laundering, terrorist financing, and other financial crimes. FinCEN provides information on beneficial ownership, money services businesses, suspicious activity reports,"
+clearnet = "https://www.fincen.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.usmint.gov/"]
+title = "The United States Mint"
+description = "Learn about the history, design, and production of U.S. coins and medals. Find out how to buy, collect, and tour the U.S. Mint facilities."
+clearnet = "https://www.usmint.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.occ.treas.gov/"]
+title = "Office of the Comptroller of the Currency (OCC)"
+description = "The OCC is a federal agency that supervises and charters national banks and federal savings associations. Learn about the OCC's history, mission, news, publications, events, and topics related to banking regulation and consumer protection."
+clearnet = "https://www.occ.treas.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.bep.gov/"]
+title = "Home | Engraving & Printing"
+description = "Learn about the currency production process, mutilated currency redemption, U.S. Currency Reader Program and more at the official website of the Bureau of Engraving and Printing. Shop online for uncut currency sheets, Lucky Money notes, specialty products and more."
+clearnet = "https://www.bep.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.ttb.gov/"]
+title = "TTBGov - Home"
+description = "The home page for the Alcohol and Tobacco Tax and Trade Bureau (TTB), a bureau under the Department of the Treasury. Our mission is to collect Federal excise t ... Industrial Alcohol, Nonbeverage Products, and Tax-free Alcohol. Resources for Tobacco Manufacturers, Importers, and "
+clearnet = "https://www.ttb.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of the Treasury"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
 
 #--- 🇺🇸 Independent Agencies
 
@@ -423,6 +565,26 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 category = "government"
 tags = ["bureacracy", "interest rates", "the fed", "FOMC", "FOMC meeting", "resource", "official"]
+language = "english"
+
+["https://www.sec.gov/"]
+title = "SEC.gov | HOME"
+description = "The SEC is a federal agency that regulates the U.S. securities markets and protects investors. Learn about its mission, divisions, offices, rules, data, news, and resources."
+clearnet = "https://www.sec.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
+language = "english"
+
+["https://www.fcc.gov/"]
+title = "Federal Communications Commission | The United States of America"
+description = "FCC is an independent agency that regulates interstate and international communications by radio, television, wire, satellite and cable. Learn about its programs, policies, events, news and leadership."
+clearnet = "https://www.fcc.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+category = "government"
+tags = ["bureacracy", "resource", "official"]
 language = "english"
 
 ["https://www.nsf.gov/"]
