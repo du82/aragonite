@@ -1,3 +1,8 @@
+# Version
+Any version works.
+
+22.04.4 currently has extended support for awhile.
+
 # Shell Commands
 Run the following commands in the following order to get a functional instance installed and ready for staging.
 

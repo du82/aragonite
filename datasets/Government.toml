@@ -134,7 +134,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
 category = "government"
-tags = ["bureacracy", "glowies", "resource", "official"]
+tags = ["bureaucracy", "glowies", "resource", "official"]
 ptr = "bad"
 hrr = "bad"
 language = "english"
@@ -149,7 +149,7 @@ regulator_entity = "White House"
 regulates_entity = ["Virginia Department of Education", 
                     "Wisconsin Department of Public Instruction"]
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.commerce.gov/"]
@@ -164,7 +164,7 @@ regulates_entity = ["US Census Bureau",
                     "NOAA",
                     "USPTO"]
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.dol.gov/"]
@@ -174,9 +174,34 @@ clearnet = "https://www.dol.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["US Bureau of Labor Statistics"]
+regulates_entity = ["US Bureau of Labor Statistics (BLS)",
+                    "Administrative Review Board (ARB)",
+                    "Benefits Review Board (BRB)",
+                    "Bureau of Apprenticeship and Training (BAT)",
+                    "Bureau of International Labor Affairs (ILAB)",
+                    "Center for Faith and Opportunity Initiative (CFOI)",
+                    "Employee Benefits Security Administration (EBSA)",
+                    "Employees' Compenstation Appeals Board (ECAB)",
+                    "Ombudsman for the Energy Employees Occupational Illness Compensation Program (EEOMBD)",
+                    "Employment and Training Administration (ETA)",
+                    "Mine Safety and Health Administration (MSHA)",
+                    "Occupational Safety and Health Administration (OSHA)",
+                    "Office of Administrative Law Judges (OALJ)",
+                    "Office of the Assistant Secretary for Administration and Management (OASAM)",
+                    "Office of the Chief Information Officer (OCIO)",
+                    "Office of the Assistant Secretary for Policy (OASP)",
+                    "Office of the Chief Financial Officer (OCFO)",
+                    "Office of Congressional and Intergovernmental Affairs (OCIA)",
+                    "Office of Disability Employment Policy (ODEP)",
+                    "Office of Federal Contract Compliance Programs (OFCCP)",
+                    "Office of Unemployment Insurance Modernization (OUIM)",
+                    "Office of Workers Compensation Programs",
+                    "Pension Benefit Guaranty Corporation",
+                    "Veterans' Employment and Training Service (VETS)",
+                    "Wage and Hour Division (WHD)",
+                    "Women's Bureau (WB)"]
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.hhs.gov/"]
@@ -186,10 +211,20 @@ clearnet = "https://www.hhs.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "White House"
-regulates_entity = ["US Food and Drug Administration", 
-                    "CDC"]
+regulates_entity = ["US Food and Drug Administration (FDA)", 
+                    "Centers for Disease Control and Prevention (CDC)",
+                    "Indian Health Service (IHS)",
+                    "National Institutes of Health (NIH)",
+                    "Agency for Toxic Substances and Disease Reigstry (ATSDR)",
+                    "Health Resources and Services Administration (HRSA)",
+                    "Agency for Healthcare Research and Quality (AHRQ)",
+                    "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+                    "Administration for Strategic Preparedness and Response (ASPR)",
+                    "Administration for Children and Families (ACF)",
+                    "Administration for Community Living (ACL)",
+                    "Centers for Medicare & Medicaid Services (CMS)"]
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://home.treasury.gov/"]
@@ -204,9 +239,31 @@ regulates_entity = ["Internal Revenue Service",
                     "US Mint",
                     "Office of the Comptroller of the Currency",
                     "Bureau of Engraving and Printing",
-                    "Alcohol and Tobacco Tax and Trade Bureau"]
+                    "Alcohol and Tobacco Tax and Trade Bureau",
+                    "Bureau of the Fiscal Service",
+                    "Community Develop Financial Institution (CDFI) Fund",]
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.transportation.gov/"]
+title = "Department of Transportation"
+description = "Learn about the mission, vision, and programs of the Department of Transportation, which serves the American people and economy through safe, efficient, sustainable, and equitable transportation. Find the latest news, resources, and data on transportation issues and initiatives."
+clearnet = "https://www.transportation.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "White House"
+regulates_entity = ["Federal Aviation Administration", 
+                    "Federal Highway Administration",
+                    "Federal Motor Carrier Safety Administration",
+                    "National Highway Traffic Safety Administration",
+                    "Federal Transit Administration",
+                    "Federal Railroad Administration",
+                    "Pipelines and Hazardous Materials Safety Administration",
+                    "Maritime Administration",
+                    "Saint Lawrence Seaway Development Corporation"]
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #--- 🇺🇸 Nested agencies [Inside Executive Departments]
@@ -279,7 +336,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Defense"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.darpa.mil/"]
@@ -290,7 +347,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Defense"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #Justice
@@ -359,7 +416,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Homeland Security"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #Health and Human Services
@@ -392,6 +449,28 @@ ptr = "bad"
 hrr = "bad"
 language = "english"
 
+["https://www.nih.gov/"]
+title = "National Institutes of Health (NIH) | Turning Discovery Into Health"
+description = "NIH is the largest funder of medical research in the world, supporting 27 Institutes and Centers. Learn about NIH's COVID-19 initiatives, health information, grants, jobs, and more."
+clearnet = "https://www.nih.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Health and Human Services"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.cms.gov/"]
+title = "Home - Centers for Medicare & Medicaid Services | CMS"
+description = "CMS is a federal agency that administers Medicare, Medicaid, and other health programs. Find information on the Inflation Reduction Act, Medicaid renewals, innovation, no surprise billing, nursing homes, and more."
+clearnet = "https://www.cms.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Health and Human Services"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
 #Commerce
 
 ["https://www.census.gov/"]
@@ -402,7 +481,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Commerce"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.uspto.gov/"]
@@ -413,7 +492,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Commerce"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.noaa.gov/"]
@@ -424,7 +503,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Commerce"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.nist.gov/"]
@@ -435,7 +514,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Commerce"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #Labor
@@ -448,7 +527,51 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of Labor"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.osha.gov/"]
+title = "Home | Occupational Safety and Health Administration"
+description = "OSHA is a federal agency that ensures safe and healthful working conditions for workers in the United States. Find out about grain bin safety, workers memorial events, whistleblower protection, and more."
+clearnet = "https://www.osha.gov/"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Labor"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.dol.gov/agencies/vets"]
+title = "VETS | U.S. Department of Labor"
+description = "In-person and virtual OBTT workshops are exclusively for veterans, veterans currently serving in the National Guard and Reserve, and their spouses to help them meet their career goals. Looking for qualified employees? Hire a veteran! VETS provides employers with assistance in finding qualified..."
+clearnet = "https://www.dol.gov/agencies/vets"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Labor"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.dol.gov/agencies/owcp"]
+title = "OWCP | U.S. Department of Labor"
+description = "The Office of Workers' Compensation Programs administers four major disability compensation programs which provide wage replacement benefits, medical treatment, vocational rehabilitation and other benefits to certain workers or their dependents who experience work-related injury or..."
+clearnet = "https://www.dol.gov/agencies/owcp"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Labor"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
+language = "english"
+
+["https://www.dol.gov/agencies/ebsa"]
+title = "Employee Benefits Security Administration | U.S. Department of Labor"
+description = "EBSA is an agency that protects the rights of America's workers and families through effective regulations, participant and compliance assistance, and vigorous enforcement of the law. Learn about EBSA's agency priorities, tools and resources, and popular topics on health and retirement benefits,"
+clearnet = "https://www.dol.gov/agencies/ebsa"
+jurisdiction = "United States of America"
+jurisdiction_level = "federal"
+regulator_entity = "US Department of Labor"
+category = "government"
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #Treasury
@@ -461,7 +584,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.fincen.gov/"]
@@ -472,7 +595,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.usmint.gov/"]
@@ -483,7 +606,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.occ.treas.gov/"]
@@ -494,7 +617,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.bep.gov/"]
@@ -505,7 +628,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.ttb.gov/"]
@@ -516,7 +639,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Department of the Treasury"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 
@@ -564,7 +687,7 @@ clearnet = "https://www.federalreserve.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 category = "government"
-tags = ["bureacracy", "interest rates", "the fed", "FOMC", "FOMC meeting", "resource", "official"]
+tags = ["bureaucracy", "interest rates", "the fed", "FOMC", "FOMC meeting", "resource", "official"]
 language = "english"
 
 ["https://www.sec.gov/"]
@@ -574,7 +697,7 @@ clearnet = "https://www.sec.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.fcc.gov/"]
@@ -584,7 +707,7 @@ clearnet = "https://www.fcc.gov/"
 jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.nsf.gov/"]
@@ -595,7 +718,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Congress"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://www.ssa.gov/"]
@@ -606,7 +729,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "federal"
 regulator_entity = "US Congress"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #---------- 🇺🇸 U.S. STATE AGENCIES & REGULATORY BODIES ------- >
@@ -619,7 +742,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "state"
 regulator_entity = "US Department of Education"
 category = "government"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 ["https://dpi.wi.gov/"]
@@ -630,7 +753,7 @@ jurisdiction = "United States of America"
 jurisdiction_level = "state"
 regulator_entity = "US Department of Education"
 category = "state"
-tags = ["bureacracy", "resource", "official"]
+tags = ["bureaucracy", "resource", "official"]
 language = "english"
 
 #---------- 🇨🇦 CANADA AGENCIES & REGULATORY BODIES ------- >
