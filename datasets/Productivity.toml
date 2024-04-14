@@ -406,3 +406,32 @@ status = "Operational"
 category = "productivity"
 tags = ["app icon", "app development", "adaptive icon"]
 language = "english"
+
+["https://sam.gov/content/home"]
+title = "SAM.gov | Home"
+description = "The System for Award Management (SAM) is an official website of the U.S. government. There is no cost to use SAM. You can use this site for FREE to: Register to do business with the U.S. government."
+clearnet = "https://sam.gov/content/home"
+status = "Operational"
+category = "productivity"
+tags = ["government contractor", "government contracting", "government contract", "RFI", "RFP", "RFQ", "government"]
+language = "english"
+
+["https://sam.gov/search/?page=1&pageSize=25&sort=&index=opp&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bdates%5D%5BresponseDue%5D%5BresponseDueSelect%5D=next3Months&sfm%5BtypeOfNotice%5D%5B0%5D%5Bkey%5D=r&sfm%5BtypeOfNotice%5D%5B0%5D%5Bvalue%5D=Sources%20Sought"]
+title = "SAM.gov | Serach - Sources Sought"
+description = "The System for Award Management (SAM) is an official website of the U.S. government. There is no cost to use SAM. You can use this site for FREE to: Register to do business with the U.S. government."
+clearnet = "https://sam.gov/search/?page=1&pageSize=25&sort=&index=opp&sfm%5BsimpleSearch%5D%5BkeywordRadio%5D=ALL&sfm%5Bstatus%5D%5Bis_active%5D=true&sfm%5Bdates%5D%5BresponseDue%5D%5BresponseDueSelect%5D=next3Months&sfm%5BtypeOfNotice%5D%5B0%5D%5Bkey%5D=r&sfm%5BtypeOfNotice%5D%5B0%5D%5Bvalue%5D=Sources%20Sought"
+status = "Operational"
+category = "productivity"
+tags = ["government contractor", "government contracting", "government contract", "RFI", "RFP", "RFQ", "government"]
+language = "english"
+
+["https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_e5d8c9af39bf0fbc&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=fEnuh_2Rv05TZd-jhtxi2-ggTPjsaEIk501FOMnDCGk&code_challenge_method=SHA-256"]
+title = "Amazon Web Services Sign-In"
+description = "The System for Award Management (SAM) is an official website of the U.S. government. There is no cost to use SAM. You can use this site for FREE to: Register to do business with the U.S. government."
+clearnet = "https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_us-east-2_e5d8c9af39bf0fbc&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=fEnuh_2Rv05TZd-jhtxi2-ggTPjsaEIk501FOMnDCGk&code_challenge_method=SHA-256"
+status = "Operational"
+parent_organization = "Amazon.com, Inc."
+category = "productivity"
+tags = ["AWS", "aws sign in", "aws log in", "Login URL"]
+language = "english"
+
