@@ -10,11 +10,21 @@ Run the following commands in the following order to get a functional instance i
 
 Install Git and clone the project\
 `sudo yum install git -y`\
-`sudo git clone https://github.com/du82/rust-login-page`
+
+Access Private Repo:
+1) https://github.com/settings/tokens
+2) Click -> Personal access tokens (classic) -> Generate new token
+3) Select `Repo` when setting scope
+4) optional: Fork Repo if necessary
+
+`sudo git clone https://username:[Github-Token]@github.com/username/rust-login-page`
 
 Install Rust lang and configure build env\
 `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`\
+    -> proceed with standard installation
 `sudo dnf install make automake gcc gcc-c++ kernel-devel`\
+`exit`
+    -> return to conssole
 `rustup override set nightly`
 
 Set ownership of the directory you created\
