@@ -43,3 +43,11 @@ Make the index directory\
 
 Run the project with the staging config\
 `ROCKET_ENV=staging cargo run`
+
+# Mirror Domains
+
+1) Copy Public IP from EC2 Instance
+2) Go to Route 53 Dashboard -> `Hosted zone`
+3) -> `Hosted zone name`
+4) Click -> `Create record`
+5) Set record type `A`, include name, paste in public IP
