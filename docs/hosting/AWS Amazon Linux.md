@@ -3,7 +3,9 @@ Create instance
     -> Amazon Linux
 
 Security 
-    -> Open ports / set inbound rules
+    -> Open HTTP/HTTPS
+    -> Open porn 12345 [temporary]
+    -> Set inbound rules
 
 # Shell Commands
 Run the following commands in the following order to get a functional instance installed and ready for staging.
