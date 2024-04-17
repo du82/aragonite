@@ -44,6 +44,10 @@ Make the index directory\
 Run the project with the staging config\
 `ROCKET_ENV=staging cargo run`
 
+# Updating the Repo
+
+You can run `git pull` directly inside of the EC2 instance
+
 # Mirror Domains
 
 1) Copy Public IP from EC2 Instance
