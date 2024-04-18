@@ -6,7 +6,7 @@ clearnet = "https://www.amazon.com/"
 status = "Operational"
 parent_organization = "Amazon.com, Inc."
 category = "shopping"
-tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
+tags = ["productivity", "ecommerce", "games", "books", "music", "movies", "electronics", "marketplace"]
 ptr = "terrible"
 hrr = "bad"
 language = "english"
@@ -14,11 +14,10 @@ language = "english"
 ["https://www.walmart.com/"]
 title = "Walmart | Save Money. Live better."
 description = "Shop online for a wide range of products at low prices and enjoy free delivery with Walmart+ membership. Find deals on floor care, toys, furniture, personal care, sports, and more."
-full_description = ""
 clearnet = "https://www.walmart.com/"
 status = "Operational"
 category = "shopping"
-tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics"]
+tags = ["productivity", "ecommerce", "marketplace", "games", "books", "music", "movies", "electronics", "retail"]
 ptr = "terrible"
 hrr = "bad"
 language = "english"
@@ -26,9 +25,53 @@ language = "english"
 ["https://www.microcenter.com/"]
 title = "Micro Center - Computer & Electronics Retailer - Shop Now"
 description = "Micro Center offers a wide range of products, from laptops and desktops to monitors and TVs, with in-store pickup and same-day tech support. Find top deals, build your own PC, or get expert advice on gaming, 3D printing, and more."
-full_description = ""
 clearnet = "https://www.microcenter.com/"
 status = "Operational"
 category = "shopping"
-tags = ["productivity", "ecommerce", "marketplace", "computers", "3D Print", "electronics"]
+tags = ["productivity", "ecommerce", "marketplace", "computers", "3D Print", "electronics", "retail"]
+language = "english"
+
+["https://www.commercialtrucktrader.com/"]
+title = "New & Used Commercial Vehicles for Sale | Commercial Truck Trader"
+description = "Find your truck here from a wide range of categories, types, upfits and makes. Advertise your inventory or sell your truck online with Commercial Truck Trader, the leading marketplace for commercial vehicles."
+clearnet = "https://www.commercialtrucktrader.com/"
+status = "Operational"
+category = "shopping"
+tags = ["marketplace", "aftermarket", "truck for sale","industrial"]
+language = "english"
+
+["https://www.loopnet.com/"]
+title = "LoopNet: #1 in Commercial Real Estate for Sale & Lease"
+description = "With 96% of the Fortune 1000 searching LoopNet and over 12 million monthly global unique visitors - you'll reach nearly every qualified prospect searching for space. More Impact. With LoopNet's sophisticated presentation and captivating interactive media solutions your property will stand out online just as much as it does in person, making it ..."
+clearnet = "https://www.loopnet.com/"
+status = "Operational"
+category = "shopping"
+tags = ["marketplace", "aftermarket", "real estate", "warehouse space","industrial"]
+language = "english"
+
+["https://www.ebay.com/"]
+title = "Electronics, Cars, Fashion, Collectibles & More | eBay"
+description = "Shop for deals on Dyson, iPhone, Jordan, Nike and more on eBay, the world's online marketplace. Find coupons, free shipping, warranty and eGift cards for Easter treats."
+clearnet = "https://www.ebay.com/"
+status = "Operational"
+category = "shopping"
+tags = ["productivity", "ecommerce", "games", "books", "music", "movies", "electronics", "marketplace"]
+language = "english"
+
+["https://www.craigslist.org/"]
+title = "craigslist"
+description = "craigslist provides local classifieds and forums for jobs, housing, for sale, services, local community, and events"
+clearnet = "https://www.craigslist.org/"
+status = "Operational"
+category = "shopping"
+tags = ["productivity", "ecommerce", "games", "books", "music", "movies", "electronics", "marketplace"]
+language = "english"
+
+["https://www.zillow.com/"]
+title = "Zillow: Real Estate, Apartments, Mortgages & Home Values"
+description = "Zillow is the leading real estate marketplace that helps you find, buy, sell or rent a home. Search millions of listings, compare Zestimate® home values and connect with local professionals."
+clearnet = "https://www.zillow.com/"
+status = "Operational"
+category = "shopping"
+tags = ["home price", "apartment for rent", "home for sale", "real estate", "marketplace"]
 language = "english"
