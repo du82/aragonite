@@ -15,11 +15,12 @@ Run the following commands in the following order to get a functional instance i
 Install Git and clone the project\
 `sudo yum install git -y`\
 
-Access Private Repo:
+# Access Private Repo:
 1) https://github.com/settings/tokens
 2) Click -> Personal access tokens (classic) -> Generate new token
 3) Select `Repo` when setting scope
 4) optional: Fork Repo if necessary
+5) Sync Fork inside GitHub GUI if necessary
 
 `sudo git clone https://username:[Github-Token]@github.com/username/rust-login-page`
 
