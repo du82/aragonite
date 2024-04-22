@@ -50,6 +50,11 @@ Run the project with the staging config\
 
 You can run `git pull` directly inside of the EC2 instance
 
+# Stable Instance
+
+Run `screen` before bootup
+Make sure to name it something, so you can access it again
+
 # Mirror Domains
 
 1) Copy Public IP from EC2 Instance
