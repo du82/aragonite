@@ -1,3 +1,5 @@
+# Reminder: Update Config.toml before launch
+
 # Active
 [Mirror] http://searchforsomethingbased.com:12345
 [Mirror] http://aragonite.xyx:12345

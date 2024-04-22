@@ -566,7 +566,6 @@ subject_type = "Historical figure"
 category = "wikipedia"
 tags = ["black american", "black historical figure", "black history", "wiki"]
 
-
 ["https://en.wikipedia.org/wiki/Quibi"]
 title = "Quibi - Wikipedia"
 description = "Quibi (/ˈkwɪbi/ KWIB-ee) was an American short-form streaming platform that generated content for viewing on mobile devices. It was founded in Los Angeles in August 2018 as NewTV by Jeffrey Katzenberg and was led by Meg Whitman as CEO. The service raised $1.75 billion from investors. It launched in April 2020, but shut down in December 2020 after falling short of its subscriber projections.In January 2021, Quibi's content library was sold to Roku, Inc. for less than $100 million. The platform's concepts and failure inspired widespread mockery."
@@ -593,3 +592,13 @@ status = "Operational"
 subject_type = "Solar system event"
 category = "wikipedia"
 tags = ["solar eclipse", "eclipse 2024", "great north american eclipse"]
+
+["https://en.wikipedia.org/wiki/NSAKEY"]
+title = "_NSAKEY - Wikipedia"
+description = "_NSAKEY was a variable name discovered in Windows NT 4 SP5 in 1999 by Andrew D. Fernandes of Cryptonym Corporation. The variable contained a 1024-bit public key; such keys are used in public-key cryptography for encryption and authentication. Because of the name, however, it was speculated that the key would allow the United States National Security Agency (NSA) to subvert any Windows user's security. Microsoft denied the speculation and said that the key's name came from the fact that NSA was the technical review authority for U.S. cryptography export controls."
+clearnet = "https://en.wikipedia.org/wiki/NSAKEY"
+status = "Operational"
+subject_type = "Technology industry incident"
+category = "wikipedia"
+tags = ["microsoft windows NT", "national security agency", "cryptography", "privacy", "security"]
+

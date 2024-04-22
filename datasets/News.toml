@@ -176,5 +176,21 @@ category = "news"
 tags = ["government corruption", "financial crime", "divisive politics", "current events"]
 language = "english"
 
+["https://arstechnica.com/"]
+title = "Ars Technica"
+description = "Serving the Technologist for more than a decade. IT news, reviews, and analysis."
+clearnet = "https://arstechnica.com/"
+status = "Operational"
+category = "news"
+tags = ["IT News", "IT review", "IT anlaysis", "current events"]
+language = "english"
 
+["https://www.businessinsider.com/car-dealership-chevrolet-chatbot-chatgpt-pranks-chevy-2023-12"]
+title = "A Chevy Dealership Added an AI Chatbot to Its Site. Then All Hell Broke Loose"
+description = "Dec 18, 2023Mario Tama / Getty. Pranksters discovered that a local car dealer's AI chatbot could be used as a way to access ChatGPT. People shared attempts to trick the chatbot into selling them a new Chevy ..."
+clearnet = "https://www.businessinsider.com/car-dealership-chevrolet-chatbot-chatgpt-pranks-chevy-2023-12"
+status = "Operational"
+category = "news"
+tags = ["AI", "Aritificial Intelligence", "current events"]
+language = "english"
 

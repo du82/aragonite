@@ -1,3 +1,5 @@
+# Reminder: Update Config.toml before launch
+
 # AWS Interface
 Create instance 
     -> Amazon Linux
@@ -46,14 +48,24 @@ Make the index directory\
 Run the project with the staging config\
 `ROCKET_ENV=staging cargo run`
 
+# Persistant Instance
+
+Run before booting up an instance you want to keep online.
+
+`screen -S session_name`
+    -> this names a virtual terminal session that persists after you logout
+`screen -r session_name`
+    -> Reattach/Return to your session
+
+[*note]
+1) If you forgot to give the session a name, run `screen -r`
+2) If you forgot to give the session a name, and multiple sessions are running, run `screen -r pid.tty.host`'
+3) To view `pid.tty.host` run `screen -ls`
+
 # Updating the Repo
 
-You can run `git pull` directly inside of the EC2 instance
-
-# Stable Instance
-
-Run `screen` before bootup
-Make sure to name it something, so you can access it again
+`cd repo_name`
+`git pull`
 
 # Mirror Domains
 
