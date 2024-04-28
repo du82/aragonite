@@ -68,6 +68,11 @@ Run before booting up an instance you want to keep online.
 `cd repo_name`
 `git pull`
 
+# Enable Neofetch for Mirror
+
+`nano Config.toml`
+    -> `neofetch_enabled = true`
+
 # Mirror Domains
 
 1) Copy Public IP from EC2 Instance
