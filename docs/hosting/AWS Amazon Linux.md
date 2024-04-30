@@ -62,11 +62,11 @@ kill the screen
 `cd rust-login-page`
 `git reset --hard`
 `git fetch origin`
-`git merge --continue`
+`git pull`
+    -> `(D) Delete` if warning shows up
 press `i`
 press `esc`
 type `:wq` => press Enter
-`git commit -m "update mirror"`
 `git push`
 `clear`
 `cd rust-login-page`
@@ -75,6 +75,11 @@ type `:wq` => press Enter
 `nano Config.toml`
     -> `neofetch_enabled = true`
     -> `mirror_updated = "correct_date"`
+`cd src`
+`nano search.rs`
+ln 87 manually add {mirror_update}, save&exit    
+`clear`
+make new screen
 `ROCKET_ENV=staging cargo run`
 enter test query to index (better UX for end user)  
 
