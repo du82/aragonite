@@ -49,43 +49,36 @@ Make the index directory\
 Run the project with the staging config\
 `ROCKET_ENV=staging cargo run`
 
+# ---------------Maintenance---------------
+
 # Persistant Instance
-
-Run before booting up an instance you want to keep online.
-
-`screen -S session_name`
-    -> this names a virtual terminal session that persists after you logout
-`screen -r session_name`
-    -> Reattach/Return to your session
-
-[*note]
-1) If you forgot to give the session a name, run `screen -r`
-2) If you forgot to give the session a name, and multiple sessions are running, run `screen -r pid.tty.host`'
-3) To view `pid.tty.host` run `screen -ls`
+`screen -S session_name` (make)
+`screen -r session_name` (retrieve)
+`screen -ls` (list)
+`screen -X -S session_name quit` (kill)
 
 # Updating the Repo
-
-1) Reset the repo
-`cd repo_name`
+kill the screen
+`cd rust-login-page`
 `git reset --hard`
 `git fetch origin`
 `git merge --continue`
 press `i`
 press `esc`
-type `:wq`, press Enter
+type `:wq` => press Enter
 `git commit -m "update mirror"`
 `git push`
-
-2) Reset Index Folder
+`clear`
+`cd rust-login-page`
 `rm -r index`
 `mkdir index`
-
-# Enable Neofetch for Mirror
-
 `nano Config.toml`
     -> `neofetch_enabled = true`
+    -> `mirror_updated = "correct_date"`
+`ROCKET_ENV=staging cargo run`
+enter test query to index (better UX for end user)  
 
-# Mirror Domains
+# ---------------Domains---------------
 
 1) Copy Public IP from EC2 Instance
 2) Go to Route 53 Dashboard -> `Hosted zone`
