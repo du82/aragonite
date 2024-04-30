@@ -72,22 +72,20 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     let search_results_footer = format!(
                         "<div class='main-footer'>
                         <div class='footer-container'>
-                            <a href='about'>
-                            About Us
+                            <a href='donate'> 
+                            Donate 
+                            </a>| 
+                            <a href='mirrors'> 
+                            Mirrors 
                             </a>|
-                            <a href='privacy'>
-                            Privacy Policy
+                            <a href='privacy'> 
+                            Privacy 
                             </a>|
-                            <a href='jobs'>
-                            Careers
-                            </a>|
-                            <a href='donate'>
-                            Donate
-                            </a>|
-                            <a href='settings'>
-                            Settings
-                            </a>
-                            <p>Don't be Hypocrites // <b>2024 Aragonite</b>, Some rights reserved</p>
+                            <a href='settings'> 
+                            Settings </a>
+                            <p class='centered-text'>
+                            Don't be Hypocrites // Mirror updated: {{mirror_updated}}
+                            </p> 
                         </div>
                         </div>"
                     );
