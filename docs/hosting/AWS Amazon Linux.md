@@ -65,8 +65,20 @@ Run before booting up an instance you want to keep online.
 
 # Updating the Repo
 
+1) Reset the repo
 `cd repo_name`
-`git pull`
+`git reset --hard`
+`git fetch origin`
+`git merge --continue`
+press `i`
+press `esc`
+type `:wq`, press Enter
+`git commit -m "update mirror"`
+`git push`
+
+2) Reset Index Folder
+`rm -r index`
+`mkdir index`
 
 # Enable Neofetch for Mirror
 
