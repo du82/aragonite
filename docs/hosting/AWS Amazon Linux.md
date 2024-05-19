@@ -90,3 +90,24 @@ enter test query to index (better UX for end user)
 3) -> `Hosted zone name`
 4) Click -> `Create record`
 5) Set record type `A`, include name, paste in public IP
+
+# GitHub Ed25519 Deployment Key forceful-throat-fuck-update
+
+Do this inside of AWS to avoid the headache. Don't CD into any repo, it makes it more complicated
+
+1) `ssh-keygen -t ed25519 -C "your_email@example.com"`
+    -> Leave it all blank.
+2) `ssh-keygen -t ed25519 -C "your_email@example.com"`
+3) Go to https://github.com/[USERNAME]/rust-login-page/settings/keys/new
+4) Slap that pussy bitch into the `Key` section && `Chekcbox` allow write accesss
+5) Run `ssh -T git@github.com` in AWS to see if it's working
+    -> it will [SHIT] it self and take a couple of seconds. Do nothing
+6) `Are you sure you want to continue connecting (yes/no/[fingerprint])?` type in `yes` hit enter
+7) It's still not going to work. run `git remote -v`
+8) `git remote set-url origin git@github.com:[USERNAME]/[REPO-NAME].git`
+9) run `git remote -v` again to ensure the formatting is correct.
+    -> Output should look like this:
+        `origin  git@github.com:Garrett96/rust-login-page.git (fetch)`
+        `origin  git@github.com:Garrett96/rust-login-page.git (push)`
+10) Do nothing. Just give it a minute. It's a little retarded.
+11) Run `git fetch origin` and if it works, good job, if not, good luck.
