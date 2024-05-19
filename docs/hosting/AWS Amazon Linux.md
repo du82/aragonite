@@ -60,8 +60,8 @@ Run the project with the staging config\
 # Updating the Repo
 kill the screen
 `cd rust-login-page`
+`git reset --hard`
 `git fetch origin`
-    -> if that fails `git reset --hard` then fetch origin again
 `git pull`
     -> `(D) Delete` if warning shows up
 press `i`
