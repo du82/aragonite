@@ -84,6 +84,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0942ffc6dcaadf03badf6e6a2d0228460359d5e34b57ccdc720b7382dfbd5ec5"
 
 [[package]]
+name = "aragonite"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "rocket",
+ "tantivy",
+ "toml 0.5.11",
+]
+
+[[package]]
 name = "arc-swap"
 version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -779,16 +789,6 @@ checksum = "4161fcb6d602d4d2081af7c3a45852d875a03dd337a6bfdd6e06407b61342a43"
 dependencies = [
  "hermit-abi 0.3.4",
  "libc",
-]
-
-[[package]]
-name = "obscura"
-version = "0.1.0"
-dependencies = [
- "rand",
- "rocket",
- "tantivy",
- "toml 0.5.11",
 ]
 
 [[package]]

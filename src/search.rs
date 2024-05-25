@@ -161,7 +161,7 @@ pub fn mobile_search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                             <a href='settings'>
                             Settings
                             </a>
-                            <p>Don't be Hypocrites // <b>2024 Obscura</b>, Some rights reserved</p>
+                            <p>Don't be Hypocrites // <b>2024 Aragonite</b>, Some rights reserved</p>
                         </div>
                         </div>"
                     );

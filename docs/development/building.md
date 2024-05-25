@@ -1,4 +1,4 @@
-# Building Obscura
+# Building Aragonite
 1. Switch to Rust development version
 2. Create a new directory in the project root (same level that `Cargo.toml` is on) named `index` if it doesn't exist. Make sure this directory is empty prior to running.
 3. Create a new directory in the project root if it doesn't exist, and enter your data in TOML table format. See example below. Leave one space between each entry.
