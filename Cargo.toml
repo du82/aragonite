@@ -7,4 +7,7 @@ edition = "2021"
 toml = "0.5"
 rocket = "0.4.10"
 rand = "0.8.5"
-tantivy = "0.21.1"
+tantivy = "0.22"
+
+zstd-safe = "=7.2.0"
+zstd-sys = "2.0.12"
