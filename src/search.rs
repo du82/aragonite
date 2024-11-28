@@ -1,5 +1,5 @@
-use rocket::request::{Form, FromForm};
-use rocket::response::content::Html;
+use rocket::form::{Form, FromForm};
+use rocket::response::Html;
 use rocket::response::Redirect;
 use rocket::uri;
 use rocket::{get, post};
@@ -39,12 +39,12 @@ pub fn random_search() -> Result<Redirect, std::io::Error> {
         .unwrap()
         .as_secs();
     let query = queries[(time as usize) % queries.len()];
-    Ok(Redirect::to(uri!(search_get: q = query.to_string())))
+    Ok(Redirect::to(uri!(search_get(q = query.to_string()))))
 }
 
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(search_get: q = search_form.into_inner().query))
+    Redirect::to(uri!(search_get(q = search_form.into_inner().query)))
 }
 
 #[get("/search?<q>")]
@@ -72,20 +72,20 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                     let search_results_footer = format!(
                         "<div class='main-footer'>
                         <div class='footer-container'>
-                            <a href='donate'> 
-                            Donate 
-                            </a>| 
-                            <a href='mirrors'> 
-                            Mirrors 
+                            <a href='donate'>
+                            Donate
                             </a>|
-                            <a href='privacy'> 
-                            Privacy 
+                            <a href='mirrors'>
+                            Mirrors
                             </a>|
-                            <a href='settings'> 
+                            <a href='privacy'>
+                            Privacy
+                            </a>|
+                            <a href='settings'>
                             Settings </a>
                             <p class='centered-text'>
                             Don't be Hypocrites // Mirror updated: {{mirror_updated}}
-                            </p> 
+                            </p>
                         </div>
                         </div>"
                     );
@@ -118,7 +118,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
 
 #[post("/mobile", data = "<search_form>")]
 pub fn mobile_search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(mobile_search_get: q = search_form.into_inner().query))
+    Redirect::to(uri!(mobile_search_get(q = _search_form.into_inner().query)))
 }
 
 #[get("/mobile?<q>")]
@@ -200,26 +200,26 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let description = schema_builder.add_text_field("description", TEXT | STORED);
     let full_description = schema_builder.add_text_field("full_description", TEXT | STORED);
     let author = schema_builder.add_text_field("author", TEXT | STORED);
-    let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
-    let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+    let _year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
+    let _year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
     let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
-    let onion = schema_builder.add_text_field("onion", TEXT | STORED);
-    let status = schema_builder.add_text_field("status", TEXT | STORED);
-    let parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
-    let sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
-    let jurisdiction = schema_builder.add_text_field("jurisdiction", TEXT | STORED);
-    let jurisdiction_level = schema_builder.add_text_field("jurisdiction_level", TEXT | STORED);
-    let regulates_entity = schema_builder.add_text_field("regulates_entity", TEXT | STORED);
-    let regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
+    let _onion = schema_builder.add_text_field("onion", TEXT | STORED);
+    let _status = schema_builder.add_text_field("status", TEXT | STORED);
+    let _parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
+    let _sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
+    let _jurisdiction = schema_builder.add_text_field("jurisdiction", TEXT | STORED);
+    let _jurisdiction_level = schema_builder.add_text_field("jurisdiction_level", TEXT | STORED);
+    let _regulates_entity = schema_builder.add_text_field("regulates_entity", TEXT | STORED);
+    let _regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
-    let nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
-    let religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
+    let _nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
+    let _religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
     let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
-    let language = schema_builder.add_text_field("language", TEXT | STORED);
+    let _language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
     let index = if fs::read_dir(index_dir)?.count() == 0 {
         // Create the index
@@ -590,7 +590,7 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     // Only display one instant answer per query
     let mut instant_answer_sent = false;
     let instant_answer = if !instant_answer_sent {
-        instant_answer_sent = true;
+        _instant_answer_sent = true;
         fields
             .get("instant_answer")
             .unwrap_or_else(|| &&default_value)
@@ -613,6 +613,6 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
         format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>Related: {}{}{}{}{}{}</div></div>",
         url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
     };
-    
+
     result_html
 }

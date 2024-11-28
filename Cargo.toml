@@ -5,9 +5,6 @@ edition = "2021"
 
 [dependencies]
 toml = "0.5"
-rocket = "=0.4.10"
+rocket = "0.5.1"
 rand = "0.8.5"
 tantivy = "=0.21.1"
-
-zstd-safe = "=6.0.5" # or another version that works
-zstd-sys = "=2.0.8"  # or another compatible version
