@@ -1,6 +1,6 @@
-#![feature(proc_macro_hygiene, decl_macro)]
+#[macro_use] extern crate rocket;
 
-use rocket::routes;
+use rocket::{routes, Build, Rocket};
 use std::sync::Mutex;
 use std::collections::HashMap;
 
@@ -9,11 +9,11 @@ mod search;
 mod middleware;
 use middleware::ThemeMiddleware;
 
-
-fn main() {
-    rocket::ignite()
+#[launch]
+fn rocket() -> Rocket<Build> {
+    rocket::build()
         .mount("/", routes![
-            routes::logo_image, 
+            routes::logo_image,
             routes::index,
             routes::favicon,
             routes::donate,
@@ -28,14 +28,12 @@ fn main() {
             routes::gemstone_light_theme,
             routes::high_contrast_theme,
             routes::midnight_theme,
-            search::search_get, 
+            search::search_get,
             search::search_post,
             search::mobile_search_get,
             search::mobile_search_post,
             search::random_search,
-            ]
-        )
+        ])
         .attach(ThemeMiddleware)
         .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store
-        .launch();
 }
