@@ -84,7 +84,7 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                             <a href='settings'>
                             Settings </a>
                             <p class='centered-text'>
-                            Don't be Hypocrites // Mirror updated: {{mirror_updated}}
+                            Don't be Hypocrites
                             </p>
                         </div>
                         </div>"
