@@ -1,13 +1,25 @@
-["https://unfathom.ing"]
-title = "Unfathom.ing"
-author = "Du Cheng"
-description = "This site, Unfathoming, is a capsule of my thoughts and ideas over time so that others may benefit from the things that float around in my head. In the event that I disappear, this site will serve as a reference as to who I am/was."
+["https://gwern.net/"]
+title = "Essays - Gwern.net"
+author = "Gwern Branwen"
+description = "This is the website of Gwern Branwen. I write about AI, psychology, & statistics. I am best known for my writings about AI scaling, poetry & anime neural networks, darknet markets & Bitcoin, blinded self-experiments, and dual n-back & spaced repetition."
 full_description = ""
-clearnet = "https://unfathom.ing"
+clearnet = "https://gwern.net/"
 status = "Operational"
 subject_type = "Personal website"
 category = "blogs"
-tags = ["technology", "writing", "thoughts", "computers", "obscure", "electronics"]
+tags = ["technology", "writing", "ai", "dark web", "obscure", "psychology", "software developer", "haskell"]
+language = "english"
+
+["https://gwern.net/about"]
+title = "About This Website - Gwern.net"
+author = "Gwern Branwen"
+description = "Meta page describing Gwern.net site ideals of stable long-term essays which improve over time; idea sources and writing methodology; metadata definitions; site statistics; copyright license."
+full_description = ""
+clearnet = "https://gwern.net/about"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["design", "meta", "personal", "forecasting"]
 language = "english"
 
 ["https://bamboo-garden.pages.dev/Conquer-the-stack"]
