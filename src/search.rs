@@ -1,5 +1,5 @@
 use rocket::form::{Form, FromForm};
-use rocket::response::Html;
+use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
 use rocket::uri;
 use rocket::{get, post};
@@ -39,16 +39,16 @@ pub fn random_search() -> Result<Redirect, std::io::Error> {
         .unwrap()
         .as_secs();
     let query = queries[(time as usize) % queries.len()];
-    Ok(Redirect::to(uri!(search_get(q = query.to_string()))))
+    Ok(Redirect::to(uri!(search_get(q = Some(query.to_string())))))
 }
 
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(search_get(q = search_form.into_inner().query)))
+    Redirect::to(uri!(search_get(q = Some(search_form.into_inner().query))))
 }
 
 #[get("/search?<q>")]
-pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
+pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok((results, duration)) => {
             //println!("{:#?}", results);
@@ -56,7 +56,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
                     if trimmed_query.len() < 1 || query.len() > 128 {
-                        return Ok(Html(
+                        return Ok(RawHtml(
                             "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
                                 .to_string(),
                         ));
@@ -104,7 +104,7 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                         .replace(">[<", "><")
                         .replace(">]<", "");
                     contents = format!("{}{}{}", contents, search_results, search_results_footer);
-                    Ok(Html(contents))
+                    Ok(RawHtml(contents))
                 }
                 None => Err(Redirect::to("/")),
             }
@@ -118,11 +118,11 @@ pub fn search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
 
 #[post("/mobile", data = "<search_form>")]
 pub fn mobile_search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(mobile_search_get(q = _search_form.into_inner().query)))
+    Redirect::to(uri!(mobile_search_get(q = Some(search_form.into_inner().query))))
 }
 
 #[get("/mobile?<q>")]
-pub fn mobile_search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
+pub fn mobile_search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok((results, duration)) => {
             //println!("{:#?}", results);
@@ -130,7 +130,7 @@ pub fn mobile_search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
                     if trimmed_query.len() < 1 || query.len() > 128 {
-                        return Ok(Html(
+                        return Ok(RawHtml(
                             "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
                                 .to_string(),
                         ));
@@ -180,7 +180,7 @@ pub fn mobile_search_get(q: Option<String>) -> Result<Html<String>, Redirect> {
                         .replace(">[<", "><")
                         .replace(">]<", "");
                     contents = format!("{}{}{}", contents, search_results, search_results_footer);
-                    Ok(Html(contents))
+                    Ok(RawHtml(contents))
                 }
                 None => Err(Redirect::to("/")),
             }
@@ -590,7 +590,7 @@ fn document_to_html(doc: &Document, schema: &Schema) -> String {
     // Only display one instant answer per query
     let mut instant_answer_sent = false;
     let instant_answer = if !instant_answer_sent {
-        _instant_answer_sent = true;
+        instant_answer_sent = true;
         fields
             .get("instant_answer")
             .unwrap_or_else(|| &&default_value)

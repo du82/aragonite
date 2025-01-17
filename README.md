@@ -1,7 +1,3 @@
-# OBSOLETE: Go to [/du82/aragonite](https://github.com/du82/aragonite) for the updated code!
-.
-.
-.
 # Aragonite<sup>α</sup> Research
 
  We are a data science company building a search engine for from scratch that values your privacy, while providing a programming-style syntax for more accurate results.
