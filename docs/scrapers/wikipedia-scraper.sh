@@ -48,6 +48,42 @@ clean_text() {
     sed 's/ *$//g'
 }
 
+# Get external domains from Wikipedia page
+get_external_domains() {
+    local PAGEID=$1
+    local LINKS_URL="https://en.wikipedia.org/w/api.php?action=query&prop=extlinks&pageids=${PAGEID}&format=json&ellimit=500"
+    local RESPONSE=$(curl -s \
+        -H "Accept: application/json" \
+        -H "User-Agent: WikipediaTOMLScraper/1.0" \
+        "$LINKS_URL")
+
+    if [ -n "$RESPONSE" ]; then
+        # Extract domains from URLs and filter
+        echo "$RESPONSE" | \
+        jq -r '.query.pages[].extlinks[].*' 2>/dev/null | \
+        grep -oE '://[^/]+' | \
+        sed 's/^:\/\///' | \
+        grep -E '\.[a-zA-Z]{2,}$' | \
+        grep -v 'wikipedia.org' | \
+        grep -v 'wikimedia.org' | \
+        grep -v 'mediawiki.org' | \
+        sort -u | \
+        tr '\n' ',' | \
+        sed 's/,$//' | \
+        sed 's/,$//'
+    fi
+}
+
+# Format domains for TOML
+format_domains() {
+    local DOMAINS="$1"
+    if [ -z "$DOMAINS" ]; then
+        echo "\"none\""
+    else
+        echo "[\"${DOMAINS//,/\",\"}\"]"
+    fi
+}
+
 # Get full article description
 get_full_description() {
     local PAGEID=$1
@@ -103,7 +139,7 @@ filter_tags() {
     done
 
     # Take up to 8 unique tags
-    printf '%s\n' "${VALID_TAGS[@]}" | sort -u | head -n 8 | tr '\n' ',' | sed 's/,$//' | sed 's/,/, /g'
+    printf '%s\n' "${VALID_TAGS[@]}" | sort -u | head -n 8 | tr '\n' ',' | sed 's/,$//'
 }
 
 # Extract meaningful tags from text
@@ -198,7 +234,7 @@ done
 # Set variables
 SEARCH_TERM="$1"
 OUTPUT_FILE="${SEARCH_TERM// /_}.toml"
-LIMIT=50
+LIMIT=50000
 
 # Main process
 log_info "Preparing to search for: '$SEARCH_TERM'"
@@ -268,9 +304,13 @@ echo "$RESPONSE" | jq -r '.query.search[] | @base64' | while read -r page; do
     COMBINED_TAGS="$CONTENT_TAGS, $CATEGORY_TAGS"
     FILTERED_TAGS=$(filter_tags "$COMBINED_TAGS")
 
+    # Get and format external domains
+    EXTERNAL_DOMAINS=$(get_external_domains "$PAGEID" "$TITLE")
+    FORMATTED_DOMAINS=$(format_domains "$EXTERNAL_DOMAINS")
+
     # Format tags for TOML
     if [ -n "$FILTERED_TAGS" ]; then
-        ALL_TAGS="[\"${FILTERED_TAGS//,/\", \"}\"]"
+        ALL_TAGS="[\"${FILTERED_TAGS//,/\",\"}\"]"
     else
         ALL_TAGS="[]"
     fi
@@ -285,6 +325,7 @@ echo "$RESPONSE" | jq -r '.query.search[] | @base64' | while read -r page; do
         echo "status = \"Operational\""
         echo "category = \"wikipedia\""
         echo "tags = $ALL_TAGS"
+        echo "external-domains = $FORMATTED_DOMAINS"
         echo ""
     } >> "$OUTPUT_FILE"
 done
