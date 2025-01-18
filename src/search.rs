@@ -225,41 +225,63 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         // Create the index
         let index = Index::create_in_dir("index", schema.clone())?;
 
-        // Parse the TOML files
-        let paths = fs::read_dir("datasets")?;
-        for path in paths {
-            let path = path?.path();
-            if path.extension().and_then(|s| s.to_str()) == Some("toml") {
-                let data = fs::read_to_string(path)
-                    .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
-                let value: Value = toml::from_str(&data)
-                    .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+        // Parse the TOML files recursively
+        let mut dirs_to_process = vec![std::path::PathBuf::from("datasets")];
 
-                // Add data to the index
-                let mut index_writer = index.writer(50_000_000)?;
-                if let Some(tables) = value.as_table() {
-                    for (_name, table) in tables {
-                        let mut doc = Document::new();
-                        for (key, value) in table.as_table().unwrap() {
-                            match schema.get_field(key) {
-                                Ok(field) => match value {
-                                    Value::String(s) => doc.add_text(field, s),
-                                    Value::Integer(i) => doc.add_i64(field, *i),
-                                    Value::Array(a) => {
-                                        for v in a {
-                                            if let Value::String(s) = v {
-                                                doc.add_text(field, s);
-                                            }
+        while let Some(dir) = dirs_to_process.pop() {
+            for entry in fs::read_dir(&dir)? {
+                let entry = entry?;
+                let path = entry.path();
+
+                if path.is_dir() {
+                    dirs_to_process.push(path);
+                    continue;
+                }
+
+                if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                    let data = fs::read_to_string(&path)
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+                    let value: Value = toml::from_str(&data)
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+
+                    // Add data to the index
+                    let mut index_writer = index.writer(50_000_000)?;
+                    if let Some(tables) = value.as_table() {
+                        for (_name, table) in tables {
+                            let mut doc = Document::new();
+
+                            // Add the relative path as source for namespacing
+                            if let Ok(source_field) = schema.get_field("source") {
+                                if let Ok(rel_path) = path.strip_prefix("datasets") {
+                                    if let Some(parent) = rel_path.parent() {
+                                        if let Some(path_str) = parent.to_str() {
+                                            doc.add_text(source_field, path_str);
                                         }
                                     }
-                                    _ => continue,
-                                },
-                                Err(_) => continue,
+                                }
                             }
+
+                            for (key, value) in table.as_table().unwrap() {
+                                match schema.get_field(key) {
+                                    Ok(field) => match value {
+                                        Value::String(s) => doc.add_text(field, s),
+                                        Value::Integer(i) => doc.add_i64(field, *i),
+                                        Value::Array(a) => {
+                                            for v in a {
+                                                if let Value::String(s) = v {
+                                                    doc.add_text(field, s);
+                                                }
+                                            }
+                                        }
+                                        _ => continue,
+                                    },
+                                    Err(_) => continue,
+                                }
+                            }
+                            index_writer.add_document(doc);
                         }
-                        index_writer.add_document(doc);
+                        index_writer.commit()?;
                     }
-                    index_writer.commit()?;
                 }
             }
         }
