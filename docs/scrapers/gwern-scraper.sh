@@ -95,55 +95,36 @@ extract_tags() {
     printf '%s\n' "${TAGS[@]}" | sort -u | head -n 8 | tr '\n' ',' | sed 's/,$//'
 }
 
-# Find new URLs in content
-find_urls() {
+# Extract unique domains from external links
+extract_domains() {
     local CONTENT="$1"
-    local MAX_URLS="$2"
     local TEMP_FILE=$(mktemp)
 
-    # Extract markdown-style links
-    echo "$CONTENT" | grep -o '\[.*\]([^)]*)' | sed 's/.*(\(.*\))/\1/g' | sed 's/ .*$//' > "$TEMP_FILE"
+    # Extract markdown-style links and plain URLs
+    echo "$CONTENT" | grep -o "\[[^]]*\]([^)]*)" | sed 's/.*(\(.*\))/\1/' | sed 's/ .*$//' > "$TEMP_FILE"
+    echo "$CONTENT" | grep -o 'https\?://[^ )"\047>]*' | grep -v 'gwern.net' >> "$TEMP_FILE"
 
-    # Add plain URLs
-    echo "$CONTENT" | grep -o 'https\?://gwern.net/[^ )"\047>]*' >> "$TEMP_FILE"
-
-    # Add relative URLs
-    echo "$CONTENT" | grep -o '\](/[^)]*' | sed 's/\]\(//' | sed 's/ .*$//' >> "$TEMP_FILE"
-
-    # Process the collected URLs
-    local FILTERED_FILE=$(mktemp)
+    # Process URLs to get domains
+    local DOMAINS_FILE=$(mktemp)
     while read -r url; do
         [ -z "$url" ] && continue
 
-        # Convert relative URLs to absolute
-        if [[ "$url" == /* ]]; then
-            url="https://gwern.net$url"
-        fi
+        # Extract domain (remove protocol and everything after first slash)
+        domain=$(echo "$url" | sed 's|^https\?://||' | sed 's|/.*$||' | sed 's/^www\.//')
 
-        # Only process gwern.net URLs
-        if [[ "$url" != https://gwern.net/* ]]; then
-            continue
+        # Validate domain format (must have . followed by at least 2 chars)
+        if [ -n "$domain" ] && [ "$domain" != "gwern.net" ] && echo "$domain" | grep -q "\.[a-zA-Z0-9-]\{2,\}$"; then
+            echo "$domain" >> "$DOMAINS_FILE"
         fi
-
-        # Skip media files and unwanted content
-        if [[ "$url" =~ \.(jpg|jpeg|png|gif|mp4|webm|js|css|zip|pdf|doc|docx)$ ]] || \
-           [[ "$url" =~ /static/ ]] || \
-           [[ "$url" =~ /images/ ]] || \
-           [[ "$url" =~ /doc/ ]] || \
-           [[ "$url" =~ /css/ ]] || \
-           [[ "$url" =~ /js/ ]]; then
-            continue
-        fi
-
-        # Clean up URL and save
-        echo "$url" | sed 's/#.*//g' | sed 's/?.*//g' | sed 's/\/$//' | sed 's/ .*$//' >> "$FILTERED_FILE"
     done < "$TEMP_FILE"
 
-    # Output unique URLs up to the limit
-    sort -u "$FILTERED_FILE" | head -n "$MAX_URLS"
+    # Get top 10 most frequent domains
+    RESULT=$(sort "$DOMAINS_FILE" | uniq -c | sort -rn | head -n 10 | awk '{print $2}' | tr '\n' ',' | sed 's/,$//')
 
     # Cleanup
-    rm -f "$TEMP_FILE" "$FILTERED_FILE"
+    rm -f "$TEMP_FILE" "$DOMAINS_FILE"
+
+    echo "$RESULT"
 }
 
 # Process a single URL
@@ -182,6 +163,9 @@ process_url() {
     # Extract tags
     local TAGS=$(extract_tags "$CLEAN_TITLE" "$CONTENT")
 
+    # Extract domains
+    local DOMAINS=$(extract_domains "$CONTENT")
+
     # Write output
     {
         echo "[\"$URL\"]"
@@ -191,6 +175,11 @@ process_url() {
         echo "status = \"Operational\""
         echo "category = \"research\""
         echo "tags = [\"$(echo $TAGS | sed 's/,/\", \"/g')\"]"
+        if [ -n "$DOMAINS" ]; then
+            echo "external-references = [\"$(echo $DOMAINS | sed 's/,/\", \"/g')\"]"
+        else
+            echo "external-references = \"none\""
+        fi
         echo ""
     } >> "$OUTPUT_FILE"
 
@@ -200,9 +189,59 @@ process_url() {
             log_info "Found new URL: $new_url"
             URL_QUEUE+=("$new_url")
         fi
-    done < <(find_urls "$CONTENT" 5)
+    done < <(find_urls "$CONTENT" 15)
 
     return 0
+
+    return 0
+}
+
+# Find new URLs in content
+find_urls() {
+    local CONTENT="$1"
+    local MAX_URLS="$2"
+    local TEMP_FILE=$(mktemp)
+
+    # Extract markdown-style links
+    echo "$CONTENT" | grep -o "\[[^]]*\]([^)]*)" | sed 's/.*(\(.*\))/\1/' | sed 's/ .*$//' > "$TEMP_FILE"
+
+    # Add plain URLs
+    echo "$CONTENT" | grep -o 'https\?://[^ )"\047>]*' | grep -v 'gwern.net' >> "$TEMP_FILE"
+
+    # Process URLs to get domains
+    local FILTERED_FILE=$(mktemp)
+    while read -r url; do
+        [ -z "$url" ] && continue
+
+        # Convert relative URLs to absolute
+        if [[ "$url" == /* ]]; then
+            url="https://gwern.net$url"
+        fi
+
+        # Only process gwern.net URLs
+        if [[ "$url" != https://gwern.net/* ]]; then
+            continue
+        fi
+
+        # Skip media files and unwanted content
+        if [[ "$url" =~ \.(jpg|jpeg|png|gif|mp4|webm|js|css|zip|pdf|doc|docx)$ ]] || \
+           [[ "$url" =~ /static/ ]] || \
+           [[ "$url" =~ /images/ ]] || \
+           [[ "$url" =~ /doc/ ]] || \
+           [[ "$url" =~ /css/ ]] || \
+           [[ "$url" =~ /js/ ]]; then
+            continue
+        fi
+
+        # Clean up URL
+        echo "$url" | sed 's/#.*//g' | sed 's/?.*//g' | sed 's/\/$//' | sed 's/ .*$//' >> "$FILTERED_FILE"
+    done < "$TEMP_FILE"
+
+    # Output unique URLs up to the limit
+    sort -u "$FILTERED_FILE" | head -n "$MAX_URLS"
+
+    # Cleanup
+    rm -f "$TEMP_FILE" "$FILTERED_FILE"
 }
 
 # Main script
@@ -222,9 +261,9 @@ fi
 # Set variables
 START_URL="$1"
 OUTPUT_FILE="gwern_content.toml"
-LIMIT=500
+LIMIT=500000
 SLEEP_TIME=2
-BATCH_SIZE=5
+BATCH_SIZE=15
 
 # Initialize arrays and counters
 declare -a URL_QUEUE=("$START_URL")
@@ -260,6 +299,7 @@ while [ ${#URL_QUEUE[@]} -gt 0 ] && [ $PROCESSED_COUNT -lt $LIMIT ]; do
     log_info "Completed batch of $BATCH_COUNT URLs"
     log_info "Queue size: ${#URL_QUEUE[@]}"
     log_info "Total processed: $PROCESSED_COUNT"
+done
 done
 
 log_success "Generated TOML file: $OUTPUT_FILE"
