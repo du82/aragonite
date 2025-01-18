@@ -1,0 +1,59 @@
+["https://gwern.net/"]
+title = "Essays - Gwern.net"
+author = "Gwern Branwen"
+description = "This is the website of Gwern Branwen. I write about AI, psychology, & statistics. I am best known for my writings about AI scaling, poetry & anime neural networks, darknet markets & Bitcoin, blinded self-experiments, and dual n-back & spaced repetition."
+full_description = "This is the website of Gwern Branwen. I write about AI, psychology, & statistics. I am best known for my writings about AI scaling, poetry & anime neural networks, darknet markets & Bitcoin, blinded self-experiments, and dual n-back & spaced repetition. For information about my site’s philosophy & method, see the About page; for the website features & implementation, see the Design page; for information about myself, my use of other websites, and contact information, see the about-me page; for information about new pages, see the Changelog ( = new), or new links.  For an annotated version of this site index page, see the long index."
+clearnet = "https://gwern.net/"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["technology", "writing", "ai", "dark web", "obscure", "psychology", "software developer", "haskell"]
+language = "english"
+
+["https://gwern.net/about"]
+title = "About This Website - Gwern.net"
+author = "Gwern Branwen"
+description = "Meta page describing Gwern.net site ideals of stable long-term essays which improve over time; idea sources and writing methodology; metadata definitions; site statistics; copyright license."
+full_description = "I am a freelance American writer & researcher. (To make ends meet, I have a Patreon, benefit from Bitcoin appreciation thanks to some old coins, and live frugally.) I have worked for, published in, or consulted for: Wired (2015), MIRI/SIAI2 (2012–20131, CFAR (20121, GiveWell (2017), the FBI (2016), Cool Tools (20131, Quantimodo (20131, New World Encyclopedia (20061, Bitcoin Weekly (20111, Mobify⁠ (2013–2014), Bellroy (2013–2014), Dominic Frisby (2014), and private clients (2009-); everything on Gwern.net should be considered my own viewpoint or writing unless otherwise specified by a representative or publication. I am currently not accepting new commissions."
+clearnet = "https://gwern.net/about"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["design", "meta", "personal", "forecasting"]
+language = "english"
+
+["https://gwern.net/changelog"]
+title = "Changelog - Gwern.net"
+author = "Gwern Branwen"
+description = "Monthly chronological list of recent major writings/changes/additions to Gwern.net (see also the monthly newsletter)."
+full_description = "This page is a changelog for Gwern.net: a monthly reverse chronological list of recent major writings/changes/additions.Following my writing can be a little difficult because it is often so incremental. So every month, in addition to my regular subreddit submissions, I write up reasonably-interesting changes and send it out to the mailing list in addition to a compilation of links & reviews (archives). For a feed of recently-added links & references, see the newest links page."
+clearnet = "https://gwern.net/changelog"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["personal", "changelog"]
+language = "english"
+
+["https://gwern.net/me"]
+title = "About Gwern - Gwern.net"
+author = "Gwern Branwen"
+description = "Who am I online & what have I done? Contact information; sites I use; computers and software tools; things I’ve worked on; psychological profiles"
+full_description = ""
+clearnet = "https://gwern.net/me"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["design", "meta", "personal", "forecasting"]
+language = "english"
+
+["https://gwern.net/creative-benchmark"]
+title = "Towards Benchmarking LLM Diversity & Creativity - Gwern.net"
+author = "Gwern Branwen"
+description = "Discussion of possible tasks to measure LLM capabilities in soft ‘creative’ tasks like brainstorming or editing, to quantify failures in creative writing domains."
+full_description = "ne of the weakest parts of 2024-era LLMs, and where user opinions differ the most from the benchmarks, is anything to do with ‘diversity’ and ‘creativity’. Hardly any benchmark can be said to meaningfully test any sense of those words.It is not a surprise then that R&D doesn’t prioritize that, and users regularly complain that eg. Claude-3 is the LLM they like best, and yet, isn’t always at the top of the benchmarks even for ‘creative’-seeming tasks. Mode collapse is just not measured or punished by existing benchmarks, which consider datapoints in isolation, and ignore individual differences in preferences in favor of maximizing the lowest common denominator of popularity.Oddly, “preference learning” research currently involves no learning of preferences. Few preference learning datasets or research papers attempt to model preferences, and only attempt to predict mass popularity.1 (Those papers which do consider it, tend to dismiss it as noise; for example, the DPO authors measure⁠—on simple summarization tasks—human disagreement rates as high as 35% and infer this justifies using LLM proxies, rather than raising questions about the basic approach of attempting to model ‘the’ human preference.) This has been handsomely rewarded in the mass marketplace (one man’s AI slop is another man’s metric pop), but leaves behind the ‘high end’."
+clearnet = "https://gwern.net/creative-benchmark"
+status = "Operational"
+subject_type = "Personal website"
+category = "blogs"
+tags = ["design", "meta", "personal", "forecasting"]
+language = "english"
