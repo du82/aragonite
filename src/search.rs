@@ -63,7 +63,7 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                     }
                     let num_results = results.len();
                     let result_word = if num_results == 1 {
-                        "results"
+                        "result"
                     } else {
                         "results"
                     };
