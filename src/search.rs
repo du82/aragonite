@@ -225,6 +225,9 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         // Create the index
         let index = Index::create_in_dir("index", schema.clone())?;
 
+        // Create a single writer for all documents
+        let mut index_writer = index.writer(50_000_000)?;
+
         // Parse the TOML files recursively
         let mut dirs_to_process = vec![std::path::PathBuf::from("datasets")];
 
@@ -244,8 +247,6 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                     let value: Value = toml::from_str(&data)
                         .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
 
-                    // Add data to the index
-                    let mut index_writer = index.writer(50_000_000)?;
                     if let Some(tables) = value.as_table() {
                         for (_name, table) in tables {
                             let mut doc = Document::new();
@@ -278,13 +279,15 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                                     Err(_) => continue,
                                 }
                             }
-                            index_writer.add_document(doc);
+                            index_writer.add_document(doc)?;
                         }
-                        index_writer.commit()?;
                     }
                 }
             }
         }
+
+        // Single commit at the end
+        index_writer.commit()?;
         println!("Indexing complete!");
         index
     } else {
