@@ -33,11 +33,17 @@ urlencode() {
 # Clean text function
 clean_text() {
     echo "$1" | \
+    sed 's/<em>\|<\/em>//g' | \
+    sed 's/<b>\|<\/b>//g' | \
+    sed 's/<style>.*<\/style>//g' | \
+    sed 's/class="[^"]*"//g' | \
+    sed 's/style="[^"]*"//g' | \
+    sed 's/<[^>]*>//g' | \
     sed 's/^[[:space:]]*//g' | \
     sed 's/[[:space:]]*$//g' | \
     sed 's/[[:space:]]\+/ /g' | \
     tr '\n' ' ' | \
-    sed 's/"//g'  # Remove quotes entirely
+    sed 's/"//g'
 }
 
 # Extract frontmatter from markdown
@@ -56,7 +62,7 @@ get_frontmatter_value() {
 # Get content from Gwern.net
 fetch_gwern_content() {
     local URL="$1"
-    curl -s -A "GwernScraper/1.0" "$URL"
+    curl -sL -A "GwernScraper/1.0" "$URL"
 }
 
 # Extract first few paragraphs of content
@@ -99,32 +105,64 @@ extract_tags() {
 extract_domains() {
     local CONTENT="$1"
     local TEMP_FILE=$(mktemp)
-
-    # Extract markdown-style links and plain URLs
     echo "$CONTENT" | grep -o "\[[^]]*\]([^)]*)" | sed 's/.*(\(.*\))/\1/' | sed 's/ .*$//' > "$TEMP_FILE"
     echo "$CONTENT" | grep -o 'https\?://[^ )"\047>]*' | grep -v 'gwern.net' >> "$TEMP_FILE"
 
-    # Process URLs to get domains
     local DOMAINS_FILE=$(mktemp)
     while read -r url; do
         [ -z "$url" ] && continue
-
-        # Extract domain (remove protocol and everything after first slash)
         domain=$(echo "$url" | sed 's|^https\?://||' | sed 's|/.*$||' | sed 's/^www\.//')
-
-        # Validate domain format (must have . followed by at least 2 chars)
         if [ -n "$domain" ] && [ "$domain" != "gwern.net" ] && echo "$domain" | grep -q "\.[a-zA-Z0-9-]\{2,\}$"; then
             echo "$domain" >> "$DOMAINS_FILE"
         fi
     done < "$TEMP_FILE"
 
-    # Get top 10 most frequent domains
-    RESULT=$(sort "$DOMAINS_FILE" | uniq -c | sort -rn | head -n 10 | awk '{print $2}' | tr '\n' ',' | sed 's/,$//')
+    RESULT=$(sort "$DOMAINS_FILE" | uniq -c | sort -rn | head -n 25 | awk '{print $2}' | tr '\n' ',' | sed 's/,$//')
+    rm -f "$TEMP_FILE" "$DOMAINS_FILE"
+    echo "$RESULT"
+}
+
+# Find new URLs in content
+find_urls() {
+    local CONTENT="$1"
+    local MAX_URLS="$2"
+    local TEMP_FILE=$(mktemp)
+
+    # Extract wiki-style links
+    echo "$CONTENT" | grep -o '\[\[[^]]*\]\]' | sed 's/\[\[\([^|]*\).*\]\]/\1/' > "$TEMP_FILE"
+
+    # Extract markdown links
+    echo "$CONTENT" | grep -o '\[[^]]*\]([^)]*[^)][^)]*[^)])' | sed 's/.*(\(.*\))/\1/' >> "$TEMP_FILE"
+
+    # Extract plain URLs
+    echo "$CONTENT" | grep -o 'https\?://[^ )"\047>]*' >> "$TEMP_FILE"
+
+    # Process URLs
+    local FILTERED_FILE=$(mktemp)
+    while read -r url; do
+        [ -z "$url" ] && continue
+
+        # Convert relative URLs to absolute
+        if [[ "$url" == /* ]]; then
+            url="https://gwern.net$url"
+        fi
+
+        # Only process gwern.net URLs
+        if [[ "$url" == https://gwern.net/* ]]; then
+            # Skip media files and unwanted content
+            if ! [[ "$url" =~ \.(jpg|jpeg|png|gif|mp4|webm|js|css|zip|pdf|doc|docx)$ ]] && \
+               ! [[ "$url" =~ /(static|images|doc|css|js)/ ]]; then
+                # Remove .md extension and fragments
+                echo "$url" | sed 's/\.md$//' | sed 's/#.*$//' >> "$FILTERED_FILE"
+            fi
+        fi
+    done < "$TEMP_FILE"
+
+    # Output unique URLs up to limit
+    sort -u "$FILTERED_FILE" | head -n "$MAX_URLS"
 
     # Cleanup
-    rm -f "$TEMP_FILE" "$DOMAINS_FILE"
-
-    echo "$RESULT"
+    rm -f "$TEMP_FILE" "$FILTERED_FILE"
 }
 
 # Process a single URL
@@ -133,9 +171,9 @@ process_url() {
     local MD_URL="$URL.md"
 
     log_process "Processing: $URL"
+    log_process "Fetching: $MD_URL"
 
     # Fetch markdown content
-    log_process "Fetching: $MD_URL"
     local CONTENT=$(fetch_gwern_content "$MD_URL")
 
     if [ -z "$CONTENT" ]; then
@@ -147,6 +185,9 @@ process_url() {
     local FRONTMATTER=$(get_frontmatter "$CONTENT")
     local TITLE=$(get_frontmatter_value "$FRONTMATTER" "title")
     local DESCRIPTION=$(get_frontmatter_value "$FRONTMATTER" "description")
+    local CREATED=$(get_frontmatter_value "$FRONTMATTER" "created")
+    local MODIFIED=$(get_frontmatter_value "$FRONTMATTER" "modified")
+    local STATUS=$(get_frontmatter_value "$FRONTMATTER" "status")
 
     if [ -z "$TITLE" ]; then
         TITLE=$(basename "$URL")
@@ -160,20 +201,32 @@ process_url() {
     local CLEAN_TITLE=$(clean_text "$TITLE")
     local CLEAN_DESCRIPTION=$(clean_text "$DESCRIPTION")
 
-    # Extract tags
-    local TAGS=$(extract_tags "$CLEAN_TITLE" "$CONTENT")
+    # Extract year information
+    local YEAR_PUBLISHED=""
+    local YEAR_UPDATED=""
+    if [ -n "$CREATED" ]; then
+        YEAR_PUBLISHED=$(echo "$CREATED" | cut -d'-' -f1)
+    fi
+    if [ -n "$MODIFIED" ]; then
+        YEAR_UPDATED=$(echo "$MODIFIED" | cut -d'-' -f1)
+    fi
 
-    # Extract domains
+    # Extract tags and external references
+    local TAGS=$(extract_tags "$CLEAN_TITLE" "$CONTENT")
     local DOMAINS=$(extract_domains "$CONTENT")
 
-    # Write output
+    # Write TOML entry
     {
         echo "[\"$URL\"]"
         echo "title = \"$CLEAN_TITLE - Gwern.net\""
         echo "description = \"$CLEAN_DESCRIPTION\""
+        echo "author = \"Gwern Branwen\""
+        [ -n "$YEAR_PUBLISHED" ] && echo "year_published = $YEAR_PUBLISHED"
+        [ -n "$YEAR_UPDATED" ] && echo "year_updated = $YEAR_UPDATED"
         echo "clearnet = \"$URL\""
-        echo "status = \"Operational\""
+        [ -n "$STATUS" ] && echo "status = \"$STATUS\""
         echo "category = \"research\""
+        echo "language = \"en\""
         echo "tags = [\"$(echo $TAGS | sed 's/,/\", \"/g')\"]"
         if [ -n "$DOMAINS" ]; then
             echo "external-references = [\"$(echo $DOMAINS | sed 's/,/\", \"/g')\"]"
@@ -185,67 +238,17 @@ process_url() {
 
     # Find and queue new URLs
     while read -r new_url; do
-        if [ -n "$new_url" ] && [ -z "${VISITED_URLS[$new_url]}" ]; then
+        if [ -z "${VISITED_URLS[$new_url]}" ]; then
             log_info "Found new URL: $new_url"
             URL_QUEUE+=("$new_url")
+            VISITED_URLS[$new_url]="queued"
         fi
-    done < <(find_urls "$CONTENT" 15)
+    done < <(find_urls "$CONTENT" 50)
 
     return 0
-
-    return 0
-}
-
-# Find new URLs in content
-find_urls() {
-    local CONTENT="$1"
-    local MAX_URLS="$2"
-    local TEMP_FILE=$(mktemp)
-
-    # Extract markdown-style links
-    echo "$CONTENT" | grep -o "\[[^]]*\]([^)]*)" | sed 's/.*(\(.*\))/\1/' | sed 's/ .*$//' > "$TEMP_FILE"
-
-    # Add plain URLs
-    echo "$CONTENT" | grep -o 'https\?://[^ )"\047>]*' | grep -v 'gwern.net' >> "$TEMP_FILE"
-
-    # Process URLs to get domains
-    local FILTERED_FILE=$(mktemp)
-    while read -r url; do
-        [ -z "$url" ] && continue
-
-        # Convert relative URLs to absolute
-        if [[ "$url" == /* ]]; then
-            url="https://gwern.net$url"
-        fi
-
-        # Only process gwern.net URLs
-        if [[ "$url" != https://gwern.net/* ]]; then
-            continue
-        fi
-
-        # Skip media files and unwanted content
-        if [[ "$url" =~ \.(jpg|jpeg|png|gif|mp4|webm|js|css|zip|pdf|doc|docx)$ ]] || \
-           [[ "$url" =~ /static/ ]] || \
-           [[ "$url" =~ /images/ ]] || \
-           [[ "$url" =~ /doc/ ]] || \
-           [[ "$url" =~ /css/ ]] || \
-           [[ "$url" =~ /js/ ]]; then
-            continue
-        fi
-
-        # Clean up URL
-        echo "$url" | sed 's/#.*//g' | sed 's/?.*//g' | sed 's/\/$//' | sed 's/ .*$//' >> "$FILTERED_FILE"
-    done < "$TEMP_FILE"
-
-    # Output unique URLs up to the limit
-    sort -u "$FILTERED_FILE" | head -n "$MAX_URLS"
-
-    # Cleanup
-    rm -f "$TEMP_FILE" "$FILTERED_FILE"
 }
 
 # Main script
-
 if [ -z "$1" ]; then
     log_error "No starting URL provided"
     echo "Usage: $0 <gwern_url>"
@@ -262,8 +265,8 @@ fi
 START_URL="$1"
 OUTPUT_FILE="gwern_content.toml"
 LIMIT=500000
-SLEEP_TIME=2
-BATCH_SIZE=15
+SLEEP_TIME=0.1
+BATCH_SIZE=50
 
 # Initialize arrays and counters
 declare -a URL_QUEUE=("$START_URL")
@@ -285,10 +288,10 @@ while [ ${#URL_QUEUE[@]} -gt 0 ] && [ $PROCESSED_COUNT -lt $LIMIT ]; do
         CURRENT_URL="${URL_QUEUE[0]}"
         URL_QUEUE=("${URL_QUEUE[@]:1}")
 
-        if [ -z "${VISITED_URLS[$CURRENT_URL]}" ]; then
+        if [ "${VISITED_URLS[$CURRENT_URL]}" != "processed" ]; then
             log_info "Processing URL $PROCESSED_COUNT/$LIMIT: $CURRENT_URL"
             if process_url "$CURRENT_URL"; then
-                VISITED_URLS[$CURRENT_URL]="1"
+                VISITED_URLS[$CURRENT_URL]="processed"
                 PROCESSED_COUNT=$((PROCESSED_COUNT + 1))
                 BATCH_COUNT=$((BATCH_COUNT + 1))
                 sleep $SLEEP_TIME
@@ -299,7 +302,6 @@ while [ ${#URL_QUEUE[@]} -gt 0 ] && [ $PROCESSED_COUNT -lt $LIMIT ]; do
     log_info "Completed batch of $BATCH_COUNT URLs"
     log_info "Queue size: ${#URL_QUEUE[@]}"
     log_info "Total processed: $PROCESSED_COUNT"
-done
 done
 
 log_success "Generated TOML file: $OUTPUT_FILE"

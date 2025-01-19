@@ -1,9 +1,0 @@
-if let Some(staging) = config.get("staging") {
-    if let Some(neofetch_enabled) = staging.get("neofetch_enabled").and_then(Value::as_bool) {
-        if neofetch_enabled {
-            // Neofetch is enabled, do something...
-        } else {
-            // Neofetch is not enabled, do something else...
-        }
-    }
-}
