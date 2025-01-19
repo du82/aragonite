@@ -414,7 +414,40 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         let html = document_to_html(&retrieved_doc, &schema);
         let html_without_quotes = html.replace(", ", "");
 
-        // Modify the search ranking based on the content
+        // Downrank pages without title or description
+        if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
+            if title.trim().is_empty() {
+                score *= 0.3; // Reduce score by 70% if no title
+            }
+        } else {
+            score *= 0.3; // Reduce score by 70% if title field is missing
+        }
+
+        // Handle description length-based scoring
+        if let Some(tantivy::schema::Value::Str(desc)) = retrieved_doc.get_first(description) {
+            let desc_len = desc.trim().len();
+            if desc_len == 0 {
+                score *= 0.4; // Heavy penalty for empty description
+            } else {
+                // Boost scores for longer descriptions
+                // - Less than 50 chars: slight penalty
+                // - 50-100 chars: neutral
+                // - 100-200 chars: moderate boost
+                // - 200+ chars: significant boost
+                let length_multiplier = match desc_len {
+                    0..=49 => 0.8,    // 20% penalty for very short descriptions
+                    50..=99 => 1.0,   // No adjustment for medium-short descriptions
+                    100..=199 => 1.3, // 30% boost for medium-long descriptions
+                    200..=299 => 1.5, // 50% boost for long descriptions
+                    _ => 1.8,         // 80% boost for very detailed descriptions
+                };
+                score *= length_multiplier;
+            }
+        } else {
+            score *= 0.4; // Heavy penalty for missing description field
+        }
+
+        // Existing ranking factors
         if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
             if url.contains("reddit.com")
                 || url.contains("quora.com")
@@ -426,9 +459,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                 || url.contains("linktr.ee")
                 || url.contains("t.me")
             {
-                score *= 0.9; // Decrease score by 90%
+                score *= 0.1; // Decrease score by 90%
             }
         }
+
         if let Some(tantivy::schema::Value::Str(instant_answer)) =
             retrieved_doc.get_first(instant_answer)
         {
@@ -436,37 +470,35 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                 score *= 100.0; // Increase by 100x
             }
         }
+
         if let Some(tantivy::schema::Value::Str(privacy_track_record)) =
             retrieved_doc.get_first(privacy_track_record)
         {
             if privacy_track_record == "excellent" {
-                score *= 0.2; // Increase score by 20%
+                score *= 1.2; // Increase score by 20%
             } else if privacy_track_record == "good" {
-                score *= 0.1; // Increase score by 10%
+                score *= 1.1; // Increase score by 10%
             } else if privacy_track_record == "bad" {
-                score *= -0.1; // Decrease score by 10%
+                score *= 0.9; // Decrease score by 10%
             } else if privacy_track_record == "terrible" {
-                score *= -0.2; // Decrease score by 20%
+                score *= 0.8; // Decrease score by 20%
             }
         }
+
         if let Some(tantivy::schema::Value::Str(human_rights_track_record)) =
             retrieved_doc.get_first(human_rights_track_record)
         {
             if human_rights_track_record == "excellent" {
-                score *= 0.2; // Increase score by 20%
+                score *= 1.2; // Increase score by 20%
             } else if human_rights_track_record == "good" {
-                score *= 0.1; // Increase score by 10%
+                score *= 1.1; // Increase score by 10%
             } else if human_rights_track_record == "bad" {
-                score *= -0.1; // Decrease score by 10%
+                score *= 0.9; // Decrease score by 10%
             } else if human_rights_track_record == "terrible" {
-                score *= -0.2; // Decrease score by 20%
+                score *= 0.8; // Decrease score by 20%
             }
         }
-        //if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
-        //    if title.contains("Linux") {
-        //        score *= 5.0; // Increase score by 500%
-        //   }
-        //}
+
         scored_results.push((score, html_without_quotes));
     }
 
