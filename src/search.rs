@@ -23,11 +23,11 @@ use tantivy::Index;
 use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
-use crate::common::url_utils::{extract_domain, is_homepage, get_domain_name};
+use crate::common::url_utils::{is_homepage, get_domain_name};
 use crate::common::document_to_html::document_to_html;
 
 #[derive(FromForm)]
-struct SearchForm {
+pub struct SearchForm {
     query: String,
 }
 
