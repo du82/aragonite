@@ -8,4 +8,4 @@ neofetch_enabled = false   # Default false, allows end users to see the output o
 search_string_enabled = true   # Default true, shows random text string from search_string.txt in search box
 
 [engine]
-results_per_query = 5000   # Default 50, number of search results to show per query
+results_per_query = 10_000   # Default 50, number of search results to show per query
