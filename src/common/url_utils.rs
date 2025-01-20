@@ -53,17 +53,13 @@ pub fn is_homepage(url: &str) -> bool {
 }
 
 /// Extracts the base domain name without TLD for matching
+/// Extracts the base domain name without TLD for matching
 pub fn get_domain_name(url: &str) -> Option<String> {
     extract_domain(url).map(|domain| {
         let parts: Vec<&str> = domain.split('.').collect();
         if parts.len() >= 2 {
-            // Handle cases like foo.co.uk - take the part before co.uk
-            if parts.len() > 2 && parts[parts.len()-2] == "co" {
-                parts[parts.len()-3].to_string()
-            } else {
-                // Normal case like foo.com - take the first part
-                parts[0].to_string()
-            }
+            // Always take the leftmost part, whether it's a subdomain or main domain
+            parts[0].to_string()
         } else {
             // Single part domain
             domain
