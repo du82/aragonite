@@ -23,6 +23,7 @@ use tantivy::Index;
 use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
+use crate::benchmarks::search_benchmark;
 use crate::common::url_utils::{is_homepage, get_domain_name};
 use crate::common::document_to_html::document_to_html;
 
@@ -52,6 +53,14 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
+
+    // Benchmarks trigger
+    if q.as_deref() == Some("--run-benchmark") {
+        let benchmark_results = run_benchmarks();
+        return Ok(RawHtml(benchmark_results));
+    }
+
+    // Search logic
     match tantivy_processor(q.as_deref().unwrap_or("")) {
         Ok((results, duration)) => {
             //println!("{:#?}", results);
@@ -192,6 +201,18 @@ pub fn mobile_search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect>
             println!("Error creating index: {:?}", e);
             Err(Redirect::to("/"))
         }
+    }
+}
+
+pub fn run_benchmarks() -> String {
+    match search_benchmark::run_search_benchmark() {
+        Ok(_) => {
+            match std::fs::read_to_string("benchmark_results.txt") {
+                Ok(contents) => format!("<pre style='white-space: pre-wrap; font-family: monospace;'>{}</pre>", contents),
+                Err(e) => format!("Error reading benchmark results: {}", e)
+            }
+        },
+        Err(e) => format!("Error running benchmarks: {}", e)
     }
 }
 
