@@ -9,7 +9,6 @@ use std::fs;
 use std::fs::File;
 use std::io::Read;
 use std::time::{Duration, Instant};
-use std::collections::HashMap;
 use tantivy::collector::TopDocs;
 use tantivy::doc;
 use tantivy::query::BooleanQuery;
@@ -24,6 +23,8 @@ use tantivy::Index;
 use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
+use crate::common::url_utils::{extract_domain, is_homepage, get_domain_name};
+use crate::common::document_to_html::document_to_html;
 
 #[derive(FromForm)]
 struct SearchForm {
@@ -223,6 +224,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let _language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
+
     let index = if fs::read_dir(index_dir)?.count() == 0 {
         // Create the index
         let index = Index::create_in_dir("index", schema.clone())?;
@@ -402,9 +404,9 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
     // Get the number of results per query from Config.toml
     let results_per_query = config.get("engine")
-    .and_then(|engine| engine.get("results_per_query"))
-    .and_then(Value::as_integer)
-    .unwrap_or(50) as usize;  // Default to 50 if not found
+        .and_then(|engine| engine.get("results_per_query"))
+        .and_then(Value::as_integer)
+        .unwrap_or(50) as usize;
 
     // Collectors
     let top_docs = searcher.search(&final_query, &TopDocs::with_limit(results_per_query))?;
@@ -414,88 +416,80 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         let html = document_to_html(&retrieved_doc, &schema);
         let html_without_quotes = html.replace(", ", "");
 
-        // Downrank pages without title or description
+        // Downrank pages without title
         if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
             if title.trim().is_empty() {
-                score *= 0.3; // Reduce score by 70% if no title
+                score *= 0.3;
             }
         } else {
-            score *= 0.3; // Reduce score by 70% if title field is missing
+            score *= 0.3;
+        }
+
+        // URL-based scoring using url_utils functions
+        if let Some(tantivy::schema::Value::Str(url_str)) = retrieved_doc.get_first(url) {
+            let domain = get_domain_name(url_str);
+
+            // Check if it's a homepage which might deserve different ranking
+            if is_homepage(url_str) {
+                score *= 1.2; // Small boost for homepages
+            }
+
+            // Use extracted domain for ranking decisions
+            if let Some(domain) = domain {
+                if domain == "reddit.com" || domain == "quora.com" || domain.contains("youtube.com") {
+                    score *= 0.5;
+                } else if domain == "onlyfans.com" || domain == "fansly.com" ||
+                          domain == "linktr.ee" || domain == "t.me" {
+                    score *= 0.1;
+                }
+            }
         }
 
         // Handle description length-based scoring
         if let Some(tantivy::schema::Value::Str(desc)) = retrieved_doc.get_first(description) {
             let desc_len = desc.trim().len();
             if desc_len == 0 {
-                score *= 0.4; // Heavy penalty for empty description
+                score *= 0.4;
             } else {
-                // Boost scores for longer descriptions
-                // - Less than 50 chars: slight penalty
-                // - 50-100 chars: neutral
-                // - 100-200 chars: moderate boost
-                // - 200+ chars: significant boost
                 let length_multiplier = match desc_len {
-                    0..=49 => 0.8,    // 20% penalty for very short descriptions
-                    50..=99 => 1.0,   // No adjustment for medium-short descriptions
-                    100..=199 => 1.3, // 30% boost for medium-long descriptions
-                    200..=299 => 1.5, // 50% boost for long descriptions
-                    _ => 1.8,         // 80% boost for very detailed descriptions
+                    0..=49 => 0.8,
+                    50..=150 => 1.0,
+                    _ => 1.5,
                 };
                 score *= length_multiplier;
             }
         } else {
-            score *= 0.4; // Heavy penalty for missing description field
+            score *= 0.4;
         }
 
-        // Existing ranking factors
-        if let Some(tantivy::schema::Value::Str(url)) = retrieved_doc.get_first(url) {
-            if url.contains("reddit.com")
-                || url.contains("quora.com")
-                || url.contains("youtube.com/shorts")
-            {
-                score *= 0.5; // Decrease score by 50%
-            } else if url.contains("onlyfans.com")
-                || url.contains("fansly.com")
-                || url.contains("linktr.ee")
-                || url.contains("t.me")
-            {
-                score *= 0.1; // Decrease score by 90%
-            }
-        }
-
-        if let Some(tantivy::schema::Value::Str(instant_answer)) =
-            retrieved_doc.get_first(instant_answer)
-        {
+        // Other ranking factors remain unchanged
+        if let Some(tantivy::schema::Value::Str(instant_answer)) = retrieved_doc.get_first(instant_answer) {
             if !instant_answer.is_empty() {
-                score *= 100.0; // Increase by 100x
+                score *= 100.0;
             }
         }
 
-        if let Some(tantivy::schema::Value::Str(privacy_track_record)) =
-            retrieved_doc.get_first(privacy_track_record)
-        {
+        if let Some(tantivy::schema::Value::Str(privacy_track_record)) = retrieved_doc.get_first(privacy_track_record) {
             if privacy_track_record == "excellent" {
-                score *= 1.2; // Increase score by 20%
+                score *= 1.2;
             } else if privacy_track_record == "good" {
-                score *= 1.1; // Increase score by 10%
+                score *= 1.1;
             } else if privacy_track_record == "bad" {
-                score *= 0.9; // Decrease score by 10%
+                score *= 0.9;
             } else if privacy_track_record == "terrible" {
-                score *= 0.8; // Decrease score by 20%
+                score *= 0.8;
             }
         }
 
-        if let Some(tantivy::schema::Value::Str(human_rights_track_record)) =
-            retrieved_doc.get_first(human_rights_track_record)
-        {
+        if let Some(tantivy::schema::Value::Str(human_rights_track_record)) = retrieved_doc.get_first(human_rights_track_record) {
             if human_rights_track_record == "excellent" {
-                score *= 1.2; // Increase score by 20%
+                score *= 1.2;
             } else if human_rights_track_record == "good" {
-                score *= 1.1; // Increase score by 10%
+                score *= 1.1;
             } else if human_rights_track_record == "bad" {
-                score *= 0.9; // Decrease score by 10%
+                score *= 0.9;
             } else if human_rights_track_record == "terrible" {
-                score *= 0.8; // Decrease score by 20%
+                score *= 0.8;
             }
         }
 
@@ -510,168 +504,4 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
     let duration = start.elapsed();
     Ok((results, duration))
-}
-
-fn document_to_html(doc: &Document, schema: &Schema) -> String {
-    let mut fields = HashMap::new();
-    for field_value in doc.field_values() {
-        let field_name = schema.get_field_name(field_value.field());
-        if let tantivy::schema::Value::Str(value) = field_value.value() {
-            let value_without_newlines = value.replace("\n", "").replace("[", "");
-            fields.insert(field_name, value_without_newlines);
-        }
-    }
-
-    let default_value = "".to_string();
-    let title = fields
-        .get("title")
-        .unwrap_or_else(|| &&default_value)
-        .replace("[", "")
-        .split(',')
-        .collect::<Vec<&str>>()
-        .join("");
-    let title = if title.len() > 200 {
-        format!("{}...", &title.chars().take(100).collect::<String>())
-    } else {
-        title
-    };
-    let description = fields
-        .get("description")
-        .unwrap_or_else(|| &&default_value)
-        .replace("[", "")
-        .split(',')
-        .collect::<Vec<&str>>()
-        .join("");
-    let description = if description.len() > 200 {
-        format!("{}...", &description.chars().take(200).collect::<String>())
-    } else {
-        description
-    };
-    let author = fields
-        .get("author")
-        .unwrap_or_else(|| &&default_value)
-        .replace("[", "")
-        .split(',')
-        .collect::<Vec<&str>>()
-        .join("");
-    let author_html = if !author.is_empty() {
-        format!(
-            "<a class='pill' href='/search?q={}'>author: {}</a>",
-            author, author
-        )
-    } else {
-        "".to_string()
-    };
-    let tags = fields.get("tags").unwrap_or_else(|| &&default_value);
-    let tags_html = if !tags.is_empty() {
-        format!(
-            "<a class='pill' href='/search?q={}'>{}</a>",
-            tags.to_lowercase(),
-            tags.to_lowercase()
-        )
-    } else {
-        "".to_string()
-    };
-    let category = fields
-        .get("category")
-        .unwrap_or_else(|| &&default_value)
-        .replace(", ", "");
-    let category_html = if !category.is_empty() {
-        format!(
-            "<a class='pill' href='/search?q=category:{}'>{}</a>",
-            category.to_lowercase(),
-            category.to_lowercase()
-        )
-    } else {
-        "".to_string()
-    };
-    let privacy_track_record = fields
-        .get("ptr")
-        .unwrap_or_else(|| &&default_value)
-        .replace(", ", "");
-    let ptr_html = if !privacy_track_record.is_empty() {
-        format!(
-            "<a title='Privacy track record' class='pill' href='/search?q=ptr:{}'>PTR: {}</a>",
-            privacy_track_record.to_lowercase(),
-            privacy_track_record.to_lowercase()
-        )
-    } else {
-        "".to_string()
-    };
-    let human_rights_track_record = fields
-        .get("hrr")
-        .unwrap_or_else(|| &&default_value)
-        .replace(", ", "");
-    let hrr_html = if !human_rights_track_record.is_empty() {
-        format!(
-            "<a title='Human rights track record' class='pill' href='/search?q=hrr:{}'>HRR: {}</a>",
-            human_rights_track_record.to_lowercase(),
-            human_rights_track_record.to_lowercase()
-        )
-    } else {
-        "".to_string()
-    };
-    let language = fields
-        .get("language")
-        .unwrap_or_else(|| &&default_value)
-        .replace(", ", "");
-    let language_html = if !language.is_empty() {
-        format!(
-            "<a class='pill' href='/search?q=language:{}'>language: {}</a>",
-            language.to_lowercase(),
-            language.to_lowercase()
-        )
-    } else {
-        "".to_string()
-    };
-    let url = fields
-        .get("clearnet")
-        .unwrap_or_else(|| &&default_value)
-        .replace("[", "")
-        .split(',')
-        .collect::<Vec<&str>>()
-        .join("");
-    let onion = fields
-        .get("onion")
-        .unwrap_or_else(|| &&default_value)
-        .replace("[", "")
-        .split(',')
-        .collect::<Vec<&str>>()
-        .join("");
-
-    let url_html = match (onion.is_empty(), url.is_empty()) {
-        (false, false) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a> | {}</p>", onion, url),
-        (false, true) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a></p>", onion),
-        (true, false) => format!("<p class='search-result-url-row'>{}</p>", url),
-        (true, true) => "".to_string(),
-    };
-
-    // Only display one instant answer per query
-    let mut instant_answer_sent = false;
-    let instant_answer = if !instant_answer_sent {
-        instant_answer_sent = true;
-        fields
-            .get("instant_answer")
-            .unwrap_or_else(|| &&default_value)
-            .replace("[", "")
-            .split(',')
-            .collect::<Vec<&str>>()
-            .join("")
-    } else {
-        "".to_string()
-    };
-
-    // Conditionally show the instant answer or search results list
-    let result_html = if instant_answer == "sports" {
-        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>{}{}{}{}{}{}</div></div></details></div>",
-        url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
-    } else if instant_answer == "linux" {
-        format!("<div class='instant-answer'><details><summary>System Info</summary><h1>{}</h1><p class='search-result-description'>{}</p></details></div>",
-        title, description)
-    } else {
-        format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>{}{}{}{}{}{}</div></div>",
-        url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
-    };
-
-    result_html
 }

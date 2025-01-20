@@ -3,7 +3,7 @@
 use rocket::{routes, Build, Rocket};
 use std::sync::Mutex;
 use std::collections::HashMap;
-
+pub mod common;
 mod routes;
 mod search;
 mod middleware;
