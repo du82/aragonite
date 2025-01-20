@@ -1,938 +1,943 @@
 
-=== Benchmark Results - 1737370173 ===
+=== Benchmark Results - 1737371047 ===
+
+Server Information:
+OS: linux
+CPU Info: model name	: 13th Gen Intel(R) Core(TM) i5-1335U
+Total Memory: 23694 MB
 
 Summary:
 Total Queries: 925
-Average Duration: 29.62ms
+Average Duration: 29.74ms
 Min Duration: 1ms
-Max Duration: 322ms
+Max Duration: 291ms
 Total Results: 585095
 Avg Results Per Query: 632.54
-Total Benchmark Duration: 29.346077314s
+Total Benchmark Duration: 29.535151188s
 
 Detailed Metrics:
-Query: 'how to make chocolate chip cookies' - Duration: 113ms, Results: 2802
-Query: 'how to make chocolate chip cookies' - Duration: 107ms, Results: 2802
-Query: 'how to make chocolate chip cookies' - Duration: 116ms, Results: 2802
-Query: 'how to make chocolate chip cookies' - Duration: 100ms, Results: 2802
-Query: 'how to make chocolate chip cookies' - Duration: 100ms, Results: 2802
-Query: 'what is mass surveillance?' - Duration: 64ms, Results: 1602
-Query: 'what is mass surveillance?' - Duration: 69ms, Results: 1602
-Query: 'what is mass surveillance?' - Duration: 71ms, Results: 1602
-Query: 'what is mass surveillance?' - Duration: 78ms, Results: 1602
-Query: 'what is mass surveillance?' - Duration: 66ms, Results: 1602
-Query: 'how to grow tomatoes indoors' - Duration: 102ms, Results: 2789
-Query: 'how to grow tomatoes indoors' - Duration: 100ms, Results: 2789
-Query: 'how to grow tomatoes indoors' - Duration: 104ms, Results: 2789
-Query: 'how to grow tomatoes indoors' - Duration: 98ms, Results: 2789
-Query: 'how to grow tomatoes indoors' - Duration: 100ms, Results: 2789
-Query: 'chinese internet censorship' - Duration: 15ms, Results: 173
-Query: 'chinese internet censorship' - Duration: 14ms, Results: 173
-Query: 'chinese internet censorship' - Duration: 13ms, Results: 173
-Query: 'chinese internet censorship' - Duration: 12ms, Results: 173
-Query: 'chinese internet censorship' - Duration: 11ms, Results: 173
-Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295
-Query: 'why does my cat meow so much' - Duration: 20ms, Results: 295
-Query: 'why does my cat meow so much' - Duration: 29ms, Results: 295
-Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295
-Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295
-Query: 'how to spot fake cameras?' - Duration: 101ms, Results: 2787
-Query: 'how to spot fake cameras?' - Duration: 98ms, Results: 2787
-Query: 'how to spot fake cameras?' - Duration: 100ms, Results: 2787
-Query: 'how to spot fake cameras?' - Duration: 99ms, Results: 2787
-Query: 'how to spot fake cameras?' - Duration: 100ms, Results: 2787
-Query: 'best family board games' - Duration: 24ms, Results: 365
-Query: 'best family board games' - Duration: 21ms, Results: 365
-Query: 'best family board games' - Duration: 21ms, Results: 365
-Query: 'best family board games' - Duration: 21ms, Results: 365
-Query: 'best family board games' - Duration: 21ms, Results: 365
-Query: 'us privacy laws comparison' - Duration: 40ms, Results: 985
-Query: 'us privacy laws comparison' - Duration: 40ms, Results: 985
-Query: 'us privacy laws comparison' - Duration: 39ms, Results: 985
-Query: 'us privacy laws comparison' - Duration: 40ms, Results: 985
-Query: 'us privacy laws comparison' - Duration: 40ms, Results: 985
-Query: 'weather forecast next week' - Duration: 18ms, Results: 348
-Query: 'weather forecast next week' - Duration: 17ms, Results: 348
-Query: 'weather forecast next week' - Duration: 18ms, Results: 348
-Query: 'weather forecast next week' - Duration: 17ms, Results: 348
-Query: 'weather forecast next week' - Duration: 17ms, Results: 348
-Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47
-Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47
-Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47
-Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47
-Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47
-Query: 'tech company data collection' - Duration: 38ms, Results: 604
-Query: 'tech company data collection' - Duration: 32ms, Results: 604
-Query: 'tech company data collection' - Duration: 31ms, Results: 604
-Query: 'tech company data collection' - Duration: 38ms, Results: 604
-Query: 'tech company data collection' - Duration: 40ms, Results: 604
-Query: 'meditation for beginners guide' - Duration: 106ms, Results: 3151
-Query: 'meditation for beginners guide' - Duration: 103ms, Results: 3151
-Query: 'meditation for beginners guide' - Duration: 105ms, Results: 3151
-Query: 'meditation for beginners guide' - Duration: 104ms, Results: 3151
-Query: 'meditation for beginners guide' - Duration: 105ms, Results: 3151
-Query: 'hong kong protests evidence...' - Duration: 7ms, Results: 99
-Query: 'hong kong protests evidence...' - Duration: 7ms, Results: 99
-Query: 'hong kong protests evidence...' - Duration: 7ms, Results: 99
-Query: 'hong kong protests evidence...' - Duration: 9ms, Results: 99
-Query: 'hong kong protests evidence...' - Duration: 7ms, Results: 99
-Query: 'yoga poses for back pain' - Duration: 107ms, Results: 3111
-Query: 'yoga poses for back pain' - Duration: 104ms, Results: 3111
-Query: 'yoga poses for back pain' - Duration: 104ms, Results: 3111
-Query: 'yoga poses for back pain' - Duration: 118ms, Results: 3111
-Query: 'yoga poses for back pain' - Duration: 111ms, Results: 3111
-Query: 'China social credit score' - Duration: 18ms, Results: 217
-Query: 'China social credit score' - Duration: 15ms, Results: 217
-Query: 'China social credit score' - Duration: 15ms, Results: 217
-Query: 'China social credit score' - Duration: 14ms, Results: 217
-Query: 'China social credit score' - Duration: 15ms, Results: 217
-Query: 'how to make bread at home' - Duration: 112ms, Results: 3103
-Query: 'how to make bread at home' - Duration: 109ms, Results: 3103
-Query: 'how to make bread at home' - Duration: 109ms, Results: 3103
-Query: 'how to make bread at home' - Duration: 109ms, Results: 3103
-Query: 'how to make bread at home' - Duration: 110ms, Results: 3103
-Query: 'whistleblower protection rights' - Duration: 17ms, Results: 343
-Query: 'whistleblower protection rights' - Duration: 16ms, Results: 343
-Query: 'whistleblower protection rights' - Duration: 17ms, Results: 343
-Query: 'whistleblower protection rights' - Duration: 16ms, Results: 343
-Query: 'whistleblower protection rights' - Duration: 16ms, Results: 343
-Query: 'pet adoption process' - Duration: 10ms, Results: 123
-Query: 'pet adoption process' - Duration: 10ms, Results: 123
-Query: 'pet adoption process' - Duration: 10ms, Results: 123
-Query: 'pet adoption process' - Duration: 10ms, Results: 123
-Query: 'pet adoption process' - Duration: 10ms, Results: 123
-Query: 'what data do companies collect?' - Duration: 39ms, Results: 808
-Query: 'what data do companies collect?' - Duration: 39ms, Results: 808
-Query: 'what data do companies collect?' - Duration: 42ms, Results: 808
-Query: 'what data do companies collect?' - Duration: 38ms, Results: 808
-Query: 'what data do companies collect?' - Duration: 40ms, Results: 808
-Query: 'vegan protein sources' - Duration: 5ms, Results: 56
-Query: 'vegan protein sources' - Duration: 5ms, Results: 56
-Query: 'vegan protein sources' - Duration: 5ms, Results: 56
-Query: 'vegan protein sources' - Duration: 5ms, Results: 56
-Query: 'vegan protein sources' - Duration: 6ms, Results: 56
-Query: 'facial recognition in china' - Duration: 80ms, Results: 2159
-Query: 'facial recognition in china' - Duration: 80ms, Results: 2159
-Query: 'facial recognition in china' - Duration: 80ms, Results: 2159
-Query: 'facial recognition in china' - Duration: 78ms, Results: 2159
-Query: 'facial recognition in china' - Duration: 80ms, Results: 2159
-Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92
-Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92
-Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92
-Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92
-Query: 'keto diet beginners guide' - Duration: 6ms, Results: 92
-Query: 'concentration camps investigation' - Duration: 3ms, Results: 21
-Query: 'concentration camps investigation' - Duration: 3ms, Results: 21
-Query: 'concentration camps investigation' - Duration: 2ms, Results: 21
-Query: 'concentration camps investigation' - Duration: 3ms, Results: 21
-Query: 'concentration camps investigation' - Duration: 3ms, Results: 21
-Query: 'wildlife photography tips' - Duration: 5ms, Results: 60
-Query: 'wildlife photography tips' - Duration: 5ms, Results: 60
-Query: 'wildlife photography tips' - Duration: 5ms, Results: 60
-Query: 'wildlife photography tips' - Duration: 5ms, Results: 60
-Query: 'wildlife photography tips' - Duration: 6ms, Results: 60
-Query: 'digital privacy violations' - Duration: 22ms, Results: 477
-Query: 'digital privacy violations' - Duration: 23ms, Results: 477
-Query: 'digital privacy violations' - Duration: 22ms, Results: 477
-Query: 'digital privacy violations' - Duration: 22ms, Results: 477
-Query: 'digital privacy violations' - Duration: 22ms, Results: 477
-Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56
-Query: 'popular podcast recommendations' - Duration: 5ms, Results: 56
-Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56
-Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56
-Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56
-Query: 'taiwan independence debate?' - Duration: 4ms, Results: 35
-Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35
-Query: 'taiwan independence debate?' - Duration: 4ms, Results: 35
-Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35
-Query: 'taiwan independence debate?' - Duration: 5ms, Results: 35
-Query: 'best books 2024' - Duration: 23ms, Results: 431
-Query: 'best books 2024' - Duration: 23ms, Results: 431
-Query: 'best books 2024' - Duration: 23ms, Results: 431
-Query: 'best books 2024' - Duration: 23ms, Results: 431
-Query: 'best books 2024' - Duration: 23ms, Results: 431
-Query: 'police surveillance methods' - Duration: 4ms, Results: 33
-Query: 'police surveillance methods' - Duration: 4ms, Results: 33
-Query: 'police surveillance methods' - Duration: 4ms, Results: 33
-Query: 'police surveillance methods' - Duration: 4ms, Results: 33
-Query: 'police surveillance methods' - Duration: 4ms, Results: 33
-Query: 'ancient civilization discoveries' - Duration: 4ms, Results: 13
-Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13
-Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13
-Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13
-Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13
-Query: 'cia surveillance programs' - Duration: 14ms, Results: 211
-Query: 'cia surveillance programs' - Duration: 13ms, Results: 211
-Query: 'cia surveillance programs' - Duration: 12ms, Results: 211
-Query: 'cia surveillance programs' - Duration: 12ms, Results: 211
-Query: 'cia surveillance programs' - Duration: 13ms, Results: 211
-Query: 'online privacy protection basics' - Duration: 28ms, Results: 611
-Query: 'online privacy protection basics' - Duration: 28ms, Results: 611
-Query: 'online privacy protection basics' - Duration: 27ms, Results: 611
-Query: 'online privacy protection basics' - Duration: 26ms, Results: 611
-Query: 'online privacy protection basics' - Duration: 28ms, Results: 611
-Query: 'secure password tips' - Duration: 13ms, Results: 264
-Query: 'secure password tips' - Duration: 12ms, Results: 264
-Query: 'secure password tips' - Duration: 12ms, Results: 264
-Query: 'secure password tips' - Duration: 12ms, Results: 264
-Query: 'secure password tips' - Duration: 13ms, Results: 264
-Query: 'propaganda identification guide' - Duration: 8ms, Results: 96
-Query: 'propaganda identification guide' - Duration: 8ms, Results: 96
-Query: 'propaganda identification guide' - Duration: 7ms, Results: 96
-Query: 'propaganda identification guide' - Duration: 7ms, Results: 96
-Query: 'propaganda identification guide' - Duration: 7ms, Results: 96
-Query: 'how to spot fake news' - Duration: 113ms, Results: 3147
-Query: 'how to spot fake news' - Duration: 111ms, Results: 3147
-Query: 'how to spot fake news' - Duration: 110ms, Results: 3147
-Query: 'how to spot fake news' - Duration: 144ms, Results: 3147
-Query: 'how to spot fake news' - Duration: 110ms, Results: 3147
-Query: 'electoral system analysis?' - Duration: 25ms, Results: 391
-Query: 'electoral system analysis?' - Duration: 23ms, Results: 391
-Query: 'electoral system analysis?' - Duration: 21ms, Results: 391
-Query: 'electoral system analysis?' - Duration: 21ms, Results: 391
-Query: 'electoral system analysis?' - Duration: 20ms, Results: 391
-Query: 'how to write college essays' - Duration: 102ms, Results: 2858
-Query: 'how to write college essays' - Duration: 102ms, Results: 2858
-Query: 'how to write college essays' - Duration: 103ms, Results: 2858
-Query: 'how to write college essays' - Duration: 102ms, Results: 2858
-Query: 'how to write college essays' - Duration: 102ms, Results: 2858
-Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112
-Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112
-Query: 'tech monopoly regulations' - Duration: 9ms, Results: 112
-Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112
-Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112
-Query: 'job interview preparation...' - Duration: 8ms, Results: 84
-Query: 'job interview preparation...' - Duration: 7ms, Results: 84
-Query: 'job interview preparation...' - Duration: 8ms, Results: 84
-Query: 'job interview preparation...' - Duration: 7ms, Results: 84
-Query: 'job interview preparation...' - Duration: 8ms, Results: 84
-Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470
-Query: 'xinjiang human rights report' - Duration: 23ms, Results: 470
-Query: 'xinjiang human rights report' - Duration: 23ms, Results: 470
-Query: 'xinjiang human rights report' - Duration: 23ms, Results: 470
-Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470
-Query: 'how to help environment?' - Duration: 105ms, Results: 2929
-Query: 'how to help environment?' - Duration: 103ms, Results: 2929
-Query: 'how to help environment?' - Duration: 103ms, Results: 2929
-Query: 'how to help environment?' - Duration: 102ms, Results: 2929
-Query: 'how to help environment?' - Duration: 102ms, Results: 2929
-Query: 'plastic recycling guide' - Duration: 7ms, Results: 91
-Query: 'plastic recycling guide' - Duration: 7ms, Results: 91
-Query: 'plastic recycling guide' - Duration: 7ms, Results: 91
-Query: 'plastic recycling guide' - Duration: 6ms, Results: 91
-Query: 'plastic recycling guide' - Duration: 7ms, Results: 91
-Query: 'endangered animals list 2024' - Duration: 23ms, Results: 444
-Query: 'endangered animals list 2024' - Duration: 24ms, Results: 444
-Query: 'endangered animals list 2024' - Duration: 23ms, Results: 444
-Query: 'endangered animals list 2024' - Duration: 24ms, Results: 444
-Query: 'endangered animals list 2024' - Duration: 23ms, Results: 444
-Query: 'great firewall of china' - Duration: 116ms, Results: 3120
-Query: 'great firewall of china' - Duration: 131ms, Results: 3120
-Query: 'great firewall of china' - Duration: 110ms, Results: 3120
-Query: 'great firewall of china' - Duration: 112ms, Results: 3120
-Query: 'great firewall of china' - Duration: 111ms, Results: 3120
-Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38
-Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38
-Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38
-Query: 'ocean cleanup volunteer' - Duration: 3ms, Results: 38
-Query: 'ocean cleanup volunteer' - Duration: 3ms, Results: 38
-Query: 'sustainable living basics' - Duration: 5ms, Results: 44
-Query: 'sustainable living basics' - Duration: 4ms, Results: 44
-Query: 'sustainable living basics' - Duration: 4ms, Results: 44
-Query: 'sustainable living basics' - Duration: 4ms, Results: 44
-Query: 'sustainable living basics' - Duration: 5ms, Results: 44
-Query: 'state media bias examples' - Duration: 25ms, Results: 438
-Query: 'state media bias examples' - Duration: 24ms, Results: 438
-Query: 'state media bias examples' - Duration: 23ms, Results: 438
-Query: 'state media bias examples' - Duration: 28ms, Results: 438
-Query: 'state media bias examples' - Duration: 23ms, Results: 438
-Query: 'organic gardening guide' - Duration: 8ms, Results: 92
-Query: 'organic gardening guide' - Duration: 7ms, Results: 92
-Query: 'organic gardening guide' - Duration: 7ms, Results: 92
-Query: 'organic gardening guide' - Duration: 8ms, Results: 92
-Query: 'organic gardening guide' - Duration: 8ms, Results: 92
-Query: 'farmers market locations near me?' - Duration: 14ms, Results: 129
-Query: 'farmers market locations near me?' - Duration: 12ms, Results: 129
-Query: 'farmers market locations near me?' - Duration: 12ms, Results: 129
-Query: 'farmers market locations near me?' - Duration: 12ms, Results: 129
-Query: 'farmers market locations near me?' - Duration: 18ms, Results: 129
-Query: 'us china tech competition' - Duration: 35ms, Results: 625
-Query: 'us china tech competition' - Duration: 30ms, Results: 625
-Query: 'us china tech competition' - Duration: 30ms, Results: 625
-Query: 'us china tech competition' - Duration: 35ms, Results: 625
-Query: 'us china tech competition' - Duration: 30ms, Results: 625
-Query: 'art gallery events near me' - Duration: 322ms, Results: 9079
-Query: 'art gallery events near me' - Duration: 267ms, Results: 9079
-Query: 'art gallery events near me' - Duration: 293ms, Results: 9079
-Query: 'art gallery events near me' - Duration: 296ms, Results: 9079
-Query: 'art gallery events near me' - Duration: 289ms, Results: 9079
-Query: 'museum exhibitions 2024' - Duration: 23ms, Results: 360
-Query: 'museum exhibitions 2024' - Duration: 23ms, Results: 360
-Query: 'museum exhibitions 2024' - Duration: 28ms, Results: 360
-Query: 'museum exhibitions 2024' - Duration: 23ms, Results: 360
-Query: 'museum exhibitions 2024' - Duration: 22ms, Results: 360
-Query: 'huawei security concerns' - Duration: 20ms, Results: 248
-Query: 'huawei security concerns' - Duration: 20ms, Results: 248
-Query: 'huawei security concerns' - Duration: 19ms, Results: 248
-Query: 'huawei security concerns' - Duration: 19ms, Results: 248
-Query: 'huawei security concerns' - Duration: 19ms, Results: 248
-Query: 'jazz festival schedule' - Duration: 5ms, Results: 29
-Query: 'jazz festival schedule' - Duration: 4ms, Results: 29
-Query: 'jazz festival schedule' - Duration: 4ms, Results: 29
-Query: 'jazz festival schedule' - Duration: 4ms, Results: 29
-Query: 'jazz festival schedule' - Duration: 4ms, Results: 29
-Query: 'theater shows near me?' - Duration: 8ms, Results: 62
-Query: 'theater shows near me?' - Duration: 9ms, Results: 62
-Query: 'theater shows near me?' - Duration: 8ms, Results: 62
-Query: 'theater shows near me?' - Duration: 8ms, Results: 62
-Query: 'theater shows near me?' - Duration: 8ms, Results: 62
-Query: 'dance class beginners' - Duration: 11ms, Results: 46
-Query: 'dance class beginners' - Duration: 7ms, Results: 46
-Query: 'dance class beginners' - Duration: 6ms, Results: 46
-Query: 'dance class beginners' - Duration: 6ms, Results: 46
-Query: 'dance class beginners' - Duration: 6ms, Results: 46
-Query: 'social media censorship' - Duration: 22ms, Results: 216
-Query: 'social media censorship' - Duration: 19ms, Results: 216
-Query: 'social media censorship' - Duration: 19ms, Results: 216
-Query: 'social media censorship' - Duration: 19ms, Results: 216
-Query: 'social media censorship' - Duration: 18ms, Results: 216
-Query: 'piano tutorial basics' - Duration: 2ms, Results: 6
-Query: 'piano tutorial basics' - Duration: 2ms, Results: 6
-Query: 'piano tutorial basics' - Duration: 1ms, Results: 6
-Query: 'piano tutorial basics' - Duration: 4ms, Results: 6
-Query: 'piano tutorial basics' - Duration: 2ms, Results: 6
-Query: 'content moderation policies' - Duration: 18ms, Results: 162
-Query: 'content moderation policies' - Duration: 16ms, Results: 162
-Query: 'content moderation policies' - Duration: 16ms, Results: 162
-Query: 'content moderation policies' - Duration: 16ms, Results: 162
-Query: 'content moderation policies' - Duration: 16ms, Results: 162
-Query: 'music theory simplified' - Duration: 5ms, Results: 36
-Query: 'music theory simplified' - Duration: 5ms, Results: 36
-Query: 'music theory simplified' - Duration: 5ms, Results: 36
-Query: 'music theory simplified' - Duration: 5ms, Results: 36
-Query: 'music theory simplified' - Duration: 5ms, Results: 36
-Query: 'new fiction books 2024' - Duration: 44ms, Results: 683
-Query: 'new fiction books 2024' - Duration: 42ms, Results: 683
-Query: 'new fiction books 2024' - Duration: 40ms, Results: 683
-Query: 'new fiction books 2024' - Duration: 41ms, Results: 683
-Query: 'new fiction books 2024' - Duration: 43ms, Results: 683
-Query: 'tibet autonomy discussion' - Duration: 4ms, Results: 25
-Query: 'tibet autonomy discussion' - Duration: 4ms, Results: 25
-Query: 'tibet autonomy discussion' - Duration: 4ms, Results: 25
-Query: 'tibet autonomy discussion' - Duration: 3ms, Results: 25
-Query: 'tibet autonomy discussion' - Duration: 4ms, Results: 25
-Query: 'poetry writing tips' - Duration: 12ms, Results: 97
-Query: 'poetry writing tips' - Duration: 14ms, Results: 97
-Query: 'poetry writing tips' - Duration: 12ms, Results: 97
-Query: 'poetry writing tips' - Duration: 10ms, Results: 97
-Query: 'poetry writing tips' - Duration: 9ms, Results: 97
-Query: 'creative writing prompts???' - Duration: 6ms, Results: 49
-Query: 'creative writing prompts???' - Duration: 7ms, Results: 49
-Query: 'creative writing prompts???' - Duration: 6ms, Results: 49
-Query: 'creative writing prompts???' - Duration: 6ms, Results: 49
-Query: 'creative writing prompts???' - Duration: 8ms, Results: 49
-Query: 'government data collection' - Duration: 214ms, Results: 5778
-Query: 'government data collection' - Duration: 201ms, Results: 5778
-Query: 'government data collection' - Duration: 214ms, Results: 5778
-Query: 'government data collection' - Duration: 217ms, Results: 5778
-Query: 'government data collection' - Duration: 200ms, Results: 5778
-Query: 'documentary recommendations' - Duration: 10ms, Results: 37
-Query: 'documentary recommendations' - Duration: 7ms, Results: 37
-Query: 'documentary recommendations' - Duration: 9ms, Results: 37
-Query: 'documentary recommendations' - Duration: 8ms, Results: 37
-Query: 'documentary recommendations' - Duration: 6ms, Results: 37
-Query: 'movie reviews 2024' - Duration: 27ms, Results: 435
-Query: 'movie reviews 2024' - Duration: 25ms, Results: 435
-Query: 'movie reviews 2024' - Duration: 29ms, Results: 435
-Query: 'movie reviews 2024' - Duration: 25ms, Results: 435
-Query: 'movie reviews 2024' - Duration: 25ms, Results: 435
-Query: 'tech regulation debate' - Duration: 9ms, Results: 77
-Query: 'tech regulation debate' - Duration: 9ms, Results: 77
-Query: 'tech regulation debate' - Duration: 9ms, Results: 77
-Query: 'tech regulation debate' - Duration: 11ms, Results: 77
-Query: 'tech regulation debate' - Duration: 16ms, Results: 77
-Query: 'streaming service comparison' - Duration: 34ms, Results: 439
-Query: 'streaming service comparison' - Duration: 25ms, Results: 439
-Query: 'streaming service comparison' - Duration: 32ms, Results: 439
-Query: 'streaming service comparison' - Duration: 24ms, Results: 439
-Query: 'streaming service comparison' - Duration: 24ms, Results: 439
-Query: 'home repair basics' - Duration: 12ms, Results: 176
-Query: 'home repair basics' - Duration: 12ms, Results: 176
-Query: 'home repair basics' - Duration: 12ms, Results: 176
-Query: 'home repair basics' - Duration: 12ms, Results: 176
-Query: 'home repair basics' - Duration: 12ms, Results: 176
-Query: 'DIY furniture projects!' - Duration: 8ms, Results: 70
-Query: 'DIY furniture projects!' - Duration: 7ms, Results: 70
-Query: 'DIY furniture projects!' - Duration: 8ms, Results: 70
-Query: 'DIY furniture projects!' - Duration: 8ms, Results: 70
-Query: 'DIY furniture projects!' - Duration: 8ms, Results: 70
-Query: 'us election integrity?' - Duration: 31ms, Results: 533
-Query: 'us election integrity?' - Duration: 30ms, Results: 533
-Query: 'us election integrity?' - Duration: 30ms, Results: 533
-Query: 'us election integrity?' - Duration: 30ms, Results: 533
-Query: 'us election integrity?' - Duration: 29ms, Results: 533
-Query: 'interior decoration tips' - Duration: 5ms, Results: 53
-Query: 'interior decoration tips' - Duration: 5ms, Results: 53
-Query: 'interior decoration tips' - Duration: 5ms, Results: 53
-Query: 'interior decoration tips' - Duration: 6ms, Results: 53
-Query: 'interior decoration tips' - Duration: 6ms, Results: 53
-Query: 'free speech platforms' - Duration: 54ms, Results: 1328
-Query: 'free speech platforms' - Duration: 53ms, Results: 1328
-Query: 'free speech platforms' - Duration: 53ms, Results: 1328
-Query: 'free speech platforms' - Duration: 53ms, Results: 1328
-Query: 'free speech platforms' - Duration: 52ms, Results: 1328
-Query: 'natural cleaning solutions' - Duration: 9ms, Results: 92
-Query: 'natural cleaning solutions' - Duration: 11ms, Results: 92
-Query: 'natural cleaning solutions' - Duration: 13ms, Results: 92
-Query: 'natural cleaning solutions' - Duration: 10ms, Results: 92
-Query: 'natural cleaning solutions' - Duration: 10ms, Results: 92
-Query: 'essential oil benefits' - Duration: 23ms, Results: 211
-Query: 'essential oil benefits' - Duration: 13ms, Results: 211
-Query: 'essential oil benefits' - Duration: 13ms, Results: 211
-Query: 'essential oil benefits' - Duration: 14ms, Results: 211
-Query: 'essential oil benefits' - Duration: 12ms, Results: 211
-Query: 'censorship evidence 2024' - Duration: 26ms, Results: 443
-Query: 'censorship evidence 2024' - Duration: 26ms, Results: 443
-Query: 'censorship evidence 2024' - Duration: 26ms, Results: 443
-Query: 'censorship evidence 2024' - Duration: 27ms, Results: 443
-Query: 'censorship evidence 2024' - Duration: 26ms, Results: 443
-Query: 'vitamin deficiency symptoms' - Duration: 2ms, Results: 7
-Query: 'vitamin deficiency symptoms' - Duration: 1ms, Results: 7
-Query: 'vitamin deficiency symptoms' - Duration: 2ms, Results: 7
-Query: 'vitamin deficiency symptoms' - Duration: 1ms, Results: 7
-Query: 'vitamin deficiency symptoms' - Duration: 2ms, Results: 7
-Query: 'how to live healthier' - Duration: 122ms, Results: 2803
-Query: 'how to live healthier' - Duration: 114ms, Results: 2803
-Query: 'how to live healthier' - Duration: 116ms, Results: 2803
-Query: 'how to live healthier' - Duration: 121ms, Results: 2803
-Query: 'how to live healthier' - Duration: 116ms, Results: 2803
-Query: 'market manipulation exposed' - Duration: 7ms, Results: 63
-Query: 'market manipulation exposed' - Duration: 6ms, Results: 63
-Query: 'market manipulation exposed' - Duration: 7ms, Results: 63
-Query: 'market manipulation exposed' - Duration: 7ms, Results: 63
-Query: 'market manipulation exposed' - Duration: 7ms, Results: 63
-Query: 'why does my toddler misbehave' - Duration: 22ms, Results: 141
-Query: 'why does my toddler misbehave' - Duration: 17ms, Results: 141
-Query: 'why does my toddler misbehave' - Duration: 15ms, Results: 141
-Query: 'why does my toddler misbehave' - Duration: 22ms, Results: 141
-Query: 'why does my toddler misbehave' - Duration: 14ms, Results: 141
-Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494
-Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494
-Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494
-Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494
-Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494
-Query: 'relationship advice?' - Duration: 4ms, Results: 28
-Query: 'relationship advice?' - Duration: 4ms, Results: 28
-Query: 'relationship advice?' - Duration: 4ms, Results: 28
-Query: 'relationship advice?' - Duration: 4ms, Results: 28
-Query: 'relationship advice?' - Duration: 5ms, Results: 28
-Query: 'surveillance state expansion' - Duration: 23ms, Results: 313
-Query: 'surveillance state expansion' - Duration: 21ms, Results: 313
-Query: 'surveillance state expansion' - Duration: 20ms, Results: 313
-Query: 'surveillance state expansion' - Duration: 20ms, Results: 313
-Query: 'surveillance state expansion' - Duration: 20ms, Results: 313
-Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195
-Query: 'marriage counseling benefits' - Duration: 14ms, Results: 195
-Query: 'marriage counseling benefits' - Duration: 18ms, Results: 195
-Query: 'marriage counseling benefits' - Duration: 12ms, Results: 195
-Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195
-Query: 'car maintenance schedule' - Duration: 10ms, Results: 49
-Query: 'car maintenance schedule' - Duration: 10ms, Results: 49
-Query: 'car maintenance schedule' - Duration: 7ms, Results: 49
-Query: 'car maintenance schedule' - Duration: 7ms, Results: 49
-Query: 'car maintenance schedule' - Duration: 7ms, Results: 49
-Query: 'which electric car is best?' - Duration: 80ms, Results: 1615
-Query: 'which electric car is best?' - Duration: 76ms, Results: 1615
-Query: 'which electric car is best?' - Duration: 75ms, Results: 1615
-Query: 'which electric car is best?' - Duration: 73ms, Results: 1615
-Query: 'which electric car is best?' - Duration: 73ms, Results: 1615
-Query: 'human rights violations' - Duration: 21ms, Results: 355
-Query: 'human rights violations' - Duration: 20ms, Results: 355
-Query: 'human rights violations' - Duration: 21ms, Results: 355
-Query: 'human rights violations' - Duration: 21ms, Results: 355
-Query: 'human rights violations' - Duration: 21ms, Results: 355
-Query: 'public transport guide' - Duration: 24ms, Results: 381
-Query: 'public transport guide' - Duration: 24ms, Results: 381
-Query: 'public transport guide' - Duration: 24ms, Results: 381
-Query: 'public transport guide' - Duration: 24ms, Results: 381
-Query: 'public transport guide' - Duration: 24ms, Results: 381
-Query: 'travel destination reviews' - Duration: 9ms, Results: 116
-Query: 'travel destination reviews' - Duration: 8ms, Results: 116
-Query: 'travel destination reviews' - Duration: 8ms, Results: 116
-Query: 'travel destination reviews' - Duration: 8ms, Results: 116
-Query: 'travel destination reviews' - Duration: 8ms, Results: 116
-Query: 'tech privacy concerns 2024' - Duration: 45ms, Results: 792
-Query: 'tech privacy concerns 2024' - Duration: 42ms, Results: 792
-Query: 'tech privacy concerns 2024' - Duration: 41ms, Results: 792
-Query: 'tech privacy concerns 2024' - Duration: 41ms, Results: 792
-Query: 'tech privacy concerns 2024' - Duration: 41ms, Results: 792
-Query: 'camping gear essentials' - Duration: 1ms, Results: 1
-Query: 'camping gear essentials' - Duration: 1ms, Results: 1
-Query: 'camping gear essentials' - Duration: 1ms, Results: 1
-Query: 'camping gear essentials' - Duration: 1ms, Results: 1
-Query: 'camping gear essentials' - Duration: 1ms, Results: 1
-Query: 'hiking trails near me?' - Duration: 6ms, Results: 40
-Query: 'hiking trails near me?' - Duration: 6ms, Results: 40
-Query: 'hiking trails near me?' - Duration: 5ms, Results: 40
-Query: 'hiking trails near me?' - Duration: 6ms, Results: 40
-Query: 'hiking trails near me?' - Duration: 6ms, Results: 40
-Query: 'national park guides' - Duration: 40ms, Results: 852
-Query: 'national park guides' - Duration: 45ms, Results: 852
-Query: 'national park guides' - Duration: 50ms, Results: 852
-Query: 'national park guides' - Duration: 48ms, Results: 852
-Query: 'national park guides' - Duration: 50ms, Results: 852
-Query: 'freedom of speech online' - Duration: 139ms, Results: 3193
-Query: 'freedom of speech online' - Duration: 124ms, Results: 3193
-Query: 'freedom of speech online' - Duration: 127ms, Results: 3193
-Query: 'freedom of speech online' - Duration: 123ms, Results: 3193
-Query: 'freedom of speech online' - Duration: 131ms, Results: 3193
-Query: 'photography for beginners' - Duration: 141ms, Results: 3097
-Query: 'photography for beginners' - Duration: 114ms, Results: 3097
-Query: 'photography for beginners' - Duration: 117ms, Results: 3097
-Query: 'photography for beginners' - Duration: 121ms, Results: 3097
-Query: 'photography for beginners' - Duration: 115ms, Results: 3097
-Query: 'internet privacy guide' - Duration: 28ms, Results: 567
-Query: 'internet privacy guide' - Duration: 28ms, Results: 567
-Query: 'internet privacy guide' - Duration: 29ms, Results: 567
-Query: 'internet privacy guide' - Duration: 28ms, Results: 567
-Query: 'internet privacy guide' - Duration: 30ms, Results: 567
-Query: 'smartphone camera tips' - Duration: 6ms, Results: 54
-Query: 'smartphone camera tips' - Duration: 6ms, Results: 54
-Query: 'smartphone camera tips' - Duration: 6ms, Results: 54
-Query: 'smartphone camera tips' - Duration: 6ms, Results: 54
-Query: 'smartphone camera tips' - Duration: 6ms, Results: 54
-Query: 'video editing tutorials' - Duration: 10ms, Results: 115
-Query: 'video editing tutorials' - Duration: 10ms, Results: 115
-Query: 'video editing tutorials' - Duration: 10ms, Results: 115
-Query: 'video editing tutorials' - Duration: 10ms, Results: 115
-Query: 'video editing tutorials' - Duration: 10ms, Results: 115
-Query: 'us china relations update' - Duration: 41ms, Results: 746
-Query: 'us china relations update' - Duration: 39ms, Results: 746
-Query: 'us china relations update' - Duration: 38ms, Results: 746
-Query: 'us china relations update' - Duration: 38ms, Results: 746
-Query: 'us china relations update' - Duration: 39ms, Results: 746
-Query: 'painting techniques guide' - Duration: 9ms, Results: 100
-Query: 'painting techniques guide' - Duration: 9ms, Results: 100
-Query: 'painting techniques guide' - Duration: 9ms, Results: 100
-Query: 'painting techniques guide' - Duration: 9ms, Results: 100
-Query: 'painting techniques guide' - Duration: 9ms, Results: 100
-Query: 'drawing lessons online...' - Duration: 14ms, Results: 167
-Query: 'drawing lessons online...' - Duration: 14ms, Results: 167
-Query: 'drawing lessons online...' - Duration: 14ms, Results: 167
-Query: 'drawing lessons online...' - Duration: 14ms, Results: 167
-Query: 'drawing lessons online...' - Duration: 14ms, Results: 167
-Query: 'sculpture making basics' - Duration: 10ms, Results: 79
-Query: 'sculpture making basics' - Duration: 10ms, Results: 79
-Query: 'sculpture making basics' - Duration: 10ms, Results: 79
-Query: 'sculpture making basics' - Duration: 10ms, Results: 79
-Query: 'sculpture making basics' - Duration: 10ms, Results: 79
-Query: 'privacy focused alternatives' - Duration: 28ms, Results: 446
-Query: 'privacy focused alternatives' - Duration: 26ms, Results: 446
-Query: 'privacy focused alternatives' - Duration: 26ms, Results: 446
-Query: 'privacy focused alternatives' - Duration: 26ms, Results: 446
-Query: 'privacy focused alternatives' - Duration: 30ms, Results: 446
-Query: 'knitting patterns easy' - Duration: 11ms, Results: 26
-Query: 'knitting patterns easy' - Duration: 10ms, Results: 26
-Query: 'knitting patterns easy' - Duration: 7ms, Results: 26
-Query: 'knitting patterns easy' - Duration: 5ms, Results: 26
-Query: 'knitting patterns easy' - Duration: 9ms, Results: 26
-Query: 'sewing machine guide' - Duration: 16ms, Results: 105
-Query: 'sewing machine guide' - Duration: 9ms, Results: 105
-Query: 'sewing machine guide' - Duration: 8ms, Results: 105
-Query: 'sewing machine guide' - Duration: 8ms, Results: 105
-Query: 'sewing machine guide' - Duration: 9ms, Results: 105
-Query: 'state surveillance methods' - Duration: 21ms, Results: 314
-Query: 'state surveillance methods' - Duration: 19ms, Results: 314
-Query: 'state surveillance methods' - Duration: 27ms, Results: 314
-Query: 'state surveillance methods' - Duration: 20ms, Results: 314
-Query: 'state surveillance methods' - Duration: 19ms, Results: 314
-Query: 'jewelry making basics' - Duration: 10ms, Results: 79
-Query: 'jewelry making basics' - Duration: 10ms, Results: 79
-Query: 'jewelry making basics' - Duration: 10ms, Results: 79
-Query: 'jewelry making basics' - Duration: 11ms, Results: 79
-Query: 'jewelry making basics' - Duration: 10ms, Results: 79
-Query: 'cooking class schedule' - Duration: 7ms, Results: 52
-Query: 'cooking class schedule' - Duration: 7ms, Results: 52
-Query: 'cooking class schedule' - Duration: 7ms, Results: 52
-Query: 'cooking class schedule' - Duration: 7ms, Results: 52
-Query: 'cooking class schedule' - Duration: 7ms, Results: 52
-Query: 'how to bake bread?' - Duration: 130ms, Results: 2786
-Query: 'how to bake bread?' - Duration: 109ms, Results: 2786
-Query: 'how to bake bread?' - Duration: 114ms, Results: 2786
-Query: 'how to bake bread?' - Duration: 109ms, Results: 2786
-Query: 'how to bake bread?' - Duration: 109ms, Results: 2786
-Query: 'wine tasting basics' - Duration: 2ms, Results: 2
-Query: 'wine tasting basics' - Duration: 1ms, Results: 2
-Query: 'wine tasting basics' - Duration: 2ms, Results: 2
-Query: 'wine tasting basics' - Duration: 2ms, Results: 2
-Query: 'wine tasting basics' - Duration: 1ms, Results: 2
-Query: 'tech company regulations' - Duration: 20ms, Results: 202
-Query: 'tech company regulations' - Duration: 17ms, Results: 202
-Query: 'tech company regulations' - Duration: 17ms, Results: 202
-Query: 'tech company regulations' - Duration: 17ms, Results: 202
-Query: 'tech company regulations' - Duration: 18ms, Results: 202
-Query: 'coffee brewing guide' - Duration: 9ms, Results: 90
-Query: 'coffee brewing guide' - Duration: 8ms, Results: 90
-Query: 'coffee brewing guide' - Duration: 9ms, Results: 90
-Query: 'coffee brewing guide' - Duration: 8ms, Results: 90
-Query: 'coffee brewing guide' - Duration: 8ms, Results: 90
-Query: 'digital rights protection' - Duration: 28ms, Results: 402
-Query: 'digital rights protection' - Duration: 32ms, Results: 402
-Query: 'digital rights protection' - Duration: 23ms, Results: 402
-Query: 'digital rights protection' - Duration: 22ms, Results: 402
-Query: 'digital rights protection' - Duration: 22ms, Results: 402
-Query: 'organic food benefits' - Duration: 13ms, Results: 237
-Query: 'organic food benefits' - Duration: 13ms, Results: 237
-Query: 'organic food benefits' - Duration: 13ms, Results: 237
-Query: 'organic food benefits' - Duration: 13ms, Results: 237
-Query: 'organic food benefits' - Duration: 13ms, Results: 237
-Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22
-Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22
-Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22
-Query: 'vegetarian recipes easy' - Duration: 3ms, Results: 22
-Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22
-Query: 'information control tactics' - Duration: 37ms, Results: 644
-Query: 'information control tactics' - Duration: 36ms, Results: 644
-Query: 'information control tactics' - Duration: 35ms, Results: 644
-Query: 'information control tactics' - Duration: 36ms, Results: 644
-Query: 'information control tactics' - Duration: 36ms, Results: 644
-Query: 'food allergy testing' - Duration: 9ms, Results: 78
-Query: 'food allergy testing' - Duration: 11ms, Results: 78
-Query: 'food allergy testing' - Duration: 9ms, Results: 78
-Query: 'food allergy testing' - Duration: 9ms, Results: 78
-Query: 'food allergy testing' - Duration: 9ms, Results: 78
-Query: 'how to adopt a pet' - Duration: 162ms, Results: 3780
-Query: 'how to adopt a pet' - Duration: 149ms, Results: 3780
-Query: 'how to adopt a pet' - Duration: 149ms, Results: 3780
-Query: 'how to adopt a pet' - Duration: 146ms, Results: 3780
-Query: 'how to adopt a pet' - Duration: 157ms, Results: 3780
-Query: 'social credit implementation' - Duration: 25ms, Results: 185
-Query: 'social credit implementation' - Duration: 20ms, Results: 185
-Query: 'social credit implementation' - Duration: 14ms, Results: 185
-Query: 'social credit implementation' - Duration: 18ms, Results: 185
-Query: 'social credit implementation' - Duration: 15ms, Results: 185
-Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8
-Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8
-Query: 'wildlife sanctuary visits' - Duration: 3ms, Results: 8
-Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8
-Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8
-Query: 'zoo conservation programs!' - Duration: 17ms, Results: 210
-Query: 'zoo conservation programs!' - Duration: 13ms, Results: 210
-Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210
-Query: 'zoo conservation programs!' - Duration: 13ms, Results: 210
-Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210
-Query: 'civil rights violations' - Duration: 17ms, Results: 291
-Query: 'civil rights violations' - Duration: 17ms, Results: 291
-Query: 'civil rights violations' - Duration: 17ms, Results: 291
-Query: 'civil rights violations' - Duration: 17ms, Results: 291
-Query: 'civil rights violations' - Duration: 17ms, Results: 291
-Query: 'butterfly garden plants' - Duration: 3ms, Results: 14
-Query: 'butterfly garden plants' - Duration: 2ms, Results: 14
-Query: 'butterfly garden plants' - Duration: 2ms, Results: 14
-Query: 'butterfly garden plants' - Duration: 3ms, Results: 14
-Query: 'butterfly garden plants' - Duration: 2ms, Results: 14
-Query: 'bee friendly flowers' - Duration: 2ms, Results: 9
-Query: 'bee friendly flowers' - Duration: 2ms, Results: 9
-Query: 'bee friendly flowers' - Duration: 2ms, Results: 9
-Query: 'bee friendly flowers' - Duration: 2ms, Results: 9
-Query: 'bee friendly flowers' - Duration: 2ms, Results: 9
-Query: 'election security measures' - Duration: 23ms, Results: 245
-Query: 'election security measures' - Duration: 19ms, Results: 245
-Query: 'election security measures' - Duration: 20ms, Results: 245
-Query: 'election security measures' - Duration: 23ms, Results: 245
-Query: 'election security measures' - Duration: 19ms, Results: 245
-Query: 'urban gardening tips' - Duration: 10ms, Results: 61
-Query: 'urban gardening tips' - Duration: 10ms, Results: 61
-Query: 'urban gardening tips' - Duration: 8ms, Results: 61
-Query: 'urban gardening tips' - Duration: 7ms, Results: 61
-Query: 'urban gardening tips' - Duration: 6ms, Results: 61
-Query: 'community garden projects' - Duration: 22ms, Results: 332
-Query: 'community garden projects' - Duration: 21ms, Results: 332
-Query: 'community garden projects' - Duration: 21ms, Results: 332
-Query: 'community garden projects' - Duration: 21ms, Results: 332
-Query: 'community garden projects' - Duration: 21ms, Results: 332
-Query: 'volunteer opportunities local' - Duration: 18ms, Results: 279
-Query: 'volunteer opportunities local' - Duration: 18ms, Results: 279
-Query: 'volunteer opportunities local' - Duration: 19ms, Results: 279
-Query: 'volunteer opportunities local' - Duration: 18ms, Results: 279
-Query: 'volunteer opportunities local' - Duration: 18ms, Results: 279
-Query: 'privacy breach reporting' - Duration: 26ms, Results: 469
-Query: 'privacy breach reporting' - Duration: 25ms, Results: 469
-Query: 'privacy breach reporting' - Duration: 25ms, Results: 469
-Query: 'privacy breach reporting' - Duration: 24ms, Results: 469
-Query: 'privacy breach reporting' - Duration: 25ms, Results: 469
-Query: 'social clubs membership' - Duration: 17ms, Results: 194
-Query: 'social clubs membership' - Duration: 16ms, Results: 194
-Query: 'social clubs membership' - Duration: 15ms, Results: 194
-Query: 'social clubs membership' - Duration: 15ms, Results: 194
-Query: 'social clubs membership' - Duration: 15ms, Results: 194
-Query: 'data protection laws' - Duration: 42ms, Results: 618
-Query: 'data protection laws' - Duration: 50ms, Results: 618
-Query: 'data protection laws' - Duration: 37ms, Results: 618
-Query: 'data protection laws' - Duration: 36ms, Results: 618
-Query: 'data protection laws' - Duration: 35ms, Results: 618
-Query: 'local sports leagues' - Duration: 19ms, Results: 144
-Query: 'local sports leagues' - Duration: 16ms, Results: 144
-Query: 'local sports leagues' - Duration: 13ms, Results: 144
-Query: 'local sports leagues' - Duration: 12ms, Results: 144
-Query: 'local sports leagues' - Duration: 13ms, Results: 144
-Query: 'how to register to vote' - Duration: 118ms, Results: 2835
-Query: 'how to register to vote' - Duration: 113ms, Results: 2835
-Query: 'how to register to vote' - Duration: 114ms, Results: 2835
-Query: 'how to register to vote' - Duration: 116ms, Results: 2835
-Query: 'how to register to vote' - Duration: 124ms, Results: 2835
-Query: 'tax filing help' - Duration: 30ms, Results: 607
-Query: 'tax filing help' - Duration: 30ms, Results: 607
-Query: 'tax filing help' - Duration: 31ms, Results: 607
-Query: 'tax filing help' - Duration: 40ms, Results: 607
-Query: 'tax filing help' - Duration: 29ms, Results: 607
-Query: 'emergency preparation tips!' - Duration: 13ms, Results: 198
-Query: 'emergency preparation tips!' - Duration: 15ms, Results: 198
-Query: 'emergency preparation tips!' - Duration: 16ms, Results: 198
-Query: 'emergency preparation tips!' - Duration: 13ms, Results: 198
-Query: 'emergency preparation tips!' - Duration: 14ms, Results: 198
-Query: 'political censorship cases' - Duration: 9ms, Results: 90
-Query: 'political censorship cases' - Duration: 8ms, Results: 90
-Query: 'political censorship cases' - Duration: 8ms, Results: 90
-Query: 'political censorship cases' - Duration: 9ms, Results: 90
-Query: 'political censorship cases' - Duration: 8ms, Results: 90
-Query: 'first aid guide' - Duration: 21ms, Results: 262
-Query: 'first aid guide' - Duration: 20ms, Results: 262
-Query: 'first aid guide' - Duration: 21ms, Results: 262
-Query: 'first aid guide' - Duration: 20ms, Results: 262
-Query: 'first aid guide' - Duration: 20ms, Results: 262
-Query: 'CPR training courses' - Duration: 10ms, Results: 99
-Query: 'CPR training courses' - Duration: 10ms, Results: 99
-Query: 'CPR training courses' - Duration: 10ms, Results: 99
-Query: 'CPR training courses' - Duration: 10ms, Results: 99
-Query: 'CPR training courses' - Duration: 10ms, Results: 99
-Query: 'natural disaster plan' - Duration: 21ms, Results: 293
-Query: 'natural disaster plan' - Duration: 20ms, Results: 293
-Query: 'natural disaster plan' - Duration: 21ms, Results: 293
-Query: 'natural disaster plan' - Duration: 21ms, Results: 293
-Query: 'natural disaster plan' - Duration: 20ms, Results: 293
-Query: 'protest movement history' - Duration: 18ms, Results: 250
-Query: 'protest movement history' - Duration: 17ms, Results: 250
-Query: 'protest movement history' - Duration: 18ms, Results: 250
-Query: 'protest movement history' - Duration: 17ms, Results: 250
-Query: 'protest movement history' - Duration: 21ms, Results: 250
-Query: 'what causes climate change?' - Duration: 28ms, Results: 338
-Query: 'what causes climate change?' - Duration: 24ms, Results: 338
-Query: 'what causes climate change?' - Duration: 24ms, Results: 338
-Query: 'what causes climate change?' - Duration: 24ms, Results: 338
-Query: 'what causes climate change?' - Duration: 24ms, Results: 338
-Query: 'renewable energy home' - Duration: 15ms, Results: 215
-Query: 'renewable energy home' - Duration: 15ms, Results: 215
-Query: 'renewable energy home' - Duration: 15ms, Results: 215
-Query: 'renewable energy home' - Duration: 15ms, Results: 215
-Query: 'renewable energy home' - Duration: 15ms, Results: 215
-Query: 'internet restrictions bypass' - Duration: 10ms, Results: 116
-Query: 'internet restrictions bypass' - Duration: 12ms, Results: 116
-Query: 'internet restrictions bypass' - Duration: 11ms, Results: 116
-Query: 'internet restrictions bypass' - Duration: 10ms, Results: 116
-Query: 'internet restrictions bypass' - Duration: 12ms, Results: 116
-Query: 'zero waste shopping' - Duration: 5ms, Results: 26
-Query: 'zero waste shopping' - Duration: 9ms, Results: 26
-Query: 'zero waste shopping' - Duration: 11ms, Results: 26
-Query: 'zero waste shopping' - Duration: 4ms, Results: 26
-Query: 'zero waste shopping' - Duration: 6ms, Results: 26
-Query: 'minimalist living guide' - Duration: 14ms, Results: 120
-Query: 'minimalist living guide' - Duration: 10ms, Results: 120
-Query: 'minimalist living guide' - Duration: 10ms, Results: 120
-Query: 'minimalist living guide' - Duration: 10ms, Results: 120
-Query: 'minimalist living guide' - Duration: 11ms, Results: 120
-Query: 'surveillance technology 2024' - Duration: 96ms, Results: 2172
-Query: 'surveillance technology 2024' - Duration: 90ms, Results: 2172
-Query: 'surveillance technology 2024' - Duration: 87ms, Results: 2172
-Query: 'surveillance technology 2024' - Duration: 84ms, Results: 2172
-Query: 'surveillance technology 2024' - Duration: 86ms, Results: 2172
-Query: 'housing market guide' - Duration: 15ms, Results: 196
-Query: 'housing market guide' - Duration: 20ms, Results: 196
-Query: 'housing market guide' - Duration: 18ms, Results: 196
-Query: 'housing market guide' - Duration: 14ms, Results: 196
-Query: 'housing market guide' - Duration: 14ms, Results: 196
-Query: 'mortgage basics explained' - Duration: 3ms, Results: 20
-Query: 'mortgage basics explained' - Duration: 3ms, Results: 20
-Query: 'mortgage basics explained' - Duration: 4ms, Results: 20
-Query: 'mortgage basics explained' - Duration: 3ms, Results: 20
-Query: 'mortgage basics explained' - Duration: 4ms, Results: 20
-Query: 'real estate terms' - Duration: 17ms, Results: 259
-Query: 'real estate terms' - Duration: 17ms, Results: 259
-Query: 'real estate terms' - Duration: 17ms, Results: 259
-Query: 'real estate terms' - Duration: 17ms, Results: 259
-Query: 'real estate terms' - Duration: 17ms, Results: 259
-Query: 'how does stock market work' - Duration: 50ms, Results: 951
-Query: 'how does stock market work' - Duration: 47ms, Results: 951
-Query: 'how does stock market work' - Duration: 46ms, Results: 951
-Query: 'how does stock market work' - Duration: 45ms, Results: 951
-Query: 'how does stock market work' - Duration: 45ms, Results: 951
-Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66
-Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66
-Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66
-Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66
-Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66
-Query: 'insurance types guide' - Duration: 16ms, Results: 186
-Query: 'insurance types guide' - Duration: 16ms, Results: 186
-Query: 'insurance types guide' - Duration: 15ms, Results: 186
-Query: 'insurance types guide' - Duration: 15ms, Results: 186
-Query: 'insurance types guide' - Duration: 15ms, Results: 186
-Query: 'small business tips' - Duration: 24ms, Results: 238
-Query: 'small business tips' - Duration: 18ms, Results: 238
-Query: 'small business tips' - Duration: 23ms, Results: 238
-Query: 'small business tips' - Duration: 21ms, Results: 238
-Query: 'small business tips' - Duration: 21ms, Results: 238
-Query: 'tech privacy violations' - Duration: 29ms, Results: 475
-Query: 'tech privacy violations' - Duration: 26ms, Results: 475
-Query: 'tech privacy violations' - Duration: 26ms, Results: 475
-Query: 'tech privacy violations' - Duration: 26ms, Results: 475
-Query: 'tech privacy violations' - Duration: 26ms, Results: 475
-Query: 'marketing guide simple' - Duration: 12ms, Results: 130
-Query: 'marketing guide simple' - Duration: 11ms, Results: 130
-Query: 'marketing guide simple' - Duration: 11ms, Results: 130
-Query: 'marketing guide simple' - Duration: 13ms, Results: 130
-Query: 'marketing guide simple' - Duration: 12ms, Results: 130
-Query: 'social media tips' - Duration: 19ms, Results: 255
-Query: 'social media tips' - Duration: 19ms, Results: 255
-Query: 'social media tips' - Duration: 19ms, Results: 255
-Query: 'social media tips' - Duration: 19ms, Results: 255
-Query: 'social media tips' - Duration: 19ms, Results: 255
-Query: 'website creation basics?' - Duration: 12ms, Results: 109
-Query: 'website creation basics?' - Duration: 11ms, Results: 109
-Query: 'website creation basics?' - Duration: 11ms, Results: 109
-Query: 'website creation basics?' - Duration: 11ms, Results: 109
-Query: 'website creation basics?' - Duration: 11ms, Results: 109
-Query: 'data tracking prevention' - Duration: 32ms, Results: 511
-Query: 'data tracking prevention' - Duration: 31ms, Results: 511
-Query: 'data tracking prevention' - Duration: 31ms, Results: 511
-Query: 'data tracking prevention' - Duration: 30ms, Results: 511
-Query: 'data tracking prevention' - Duration: 30ms, Results: 511
-Query: 'smartphone tricks' - Duration: 2ms, Results: 16
-Query: 'smartphone tricks' - Duration: 2ms, Results: 16
-Query: 'smartphone tricks' - Duration: 2ms, Results: 16
-Query: 'smartphone tricks' - Duration: 2ms, Results: 16
-Query: 'smartphone tricks' - Duration: 2ms, Results: 16
-Query: 'internet safety basics' - Duration: 17ms, Results: 192
-Query: 'internet safety basics' - Duration: 16ms, Results: 192
-Query: 'internet safety basics' - Duration: 16ms, Results: 192
-Query: 'internet safety basics' - Duration: 16ms, Results: 192
-Query: 'internet safety basics' - Duration: 16ms, Results: 192
-Query: 'online shopping guide' - Duration: 19ms, Results: 251
-Query: 'online shopping guide' - Duration: 18ms, Results: 251
-Query: 'online shopping guide' - Duration: 18ms, Results: 251
-Query: 'online shopping guide' - Duration: 18ms, Results: 251
-Query: 'online shopping guide' - Duration: 18ms, Results: 251
-Query: 'human rights activism guide' - Duration: 28ms, Results: 445
-Query: 'human rights activism guide' - Duration: 27ms, Results: 445
-Query: 'human rights activism guide' - Duration: 27ms, Results: 445
-Query: 'human rights activism guide' - Duration: 27ms, Results: 445
-Query: 'human rights activism guide' - Duration: 29ms, Results: 445
-Query: 'consumer rights basics' - Duration: 22ms, Results: 352
-Query: 'consumer rights basics' - Duration: 20ms, Results: 352
-Query: 'consumer rights basics' - Duration: 19ms, Results: 352
-Query: 'consumer rights basics' - Duration: 20ms, Results: 352
-Query: 'consumer rights basics' - Duration: 20ms, Results: 352
-Query: 'digital surveillance methods' - Duration: 11ms, Results: 92
-Query: 'digital surveillance methods' - Duration: 9ms, Results: 92
-Query: 'digital surveillance methods' - Duration: 10ms, Results: 92
-Query: 'digital surveillance methods' - Duration: 9ms, Results: 92
-Query: 'digital surveillance methods' - Duration: 10ms, Results: 92
-Query: 'bicycle maintenance' - Duration: 2ms, Results: 8
-Query: 'bicycle maintenance' - Duration: 2ms, Results: 8
-Query: 'bicycle maintenance' - Duration: 2ms, Results: 8
-Query: 'bicycle maintenance' - Duration: 2ms, Results: 8
-Query: 'bicycle maintenance' - Duration: 3ms, Results: 8
-Query: 'home security tips!!!' - Duration: 37ms, Results: 426
-Query: 'home security tips!!!' - Duration: 27ms, Results: 426
-Query: 'home security tips!!!' - Duration: 27ms, Results: 426
-Query: 'home security tips!!!' - Duration: 27ms, Results: 426
-Query: 'home security tips!!!' - Duration: 27ms, Results: 426
-Query: 'gardening vegetables guide' - Duration: 8ms, Results: 91
-Query: 'gardening vegetables guide' - Duration: 11ms, Results: 91
-Query: 'gardening vegetables guide' - Duration: 10ms, Results: 91
-Query: 'gardening vegetables guide' - Duration: 9ms, Results: 91
-Query: 'gardening vegetables guide' - Duration: 10ms, Results: 91
-Query: 'content control systems' - Duration: 24ms, Results: 242
-Query: 'content control systems' - Duration: 20ms, Results: 242
-Query: 'content control systems' - Duration: 22ms, Results: 242
-Query: 'content control systems' - Duration: 20ms, Results: 242
-Query: 'content control systems' - Duration: 20ms, Results: 242
-Query: 'cooking techniques' - Duration: 2ms, Results: 10
-Query: 'cooking techniques' - Duration: 2ms, Results: 10
-Query: 'cooking techniques' - Duration: 2ms, Results: 10
-Query: 'cooking techniques' - Duration: 2ms, Results: 10
-Query: 'cooking techniques' - Duration: 5ms, Results: 10
-Query: 'personal finance basics' - Duration: 12ms, Results: 95
-Query: 'personal finance basics' - Duration: 11ms, Results: 95
-Query: 'personal finance basics' - Duration: 10ms, Results: 95
-Query: 'personal finance basics' - Duration: 10ms, Results: 95
-Query: 'personal finance basics' - Duration: 10ms, Results: 95
-Query: 'protest rights explained' - Duration: 17ms, Results: 267
-Query: 'protest rights explained' - Duration: 17ms, Results: 267
-Query: 'protest rights explained' - Duration: 19ms, Results: 267
-Query: 'protest rights explained' - Duration: 18ms, Results: 267
-Query: 'protest rights explained' - Duration: 19ms, Results: 267
-Query: 'meditation techniques' - Duration: 4ms, Results: 8
-Query: 'meditation techniques' - Duration: 1ms, Results: 8
-Query: 'meditation techniques' - Duration: 2ms, Results: 8
-Query: 'meditation techniques' - Duration: 1ms, Results: 8
-Query: 'meditation techniques' - Duration: 2ms, Results: 8
-Query: 'press freedom analysis' - Duration: 24ms, Results: 401
-Query: 'press freedom analysis' - Duration: 24ms, Results: 401
-Query: 'press freedom analysis' - Duration: 23ms, Results: 401
-Query: 'press freedom analysis' - Duration: 25ms, Results: 401
-Query: 'press freedom analysis' - Duration: 23ms, Results: 401
-Query: 'photography basics' - Duration: 2ms, Results: 8
-Query: 'photography basics' - Duration: 1ms, Results: 8
-Query: 'photography basics' - Duration: 2ms, Results: 8
-Query: 'photography basics' - Duration: 1ms, Results: 8
-Query: 'photography basics' - Duration: 2ms, Results: 8
-Query: 'writing tips creative' - Duration: 9ms, Results: 97
-Query: 'writing tips creative' - Duration: 10ms, Results: 97
-Query: 'writing tips creative' - Duration: 12ms, Results: 97
-Query: 'writing tips creative' - Duration: 10ms, Results: 97
-Query: 'writing tips creative' - Duration: 11ms, Results: 97
-Query: 'government monitoring tools' - Duration: 198ms, Results: 5448
-Query: 'government monitoring tools' - Duration: 215ms, Results: 5448
-Query: 'government monitoring tools' - Duration: 238ms, Results: 5448
-Query: 'government monitoring tools' - Duration: 229ms, Results: 5448
-Query: 'government monitoring tools' - Duration: 204ms, Results: 5448
-Query: 'chess strategy basics' - Duration: 8ms, Results: 26
-Query: 'chess strategy basics' - Duration: 11ms, Results: 26
-Query: 'chess strategy basics' - Duration: 9ms, Results: 26
-Query: 'chess strategy basics' - Duration: 5ms, Results: 26
-Query: 'chess strategy basics' - Duration: 8ms, Results: 26
-Query: 'how to learn new language' - Duration: 122ms, Results: 3040
-Query: 'how to learn new language' - Duration: 128ms, Results: 3040
-Query: 'how to learn new language' - Duration: 125ms, Results: 3040
-Query: 'how to learn new language' - Duration: 118ms, Results: 3040
-Query: 'how to learn new language' - Duration: 119ms, Results: 3040
-Query: 'privacy tools comparison' - Duration: 27ms, Results: 473
-Query: 'privacy tools comparison' - Duration: 26ms, Results: 473
-Query: 'privacy tools comparison' - Duration: 26ms, Results: 473
-Query: 'privacy tools comparison' - Duration: 26ms, Results: 473
-Query: 'privacy tools comparison' - Duration: 26ms, Results: 473
-Query: 'public speaking help' - Duration: 44ms, Results: 827
-Query: 'public speaking help' - Duration: 41ms, Results: 827
-Query: 'public speaking help' - Duration: 40ms, Results: 827
-Query: 'public speaking help' - Duration: 40ms, Results: 827
-Query: 'public speaking help' - Duration: 41ms, Results: 827
-Query: 'resume writing tips' - Duration: 9ms, Results: 89
-Query: 'resume writing tips' - Duration: 8ms, Results: 89
-Query: 'resume writing tips' - Duration: 9ms, Results: 89
-Query: 'resume writing tips' - Duration: 12ms, Results: 89
-Query: 'resume writing tips' - Duration: 11ms, Results: 89
-Query: 'tech censorship report' - Duration: 19ms, Results: 205
-Query: 'tech censorship report' - Duration: 18ms, Results: 205
-Query: 'tech censorship report' - Duration: 20ms, Results: 205
-Query: 'tech censorship report' - Duration: 17ms, Results: 205
-Query: 'tech censorship report' - Duration: 17ms, Results: 205
-Query: 'healthy recipes quick' - Duration: 4ms, Results: 30
-Query: 'healthy recipes quick' - Duration: 5ms, Results: 30
-Query: 'healthy recipes quick' - Duration: 4ms, Results: 30
-Query: 'healthy recipes quick' - Duration: 4ms, Results: 30
-Query: 'healthy recipes quick' - Duration: 4ms, Results: 30
-Query: 'stress relief techniques' - Duration: 4ms, Results: 27
-Query: 'stress relief techniques' - Duration: 4ms, Results: 27
-Query: 'stress relief techniques' - Duration: 4ms, Results: 27
-Query: 'stress relief techniques' - Duration: 4ms, Results: 27
-Query: 'stress relief techniques' - Duration: 4ms, Results: 27
+Query: 'how to make chocolate chip cookies' - Duration: 136ms, Results: 2802, Thread: ThreadId(7)
+Query: 'how to make chocolate chip cookies' - Duration: 110ms, Results: 2802, Thread: ThreadId(7)
+Query: 'how to make chocolate chip cookies' - Duration: 99ms, Results: 2802, Thread: ThreadId(7)
+Query: 'how to make chocolate chip cookies' - Duration: 105ms, Results: 2802, Thread: ThreadId(7)
+Query: 'how to make chocolate chip cookies' - Duration: 100ms, Results: 2802, Thread: ThreadId(7)
+Query: 'what is mass surveillance?' - Duration: 63ms, Results: 1602, Thread: ThreadId(7)
+Query: 'what is mass surveillance?' - Duration: 63ms, Results: 1602, Thread: ThreadId(7)
+Query: 'what is mass surveillance?' - Duration: 63ms, Results: 1602, Thread: ThreadId(7)
+Query: 'what is mass surveillance?' - Duration: 64ms, Results: 1602, Thread: ThreadId(7)
+Query: 'what is mass surveillance?' - Duration: 69ms, Results: 1602, Thread: ThreadId(7)
+Query: 'how to grow tomatoes indoors' - Duration: 101ms, Results: 2789, Thread: ThreadId(7)
+Query: 'how to grow tomatoes indoors' - Duration: 102ms, Results: 2789, Thread: ThreadId(7)
+Query: 'how to grow tomatoes indoors' - Duration: 102ms, Results: 2789, Thread: ThreadId(7)
+Query: 'how to grow tomatoes indoors' - Duration: 101ms, Results: 2789, Thread: ThreadId(7)
+Query: 'how to grow tomatoes indoors' - Duration: 98ms, Results: 2789, Thread: ThreadId(7)
+Query: 'chinese internet censorship' - Duration: 18ms, Results: 173, Thread: ThreadId(7)
+Query: 'chinese internet censorship' - Duration: 11ms, Results: 173, Thread: ThreadId(7)
+Query: 'chinese internet censorship' - Duration: 11ms, Results: 173, Thread: ThreadId(7)
+Query: 'chinese internet censorship' - Duration: 11ms, Results: 173, Thread: ThreadId(7)
+Query: 'chinese internet censorship' - Duration: 11ms, Results: 173, Thread: ThreadId(7)
+Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295, Thread: ThreadId(7)
+Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295, Thread: ThreadId(7)
+Query: 'why does my cat meow so much' - Duration: 23ms, Results: 295, Thread: ThreadId(7)
+Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295, Thread: ThreadId(7)
+Query: 'why does my cat meow so much' - Duration: 21ms, Results: 295, Thread: ThreadId(7)
+Query: 'how to spot fake cameras?' - Duration: 108ms, Results: 2787, Thread: ThreadId(7)
+Query: 'how to spot fake cameras?' - Duration: 98ms, Results: 2787, Thread: ThreadId(7)
+Query: 'how to spot fake cameras?' - Duration: 99ms, Results: 2787, Thread: ThreadId(7)
+Query: 'how to spot fake cameras?' - Duration: 102ms, Results: 2787, Thread: ThreadId(7)
+Query: 'how to spot fake cameras?' - Duration: 100ms, Results: 2787, Thread: ThreadId(7)
+Query: 'best family board games' - Duration: 22ms, Results: 365, Thread: ThreadId(7)
+Query: 'best family board games' - Duration: 21ms, Results: 365, Thread: ThreadId(7)
+Query: 'best family board games' - Duration: 21ms, Results: 365, Thread: ThreadId(7)
+Query: 'best family board games' - Duration: 21ms, Results: 365, Thread: ThreadId(7)
+Query: 'best family board games' - Duration: 21ms, Results: 365, Thread: ThreadId(7)
+Query: 'us privacy laws comparison' - Duration: 41ms, Results: 985, Thread: ThreadId(7)
+Query: 'us privacy laws comparison' - Duration: 47ms, Results: 985, Thread: ThreadId(7)
+Query: 'us privacy laws comparison' - Duration: 43ms, Results: 985, Thread: ThreadId(7)
+Query: 'us privacy laws comparison' - Duration: 45ms, Results: 985, Thread: ThreadId(7)
+Query: 'us privacy laws comparison' - Duration: 40ms, Results: 985, Thread: ThreadId(7)
+Query: 'weather forecast next week' - Duration: 40ms, Results: 348, Thread: ThreadId(7)
+Query: 'weather forecast next week' - Duration: 19ms, Results: 348, Thread: ThreadId(7)
+Query: 'weather forecast next week' - Duration: 18ms, Results: 348, Thread: ThreadId(7)
+Query: 'weather forecast next week' - Duration: 17ms, Results: 348, Thread: ThreadId(7)
+Query: 'weather forecast next week' - Duration: 18ms, Results: 348, Thread: ThreadId(7)
+Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47, Thread: ThreadId(7)
+Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47, Thread: ThreadId(7)
+Query: 'healthy breakfast ideas' - Duration: 6ms, Results: 47, Thread: ThreadId(7)
+Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47, Thread: ThreadId(7)
+Query: 'healthy breakfast ideas' - Duration: 5ms, Results: 47, Thread: ThreadId(7)
+Query: 'tech company data collection' - Duration: 33ms, Results: 604, Thread: ThreadId(7)
+Query: 'tech company data collection' - Duration: 31ms, Results: 604, Thread: ThreadId(7)
+Query: 'tech company data collection' - Duration: 31ms, Results: 604, Thread: ThreadId(7)
+Query: 'tech company data collection' - Duration: 32ms, Results: 604, Thread: ThreadId(7)
+Query: 'tech company data collection' - Duration: 31ms, Results: 604, Thread: ThreadId(7)
+Query: 'meditation for beginners guide' - Duration: 107ms, Results: 3151, Thread: ThreadId(7)
+Query: 'meditation for beginners guide' - Duration: 105ms, Results: 3151, Thread: ThreadId(7)
+Query: 'meditation for beginners guide' - Duration: 105ms, Results: 3151, Thread: ThreadId(7)
+Query: 'meditation for beginners guide' - Duration: 105ms, Results: 3151, Thread: ThreadId(7)
+Query: 'meditation for beginners guide' - Duration: 103ms, Results: 3151, Thread: ThreadId(7)
+Query: 'hong kong protests evidence...' - Duration: 7ms, Results: 99, Thread: ThreadId(7)
+Query: 'hong kong protests evidence...' - Duration: 6ms, Results: 99, Thread: ThreadId(7)
+Query: 'hong kong protests evidence...' - Duration: 11ms, Results: 99, Thread: ThreadId(7)
+Query: 'hong kong protests evidence...' - Duration: 11ms, Results: 99, Thread: ThreadId(7)
+Query: 'hong kong protests evidence...' - Duration: 9ms, Results: 99, Thread: ThreadId(7)
+Query: 'yoga poses for back pain' - Duration: 111ms, Results: 3111, Thread: ThreadId(7)
+Query: 'yoga poses for back pain' - Duration: 104ms, Results: 3111, Thread: ThreadId(7)
+Query: 'yoga poses for back pain' - Duration: 105ms, Results: 3111, Thread: ThreadId(7)
+Query: 'yoga poses for back pain' - Duration: 105ms, Results: 3111, Thread: ThreadId(7)
+Query: 'yoga poses for back pain' - Duration: 105ms, Results: 3111, Thread: ThreadId(7)
+Query: 'China social credit score' - Duration: 15ms, Results: 217, Thread: ThreadId(7)
+Query: 'China social credit score' - Duration: 15ms, Results: 217, Thread: ThreadId(7)
+Query: 'China social credit score' - Duration: 15ms, Results: 217, Thread: ThreadId(7)
+Query: 'China social credit score' - Duration: 15ms, Results: 217, Thread: ThreadId(7)
+Query: 'China social credit score' - Duration: 15ms, Results: 217, Thread: ThreadId(7)
+Query: 'how to make bread at home' - Duration: 112ms, Results: 3103, Thread: ThreadId(7)
+Query: 'how to make bread at home' - Duration: 110ms, Results: 3103, Thread: ThreadId(7)
+Query: 'how to make bread at home' - Duration: 110ms, Results: 3103, Thread: ThreadId(7)
+Query: 'how to make bread at home' - Duration: 109ms, Results: 3103, Thread: ThreadId(7)
+Query: 'how to make bread at home' - Duration: 110ms, Results: 3103, Thread: ThreadId(7)
+Query: 'whistleblower protection rights' - Duration: 17ms, Results: 343, Thread: ThreadId(7)
+Query: 'whistleblower protection rights' - Duration: 17ms, Results: 343, Thread: ThreadId(7)
+Query: 'whistleblower protection rights' - Duration: 22ms, Results: 343, Thread: ThreadId(7)
+Query: 'whistleblower protection rights' - Duration: 18ms, Results: 343, Thread: ThreadId(7)
+Query: 'whistleblower protection rights' - Duration: 16ms, Results: 343, Thread: ThreadId(7)
+Query: 'pet adoption process' - Duration: 14ms, Results: 123, Thread: ThreadId(7)
+Query: 'pet adoption process' - Duration: 10ms, Results: 123, Thread: ThreadId(7)
+Query: 'pet adoption process' - Duration: 10ms, Results: 123, Thread: ThreadId(7)
+Query: 'pet adoption process' - Duration: 13ms, Results: 123, Thread: ThreadId(7)
+Query: 'pet adoption process' - Duration: 13ms, Results: 123, Thread: ThreadId(7)
+Query: 'what data do companies collect?' - Duration: 41ms, Results: 808, Thread: ThreadId(7)
+Query: 'what data do companies collect?' - Duration: 40ms, Results: 808, Thread: ThreadId(7)
+Query: 'what data do companies collect?' - Duration: 39ms, Results: 808, Thread: ThreadId(7)
+Query: 'what data do companies collect?' - Duration: 39ms, Results: 808, Thread: ThreadId(7)
+Query: 'what data do companies collect?' - Duration: 39ms, Results: 808, Thread: ThreadId(7)
+Query: 'vegan protein sources' - Duration: 5ms, Results: 56, Thread: ThreadId(7)
+Query: 'vegan protein sources' - Duration: 5ms, Results: 56, Thread: ThreadId(7)
+Query: 'vegan protein sources' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'vegan protein sources' - Duration: 5ms, Results: 56, Thread: ThreadId(7)
+Query: 'vegan protein sources' - Duration: 5ms, Results: 56, Thread: ThreadId(7)
+Query: 'facial recognition in china' - Duration: 82ms, Results: 2159, Thread: ThreadId(7)
+Query: 'facial recognition in china' - Duration: 79ms, Results: 2159, Thread: ThreadId(7)
+Query: 'facial recognition in china' - Duration: 79ms, Results: 2159, Thread: ThreadId(7)
+Query: 'facial recognition in china' - Duration: 80ms, Results: 2159, Thread: ThreadId(7)
+Query: 'facial recognition in china' - Duration: 80ms, Results: 2159, Thread: ThreadId(7)
+Query: 'keto diet beginners guide' - Duration: 8ms, Results: 92, Thread: ThreadId(7)
+Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92, Thread: ThreadId(7)
+Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92, Thread: ThreadId(7)
+Query: 'keto diet beginners guide' - Duration: 7ms, Results: 92, Thread: ThreadId(7)
+Query: 'keto diet beginners guide' - Duration: 8ms, Results: 92, Thread: ThreadId(7)
+Query: 'concentration camps investigation' - Duration: 3ms, Results: 21, Thread: ThreadId(7)
+Query: 'concentration camps investigation' - Duration: 2ms, Results: 21, Thread: ThreadId(7)
+Query: 'concentration camps investigation' - Duration: 2ms, Results: 21, Thread: ThreadId(7)
+Query: 'concentration camps investigation' - Duration: 3ms, Results: 21, Thread: ThreadId(7)
+Query: 'concentration camps investigation' - Duration: 2ms, Results: 21, Thread: ThreadId(7)
+Query: 'wildlife photography tips' - Duration: 5ms, Results: 60, Thread: ThreadId(7)
+Query: 'wildlife photography tips' - Duration: 5ms, Results: 60, Thread: ThreadId(7)
+Query: 'wildlife photography tips' - Duration: 5ms, Results: 60, Thread: ThreadId(7)
+Query: 'wildlife photography tips' - Duration: 5ms, Results: 60, Thread: ThreadId(7)
+Query: 'wildlife photography tips' - Duration: 5ms, Results: 60, Thread: ThreadId(7)
+Query: 'digital privacy violations' - Duration: 22ms, Results: 477, Thread: ThreadId(7)
+Query: 'digital privacy violations' - Duration: 22ms, Results: 477, Thread: ThreadId(7)
+Query: 'digital privacy violations' - Duration: 22ms, Results: 477, Thread: ThreadId(7)
+Query: 'digital privacy violations' - Duration: 31ms, Results: 477, Thread: ThreadId(7)
+Query: 'digital privacy violations' - Duration: 22ms, Results: 477, Thread: ThreadId(7)
+Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'popular podcast recommendations' - Duration: 6ms, Results: 56, Thread: ThreadId(7)
+Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35, Thread: ThreadId(7)
+Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35, Thread: ThreadId(7)
+Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35, Thread: ThreadId(7)
+Query: 'taiwan independence debate?' - Duration: 3ms, Results: 35, Thread: ThreadId(7)
+Query: 'taiwan independence debate?' - Duration: 4ms, Results: 35, Thread: ThreadId(7)
+Query: 'best books 2024' - Duration: 23ms, Results: 431, Thread: ThreadId(7)
+Query: 'best books 2024' - Duration: 23ms, Results: 431, Thread: ThreadId(7)
+Query: 'best books 2024' - Duration: 23ms, Results: 431, Thread: ThreadId(7)
+Query: 'best books 2024' - Duration: 23ms, Results: 431, Thread: ThreadId(7)
+Query: 'best books 2024' - Duration: 23ms, Results: 431, Thread: ThreadId(7)
+Query: 'police surveillance methods' - Duration: 5ms, Results: 33, Thread: ThreadId(7)
+Query: 'police surveillance methods' - Duration: 3ms, Results: 33, Thread: ThreadId(7)
+Query: 'police surveillance methods' - Duration: 6ms, Results: 33, Thread: ThreadId(7)
+Query: 'police surveillance methods' - Duration: 4ms, Results: 33, Thread: ThreadId(7)
+Query: 'police surveillance methods' - Duration: 4ms, Results: 33, Thread: ThreadId(7)
+Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13, Thread: ThreadId(7)
+Query: 'ancient civilization discoveries' - Duration: 3ms, Results: 13, Thread: ThreadId(7)
+Query: 'ancient civilization discoveries' - Duration: 1ms, Results: 13, Thread: ThreadId(7)
+Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13, Thread: ThreadId(7)
+Query: 'ancient civilization discoveries' - Duration: 2ms, Results: 13, Thread: ThreadId(7)
+Query: 'cia surveillance programs' - Duration: 13ms, Results: 211, Thread: ThreadId(7)
+Query: 'cia surveillance programs' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'cia surveillance programs' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'cia surveillance programs' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'cia surveillance programs' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'online privacy protection basics' - Duration: 28ms, Results: 611, Thread: ThreadId(7)
+Query: 'online privacy protection basics' - Duration: 27ms, Results: 611, Thread: ThreadId(7)
+Query: 'online privacy protection basics' - Duration: 28ms, Results: 611, Thread: ThreadId(7)
+Query: 'online privacy protection basics' - Duration: 28ms, Results: 611, Thread: ThreadId(7)
+Query: 'online privacy protection basics' - Duration: 31ms, Results: 611, Thread: ThreadId(7)
+Query: 'secure password tips' - Duration: 15ms, Results: 264, Thread: ThreadId(7)
+Query: 'secure password tips' - Duration: 14ms, Results: 264, Thread: ThreadId(7)
+Query: 'secure password tips' - Duration: 13ms, Results: 264, Thread: ThreadId(7)
+Query: 'secure password tips' - Duration: 12ms, Results: 264, Thread: ThreadId(7)
+Query: 'secure password tips' - Duration: 12ms, Results: 264, Thread: ThreadId(7)
+Query: 'propaganda identification guide' - Duration: 8ms, Results: 96, Thread: ThreadId(7)
+Query: 'propaganda identification guide' - Duration: 7ms, Results: 96, Thread: ThreadId(7)
+Query: 'propaganda identification guide' - Duration: 7ms, Results: 96, Thread: ThreadId(7)
+Query: 'propaganda identification guide' - Duration: 7ms, Results: 96, Thread: ThreadId(7)
+Query: 'propaganda identification guide' - Duration: 7ms, Results: 96, Thread: ThreadId(7)
+Query: 'how to spot fake news' - Duration: 113ms, Results: 3147, Thread: ThreadId(7)
+Query: 'how to spot fake news' - Duration: 112ms, Results: 3147, Thread: ThreadId(7)
+Query: 'how to spot fake news' - Duration: 112ms, Results: 3147, Thread: ThreadId(7)
+Query: 'how to spot fake news' - Duration: 112ms, Results: 3147, Thread: ThreadId(7)
+Query: 'how to spot fake news' - Duration: 111ms, Results: 3147, Thread: ThreadId(7)
+Query: 'electoral system analysis?' - Duration: 21ms, Results: 391, Thread: ThreadId(7)
+Query: 'electoral system analysis?' - Duration: 21ms, Results: 391, Thread: ThreadId(7)
+Query: 'electoral system analysis?' - Duration: 21ms, Results: 391, Thread: ThreadId(7)
+Query: 'electoral system analysis?' - Duration: 22ms, Results: 391, Thread: ThreadId(7)
+Query: 'electoral system analysis?' - Duration: 20ms, Results: 391, Thread: ThreadId(7)
+Query: 'how to write college essays' - Duration: 102ms, Results: 2858, Thread: ThreadId(7)
+Query: 'how to write college essays' - Duration: 101ms, Results: 2858, Thread: ThreadId(7)
+Query: 'how to write college essays' - Duration: 102ms, Results: 2858, Thread: ThreadId(7)
+Query: 'how to write college essays' - Duration: 103ms, Results: 2858, Thread: ThreadId(7)
+Query: 'how to write college essays' - Duration: 103ms, Results: 2858, Thread: ThreadId(7)
+Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112, Thread: ThreadId(7)
+Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112, Thread: ThreadId(7)
+Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112, Thread: ThreadId(7)
+Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112, Thread: ThreadId(7)
+Query: 'tech monopoly regulations' - Duration: 10ms, Results: 112, Thread: ThreadId(7)
+Query: 'job interview preparation...' - Duration: 8ms, Results: 84, Thread: ThreadId(7)
+Query: 'job interview preparation...' - Duration: 8ms, Results: 84, Thread: ThreadId(7)
+Query: 'job interview preparation...' - Duration: 8ms, Results: 84, Thread: ThreadId(7)
+Query: 'job interview preparation...' - Duration: 8ms, Results: 84, Thread: ThreadId(7)
+Query: 'job interview preparation...' - Duration: 8ms, Results: 84, Thread: ThreadId(7)
+Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470, Thread: ThreadId(7)
+Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470, Thread: ThreadId(7)
+Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470, Thread: ThreadId(7)
+Query: 'xinjiang human rights report' - Duration: 24ms, Results: 470, Thread: ThreadId(7)
+Query: 'xinjiang human rights report' - Duration: 25ms, Results: 470, Thread: ThreadId(7)
+Query: 'how to help environment?' - Duration: 115ms, Results: 2929, Thread: ThreadId(7)
+Query: 'how to help environment?' - Duration: 115ms, Results: 2929, Thread: ThreadId(7)
+Query: 'how to help environment?' - Duration: 117ms, Results: 2929, Thread: ThreadId(7)
+Query: 'how to help environment?' - Duration: 116ms, Results: 2929, Thread: ThreadId(7)
+Query: 'how to help environment?' - Duration: 114ms, Results: 2929, Thread: ThreadId(7)
+Query: 'plastic recycling guide' - Duration: 9ms, Results: 91, Thread: ThreadId(7)
+Query: 'plastic recycling guide' - Duration: 7ms, Results: 91, Thread: ThreadId(7)
+Query: 'plastic recycling guide' - Duration: 8ms, Results: 91, Thread: ThreadId(7)
+Query: 'plastic recycling guide' - Duration: 8ms, Results: 91, Thread: ThreadId(7)
+Query: 'plastic recycling guide' - Duration: 8ms, Results: 91, Thread: ThreadId(7)
+Query: 'endangered animals list 2024' - Duration: 29ms, Results: 444, Thread: ThreadId(7)
+Query: 'endangered animals list 2024' - Duration: 28ms, Results: 444, Thread: ThreadId(7)
+Query: 'endangered animals list 2024' - Duration: 28ms, Results: 444, Thread: ThreadId(7)
+Query: 'endangered animals list 2024' - Duration: 28ms, Results: 444, Thread: ThreadId(7)
+Query: 'endangered animals list 2024' - Duration: 28ms, Results: 444, Thread: ThreadId(7)
+Query: 'great firewall of china' - Duration: 127ms, Results: 3120, Thread: ThreadId(7)
+Query: 'great firewall of china' - Duration: 119ms, Results: 3120, Thread: ThreadId(7)
+Query: 'great firewall of china' - Duration: 121ms, Results: 3120, Thread: ThreadId(7)
+Query: 'great firewall of china' - Duration: 121ms, Results: 3120, Thread: ThreadId(7)
+Query: 'great firewall of china' - Duration: 121ms, Results: 3120, Thread: ThreadId(7)
+Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38, Thread: ThreadId(7)
+Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38, Thread: ThreadId(7)
+Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38, Thread: ThreadId(7)
+Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38, Thread: ThreadId(7)
+Query: 'ocean cleanup volunteer' - Duration: 4ms, Results: 38, Thread: ThreadId(7)
+Query: 'sustainable living basics' - Duration: 5ms, Results: 44, Thread: ThreadId(7)
+Query: 'sustainable living basics' - Duration: 5ms, Results: 44, Thread: ThreadId(7)
+Query: 'sustainable living basics' - Duration: 5ms, Results: 44, Thread: ThreadId(7)
+Query: 'sustainable living basics' - Duration: 5ms, Results: 44, Thread: ThreadId(7)
+Query: 'sustainable living basics' - Duration: 5ms, Results: 44, Thread: ThreadId(7)
+Query: 'state media bias examples' - Duration: 28ms, Results: 438, Thread: ThreadId(7)
+Query: 'state media bias examples' - Duration: 28ms, Results: 438, Thread: ThreadId(7)
+Query: 'state media bias examples' - Duration: 27ms, Results: 438, Thread: ThreadId(7)
+Query: 'state media bias examples' - Duration: 27ms, Results: 438, Thread: ThreadId(7)
+Query: 'state media bias examples' - Duration: 27ms, Results: 438, Thread: ThreadId(7)
+Query: 'organic gardening guide' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'organic gardening guide' - Duration: 8ms, Results: 92, Thread: ThreadId(7)
+Query: 'organic gardening guide' - Duration: 8ms, Results: 92, Thread: ThreadId(7)
+Query: 'organic gardening guide' - Duration: 8ms, Results: 92, Thread: ThreadId(7)
+Query: 'organic gardening guide' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'farmers market locations near me?' - Duration: 14ms, Results: 129, Thread: ThreadId(7)
+Query: 'farmers market locations near me?' - Duration: 13ms, Results: 129, Thread: ThreadId(7)
+Query: 'farmers market locations near me?' - Duration: 14ms, Results: 129, Thread: ThreadId(7)
+Query: 'farmers market locations near me?' - Duration: 14ms, Results: 129, Thread: ThreadId(7)
+Query: 'farmers market locations near me?' - Duration: 14ms, Results: 129, Thread: ThreadId(7)
+Query: 'us china tech competition' - Duration: 39ms, Results: 625, Thread: ThreadId(7)
+Query: 'us china tech competition' - Duration: 37ms, Results: 625, Thread: ThreadId(7)
+Query: 'us china tech competition' - Duration: 37ms, Results: 625, Thread: ThreadId(7)
+Query: 'us china tech competition' - Duration: 36ms, Results: 625, Thread: ThreadId(7)
+Query: 'us china tech competition' - Duration: 35ms, Results: 625, Thread: ThreadId(7)
+Query: 'art gallery events near me' - Duration: 290ms, Results: 9079, Thread: ThreadId(7)
+Query: 'art gallery events near me' - Duration: 281ms, Results: 9079, Thread: ThreadId(7)
+Query: 'art gallery events near me' - Duration: 279ms, Results: 9079, Thread: ThreadId(7)
+Query: 'art gallery events near me' - Duration: 291ms, Results: 9079, Thread: ThreadId(7)
+Query: 'art gallery events near me' - Duration: 284ms, Results: 9079, Thread: ThreadId(7)
+Query: 'museum exhibitions 2024' - Duration: 23ms, Results: 360, Thread: ThreadId(7)
+Query: 'museum exhibitions 2024' - Duration: 26ms, Results: 360, Thread: ThreadId(7)
+Query: 'museum exhibitions 2024' - Duration: 23ms, Results: 360, Thread: ThreadId(7)
+Query: 'museum exhibitions 2024' - Duration: 21ms, Results: 360, Thread: ThreadId(7)
+Query: 'museum exhibitions 2024' - Duration: 21ms, Results: 360, Thread: ThreadId(7)
+Query: 'huawei security concerns' - Duration: 19ms, Results: 248, Thread: ThreadId(7)
+Query: 'huawei security concerns' - Duration: 20ms, Results: 248, Thread: ThreadId(7)
+Query: 'huawei security concerns' - Duration: 17ms, Results: 248, Thread: ThreadId(7)
+Query: 'huawei security concerns' - Duration: 18ms, Results: 248, Thread: ThreadId(7)
+Query: 'huawei security concerns' - Duration: 18ms, Results: 248, Thread: ThreadId(7)
+Query: 'jazz festival schedule' - Duration: 5ms, Results: 29, Thread: ThreadId(7)
+Query: 'jazz festival schedule' - Duration: 4ms, Results: 29, Thread: ThreadId(7)
+Query: 'jazz festival schedule' - Duration: 4ms, Results: 29, Thread: ThreadId(7)
+Query: 'jazz festival schedule' - Duration: 4ms, Results: 29, Thread: ThreadId(7)
+Query: 'jazz festival schedule' - Duration: 4ms, Results: 29, Thread: ThreadId(7)
+Query: 'theater shows near me?' - Duration: 7ms, Results: 62, Thread: ThreadId(7)
+Query: 'theater shows near me?' - Duration: 9ms, Results: 62, Thread: ThreadId(7)
+Query: 'theater shows near me?' - Duration: 8ms, Results: 62, Thread: ThreadId(7)
+Query: 'theater shows near me?' - Duration: 8ms, Results: 62, Thread: ThreadId(7)
+Query: 'theater shows near me?' - Duration: 8ms, Results: 62, Thread: ThreadId(7)
+Query: 'dance class beginners' - Duration: 5ms, Results: 46, Thread: ThreadId(7)
+Query: 'dance class beginners' - Duration: 5ms, Results: 46, Thread: ThreadId(7)
+Query: 'dance class beginners' - Duration: 5ms, Results: 46, Thread: ThreadId(7)
+Query: 'dance class beginners' - Duration: 5ms, Results: 46, Thread: ThreadId(7)
+Query: 'dance class beginners' - Duration: 5ms, Results: 46, Thread: ThreadId(7)
+Query: 'social media censorship' - Duration: 18ms, Results: 216, Thread: ThreadId(7)
+Query: 'social media censorship' - Duration: 18ms, Results: 216, Thread: ThreadId(7)
+Query: 'social media censorship' - Duration: 18ms, Results: 216, Thread: ThreadId(7)
+Query: 'social media censorship' - Duration: 18ms, Results: 216, Thread: ThreadId(7)
+Query: 'social media censorship' - Duration: 18ms, Results: 216, Thread: ThreadId(7)
+Query: 'piano tutorial basics' - Duration: 1ms, Results: 6, Thread: ThreadId(7)
+Query: 'piano tutorial basics' - Duration: 2ms, Results: 6, Thread: ThreadId(7)
+Query: 'piano tutorial basics' - Duration: 1ms, Results: 6, Thread: ThreadId(7)
+Query: 'piano tutorial basics' - Duration: 2ms, Results: 6, Thread: ThreadId(7)
+Query: 'piano tutorial basics' - Duration: 1ms, Results: 6, Thread: ThreadId(7)
+Query: 'content moderation policies' - Duration: 16ms, Results: 162, Thread: ThreadId(7)
+Query: 'content moderation policies' - Duration: 16ms, Results: 162, Thread: ThreadId(7)
+Query: 'content moderation policies' - Duration: 17ms, Results: 162, Thread: ThreadId(7)
+Query: 'content moderation policies' - Duration: 22ms, Results: 162, Thread: ThreadId(7)
+Query: 'content moderation policies' - Duration: 16ms, Results: 162, Thread: ThreadId(7)
+Query: 'music theory simplified' - Duration: 6ms, Results: 36, Thread: ThreadId(7)
+Query: 'music theory simplified' - Duration: 10ms, Results: 36, Thread: ThreadId(7)
+Query: 'music theory simplified' - Duration: 5ms, Results: 36, Thread: ThreadId(7)
+Query: 'music theory simplified' - Duration: 5ms, Results: 36, Thread: ThreadId(7)
+Query: 'music theory simplified' - Duration: 5ms, Results: 36, Thread: ThreadId(7)
+Query: 'new fiction books 2024' - Duration: 43ms, Results: 683, Thread: ThreadId(7)
+Query: 'new fiction books 2024' - Duration: 38ms, Results: 683, Thread: ThreadId(7)
+Query: 'new fiction books 2024' - Duration: 38ms, Results: 683, Thread: ThreadId(7)
+Query: 'new fiction books 2024' - Duration: 38ms, Results: 683, Thread: ThreadId(7)
+Query: 'new fiction books 2024' - Duration: 38ms, Results: 683, Thread: ThreadId(7)
+Query: 'tibet autonomy discussion' - Duration: 4ms, Results: 25, Thread: ThreadId(7)
+Query: 'tibet autonomy discussion' - Duration: 3ms, Results: 25, Thread: ThreadId(7)
+Query: 'tibet autonomy discussion' - Duration: 3ms, Results: 25, Thread: ThreadId(7)
+Query: 'tibet autonomy discussion' - Duration: 3ms, Results: 25, Thread: ThreadId(7)
+Query: 'tibet autonomy discussion' - Duration: 3ms, Results: 25, Thread: ThreadId(7)
+Query: 'poetry writing tips' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'poetry writing tips' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'poetry writing tips' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'poetry writing tips' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'poetry writing tips' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'creative writing prompts???' - Duration: 6ms, Results: 49, Thread: ThreadId(7)
+Query: 'creative writing prompts???' - Duration: 8ms, Results: 49, Thread: ThreadId(7)
+Query: 'creative writing prompts???' - Duration: 8ms, Results: 49, Thread: ThreadId(7)
+Query: 'creative writing prompts???' - Duration: 8ms, Results: 49, Thread: ThreadId(7)
+Query: 'creative writing prompts???' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'government data collection' - Duration: 205ms, Results: 5778, Thread: ThreadId(7)
+Query: 'government data collection' - Duration: 191ms, Results: 5778, Thread: ThreadId(7)
+Query: 'government data collection' - Duration: 196ms, Results: 5778, Thread: ThreadId(7)
+Query: 'government data collection' - Duration: 190ms, Results: 5778, Thread: ThreadId(7)
+Query: 'government data collection' - Duration: 190ms, Results: 5778, Thread: ThreadId(7)
+Query: 'documentary recommendations' - Duration: 5ms, Results: 37, Thread: ThreadId(7)
+Query: 'documentary recommendations' - Duration: 4ms, Results: 37, Thread: ThreadId(7)
+Query: 'documentary recommendations' - Duration: 5ms, Results: 37, Thread: ThreadId(7)
+Query: 'documentary recommendations' - Duration: 5ms, Results: 37, Thread: ThreadId(7)
+Query: 'documentary recommendations' - Duration: 5ms, Results: 37, Thread: ThreadId(7)
+Query: 'movie reviews 2024' - Duration: 27ms, Results: 435, Thread: ThreadId(7)
+Query: 'movie reviews 2024' - Duration: 26ms, Results: 435, Thread: ThreadId(7)
+Query: 'movie reviews 2024' - Duration: 26ms, Results: 435, Thread: ThreadId(7)
+Query: 'movie reviews 2024' - Duration: 26ms, Results: 435, Thread: ThreadId(7)
+Query: 'movie reviews 2024' - Duration: 26ms, Results: 435, Thread: ThreadId(7)
+Query: 'tech regulation debate' - Duration: 13ms, Results: 77, Thread: ThreadId(7)
+Query: 'tech regulation debate' - Duration: 11ms, Results: 77, Thread: ThreadId(7)
+Query: 'tech regulation debate' - Duration: 22ms, Results: 77, Thread: ThreadId(7)
+Query: 'tech regulation debate' - Duration: 12ms, Results: 77, Thread: ThreadId(7)
+Query: 'tech regulation debate' - Duration: 9ms, Results: 77, Thread: ThreadId(7)
+Query: 'streaming service comparison' - Duration: 26ms, Results: 439, Thread: ThreadId(7)
+Query: 'streaming service comparison' - Duration: 26ms, Results: 439, Thread: ThreadId(7)
+Query: 'streaming service comparison' - Duration: 30ms, Results: 439, Thread: ThreadId(7)
+Query: 'streaming service comparison' - Duration: 27ms, Results: 439, Thread: ThreadId(7)
+Query: 'streaming service comparison' - Duration: 26ms, Results: 439, Thread: ThreadId(7)
+Query: 'home repair basics' - Duration: 13ms, Results: 176, Thread: ThreadId(7)
+Query: 'home repair basics' - Duration: 13ms, Results: 176, Thread: ThreadId(7)
+Query: 'home repair basics' - Duration: 17ms, Results: 176, Thread: ThreadId(7)
+Query: 'home repair basics' - Duration: 14ms, Results: 176, Thread: ThreadId(7)
+Query: 'home repair basics' - Duration: 18ms, Results: 176, Thread: ThreadId(7)
+Query: 'DIY furniture projects!' - Duration: 9ms, Results: 70, Thread: ThreadId(7)
+Query: 'DIY furniture projects!' - Duration: 8ms, Results: 70, Thread: ThreadId(7)
+Query: 'DIY furniture projects!' - Duration: 7ms, Results: 70, Thread: ThreadId(7)
+Query: 'DIY furniture projects!' - Duration: 9ms, Results: 70, Thread: ThreadId(7)
+Query: 'DIY furniture projects!' - Duration: 9ms, Results: 70, Thread: ThreadId(7)
+Query: 'us election integrity?' - Duration: 36ms, Results: 533, Thread: ThreadId(7)
+Query: 'us election integrity?' - Duration: 29ms, Results: 533, Thread: ThreadId(7)
+Query: 'us election integrity?' - Duration: 29ms, Results: 533, Thread: ThreadId(7)
+Query: 'us election integrity?' - Duration: 29ms, Results: 533, Thread: ThreadId(7)
+Query: 'us election integrity?' - Duration: 30ms, Results: 533, Thread: ThreadId(7)
+Query: 'interior decoration tips' - Duration: 14ms, Results: 53, Thread: ThreadId(7)
+Query: 'interior decoration tips' - Duration: 12ms, Results: 53, Thread: ThreadId(7)
+Query: 'interior decoration tips' - Duration: 6ms, Results: 53, Thread: ThreadId(7)
+Query: 'interior decoration tips' - Duration: 9ms, Results: 53, Thread: ThreadId(7)
+Query: 'interior decoration tips' - Duration: 8ms, Results: 53, Thread: ThreadId(7)
+Query: 'free speech platforms' - Duration: 54ms, Results: 1328, Thread: ThreadId(7)
+Query: 'free speech platforms' - Duration: 58ms, Results: 1328, Thread: ThreadId(7)
+Query: 'free speech platforms' - Duration: 56ms, Results: 1328, Thread: ThreadId(7)
+Query: 'free speech platforms' - Duration: 53ms, Results: 1328, Thread: ThreadId(7)
+Query: 'free speech platforms' - Duration: 50ms, Results: 1328, Thread: ThreadId(7)
+Query: 'natural cleaning solutions' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'natural cleaning solutions' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'natural cleaning solutions' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'natural cleaning solutions' - Duration: 9ms, Results: 92, Thread: ThreadId(7)
+Query: 'natural cleaning solutions' - Duration: 10ms, Results: 92, Thread: ThreadId(7)
+Query: 'essential oil benefits' - Duration: 16ms, Results: 211, Thread: ThreadId(7)
+Query: 'essential oil benefits' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'essential oil benefits' - Duration: 17ms, Results: 211, Thread: ThreadId(7)
+Query: 'essential oil benefits' - Duration: 14ms, Results: 211, Thread: ThreadId(7)
+Query: 'essential oil benefits' - Duration: 12ms, Results: 211, Thread: ThreadId(7)
+Query: 'censorship evidence 2024' - Duration: 36ms, Results: 443, Thread: ThreadId(7)
+Query: 'censorship evidence 2024' - Duration: 34ms, Results: 443, Thread: ThreadId(7)
+Query: 'censorship evidence 2024' - Duration: 28ms, Results: 443, Thread: ThreadId(7)
+Query: 'censorship evidence 2024' - Duration: 25ms, Results: 443, Thread: ThreadId(7)
+Query: 'censorship evidence 2024' - Duration: 25ms, Results: 443, Thread: ThreadId(7)
+Query: 'vitamin deficiency symptoms' - Duration: 2ms, Results: 7, Thread: ThreadId(7)
+Query: 'vitamin deficiency symptoms' - Duration: 1ms, Results: 7, Thread: ThreadId(7)
+Query: 'vitamin deficiency symptoms' - Duration: 2ms, Results: 7, Thread: ThreadId(7)
+Query: 'vitamin deficiency symptoms' - Duration: 1ms, Results: 7, Thread: ThreadId(7)
+Query: 'vitamin deficiency symptoms' - Duration: 1ms, Results: 7, Thread: ThreadId(7)
+Query: 'how to live healthier' - Duration: 117ms, Results: 2803, Thread: ThreadId(7)
+Query: 'how to live healthier' - Duration: 111ms, Results: 2803, Thread: ThreadId(7)
+Query: 'how to live healthier' - Duration: 110ms, Results: 2803, Thread: ThreadId(7)
+Query: 'how to live healthier' - Duration: 112ms, Results: 2803, Thread: ThreadId(7)
+Query: 'how to live healthier' - Duration: 109ms, Results: 2803, Thread: ThreadId(7)
+Query: 'market manipulation exposed' - Duration: 6ms, Results: 63, Thread: ThreadId(7)
+Query: 'market manipulation exposed' - Duration: 6ms, Results: 63, Thread: ThreadId(7)
+Query: 'market manipulation exposed' - Duration: 7ms, Results: 63, Thread: ThreadId(7)
+Query: 'market manipulation exposed' - Duration: 6ms, Results: 63, Thread: ThreadId(7)
+Query: 'market manipulation exposed' - Duration: 7ms, Results: 63, Thread: ThreadId(7)
+Query: 'why does my toddler misbehave' - Duration: 13ms, Results: 141, Thread: ThreadId(7)
+Query: 'why does my toddler misbehave' - Duration: 14ms, Results: 141, Thread: ThreadId(7)
+Query: 'why does my toddler misbehave' - Duration: 14ms, Results: 141, Thread: ThreadId(7)
+Query: 'why does my toddler misbehave' - Duration: 13ms, Results: 141, Thread: ThreadId(7)
+Query: 'why does my toddler misbehave' - Duration: 14ms, Results: 141, Thread: ThreadId(7)
+Query: 'family activity ideas weekend' - Duration: 27ms, Results: 494, Thread: ThreadId(7)
+Query: 'family activity ideas weekend' - Duration: 27ms, Results: 494, Thread: ThreadId(7)
+Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494, Thread: ThreadId(7)
+Query: 'family activity ideas weekend' - Duration: 26ms, Results: 494, Thread: ThreadId(7)
+Query: 'family activity ideas weekend' - Duration: 27ms, Results: 494, Thread: ThreadId(7)
+Query: 'relationship advice?' - Duration: 4ms, Results: 28, Thread: ThreadId(7)
+Query: 'relationship advice?' - Duration: 4ms, Results: 28, Thread: ThreadId(7)
+Query: 'relationship advice?' - Duration: 4ms, Results: 28, Thread: ThreadId(7)
+Query: 'relationship advice?' - Duration: 4ms, Results: 28, Thread: ThreadId(7)
+Query: 'relationship advice?' - Duration: 4ms, Results: 28, Thread: ThreadId(7)
+Query: 'surveillance state expansion' - Duration: 20ms, Results: 313, Thread: ThreadId(7)
+Query: 'surveillance state expansion' - Duration: 21ms, Results: 313, Thread: ThreadId(7)
+Query: 'surveillance state expansion' - Duration: 20ms, Results: 313, Thread: ThreadId(7)
+Query: 'surveillance state expansion' - Duration: 20ms, Results: 313, Thread: ThreadId(7)
+Query: 'surveillance state expansion' - Duration: 20ms, Results: 313, Thread: ThreadId(7)
+Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195, Thread: ThreadId(7)
+Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195, Thread: ThreadId(7)
+Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195, Thread: ThreadId(7)
+Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195, Thread: ThreadId(7)
+Query: 'marriage counseling benefits' - Duration: 11ms, Results: 195, Thread: ThreadId(7)
+Query: 'car maintenance schedule' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'car maintenance schedule' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'car maintenance schedule' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'car maintenance schedule' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'car maintenance schedule' - Duration: 7ms, Results: 49, Thread: ThreadId(7)
+Query: 'which electric car is best?' - Duration: 96ms, Results: 1615, Thread: ThreadId(7)
+Query: 'which electric car is best?' - Duration: 80ms, Results: 1615, Thread: ThreadId(7)
+Query: 'which electric car is best?' - Duration: 87ms, Results: 1615, Thread: ThreadId(7)
+Query: 'which electric car is best?' - Duration: 72ms, Results: 1615, Thread: ThreadId(7)
+Query: 'which electric car is best?' - Duration: 71ms, Results: 1615, Thread: ThreadId(7)
+Query: 'human rights violations' - Duration: 21ms, Results: 355, Thread: ThreadId(7)
+Query: 'human rights violations' - Duration: 20ms, Results: 355, Thread: ThreadId(7)
+Query: 'human rights violations' - Duration: 20ms, Results: 355, Thread: ThreadId(7)
+Query: 'human rights violations' - Duration: 21ms, Results: 355, Thread: ThreadId(7)
+Query: 'human rights violations' - Duration: 21ms, Results: 355, Thread: ThreadId(7)
+Query: 'public transport guide' - Duration: 25ms, Results: 381, Thread: ThreadId(7)
+Query: 'public transport guide' - Duration: 25ms, Results: 381, Thread: ThreadId(7)
+Query: 'public transport guide' - Duration: 25ms, Results: 381, Thread: ThreadId(7)
+Query: 'public transport guide' - Duration: 25ms, Results: 381, Thread: ThreadId(7)
+Query: 'public transport guide' - Duration: 24ms, Results: 381, Thread: ThreadId(7)
+Query: 'travel destination reviews' - Duration: 8ms, Results: 116, Thread: ThreadId(7)
+Query: 'travel destination reviews' - Duration: 8ms, Results: 116, Thread: ThreadId(7)
+Query: 'travel destination reviews' - Duration: 10ms, Results: 116, Thread: ThreadId(7)
+Query: 'travel destination reviews' - Duration: 10ms, Results: 116, Thread: ThreadId(7)
+Query: 'travel destination reviews' - Duration: 15ms, Results: 116, Thread: ThreadId(7)
+Query: 'tech privacy concerns 2024' - Duration: 45ms, Results: 792, Thread: ThreadId(7)
+Query: 'tech privacy concerns 2024' - Duration: 42ms, Results: 792, Thread: ThreadId(7)
+Query: 'tech privacy concerns 2024' - Duration: 41ms, Results: 792, Thread: ThreadId(7)
+Query: 'tech privacy concerns 2024' - Duration: 42ms, Results: 792, Thread: ThreadId(7)
+Query: 'tech privacy concerns 2024' - Duration: 41ms, Results: 792, Thread: ThreadId(7)
+Query: 'camping gear essentials' - Duration: 2ms, Results: 1, Thread: ThreadId(7)
+Query: 'camping gear essentials' - Duration: 1ms, Results: 1, Thread: ThreadId(7)
+Query: 'camping gear essentials' - Duration: 1ms, Results: 1, Thread: ThreadId(7)
+Query: 'camping gear essentials' - Duration: 1ms, Results: 1, Thread: ThreadId(7)
+Query: 'camping gear essentials' - Duration: 1ms, Results: 1, Thread: ThreadId(7)
+Query: 'hiking trails near me?' - Duration: 6ms, Results: 40, Thread: ThreadId(7)
+Query: 'hiking trails near me?' - Duration: 6ms, Results: 40, Thread: ThreadId(7)
+Query: 'hiking trails near me?' - Duration: 5ms, Results: 40, Thread: ThreadId(7)
+Query: 'hiking trails near me?' - Duration: 6ms, Results: 40, Thread: ThreadId(7)
+Query: 'hiking trails near me?' - Duration: 6ms, Results: 40, Thread: ThreadId(7)
+Query: 'national park guides' - Duration: 41ms, Results: 852, Thread: ThreadId(7)
+Query: 'national park guides' - Duration: 42ms, Results: 852, Thread: ThreadId(7)
+Query: 'national park guides' - Duration: 39ms, Results: 852, Thread: ThreadId(7)
+Query: 'national park guides' - Duration: 39ms, Results: 852, Thread: ThreadId(7)
+Query: 'national park guides' - Duration: 52ms, Results: 852, Thread: ThreadId(7)
+Query: 'freedom of speech online' - Duration: 132ms, Results: 3193, Thread: ThreadId(7)
+Query: 'freedom of speech online' - Duration: 122ms, Results: 3193, Thread: ThreadId(7)
+Query: 'freedom of speech online' - Duration: 125ms, Results: 3193, Thread: ThreadId(7)
+Query: 'freedom of speech online' - Duration: 122ms, Results: 3193, Thread: ThreadId(7)
+Query: 'freedom of speech online' - Duration: 123ms, Results: 3193, Thread: ThreadId(7)
+Query: 'photography for beginners' - Duration: 117ms, Results: 3097, Thread: ThreadId(7)
+Query: 'photography for beginners' - Duration: 119ms, Results: 3097, Thread: ThreadId(7)
+Query: 'photography for beginners' - Duration: 114ms, Results: 3097, Thread: ThreadId(7)
+Query: 'photography for beginners' - Duration: 114ms, Results: 3097, Thread: ThreadId(7)
+Query: 'photography for beginners' - Duration: 114ms, Results: 3097, Thread: ThreadId(7)
+Query: 'internet privacy guide' - Duration: 30ms, Results: 567, Thread: ThreadId(7)
+Query: 'internet privacy guide' - Duration: 39ms, Results: 567, Thread: ThreadId(7)
+Query: 'internet privacy guide' - Duration: 33ms, Results: 567, Thread: ThreadId(7)
+Query: 'internet privacy guide' - Duration: 28ms, Results: 567, Thread: ThreadId(7)
+Query: 'internet privacy guide' - Duration: 29ms, Results: 567, Thread: ThreadId(7)
+Query: 'smartphone camera tips' - Duration: 6ms, Results: 54, Thread: ThreadId(7)
+Query: 'smartphone camera tips' - Duration: 6ms, Results: 54, Thread: ThreadId(7)
+Query: 'smartphone camera tips' - Duration: 6ms, Results: 54, Thread: ThreadId(7)
+Query: 'smartphone camera tips' - Duration: 6ms, Results: 54, Thread: ThreadId(7)
+Query: 'smartphone camera tips' - Duration: 6ms, Results: 54, Thread: ThreadId(7)
+Query: 'video editing tutorials' - Duration: 10ms, Results: 115, Thread: ThreadId(7)
+Query: 'video editing tutorials' - Duration: 10ms, Results: 115, Thread: ThreadId(7)
+Query: 'video editing tutorials' - Duration: 10ms, Results: 115, Thread: ThreadId(7)
+Query: 'video editing tutorials' - Duration: 10ms, Results: 115, Thread: ThreadId(7)
+Query: 'video editing tutorials' - Duration: 10ms, Results: 115, Thread: ThreadId(7)
+Query: 'us china relations update' - Duration: 42ms, Results: 746, Thread: ThreadId(7)
+Query: 'us china relations update' - Duration: 40ms, Results: 746, Thread: ThreadId(7)
+Query: 'us china relations update' - Duration: 40ms, Results: 746, Thread: ThreadId(7)
+Query: 'us china relations update' - Duration: 38ms, Results: 746, Thread: ThreadId(7)
+Query: 'us china relations update' - Duration: 50ms, Results: 746, Thread: ThreadId(7)
+Query: 'painting techniques guide' - Duration: 9ms, Results: 100, Thread: ThreadId(7)
+Query: 'painting techniques guide' - Duration: 8ms, Results: 100, Thread: ThreadId(7)
+Query: 'painting techniques guide' - Duration: 8ms, Results: 100, Thread: ThreadId(7)
+Query: 'painting techniques guide' - Duration: 10ms, Results: 100, Thread: ThreadId(7)
+Query: 'painting techniques guide' - Duration: 17ms, Results: 100, Thread: ThreadId(7)
+Query: 'drawing lessons online...' - Duration: 26ms, Results: 167, Thread: ThreadId(7)
+Query: 'drawing lessons online...' - Duration: 16ms, Results: 167, Thread: ThreadId(7)
+Query: 'drawing lessons online...' - Duration: 22ms, Results: 167, Thread: ThreadId(7)
+Query: 'drawing lessons online...' - Duration: 27ms, Results: 167, Thread: ThreadId(7)
+Query: 'drawing lessons online...' - Duration: 18ms, Results: 167, Thread: ThreadId(7)
+Query: 'sculpture making basics' - Duration: 13ms, Results: 79, Thread: ThreadId(7)
+Query: 'sculpture making basics' - Duration: 11ms, Results: 79, Thread: ThreadId(7)
+Query: 'sculpture making basics' - Duration: 11ms, Results: 79, Thread: ThreadId(7)
+Query: 'sculpture making basics' - Duration: 10ms, Results: 79, Thread: ThreadId(7)
+Query: 'sculpture making basics' - Duration: 10ms, Results: 79, Thread: ThreadId(7)
+Query: 'privacy focused alternatives' - Duration: 28ms, Results: 446, Thread: ThreadId(7)
+Query: 'privacy focused alternatives' - Duration: 24ms, Results: 446, Thread: ThreadId(7)
+Query: 'privacy focused alternatives' - Duration: 24ms, Results: 446, Thread: ThreadId(7)
+Query: 'privacy focused alternatives' - Duration: 24ms, Results: 446, Thread: ThreadId(7)
+Query: 'privacy focused alternatives' - Duration: 24ms, Results: 446, Thread: ThreadId(7)
+Query: 'knitting patterns easy' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'knitting patterns easy' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'knitting patterns easy' - Duration: 3ms, Results: 26, Thread: ThreadId(7)
+Query: 'knitting patterns easy' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'knitting patterns easy' - Duration: 3ms, Results: 26, Thread: ThreadId(7)
+Query: 'sewing machine guide' - Duration: 9ms, Results: 105, Thread: ThreadId(7)
+Query: 'sewing machine guide' - Duration: 9ms, Results: 105, Thread: ThreadId(7)
+Query: 'sewing machine guide' - Duration: 10ms, Results: 105, Thread: ThreadId(7)
+Query: 'sewing machine guide' - Duration: 9ms, Results: 105, Thread: ThreadId(7)
+Query: 'sewing machine guide' - Duration: 10ms, Results: 105, Thread: ThreadId(7)
+Query: 'state surveillance methods' - Duration: 21ms, Results: 314, Thread: ThreadId(7)
+Query: 'state surveillance methods' - Duration: 20ms, Results: 314, Thread: ThreadId(7)
+Query: 'state surveillance methods' - Duration: 20ms, Results: 314, Thread: ThreadId(7)
+Query: 'state surveillance methods' - Duration: 20ms, Results: 314, Thread: ThreadId(7)
+Query: 'state surveillance methods' - Duration: 20ms, Results: 314, Thread: ThreadId(7)
+Query: 'jewelry making basics' - Duration: 10ms, Results: 79, Thread: ThreadId(7)
+Query: 'jewelry making basics' - Duration: 10ms, Results: 79, Thread: ThreadId(7)
+Query: 'jewelry making basics' - Duration: 10ms, Results: 79, Thread: ThreadId(7)
+Query: 'jewelry making basics' - Duration: 12ms, Results: 79, Thread: ThreadId(7)
+Query: 'jewelry making basics' - Duration: 11ms, Results: 79, Thread: ThreadId(7)
+Query: 'cooking class schedule' - Duration: 12ms, Results: 52, Thread: ThreadId(7)
+Query: 'cooking class schedule' - Duration: 9ms, Results: 52, Thread: ThreadId(7)
+Query: 'cooking class schedule' - Duration: 8ms, Results: 52, Thread: ThreadId(7)
+Query: 'cooking class schedule' - Duration: 9ms, Results: 52, Thread: ThreadId(7)
+Query: 'cooking class schedule' - Duration: 7ms, Results: 52, Thread: ThreadId(7)
+Query: 'how to bake bread?' - Duration: 121ms, Results: 2786, Thread: ThreadId(7)
+Query: 'how to bake bread?' - Duration: 112ms, Results: 2786, Thread: ThreadId(7)
+Query: 'how to bake bread?' - Duration: 110ms, Results: 2786, Thread: ThreadId(7)
+Query: 'how to bake bread?' - Duration: 110ms, Results: 2786, Thread: ThreadId(7)
+Query: 'how to bake bread?' - Duration: 108ms, Results: 2786, Thread: ThreadId(7)
+Query: 'wine tasting basics' - Duration: 1ms, Results: 2, Thread: ThreadId(7)
+Query: 'wine tasting basics' - Duration: 1ms, Results: 2, Thread: ThreadId(7)
+Query: 'wine tasting basics' - Duration: 1ms, Results: 2, Thread: ThreadId(7)
+Query: 'wine tasting basics' - Duration: 1ms, Results: 2, Thread: ThreadId(7)
+Query: 'wine tasting basics' - Duration: 1ms, Results: 2, Thread: ThreadId(7)
+Query: 'tech company regulations' - Duration: 17ms, Results: 202, Thread: ThreadId(7)
+Query: 'tech company regulations' - Duration: 17ms, Results: 202, Thread: ThreadId(7)
+Query: 'tech company regulations' - Duration: 17ms, Results: 202, Thread: ThreadId(7)
+Query: 'tech company regulations' - Duration: 17ms, Results: 202, Thread: ThreadId(7)
+Query: 'tech company regulations' - Duration: 18ms, Results: 202, Thread: ThreadId(7)
+Query: 'coffee brewing guide' - Duration: 8ms, Results: 90, Thread: ThreadId(7)
+Query: 'coffee brewing guide' - Duration: 8ms, Results: 90, Thread: ThreadId(7)
+Query: 'coffee brewing guide' - Duration: 8ms, Results: 90, Thread: ThreadId(7)
+Query: 'coffee brewing guide' - Duration: 8ms, Results: 90, Thread: ThreadId(7)
+Query: 'coffee brewing guide' - Duration: 8ms, Results: 90, Thread: ThreadId(7)
+Query: 'digital rights protection' - Duration: 26ms, Results: 402, Thread: ThreadId(7)
+Query: 'digital rights protection' - Duration: 25ms, Results: 402, Thread: ThreadId(7)
+Query: 'digital rights protection' - Duration: 24ms, Results: 402, Thread: ThreadId(7)
+Query: 'digital rights protection' - Duration: 24ms, Results: 402, Thread: ThreadId(7)
+Query: 'digital rights protection' - Duration: 24ms, Results: 402, Thread: ThreadId(7)
+Query: 'organic food benefits' - Duration: 24ms, Results: 237, Thread: ThreadId(7)
+Query: 'organic food benefits' - Duration: 20ms, Results: 237, Thread: ThreadId(7)
+Query: 'organic food benefits' - Duration: 15ms, Results: 237, Thread: ThreadId(7)
+Query: 'organic food benefits' - Duration: 15ms, Results: 237, Thread: ThreadId(7)
+Query: 'organic food benefits' - Duration: 14ms, Results: 237, Thread: ThreadId(7)
+Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22, Thread: ThreadId(7)
+Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22, Thread: ThreadId(7)
+Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22, Thread: ThreadId(7)
+Query: 'vegetarian recipes easy' - Duration: 3ms, Results: 22, Thread: ThreadId(7)
+Query: 'vegetarian recipes easy' - Duration: 4ms, Results: 22, Thread: ThreadId(7)
+Query: 'information control tactics' - Duration: 37ms, Results: 644, Thread: ThreadId(7)
+Query: 'information control tactics' - Duration: 35ms, Results: 644, Thread: ThreadId(7)
+Query: 'information control tactics' - Duration: 35ms, Results: 644, Thread: ThreadId(7)
+Query: 'information control tactics' - Duration: 35ms, Results: 644, Thread: ThreadId(7)
+Query: 'information control tactics' - Duration: 35ms, Results: 644, Thread: ThreadId(7)
+Query: 'food allergy testing' - Duration: 8ms, Results: 78, Thread: ThreadId(7)
+Query: 'food allergy testing' - Duration: 8ms, Results: 78, Thread: ThreadId(7)
+Query: 'food allergy testing' - Duration: 8ms, Results: 78, Thread: ThreadId(7)
+Query: 'food allergy testing' - Duration: 8ms, Results: 78, Thread: ThreadId(7)
+Query: 'food allergy testing' - Duration: 8ms, Results: 78, Thread: ThreadId(7)
+Query: 'how to adopt a pet' - Duration: 154ms, Results: 3780, Thread: ThreadId(7)
+Query: 'how to adopt a pet' - Duration: 144ms, Results: 3780, Thread: ThreadId(7)
+Query: 'how to adopt a pet' - Duration: 142ms, Results: 3780, Thread: ThreadId(7)
+Query: 'how to adopt a pet' - Duration: 143ms, Results: 3780, Thread: ThreadId(7)
+Query: 'how to adopt a pet' - Duration: 144ms, Results: 3780, Thread: ThreadId(7)
+Query: 'social credit implementation' - Duration: 16ms, Results: 185, Thread: ThreadId(7)
+Query: 'social credit implementation' - Duration: 20ms, Results: 185, Thread: ThreadId(7)
+Query: 'social credit implementation' - Duration: 37ms, Results: 185, Thread: ThreadId(7)
+Query: 'social credit implementation' - Duration: 23ms, Results: 185, Thread: ThreadId(7)
+Query: 'social credit implementation' - Duration: 19ms, Results: 185, Thread: ThreadId(7)
+Query: 'wildlife sanctuary visits' - Duration: 3ms, Results: 8, Thread: ThreadId(7)
+Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'wildlife sanctuary visits' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210, Thread: ThreadId(7)
+Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210, Thread: ThreadId(7)
+Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210, Thread: ThreadId(7)
+Query: 'zoo conservation programs!' - Duration: 14ms, Results: 210, Thread: ThreadId(7)
+Query: 'zoo conservation programs!' - Duration: 16ms, Results: 210, Thread: ThreadId(7)
+Query: 'civil rights violations' - Duration: 22ms, Results: 291, Thread: ThreadId(7)
+Query: 'civil rights violations' - Duration: 19ms, Results: 291, Thread: ThreadId(7)
+Query: 'civil rights violations' - Duration: 21ms, Results: 291, Thread: ThreadId(7)
+Query: 'civil rights violations' - Duration: 17ms, Results: 291, Thread: ThreadId(7)
+Query: 'civil rights violations' - Duration: 20ms, Results: 291, Thread: ThreadId(7)
+Query: 'butterfly garden plants' - Duration: 4ms, Results: 14, Thread: ThreadId(7)
+Query: 'butterfly garden plants' - Duration: 3ms, Results: 14, Thread: ThreadId(7)
+Query: 'butterfly garden plants' - Duration: 2ms, Results: 14, Thread: ThreadId(7)
+Query: 'butterfly garden plants' - Duration: 3ms, Results: 14, Thread: ThreadId(7)
+Query: 'butterfly garden plants' - Duration: 2ms, Results: 14, Thread: ThreadId(7)
+Query: 'bee friendly flowers' - Duration: 2ms, Results: 9, Thread: ThreadId(7)
+Query: 'bee friendly flowers' - Duration: 2ms, Results: 9, Thread: ThreadId(7)
+Query: 'bee friendly flowers' - Duration: 2ms, Results: 9, Thread: ThreadId(7)
+Query: 'bee friendly flowers' - Duration: 2ms, Results: 9, Thread: ThreadId(7)
+Query: 'bee friendly flowers' - Duration: 2ms, Results: 9, Thread: ThreadId(7)
+Query: 'election security measures' - Duration: 21ms, Results: 245, Thread: ThreadId(7)
+Query: 'election security measures' - Duration: 21ms, Results: 245, Thread: ThreadId(7)
+Query: 'election security measures' - Duration: 21ms, Results: 245, Thread: ThreadId(7)
+Query: 'election security measures' - Duration: 21ms, Results: 245, Thread: ThreadId(7)
+Query: 'election security measures' - Duration: 21ms, Results: 245, Thread: ThreadId(7)
+Query: 'urban gardening tips' - Duration: 7ms, Results: 61, Thread: ThreadId(7)
+Query: 'urban gardening tips' - Duration: 7ms, Results: 61, Thread: ThreadId(7)
+Query: 'urban gardening tips' - Duration: 7ms, Results: 61, Thread: ThreadId(7)
+Query: 'urban gardening tips' - Duration: 7ms, Results: 61, Thread: ThreadId(7)
+Query: 'urban gardening tips' - Duration: 7ms, Results: 61, Thread: ThreadId(7)
+Query: 'community garden projects' - Duration: 24ms, Results: 332, Thread: ThreadId(7)
+Query: 'community garden projects' - Duration: 24ms, Results: 332, Thread: ThreadId(7)
+Query: 'community garden projects' - Duration: 23ms, Results: 332, Thread: ThreadId(7)
+Query: 'community garden projects' - Duration: 22ms, Results: 332, Thread: ThreadId(7)
+Query: 'community garden projects' - Duration: 22ms, Results: 332, Thread: ThreadId(7)
+Query: 'volunteer opportunities local' - Duration: 20ms, Results: 279, Thread: ThreadId(7)
+Query: 'volunteer opportunities local' - Duration: 19ms, Results: 279, Thread: ThreadId(7)
+Query: 'volunteer opportunities local' - Duration: 19ms, Results: 279, Thread: ThreadId(7)
+Query: 'volunteer opportunities local' - Duration: 19ms, Results: 279, Thread: ThreadId(7)
+Query: 'volunteer opportunities local' - Duration: 20ms, Results: 279, Thread: ThreadId(7)
+Query: 'privacy breach reporting' - Duration: 27ms, Results: 469, Thread: ThreadId(7)
+Query: 'privacy breach reporting' - Duration: 27ms, Results: 469, Thread: ThreadId(7)
+Query: 'privacy breach reporting' - Duration: 27ms, Results: 469, Thread: ThreadId(7)
+Query: 'privacy breach reporting' - Duration: 28ms, Results: 469, Thread: ThreadId(7)
+Query: 'privacy breach reporting' - Duration: 25ms, Results: 469, Thread: ThreadId(7)
+Query: 'social clubs membership' - Duration: 16ms, Results: 194, Thread: ThreadId(7)
+Query: 'social clubs membership' - Duration: 16ms, Results: 194, Thread: ThreadId(7)
+Query: 'social clubs membership' - Duration: 16ms, Results: 194, Thread: ThreadId(7)
+Query: 'social clubs membership' - Duration: 22ms, Results: 194, Thread: ThreadId(7)
+Query: 'social clubs membership' - Duration: 18ms, Results: 194, Thread: ThreadId(7)
+Query: 'data protection laws' - Duration: 38ms, Results: 618, Thread: ThreadId(7)
+Query: 'data protection laws' - Duration: 36ms, Results: 618, Thread: ThreadId(7)
+Query: 'data protection laws' - Duration: 37ms, Results: 618, Thread: ThreadId(7)
+Query: 'data protection laws' - Duration: 38ms, Results: 618, Thread: ThreadId(7)
+Query: 'data protection laws' - Duration: 35ms, Results: 618, Thread: ThreadId(7)
+Query: 'local sports leagues' - Duration: 15ms, Results: 144, Thread: ThreadId(7)
+Query: 'local sports leagues' - Duration: 15ms, Results: 144, Thread: ThreadId(7)
+Query: 'local sports leagues' - Duration: 13ms, Results: 144, Thread: ThreadId(7)
+Query: 'local sports leagues' - Duration: 12ms, Results: 144, Thread: ThreadId(7)
+Query: 'local sports leagues' - Duration: 12ms, Results: 144, Thread: ThreadId(7)
+Query: 'how to register to vote' - Duration: 119ms, Results: 2835, Thread: ThreadId(7)
+Query: 'how to register to vote' - Duration: 119ms, Results: 2835, Thread: ThreadId(7)
+Query: 'how to register to vote' - Duration: 110ms, Results: 2835, Thread: ThreadId(7)
+Query: 'how to register to vote' - Duration: 110ms, Results: 2835, Thread: ThreadId(7)
+Query: 'how to register to vote' - Duration: 110ms, Results: 2835, Thread: ThreadId(7)
+Query: 'tax filing help' - Duration: 30ms, Results: 607, Thread: ThreadId(7)
+Query: 'tax filing help' - Duration: 30ms, Results: 607, Thread: ThreadId(7)
+Query: 'tax filing help' - Duration: 30ms, Results: 607, Thread: ThreadId(7)
+Query: 'tax filing help' - Duration: 31ms, Results: 607, Thread: ThreadId(7)
+Query: 'tax filing help' - Duration: 31ms, Results: 607, Thread: ThreadId(7)
+Query: 'emergency preparation tips!' - Duration: 14ms, Results: 198, Thread: ThreadId(7)
+Query: 'emergency preparation tips!' - Duration: 13ms, Results: 198, Thread: ThreadId(7)
+Query: 'emergency preparation tips!' - Duration: 14ms, Results: 198, Thread: ThreadId(7)
+Query: 'emergency preparation tips!' - Duration: 14ms, Results: 198, Thread: ThreadId(7)
+Query: 'emergency preparation tips!' - Duration: 14ms, Results: 198, Thread: ThreadId(7)
+Query: 'political censorship cases' - Duration: 9ms, Results: 90, Thread: ThreadId(7)
+Query: 'political censorship cases' - Duration: 9ms, Results: 90, Thread: ThreadId(7)
+Query: 'political censorship cases' - Duration: 14ms, Results: 90, Thread: ThreadId(7)
+Query: 'political censorship cases' - Duration: 9ms, Results: 90, Thread: ThreadId(7)
+Query: 'political censorship cases' - Duration: 9ms, Results: 90, Thread: ThreadId(7)
+Query: 'first aid guide' - Duration: 26ms, Results: 262, Thread: ThreadId(7)
+Query: 'first aid guide' - Duration: 21ms, Results: 262, Thread: ThreadId(7)
+Query: 'first aid guide' - Duration: 21ms, Results: 262, Thread: ThreadId(7)
+Query: 'first aid guide' - Duration: 21ms, Results: 262, Thread: ThreadId(7)
+Query: 'first aid guide' - Duration: 20ms, Results: 262, Thread: ThreadId(7)
+Query: 'CPR training courses' - Duration: 11ms, Results: 99, Thread: ThreadId(7)
+Query: 'CPR training courses' - Duration: 11ms, Results: 99, Thread: ThreadId(7)
+Query: 'CPR training courses' - Duration: 10ms, Results: 99, Thread: ThreadId(7)
+Query: 'CPR training courses' - Duration: 11ms, Results: 99, Thread: ThreadId(7)
+Query: 'CPR training courses' - Duration: 18ms, Results: 99, Thread: ThreadId(7)
+Query: 'natural disaster plan' - Duration: 20ms, Results: 293, Thread: ThreadId(7)
+Query: 'natural disaster plan' - Duration: 20ms, Results: 293, Thread: ThreadId(7)
+Query: 'natural disaster plan' - Duration: 20ms, Results: 293, Thread: ThreadId(7)
+Query: 'natural disaster plan' - Duration: 20ms, Results: 293, Thread: ThreadId(7)
+Query: 'natural disaster plan' - Duration: 19ms, Results: 293, Thread: ThreadId(7)
+Query: 'protest movement history' - Duration: 20ms, Results: 250, Thread: ThreadId(7)
+Query: 'protest movement history' - Duration: 19ms, Results: 250, Thread: ThreadId(7)
+Query: 'protest movement history' - Duration: 17ms, Results: 250, Thread: ThreadId(7)
+Query: 'protest movement history' - Duration: 18ms, Results: 250, Thread: ThreadId(7)
+Query: 'protest movement history' - Duration: 18ms, Results: 250, Thread: ThreadId(7)
+Query: 'what causes climate change?' - Duration: 30ms, Results: 338, Thread: ThreadId(7)
+Query: 'what causes climate change?' - Duration: 25ms, Results: 338, Thread: ThreadId(7)
+Query: 'what causes climate change?' - Duration: 33ms, Results: 338, Thread: ThreadId(7)
+Query: 'what causes climate change?' - Duration: 25ms, Results: 338, Thread: ThreadId(7)
+Query: 'what causes climate change?' - Duration: 23ms, Results: 338, Thread: ThreadId(7)
+Query: 'renewable energy home' - Duration: 20ms, Results: 215, Thread: ThreadId(7)
+Query: 'renewable energy home' - Duration: 16ms, Results: 215, Thread: ThreadId(7)
+Query: 'renewable energy home' - Duration: 16ms, Results: 215, Thread: ThreadId(7)
+Query: 'renewable energy home' - Duration: 16ms, Results: 215, Thread: ThreadId(7)
+Query: 'renewable energy home' - Duration: 15ms, Results: 215, Thread: ThreadId(7)
+Query: 'internet restrictions bypass' - Duration: 13ms, Results: 116, Thread: ThreadId(7)
+Query: 'internet restrictions bypass' - Duration: 10ms, Results: 116, Thread: ThreadId(7)
+Query: 'internet restrictions bypass' - Duration: 14ms, Results: 116, Thread: ThreadId(7)
+Query: 'internet restrictions bypass' - Duration: 11ms, Results: 116, Thread: ThreadId(7)
+Query: 'internet restrictions bypass' - Duration: 10ms, Results: 116, Thread: ThreadId(7)
+Query: 'zero waste shopping' - Duration: 8ms, Results: 26, Thread: ThreadId(7)
+Query: 'zero waste shopping' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'zero waste shopping' - Duration: 5ms, Results: 26, Thread: ThreadId(7)
+Query: 'zero waste shopping' - Duration: 5ms, Results: 26, Thread: ThreadId(7)
+Query: 'zero waste shopping' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'minimalist living guide' - Duration: 10ms, Results: 120, Thread: ThreadId(7)
+Query: 'minimalist living guide' - Duration: 10ms, Results: 120, Thread: ThreadId(7)
+Query: 'minimalist living guide' - Duration: 10ms, Results: 120, Thread: ThreadId(7)
+Query: 'minimalist living guide' - Duration: 10ms, Results: 120, Thread: ThreadId(7)
+Query: 'minimalist living guide' - Duration: 11ms, Results: 120, Thread: ThreadId(7)
+Query: 'surveillance technology 2024' - Duration: 103ms, Results: 2172, Thread: ThreadId(7)
+Query: 'surveillance technology 2024' - Duration: 104ms, Results: 2172, Thread: ThreadId(7)
+Query: 'surveillance technology 2024' - Duration: 135ms, Results: 2172, Thread: ThreadId(7)
+Query: 'surveillance technology 2024' - Duration: 128ms, Results: 2172, Thread: ThreadId(7)
+Query: 'surveillance technology 2024' - Duration: 90ms, Results: 2172, Thread: ThreadId(7)
+Query: 'housing market guide' - Duration: 16ms, Results: 196, Thread: ThreadId(7)
+Query: 'housing market guide' - Duration: 15ms, Results: 196, Thread: ThreadId(7)
+Query: 'housing market guide' - Duration: 15ms, Results: 196, Thread: ThreadId(7)
+Query: 'housing market guide' - Duration: 15ms, Results: 196, Thread: ThreadId(7)
+Query: 'housing market guide' - Duration: 15ms, Results: 196, Thread: ThreadId(7)
+Query: 'mortgage basics explained' - Duration: 3ms, Results: 20, Thread: ThreadId(7)
+Query: 'mortgage basics explained' - Duration: 3ms, Results: 20, Thread: ThreadId(7)
+Query: 'mortgage basics explained' - Duration: 4ms, Results: 20, Thread: ThreadId(7)
+Query: 'mortgage basics explained' - Duration: 3ms, Results: 20, Thread: ThreadId(7)
+Query: 'mortgage basics explained' - Duration: 3ms, Results: 20, Thread: ThreadId(7)
+Query: 'real estate terms' - Duration: 18ms, Results: 259, Thread: ThreadId(7)
+Query: 'real estate terms' - Duration: 19ms, Results: 259, Thread: ThreadId(7)
+Query: 'real estate terms' - Duration: 18ms, Results: 259, Thread: ThreadId(7)
+Query: 'real estate terms' - Duration: 18ms, Results: 259, Thread: ThreadId(7)
+Query: 'real estate terms' - Duration: 19ms, Results: 259, Thread: ThreadId(7)
+Query: 'how does stock market work' - Duration: 52ms, Results: 951, Thread: ThreadId(7)
+Query: 'how does stock market work' - Duration: 49ms, Results: 951, Thread: ThreadId(7)
+Query: 'how does stock market work' - Duration: 47ms, Results: 951, Thread: ThreadId(7)
+Query: 'how does stock market work' - Duration: 51ms, Results: 951, Thread: ThreadId(7)
+Query: 'how does stock market work' - Duration: 48ms, Results: 951, Thread: ThreadId(7)
+Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66, Thread: ThreadId(7)
+Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66, Thread: ThreadId(7)
+Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66, Thread: ThreadId(7)
+Query: 'whistleblower cases exposed' - Duration: 6ms, Results: 66, Thread: ThreadId(7)
+Query: 'whistleblower cases exposed' - Duration: 9ms, Results: 66, Thread: ThreadId(7)
+Query: 'insurance types guide' - Duration: 17ms, Results: 186, Thread: ThreadId(7)
+Query: 'insurance types guide' - Duration: 16ms, Results: 186, Thread: ThreadId(7)
+Query: 'insurance types guide' - Duration: 16ms, Results: 186, Thread: ThreadId(7)
+Query: 'insurance types guide' - Duration: 15ms, Results: 186, Thread: ThreadId(7)
+Query: 'insurance types guide' - Duration: 15ms, Results: 186, Thread: ThreadId(7)
+Query: 'small business tips' - Duration: 23ms, Results: 238, Thread: ThreadId(7)
+Query: 'small business tips' - Duration: 20ms, Results: 238, Thread: ThreadId(7)
+Query: 'small business tips' - Duration: 19ms, Results: 238, Thread: ThreadId(7)
+Query: 'small business tips' - Duration: 20ms, Results: 238, Thread: ThreadId(7)
+Query: 'small business tips' - Duration: 20ms, Results: 238, Thread: ThreadId(7)
+Query: 'tech privacy violations' - Duration: 28ms, Results: 475, Thread: ThreadId(7)
+Query: 'tech privacy violations' - Duration: 28ms, Results: 475, Thread: ThreadId(7)
+Query: 'tech privacy violations' - Duration: 28ms, Results: 475, Thread: ThreadId(7)
+Query: 'tech privacy violations' - Duration: 27ms, Results: 475, Thread: ThreadId(7)
+Query: 'tech privacy violations' - Duration: 27ms, Results: 475, Thread: ThreadId(7)
+Query: 'marketing guide simple' - Duration: 13ms, Results: 130, Thread: ThreadId(7)
+Query: 'marketing guide simple' - Duration: 13ms, Results: 130, Thread: ThreadId(7)
+Query: 'marketing guide simple' - Duration: 13ms, Results: 130, Thread: ThreadId(7)
+Query: 'marketing guide simple' - Duration: 12ms, Results: 130, Thread: ThreadId(7)
+Query: 'marketing guide simple' - Duration: 12ms, Results: 130, Thread: ThreadId(7)
+Query: 'social media tips' - Duration: 20ms, Results: 255, Thread: ThreadId(7)
+Query: 'social media tips' - Duration: 20ms, Results: 255, Thread: ThreadId(7)
+Query: 'social media tips' - Duration: 20ms, Results: 255, Thread: ThreadId(7)
+Query: 'social media tips' - Duration: 20ms, Results: 255, Thread: ThreadId(7)
+Query: 'social media tips' - Duration: 20ms, Results: 255, Thread: ThreadId(7)
+Query: 'website creation basics?' - Duration: 13ms, Results: 109, Thread: ThreadId(7)
+Query: 'website creation basics?' - Duration: 13ms, Results: 109, Thread: ThreadId(7)
+Query: 'website creation basics?' - Duration: 15ms, Results: 109, Thread: ThreadId(7)
+Query: 'website creation basics?' - Duration: 15ms, Results: 109, Thread: ThreadId(7)
+Query: 'website creation basics?' - Duration: 13ms, Results: 109, Thread: ThreadId(7)
+Query: 'data tracking prevention' - Duration: 48ms, Results: 511, Thread: ThreadId(7)
+Query: 'data tracking prevention' - Duration: 41ms, Results: 511, Thread: ThreadId(7)
+Query: 'data tracking prevention' - Duration: 47ms, Results: 511, Thread: ThreadId(7)
+Query: 'data tracking prevention' - Duration: 32ms, Results: 511, Thread: ThreadId(7)
+Query: 'data tracking prevention' - Duration: 38ms, Results: 511, Thread: ThreadId(7)
+Query: 'smartphone tricks' - Duration: 3ms, Results: 16, Thread: ThreadId(7)
+Query: 'smartphone tricks' - Duration: 3ms, Results: 16, Thread: ThreadId(7)
+Query: 'smartphone tricks' - Duration: 2ms, Results: 16, Thread: ThreadId(7)
+Query: 'smartphone tricks' - Duration: 4ms, Results: 16, Thread: ThreadId(7)
+Query: 'smartphone tricks' - Duration: 2ms, Results: 16, Thread: ThreadId(7)
+Query: 'internet safety basics' - Duration: 17ms, Results: 192, Thread: ThreadId(7)
+Query: 'internet safety basics' - Duration: 23ms, Results: 192, Thread: ThreadId(7)
+Query: 'internet safety basics' - Duration: 16ms, Results: 192, Thread: ThreadId(7)
+Query: 'internet safety basics' - Duration: 15ms, Results: 192, Thread: ThreadId(7)
+Query: 'internet safety basics' - Duration: 16ms, Results: 192, Thread: ThreadId(7)
+Query: 'online shopping guide' - Duration: 19ms, Results: 251, Thread: ThreadId(7)
+Query: 'online shopping guide' - Duration: 18ms, Results: 251, Thread: ThreadId(7)
+Query: 'online shopping guide' - Duration: 18ms, Results: 251, Thread: ThreadId(7)
+Query: 'online shopping guide' - Duration: 19ms, Results: 251, Thread: ThreadId(7)
+Query: 'online shopping guide' - Duration: 18ms, Results: 251, Thread: ThreadId(7)
+Query: 'human rights activism guide' - Duration: 29ms, Results: 445, Thread: ThreadId(7)
+Query: 'human rights activism guide' - Duration: 27ms, Results: 445, Thread: ThreadId(7)
+Query: 'human rights activism guide' - Duration: 27ms, Results: 445, Thread: ThreadId(7)
+Query: 'human rights activism guide' - Duration: 27ms, Results: 445, Thread: ThreadId(7)
+Query: 'human rights activism guide' - Duration: 27ms, Results: 445, Thread: ThreadId(7)
+Query: 'consumer rights basics' - Duration: 21ms, Results: 352, Thread: ThreadId(7)
+Query: 'consumer rights basics' - Duration: 21ms, Results: 352, Thread: ThreadId(7)
+Query: 'consumer rights basics' - Duration: 21ms, Results: 352, Thread: ThreadId(7)
+Query: 'consumer rights basics' - Duration: 20ms, Results: 352, Thread: ThreadId(7)
+Query: 'consumer rights basics' - Duration: 21ms, Results: 352, Thread: ThreadId(7)
+Query: 'digital surveillance methods' - Duration: 10ms, Results: 92, Thread: ThreadId(7)
+Query: 'digital surveillance methods' - Duration: 11ms, Results: 92, Thread: ThreadId(7)
+Query: 'digital surveillance methods' - Duration: 11ms, Results: 92, Thread: ThreadId(7)
+Query: 'digital surveillance methods' - Duration: 11ms, Results: 92, Thread: ThreadId(7)
+Query: 'digital surveillance methods' - Duration: 14ms, Results: 92, Thread: ThreadId(7)
+Query: 'bicycle maintenance' - Duration: 5ms, Results: 8, Thread: ThreadId(7)
+Query: 'bicycle maintenance' - Duration: 4ms, Results: 8, Thread: ThreadId(7)
+Query: 'bicycle maintenance' - Duration: 4ms, Results: 8, Thread: ThreadId(7)
+Query: 'bicycle maintenance' - Duration: 6ms, Results: 8, Thread: ThreadId(7)
+Query: 'bicycle maintenance' - Duration: 8ms, Results: 8, Thread: ThreadId(7)
+Query: 'home security tips!!!' - Duration: 36ms, Results: 426, Thread: ThreadId(7)
+Query: 'home security tips!!!' - Duration: 27ms, Results: 426, Thread: ThreadId(7)
+Query: 'home security tips!!!' - Duration: 26ms, Results: 426, Thread: ThreadId(7)
+Query: 'home security tips!!!' - Duration: 27ms, Results: 426, Thread: ThreadId(7)
+Query: 'home security tips!!!' - Duration: 27ms, Results: 426, Thread: ThreadId(7)
+Query: 'gardening vegetables guide' - Duration: 9ms, Results: 91, Thread: ThreadId(7)
+Query: 'gardening vegetables guide' - Duration: 10ms, Results: 91, Thread: ThreadId(7)
+Query: 'gardening vegetables guide' - Duration: 8ms, Results: 91, Thread: ThreadId(7)
+Query: 'gardening vegetables guide' - Duration: 9ms, Results: 91, Thread: ThreadId(7)
+Query: 'gardening vegetables guide' - Duration: 9ms, Results: 91, Thread: ThreadId(7)
+Query: 'content control systems' - Duration: 25ms, Results: 242, Thread: ThreadId(7)
+Query: 'content control systems' - Duration: 23ms, Results: 242, Thread: ThreadId(7)
+Query: 'content control systems' - Duration: 22ms, Results: 242, Thread: ThreadId(7)
+Query: 'content control systems' - Duration: 27ms, Results: 242, Thread: ThreadId(7)
+Query: 'content control systems' - Duration: 27ms, Results: 242, Thread: ThreadId(7)
+Query: 'cooking techniques' - Duration: 3ms, Results: 10, Thread: ThreadId(7)
+Query: 'cooking techniques' - Duration: 2ms, Results: 10, Thread: ThreadId(7)
+Query: 'cooking techniques' - Duration: 2ms, Results: 10, Thread: ThreadId(7)
+Query: 'cooking techniques' - Duration: 2ms, Results: 10, Thread: ThreadId(7)
+Query: 'cooking techniques' - Duration: 2ms, Results: 10, Thread: ThreadId(7)
+Query: 'personal finance basics' - Duration: 15ms, Results: 95, Thread: ThreadId(7)
+Query: 'personal finance basics' - Duration: 10ms, Results: 95, Thread: ThreadId(7)
+Query: 'personal finance basics' - Duration: 10ms, Results: 95, Thread: ThreadId(7)
+Query: 'personal finance basics' - Duration: 11ms, Results: 95, Thread: ThreadId(7)
+Query: 'personal finance basics' - Duration: 10ms, Results: 95, Thread: ThreadId(7)
+Query: 'protest rights explained' - Duration: 17ms, Results: 267, Thread: ThreadId(7)
+Query: 'protest rights explained' - Duration: 16ms, Results: 267, Thread: ThreadId(7)
+Query: 'protest rights explained' - Duration: 17ms, Results: 267, Thread: ThreadId(7)
+Query: 'protest rights explained' - Duration: 17ms, Results: 267, Thread: ThreadId(7)
+Query: 'protest rights explained' - Duration: 18ms, Results: 267, Thread: ThreadId(7)
+Query: 'meditation techniques' - Duration: 3ms, Results: 8, Thread: ThreadId(7)
+Query: 'meditation techniques' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'meditation techniques' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'meditation techniques' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'meditation techniques' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'press freedom analysis' - Duration: 25ms, Results: 401, Thread: ThreadId(7)
+Query: 'press freedom analysis' - Duration: 25ms, Results: 401, Thread: ThreadId(7)
+Query: 'press freedom analysis' - Duration: 24ms, Results: 401, Thread: ThreadId(7)
+Query: 'press freedom analysis' - Duration: 28ms, Results: 401, Thread: ThreadId(7)
+Query: 'press freedom analysis' - Duration: 25ms, Results: 401, Thread: ThreadId(7)
+Query: 'photography basics' - Duration: 3ms, Results: 8, Thread: ThreadId(7)
+Query: 'photography basics' - Duration: 1ms, Results: 8, Thread: ThreadId(7)
+Query: 'photography basics' - Duration: 2ms, Results: 8, Thread: ThreadId(7)
+Query: 'photography basics' - Duration: 3ms, Results: 8, Thread: ThreadId(7)
+Query: 'photography basics' - Duration: 1ms, Results: 8, Thread: ThreadId(7)
+Query: 'writing tips creative' - Duration: 15ms, Results: 97, Thread: ThreadId(7)
+Query: 'writing tips creative' - Duration: 10ms, Results: 97, Thread: ThreadId(7)
+Query: 'writing tips creative' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'writing tips creative' - Duration: 9ms, Results: 97, Thread: ThreadId(7)
+Query: 'writing tips creative' - Duration: 10ms, Results: 97, Thread: ThreadId(7)
+Query: 'government monitoring tools' - Duration: 198ms, Results: 5448, Thread: ThreadId(7)
+Query: 'government monitoring tools' - Duration: 197ms, Results: 5448, Thread: ThreadId(7)
+Query: 'government monitoring tools' - Duration: 175ms, Results: 5448, Thread: ThreadId(7)
+Query: 'government monitoring tools' - Duration: 179ms, Results: 5448, Thread: ThreadId(7)
+Query: 'government monitoring tools' - Duration: 178ms, Results: 5448, Thread: ThreadId(7)
+Query: 'chess strategy basics' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'chess strategy basics' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'chess strategy basics' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'chess strategy basics' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'chess strategy basics' - Duration: 4ms, Results: 26, Thread: ThreadId(7)
+Query: 'how to learn new language' - Duration: 126ms, Results: 3040, Thread: ThreadId(7)
+Query: 'how to learn new language' - Duration: 120ms, Results: 3040, Thread: ThreadId(7)
+Query: 'how to learn new language' - Duration: 118ms, Results: 3040, Thread: ThreadId(7)
+Query: 'how to learn new language' - Duration: 117ms, Results: 3040, Thread: ThreadId(7)
+Query: 'how to learn new language' - Duration: 119ms, Results: 3040, Thread: ThreadId(7)
+Query: 'privacy tools comparison' - Duration: 27ms, Results: 473, Thread: ThreadId(7)
+Query: 'privacy tools comparison' - Duration: 26ms, Results: 473, Thread: ThreadId(7)
+Query: 'privacy tools comparison' - Duration: 27ms, Results: 473, Thread: ThreadId(7)
+Query: 'privacy tools comparison' - Duration: 27ms, Results: 473, Thread: ThreadId(7)
+Query: 'privacy tools comparison' - Duration: 27ms, Results: 473, Thread: ThreadId(7)
+Query: 'public speaking help' - Duration: 42ms, Results: 827, Thread: ThreadId(7)
+Query: 'public speaking help' - Duration: 41ms, Results: 827, Thread: ThreadId(7)
+Query: 'public speaking help' - Duration: 41ms, Results: 827, Thread: ThreadId(7)
+Query: 'public speaking help' - Duration: 41ms, Results: 827, Thread: ThreadId(7)
+Query: 'public speaking help' - Duration: 41ms, Results: 827, Thread: ThreadId(7)
+Query: 'resume writing tips' - Duration: 8ms, Results: 89, Thread: ThreadId(7)
+Query: 'resume writing tips' - Duration: 8ms, Results: 89, Thread: ThreadId(7)
+Query: 'resume writing tips' - Duration: 8ms, Results: 89, Thread: ThreadId(7)
+Query: 'resume writing tips' - Duration: 8ms, Results: 89, Thread: ThreadId(7)
+Query: 'resume writing tips' - Duration: 9ms, Results: 89, Thread: ThreadId(7)
+Query: 'tech censorship report' - Duration: 24ms, Results: 205, Thread: ThreadId(7)
+Query: 'tech censorship report' - Duration: 17ms, Results: 205, Thread: ThreadId(7)
+Query: 'tech censorship report' - Duration: 17ms, Results: 205, Thread: ThreadId(7)
+Query: 'tech censorship report' - Duration: 17ms, Results: 205, Thread: ThreadId(7)
+Query: 'tech censorship report' - Duration: 18ms, Results: 205, Thread: ThreadId(7)
+Query: 'healthy recipes quick' - Duration: 5ms, Results: 30, Thread: ThreadId(7)
+Query: 'healthy recipes quick' - Duration: 5ms, Results: 30, Thread: ThreadId(7)
+Query: 'healthy recipes quick' - Duration: 4ms, Results: 30, Thread: ThreadId(7)
+Query: 'healthy recipes quick' - Duration: 5ms, Results: 30, Thread: ThreadId(7)
+Query: 'healthy recipes quick' - Duration: 4ms, Results: 30, Thread: ThreadId(7)
+Query: 'stress relief techniques' - Duration: 6ms, Results: 27, Thread: ThreadId(7)
+Query: 'stress relief techniques' - Duration: 4ms, Results: 27, Thread: ThreadId(7)
+Query: 'stress relief techniques' - Duration: 5ms, Results: 27, Thread: ThreadId(7)
+Query: 'stress relief techniques' - Duration: 5ms, Results: 27, Thread: ThreadId(7)
+Query: 'stress relief techniques' - Duration: 8ms, Results: 27, Thread: ThreadId(7)

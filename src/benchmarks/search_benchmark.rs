@@ -2,12 +2,21 @@ use crate::search::tantivy_processor;
 use std::fs::{self, File, OpenOptions};
 use std::io::Write;
 use std::time::{Duration, Instant, SystemTime};
+use std::process::Command;
+use std::thread;
+
+pub struct SystemInfo {
+    os: String,
+    cpu_info: String,
+    total_memory_mb: u64,
+}
 
 pub struct BenchmarkMetrics {
     query: String,
     duration_ms: u128,
     results_count: usize,
     timestamp: SystemTime,
+    thread_id: String,
 }
 
 pub struct BenchmarkSummary {
@@ -18,10 +27,65 @@ pub struct BenchmarkSummary {
     total_results: usize,
     avg_results_per_query: f64,
     total_duration: Duration,
+    system_info: SystemInfo,
+}
+
+fn get_system_info() -> SystemInfo {
+    let os = std::env::consts::OS.to_string();
+
+    // Get CPU info - this works on Unix-like systems
+    let cpu_info = Command::new("sh")
+        .arg("-c")
+        .arg("grep 'model name' /proc/cpuinfo | head -1 || sysctl -n machdep.cpu.brand_string || echo 'Unknown CPU'")
+        .output()
+        .map(|output| String::from_utf8_lossy(&output.stdout).trim().to_string())
+        .unwrap_or_else(|_| "Unknown CPU".to_string());
+
+    // Get total memory
+    let total_memory_mb = if cfg!(target_os = "linux") {
+        Command::new("sh")
+            .arg("-c")
+            .arg("grep MemTotal /proc/meminfo | awk '{print $2}'")
+            .output()
+            .map(|output| {
+                String::from_utf8_lossy(&output.stdout)
+                    .trim()
+                    .parse::<u64>()
+                    .map(|kb| kb / 1024)
+                    .unwrap_or(0)
+            })
+            .unwrap_or(0)
+    } else if cfg!(target_os = "macos") {
+        Command::new("sh")
+            .arg("-c")
+            .arg("sysctl -n hw.memsize | awk '{print $1/1024/1024}'")
+            .output()
+            .map(|output| {
+                String::from_utf8_lossy(&output.stdout)
+                    .trim()
+                    .parse::<u64>()
+                    .unwrap_or(0)
+            })
+            .unwrap_or(0)
+    } else {
+        0
+    };
+
+    SystemInfo {
+        os,
+        cpu_info,
+        total_memory_mb,
+    }
 }
 
 pub fn run_search_benchmark() -> Result<(), std::io::Error> {
     println!("Starting search engine benchmark...");
+
+    let system_info = get_system_info();
+    println!("System Info:");
+    println!("OS: {}", system_info.os);
+    println!("CPU Info: {}", system_info.cpu_info);
+    println!("Total Memory: {} MB", system_info.total_memory_mb);
 
     // Load test queries from random.txt
     let queries = fs::read_to_string("random.txt")?
@@ -64,6 +128,7 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
                         duration_ms: duration.as_millis(),
                         results_count: results.len(),
                         timestamp: SystemTime::now(),
+                        thread_id: format!("{:?}", thread::current().id()),
                     });
                 }
                 Err(e) => {
@@ -93,6 +158,7 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
         total_results,
         avg_results_per_query: total_results as f64 / total_queries as f64,
         total_duration,
+        system_info,
     };
 
     // Save results to file
@@ -114,11 +180,16 @@ fn save_benchmark_results(
         .append(true)
         .open("benchmark_results.txt")?;
 
-    // Write timestamp
+    // Write timestamp and system info
     writeln!(file, "\n=== Benchmark Results - {} ===",
         SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
             .unwrap()
             .as_secs())?;
+
+    writeln!(file, "\nServer Information:")?;
+    writeln!(file, "OS: {}", summary.system_info.os)?;
+    writeln!(file, "CPU Info: {}", summary.system_info.cpu_info)?;
+    writeln!(file, "Total Memory: {} MB", summary.system_info.total_memory_mb)?;
 
     // Write summary
     writeln!(file, "\nSummary:")?;
@@ -133,10 +204,11 @@ fn save_benchmark_results(
     // Write detailed metrics
     writeln!(file, "\nDetailed Metrics:")?;
     for metric in metrics {
-        writeln!(file, "Query: '{}' - Duration: {}ms, Results: {}",
+        writeln!(file, "Query: '{}' - Duration: {}ms, Results: {}, Thread: {}",
             metric.query,
             metric.duration_ms,
-            metric.results_count)?;
+            metric.results_count,
+            metric.thread_id)?;
     }
 
     Ok(())
@@ -144,6 +216,12 @@ fn save_benchmark_results(
 
 fn print_summary(summary: &BenchmarkSummary) {
     println!("\nBenchmark Summary:");
+    println!("Server Information:");
+    println!("OS: {}", summary.system_info.os);
+    println!("CPU Info: {}", summary.system_info.cpu_info);
+    println!("Total Memory: {} MB", summary.system_info.total_memory_mb);
+
+    println!("\nPerformance Metrics:");
     println!("Total Queries: {}", summary.total_queries);
     println!("Average Duration: {:.2}ms", summary.avg_duration_ms);
     println!("Min Duration: {}ms", summary.min_duration_ms);
