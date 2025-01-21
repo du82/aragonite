@@ -329,8 +329,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
     let searcher = reader.searcher();
 
-    // Querying the index
-    let query_parser = QueryParser::for_index(
+    // First create the basic query parser
+    let mut query_parser = QueryParser::for_index(
         &index,
         vec![
             title,
@@ -343,6 +343,13 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
             url,
         ],
     );
+
+    // Set default operator to AND and configure field boosts
+        //query_parser.set_conjunction_by_default();
+        query_parser.set_field_boost(title, 3.0);      // Title matches are 3x more important
+        query_parser.set_field_boost(author, 2.0);     // Author matches are 2x more important
+        query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
+
 
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
@@ -434,85 +441,54 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let mut scored_results = Vec::new();
     for (mut score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
-        let html = document_to_html(&retrieved_doc, &schema);
-        let html_without_quotes = html.replace(", ", "");
 
-        // Downrank pages without title
-        if let Some(tantivy::schema::Value::Str(title)) = retrieved_doc.get_first(title) {
-            if title.trim().is_empty() {
-                score *= 0.3;
-            }
-        } else {
-            score *= 0.3;
-        }
+        // Check each term's matches across different fields
+        let query_terms: Vec<String> = query.split_whitespace()
+            .map(|s| s.to_lowercase())
+            .collect();
 
-        // URL-based scoring using url_utils functions
-        if let Some(tantivy::schema::Value::Str(url_str)) = retrieved_doc.get_first(url) {
-            let domain = get_domain_name(url_str);
+        // Track where each term matched
+        let mut author_matches = 0;
+        let mut content_matches = 0;
 
-            // Check if it's a homepage which might deserve different ranking
-            if is_homepage(url_str) {
-                score *= 1.2; // Small boost for homepages
-            }
-
-            // Use extracted domain for ranking decisions
-            if let Some(domain) = domain {
-                if domain == "reddit.com" || domain == "quora.com" || domain.contains("youtube.com") {
-                    score *= 0.5;
-                } else if domain == "onlyfans.com" || domain == "fansly.com" ||
-                          domain == "linktr.ee" || domain == "t.me" {
-                    score *= 0.1;
+        for term in &query_terms {
+            // Check author field
+            if let Some(tantivy::schema::Value::Str(author_text)) = retrieved_doc.get_first(author) {
+                if author_text.to_lowercase().contains(term) {
+                    author_matches += 1;
                 }
             }
-        }
 
-        // Handle description length-based scoring
-        if let Some(tantivy::schema::Value::Str(desc)) = retrieved_doc.get_first(description) {
-            let desc_len = desc.trim().len();
-            if desc_len == 0 {
-                score *= 0.4;
-            } else {
-                let length_multiplier = match desc_len {
-                    0..=49 => 0.8,
-                    50..=150 => 1.0,
-                    _ => 1.5,
-                };
-                score *= length_multiplier;
+            // Check content fields
+            let mut found_in_content = false;
+            for field in &[title, description, full_description] {
+                if let Some(tantivy::schema::Value::Str(field_text)) = retrieved_doc.get_first(*field) {
+                    if field_text.to_lowercase().contains(term) {
+                        found_in_content = true;
+                        break;
+                    }
+                }
             }
-        } else {
-            score *= 0.4;
-        }
-
-        // Other ranking factors remain unchanged
-        if let Some(tantivy::schema::Value::Str(instant_answer)) = retrieved_doc.get_first(instant_answer) {
-            if !instant_answer.is_empty() {
-                score *= 100.0;
+            if found_in_content {
+                content_matches += 1;
             }
         }
 
-        if let Some(tantivy::schema::Value::Str(privacy_track_record)) = retrieved_doc.get_first(privacy_track_record) {
-            if privacy_track_record == "excellent" {
-                score *= 1.2;
-            } else if privacy_track_record == "good" {
-                score *= 1.1;
-            } else if privacy_track_record == "bad" {
-                score *= 0.9;
-            } else if privacy_track_record == "terrible" {
-                score *= 0.8;
-            }
+        // Apply relationship-based scoring
+        if author_matches > 0 && content_matches > 0 {
+            // Highest boost when terms match both author and content
+            score *= 1.0 + (author_matches as f32 * 0.5) + (content_matches as f32 * 0.3);
+        } else if author_matches > 0 {
+            // Good boost for author matches
+            score *= 1.0 + (author_matches as f32 * 0.4);
+        } else if content_matches > 0 {
+            // Smaller boost for content matches
+            score *= 1.0 + (content_matches as f32 * 0.2);
         }
 
-        if let Some(tantivy::schema::Value::Str(human_rights_track_record)) = retrieved_doc.get_first(human_rights_track_record) {
-            if human_rights_track_record == "excellent" {
-                score *= 1.2;
-            } else if human_rights_track_record == "good" {
-                score *= 1.1;
-            } else if human_rights_track_record == "bad" {
-                score *= 0.9;
-            } else if human_rights_track_record == "terrible" {
-                score *= 0.8;
-            }
-        }
+        // Generate the HTML for this result
+        let html = document_to_html(&retrieved_doc, &schema);
+        let html_without_quotes = html.replace(", ", "");
 
         scored_results.push((score, html_without_quotes));
     }
