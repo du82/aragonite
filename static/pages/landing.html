@@ -1,53 +1,156 @@
 <!DOCTYPE html>
-<!--
-   _____ ____ _____
-  /    /      \    \
-/____ /_________\____\
-\    \     α    /    /
-   \  \        /  /
-      \ \    / /
-        \ \/ /
-          \/
--->
-<!-- You won't find any JavaScript here, just a dynamically generated page! -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{name}}</title>
-    <meta property="og:description" content="A soverign search engine" />
-    <meta property="og:image" content="static/themes/media/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aragonite - Privacy-First Search</title>
+    <meta property="og:description" content="A sovereign search engine focused on privacy and independence">
+    <meta property="og:image" content="static/themes/media/logo.png">
     <link rel="stylesheet" href="{{theme}}" />
-  </head>
-  <body class="landing-body">
-    <div class="landing-outer-container">
-      <form class="landing-container" action="/search" method="post">
-        <h1 class="landing-gradient-text">{{name}}<sup>{{greek}}</sup></h1>
-        <div style="display: flex">
-          <input
-            class="search-box"
-            type="search"
-            name="query"
-            placeholder="{{search_string}}"
-            required
-          />
-          <input type="submit" value="Search" />
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1 class="logo">Aragonite<sup>α</sup></h1>
+                <p class="tagline">Experience the web without tracking or bias</p>
+                <form class="search-form" action="/search" method="post">
+                    <div class="search-container">
+                        <input class="search-input" type="search" name="query" placeholder="Search privately..." required>
+                        <button class="search-button" type="submit">Search</button>
+                    </div>
+                    <div class="quick-suggestions">
+                        <span class="suggestion-chip">browser-hardening</span>
+                        <span class="suggestion-chip">security guides</span>
+                        <span class="suggestion-chip">self-hosted vpn</span>
+                        <span class="suggestion-chip">throwaway email</span>
+                        <span class="suggestion-chip">encryption tools</span>
+                        <span class="suggestion-chip">password managers</span>
+                        <span class="suggestion-chip">tor setup</span>
+                        <span class="suggestion-chip">metadata-removal</span>
+                        <span class="suggestion-chip">privacy news</span>
+                    </div>
+                </form>
+            </section>
+
+            <section class="bento-grid-section">
+                <div class="bento-grid">
+                <!-- Sovereign Index Card -->
+                <div class="bento-item bento-large">
+                    <h3>Sovereign Search Index</h3>
+                    <p>Built from the ground up with Rust, our independent crawler and index gives you complete control over your search experience. No external dependencies, no compromises.</p>
+                    <ul class="feature-list">
+                        <li>Custom-built crawler optimized for privacy</li>
+                        <li>Independent index with no external influence</li>
+                        <li>Written in Rust for maximum performance and security</li>
+                        <li>Fully transparent ranking algorithm</li>
+                    </ul>
+                </div>
+
+                <!-- Privacy Features Card -->
+                <div class="bento-item">
+                    <h3>Zero-Knowledge Privacy</h3>
+                    <p>Your searches are your business. Period.</p>
+                    <ul class="feature-list">
+                        <li>Zero bytes of user data stored</li>
+                        <li>Zero bytes shared with law enforcement</li>
+                        <li>No cookies, no tracking, no fingerprinting</li>
+                        <li>No JavaScript required</li>
+                    </ul>
+                </div>
+
+                <!-- Uncensored Results -->
+                <div class="bento-item bento-large">
+                    <h3>Uncensored Results</h3>
+                    <p>See the web as it really is, without algorithmic manipulation or content filtering.</p>
+                    <ul class="feature-list">
+                        <li>No content filtering or censorship</li>
+                        <li>No political bias or manipulation</li>
+                        <li>No algorithmic bubbles or personalization</li>
+                        <li>Complete transparency in ranking factors</li>
+                    </ul>
+                </div>
+
+                <!-- Network Privacy -->
+                <div class="bento-item">
+                    <h3>Network Privacy</h3>
+                    <p>First-class support for privacy-focused browsing</p>
+                    <ul class="feature-list">
+                        <li>Works perfectly over Tor</li>
+                        <li>Native .onion address</li>
+                        <li>End-to-end encrypted</li>
+                    </ul>
+                </div>
+
+                <!-- Self-Hosting -->
+                <div class="bento-item">
+                    <h3>Self-Hosting (Coming Soon)</h3>
+                    <p>Take control of your search infrastructure</p>
+                    <ul class="feature-list">
+                        <li>Run your own instance</li>
+                        <li>Air-gap capability</li>
+                        <li>Full data sovereignty</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+
+            <section class="community-section">
+                <h2>Open Format, Open Community</h2>
+                <p>Our search index uses an open format that anyone can contribute to. Join our community of privacy advocates and help build a more transparent web.</p>
+                <a href="/docs/contribute" class="button">Learn How to Contribute</a>
+            </section>
         </div>
-        <div class="search-result-related-row">
-          <a class="pill" href="/about">About our project</a>
-          <a class="pill" href="/syntax">Learn our syntax</a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="/docs">Documentation</a>
+                        <a href="/api">API Access</a>
+                        <a href="/syntax">Search Syntax</a>
+                        <a href="/mirrors">Mirror List</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <div class="footer-links">
+                        <a href="/contribute">Contribute</a>
+                        <a href="/forum">Forum</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/stats">Statistics</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">Terms of Service</a>
+                        <a href="/transparency">Transparency Report</a>
+                        <a href="/canary">Warrant Canary</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <div class="footer-links">
+                        <a href="/about">About Us</a>
+                        <a href="/donate">Donate</a>
+                        <a href="/contact">Contact</a>
+                        <a href="/security">Security</a>
+                    </div>
+                </div>
+
+                <div class="footer-meta">
+                    Index last updated: January 20, 2025 06:42 UTC | Node: nyc-05 | Connections: 824 | <a href="/status">Status</a>
+                </div>
+            </div>
         </div>
-      </form>
-    </div>
-    <footer class="landing-container">
-      <div class="landing-footer-container">
-        <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
-        <a href="privacy"> Privacy </a>|
-        <a href="/settings"> Settings </a>
-        <p class="centered-text">
-          Don't be Hypocrites | Mirror updated: {{mirror_updated}}
-        </p>
-      </div>
     </footer>
-  </body>
+</body>
 </html>

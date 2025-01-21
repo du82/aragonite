@@ -19,6 +19,23 @@
                     <input type="submit" value="Search">
                 </div>
             </form>
+            <form class="search-form" action="/search" method="post">
+                <div class="search-container">
+                    <input class="search-input" type="search" name="query" placeholder="Search privately..." required>
+                    <button class="search-button" type="submit">Search</button>
+                </div>
+                <div class="quick-suggestions">
+                    <span class="suggestion-chip">browser-hardening</span>
+                    <span class="suggestion-chip">security guides</span>
+                    <span class="suggestion-chip">self-hosted vpn</span>
+                    <span class="suggestion-chip">throwaway email</span>
+                    <span class="suggestion-chip">encryption tools</span>
+                    <span class="suggestion-chip">password managers</span>
+                    <span class="suggestion-chip">tor setup</span>
+                    <span class="suggestion-chip">metadata-removal</span>
+                    <span class="suggestion-chip">privacy news</span>
+                </div>
+            </form>
             <a href="/donate" class="donate-button" style="position: fixed; top: 10px; right: 10px; margin: 0;">
                 Donate
             </a>
