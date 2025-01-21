@@ -15,6 +15,7 @@ fn rocket() -> Rocket<Build> {
     rocket::build()
         .mount("/", routes![
             routes::logo_image,
+            routes::tailwind_css,
             routes::index,
             routes::favicon,
             routes::donate,

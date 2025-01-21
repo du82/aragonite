@@ -47,7 +47,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .join("");
     let author_html = if !author.is_empty() {
         format!(
-            "<a class='pill' href='/search?q={}'>author: {}</a>",
+            "<a class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q={}'>author: {}</a>",
             author, author
         )
     } else {
@@ -56,7 +56,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let tags = fields.get("tags").unwrap_or_else(|| &&default_value);
     let tags_html = if !tags.is_empty() {
         format!(
-            "<a class='pill' href='/search?q={}'>{}</a>",
+            "<a class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q={}'>{}</a>",
             tags.to_lowercase(),
             tags.to_lowercase()
         )
@@ -69,7 +69,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .replace(", ", "");
     let category_html = if !category.is_empty() {
         format!(
-            "<a class='pill' href='/search?q=category:{}'>{}</a>",
+            "<a class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q=category:{}'>{}</a>",
             category.to_lowercase(),
             category.to_lowercase()
         )
@@ -82,7 +82,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .replace(", ", "");
     let ptr_html = if !privacy_track_record.is_empty() {
         format!(
-            "<a title='Privacy track record' class='pill' href='/search?q=ptr:{}'>PTR: {}</a>",
+            "<a title='Privacy track record' class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q=ptr:{}'>PTR: {}</a>",
             privacy_track_record.to_lowercase(),
             privacy_track_record.to_lowercase()
         )
@@ -95,7 +95,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .replace(", ", "");
     let hrr_html = if !human_rights_track_record.is_empty() {
         format!(
-            "<a title='Human rights track record' class='pill' href='/search?q=hrr:{}'>HRR: {}</a>",
+            "<a title='Human rights track record' class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q=hrr:{}'>HRR: {}</a>",
             human_rights_track_record.to_lowercase(),
             human_rights_track_record.to_lowercase()
         )
@@ -108,7 +108,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .replace(", ", "");
     let language_html = if !language.is_empty() {
         format!(
-            "<a class='pill' href='/search?q=language:{}'>language: {}</a>",
+            "<a class='inline-block px-3 py-1 rounded-full bg-gray-800/50 hover:bg-gray-700 text-sm text-gray-300 transition-colors' href='/search?q=language:{}'>language: {}</a>",
             language.to_lowercase(),
             language.to_lowercase()
         )
@@ -131,37 +131,41 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         .join("");
 
     let url_html = match (onion.is_empty(), url.is_empty()) {
-        (false, false) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a> | {}</p>", onion, url),
-        (false, true) => format!("<p class='search-result-url-row'><a class='search-result-url' href='{}'>Onion</a></p>", onion),
-        (true, false) => format!("<p class='search-result-url-row'>{}</p>", url),
+        (false, false) => format!(
+            "<p class='text-sm text-gray-400 mb-2'><a class='hover:text-purple-400 transition-colors' href='{}'>Onion</a> | {}</p>",
+            onion, url
+        ),
+        (false, true) => format!(
+            "<p class='text-sm text-gray-400 mb-2'><a class='hover:text-purple-400 transition-colors' href='{}'>Onion</a></p>",
+            onion
+        ),
+        (true, false) => format!("<p class='text-sm text-gray-400 mb-2'>{}</p>", url),
         (true, true) => "".to_string(),
     };
 
-    // Only display one instant answer per query
-    let mut instant_answer_sent = false;
-    let instant_answer = if !instant_answer_sent {
-        instant_answer_sent = true;
-        fields
-            .get("instant_answer")
-            .unwrap_or_else(|| &&default_value)
-            .replace("[", "")
-            .split(',')
-            .collect::<Vec<&str>>()
-            .join("")
-    } else {
-        "".to_string()
-    };
+    let instant_answer = fields
+        .get("instant_answer")
+        .unwrap_or_else(|| &&default_value)
+        .replace("[", "")
+        .split(',')
+        .collect::<Vec<&str>>()
+        .join("");
 
-    // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {
-        format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>{}{}{}{}{}{}</div></div></details></div>",
-        url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
+        format!(
+            "<div class='bg-gray-800/50 w-[576px] backdrop-blur rounded-lg p-4 mb-4'><details><summary class='text-lg text-purple-400 cursor-pointer mb-2'>Instant Answer - never sponsored</summary><div><h3><a href='{}' target='_blank' rel='noopener noreferrer' class='text-xl font-semibold hover:text-purple-400 transition-colors'>{}</a></h3><p class='text-gray-300 my-2'>{}</p><div class='flex flex-wrap gap-2'>{}{}{}{}{}{}</div></div></details></div>",
+            url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html
+        )
     } else if instant_answer == "linux" {
-        format!("<div class='instant-answer'><details><summary>System Info</summary><h1>{}</h1><p class='search-result-description'>{}</p></details></div>",
-        title, description)
+        format!(
+            "<div class='bg-gray-800/50 w-[576px] backdrop-blur rounded-lg p-4 mb-4'><details><summary class='text-lg text-purple-400 cursor-pointer mb-2'>System Info</summary><h1 class='text-xl font-semibold'>{}</h1><p class='text-gray-300 mt-2'>{}</p></details></div>",
+            title, description
+        )
     } else {
-        format!("<div class='search-result'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='search-result-description'>{}</p><div class='search-result-related-row'>{}{}{}{}{}{}</div></div>",
-        url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
+        format!(
+            "<div class='bg-gray-800/50 w-[576px] backdrop-blur rounded-lg p-4 mb-4 hover:border hover:border-purple-500/50 transition-all'>{}<h3><a href='{}' target='_blank' rel='noopener noreferrer' class='text-xl font-semibold hover:text-purple-400 transition-colors'>{}</a></h3><p class='text-gray-300 my-2'>{}</p><div class='flex flex-wrap gap-2'>{}{}{}{}{}{}</div></div>",
+            url_html, url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html
+        )
     };
 
     result_html

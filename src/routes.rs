@@ -53,6 +53,13 @@ pub async fn syntax() -> Result<NamedFile, std::io::Error> {
 
 // -----Themes-----
 
+#[get("/css/tailwind.min.css")]
+pub async fn tailwind_css() -> Result<NamedFile, std::io::Error> {
+    NamedFile::open(Path::new("static/css/tailwind.min.css")).await
+}
+
+// -----Themes-----
+
 #[get("/themes/media/logo.png")]
 pub async fn logo_image() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/media/logo.png")).await
