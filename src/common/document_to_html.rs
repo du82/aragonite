@@ -27,7 +27,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         title
     };
     let description = fields
-        .get("full_description")
+        .get("description")
         .unwrap_or_else(|| &&default_value)
         .replace("[", "")
         .split(',')
