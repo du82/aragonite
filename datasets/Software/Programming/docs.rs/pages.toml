@@ -1,0 +1,379 @@
+["https://docs.rs/about/badges"]
+title = "Badges"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+year_published = 2025
+clearnet = "https://docs.rs/about/badges"
+category = "Networking"
+tags = ["badges", "builds", "docs.rs", "documentation", "download", "metadata", "shorthand", "urls"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "tree-sitter.github.io", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/about/download"]
+title = "Download"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+full_description = '''These archives can be used as a base for further processing of the documentation for offline readers like Dash or Zeal. They are not directly usable for offline documentation. To unpack the ZIP file you need any zip utility that supports PKZIP version 4.6 and BZIP2 compression. The archives will contain all the documentation HTML files for all targets and CSS/JS assets that are specific to the build. The default target will be found at the root, and other targets each in its own subfolder. Docs.rs is running rustdoc with --static-root-path "/-/rustdoc.static/", which leads to all references to static assets breaking if they are not available under that path. Older builds used --static-root-path "/", which means you will have to handle both. Since we're also adding --emit=invocation-specific to our build the archives will not contain any static assets that are specific to the toolchain. For now these will have to be downloaded file-by-file directly from docs.rs.'''
+year_published = 2025
+clearnet = "https://docs.rs/about/download"
+category = "Networking"
+tags = ["badges", "builds", "caveats", "directly", "docs.rs", "documentation", "documentation.", "download", "metadata", "offline"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "forge.rust-lang.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/about/metadata"]
+title = "Metadata"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+full_description = "You can customize docs.rs builds by defining [package.metadata.docs.rs] table in your crates' Cargo.toml."
+year_published = 2025
+clearnet = "https://docs.rs/about/metadata"
+category = "Networking"
+tags = ["all-features", "badges", "builds", "cargo-args", "custom", "default-target", "docs.rs", "documentation", "download", "features"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "forge.rust-lang.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/about/redirections"]
+title = "Shorthand URLs"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+full_description = "Docs.rs uses semver to parse URLs. You can use this feature to access crates' documentation easily. Example of URL redirections for clap crate:"
+year_published = 2025
+clearnet = "https://docs.rs/about/redirections"
+category = "Networking"
+tags = ["badges", "builds", "docs.rs", "documentation", "download", "metadata", "shorthand", "urls"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "forge.rust-lang.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/tree-sitter-jinja/0.1.0/tree_sitter_jinja"]
+title = "tree_sitter_jinja - Rust"
+description = "This crate provides Jinja language support for the tree-sitter parsing library."
+full_description = 'Crate tree_sitter_jinjaCopy item pathSource Expand descriptionThis crate provides Jinja language support for the tree-sitter parsing library. Typically, you will use the language function to add this language to a tree-sitter Parser, and then use the parser to parse some code: let code = r#" "#; let mut parser = tree_sitter::Parser::new(); parser.set_language(&tree_sitter_jinja::language()).expect("Error loading Jinja grammar"); let tree = parser.parse(code, None).unwrap(); assert!(!tree.root_node().has_error()); Constants§NODE_TYPESThe content of the node-types.json file for this grammar.Functions§languageGet the tree-sitter Language for this grammar.'
+year_published = 2025
+clearnet = "https://docs.rs/tree-sitter-jinja/0.1.0/tree_sitter_jinja"
+category = "Networking"
+tags = ["100%", "constants§", "crate", "docs.rs", "feature", "flags", "functions§", "item", "items", "language"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "tree-sitter.github.io", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/releases"]
+title = "Releases - Docs.rs"
+description = """
+Releases            Recently uploaded crates
+                                                                                                                                            Recent                                            
+                                                                                                    Stars                                            
+                                                                                                    Recent Failures                                            
+                                                                                                    Failures By Stars                                            
+                                                                                                    Activity                                            
+                                                                                                    Queue"""
+full_description = "A library and CLI to help create, run and interact with sandboxed Holochain conductor environments, for testing and development purposes."
+year_published = 2025
+clearnet = "https://docs.rs/releases"
+category = "Networking"
+tags = ["activity", "docs.rs", "failures", "queue", "recent", "releases", "stars"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "crates.io", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/crate/sark0y_tam_rst/13.10.62"]
+title = "sark0y_tam_rst 13.10.62 - Docs.rs"
+description = """
+sark0y_tam_rst 13.10.62                            
+                        Automation tool to make Console/Terminal more comfy. Have a great Day & Night, Dear User 💯❤️
+
+                                                                                                                             Crate                                            
+                                                                                                                         Source                                            
+                                                                                                                         Builds                                            
+                                                                                                                        Feature flags"""
+full_description = '''The very reason of this project is to make Your life easy at least for a little bit thanks to efficient automation of daily routine. For now, TAM makes possible to find files in whatever directory and run them with chosen viewers. hmmm.. yea, looks rather boring ain't it??? :)) well, let's look on some examples & details will show You how this "boring" feature can make Your life better. So, actually we have hella number of files & we (in many cases) need to use regex to make searching through that endless damn heap efficient, but the most of us have no time to learn such stuff + regex software have some differences. 2nd moment, we need not just run files, but run them with different options. So, let's deal w/ example.. python3 ./tam.py -path0 "/tst" -find_files -tmp_file "/tmp/tst02" -in_name ".mp4" -view_w "vlc --sout-x264-b-bias=-15" -view_w "smplayer" -cols 2 -rows 15 -col_w 100 -in_name "some" -path0 sets folder to search stuff. -find_files activates function to search. -tmp_file sets tmp files (actually, the're two tmp files: in our case, /tmp/norm_tst02 & /tmp/err_tst02). -in_name sets keyword. -view_w sets viewer w/ options. -cols sets number of columns. -rows sets number of rows. -col_w sets width of column. +++++++++++++ This command forms table of found files, each file gets a number + we see list of viewers (each viewer has own key number too).. To run file, we write "<key number of viewer> <key number of file>", then press Enter. for instance, "0 2" runs file (key number "2") w/ viewer (key number "0"). Command "np" shows next page/table. "pp" - previous page. "go2 <number of page/table>" "0p" - 1st page. "lp" - last one. "fp " shows full path to chosen file. ctrl + c to exit. So far, TAM has been tested only for Linux. However, theoretically this variant must work on FreeBSD, NetBSD & MacOS quite smoothly (but i don't guarantee it). Rolling guide of TAM (Topnotch Practical ways to use Console/Terminal): https://alg0z8n8its9lovely6tricks.blogspot.com/2024/08/tam-guide-of-features-smart-tricks.html TELEGRAM: https://t.me/+N_TdOq7Ui2ZiOTM6 (Alg0Z). ALG0Z RU: https://dzen.ru/alg0z ALG0Z EN: https://alg0z.blogspot.com ChangeLog: https://alg0z8n8its9lovely6tricks.blogspot.com/2023/09/tam-changelog.html FORUM: https://www.neowin.net/forum/topic/1430114-tam/ E-MAIL: sark0y@protonmail.com GITHUB: https://github.com/SarK0Y/TAM_RUSTy.git YouTube: https://www.youtube.com/@evgeneyknyazhev968 Twitter_X: https://x.com/SarK0Y8 Donations: https://boosty.to/alg0z/donate https://zap-hosting.com/en/shop/donation/1f0c83845d810df04ca74e56238399f7/'''
+year_published = 2025
+clearnet = "https://docs.rs/crate/sark0y_tam_rst/13.10.62"
+category = "Networking"
+tags = ["13.10.62", "actual", "again.🤘", "already", "best", "builds", "check", "console", "crate", "damn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "alg0z8n8its9lovely6tricks.blogspot.com", "boosty.to", "crates.io", "doc.rust-lang.org", "dzen.ru", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/stellar-axelar-operators/0.1.0/stellar_axelar_operators"]
+title = "stellar_axelar_operators - Rust"
+description = "API documentation for the Rust `stellar_axelar_operators` crate."
+full_description = "Crate stellar_axelar_operatorsCopy item pathSource Modules§erroreventStructs§AxelarOperatorsAxelarOperatorsClientAxelarOperatorsClient is a client for calling the contract defined in “AxelarOperators”. Crate stellar_axelar_operatorsCopy item pathSource Modules§erroreventStructs§AxelarOperatorsAxelarOperatorsClientAxelarOperatorsClient is a client for calling the contract defined in “AxelarOperators”."
+year_published = 2025
+clearnet = "https://docs.rs/stellar-axelar-operators/0.1.0/stellar_axelar_operators"
+category = "Networking"
+tags = ["5.88%", "crate", "docs.rs", "feature", "flags", "item", "items", "modules§", "path", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/releases/queue"]
+title = "Queue - Docs.rs"
+description = """
+Queue            crate documentation scheduled to build & deploy
+                                                                                                                                            Recent                                            
+                                                                                                    Stars                                            
+                                                                                                    Recent Failures                                            
+                                                                                                    Failures By Stars                                            
+                                                                                                    Activity                                            
+                                                                                                    Queue"""
+full_description = "After the build finishes it may take up to 20 minutes for all documentation pages to be up-to-date and available to everybody. We continuously rebuild the latest versions for all crates so they can benefit from new features in rustdoc."
+year_published = 2025
+clearnet = "https://docs.rs/releases/queue"
+category = "Networking"
+tags = ["active", "activity", "being", "build", "built", "currently", "deployments", "docs.rs", "failures", "queue"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "forge.rust-lang.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/stellar-interchain-token/0.1.0/stellar_interchain_token"]
+title = "stellar_interchain_token - Rust"
+description = "API documentation for the Rust `stellar_interchain_token` crate."
+full_description = "Crate stellar_interchain_tokenCopy item pathSource Modules§erroreventStructs§InterchainTokenInterchainTokenClientInterchainTokenClient is a client for calling the contract defined in “InterchainToken”. Crate stellar_interchain_tokenCopy item pathSource Modules§erroreventStructs§InterchainTokenInterchainTokenClientInterchainTokenClient is a client for calling the contract defined in “InterchainToken”."
+year_published = 2025
+clearnet = "https://docs.rs/stellar-interchain-token/0.1.0/stellar_interchain_token"
+category = "Networking"
+tags = ["4.35%", "crate", "docs.rs", "feature", "flags", "item", "items", "modules§", "path", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/holochain_conductor_config/0.5.0-dev.2/holochain_conductor_config"]
+title = "holochain_conductor_config - Rust"
+description = "API documentation for the Rust `holochain_conductor_config` crate."
+full_description = "Crate holochain_conductor_configCopy item pathSource Modules§configHelpers for creating, reading and writing ConductorConfigs.generateHelpers for generating new directories and ConductorConfig.portsHelpers for working with ports.Macros§msgPrint a message with hc-conductor-config: prepended and ANSI colors. Crate holochain_conductor_configCopy item pathSource Modules§configHelpers for creating, reading and writing ConductorConfigs.generateHelpers for generating new directories and ConductorConfig.portsHelpers for working with ports.Macros§msgPrint a message with hc-conductor-config: prepended and ANSI colors."
+year_published = 2025
+clearnet = "https://docs.rs/holochain_conductor_config/0.5.0-dev.2/holochain_conductor_config"
+category = "Networking"
+tags = ["crate", "docs.rs", "feature", "flags", "item", "items", "macros§", "modules§", "path", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "alg0z8n8its9lovely6tricks.blogspot.com", "boosty.to", "brew.sh", "crates.io", "discord.gg", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/chaindev/0.53.0/chaindev"]
+title = "chaindev - Rust"
+description = "Docs.rs crate page"
+full_description = 'Crate chaindevCopy item pathSource Expand description§ChainDEV Blockchain cluster management, supports both single-machine multi-process mode and multi-machine distributed mode. Re-exports§pub use beacon_based::dev as beacon_dev;pub use beacon_based::ddev as beacon_ddev;pub use common::*;Modules§beacon_basedFor beacon(eth2) based chaincommonMacros§check_errlist{"&[u8]":"<h3>Notable traits for <code>&amp;[<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>]</code></h3><pre><code><div class=\"where\">impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/std/io/trait.Read.html\" title=\"trait std::io::Read\">Read</a> for &amp;[<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>]</div>","&mut Vec<u8>":"<h3>Notable traits for <code><a class=\"struct\" href=\"https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html\" title=\"struct alloc::vec::Vec\">Vec</a>&lt;<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>, A&gt;</code></h3><pre><code><div class=\"where\">impl&lt;A&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/std/io/trait.Write.html\" title=\"trait std::io::Write\">Write</a> for <a class=\"struct\" href=\"https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html\" title=\"struct alloc::vec::Vec\">Vec</a>&lt;<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>, A&gt;<div class=\"where\">where\n A: <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/alloc/trait.Allocator.html\" title=\"trait core::alloc::Allocator\">Allocator</a>,</div></div>","Vec<u8>":"<h3>Notable traits for <code><a class=\"struct\" href=\"https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html\" title=\"struct alloc::vec::Vec\">Vec</a>&lt;<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>, A&gt;</code></h3><pre><code><div class=\"where\">impl&lt;A&gt; <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/std/io/trait.Write.html\" title=\"trait std::io::Write\">Write</a> for <a class=\"struct\" href=\"https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html\" title=\"struct alloc::vec::Vec\">Vec</a>&lt;<a class=\"primitive\" href=\"https://doc.rust-lang.org/nightly/std/primitive.u8.html\">u8</a>, A&gt;<div class=\"where\">where\n A: <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/alloc/trait.Allocator.html\" title=\"trait core::alloc::Allocator\">Allocator</a>,</div></div>"}'
+year_published = 2025
+clearnet = "https://docs.rs/chaindev/0.53.0/chaindev"
+category = "Networking"
+tags = ["29.06%", "chaindev-0.53.0", "chaindev0.53.0", "chaindevcopy", "crate", "docs.rs", "feature", "flags", "item", "items"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "rust-lang.org", "rust-lang.zulipchat.com"]
+
+["https://docs.rs/stellar-axelar-gateway/0.1.0/stellar_axelar_gateway"]
+title = "stellar_axelar_gateway - Rust"
+description = "API documentation for the Rust `stellar_axelar_gateway` crate."
+full_description = "Crate stellar_axelar_gatewayCopy item pathSource Modules§erroreventexecutabletypesMacros§impl_not_approved_errorGenerates the implementation for the NotApprovedError trait for the given error typeStructs§AxelarGatewayAxelarGatewayClientAxelarGatewayClient is a client for calling the contract defined in “AxelarGateway”.AxelarGatewayMessagingClientAxelarGatewayMessagingClient is a client for calling the contract defined in “AxelarGatewayMessagingInterface”.Traits§AxelarGatewayMessagingInterface"
+year_published = 2025
+clearnet = "https://docs.rs/stellar-axelar-gateway/0.1.0/stellar_axelar_gateway"
+category = "Networking"
+tags = ["18.18%", "crate", "docs.rs", "feature", "flags", "item", "items", "macros§", "modules§", "path"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/crate/streamstore-cli/0.8.3"]
+title = "streamstore-cli 0.8.3 - Docs.rs"
+description = """
+streamstore-cli 0.8.3                            
+                        CLI for S2
+
+                                                                                                                             Crate                                            
+                                                                                                                         Source                                            
+                                                                                                                         Builds                                            
+                                                                                                                        Feature flags"""
+full_description = "Generate an authentication token by logging onto the web console at s2.dev and set the token in CLI config: You can add the --help flag to any command for CLI reference. Run s2 --help to view all the supported commands and options. [!TIP] The --help command displays a verbose help message whereas the -h displays the same message in brief. Check out the S2 CLI Releases for prebuilt binaries for many different architectures and operating systems. We use Github Issues to track feature requests and issues with the SDK. If you wish to provide feedback, report a bug or request a feature, feel free to open a Github issue. Developers are welcome to submit Pull Requests on the repository. If there is no tracking issue for the bug or feature request corresponding to the PR, we encourage you to open one for discussion before submitting the PR."
+year_published = 2025
+clearnet = "https://docs.rs/crate/streamstore-cli/0.8.3"
+category = "Networking"
+tags = ["0.8.3", "binaries", "builds", "cargo", "commands", "contributing", "crate", "docs.rs", "feature", "feedback"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "alg0z8n8its9lovely6tricks.blogspot.com", "boosty.to", "brew.sh", "crates.io", "discord.gg", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/about"]
+title = "About Docs.rs"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+full_description = "Docs.rs is an open source documentation host for crates of the Rust Programming Language. All libraries published to crates.io are documented. If you just published a crate, your crate is likely still in the queue. The source code of Docs.rs is available on GitHub. If you ever encounter an issue, don't hesitate to report it! (And thanks in advance!) JavaScript in support of documentation is allowed but not guaranteed to work on docs.rs. What that means: If you write documentation that inlines some JavaScript (like KaTeX), that's allowed, and will probably work today but may break in the future. However, it's not allowed to put JavaScript or other content in docs published on docs.rs for the purpose of tracking visitors. For instance, adding Google Analytics scripts, tracking pixels, or site verification for services like Google Search Console. Crates that do this will have the relevant versions removed and may be blocked from docs.rs."
+year_published = 2025
+clearnet = "https://docs.rs/about"
+category = "Networking"
+tags = ["0.6.0", "badges", "builds", "contact", "docs.rs", "documentation", "download", "javascript", "metadata", "shorthand"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "katex.org", "rust-lang.org", "rust-lang.zulipchat.com"]
+
+["https://docs.rs/js-component-bindgen/1.9.1/js_component_bindgen"]
+title = "js_component_bindgen - Rust"
+description = "API documentation for the Rust `js_component_bindgen` crate."
+full_description = "Crate js_component_bindgenCopy item pathSource Modules§esm_bindgenfunction_bindgenintrinsicsnamessourceMacros§uwriteCalls write! with the passed arguments and unwraps the result.uwritelnCalls writeln! with the passed arguments and unwraps the result.Structs§ComponentInfoTranspileOptsTranspiledEnums§BindingsModeInstantiationModeFunctions§dealiasgenerate_typestranspileGenerate the JS transpilation bindgen for a given Wasm component binary Outputs the file map and import and export metadata for the Transpilation"
+year_published = 2025
+clearnet = "https://docs.rs/js-component-bindgen/1.9.1/js_component_bindgen"
+category = "Networking"
+tags = ["21.34%", "crate", "docs.rs", "enums§", "feature", "flags", "functions§", "item", "items", "js-component-bindgen-1.9.1"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "alg0z8n8its9lovely6tricks.blogspot.com", "boosty.to", "brew.sh", "crates.io", "discord.gg", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/about/builds"]
+title = "Builds"
+description = """
+Docs.rs documentation                                                                                                             About    
+
+                                                                                 Badges    
+
+                                                                                 Builds    
+
+                                                                                 Metadata    
+
+                                                                                 Shorthand URLs    
+
+                                                                                 Download"""
+full_description = "Docs.rs automatically builds documentation for crates released on crates.io. It may take a while to build your crate, depending on how many crates are in the queue. All crates are built in a sandbox using the nightly release of the Rust compiler. The current version in use is rustc 1.86.0-nightly (ed43cbcb8 2025-01-21). The README of a crate is taken from the readme field defined in Cargo.toml. If this field is not set, no README will be displayed. All targets other than x86_64-unknown-linux-gnu are cross-compiled. For implementation reasons, this is unlikely to change for the foreseeable future. The Docs.rs README describes how to build unpublished crate documentation locally using the same build environment as the Docs.rs build agent. Missing dependencies are a common reason for failed builds. Docs.rs dependencies are managed through crates-build-env. See Forge for how to add a dependency. Most of the sandbox is a read-only file system, including the source directory of your crate and its dependencies. If your build.rs generates files that are relevant for documentation, consider writing to the cargo output directory, passed in the environment variable OUT_DIR. If your build fails because it hit one of these limits, please open an issue to get them increased for your crate. Since our build agent has finite resources, we have to consider each case individually. However, there are a few general policies: If your crate fails to build for a reason not listed here, please file an issue. Some build failures can be fixed by Docs.rs, e.g., by issuing a rebuild after a bug in Docs.rs has been fixed."
+year_published = 2025
+clearnet = "https://docs.rs/about/builds"
+category = "Networking"
+tags = ["badges", "builds", "diagnosing", "docs.rs", "documentation", "download", "failed", "metadata", "notes", "rustc-args"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "en.wikipedia.org", "forge.rust-lang.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "shields.io", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/stellar-interchain-token-service/0.1.0/stellar_interchain_token_service"]
+title = "stellar_interchain_token_service - Rust"
+description = "API documentation for the Rust `stellar_interchain_token_service` crate."
+full_description = "Crate stellar_interchain_token_serviceCopy item pathSource Modules§erroreventexecutableInterchainTokenExecutabletypesStructs§InterchainTokenServiceInterchainTokenServiceClientInterchainTokenServiceClient is a client for calling the contract defined in “InterchainTokenService”. Crate stellar_interchain_token_serviceCopy item pathSource Modules§erroreventexecutableInterchainTokenExecutabletypesStructs§InterchainTokenServiceInterchainTokenServiceClientInterchainTokenServiceClient is a client for calling the contract defined in “InterchainTokenService”."
+year_published = 2025
+clearnet = "https://docs.rs/stellar-interchain-token-service/0.1.0/stellar_interchain_token_service"
+category = "Networking"
+tags = ["12.8%", "crate", "docs.rs", "feature", "flags", "item", "items", "modules§", "path", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/orx-concurrent-vec/3.1.1/orx_concurrent_vec"]
+title = "orx_concurrent_vec - Rust"
+description = "Docs.rs crate page"
+full_description = 'Crate orx_concurrent_vecCopy item pathSource Expand description§orx-concurrent-vec A thread-safe, efficient and lock-free vector allowing concurrent grow, read and update operations. §Safe Concurrent Grow & Read & Update ConcurrentVec provides safe api for concurrent grow & read & update operations (see also GrowReadUpdate.md and examples metrics_collection, random_actions and concurrent_grow_read_update). §① Grow ConcurrentVec is designed having safe & high performance growth in focus. Elements can be added to the vector using push and extend methods. ⓘlet idx = vec.push("foo".to_string()); // extend guarantees that all elements of the iterator will be written consecutively let begin_idx = vec.extend((0..42).map(|i| i.to_string())); These methods return the positions in the vector that the values are written to, since otherwise it is not trivially possible to get this information in a concurrent program. For similar reasons, there exist also push_for_idx and extend_for_idx variants. §② Read In order to prevent race conditions, safe methods of the concurrent vec do not return &T or &mut T references. Instead, vec.get(i) and vec[i] provides a reference to the i-th ConcurrentElement of the vector. A concurrent element then provides us with thread-safe read and write access to the underlying value. For instance, we can use the value of the i-th element of the concurrent vec as follows: ⓘvec[i].map(|x| println!("{}", x)); // just do something with the value let double = vec[i].map(|x| x * 2); // or map it to another value When possible and makes sense, we might as well get the clone or copy of the value: ⓘlet clone: Option<String> = vec.get_cloned(i); // or: vec[i].cloned(); §Read via Iterators Similar to iter on a slice, concurrent vec’s iter provides an iterator yielding references to concurrent elements of the vec. ⓘlet total_num_characters: usize = vec.iter().map(|elem| elem.map(|x| x.len())).sum(); let students = vec.iter().filter(|elem| elem.map(|person| person.is_student())); Notice that the iterator yields &ConcurrentElement, and then we need to use its thread-safe methods (map here) to do something with the values. For common use cases like these, there exist shorthands such as: ⓘlet ages = vec.map(|student| student.age()); let total_num_characters: usize = vec.fold(0, |agg, x| agg + x.len()); let students = vec.filter(|person| person.is_student()); §③ Update Since ConcurrentElement provides both read and write access, get (or access via index) suffices and get_mut is not required. We can update the value of an element depending on its previous value. ⓘvec[i].update(|x| { match *x < 100 { true => *x += 1, false => *x = 0, } }); Alternatively, we can set or replace its value. ⓘvec[i].set(String::from("foo")); let old_value = vec[i].replace(String::from("bar")); assert_eq!(old_value.as_str(), "foo"); §Updating via Iterators We do not need iter_mut since ConcurrentElement allows mutating the elements. ⓘ// double all values for elem in vec.iter() { elem.update(|x| *x *= 2); } // set all values to 42 vec.iter().for_each(|elem| elem.set(42)); // set all values to 42 and collect the old ones let old_values: Vec<_> = vec.iter().map(|elem| elem.replace(42)).collect(); §Concurrent Slices Similar to the standard vec, a concurrent vec can be sliced into concurrent slices using slice(range) method. Resulting slices can of course be further sliced. A ConcurrentSlice has all functionalities of the concurrent vec except for the growth methods. ⓘuse orx_concurrent_vec::*; let vec: ConcurrentVec<_> = (0..42).into_iter().collect(); let a = vec.slice(..21); let b = vec.slice(21..); // or let (a, b) = vec.split_at(21); assert_eq!(a.len(), 21); assert_eq!(b[0].copied(), 21); Slices are useful in a concurrent program to limit the access of certain actors to a particular region of the data. Methods such as split_at and chunks are particularly helpful for this purpose. §(Partially) Unsafe Api ConcurrentVec aims to provide an extensive set of vec functionalities while providing thread-safety via access through the concurrent element. However, it also provides unsafe methods to provide references to the elements. These methods and references can be used safely under certain circumstances. A common scenario where we do not need the checked access occurs when we use grow and read methods, but not update methods. In such a case, we can directly access the values through &T references or hold on to these references (or pointers) throughout the lifetime of the vector. This is safe due to the following: the concurrent vector will never allow access until the element is completely initialized, and the references will remain valid as long as the vec is not dropped due to the pinned element guarantees of the underlying PinnedVec storage. References and pointers can be obtained using get_ref, get_mut, get_raw, get_raw_mut, iter_ref and iter_mut methods. Details can be read in GrowRead.md and an example safe usage can be found in concurrent_grow_read_noupdate. §Current Limitations Currently, ConcurrentVec cannot change positions of existing elements concurrently, swap being the only exception: clear requires a &mut self reference. methods such as remove, insert and pop are not yet implemented. §Performance§Impact of Lock-Free We can replace ConcurrentVec<T> with Arc<Mutex<Vec<T>>> which would provide us with entire functionality of the standard vector. However, especially in performance critical scenarios, locking an entire vector for each access might not be a good strategy. A drop-in replacement for Arc<Mutex<Vec<T>>> in shared owner cases would have been Arc<ConcurrentVec<T>>, while in many scenarios &ConcurrentVec<T> would suffice to share the mutable state. However, it is important to note the difference in clone behavior; unlike Arc::clone, ConcurrentVec::clone()` clones the underlying data. The updater_reader example aims to demonstrate the impact of locking in such a scenario. In the example, we create and fill a vector and share it with two types of actors, updaters & readers: We spawn num_updaters threads, each of which continuously draws an index, and updates the element at the given index. We spawn num_readers threads, each of which continuously draws an index, and reads the value of the element at the given index. All threads run for a pre-set amount of time. At the end of the experiment, we analyze the number of read and update operations we could perform in the allowed duration. cargo run --release --example updater_reader -- --help cargo run --release --example updater_reader -- --len=10000 --num-readers=8 --num-updaters=8 --duration-seconds=10 In the benchmark, we fix the number of updater threads to 4 and change the number of reader threads between 2 and 16. With 2 reader threads, we observe that lock-free ConcurrentVec is able to perform four times more operations than arc-mutex-vec. As the number of reader threads increases, total number of operations we manage to perform actually decreases with arc-mutex-vec. The heavier the load, the more drastic the impact of locks. With ConcurrentVec, on the other hand, number of operations increases as we add more readers. Further, the relation is close to linear. In other words, the benefit of adding a new reader thread remains close to constant. §Growth Performance As mentioned, ConcurrentVec aims high performance concurrent growth. Therefore, certain design decisions are taken to enable safe extend method in order to overcome the false sharing problem. Wikipedia: When a system participant attempts to periodically access data that is not being altered by another party, but that data shares a cache block with data that is being altered, the caching protocol may force the first participant to reload the whole cache block despite a lack of logical necessity. Described problem can easily be experienced when multiple writers are concurrently pushing elements to the vector. We can avoid this problem by letting each writer extend the vector by multiple consecutive elements; hence, making it unlikely that the cache blocks being accessed and altered by different threads will overlap. Furthermore, growth in batches has the advantage of requiring fewer atomic updates, and hence, reducing the overhead of concurrency. The document ConcurrentGrowthBenchmark.md focuses specifically on the concurrent growth performance of ConcurrentVec and reports results of the benchmarks. In summary: ConcurrentVec is in general performant in concurrent growth. Using extend rather than push provides further significant performance improvements. There is not a significant difference between extending by batches of 64 elements or batches of 65536 elements. This is helpful since we do not need a well tuned number. A batch size large enough to avoid overlaps seems to be just fine. Of course, not all scenarios allow to extend in batches. However, whenever possible, it is preferable due to potential significant performance improvements. §Contributing Contributions are welcome! If you notice an error, have a question or think something could be added or improved, please open an issue or create a PR. §License This library is licensed under MIT license. See LICENSE for details. Structs§ConcurrentElementAn element of the ConcurrentVec that provides thread safe read and write methods on the value of the element.ConcurrentSliceA slice of a ConcurrentVec.ConcurrentVecA thread-safe, efficient and lock-free vector allowing concurrent grow, read and update operations.DoublingStrategy which allows creates a fragment with double the capacity of the prior fragment every time the split vector needs to expand.FixedVecA fixed vector, FixedVec, is a vector with a strict predetermined capacity (see SplitVec for dynamic capacity version).LinearStrategy which allows the split vector to grow linearly.SplitVecA split vector consisting of a vector of fragments.Enums§PinnedVecGrowthErrorError occurred during an attempt to increase capacity of the pinned vector.Traits§ConcurrentPinnedVecA wrapper for a pinned vector which provides additional guarantees for concurrent programs.IntoConcurrentPinnedVecA pinned vector which can be wrapped into a concurrent pinned vector.PinnedVecTrait for vector representations differing from std::vec::Vec by the following:'
+year_published = 2025
+clearnet = "https://docs.rs/orx-concurrent-vec/3.1.1/orx_concurrent_vec"
+category = "Networking"
+tags = ["100%", "access", "being", "capacity", "concurrent", "concurrentvec", "consecutive", "crate", "docs.rs", "element"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "crates.io", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs"]
+title = "Docs.rs"
+description = "Automation tool to make Console/Terminal more comfy. Have a great Day & Night, Dear User 💯❤️"
+year_published = 2025
+clearnet = "https://docs.rs"
+category = "Networking"
+tags = ["docs.rs", "recent", "releases"]
+language = "en"
+internal-references = ["none"]
+external-references = ["doc.rust-lang.org", "foundation.rust-lang.org", "rust-lang.org"]
+
+["https://docs.rs/aws-ip-ranges/0.990.0/aws_ip_ranges"]
+title = "aws_ip_ranges - Rust"
+description = "API documentation for the Rust `aws_ip_ranges` crate."
+full_description = "Crate aws_ip_rangesCopy item pathSource Structs§IpRangesThe root object of https://ip-ranges.amazonaws.com/ip-ranges.json.Ipv6PrefixThe objects inside the ipv6_prefixes list of https://ip-ranges.amazonaws.com/ip-ranges.json.PrefixThe objects inside the prefixes list of https://ip-ranges.amazonaws.com/ip-ranges.json.Constants§IP_RANGESThe content of https://ip-ranges.amazonaws.com/ip-ranges.json as a const IpRanges struct. Crate aws_ip_rangesCopy item pathSource Structs§IpRangesThe root object of https://ip-ranges.amazonaws.com/ip-ranges.json.Ipv6PrefixThe objects inside the ipv6_prefixes list of https://ip-ranges.amazonaws.com/ip-ranges.json.PrefixThe objects inside the prefixes list of https://ip-ranges.amazonaws.com/ip-ranges.json.Constants§IP_RANGESThe content of https://ip-ranges.amazonaws.com/ip-ranges.json as a const IpRanges struct."
+year_published = 2025
+clearnet = "https://docs.rs/aws-ip-ranges/0.990.0/aws_ip_ranges"
+category = "Networking"
+tags = ["22.22%", "aws-ip-ranges-0.990.0", "constants§", "crate", "docs.rs", "feature", "flags", "item", "items", "path"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "rust-lang.org", "rust-lang.zulipchat.com"]
+
+["https://docs.rs/tree-sitter-jinja-inline/0.1.0/tree_sitter_jinja_inline"]
+title = "tree_sitter_jinja_inline - Rust"
+description = "This crate provides JinjaInline language support for the tree-sitter parsing library."
+full_description = 'Crate tree_sitter_jinja_inlineCopy item pathSource Expand descriptionThis crate provides JinjaInline language support for the tree-sitter parsing library. Typically, you will use the language function to add this language to a tree-sitter Parser, and then use the parser to parse some code: let code = r#" "#; let mut parser = tree_sitter::Parser::new(); parser.set_language(&tree_sitter_jinja_inline::language()).expect("Error loading JinjaInline grammar"); let tree = parser.parse(code, None).unwrap(); assert!(!tree.root_node().has_error()); Constants§NODE_TYPESThe content of the node-types.json file for this grammar.Functions§languageGet the tree-sitter Language for this grammar.'
+year_published = 2025
+clearnet = "https://docs.rs/tree-sitter-jinja-inline/0.1.0/tree_sitter_jinja_inline"
+category = "Networking"
+tags = ["100%", "constants§", "crate", "docs.rs", "feature", "flags", "functions§", "item", "items", "language"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "tree-sitter.github.io", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/sphinx-rustdocgen/0.8.1/sphinx_rustdocgen"]
+title = "sphinx_rustdocgen - Rust"
+description = "Library for the sphinx-rustdocgen executable."
+full_description = "Crate sphinx_rustdocgenCopy item pathSource Expand descriptionLibrary for the sphinx-rustdocgen executable. It consists of functions to extract content from the AST and to write the content to an RST or MD file. The crate is tested on itself, so all the documentation in the crate is in RST. The tests for Markdown are done on the dependencies. Structs§ConfigurationStruct to hold the deserialized configuration passed from Python.Functions§traverse_crateTraverse the crate and extract the docstrings for the items."
+year_published = 2025
+clearnet = "https://docs.rs/sphinx-rustdocgen/0.8.1/sphinx_rustdocgen"
+category = "Networking"
+tags = ["100%", "crate", "docs.rs", "feature", "flags", "functions§", "item", "items", "path", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alg0z.blogspot.com", "boosty.to", "brew.sh", "discord.gg", "doc.rust-lang.org", "en.wikipedia.org", "foundation.rust-lang.org", "github.com", "gitlab.com", "ip-ranges.amazonaws.com", "katex.org", "neowin.net", "rust-lang.org", "rust-lang.zulipchat.com", "s2.dev", "t.me", "x.com", "youtu.be", "youtube.com", "zap-hosting.com"]
+
+["https://docs.rs/bitflag/0.10.0/bitflag"]
+title = "bitflag - Rust"
+description = "Generate types for C-style flags with ergonomic APIs using attribute macros and enums."
+full_description = 'Crate bitflagCopy item pathSource Expand descriptionGenerate types for C-style flags with ergonomic APIs using attribute macros and enums. §Getting started Add bitflag to your Cargo.toml: cargo add bitflag or [dependencies] bitflag-attr = "0.9.0"§Generating flags type Use the bitflag attribute macro to generate flag types: use bitflag::bitflag; #[bitflag(u32)] #[derive(Clone, Copy)] enum Flags { A = 0b00000001, B = 0b00000010, C = 0b00000100 } Deriving Clone and Copy for the type is mandatory. The generated type is a struct wrapping the chosen primitive type. See the docs for the bitflag macro for the full syntax. Also see the example_generated module for an example of what the bitflag macro generates for a flags type. §Externally defined flags If you’re generating flags types for an external source, such as a C API, you can use the non_exhaustive attribute to communicate to the bitflags macro that there may be more valid flags than the known flags. Without extra configuration, it defaults to !0 (all bits set) as a mask of all bits the external source may ever set, i.e. all bits are considered as possible values. use bitflag::bitflag; #[bitflag(u32)] #[non_exhaustive] // All bits are considered as possible values. #[derive(Debug, Clone, Copy)] pub enum Flags { /// The value `A`, at bit position `0`. A = 0b00000001, /// The value `B`, at bit position `1`. B = 0b00000010, /// The value `C`, at bit position `2`. C = 0b00000100, /// The combination of `A`, `B`, and `C`. ABC = A | B | C, } But you can also configure this value by using the helper attribute extra_valid_bits with a desired value of valid bits that the external source may ever set. use bitflag::bitflag; #[bitflag(u32)] #[non_exhaustive] // Communicate there is more potential valid flags than the known flags #[extra_valid_bits = 0b001001111] // Specify the extra bits to take into consideration. #[derive(Debug, Clone, Copy)] pub enum Flags { /// The value `A`, at bit position `0`. A = 0b00000001, /// The value `B`, at bit position `1`. B = 0b00000010, /// The value `C`, at bit position `2`. C = 0b00000100, /// The combination of `A`, `B`, and `C`. ABC = A | B | C, } Why should you do this? Generated methods like all and truncating operators like ! only consider bits in defined flags. Adding an unnamed flag makes those methods consider additional bits, without generating additional constants for them. It helps compatibility when the external source may start setting additional bits at any time. The known and unknown bits section has more details on this behavior. §Custom derives You can derive some traits on generated flags types if you enable Cargo features. The following libraries are currently supported: serde: Support #[derive(Serialize, Deserialize)], using text for human-readable formats, and a raw number for binary formats. arbitrary: Support #[derive(Arbitrary)], only generating flags values with known bits. bytemuck: Support #[derive(Pod, Zeroable)], for casting between flags values and their underlying bits values. §Adding custom methods The bitflag macro supports any attributes on generated flags types within the macro itself, while impl blocks can be added normally: #[bitflag(u32)] // Attributes can be applied to flags types #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)] enum Flags { A = 0b00000001, B = 0b00000010, C = 0b00000100 } // Impl blocks can be added to flags types normally impl Flags { pub fn as_u64(&self) -> u64 { self.bits() as u64 } } §Working with flags values Use generated constants and standard bitwise operators to interact with flags values: // union let ab = Flags::A | Flags::B; // intersection let a = ab & Flags::A; // difference let b = ab - Flags::A; // complement let c = !ab; See the docs for the example_generated module and the Flags trait for more details on operators and how they behave. §Formatting and parsing bitflags defines a text format that can be used to convert any flags value to and from strings. See the parser module for more details. §Terminology This crate and its documentation tries to follow the same terminology of the bitflags crate (the OG). Here we define some. §Flags types, flags values, flags Some terminology to refer to things in the bitflags domain: Bits type: A type that defines a fixed number of bits at specific locations. Flag: A set of bits in a bits type that may have a unique name. Flags type: A set of defined flags over a specific bits type. Flags value: An instance of a flags type using its specific bits value for storage. #[bitflag(u8)] // -- Bits type #[derive(Clone, Copy)] enum FlagsType { // --------- Flags type A = 1 // ----- Flag } let flag = FlagsType::A; // ---- Flags value §Known and unknown bits Any bits in a flag you define are called known bits. Any other bits are unknown bits. In the following flags type: #[bitflag(u8)] #[derive(Clone, Copy)] enum Flags { A = 1, B = 1 << 1, C = 1 << 2, } The known bits are 0b0000_0111 and the unknown bits are 0b1111_1000. bitflag doesn’t guarantee that a flags value will only ever have known bits set, but some operators will unset any unknown bits they encounter. If you’re using bitflags for flags types defined externally, such as from C, you probably want all bits to be considered known, in case that external source changes. You can do this using an unnamed flag, as described in externally defined flags. §Zero-bit flags Flags with no bits set, in general, should be avoided because they interact strangely with contains and intersects. A zero-bit flag is always contained, but is never intersected. The names of zero-bit flags can be parsed, but are never formatted. §Multi-bit flags Flags that set multiple bits should be avoided unless each bit is also in a single-bit flag. Take the following flags type as an example: #[bitflag(u8)] #[derive(Clone, Copy)] enum Flags { A = 1, B = 1 | (1 << 1), } The result of Flags::A ^ Flags::B is 0b0000_0010, which doesn’t correspond to either Flags::A or Flags::B even though it’s still a known bit. Modules§example_generatedExample of the generated code by the bitflag macro.iterYield the bits of a source flags value in a set of contained flags values.parserParsing flags from text.Macros§bitflag_matchA macro that matches flags values, similar to Rust’s match statement.Traits§BitsPrimitivePrimitive types that can be used with bitflag attribute implement this trait.FlagsA set of defined flags using a bits type as storage.Attribute Macros§bitflagAn attribute macro that transforms an C-like enum into a bitflag struct type implementing an API similar to the bitflags crate, and implementing many helpful traits (listed in more details below).'
+year_published = 2025
+clearnet = "https://docs.rs/bitflag/0.10.0/bitflag"
+category = "Networking"
+tags = ["0b00000001,", "0b00000010,", "86.73%", "attribute", "bitflag", "bitflag-0.10.0", "bitflag0.10.0", "bitflagcopy", "bitflags", "bits"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "doc.rust-lang.org", "foundation.rust-lang.org", "github.com", "ip-ranges.amazonaws.com", "katex.org", "rust-lang.org", "rust-lang.zulipchat.com"]
