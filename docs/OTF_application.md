@@ -86,3 +86,6 @@ The combination of deep technical expertise in privacy and security with proven 
 # If my project involves technology development, I agree to undergo a code security audit facilitated by OTF *
 
 () Yes
+
+--------------------------------------
+https://apply.opentech.fund/internet-freedom-fund-concept-note/
