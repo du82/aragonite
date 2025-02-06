@@ -75,6 +75,10 @@ The combination of deep technical expertise in privacy and security with proven 
 
 >> 
 
+# My application will be dismissed if it does not fit within OTF's mission, values, principles statements. *
+
+() Yes
+
 # I understand that all intellectual property created with support for this application must be openly licensed. *
 
 () Yes
