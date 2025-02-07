@@ -144,5 +144,9 @@ The combination of deep technical expertise in privacy and security with proven 
 
 --------------------------------------
 
+## NOTES ##
+
+Aragonite, like Signal/Briar, is fundamentally about maintaining information flows under censorship, not just providing privacy features like SimpleX Chat.
+
 Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
 Proposal Guide [https://docs.opentech.fund/otf-application-guidebook/appendix-ii-proposal-guide]
