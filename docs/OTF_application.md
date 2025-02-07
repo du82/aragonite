@@ -3,6 +3,50 @@
 ## DRAFT // BOILERPLATE ##
 --------------------------------------
 
+# Several areas where we need to strengthen the application:
+
+>> Problem Statement
+
+We've focused well on technical differentiation, but need more specific examples of information control/censorship
+Need to cite specific case studies where existing tools failed during critical periods
+Should detail more concrete user problems from our existing community
+
+
+>> Adversarial Analysis
+
+Need to explicitly address how adversaries might try to undermine the system
+Should discuss short/medium/long-term adversarial strategies
+Need to address potential illicit uses directly
+
+
+>> Project Planning
+
+Our objectives need more specific, measurable outcomes
+Should add clear distribution and promotion plan
+Need more detailed milestone metrics
+
+
+>> Community/Sustainability
+
+Need to better explain our existing community support
+Should detail how others can reuse/build on the platform
+Need to address long-term sustainability past OTF funding
+
+
+>> Risk Assessment
+
+Should explicitly discuss risks to implementers and users
+Need to address technical limitations in different environments
+Should discuss legal challenges more directly
+
+
+This IS why some privacy tools get funded while others don't - OTF is looking for a very specific combination of technical merit, practical impact, and risk awareness.
+
++++++++++++++++++++++++++++++++++++++
++++APPLICATION QUESTION VERSIONING+++
++++++++++++++++++++++++++++++++++++++
+
+
 # Project Title *
 ## This project name can be changed if a full proposal is requested.
 
