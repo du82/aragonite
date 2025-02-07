@@ -152,5 +152,20 @@ The OTF has a preference for distributing funds between $10,000 - $200,000.
 I believe SimpleX was rejected either due to asking for too much money, or asserting a much longer timeframe than they were comfortable with.
 Perhaps their operational cost is higher than that of Signal or Briar as well.
 
+--
+
+"Why even bother"
+
+> we do not need any money to build out capability. capability is not necessarily the issue.
+
+We require the legal protections to properly build out the index (there is a scaling bottleneck and IP blocking concerns).
+We require the funds for long-term mirror hosting and domains (along with any other cost, like renewals).
+We potentially require the funds to bring on another developer.
+The OTF stamp of approval will be a sign of legitimacy, driving actual adoption and trust.
+We will not have to worry about someone benefitting/profiting off of our code with a legitimate backer that specializes in this.
+[potentially] funds can be used for living expenses and other direct cost (operational, travel, if needed).
+
+--
+
 Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
 Proposal Guide [https://docs.opentech.fund/otf-application-guidebook/appendix-ii-proposal-guide]
