@@ -146,5 +146,11 @@ The combination of deep technical expertise in privacy and security with proven 
 
 ## NOTES ##
 
+The OTF has a preference of projects that will meet their goals in 6-12 months.
+The OTF has a preference for distributing funds between $10,000 - $200,000.
+
+I believe SimpleX was rejected either due to asking for too much money, or asserting a much longer timeframe than they were comfortable with.
+Perhaps their operational cost is higher than that of Signal or Briar as well.
+
 Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
 Proposal Guide [https://docs.opentech.fund/otf-application-guidebook/appendix-ii-proposal-guide]
