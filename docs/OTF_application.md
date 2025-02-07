@@ -14,6 +14,8 @@ Should detail more concrete user problems from our existing community
 
 >> Adversarial Analysis
 
+"What problem will your project address?" - discussing why current solutions are inadequate
+"Give a brief overview of activities" - discuss how we'll address these attack vectors
 Need to explicitly address how adversaries might try to undermine the system
 Should discuss short/medium/long-term adversarial strategies
 Need to address potential illicit uses directly
@@ -264,11 +266,11 @@ The combination of proven privacy tool development experience, successful projec
 [suggestions:]
 >> Technical Architecture Document 
 
-System overview
+System architecture diagrams/overview
 Security model details
 Mirror deployment architecture
 Index creation process
-A better version of our lil spider drawing
+(A better version of our lil spider drawing)
 
 >> Project Timeline/Roadmap
 
