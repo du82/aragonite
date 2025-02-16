@@ -1,0 +1,76 @@
+["https://htop.dev/index.html"]
+title = "htop - an interactive process viewer"
+full_description = "Download Screenshots Sightings List FAQ Bug tracker Support htop htop - an interactive process viewer This is htop, a cross-platform interactive process viewer. It is a text-mode application (for console or X terminals) and requires ncurses. Latest release. What's new in htop If you want to support htop, consider donating at Hack Club. This US IRS-approved 501(c)(3) nonprofit organization is hosting htop as our fiscal sponsor since March 2024. Please check out the changelog for details and credits of our releases! Here is Hisham's lightning talk at FOSDEM 2018 presenting the latest and upcoming features at the time: Since version 2.0, htop is now cross-platform! Check out the video and slides of Hisham's presentation at FOSDEM 2016 about how this came to be. The current releases support Linux, FreeBSD, NetBSD, OpenBSD, DragonFly BSD, MacOS and Solaris."
+year_published = 2025
+clearnet = "https://htop.dev/index.html"
+category = "SitesList"
+tags = ["htop", "interactive", "process", "viewer", "what's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "hcb.hackclub.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "web.archive.org", "youtu.be"]
+
+["https://htop.dev/sightings.html"]
+title = "htop - an interactive process viewer"
+full_description = '''Download Screenshots Sightings List FAQ Bug tracker Support htop htop in popular culture :-D To my complete amazement, htop has been featured in a few pieces of media over the years. It always makes my day when someone emails me telling they've spotted htop in a film or TV show. At Hugo Gualandi's suggestion, here's a page with some of these sightings. Please send an email notification if you find others - thanks! (2022) Pantheon - this is an animated sci-fi thriller/drama from Amazon Prime about the creation of digitally-uploaded humans. Screenshots are from Season 1 Episode 8, where one of the main characters works to solve why uploaded humans are degrading over time. Thanks to Evan Widloski! (2022) 9-1-1 Season 5 Episode 1, about 27 minutes in, just when the Air Traffic Control computers reboot after the cyber attack, the first thing that loads is htop. They also seem to be running a Zabbix Agent, Sidekiq, Redis and the Unicorn web server on a systemd-based distribution. Thanks to Chris Clemson! (2021) The America's Cup is probably the most prestigious yacht sailing tournament in the world. Even the qualifiers are spectacular and their broadcasts watched by millions. So they need some spectacular technology footage to visualize how technical this sport is. Thanks to Alexander Wessel, see htop in action during the opening day of the cup qualifiers in Auckland, New Zealand. Another video shows more detail shots of htop and features some sound bites from the user brent (Brent Russell, Race Management System - Technical Director) in the screenshot. Finding Your Roots (2017), according to Wikipedia is "a documentary television series" on the American TV channel PBS. Amazingly, htop makes an appearance in an episode on Bernie Sanders and Larry David! Thanks to Julians for the link! Tatort (2017), according to Wikipedia is "a German language police procedural television series that has been running continuously since 1970 with some 30 feature-length episodes per year, which makes it the longest-running German TV-drama." Thanks to Jan-Erik for the link! "Watch Dogs 2" (2016), video game. htop appears in the character's phone. Thanks to @digital_night_owl for the link! Video for Jean-Michel Jarre's "Oxygene 17" (2016). Thanks to Chris Clemson for the screenshot! "Mr. Robot" (2015), TV series. It's clearly a Hollywood mockup and not the actual software, but it's pretty evident they were going for the htop look. :) Thanks to Hugo Gualandi for the screenshot! "The Fifth Estate" (2013), movie. Another Hollywood mockup, but the trademark look of the meters is there. :) Thanks to Pierre Chapuis for the link!'''
+year_published = 2025
+clearnet = "https://htop.dev/sightings.html"
+category = "SitesList"
+tags = ["culture", "htop", "link!", "popular", "thanks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "groups.io", "hcb.hackclub.com", "imdb.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "twitter.com", "web.archive.org", "youtu.be", "youtube.com"]
+
+["https://htop.dev/downloads.html"]
+title = "htop - an interactive process viewer"
+full_description = "Download Screenshots Sightings List FAQ Bug tracker Support htop Downloads Latest releases. You can obtain it freely in two forms: Sources - source code, provided on Github Binaries - pre-compiled binaries, provided by distributions Sources Building htop is straightforward, as it uses GNU Autotools: the typical ./configure; make; sudo make install should do the trick. However, you may prefer to use binaries packaged for your distribution, see below. Stable, tarball Github : Check out the Github releases (autotools required) for the latest version . Development, from the Git repository: You can fetch the work-in-progress sources for the next release using Git: git clone https://github.com/htop-dev/htop You can also browse the Git tree online. Binaries Packages for htop are available in most distros. Try the package manager from your system; chances are htop is available from there. GoboLinux: In GoboLinux you can fetch and compile htop by typing: Compile htop Debian: In Debian you can fetch htop by typing: apt install htop You can also download the binary packages from the Debian webpage. Thanks to Daniel Lange, Graham Inggs, Eugene Lyubimkin and Bartosz Fenski. Fedora: htop is included in the Fedora repositories; you can fetch it with: dnf install htop Thanks to Dawid Gajownik. RedHat: You can find RPM packages at EPEL Thanks to Josh Stone for the tip. Slackware: htop is part of Slackware. You can find it in the ap/ section. Thanks to Patrick Volkerding for including it, and to Fred Broders for earlier packages. Gentoo: In Gentoo Linux you can emerge the sys-process/htop package by typing: emerge sys-process/htop Thanks to Wolfram Schlich. AltLinux: here are the latest RPMs for AltLinux. Thanks to Ilya Evseev. OpenSuSE: htop is included in the OpenSuSE build service. Thanks to Timo Hoenig. Arch Linux: htop is included in Arch Linux official repositories, you can get it with: pacman -S htop Thanks to Christian Hesse. MacOS: htop is included in the default Homebrew formulae, you can install it with: brew install htop Thanks to the homebrew contributors."
+year_published = 2025
+clearnet = "https://htop.dev/downloads.html"
+category = "SitesList"
+tags = ["altlinux", "arch", "binaries", "debian", "development,", "downloads", "fedora", "fetch", "gentoo", "github"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "hcb.hackclub.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "youtu.be"]
+
+["https://htop.dev/mailinglist.html"]
+title = "htop - an interactive process viewer"
+full_description = 'Download Screenshots Sightings List FAQ Bug tracker Support htop Mailing list To be informed of new releases, subscribe to the htop mailing list: You can subscribe by sending an email to htop+subscribe@groups.io with "subscribe" in the subject. Likewise, to unsubscribe send a message to htop+unsubscribe@groups.io with "unsubscribe" in the subject. You can also search the list archive. More information at the htop mailing list page, Groups.io. page. You can subscribe by sending an email to htop+subscribe@groups.io with "subscribe" in the subject. Likewise, to unsubscribe send a message to htop+unsubscribe@groups.io with "unsubscribe" in the subject.'
+year_published = 2025
+clearnet = "https://htop.dev/mailinglist.html"
+category = "SitesList"
+tags = ["htop", "list", "mailing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "groups.io", "hcb.hackclub.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "web.archive.org", "youtu.be"]
+
+["https://htop.dev"]
+title = "htop - an interactive process viewer"
+full_description = "Download Screenshots Sightings List FAQ Bug tracker Support htop htop - an interactive process viewer This is htop, a cross-platform interactive process viewer. It is a text-mode application (for console or X terminals) and requires ncurses. Latest release. What's new in htop If you want to support htop, consider donating at Hack Club. This US IRS-approved 501(c)(3) nonprofit organization is hosting htop as our fiscal sponsor since March 2024. Please check out the changelog for details and credits of our releases! Here is Hisham's lightning talk at FOSDEM 2018 presenting the latest and upcoming features at the time: Since version 2.0, htop is now cross-platform! Check out the video and slides of Hisham's presentation at FOSDEM 2016 about how this came to be. The current releases support Linux, FreeBSD, NetBSD, OpenBSD, DragonFly BSD, MacOS and Solaris."
+year_published = 2025
+clearnet = "https://htop.dev"
+category = "SitesList"
+tags = ["htop", "interactive", "process", "viewer", "what's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["floss.social", "fosdem.org", "github.com", "hcb.hackclub.com", "youtu.be"]
+
+["https://htop.dev/screenshots.html"]
+title = "htop - an interactive process viewer"
+full_description = '''Download Screenshots Sightings List FAQ Bug tracker Support htop Screenshots Htop is of course a text-mode program, but here are some screenshots of it running in terminals: New-style graphs using Braille Unicode characters, inspired by vtop, Tree view, drawn with Unicode characters, new in htop 1.0: htop 1.0 showing the CPU average meter in graph mode: Since htop 1.0, there is better visual support for large numbers of processors. Here's a 64-core machine: Configuring I/O scheduling priority (press "i"), new in htop 1.0.2: Configuring CPU affinity (press "a"), new in htop 0.7: Tree view, SMP, and other features available since htop 0.5: Color themes are available since htop 0.5.4, to suit both dark and light terminals: Default look, as of htop 0.4: A more conservative setup, using a monochrome terminal: The meters at the header are fully customizable: An impressive setup: htop running on a machine with 128 cores and 1TB of RAM: And thanks to htop's 4-column display mode, you can fit even more cores in a screen with ease and still have left for process information: here's a POWER8 machine with 176 cores! (Thanks to @stdlib for the screenshot) And here's the other extreme -- htop running on the tiny Raspberry Pi:'''
+year_published = 2025
+clearnet = "https://htop.dev/screenshots.html"
+category = "SitesList"
+tags = ["htop", "screenshots"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "groups.io", "hcb.hackclub.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "twitter.com", "web.archive.org", "youtu.be"]
+
+["https://htop.dev/faq.html"]
+title = "htop - an interactive process viewer"
+full_description = '''Download Screenshots Sightings List FAQ Bug tracker Support htop Frequently Asked Questions The numbers in the meters occasionally change colors when the bar is full. Is this a bug? No, that's the expected behavior. :) It's like when progress bars fill over the number on GUI apps. The memory meter in htop says a low number, such as 9%, when top shows something like 90%! (Or: the MEM% number is low, but the bar looks almost full. What's going on?) The number showed by the memory meter is the total memory used by processes. The additional available memory is used by the Linux kernel for buffering and disk cache, so in total almost the entire memory is in use by the kernel. I believe the number displayed by htop is a more meaningful metric of resources used: the number corresponds to the green bars; the blue and brown bars correspond to buffers and cache, respectively (as explained in the Help screen accessible through the F1 key). Numeric data about these is also available when configuring the memory meter to display as text (in the Setup screen, F2). Why doesn't htop feature a SWAP column, like top? It is not possible to get the exact size of used swap space of a process. Top fakes this information by making SWAP = VIRT - RES, but that is not a good metric, because other stuff such as video memory counts on VIRT as well (for example: top says my X process is using 81M of swap, but it also reports my system as a whole is using only 2M of swap. Therefore, I will not add a similar Swap column to htop because I don't know a reliable way to get this information (actually, I don't think it's possible to get an exact number, because of shared pages). How can I be notified of new releases? You can join the htop mailing list! What does the 'h' in 'htop' stand for? Yes, I did receive emails asking this! :) Well, the short explanation is a little obvious: the "h" stands for "Hisham", my name. :) The long explanation is that what inspired me to write htop was pinfo,'''
+year_published = 2025
+clearnet = "https://htop.dev/faq.html"
+category = "SitesList"
+tags = ["asked", "frequently", "htop", "memory", "number", "questions", "swap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["build.opensuse.org", "fedoraproject.org", "floss.social", "fosdem.org", "git-scm.org", "github.com", "gobolinux.org", "hcb.hackclub.com", "packages.debian.org", "packages.gentoo.org", "sisyphus.ru", "web.archive.org", "youtu.be"]

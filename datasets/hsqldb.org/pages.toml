@@ -1,0 +1,830 @@
+["http://hsqldb.org/doc/2.0/apidocssqltool/org.hsqldb.sqltool/module-summary.html"]
+title = "org.hsqldb.sqltool (HSQLDB 2.7.4 API)"
+full_description = "Module org.hsqldb.sqltool Packages Exports Package Description org.hsqldb.cmdline Contains the SqlTool command-line tool Module org.hsqldb.sqltool Packages Exports Package Description org.hsqldb.cmdline Contains the SqlTool command-line tool"
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/apidocssqltool/org.hsqldb.sqltool/module-summary.html"
+category = "SitesList"
+tags = ["module", "org.hsqldb.sqltool", "packages"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0/guide/deployment-chapt.html"]
+title = "Chapter 12. Deployment Guide"
+full_description = "Copyright 2002-2024 Fred Toussi. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. Additional permission is granted to the HSQL Development Group to distribute this document with or without alterations under the terms of the HSQLDB license. Memory used by the program can be thought of as two distinct pools: memory used for table data, which is not released unless the data is deleted; and memory that is released automatically, which includes memory used for caching, building result sets and other internal operations such as storing the information needed for rolling back a transaction. Most JVM implementations allocate up to a maximum amount of memory (usually 64 MB by default). This amount is generally not adequate when large memory tables are used, or when the average size of rows in cached tables is larger than a few thousand bytes. The maximum amount of allocated memory can be set on the Java command line that is used for running HyperSQL. For example, the JVM parameter -Xmx256m increases the amount to 256 MB. The memory used for a MEMORY table is the sum of memory used by each row. Each MEMORY table row is a Java object that contains an array of objects for the fields in the row. Each field is an object such as Integer, Long, String, etc. In addition, each index on the table adds a node object. As a result, a table with just one column of type INTEGER will have four objects per row taking up 80 bytes per row. Beyond this, each extra column in the table adds at least a few bytes to the size of each row. TEXT tables use less memory than MEMORY tables, as the array of objects is read from the disk only when needed. CACHED tables use even less memory, as discussed below. With CACHED tables, the data is stored on disk and only up to a maximum number of rows are held in the memory cache at any time. These cached rows use the same amount of memory per row as MEMORY tables. A single memory cache is used for all CACHED tables."
+year_published = 2024
+year_updated = 2024
+clearnet = "http://hsqldb.org/doc/2.0/guide/deployment-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "12.1.", "12.2.", "12.3.", "12.4.", "12.5.", "12.6.", "12.7.", "2002-2024", "2024-10-25"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/hsqlFeatures.html"]
+title = "HyperSQL Features"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Since the release of version 2.0, many new features and enhancements have been introduced in point releases. Regular code reviews, user feedback, and bug fixes resulted in the latest release. This document lists the enhancements and new features in version 2.0 and beyond. An extensive range of new SQL and JDBC capabilities, increased scalability, and better query optimisation have been achieved by a rewrite of most of the internal components and the addition of some major new ones. All areas of functionality have been thoroughly tested with an extensive internal test suite and by users with their applications. HyperSQL 2.0 went into alpha release in April 2009 and several RC releases were downloaded over 20000 times before the final release in June 2010. Over 200 users submitted bug reports which were promptly fixed. The same process was repeated again and again over the next 9 years. There were 7 point releases in 2011, followed by another 16 between 2012 and 2024. An extensive Guide was written over two years to cover all features of the engine in detail. It has been updated with each release to cover the latest features. Fully multithreaded core supports 2PL (two-phased locking) and MVCC (multiversion concurrency control), plus a hybrid 2PL+MVCC transaction control mode. Transactions can be SERIALIZABLE or READ COMMITTED, using strict 2PL concurrency control. Version 2.0 also adds the MVCC modes, SNAPSHOT ISOLATION and READ CONSISTENCY, which are comparable to REPEATABLE READS and READ COMMITTED isolation levels, but with higher concurrency. Many enhancements are introduced to allow maximum multi-threaded concurrency in different isolation modes. Massive high performance LOB store for BLOBs and CLOBs up to multi-gigabyte size, with total storage capacity of 64 terabytes. Increased default storage space of 64GB for all CACHED table disk-based data, with fast startup and shutdown. The default can always be extended to 8TB with a connection property. With another connection property at the time of database creation, the maximum can be extended to 256TB."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlFeatures.html"
+category = "SitesList"
+tags = ["100%", "array", "collations", "compatibility", "connection", "constructor", "core", "data", "database", "definition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/web/supportware.html"]
+title = "HSQLDB SupportWare"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "A significant development effort has led to the release of the latest version of HSQLDB. Better compatibility with new versions of Java, as well as improved code quality are just part of this effort. For years, HSQLDB has been Java developers' best choice for development, testing and deployment of database applications. We have maintained our leading position through continuous enhancements. A major development effort has resulted in version 2.7.4, the most advanced open source RDBMS for small and medium sized databases. HSQLDB SupportWare allows individual developers, corporations and organizations to support the maintenance and development of HSQLDB. This is for individual developers who want to support the HyperSQL project. In return, your questions will get priority and you will get a say in future developments. This is for corporations with limited internal use or less than 50 distributed units of HyperSQL. Your developers will get the same benefits as individual developers. Premier Corporate subscription - large corporations, large-scale use or distribution - base level $2500 or �2500 This is for corporation with extensive use or distribution of HyperSQL. You can ask for enhancements and they will be implemented to the extent your financial contribution allows. Full deployment support is also provided. The suggested amounts for Premier Corporate subscription are the minimum recommended amounts. If you consider that your use of HSQLDB warrants a larger contribution, please use your discretion. Feature Sponsorship allows an organization to sponsor specific new features or improvements. If your organization would benefit from the addition of a new feature or capability to HSQLDB, you can fund its development after discussion and agreement with Fred Toussi, the Project Maintainer. Please send an email to fredt (at) users.sourceforge.net Project Sponsorship We also welcome corporate project sponsors to support the general development of the software. Project sponsors will be featured on our home page and can include their news and announcements."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/supportware.html"
+category = "SitesList"
+tags = ["100%", "basic", "benefits", "corporate", "database", "developer", "feature", "fredt", "funded", "hsqldb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/deployment.html"]
+title = "HyperSQL Deployment"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "http://hsqldb.org/web/deployment.html"
+category = "SitesList"
+tags = ["100%", "database", "deployment", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/support/index.html"]
+title = "HyperSQL Support"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "The latest HyperSQL release package, including sources and documentation, is available via the download link above. HSQLDB jar releases are also uploaded to Maven Central repository. This directory contains the latest release jars for Java 8 or greater, including a jar compiled with debug information. Are you using HSQLDB for testing or deployment of a commercial application? Have you joined SupportWare yet? SupportWare is a program to ensure the development and maintenance of HSQLDB. SupportWare subscribers get priority in support and feature requests. Professional support is available from the HyperXtremeSQL web site http://www.hxsql.com. What you pay will also contribute to the maintenance and future development of HSQLDB. And if you cannot find the answer, try searching the Alternative B below before posting a new message. Normally you should post in a new thread, but if your question is closely related to a recent, existing, related, thread, you can add your post to the thread, which automatically promotes the thread to the top of the list. You should get a SourceForge user id and log on before you submit items. You can then put bookmarks on threads that interest you or choose to get all the new posts by email. Alternatively, you can use our user mailing list to ask simple, general questions. You must subscribe to the mailing list before you can post a message. This mailing list is not for reporting possible bugs or complex technical issues. Use the Forums and Issue trackers for these issues. If you are a developer of an open source project and need support for integration of HSQLDB with your project, please mention your project. This will give a higher priority to your request. If you are new to Java or HSQLDB, please discuss the issue in the Help forums first. If you have to report a bug in HSQLDB please use the Bug Tracker at SourceForge. If possible, include the SQL statements that caused the error, or a Java test case. The issue can then be fixed much easier and faster. If the bug is related to SQL behaviour, you can simply write an SQL script that shows the bug. See examples of the scripts in the /testrun/hsqldb/ folder of the HSQLDB distribution package. If the bug is related to JDBC usage, you can reuse one of the test cases in the org.hsqldb.test package. See examples in the /src/org/hsqldb/test/ directory."
+year_published = 2025
+clearnet = "http://hsqldb.org/support/index.html"
+category = "SitesList"
+tags = ["100%", "commercial", "database", "feature", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "latest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/hsqlFAQ.html"]
+title = "HyperSQL FAQ"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "How to install and run HSQLDB How to compile HSQLDB How to create a new database How to start programming JDBC / HSQLDB Where to get more documentation How to use HSQLDB inside JBuilder How to upgrade from an old version Can I use HSQLDB in my program Reliability, Performance and Deployment You don't need to. A compiled JAR of HSQLDB is included in the zip in the /lib folder. This runs under Java 11 and later and support Java module system. A second Jar, hsqldb-jdk8.jar works with JRE 8 and later. If you want to re-compile HSQLDB, you will need a JDK. You can use JDK 8, 11, 17 or 21. See the Guide and the documentation in the /build directory. A new database is created automatically if it does not yet exist. Just connect to the not-yet-existing database using the jdbc:hsqldb:file:�database-path� URL (should replace the last part with the path you want) with the user 'sa' (or any other name) and a password (can be an empty string). You will use this name and password to connect again. HSQLDB comes with PDF and HTML documentation, with example program source code that can help programmers who are new to JDBC programming. Source code of test programs are useful examples of how to use different features of JDBC and SQL. Check the sources in the /src/org/hsqldb/test folder. HSQLDB has a standard JDBC interface. HSQLDB specific JDBC documentation is included in the /doc/apidocs folder. To use HSQLDB at design-time in Eclipse, NetBeans or other tools, you usually require the plug-in for databases that comes with the development environment. You usually need to add a reference to the HSQLDB jar to the environment. Also you normally need to register the JDBC driver (which is part of the hsqldb.jar) with the environment. A dedicated plugin is already available for Eclipse. It is recommended that you close the databases with the SHUTDOWN command before they are opened with version 2.x. If the database is not read-only, it will be upgraded to the latest version. Databases made with versions earlier than 2.0 must be upgraded before opening with version 2.7. This is described in the Guide."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlFAQ.html"
+category = "SitesList"
+tags = ["100%", "compile", "create", "current", "database", "deployment", "documentation", "eclipse,", "etc.", "hsqldb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0"]
+title = "HSQLDB"
+full_description = "HSQLDB (HyperSQL Database) is a relational database engine written in Java. Version 2.7.4 is the result of 14 years development since version 2.0. It offers many features and adheres closely to the latest SQL:2016 and JDBC 4.3 standards. A set of HTML, PDF and text documents covering different aspects of HSQLDB and some of its utilities. The license texts for the source and binaries, based on the BSD license. hsqldb_lic.txt is for sources developed entirely by the HSQL Development Group. hypersonic_lic.txt is for sources that contain code from the closed HypersonicSQL project. Support for HyperSQL is available from http://hsqldb.org/support in various forms, including a mailing list and user forums. The web site features the latest bugfix versions of the software, FAQ and other useful resources."
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0"
+category = "SitesList"
+tags = ["2.7.4", "documentation", "hypersql", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/dbm-chapt.html"]
+title = "Chapter 3. Database Manager"
+full_description = "The Database Manager tool is a simple GUI database query tool with a tree display of the tables. Both AWT and SWING versions of the tool are available and work almost identically. The AWT version class name is org.hsqldb.util.DatabaseManager; the SWING version, org.hsqldb.util.DatabaseManagerSwing. The SWING version has more refinements than the AWT version. When the Database Manager is started, a dialogue allows you to enter the JDBC driver, URL, user and password for the new connection. A drop-down box, Type, offers preset values for JDBC driver and URL for most popular database engines, including HSQLDB. Once you have selected an item from this drop-down box, you should edit the URL to specify the details of the database or any additional properties to pass. You should also enter the username and password before clicking on the OK button. The connection dialogue allows you to save the settings for the connection you are about to make. You can then access the connection in future sessions. To save a connection setting, enter a name in the Setting Name box before clicking on the OK button. Next time the connection dialogue is displayed, the drop-down box labelled Recent will include the name for all the saved connection settings. When you select a name, the individual settings are displayed in the appropriate boxes. The small Clr button next to the drop-down box allows you to clear all the saved settings. If you want to modify an existing setting, first select it from the drop-down box then modify any of the text boxes before making the connection. The modified values will be saved. Most SWING menu items have context-sensitive tool tip help text which will appear if you hold the mouse cursor still over the desired menu item. (Assuming that you don't turn Tooltips off under the Help menu. The database object tree in the SWING version allows you to right click on the name of a table or column and choose from common SQL statements for the object, for example SELECT * FROM thistable ... If you click on one of the given choices, the sample statement is copied to the command window, where you can modify and complete it."
+year_published = 2024
+year_updated = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/dbm-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "2024-10-25", "applet", "auto", "automatic", "blaine", "brief", "chapter", "connection", "contents"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/howto.html"]
+title = "HyperSQL How To"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Links to a collection of pages on HyperSQL. Some of these pages provide detailed information and examples on how to perform different tasks with HyperSQL. Others provide an overview of a certain aspect of HyperSQL. For new and experienced users. Links to external pages that describe how to use HSQLDB with different frameworks and applications. External Authentication is a new feature in HyperSQL 2.2.x. This page covers various examples for implementing and using this feature in your HyperSQL installation. Performance in HyperSQL depends on a number of factors. This page covers these factors and provides an overview. A test based on the TPC-B benchmark code. Massive multithreaded update operations on a database with millions of rows. This example shows how multiple HyperSQL Servers can be started to serve multiple databases on different ports."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/howto.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "pages", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["https://hsqldb.org/web/hsqlPerformanceTests.html"]
+title = "HyperSQL Performance Test"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlPerformanceTests.html"
+category = "SitesList"
+tags = ["1,438,202", "100%", "131,147", "case", "database", "hardware", "hsqldb", "hypersonicsql", "january", "java"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["https://hsqldb.org/web/hsqlDevelopment.html"]
+title = "HyperSQL Development"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "2005-today: After the release of version 1.8.0 in 2005, we aimed to develop a highly standard-compliant database engine to support advanced data types and Standard SQL syntax. This required a complete rewrite of most core and interface components of the engine and was done in stages over four years. We avoided early releases in order to provide a well-balanced feature set. Version 2.0.0 was finally released in June 2010, after a year of alpha and beta releases with extensive public tests. We completed all the features listed in the new features page. Since the release of 2.0.0, we have added enhancements, new features and fixed reported bugs, resulting in version 2.7.1 in October 2022. Point releases have appeared on average twice a year. Recent new features include hot backup, multi-billion row tables, extended SQL syntax compatibility modes, JEE XA transactions, connection pool and many new built-in functions. We add regular enhancements to all areas of the engine. For example, recursive query support was improved in version 2.7.1. See the SupportWare page on how you can support the effort financially. The development effort and all public releases are coordinated by the full-time Maintainer to ensure continuity and consistency. We are always looking for new developers to join our team. Anyone who would like to contribute code, tests, documentation or translation is welcome to join. Please send an email to the Maintainer, Fred Toussi, fredt (at) users.sourceforge.net with your proposed enhancement. When you contribute code, you are expected to contribute tests that validate your code. HSQLDB is used in (or is supported by) a large number of open source projects. We welcome direct, priority contact with developers from those projects to ensure a smooth transition to new versions. You can point us to the HSQLDB access code in your pre-release sources and we will look and suggest any simple improvements that may be necessary. We value contributions from all developers who use HSQLDB in their projects. We have been able to fulfil many requests for additional features or bug fixes and will continue to give priority to what users ask for."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlDevelopment.html"
+category = "SitesList"
+tags = ["/base", "/base-one", "/dotnet", "/odbc", "100%", "2003-2004:", "2004-2005", "2005-today", "ancient", "before"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/web/howToServers.html"]
+title = "HyperSQL Multiple Servers"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "http://hsqldb.org/web/howToServers.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "multiple", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/features200.html"]
+title = "HyperSQL 2.5 New Features"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Since the release of version 2.0, many new features and enhancements have been introduced in point releases. Regular code reviews, user feedback, and bug fixes resulted in the latest release. This document lists the enhancements and new features in version 2.0 and beyond. An extensive range of new SQL and JDBC capabilities, increased scalability, and better query optimisation have been achieved by a rewrite of most of the internal components and the addition of some major new ones. All areas of functionality have been thoroughly tested with an extensive internal test suite and by users with their applications. HyperSQL 2.0 went into alpha release in April 2009 and several RC releases were downloaded over 20000 times before the final release in June 2010. Over 200 users submitted bug reports which were promptly fixed. The same process was repeated again and again over the next 9 years. There were 7 point releases in 2011, followed by another 16 between 2012 and 2024. An extensive Guide was written over two years to cover all features of the engine in detail. It has been updated with each release to cover the latest features. Fully multithreaded core supports 2PL (two-phased locking) and MVCC (multiversion concurrency control), plus a hybrid 2PL+MVCC transaction control mode. Transactions can be SERIALIZABLE or READ COMMITTED, using strict 2PL concurrency control. Version 2.0 also adds the MVCC modes, SNAPSHOT ISOLATION and READ CONSISTENCY, which are comparable to REPEATABLE READS and READ COMMITTED isolation levels, but with higher concurrency. Many enhancements are introduced to allow maximum multi-threaded concurrency in different isolation modes. Massive high performance LOB store for BLOBs and CLOBs up to multi-gigabyte size, with total storage capacity of 64 terabytes. Increased default storage space of 64GB for all CACHED table disk-based data, with fast startup and shutdown. The default can always be extended to 8TB with a connection property. With another connection property at the time of database creation, the maximum can be extended to 256TB."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/features200.html"
+category = "SitesList"
+tags = ["100%", "array", "collations", "compatibility", "connection", "constructor", "core", "data", "database", "definition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["http://hsqldb.org/index.html"]
+title = "HSQLDB"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "Commercial support for business users of HSQLDB is available from the HyperXtremeSQL web site. A higher-performance database engine based on HSQLDB, with several additional features such as extended OLAP, the PL/HXSQL procedural language and COMPACT memory tables is also available from that site. HSQLDB is included with OOo and LibreOffice and downloaded over 100 million times. Some information on the use of HSQLDB within OpenOffice.org can be found here. HSQLDB was the 5th most popular relational database used from JVM in a 2016 survey of deployed software HSQLDB supports the widest range of SQL Standard features seen in any open source database engine: SQL:2023 core language features and an extensive list of SQL:2023 optional features. It supports full Advanced ANSI-92 SQL with only two exceptions. Many extensions to the Standard, including syntax compatibility modes and features of other popular database engines, are also supported. HyperSQL is fully multithreaded and supports high performance 2PL and MVCC (multiversion concurrency control) transaction control models. See the list of features in the latest version. Recent releases added support for JSON constructor functions as well as direct CSV data load and unload. Temporal system-versioned tables keep all the data changes over time, allowing queries to view historic snapshots and, with PERIOD predicates, data changes over any period of time. Fine-grained row-level access control governs visibility and permissions on rows of data. Log-based synchronization keeps replicas in sync. Support for Java 8 java.time classes in JDBC, table spaces for disk-based tables, UUID type for columns, SYNONYM for tables and functions, and auto-updated TIMESTAMP columns on row updates, are some of the recent features. Other features include: The ability to cancel long-running statements from JDBC as well as from admin sessions. UTF-16 file support for text table sources. MySQL compatibility for REPLACE, INSERT IGNORE and ON DUPLICATE KEY UPDATE statements."
+year_published = 2025
+clearnet = "http://hsqldb.org/index.html"
+category = "SitesList"
+tags = ["100%", "background", "commercial", "corporate", "database", "developer", "embedded database", "hsqldb", "hypersonicsql", "integration:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html"]
+title = "Chapter 1. SqlTool"
+full_description = '''If you know how to type in a Java command at your shell command line, and you know at least the most basic SQL commands, then you know enough to benefit from SqlTool. You can play with Java system properties, PL variables, math, and other things by just executing this sqltool-2.7.4.jar file. But SqlTool was made for JDBC, so you should download HyperSQL to have SqlTool automatically connect to a fully functional, pure Java database; or obtain a JDBC driver for any other SQL database that you have an account in. If HyperSQL's hsqldb.jar resides in the same directory as the SqlTool jar file, then you can connect up to a HyperSQL instance from SqlTool just by specifying the JDBC URL, root account user name of SA and empty password, with the \j command. See the Switching Data Sources section below for details about \j. Due to many important improvements to SqlTool, both in terms of stability and features, all users of SqlTool are advised to use the latest version of SqlTool, even if your database instances run with an older HSQLDB version. How to do this is documented in the Accessing older HSQLDB Databases with SqlTool section below. This document explains how to use SqlTool, the main purpose of which is to read your SQL text file or stdin, and execute the SQL commands therein against a JDBC database. There are also a great number of features to facilitate both interactive use and automation. The following paragraphs explain in a general way why SqlTool is better than any existing tool for text-mode interactive SQL work, and for automated SQL tasks. Two important benefits which SqlTool shares with other pure Java JDBC tools is that users can use a consistent interface and syntax to interact with a huge variety of databases-- any database which supports JDBC; plus the tool itself runs on any Java platform. Instead of using isql for Sybase, psql for Postgresql, Sql*plus for Oracle, etc., you can use SqlTool for all of them. As far as I know, SqlTool is the only production-ready, pure Java, command-line, generic JDBC client. Several databases come with a command-line client with limited JDBC abilities (usually designed for use with just their specific database).'''
+year_published = 2024
+year_updated = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "1.1.", "1.10.", "1.11.", "1.12.", "1.13.", "1.14.", "1.15.", "1.16.", "1.17."]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/book-pref.html"]
+title = "Preface"
+full_description = "If you notice any mistakes in this document, please email the author listed at the beginning of the chapter. If you have problems with the procedures themselves, please use the HSQLDB support facilities which are listed at http://hsqldb.org/support. You may be reading this document right now at http://hsqldb.org/doc/2.0, or in a distribution somewhere else. I hereby call the document distribution from which you are reading this, your current distro. http://hsqldb.org/doc/2.0 hosts the latest production versions of all available formats. If you want a different format of the same version of the document you are reading now, then you should try your current distro. If you want the latest production version, you should try http://hsqldb.org/doc/2.0. Sometimes, distributions other than http://hsqldb.org/doc/2.0 do not host all available formats. So, if you can't access the format that you want in your current distro, you have no choice but to use the newest production version at http://hsqldb.org/doc/2.0."
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/book-pref.html"
+category = "SitesList"
+tags = ["available", "contents", "database", "document", "formats", "hsqldb", "hypersonic", "hypersql", "java", "jdbc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/guide"]
+title = "HyperSQL User Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "http://hsqldb.org/doc/2.0/guide"
+category = "SitesList"
+tags = ["2.7.4", "2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0/guide/index.html"]
+title = "HyperSQL User Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "http://hsqldb.org/doc/2.0/guide/index.html"
+category = "SitesList"
+tags = ["2.7.4", "2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/web/howto.html"]
+title = "HyperSQL How To"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Links to a collection of pages on HyperSQL. Some of these pages provide detailed information and examples on how to perform different tasks with HyperSQL. Others provide an overview of a certain aspect of HyperSQL. For new and experienced users. Links to external pages that describe how to use HSQLDB with different frameworks and applications. External Authentication is a new feature in HyperSQL 2.2.x. This page covers various examples for implementing and using this feature in your HyperSQL installation. Performance in HyperSQL depends on a number of factors. This page covers these factors and provides an overview. A test based on the TPC-B benchmark code. Massive multithreaded update operations on a database with millions of rows. This example shows how multiple HyperSQL Servers can be started to serve multiple databases on different ports."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/howto.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "pages", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/hsqlFeatures.html"]
+title = "HyperSQL Features"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Since the release of version 2.0, many new features and enhancements have been introduced in point releases. Regular code reviews, user feedback, and bug fixes resulted in the latest release. This document lists the enhancements and new features in version 2.0 and beyond. An extensive range of new SQL and JDBC capabilities, increased scalability, and better query optimisation have been achieved by a rewrite of most of the internal components and the addition of some major new ones. All areas of functionality have been thoroughly tested with an extensive internal test suite and by users with their applications. HyperSQL 2.0 went into alpha release in April 2009 and several RC releases were downloaded over 20000 times before the final release in June 2010. Over 200 users submitted bug reports which were promptly fixed. The same process was repeated again and again over the next 9 years. There were 7 point releases in 2011, followed by another 16 between 2012 and 2024. An extensive Guide was written over two years to cover all features of the engine in detail. It has been updated with each release to cover the latest features. Fully multithreaded core supports 2PL (two-phased locking) and MVCC (multiversion concurrency control), plus a hybrid 2PL+MVCC transaction control mode. Transactions can be SERIALIZABLE or READ COMMITTED, using strict 2PL concurrency control. Version 2.0 also adds the MVCC modes, SNAPSHOT ISOLATION and READ CONSISTENCY, which are comparable to REPEATABLE READS and READ COMMITTED isolation levels, but with higher concurrency. Many enhancements are introduced to allow maximum multi-threaded concurrency in different isolation modes. Massive high performance LOB store for BLOBs and CLOBs up to multi-gigabyte size, with total storage capacity of 64 terabytes. Increased default storage space of 64GB for all CACHED table disk-based data, with fast startup and shutdown. The default can always be extended to 8TB with a connection property. With another connection property at the time of database creation, the maximum can be extended to 256TB."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlFeatures.html"
+category = "SitesList"
+tags = ["100%", "array", "collations", "compatibility", "connection", "constructor", "core", "data", "database", "definition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/extauth.html"]
+title = "HyperSQL External Authentication"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = '''Corrections, criticisms, and comments will be appreciated. Please email them to blaine <dot> simpson <at> admc <dot> com. We will work though examples of the different methods of external authentication supported by HyperSQL version 2.1.0 and later. I assume familiarity with basic SQL and Java. I will assume here that you are running Java 6 or later. When I say the main HyperSQL directory below, I mean the HyperSQL installation directory that contains the subdirectories build, lib, etc. The only other setup required is to define the URLID "mem" for a memory-only catalog in the file sqltool.rc in your home directory. If you don't have a sqltool.rc file in your home directory, just copy the file sample/sqltool.rc from your HyperSQL distribution to there. Otherwise, copy or otherwise ensure that you have a "mem" Urlid stanza like that in sample/sqltool.rc. So that I can concentrate on the target matter with minimal setup, and without favoring specific IDE's or frameworks, this tutorial works from an operating system shell. I assume that you know how to get a command shell prompt and run Java commands. To eliminate lengthy explanations of pulldown menus, or the need for dozens of screen shots, I am using the command line tool SqlTool in preference to DatabaseManager, SquirrelSQL, etc. If you prefer to use a graphical tool and are bright enough to adjust the given instructions to your tool, you are welcome to do so. Each section of this documents builds upon previous sections. Therefore, you are advised to follow the document in the given sequence. If you aren't interested in all sections, then stop wherever you want to-- just don't skip around. In particular, if you are not interested in LDAP authentication, then skip the last sections. Authentication Functions are SQL/JRT Java methods, as described in the Java Language Routines chapter of the User Guide. The backing Java method must satisfy the signature The throws may be narrowed to any Exception(s) or none. You may obtain the class containing this method from HyperSQL, from somewhere else, or you may write it yourself. For each catalog that you wish to use the authentication function for, you must run the SQL statement'''
+year_published = 2025
+clearnet = "https://hsqldb.org/web/extauth.html"
+category = "SitesList"
+tags = ["100%", "authbeanmultiplexer", "authentication", "database", "example", "external", "functions", "hsqldb", "hypersonicsql", "hypersql"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/filelinks-app.html"]
+title = "Appendix B. HyperSQL File Links"
+full_description = "HyperSQL files referred to in the text may be retrieved from the canonical HyperSQL documentation site, http://hsqldb.org/doc/2.0, or from the same location you are reading this page from. If you are reading this document with a standalone PDF reader, only the http://hsqldb.org/doc/2.0/... links will function."
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/filelinks-app.html"
+category = "SitesList"
+tags = ["appendix", "database", "file", "files", "files.", "guide", "hsqldb", "hypersonic", "hypersql", "java"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/transfer-tool-chapt.html"]
+title = "Chapter 4. Transfer Tool"
+full_description = "Transfer Tool is a GUI program for transferring SQL schema and data from one JDBC source to another. Source and destination can be different database engines or different databases on the same server. Transfer Tool works in two different modes. Direct transfer maintains a connection to both source and destination and performs the transfer. Dump and Restore mode is invoked once to transfer the data from the source to a text file (Dump), then again to transfer the data from the text file to the destination (Restore). With Dump and Restore, it is possible to make any changes to database object definitions and data prior to restoring it to the target. Dump and Restore modes can be set via the command line with -d (--dump) or -r (--restore) options. Alternatively the Transfer Tool can be started with any of the three modes from the Database Manager's Tools menu. The connection dialogue allows you to save the settings for the connection you are about to make. You can then access the connection in future sessions. These settings are shared with those from the Database Manager tool. See the appendix on Database Manager for details of the connection dialogue box. From version 1.8.0 Transfer Tool is no longer part of the hsqldb.jar. You can build the hsqldbutil.jar using the Ant command of the same name, to build a jar that includes Transfer Tool and the Database Manager. When collecting meta-data, Transfer Tool performs SELECT * FROM <table> queries on all the tables in the source database. This may take a long time with some database engines. When the source database is HSQLDB, this means memory should be available for the result sets returned from the queries. Therefore, the memory allocation of the java process in which Transfer Tool is executed may have to be high. The current version of Transfer is far from ideal, as it has not been actively developed for several years. The program also lacks the ability to create UNIQUE constraints and creates UNIQUE indexes instead. However, some bugs have been fixed in the latest version and the program can be used with most of the supported databases. The best way to use the program is the DUMP and RESTORE modes, which allow you to manually change the SQL statements in the dump file before restoring to a database. A useful idea is to dump and restore the database definition separately from the database data."
+year_published = 2024
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/transfer-tool-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "2024-10-25", "brief", "chapter", "contents", "database", "development", "fred", "group", "hsql"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide"]
+title = "HyperSQL Utilities Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide"
+category = "SitesList"
+tags = ["2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development", "display"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/util-guide.html"]
+title = "HyperSQL Utilities Guide"
+full_description = '''Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form. If you notice any mistakes in this document, please email the author listed at the beginning of the chapter. If you have problems with the procedures themselves, please use the HSQLDB support facilities which are listed at http://hsqldb.org/support. You may be reading this document right now at http://hsqldb.org/doc/2.0, or in a distribution somewhere else. I hereby call the document distribution from which you are reading this, your current distro. http://hsqldb.org/doc/2.0 hosts the latest production versions of all available formats. If you want a different format of the same version of the document you are reading now, then you should try your current distro. If you want the latest production version, you should try http://hsqldb.org/doc/2.0. Sometimes, distributions other than http://hsqldb.org/doc/2.0 do not host all available formats. So, if you can't access the format that you want in your current distro, you have no choice but to use the newest production version at http://hsqldb.org/doc/2.0. If you know how to type in a Java command at your shell command line, and you know at least the most basic SQL commands, then you know enough to benefit from SqlTool. You can play with Java system properties, PL variables, math, and other things by just executing this sqltool-2.7.4.jar file. But SqlTool was made for JDBC, so you should download HyperSQL to have SqlTool automatically connect to a fully functional, pure Java database; or obtain a JDBC driver for any other SQL database that you have an account in. If HyperSQL's hsqldb.jar resides in the same directory as the SqlTool jar file, then you can connect up to a HyperSQL instance from SqlTool just by specifying the JDBC URL, root account user name of SA and empty password, with the \j command. See the Switching Data Sources section below for details about \j.'''
+year_published = 2024
+year_updated = 2024
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/util-guide.html"
+category = "SitesList"
+tags = ["$revision:", "1.1.", "1.10.", "1.11.", "1.12.", "1.13.", "1.14.", "1.15.", "1.16.", "1.17."]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/index.html"]
+title = "HSQLDB"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "Commercial support for business users of HSQLDB is available from the HyperXtremeSQL web site. A higher-performance database engine based on HSQLDB, with several additional features such as extended OLAP, the PL/HXSQL procedural language and COMPACT memory tables is also available from that site. HSQLDB is included with OOo and LibreOffice and downloaded over 100 million times. Some information on the use of HSQLDB within OpenOffice.org can be found here. HSQLDB was the 5th most popular relational database used from JVM in a 2016 survey of deployed software HSQLDB supports the widest range of SQL Standard features seen in any open source database engine: SQL:2023 core language features and an extensive list of SQL:2023 optional features. It supports full Advanced ANSI-92 SQL with only two exceptions. Many extensions to the Standard, including syntax compatibility modes and features of other popular database engines, are also supported. HyperSQL is fully multithreaded and supports high performance 2PL and MVCC (multiversion concurrency control) transaction control models. See the list of features in the latest version. Recent releases added support for JSON constructor functions as well as direct CSV data load and unload. Temporal system-versioned tables keep all the data changes over time, allowing queries to view historic snapshots and, with PERIOD predicates, data changes over any period of time. Fine-grained row-level access control governs visibility and permissions on rows of data. Log-based synchronization keeps replicas in sync. Support for Java 8 java.time classes in JDBC, table spaces for disk-based tables, UUID type for columns, SYNONYM for tables and functions, and auto-updated TIMESTAMP columns on row updates, are some of the recent features. Other features include: The ability to cancel long-running statements from JDBC as well as from admin sessions. UTF-16 file support for text table sources. MySQL compatibility for REPLACE, INSERT IGNORE and ON DUPLICATE KEY UPDATE statements."
+year_published = 2025
+clearnet = "https://hsqldb.org/index.html"
+category = "SitesList"
+tags = ["100%", "background", "commercial", "corporate", "database", "developer", "embedded database", "hsqldb", "hypersonicsql", "integration:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/systempls-app.html"]
+title = "Appendix A. SqlTool System PL Variables"
+full_description = '''SqlTool System PL variables are the mechanism used to configure SqlTool behavior. You can list all set PL variables by running the SqlTool command * listvalues. If a SqlTool System variable is not shown, then it is unset (which is equivalent to non-null). But if a system variable is not set, that doesn't mean that the setting behavior will be unset, but rather that the default behavior will apply. For example, if you * listvalues and the variable *DSV_COL_DELIM is not listed, that doesn't mean that there will be no DSV column delimiter, but that the default DSV column delimiter will be used. The in-program help can be used to determine what the default behavior is. (In the case of *DSV_COL_DELIM, you can see the default behavior by running \x?. Besides System PL variables, there are also user PL variables which have names beginning with a letter, and the special variables ? and NULL. NULL is completely equivalent to *NULL, which is explained below. Where the table below reports that a variable is read only, for now that usually means only that you should treat is as read-only. Behavior will be unpredictable if you write to these. At some point in future I may add enforcement of this. (Contact me if this is important for you). Read only literal string for use with forrows, but inversely to *ROW availability, *ROWS is never available inside of a forrows, only after a forrows. (To use a previous ROWS value inside a forrows loop, you would have to assign it to a user PL variable). The value is just the contatenation of *ROW for each row joined with *DSV_ROW_DELIM delimiter. It is basically a simple DSV export for the query. Be aware that the \p command can't take an argument with line delimiters, so though you can use *ROWS with the default *DSV_ROW_DELIM value for exporting, comparing, and other purposes, to print it with \p you will need to change *DSV_ROW_DELIM so that it doesn't include a line break.'''
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/systempls-app.html"
+category = "SitesList"
+tags = ["appendix", "database", "hsqldb", "hypersonic", "hypersql", "java", "jdbc", "revision", "sqlfile", "sqltool"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/hsqlFAQ.html"]
+title = "HyperSQL FAQ"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "How to install and run HSQLDB How to compile HSQLDB How to create a new database How to start programming JDBC / HSQLDB Where to get more documentation How to use HSQLDB inside JBuilder How to upgrade from an old version Can I use HSQLDB in my program Reliability, Performance and Deployment You don't need to. A compiled JAR of HSQLDB is included in the zip in the /lib folder. This runs under Java 11 and later and support Java module system. A second Jar, hsqldb-jdk8.jar works with JRE 8 and later. If you want to re-compile HSQLDB, you will need a JDK. You can use JDK 8, 11, 17 or 21. See the Guide and the documentation in the /build directory. A new database is created automatically if it does not yet exist. Just connect to the not-yet-existing database using the jdbc:hsqldb:file:�database-path� URL (should replace the last part with the path you want) with the user 'sa' (or any other name) and a password (can be an empty string). You will use this name and password to connect again. HSQLDB comes with PDF and HTML documentation, with example program source code that can help programmers who are new to JDBC programming. Source code of test programs are useful examples of how to use different features of JDBC and SQL. Check the sources in the /src/org/hsqldb/test folder. HSQLDB has a standard JDBC interface. HSQLDB specific JDBC documentation is included in the /doc/apidocs folder. To use HSQLDB at design-time in Eclipse, NetBeans or other tools, you usually require the plug-in for databases that comes with the development environment. You usually need to add a reference to the HSQLDB jar to the environment. Also you normally need to register the JDBC driver (which is part of the hsqldb.jar) with the environment. A dedicated plugin is already available for Eclipse. It is recommended that you close the databases with the SHUTDOWN command before they are opened with version 2.x. If the database is not read-only, it will be upgraded to the latest version. Databases made with versions earlier than 2.0 must be upgraded before opening with version 2.7. This is described in the Guide."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlFAQ.html"
+category = "SitesList"
+tags = ["100%", "compile", "create", "current", "database", "deployment", "documentation", "eclipse,", "etc.", "hsqldb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/index.html"]
+title = "HyperSQL Utilities Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/index.html"
+category = "SitesList"
+tags = ["2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development", "display"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/hsqlPerformance.html"]
+title = "HyperSQL Performance"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlPerformance.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "performance", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0/guide"]
+title = "HyperSQL User Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "https://hsqldb.org/doc/2.0/guide"
+category = "SitesList"
+tags = ["2.7.4", "2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html"]
+title = "Chapter 1. SqlTool"
+full_description = '''If you know how to type in a Java command at your shell command line, and you know at least the most basic SQL commands, then you know enough to benefit from SqlTool. You can play with Java system properties, PL variables, math, and other things by just executing this sqltool-2.7.4.jar file. But SqlTool was made for JDBC, so you should download HyperSQL to have SqlTool automatically connect to a fully functional, pure Java database; or obtain a JDBC driver for any other SQL database that you have an account in. If HyperSQL's hsqldb.jar resides in the same directory as the SqlTool jar file, then you can connect up to a HyperSQL instance from SqlTool just by specifying the JDBC URL, root account user name of SA and empty password, with the \j command. See the Switching Data Sources section below for details about \j. Due to many important improvements to SqlTool, both in terms of stability and features, all users of SqlTool are advised to use the latest version of SqlTool, even if your database instances run with an older HSQLDB version. How to do this is documented in the Accessing older HSQLDB Databases with SqlTool section below. This document explains how to use SqlTool, the main purpose of which is to read your SQL text file or stdin, and execute the SQL commands therein against a JDBC database. There are also a great number of features to facilitate both interactive use and automation. The following paragraphs explain in a general way why SqlTool is better than any existing tool for text-mode interactive SQL work, and for automated SQL tasks. Two important benefits which SqlTool shares with other pure Java JDBC tools is that users can use a consistent interface and syntax to interact with a huge variety of databases-- any database which supports JDBC; plus the tool itself runs on any Java platform. Instead of using isql for Sybase, psql for Postgresql, Sql*plus for Oracle, etc., you can use SqlTool for all of them. As far as I know, SqlTool is the only production-ready, pure Java, command-line, generic JDBC client. Several databases come with a command-line client with limited JDBC abilities (usually designed for use with just their specific database).'''
+year_published = 2024
+year_updated = 2024
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/sqltool-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "1.1.", "1.10.", "1.11.", "1.12.", "1.13.", "1.14.", "1.15.", "1.16.", "1.17."]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/openoffice.html"]
+title = "HyperSQL and OpenOffice.org"
+description = "hsqldb: 100% Java Database"
+full_description = "In 2021, two new OOo and LO extensions are developed and maintained on GitHub by the developer prrvchr. These extensions make it easy to use the latest version of HSQLDB 2.x with the latest versions of the Base program. One extension simply adds and loads the HSQLDB 2.x jar, ready for use. It also allows updating the jar to the latest version. The second extension extracts the database from the .odb file in the same directory and connects to the extracted database files. The simple driver: https://github.com/prrvchr/jdbcDriverOOo/ The driver that extracts the files: https://github.com/prrvchr/HyperSQLOOo/ The extensions are easy to use, with clear visual instructions on how to add the extensions to the Office suite and how to create and open databases. HSQLDB 1.8 has been included with OpenOffice.org since OOo 2.0 (2005), providing users with an integrated SQL database engine. It is also included with LibreOffice. Current release versions of both OpenOffice.org and LibreOffice include a version of HSQLDB 1.8.0.x. The Base program of these office suites allow the user to create databases with a GUI and save them as a self-contained file. Over a period of 18 months, HSQLDB 2.x was integrated into the development code for OpenOffice.org in cws hsqldb19 (a code branch of OOo Base). This was a collaboration between OpenOffice.org and HSQLDB developers and the snapshots releases have been tested by volunteers. As of April 2011, this development branch was ready to be released as part of OpenOffice version 3.4 or 3.5. We are willing to collaborate with LibreOffice and Apache OpenOffice to integrate the latest 2.x version of HSQLDB. Well before the new extensions were released, it was already possible to use HSQLDB 2.x as an external embedded or client-server database with both OpenOffice.org (OOo) and LibreOffice (LO) Base program. This configuration is currently the choice of many users with large or network-shared databases. Thanks to the OOo community, information on how to use HSQLDB 2.x with the current versions of OpenOffice.org and LibreOffice is widely available. One starting point is here:"
+year_published = 2025
+clearnet = "https://hsqldb.org/web/openoffice.html"
+category = "SitesList"
+tags = ["100%", "contributions", "database", "everyday", "extensions", "financial", "hsqldb", "hypersonicsql", "java", "java database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["code.google.com", "datanucleus.com", "dbeaver.io", "dzone.com", "github.com", "hibernate.org", "hsqldb.sf.net", "hybris.com", "igniterealtime.org", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "repo1.maven.org", "twitter.com", "user.services.openoffice.org"]
+
+["https://hsqldb.org/web/hsqlDocsFrame.html"]
+title = "HyperSQL Documentation"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "HSQLDB (HyperSQL Database) is a relational database engine written in Java. Version 2.7 offers many features and adheres closely to the latest SQL and JDBC 4 standards. A set of HTML, PDF and text documents covering different aspects of HSQLDB and some of its utilities. The license texts for the source and binaries, based on the BSD license. hsqldb_lic.txt is for sources developed entirely by the HSQL Development Group. hypersonic_lic.txt is for sources that contain code from the closed HypersonicSQL project. Support for HyperSQL is available from http://hsqldb.org/support in various forms, including a mailing list and user forums. The web site features the latest bugfix versions of the software, FAQ and other useful resources."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlDocsFrame.html"
+category = "SitesList"
+tags = ["database", "documentation", "embedded database", "hsqldb", "hypersonicsql", "hypersql", "java", "java database", "jdbc", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["https://hsqldb.org/support/index.html"]
+title = "HyperSQL Support"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "The latest HyperSQL release package, including sources and documentation, is available via the download link above. HSQLDB jar releases are also uploaded to Maven Central repository. This directory contains the latest release jars for Java 8 or greater, including a jar compiled with debug information. Are you using HSQLDB for testing or deployment of a commercial application? Have you joined SupportWare yet? SupportWare is a program to ensure the development and maintenance of HSQLDB. SupportWare subscribers get priority in support and feature requests. Professional support is available from the HyperXtremeSQL web site http://www.hxsql.com. What you pay will also contribute to the maintenance and future development of HSQLDB. And if you cannot find the answer, try searching the Alternative B below before posting a new message. Normally you should post in a new thread, but if your question is closely related to a recent, existing, related, thread, you can add your post to the thread, which automatically promotes the thread to the top of the list. You should get a SourceForge user id and log on before you submit items. You can then put bookmarks on threads that interest you or choose to get all the new posts by email. Alternatively, you can use our user mailing list to ask simple, general questions. You must subscribe to the mailing list before you can post a message. This mailing list is not for reporting possible bugs or complex technical issues. Use the Forums and Issue trackers for these issues. If you are a developer of an open source project and need support for integration of HSQLDB with your project, please mention your project. This will give a higher priority to your request. If you are new to Java or HSQLDB, please discuss the issue in the Help forums first. If you have to report a bug in HSQLDB please use the Bug Tracker at SourceForge. If possible, include the SQL statements that caused the error, or a Java test case. The issue can then be fixed much easier and faster. If the bug is related to SQL behaviour, you can simply write an SQL script that shows the bug. See examples of the scripts in the /testrun/hsqldb/ folder of the HSQLDB distribution package. If the bug is related to JDBC usage, you can reuse one of the test cases in the org.hsqldb.test package. See examples in the /src/org/hsqldb/test/ directory."
+year_published = 2025
+clearnet = "https://hsqldb.org/support/index.html"
+category = "SitesList"
+tags = ["100%", "commercial", "database", "feature", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "latest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/web/usagelinks.html"]
+title = "HyperSQL Usage Examples"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "For new users. A step-by-step tutorial with Java code examples. Note the Data Types page is mixed up with features from SQL Server, which you should ignore. For new users. A simple, illustrated guide on how to run an HSQLDB server and to connect to the server with the Database Manager Swing. Introduction to programming with HSQLDB in 5 parts. This popular guide introduces HSQLDB and shows examples of how to connect and use with JDBC, Java Server Pages and JSTL. You can use the guide with HSQLDB 2.X. Unit testing and integration testing using JUnit, Liquibase, HSQLDB, Hibernate, Maven and Spring Framework This guide shows how to program a JPA application using Hibernate and HSQLDB. The guide is in 2 parts. There is a link to part 1 at the beginning of the page. If you use HSQLDB 2.x, please use the latest Hibernate 3.6 and follow the guide. This guide shows how to use HSQLDB for testing JPA/Hibernate applications targeted for Oracle. Covers how to account for database engine differences. With the latest HSQLDB, this task has become easier due to the ORA syntax compatibility mode. This guide shows how to program a GWP JPA application using Hibernate JPA and HSQLDB. If you use HSQLDB 2.x, please use the latest Hibernate 3.6 and follow the guide."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/usagelinks.html"
+category = "SitesList"
+tags = ["100%", "database", "examples", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/hsqlPerformance.html"]
+title = "HyperSQL Performance"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlPerformance.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "performance", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/howToArrays.html"]
+title = "HyperSQL Arrays"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "HyperSQL supports the full semantics and all the related features of Standard SQL ARRAY type. The ARRAY type is a relatively recent addition to the SQL Standard and allows storing an ARRAY of attributes in a column of a table. Using an ARRAY, instead of a separate table, is a choice for the developer. An ARRAY is used if it is more appropriate to the data model. It is also more efficient to store an array instead of storing each of its elements as a row in a separate table. In the examples given here, the array as a whole is an attribute of the row and it is more appropriate to store the array in the row, instead of storing its elements in a separate table. This complete example was posted by Michael Dever in our Open Discussion Forum. It uses an ARRAY to implement a rotating password list for each user of an application. Polygon data is stored as an ordered list of coordinates. It is possible to store a Java array directly in a column of type OTHER. However, this solution makes the elements of the array inaccessible to SQL queries. In the example below, the coordinates are stored in an array."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/howToArrays.html"
+category = "SitesList"
+tags = ["100%", "arrays", "database", "example", "hsqldb", "java", "java database", "jdbc", "list", "ordbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/hsqlLicense.html"]
+title = "HyperSQL License"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = 'Copyright (c) 2001-2024, The HSQL Development Group All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the HSQL Development Group nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. For work originally developed by the Hypersonic SQL Group: Copyright (c) 1995-2000 by the Hypersonic SQL Group. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the Hypersonic SQL Group nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE HYPERSONIC SQL GROUP, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlLicense.html"
+category = "SitesList"
+tags = ["100%", "copyrights", "database", "developed", "group:", "hsqldb", "hypersonic", "hypersonicsql", "java", "java database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0/apidocs/index.html"]
+title = "HSQLDB 2.7.4 API"
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/apidocs/index.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["https://hsqldb.org/doc/2.0/guide/index.html"]
+title = "HyperSQL User Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "https://hsqldb.org/doc/2.0/guide/index.html"
+category = "SitesList"
+tags = ["2.7.4", "2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/filelinks-app.html"]
+title = "Appendix B. HyperSQL File Links"
+full_description = "HyperSQL files referred to in the text may be retrieved from the canonical HyperSQL documentation site, http://hsqldb.org/doc/2.0, or from the same location you are reading this page from. If you are reading this document with a standalone PDF reader, only the http://hsqldb.org/doc/2.0/... links will function."
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/filelinks-app.html"
+category = "SitesList"
+tags = ["appendix", "database", "file", "files", "files.", "guide", "hsqldb", "hypersonic", "hypersql", "java"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/transfer-tool-chapt.html"]
+title = "Chapter 4. Transfer Tool"
+full_description = "Transfer Tool is a GUI program for transferring SQL schema and data from one JDBC source to another. Source and destination can be different database engines or different databases on the same server. Transfer Tool works in two different modes. Direct transfer maintains a connection to both source and destination and performs the transfer. Dump and Restore mode is invoked once to transfer the data from the source to a text file (Dump), then again to transfer the data from the text file to the destination (Restore). With Dump and Restore, it is possible to make any changes to database object definitions and data prior to restoring it to the target. Dump and Restore modes can be set via the command line with -d (--dump) or -r (--restore) options. Alternatively the Transfer Tool can be started with any of the three modes from the Database Manager's Tools menu. The connection dialogue allows you to save the settings for the connection you are about to make. You can then access the connection in future sessions. These settings are shared with those from the Database Manager tool. See the appendix on Database Manager for details of the connection dialogue box. From version 1.8.0 Transfer Tool is no longer part of the hsqldb.jar. You can build the hsqldbutil.jar using the Ant command of the same name, to build a jar that includes Transfer Tool and the Database Manager. When collecting meta-data, Transfer Tool performs SELECT * FROM <table> queries on all the tables in the source database. This may take a long time with some database engines. When the source database is HSQLDB, this means memory should be available for the result sets returned from the queries. Therefore, the memory allocation of the java process in which Transfer Tool is executed may have to be high. The current version of Transfer is far from ideal, as it has not been actively developed for several years. The program also lacks the ability to create UNIQUE constraints and creates UNIQUE indexes instead. However, some bugs have been fixed in the latest version and the program can be used with most of the supported databases. The best way to use the program is the DUMP and RESTORE modes, which allow you to manually change the SQL statements in the dump file before restoring to a database. A useful idea is to dump and restore the database definition separately from the database data."
+year_published = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/transfer-tool-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "2024-10-25", "brief", "chapter", "contents", "database", "development", "fred", "group", "hsql"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/howToServers.html"]
+title = "HyperSQL Multiple Servers"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "https://hsqldb.org/web/howToServers.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "multiple", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org"]
+title = "HSQLDB"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "Commercial support for business users of HSQLDB is available from the HyperXtremeSQL web site. A higher-performance database engine based on HSQLDB, with several additional features such as extended OLAP, the PL/HXSQL procedural language and COMPACT memory tables is also available from that site. HSQLDB is included with OOo and LibreOffice and downloaded over 100 million times. Some information on the use of HSQLDB within OpenOffice.org can be found here. HSQLDB was the 5th most popular relational database used from JVM in a 2016 survey of deployed software HSQLDB supports the widest range of SQL Standard features seen in any open source database engine: SQL:2023 core language features and an extensive list of SQL:2023 optional features. It supports full Advanced ANSI-92 SQL with only two exceptions. Many extensions to the Standard, including syntax compatibility modes and features of other popular database engines, are also supported. HyperSQL is fully multithreaded and supports high performance 2PL and MVCC (multiversion concurrency control) transaction control models. See the list of features in the latest version. Recent releases added support for JSON constructor functions as well as direct CSV data load and unload. Temporal system-versioned tables keep all the data changes over time, allowing queries to view historic snapshots and, with PERIOD predicates, data changes over any period of time. Fine-grained row-level access control governs visibility and permissions on rows of data. Log-based synchronization keeps replicas in sync. Support for Java 8 java.time classes in JDBC, table spaces for disk-based tables, UUID type for columns, SYNONYM for tables and functions, and auto-updated TIMESTAMP columns on row updates, are some of the recent features. Other features include: The ability to cancel long-running statements from JDBC as well as from admin sessions. UTF-16 file support for text table sources. MySQL compatibility for REPLACE, INSERT IGNORE and ON DUPLICATE KEY UPDATE statements."
+year_published = 2025
+clearnet = "https://hsqldb.org"
+category = "SitesList"
+tags = ["100%", "background", "commercial", "corporate", "database", "developer", "embedded database", "hsqldb", "hypersonicsql", "integration:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "mvnrepository.com", "polepos.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/apidocs/index.html"]
+title = "HSQLDB 2.7.4 API"
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/apidocs/index.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0"]
+title = "HSQLDB"
+full_description = "HSQLDB (HyperSQL Database) is a relational database engine written in Java. Version 2.7.4 is the result of 14 years development since version 2.0. It offers many features and adheres closely to the latest SQL:2016 and JDBC 4.3 standards. A set of HTML, PDF and text documents covering different aspects of HSQLDB and some of its utilities. The license texts for the source and binaries, based on the BSD license. hsqldb_lic.txt is for sources developed entirely by the HSQL Development Group. hypersonic_lic.txt is for sources that contain code from the closed HypersonicSQL project. Support for HyperSQL is available from http://hsqldb.org/support in various forms, including a mailing list and user forums. The web site features the latest bugfix versions of the software, FAQ and other useful resources."
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0"
+category = "SitesList"
+tags = ["2.7.4", "documentation", "hypersql", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/util-guide.html"]
+title = "HyperSQL Utilities Guide"
+full_description = '''Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form. If you notice any mistakes in this document, please email the author listed at the beginning of the chapter. If you have problems with the procedures themselves, please use the HSQLDB support facilities which are listed at http://hsqldb.org/support. You may be reading this document right now at http://hsqldb.org/doc/2.0, or in a distribution somewhere else. I hereby call the document distribution from which you are reading this, your current distro. http://hsqldb.org/doc/2.0 hosts the latest production versions of all available formats. If you want a different format of the same version of the document you are reading now, then you should try your current distro. If you want the latest production version, you should try http://hsqldb.org/doc/2.0. Sometimes, distributions other than http://hsqldb.org/doc/2.0 do not host all available formats. So, if you can't access the format that you want in your current distro, you have no choice but to use the newest production version at http://hsqldb.org/doc/2.0. If you know how to type in a Java command at your shell command line, and you know at least the most basic SQL commands, then you know enough to benefit from SqlTool. You can play with Java system properties, PL variables, math, and other things by just executing this sqltool-2.7.4.jar file. But SqlTool was made for JDBC, so you should download HyperSQL to have SqlTool automatically connect to a fully functional, pure Java database; or obtain a JDBC driver for any other SQL database that you have an account in. If HyperSQL's hsqldb.jar resides in the same directory as the SqlTool jar file, then you can connect up to a HyperSQL instance from SqlTool just by specifying the JDBC URL, root account user name of SA and empty password, with the \j command. See the Switching Data Sources section below for details about \j.'''
+year_published = 2024
+year_updated = 2024
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/util-guide.html"
+category = "SitesList"
+tags = ["$revision:", "1.1.", "1.10.", "1.11.", "1.12.", "1.13.", "1.14.", "1.15.", "1.16.", "1.17."]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/hsqlUsing.html"]
+title = "HyperSQL Software Links"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "ManifoldCF version 1.0 was released in October 2012 following graduation as an Apache project. ManfoldCF is a general spider framework that tracks and processes documents in repositories, databases and file systems. It relies entirely on a relational database to store scanning histories and current operations. HSQLDB can be used as the default embedded database when a separate database server such as PostgreSQL is not used. We cooperated with the project and added minor enhancements to HSQLDB to improve the performance of some complex queries used for viewing the history. HSQLDB's multithreaded MVCC model is put to good use to allow non-blocking access to the heavily updated database that can grow to hundreds of megabytes. This list is of course not complete. Especially, hundreds of open-source projects that use HSQLDB have not been listed. Please feel free to submit a link to be added to this list. We only publish links to well-established software on this page. New and up-and-coming software releases of special interest may also be listed."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlUsing.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "code.google.com", "datanucleus.com", "dbeaver.io", "dzone.com", "ha-jdbc.org", "hibernate.org", "hsqldb.sf.net", "hybris.com", "igniterealtime.org", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "repo1.maven.org", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0/apidocssqltool/org.hsqldb.sqltool/module-summary.html"]
+title = "org.hsqldb.sqltool (HSQLDB 2.7.4 API)"
+full_description = "Module org.hsqldb.sqltool Packages Exports Package Description org.hsqldb.cmdline Contains the SqlTool command-line tool Module org.hsqldb.sqltool Packages Exports Package Description org.hsqldb.cmdline Contains the SqlTool command-line tool"
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/apidocssqltool/org.hsqldb.sqltool/module-summary.html"
+category = "SitesList"
+tags = ["module", "org.hsqldb.sqltool", "packages"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["http://hsqldb.org/web/hsqlPerformanceTests.html"]
+title = "HyperSQL Performance Test"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlPerformanceTests.html"
+category = "SitesList"
+tags = ["1,438,202", "100%", "131,147", "case", "database", "hardware", "hsqldb", "hypersonicsql", "january", "java"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/book-pref.html"]
+title = "Preface"
+full_description = "If you notice any mistakes in this document, please email the author listed at the beginning of the chapter. If you have problems with the procedures themselves, please use the HSQLDB support facilities which are listed at http://hsqldb.org/support. You may be reading this document right now at http://hsqldb.org/doc/2.0, or in a distribution somewhere else. I hereby call the document distribution from which you are reading this, your current distro. http://hsqldb.org/doc/2.0 hosts the latest production versions of all available formats. If you want a different format of the same version of the document you are reading now, then you should try your current distro. If you want the latest production version, you should try http://hsqldb.org/doc/2.0. Sometimes, distributions other than http://hsqldb.org/doc/2.0 do not host all available formats. So, if you can't access the format that you want in your current distro, you have no choice but to use the newest production version at http://hsqldb.org/doc/2.0."
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/book-pref.html"
+category = "SitesList"
+tags = ["available", "contents", "database", "document", "formats", "hsqldb", "hypersonic", "hypersql", "java", "jdbc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/web/hsqlUsing.html"]
+title = "HyperSQL Software Links"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "ManifoldCF version 1.0 was released in October 2012 following graduation as an Apache project. ManfoldCF is a general spider framework that tracks and processes documents in repositories, databases and file systems. It relies entirely on a relational database to store scanning histories and current operations. HSQLDB can be used as the default embedded database when a separate database server such as PostgreSQL is not used. We cooperated with the project and added minor enhancements to HSQLDB to improve the performance of some complex queries used for viewing the history. HSQLDB's multithreaded MVCC model is put to good use to allow non-blocking access to the heavily updated database that can grow to hundreds of megabytes. This list is of course not complete. Especially, hundreds of open-source projects that use HSQLDB have not been listed. Please feel free to submit a link to be added to this list. We only publish links to well-established software on this page. New and up-and-coming software releases of special interest may also be listed."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlUsing.html"
+category = "SitesList"
+tags = ["100%", "database", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/hsqlLicense.html"]
+title = "HyperSQL License"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = 'Copyright (c) 2001-2024, The HSQL Development Group All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the HSQL Development Group nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. For work originally developed by the Hypersonic SQL Group: Copyright (c) 1995-2000 by the Hypersonic SQL Group. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. Neither the name of the Hypersonic SQL Group nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE HYPERSONIC SQL GROUP, OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
+year_published = 2025
+clearnet = "https://hsqldb.org/web/hsqlLicense.html"
+category = "SitesList"
+tags = ["100%", "copyrights", "database", "developed", "group:", "hsqldb", "hypersonic", "hypersonicsql", "java", "java database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "polepos.org", "repo1.maven.org", "sourceforge.net", "twitter.com"]
+
+["https://hsqldb.org/web/deployment.html"]
+title = "HyperSQL Deployment"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+year_published = 2025
+clearnet = "https://hsqldb.org/web/deployment.html"
+category = "SitesList"
+tags = ["100%", "database", "deployment", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/support"]
+title = "HyperSQL Support"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "The latest HyperSQL release package, including sources and documentation, is available via the download link above. HSQLDB jar releases are also uploaded to Maven Central repository. This directory contains the latest release jars for Java 8 or greater, including a jar compiled with debug information. Are you using HSQLDB for testing or deployment of a commercial application? Have you joined SupportWare yet? SupportWare is a program to ensure the development and maintenance of HSQLDB. SupportWare subscribers get priority in support and feature requests. Professional support is available from the HyperXtremeSQL web site http://www.hxsql.com. What you pay will also contribute to the maintenance and future development of HSQLDB. And if you cannot find the answer, try searching the Alternative B below before posting a new message. Normally you should post in a new thread, but if your question is closely related to a recent, existing, related, thread, you can add your post to the thread, which automatically promotes the thread to the top of the list. You should get a SourceForge user id and log on before you submit items. You can then put bookmarks on threads that interest you or choose to get all the new posts by email. Alternatively, you can use our user mailing list to ask simple, general questions. You must subscribe to the mailing list before you can post a message. This mailing list is not for reporting possible bugs or complex technical issues. Use the Forums and Issue trackers for these issues. If you are a developer of an open source project and need support for integration of HSQLDB with your project, please mention your project. This will give a higher priority to your request. If you are new to Java or HSQLDB, please discuss the issue in the Help forums first. If you have to report a bug in HSQLDB please use the Bug Tracker at SourceForge. If possible, include the SQL statements that caused the error, or a Java test case. The issue can then be fixed much easier and faster. If the bug is related to SQL behaviour, you can simply write an SQL script that shows the bug. See examples of the scripts in the /testrun/hsqldb/ folder of the HSQLDB distribution package. If the bug is related to JDBC usage, you can reuse one of the test cases in the org.hsqldb.test package. See examples in the /src/org/hsqldb/test/ directory."
+year_published = 2025
+clearnet = "http://hsqldb.org/support"
+category = "SitesList"
+tags = ["100%", "commercial", "database", "feature", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "latest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com"]
+
+["http://hsqldb.org/web/features200.html"]
+title = "HyperSQL 2.5 New Features"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "Since the release of version 2.0, many new features and enhancements have been introduced in point releases. Regular code reviews, user feedback, and bug fixes resulted in the latest release. This document lists the enhancements and new features in version 2.0 and beyond. An extensive range of new SQL and JDBC capabilities, increased scalability, and better query optimisation have been achieved by a rewrite of most of the internal components and the addition of some major new ones. All areas of functionality have been thoroughly tested with an extensive internal test suite and by users with their applications. HyperSQL 2.0 went into alpha release in April 2009 and several RC releases were downloaded over 20000 times before the final release in June 2010. Over 200 users submitted bug reports which were promptly fixed. The same process was repeated again and again over the next 9 years. There were 7 point releases in 2011, followed by another 16 between 2012 and 2024. An extensive Guide was written over two years to cover all features of the engine in detail. It has been updated with each release to cover the latest features. Fully multithreaded core supports 2PL (two-phased locking) and MVCC (multiversion concurrency control), plus a hybrid 2PL+MVCC transaction control mode. Transactions can be SERIALIZABLE or READ COMMITTED, using strict 2PL concurrency control. Version 2.0 also adds the MVCC modes, SNAPSHOT ISOLATION and READ CONSISTENCY, which are comparable to REPEATABLE READS and READ COMMITTED isolation levels, but with higher concurrency. Many enhancements are introduced to allow maximum multi-threaded concurrency in different isolation modes. Massive high performance LOB store for BLOBs and CLOBs up to multi-gigabyte size, with total storage capacity of 64 terabytes. Increased default storage space of 64GB for all CACHED table disk-based data, with fast startup and shutdown. The default can always be extended to 8TB with a connection property. With another connection property at the time of database creation, the maximum can be extended to 256TB."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/features200.html"
+category = "SitesList"
+tags = ["100%", "array", "collations", "compatibility", "connection", "constructor", "core", "data", "database", "definition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/web/hsqlDocsFrame.html"]
+title = "HyperSQL Documentation"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "HSQLDB (HyperSQL Database) is a relational database engine written in Java. Version 2.7 offers many features and adheres closely to the latest SQL and JDBC 4 standards. A set of HTML, PDF and text documents covering different aspects of HSQLDB and some of its utilities. The license texts for the source and binaries, based on the BSD license. hsqldb_lic.txt is for sources developed entirely by the HSQL Development Group. hypersonic_lic.txt is for sources that contain code from the closed HypersonicSQL project. Support for HyperSQL is available from http://hsqldb.org/support in various forms, including a mailing list and user forums. The web site features the latest bugfix versions of the software, FAQ and other useful resources."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlDocsFrame.html"
+category = "SitesList"
+tags = ["database", "documentation", "embedded database", "hsqldb", "hypersonicsql", "hypersql", "java", "java database", "jdbc", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/web/supportware.html"]
+title = "HSQLDB SupportWare"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "A significant development effort has led to the release of the latest version of HSQLDB. Better compatibility with new versions of Java, as well as improved code quality are just part of this effort. For years, HSQLDB has been Java developers' best choice for development, testing and deployment of database applications. We have maintained our leading position through continuous enhancements. A major development effort has resulted in version 2.7.4, the most advanced open source RDBMS for small and medium sized databases. HSQLDB SupportWare allows individual developers, corporations and organizations to support the maintenance and development of HSQLDB. This is for individual developers who want to support the HyperSQL project. In return, your questions will get priority and you will get a say in future developments. This is for corporations with limited internal use or less than 50 distributed units of HyperSQL. Your developers will get the same benefits as individual developers. Premier Corporate subscription - large corporations, large-scale use or distribution - base level $2500 or �2500 This is for corporation with extensive use or distribution of HyperSQL. You can ask for enhancements and they will be implemented to the extent your financial contribution allows. Full deployment support is also provided. The suggested amounts for Premier Corporate subscription are the minimum recommended amounts. If you consider that your use of HSQLDB warrants a larger contribution, please use your discretion. Feature Sponsorship allows an organization to sponsor specific new features or improvements. If your organization would benefit from the addition of a new feature or capability to HSQLDB, you can fund its development after discussion and agreement with Fred Toussi, the Project Maintainer. Please send an email to fredt (at) users.sourceforge.net Project Sponsorship We also welcome corporate project sponsors to support the general development of the software. Project sponsors will be featured on our home page and can include their news and announcements."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/supportware.html"
+category = "SitesList"
+tags = ["100%", "basic", "benefits", "corporate", "database", "developer", "feature", "fredt", "funded", "hsqldb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["code.google.com", "datanucleus.com", "dbeaver.io", "dzone.com", "github.com", "hibernate.org", "hsqldb.sf.net", "hybris.com", "igniterealtime.org", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "mvnrepository.com", "openoffice.org", "repo1.maven.org", "twitter.com", "user.services.openoffice.org"]
+
+["http://hsqldb.org/web/openoffice.html"]
+title = "HyperSQL and OpenOffice.org"
+description = "hsqldb: 100% Java Database"
+full_description = "In 2021, two new OOo and LO extensions are developed and maintained on GitHub by the developer prrvchr. These extensions make it easy to use the latest version of HSQLDB 2.x with the latest versions of the Base program. One extension simply adds and loads the HSQLDB 2.x jar, ready for use. It also allows updating the jar to the latest version. The second extension extracts the database from the .odb file in the same directory and connects to the extracted database files. The simple driver: https://github.com/prrvchr/jdbcDriverOOo/ The driver that extracts the files: https://github.com/prrvchr/HyperSQLOOo/ The extensions are easy to use, with clear visual instructions on how to add the extensions to the Office suite and how to create and open databases. HSQLDB 1.8 has been included with OpenOffice.org since OOo 2.0 (2005), providing users with an integrated SQL database engine. It is also included with LibreOffice. Current release versions of both OpenOffice.org and LibreOffice include a version of HSQLDB 1.8.0.x. The Base program of these office suites allow the user to create databases with a GUI and save them as a self-contained file. Over a period of 18 months, HSQLDB 2.x was integrated into the development code for OpenOffice.org in cws hsqldb19 (a code branch of OOo Base). This was a collaboration between OpenOffice.org and HSQLDB developers and the snapshots releases have been tested by volunteers. As of April 2011, this development branch was ready to be released as part of OpenOffice version 3.4 or 3.5. We are willing to collaborate with LibreOffice and Apache OpenOffice to integrate the latest 2.x version of HSQLDB. Well before the new extensions were released, it was already possible to use HSQLDB 2.x as an external embedded or client-server database with both OpenOffice.org (OOo) and LibreOffice (LO) Base program. This configuration is currently the choice of many users with large or network-shared databases. Thanks to the OOo community, information on how to use HSQLDB 2.x with the current versions of OpenOffice.org and LibreOffice is widely available. One starting point is here:"
+year_published = 2025
+clearnet = "http://hsqldb.org/web/openoffice.html"
+category = "SitesList"
+tags = ["100%", "contributions", "database", "everyday", "extensions", "financial", "hsqldb", "hypersonicsql", "java", "java database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/test-utility-chapt.html"]
+title = "Chapter 2. Hsqldb Test Utility"
+full_description = "The org.hsqldb.test package contains a number of tests for various functions of the database engine. Among these, the TestUtil class performs the tests that are based on scripts. To run the tests, you should compile the hsqldbtest.jar target with Ant and JUnit. The TestUtil class should be run in the /testrun/hsqldb directory of the distributed files. It then runs the set of TestSelf*.txt files in the directory. To start the application in Windows, change to the directory and type: All files in the working directory with names matching TestSelf*.txt are processed in alphabetical order. You can add your own scripts to test different series of SQL queries. The format of the TestSelf*.txt file is simple text, with some indentation and prefixes in the form of Java-style comments. The prefixes indicate what the expected result should be. The class org.hsqldb.test.TestScriptRunner is a more general program which you can use to test any script files which you specify (with scripts of the same exact format as described below). For example, You must have the HSQLDB classes, including the util and test classes, in your CLASSPATH. The urlid must be set up in an RC file as explained in the RC File Authentication Setup section. Use the rcfile= argument to specify an RC file other than the default of testscriptrunner.rc in the current directory. To see all invocation possibilities, just run TestScriptRunner with no arguments at all. TestScriptRunner can run tests sequentially (the default) or in simultaneous asynchronous threads. The /*s*/ option stands for silent. It is used for executing queries regardless of results. Used for preparation of tests, not for actual tests. The /*c<rows>*/ option is for SELECT queries and asserts the number of rows in the result matches the given count. The /*u*/ option is for queries that return an update count, such as DELETE and UPDATE. It asserts the update count matches. The /*e*/ option asserts that the given query results is an error. It is mainly used for testing the error detection capabilities of the engine. The SQL State of the expected error can be defined, for example /*e42578*/, to verify the returned error. This option can be used with syntactically valid queries to assert a certain state in the database. For example a CREATE TABLE can be used to assert the table of the same name already exists."
+year_published = 2025
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/test-utility-chapt.html"
+category = "SitesList"
+tags = ["chapter", "database", "hsqldb", "hypersonic", "hypersql", "java", "jdbc", "test", "utility"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org"]
+title = "HSQLDB"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "Commercial support for business users of HSQLDB is available from the HyperXtremeSQL web site. A higher-performance database engine based on HSQLDB, with several additional features such as extended OLAP, the PL/HXSQL procedural language and COMPACT memory tables is also available from that site. HSQLDB is included with OOo and LibreOffice and downloaded over 100 million times. Some information on the use of HSQLDB within OpenOffice.org can be found here. HSQLDB was the 5th most popular relational database used from JVM in a 2016 survey of deployed software HSQLDB supports the widest range of SQL Standard features seen in any open source database engine: SQL:2023 core language features and an extensive list of SQL:2023 optional features. It supports full Advanced ANSI-92 SQL with only two exceptions. Many extensions to the Standard, including syntax compatibility modes and features of other popular database engines, are also supported. HyperSQL is fully multithreaded and supports high performance 2PL and MVCC (multiversion concurrency control) transaction control models. See the list of features in the latest version. Recent releases added support for JSON constructor functions as well as direct CSV data load and unload. Temporal system-versioned tables keep all the data changes over time, allowing queries to view historic snapshots and, with PERIOD predicates, data changes over any period of time. Fine-grained row-level access control governs visibility and permissions on rows of data. Log-based synchronization keeps replicas in sync. Support for Java 8 java.time classes in JDBC, table spaces for disk-based tables, UUID type for columns, SYNONYM for tables and functions, and auto-updated TIMESTAMP columns on row updates, are some of the recent features. Other features include: The ability to cancel long-running statements from JDBC as well as from admin sessions. UTF-16 file support for text table sources. MySQL compatibility for REPLACE, INSERT IGNORE and ON DUPLICATE KEY UPDATE statements."
+year_published = 2025
+clearnet = "http://hsqldb.org"
+category = "SitesList"
+tags = ["100%", "background", "commercial", "corporate", "database", "developer", "embedded database", "hsqldb", "hypersonicsql", "integration:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "mvnrepository.com", "polepos.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/systempls-app.html"]
+title = "Appendix A. SqlTool System PL Variables"
+full_description = '''SqlTool System PL variables are the mechanism used to configure SqlTool behavior. You can list all set PL variables by running the SqlTool command * listvalues. If a SqlTool System variable is not shown, then it is unset (which is equivalent to non-null). But if a system variable is not set, that doesn't mean that the setting behavior will be unset, but rather that the default behavior will apply. For example, if you * listvalues and the variable *DSV_COL_DELIM is not listed, that doesn't mean that there will be no DSV column delimiter, but that the default DSV column delimiter will be used. The in-program help can be used to determine what the default behavior is. (In the case of *DSV_COL_DELIM, you can see the default behavior by running \x?. Besides System PL variables, there are also user PL variables which have names beginning with a letter, and the special variables ? and NULL. NULL is completely equivalent to *NULL, which is explained below. Where the table below reports that a variable is read only, for now that usually means only that you should treat is as read-only. Behavior will be unpredictable if you write to these. At some point in future I may add enforcement of this. (Contact me if this is important for you). Read only literal string for use with forrows, but inversely to *ROW availability, *ROWS is never available inside of a forrows, only after a forrows. (To use a previous ROWS value inside a forrows loop, you would have to assign it to a user PL variable). The value is just the contatenation of *ROW for each row joined with *DSV_ROW_DELIM delimiter. It is basically a simple DSV export for the query. Be aware that the \p command can't take an argument with line delimiters, so though you can use *ROWS with the default *DSV_ROW_DELIM value for exporting, comparing, and other purposes, to print it with \p you will need to change *DSV_ROW_DELIM so that it doesn't include a line break.'''
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/systempls-app.html"
+category = "SitesList"
+tags = ["appendix", "database", "hsqldb", "hypersonic", "hypersql", "java", "jdbc", "revision", "sqlfile", "sqltool"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/index.html"]
+title = "HyperSQL Utilities Guide"
+full_description = "Copyright 2002-2024 Blaine Simpson, Fred Toussi and The HSQL Development Group. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. You are not allowed to distribute or display this document on the web in an altered form."
+year_published = 2024
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/index.html"
+category = "SitesList"
+tags = ["2002-2024", "2024-10-25", "allowed", "alteration", "altered", "blaine", "contents", "database", "development", "display"]
+language = "en"
+internal-references = ["none"]
+external-references = ["contrib.andrew.cmu.edu", "dzone.com", "hsqldb.sf.net", "hxsql.com", "kattare.com", "mvnrepository.com", "polepos.org", "sourceforge.net", "twitter.com"]
+
+["http://hsqldb.org/web/extauth.html"]
+title = "HyperSQL External Authentication"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = '''Corrections, criticisms, and comments will be appreciated. Please email them to blaine <dot> simpson <at> admc <dot> com. We will work though examples of the different methods of external authentication supported by HyperSQL version 2.1.0 and later. I assume familiarity with basic SQL and Java. I will assume here that you are running Java 6 or later. When I say the main HyperSQL directory below, I mean the HyperSQL installation directory that contains the subdirectories build, lib, etc. The only other setup required is to define the URLID "mem" for a memory-only catalog in the file sqltool.rc in your home directory. If you don't have a sqltool.rc file in your home directory, just copy the file sample/sqltool.rc from your HyperSQL distribution to there. Otherwise, copy or otherwise ensure that you have a "mem" Urlid stanza like that in sample/sqltool.rc. So that I can concentrate on the target matter with minimal setup, and without favoring specific IDE's or frameworks, this tutorial works from an operating system shell. I assume that you know how to get a command shell prompt and run Java commands. To eliminate lengthy explanations of pulldown menus, or the need for dozens of screen shots, I am using the command line tool SqlTool in preference to DatabaseManager, SquirrelSQL, etc. If you prefer to use a graphical tool and are bright enough to adjust the given instructions to your tool, you are welcome to do so. Each section of this documents builds upon previous sections. Therefore, you are advised to follow the document in the given sequence. If you aren't interested in all sections, then stop wherever you want to-- just don't skip around. In particular, if you are not interested in LDAP authentication, then skip the last sections. Authentication Functions are SQL/JRT Java methods, as described in the Java Language Routines chapter of the User Guide. The backing Java method must satisfy the signature The throws may be narrowed to any Exception(s) or none. You may obtain the class containing this method from HyperSQL, from somewhere else, or you may write it yourself. For each catalog that you wish to use the authentication function for, you must run the SQL statement'''
+year_published = 2025
+clearnet = "http://hsqldb.org/web/extauth.html"
+category = "SitesList"
+tags = ["100%", "authbeanmultiplexer", "authentication", "database", "example", "external", "functions", "hsqldb", "hypersonicsql", "hypersql"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/doc/2.0/util-guide/dbm-chapt.html"]
+title = "Chapter 3. Database Manager"
+full_description = "The Database Manager tool is a simple GUI database query tool with a tree display of the tables. Both AWT and SWING versions of the tool are available and work almost identically. The AWT version class name is org.hsqldb.util.DatabaseManager; the SWING version, org.hsqldb.util.DatabaseManagerSwing. The SWING version has more refinements than the AWT version. When the Database Manager is started, a dialogue allows you to enter the JDBC driver, URL, user and password for the new connection. A drop-down box, Type, offers preset values for JDBC driver and URL for most popular database engines, including HSQLDB. Once you have selected an item from this drop-down box, you should edit the URL to specify the details of the database or any additional properties to pass. You should also enter the username and password before clicking on the OK button. The connection dialogue allows you to save the settings for the connection you are about to make. You can then access the connection in future sessions. To save a connection setting, enter a name in the Setting Name box before clicking on the OK button. Next time the connection dialogue is displayed, the drop-down box labelled Recent will include the name for all the saved connection settings. When you select a name, the individual settings are displayed in the appropriate boxes. The small Clr button next to the drop-down box allows you to clear all the saved settings. If you want to modify an existing setting, first select it from the drop-down box then modify any of the text boxes before making the connection. The modified values will be saved. Most SWING menu items have context-sensitive tool tip help text which will appear if you hold the mouse cursor still over the desired menu item. (Assuming that you don't turn Tooltips off under the Help menu. The database object tree in the SWING version allows you to right click on the name of a table or column and choose from common SQL statements for the object, for example SELECT * FROM thistable ... If you click on one of the given choices, the sample statement is copied to the command window, where you can modify and complete it."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://hsqldb.org/doc/2.0/util-guide/dbm-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "2024-10-25", "applet", "auto", "automatic", "blaine", "brief", "chapter", "connection", "contents"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["https://hsqldb.org/doc/2.0/guide/deployment-chapt.html"]
+title = "Chapter 12. Deployment Guide"
+full_description = "Copyright 2002-2024 Fred Toussi. Permission is granted to distribute this document without any alteration under the terms of the HSQLDB license. Additional permission is granted to the HSQL Development Group to distribute this document with or without alterations under the terms of the HSQLDB license. Memory used by the program can be thought of as two distinct pools: memory used for table data, which is not released unless the data is deleted; and memory that is released automatically, which includes memory used for caching, building result sets and other internal operations such as storing the information needed for rolling back a transaction. Most JVM implementations allocate up to a maximum amount of memory (usually 64 MB by default). This amount is generally not adequate when large memory tables are used, or when the average size of rows in cached tables is larger than a few thousand bytes. The maximum amount of allocated memory can be set on the Java command line that is used for running HyperSQL. For example, the JVM parameter -Xmx256m increases the amount to 256 MB. The memory used for a MEMORY table is the sum of memory used by each row. Each MEMORY table row is a Java object that contains an array of objects for the fields in the row. Each field is an object such as Integer, Long, String, etc. In addition, each index on the table adds a node object. As a result, a table with just one column of type INTEGER will have four objects per row taking up 80 bytes per row. Beyond this, each extra column in the table adds at least a few bytes to the size of each row. TEXT tables use less memory than MEMORY tables, as the array of objects is read from the disk only when needed. CACHED tables use even less memory, as discussed below. With CACHED tables, the data is stored on disk and only up to a maximum number of rows are held in the memory cache at any time. These cached rows use the same amount of memory per row as MEMORY tables. A single memory cache is used for all CACHED tables."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://hsqldb.org/doc/2.0/guide/deployment-chapt.html"
+category = "SitesList"
+tags = ["$revision:", "12.1.", "12.2.", "12.3.", "12.4.", "12.5.", "12.6.", "12.7.", "2002-2024", "2024-10-25"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["http://hsqldb.org/web/howToArrays.html"]
+title = "HyperSQL Arrays"
+description = "hsqldb: Full-featured 100% Java RDBMS"
+full_description = "HyperSQL supports the full semantics and all the related features of Standard SQL ARRAY type. The ARRAY type is a relatively recent addition to the SQL Standard and allows storing an ARRAY of attributes in a column of a table. Using an ARRAY, instead of a separate table, is a choice for the developer. An ARRAY is used if it is more appropriate to the data model. It is also more efficient to store an array instead of storing each of its elements as a row in a separate table. In the examples given here, the array as a whole is an attribute of the row and it is more appropriate to store the array in the row, instead of storing its elements in a separate table. This complete example was posted by Michael Dever in our Open Discussion Forum. It uses an ARRAY to implement a rotating password list for each user of an application. Polygon data is stored as an ordered list of coordinates. It is possible to store a Java array directly in a column of type OTHER. However, this solution makes the elements of the array inaccessible to SQL queries. In the example below, the coordinates are stored in an array."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/howToArrays.html"
+category = "SitesList"
+tags = ["100%", "arrays", "database", "example", "hsqldb", "java", "java database", "jdbc", "list", "ordbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]
+
+["https://hsqldb.org/web/usagelinks.html"]
+title = "HyperSQL Usage Examples"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "For new users. A step-by-step tutorial with Java code examples. Note the Data Types page is mixed up with features from SQL Server, which you should ignore. For new users. A simple, illustrated guide on how to run an HSQLDB server and to connect to the server with the Database Manager Swing. Introduction to programming with HSQLDB in 5 parts. This popular guide introduces HSQLDB and shows examples of how to connect and use with JDBC, Java Server Pages and JSTL. You can use the guide with HSQLDB 2.X. Unit testing and integration testing using JUnit, Liquibase, HSQLDB, Hibernate, Maven and Spring Framework This guide shows how to program a JPA application using Hibernate and HSQLDB. The guide is in 2 parts. There is a link to part 1 at the beginning of the page. If you use HSQLDB 2.x, please use the latest Hibernate 3.6 and follow the guide. This guide shows how to use HSQLDB for testing JPA/Hibernate applications targeted for Oracle. Covers how to account for database engine differences. With the latest HSQLDB, this task has become easier due to the ORA syntax compatibility mode. This guide shows how to program a GWP JPA application using Hibernate JPA and HSQLDB. If you use HSQLDB 2.x, please use the latest Hibernate 3.6 and follow the guide."
+year_published = 2025
+clearnet = "https://hsqldb.org/web/usagelinks.html"
+category = "SitesList"
+tags = ["100%", "database", "examples", "hsqldb", "hypersonicsql", "java", "java database", "jdbc", "ordbms", "rdbms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/web/hsqlDevelopment.html"]
+title = "HyperSQL Development"
+description = "hsqldb: Full-featured 100% Java ORDBMS"
+full_description = "2005-today: After the release of version 1.8.0 in 2005, we aimed to develop a highly standard-compliant database engine to support advanced data types and Standard SQL syntax. This required a complete rewrite of most core and interface components of the engine and was done in stages over four years. We avoided early releases in order to provide a well-balanced feature set. Version 2.0.0 was finally released in June 2010, after a year of alpha and beta releases with extensive public tests. We completed all the features listed in the new features page. Since the release of 2.0.0, we have added enhancements, new features and fixed reported bugs, resulting in version 2.7.1 in October 2022. Point releases have appeared on average twice a year. Recent new features include hot backup, multi-billion row tables, extended SQL syntax compatibility modes, JEE XA transactions, connection pool and many new built-in functions. We add regular enhancements to all areas of the engine. For example, recursive query support was improved in version 2.7.1. See the SupportWare page on how you can support the effort financially. The development effort and all public releases are coordinated by the full-time Maintainer to ensure continuity and consistency. We are always looking for new developers to join our team. Anyone who would like to contribute code, tests, documentation or translation is welcome to join. Please send an email to the Maintainer, Fred Toussi, fredt (at) users.sourceforge.net with your proposed enhancement. When you contribute code, you are expected to contribute tests that validate your code. HSQLDB is used in (or is supported by) a large number of open source projects. We welcome direct, priority contact with developers from those projects to ensure a smooth transition to new versions. You can point us to the HSQLDB access code in your pre-release sources and we will look and suggest any simple improvements that may be necessary. We value contributions from all developers who use HSQLDB in their projects. We have been able to fulfil many requests for additional features or bug fixes and will continue to give priority to what users ask for."
+year_published = 2025
+clearnet = "http://hsqldb.org/web/hsqlDevelopment.html"
+category = "SitesList"
+tags = ["/base", "/base-one", "/dotnet", "/odbc", "100%", "2003-2004:", "2004-2005", "2005-today", "ancient", "before"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.m1key.me", "code.google.com", "danhaywood.com", "datanucleus.com", "dbeaver.io", "dzone.com", "hibernate.org", "hybris.com", "jboss.com", "jonas.ow2.org", "jooq.org", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "openoffice.org", "repo1.maven.org", "tillias.wordpress.com", "tutorialspoint.com", "twitter.com"]
+
+["http://hsqldb.org/doc/2.0/util-guide/test-utility-chapt.html"]
+title = "Chapter 2. Hsqldb Test Utility"
+full_description = "The org.hsqldb.test package contains a number of tests for various functions of the database engine. Among these, the TestUtil class performs the tests that are based on scripts. To run the tests, you should compile the hsqldbtest.jar target with Ant and JUnit. The TestUtil class should be run in the /testrun/hsqldb directory of the distributed files. It then runs the set of TestSelf*.txt files in the directory. To start the application in Windows, change to the directory and type: All files in the working directory with names matching TestSelf*.txt are processed in alphabetical order. You can add your own scripts to test different series of SQL queries. The format of the TestSelf*.txt file is simple text, with some indentation and prefixes in the form of Java-style comments. The prefixes indicate what the expected result should be. The class org.hsqldb.test.TestScriptRunner is a more general program which you can use to test any script files which you specify (with scripts of the same exact format as described below). For example, You must have the HSQLDB classes, including the util and test classes, in your CLASSPATH. The urlid must be set up in an RC file as explained in the RC File Authentication Setup section. Use the rcfile= argument to specify an RC file other than the default of testscriptrunner.rc in the current directory. To see all invocation possibilities, just run TestScriptRunner with no arguments at all. TestScriptRunner can run tests sequentially (the default) or in simultaneous asynchronous threads. The /*s*/ option stands for silent. It is used for executing queries regardless of results. Used for preparation of tests, not for actual tests. The /*c<rows>*/ option is for SELECT queries and asserts the number of rows in the result matches the given count. The /*u*/ option is for queries that return an update count, such as DELETE and UPDATE. It asserts the update count matches. The /*e*/ option asserts that the given query results is an error. It is mainly used for testing the error detection capabilities of the engine. The SQL State of the expected error can be defined, for example /*e42578*/, to verify the returned error. This option can be used with syntactically valid queries to assert a certain state in the database. For example a CREATE TABLE can be used to assert the table of the same name already exists."
+year_published = 2025
+clearnet = "http://hsqldb.org/doc/2.0/util-guide/test-utility-chapt.html"
+category = "SitesList"
+tags = ["chapter", "database", "hsqldb", "hypersonic", "hypersql", "java", "jdbc", "test", "utility"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ant.apache.org", "blog.m1key.me", "code.google.com", "community.voltdb.com", "danhaywood.com", "dbeaver.io", "docs.codehaus.org", "dzone.com", "hibernate.org", "jboss.com", "jonas.ow2.org", "jooq.org", "jtpcc.sourceforge.net", "kattare.com", "kepler-project.org", "lists.sourceforge.net", "livejournal.com", "repo1.maven.org", "search.maven.org", "tillias.wordpress.com"]

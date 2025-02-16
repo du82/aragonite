@@ -1,0 +1,175 @@
+["https://cheapshark.com/api"]
+title = "CheapShark API"
+description = '''
+[CheapShark](https://www.cheapshark.com/) is a price comparison website for digital PC Games. We keep track of prices across multiple stores including Steam, GreenManGaming, Fanatical, and many others.
+
+We offer a fully documented public API for developers to use CheapShark pricing data on their own app or website.
+
+## 📌 Important Usage Notes
+
+The API is completely free, the only condition being that you **use CheapShark links when sending users to deals** (see details in **Deals** section below). This is how we pay for hosting and development! 😉
+
+While not required, it is always appreciated if you mention somewhere that your app or site is making use of the CheapShark API.
+
+## 🔑 Authorization &amp; Rate Limiting
+
+Two of the most common questions we see are regarding API Keys and Rate Limits. The API is completely public, **no authorization or API Key is needed**. You can get started right away!
+
+To ensure server performance, we rate limit API calls. If you make too many requests in too short of time, you will receive a `429` HTTP response status code and be _**temporarily**_ blocked. The ban will be automatically lifted after it expires. All API clients are subject to the same limits. For this reason, during development you may wish to create and use a Mock API instead ([Postman offers this feature](https://www.postman.com/features/mock-api/)).
+
+In general the API is designed to be called directly in response to user input / queries in your application. For example, a user searching for a particular game or browsing through pages of deals. Excessive automated requests to build a cached catalog of data **will run into rate limiting issues** and should be avoided.
+
+The API fully supports [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), so requests should come directly from the user's browser or app (whenever possible). This will help avoid most rate limiting issues.
+
+## 🙋‍♂️Help &amp; Support
+
+For some real-world examples of this API in action, we suggest you check out the [CheapShark](https://www.cheapshark.com/) website itself. Using your browser's [DevTools](https://developer.chrome.com/docs/devtools/), you can inspect how various pages and interactions use the API.
+
+If you run into any issues, need help with your implementation, or just want to share what you'll be using the API for, feel free to get in touch with us anytime!
+
+We're always happy to help on our [Discord](https://discord.gg/cheapshark)'s dedicated **#api-help** channel or via email - [admin@cheapshark.com](mailto:admin@cheapshark.com?subject=API%20Help).
+
+## 📢Updates
+
+We'll occasionally share important changes or news regarding the API via the **#api-announcements** channel on our [Discord](https://discord.gg/cheapshark) server. Be sure to right-click and set "Notification Settings" to "All Messages" on the channel if you'd like to stay informed!'''
+year_published = 2025
+clearnet = "https://cheapshark.com/api"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/manageAlerts"]
+title = "Manage Alerts | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/manageAlerts"
+category = "SitesList"
+tags = ["compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming", "list"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/browse"]
+title = "Browse | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/browse"
+category = "SitesList"
+tags = ["compare", "deals", "digital", "downloads", "filters", "friends", "game", "gamersgate", "gog", "greenmangaming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/privacy"]
+title = "Privacy Policy | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/privacy"
+category = "SitesList"
+tags = ["compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming", "list"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/releases"]
+title = "PC Game Release Dates | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/releases"
+category = "SitesList"
+tags = ["compare", "dates", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/contact"]
+title = "Contact Us | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "We love to hear from our users! Whether you have feedback, questions, or just want to chat, please contact us through any of the methods below. The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/contact"
+category = "SitesList"
+tags = ["compare", "contact", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/search"]
+title = "Search | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/search"
+category = "SitesList"
+tags = ["compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming", "list"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com"]
+title = "CheapShark - PC Game Deals"
+description = """
+What is CheapShark?                    CheapShark is all about finding the best prices on digital game downloads for PC. We keep track of game prices on a number of stores such as Steam, GreenManGaming, GOG and Humble Bundle.
+                    Whether you want to view the top deals, search for a specific game, sign up for email price alerts, or just browse, CheapShark has just what you're looking for.                    If you want to compare digital game download prices, and find the cheapest place to buy, then you came to the right site!"""
+full_description = "What is CheapShark? CheapShark is all about finding the best prices on digital game downloads for PC. We keep track of game prices on a number of stores such as Steam, GreenManGaming, GOG and Humble Bundle. Whether you want to view the top deals, search for a specific game, sign up for email price alerts, or just browse, CheapShark has just what you're looking for. If you want to compare digital game download prices, and find the cheapest place to buy, then you came to the right site! CheapShark is all about finding the best prices on digital game downloads for PC. We keep track of game prices on a number of stores such as Steam, GreenManGaming, GOG and Humble Bundle. Whether you want to view the top deals, search for a specific game, sign up for email price alerts, or just browse, CheapShark has just what you're looking for. If you want to compare digital game download prices, and find the cheapest place to buy, then you came to the right site! The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com"
+category = "SitesList"
+tags = ["cheapshark?", "compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/about"]
+title = "About | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = '''CheapShark was created in March 2012 with a very simple goal in mind: make finding the best game prices easy! Since then, we've made it our mission to bring you the best game deals, non-stop. We collect pricing data from digital game stores like Steam, GreenManGaming, GOG and GamersGate to make it easy to find exactly what you're looking for. To achieve this, we categorize our listings by store, let you browse and filter every deal, and provide an easy-to-use search tool when looking for specific games. We also host frequent game giveaways. When CheapShark started off, we initially tracked just 6 stores. Since then we've expanded quite a bit! One of the most important criteria for stores we choose to list is that they must have a direct relationship with the publishers and developers whose games they sell. You will never see any shady key resellers on the site, only official distributors. You can feel safe shopping at any of the stores we list! Hopefully this little bit of background info was helpful! As always, feel free to get in touch anytime. You can setup an email alert by clicking the info icon () next to a game's name on the homepage. On the browse page, you can click the mail icon (). On the search page you'll see a "Sign up for a Price Notification" button when you open any result. Yes! You can view the cheapest a game has ever been by clicking the info icon () next to any title on the home or browse pages. We rate deals on a number of factors. A few of these include how new the game is, what size discount is offered, the metacritic rating, and how fresh the deal is. Sure! Anytime you make a change to the filters, the URL is updated to reflect this. So, you can easily save your favorite settings just by bookmarking the page. Some stores pay us a percentage of the sale when you buy a game through one of our links. Purchasing games through CheapShark helps directly support the site! We're always looking for opportunities to expand. If you run a Youtube channel, Twitch stream, or gaming blog, and would like to work with us, get in touch!'''
+year_published = 2025
+clearnet = "https://cheapshark.com/about"
+category = "SitesList"
+tags = ["alert?", "asked", "background", "browse", "compare", "create", "deals", "deals?", "digital", "downloads"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/terms"]
+title = "Terms and Conditions | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/terms"
+category = "SitesList"
+tags = ["compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog", "greenmangaming", "list"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/raffle"]
+title = "Giveaways | CheapShark"
+description = "If there is one thing better than cheap games, it is free ones. CheapShark is constantly giving away games to our users. Sign up for your chance to win!"
+full_description = "CheapShark loves giving away games to our users. See a game you like? Enter to win! If not, check back later and chances are we'll have a brand new game up for grabs! The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/raffle"
+category = "SitesList"
+tags = ["cheapshark", "compare", "deals", "digital", "downloads", "free", "friends", "game", "gamersgate", "games!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]
+
+["https://cheapshark.com/apps"]
+title = "Apps | CheapShark"
+description = "We're all about tracking PC game sales. We let you easily compare prices on stores such as Steam, GOG, and GreenManGaming."
+full_description = "The prices listed on this site are correct to the best of our knowledge. CheapShark offers no guarantee on accuracy or availability. Copyrights and trademarks are the property of their respective owners. © 2025 CheapShark, taking a bite out of prices! All rights reserved."
+year_published = 2025
+clearnet = "https://cheapshark.com/apps"
+category = "SitesList"
+tags = ["android", "apps", "compare", "deals", "digital", "downloads", "friends", "game", "gamersgate", "gog"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "bsky.app", "darkreader.org", "discord.gg", "issues.cheapshark.com", "mastodon.social", "pcgamingwiki.com", "play.google.com", "policies.google.com", "status.cheapshark.com", "steamcommunity.com", "t.me"]

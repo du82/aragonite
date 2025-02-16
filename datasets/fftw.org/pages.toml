@@ -1,0 +1,363 @@
+["https://fftw.org/release-notes.html"]
+title = "FFTW Release Notes"
+full_description = "This test computes a pair of length-4 real->complex transforms where the second input is 5 real numbers away from the first input. That is, there is a gap of one real number between the first and second input array. The -oexhaustive level allow FFTW to attempt to compute this transform by reducing it to a pair of complex transforms of length 2, but now the second input is not aligned to a complex-number boundary. The fact that 5 is odd is the problem. The bug cannot occur in complex->complex transforms because the complex interface accepts strides in units of complex numbers, so strides are aligned by construction. The avx512 alignment requirement was set to 64 bytes, but this is wrong. Alignment requirements are a property of the platform (e.g., x86) and not of the instruction set (e.g., AVX). Among other things, this broke wisdom with avx512. Note that avx512 support is still experimental because the FFTW authors have no avx512 hardware available for testing. By default, FFTW 3.3.7 was broken with gcc-8. AVX and AVX2 code assumed that the compiler honors the distinction between +0 and -0, but gcc-8 -ffast-math does not. The default CFLAGS included -ffast-math . This release ensures that FFTW works with gcc-8 -ffast-math , and removes -ffast-math from the default CFLAGS for good measure. The primary build mechanism for FFTW remains GNU autoconf/automake. CMake support is meant to offer an easy way to compile FFTW on Windows, and as such it does not cover all the features of the automake build system, such as exotic cycle counters, cross-compiling, or build of binaries for a mixture of ISA's (e.g., amd64 vs amd64+avx vs amd64+avx2). Patches are welcome."
+year_published = 2025
+clearnet = "https://fftw.org/release-notes.html"
+category = "SitesList"
+tags = ["1.2.1", "2.0.1", "2.1.1", "2.1.2", "2.1.3", "2.1.4", "2.1.5", "3.0.1", "3.0beta1:", "3.0beta2:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/pruned.html"]
+title = "Pruned FFTs with FFTW"
+description = "On computing pruned FFTs, with only a subset of inputs and outpus, using FFTW."
+full_description = '''Sometimes, people want to compute a discrete Fourier transform (DFT) where only a subset of the outputs are needed, and/or conversely where only a subset of the inputs are non-zero. Fast algorithms to compute this are, in general, known as "pruned" FFTs. Unfortunately, the performance gains in general from pruned FFTs are quite modest. If you have a transform of size N where only K outputs are desired, the complexity is in general O(N log K), vs. O(N log N) for the full FFT, thus saving only a small additive factor in the log. (Similarly for K nonzero inputs.) This is discussed in more detail by the references at the end. In principle, the arithmetic count can be reduced (however slightly) whenever K < N, simply by discarding (pruning) unused operations from an ordinary FFT. Turning these arithmetic gains into actual performance improvements is much more difficult, however. The problem is that optimizing an FFT requires a lot of effort, and is not just a matter of minimizing arithmetic cost on modern computers. By implementing a pruned FFT, you are gaining a small factor in the log, but you are sacrificing a significant part of the effort that went into optimizing full FFTs (even if you use an optimized FFT as a subroutine), and the latter can easily outweigh the former. Because of this, I would not recommend bothering to consider a pruned 1d FFT unless you want 1% of the outputs or fewer (and/or if 1% or fewer of your inputs are nonzero). The most common case where people seem to want a pruned FFT is for zero-padded convolutions, where roughly 50% of your inputs are zero (to get a linear convolution from an FFT-based cyclic convolution). Here, a pruned FFT is hardly worth thinking about, at least in one dimension. In higher dimensions, matters change (e.g. for a 3d zero-padded array about 1/8 of your inputs are non-zero, and one can fairly easily save a factor of two or so simply by skipping 1d sub-transforms that are zero). Another possibility, of course, is to simply use the naive DFT formula or the Goertzel algorithm, both of which have O(N K) complexity. These methods have the added advantage of only requiring O(K) storage if the N inputs are computed or read on the fly (a huge advantage in some applications). However, they are also generally less accurate than FFT-based methods when implemented in finite-precision floating-point arithmetic — the naive formula and Goertzel's algorithm have error bounds that grow as O(N3/2) and O(N5/2), respectively, compared to O(log N) for the FFT. The minimum K at which a pruned FFT becomes faster will depend upon the context, but we have observed benefits below from a pruned FFT (compared to Goertzel) for K as small as 10 with N of 105 (where Goertzel is orders of magnitude less accurate).'''
+year_published = 2025
+clearnet = "http://www.fftw.org/pruned.html"
+category = "SitesList"
+tags = ["complex", "computing", "ffts", "fftw", "further", "note:", "outputs", "pruned", "reading", "real-input"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["https://fftw.org/fftw3_doc/Acknowledgments.html"]
+title = "Acknowledgments (FFTW 3.3.10)"
+description = "Acknowledgments (FFTW 3.3.10)"
+full_description = "Matteo Frigo was supported in part by the Special Research Program SFB F011 “AURORA” of the Austrian Science Fund FWF and by MIT Lincoln Laboratory. For previous versions of FFTW, he was supported in part by the Defense Advanced Research Projects Agency (DARPA), under Grants N00014-94-1-0985 and F30602-97-1-0270, and by a Digital Equipment Corporation Fellowship. Steven G. Johnson was supported in part by a Dept. of Defense NDSEG Fellowship, an MIT Karl Taylor Compton Fellowship, and by the Materials Research Science and Engineering Center program of the National Science Foundation under award DMR-9400334. Code for the Cell Broadband Engine was graciously donated to the FFTW project by the IBM Austin Research Lab and included in fftw-3.2. (This code was removed in fftw-3.3.) Code for the MIPS paired-single SIMD support was graciously donated to the FFTW project by CodeSourcery, Inc. We are grateful to Sun Microsystems Inc. for its donation of a cluster of 9 8-processor Ultra HPC 5000 SMPs (24 Gflops peak). These machines served as the primary platform for the development of early versions of FFTW. We thank Intel Corporation for donating a four-processor Pentium Pro machine. We thank the GNU/Linux community for giving us a decent OS to run on that machine. We are thankful to the AMD corporation for donating an AMD Athlon XP 1700+ computer to the FFTW project. We thank the Compaq/HP testdrive program and VA Software Corporation (SourceForge.net) for providing remote access to machines that were used to test FFTW. The genfft suite of code generators was written using Objective Caml, a dialect of ML. Objective Caml is a small and elegant language developed by Xavier Leroy. The implementation is available from http://caml.inria.fr/. In previous releases of FFTW, genfft was written in Caml Light, by the same authors. An even earlier implementation of genfft was written in Scheme, but Caml is definitely better for this kind of application. Prof. Charles E. Leiserson of MIT provided continuous support and encouragement. This program would not exist without him. Charles also proposed the name “codelets” for the basic FFT blocks."
+year_published = 2025
+clearnet = "https://fftw.org/fftw3_doc/Acknowledgments.html"
+category = "SitesList"
+tags = ["acknowledgments"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["http://www.fftw.org/benchfft"]
+title = "The benchFFT Home Page"
+description = "Home page for benchFFT, a program to compare the performance and accuracy of many different FFT implementations."
+full_description = 'Welcome to the home page of benchFFT, a program to benchmark FFT software, assembled by Matteo Frigo and Steven G. Johnson at MIT. The benchmark incorporates a large number of publicly available FFT implementations, in both C and Fortran, and measures their performance and accuracy over a range of transform sizes. It benchmarks both real and complex transforms in one, two, and three dimensions. The FFT implementations in the benchmark were written by various authors over a period of more than 35 years. Except for small tweaks to get things to compile, we used the unmodified original codes. We have run the benchmark on a number of different computer architectures in order to gain a sense of how the relative performance of different codes varies with hardware. Whenever the author of the FFT routine explicitly specifies a compiler and a set of compiler flags, we used the specified compiler and flags. Otherwise, we used a uniform set of "good" compiler flags. Graphs, the raw data, and a more complete description of the methodology can be found on the Speed Results page. We also benchmarked the accuracy of the different codes, for 1d FFTs, only, on a smaller number of machines, as described and graphed on the Accuracy Results page. If you have an architecture that is not represented in the graphs, and are interested in letting us run the benchmark on your machine over a weekend, please let us know. (We are mainly interested in benchmarking new CPU types, not so much in the latest clock-speed advances.) You can download the complete benchFFT source code, including the source code of many of the benchmarked FFTs, if you have more questions about the methodology or want to run it yourself. Running the benchmark requires a Unix-like environment to use the Makefiles and shell scripts. For each machine, we typically set up a small script to set environment variables to indicate library locations, compiler flags, etcetera, and to run the benchmark; examples are included, see the README file.'
+year_published = 2025
+clearnet = "http://www.fftw.org/benchfft"
+category = "SitesList"
+tags = ["benchfft", "benchmark", "download", "feedback", "fft", "introduction", "results"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "mit.edu", "rce-cast.com", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["http://www.fftw.org/parallel/psc-t3d.html"]
+title = "Cray T3D Benchmark"
+full_description = "Two versions of the MPI FFTW are plotted. The first one returns the output data in the same format as the input data. The second version returns the output data in transposed order (this is faster because it saves the cost of an extra transpose). We also had access to a Cray-provided, optimized FFT for the T3D. The speed of this software is shown at the bottom of the page for comparison. It should be noted that this transform is out-of-place, unlike the MPI FFTW transform. The performance of FFTW relative to the Cray FFT is disappointing, but we are working on a faster version."
+year_published = 2025
+clearnet = "http://www.fftw.org/parallel/psc-t3d.html"
+category = "SitesList"
+tags = ["cray", "fftw", "fftw,", "fftw.", "out-of-place", "parallel", "plotted", "relative", "speedup", "transforms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["https://fftw.org/fftw-wisdom.1.html"]
+title = "FFTW-WISDOM(1) manual page"
+full_description = 'fftw-wisdom is a utility to generate FFTW wisdom files, which contain saved information about how to optimally compute (Fourier) transforms of various sizes. FFTW is a free library to compute discrete Fourier transforms in one or more dimensions, for arbitrary sizes, and of both real and complex data, among other related operations. More information on FFTW can be found at the FFTW home page: http://www.fftw.org Programs using FFTW can be written to load wisdom from an arbitrary file, string, or other source. Moreover, it is likely that many FFTW-using programs will load the system wisdom file, which is stored in /etc/fftw/wisdom by default. fftw-wisdom can be used to create or add to such wisdom files. In its most typical usage, the wisdom file can be created to pre-plan a canonical set of sizes (see below) via: The fftw-wisdom program normally writes the wisdom directly to standard output, but this can be changed via the -o option, as in the example above. If the system wisdom file /etc/fftw/wisdom already exists, then fftw-wisdom reads this existing wisdom (unless the -n option is specified) and outputs both the old wisdom and any newly created wisdom. In this way, it can be used to add new transform sizes to the existing system wisdom (or other wisdom file, with the -w option). <type> is either ’c’ (complex), ’r’ (real, r2c/c2r), or ’k’ (r2r, per-dimension kinds, specified in the geometry, below). <direction> is either ’f’ (forward) or ’b’ (backward). The <direction> should be omitted for ’k’ transforms, where it is specified via the geometry instead. <geometry> is the size and dimensionality of the transform, where different dimensions are separated by ’x’ (e.g. ’16x32’ for a two-dimensional 16 by 32 transform). In the case of ’k’ transforms, the size of each dimension is followed by a "type" string, which can be one of f/b/h/e00/e01/e10/e11/o00/o01/o10/o11 for R2HC/HC2R/DHT/REDFT00/.../RODFT11, respectively, as defined in the FFTW manual.'
+year_published = 2025
+clearnet = "https://fftw.org/fftw-wisdom.1.html"
+category = "SitesList"
+tags = ["--canonical", "--estimate", "--exhaustive", "--help", "--impatient", "--no-system-wisdom", "--output-file", "--time-limit", "--verbose", "--version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["http://www.fftw.org/faq/index.html"]
+title = "FFTW Frequently Asked Questions with Answers"
+description = "Frequently asked questions and answers (FAQ) for FFTW."
+year_published = 2025
+clearnet = "http://www.fftw.org/faq/index.html"
+category = "SitesList"
+tags = ["answers", "asked", "bugs", "fftw", "frequently", "general", "index", "information", "installing", "internals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/index.html"]
+title = "FFTW Home Page"
+description = "A fast, free C FFT library; includes real-complex, multidimensional, and parallel transforms. Benchmarked against many other FFTs."
+full_description = '''The latest official release of FFTW is version 3.3.10, available from our download page. Version 3.3 introduced support for the AVX x86 extensions, a distributed-memory implementation on top of MPI, and a Fortran 2003 API. Version 3.3.1 introduced support for the ARM Neon extensions. See the release notes for more information. Our benchmarks, performed on on a variety of platforms, show that FFTW's performance is typically superior to that of other publicly available FFT software, and is even competitive with vendor-tuned codes. In contrast to vendor-tuned codes, however, FFTW's performance is portable: the same program will perform well on most architectures without modification. Hence the name, "FFTW," which stands for the somewhat whimsical title of "Fastest Fourier Transform in the West." If you are still using FFTW 2.x, please note that FFTW 2.x was last updated in 1999 and it is obsolete. Please upgrade to FFTW 3.x. The API of FFTW 3.x is incompatible with that of FFTW 2.x, for reasons of performance and generality (see the FAQ or the manual). For general questions about Fourier transforms, see our links to FFT-related resources. People often ask us how to compute a subset of the FFT outputs, so we have posted a short discussion of pruned FFTs. We benchmarked FFTW against many other FFT programs, in one to three dimensions, on a variety of platforms. You can view the results from this benchmark, or download it to run on your own machine and compiler, at the benchFFT web page. FFTW received the 1999 J. H. Wilkinson Prize for Numerical Software, which is awarded every four years to the software that "best addresses all phases of the preparation of high quality numerical software." Wilkinson was a seminal figure in modern numerical analysis as well as a key proponent of the notion of reusable, common libraries for scientific computing, and we are especially honored to receive this award in his memory. Our paper "A Fast Fourier Transform Compiler" (in PLDI 1999) received the Most Influential PLDI Paper award in 2009.'''
+year_published = 2025
+clearnet = "http://www.fftw.org/index.html"
+category = "SitesList"
+tags = ["3.3.10", "acknowledgements", "arbitrary-size", "awards", "benchmark", "dft", "documentation", "downloading", "dsp", "fast fourier transform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org"]
+title = "FFTW Home Page"
+description = "A fast, free C FFT library; includes real-complex, multidimensional, and parallel transforms. Benchmarked against many other FFTs."
+full_description = '''The latest official release of FFTW is version 3.3.10, available from our download page. Version 3.3 introduced support for the AVX x86 extensions, a distributed-memory implementation on top of MPI, and a Fortran 2003 API. Version 3.3.1 introduced support for the ARM Neon extensions. See the release notes for more information. Our benchmarks, performed on on a variety of platforms, show that FFTW's performance is typically superior to that of other publicly available FFT software, and is even competitive with vendor-tuned codes. In contrast to vendor-tuned codes, however, FFTW's performance is portable: the same program will perform well on most architectures without modification. Hence the name, "FFTW," which stands for the somewhat whimsical title of "Fastest Fourier Transform in the West." If you are still using FFTW 2.x, please note that FFTW 2.x was last updated in 1999 and it is obsolete. Please upgrade to FFTW 3.x. The API of FFTW 3.x is incompatible with that of FFTW 2.x, for reasons of performance and generality (see the FAQ or the manual). For general questions about Fourier transforms, see our links to FFT-related resources. People often ask us how to compute a subset of the FFT outputs, so we have posted a short discussion of pruned FFTs. We benchmarked FFTW against many other FFT programs, in one to three dimensions, on a variety of platforms. You can view the results from this benchmark, or download it to run on your own machine and compiler, at the benchFFT web page. FFTW received the 1999 J. H. Wilkinson Prize for Numerical Software, which is awarded every four years to the software that "best addresses all phases of the preparation of high quality numerical software." Wilkinson was a seminal figure in modern numerical analysis as well as a key proponent of the notion of reusable, common libraries for scientific computing, and we are especially honored to receive this award in his memory. Our paper "A Fast Fourier Transform Compiler" (in PLDI 1999) received the Most Influential PLDI Paper award in 2009.'''
+year_published = 2025
+clearnet = "http://www.fftw.org"
+category = "SitesList"
+tags = ["3.3.10", "acknowledgements", "arbitrary-size", "awards", "benchmark", "dft", "documentation", "downloading", "dsp", "fast fourier transform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/~athena"]
+title = "Matteo Frigo's Home Page"
+year_published = 2025
+clearnet = "http://www.fftw.org/~athena"
+category = "SitesList"
+tags = ["frigo's", "hacks", "home", "matteo", "papers", "public", "quick", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["be.com", "cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gmeteor.sourceforge.net", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "mit.edu", "psc.edu", "rce-cast.com", "supertech.lcs.mit.edu", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["https://fftw.org/fftw-wisdom-to-conf.1.html"]
+title = "FFTW-WISDOM-TO-CONF(1) manual page"
+full_description = 'fftw-wisdom-to-conf is a utility to generate C configuration routines from FFTW wisdom files, where the latter contain saved information about how to optimally compute (Fourier) transforms of various sizes. A configuration routine is a C subroutine that you link into your program, replacing a routine of the same name in the FFTW library, that determines which parts of FFTW are callable by your program. The reason to do this is that, if you only need transforms of a limited set of sizes and types, and if you are statically linking your program, then using a configuration file generated from wisdom for those types can substantially reduce the size of your executable. (Otherwise, because of FFTW’s dynamic nature, all of FFTW’s transform code must be linked into any program using FFTW.) FFTW is a free library to compute discrete Fourier transforms in one or more dimensions, for arbitrary sizes, and of both real and complex data, among other related operations. More information on FFTW can be found at the FFTW home page: http://www.fftw.org fftw-wisdom-to-conf reads wisdom from standard input and writes the configuration to standard output. It can easily be combined with the fftw-wisdom tool, for example: will create a configuration "conf.c" containing only those parts of FFTW needed for the optimized complex forwards and backwards out-of-place transforms of size 1024 (also saving the wisdom itself in "wisdom"). Alternatively, you can run your actual program, export wisdom for all plans that were created (ideally in FFTW_PATIENT or FFTW_EXHAUSTIVE mode), use this as input for fftw-wisdom-to-conf, and then re-link your program with the resulting configuration routine. Note that the configuration routine does not contain the wisdom, only the routines necessary to implement the wisdom, so your program should also import the wisdom in order to benefit from the pre-optimized plans.'
+year_published = 2025
+clearnet = "https://fftw.org/fftw-wisdom-to-conf.1.html"
+category = "SitesList"
+tags = ["--help", "--version", "authors", "bugs", "configuration", "contents", "description", "fftw-wisdom-to-conf", "name", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["https://fftw.org/faq"]
+title = "FFTW Frequently Asked Questions with Answers"
+description = "Frequently asked questions and answers (FAQ) for FFTW."
+year_published = 2025
+clearnet = "https://fftw.org/faq"
+category = "SitesList"
+tags = ["answers", "asked", "bugs", "fftw", "frequently", "general", "index", "information", "installing", "internals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["https://fftw.org/fftw3_doc"]
+title = "Top (FFTW 3.3.10)"
+description = "Top (FFTW 3.3.10)"
+full_description = "Welcome to FFTW, the Fastest Fourier Transform in the West. FFTW is a collection of fast C routines to compute the discrete Fourier transform. This manual documents FFTW version 3.3.10."
+year_published = 2025
+clearnet = "https://fftw.org/fftw3_doc"
+category = "SitesList"
+tags = ["3.3.10", "contents", "fftw", "manual", "table", "user"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["https://fftw.org/fftw3_doc/Upgrading-from-FFTW-version-2.html"]
+title = "Upgrading from FFTW version 2 (FFTW 3.3.10)"
+description = "Upgrading from FFTW version 2 (FFTW 3.3.10)"
+full_description = "Next: Installation and Customization, Previous: Calling FFTW from Legacy Fortran, Up: Top [Contents][Index] In this chapter, we outline the process for updating codes designed for the older FFTW 2 interface to work with FFTW 3. The interface for FFTW 3 is not backwards-compatible with the interface for FFTW 2 and earlier versions; codes written to use those versions will fail to link with FFTW 3. Nor is it possible to write “compatibility wrappers” to bridge the gap (at least not efficiently), because FFTW 3 has different semantics from previous versions. However, upgrading should be a straightforward process because the data formats are identical and the overall style of planning/execution is essentially the same. Unlike FFTW 2, there are no separate header files for real and complex transforms (or even for different precisions) in FFTW 3; all interfaces are defined in the <fftw3.h> header file. The main difference in data types is that fftw_complex in FFTW 2 was defined as a struct with macros c_re and c_im for accessing the real/imaginary parts. (This is binary-compatible with FFTW 3 on any machine except perhaps for some older Crays in single precision.) The equivalent macros for FFTW 3 are: This does not work if you are using the C99 complex type, however, unless you insert a double* typecast into the above macros (see Complex numbers). Also, FFTW 2 had an fftw_real typedef that was an alias for double (in double precision). In FFTW 3 you should just use double (or whatever precision you are employing). The major difference between FFTW 2 and FFTW 3 is in the planning/execution division of labor. In FFTW 2, plans were found for a given transform size and type, and then could be applied to any arrays and for any multiplicity/stride parameters. In FFTW 3, you specify the particular arrays, stride parameters, etcetera when creating the plan, and the plan is then executed for those arrays (unless the guru interface is used) and those parameters only. (FFTW 2 had “specific planner” routines that planned for a particular array and stride, but the plan could still be used for other arrays and strides.) That is, much of the information that was formerly specified at execution time is now specified at planning time."
+year_published = 2025
+clearnet = "https://fftw.org/fftw3_doc/Upgrading-from-FFTW-version-2.html"
+category = "SitesList"
+tags = ["allocation", "fftw", "fortran", "interface", "memory", "numeric", "plans", "threads", "types", "upgrading"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["http://www.fftw.org/faq/section2.html"]
+title = "FFTW FAQ - Section 2"
+full_description = '''We have successfully used gcc 3.2.x on x86 and PPC, a recent Compaq C compiler for Alpha, version 6 of IBM's xlc compiler for AIX, Intel's icc versions 5-7, and Sun WorkShop cc version 6. FFTW is likely to push compilers to their limits, however, and several compiler bugs have been exposed by FFTW. A partial list follows. gcc 2.95.x for Solaris/SPARC produces incorrect code for the test program (workaround: recompile the libbench2 directory with -O2). NetBSD/macppc 1.6 comes with a gcc version that also miscompiles the test program. (Please report a workaround if you know one.) gcc 3.2.3 for ARM reportedly crashes during compilation. This bug is reportedly fixed in later versions of gcc. Versions 8.0 and 8.1 of Intel's icc falsely claim to be gcc, so you should specify CC="icc -no-gcc"; this is automatic in FFTW 3.1. icc-8.0.066 reportely produces incorrect code for FFTW 2.1.5, but is fixed in version 8.1. icc-7.1 compiler build 20030402Z appears to produce incorrect dependencies, causing the compilation to fail. icc-7.1 build 20030307Z appears to work fine. (Use icc -V to check which build you have.) As of 2003/04/18, build 20030402Z appears not to be available any longer on Intel's website, whereas the older build 20030307Z is available. ranlib of GNU binutils 2.9.1 on Irix has been observed to corrupt the FFTW libraries, causing a link failure when FFTW is compiled. Since ranlib is completely superfluous on Irix, we suggest deleting it from your system and replacing it with a symbolic link to /bin/echo. gcc 3.4.[0123] for x86 produces incorrect SSE2 code for FFTW when -O2 (the best choice for FFTW) is used, causing FFTW to crash (make check crashes). This bug is fixed in gcc 3.4.4. On x86_64 (amd64/em64t), gcc 3.4.4 reportedly still has a similar problem, but this is fixed as of gcc 3.4.6. gcc-3.2 for x86 produces incorrect SIMD code if -O3 is used. The same compiler produces incorrect SIMD code if no optimization is used, too. When using gcc-3.2, it is a good idea not to change the default CFLAGS selected by the configure script.'''
+year_published = 2025
+clearnet = "http://www.fftw.org/faq/section2.html"
+category = "SitesList"
+tags = ["--enable-3dnow", "--enable-k7", "--enable-k7?", "2.1.", "2.10.", "2.11.", "2.12.", "2.2.", "2.3.", "2.4."]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/accuracy"]
+title = "FFT Accuracy Benchmark Results"
+full_description = "See our accuracy benchmark methodology page for a description of how we measure FFT accuracy, as well as an explanation of what is plotted in the graphs below. Since the FFT accuracy graphs exhibit a number of interesting features whose meaning may not be immediately obvious, you may also want to read our commentary on the results. Our list of FFTs in the benchmark describes the full name and source corresponding to the abbreviated FFT labels in the plot legends."
+year_published = 2025
+clearnet = "http://www.fftw.org/accuracy"
+category = "SitesList"
+tags = ["accuracy", "benchmark", "results"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/encryption.html"]
+title = "Our Public Keys"
+year_published = 2025
+clearnet = "http://www.fftw.org/encryption.html"
+category = "SitesList"
+tags = ["encryption", "frigo", "johnson", "matteo", "public", "steven"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/faq/section4.html"]
+title = "FFTW FAQ - Section 4"
+full_description = 'For more details (albeit somewhat outdated), see the paper "FFTW: An Adaptive Software Architecture for the FFT", by M. Frigo and S. G. Johnson, Proc. ICASSP 3, 1381 (1998), also available at the FFTW web page.'
+year_published = 2025
+clearnet = "http://www.fftw.org/faq/section4.html"
+category = "SitesList"
+tags = ["4.1.", "4.2.", "fast?", "fftw", "internals", "question", "section", "work?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["https://fftw.org"]
+title = "FFTW Home Page"
+description = "A fast, free C FFT library; includes real-complex, multidimensional, and parallel transforms. Benchmarked against many other FFTs."
+full_description = '''The latest official release of FFTW is version 3.3.10, available from our download page. Version 3.3 introduced support for the AVX x86 extensions, a distributed-memory implementation on top of MPI, and a Fortran 2003 API. Version 3.3.1 introduced support for the ARM Neon extensions. See the release notes for more information. Our benchmarks, performed on on a variety of platforms, show that FFTW's performance is typically superior to that of other publicly available FFT software, and is even competitive with vendor-tuned codes. In contrast to vendor-tuned codes, however, FFTW's performance is portable: the same program will perform well on most architectures without modification. Hence the name, "FFTW," which stands for the somewhat whimsical title of "Fastest Fourier Transform in the West." If you are still using FFTW 2.x, please note that FFTW 2.x was last updated in 1999 and it is obsolete. Please upgrade to FFTW 3.x. The API of FFTW 3.x is incompatible with that of FFTW 2.x, for reasons of performance and generality (see the FAQ or the manual). For general questions about Fourier transforms, see our links to FFT-related resources. People often ask us how to compute a subset of the FFT outputs, so we have posted a short discussion of pruned FFTs. We benchmarked FFTW against many other FFT programs, in one to three dimensions, on a variety of platforms. You can view the results from this benchmark, or download it to run on your own machine and compiler, at the benchFFT web page. FFTW received the 1999 J. H. Wilkinson Prize for Numerical Software, which is awarded every four years to the software that "best addresses all phases of the preparation of high quality numerical software." Wilkinson was a seminal figure in modern numerical analysis as well as a key proponent of the notion of reusable, common libraries for scientific computing, and we are especially honored to receive this award in his memory. Our paper "A Fast Fourier Transform Compiler" (in PLDI 1999) received the Most Influential PLDI Paper award in 2009.'''
+year_published = 2025
+clearnet = "https://fftw.org"
+category = "SitesList"
+tags = ["3.3.10", "acknowledgements", "arbitrary-size", "awards", "benchmark", "dft", "documentation", "downloading", "dsp", "fast fourier transform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "rce-cast.com", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["https://fftw.org/download.html"]
+title = "FFTW Download Page"
+description = "Download FFTW source code, view platform-specific notes sent in by users, or jump to mirror sites."
+full_description = '''Subscribe to the fftw-announce mailing list on Google Groups to receive an email when FFTW is updated in the future. Alternatively, you can use the web feed or mailing list on freecode.com. FFTW is distributed under the GNU GPL; see the License and Copyright section of the FFTW manual for more information. FFTW 2.1.5 is the stable release of FFTW2, last updated in 1999. FFTW 2.1.5 is obsolete, but because its API is incompatible with that of version 3.x, we continue to distribute it for those users who require backwards compatibility. In order to perform runtime self-optimization, FFTW needs a high-precision timer to measure the cost of different code choices, and we now use the hardware cycle counter available in most modern CPUs. We support the cycle counter for x86 (Pentium and later), IA-64 (Itanium), x86-64, PowerPC, Alpha, PA-RISC, MIPS, s390, and other processors under a variety of compilers. If you are interested in using a cycle counter in your own code, you can download FFTW's cycle-counter header by itself: To use it, #include "cycle.h", call the ticks t = getticks() function before and after the code you want to time, and call the elapsed(t1,t2) function to get the elapsed time as a double-precision number. (The elapsed time is in arbitrary units, not seconds or anything like that...it's intended for performance comparisons on a given machine only.) (In order to use some of the OS-dependent timer routines like Solaris' gethrtime, you need to paste the autoconf snippet from the top of cycle.h into your configure.ac file and #include "config.h" before cycle.h, or define the relevant macros manually if you are not using autoconf.) These are files and notes to help you install FFTW on particular platforms. (Note that the installation notes below were sent in by users, and have not been tested by us.) If you had to modify the Makefile or anything else in the standard FFTW distribution to get it to run on your machine, let us know so that we can make your modifications available to others.'''
+year_published = 2025
+clearnet = "https://fftw.org/download.html"
+category = "SitesList"
+tags = ["2.1.5", "3.3.10", "announcements", "calling", "counters", "cycle", "documentation", "downloading", "fftw", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "caml.inria.fr", "cs.rutgers.edu", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwada.sourceforge.io", "fftwpp.sourceforge.net", "github.com", "gnu.org", "home.comcast.net", "ieeexplore.ieee.org", "mcs.anl.gov", "psc.edu", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["https://fftw.org/links.html"]
+title = "FFT Links"
+description = "descriptions and links for many sources of FFT code and related information on the Web."
+full_description = "Another good place to go when you have signal-processing and/or FFT-related questions is Usenet, and in particular the comp.dsp (digital signal processing), sci.math.num-analysis (numerical analysis and scientific computation), or sci.image.processing (image processing) groups."
+year_published = 2025
+clearnet = "https://fftw.org/links.html"
+category = "SitesList"
+tags = ["benchmarks", "code", "explanatory", "fft-related", "hardware", "interest", "introduction", "links", "material", "miscellaneous"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["https://fftw.org/doc/License-and-Copyright.html"]
+title = "License and Copyright (FFTW 3.3.10)"
+description = "License and Copyright (FFTW 3.3.10)"
+full_description = "FFTW is Copyright © 2003, 2007-11 Matteo Frigo, Copyright © 2003, 2007-11 Massachusetts Institute of Technology. FFTW is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA You can also find the GPL on the GNU web site. In addition, we kindly ask you to acknowledge FFTW and its authors in any program or publication in which you use FFTW. (You are not required to do so; it is up to your common sense to decide whether you want to comply with this request or not.) For general publications, we suggest referencing: Matteo Frigo and Steven G. Johnson, “The design and implementation of FFTW3,” Proc. IEEE 93 (2), 216–231 (2005). Non-free versions of FFTW are available under terms different from those of the General Public License. (e.g. they do not require you to accompany any object code using FFTW with the corresponding source code.) For these alternative terms you must purchase a license from MIT’s Technology Licensing Office. Users interested in such a license should contact us (fftw@fftw.org) for more information."
+year_published = 2025
+clearnet = "https://fftw.org/doc/License-and-Copyright.html"
+category = "SitesList"
+tags = ["license"]
+language = "en"
+internal-references = ["none"]
+external-references = ["be.com", "cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gmeteor.sourceforge.net", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "mit.edu", "psc.edu", "rce-cast.com", "supertech.lcs.mit.edu", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["http://fftw.org"]
+title = "FFTW Home Page"
+description = "A fast, free C FFT library; includes real-complex, multidimensional, and parallel transforms. Benchmarked against many other FFTs."
+full_description = '''The latest official release of FFTW is version 3.3.10, available from our download page. Version 3.3 introduced support for the AVX x86 extensions, a distributed-memory implementation on top of MPI, and a Fortran 2003 API. Version 3.3.1 introduced support for the ARM Neon extensions. See the release notes for more information. Our benchmarks, performed on on a variety of platforms, show that FFTW's performance is typically superior to that of other publicly available FFT software, and is even competitive with vendor-tuned codes. In contrast to vendor-tuned codes, however, FFTW's performance is portable: the same program will perform well on most architectures without modification. Hence the name, "FFTW," which stands for the somewhat whimsical title of "Fastest Fourier Transform in the West." If you are still using FFTW 2.x, please note that FFTW 2.x was last updated in 1999 and it is obsolete. Please upgrade to FFTW 3.x. The API of FFTW 3.x is incompatible with that of FFTW 2.x, for reasons of performance and generality (see the FAQ or the manual). For general questions about Fourier transforms, see our links to FFT-related resources. People often ask us how to compute a subset of the FFT outputs, so we have posted a short discussion of pruned FFTs. We benchmarked FFTW against many other FFT programs, in one to three dimensions, on a variety of platforms. You can view the results from this benchmark, or download it to run on your own machine and compiler, at the benchFFT web page. FFTW received the 1999 J. H. Wilkinson Prize for Numerical Software, which is awarded every four years to the software that "best addresses all phases of the preparation of high quality numerical software." Wilkinson was a seminal figure in modern numerical analysis as well as a key proponent of the notion of reusable, common libraries for scientific computing, and we are especially honored to receive this award in his memory. Our paper "A Fast Fourier Transform Compiler" (in PLDI 1999) received the Most Influential PLDI Paper award in 2009.'''
+year_published = 2025
+clearnet = "http://fftw.org"
+category = "SitesList"
+tags = ["3.3.10", "acknowledgements", "arbitrary-size", "awards", "benchmark", "dft", "documentation", "downloading", "dsp", "fast fourier transform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/faq/section3.html"]
+title = "FFTW FAQ - Section 3"
+full_description = "You should also know that we compute an unnormalized transform. In contrast, Matlab is an example of program that computes a normalized transform. See Q3.10 `Why does your inverse transform return a scaled result?'. Finally, note that floating-point arithmetic is not exact, so different FFT algorithms will give slightly different results (on the order of the numerical accuracy; typically a fractional difference of 1e-15 or so in double precision). If you use saved plans (wisdom) or FFTW_ESTIMATE mode, however, then the algorithm is deterministic and the results should be identical between runs. There are some specific cases in which you can get the O(N log K) performance benefits easily, however, by combining a few ordinary FFTs. In particular, the case where you want the first K outputs, where K divides N, can be handled by performing N/K transforms of size K and then summing the outputs multiplied by appropriate phase factors. For more details, see pruned FFTs with FFTW. There are also some algorithms that compute pruned transforms approximately, but they are beyond the scope of this FAQ."
+year_published = 2025
+clearnet = "http://www.fftw.org/faq/section3.html"
+category = "SitesList"
+tags = ["3.1.", "3.10.", "3.11.", "3.12.", "3.13.", "3.14.", "3.15.", "3.16.", "3.17.", "3.18."]
+language = "en"
+internal-references = ["none"]
+external-references = ["cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "mit.edu", "rce-cast.com", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["http://www.fftw.org/parallel/parallel-fftw.html"]
+title = "Parallel FFTW"
+full_description = "We are currently experimenting with several parallel versions of FFTW. These have not yet been optimized nearly as fully as FFTW itself, nor have they been benchmarked against other parallel FFT software (mainly because parallel FFT codes are few and far in between). They are, however, a start in the right direction. The MPI code works differently, since it is designed for distributed memory systems--here, each processor has its own memory or address space in which it holds a portion of the data. The data on a processor is inaccessible to other processors except by explicit message passing. In the MPI version of FFTW, we assume that a multi-dimensional array is distributed across the rows (the first dimension) of the data. To perform the FFT of this data, each processor first transforms all the dimensions of the data that are completely local to it (e.g. the rows). Then, the processors have to perform a transpose of the data in order to get the remaining dimension (the columns) local to a processor. This dimension is then Fourier transformed, and the data is (optionally) transposed back to its original order. The hardest part of the multi-dimensional, distributed FFT is the transpose. A transpose is one of those operations that sounds simple, but is very tricky to implement in practice. The real subtlety comes in when you want to do a transpose in place and with minimal communications. Essentially, the way we do this is to do an in-place transpose of the data local to each processor (itself a non-trivial problem), exchange blocks of data with every other processor, and then complete the transpose by a further (precomputed) permutation on the data. All of this involves an appalling amount of bookkeeping, especially when the array dimensions aren't divisible by the number of processors. The communications phase is an example of a complete exchange: an operation in which every processor sends a different message to every other processor. (This is probably the worst thing that you can do to a memory architecture.)"
+year_published = 2025
+clearnet = "http://www.fftw.org/parallel/parallel-fftw.html"
+category = "SitesList"
+tags = ["benchmarks", "cilk", "exist", "ffts", "fftw", "for:", "multi-dimensional", "one-dimensional", "parallel", "threads"]
+language = "en"
+internal-references = ["none"]
+external-references = ["be.com", "cnx.org", "cs.rutgers.edu", "en.wikipedia.org", "freecode.com", "github.com", "gnu.org", "groups.google.com", "home.comcast.net", "ieeexplore.ieee.org", "math.mit.edu", "mcs.anl.gov", "mit.edu", "psc.edu", "rce-cast.com", "supertech.lcs.mit.edu", "tlo.mit.edu", "web.mit.edu", "www-math.mit.edu"]
+
+["http://www.fftw.org/speed"]
+title = "FFT Benchmark Results"
+full_description = 'See our benchmark methodology page for a description of the benchmarking methodology, as well as an explanation of what is plotted in the graphs below. In the pages below, we plot the "mflops" of each FFT, which is a scaled version of the speed, defined by: Our list of FFTs in the benchmark describes the full name and source corresponding to the abbreviated FFT labels in the plot legends. If you have a CPU type not represented here and can let us benchmark it over a weekend, please let us know. An UltraSPARC IV, Sparc64 V, Alpha EV7, PA-RISC 8700+, or Itanium 2 system would be especially welcome.'
+year_published = 2025
+clearnet = "http://www.fftw.org/speed"
+category = "SitesList"
+tags = ["benchmark", "mflops", "results"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/download.html"]
+title = "FFTW Download Page"
+description = "Download FFTW source code, view platform-specific notes sent in by users, or jump to mirror sites."
+full_description = '''Subscribe to the fftw-announce mailing list on Google Groups to receive an email when FFTW is updated in the future. Alternatively, you can use the web feed or mailing list on freecode.com. FFTW is distributed under the GNU GPL; see the License and Copyright section of the FFTW manual for more information. FFTW 2.1.5 is the stable release of FFTW2, last updated in 1999. FFTW 2.1.5 is obsolete, but because its API is incompatible with that of version 3.x, we continue to distribute it for those users who require backwards compatibility. In order to perform runtime self-optimization, FFTW needs a high-precision timer to measure the cost of different code choices, and we now use the hardware cycle counter available in most modern CPUs. We support the cycle counter for x86 (Pentium and later), IA-64 (Itanium), x86-64, PowerPC, Alpha, PA-RISC, MIPS, s390, and other processors under a variety of compilers. If you are interested in using a cycle counter in your own code, you can download FFTW's cycle-counter header by itself: To use it, #include "cycle.h", call the ticks t = getticks() function before and after the code you want to time, and call the elapsed(t1,t2) function to get the elapsed time as a double-precision number. (The elapsed time is in arbitrary units, not seconds or anything like that...it's intended for performance comparisons on a given machine only.) (In order to use some of the OS-dependent timer routines like Solaris' gethrtime, you need to paste the autoconf snippet from the top of cycle.h into your configure.ac file and #include "config.h" before cycle.h, or define the relevant macros manually if you are not using autoconf.) These are files and notes to help you install FFTW on particular platforms. (Note that the installation notes below were sent in by users, and have not been tested by us.) If you had to modify the Makefile or anything else in the standard FFTW distribution to get it to run on your machine, let us know so that we can make your modifications available to others.'''
+year_published = 2025
+clearnet = "http://www.fftw.org/download.html"
+category = "SitesList"
+tags = ["2.1.5", "3.3.10", "announcements", "calling", "counters", "cycle", "documentation", "downloading", "fftw", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/parallel/xolas.html"]
+title = "Sun HPC 5000 Benchmark"
+full_description = "Next, we made the same measurements for the MPI version of FFTW and three-dimensional transforms. This is a shared-memory implementation of MPI. We ran two versions of the this transform. The first one returns its output in the same format as its input. The second version returns it output in a transposed format (this is faster because it saves the cost of an extra transpose)."
+year_published = 2025
+clearnet = "http://www.fftw.org/parallel/xolas.html"
+category = "SitesList"
+tags = ["cilk", "fftw", "fftw,", "parallel", "threads", "transforms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["https://fftw.org/faq/section1.html"]
+title = "FFTW FAQ - Section 1"
+full_description = "We could instead have released FFTW under the LGPL, or even disallowed non-Free usage. Suffice it to say, however, that MIT owns the copyright to FFTW and they only let us GPL it because we convinced them that it would neither affect their licensing revenue nor irritate existing licensees."
+year_published = 2025
+clearnet = "https://fftw.org/faq/section1.html"
+category = "SitesList"
+tags = ["1.1.", "1.2.", "1.3.", "1.4.", "1.5.", "east?", "fftw", "fftw?", "free", "general"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["https://fftw.org/encryption.html"]
+title = "Our Public Keys"
+year_published = 2025
+clearnet = "https://fftw.org/encryption.html"
+category = "SitesList"
+tags = ["encryption", "frigo", "johnson", "matteo", "public", "steven"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "arss.sourceforge.net", "astro.northwestern.edu", "cs.rutgers.edu", "eff.org", "eiffel.com", "elegosoft.com", "employees.org", "en.wikipedia.org", "fftwpp.sourceforge.net", "github.com", "gnu.org", "gnupg.org", "home.comcast.net", "ieeexplore.ieee.org", "macgpg.sourceforge.net", "mcs.anl.gov", "psc.edu", "web.mit.edu", "winpt.sourceforge.net"]
+
+["https://fftw.org/pruned.html"]
+title = "Pruned FFTs with FFTW"
+description = "On computing pruned FFTs, with only a subset of inputs and outpus, using FFTW."
+full_description = '''Sometimes, people want to compute a discrete Fourier transform (DFT) where only a subset of the outputs are needed, and/or conversely where only a subset of the inputs are non-zero. Fast algorithms to compute this are, in general, known as "pruned" FFTs. Unfortunately, the performance gains in general from pruned FFTs are quite modest. If you have a transform of size N where only K outputs are desired, the complexity is in general O(N log K), vs. O(N log N) for the full FFT, thus saving only a small additive factor in the log. (Similarly for K nonzero inputs.) This is discussed in more detail by the references at the end. In principle, the arithmetic count can be reduced (however slightly) whenever K < N, simply by discarding (pruning) unused operations from an ordinary FFT. Turning these arithmetic gains into actual performance improvements is much more difficult, however. The problem is that optimizing an FFT requires a lot of effort, and is not just a matter of minimizing arithmetic cost on modern computers. By implementing a pruned FFT, you are gaining a small factor in the log, but you are sacrificing a significant part of the effort that went into optimizing full FFTs (even if you use an optimized FFT as a subroutine), and the latter can easily outweigh the former. Because of this, I would not recommend bothering to consider a pruned 1d FFT unless you want 1% of the outputs or fewer (and/or if 1% or fewer of your inputs are nonzero). The most common case where people seem to want a pruned FFT is for zero-padded convolutions, where roughly 50% of your inputs are zero (to get a linear convolution from an FFT-based cyclic convolution). Here, a pruned FFT is hardly worth thinking about, at least in one dimension. In higher dimensions, matters change (e.g. for a 3d zero-padded array about 1/8 of your inputs are non-zero, and one can fairly easily save a factor of two or so simply by skipping 1d sub-transforms that are zero). Another possibility, of course, is to simply use the naive DFT formula or the Goertzel algorithm, both of which have O(N K) complexity. These methods have the added advantage of only requiring O(K) storage if the N inputs are computed or read on the fly (a huge advantage in some applications). However, they are also generally less accurate than FFT-based methods when implemented in finite-precision floating-point arithmetic — the naive formula and Goertzel's algorithm have error bounds that grow as O(N3/2) and O(N5/2), respectively, compared to O(log N) for the FFT. The minimum K at which a pruned FFT becomes faster will depend upon the context, but we have observed benefits below from a pruned FFT (compared to Goertzel) for K as small as 10 with N of 105 (where Goertzel is orders of magnitude less accurate).'''
+year_published = 2025
+clearnet = "https://fftw.org/pruned.html"
+category = "SitesList"
+tags = ["complex", "computing", "ffts", "fftw", "further", "note:", "outputs", "pruned", "reading", "real-input"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]
+
+["http://www.fftw.org/links.html"]
+title = "FFT Links"
+description = "descriptions and links for many sources of FFT code and related information on the Web."
+full_description = "Another good place to go when you have signal-processing and/or FFT-related questions is Usenet, and in particular the comp.dsp (digital signal processing), sci.math.num-analysis (numerical analysis and scientific computation), or sci.image.processing (image processing) groups."
+year_published = 2025
+clearnet = "http://www.fftw.org/links.html"
+category = "SitesList"
+tags = ["benchmarks", "code", "explanatory", "fft-related", "hardware", "interest", "introduction", "links", "material", "miscellaneous"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adahome.com", "altavista.com", "ams.org", "arss.sourceforge.net", "astro.northwestern.edu", "astronomy.swin.edu.au", "bebop.cs.berkeley.edu", "crd.lbl.gov", "cs.rutgers.edu", "cs.uh.edu", "dspguru.com", "dsprelated.com", "ece.cmu.edu", "elegosoft.com", "employees.org", "en.wikipedia.org", "gnu.org", "gnupg.org", "ieeexplore.ieee.org", "web.mit.edu"]

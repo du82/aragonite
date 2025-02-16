@@ -1,0 +1,634 @@
+["https://gtfobins.github.io/gtfobins/ar"]
+title = """
+ar                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ar"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bzip2"]
+title = """
+bzip2                |                GTFOBins"""
+full_description = "There are also a number of other utilities that rely on bzip2 under the hood, e.g., bzless, bzcat, bunzip2, etc. Besides having similar features, they also allow privileged reads if bzip2 itself is SUID. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bzip2"
+category = "SitesList"
+tags = ["bzip2", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/capsh"]
+title = """
+capsh                |                GTFOBins"""
+full_description = "If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/capsh"
+category = "SitesList"
+tags = ["capsh", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/cdist"]
+title = """
+cdist                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/cdist"
+category = "SitesList"
+tags = ["cdist", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/apt"]
+title = """
+apt                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/apt"
+category = "SitesList"
+tags = ["shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/agetty"]
+title = """
+agetty                |                GTFOBins"""
+full_description = "If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/agetty"
+category = "SitesList"
+tags = ["agetty", "star", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ascii85"]
+title = """
+ascii85                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ascii85"
+category = "SitesList"
+tags = ["ascii85", "file", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/contribute"]
+title = """
+Contribute                |                GTFOBins"""
+full_description = "Each GTFO binary is defined in a file in the _gtfobins/ folder named as <binary name>.md, such file consists only of a YAML front matter which describes the binary and its functions. Vendor software is accepted as well as standard Unix binaries. Binaries and techniques that only works on certain operating systems and versions are accepted and such limitations shall be noted in the description field. Pull requests adding new functions in _data/functions.yml are allowed and subjected to project maintainers vetting."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/contribute"
+category = "SitesList"
+tags = ["contribute", "process", "pull", "request", "star", "structure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/aa-exec"]
+title = """
+aa exec                |                GTFOBins"""
+full_description = "If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/aa-exec"
+category = "SitesList"
+tags = ["aa-exec", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/aws"]
+title = """
+aws                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/aws"
+category = "SitesList"
+tags = ["shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/base64"]
+title = """
+base64                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/base64"
+category = "SitesList"
+tags = ["base64", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bundle"]
+title = """
+bundle                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bundle"
+category = "SitesList"
+tags = ["bundle", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/base58"]
+title = """
+base58                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/base58"
+category = "SitesList"
+tags = ["base58", "file", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/byebug"]
+title = """
+byebug                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access. If the binary has the SUID bit set, it may be abused to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via system()-like invocations) it only works on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/byebug"
+category = "SitesList"
+tags = ["byebug", "limited", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/cancel"]
+title = """
+cancel                |                GTFOBins"""
+full_description = 'Send local file using a TCP connection. Run nc -l -p 12345 > "file_to_save" on the attacker box to collect the file.'
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/cancel"
+category = "SitesList"
+tags = ["cancel", "file", "star", "upload"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/cat"]
+title = """
+cat                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/cat"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/less"]
+title = """
+less                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/less"
+category = "SitesList"
+tags = ["file", "shell", "star", "sudo", "suid", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/aspell"]
+title = """
+aspell                |                GTFOBins"""
+full_description = "The textual file is displayed in an interactive TUI showing only the parts that contain mispelled words. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/aspell"
+category = "SitesList"
+tags = ["aspell", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/irb"]
+title = """
+irb                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/irb"
+category = "SitesList"
+tags = ["download", "file", "library", "load", "reverse", "shell", "star", "sudo", "upload", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ansible-playbook"]
+title = """
+ansible playbook                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ansible-playbook"
+category = "SitesList"
+tags = ["ansible-playbook", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/atobm"]
+title = """
+atobm                |                GTFOBins"""
+full_description = "Outputs the first line of the file to standard error without the - and # characters, this can be customized with the -c option, by default is -c -#. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/atobm"
+category = "SitesList"
+tags = ["atobm", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/aoss"]
+title = """
+aoss                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/aoss"
+category = "SitesList"
+tags = ["aoss", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bc"]
+title = """
+bc                |                GTFOBins"""
+full_description = "The file content is actually parsed and appears as error messages, thus it might not be suitable to read arbitray binary files. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bc"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/functions"]
+title = """
+Functions                |                GTFOBins"""
+full_description = "It can send back a non-interactive reverse shell to a listening attacker to open a remote network access. It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access. If the binary has the Linux CAP_SETUID capability set or it is executed by another binary with the capability set, it can be used as a backdoor to maintain privileged access by manipulating its own process UID. If the binary has the SUID bit set, it may be abused to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via system()-like invocations) it only works on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/functions"
+category = "SitesList"
+tags = ["functions", "star"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/as"]
+title = """
+as                |                GTFOBins"""
+full_description = "The file content is treated as command line options and disclosed throught error messages, so this is not suitable to read arbitrary binary data. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/as"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/base32"]
+title = """
+base32                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/base32"
+category = "SitesList"
+tags = ["base32", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io"]
+title = "GTFOBins"
+full_description = "GTFOBins is a curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems. The project collects legitimate functions of Unix binaries that can be abused to get the f**k break out restricted shells, escalate or maintain elevated privileges, transfer files, spawn bind and reverse shells, and facilitate the other post-exploitation tasks. It is important to note that this is not a list of exploits, and the programs listed here are not vulnerable per se, rather, GTFOBins is a compendium about how to live off the land when you only have certain binaries available. GTFOBins is a collaborative project created by Emilio Pinna and Andrea Cardaci where everyone can contribute with additional binaries and techniques."
+year_published = 2025
+clearnet = "https://gtfobins.github.io"
+category = "SitesList"
+tags = ["gtfobins", "star"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com"]
+
+["https://gtfobins.github.io/gtfobins/busybox"]
+title = """
+busybox                |                GTFOBins"""
+full_description = "BusyBox may contain many UNIX utilities, run busybox --list-full to check what GTFOBins binaries are supported. Here some example. It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/busybox"
+category = "SitesList"
+tags = ["busybox", "file", "reverse", "shell", "star", "sudo", "suid", "upload", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ascii-xfr"]
+title = """
+ascii xfr                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ascii-xfr"
+category = "SitesList"
+tags = ["ascii-xfr", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ash"]
+title = """
+ash                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ash"
+category = "SitesList"
+tags = ["file", "shell", "star", "sudo", "suid", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/c99"]
+title = """
+c99                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/c99"
+category = "SitesList"
+tags = ["file", "shell", "star", "sudo", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/awk"]
+title = """
+awk                |                GTFOBins"""
+full_description = "It can send back a non-interactive reverse shell to a listening attacker to open a remote network access. It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access. If the binary has the SUID bit set, it may be abused to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via system()-like invocations) it only works on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/awk"
+category = "SitesList"
+tags = ["bind", "file", "limited", "non-interactive", "reverse", "shell", "star", "sudo", "suid", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/c89"]
+title = """
+c89                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/c89"
+category = "SitesList"
+tags = ["file", "shell", "star", "sudo", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bridge"]
+title = """
+bridge                |                GTFOBins"""
+full_description = "Outputs the first line of the file (until the first whitespace) inside an error message to stdandard error. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bridge"
+category = "SitesList"
+tags = ["bridge", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bundler"]
+title = """
+bundler                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bundler"
+category = "SitesList"
+tags = ["bundler", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/cabal"]
+title = """
+cabal                |                GTFOBins"""
+full_description = "If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/cabal"
+category = "SitesList"
+tags = ["cabal", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/apache2ctl"]
+title = """
+apache2ctl                |                GTFOBins"""
+full_description = "This includes the file in the actual configuration file, the first line is leaked as an error message. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/apache2ctl"
+category = "SitesList"
+tags = ["apache2ctl", "file", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/alpine"]
+title = """
+alpine                |                GTFOBins"""
+full_description = "The file is displayed in the alpine curses terminal interface. Other options might be available, for example by pressing S is possible to save the file content elsewhere. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/alpine"
+category = "SitesList"
+tags = ["alpine", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/arj"]
+title = """
+arj                |                GTFOBins"""
+full_description = "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. The file appears amid some other textual information. The archive can also be downloaded then extracted offline. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/arj"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid", "write"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/arp"]
+title = """
+arp                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/arp"
+category = "SitesList"
+tags = ["file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/basez"]
+title = """
+basez                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/basez"
+category = "SitesList"
+tags = ["basez", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/batcat"]
+title = """
+batcat                |                GTFOBins"""
+full_description = "This invokes the default pager, which is likely to be less, other functions may apply. --paging always can be omitted provided that the output doesn’t fit the screen. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access. If the binary has the SUID bit set, it may be abused to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via system()-like invocations) it only works on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/batcat"
+category = "SitesList"
+tags = ["batcat", "limited", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bconsole"]
+title = """
+bconsole                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. The file is actually parsed and the first wrong line is returned in an error message, thus it may not be suitable for reading arbitrary files. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bconsole"
+category = "SitesList"
+tags = ["bconsole", "file", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ansible-test"]
+title = """
+ansible test                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ansible-test"
+category = "SitesList"
+tags = ["ansible-test", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/aria2c"]
+title = """
+aria2c                |                GTFOBins"""
+full_description = "The remote file aaaaaaaaaaaaaaaa (must be a string of 16 hex digit) contains the shell script. Note that said file needs to be written on disk in order to be executed. --allow-overwrite is needed if this is executed multiple times with the same GID. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access. If the binary has the SUID bit set, it may be abused to access the file system, escalate or maintain access with elevated privileges working as a SUID backdoor. If it is used to run commands (e.g., via system()-like invocations) it only works on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/aria2c"
+category = "SitesList"
+tags = ["aria2c", "command", "download", "file", "limited", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/apt-get"]
+title = """
+apt get                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/apt-get"
+category = "SitesList"
+tags = ["apt-get", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/at"]
+title = """
+at                |                GTFOBins"""
+full_description = "The invocation will be blind, but it is possible to redirect the output to a file in a readable location. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/at"
+category = "SitesList"
+tags = ["command", "shell", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/basenc"]
+title = """
+basenc                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/basenc"
+category = "SitesList"
+tags = ["basenc", "file", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bash"]
+title = """
+bash                |                GTFOBins"""
+full_description = 'Send local file in the body of an HTTP POST request. Run an HTTP service on the attacker box to collect the file. Send local file using a TCP connection. Run nc -l -p 12345 > "file_to_save" on the attacker box to collect the file. Fetch remote file using a TCP connection. Run nc -l -p 12345 < "file_to_send" on the attacker box to send the file. It writes data to files, it may be used to do privileged writes or write files outside a restricted file system. It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access.'
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bash"
+category = "SitesList"
+tags = ["bash", "download", "file", "library", "load", "reverse", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/bpftrace"]
+title = """
+bpftrace                |                GTFOBins"""
+full_description = "If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/bpftrace"
+category = "SitesList"
+tags = ["bpftrace", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/ab"]
+title = """
+ab                |                GTFOBins"""
+full_description = "Fetch a remote file via HTTP GET request. The response is returned as part of the verbose output of the program with some limitations on the length. If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/ab"
+category = "SitesList"
+tags = ["download", "file", "star", "sudo", "suid", "upload"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/busctl"]
+title = """
+busctl                |                GTFOBins"""
+full_description = "If the binary has the SUID bit set, it does not drop the elevated privileges and may be abused to access the file system, escalate or maintain privileged access as a SUID backdoor. If it is used to run sh -p, omit the -p argument on systems like Debian (<= Stretch) that allow the default sh shell to run with SUID privileges. This example creates a local SUID copy of the binary and runs it to maintain elevated privileges. To interact with an existing SUID binary skip the first command and run the program using its original path. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/busctl"
+category = "SitesList"
+tags = ["busctl", "shell", "star", "sudo", "suid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]
+
+["https://gtfobins.github.io/gtfobins/7z"]
+title = """
+7z                |                GTFOBins"""
+full_description = "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system. If the binary is allowed to run as superuser by sudo, it does not drop the elevated privileges and may be used to access the file system, escalate or maintain privileged access."
+year_published = 2025
+clearnet = "https://gtfobins.github.io/gtfobins/7z"
+category = "SitesList"
+tags = ["file", "star", "sudo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "lolbas-project.github.io", "twitter.com", "yaml.org"]

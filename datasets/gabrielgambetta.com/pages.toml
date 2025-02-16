@@ -1,0 +1,862 @@
+["http://gabrielgambetta.com"]
+title = "Gabriel Gambetta"
+full_description = "I’m a Senior Software Engineer in Zürich; the author of Computer Graphics from Scratch; and an actor/filmmaker. My recent work experience includes 7 years at Google Zürich (in various SWE and SRE teams) and 4 years at Improbable in London (joined as employee #30, wore a lot of hats). In the more distant past I founded and ran a small indie game dev studio for almost a decade (leading to the Fast-Paced Multiplayer articles). I also taught Computer Graphics at university level (leading to Computer Graphics from Scratch). Computer Graphics from Scratch: A book about 3D rendering, covering rasterization and raytracing, based on the lectures I gave during my teaching years. You can buy the book, published by No Starch Press. Fast-Paced Multiplayer: A series of articles about Client-Side Prediction, Server Reconciliation, Entity Interpolation, and the architecture of fast-paced client-server multiplayer games. These articles have become one of the main references on the topic found on the Internet. Opt-in: an hour-long, no-budget feature film I wrote, produced, directed, and edited; made with a tiny, all-volunteer cast and crew. “An idealistic engineer lands his dream job at the biggest social media company in the world. But when he discovers the dark side of the business, he must decide whether to stay silent or risk everything to expose the truth.”."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com"
+category = "SitesList"
+tags = ["bytes", "client-side", "computer", "demystified", "emulator-backed", "entity", "fast-paced", "filmmaking", "gabriel", "gambetta."]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/lag-compensation.html"]
+title = "Lag Compensation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo The previous three articles explained a client-server game architecture which can be summarized as follows: This situation is generally fine, but it’s quite problematic for very time- and space-sensitive events; for example, shooting your enemy in the head! So you’re aiming perfectly at the target’s head with your sniper rifle. You shoot - it’s a shot you can’t miss. Because of the client-server architecture explained before, you were aiming at where the enemy’s head was 100ms before you shot - not when you shot! In a way, it’s like playing in an universe where the speed of light is really, really slow; you’re aiming at the past position of your enemy, but they’re long gone by the time you squeeze the trigger. Fortunately, there’s a relatively simple solution for this, which is also pleasant for most players most of the time (with the one exception discussed below). When you shoot, client sends this event to the server with full information: the exact timestamp of your shot, and the exact aim of the weapon. Here’s the crucial step. Since the server gets all the input with timestamps, it can authoritatively reconstruct the world at any instant in the past. In particular, it can reconstruct the world exactly as it looked like to any client at any point in time. This means the server can know exactly what was on your weapon’s sights the instant you shot. It was the past position of your enemy’s head, but the server knows it was the position of their head in your present. The enemy may be the only one not entirely happy. If they were standing still when he got shot, it’s their fault, right? If they were moving… wow, you’re a really awesome sniper. But what if they were in an open position, got behind a wall, and then got shot, a fraction of a second later, when they thought they were safe? Well, that can happen. That’s the tradeoff you make. Because you shoot at him in the past, they may still be shot up to a few milliseconds after they took cover."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/lag-compensation.html"
+category = "SitesList"
+tags = ["compensation", "conclusion", "crucial", "demo", "entities", "fast-paced", "further", "here’s", "himself", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "developer.valvesoftware.com", "gabrielgambetta.biz", "gafferongames.com", "github.com", "habr.com", "howtorecover.me", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/A0-linear-algebra.html"]
+title = "Linear Algebra - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'This appendix serves as a cheat sheet for linear algebra. The subject is presented as a set of tools, their properties, and what you can use them for. If you’re interested in the theory behind all this, you can pick up any introductory linear algebra textbook. We represent a point as a sequence of numbers between parentheses—for example, \((4, 3)\). We refer to points using capital letters, such as \(P\) or \(Q\). Each of the numbers in the point’s sequence is called a coordinate. The number of coordinates is the point’s dimension. A point with two coordinates is called two-dimensional, or 2D. The order of the numbers is important; \((4, 3)\) is not the same as \((3, 4)\). By convention, the coordinates are called \(x\) and \(y\) in 2D, and \(x\), \(y\), and \(z\) in 3D; so the point \((4, 3)\) has an \(x\) coordinate of \(4\) and a \(y\) coordinate of \(3\). Figure A-1 shows \(P\), a 2D point with coordinates \((4, 3)\). We can also refer to specific coordinates of a point using a subscript, like \(P_x\) or \(Q_y\). So the point \(P\) can also be written as \((P_x, P_y, P_z)\) when convenient. A vector represents the difference between two points. Intuitively, imagine a vector as an arrow that connects a point to another point; alternatively, think of it as the instructions to get from one point to another. We represent a vector as a set of numbers between parentheses, and refer to them using a capital letter. This is the same representation we use for points, so we add a small arrow on top to remember they’re vectors and not points. For example, \((2, 1)\) is a vector, which we might decide to call \(\vec{A}\). Figure A-2 shows two equal vectors, \(\vec{A}\) and \(\vec{B}\). Despite sharing their representation with points, vectors don’t represent or have a position; they are, after all, the difference between two positions. When you have a diagram like Figure A-2, you have to draw vectors somewhere; but the vectors \(\vec{A}\) and \(\vec{B}\) are equal, because they represent the same displacement.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/A0-linear-algebra.html"
+category = "SitesList"
+tags = ["adding", "afterword", "algebra", "amazon.", "appendixes", "book", "computer", "extending", "graphics", "linear"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/tgs-open-source.html"]
+title = "How I wrote and published my novel using only open source tools - Gabriel Gambetta"
+full_description = "I’ve recently published my first novel The Golden Seed on Kindle and paperback through Amazon, achieving very professional results. Along the way, I created a process and a couple of tools based exclusively on open source software. Here’s my process. The most important piece of content for publication is the manuscript (i.e. the text of the novel). I originally started writing this in a Google Doc, but it soon became apparent that Offline Mode wasn’t as robust as I expected (this was critical for me, since I wrote the whole novel during my daily commute), and Docs had latency problems handling a really big document. So I wrote a quick script to export the text to Markdown and abandoned the Google Doc. There are many editors for Markdown. For a brief period of time, I used Texts on Mac, but in the end I went the old-school way with vim (gvim on Linux and mvim on Mac). I didn’t use much formatting. I used # for chapter headers, ## for chapter subtitles (e.g. dates and locations), and indented text for preformatted monospaced sections (the novel includes some encrypted text the protagonists attempt to decode). I created a separate Markdown file for the front matter of the book, that is, all the text that comes before the text of the novel itself (I consider the Prologue and the Epilogue integral parts of the story). The front matter includes the title page, colophon, and acknowledgements. I also had the book cover as a separate file. The magical tool that converts this into an epub file is the fantastic pandoc. Besides the text (both front matter and manuscript), it can also take the filename of a cover image, a metadata file, and a stylesheet file. The metadata file is an XML file with Dublin Core tags such as title, author, and copyright line. Although this information is already included in the front matter, this is metadata for the epub file itself, and not part of the text visible to the reader. The stylesheet file is a CSS file that lets you customise the appearance of the book. In my case, I just modified the Header tags to be centered, but used the defaults otherwise."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/tgs-open-source.html"
+category = "SitesList"
+tags = ["epub", "golden", "kindle", "manuscript", "markdown", "novel", "open", "paperback", "proprietary", "published"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "createspace.com", "developer.valvesoftware.com", "dublincore.org", "en.wikipedia.org", "fabiensanglard.net", "gafferongames.com", "gamesdbase.com", "github.com", "habr.com", "imdb.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "pandoc.org"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/02-basic-raytracing.html"]
+title = "Basic Raytracing - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "In this chapter, we’ll introduce raytracing, the first major algorithm we’ll cover. We start by motivating the algorithm and laying out some basic pseudocode. Then we look at how to represent rays of light and objects in a scene. Finally, we derive a way to compute which rays of light make up the visible image of each of the objects in our scene and see how we can represent them on the canvas. Suppose you’re visiting some exotic place and come across a stunning landscape—so stunning, you just need to make a painting capturing its beauty. Figure 2-1 shows one such landscape. Not necessarily. You may not have artistic talent, but you are methodical. So you do the most obvious thing: you get an insect net. You cut a rectangular piece, frame it, and fix it to a stick. Now you can look at the landscape through a netted window. Next, you choose the best point of view to appreciate this landscape and plant another stick to mark the exact position where your eye should be. You haven’t started the painting yet, but now you have a fixed point of view and a fixed frame through which you can see the landscape. Moreover, this fixed frame is divided into small squares by the insect net. Now comes the methodical part. You draw a grid on the canvas, giving it the same number of squares as the insect net. Then you look at the top-left square of the net. What’s the predominant color you can see through it? Sky blue. So you paint the top-left square of the canvas sky blue. You do this for every square, and soon enough the canvas contains a pretty good painting of the landscape, as seen through the frame. The resulting painting is shown in Figure 2-2. When you think about it, a computer is essentially a very methodical machine absolutely lacking artistic talent. We can describe the process of creating our painting as follows: Easy! However, that formulation is too abstract to implement directly on a computer. We can go into a bit more detail: This is still too abstract, but it starts to look like an algorithm—and perhaps surprisingly, that’s a high-level overview of the full raytracing algorithm! Yes, it’s that simple."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/02-basic-raytracing.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "assumptions", "basic", "book", "canvas", "computer", "concepts", "equation", "graphics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/client-side-prediction-live-demo.html"]
+title = "Fast-Paced Multiplayer: Sample Code and Live Demo - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo This is a sample implementation of a client-server architecture demonstrating the main concepts explained in my Fast-Paced Multiplayer series of articles. It won’t make much sense unless you’ve read the articles first. The code is pure JavaScript and it’s fully contained in this page. It’s less than 500 lines of code, including a lot of comments, showing that once you really understand the concepts, implementing them is relatively straightforward. Although it’s not production-quality code, you may use this code in your own applications. Credit is appreciated although not required. Player 1 view - move with LEFT and RIGHT arrow keys Lag = ms · Prediction · Reconciliation · Interpolation The views above show the state of the game world according to the server, and what two clients are rendering. You can move the blue ball, controlled by Player 1, with the LEFT and RIGHT arrow keys; and the red ball, controlled by Player 2, with the A and D keys. Move the blue ball. There’s considerable delay between pressing the arrow keys and the blue ball actually moving. Without client-side prediction, the client only renders the new position of the ball only after a round-trip to the server. Because of the 250ms lag, this takes a while. Set the player 1 Lag to 0ms, and try again. Now the client and the server move in sync because there’s no delay between them, but the movement isn’t smooth, because the server only updates its internal state 3 times per second. If you increase the update rate of the server to 60, we get smooth movement. But this is not a very realistic scenario. Set the player 1 lag back to 250ms, and the server update rate back to 3. This is closer to the awful conditions where a real game still needs to work. Client-side prediction and server reconciliation to the rescue! Enable both of them for Player 1 and move the blue ball. Now the movement is very smooth, and there’s no perceptible delay between pressing the arrow keys and moving the ball."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/client-side-prediction-live-demo.html"
+category = "SitesList"
+tags = ["250ms", "500ms", "code", "demo", "entity", "fast-paced", "guided", "interpolation", "live", "multiplayer:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/the-golden-seed.html"]
+title = "The Golden Seed - Gabriel Gambetta"
+full_description = "After the murder of his elderly mentor, Martin receives a cryptic message that puts him in the sights of a secretive organization thirsty for power. Falsely accused by the police, and hunted by a murderous Neo-Nazi, Martin and his mentor’s great-niece follow a trail which leads them to Golden Seed, the crucial final operation of a crumbling Third Reich. While desperately fighting for survival, they discover that no one is who they seem to be, and become entangled in a complex conspiracy of intrigue, betrayal and lies, behind which hides the sinister secret of Golden Seed."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/the-golden-seed.html"
+category = "SitesList"
+tags = ["gabriel", "gambetta", "golden", "seed", "thriller"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/index.html"]
+title = "Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Behind the beautiful imagery of the latest animated movie and the realistic environments of popular videogames lie some mysterious algorithms. Computer Graphics from Scratch aims to demystify these algorithms and shows you that computer graphics can be surprisingly simple. This broad introductory book gives you an overview of the computer graphics field with a focus on two core areas of modern graphics: raytracing and rasterization. Links to interactive demos throughout bring the algorithms alive. Every algorithm is built up without the use of external libraries or APIs and is presented with language agnostic pseudocode, allowing anyone with a basic understanding of programming and high school math to follow along. Computer Graphics from Scratch demystifies the algorithms used in modern graphics software with basic programming and high school math."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/index.html"
+category = "SitesList"
+tags = ["acknowledgements", "amazon.", "appendixes", "book", "computer", "contents", "graphics", "introduction", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/client-side-prediction-server-reconciliation.html"]
+title = "Client-Side Prediction and Server Reconciliation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo In the first article of this series, we explored a client-server model with an authoritative server and dumb clients that just send inputs to the server, and then render the updated game state when the server sends it. A naive implementation of this scheme leads to a delay between user commands and changes on the screen; for example, the player presses the right arrow key, and the character takes half a second before it starts moving. This is because the client input must first travel to the server, the server must process the input and calculate a new game state, and the updated game state must reach the client again. In a networked environment such as the internet, where delays can be ten or hundreds of milliseconds, a game may feel unresponsive at best, or in the worst case, be completely unplayable. In this article, we’ll find ways to minimize or even eliminate that problem. Even though there are some cheating players, most of the time the game server is processing valid requests (from non-cheating clients and from cheating clients who aren’t cheating at that particular time). This means most of the input received will be valid and will update the game state as expected; that is, if your character is at (10, 10) and the right arrow key is pressed, it will end up at (11, 10). We can use this to our advantage. If the game world is deterministic enough (that is, given a game state and a set of inputs, the result is completely predictable), we can send the inputs to the server and immediately process them on the client - that is, we predict what the game state will be after the server has processed the inputs; this eliminates the delay between receiving an input and rendering its effect. Furthermore, most of the time this prediction will be accurate, so there will not be any visible mismatch once the server does send the updated game state."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/client-side-prediction-server-reconciliation.html"
+category = "SitesList"
+tags = ["based", "client-side", "ends", "entity", "fast-paced", "iii:", "interpolation", "introduction", "issues", "i’ve"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/zx-raytracer.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "I love raytracers; in fact I’ve written half a book about them. Probably less known is my love for the ZX Spectrum, the 1982 home computer I grew up with, and which started my interest in graphics and programming. This machine is so ridiculously underpowered for today’s standards (and even for 1980s standards), the inevitable question is, to what extent could I port the Computer Graphics from Scratch raytracer to a ZX Spectrum? The ZX Spectrum has a 3.5 MHz Z80 processor (1,000 times slower than current computers) that can’t multiply numbers (!!!), 48 KB of RAM (1,000,000 times smaller), and a 256x176 graphics mode (~200 times lower resolution) capable of displaying 15 colors (1,000,000 times fewer – and with some unusual quirks). This is an interesting setup for a CPU-intensive graphics application! My plan was to implement this in Sinclair BASIC, the built-in programming language of the Spectrum. This is not just BASIC, but an ancient, very limited dialect of BASIC. For example, the only control structures are FOR and IF (and IF has no ELSE or even ENDIF); all variables are global; there are no function calls, only GO TO and GO SUB; etc. It’s also interpreted, so super slow. But at least it implements multiplications in software! Of course, I could rewrite the raytracer in assembler, but I thought it would be a fun challenge to see how much performance I could get out of BASIC, which is what I used as a child. I set up a minimal environment: I write BASIC code using VS Code, compile it using BAS2TAP, and run it on the FUSE emulator. This gave me a pretty decent iteration speed. As an aside, I hadn’t written BASIC in something like 30 years, and I was surprised at how quickly it all came back. I was between 4 and 10 when I was doing this, so I guess it sticks in the brain like anything you learn at that age, like languages and accents. Now let’s get coding like it’s 1984! My first iteration was pretty straightforward: I ported the starter CGFS raytracing code to BASIC without much tweaking, outputting a 32x22-block image, and to my surprise, it worked well:"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/zx-raytracer.html"
+category = "SitesList"
+tags = ["8x8-pixel", "attribute", "block", "clashes", "colors,", "different", "fifth", "fourth", "handling", "higher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/03-light.html"]
+title = "Light - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'We’ll start adding “realism” to our rendering of the scene by introducing light. Light is a vast and complex topic, so we’ll present a simplified model that is good enough for our purposes. This model is, for the most part, inspired by how light works in the real world, but it also takes some liberties with the aim of making the rendered scenes look good. We’ll start with some simplifying assumptions that will make our lives easier, then we’ll introduce three types of light sources: point lights, directional lights, and ambient light. We’ll end the chapter by discussing how these lights affect the appearance of surfaces, including diffuse and specular reflection. Let’s make a few assumptions to make things simpler. First, we declare that all light is white. This lets us characterize any light using a single real number, \(i\), called the intensity of the light. Simulating colored lights isn’t that complicated (we’d just use three intensity values, one per color channel, and compute all color and lighting channel-wise), but we’ll stick to white lights to keep things simple. Second, we’ll ignore the atmosphere. In real life, lights look dimmer the farther away they are; this is because of particles floating in the air that absorb part of the light as it travels through them. While this isn’t particularly complicated to do in a raytracer, we’ll keep it simple and ignore this effect; in our scene, distance doesn’t make lights any less bright. Light has to come from somewhere. In this section, we’ll define three different types of light sources. Point lights emit light from a fixed point in 3D space, called their position. They emit light equally in every direction; this is why they are also called omnidirectional lights. A point light is therefore fully described by its position and its intensity. A light bulb is a good real-life approximation of a point light. While a real-life light bulb doesn’t emit light from a single point, and it isn’t perfectly omnidirectional, it’s a pretty accurate approximation.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/03-light.html"
+category = "SitesList"
+tags = ["amazon.", "ambient", "appendixes", "assumptions", "basic", "book", "computer", "diffuse", "directional", "equation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/acknowledgements.html"]
+title = "Acknowledgments - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Few books happen overnight; the one you’re about to read has been almost 20 years in the making. As you might suspect, many people have been part of its story, in one way or another, and I want to thank them. In chronological order: As the Dean of the School of Engineering and the Director of Computer Science at Universidad Católica del Uruguay, they put considerable trust in me by letting me take the reins of Computer Graphics when I was but a fourth-year student, and by letting me completely reshape its curriculum in the way I thought best. Fellow professor Roberto Lublinerman was a great mentor throughout my first year of teaching. Besides being the unwitting guinea pigs of my continuously evolving teaching methodology, they accepted and respected a professor barely a year older than them (and, in some cases, younger than them). The joy in their faces when they created their first raytraced images made it all worth it. A student turned teaching assistant turned friend, his input has helped me evolve the material over time; having been a tiny part of his subsequent, very successful professional career specialized in realtime rendering and performance optimization fills me with pride. He was also a technical reviewer of this book, and his contributions ranged from fixing typos to suggesting deep structural improvements of some chapters. My lecture notes, diagrams, and demos made the front page of Hacker News, and attracted considerable attention—including that of No Starch Press. If this hadn’t happened, this book might have never existed. They guided me through cleaning up and reshaping my lecture notes and diagrams, which in my mind were essentially ready to be published as a book, into an actual book. They took the raw materials to a whole new level; I had no idea this took so much work and effort, and Alex, Kassie, and the team did a stellar job. My name is the only one on the cover, but make no mistake, this was a group effort."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/acknowledgements.html"
+category = "SitesList"
+tags = ["acknowledgments", "amazon.", "appendixes", "book", "computer", "contents", "dedication", "graphics", "lublinerman", "part"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/lag-compensation.html"]
+title = "Lag Compensation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo The previous three articles explained a client-server game architecture which can be summarized as follows: This situation is generally fine, but it’s quite problematic for very time- and space-sensitive events; for example, shooting your enemy in the head! So you’re aiming perfectly at the target’s head with your sniper rifle. You shoot - it’s a shot you can’t miss. Because of the client-server architecture explained before, you were aiming at where the enemy’s head was 100ms before you shot - not when you shot! In a way, it’s like playing in an universe where the speed of light is really, really slow; you’re aiming at the past position of your enemy, but they’re long gone by the time you squeeze the trigger. Fortunately, there’s a relatively simple solution for this, which is also pleasant for most players most of the time (with the one exception discussed below). When you shoot, client sends this event to the server with full information: the exact timestamp of your shot, and the exact aim of the weapon. Here’s the crucial step. Since the server gets all the input with timestamps, it can authoritatively reconstruct the world at any instant in the past. In particular, it can reconstruct the world exactly as it looked like to any client at any point in time. This means the server can know exactly what was on your weapon’s sights the instant you shot. It was the past position of your enemy’s head, but the server knows it was the position of their head in your present. The enemy may be the only one not entirely happy. If they were standing still when he got shot, it’s their fault, right? If they were moving… wow, you’re a really awesome sniper. But what if they were in an open position, got behind a wall, and then got shot, a fraction of a second later, when they thought they were safe? Well, that can happen. That’s the tradeoff you make. Because you shoot at him in the past, they may still be shot up to a few milliseconds after they took cover."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/lag-compensation.html"
+category = "SitesList"
+tags = ["compensation", "conclusion", "crucial", "demo", "entities", "fast-paced", "further", "here’s", "himself", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/tgs-swiss-trains.html"]
+title = "How I wrote my first novel during my daily commute - Gabriel Gambetta"
+full_description = "It is said that everyone has a book in them. Ask around and you’ll find most people have an amazing idea that would make for a great story — if they only had the time to write it! Having a full-time job, family, friends, and all these annoying “adult” responsibilities leaves little time to write. But I found the time I needed in the otherwise dead time known as “the commute”. I love Swiss trains. They’re comfortable, quiet, and always on time (some of these facts actually made it into the novel itself). But perhaps most importantly, I could almost always find a seat. Back in 2010 I found myself reading my third or fourth Dan Brown novel and thinking two things: “This man knows how to write page-turners” and “I should be able to do this”. I had written short stories before, but could I pull off a novel? I set out to work. I did what felt natural, but in retrospect may have been a product of my engineering background: I created a spreadsheet with a Dan Brown novel in each column and a story point or character relationship in each row. Then I re-read the novels, taking copious notes as I went along, and filled this table. Soon the structure underlying The Da Vinci Code and Angels and Demons and The Lost Symbol was laying bare before my eyes. I could see why the stories worked. So I took the obvious next step: I added a new column named _“my novel”_and set out to fill in the blanks. Although it ended up looking quite different, this column was the basis for what later became my first novel, The Golden Seed. Four more years would pass before I had the first copy of the novel in my hands. As it turns out, writing is a lot of work. I became obsessed with story structure. I needed to understand why novels and movies worked. I had to know the blueprint. I read book after book after book, from The Hero with a Thousand Faces to _The Screenwriter’s Bible_to the controversial Save the Cat, until I could see the underlying themes and principles that unified all the different structures and methodologies."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/tgs-swiss-trains.html"
+category = "SitesList"
+tags = ["aboard", "block", "brown", "commute", "daily", "during", "fighting", "finishing", "foundations", "golden"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "github.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/05-extending-the-raytracer.html"]
+title = "Extending the Raytracer - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'We’ll conclude the first part of the book with a quick discussion of several interesting topics that we haven’t yet covered: placing the camera anywhere in the scene, performance optimizations, primitives other than spheres, modeling objects using constructive solid geometry, supporting transparent surfaces, and supersampling. We won’t implement all of these changes, but I encourage you to give them a try! The preceding chapters, plus the descriptions offered below, give you solid foundations to explore and implement them by yourself. At the very beginning of the discussion about raytracing we made three important assumptions: that the camera was fixed at \((0, 0, 0)\), that it was pointing to \(\vec{Z_+}\), and that its “up” direction was \(\vec{Y_+}\). In this section, we’ll lift these restrictions so we can put the camera anywhere in the scene and point it in any direction. Let’s start with the camera position. You may have noticed that \(O\) is used exactly once in all the pseudocode: as the origin of the rays coming from the camera in the top-level method. If we want to change the position of the camera, the only thing we need to do is to use a different value for \(O\) and we’re done. Does the change in position affect the direction of the rays? Not at all. The direction of the rays is the vector that goes from the camera to the projection plane. When we move the camera, the projection plane moves together with it, so their relative positions don’t change. The way we have written CanvasToViewport is consistent with this idea. Let’s turn our attention to the camera orientation. Suppose you have a rotation matrix that represents the desired orientation of the camera. The position of the camera doesn’t change if you just rotate the camera around, but the direction it’s looking toward does; it undergoes the same rotation as the whole camera. So if you have the ray direction \(\vec{D}\) and the rotation matrix \(R\), the rotated \(D\) is just \(R \cdot \vec{D}\).'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/05-extending-the-raytracer.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "arbitrary", "book", "caching", "camera", "computer", "constructive", "extending", "geometry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/client-side-prediction-server-reconciliation.html"]
+title = "Client-Side Prediction and Server Reconciliation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo In the first article of this series, we explored a client-server model with an authoritative server and dumb clients that just send inputs to the server, and then render the updated game state when the server sends it. A naive implementation of this scheme leads to a delay between user commands and changes on the screen; for example, the player presses the right arrow key, and the character takes half a second before it starts moving. This is because the client input must first travel to the server, the server must process the input and calculate a new game state, and the updated game state must reach the client again. In a networked environment such as the internet, where delays can be ten or hundreds of milliseconds, a game may feel unresponsive at best, or in the worst case, be completely unplayable. In this article, we’ll find ways to minimize or even eliminate that problem. Even though there are some cheating players, most of the time the game server is processing valid requests (from non-cheating clients and from cheating clients who aren’t cheating at that particular time). This means most of the input received will be valid and will update the game state as expected; that is, if your character is at (10, 10) and the right arrow key is pressed, it will end up at (11, 10). We can use this to our advantage. If the game world is deterministic enough (that is, given a game state and a set of inputs, the result is completely predictable), we can send the inputs to the server and immediately process them on the client - that is, we predict what the game state will be after the server has processed the inputs; this eliminates the delay between receiving an input and rendering its effect. Furthermore, most of the time this prediction will be accurate, so there will not be any visible mismatch once the server does send the updated game state."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/client-side-prediction-server-reconciliation.html"
+category = "SitesList"
+tags = ["based", "client-side", "ends", "entity", "fast-paced", "iii:", "interpolation", "introduction", "issues", "i’ve"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/reflections-demo"]
+title = "Reflections demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "You can set the recursion limit to a value between 0 and 5. Try at least 0, 1, and a higher number to see the effect this has on the output."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/reflections-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "limit", "part", "rasterization", "raytracing", "recursion", "reflections"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/zx-raytracer-4-src.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "This is the example output and source code for the 3rd iteration of the ZX Spectrum Raytracer, with illumination."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/zx-raytracer-4-src.html"
+category = "SitesList"
+tags = ["raytracer", "spectrum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/04-shadows-and-reflections.html"]
+title = "Shadows and Reflections - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'Our quest to render the scene in progressively more realistic ways continues. In the previous chapter, we modeled the way rays of light interact with surfaces. In this chapter, we’ll model two aspects of the way light interacts with the scene: objects casting shadows and objects reflecting on other objects. Where there are lights and objects, there are shadows. We have lights and objects. So where are our shadows? Let’s begin with a more fundamental question. Why should there be shadows? Shadows happen when there’s a light whose rays can’t reach an object because there’s some other object in the way. In the previous chapter, we only looked at the very local interactions between a light source and a surface, while ignoring everything else happening in the scene. For shadows to happen, we need to take a more global view and consider the interaction between a light source, a surface we want to draw, and other objects present in the scene. Conceptually, what we’re trying to do is relatively simple. We want to add a little bit of logic that says “if there’s an object between the point and the light, don’t add the illumination coming from this light.” It turns out we already have all of the tools we need to do this. Let’s start with a directional light. We know \(P\); that’s the point we’re interested in. We know \(\vec{L}\); that’s part of the definition of the light. Knowing \(P\) and \(\vec{L}\), we can define a ray, namely \(P + t\vec{L}\), that goes from the point on the surface to the infinitely distant light source. Does this ray intersect any other object? If it doesn’t, there’s nothing between the point and the light, so we compute the illumination from this light as before. If it does, the point is in shadow, so we ignore the illumination from this light. We already know how to compute the closest intersection between a ray and a sphere: the TraceRay function we’re using to trace the rays from the camera. We can reuse most of it to compute the closest intersection between the ray of light and the rest of the scene.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/04-shadows-and-reflections.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "computer", "extending", "graphics", "light", "mirrors", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/basic-rays-demo"]
+title = "Basic raytracing demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo implements basic raytracing. Whenever a ray from the camera hits an object, we set the corresponding canvas pixel to the object’s color."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/basic-rays-demo"
+category = "SitesList"
+tags = ["appendixes", "basic", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/08-shaded-triangles.html"]
+title = "Shaded Triangles - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'In the previous chapter, we developed an algorithm to draw a triangle filled with a solid color. Our goal for this chapter is to draw a shaded triangle—that is, a triangle filled with a color gradient. We need a more formal definition of what we’re trying to draw. To do this, we’ll assign a real value \(h\) to each vertex, denoting the intensity of the color at the vertex. \(h\) is in the \([0.0, 1.0]\) range, where \(0.0\) represents the darkest possible shade (that is, black) and \(1.0\) represents the brightest possible shade (that is, the original color—not white!). To compute the exact color shade of a pixel given the base color of the triangle \(C\) and the intensity at that pixel \(h\), we’ll multiply channel-wise: \(C_h = (R_C \cdot h, G_C \cdot h, B_C \cdot h)\). Therefore \(h = 0.0\) yields pure black, \(h = 1.0\) yields the original color \(C\), and \(h = 0.5\) yields a color half as bright as the original one. In order to draw a shaded triangle, all we need to do is compute a value of \(h\) for each pixel of the triangle, compute the corresponding shade of the color, and paint the pixel. Easy! At this point, however, we only know the values of \(h\) for the triangle vertices, because we chose them. How do we compute values of \(h\) for the rest of the triangle? Let’s start with the edges of the triangle. Consider the edge \(AB\). We know \(h_A\) and \(h_B\). What happens at \(M\), the midpoint of \(AB\)? Since we want the intensity to vary smoothly from \(A\) to \(B\), the value of \(h_M\) must be between \(h_A\) and \(h_B\). Since \(M\) is in the middle of \(AB\), why not choose \(h_M\) to be in the middle of \(h_A\) and \(h_B\)—that is, their average? More formally, we have a function \(h = f(P)\) that gives each point \(P\) an intensity value \(h\); we know its values at \(A\) and \(B\), \(h(A) = h_A\) and \(h(B) = h_B\), respectively. We want this function to be smooth. Since we know nothing else about \(h = f(P)\), we can choose any function that is compatible with what we do know, such as a linear function (Figure 8-2).'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/08-shaded-triangles.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "computer", "computing", "defining", "edge", "filled", "graphics", "interior"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/13-shading.html"]
+title = "Shading - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'Let’s continue making our images more realistic; in this chapter, we’ll examine how to add lights to the scene and how to illuminate the objects it contains. First, let’s look at a bit of terminology. The title of this chapter is “Shading," not”Illumination"; these are two different but closely related concepts. Illumination refers to the math and algorithms necessary to compute the effect of light on a single point in the scene; shading deals with techniques that extend the effect of light on a discrete set of points to entire objects. In Chapter 3 (Light), we looked at all we need to know about illumination. We can define ambient, point, and directional lights, and we can compute the \[I_P = I_A + \sum_{i = 1}^{n} I_i \cdot \left[ {{{\langle \vec{N}, \vec{L_i} \rangle} \over {|\vec{N}||\vec{L_i}|}} + \left( {{\langle \vec{R_i}, \vec{V} \rangle} \over {|\vec{R_i}||\vec{V}|}} \right)^s} \right]\] This illumination equation expresses how light illuminates a point in the scene. The way this worked in our raytracer is exactly the same way it works in our rasterizer. The more interesting part, which we’ll explore in this chapter, is how to extend the “illumination at a point” algorithms we developed into “illumination at every point of a triangle” algorithms. Let’s start simple. Since we can compute illumination at a point, we can just pick any point in a triangle (for example, its center), compute the illumination at that point, and use it to shade the whole triangle. To do the actual shading, we can multiply the color of the triangle by the illumination value. Figure 13-1 shows the results. The results are promising. Every point in a triangle has the same normal, so as long as a light is reasonably far from it, the light vectors for every point are approximately parallel and every point receives approximately the same amount of light. The discontinuity between the two triangles that make up each side of the cube, especially visible on the green face in Figure 13-1, is a consequence of the light vectors being approximately, but not exactly, parallel.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/13-shading.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "computer", "flat", "gouraud", "graphics", "hidden", "illumination", "part"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch"]
+title = "Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Behind the beautiful imagery of the latest animated movie and the realistic environments of popular videogames lie some mysterious algorithms. Computer Graphics from Scratch aims to demystify these algorithms and shows you that computer graphics can be surprisingly simple. This broad introductory book gives you an overview of the computer graphics field with a focus on two core areas of modern graphics: raytracing and rasterization. Links to interactive demos throughout bring the algorithms alive. Every algorithm is built up without the use of external libraries or APIs and is presented with language agnostic pseudocode, allowing anyone with a basic understanding of programming and high school math to follow along. Computer Graphics from Scratch demystifies the algorithms used in modern graphics software with basic programming and high school math."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch"
+category = "SitesList"
+tags = ["acknowledgements", "amazon.", "appendixes", "book", "computer", "contents", "graphics", "introduction", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/15-extending-the-rasterizer.html"]
+title = "Extending the Rasterizer - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "We’ll conclude this second part of the book the same way we concluded the first one: with a set of possible extensions to the rasterizer we’ve developed in the preceding chapters. In Chapter 13 (Shading), we saw how the normal vectors of a surface have a big impact on its appearance. For example, the right choice of normals can make a faceted object look smoothly curved; this is because the right choice of normals changes the way light interacts with the surface, which in turn changes the way our brain guesses the shape of the object. Unfortunately, there’s not much more we can do by interpolating normals beyond making surfaces look smoothly curved. In Chapter 14 (Textures), we saw how we could add fake detail to a surface by “painting” on it. This technique, called texture mapping, gives us much finer-grained control over the appearance of a surface. However, texture mapping doesn’t change the shape of the triangles—they’re still flat. Normal mapping combines both ideas. We can use normals to change the way light interacts with a surface and thus change the apparent shape of the surface; we can use attribute mapping to assign different values of an attribute to different parts of a triangle. By combining the two ideas, normal mapping lets us define surface normals at the pixel level. To do this, we associate a normal map to each triangle. A normal map is similar to a texture map, but its elements are normal vectors instead of colors. At rendering time, instead of computing an interpolated normal like Phong shading does, we use the normal map to get a normal vector for the specific pixel we’re rendering, in the same way that texture mapping gets a color for that specific pixel. Then we use this vector to compute lighting at that pixel. Figure 15-1 shows a flat surface with a texture map applied, and the effects of different light directions when a normal map is also applied. All three images in Figure 15-1 are renders of a flat square (that is, two triangles) with a texture, as seen in (a). When we add a normal map and the appropriate per-pixel shading, we create the illusion of extra geometrical detail. In (b) and (c), the shading of the diamonds depends on the direction of the incident light, and our brain interprets this as the diamonds having volume."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/15-extending-the-rasterizer.html"
+category = "SitesList"
+tags = ["algebra", "amazon.", "appendixes", "book", "computer", "environment", "extending", "graphics", "linear", "mapping"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/shadows-demo"]
+title = "Shadows demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "You can control whether the shadow rays start at t=0 or at t=ε and see the impact of this choice on the output."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/shadows-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scratch", "shadow", "shadows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/search-strategies.html"]
+title = "Search Strategies - Gabriel Gambetta"
+full_description = "The first article in this series presented the generic pathfinding algorithm. If you didn’t fully understand it, please go back and re-read it, because it’s essential to understand what follows. Once you get it, A* will be the most natural thing in the world. I left two open questions at the end of the previous article: if every pathfinding algorithm uses the same code, what makes A* behave like A*? And why did the demo find different paths sometimes? The answers to both questions are quite related. Even though the algorithm is well defined, there’s one aspect that I left purposely vague, and which as it turns out, it’s the key to explain how search algorithms behave: That innocent-looking line is what makes each search algorithm different to the others. The choice of what choose_node does makes all the difference in the world. Before diving into the different behaviors of the choose_node function, we need to fix a slight oversight of the algorithm as explained before. Whenever we considered the nodes adjacent to the current one, we ignored those we already knew how to reach: This is a mistake: what if we have just discovered a better way to reach it? In that case, we should adjust the node’s previous link to reflect this shorter path. In order to do this, we need to know the length of the path from the start node to any reachable node. We’ll call this the cost of the path. For now let’s assume moving from a node to one of its adjacent nodes has a fixed cost of 1. Before starting the search, we set the cost of each node to infinity; this makes any path shorter than that. We also set the cost of the start_node to 0. Let’s now focus on the choose_node method. Choosing a node at random clearly isn’t a good idea if we’re trying to get the shortest possible path. A better idea is to choose the node we can reach from the start node with the shortest path; this will generally choose shorter paths over longer ones. This doesn’t mean longer paths won’t be considered, just that shorter paths will be considered first. Since the algorithm stops as soon as a valid path is found, this should get us short paths."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/search-strategies.html"
+category = "SitesList"
+tags = ["conclusion", "cost", "demystified", "introduction", "length", "matter", "pathfinding", "sauce", "search", "secret"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "developer.valvesoftware.com", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "github.com", "habr.com", "howtorecover.me", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "redblobgames.com"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/11-clipping.html"]
+title = "Clipping - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'In the last few chapters, we developed equations and algorithms to transform a 3D definition of a scene into 2D shapes we can draw on the canvas; we developed a scene structure that lets us define 3D models and place instances of those models in the scene; and we developed an algorithm that lets us render the scene from any point of view. However, doing this exposes one of the limitations we’ve been working with: the perspective projection equations only work as expected for points that are in front of the camera. Since we can now move and rotate the camera around the scene, this poses a problem. In this chapter, we’ll develop the techniques necessary to lift this limitation: we’ll explore how to identify points, triangles, and entire objects that are behind the camera and develop techniques to deal with them. The division by \(P_z\) is problematic; it can cause a division by zero. Moreover, points behind the camera have negative \(Z\) values, which we currently can’t handle properly. Even points in front of the camera but very close to it will cause trouble in the form of severely distorted objects. To avoid these problematic cases, we’ll choose not to render anything behind the projection plane \(Z = d\). This clipping plane lets us classify any point as being inside or outside of the clipping volume—that is, the subset of space that is actually visible from the camera. In this case, the clipping volume is “whatever is in front of \(Z = d\).” We’ll only render the parts of the scene that are inside the clipping volume. Using a single clipping plane to make sure no objects behind the camera are rendered will produce correct results, but it’s not entirely efficient. Some objects may be in front of the camera but still not visible; for example, the projection of an object near the projection plane but far, far to the right will be projected outside of the viewport and therefore won’t be visible, as shown in Figure 11-1. Any computational resources we use to project such an object, plus all the per-triangle and per-vertex computations done to render it, would be wasted. It would be more efficient to ignore these objects altogether.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/11-clipping.html"
+category = "SitesList"
+tags = ["against", "amazon.", "appendixes", "book", "clipping", "computer", "defining", "describing", "graphics", "hidden"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/depth-demo"]
+title = "Hidden surface removal demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo implements Depth Buffering and Back Face Culling. You can turn them on and off to see the effect they have on the output. With Depth Buffering and Back Face Culling disabled, the output depends on the order of the triangles within the model. To show this, you can shuffle the triangles; and to make the output clearer, you can choose to draw the outlines of the individual triangles."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/depth-demo"
+category = "SitesList"
+tags = ["&backface", "appendixes", "buffering", "computer", "culling", "demo", "depth", "graphics", "hidden", "outlines"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/transforms-demo"]
+title = "Camera placement demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo extends the previous one by adding support for putting the camera anywhere in the scene, and giving it any orientation, as described in the Camera Transform section."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/transforms-demo"
+category = "SitesList"
+tags = ["appendixes", "camera", "computer", "demo", "graphics", "part", "placement", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/generic-search.html"]
+title = "Generic Search Algorithm - Gabriel Gambetta"
+full_description = "Pathfinding is one of these topics that usualy baffles game developers. The A* algorithm in particular is poorly understood, and the general belief seems to be that it’s arcane magic. The objective of this series of articles is to explain pathfinding in general and A* in particular in a very clear and accessible way, and put an end to the misconception that it’s a difficult topic. Properly explained, it’s quite straightforward. Note that the focus is on pathfinding for games; unlike a more academic approach, we’ll just skip search algorithms such as Depth-First or Breadth-First. Instead, we’ll try to go from zero to A* as quickly as possible. This first article explains the very basic concepts of pathfinding. Once you get these basic concepts, you will find A* surprisingly simple. Although you’ll be able to apply these concepts to arbitrarily complex 3D environments, let’s start with an extremely simple setup: a 5 x 5 square grid. For convenience, I’ve labelled each square with an uppercase letter. The very first thing we do is to represent this environment as a graph. I won’t go into the details of what a graph is; intuitively, it’s a set of bubbles connected by arrows. The bubbles are called “nodes”, and the arrows are called “edges”. Each node represents a “state” your character can be in. In this case, the state of your character is its position, so we create one node for each square of the grid: Now let’s add the edges. These represent what states you can “reach” from any other given state; in this case, you can walk from any square to an adjacent square, except for the blocked ones: Note that edges are directional; we need both an edge from A to B and an edge from B to A. This may look redundant, but it isn’t when you consider more complex “states”. For example, you can fall from the roof to the floor, but you can’t jump from the floor to the roof. You can move from “alive” to “dead”, but not the other way around. And so on."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/generic-search.html"
+category = "SitesList"
+tags = ["algorithm", "comes", "conclusion", "core", "demo", "demystified", "example", "general", "generic", "important"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com"]
+title = "Gabriel Gambetta"
+full_description = "I’m a Senior Software Engineer in Zürich; the author of Computer Graphics from Scratch; and an actor/filmmaker. My recent work experience includes 7 years at Google Zürich (in various SWE and SRE teams) and 4 years at Improbable in London (joined as employee #30, wore a lot of hats). In the more distant past I founded and ran a small indie game dev studio for almost a decade (leading to the Fast-Paced Multiplayer articles). I also taught Computer Graphics at university level (leading to Computer Graphics from Scratch). Computer Graphics from Scratch: A book about 3D rendering, covering rasterization and raytracing, based on the lectures I gave during my teaching years. You can buy the book, published by No Starch Press. Fast-Paced Multiplayer: A series of articles about Client-Side Prediction, Server Reconciliation, Entity Interpolation, and the architecture of fast-paced client-server multiplayer games. These articles have become one of the main references on the topic found on the Internet. Opt-in: an hour-long, no-budget feature film I wrote, produced, directed, and edited; made with a tiny, all-volunteer cast and crew. “An idealistic engineer lands his dream job at the biggest social media company in the world. But when he discovers the dark side of the business, he must decide whether to stay silent or risk everything to expose the truth.”."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com"
+category = "SitesList"
+tags = ["bytes", "client-side", "computer", "demystified", "emulator-backed", "entity", "fast-paced", "filmmaking", "gabriel", "gambetta."]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "imdb.com", "improbable.io", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/dedication.html"]
+title = "Dedication - Computer Graphics from Scratch - Gabriel Gambetta"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/dedication.html"
+category = "SitesList"
+tags = ["acknowledgements", "amazon.", "appendixes", "book", "computer", "dedication", "graphics", "part", "press", "rasterization"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/09-perspective-projection.html"]
+title = "Perspective Projection - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = '''So far, we have learned to draw 2D triangles on the canvas, given the 2D coordinates of their vertices. However, the goal of this book is to render 3D scenes. So in this chapter, we’ll take a break from 2D triangles and focus on how to turn 3D scene coordinates into 2D canvas coordinates. We’ll then use this to draw 3D triangles on the 2D canvas. Just like we did at the beginning of Chapter 2 (Basic Raytracing), we’ll start by defining a camera. We’ll use the same conventions as before: the camera is at \(O = (0, 0, 0)\), looking in the direction of \(\vec{Z_+}\), and its “up” vector is \(\vec{Y_+}\). We’ll also define a rectangular viewport of size \(V_w\) and \(V_h\) whose edges are parallel to \(\vec{X}\) and \(\vec{Y}\), at a distance \(d\) from the camera. The goal is to draw on the canvas whatever the camera sees through the viewport. If you need a refresher on these concepts, refer to Chapter 2 (Basic Raytracing). Consider a point \(P\) somewhere in front of the camera. We’re interested in finding \(P\, '\), the point on the viewport through which the camera sees \(P\), as shown in Figure 9-1. This is the opposite of what we did with raytracing. Our raytracer started with a point in the canvas, and determined what it could see through that point; here, we start from a point in the scene and want to determine where it is seen on the viewport. To find \(P\, '\), let’s look at the setup shown in Figure 9-1 from a different angle, literally. Figure 9-2 shows a diagram of the setup viewed from the “right,” as if we were standing on the \(\vec{X}\) axis: \(\vec{Y_+}\) points up, \(\vec{Z_+}\) points to the right, and \(\vec{X_+}\) points at us. In addition to \(O\), \(P\), and \(P\, '\), this diagram also shows the points \(A\) and \(B\), which help us reason about it. We know that \(P\, '_z = d\) because we defined \(P\, '\) to be a point on the viewport, and we know the viewport is embedded in the plane \(Z = d\). We can also see that the triangles \(OP\, ' A\) and \(OPB\) are similar, because their corresponding sides (\(P\, 'A\) and \(PB\), \(OP\) and \(OP\, '\), and \(OA\) and \(OB\)) are parallel. This implies that the proportions of their sides are the same; for example:'''
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/09-perspective-projection.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "assumptions", "basic", "book", "computer", "describing", "equation", "finding", "graphics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/computer-graphics-from-scratch/index.html"]
+title = "Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Behind the beautiful imagery of the latest animated movie and the realistic environments of popular videogames lie some mysterious algorithms. Computer Graphics from Scratch aims to demystify these algorithms and shows you that computer graphics can be surprisingly simple. This broad introductory book gives you an overview of the computer graphics field with a focus on two core areas of modern graphics: raytracing and rasterization. Links to interactive demos throughout bring the algorithms alive. Every algorithm is built up without the use of external libraries or APIs and is presented with language agnostic pseudocode, allowing anyone with a basic understanding of programming and high school math to follow along. Computer Graphics from Scratch demystifies the algorithms used in modern graphics software with basic programming and high school math."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/computer-graphics-from-scratch/index.html"
+category = "SitesList"
+tags = ["acknowledgements", "amazon.", "appendixes", "book", "computer", "contents", "graphics", "introduction", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/tgs-swiss-trains.html"]
+title = "How I wrote my first novel during my daily commute - Gabriel Gambetta"
+full_description = "It is said that everyone has a book in them. Ask around and you’ll find most people have an amazing idea that would make for a great story — if they only had the time to write it! Having a full-time job, family, friends, and all these annoying “adult” responsibilities leaves little time to write. But I found the time I needed in the otherwise dead time known as “the commute”. I love Swiss trains. They’re comfortable, quiet, and always on time (some of these facts actually made it into the novel itself). But perhaps most importantly, I could almost always find a seat. Back in 2010 I found myself reading my third or fourth Dan Brown novel and thinking two things: “This man knows how to write page-turners” and “I should be able to do this”. I had written short stories before, but could I pull off a novel? I set out to work. I did what felt natural, but in retrospect may have been a product of my engineering background: I created a spreadsheet with a Dan Brown novel in each column and a story point or character relationship in each row. Then I re-read the novels, taking copious notes as I went along, and filled this table. Soon the structure underlying The Da Vinci Code and Angels and Demons and The Lost Symbol was laying bare before my eyes. I could see why the stories worked. So I took the obvious next step: I added a new column named _“my novel”_and set out to fill in the blanks. Although it ended up looking quite different, this column was the basis for what later became my first novel, The Golden Seed. Four more years would pass before I had the first copy of the novel in my hands. As it turns out, writing is a lot of work. I became obsessed with story structure. I needed to understand why novels and movies worked. I had to know the blueprint. I read book after book after book, from The Hero with a Thousand Faces to _The Screenwriter’s Bible_to the controversial Save the Cat, until I could see the underlying themes and principles that unified all the different structures and methodologies."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/tgs-swiss-trains.html"
+category = "SitesList"
+tags = ["aboard", "block", "brown", "commute", "daily", "during", "fighting", "finishing", "foundations", "golden"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/astar-demystified.html"]
+title = "A* Demystified - Gabriel Gambetta"
+full_description = "The first article in this series presented the generic pathfinding algorithm; every pathfinding algorithm is a slight variation of it. The second article revealed the secret behind the different search algorithms: it all comes down to the choose_node function. It also presented a reasonably simple choose_node that yields an algorithm called Uniform Cost Search. This algorithm is pretty good: it will find the shortest path from the start node to the goal node. However, it’s somewhat wasteful: it considers paths that a human clearly sees as “wrong” - they tend to move away from the goal. Can we avoid this? Imagine we’re running a search algorithm in a special computer which has a chip that can do magic (bear with me). With this awesome chip, we can express choose_node in a very simple way which is guaranteed to produce the shortest path without losing any time exploring partial paths that won’t lead anywhere: Tempting, but magic chips still require somewhat lower level code. This would be a good approximation: This is a great way to choose the next node: we choose the node that yields the shortest path from the start node to the goal node, which is exactly what we’re looking for. We have also minimized the use of magic: we know exactly what’s the cost from the start node to each node (that’s node.cost), and we use magic only to divine the cost from the node to the goal node. Unfortunately, magic chips are quite new, and we want to support legacy hardware. Most of the code is fine, except for this line: So we can’t use magic to know the cost of the path we haven’t explored yet. Fine. Let’s make a guess, then. We’re optimistic, so we’ll assume there’s nothing between the current node and the goal node, and we can just go straight: Note that the shortest path and the minimum distance are different: the minimum distance assumes there are absolutely no obstacles between the current node and the goal node. This estimate can be quite simple. In our grid-based examples, it’s the Manhattan distance between the two nodes (that is, abs(Ax - Bx) + abs(Ay - By)). If you could move in diagonals, it would be sqrt( (Ax - Bx)^2 + (Ay - By)^2 ), and so on. The really important thing is to never overestimate the cost."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/astar-demystified.html"
+category = "SitesList"
+tags = ["algorithm", "awesome", "conclusion", "cost", "demo", "demystified", "introduction", "live", "magical", "non-magical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "imdb.com", "improbable.io", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/zx-raytracer-5-src.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "This is the example output and source code for the 3rd iteration of the ZX Spectrum Raytracer, with shadows."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/zx-raytracer-5-src.html"
+category = "SitesList"
+tags = ["raytracer", "spectrum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/zx-raytracer.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "I love raytracers; in fact I’ve written half a book about them. Probably less known is my love for the ZX Spectrum, the 1982 home computer I grew up with, and which started my interest in graphics and programming. This machine is so ridiculously underpowered for today’s standards (and even for 1980s standards), the inevitable question is, to what extent could I port the Computer Graphics from Scratch raytracer to a ZX Spectrum? The ZX Spectrum has a 3.5 MHz Z80 processor (1,000 times slower than current computers) that can’t multiply numbers (!!!), 48 KB of RAM (1,000,000 times smaller), and a 256x176 graphics mode (~200 times lower resolution) capable of displaying 15 colors (1,000,000 times fewer – and with some unusual quirks). This is an interesting setup for a CPU-intensive graphics application! My plan was to implement this in Sinclair BASIC, the built-in programming language of the Spectrum. This is not just BASIC, but an ancient, very limited dialect of BASIC. For example, the only control structures are FOR and IF (and IF has no ELSE or even ENDIF); all variables are global; there are no function calls, only GO TO and GO SUB; etc. It’s also interpreted, so super slow. But at least it implements multiplications in software! Of course, I could rewrite the raytracer in assembler, but I thought it would be a fun challenge to see how much performance I could get out of BASIC, which is what I used as a child. I set up a minimal environment: I write BASIC code using VS Code, compile it using BAS2TAP, and run it on the FUSE emulator. This gave me a pretty decent iteration speed. As an aside, I hadn’t written BASIC in something like 30 years, and I was surprised at how quickly it all came back. I was between 4 and 10 when I was doing this, so I guess it sticks in the brain like anything you learn at that age, like languages and accents. Now let’s get coding like it’s 1984! My first iteration was pretty straightforward: I ported the starter CGFS raytracing code to BASIC without much tweaking, outputting a 32x22-block image, and to my surprise, it worked well:"
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/zx-raytracer.html"
+category = "SitesList"
+tags = ["8x8-pixel", "attribute", "block", "clashes", "colors,", "different", "fifth", "fourth", "handling", "higher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/zx-raytracer-2-src.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "This is the example output and source code for the 2nd iteration of the ZX Spectrum Raytracer, with better handling of attribute clashes."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/zx-raytracer-2-src.html"
+category = "SitesList"
+tags = ["raytracer", "spectrum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/practical-astar.html"]
+title = "Practical A* - Gabriel Gambetta"
+full_description = "The first three articles of this series start from the very basics of pathfinding algorithms, and end up with a clear exposition of the A* algorithm. This is great in theory, but understanding how to apply it in practice is a different topic. What if you don’t care about the length on the path, but you depend on solar power and need to be under sunlight as much as possible? In the original examples we searched for the shortest path between the start node and the goal node. However, instead of storing the partial path lengths in a variable called length, we called it cost. Why? We can make A* search not only for the shortest path, but the best path for some definition of “best” which is good for our purposes. When we want the shortest path, the cost is the length of the path, but if you want to minimize, say, the fuel consumption, that should be used as the cost. If you want to maximize “time under sunlight”, the cost is the time spent without sunlight. And so on. This generally means that each edge in the graph has an associated cost with it. In the original examples the cost was implicit and it was assumed to be always 1, because we were counting steps in the path, but you can tweak this edge cost according to whatever you’re trying to minimize. Suppose you’re a car and need to get to a gas station. Any gas station will do. You want the shortest path to the closest gas station. A naive approach would be computing the shortest path to each gas station in turn, and then choosing the shortest one. That would work, but it would be quite wasteful. What you can do instead is to replace the single goal_node with a method which given a node can tell whether it’s a goal node or not. This way you can search for more than one goal at the same time. You also need to tweak the heuristic to return the minimum estimated cost for all the possible goals. Depending on the specifics of your situation, you may not be able to reach the goal exactly, or it would be costly to do so (if you’re sending a character halfway across a huge map, do you care about a difference of an inch?), so the is_goal_node method can return true when you’re “close enough”."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/practical-astar.html"
+category = "SitesList"
+tags = ["beyond", "conclusion", "cost", "demystified", "dimensions", "explicit", "function", "further", "goal", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "developer.valvesoftware.com", "gabrielgambetta.biz", "gafferongames.com", "github.com", "habr.com", "howtorecover.me", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com", "redblobgames.com"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/07-filled-triangles.html"]
+title = "Filled Triangles - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'In the previous chapter, we took our first steps toward drawing simple shapes—namely, straight line segments—using only PutPixel and an algorithm based on simple math. In this chapter, we’ll reuse some of the math to draw something more interesting: a filled triangle. This kind of outline is called a wireframe, because it looks like a triangle made of wires, as you can see in Figure 7-1. We want to draw a triangle filled with a color of our choice. As is often the case in computer graphics, there’s more than one way to approach this problem. We’ll draw filled triangles by thinking of them as a collection of horizontal line segments that look like a triangle when drawn together. Figure 7-2 shows what one such triangle would look like if we could see the individual segments. Let’s start with “between the triangle’s top and bottom.” A triangle is defined by its three vertices \(P_0\), \(P_1\), and \(P_2\). If we sort these points by increasing value of \(y\), such that \(y_0 \le y_1 \le y_2\), then the range of values of \(y\) occupied by the triangle is \([y_0, y_2]\): Sorting the vertices this way makes things easier: after doing this, we can always assume \(P_0\) is the lowest point of the triangle and \(P_2\) is the highest, so we won’t have to deal with every possible ordering. Next we have to compute the x_left and x_right arrays. This is slightly tricky, because the triangle has three sides, not two. However, considering only the values of \(y\), we always have a “tall” side from \(P_0\) to \(P_2\), and two “short” sides from \(P_0\) to \(P_1\) and \(P_1\) to \(P_2\). There’s a special case when \(y_0 = y_1\) or \(y_1 = y_2\)—that is, when one of the sides of the triangle is horizontal. When this happens, the two other sides have the same height, so either could be considered the “tall” side. Should we choose the right side or the left side? Fortunately, it doesn’t matter; the algorithm will support both left-to-right and right-to-left horizontal lines, so we can stick to our definition that the “tall” side is the one from \(P_0\) to \(P_2\).'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/07-filled-triangles.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "computer", "drawing", "filled", "graphics", "lines", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/tiny-raytracer-demo.html"]
+title = "Tiny Raytracer Demo - Gabriel Gambetta"
+full_description = "Press the button, and the rendered image will appear here after some time (from a few seconds up to some minutes, depending on your computer):"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/tiny-raytracer-demo.html"
+category = "SitesList"
+tags = ["book", "computer", "demo", "enjoy", "graphics", "raytracer", "scratch.", "tiny"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/scene-demo"]
+title = "Scene setup demo 1 - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "In this demo we replace the hardcoded cube from the previous demo with a cube defined as a set of vertices and triangles, as described in the Representing a Cube section. This lets us draw any object made of triangles by using the appropriate lists of vertices and triangles, but leaving the rendering code unmodified."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/scene-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scene", "scratch", "setup"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html"]
+title = "Introduction - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Computer graphics is a fascinating topic. How do you go from a few algorithms and some geometric data to the special effects for movies like Star Wars and The Avengers, animated movies like Toy Story and Frozen, or the graphics of popular video games like Fortnite or Call of Duty? Computer graphics is also a frighteningly broad topic: from rendering 3D scenes to creating image filters, from digital typography to simulating particle systems, there are a multitude of disciplines that can be thought of as part of computer graphics. One book couldn’t hope to cover all these subjects; it would take a library. This book focuses exclusively on the topic of rendering 3D scenes. Computer Graphics from Scratch is my humble attempt to present this one slice of computer graphics in an accessible way. It is written to be easily understood by high-school students, while staying rigorous enough for professional engineers. It covers the same topics as a full university course—it is, in fact, based on my years of teaching the subject at university. This book is for anyone with an interest in computer graphics, from high-school students to seasoned professionals. I have made a conscious choice to favor simplicity and clarity in the presentation. This is reflected in the choice of ideas and algorithms within the book. While the algorithms are industry-standard, whenever there’s more than one way to achieve a certain result, I have chosen the one that is easiest to understand. At the same time, I’ve put considerable effort into making sure there’s no hand-waving or trickery. I tried to keep in mind Albert Einstein’s advice: “Everything should be made as simple as possible, but no simpler.” There’s little prerequisite knowledge and no hardware or software dependencies. The only primitive used in this book is a method that lets us set the color of a pixel—as close to from scratch as we can get. The algorithms are conceptually simple, and the math is straightforward—at most, a tiny bit of high-school trigonometry. We also use some linear algebra, but the book includes a short appendix presenting everything we need in a very practical way."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "author", "book", "book?", "computer", "concepts", "contents", "covers", "graphics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/textures-demo"]
+title = "Texture mapping demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo implements texture mapping. You can choose whether to use perspective-correct interpolated depth values (1/z) or not, to see the difference it has on the output."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/textures-demo"
+category = "SitesList"
+tags = ["appendixes", "buffer", "computer", "demo", "depth", "graphics", "mapping", "part", "rasterization", "raytracing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/06-lines.html"]
+title = "Lines - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'In Part I of this book, we studied raytracing extensively and developed a raytracer that could render our test scene with accurate lighting, material properties, shadows, and reflection using relatively simple algorithms and math. This simplicity comes at a cost: performance. While non-real-time performance is fine for certain applications, such as architectural visualization or visual effects for movies, it’s not enough for other applications, such as video games. In this part of the book, we’ll explore an entirely different set of algorithms that favor performance over mathematical purity. Our raytracer starts from the camera and explores the scene through the viewport. For every pixel of the canvas, we answer the question, “Which object of the scene is visible here?” Now we’ll follow an approach that is, in some sense, the opposite: for every object in the scene, we’ll try to answer the question “In which parts of the canvas will this object be visible?” It turns out we can develop algorithms that answer this new question much faster than raytracing could, as long as we’re willing to make some accuracy trade-offs. Later, we’ll explore how to use these fast algorithms to achieve results with a quality comparable to that of a raytracer. We’ll start from scratch again: we have a canvas of dimensions \(C_w\) and \(C_h\), and we can set the color of individual pixels with PutPixel(), but nothing else. Let’s explore how to draw the simplest possible element on the canvas: a line between two points. Suppose we have two canvas points, \(P_0\) and \(P_1\), with coordinates \((x_0, y_0)\) and \((x_1, y_1)\) respectively. How can we draw the straight line segment between \(P_0\) and \(P_1\)? Let’s start by representing a line with parametric coordinates, just as we did with rays before (in fact, you can think of “rays” as lines in 3D). Any point \(P\) on the line can be obtained by starting at \(P_0\) and moving some distance along the direction from \(P_0\) to \(P_1\):'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/06-lines.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "computer", "describing", "drawing", "extending", "filled", "function", "graphics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/zx-raytracer-3-src.html"]
+title = "ZX Spectrum Raytracer - Gabriel Gambetta"
+full_description = "This is the example output and source code for the 3rd iteration of the ZX Spectrum Raytracer, with performance improvements."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/zx-raytracer-3-src.html"
+category = "SitesList"
+tags = ["raytracer", "spectrum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/specular-demo"]
+title = "Specular reflection demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo extends the previous demo by implementing specular reflection. The surface of each sphere looks polished to a different degree."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/specular-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "reflection", "scratch", "specular"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/diffuse-demo"]
+title = "Diffuse reflection demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo extends the previous demo by implementing diffuse reflection. The spheres now look like spheres."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/diffuse-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "diffuse", "graphics", "part", "rasterization", "raytracing", "reflection", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/search-strategies.html"]
+title = "Search Strategies - Gabriel Gambetta"
+full_description = "The first article in this series presented the generic pathfinding algorithm. If you didn’t fully understand it, please go back and re-read it, because it’s essential to understand what follows. Once you get it, A* will be the most natural thing in the world. I left two open questions at the end of the previous article: if every pathfinding algorithm uses the same code, what makes A* behave like A*? And why did the demo find different paths sometimes? The answers to both questions are quite related. Even though the algorithm is well defined, there’s one aspect that I left purposely vague, and which as it turns out, it’s the key to explain how search algorithms behave: That innocent-looking line is what makes each search algorithm different to the others. The choice of what choose_node does makes all the difference in the world. Before diving into the different behaviors of the choose_node function, we need to fix a slight oversight of the algorithm as explained before. Whenever we considered the nodes adjacent to the current one, we ignored those we already knew how to reach: This is a mistake: what if we have just discovered a better way to reach it? In that case, we should adjust the node’s previous link to reflect this shorter path. In order to do this, we need to know the length of the path from the start node to any reachable node. We’ll call this the cost of the path. For now let’s assume moving from a node to one of its adjacent nodes has a fixed cost of 1. Before starting the search, we set the cost of each node to infinity; this makes any path shorter than that. We also set the cost of the start_node to 0. Let’s now focus on the choose_node method. Choosing a node at random clearly isn’t a good idea if we’re trying to get the shortest possible path. A better idea is to choose the node we can reach from the start node with the shortest path; this will generally choose shorter paths over longer ones. This doesn’t mean longer paths won’t be considered, just that shorter paths will be considered first. Since the algorithm stops as soon as a valid path is found, this should get us short paths."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/search-strategies.html"
+category = "SitesList"
+tags = ["conclusion", "cost", "demystified", "introduction", "length", "matter", "pathfinding", "sauce", "search", "secret"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/client-server-game-architecture.html"]
+title = "Client-Server Game Architecture - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo This is the first in a series of articles exploring the techniques and algorithms that make fast-paced multiplayer games possible. If you’re familiar with the concepts behind multiplayer games, you can safely skip to the next article – what follows is an introductory discussion. Developing any kind of game is itself challenging; multiplayer games, however, add a completely new set of problems to be dealt with. Interestingly enough, the core problems are human nature and physics! As a game developer, you usually don’t care whether a player cheats in your single-player game – their actions don’t affect anyone but him. A cheating player may not experience the game exactly as you planned, but since it’s their game, they have the right to play it in any way they please. Multiplayer games are different, though. In any competitive game, a cheating player isn’t just making the experience better for himself, they’re also making the experience worse for the other players. As the developer, you probably want to avoid that, since it tends to drive players away from your game. There are many things that can be done to prevent cheating, but the most important one (and probably the only really meaningful one) is simple : don’t trust the player. Always assume the worst – that players will try to cheat. This leads to a seemingly simple solution – you make everything in your game happen in a central server under your control, and make the clients just privileged spectators of the game. In other words, your game client sends inputs (key presses, commands) to the server, the server runs the game, and you send the results back to the clients. This is usually called using an authoritative server, because the one and only authority regarding everything that happens in the world is the server. Of course, your server can be exploited for vulnerabilities, but that’s out of the scope of this series of articles. Using an authoritative server does prevent a wide range of hacks, though. For example, you don’t trust the client with the health of the player; a hacked client can modify its local copy of that value and tell the player it has 10000% health, but the server knows it only has 10% – when the player is attacked it will die, regardless of what a hacked client may think."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/client-server-game-architecture.html"
+category = "SitesList"
+tags = ["architecture", "arrow", "authoritative", "cheating", "client-server", "client-side", "clients", "dealing", "dumb", "fast-paced"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/tiny-raytracer.html"]
+title = "Tiny Raytracer - Gabriel Gambetta"
+full_description = "I’ve written several raytracers over the years, including the one in Computer Graphics from Scratch, but this time I decided to write the smallest possible one I could write. My current version is 912 bytes of Javascript, and I’m sure it’s still possible to shave off a few more bytes. Note that the size includes a simple scene definition. The original, fully commented source code can be found here. Note that the goal here was to make the source code as small as possible, not clarity; so even the original code before minification is a horrible mess. This doesn’t do justice to the elegance and simplicity of proper raytracer code; half of my book Computer Graphics from Scratch builds a raytracer step by step."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/tiny-raytracer.html"
+category = "SitesList"
+tags = ["raytracer", "tiny"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/entity-interpolation.html"]
+title = "Entity Interpolation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo In the first article of the series, we introduced the concept of an authoritative server and its usefulness to prevent client cheats. However, using this technique naively can lead to potentially showstopper issues regarding playability and responsiveness. In the second article, we proposed client-side prediction as a way to overcome these limitations. The net result of these two articles is a set of concepts and techniques that allow a player to control an in-game character in a way that feels exactly like a single-player game, even when connected to an authoritative server through an internet connection with transmission delays. In this article, we’ll explore the consequences of having other player-controled characters connected to the same server. In the previous article, the behavior of the server we described was pretty simple – it read client inputs, updated the game state, and sent it back to the client. When more than one client is connected, though, the main server loop is somewhat different. In this scenario, several clients may be sending inputs simultaneously, and at a fast pace (as fast as the player can issue commands, be it pressing arrow keys, moving the mouse or clicking the screen). Updating the game world every time inputs are received from each client and then broadcasting the game state would consume too much CPU and bandwidth. A better approach is to queue the client inputs as they are received, without any processing. Instead, the game world is updated periodically at low frequency, for example 10 times per second. The delay between every update, 100ms in this case, is called the time step. In every update loop iteration, all the unprocessed client input is applied (possibly in smaller time increments than the time step, to make physics more predictable), and the new game state is broadcast to the clients."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/entity-interpolation.html"
+category = "SitesList"
+tags = ["compensation", "dead", "dealing", "entity", "fast-paced", "interpolation", "introduction", "low-frequency", "multiplayer", "part"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/cgfs/camera-demo"]
+title = "Camera position demo - Computer Graphics from Scratch - Gabriel Gambetta"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/camera-demo"
+category = "SitesList"
+tags = ["appendixes", "camera", "computer", "demo", "graphics", "part", "position", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/afterword.html"]
+title = "Afterword - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "Congratulations! You now have a good understanding of how 3D rendering works. You’ve created a raytracer and a rasterizer and gained a good conceptual understanding of the algorithms and math that power them. However, as I explained in the introduction, it’s impossible to cover the entirety of 3D rendering in a single book. Here’s a few topics you might want to explore on your own to expand your horizons: This includes offline and dynamic mesh simplification, impostors, and billboards. These algorithms are how we efficiently render forests with billions of plants, crowds of millions of people, or extremely detailed 3D models. This includes binary space partition trees, k-d trees, quadtrees, and octrees. These structures help efficiently render massive scenes, such as an entire city. How to efficiently render a terrain model that might be as big as a country yet have human-scale detail. Of course, there are many other topics, and that’s just 3D rendering! Computer graphics is an even broader subject. Here are some areas you might want to investigate: Before you can “blur the background” of your video call, you need to determine which pixels are background and which aren’t. Congratulations again on taking your first step into the world of computer graphics. Now you get to choose where to go next!"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/afterword.html"
+category = "SitesList"
+tags = ["afterword", "algebra", "amazon.", "appendixes", "book", "computer", "graphics", "linear", "part", "press"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/triangle-demo"]
+title = "Filled triangle demo - Computer Graphics from Scratch - Gabriel Gambetta"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/triangle-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "filled", "graphics", "part", "rasterization", "raytracing", "scratch", "triangle"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/perspective-demo"]
+title = "Perspective projection demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This is an implementation of the perspective projection equations. We use them to project the vertices of a cube, and then draw line segments between these, to render a wireframe cube. We use the same color for the edges of each face of the cube. Because each edge is shared by two faces, the color you see depends on the order in which we draw them."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/perspective-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "perspective", "projection", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/12-hidden-surface-removal.html"]
+title = "Hidden Surface Removal - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'We can now render any scene from any point of view, but the resulting image is visually simple: we’re rendering objects in wireframe, giving the impression that we’re looking at the blueprint of a set of objects, not at the objects themselves. The remaining chapters of this book focus on improving the visual quality of the rendered scene. By the end of this chapter, we’ll be able to render objects that look solid (as opposed to wireframe). We already developed an algorithm to draw filled triangles, but as we will see, using that algorithm correctly in a 3D scene is not as simple as it might seem! The first idea that comes to mind when we want to make solid objects look solid is to use the function DrawFilledTriangle that we developed in Chapter 7 (Filled Triangles) to draw each triangle of the objects using a random color (Figure 12-1). The shapes in Figure 12-1 don’t quite look like cubes, do they? If you look closely, you’ll see what the problem is: parts of the back faces of the cube are drawn on top of the front faces! This is because we’re blindly drawing 2D triangles on the canvas in a “random order” or, more precisely, in the order they happen to be defined in the Triangles list of the model, without taking into account the spatial relationships between them. You might be tempted to go back to the model definition and change the order of the triangles to fix this problem. However, if our scene includes another instance of the cube that is rotated \(180^\circ\), we’d go back to the original problem. In short, there’s no single “correct” triangle order that will work for every instance and camera orientation. What should we do? A first solution to this problem is known as the painter’s algorithm. Real-life painters draw backgrounds first, and then cover parts of them with foreground objects. We could achieve the same effect by drawing all the triangles in the scene back to front. To do so, we’d apply the model and camera transforms and sort the triangles according to their distance to the camera.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/12-hidden-surface-removal.html"
+category = "SitesList"
+tags = ["algorithm", "amazon.", "appendixes", "book", "buffering", "classifying", "clipping", "computer", "culling", "depth"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/instances-demo"]
+title = "Scene setup demo 2 - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo extends the previous one by adding support for rendering multiple instances of the same model, as described in the Models and Instances section."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/instances-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scene", "scratch", "setup"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/client-side-prediction-live-demo.html"]
+title = "Fast-Paced Multiplayer: Sample Code and Live Demo - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo This is a sample implementation of a client-server architecture demonstrating the main concepts explained in my Fast-Paced Multiplayer series of articles. It won’t make much sense unless you’ve read the articles first. The code is pure JavaScript and it’s fully contained in this page. It’s less than 500 lines of code, including a lot of comments, showing that once you really understand the concepts, implementing them is relatively straightforward. Although it’s not production-quality code, you may use this code in your own applications. Credit is appreciated although not required. Player 1 view - move with LEFT and RIGHT arrow keys Lag = ms · Prediction · Reconciliation · Interpolation The views above show the state of the game world according to the server, and what two clients are rendering. You can move the blue ball, controlled by Player 1, with the LEFT and RIGHT arrow keys; and the red ball, controlled by Player 2, with the A and D keys. Move the blue ball. There’s considerable delay between pressing the arrow keys and the blue ball actually moving. Without client-side prediction, the client only renders the new position of the ball only after a round-trip to the server. Because of the 250ms lag, this takes a while. Set the player 1 Lag to 0ms, and try again. Now the client and the server move in sync because there’s no delay between them, but the movement isn’t smooth, because the server only updates its internal state 3 times per second. If you increase the update rate of the server to 60, we get smooth movement. But this is not a very realistic scenario. Set the player 1 lag back to 250ms, and the server update rate back to 3. This is closer to the awful conditions where a real game still needs to work. Client-side prediction and server reconciliation to the rescue! Enable both of them for Player 1 and move the blue ball. Now the movement is very smooth, and there’s no perceptible delay between pressing the arrow keys and moving the ball."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/client-side-prediction-live-demo.html"
+category = "SitesList"
+tags = ["250ms", "500ms", "code", "demo", "entity", "fast-paced", "guided", "interpolation", "live", "multiplayer:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/astar-demystified.html"]
+title = "A* Demystified - Gabriel Gambetta"
+full_description = "The first article in this series presented the generic pathfinding algorithm; every pathfinding algorithm is a slight variation of it. The second article revealed the secret behind the different search algorithms: it all comes down to the choose_node function. It also presented a reasonably simple choose_node that yields an algorithm called Uniform Cost Search. This algorithm is pretty good: it will find the shortest path from the start node to the goal node. However, it’s somewhat wasteful: it considers paths that a human clearly sees as “wrong” - they tend to move away from the goal. Can we avoid this? Imagine we’re running a search algorithm in a special computer which has a chip that can do magic (bear with me). With this awesome chip, we can express choose_node in a very simple way which is guaranteed to produce the shortest path without losing any time exploring partial paths that won’t lead anywhere: Tempting, but magic chips still require somewhat lower level code. This would be a good approximation: This is a great way to choose the next node: we choose the node that yields the shortest path from the start node to the goal node, which is exactly what we’re looking for. We have also minimized the use of magic: we know exactly what’s the cost from the start node to each node (that’s node.cost), and we use magic only to divine the cost from the node to the goal node. Unfortunately, magic chips are quite new, and we want to support legacy hardware. Most of the code is fine, except for this line: So we can’t use magic to know the cost of the path we haven’t explored yet. Fine. Let’s make a guess, then. We’re optimistic, so we’ll assume there’s nothing between the current node and the goal node, and we can just go straight: Note that the shortest path and the minimum distance are different: the minimum distance assumes there are absolutely no obstacles between the current node and the goal node. This estimate can be quite simple. In our grid-based examples, it’s the Manhattan distance between the two nodes (that is, abs(Ax - Bx) + abs(Ay - By)). If you could move in diagonals, it would be sqrt( (Ax - Bx)^2 + (Ay - By)^2 ), and so on. The really important thing is to never overestimate the cost."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/astar-demystified.html"
+category = "SitesList"
+tags = ["algorithm", "awesome", "conclusion", "cost", "demo", "demystified", "introduction", "live", "magical", "non-magical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/practical-astar.html"]
+title = "Practical A* - Gabriel Gambetta"
+full_description = "The first three articles of this series start from the very basics of pathfinding algorithms, and end up with a clear exposition of the A* algorithm. This is great in theory, but understanding how to apply it in practice is a different topic. What if you don’t care about the length on the path, but you depend on solar power and need to be under sunlight as much as possible? In the original examples we searched for the shortest path between the start node and the goal node. However, instead of storing the partial path lengths in a variable called length, we called it cost. Why? We can make A* search not only for the shortest path, but the best path for some definition of “best” which is good for our purposes. When we want the shortest path, the cost is the length of the path, but if you want to minimize, say, the fuel consumption, that should be used as the cost. If you want to maximize “time under sunlight”, the cost is the time spent without sunlight. And so on. This generally means that each edge in the graph has an associated cost with it. In the original examples the cost was implicit and it was assumed to be always 1, because we were counting steps in the path, but you can tweak this edge cost according to whatever you’re trying to minimize. Suppose you’re a car and need to get to a gas station. Any gas station will do. You want the shortest path to the closest gas station. A naive approach would be computing the shortest path to each gas station in turn, and then choosing the shortest one. That would work, but it would be quite wasteful. What you can do instead is to replace the single goal_node with a method which given a node can tell whether it’s a goal node or not. This way you can search for more than one goal at the same time. You also need to tweak the heuristic to return the minimum estimated cost for all the possible goals. Depending on the specifics of your situation, you may not be able to reach the goal exactly, or it would be costly to do so (if you’re sending a character halfway across a huge map, do you care about a difference of an inch?), so the is_goal_node method can return true when you’re “close enough”."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/practical-astar.html"
+category = "SitesList"
+tags = ["beyond", "conclusion", "cost", "demystified", "dimensions", "explicit", "function", "further", "goal", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/remakes.html"]
+title = "Emulator-Backed Remakes - Gabriel Gambetta"
+full_description = "“Back in my day, games were better. They were more fun because gameplay was more important than graphics.” No matter what “back then” is for you, you probably identify with this opinion to some degree. For me it was the mid-80s to mid-90s, when I enjoyed countless hours of Sir Fred, Atic Atac, Airborne Ranger, Monkey Island, Twilight: 2000, Stunts, Gunship 2000, Twinsen’s Adventure, Dark Sun, Challenge for Ancient Empires, the X-Wing series, and so many others. Play a remastered version. Some games are so awesome and have such a loyal fan base that an official “new edition” comes out. This is exactly the same game, but with modern art. A great example is the awesome Monkey Island Special Edition. This is the ideal scenario. Unfortunately, very few games are remastered due to cost, the original source being lost, or even lack of interest in the case of relatively obscure games. A related category is games that have been open sourced, such as Id’s first person shooters. There are some projects to produce new art packs for these games, but these are rare and not many games are open sourced to begin with. Play a remake. Some games are so awesome and have a such loyal fan base that someone decides to rewrite the game from scratch, usually without any support from the original authors. When you can find a good remake, you get almost the original game, but with modern art. This is a good alternative, but again, very few games have remakes. This is because remakes are usually fan made, and the task is enormously difficult - it is as difficult as making a game from scratch, with the additional difficulty of trying to replicate the original gameplay as closely as possible. The only way to reach a really high level of accuracy is to actually disassemble the original code and replicate the logic. Use an emulator. There’s always DOSBox, and specific solutions for certain games, such as ScummVM. This works, but let’s be honest, most games haven’t aged well from an art perspective. You do play exactly the original games, though."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/remakes.html"
+category = "SitesList"
+tags = ["advice", "answers", "applicability", "approach", "available", "beyond", "closing", "code", "concept", "didn’t"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "developer.valvesoftware.com", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "github.com", "habr.com", "howtorecover.me", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "redblobgames.com"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/10-describing-and-rendering-a-scene.html"]
+title = "Describing and Rendering a Scene - Computer Graphics from Scratch - Gabriel Gambetta"
+description = '''
+\(A = (1, 1, 1)\)
+\(B = (-1, 1, 1)\)
+\(C = (-1, -1, 1)\)
+\(D = (1, -1, 1)\)
+\(E = (1, 1, -1)\)
+\(F = (-1, 1, -1)\)
+\(G = (-1, -1, -1)\)
+\(H = (1, -1, -1)\)'''
+full_description = '\(A = (1, 1, 1)\) \(B = (-1, 1, 1)\) \(C = (-1, -1, 1)\) \(D = (1, -1, 1)\) \(E = (1, 1, -1)\) \(F = (-1, 1, -1)\) \(G = (-1, -1, -1)\) \(H = (1, -1, -1)\) In the last few chapters, we’ve developed algorithms to draw 2D triangles on the canvas given their 2D coordinates, and we’ve explored the math required to transform the 3D coordinates of points in the scene to the 2D coordinates of points on the canvas. At the end of the previous chapter, we cobbled together a program that used both to render a 3D cube on the 2D canvas. In this chapter, we’ll formalize and extend that work with the goal of rendering a whole scene containing an arbitrary number of objects. Let’s think again about how to represent and manipulate a cube, this time with the goal of finding a more general approach. The edges of our cube are 2 units long and are parallel to the coordinate axes, and it’s centered on the origin, as shown in Figure 10-1. The sides of the cube are square, but the algorithms we have developed work with triangles. One of the reasons we chose triangles in the first place is that any other polygon, including squares, can be decomposed into triangles. So we’ll represent each square side of the cube using two triangles. However, we can’t take any three vertices of the cube and expect them to describe a triangle on its surface (for example, ADG is inside the cube). This means that the vertex coordinates, by themselves, don’t fully describe the cube: we also need to know which sets of three vertices describe the triangles that make up its sides. This suggests a generic structure we can use to represent any object made of triangles: a Vertices list, holding the coordinates of each vertex; and a Triangles list, specifying which sets of three vertices describe triangles on the surface of the object. Each entry in the Triangles list may include additional information besides the vertices that make it up; for example, this would be the perfect place to specify the color of each triangle.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/10-describing-and-rendering-a-scene.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "book", "camera", "clipping", "computer", "coordinates", "cube", "describing", "graphics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/clipping-demo"]
+title = "Clipping demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This demo extends the previous one by implementing instance and triangle clipping, as described in the Clipping chapter. Although the output looks identical, there’s a cube located directly behind the camera. Thanks to the clipping algorithm, it’s not visible in the rendered scene."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/clipping-demo"
+category = "SitesList"
+tags = ["appendixes", "clipping", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/the-golden-seed.html"]
+title = "The Golden Seed - Gabriel Gambetta"
+full_description = "After the murder of his elderly mentor, Martin receives a cryptic message that puts him in the sights of a secretive organization thirsty for power. Falsely accused by the police, and hunted by a murderous Neo-Nazi, Martin and his mentor’s great-niece follow a trail which leads them to Golden Seed, the crucial final operation of a crumbling Third Reich. While desperately fighting for survival, they discover that no one is who they seem to be, and become entangled in a complex conspiracy of intrigue, betrayal and lies, behind which hides the sinister secret of Golden Seed."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/the-golden-seed.html"
+category = "SitesList"
+tags = ["gabriel", "gambetta", "golden", "seed", "thriller"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/tgs-open-source.html"]
+title = "How I wrote and published my novel using only open source tools - Gabriel Gambetta"
+full_description = "I’ve recently published my first novel The Golden Seed on Kindle and paperback through Amazon, achieving very professional results. Along the way, I created a process and a couple of tools based exclusively on open source software. Here’s my process. The most important piece of content for publication is the manuscript (i.e. the text of the novel). I originally started writing this in a Google Doc, but it soon became apparent that Offline Mode wasn’t as robust as I expected (this was critical for me, since I wrote the whole novel during my daily commute), and Docs had latency problems handling a really big document. So I wrote a quick script to export the text to Markdown and abandoned the Google Doc. There are many editors for Markdown. For a brief period of time, I used Texts on Mac, but in the end I went the old-school way with vim (gvim on Linux and mvim on Mac). I didn’t use much formatting. I used # for chapter headers, ## for chapter subtitles (e.g. dates and locations), and indented text for preformatted monospaced sections (the novel includes some encrypted text the protagonists attempt to decode). I created a separate Markdown file for the front matter of the book, that is, all the text that comes before the text of the novel itself (I consider the Prologue and the Epilogue integral parts of the story). The front matter includes the title page, colophon, and acknowledgements. I also had the book cover as a separate file. The magical tool that converts this into an epub file is the fantastic pandoc. Besides the text (both front matter and manuscript), it can also take the filename of a cover image, a metadata file, and a stylesheet file. The metadata file is an XML file with Dublin Core tags such as title, author, and copyright line. Although this information is already included in the front matter, this is metadata for the epub file itself, and not part of the text visible to the reader. The stylesheet file is a CSS file that lets you customise the appearance of the book. In my case, I just modified the Header tags to be centered, but used the defaults otherwise."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/tgs-open-source.html"
+category = "SitesList"
+tags = ["epub", "golden", "kindle", "manuscript", "markdown", "novel", "open", "paperback", "proprietary", "published"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/generic-search.html"]
+title = "Generic Search Algorithm - Gabriel Gambetta"
+full_description = "Pathfinding is one of these topics that usualy baffles game developers. The A* algorithm in particular is poorly understood, and the general belief seems to be that it’s arcane magic. The objective of this series of articles is to explain pathfinding in general and A* in particular in a very clear and accessible way, and put an end to the misconception that it’s a difficult topic. Properly explained, it’s quite straightforward. Note that the focus is on pathfinding for games; unlike a more academic approach, we’ll just skip search algorithms such as Depth-First or Breadth-First. Instead, we’ll try to go from zero to A* as quickly as possible. This first article explains the very basic concepts of pathfinding. Once you get these basic concepts, you will find A* surprisingly simple. Although you’ll be able to apply these concepts to arbitrarily complex 3D environments, let’s start with an extremely simple setup: a 5 x 5 square grid. For convenience, I’ve labelled each square with an uppercase letter. The very first thing we do is to represent this environment as a graph. I won’t go into the details of what a graph is; intuitively, it’s a set of bubbles connected by arrows. The bubbles are called “nodes”, and the arrows are called “edges”. Each node represents a “state” your character can be in. In this case, the state of your character is its position, so we create one node for each square of the grid: Now let’s add the edges. These represent what states you can “reach” from any other given state; in this case, you can walk from any square to an adjacent square, except for the blocked ones: Note that edges are directional; we need both an edge from A to B and an edge from B to A. This may look redundant, but it isn’t when you consider more complex “states”. For example, you can fall from the roof to the floor, but you can’t jump from the floor to the roof. You can move from “alive” to “dead”, but not the other way around. And so on."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/generic-search.html"
+category = "SitesList"
+tags = ["algorithm", "comes", "conclusion", "core", "demo", "demystified", "example", "general", "generic", "important"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "gabrielgambetta.biz", "github.com", "habr.com", "howtorecover.me", "imdb.com", "improbable.io", "j.day", "linkedin.com", "mysterystudio.com", "nostarch.com"]
+
+["https://gabrielgambetta.com/index.html"]
+title = "Gabriel Gambetta"
+full_description = "I’m a Senior Software Engineer in Zürich; the author of Computer Graphics from Scratch; and an actor/filmmaker. My recent work experience includes 7 years at Google Zürich (in various SWE and SRE teams) and 4 years at Improbable in London (joined as employee #30, wore a lot of hats). In the more distant past I founded and ran a small indie game dev studio for almost a decade (leading to the Fast-Paced Multiplayer articles). I also taught Computer Graphics at university level (leading to Computer Graphics from Scratch). Computer Graphics from Scratch: A book about 3D rendering, covering rasterization and raytracing, based on the lectures I gave during my teaching years. You can buy the book, published by No Starch Press. Fast-Paced Multiplayer: A series of articles about Client-Side Prediction, Server Reconciliation, Entity Interpolation, and the architecture of fast-paced client-server multiplayer games. These articles have become one of the main references on the topic found on the Internet. Opt-in: an hour-long, no-budget feature film I wrote, produced, directed, and edited; made with a tiny, all-volunteer cast and crew. “An idealistic engineer lands his dream job at the biggest social media company in the world. But when he discovers the dark side of the business, he must decide whether to stay silent or risk everything to expose the truth.”."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/index.html"
+category = "SitesList"
+tags = ["bytes", "client-side", "computer", "demystified", "emulator-backed", "entity", "fast-paced", "filmmaking", "gabriel", "gambetta."]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/14-textures.html"]
+title = "Textures - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'Our rasterizer can render objects like cubes or spheres. But we usually don’t want to render abstract geometric objects like cubes and spheres; instead, we want to render real-world objects, like crates and planets or dice and marbles. In this chapter, we’ll look at how we can add visual detail to the surface of our objects by using textures. Let’s say we want our scene to have a wooden crate. How do we turn a cube into a wooden crate? One option is to add a lot of triangles to replicate the grain of the wood, the heads of the nails, and so on. This would work, but it would add a lot of geometric complexity to the scene, resulting in a big performance hit. Another option is to fake the details: instead of modifying the geometry of an object, we just “paint” something that looks like wood on top of it. Unless you’re looking at the crate from up close, you won’t notice the difference, and the computational cost is significantly lower than adding lots of geometric detail. Note that the two options aren’t incompatible: you can choose the right balance between adding geometry and painting on that geometry to achieve the image quality and performance you require. Since we know how to deal with geometry, we’ll explore the second option. First, we need an image to paint on our triangles; in this context, we call this image a texture. Figure 14-1 shows a wooden crate texture. Next, we need to specify how this texture is applied to the model. We can define this mapping on a per-triangle basis, by specifying which points of the texture should go on each vertex of the triangle (Figure 14-2). To define this mapping, we need a coordinate system to refer to points in the texture. Remember, a texture is just an image, represented as a rectangular array of pixels. We could use \(x\) and \(y\) coordinates and talk about pixels in the texture, but we’re already using these names for the canvas. Therefore, we use \(u\) and \(v\) for the texture coordinates and we call the texture’s pixels texels (a contraction of texture elements).'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/14-textures.html"
+category = "SitesList"
+tags = ["amazon.", "appendixes", "bilinear", "book", "computer", "crate", "extending", "filtering", "graphics", "mapping"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/shading-demo"]
+title = "Lighting and Shading demo - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "You can enable Diffuse Reflection, Specular Reflection, or both. Independently of this, you can choose between the Flat, Gouraud and Phong shading models. Finally, you can choose whether to use vertex normals from the model, or the normals of each triangle."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/shading-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "lighting", "model", "normals", "part", "rasterization", "raytracing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/client-server-game-architecture.html"]
+title = "Client-Server Game Architecture - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo This is the first in a series of articles exploring the techniques and algorithms that make fast-paced multiplayer games possible. If you’re familiar with the concepts behind multiplayer games, you can safely skip to the next article – what follows is an introductory discussion. Developing any kind of game is itself challenging; multiplayer games, however, add a completely new set of problems to be dealt with. Interestingly enough, the core problems are human nature and physics! As a game developer, you usually don’t care whether a player cheats in your single-player game – their actions don’t affect anyone but him. A cheating player may not experience the game exactly as you planned, but since it’s their game, they have the right to play it in any way they please. Multiplayer games are different, though. In any competitive game, a cheating player isn’t just making the experience better for himself, they’re also making the experience worse for the other players. As the developer, you probably want to avoid that, since it tends to drive players away from your game. There are many things that can be done to prevent cheating, but the most important one (and probably the only really meaningful one) is simple : don’t trust the player. Always assume the worst – that players will try to cheat. This leads to a seemingly simple solution – you make everything in your game happen in a central server under your control, and make the clients just privileged spectators of the game. In other words, your game client sends inputs (key presses, commands) to the server, the server runs the game, and you send the results back to the clients. This is usually called using an authoritative server, because the one and only authority regarding everything that happens in the world is the server. Of course, your server can be exploited for vulnerabilities, but that’s out of the scope of this series of articles. Using an authoritative server does prevent a wide range of hacks, though. For example, you don’t trust the client with the health of the player; a hacked client can modify its local copy of that value and tell the player it has 10000% health, but the server knows it only has 10% – when the player is attacked it will die, regardless of what a hacked client may think."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/client-server-game-architecture.html"
+category = "SitesList"
+tags = ["architecture", "arrow", "authoritative", "cheating", "client-server", "client-side", "clients", "dealing", "dumb", "fast-paced"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/remakes.html"]
+title = "Emulator-Backed Remakes - Gabriel Gambetta"
+full_description = "“Back in my day, games were better. They were more fun because gameplay was more important than graphics.” No matter what “back then” is for you, you probably identify with this opinion to some degree. For me it was the mid-80s to mid-90s, when I enjoyed countless hours of Sir Fred, Atic Atac, Airborne Ranger, Monkey Island, Twilight: 2000, Stunts, Gunship 2000, Twinsen’s Adventure, Dark Sun, Challenge for Ancient Empires, the X-Wing series, and so many others. Play a remastered version. Some games are so awesome and have such a loyal fan base that an official “new edition” comes out. This is exactly the same game, but with modern art. A great example is the awesome Monkey Island Special Edition. This is the ideal scenario. Unfortunately, very few games are remastered due to cost, the original source being lost, or even lack of interest in the case of relatively obscure games. A related category is games that have been open sourced, such as Id’s first person shooters. There are some projects to produce new art packs for these games, but these are rare and not many games are open sourced to begin with. Play a remake. Some games are so awesome and have a such loyal fan base that someone decides to rewrite the game from scratch, usually without any support from the original authors. When you can find a good remake, you get almost the original game, but with modern art. This is a good alternative, but again, very few games have remakes. This is because remakes are usually fan made, and the task is enormously difficult - it is as difficult as making a game from scratch, with the additional difficulty of trying to replicate the original gameplay as closely as possible. The only way to reach a really high level of accuracy is to actually disassemble the original code and replicate the logic. Use an emulator. There’s always DOSBox, and specific solutions for certain games, such as ScummVM. This works, but let’s be honest, most games haven’t aged well from an art perspective. You do play exactly the original games, though."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/remakes.html"
+category = "SitesList"
+tags = ["advice", "answers", "applicability", "approach", "available", "beyond", "closing", "code", "concept", "didn’t"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/entity-interpolation.html"]
+title = "Entity Interpolation - Gabriel Gambetta"
+full_description = "Client-Server Game Architecture | Client-Side Prediction and Server Reconciliation | Entity Interpolation | Lag Compensation | Live Demo In the first article of the series, we introduced the concept of an authoritative server and its usefulness to prevent client cheats. However, using this technique naively can lead to potentially showstopper issues regarding playability and responsiveness. In the second article, we proposed client-side prediction as a way to overcome these limitations. The net result of these two articles is a set of concepts and techniques that allow a player to control an in-game character in a way that feels exactly like a single-player game, even when connected to an authoritative server through an internet connection with transmission delays. In this article, we’ll explore the consequences of having other player-controled characters connected to the same server. In the previous article, the behavior of the server we described was pretty simple – it read client inputs, updated the game state, and sent it back to the client. When more than one client is connected, though, the main server loop is somewhat different. In this scenario, several clients may be sending inputs simultaneously, and at a fast pace (as fast as the player can issue commands, be it pressing arrow keys, moving the mouse or clicking the screen). Updating the game world every time inputs are received from each client and then broadcasting the game state would consume too much CPU and bandwidth. A better approach is to queue the client inputs as they are received, without any processing. Instead, the game world is updated periodically at low frequency, for example 10 times per second. The delay between every update, 100ms in this case, is called the time step. In every update loop iteration, all the unprocessed client input is applied (possibly in smaller time increments than the time step, to make physics more predictable), and the new game state is broadcast to the clients."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/entity-interpolation.html"
+category = "SitesList"
+tags = ["compensation", "dead", "dealing", "entity", "fast-paced", "interpolation", "introduction", "low-frequency", "multiplayer", "part"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["http://gabrielgambetta.com/tiny-raytracer.html"]
+title = "Tiny Raytracer - Gabriel Gambetta"
+full_description = "I’ve written several raytracers over the years, including the one in Computer Graphics from Scratch, but this time I decided to write the smallest possible one I could write. My current version is 912 bytes of Javascript, and I’m sure it’s still possible to shave off a few more bytes. Note that the size includes a simple scene definition. The original, fully commented source code can be found here. Note that the goal here was to make the source code as small as possible, not clarity; so even the original code before minification is a horrible mess. This doesn’t do justice to the elegance and simplicity of proper raytracer code; half of my book Computer Graphics from Scratch builds a raytracer step by step."
+year_published = 2025
+clearnet = "http://gabrielgambetta.com/tiny-raytracer.html"
+category = "SitesList"
+tags = ["raytracer", "tiny"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/gradient-demo"]
+title = "Shaded triangle demo - Computer Graphics from Scratch - Gabriel Gambetta"
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/gradient-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "part", "rasterization", "raytracing", "scratch", "shaded", "triangle"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/computer-graphics-from-scratch/01-common-concepts.html"]
+title = "Introductory Concepts - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = 'A raytracer and a rasterizer take very different approaches to rendering a 3D scene onto a 2D screen. However, there are a few fundamental concepts that are common to both approaches. In this chapter, we’ll explore the canvas, the abstract surface on which we’ll render our images; the coordinate system we’ll use to refer to pixels on the canvas; how to represent and manipulate colors; and how to describe a 3D scene so our renderers can work with it. Throughout this book, we’ll be drawing things on a canvas: a rectangular array of pixels that can be individually colored. Whether this canvas is shown on a screen or printed on paper is irrelevant to our purposes. Our goal is to represent a 3D scene on a 2D canvas, so we’ll focus on rendering to this abstract, rectangular array of pixels. We’ll build everything in this book out of a single, very simple function, which assigns a color to a pixel on the canvas: This method has three arguments: an x coordinate, a y coordinate, and a color. Let’s focus on the coordinates for now. The canvas has a width and a height, measured in pixels, which we’ll call \(C_w\) and \(C_h\). We need a coordinate system to refer to its pixels. For most computer screens, the origin is at the top left; \(x\) increases toward the right of the screen, and \(y\) increases toward the bottom, as in Figure 1-1. This coordinate system is very natural for a computer because of the way video memory is organized, but it’s not the most natural for humans to work with. Instead, 3D graphics programmers tend to use the coordinate system typically used to draw graphs on paper: the origin is at the center, \(x\) increases toward the right and decreases toward the left, while \(y\) increases toward the top and decreases toward the bottom, as in Figure 1-2. Using this coordinate system, the range of the \(x\) coordinate is \([{-C_w \over 2}, {C_w \over 2})\) and the range of the \(y\) coordinate is \([{-C_h \over 2}, {C_h \over 2})\). Let’s assume that using the PutPixel function with coordinates outside these ranges does nothing.'
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/computer-graphics-from-scratch/01-common-concepts.html"
+category = "SitesList"
+tags = ["additive", "amazon.", "appendixes", "basic", "book", "canvas", "color", "computer", "concepts", "coordinate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]
+
+["https://gabrielgambetta.com/cgfs/lines-demo"]
+title = "Lines demo 2 - Computer Graphics from Scratch - Gabriel Gambetta"
+full_description = "This is an implementation of the general case line drawing algorithm. It can handle lines of any slope, including vertical ones."
+year_published = 2025
+clearnet = "https://gabrielgambetta.com/cgfs/lines-demo"
+category = "SitesList"
+tags = ["appendixes", "computer", "demo", "graphics", "lines", "part", "rasterization", "raytracing", "scratch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advancedfictionwriting.com", "amazon.com", "createspace.com", "developer.valvesoftware.com", "en.wikipedia.org", "fabiensanglard.net", "gabrielgambetta.biz", "gafferongames.com", "gamesdbase.com", "habr.com", "improbable.io", "kdp.amazon.com", "libreoffice.org", "linkedin.com", "mobygames.com", "mysterystudio.com", "nostarch.com", "opengameart.org", "read.amazon.com", "texts.io"]

@@ -1,0 +1,630 @@
+["https://golly.sourceforge.net/Help/credits.html"]
+title = "Golly Help: Credits"
+full_description = "First and foremost, a big thanks to John Conway for creating the Game of Life, and to Martin Gardner for popularizing the topic in his Scientific American column. Tom Rokicki wrote most of the complicated stuff. Golly is essentially the merging of two of Tom's programs (hlife and qlife). The HashLife algorithm is based on an idea by Bill Gosper. The QuickLife algorithm uses some ideas from Alan Hensel. David Eppstein provided the idea on how to emulate B0 rules. The speed of the Larger than Life algorithm is mainly due to some clever ideas from Adam P. Goucher and Dean Hickerson. Andrew Trevorrow wrote the cross-platform GUI code using wxWidgets. Much thanks to Julian Smart, Vadim Zeitlin, Stefan Csomor and all the other wxWidgets developers. Golly's scripting capabilities are thanks to the generosity and efforts of Eugene Langvagen (author of PLife), Guido van Rossum (creator of Python), and Roberto Ierusalimschy and all the other Lua developers. Golly uses the cute_sound library from the cute_headers project to play sounds, so much thanks to Randy Gaul. Tim Hutton wrote the RuleTable algorithm (now merged into the RuleLoader algorithm) and created the excellent Rule Table Repository. Chris Rowett wrote the Super algorithm and added support for many new rule types in the other algorithms. Chris has also made significant contributions to the overlay and the rendering code. Various code and documentation improvements have been contributed by Dave Greene, Jason Summers, Maks Verver, Robert Munafo and Brenton Bostick. Thanks to all the bug hunters for their reports and suggestions, especially Dave Greene, Gabriel Nivasch, Dean Hickerson, Brice Due, David Eppstein, Tony Smith, Alan Hensel, Dennis Langdeau, Bill Gosper, Mark Jeronimus, Eric Goldstein and Arie Paap. Dave Greene and Alan Hensel helped put together the pattern collection. Thanks to everybody who allowed us to distribute their fantastic patterns, especially Nick Gotts, Gabriel Nivasch, David Eppstein, Jason Summers, Stephen Morley, Dean Hickerson, Brice Due, William R. Buckley, David Moore, Mark Owen, Tim Hutton, Renato Nobili, Adam P. Goucher, David Bell and Kenichi Morita."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/credits.html"
+category = "SitesList"
+tags = ["beta", "contributors", "pioneers", "programmers", "testers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/python.html"]
+title = "Golly Help: Python Scripting"
+full_description = "NOTE: From this version, Golly will require a Python 3.x (64-bit) installation. Mac users should note that Apple have said they will not be including any version of Python in future releases of the Mac OS, so you will also need to download a Python 3.x installer from this release. Before you can run a .py script, Python 3.3+ needs to be installed on your system. Users can download a recent Python 3 installer from www.python.org/download. WARNING: Golly requires a 64-bit Python. From version 4.0, on all platforms, the Python library is loaded at runtime (the first time you try to run a script). Golly initially attempts to load a particular version of the Python library: python39.dll on Windows or libpython39.so on Linux. The numbers correspond to Python version 3.9. If that library can't be found then you'll be prompted to enter a different library name matching the version of Python 3.x installed on your system. A successfully loaded library is remembered (in your GollyPrefs file) so you won't get the prompt again unless you remove Python or install a new version. If Python isn't installed then you'll have to hit Cancel and you won't be able to run any .py scripts. To run one of these scripts, tick the Show Files item in the File menu, open the Scripts/Python folder and then simply click on the script's name. You can also select one of the Run items in the File menu. For a frequently used script you might like to assign a keyboard shortcut to run it (see Preferences > Keyboard). When Golly starts up it looks for a script called golly-start.py in the same directory as the Golly application and then in a user-specific data directory (see the getdir command for the likely path on your system). If the script is found then it is automatically executed. There are a number of ways to abort a running script. Hit the escape key, or click on the stop button in the tool bar, or select the Stop item in the Control menu. This section describes all the commands that can be used in a script after importing the golly module. The examples below assume you've done the import by including this line:"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/python.html"
+category = "SitesList"
+tags = ['"1",', '"app"', '"autofit"', '"background.ogg",', '"beep.wav",', '"boldspacing"', '"border"', '"data"', '"download"', '"drawingstate"']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/control.html"]
+title = "Golly Help: Control Menu"
+full_description = '''Starts or stops generating the current pattern. This item can also be used to stop a running script, but it's much easier to hit escape or click the tool bar's stop button. Advances the pattern to the next generation. Note that you can hit control-space to advance only the current selection, or shift-space to advance everything outside the selection (in both cases the generation count will not change). Advances the pattern to the next step. The current step size is displayed in the status bar as a number of the form "b^e" where b is the base step and e is the exponent. The base step can be changed by the Set Base Step dialog (see below), and the exponent can be changed by the Faster/Slower items (see below). Restores the starting pattern and generation count. It also resets the algorithm, rule, scale, location, step size, selection and layer name to the values they had at the starting generation. The starting generation is typically zero, but it can be larger after loading an RLE/macrocell file that stores a non-zero generation count. Opens a dialog to change the generation count. You can enter readable numbers like "1,234,567", or include a leading +/- sign to specify a number relative to the current generation count. Increases the step exponent in the status bar by 1. This increases the speed by displaying fewer generations. The step exponent is reset to 0 when you create a new pattern, load a pattern file, or switch to a different algorithm. Decreases the step exponent in the status bar by 1. This decreases the speed by displaying more generations. The step exponent is reset to 0 when you create a new pattern, load a pattern file, or switch to a different algorithm. If the exponent is 0 when you select this item then a small delay will occur between each generation. Further slowing will double the delay until a maximum value is reached. Use Preferences > Control to set the minimum and maximum delay times. Opens a dialog to change the current base step, but only temporarily. Golly will restore the default base step (set in Preferences > Control) when you create a new pattern, load a pattern file, or switch to a different algorithm. The base step can be any number from 2 to 2,000,000,000. Golly may reduce the exponent when setting a base, if necessary. Be aware that Golly's hashing algorithms are most efficient when the base step is a power of 2.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/control.html"
+category = "SitesList"
+tags = ["algorithm", "auto", "base", "convert", "delete", "faster", "generating", "generation", "generation...", "hash"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/lua.html"]
+title = "Golly Help: Lua Scripting"
+full_description = "Golly uses a statically embedded Lua interpreter (version 5.4.6) to execute .lua scripts. This lets you extend Golly's capabilities in lots of interesting ways. To run one of these scripts, tick the Show Files item in the File menu, open the Scripts/Lua folder and then simply click on the script's name. You can also select one of the Run items in the File menu. For a frequently used script you might like to assign a keyboard shortcut to run it (see Preferences > Keyboard). When Golly starts up it looks for a script called golly-start.lua in the same directory as the Golly application and then in a user-specific data directory (see the getdir command for the likely path on your system). If the script is found then it is automatically executed. There are a number of ways to abort a running script. Hit the escape key, or click on the stop button in the tool bar, or select the Stop item in the Control menu. Commands are grouped by function (filing, editing, control, viewing, layers and miscellaneous) or you can search for individual commands alphabetically: Some scripting commands manipulate patterns in the form of cell arrays. Golly supports two types of cell arrays: one-state and multi-state. A one-state cell array contains an even number of integers specifying the x,y coordinates for a set of cells, all of which are assumed to be in state 1: A multi-state cell array contains an odd number of integers specifying the x,y,state values for a set of cells. If the number of cells is even then a padding integer (zero) is added at the end of the array to ensure the total number of integers is odd: All scripting commands that input cell arrays use the length of the array to determine its type. When writing a script to handle multi-state cell arrays you may need to allow for the padding integer, especially if accessing cells within the array. See tile.lua for example. Note that all scripting commands return {} if the resulting cell array has no cells. They never return {0}, although this is a perfectly valid multi-state cell array and all commands can input such an array. For example, newarray = g.join(array1,{0}) can be used to convert a non-empty one-state array to multi-state."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/lua.html"
+category = "SitesList"
+tags = ['"1",', '"app"', '"autofit"', '"background.ogg",', '"beep.wav",', '"boldspacing"', '"border"', '"data"', '"download"', '"drawingstate"']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/changes.html"]
+title = "Golly Help: Changes"
+full_description = "NOTE: This release coincides with the 50th anniversary of Martin Gardner's Scientific American column that introduced John Conway's Game of Life. NOTE: This is the last version that will support 32-bit systems. It's also the last version that will support Python 2.x. All future versions of Golly will only run on 64-bit systems and will require a Python 3.x (64-bit) installation to run .py scripts."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/changes.html"
+category = "SitesList"
+tags = ["0.91", "0.95", "april", "august", "changes", "december", "initial", "january", "july", "june"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "github.com", "play.google.com", "sourceforge.net", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/tips.html"]
+title = "Golly Help: Hints and Tips"
+full_description = "Golly Golly.exe (Golly.app on Mac, golly on Linux) Help Patterns Rules Scripts My-downloads (contains all your downloaded files; set in Preferences > File) My-patterns (contains all your pattern files) My-rules (contains all your .rule files; set in Preferences > Control) My-scripts (contains all your .lua/.py files) If necessary, use File > Set File Folder and select the Golly folder. Now all your folders (and the supplied folders) are visible in the file panel, so with just a few clicks you can load any pattern, run any script, or switch to any .rule file. You can also right-click (or control-click) on any of those files to open them in your preferred text editor. When upgrading to a new version of Golly, Mac users can simply drag all the distributed files and folders into their Golly folder and the old versions will be replaced. On Windows and Linux you'll need to delete the old Help, Patterns, Rules and Scripts folders before dragging in the new folders to avoid ending up with merged versions."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/tips.html"
+category = "SitesList"
+tags = ["golly-start.lua", "golly-start.py", "hints", "tips", "useful"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/Larger_than_Life.html"]
+title = "Golly Help: Larger than Life"
+full_description = "Larger than Life (LtL) is a family of cellular automata rules that generalize John Conway's Game of Life to large neighborhoods and general birth and survival thresholds. Rr - specifies the neighborhood range (r is from 1 to 500, except for Triangular where r is from 1 to 250 and Gaussian where r is from 1 to 50). Cc - specifies the number of states (c is from 0 to 256). Mm - specifies if the middle cell is included in the neighborhood count (m is 0 or 1). Ssmin..smax - specifies the count limits for a state 1 cell to survive. Bbmin..bmax - specifies the count limits for a dead cell to become a birth. Nn - specifies the extended neighborhood type. Square grid: TypeDiagramTypeDiagramTypeDiagram Moore(NM) von Neumann (NN) Circular (NC) L2/Euclidean(N2) Checkerboard (NB) Aligned Checkerboard (ND) Cross(N+) Saltire (NX) Star (N*) Hash(N#) Use hexgrid.lua or showinviewer.lua to view Hexagonal, Asterisk or Tripod neighborhoods on a hexagonal grid. Weighted allows you to specify a weight for each cell in the neighborhood. The neighbor count will be the sum of each alive cell's neighborhood position weight. Weights from -127 to 127 are supported. Following the neighborhood weights you can optionally specify state weights. In this case the neighbor count will be the sum of each live cell's neighborhood position weight multiplied by its state weight. To specify state weights, add a comma after the NW neighborhood specification and then one hex digit per state. You must specify the same number of state weights as states in the pattern defined by the Cc parameter. Finally, if you want a non-square grid you can add a suffix to the rule string of H for hexagonal grid or L for triangular grid. Triangular grid will cause weightings to be treated as a triangular neighborhood and flip vertically on alternating cells. You can specify a custom neighborhood using N@ and then hexadecimal digits. There are two ways to create the hexadecimal digits: The easiest is to draw the custom neighborhood in Golly as a set of live cells. Surround the cells in a square selection and then run create-custom-ltl.lua to automatically create the rule string."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/Larger_than_Life.html"
+category = "SitesList"
+tags = ["1,3,3,3,4:p300,200", "custom", "evans'", "examples", "gaussian", "grid", "history", "hrot", "kellie", "limits"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net"]
+title = "Golly Game of Life Home Page"
+full_description = "In memory of John Horton Conway, 1937-2020. Golly is an open source, cross-platform application for exploring Conway's Game of Life and many other types of cellular automata. The primary authors are Andrew Trevorrow and Tom Rokicki, with code contributions by Chris Rowett, Tim Hutton, Dave Greene, Jason Summers, Maks Verver, Robert Munafo, Brenton Bostick and Dongook Lee. NEWS: January 2025: Golly 1.5 for Android is available from the Google Play Store. September 2024: Golly 1.5 for the iPad is available from the App Store. July 2024: Golly 1.4 for Android is available from the Google Play Store. May 2024: Golly 4.3 for Windows/Mac/Linux has been released (see the changes). May 2024: Uploaded the web version of Golly 4.3. Golly's key features: Supports bounded and unbounded universes, with cells of up to 256 states. Supports multiple algorithms, including Bill Gosper's super fast hashlife algorithm. Many different types of CA are included: John von Neumann's 29-state CA, Wolfram's 1D rules, WireWorld, Generations, Paterson's Worms, Larger than Life, etc. Supports Busy Boxes and other 3D CA rules. The RuleLoader algorithm lets you plug in new rules. Responsive even while generating or garbage collecting. Reads RLE, macrocell, Life 1.05/1.06, dblife, and MCell files. Can also read common graphic formats: BMP, PNG, GIF, TIFF. Can extract patterns, rules and scripts from zip files. Can download patterns, rules and scripts from online archives. Includes a state-of-the-art pattern collection. Can paste in patterns from the clipboard. Unlimited undo/redo. Configurable keyboard shortcuts. Auto fit option keeps patterns sized to the window. Full screen option (no menu/status/tool/scroll bars). Supports multiple layers, including cloned layers. HTML-based help with an integrated Life Lexicon. Can play sounds (wav/ogg files). Scriptable via Lua (statically embedded 5.4.4) or Python (3.3+). Runs on Windows (7+), macOS (10.11+) and Linux (with GTK+ 2.x). Download a source or binary distribution. Monitor our progress at SourceForge. View the online help. Click to enlarge these screen shots: overlay-demo.lua [Windows] 3D.lua [Mac] hexgrid.lua [Linux] Langton's Loops [Windows] Larger than Life [Mac] Prime calculator [Linux] Cloned layers [Windows] Stacked layers [Mac] Meta galaxy [Linux] Prefs dialog [Windows] Prefs dialog [Mac] Prefs dialog [Linux]"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net"
+category = "SitesList"
+tags = ["news:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "play.google.com", "sourceforge.net", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/JvN.html"]
+title = "Golly Help: JvN"
+full_description = "John von Neumann created the very first cellular automata in the 1940's, together with fellow mathematician Stanislaw Ulam. JvN29 The original 29-state CA as created by von Neumann. To see how his rules work, load the simpler examples first: counter-demo.rle and cell-coders-demo.rle and read their pattern info (hit the 'i' button). For a more complex example, see read-arm-demo.rle which shows one component of von Neumann's original design, the tape reader. For a complete self-replicating machine within von Neumann's CA, open sphinx.mc.gz. Nobili32 An extension of JvN29 created by Renato Nobili in 1994. This rule adds three new states to allow signal crossing, allowing self-replicating machines to be greatly reduced in size. The example pattern construction-arm-demo.rle shows some of the crossing cells in action under this rule. The pattern NP-replicator.rle.gz shows the 1994 design that was the first implementation of von Neumann's vision of a self-reproducing universal constructor in a CA. Hutton32 Created by Tim Hutton in 2008, this rule uses the same states as Nobili32 but has a slightly modified rule table. Examples golly-constructor.rle and Hutton-replicator.rle show what it can do. http://en.wikipedia.org/wiki/Von_Neumann_universal_constructor http://en.wikipedia.org/wiki/Von_Neumann_cellular_automata http://www.pd.infn.it/~rnobili/wjvn/index.htm http://www.pd.infn.it/~rnobili/au_cell/ http://www.sq3.org.uk/Evolution/JvN/"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/JvN.html"
+category = "SitesList"
+tags = ["hutton32", "jvn29", "nobili32", "references:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "github.com", "mirekw.com", "pd.infn.it", "play.google.com", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/credits.html"]
+title = "Golly Help: Credits"
+full_description = "First and foremost, a big thanks to John Conway for creating the Game of Life, and to Martin Gardner for popularizing the topic in his Scientific American column. Tom Rokicki wrote most of the complicated stuff. Golly is essentially the merging of two of Tom's programs (hlife and qlife). The HashLife algorithm is based on an idea by Bill Gosper. The QuickLife algorithm uses some ideas from Alan Hensel. David Eppstein provided the idea on how to emulate B0 rules. The speed of the Larger than Life algorithm is mainly due to some clever ideas from Adam P. Goucher and Dean Hickerson. Andrew Trevorrow wrote the cross-platform GUI code using wxWidgets. Much thanks to Julian Smart, Vadim Zeitlin, Stefan Csomor and all the other wxWidgets developers. Golly's scripting capabilities are thanks to the generosity and efforts of Eugene Langvagen (author of PLife), Guido van Rossum (creator of Python), and Roberto Ierusalimschy and all the other Lua developers. Golly uses the cute_sound library from the cute_headers project to play sounds, so much thanks to Randy Gaul. Tim Hutton wrote the RuleTable algorithm (now merged into the RuleLoader algorithm) and created the excellent Rule Table Repository. Chris Rowett wrote the Super algorithm and added support for many new rule types in the other algorithms. Chris has also made significant contributions to the overlay and the rendering code. Various code and documentation improvements have been contributed by Dave Greene, Jason Summers, Maks Verver, Robert Munafo and Brenton Bostick. Thanks to all the bug hunters for their reports and suggestions, especially Dave Greene, Gabriel Nivasch, Dean Hickerson, Brice Due, David Eppstein, Tony Smith, Alan Hensel, Dennis Langdeau, Bill Gosper, Mark Jeronimus, Eric Goldstein and Arie Paap. Dave Greene and Alan Hensel helped put together the pattern collection. Thanks to everybody who allowed us to distribute their fantastic patterns, especially Nick Gotts, Gabriel Nivasch, David Eppstein, Jason Summers, Stephen Morley, Dean Hickerson, Brice Due, William R. Buckley, David Moore, Mark Owen, Tim Hutton, Renato Nobili, Adam P. Goucher, David Bell and Kenichi Morita."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/credits.html"
+category = "SitesList"
+tags = ["beta", "contributors", "pioneers", "programmers", "testers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/view.html"]
+title = "Golly Help: View Menu"
+full_description = '''Switches to full screen mode. To exit from this mode just hit the menu item's keyboard shortcut, or the escape key (if not generating a pattern), or any unassigned key. Restores the true origin. The origin cell can be changed by hitting "0" while the cursor is over the view — the cell under the cursor will become the new origin and its location will be displayed as 0,0. This can be handy for measuring distances or for saving a location and returning to it quickly by hitting "m". This submenu lets you set the scale from 1:1 to 1:32. (A quicker is to use keyboard shortcuts. The initial shortcuts are: "1" for 1:1, "2" for 1:2, "4" for 1:4, "8" for 1:8, "6" for 1:16 and "3" for 1:32.) Shows or hides the edit bar above the viewport window. The edit bar contains buttons for undo and redo, buttons for changing the cursor mode, a button for showing/hiding all states (see below), boxes showing the current drawing state's color and icon, and a scroll bar for changing the drawing state. If ticked then the edit bar is made larger and the colors and icons for all cell states in the current universe are displayed. A box is drawn around the current drawing state; to change it just click on a different state. If ticked then the status bar is made larger and exact numbers are displayed instead of using scientific notation. Shows or hides the grid lines. Use Preferences > View to turn off the bold grid lines or change their spacing. You can also set the minimum scale at which grid lines should be displayed (1:4, 1:8, 1:16 or 1:32). If ticked then icons will be displayed at scales 1:8, 1:16 or 1:32. Icons are small bitmaps that can have any shape but their color is automatically synchronized with the cell's state color. Each algorithm can have a different set of icons. You can change these icons by loading suitably formatted files via the "Load Icons" button in Preferences > Color. It's also possible to have rule-specific icons. Whenever Golly switches to a new rule it looks inside the Rules folder for a matching rule.icons file and, if it exists, loads the bitmaps stored in the file. The format of a .icons file is identical to that used above. See Help > File Formats for a description of the format.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/view.html"
+category = "SitesList"
+tags = ["bars", "cell", "colors", "edit", "exact", "full", "grid", "icons", "info", "invert"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/keyboard.html"]
+title = "Golly Help: Keyboard Shortcuts"
+full_description = "Use Preferences > Keyboard to set your preferred keyboard shortcuts. The following shortcuts are the initial default settings:"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/keyboard.html"
+category = "SitesList"
+tags = ["keyboard", "shortcuts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/edit.html"]
+title = "Golly Help: Edit Menu"
+full_description = "Lets you undo one or more recent changes, including all editing changes and generating changes, as well as changes to the selection, rule, hashing state and layer name. The number of changes you can undo is limited only by available memory and disk space. Multiple changes made by a script are treated like a single change and will be undone all at once. Each layer maintains its own undo/redo history (but cloned layers share the same undo/redo history). The current layer's undo/redo history is automatically cleared after creating a new pattern or opening a pattern file. Lets you redo one or more recently undone changes. Note that the redo history is automatically cleared after you make a new change; i.e., if you do something like rotate the current selection, undo the rotation, then edit some cells or change the selection, you can no longer redo the rotation. If ticked then the Undo and Redo items are disabled, and any existing undo/redo history for the current layer is cleared. When editing or generating a very large pattern you may want to temporarily disable undo/redo to speed up some operations. But be careful using this feature — if you switch to another layer when this item is ticked then that layer's undo/redo history is also cleared. Copies the pattern in the current selection to the clipboard (in RLE format) and then kills all cells in the selection. Kills all cells outside the current selection. This is often the quickest way to delete escaping gliders. Pastes a pattern stored in the clipboard into the existing pattern. After selecting this item you'll be asked to click where you want the paste to occur. Before clicking you can use keyboard shortcuts to scroll, change scale, etc. The keyboard shortcuts normally used to flip/rotate the selection will instead modify the paste pattern. You can also type shift-M to change the paste mode or shift-L to change the paste location (see below). To cancel the paste, just click anywhere outside the view area or hit the escape key."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/edit.html"
+category = "SitesList"
+tags = ["anticlockwise", "clear", "clockwise", "copy", "cursor", "disable", "fill", "flip", "left-right", "location"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/file.html"]
+title = "Golly Help: File Menu"
+full_description = 'Creates a new, empty universe and switches to a scale suitable for editing cells. Use Preferences > File to set the scale (initially 1:32), the cursor mode, and whether any selection should be removed. Opens the standard file browser so you can select a pattern file. Golly can read all the common pattern formats: RLE, PC Life 1.05/1.06, dblife, some MCell files, and text patterns like "ooo...ooo". It can also read patterns in a "macrocell" format which allows huge, highly repetitive patterns to be stored in a very compact way. Such files usually have a .mc extension. If a .mc file contains timeline data then Golly will load all the frames and automatically show the timeline bar. All the above formats are text based and can have DOS/Mac/Unix line endings, or they can be compressed in a .gz file. Golly can also read graphic files in a number of popular formats: BMP, GIF, PNG and TIFF. The file name must end with an appropriate extension: .bmp, .gif, .png, .tif or .tiff. All the pure white pixels (RGB = 255,255,255) are treated as cells of state 0. All other pixels are treated as cells of state 1. This can be handy if you prefer to use a sophisticated drawing program to create your patterns. Opens a pattern stored in the clipboard. The References section has links to a number of good sources for clipboard patterns. If the clipboard text starts with "@RULE rulename" then Golly will save the text as rulename.rule in your rules folder (set in Preferences > Control) and switch to that rule. This submenu lets you open a recently loaded pattern file. The most recent file is always at the top. The maximum number of pattern files remembered is determined by a setting (initially 20) which you can change in Preferences > File. Opens the standard file saving dialog so you can save the current pattern in RLE format (but only if all live cells are within coordinates of +/- 1 billion), or in macrocell format if the current algorithm supports hashing. Note that if a timeline exists when you save a .mc file then all the frames will be stored in the file.'
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/file.html"
+category = "SitesList"
+tags = ["clipboard", "extended", "file", "files", "folder...", "notes", "open", "pattern", "pattern...", "preferences..."]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/Larger_than_Life.html"]
+title = "Golly Help: Larger than Life"
+full_description = "Larger than Life (LtL) is a family of cellular automata rules that generalize John Conway's Game of Life to large neighborhoods and general birth and survival thresholds. Rr - specifies the neighborhood range (r is from 1 to 500, except for Triangular where r is from 1 to 250 and Gaussian where r is from 1 to 50). Cc - specifies the number of states (c is from 0 to 256). Mm - specifies if the middle cell is included in the neighborhood count (m is 0 or 1). Ssmin..smax - specifies the count limits for a state 1 cell to survive. Bbmin..bmax - specifies the count limits for a dead cell to become a birth. Nn - specifies the extended neighborhood type. Square grid: TypeDiagramTypeDiagramTypeDiagram Moore(NM) von Neumann (NN) Circular (NC) L2/Euclidean(N2) Checkerboard (NB) Aligned Checkerboard (ND) Cross(N+) Saltire (NX) Star (N*) Hash(N#) Use hexgrid.lua or showinviewer.lua to view Hexagonal, Asterisk or Tripod neighborhoods on a hexagonal grid. Weighted allows you to specify a weight for each cell in the neighborhood. The neighbor count will be the sum of each alive cell's neighborhood position weight. Weights from -127 to 127 are supported. Following the neighborhood weights you can optionally specify state weights. In this case the neighbor count will be the sum of each live cell's neighborhood position weight multiplied by its state weight. To specify state weights, add a comma after the NW neighborhood specification and then one hex digit per state. You must specify the same number of state weights as states in the pattern defined by the Cc parameter. Finally, if you want a non-square grid you can add a suffix to the rule string of H for hexagonal grid or L for triangular grid. Triangular grid will cause weightings to be treated as a triangular neighborhood and flip vertically on alternating cells. You can specify a custom neighborhood using N@ and then hexadecimal digits. There are two ways to create the hexadecimal digits: The easiest is to draw the custom neighborhood in Golly as a set of live cells. Surround the cells in a square selection and then run create-custom-ltl.lua to automatically create the rule string."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/Larger_than_Life.html"
+category = "SitesList"
+tags = ["1,3,3,3,4:p300,200", "custom", "evans'", "examples", "gaussian", "grid", "history", "hrot", "kellie", "limits"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/Generations.html"]
+title = "Golly Help: Generations"
+full_description = '''The Generations algorithm supports rules similar to Life but with an extra history component that allows cells to have up to 256 states. The rule notation is "0..8/1..8/n" where the 1st set of digits specify the live neighbor counts necessary for a cell to survive to the next generation. The 2nd set of digits specify the live neighbor counts necessary for a cell to be born in the next generation. The final number n specifies the maximum number of cell states (from 2 to 256). 2367/3457/5 [Banners] - an exploding rule by Mirek Wojtowicz. 234/34678/24 [Bloomerang] - an expanding rule by John Elliott. /2/3 [Brian's Brain] - a chaotic rule by Brian Silverman. 124567/378/4 [Caterpillars] - a chaotic rule by Mirek Wojtowicz. 23/2/8 [Cooties] - an exploding rule by Rudy Rucker. 2/13/21 [Fireworks] - an exploding rule by John Elliott. 12/34/3 [Frogs] - a chaotic rule by Scott Robert Ladd. 12345/45678/8 [Lava] - an expanding rule by Mirek Wojtowicz. 012345/458/3 [Lines] - a stable rule by Anders Starmark. 345/2/4 [Star Wars] - an exploding rule by Mirek Wojtowicz. 3456/2/6 [Sticks] - an exploding rule by Rudy Rucker. 345/26/5 [Transers] - an exploding rule by John Elliott. 1456/2356/16 [Xtasy] - an exploding rule by John Elliott. Other rules in this family, along with more detailed descriptions, can be found at Mirek Wojtowicz's MCell website. See also the Patterns/Generations folder which contains a number of interesting patterns extracted from the MCell pattern collection. The above rules use the Moore neighborhood, where each cell has 8 neighbors. In the von Neumann neighborhood each cell has only the 4 orthogonal neighbors. To specify this neighborhood just append "V" to the usual notation and use neighbor counts ranging from 0 to 4. Note that when viewing patterns at scales 1:8 or 1:16 or 1:32, Golly displays diamond-shaped icons for rules using the von Neumann neighborhood and circular dots for rules using the Moore neighborhood. Golly can emulate a hexagonal neighborhood on a square grid by ignoring the NE and SW corners of the Moore neighborhood so that every cell has 6 neighbors:'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/Generations.html"
+category = "SitesList"
+tags = ["/2/3", "012345/458/3", "12/34/3", "12345/45678/8", "124567/378/4", "1456/2356/16", "2/13/21", "23/2/8", "234/34678/24", "2367/3457/5"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "github.com", "mirekw.com", "play.google.com", "sourceforge.net", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/changes.html"]
+title = "Golly Help: Changes"
+full_description = "NOTE: This release coincides with the 50th anniversary of Martin Gardner's Scientific American column that introduced John Conway's Game of Life. NOTE: This is the last version that will support 32-bit systems. It's also the last version that will support Python 2.x. All future versions of Golly will only run on 64-bit systems and will require a Python 3.x (64-bit) installation to run .py scripts."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/changes.html"
+category = "SitesList"
+tags = ["0.91", "0.95", "april", "august", "changes", "december", "initial", "january", "july", "june"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/problems.html"]
+title = "Golly Help: Known Problems"
+full_description = "This section lists all known bugs and limitations. If you come across any problems not mentioned below then please report them to Andrew Trevorrow (andrew@trevorrow.com) or Tom Rokicki (rokicki@gmail.com)."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/problems.html"
+category = "SitesList"
+tags = ["linux", "platforms", "problems", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/RuleLoader.html"]
+title = "Golly Help: RuleLoader"
+full_description = '''The RuleLoader algorithm allows rules to be specified in external files. Given the rule string "Foo", RuleLoader will search for a file called Foo.rule. It looks for the file in your rules folder first, then in the supplied Rules folder. The format of a .rule file is described here. A number of examples can be found in the Rules folder: B3/S23 Conway's Life. This is the default rule for the RuleLoader algorithm and is built in (there is no corresponding .rule file). You can also specify Life (Life.rule is in the Rules folder). Banks-I, Banks-II, Banks-III, Banks-IV In 1971, Edwin Roger Banks (a student of Ed Fredkin) made simpler versions of Codd's 1968 CA, using only two states in some cases. These four rules are found in his PhD thesis. To see the rules in action, open Banks-I-demo.rle and the other examples in Patterns/Self-Rep/Banks/. BBM-Margolus-emulated Ed Fredkin's Billiard Ball Model, using the Margolus neighborhood to implement a simple reversible physics of bouncing balls. In this implementation we are emulating the system using a Moore-neighborhood CA with extra states. Open BBM.rle to see the rule in action. Byl-Loop A six state 5-neighborhood CA that supports small self-replicating loops. To see the rule in action, open Byl-Loop.rle. Chou-Reggia-1 and Chou-Reggia-2 Two 5-neighborhood CA that supports tiny self-replicating loops. To see the rules in action, open Chou-Reggia-Loop-1.rle and Chou-Reggia-Loop-2.rle. Codd In 1968, Edgar F. Codd (who would later invent the relational database) made a simpler version of von Neumann's 29-state CA, using just 8 states. To see the rule in action, open repeater-emitter-demo.rle and the other examples in Patterns/Self-Rep/Codd/. Codd2 A very minor extension of Codd's transition table, to allow for some sheathing cases that were found with large patterns. See sheathing-problems.rle for a demonstration of the problem cases. CrittersMargolus_emulated The Critters rule is reversible and has Life-like gliders. See CrittersCircle.rle.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/RuleLoader.html"
+category = "SitesList"
+tags = ["b3/s23", "banks-i,", "banks-ii,", "banks-iii,", "banks-iv", "bbm-margolus-emulated", "briansbrain", "byl-loop", "caterpillars", "chou-reggia-1"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/Super.html"]
+title = "Golly Help: Super"
+full_description = '''Super supports the same set of rules as QuickLife (excluding Wolfram) and adds history and label states. The Super algorithm currently supports three rulename suffixes, History, Super and Investigator. A rule specific to Conway's Life, "LifeHistory", was added along with Golly 2.0, as soon as multistate rules were supported. It largely duplicated the functionality of a "HistoricalLife" rule included in a previous CA editor, MCell 4.20. A key idea also borrowed from MCell is that odd-numbered states are ON states and even-numbered states are OFF states. Any odd-numbered state in the vicinity of a cell counts as a neighbor, but any even-numbered state is just considered to be background. The Super algo extends the behavior of the seven LifeHistory states to any non-Wolfram rule supported by QuickLife. To enable it, add the suffix "History" to the standard rule string. The primary idea was to make the evolutionary history of a pattern visible by including additional OFF states to the rule. A state-0 cell would change to state 1 as usual when it had three neighbors, but when a state-1 cell died, it would change to a blue state-2 cell. The blue region is commonly known as the "history" or the "reaction envelope" of a pattern. It can be very useful for editing purposes. For example, in LifeHistory, one phase of an oscillator can be pasted directly on top of another phase, and cells all that should be OFF in the new phase are all turned off (replaced by blue state-2 cells). A similar phase change in a two-state rule would generally require blanking out the oscillator's rotor cells before pasting; otherwise ON cells from both phases would remain ON, usually breaking the oscillator. Another use of blue state-2 cells is to mark the edge of the "safe region" for oscillators, Herschel circuitry, etc., making it much easier to adjust subpatterns so that they are as close as possible to each other without conflicting. In logic circuitry, input and output glider or spaceship lanes can be easily seen and aligned between components.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/Super.html"
+category = "SitesList"
+tags = ["backward", "boundary", "changing", "color", "colors", "compatibility", "conversion", "default", "description", "history"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/Generations.html"]
+title = "Golly Help: Generations"
+full_description = '''The Generations algorithm supports rules similar to Life but with an extra history component that allows cells to have up to 256 states. The rule notation is "0..8/1..8/n" where the 1st set of digits specify the live neighbor counts necessary for a cell to survive to the next generation. The 2nd set of digits specify the live neighbor counts necessary for a cell to be born in the next generation. The final number n specifies the maximum number of cell states (from 2 to 256). 2367/3457/5 [Banners] - an exploding rule by Mirek Wojtowicz. 234/34678/24 [Bloomerang] - an expanding rule by John Elliott. /2/3 [Brian's Brain] - a chaotic rule by Brian Silverman. 124567/378/4 [Caterpillars] - a chaotic rule by Mirek Wojtowicz. 23/2/8 [Cooties] - an exploding rule by Rudy Rucker. 2/13/21 [Fireworks] - an exploding rule by John Elliott. 12/34/3 [Frogs] - a chaotic rule by Scott Robert Ladd. 12345/45678/8 [Lava] - an expanding rule by Mirek Wojtowicz. 012345/458/3 [Lines] - a stable rule by Anders Starmark. 345/2/4 [Star Wars] - an exploding rule by Mirek Wojtowicz. 3456/2/6 [Sticks] - an exploding rule by Rudy Rucker. 345/26/5 [Transers] - an exploding rule by John Elliott. 1456/2356/16 [Xtasy] - an exploding rule by John Elliott. Other rules in this family, along with more detailed descriptions, can be found at Mirek Wojtowicz's MCell website. See also the Patterns/Generations folder which contains a number of interesting patterns extracted from the MCell pattern collection. The above rules use the Moore neighborhood, where each cell has 8 neighbors. In the von Neumann neighborhood each cell has only the 4 orthogonal neighbors. To specify this neighborhood just append "V" to the usual notation and use neighbor counts ranging from 0 to 4. Note that when viewing patterns at scales 1:8 or 1:16 or 1:32, Golly displays diamond-shaped icons for rules using the von Neumann neighborhood and circular dots for rules using the Moore neighborhood. Golly can emulate a hexagonal neighborhood on a square grid by ignoring the NE and SW corners of the Moore neighborhood so that every cell has 6 neighbors:'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/Generations.html"
+category = "SitesList"
+tags = ["/2/3", "012345/458/3", "12/34/3", "12345/45678/8", "124567/378/4", "1456/2356/16", "2/13/21", "23/2/8", "234/34678/24", "2367/3457/5"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/HashLife.html"]
+title = "Golly Help: HashLife"
+full_description = "HashLife uses Bill Gosper's hashlife algorithm to achieve remarkable speeds when generating patterns that have a lot of regularity in time and/or space. HashLife supports the same set of rules as QuickLife, but with one exception: if a rule contains B0 it must also contain S8 (or S6 if the rule ends with H, or S4 if it ends with V). Note that HashLife performs very poorly on highly chaotic patterns, so in those cases you are better off switching to QuickLife."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/HashLife.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/formats.html"]
+title = "Golly Help: File Formats"
+full_description = '''Golly prefers to store patterns and pattern fragments in a simple concise textual format we call "Extended RLE" (it's a modified version of the RLE format created by Dave Buckingham). The data is run-length encoded which works well for sparse patterns while still being easy to interpret (either by a machine or by a person). The format permits retention of the most critical data: Golly uses this format for internal cuts and pastes, which makes it very convenient to move cell configurations to and from text files. For instance, the r-pentomino is represented as I just drew this pattern in Golly, selected the whole thing, copied it to the clipboard, and then in my editor I did a paste to get the textual version. Similarly, data in this format can be cut from a browser or email window and pasted directly into Golly. RLE data is indicated by a file whose first non-comment line starts with "x". A comment line is either a blank line or a line beginning with "#". The line starting with "x" gives the dimensions of the pattern and usually the rule, and has the following format: where width and height are the dimensions of the pattern and rule is the rule to be applied. Whitespace can be inserted at any point in this line except at the beginning or where it would split a token. The dimension data is ignored when Golly loads a pattern, so it need not be accurate, but it is not ignored when Golly pastes a pattern; it is used as the boundary of what to paste, so it may be larger or smaller than the smallest rectangle enclosing all live cells. Any line that is not blank, or does not start with a "#" or "x " or "x=" is treated as run-length encoded pattern data. The data is ordered a row at a time from top to bottom, and each row is ordered left to right. A "$" represents the end of each row and an optional "!" represents the end of the pattern. For two-state rules, a "b" represents an off cell, and a "o" represents an on cell. For rules with more than two states, a "." represents a zero state; states 1..24 are represented by "A".."X", states 25..48 by "pA".."pX", states 49..72 by "qA".."qX", and on up to states 241..255 represented by "yA".."yO". The pattern reader is flexible and will permit "b" and "." interchangeably and "o" and "A" interchangeably.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/formats.html"
+category = "SitesList"
+tags = [".colors,", ".rule", ".tree,", "@colors", "@icons", "@rule", "@table", "@tree", "and/or", "built-in"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/layer.html"]
+title = "Golly Help: Layer Menu"
+full_description = '''Golly supports up to ten layers. Each layer is a separate universe (unless cloned; see the Clone Layer item below) with its own algorithm, rule, viewport, cursor mode, selection, step size, origin offset, color scheme and name. The current layer's name is displayed in the main window's title bar. Most edit/control/view operations only apply to the current layer. Note that most of Golly's options apply globally to all layers. This is true for all of the options set in the Preferences dialog. It's also true for many of the options set via menu items, like Save Extended RLE, Paste Mode, Paste Location, Show Grid Lines, etc., but not for any of the Control menu options (Auto Fit, Hyperspeed, and Show Hash Info). The items at the bottom of the Layer menu show the current names of all the existing layers. The names of cloned layers are prefixed by one or more "=" signs; all layers with the same number of "=" signs share the same universe. The current layer is indicated by a tick. To switch to another layer just select the corresponding item. If a script is running then you can only switch to another layer if the script has called g.setoption("switchlayers",1). A layer containing a modified pattern is indicated by a "*" at the start of the layer's name. To avoid losing your changes, a "save changes" dialog will appear before creating a new pattern, opening a pattern file, deleting the layer, or quitting Golly. If you'd rather not see this dialog then untick the appropriate check boxes in Preferences > Layer. Common layer functions are also available via buttons in the layer bar located underneath the status bar. Use the Show Layer Bar item in the View menu to show/hide the layer bar, or just hit the "\" key. Opens the standard file saving dialog so you can save the current overlay image in a PNG file. Note that it's possible to save the overlay while a script is executing. If ticked then the current overlay will be displayed (if it exists and if it contains any non-transparent pixels). You can show/hide the overlay while a script is executing.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/layer.html"
+category = "SitesList"
+tags = ["clone", "colors...", "cursors", "delete", "duplicate", "envelope.py", "layer", "layer...", "layers", "move"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/overlay.html"]
+title = "Golly Help: Overlay"
+full_description = '''The overlay is a rectangular region of pixels that can be displayed above the current layer. Lua scripts have total control of what the overlay looks like and how the user interacts with it. The Scripts/Lua folder supplied with Golly has a number of scripts that illustrate how the overlay can be used: To study how these scripts work, control-click or right-click on one of the above links to open the script in your preferred text editor, then run the script by clicking on the same link. The first, overlay, takes a single string parameter that contains an overlay command followed by zero or more arguments separated by spaces. Some overlay commands can also return a single string as their result. The second, ovtable, takes a single table parameter rather than a string and only supports a subset of the overlay commands. It is typically faster to use ovtable than overlay. The supported ovtable commands that return a result are get, which returns individual values, and rgba, which returns a table. In all other ways ovtable is identical to the overlay command. All of the drawing commands use the current render target. This is initially the overlay but can be changed to a clip with the target command. Alpha blending is a way of drawing translucent pixels on top of existing pixels to get nicer looking results. When an overlay is created, alpha blending is initially turned off. To turn it on a script needs to call "blend 1", for blending with any target, or "blend 2", for faster blending when you know the target pixels are opaque. Consider this simple script which draws a translucent blue square on top of a translucent red square (both on top of an opaque white background): The left image shows the resulting overlay. The right image shows the overlay produced by the same script but with the "blend 1" line removed (the grid lines are from the layer underneath the overlay). Note that drawing with alpha blending on is significantly slower than drawing with it off, so it's a good idea to only turn it on when necessary. The overlay commands that can do alpha blending are: ellipse, fill, flood, line, lines, load, paste, scale, set.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/overlay.html"
+category = "SitesList"
+tags = ["!255", '"---",', '"..viewwd.."', '"..x.."', '"..y.."', '"copy', '"exit",', '"hello",', '"new', '"open']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/help.html"]
+title = "Golly Help: Help Menu"
+full_description = "The Help menu items can be used to display information on a variety of topics. Each item corresponds to a HTML file in the Help folder. The information is displayed in a separate help window which behaves like a simplified browser. The size and location of this window is remembered when it closes. Note that for some links (get, open, unzip) you can tell Golly to open the specified file in your text editor by control-clicking or right-clicking on the link."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/help.html"
+category = "SitesList"
+tags = ["edit:", "get:", "keyboard", "lexpatt:", "links", "open", "open:", "prefs:", "rule:", "shortcuts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/control.html"]
+title = "Golly Help: Control Menu"
+full_description = '''Starts or stops generating the current pattern. This item can also be used to stop a running script, but it's much easier to hit escape or click the tool bar's stop button. Advances the pattern to the next generation. Note that you can hit control-space to advance only the current selection, or shift-space to advance everything outside the selection (in both cases the generation count will not change). Advances the pattern to the next step. The current step size is displayed in the status bar as a number of the form "b^e" where b is the base step and e is the exponent. The base step can be changed by the Set Base Step dialog (see below), and the exponent can be changed by the Faster/Slower items (see below). Restores the starting pattern and generation count. It also resets the algorithm, rule, scale, location, step size, selection and layer name to the values they had at the starting generation. The starting generation is typically zero, but it can be larger after loading an RLE/macrocell file that stores a non-zero generation count. Opens a dialog to change the generation count. You can enter readable numbers like "1,234,567", or include a leading +/- sign to specify a number relative to the current generation count. Increases the step exponent in the status bar by 1. This increases the speed by displaying fewer generations. The step exponent is reset to 0 when you create a new pattern, load a pattern file, or switch to a different algorithm. Decreases the step exponent in the status bar by 1. This decreases the speed by displaying more generations. The step exponent is reset to 0 when you create a new pattern, load a pattern file, or switch to a different algorithm. If the exponent is 0 when you select this item then a small delay will occur between each generation. Further slowing will double the delay until a maximum value is reached. Use Preferences > Control to set the minimum and maximum delay times. Opens a dialog to change the current base step, but only temporarily. Golly will restore the default base step (set in Preferences > Control) when you create a new pattern, load a pattern file, or switch to a different algorithm. The base step can be any number from 2 to 2,000,000,000. Golly may reduce the exponent when setting a base, if necessary. Be aware that Golly's hashing algorithms are most efficient when the base step is a power of 2.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/control.html"
+category = "SitesList"
+tags = ["algorithm", "auto", "base", "convert", "delete", "faster", "generating", "generation", "generation...", "hash"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/lua.html"]
+title = "Golly Help: Lua Scripting"
+full_description = "Golly uses a statically embedded Lua interpreter (version 5.4.6) to execute .lua scripts. This lets you extend Golly's capabilities in lots of interesting ways. To run one of these scripts, tick the Show Files item in the File menu, open the Scripts/Lua folder and then simply click on the script's name. You can also select one of the Run items in the File menu. For a frequently used script you might like to assign a keyboard shortcut to run it (see Preferences > Keyboard). When Golly starts up it looks for a script called golly-start.lua in the same directory as the Golly application and then in a user-specific data directory (see the getdir command for the likely path on your system). If the script is found then it is automatically executed. There are a number of ways to abort a running script. Hit the escape key, or click on the stop button in the tool bar, or select the Stop item in the Control menu. Commands are grouped by function (filing, editing, control, viewing, layers and miscellaneous) or you can search for individual commands alphabetically: Some scripting commands manipulate patterns in the form of cell arrays. Golly supports two types of cell arrays: one-state and multi-state. A one-state cell array contains an even number of integers specifying the x,y coordinates for a set of cells, all of which are assumed to be in state 1: A multi-state cell array contains an odd number of integers specifying the x,y,state values for a set of cells. If the number of cells is even then a padding integer (zero) is added at the end of the array to ensure the total number of integers is odd: All scripting commands that input cell arrays use the length of the array to determine its type. When writing a script to handle multi-state cell arrays you may need to allow for the padding integer, especially if accessing cells within the array. See tile.lua for example. Note that all scripting commands return {} if the resulting cell array has no cells. They never return {0}, although this is a perfectly valid multi-state cell array and all commands can input such an array. For example, newarray = g.join(array1,{0}) can be used to convert a non-empty one-state array to multi-state."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/lua.html"
+category = "SitesList"
+tags = ['"1",', '"app"', '"autofit"', '"background.ogg",', '"beep.wav",', '"boldspacing"', '"border"', '"data"', '"download"', '"drawingstate"']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/archives.html"]
+title = "Golly Help: Online Archives"
+full_description = "Note that Golly stores downloaded files in a directory that can be changed via a button at the bottom of Preferences > File. You might like to change the download location to a directory visible in the Show Files panel (to the left of the viewport), then you can easily re-open a pattern or zip file without having to download it again. Downloaded patterns and zip files are remembered in the Open Recent submenu."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/archives.html"
+category = "SitesList"
+tags = ["alan", "archive", "automata", "cellular", "collections", "gliders", "hensel's", "jason", "large", "life-like"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/RuleLoader.html"]
+title = "Golly Help: RuleLoader"
+full_description = '''The RuleLoader algorithm allows rules to be specified in external files. Given the rule string "Foo", RuleLoader will search for a file called Foo.rule. It looks for the file in your rules folder first, then in the supplied Rules folder. The format of a .rule file is described here. A number of examples can be found in the Rules folder: B3/S23 Conway's Life. This is the default rule for the RuleLoader algorithm and is built in (there is no corresponding .rule file). You can also specify Life (Life.rule is in the Rules folder). Banks-I, Banks-II, Banks-III, Banks-IV In 1971, Edwin Roger Banks (a student of Ed Fredkin) made simpler versions of Codd's 1968 CA, using only two states in some cases. These four rules are found in his PhD thesis. To see the rules in action, open Banks-I-demo.rle and the other examples in Patterns/Self-Rep/Banks/. BBM-Margolus-emulated Ed Fredkin's Billiard Ball Model, using the Margolus neighborhood to implement a simple reversible physics of bouncing balls. In this implementation we are emulating the system using a Moore-neighborhood CA with extra states. Open BBM.rle to see the rule in action. Byl-Loop A six state 5-neighborhood CA that supports small self-replicating loops. To see the rule in action, open Byl-Loop.rle. Chou-Reggia-1 and Chou-Reggia-2 Two 5-neighborhood CA that supports tiny self-replicating loops. To see the rules in action, open Chou-Reggia-Loop-1.rle and Chou-Reggia-Loop-2.rle. Codd In 1968, Edgar F. Codd (who would later invent the relational database) made a simpler version of von Neumann's 29-state CA, using just 8 states. To see the rule in action, open repeater-emitter-demo.rle and the other examples in Patterns/Self-Rep/Codd/. Codd2 A very minor extension of Codd's transition table, to allow for some sheathing cases that were found with large patterns. See sheathing-problems.rle for a demonstration of the problem cases. CrittersMargolus_emulated The Critters rule is reversible and has Life-like gliders. See CrittersCircle.rle.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/RuleLoader.html"
+category = "SitesList"
+tags = ["b3/s23", "banks-i,", "banks-ii,", "banks-iii,", "banks-iv", "bbm-margolus-emulated", "briansbrain", "byl-loop", "caterpillars", "chou-reggia-1"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/bounded.html"]
+title = "Golly Help: Bounded Grids"
+full_description = '''Bounded grids with various topologies can be created by adding a special suffix to the usual rule string. For example, B3/S23:T30,20 creates a toroidal Life universe 30 cells wide and 20 cells high. The suffix syntax is best illustrated by these examples: A bounded plane is a simple, flat surface with no curvature. When generating patterns in a plane, Golly ensures that all the cells neighboring the edges are set to state 0 before applying the transition rules, as in this example of a 4 by 3 plane: If the opposite edges of a bounded plane are joined then the result is a donut-shaped surface called a torus. Before applying the transition rules at each generation, Golly copies the states of edge cells into appropriate neighboring cells outside the grid. The following diagram of a 4 by 3 torus shows how the edges are joined: A torus can have a shift on the horizontal edges or the vertical edges, but not both. These two examples show how shifted edges are joined: If one pair of opposite edges are twisted 180 degrees (ie. reversed) before being joined then the result is a Klein bottle. Here are examples of a horizontal twist and a vertical twist: A Klein bottle can only have a shift on the twisted edges and only if that dimension has an even number of cells. Also, all shift amounts are equivalent to a shift of 1. Here are two examples: If both pairs of opposite edges are twisted and joined then the result is a cross-surface (also known as a real projective plane, but Conway prefers the term cross-surface). Here's an example showing how the edges are joined: If adjacent edges are joined rather than opposite edges then the result is a sphere. By convention we join the top edge to the left edge and the right edge to the bottom edge, as shown in this 3 by 3 example: Note that the cells in the top left and bottom right corners (the "poles") have different neighborhoods to the cells in the top right and bottom left corners. Shifting is not possible.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/bounded.html"
+category = "SitesList"
+tags = [":c30,20", ":c4,3", ":p30,0", ":p30,20", ":p4,3", ":s30", ":t0,20", ":t30+5,20", ":t30,20", ":t30,20-2"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/refs.html"]
+title = "Golly Help: References"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/refs.html"
+category = "SitesList"
+tags = ["articles", "books", "magazine", "sites"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Algorithms/QuickLife.html"]
+title = "Golly Help: QuickLife"
+full_description = '''QuickLife is a fast, conventional (non-hashing) algorithm for exploring Life and other 2D outer-totalistic rules. Such rules are defined using "B0...8/S0...8" notation, where the digits after B specify the counts of live neighbors necessary for a cell to be born in the next generation, and the digits after S specify the counts of live neighbors necessary for a cell to survive to the next generation. Here are some example rules: B3678/S34678 [Day & Night] Dead cells in a sea of live cells behave the same as live cells in a sea of dead cells. The above rules use the Moore neighborhood, where each cell has 8 neighbors. In the von Neumann neighborhood each cell has only the 4 orthogonal neighbors. To specify this neighborhood just append "V" to the usual "B.../S..." notation and use neighbor counts ranging from 0 to 4. For example, try B13/S012V or B2/S013V. Note that when viewing patterns at scales 1:8 or 1:16 or 1:32, Golly displays diamond-shaped icons for rules using the von Neumann neighborhood and circular dots for rules using the Moore neighborhood. QuickLife can emulate a hexagonal neighborhood on a square grid by ignoring the NE and SW corners of the Moore neighborhood so that every cell has 6 neighbors: All of the above rules are classified as "totalistic" because the outcome depends only on the total number of neighbors. Golly also supports non-totalistic rules for Moore neighborhoods — such rules depend on the configuration of the neighbors, not just their counts. The syntax used to specify a non-totalistic rule is based on a notation developed by Alan Hensel. It's very similar to the above "B.../S..." notation but uses various lowercase letters to represent unique neighborhoods. One or more of these letters can appear after an appropriate digit (which must be from 1 to 7, depending on the letters). The usual counts of 0 and 8 can still be used without letters since there is no way to constrain 0 or 8 neighbors. For example, B3/2a34 means birth on 3 neighbors and survival on 2 adjacent neighbors (a corner and an edge), or 3 or 4 neighbors.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Algorithms/QuickLife.html"
+category = "SitesList"
+tags = ["b13/s012v", "b2-a/s12", "b2/s", "b2/s013v", "b234/s", "b2cekin/s12", "b3/2a34", "b3/s23", "b345/s5", "b35678/s5678"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/view.html"]
+title = "Golly Help: View Menu"
+full_description = '''Switches to full screen mode. To exit from this mode just hit the menu item's keyboard shortcut, or the escape key (if not generating a pattern), or any unassigned key. Restores the true origin. The origin cell can be changed by hitting "0" while the cursor is over the view — the cell under the cursor will become the new origin and its location will be displayed as 0,0. This can be handy for measuring distances or for saving a location and returning to it quickly by hitting "m". This submenu lets you set the scale from 1:1 to 1:32. (A quicker is to use keyboard shortcuts. The initial shortcuts are: "1" for 1:1, "2" for 1:2, "4" for 1:4, "8" for 1:8, "6" for 1:16 and "3" for 1:32.) Shows or hides the edit bar above the viewport window. The edit bar contains buttons for undo and redo, buttons for changing the cursor mode, a button for showing/hiding all states (see below), boxes showing the current drawing state's color and icon, and a scroll bar for changing the drawing state. If ticked then the edit bar is made larger and the colors and icons for all cell states in the current universe are displayed. A box is drawn around the current drawing state; to change it just click on a different state. If ticked then the status bar is made larger and exact numbers are displayed instead of using scientific notation. Shows or hides the grid lines. Use Preferences > View to turn off the bold grid lines or change their spacing. You can also set the minimum scale at which grid lines should be displayed (1:4, 1:8, 1:16 or 1:32). If ticked then icons will be displayed at scales 1:8, 1:16 or 1:32. Icons are small bitmaps that can have any shape but their color is automatically synchronized with the cell's state color. Each algorithm can have a different set of icons. You can change these icons by loading suitably formatted files via the "Load Icons" button in Preferences > Color. It's also possible to have rule-specific icons. Whenever Golly switches to a new rule it looks inside the Rules folder for a matching rule.icons file and, if it exists, loads the bitmaps stored in the file. The format of a .icons file is identical to that used above. See Help > File Formats for a description of the format.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/view.html"
+category = "SitesList"
+tags = ["bars", "cell", "colors", "edit", "exact", "full", "grid", "icons", "info", "invert"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/mouse.html"]
+title = "Golly Help: Mouse Shortcuts"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/mouse.html"
+category = "SitesList"
+tags = ["mouse", "shortcuts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/HashLife.html"]
+title = "Golly Help: HashLife"
+full_description = "HashLife uses Bill Gosper's hashlife algorithm to achieve remarkable speeds when generating patterns that have a lot of regularity in time and/or space. HashLife supports the same set of rules as QuickLife, but with one exception: if a rule contains B0 it must also contain S8 (or S6 if the rule ends with H, or S4 if it ends with V). Note that HashLife performs very poorly on highly chaotic patterns, so in those cases you are better off switching to QuickLife."
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/HashLife.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/bounded.html"]
+title = "Golly Help: Bounded Grids"
+full_description = '''Bounded grids with various topologies can be created by adding a special suffix to the usual rule string. For example, B3/S23:T30,20 creates a toroidal Life universe 30 cells wide and 20 cells high. The suffix syntax is best illustrated by these examples: A bounded plane is a simple, flat surface with no curvature. When generating patterns in a plane, Golly ensures that all the cells neighboring the edges are set to state 0 before applying the transition rules, as in this example of a 4 by 3 plane: If the opposite edges of a bounded plane are joined then the result is a donut-shaped surface called a torus. Before applying the transition rules at each generation, Golly copies the states of edge cells into appropriate neighboring cells outside the grid. The following diagram of a 4 by 3 torus shows how the edges are joined: A torus can have a shift on the horizontal edges or the vertical edges, but not both. These two examples show how shifted edges are joined: If one pair of opposite edges are twisted 180 degrees (ie. reversed) before being joined then the result is a Klein bottle. Here are examples of a horizontal twist and a vertical twist: A Klein bottle can only have a shift on the twisted edges and only if that dimension has an even number of cells. Also, all shift amounts are equivalent to a shift of 1. Here are two examples: If both pairs of opposite edges are twisted and joined then the result is a cross-surface (also known as a real projective plane, but Conway prefers the term cross-surface). Here's an example showing how the edges are joined: If adjacent edges are joined rather than opposite edges then the result is a sphere. By convention we join the top edge to the left edge and the right edge to the bottom edge, as shown in this 3 by 3 example: Note that the cells in the top left and bottom right corners (the "poles") have different neighborhoods to the cells in the top right and bottom left corners. Shifting is not possible.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/bounded.html"
+category = "SitesList"
+tags = [":c30,20", ":c4,3", ":p30,0", ":p30,20", ":p4,3", ":s30", ":t0,20", ":t30+5,20", ":t30,20", ":t30,20-2"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/Super.html"]
+title = "Golly Help: Super"
+full_description = '''Super supports the same set of rules as QuickLife (excluding Wolfram) and adds history and label states. The Super algorithm currently supports three rulename suffixes, History, Super and Investigator. A rule specific to Conway's Life, "LifeHistory", was added along with Golly 2.0, as soon as multistate rules were supported. It largely duplicated the functionality of a "HistoricalLife" rule included in a previous CA editor, MCell 4.20. A key idea also borrowed from MCell is that odd-numbered states are ON states and even-numbered states are OFF states. Any odd-numbered state in the vicinity of a cell counts as a neighbor, but any even-numbered state is just considered to be background. The Super algo extends the behavior of the seven LifeHistory states to any non-Wolfram rule supported by QuickLife. To enable it, add the suffix "History" to the standard rule string. The primary idea was to make the evolutionary history of a pattern visible by including additional OFF states to the rule. A state-0 cell would change to state 1 as usual when it had three neighbors, but when a state-1 cell died, it would change to a blue state-2 cell. The blue region is commonly known as the "history" or the "reaction envelope" of a pattern. It can be very useful for editing purposes. For example, in LifeHistory, one phase of an oscillator can be pasted directly on top of another phase, and cells all that should be OFF in the new phase are all turned off (replaced by blue state-2 cells). A similar phase change in a two-state rule would generally require blanking out the oscillator's rotor cells before pasting; otherwise ON cells from both phases would remain ON, usually breaking the oscillator. Another use of blue state-2 cells is to mark the edge of the "safe region" for oscillators, Herschel circuitry, etc., making it much easier to adjust subpatterns so that they are as close as possible to each other without conflicting. In logic circuitry, input and output glider or spaceship lanes can be easily seen and aligned between components.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/Super.html"
+category = "SitesList"
+tags = ["backward", "boundary", "changing", "color", "colors", "compatibility", "conversion", "default", "description", "history"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/algos.html"]
+title = "Golly Help: Algorithms"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/algos.html"
+category = "SitesList"
+tags = ["generations", "hashlife", "larger", "life", "quicklife", "ruleloader", "super"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/overlay.html"]
+title = "Golly Help: Overlay"
+full_description = '''The overlay is a rectangular region of pixels that can be displayed above the current layer. Lua scripts have total control of what the overlay looks like and how the user interacts with it. The Scripts/Lua folder supplied with Golly has a number of scripts that illustrate how the overlay can be used: To study how these scripts work, control-click or right-click on one of the above links to open the script in your preferred text editor, then run the script by clicking on the same link. The first, overlay, takes a single string parameter that contains an overlay command followed by zero or more arguments separated by spaces. Some overlay commands can also return a single string as their result. The second, ovtable, takes a single table parameter rather than a string and only supports a subset of the overlay commands. It is typically faster to use ovtable than overlay. The supported ovtable commands that return a result are get, which returns individual values, and rgba, which returns a table. In all other ways ovtable is identical to the overlay command. All of the drawing commands use the current render target. This is initially the overlay but can be changed to a clip with the target command. Alpha blending is a way of drawing translucent pixels on top of existing pixels to get nicer looking results. When an overlay is created, alpha blending is initially turned off. To turn it on a script needs to call "blend 1", for blending with any target, or "blend 2", for faster blending when you know the target pixels are opaque. Consider this simple script which draws a translucent blue square on top of a translucent red square (both on top of an opaque white background): The left image shows the resulting overlay. The right image shows the overlay produced by the same script but with the "blend 1" line removed (the grid lines are from the layer underneath the overlay). Note that drawing with alpha blending on is significantly slower than drawing with it off, so it's a good idea to only turn it on when necessary. The overlay commands that can do alpha blending are: ellipse, fill, flood, line, lines, load, paste, scale, set.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/overlay.html"
+category = "SitesList"
+tags = ["!255", '"---",', '"..viewwd.."', '"..x.."', '"..y.."', '"copy', '"exit",', '"hello",', '"new', '"open']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Lexicon/lex.htm"]
+title = "Life Lexicon"
+full_description = '''Golly's help includes an integrated version of Stephen Silver's Life Lexicon, but there's no point duplicating it here. One enhancement in Golly's version of the lexicon is worth noting: clicking on a pattern loads it into a separate "lexicon" layer.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Lexicon/lex.htm"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/help.html"]
+title = "Golly Help: Help Menu"
+full_description = "The Help menu items can be used to display information on a variety of topics. Each item corresponds to a HTML file in the Help folder. The information is displayed in a separate help window which behaves like a simplified browser. The size and location of this window is remembered when it closes. Note that for some links (get, open, unzip) you can tell Golly to open the specified file in your text editor by control-clicking or right-clicking on the link."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/help.html"
+category = "SitesList"
+tags = ["edit:", "get:", "keyboard", "lexpatt:", "links", "open", "open:", "prefs:", "rule:", "shortcuts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/keyboard.html"]
+title = "Golly Help: Keyboard Shortcuts"
+full_description = "Use Preferences > Keyboard to set your preferred keyboard shortcuts. The following shortcuts are the initial default settings:"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/keyboard.html"
+category = "SitesList"
+tags = ["keyboard", "shortcuts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/formats.html"]
+title = "Golly Help: File Formats"
+full_description = '''Golly prefers to store patterns and pattern fragments in a simple concise textual format we call "Extended RLE" (it's a modified version of the RLE format created by Dave Buckingham). The data is run-length encoded which works well for sparse patterns while still being easy to interpret (either by a machine or by a person). The format permits retention of the most critical data: Golly uses this format for internal cuts and pastes, which makes it very convenient to move cell configurations to and from text files. For instance, the r-pentomino is represented as I just drew this pattern in Golly, selected the whole thing, copied it to the clipboard, and then in my editor I did a paste to get the textual version. Similarly, data in this format can be cut from a browser or email window and pasted directly into Golly. RLE data is indicated by a file whose first non-comment line starts with "x". A comment line is either a blank line or a line beginning with "#". The line starting with "x" gives the dimensions of the pattern and usually the rule, and has the following format: where width and height are the dimensions of the pattern and rule is the rule to be applied. Whitespace can be inserted at any point in this line except at the beginning or where it would split a token. The dimension data is ignored when Golly loads a pattern, so it need not be accurate, but it is not ignored when Golly pastes a pattern; it is used as the boundary of what to paste, so it may be larger or smaller than the smallest rectangle enclosing all live cells. Any line that is not blank, or does not start with a "#" or "x " or "x=" is treated as run-length encoded pattern data. The data is ordered a row at a time from top to bottom, and each row is ordered left to right. A "$" represents the end of each row and an optional "!" represents the end of the pattern. For two-state rules, a "b" represents an off cell, and a "o" represents an on cell. For rules with more than two states, a "." represents a zero state; states 1..24 are represented by "A".."X", states 25..48 by "pA".."pX", states 49..72 by "qA".."qX", and on up to states 241..255 represented by "yA".."yO". The pattern reader is flexible and will permit "b" and "." interchangeably and "o" and "A" interchangeably.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/formats.html"
+category = "SitesList"
+tags = [".colors,", ".rule", ".tree,", "@colors", "@icons", "@rule", "@table", "@tree", "and/or", "built-in"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/algos.html"]
+title = "Golly Help: Algorithms"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/algos.html"
+category = "SitesList"
+tags = ["generations", "hashlife", "larger", "life", "quicklife", "ruleloader", "super"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/webapp/golly.html"]
+title = "Golly"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/webapp/golly.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "github.com", "play.google.com", "sourceforge.net", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/edit.html"]
+title = "Golly Help: Edit Menu"
+full_description = "Lets you undo one or more recent changes, including all editing changes and generating changes, as well as changes to the selection, rule, hashing state and layer name. The number of changes you can undo is limited only by available memory and disk space. Multiple changes made by a script are treated like a single change and will be undone all at once. Each layer maintains its own undo/redo history (but cloned layers share the same undo/redo history). The current layer's undo/redo history is automatically cleared after creating a new pattern or opening a pattern file. Lets you redo one or more recently undone changes. Note that the redo history is automatically cleared after you make a new change; i.e., if you do something like rotate the current selection, undo the rotation, then edit some cells or change the selection, you can no longer redo the rotation. If ticked then the Undo and Redo items are disabled, and any existing undo/redo history for the current layer is cleared. When editing or generating a very large pattern you may want to temporarily disable undo/redo to speed up some operations. But be careful using this feature — if you switch to another layer when this item is ticked then that layer's undo/redo history is also cleared. Copies the pattern in the current selection to the clipboard (in RLE format) and then kills all cells in the selection. Kills all cells outside the current selection. This is often the quickest way to delete escaping gliders. Pastes a pattern stored in the clipboard into the existing pattern. After selecting this item you'll be asked to click where you want the paste to occur. Before clicking you can use keyboard shortcuts to scroll, change scale, etc. The keyboard shortcuts normally used to flip/rotate the selection will instead modify the paste pattern. You can also type shift-M to change the paste mode or shift-L to change the paste location (see below). To cancel the paste, just click anywhere outside the view area or hit the escape key."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/edit.html"
+category = "SitesList"
+tags = ["anticlockwise", "clear", "clockwise", "copy", "cursor", "disable", "fill", "flip", "left-right", "location"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/tips.html"]
+title = "Golly Help: Hints and Tips"
+full_description = "Golly Golly.exe (Golly.app on Mac, golly on Linux) Help Patterns Rules Scripts My-downloads (contains all your downloaded files; set in Preferences > File) My-patterns (contains all your pattern files) My-rules (contains all your .rule files; set in Preferences > Control) My-scripts (contains all your .lua/.py files) If necessary, use File > Set File Folder and select the Golly folder. Now all your folders (and the supplied folders) are visible in the file panel, so with just a few clicks you can load any pattern, run any script, or switch to any .rule file. You can also right-click (or control-click) on any of those files to open them in your preferred text editor. When upgrading to a new version of Golly, Mac users can simply drag all the distributed files and folders into their Golly folder and the old versions will be replaced. On Windows and Linux you'll need to delete the old Help, Patterns, Rules and Scripts folders before dragging in the new folders to avoid ending up with merged versions."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/tips.html"
+category = "SitesList"
+tags = ["golly-start.lua", "golly-start.py", "hints", "tips", "useful"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/QuickLife.html"]
+title = "Golly Help: QuickLife"
+full_description = '''QuickLife is a fast, conventional (non-hashing) algorithm for exploring Life and other 2D outer-totalistic rules. Such rules are defined using "B0...8/S0...8" notation, where the digits after B specify the counts of live neighbors necessary for a cell to be born in the next generation, and the digits after S specify the counts of live neighbors necessary for a cell to survive to the next generation. Here are some example rules: B3678/S34678 [Day & Night] Dead cells in a sea of live cells behave the same as live cells in a sea of dead cells. The above rules use the Moore neighborhood, where each cell has 8 neighbors. In the von Neumann neighborhood each cell has only the 4 orthogonal neighbors. To specify this neighborhood just append "V" to the usual "B.../S..." notation and use neighbor counts ranging from 0 to 4. For example, try B13/S012V or B2/S013V. Note that when viewing patterns at scales 1:8 or 1:16 or 1:32, Golly displays diamond-shaped icons for rules using the von Neumann neighborhood and circular dots for rules using the Moore neighborhood. QuickLife can emulate a hexagonal neighborhood on a square grid by ignoring the NE and SW corners of the Moore neighborhood so that every cell has 6 neighbors: All of the above rules are classified as "totalistic" because the outcome depends only on the total number of neighbors. Golly also supports non-totalistic rules for Moore neighborhoods — such rules depend on the configuration of the neighbors, not just their counts. The syntax used to specify a non-totalistic rule is based on a notation developed by Alan Hensel. It's very similar to the above "B.../S..." notation but uses various lowercase letters to represent unique neighborhoods. One or more of these letters can appear after an appropriate digit (which must be from 1 to 7, depending on the letters). The usual counts of 0 and 8 can still be used without letters since there is no way to constrain 0 or 8 neighbors. For example, B3/2a34 means birth on 3 neighbors and survival on 2 adjacent neighbors (a corner and an edge), or 3 or 4 neighbors.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/QuickLife.html"
+category = "SitesList"
+tags = ["b13/s012v", "b2-a/s12", "b2/s", "b2/s013v", "b234/s", "b2cekin/s12", "b3/2a34", "b3/s23", "b345/s5", "b35678/s5678"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/python.html"]
+title = "Golly Help: Python Scripting"
+full_description = "NOTE: From this version, Golly will require a Python 3.x (64-bit) installation. Mac users should note that Apple have said they will not be including any version of Python in future releases of the Mac OS, so you will also need to download a Python 3.x installer from this release. Before you can run a .py script, Python 3.3+ needs to be installed on your system. Users can download a recent Python 3 installer from www.python.org/download. WARNING: Golly requires a 64-bit Python. From version 4.0, on all platforms, the Python library is loaded at runtime (the first time you try to run a script). Golly initially attempts to load a particular version of the Python library: python39.dll on Windows or libpython39.so on Linux. The numbers correspond to Python version 3.9. If that library can't be found then you'll be prompted to enter a different library name matching the version of Python 3.x installed on your system. A successfully loaded library is remembered (in your GollyPrefs file) so you won't get the prompt again unless you remove Python or install a new version. If Python isn't installed then you'll have to hit Cancel and you won't be able to run any .py scripts. To run one of these scripts, tick the Show Files item in the File menu, open the Scripts/Python folder and then simply click on the script's name. You can also select one of the Run items in the File menu. For a frequently used script you might like to assign a keyboard shortcut to run it (see Preferences > Keyboard). When Golly starts up it looks for a script called golly-start.py in the same directory as the Golly application and then in a user-specific data directory (see the getdir command for the likely path on your system). If the script is found then it is automatically executed. There are a number of ways to abort a running script. Hit the escape key, or click on the stop button in the tool bar, or select the Stop item in the Control menu. This section describes all the commands that can be used in a script after importing the golly module. The examples below assume you've done the import by including this line:"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/python.html"
+category = "SitesList"
+tags = ['"1",', '"app"', '"autofit"', '"background.ogg",', '"beep.wav",', '"boldspacing"', '"border"', '"data"', '"download"', '"drawingstate"']
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/layer.html"]
+title = "Golly Help: Layer Menu"
+full_description = '''Golly supports up to ten layers. Each layer is a separate universe (unless cloned; see the Clone Layer item below) with its own algorithm, rule, viewport, cursor mode, selection, step size, origin offset, color scheme and name. The current layer's name is displayed in the main window's title bar. Most edit/control/view operations only apply to the current layer. Note that most of Golly's options apply globally to all layers. This is true for all of the options set in the Preferences dialog. It's also true for many of the options set via menu items, like Save Extended RLE, Paste Mode, Paste Location, Show Grid Lines, etc., but not for any of the Control menu options (Auto Fit, Hyperspeed, and Show Hash Info). The items at the bottom of the Layer menu show the current names of all the existing layers. The names of cloned layers are prefixed by one or more "=" signs; all layers with the same number of "=" signs share the same universe. The current layer is indicated by a tick. To switch to another layer just select the corresponding item. If a script is running then you can only switch to another layer if the script has called g.setoption("switchlayers",1). A layer containing a modified pattern is indicated by a "*" at the start of the layer's name. To avoid losing your changes, a "save changes" dialog will appear before creating a new pattern, opening a pattern file, deleting the layer, or quitting Golly. If you'd rather not see this dialog then untick the appropriate check boxes in Preferences > Layer. Common layer functions are also available via buttons in the layer bar located underneath the status bar. Use the Show Layer Bar item in the View menu to show/hide the layer bar, or just hit the "\" key. Opens the standard file saving dialog so you can save the current overlay image in a PNG file. Note that it's possible to save the overlay while a script is executing. If ticked then the current overlay will be displayed (if it exists and if it contains any non-transparent pixels). You can show/hide the overlay while a script is executing.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/layer.html"
+category = "SitesList"
+tags = ["clone", "colors...", "cursors", "delete", "duplicate", "envelope.py", "layer", "layer...", "layers", "move"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/archives.html"]
+title = "Golly Help: Online Archives"
+full_description = "Note that Golly stores downloaded files in a directory that can be changed via a button at the bottom of Preferences > File. You might like to change the download location to a directory visible in the Show Files panel (to the left of the viewport), then you can easily re-open a pattern or zip file without having to download it again. Downloaded patterns and zip files are remembered in the Open Recent submenu."
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/archives.html"
+category = "SitesList"
+tags = ["alan", "archive", "automata", "cellular", "collections", "gliders", "hensel's", "jason", "large", "life-like"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/intro.html"]
+title = "Golly Help: Introduction"
+full_description = '''Golly is a cross-platform application for exploring John Conway's Game of Life and other cellular automata. It's also free and open source. More details, including links to the source and binary distributions, are available at the Golly web site: The Game of Life is a simple example of a set of rules more broadly known as a "cellular automaton", or CA for short. CAs were first studied in the mid-1950s by Stanislaw Ulam and John von Neumann but became much more widely known in 1970 when Conway's Life was described by Martin Gardner in his Scientific American column. Life is played on an arbitrary-sized grid of square cells. Each cell has two states: "dead" or "alive". The state of every cell changes from one "generation" to the next according to the states of its 8 nearest neighbors: a dead cell becomes alive (a "birth") if it has exactly 3 live neighbors; a live cell dies out if it has less than 2 or more than 3 live neighbors. The "game" of Life simply involves starting off with a pattern of live cells and seeing what happens. Even though the rules for Life are completely deterministic, it is impossible to predict whether an arbitrary starting pattern will die out, or start oscillating, or expand forever. Life and other CAs provide a powerful demonstration of how a very simple system can generate extremely complicated results. If you'd like to learn more about Life and other cellular automata then check out the links and books mentioned in the References, or start exploring the Life Lexicon.'''
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/intro.html"
+category = "SitesList"
+tags = ["golly?", "life?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "lua.org", "luafaq.org", "mirekw.com", "pd.infn.it", "play.google.com", "plife.sourceforge.net", "psoup.math.wisc.edu", "python.org", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "web.archive.org", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/file.html"]
+title = "Golly Help: File Menu"
+full_description = 'Creates a new, empty universe and switches to a scale suitable for editing cells. Use Preferences > File to set the scale (initially 1:32), the cursor mode, and whether any selection should be removed. Opens the standard file browser so you can select a pattern file. Golly can read all the common pattern formats: RLE, PC Life 1.05/1.06, dblife, some MCell files, and text patterns like "ooo...ooo". It can also read patterns in a "macrocell" format which allows huge, highly repetitive patterns to be stored in a very compact way. Such files usually have a .mc extension. If a .mc file contains timeline data then Golly will load all the frames and automatically show the timeline bar. All the above formats are text based and can have DOS/Mac/Unix line endings, or they can be compressed in a .gz file. Golly can also read graphic files in a number of popular formats: BMP, GIF, PNG and TIFF. The file name must end with an appropriate extension: .bmp, .gif, .png, .tif or .tiff. All the pure white pixels (RGB = 255,255,255) are treated as cells of state 0. All other pixels are treated as cells of state 1. This can be handy if you prefer to use a sophisticated drawing program to create your patterns. Opens a pattern stored in the clipboard. The References section has links to a number of good sources for clipboard patterns. If the clipboard text starts with "@RULE rulename" then Golly will save the text as rulename.rule in your rules folder (set in Preferences > Control) and switch to that rule. This submenu lets you open a recently loaded pattern file. The most recent file is always at the top. The maximum number of pattern files remembered is determined by a setting (initially 20) which you can change in Preferences > File. Opens the standard file saving dialog so you can save the current pattern in RLE format (but only if all live cells are within coordinates of +/- 1 billion), or in macrocell format if the current algorithm supports hashing. Note that if a timeline exists when you save a .mc file then all the frames will be stored in the file.'
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/file.html"
+category = "SitesList"
+tags = ["clipboard", "extended", "file", "files", "folder...", "notes", "open", "pattern", "pattern...", "preferences..."]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/Lexicon/lex.htm"]
+title = "Life Lexicon"
+full_description = '''Golly's help includes an integrated version of Stephen Silver's Life Lexicon, but there's no point duplicating it here. One enhancement in Golly's version of the lexicon is worth noting: clicking on a pattern loads it into a separate "lexicon" layer.'''
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/Lexicon/lex.htm"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "github.com", "lazyslug.com", "mirekw.com", "pd.infn.it", "play.google.com", "psoup.math.wisc.edu", "scholarworks.csun.edu", "sourceforge.net", "sq3.org.uk", "wxwidgets.org"]
+
+["http://golly.sourceforge.net/Help/refs.html"]
+title = "Golly Help: References"
+year_published = 2025
+clearnet = "http://golly.sourceforge.net/Help/refs.html"
+category = "SitesList"
+tags = ["articles", "books", "magazine", "sites"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/index.html"]
+title = "Golly Help: Contents"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/index.html"
+category = "SitesList"
+tags = ["algorithms", "archives", "bounded", "changes", "contents", "control", "credits", "edit", "file", "formats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "conwaylife.com", "en.wikipedia.org", "github.com", "play.google.com", "sourceforge.net", "wxwidgets.org"]
+
+["https://golly.sourceforge.net/Help/Algorithms/JvN.html"]
+title = "Golly Help: JvN"
+full_description = "John von Neumann created the very first cellular automata in the 1940's, together with fellow mathematician Stanislaw Ulam. JvN29 The original 29-state CA as created by von Neumann. To see how his rules work, load the simpler examples first: counter-demo.rle and cell-coders-demo.rle and read their pattern info (hit the 'i' button). For a more complex example, see read-arm-demo.rle which shows one component of von Neumann's original design, the tape reader. For a complete self-replicating machine within von Neumann's CA, open sphinx.mc.gz. Nobili32 An extension of JvN29 created by Renato Nobili in 1994. This rule adds three new states to allow signal crossing, allowing self-replicating machines to be greatly reduced in size. The example pattern construction-arm-demo.rle shows some of the crossing cells in action under this rule. The pattern NP-replicator.rle.gz shows the 1994 design that was the first implementation of von Neumann's vision of a self-reproducing universal constructor in a CA. Hutton32 Created by Tim Hutton in 2008, this rule uses the same states as Nobili32 but has a slightly modified rule table. Examples golly-constructor.rle and Hutton-replicator.rle show what it can do. http://en.wikipedia.org/wiki/Von_Neumann_universal_constructor http://en.wikipedia.org/wiki/Von_Neumann_cellular_automata http://www.pd.infn.it/~rnobili/wjvn/index.htm http://www.pd.infn.it/~rnobili/au_cell/ http://www.sq3.org.uk/Evolution/JvN/"
+year_published = 2025
+clearnet = "https://golly.sourceforge.net/Help/Algorithms/JvN.html"
+category = "SitesList"
+tags = ["hutton32", "jvn29", "nobili32", "references:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "b3s23life.blogspot.com", "catagolue.hatsya.com", "conwaylife.com", "csun.edu", "dmtcs.loria.fr", "en.wikipedia.org", "gabrielnivasch.org", "github.com", "ibiblio.org", "ics.uci.edu", "lua.org", "mirekw.com", "play.google.com", "psoup.math.wisc.edu", "python.org", "sourceforge.net", "sq3.org.uk", "wwwhomes.uni-bielefeld.de", "wxwidgets.org"]

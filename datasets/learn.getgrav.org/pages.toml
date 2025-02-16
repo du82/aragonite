@@ -1,0 +1,1014 @@
+["https://learn.getgrav.org/17/admin-panel/themes"]
+title = "Themes | Grav Documentation"
+description = "Grav documentation"
+full_description = "Along the top of the Themes area of the admin, you will find the Back, Add, and Check for Updates buttons. Back simply takes you back to either the Dashboard or to the main Themes page if you are deeper into that area of the admin. Add pulls up a display of currently-available Grav themes you can add to your site. This is a quick and easy way to install a new theme. Simply select the Install button to install the theme. Doing so will take you to the new theme's Information panel which contains more detailed information about the theme, as well as any options set in its blueprints file. Once you are satisfied with any settings changes, simply select the Save button to save your changes. You can also delete the theme from your site by selecting the red Remove Theme button in the bottom-right area of the panel. The Installed Themes section displays your currently-installed themes. Selecting the thumbnail of a theme takes you to the information page for that theme, while the gray Activate button at the bottom of each thumbnail gives you the ability to set that theme as the active default theme for your site. At the top of each thumbnail you will see the name and current version number of each theme. The purple check icon indicates that a theme was created by the Grav team. Themes without that icon are created and maintained by third-party developers. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/themes"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced"]
+title = "Advanced | Grav Documentation"
+description = "Grav documentation"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/dashboard/profile"]
+title = "Profile | Grav Documentation"
+description = "Grav documentation"
+full_description = "The profile page in the admin enables you to view and update your individual profile settings. This is where your avatar, email address, name, language, and more are set. For administrators, this is also where you can adjust the groups and permission levels for individual users. Accessing the profile page is simple. Once you are logged in to the admin, you can access your profile by selecting the area of the sidebar with your avatar image and name. This will take you directly to your own profile. Additionally, administrators will enjoy the ease of jumping to another user's profile page by appending admin/user/example to their site's URL. Replacing example with the username of the user they wish to edit profile information and/or permissions for. The Profile area of the admin gives you a quick, styled look at your avatar, name, and title. Your avatar is automatically generated through Gravatar, a global avatar service that enables you to upload a single profile image and use it across multiple sites and services. If you don't have an image uploaded to Gravatar, or if you'd prefer to use an image of your choosing, you can upload an image here by dragging and dropping the image file into the Drop Your Files Here or Click This Area section of the page. You can also click the area to bring up a file chooser that will enable you to find, select, and upload an image file from your system. Once you have a new image uploaded, simply select the Save button in the upper-right corner of the page. The Account section of the profile page is where you can update your contact information, name, language, and more. You are not able to edit your Username here, as this is tied directly to where your user information is stored, but you can edit anything else you need to. 2-Factor Authentication provides an extra layer of security for your website. Find out more about this feature in the Security area of this guide. Administrators will find the permissions area especially useful. This is where you can configure exactly what a user will be able to access and do within the administrator."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/dashboard/profile"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/using"]
+title = "Using Flex Objects | Grav Documentation"
+description = "Grav documentation"
+full_description = "Flex Objects is designed to be easy to use. Displaying collection and groups in your pages can mostly be done from Twig templates. By default, flex-objects page type takes two URL parameters, directory and id. They are used to navigate directories. Example URLs look like this: TIP: You can pass your own parameters inside flex and use them in your collection and object template files. Both Collections and Objects support rendering their output in HTML. Output can be customized with two parameters: layout and context. Layout allows you to set custom looks, for example you can have list of cards and then more detailed output for details. Context allows you to pass variables to be used in the template files. Each type has two folders, one for rendering collection and one for rendering object. The files inside are layouts, named after the filename. In our example, we have default layout for both the collection and the object. Collection template flex/contacts/collection/default.html.twig is responsible for rendering all the objects in the collection. Rendered output is cached by default. Cache key is defined by the collection and the context passed to the render() method. WARNING: If context contains non-scalar values, caching will be turned off. Try to keep the context as simple as possible! TIP: If the rendered HTML has dynamic content, render cache can be disabled from the Twig template by {% do block.disableCache() %}. Object template flex/contacts/object/default.html.twig is responsible for rendering a single object. Rendered output is cached by default. Cache key is defined by the object and the context passed to the render() method. WARNING: If context contains non-scalar values, caching will be turned off. Try to keep the context as simple as possible! TIP: If the rendered HTML has dynamic content, render cache can be disabled from the Twig template by {% do block.disableCache() %}. By using custom layouts, you can create an infinite amount of different views into both of your collections and objects."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/using"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/introduction"]
+title = "Introduction | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Administration Panel plugin for Grav is a web GUI (graphical user interface) that provides a convenient way to configure Grav and easily create and modify pages. This will remain a totally optional plugin, and is not in any way required or needed to use Grav effectively. In fact, the admin interface provides an intentionally limited view to ensure it remains easy to use and not overwhelming. Power users will still prefer to work with the configuration files directly. The Adminstration Panel is quite an ambitious plugin with lots of functionality that will give you a lot of power and flexibility when building out your Grav sites. So if you have any questions, problems, suggestions or find one of those rare bugs in it, please use one of the following ways to get support from us. For bugs, features, improvements, please ensure you create issues in the admin plugin GitHub repository. First ensure you are running the latest Grav version, 1.7.46 or later. This is required for the admin plugin to run properly. Check for and upgrade to new Grav versions like this (-f forces a refresh of the GPM index): The admin plugin actually requires the help of 3 other plugins, so to get the admin plugin to work you first need to install the login, forms, and email plugins. These are available via GPM, and because the plugin has dependencies you just need to proceed and install the admin plugin, and agree when prompted to install the others: With the latest version of the Admin, you will be prompted to create an admin user account when you point your browser to your site. You must complete this step to ensure straight away a valid admin user is under your control. The user information is stored in the user/accounts/ folder of your Grav installation. You can edit the values manually or via the Admin plugin itself. You can also create new users manually or via the bin/plugin login newuser CLI command. More information is contained in the Admin FAQ. The default pattern for users (system.username_regex) is only lowercase characters, digits, dashes, and underscores. Usernames must be between 3 - 16 characters in length."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/introduction"
+category = "SitesList"
+tags = ["1. basics", "1.7.46", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/tools"]
+title = "Tools | Grav Documentation"
+description = "Grav documentation"
+full_description = "There are instances where you may want to upload a theme or plugin package that isn't currently in the main Grav plugins directory. Perhaps you have a premium theme that is made available in a zip file, or you're developing a plugin and want to upload your latest build to your Grav install for testing. In any case, you can do this by way of FTP, but the Admin gives you an even simpler solution. Using the Direct Install tool, you can upload a zipped package directly to your Grav install and have it available for use in seconds. This isn't just limited to plugins and themes. You can even upload Grav itself this way and upgrade (or downgrade) doing this, as well. This is especially useful for Grav contributors that want to test their work easily. As with any installation process, we recommend having a recent backup of your Grav install before using this tool - especially if you plan on using it to change your entire Grav install. The first method of direct install available is a file upload. You can upload a zip package directly to Grav using this tool. Simply select the Choose File button (or drag your zip package to the button with some browsers) and select your local package file. Once you have your file selected, simply hit Upload and Install to install your package. Once your package has been successfully installed, you will be greeted with an alert letting you know. That's all there is to it! The second method involves linking directly to a package file. For example, if you have a package hosted on a remote server, you can enter the URL of that package in the field. GPM friendly download links such as https://getgrav.org/download/themes/bootstrap/1.6.0 should work fine. By default, these uploads are limited to official GPM repository links. But, you can go to Configuration > System and toggle the Official GPM Only option to No to unlock this field and enable direct zip package links that are not official GPM repositories. For example: http://example.com/mypackage.zip. This is an advanced feature and should only be used in cases where you have properly vetted the package as safe."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/tools"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/flex/administration/views-edit"]
+title = "Content Editor | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Content Editor is a powerful view in Flex Objects that enables you to create and update your content type. Editor may look very different with different Controls, Tabs and Form Fields as they are all specific for the directory type you're editing. By default, there are three buttons Back, Save and Delete. Controls may also include other actions, such as Preview, Export etc... Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/administration/views-edit"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/page/options"]
+title = "Editor (Options) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. In this page, we will go over the features and functionality found in the Options tab of the Page Editor. Accessing the Pages functionality requires an access.admin.super or access.admin.pages.list permission, see User Accounts and User Groups You might notice the check boxes to the left of some of the options in this area of the admin. These boxes indicate that you would like to override the default values for this page. Leaving them unchecked reverts to blank or default states. This section is all about controlling the way your content is published. You can publish (or unpublish) content, set published dates as well as dates and times to unpublish, and to create metadata values specific to the page. The Taxonomies area is where you can configure your page's organizational properties. What categorie(s) the page will appear in, its tags, and more can be configured here. Having a good, clean sitemap is important for several reasons. Among them being user navigation and search engine optimization (SEO). Having a sitemap in place makes your site inherently more friendly to search engines, which can have a direct impact on ranking. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/options"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/page-editor"]
+title = "Editor (Content) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. Accessing the Pages functionality requires an access.admin.super or access.admin.pages.list permission, see User Accounts and User Groups Tabs that appear in the Page Editor are not universal. There are a default set of form fields that are commonly found in Grav themes, however these can vary between themes. The admin pulls form field information from a number of sources including the theme and the template used for the specific page. The tabs and options represented in this documentation are by default. Theme developers have the ability to add their own options to these tabs, or even to do away with these tabs and replace them with something entirely different. We are documenting a common-case scenario based on the Antimatter theme to serve as an example. In this page, we will go over the features and functionality found in the Content tab of the Page Editor. Along the top of the page, you will find the administrative controls that enable you to save, delete, copy, and move your page. Additionally, you can hit the Back button to get back to the main Pages area of the admin. The Save and Delete buttons are pretty self-explanatory. They save and delete the currently-accessed page, respectively. Selecting the Move button activates a popup that gives you the ability to assign a new parent to the page. You have the same option in the Advanced tab. Copy creates a duplicate of your current page, appending a -2 (or other numeric prefix if -2 is already in use) to the end of the folder name. You can change both the folder name and title as you see fit. The title of a page is typically set during that page's creation, however you can edit it after the fact here. Note that changing the page's title here will not have a direct impact on the folder name (which is used for navigation purposes) but it will change what people see on the front end."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page-editor"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/dashboard/profile"]
+title = "Profile | Grav Documentation"
+description = "Grav documentation"
+full_description = "The profile page in the admin enables you to view and update your individual profile settings. This is where your avatar, email address, name, language, and more are set. For administrators, this is also where you can adjust the groups and permission levels for individual users. Accessing the profile page is simple. Once you are logged in to the admin, you can access your profile by selecting the area of the sidebar with your avatar image and name. This will take you directly to your own profile. Additionally, administrators will enjoy the ease of jumping to another user's profile page by appending admin/user/example to their site's URL. Replacing example with the username of the user they wish to edit profile information and/or permissions for. The Profile area of the admin gives you a quick, styled look at your avatar, name, and title. Your avatar is automatically generated through Gravatar, a global avatar service that enables you to upload a single profile image and use it across multiple sites and services. If you don't have an image uploaded to Gravatar, or if you'd prefer to use an image of your choosing, you can upload an image here by dragging and dropping the image file into the Drop Your Files Here or Click This Area section of the page. You can also click the area to bring up a file chooser that will enable you to find, select, and upload an image file from your system. Once you have a new image uploaded, simply select the Save button in the upper-right corner of the page. The Account section of the profile page is where you can update your contact information, name, language, and more. You are not able to edit your Username here, as this is tied directly to where your user information is stored, but you can edit anything else you need to. 2-Factor Authentication provides an extra layer of security for your website. Find out more about this feature in the Security area of this guide. Administrators will find the permissions area especially useful. This is where you can configure exactly what a user will be able to access and do within the administrator."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/dashboard/profile"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17"]
+title = "Basics | Grav Documentation"
+description = "Grav documentation"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/security"]
+title = "Security | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav offers some extra powerful protection for your Administration Area, such as 2-Factor Authentication and Flood Protection. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/security"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/tools"]
+title = "Tools | Grav Documentation"
+description = "Grav documentation"
+full_description = "There are instances where you may want to upload a theme or plugin package that isn't currently in the main Grav plugins directory. Perhaps you have a premium theme that is made available in a zip file, or you're developing a plugin and want to upload your latest build to your Grav install for testing. In any case, you can do this by way of FTP, but the Admin gives you an even simpler solution. Using the Direct Install tool, you can upload a zipped package directly to your Grav install and have it available for use in seconds. This isn't just limited to plugins and themes. You can even upload Grav itself this way and upgrade (or downgrade) doing this, as well. This is especially useful for Grav contributors that want to test their work easily. As with any installation process, we recommend having a recent backup of your Grav install before using this tool - especially if you plan on using it to change your entire Grav install. The first method of direct install available is a file upload. You can upload a zip package directly to Grav using this tool. Simply select the Choose File button (or drag your zip package to the button with some browsers) and select your local package file. Once you have your file selected, simply hit Upload and Install to install your package. Once your package has been successfully installed, you will be greeted with an alert letting you know. That's all there is to it! The second method involves linking directly to a package file. For example, if you have a package hosted on a remote server, you can enter the URL of that package in the field. GPM friendly download links such as https://getgrav.org/download/themes/bootstrap/1.6.0 should work fine. By default, these uploads are limited to official GPM repository links. But, you can go to Configuration > System and toggle the Official GPM Only option to No to unlock this field and enable direct zip package links that are not official GPM repositories. For example: http://example.com/mypackage.zip. This is an advanced feature and should only be used in cases where you have properly vetted the package as safe."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/tools"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/accounts/users"]
+title = "User Accounts | Grav Documentation"
+description = "Grav documentation"
+full_description = "The profile page in the admin enables you to view and update your individual profile settings. This is where your avatar, email address, name, language, and more are set. For administrators, this is also where you can adjust the groups and permission levels for individual users. Accessing the profile page is simple. Once you are logged in to the admin, you can access your profile by selecting the area of the sidebar with your avatar image and name. This will take you directly to your own profile. Additionally, administrators will enjoy the ease of jumping to another user's profile page by appending admin/user/example to their site's URL. Replacing example with the username of the user they wish to edit profile information and/or permissions for. The Profile area of the admin gives you a quick, styled look at your avatar, name, and title. Your avatar is automatically generated through Gravatar, a global avatar service that enables you to upload a single profile image and use it across multiple sites and services. If you don't have an image uploaded to Gravatar, or if you'd prefer to use an image of your choosing, you can upload an image here by dragging and dropping the image file into the Drop Your Files Here or Click This Area section of the page. You can also click the area to bring up a file chooser that will enable you to find, select, and upload an image file from your system. Once you have a new image uploaded, simply select the Save button in the upper-right corner of the page. The Account section of the profile page is where you can update your contact information, name, language, and more. You are not able to edit your Username here, as this is tied directly to where your user information is stored, but you can edit anything else you need to. 2-Factor Authentication provides an extra layer of security for your website. Find out more about this feature in the Security area of this guide. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/accounts/users"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/16"]
+title = "Basics | Grav Documentation"
+description = "Grav documentation"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/dashboard"]
+title = "Dashboard | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Dashboard serves as a hub of information for the Administration Panel plugin. From this one page, you can check traffic statistics, maintenance information, Grav updates, create new backups, see the latest page updates, as well as to quickly clear Grav's cache. The Dashboard content will change depending on the user permissions. For example, giving access.admin.super unlocks everything. If that access level is not granted, access.admin.maintenance allows cache clearing and updates. access.admin.pages allows access to pages. access.admin.statistics allows display of the site page view statistics. Along the top of the Dashboard, you will find two buttons. The first of which initiates a clearing of the Grav cache. Clicking the main Clear Cache button will wipe the entire cache, including any caching of assets and images. Using the drop-down feature to the right, you can choose from specific types of cache clearing processes. For example, if you only want to clear the image cache without disrupting any other cached data, you can do so here. The second button initiates an update check for your site. This includes any supported plugins, themes, and Grav itself. If new updates are discovered, you receive a notification on the Dashboard. This isn't the only method Grav has for checking for new updates. Update checks are also triggered whenever a new page in the admin is loaded, and cached for one day. If you clear all of Grav's cache and load a new page in the admin, an update check will automatically take place. The Maintenance and Page View Statistics sections give you quick access to important information about your site. On the Maintenance side, you can see a percentage graph letting you know how many of Grav's bits and pieces are completely up-to-date. If new updates are available, an Update button will appear that enables you to perform a one-click update for all plugins and themes. This button will not update Grav itself, which notifies you about a required update just above the Maintenance and Page View Statistics sections."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/dashboard"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced/debugging"]
+title = "Debugging & Logging | Grav Documentation"
+description = "Grav documentation"
+full_description = "When developing themes and plugins, there is often a need to display debugging information. Grav has powerful debugging capabilities via a variety of features: Grav comes with a great tool to make this effort easier called via a Debug Bar. This feature is disabled by default, but can be turned on either globally or for your development environment only via the system.yaml configuration file: The first time you enable it, the debug bar might appear as a little Grav icon in the bottom left of the page. Clicking that will show the full debug bar. The PHP Debug Bar still provides an overall processing time as well as memory usage, but it now has several tabs that provide more detailed information. The first tab is for Messages and you can use this to help debug your Grav development process by posting information to this tab from your code. Along with Request, Exceptions, and Configuration information, you can also see a detailed breakdown of Grav timing in the Timeline panel: If you are trying to debug some PHP, for example a custom plugin you are developing, and wish to quickly examine some object or variable, you can use the powerful dump() command. This accepts basically any valid PHP variable and will output the results in a nicely formatted and colorized display in your browser. You can also display Twig variables from your Twig templates. This is done in a similar fashion, but the results are displayed in the Messages panel of the Debug Bar. This feature is disabled by default, but can be turned on either globally or for your development environment only via the system.yaml configuration file: It's possible to output multiple dump commands at the same time but it can get confusing to tell them apart. Add static text like this: To display variables before a page is returned by Grav or in case no page refresh occurs such as when using AJAX there is another alternative. By using a single line of Javascript any variable can be displayed in your browser's developer console, for example:"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/debugging"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/security/2fa"]
+title = "2-Factor Authentication | Grav Documentation"
+description = "Grav documentation"
+full_description = "2-factor authentication (2FA) is an excellent security measure that uses a rolling-clock style authentication method that generates six-digit codes you can use in addition to your username and password to access the Admin. To take advantage of this feature, you'll want to download a 2FA-supporting app such as Authy or Google Authenticator. This app will act as a virtual key ring for authentication codes. Setting 2-factor authentication up in Grav is easy. All you need to do is navigate to Plugins > Admin Panel > Basics in the Admin. Here, you will find 2-Factor Authentication. You can choose to turn this feature on by selecting Yes. This will enable users to set up 2-factor authentication on their accounts. Now, you can select your avatar image to access your user profile settings. Next, you will want to set the 2FA Enabled option to Yes. Using your authenticator app of choice, scan the QR code or enter the secret key to register your 2FA key. Save your profile page to lock in your 2FA settings. A purple 2FA badge will now appear next to your name in the sidebar. This badge lets you know that 2FA is active on the account. You can now log out and log back in. You will be greeted with the same username and password fields, but once you enter this information, you will be asked to provide an additional six-digit code. This code is in your authenticator app. It resets every 30 seconds, so the code is only good during that short period. A new code will generate to replace it. Your 2FA status and hashed key are stored in your site's file system on your user YAML file. For example, if your user account is admin, navigate to ROOT/user/accounts/admin.yaml and look for these two lines: Simply set twofa_enabled to false and save. You should now be able to access your site using just your username and password. Alternatively, you can use the twofa_secret to register your account on your authenticator app of choice. If you believe your 2FA secret may be compromised, you can generate a new key and invalidate the old one by selecting the big red Regenerate button in your user profile settings from the Admin."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/security/2fa"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/grav-development/grav-16-upgrade-guide"]
+title = "Upgrading to Grav 1.6 | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav 1.6 is the largest update since the initial release of Grav. It introduces a few new features, improvements, bug fixes and provides many architectural changes which pave the road towards Grav 2.0. IMPORTANT: For most people, Grav 1.6 should be a simple upgrade without any issues, but like any upgrade, it is recommended to take a backup of your site and test the upgrade in a testing environment before upgrading your live site. Whether you are a developer or administrator of your site, your test site should have Debug Bar enabled. This is because of Debug Bar has some useful tools which help you to ensure your site will be better prepared to run on later versions of Grav. TIP: For more information how to enable the feature, please see Debugging & Logging section in the documentation. For our purposes, we are looking Deprecated tab in the Debug Bar, which allows you to identify deprecated issues and fix or report them before upgrading to later Grav versions. Fixing the issues found in the Deprecated tab will help you to make your site faster and save you time when it is time to during future upgrades. To make sure that you catch all the issues, you should either clear the cache and run Grav with caching disabled to maximize the chance you will catch all the errors. Even by following these steps, you may notice that some of the YAML/Twig errors appear only after clearing the cache. The Deprecated tab contains a list of deprecated features which were found. Every issue is clickable and opens up deprecation message, which has a short explanation from the issue as well as trace back, which allows you to locate and fix the code. In the right side you can see type of the deprecated error and in lower right corner you can filter the displayed types by clicking on the badges. When you open up the deprecation message, the content may first feel overwhelming. But in most cases you can ignore most of the content and just read the first few lines: message, file and line (if available)."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/grav-development/grav-16-upgrade-guide"
+category = "SitesList"
+tags = ["1. basics", "1.6.7", "1.9.3", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/grav-development/grav-15-upgrade-guide"]
+title = "Upgrading from Grav <1.6 | Grav Documentation"
+description = "Grav documentation"
+full_description = "WARNING: Upgrading Grav directly to the latest version works, but is not fully supported and will likely cause your site to break! The easiest way to upgrade older versions of Grav is to create a copy of your site into a Linux/Unix server which has PHP 7.3 installed and supports SSH login to access CLI commands. This guide also works with Linux subsystem for Windows 10, but if you do not have it installed, you may have to download and rename the update packages manually. PHP 7.3 was chosen because of it is the only version of PHP which can be used for all the versions of Grav. You may also use PHP 7.1 or 7.2, but going that only allows you to upgrade Grav up to v1.6.31. At that point you would need to switch to PHP 7.3 or 7.4 before continuing the upgrade process. PHP 8 should only be used after upgrading to Grav 1.7 or later version. This guide includes instructions to upgrade Grav, and the most commonly used packages: Problems, Error, Form, Email, Login and Admin. For every other plugin, make sure that they are still maintained and that it supports both Grav 1.6 and the latest version of Grav. As of writing this guide, almost all actively maintained plugins should fit into this category. The safest plugins are those, which have been updated after Grav 1.7.0 release (01/18/2021) or have been confirmed to work in Grav 1.7. Your theme and any custom or unmaintained plugins will need more work. Any custom code should be checked through to make sure it still works with the current versions of Grav and PHP. The same is true with Markdown, YAML and twig files as the latter versions of the libraries have fixes which catch the errors, usually meaning that parsing of broken files will fail. Newer versions of Grav provide tools to check these files, but the checks do not catch all the issues, so some testing is also needed. This part assumes that you have already made a copy of your site and the CLI commands work. Windows users who do not have Linux subsystem installed need to download the files manually and rename them."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/grav-development/grav-15-upgrade-guide"
+category = "SitesList"
+tags = ["1. basics", "1.6.31", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/change-site-url"]
+title = "Change the site URL | Grav Documentation"
+description = "Grav documentation"
+full_description = "By setting custom_base_url in system.yaml (or Custom Base URL in the System Settings, in Admin), we can have Grav in a folder but have it run in the domain root. Grav is installed in http://localhost:8080/grav-develop but you want it to respond on http://localhost:8080 Grav is installed in http://localhost:8080/grav-develop but you want it to respond on http://localhost:8080/xxxxx Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/change-site-url"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced/groups-and-permissions"]
+title = "Groups and Permissions | Grav Documentation"
+description = "Grav documentation"
+full_description = "Users assigned to a group inherit the group permissions. You can for example define a group that has permission site.paid by adding: When a user belongs to multiple groups, it's enough that a group provides a permission, and it will be added to the user's permissions. You can fine-tune the permissions on a user level too, as usual. With groups, you can define a global permission and deny it on a user level, by adding Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/groups-and-permissions"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getcomposer.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "underground.works", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel"]
+title = "Administration Panel | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Grav Administration Panel is a dynamic administrative interface that makes managing your site, creating new content, and updating its components a breeze."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/administration/configuration"]
+title = "Configuration | Grav Documentation"
+description = "Grav documentation"
+full_description = "These settings are typically used for changing the behaviour of the directory, setting defaults for the objects or alter rendering of the layouts. The settings are different in every Directory, this document contains only the common settings found in every directory. If the rendered HTML has dynamic content, render cache can be disabled from the Twig template by {% do block.disableCache() %}. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/administration/configuration"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/page/configuration"]
+title = "Configuration | Grav Documentation"
+description = "Grav documentation"
+full_description = "If the rendered HTML has dynamic content, render cache can be disabled from the Twig template by {% verbatim %}{% do block.disableCache() %}{% endverbatim %}. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/configuration"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/accounts/groups"]
+title = "User Groups | Grav Documentation"
+description = "Grav documentation"
+full_description = "User Groups define common roles for the users. It is the preferred way to set permissions to the users as managing roles is easier than changing the rules individually for every user account. Administrators will find the permissions area especially useful. This is where you can configure exactly what a user will be able to access and do within the administrator. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/accounts/groups"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/environment-config"]
+title = "Environment Configuration | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav has the ability to extend the powerful configuration capabilities for different environments to support different configuration for development, staging, and production scenarios. Up to Grav 1.6 environments were stored in user/ folder. Grav 1.7 moves environments to user/env/ to make environments easier to maintain. It is highly recommended that you move all the environments into this new location on your existing sites. What this means is that you can provide as little or as much configuration changes per environment as needed. A good example of this is the Debug Bar. By default, the new Debug Bar is disabled in the core system/config/system.yaml file, and also in the user override file: If you wanted to turn it on, you can easily enable it in your user/config/system.yaml file, however a better solution might be to have it enabled for your development environment when accessing via localhost, but disabled on your production server. where localhost is the hostname of the environment (this is what the host you enter in your browser, e.g. http://localhost/your-site) and your configuration file contains: Similarly, you may want to enable CSS, Link, JS and JS Module Asset Pipelining (combining + minification) for your production site only (user/env/www.mysite.com/config/system.yaml): If your production server was reachable via http://www.mysite.com then you could also provide configuration specific for that production site with a file located at user/env/www.mysite.com/config/system.yaml. Of course, you are not limited to changes to system.yaml, you can actually provide overrides for any Grav setting in the site.yaml or even in any plugin configuration! If you are using the Grav Scheduler, be aware of it using the localhost environment and therefore its configuration. To override a plugin configuration YAML file is simply the same process as overriding a regular file. If the standard configuration file is located in: Then you can override this with a setting that only overrides specific options that you want to use for local testing:"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/environment-config"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/using/flex"]
+title = "Flex | Grav Documentation"
+description = "Grav documentation"
+full_description = "Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/using/flex"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/extending"]
+title = "Extending | Grav Documentation"
+description = "Grav documentation"
+full_description = '''This page provides guides for how to extend the Administration Panel, as well as best practices when doing so. Just like when you are extending or modifying a regular Grav Theme, you will be overriding templates to change the structure and appearance of the Admin Plugin. This means that the templates your plugin declares to be used instead of the default ones should mirror the structure of the Admin Theme exactly. For example, if we wanted to change the avatar in the left-side navigation, we would change nav-user-avatar.html.twig. In the Admin plugin, the path to templates is: user/plugins/admin/themes/grav/templates, hereafter referred to as ADMIN_TEMPLATES. The file we are looking for is ADMIN_TEMPLATES/partials/nav-user-avatar.html.twig, which contains <img src="https://www.gravatar.com/avatar/{{ admin.user.email|md5 }}?s=47" />. In your plugin, the path to templates should be: user/plugins/myadminplugin/admin/themes/grav/templates, hereafter referred to as PLUGIN_TEMPLATES. The corresponding file should then be PLUGIN_TEMPLATES/partials/nav-user-avatar.html.twig, which would contain something like <img src="{{ myadminplugin_avatar_image_path }}" />. Thus we are overriding the path to the template, but non-destructively. We target only the relevant template, in a way that does not override any unnecessary templates or hinder other admin themes from registering their alternate templates for the same use. To do this, we register the path in our plugin like this: It is important to remember that the theme used in the Admin plugin is sensitive to the templates available. As a general rule, you should only modify templates with low impact, that is, make changes that will not break the interface for any user who installs your plugin. In this sense it is better to override nav-user-avatar.html.twig than nav.html.twig, as the latter contains much more functionality but uses {% include 'partials/nav-user-details.html.twig' %} to include the former. TIP: Admin template files have autoescaping turned on. You do not need to add |e filters to escape HTML content, but you do need to add |raw if your input is valid HTML.'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/extending"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/security/rate-limiting"]
+title = "Flood Protection | Grav Documentation"
+description = "Grav documentation"
+full_description = "Brute force attacks are a popular choice for website intruders. It could come in the form of someone you know trying to guess your password over and over until they are finally successful or a bot flooding your site with login attempts until eventually the password has been discovered. Grav's flood protection (also known as rate limiting) feature makes these kinds of attacks exceptionally difficult. It allows you to set a number of failed login attempts within a specific amount of time before the account gets temporarily locked out. Additionally, you can restrict the amount of password reset requests applied to accounts before locking this feature out. This feature is managed through the Login plugin, which should already be installed and enabled if you're using Admin Panel. The settings for Grav's flood protection are found in the Login plugin. Simply navigate to Admin > Plugins > Login and select the Security tab. This will enable you to determine how many failed password resets or logins are allowed in a set amount of time before lockout occurs. This log out is temporary and lasts as long as your set interval. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/security/rate-limiting"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/page"]
+title = "Pages | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Pages page gives you quick editorial access to your site's content. This is where you can access a page's editor, delete pages, create new pages, and find out if a page is visible at a glance. Accessing the Pages functionality requires an access.admin.super or access.admin.pages.list permission, see User Accounts and User Groups If you frequently create or modify content on your site, this area of the admin will become very familiar to you. Three buttons line the top of the Pages administrative panel. The Back button sends you back to the Dashboard, while the Add Page and Add Modular buttons initiate the creation of new pages for your site. The Add Page button creates a non-modular page for your site. Once selected, a popup will appear enabling you to enter a Title and Folder Name, assign a Parent Page and Display Template, as well as to set whether the page should be visible or hidden. Once you have filled out this information, selecting Continue will take you to the new page's editor. We will cover the Page Editor in more detail in a following guide. Whether a page is visible or not in these settings only has an effect on navigation. A page's ability to be visited by a browser is determined by the page's publishing settings. The second button along the top of the Pages area of the admin allows you to add a modular subpage to your site. Modular pages are different from regular pages because they are actually a collection of pages, arranged and displayed as one page. This button specifically lets you create subpages and assign them to a parent modular page. Once you have filled out this information, selecting Continue will take you to the new page's editor. We will cover the Page Editor in more detail in a following guide. The pages list that appears in this area gives you quick access to all of your current pages, as well as an at-a-glance method for seeing whether or not the pages are visible. Selecting the title of any page will take you directly to that page's editor. The big X icon to the right of each page lets you delete the page."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/using/collection"]
+title = "Flex Collection | Grav Documentation"
+description = "Grav documentation"
+full_description = "Collection provides a few useful methods, which can be used to render the output, fetch objects, filter and sort and so on. NOTE: In twig there is a {% render %} tag, which should be used instead of calling the method directly. This will allow JS/CSS assets from the collection to work properly. All of these methods return a modified copy of the collection. The original collection remains unchanged. limit( start, limit ): Collection Return subset of collection starting from start and including only limit number of objects. TIP: If you're using sort(), it is recommended to reverse the ordering in there as it saves an extra step. first(): Object | false Sets the iterator to the first object in the collection and returns this object. last(): Object | false Sets the iterator to the last object in the collection and returns this object. slice( offset, length ): array Extracts a slice of length elements starting at position offset from the Collection. group( property ): array Group objects in the collection by a property and return them as associated array. hasProperty( property ): array Returns a list of key: boolean pairs whether object with key has property defined or not. setProperty( property, value ): Collection Set new value to the property for every object in the collection. WARNING: This method modifies the object instances shared between all the collections, if that is not intended, please copy() collection before using this method. defProperty( property, default ): Collection Define default value to the property for every object in the collection. WARNING: This method modifies the object instances shared between all the collections, if that is not intended, please copy() collection before using this method. unsetProperty( property ): Collection Remove value of the property for every object in the collection. WARNING: This method modifies the object instances shared between all the collections, if that is not intended, please copy() collection before using this method."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/using/collection"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/blueprints"]
+title = "Blueprints | Grav Documentation"
+description = "Grav documentation"
+full_description = "Blueprints are an important aspect of Grav. They are essentially the foundation of a theme or plugin's interaction with the Grav admin. They tell Grav what a theme or plugin is, its name, where it can be found on GitHub, etc. It also generates the configuration options for that theme or plugin in the Grav admin. A Blueprint is defined in a YAML file, and can generally host properties as well as form definitions. The vast majority of Grav users will never have to work with Blueprints. Simply put, they determine how plugins and themes appear in the back-end of the site. For most users, this is where they pick up, configuring their themes and plugins using the Grav admin or manipulating options within the theme or plugin's primary YAML file. The folks that will work the most with Blueprints are developers that are creating new themes and plugins and customizing a resource's options in the back end. They're a powerful tool that defines what your resource is, where Grav can find updates for it, and what configuration options you should be able to set in the back end. When used with themes and plugins, the convention is to put a blueprints.yaml in the package. Doing this tells Grav the metadata of that resource, which introduces it to the Grav admin. A blueprints.yaml file is an important part of any theme and plugin. It's essential for the GPM (Grav Package Manager) system. GPM uses the information stored in the blueprint to make the plugin available to users. In our example plugin blueprint, we dive into the blueprint of the Assets plugin. This blueprint sets the name, author information, keywords, home page, bug report link, and other metadata that not only tells Grav where it can locate updates for the plugin, but to provide a useful resource to the user accessible from the Grav Admin. Once this information is given, further down in the Blueprint's page, you find forms information. This information creates the Admin Forms that are accessible by the user in the backend of Grav. For example, if you wanted to add a toggle that enables or disables a particular feature of that plugin, you would add it here."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/blueprints"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/flex/administration/views-list"]
+title = "Content Listing | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Content Listing usually contains a paginated list of your content, but some directories, like Pages, may have a highly customized look. This is where you can create, edit, and delete your content. The page also has powerful tools to Search and Order the items. Along the top of the page, you will find the administrative controls. The controls may differ per Flex Type, but here is a list of some of the most common ones: Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/administration/views-list"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/dashboard/configuration-site"]
+title = "Configuration (Site) | Grav Documentation"
+description = "Grav documentation"
+full_description = '''The Configuration page gives you access to your site's System and Site configuration settings. Additionally, you can view a breakdown of your server's properties in a number of areas including PHP, SQL, server environment, and other various components that determine how your site operates. The Configuration requires an access.admin.super or access.admin.configuration && access.admin.configuration_site access level. The Site tab enables you to customize the settings found in the /user/config/site.yaml file. This tab gives you access to options and fields that determine site-related variables, such as the name, default author, and metadata used in your site. This section is where you set the basic properties of content handling for your site. The home page, default theme, and various other content display options are set here. Page summaries are a great way to give a small preview of a page's content. You can use a delimiter in the page to set a "cut off" point between the summary content, and the full body content of the page. These settings give you the ability to Metadata is an important part of a page's behind-the-scenes makeup. It can improve SEO, how your links appear in various search engines and social feeds, and more. You can set various metadata properties here. Redirects and routing have never been easier. Just set it all up in this section, and you're good to go. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes.'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/dashboard/configuration-site"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/advanced/grav-development/grav-17-upgrade-guide"]
+title = "Upgrading to Grav 1.7 | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav 1.7 introduces a few new features, improvements, bug fixes and provides many architectural changes which pave the road towards Grav 2.0. Here are a few highlights: IMPORTANT: For most people, Grav 1.7 should be a simple upgrade without any issues, but like any upgrade, it is recommended to take a backup of your site and test the upgrade in a testing environment before upgrading your live site. This behavior is a result of the new default of auto-escaping being true in Grav 1.7. This is a security enhancement, and if you are upgrading from a version prior to 1.7, we automatically enable Twig Compatibility setting in the system configuration to ensure your old Twig code will continue to function. If you manually update to 1.7 or upgrade in any way that does not go through the GPM self upgrade process, you should set this setting yourself. As we have upgraded to a newer version of Symfony framework, the YAML parser is stricter than it was in versions prior to 1.7. To handle this we have included an older version of the parser that is available when enabling Yaml Compatibility. This is automatically handled for you if you upgrade to Grav 1.7 via GPM, but if you have upgraded manually, you will need to set this value yourself. If your admin is displaying with untranslated strings in the interface, it's most likely because you have previously disabled Language Translations. This was buggy in previous versions of Grav and disabling it, didn't actually disable translations throughout the admin as intended. This is fixed in Grav 1.7 and this setting is doing what it is intended to do, show the translation codes in uppercase rather than the translated strings themselves. In Grav 1.7 we introduced Flex Pages as the new default page management UI. Also, to optimize performance, we stopped initializing pages on every admin call. Switching back to regular Grav Pages might temporarily resolve your issue. This is done by editing the FlexObjects plugin and disabling Pages (Admin)."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/grav-development/grav-17-upgrade-guide"
+category = "SitesList"
+tags = ["1. basics", "1.7.8", "1.7.8+", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getcomposer.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "underground.works", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/themes"]
+title = "Themes | Grav Documentation"
+description = "Grav documentation"
+full_description = "Along the top of the Themes area of the admin, you will find the Back, Add, and Check for Updates buttons. Back simply takes you back to either the Dashboard or to the main Themes page if you are deeper into that area of the admin. Add pulls up a display of currently-available Grav themes you can add to your site. This is a quick and easy way to install a new theme. Simply select the Install button to install the theme. Doing so will take you to the new theme's Information panel which contains more detailed information about the theme, as well as any options set in its blueprints file. Once you are satisfied with any settings changes, simply select the Save button to save your changes. You can also delete the theme from your site by selecting the red Remove Theme button in the bottom-right area of the panel. The Installed Themes section displays your currently-installed themes. Selecting the thumbnail of a theme takes you to the information page for that theme, while the gray Activate button at the bottom of each thumbnail gives you the ability to set that theme as the active default theme for your site. At the top of each thumbnail you will see the name and current version number of each theme. The purple check icon indicates that a theme was created by the Grav team. Themes without that icon are created and maintained by third-party developers. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/themes"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/grav-development"]
+title = "Grav Development | Grav Documentation"
+description = "Grav documentation"
+full_description = "If you want to develop with Grav, you will benefit from a more sophisticated setup than the one required for a regular Grav user. This includes just about any type of development, such as: Grav Core, Grav Plugins, Grav Skeletons, or even Grav Themes. When we talk about the Grav Core, we are effectively talking about things in the system folder. This folder controls everything about Grav and is really the very essence of the Grav workflow and lifecycle. Grav is intentionally focused on working with pages in an efficient manner. Manipulation of pages and extensive functionality are often best served by creating a plugin. We strongly encourage our community to contribute bug fixes, and even propose development of appropriate functionality within the core of Grav. This will run the full suite of existing tests which should always be executed successfully on any site. Most development effort will probably take the form of a Grav Plugin. Because Grav has plenty of Event Hooks, it's very easy to provide enhanced and specific functionality via the creation of a plugin. We have already developed many plugins that work in a variety of ways using many different events to show off the power of this functionality. A proper Grav plugin requires certain files in order to function properly, be listed in the Grav repository, and be visible in the Grav admin plugin. Please ensure your plugin contains all these files: A Grav Skeleton is effectively an all-in-one sample site. They include the Grav Core, required plugins, as well as appropriate pages for content and a theme for pulling it all together. Grav was designed to make the process of creating a site as easy as possible. For that reason, everything you need for a site can be contained in the user folder. Each of the skeletons we currently have available are simply a user folder on GitHub that we package up with various dependencies (required plugins, and theme) into a package that can be simply unzipped to provide a working example."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/grav-development"
+category = "SitesList"
+tags = [".dependencies", "1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/administration"]
+title = "Administration | Grav Documentation"
+description = "Grav documentation"
+full_description = "If you have been using Admin Panel in Grav 1.7, you have already used Flex Objects. The best examples are Accounts and Pages, which are great examples what can be done with Flex. By default, Flex Administration is invisible to the user. In order to see a Directory, it has to be enabled. Enabled directories can show up either on Navigation Menu, inside a Flex Objects menu item, or even inside other plugins. We are interested in the Directories option inside the plugin, which lists all the detected Flex Directories. Just select the directories you're interested in and make sure the toggle is set to Enabled. By default, the Flex Objects navigation menu item contains all the Flex Directories that have been enabled in your site. Some Flex Directories choose to hide from this list and show up elsewhere. Accounts and Pages are good examples of this. In Content Listing you can browse through the objects, use Search, and change Ordering. Additionally each object has Actions, notably Edit and Delete. You can also add new objects by using the Add button at top of any page. Next to it is also the Configuration button to change directory-wide settings. In Configuration you can change configuration, which changes the behavior of the whole directory. Usually caching is among these options. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/administration"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/administration/introduction"]
+title = "Getting Started | Grav Documentation"
+description = "Grav documentation"
+full_description = "This section contains a walk-through on how to quickly enable an existing Flex Directory and how to display it within the Grav admin. In our examples we are using the Contacts Flex Directory which comes included with the Flex Objects Plugin for demonstration purposes. Towards the bottom of the page you will see the Directories configuration setting. This setting lists all detected Flex Directories in your project. In the Advanced Content Editor ensure your frontmatter contains the flex.directory of contacts as follows: TIP: If you do not specify Flex Directory, the page will list all directories instead of displaying entries from a single directory. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/administration/introduction"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/using/directory"]
+title = "Flex Directory | Grav Documentation"
+description = "Grav documentation"
+full_description = "Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/using/directory"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/flex/custom-types/blueprint"]
+title = "Blueprint | Grav Documentation"
+description = "Grav documentation"
+full_description = "Basic structure of Flex Blueprint contains title, description and type, which describe the type and three sections: config, blueprints and form, which describe different aspects from the directory type. To create your own custom Directory, you need to start by naming your type (filename) and filling in the title and description. After creating the file and filling in the basic information, the next step is to either copy your existing form or to add some fields into the file. WARNING: It is better not to use the simple list format to describe the fields as described in Create a simple single form. Also do not pass process section of the form to this file, it will not be used by Flex. The form looks the same regardless if it was taken from a page or from a configuration, plugin or theme blueprint file. This is the main blueprint for every object in your directory and it should contain all the fields defined in the object. Think it as a form that is displayed to the administrator. WARNING: Be careful when you modify a blueprint for existing Flex Type. Make sure objects you have already saved are compatible with the new version of the blueprint - meaning that you should be able to both save and display the older objects. We are not quite done yet. There is still two things that needs to be done to make the Directory to work: we need to configure the data storage layer and define the fields to display in the Admin List view. We can do both of those inside config section. Config section is the most complicated part of Flex Blueprint, though a lot of it is just to allow customization. It contains data, admin and site sections. There are two mandatory sections in the configuration: config.data.storage and config.admin.list.fields. The latter defines fields displayed inside admin list view. Data storage on the other hand defines how the data will be stored. Flex Directory is highly customizable. You can use your own object, collection and index PHP classes to add your own behavior. Additionally, you can configure the storage layer to best fit your needs. Directory also has it's default ordering and search functionality."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/custom-types/blueprint"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/accounts"]
+title = "User Accounts and Groups | Grav Documentation"
+description = "Grav documentation"
+full_description = "Accounts Manager is a new feature for Grav 1.7 Admin, which allows users to manage both user accounts and user groups. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/accounts"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/extending/admin-events"]
+title = "Admin Event Hooks | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Admin plugin has multiple event hooks that can be used during the Grav Lifecycle. See the general plugin documentation for using event hooks in the Plugins chapter. The Admin plugin fires various tasks, depending on user interaction. Tasks might include logout, login, save, 2faverify, etc. After the task completes, this event hook fires. While creating a new page, this event is fired after the header data is initially set to allow plugins to programmatically manipulate the frontmatter. Use admin event onAdminSave() to manipulate the page object data $object before it is saved to the filesystem. When creating a folder via the panel, this event fires immediately after creating the new folder and performing a standard cache clear. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/extending/admin-events"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/page/editor"]
+title = "Editor (Content) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. Accessing the Pages functionality requires an access.admin.super or access.admin.pages.list permission, see User Accounts and User Groups Tabs that appear in the Page Editor are not universal. There are a default set of form fields that are commonly found in Grav themes, however these can vary between themes. The admin pulls form field information from a number of sources including the theme and the template used for the specific page. The tabs and options represented in this documentation are by default. Theme developers have the ability to add their own options to these tabs, or even to do away with these tabs and replace them with something entirely different. We are documenting a common-case scenario based on the Antimatter theme to serve as an example. In this page, we will go over the features and functionality found in the Content tab of the Page Editor. Along the top of the page, you will find the administrative controls that enable you to save, delete, copy, and move your page. Additionally, you can hit the Back button to get back to the main Pages area of the admin. The Save and Delete buttons are pretty self-explanatory. They save and delete the currently-accessed page, respectively. Selecting the Move button activates a popup that gives you the ability to assign a new parent to the page. You have the same option in the Advanced tab. Copy creates a duplicate of your current page, appending a -2 (or other numeric prefix if -2 is already in use) to the end of the folder name. You can change both the folder name and title as you see fit. The title of a page is typically set during that page's creation, however you can edit it after the fact here. Note that changing the page's title here will not have a direct impact on the folder name (which is used for navigation purposes) but it will change what people see on the front end."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/editor"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/page"]
+title = "Pages | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Pages page gives you quick editorial access to your site's content. This is where you can access a page's editor, delete pages, create new pages, and find out if a page is visible at a glance. Accessing the Pages functionality requires an access.admin.super or access.admin.pages permission, see Profile If you frequently create or modify content on your site, this area of the admin will become very familiar to you. Three buttons line the top of the Pages administrative panel. The Back button sends you back to the Dashboard, while the Add Page and Add Modular buttons initiate the creation of new pages for your site. The Add Page button creates a non-modular page for your site. Once selected, a popup will appear enabling you to enter a Title and Folder Name, assign a Parent Page and Display Template, as well as to set whether the page should be visible or hidden. Once you have filled out this information, selecting Continue will take you to the new page's editor. We will cover the Page Editor in more detail in a following guide. Whether a page is visible or not in these settings only has an effect on navigation. A page's ability to be visited by a browser is determined by the page's publishing settings. The second button along the top of the Pages area of the admin allows you to add a modular subpage to your site. Modular pages are different from regular pages because they are actually a collection of pages, arranged and displayed as one page. This button specifically lets you create subpages and assign them to a parent modular page. Once you have filled out this information, selecting Continue will take you to the new page's editor. We will cover the Page Editor in more detail in a following guide. The pages list that appears in this area gives you quick access to all of your current pages, as well as an at-a-glance method for seeing whether or not the pages are visible. Selecting the title of any page will take you directly to that page's editor. The big X icon to the right of each page lets you delete the page."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/page"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/page/advanced"]
+title = "Editor (Advanced) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. In this page, we will go over the features and functionality found in the Advanced tab of the Page Editor. Accessing the Pages functionality requires an access.admin.super or access.admin.pages permission, see Profile You might notice the check boxes to the left of some of the options in this area of the admin. These boxes indicate that you would like to override the default values for this page. Leaving them unchecked reverts to blank or default states. The Settings area focuses on various critical options for your page. This is where you would go to change the name of the folder the page is stored in, its parent, and the template used when displaying the page. Overrides are those options that give your page extra functionality, set its slug to something different than the default one based on the folder name, caching settings, navigation visibility, and make a page unreachable via a direct URL. You can also use this area to turn on and off various processes for the page, such as Twig which enables you to inject Twig into your page content and have it render. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/page/advanced"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/dashboard/configuration-site"]
+title = "Configuration (Site) | Grav Documentation"
+description = "Grav documentation"
+full_description = '''The Configuration page gives you access to your site's System and Site configuration settings. Additionally, you can view a breakdown of your server's properties in a number of areas including PHP, SQL, server environment, and other various components that determine how your site operates. The Configuration requires an access.admin.super or access.admin.configuration && access.admin.configuration_site access level. The Site tab enables you to customize the settings found in the /user/config/site.yaml file. This tab gives you access to options and fields that determine site-related variables, such as the name, default author, and metadata used in your site. This section is where you set the basic properties of content handling for your site. The home page, default theme, and various other content display options are set here. Page summaries are a great way to give a small preview of a page's content. You can use a delimiter in the page to set a "cut off" point between the summary content, and the full body content of the page. These settings give you the ability to Metadata is an important part of a page's behind-the-scenes makeup. It can improve SEO, how your links appear in various search engines and social feeds, and more. You can set various metadata properties here. Redirects and routing have never been easier. Just set it all up in this section, and you're good to go. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes.'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/dashboard/configuration-site"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/plugins/options"]
+title = "Options | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Admin Panel plugin has a set of options of its own accessible in the Plugins area of the admin. To reach them, simply navigate to Plugins > Admin Panel and select the title link for the plugin called Admin Panel. This will open a page filled with useful options to help you customize your experience with the Admin. The top of the Admin Panel options page gives you some information about the Admin Panel plugin. This includes the plugin author, homepage, and license, in addition to other links and information to help you find additional information and report any bugs. The Basics section of this page gives you a set of options to help you define your experience within the Admin. This includes being able to change the text that appears at the top of the sidebar, create a custom path to the administrator, and more. This section of the page lets you customize the items that appear in the main dashboard of the admin. Not a fan of the News Feed and want to get rid of it? Want to streamline your dashboard down to one or two sections you love? This is where you can do that. You can enable or disable specific types of notifications from this section. You can turn off feed update notifications, as well as notifications for plugins and/or themes. One of the Admin's great features is its ability to track and display traffic information from the Admin's dashboard. This section of the Admin plugin's options gives you the ability to enable or disable traffic tracking, and configure how that data is displayed. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/plugins/options"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/plugins"]
+title = "Plugins | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Plugins area of the admin is where you can go to manage your plugins, add new ones, remove existing ones, and quickly access links to documentation and other information. In this page, we will explore this area of the admin in detail, including how to activate and deactivate installed plugins, and add new ones with ease. Accessing the Plugins functionality requires an access.admin.super or access.admin.plugins permission. The Controls area at the top of the page gives you the ability to add new plugins, as well as check for updates for existing ones. The Add button takes you to a page listing all of the currently available Grav plugins, enabling you to view their information and install them by selecting the Install button to the right of the plugin. The icon indicates that the plugin is created and supported by the Grav team. Plugins without this icon were created by third-party developers. This area of the Plugins administrator shows you, at a glance, which plugins are presently installed on your Grav site. Additionally, you can enable and disable these plugins by selecting the toggle icon to the right of each plugin. Selecting the chevron icon will give you more information about the plugin, including its author, project home page and bug tracker, as well as its license and a brief description. You can also quickly access the plugin's readme file for additional information and usage guide. You can also click the plugin's name to go to a more-detailed page including the plugin's settings area where you can configure the plugin. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/plugins"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/extending"]
+title = "Extending | Grav Documentation"
+description = "Grav documentation"
+full_description = '''This page provides guides for how to extend the Administration Panel, as well as best practices when doing so. Just like when you are extending or modifying a regular Grav Theme, you will be overriding templates to change the structure and appearance of the Admin Plugin. This means that the templates your plugin declares to be used instead of the default ones should mirror the structure of the Admin Theme exactly. For example, if we wanted to change the avatar in the left-side navigation, we would change nav-user-avatar.html.twig. In the Admin plugin, the path to templates is: user/plugins/admin/themes/grav/templates, hereafter referred to as ADMIN_TEMPLATES. The file we are looking for is ADMIN_TEMPLATES/partials/nav-user-avatar.html.twig, which contains <img src="https://www.gravatar.com/avatar/{{ admin.user.email|md5 }}?s=47" />. In your plugin, the path to templates should be: user/plugins/myadminplugin/admin/themes/grav/templates, hereafter referred to as PLUGIN_TEMPLATES. The corresponding file should then be PLUGIN_TEMPLATES/partials/nav-user-avatar.html.twig, which would contain something like <img src="{{ myadminplugin_avatar_image_path }}" />. Thus we are overriding the path to the template, but non-destructively. We target only the relevant template, in a way that does not override any unnecessary templates or hinder other admin themes from registering their alternate templates for the same use. To do this, we register the path in our plugin like this: It is important to remember that the theme used in the Admin plugin is sensitive to the templates available. As a general rule, you should only modify templates with low impact, that is, make changes that will not break the interface for any user who installs your plugin. In this sense it is better to override nav-user-avatar.html.twig than nav.html.twig, as the latter contains much more functionality but uses {% include 'partials/nav-user-details.html.twig' %} to include the former. TIP: Admin template files have autoescaping turned on. You do not need to add |e filters to escape HTML content, but you do need to add |raw if your input is valid HTML.'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/extending"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/faq"]
+title = "FAQ | Grav Documentation"
+description = "Grav documentation"
+full_description = "This FAQ is intended to provide useful tutorials, tips, and tricks to help you get the most out of the Admin plugin. Manual installation is not the recommended method of installation, however, it is still possible to install the admin plugin manually. Basically, you need to download each of the following plugins individually: Extract each archive file into your user/plugins folder, then ensure the folders are renamed to just admin/, login/, form/, and email/. Then proceed with the Usage instructions below. When you first install the Admin plugin, you will be prompted to create an admin user when you point your browser at your site. This is a simple web form that ensures at least one admin user has been created. You can easily add other users but it requires a bit of work in the terminal/command prompt to do. From your terminal, access the root of the Grav site you'd like to add users to, and type the following command: This will initiate a series of prompts to guide you through the creation of a new user. These include creating a user name, password, email address, and setting the new user's permissions level. You will need to have a user name consisting of between 3 and 16 characters which can include lowercase letters, numbers, underscores, and hyphens. Uppercase letters, spaces, and special characters are not allowed for the user name. At one point during the creation process you will be asked to choose a set of permissions for the new user. There are currently three options: User data is stored in SITE_ROOT/user/accounts/ and each user is given a YAML file containing that user's login information and other details. Here is an example of the data contained within a user account file. For example this could be the content of SITE_ROOT/user/accounts/tester.yaml. You can edit this information directly to the user's YAML file, or by selecting your user avatar from the sidebar of the admin. This will take you to a page where you can easily manage user information. For security reasons, user passwords are stored as a hash. If you would like to change your password, we recommend doing so from within the admin."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/faq"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/advanced/backups"]
+title = "Backups | Grav Documentation"
+description = "Grav documentation"
+full_description = "The backup system in Grav has been completely rewritten for Grav 1.6 to provide more features and functionality. The improvements include: For backwards compatibility, the default configuration mimics the system prior to Grav 1.6, however, it does now have a 5GB limit by default for backup space. You should copy the default configuration file (system/config/backups.yaml) to your `user/config/ If you use the admin plugin, and save the configuration, the user/config/backups.yaml file will be created automatically. An array of profiles can be configured. The Default Site Backup profile is configured similarly to the default Grav backup in previous versions. By default, the backup is not automatically processed by the scheduler, but you can set schedule: true and configure the schedule_at: option with a preferred cron expression. This is covered in more details in the Cli Console -> Grav Command section, but here's an example of running the backup manually: Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/backups"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/security"]
+title = "Security | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav offers some extra powerful protection for your Administration Area, such as 2-Factor Authentication and Flood Protection. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/security"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/advanced/backups"]
+title = "Backups | Grav Documentation"
+description = "Grav documentation"
+full_description = "The backup system in Grav has been completely rewritten for Grav 1.6 to provide more features and functionality. The improvements include: For backwards compatibility, the default configuration mimics the system prior to Grav 1.6, however, it does now have a 5GB limit by default for backup space. You should copy the default configuration file (system/config/backups.yaml) to your `user/config/ If you use the admin plugin, and save the configuration, the user/config/backups.yaml file will be created automatically. An array of profiles can be configured. The Default Site Backup profile is configured similarly to the default Grav backup in previous versions. By default, the backup is not automatically processed by the scheduler, but you can set schedule: true and configure the schedule_at: option with a preferred cron expression. This is covered in more details in the Cli Console -> Grav Command section, but here's an example of running the backup manually: Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/backups"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/advanced/change-site-url"]
+title = "Change the site URL | Grav Documentation"
+description = "Grav documentation"
+full_description = "By setting custom_base_url in system.yaml (or Custom Base URL in the System Settings, in Admin), we can have Grav in a folder but have it run in the domain root. Grav is installed in http://localhost:8080/grav-develop but you want it to respond on http://localhost:8080 Grav is installed in http://localhost:8080/grav-develop but you want it to respond on http://localhost:8080/xxxxx Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/change-site-url"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced"]
+title = "Advanced | Grav Documentation"
+description = "Grav documentation"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel"]
+title = "Administration Panel | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Grav Administration Panel is a dynamic administrative interface that makes managing your site, creating new content, and updating its components a breeze."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/flex/custom-types"]
+title = "Custom Directory Types | Grav Documentation"
+description = "Grav documentation"
+full_description = "For many sites, the main reason for using Flex Directories is to be able to define your own custom data types, which are neither simple or small enough to fit into configuration or suitable to be represented as individual pages. Flex Directories solve this issue for you. Since Flex Types use the common design principles to both configuration and pages, it is really easy to convert your existing configuration and pages to use Flex. You may also have existing forms in the site, which you'd want to manage from the Administration Panel, or maybe you want to display selected comments in your site. These forms can also be converted to use Flex. The base of a Flex Type is its Blueprint. The blueprint defines both the form and the fields of the object. It also has some additional configuration, which can be used to customize the directory and its objects, where it shows up in Admin Panel and ACL. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/custom-types"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/page/security"]
+title = "Editor (Security) | Grav Documentation"
+description = "Grav documentation"
+full_description = "Page specific CRUD ACL works by using user groups only. In addition, it has two special groups named authors and defaults, which give special access to page owners, and a default fallback to all logged in users. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/security"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org"]
+title = "Basics | Grav Documentation"
+description = "Grav documentation"
+year_published = 2025
+clearnet = "https://learn.getgrav.org"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/dashboard/configuration-system"]
+title = "Configuration (System) | Grav Documentation"
+description = "Grav documentation"
+full_description = '''The Configuration page gives you access to your site's System and Site configuration settings. Additionally, you can view a breakdown of your server's properties in a number of areas including PHP, server environment, and other various components that determine how your site operates. The System tab enables you to customize the settings found in the /user/config/system.yaml file. These settings affect how many of the primary system-related features of Grav operate. The site's home page, caching settings, and more can be configured here. These settings are separated into several sections, each focusing on a specific aspect of Grav's operation. This section is where you set the basic properties of content handling for your site. The home page, default theme, and various other content display options are set here. HTTP header options can be set in this section. This is useful for browser-based caching and optimization. Markdown makes up the bulk of Grav's page content. This section gives you options to enable Markdown Extra, as well as to set how Grav handles Markdown. Grav's integrated caching feature helps make it one of the fastest flat-file CMS options out there. You can configure your site's primary caching functions in this section. This section focuses on Grav's Twig templating feature. You can set Twig caching, debug, and change detection settings here. You can set how Grav handles error reporting and display here. This is a useful tool to have during site development. Like error handling, Grav's integrated debugging tools give you the ability to locate and troubleshoot issues. This is especially useful during development. This section determines how Grav handles media content. Image quality and other media handling options are configured here. Caching images that have already been optimised (outside of Grav) could result in the output file being a much larger filesize than the original. This is due to a bug in the Gregwar image library and not directly related to Grav (see this open issue for more information). The alternative is to set "Cache All Images" to No'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/dashboard/configuration-system"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.gravatar.com", "getgrav.org", "github.com", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/accounts/permissions"]
+title = "Permissions | Grav Documentation"
+description = "Grav documentation"
+full_description = "Permissions set specifically for the user account take precedence over the group permissions. If the permission has not been set in the user account, access check will be performed against all the user groups the user belongs to. If any of the user groups have Denied the action, user has no permission for the action. Otherwise, if any of the user groups have Allowed the action, permission will be granted. If permission has not been set in any of the user's groups, Super User permission acts as universal Allowed, otherwise Denied will be applied. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/accounts/permissions"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/security/2fa"]
+title = "2-Factor Authentication | Grav Documentation"
+description = "Grav documentation"
+full_description = "2-factor authentication (2FA) is an excellent security measure that uses a rolling-clock style authentication method that generates six-digit codes you can use in addition to your username and password to access the Admin. To take advantage of this feature, you'll want to download a 2FA-supporting app such as Authy or Google Authenticator. This app will act as a virtual key ring for authentication codes. Setting 2-factor authentication up in Grav is easy. All you need to do is navigate to Plugins > Admin Panel > Basics in the Admin. Here, you will find 2-Factor Authentication. You can choose to turn this feature on by selecting Yes. This will enable users to set up 2-factor authentication on their accounts. Now, you can select your avatar image to access your user profile settings. Next, you will want to set the 2FA Enabled option to Yes. Using your authenticator app of choice, scan the QR code or enter the secret key to register your 2FA key. Save your profile page to lock in your 2FA settings. A purple 2FA badge will now appear next to your name in the sidebar. This badge lets you know that 2FA is active on the account. You can now log out and log back in. You will be greeted with the same username and password fields, but once you enter this information, you will be asked to provide an additional six-digit code. This code is in your authenticator app. It resets every 30 seconds, so the code is only good during that short period. A new code will generate to replace it. Your 2FA status and hashed key are stored in your site's file system on your user YAML file. For example, if your user account is admin, navigate to ROOT/user/accounts/admin.yaml and look for these two lines: Simply set twofa_enabled to false and save. You should now be able to access your site using just your username and password. Alternatively, you can use the twofa_secret to register your account on your authenticator app of choice. If you believe your 2FA secret may be compromised, you can generate a new key and invalidate the old one by selecting the big red Regenerate button in your user profile settings from the Admin."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/security/2fa"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced/grav-development/grav-16-upgrade-guide"]
+title = "Upgrading to Grav 1.6 | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav 1.6 is the largest update since the initial release of Grav. It introduces a few new features, improvements, bug fixes and provides many architectural changes which pave the road towards Grav 2.0. IMPORTANT: For most people, Grav 1.6 should be a simple upgrade without any issues, but like any upgrade, it is recommended to take a backup of your site and test the upgrade in a testing environment before upgrading your live site. Whether you are a developer or administrator of your site, your test site should have Debug Bar enabled. This is because of Debug Bar has some useful tools which help you to ensure your site will be better prepared to run on later versions of Grav. TIP: For more information how to enable the feature, please see Debugging & Logging section in the documentation. For our purposes, we are looking Deprecated tab in the Debug Bar, which allows you to identify deprecated issues and fix or report them before upgrading to later Grav versions. Fixing the issues found in the Deprecated tab will help you to make your site faster and save you time when it is time to during future upgrades. To make sure that you catch all the issues, you should either clear the cache and run Grav with caching disabled to maximize the chance you will catch all the errors. Even by following these steps, you may notice that some of the YAML/Twig errors appear only after clearing the cache. The Deprecated tab contains a list of deprecated features which were found. Every issue is clickable and opens up deprecation message, which has a short explanation from the issue as well as trace back, which allows you to locate and fix the code. In the right side you can see type of the deprecated error and in lower right corner you can filter the displayed types by clicking on the badges. When you open up the deprecation message, the content may first feel overwhelming. But in most cases you can ignore most of the content and just read the first few lines: message, file and line (if available)."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/grav-development/grav-16-upgrade-guide"
+category = "SitesList"
+tags = ["1. basics", "1.6.7", "1.9.3", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/flex"]
+title = "Flex Objects | Grav Documentation"
+description = "Grav documentation"
+full_description = "Flex Objects is a new concept in Grav 1.7 that adds support for custom data types which can be easily integrated to your site. Flex Objects are provided by the Flex Objects Plugin which is required by the Admin Panel and included in the Grav Core + Admin Plugin package. Flex Directories in this documentation has nothing to do with the older Flex Directories Plugin. In fact the old plugin has been superseded with this feature together with Flex Objects Plugin. Flex is a set of Directories of a given type. Grav has its own built-in types, such as User Accounts and Pages. Plugins and themes can also define their own types and register those with Grav. This gives a single access point for all the data in the site, given that the data is inside a Flex Directory. This makes all the objects available to every page and plugin in your site. TIP: Even if Flex User Accounts or Pages are not enabled, you can still access Flex versions of them in both frontend and Admin Panel. It defines everything that is needed to display and modify the content: data structure, form fields, permissions, template files, even storage layer. Each Directory contains a Collection of Objects with optional support for Indexes to speed up queries to Storage. The collection usually contains only the objects which are needed to display the page or to perform the given action. It provides useful tools to further filter or manipulate the data as well as methods to render the whole collection. The object represents a single entity. The object gives access to its properties, including any associated data, such as Media. Object also knows how to Render itself or which Form to use to edit its contents. Actions like creating, updating and deleting objects are supported by the object itself. It can be a single file, set of files in a single folder or set of folders. Flex also supports custom storages, such as database storages. It adds a new section to Admin Plugin allowing site administrators to manage Flex Objects. Each Flex Directory comes with CRUD-type ACL, which can be used to restrict parts of Admin and actions within them to certain users."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/accounts/configuration"]
+title = "Configuration | Grav Documentation"
+description = "Grav documentation"
+full_description = "If the rendered HTML has dynamic content, render cache can be disabled from the Twig template by {% do block.disableCache() %}. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/accounts/configuration"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["getgrav.org", "github.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced/environment-config"]
+title = "Environment Configuration | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav has the ability to extend the powerful configuration capabilities for different environments to support different configuration for development, staging, and production scenarios. What this means is that you can provide as little or as much configuration changes per environment as needed. A good example of this is the Debug Bar. By default, the new Debug Bar is disabled in the core system/config/system.yaml file, and also in the user override file: If you wanted to turn it on, you can easily enable it in your user/config/system.yaml file, however a better solution might be to have it enabled for your development environment when accessing via localhost, but disabled on your production server. where localhost is the hostname of the environment (this is what the host you enter in your browser, e.g. http://localhost/your-site) and your configuration file contains: Similarly, you may want to enable CSS, Link, JS and JS Module Asset Pipelining (combining + minification) for your production site only (user/www.mysite.com/config/system.yaml): If your production server was reachable via http://www.mysite.com then you could also provide configuration specific for that production site with a file located at user/www.mysite.com/config/system.yaml. Of course, you are not limited to changes to system.yaml, you can actually provide overrides for any Grav setting in the site.yaml or even in any plugin configuration! If you are using the Grav Scheduler, be aware of it using the localhost environment and therefore its configuration. To override a plugin configuration YAML file is simply the same process as overriding a regular file. If the standard configuration file is located in: Then you can override this with a setting that only overrides specific options that you want to use for local testing: Starting from Grav 1.7, it is possible to set the environment by using server configuration. In this use scenario, you set environment variables from the server or from a script that runs before Grav to select the environment to be used."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/environment-config"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/page/advanced"]
+title = "Editor (Advanced) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. In this page, we will go over the features and functionality found in the Advanced tab of the Page Editor. Accessing the Pages functionality requires an access.admin.super or access.admin.pages.list permission, see User Accounts and User Groups You might notice the check boxes to the left of some of the options in this area of the admin. These boxes indicate that you would like to override the default values for this page. Leaving them unchecked reverts to blank or default states. The Settings area focuses on various critical options for your page. This is where you would go to change the name of the folder the page is stored in, its parent, and the template used when displaying the page. Overrides are those options that give your page extra functionality, set its slug to something different than the default one based on the folder name, caching settings, navigation visibility, and make a page unreachable via a direct URL. You can also use this area to turn on and off various processes for the page, such as Twig which enables you to inject Twig into your page content and have it render. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/advanced"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/dashboard"]
+title = "Dashboard | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Dashboard serves as a hub of information for the Administration Panel plugin. From this one page, you can check traffic statistics, maintenance information, Grav updates, create new backups, see the latest page updates, as well as to quickly clear Grav's cache. The Dashboard content will change depending on the user permissions. For example, giving access.admin.super unlocks everything. If that access level is not granted, access.admin.maintenance allows cache clearing and updates. access.admin.pages allows access to pages. access.admin.statistics allows display of the site page view statistics. Along the top of the Dashboard, you will find two buttons. The first of which initiates a clearing of the Grav cache. Clicking the main Clear Cache button will wipe the entire cache, including any caching of assets and images. Using the drop-down feature to the right, you can choose from specific types of cache clearing processes. For example, if you only want to clear the image cache without disrupting any other cached data, you can do so here. The second button initiates an update check for your site. This includes any supported plugins, themes, and Grav itself. If new updates are discovered, you receive a notification on the Dashboard. This isn't the only method Grav has for checking for new updates. Update checks are also triggered whenever a new page in the admin is loaded, and cached for one day. If you clear all of Grav's cache and load a new page in the admin, an update check will automatically take place. The Maintenance and Page View Statistics sections give you quick access to important information about your site. On the Maintenance side, you can see a percentage graph letting you know how many of Grav's bits and pieces are completely up-to-date. If new updates are available, an Update button will appear that enables you to perform a one-click update for all plugins and themes. This button will not update Grav itself, which notifies you about a required update just above the Maintenance and Page View Statistics sections."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/dashboard"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/dashboard/configuration-system"]
+title = "Configuration (System) | Grav Documentation"
+description = "Grav documentation"
+full_description = '''The Configuration page gives you access to your site's System and Site configuration settings. Additionally, you can view a breakdown of your server's properties in a number of areas including PHP, server environment, and other various components that determine how your site operates. The System tab enables you to customize the settings found in the /user/config/system.yaml file. These settings affect how many of the primary system-related features of Grav operate. The site's home page, caching settings, and more can be configured here. These settings are separated into several sections, each focusing on a specific aspect of Grav's operation. This section is where you set the basic properties of content handling for your site. The home page, default theme, and various other content display options are set here. HTTP header options can be set in this section. This is useful for browser-based caching and optimization. Markdown makes up the bulk of Grav's page content. This section gives you options to enable Markdown Extra, as well as to set how Grav handles Markdown. Grav's integrated caching feature helps make it one of the fastest flat-file CMS options out there. You can configure your site's primary caching functions in this section. This section focuses on Grav's Twig templating feature. You can set Twig caching, debug, and change detection settings here. You can set how Grav handles error reporting and display here. This is a useful tool to have during site development. Like error handling, Grav's integrated debugging tools give you the ability to locate and troubleshoot issues. This is especially useful during development. This section determines how Grav handles media content. Image quality and other media handling options are configured here. Caching images that have already been optimised (outside of Grav) could result in the output file being a much larger filesize than the original. This is due to a bug in the Gregwar image library and not directly related to Grav (see this open issue for more information). The alternative is to set "Cache All Images" to No'''
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/dashboard/configuration-system"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/advanced/grav-development"]
+title = "Grav Development | Grav Documentation"
+description = "Grav documentation"
+full_description = "If you want to develop with Grav, you will benefit from a more sophisticated setup than the one required for a regular Grav user. This includes just about any type of development, such as: Grav Core, Grav Plugins, Grav Skeletons, or even Grav Themes. When we talk about the Grav Core, we are effectively talking about things in the system folder. This folder controls everything about Grav and is really the very essence of the Grav workflow and lifecycle. Grav is intentionally focused on working with pages in an efficient manner. Manipulation of pages and extensive functionality are often best served by creating a plugin. We strongly encourage our community to contribute bug fixes, and even propose development of appropriate functionality within the core of Grav. This will run the full suite of existing tests which should always be executed successfully on any site. Most development effort will probably take the form of a Grav Plugin. Because Grav has plenty of Event Hooks, it's very easy to provide enhanced and specific functionality via the creation of a plugin. We have already developed many plugins that work in a variety of ways using many different events to show off the power of this functionality. A proper Grav plugin requires certain files in order to function properly, be listed in the Grav repository, and be visible in the Grav admin plugin. Please ensure your plugin contains all these files: A Grav Skeleton is effectively an all-in-one sample site. They include the Grav Core, required plugins, as well as appropriate pages for content and a theme for pulling it all together. Grav was designed to make the process of creating a site as easy as possible. For that reason, everything you need for a site can be contained in the user folder. Each of the skeletons we currently have available are simply a user folder on GitHub that we package up with various dependencies (required plugins, and theme) into a package that can be simply unzipped to provide a working example."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/grav-development"
+category = "SitesList"
+tags = [".dependencies", "1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/flex/using/object"]
+title = "Flex Object | Grav Documentation"
+description = "Grav documentation"
+full_description = "NOTE: In twig there is a {% render %} tag, which should be used instead of calling the method directly. This will allow JS/CSS assets from the object to work properly. hasProperty( property ): bool Returns true if the object property has been defined and has a value (not null). WARNING: This method modifies the object instance shared between all the collections. If that is not intended, please clone the object before using this method. WARNING: This method modifies the object instance shared between all the collections. If that is not intended, please clone the object before using this method. WARNING: This method modifies the object instance shared between all the collections. If that is not intended, please clone the object before using this method. Note: There are two deny values: denied (false), not set (null). This allows chaining multiple rules together when the previous rules were not matched.` search(string, [properties], [options] ): float Search a string from the object, returns weight between 0 and 1. getStorageKey(): string Get a unique storage key (within the directory) which is used for figuring out the filename or database id. getDefaultValue( name, [separator] ): mixed Returns default value suitable to be used in a form for the given property. getDefaultValues(): array Returns default values suitable to be used in a form for the given property. getFormValue( name, [default], [separator] ): mixed Returns raw value suitable to be used in a form for the given property. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/flex/using/object"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/introduction"]
+title = "Introduction | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Administration Panel plugin for Grav is a web GUI (graphical user interface) that provides a convenient way to configure Grav and easily create and modify pages. This will remain a totally optional plugin, and is not in any way required or needed to use Grav effectively. In fact, the admin interface provides an intentionally limited view to ensure it remains easy to use and not overwhelming. Power users will still prefer to work with the configuration files directly. The Adminstration Panel is quite an ambitious plugin with lots of functionality that will give you a lot of power and flexibility when building out your Grav sites. So if you have any questions, problems, suggestions or find one of those rare bugs in it, please use one of the following ways to get support from us. For bugs, features, improvements, please ensure you create issues in the admin plugin GitHub repository. First ensure you are running the latest Grav version, 1.7.46 or later. This is required for the admin plugin to run properly. Check for and upgrade to new Grav versions like this (-f forces a refresh of the GPM index): The admin plugin actually requires the help of 3 other plugins, so to get the admin plugin to work you first need to install the login, forms, and email plugins. These are available via GPM, and because the plugin has dependencies you just need to proceed and install the admin plugin, and agree when prompted to install the others: With the latest version of the Admin, you will be prompted to create an admin user account when you point your browser to your site. You must complete this step to ensure straight away a valid admin user is under your control. The user information is stored in the user/accounts/ folder of your Grav installation. You can edit the values manually or via the Admin plugin itself. You can also create new users manually or via the bin/plugin login newuser CLI command. More information is contained in the Admin FAQ. The default pattern for users (system.username_regex) is only lowercase characters, digits, dashes, and underscores. Usernames must be between 3 - 16 characters in length."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/introduction"
+category = "SitesList"
+tags = ["1. basics", "1.7.46", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/extending/admin-events"]
+title = "Admin Event Hooks | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Admin plugin has multiple event hooks that can be used during the Grav Lifecycle. See the general plugin documentation for using event hooks in the Plugins chapter. The Admin plugin fires various tasks, depending on user interaction. Tasks might include logout, login, save, 2faverify, etc. After the task completes, this event hook fires. While creating a new page, this event is fired after the header data is initially set to allow plugins to programmatically manipulate the frontmatter. Use admin event onAdminSave() to manipulate the page object data $object before it is saved to the filesystem. When creating a folder via the panel, this event fires immediately after creating the new folder and performing a standard cache clear. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/extending/admin-events"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/security/rate-limiting"]
+title = "Flood Protection | Grav Documentation"
+description = "Grav documentation"
+full_description = "Brute force attacks are a popular choice for website intruders. It could come in the form of someone you know trying to guess your password over and over until they are finally successful or a bot flooding your site with login attempts until eventually the password has been discovered. Grav's flood protection (also known as rate limiting) feature makes these kinds of attacks exceptionally difficult. It allows you to set a number of failed login attempts within a specific amount of time before the account gets temporarily locked out. Additionally, you can restrict the amount of password reset requests applied to accounts before locking this feature out. This feature is managed through the Login plugin, which should already be installed and enabled if you're using Admin Panel. The settings for Grav's flood protection are found in the Login plugin. Simply navigate to Admin > Plugins > Login and select the Security tab. This will enable you to determine how many failed password resets or logins are allowed in a set amount of time before lockout occurs. This log out is temporary and lasts as long as your set interval. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/security/rate-limiting"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/page/options"]
+title = "Editor (Options) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. In this page, we will go over the features and functionality found in the Options tab of the Page Editor. Accessing the Pages functionality requires an access.admin.super or access.admin.pages permission, see Profile You might notice the check boxes to the left of some of the options in this area of the admin. These boxes indicate that you would like to override the default values for this page. Leaving them unchecked reverts to blank or default states. This section is all about controlling the way your content is published. You can publish (or unpublish) content, set published dates as well as dates and times to unpublish, and to create metadata values specific to the page. The Taxonomies area is where you can configure your page's organizational properties. What categorie(s) the page will appear in, its tags, and more can be configured here. Having a good, clean sitemap is important for several reasons. Among them being user navigation and search engine optimization (SEO). Having a sitemap in place makes your site inherently more friendly to search engines, which can have a direct impact on ranking. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/page/options"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/plugins/options"]
+title = "Options | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Admin Panel plugin has a set of options of its own accessible in the Plugins area of the admin. To reach them, simply navigate to Plugins > Admin Panel and select the title link for the plugin called Admin Panel. This will open a page filled with useful options to help you customize your experience with the Admin. The top of the Admin Panel options page gives you some information about the Admin Panel plugin. This includes the plugin author, homepage, and license, in addition to other links and information to help you find additional information and report any bugs. The Basics section of this page gives you a set of options to help you define your experience within the Admin. This includes being able to change the text that appears at the top of the sidebar, create a custom path to the administrator, and more. This section of the page lets you customize the items that appear in the main dashboard of the admin. Not a fan of the News Feed and want to get rid of it? Want to streamline your dashboard down to one or two sections you love? This is where you can do that. You can enable or disable specific types of notifications from this section. You can turn off feed update notifications, as well as notifications for plugins and/or themes. One of the Admin's great features is its ability to track and display traffic information from the Admin's dashboard. This section of the Admin plugin's options gives you the ability to enable or disable traffic tracking, and configure how that data is displayed. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/plugins/options"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/admin-panel/faq"]
+title = "FAQ | Grav Documentation"
+description = "Grav documentation"
+full_description = "This FAQ is intended to provide useful tutorials, tips, and tricks to help you get the most out of the Admin plugin. Manual installation is not the recommended method of installation, however, it is still possible to install the admin plugin manually. Basically, you need to download each of the following plugins individually: Extract each archive file into your user/plugins folder, then ensure the folders are renamed to just admin/, login/, form/, and email/. Then proceed with the Usage instructions below. When you first install the Admin plugin, you will be prompted to create an admin user when you point your browser at your site. This is a simple web form that ensures at least one admin user has been created. You can easily add other users but it requires a bit of work in the terminal/command prompt to do. From your terminal, access the root of the Grav site you'd like to add users to, and type the following command: This will initiate a series of prompts to guide you through the creation of a new user. These include creating a user name, password, email address, and setting the new user's permissions level. You will need to have a user name consisting of between 3 and 16 characters which can include lowercase letters, numbers, underscores, and hyphens. Uppercase letters, spaces, and special characters are not allowed for the user name. At one point during the creation process you will be asked to choose a set of permissions for the new user. There are currently three options: User data is stored in SITE_ROOT/user/accounts/ and each user is given a YAML file containing that user's login information and other details. Here is an example of the data contained within a user account file. For example this could be the content of SITE_ROOT/user/accounts/tester.yaml. You can edit this information directly to the user's YAML file, or by selecting your user avatar from the sidebar of the admin. This will take you to a page where you can easily manage user information. For security reasons, user passwords are stored as a hash. If you would like to change your password, we recommend doing so from within the admin."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/faq"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/advanced/debugging"]
+title = "Debugging & Logging | Grav Documentation"
+description = "Grav documentation"
+full_description = "When developing themes and plugins, there is often a need to display debugging information. Grav has powerful debugging capabilities via a variety of features: Grav comes with a great tool to make this effort easier called via a Debug Bar. This feature is disabled by default, but can be turned on either globally or for your development environment only via the system.yaml configuration file: The first time you enable it, the debug bar might appear as a little Grav icon in the bottom left of the page. Clicking that will show the full debug bar. The PHP Debug Bar still provides an overall processing time as well as memory usage, but it now has several tabs that provide more detailed information. The first tab is for Messages and you can use this to help debug your Grav development process by posting information to this tab from your code. Along with Request, Exceptions, and Configuration information, you can also see a detailed breakdown of Grav timing in the Timeline panel: If you are trying to debug some PHP, for example a custom plugin you are developing, and wish to quickly examine some object or variable, you can use the powerful dump() command. This accepts basically any valid PHP variable and will output the results in a nicely formatted and colorized display in your browser. You can also display Twig variables from your Twig templates. This is done in a similar fashion, but the results are displayed in the Messages panel of the Debug Bar. This feature is disabled by default, but can be turned on either globally or for your development environment only via the system.yaml configuration file: It's possible to output multiple dump commands at the same time but it can get confusing to tell them apart. Add static text like this: To display variables before a page is returned by Grav or in case no page refresh occurs such as when using AJAX there is another alternative. By using a single line of Javascript any variable can be displayed in your browser's developer console, for example:"
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/advanced/debugging"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["authy.com", "chat.getgrav.org", "crontab.guru", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "play.google.com", "trilby.media"]
+
+["https://learn.getgrav.org/17/admin-panel/plugins"]
+title = "Plugins | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Plugins area of the admin is where you can go to manage your plugins, add new ones, remove existing ones, and quickly access links to documentation and other information. In this page, we will explore this area of the admin in detail, including how to activate and deactivate installed plugins, and add new ones with ease. Accessing the Plugins functionality requires an access.admin.super or access.admin.plugins permission. The Controls area at the top of the page gives you the ability to add new plugins, as well as check for updates for existing ones. The Add button takes you to a page listing all of the currently available Grav plugins, enabling you to view their information and install them by selecting the Install button to the right of the plugin. The icon indicates that the plugin is created and supported by the Grav team. Plugins without this icon were created by third-party developers. This area of the Plugins administrator shows you, at a glance, which plugins are presently installed on your Grav site. Additionally, you can enable and disable these plugins by selecting the toggle icon to the right of each plugin. Selecting the chevron icon will give you more information about the plugin, including its author, project home page and bug tracker, as well as its license and a brief description. You can also quickly access the plugin's readme file for additional information and usage guide. You can also click the plugin's name to go to a more-detailed page including the plugin's settings area where you can configure the plugin. Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/plugins"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/admin-panel/page/editor"]
+title = "Editor (Content) | Grav Documentation"
+description = "Grav documentation"
+full_description = "The Page Editor in the admin is a powerful text editor and page manager that enables you to create your page's content (including media files), its publishing and taxonomy options, settings, overrides, and theme-specific options. Accessing the Pages functionality requires an access.admin.super or access.admin.pages permission, see Profile Tabs that appear in the Page Editor are not universal. There are a default set of form fields that are commonly found in Grav themes, however these can vary between themes. The admin pulls form field information from a number of sources including the theme and the template used for the specific page. The tabs and options represented in this documentation are by default. Theme developers have the ability to add their own options to these tabs, or even to do away with these tabs and replace them with something entirely different. We are documenting a common-case scenario based on the Antimatter theme to serve as an example. In this page, we will go over the features and functionality found in the Content tab of the Page Editor. Along the top of the page, you will find the administrative controls that enable you to save, delete, copy, and move your page. Additionally, you can hit the Back button to get back to the main Pages area of the admin. The Save and Delete buttons are pretty self-explanatory. They save and delete the currently-accessed page, respectively. Selecting the Move button activates a popup that gives you the ability to assign a new parent to the page. You have the same option in the Advanced tab. Copy creates a duplicate of your current page, appending a -2 (or other numeric prefix if -2 is already in use) to the end of the folder name. You can change both the folder name and title as you see fit. The title of a page is typically set during that page's creation, however you can edit it after the fact here. Note that changing the page's title here will not have a direct impact on the folder name (which is used for navigation purposes) but it will change what people see on the front end."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/admin-panel/page/editor"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/17/admin-panel/page/permissions"]
+title = "Page Permissions | Grav Documentation"
+description = "Grav documentation"
+full_description = "WARNING: All actions in Grav are only checked against a single permission type. If you prevent user from listing or reading pages in admin, but still allow users to perform create, update and delete, they can perform those actions. This means that even if users cannot see the Pages in admin, they can visit the edit page directly and perform those actions from there. TIP: Starting from Grav 1.7, you can and should restrict the CRUD access for the individual pages and their children directly from the pages themselves. Permissions set specifically for the user account take precedence over the group permissions. If the permission has not been set in the user account, access check will be performed against all the user groups the user belongs to. If any of the user groups have Denied the action, user has no permission for the action. Otherwise, if any of the user groups have Allowed the action, permission will be granted. If permission has not been set in any of the user's groups, Super User permission acts as universal Allowed, otherwise Denied will be applied. Permissions set for the user accounts and user groups act as default permissions for managing the pages. All of these rules can be overridden inside any page Security tab. Root page is a special page in Grav 1.7+ which allows site admins to set default permissions for all the pages. It can only be seen by Super User or a user who has Pages Configuration rights. The root page will be saved into user/pages/root.md file and does not contain any content as the page is currently unreachable (this may change in the future). Found errors? Think you can improve this documentation? Simply click the Edit link at the top of the page, and then the icon on Github to make your changes."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/17/admin-panel/page/permissions"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chat.getgrav.org", "en.gravatar.com", "getgrav.org", "github.com", "gravatar.com", "html5tutorial.info", "michelf.ca", "trilby.media"]
+
+["https://learn.getgrav.org/16/advanced/grav-development/grav-15-upgrade-guide"]
+title = "Upgrading from Grav <1.6 | Grav Documentation"
+description = "Grav documentation"
+full_description = "WARNING: Upgrading Grav directly to the latest version works, but is not fully supported and will likely cause your site to break! The easiest way to upgrade older versions of Grav is to create a copy of your site into a Linux/Unix server which has PHP 7.3 installed and supports SSH login to access CLI commands. This guide also works with Linux subsystem for Windows 10, but if you do not have it installed, you may have to download and rename the update packages manually. PHP 7.3 was chosen because of it is the only version of PHP which can be used for all the versions of Grav. You may also use PHP 7.1 or 7.2, but going that only allows you to upgrade Grav up to v1.6.31. At that point you would need to switch to PHP 7.3 or 7.4 before continuing the upgrade process. PHP 8 should only be used after upgrading to Grav 1.7 or later version. This guide includes instructions to upgrade Grav, and the most commonly used packages: Problems, Error, Form, Email, Login and Admin. For every other plugin, make sure that they are still maintained and that it supports both Grav 1.6 and the latest version of Grav. As of writing this guide, almost all actively maintained plugins should fit into this category. The safest plugins are those, which have been updated after Grav 1.7.0 release (01/18/2021) or have been confirmed to work in Grav 1.7. Your theme and any custom or unmaintained plugins will need more work. Any custom code should be checked through to make sure it still works with the current versions of Grav and PHP. The same is true with Markdown, YAML and twig files as the latter versions of the libraries have fixes which catch the errors, usually meaning that parsing of broken files will fail. Newer versions of Grav provide tools to check these files, but the checks do not catch all the issues, so some testing is also needed. This part assumes that you have already made a copy of your site and the CLI commands work. Windows users who do not have Linux subsystem installed need to download the files manually and rename them."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/grav-development/grav-15-upgrade-guide"
+category = "SitesList"
+tags = ["1. basics", "1.6.31", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "html5tutorial.info", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "yaml.org"]
+
+["https://learn.getgrav.org/16/advanced/multisite-setup"]
+title = "Multisite Setup | Grav Documentation"
+description = "Grav documentation"
+full_description = "Grav has preliminary multisite support available. However, CLI commands as well as the Admin plugin still need to be updated to fully support multisite configurations. We will continue to work on this in subsequent releases of Grav. A multisite setup allows you to create and manage a network of multiple websites, all running on a single installation. Grav has built-in multisite support. This functionality extends the basic environment configuration, which lets you define custom environments for your production and development sites. A full multisite setup gives you the power to change the way how and from where Grav loads all its files. The most important thing you will need to run a Grav multisite network is good website hosting. If you are not planning to create many sites and do not expect many visitors, then you can get away with shared hosting. However, due to the nature of multisites, you’d probably need a VPS or dedicated server as your sites grow. Before you begin, you’ll want to be sure your web server is capable of running multiple websites i.e., you have access to your Grav root directory. This is essential since serving multiple websites from the same installation is based on a setup.php file located in your Grav root. Once created, the setup.php is called every time a user requests a page. In order to serve multiple websites from one single installation, this script (roughly speaking) has to tell Grav where the files (for the configurations, themes, plugins, pages etc.) for a specific subsite are located. If you choose sub-directories or path based URLs for subsites, then the only thing you need is to create a directory for each subsite in the user/sites directory containing at least the required folders config, pages, plugins, and themes. If you choose sub-domains for structuring your website network, then you will have to configure (wildcard) sub-domains on your server in addition to the setup of your subsites in your user/sites directory. For subsites accessible via sub-domains copy the setup_subdomain.php file, otherwise for subsites accessible via sub-directories the setup_subdirectory.php file into your setup.php."
+year_published = 2025
+clearnet = "https://learn.getgrav.org/16/advanced/multisite-setup"
+category = "SitesList"
+tags = ["1. basics", "10. cookbook", "11. troubleshooting", "12. migration", "13. security", "14. grav api", "15. hints and tips", "2-factor authentication", "2. content", "3. themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "authy.com", "chat.getgrav.org", "crontab.guru", "doctrine-project.org", "en.gravatar.com", "en.wikipedia.org", "getcomposer.org", "getgrav.org", "github.com", "gravatar.com", "help.github.com", "michelf.ca", "nvie.com", "play.google.com", "semver.org", "trilby.media", "twig.symfony.com", "underground.works", "yaml.org"]

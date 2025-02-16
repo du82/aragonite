@@ -1,0 +1,537 @@
+["https://competitions.cr.yp.to/aes.html"]
+title = """
+Crypto competitions:
+AES: the Advanced Encryption Standard"""
+full_description = '''The goal of the Advanced Encryption Standard (AES) competition was to specify "an unclassified, publicly disclosed encryption algorithm capable of protecting sensitive government information well into the next century". The AES competition was organized by the United States National Institute of Standards and Technology (NIST). Each AES submission was required to be a block cipher supporting a block length of 128 bits and key lengths of 128, 192, and 256 bits. The call for proposals specified the following evaluation criteria: Carolynn Burwick, Don Coppersmith, Edward D'Avignon, Rosario Gennaro, Shai Halevi, Charanjit Jutla, Stephen M. Matyas, Luke O'Connor, Mohammad Peyravian, David Safford, Nevenko Zunic Henri Gilbert, Marc Girault, Philippe Hoogvorst, Fabrice Noilhan, Thomas Pornin, Guillaume Poupard, Jacques Stern, Serge Vaudenay Masayuki Kanda, Shiho Moriai, Kazumaro Aoki, Hiroki Ueda, Miyako Ohkubo, Youichi Takashima, Kazuo Ohta, Tsutomu Matsumoto'''
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/aes.html"
+category = "SitesList"
+tags = ["advanced", "aes:", "broader", "caesar", "candidates", "competitions", "competitions:", "cryptographic", "details:", "encryption"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://competitions.cr.yp.to/caesar-call-2.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 2 (2013.04.29)"""
+full_description = "This document is draft 2 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated here. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call-2.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["http://competitions.cr.yp.to/caesar-call-3.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 3 (2013.05.21)"""
+full_description = "This document is draft 3 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated here. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call-3.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/caesar-call.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, final (2014.01.27)"""
+full_description = "CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.03.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.03.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may eliminate submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.04.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key. Bytes are integers between 0 and 255 inclusive. Authenticated ciphers defined in terms of objects other than bytes (e.g., 32-bit integers) must specify the relationship between those objects and byte strings (e.g., little-endian encoding of 32-bit integers)."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call.html"
+category = "SitesList"
+tags = ["2014.03.15", "2014.04.11", "2014.04.15", "2014.04.26", "2014.04.30", "2014.05.15", "2015.04.15", "23:59", "analysis:", "associated"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/estream.html"]
+title = """
+Crypto competitions:
+eSTREAM: the ECRYPT Stream Cipher Project"""
+full_description = "Submissions were allowed to be authenticated ciphers, producing ciphertexts together with authentication tags of length 32 bits (for either profile), 64 bits (for either profile), 96 bits (for profile 2), or 128 bits (for profile 2). In this table, S means profile 1 (high-throughput software); H means profile 2 (highly restricted hardware); A means authenticated. F-FCSR-H was originally in the portfolio but was removed from the revised portfolio. portfoliofinalistround 2round 1 SSSSHC-128 (also HC-256) SSSS+HRabbit SSS+HS+HSalsa20/12 (also Salsa20/8, Salsa20) SSSSSOSEMANUK HHHHGrain v1 (supersedes: Grain v0) HHHHMICKEY 2.0 (also MICKEY-128 v2) HHHHTrivium HHS+HF-FCSR-H (also F-FCSR-16; supersedes: F-FCSR) SSSCryptMT v3 (supersedes: CryptMT v1, Fubuki) SSSDragon SS+HS+HLEX SS+H+AS+H+ANLS v2 (supersedes: NLS v1) HHHDECIM v2 (supersedes: DECIM v1) HHHEdon-80 HHHMOUSTIQUE (supersedes: MOSQUITO) HHHPOMARANCH v3 (supersedes: POMARANCH v1) SSABC v3 (supersedes: ABC v1) SSDICING P2 (supersedes: DICING P1) S+H+AS+H+APhelix S+HS+HPolar Bear v2 (supersedes: Polar Bear v1) SSPy HHAchterbahn-80 (also Achterbahn-128) HS+HHermes8 HHTSC-4 (supersedes: TSC-3) H+AH+AVEST P2 (supersedes: VEST P1) HHWG P2 (supersedes: WG P1) H+AHZK-Crypt P2 (supersedes: ZK-Crypt P1) S+AFrogbit SMir-1 S+HMAG S+H+ASSS S+HTRBDK3 YAEA S+HYamb H+ASFINKS"
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/estream.html"
+category = "SitesList"
+tags = ["broader", "caesar", "candidates", "cipher", "competitions", "competitions:", "cryptographic", "details:", "ecrypt", "estream:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/caesar-submissions.html"]
+title = """
+Crypto competitions:
+CAESAR submissions"""
+full_description = "See https://bench.cr.yp.to/supercop.html for software implementations, and https://cryptography.gmu.edu/athena/index.php?id=CAESAR_source_codes for VHDL implementations. COLM, second choice for use case 3: v1pre v1 addendum; superseding AES-COPA: v1 v2; and superseding ELmD: v1 clarification v2.0 v2.1 Elena Andreeva, Andrey Bogdanov, Nilanjan Datta, Atul Luykx, Bart Mennink, Mridul Nandi, Elmar Tischhauser, Kan Yasuda Paweł Morawiecki, Kris Gaj, Ekawat Homsirikamol, Krystian Matusiewicz, Josef Pieprzyk, Marcin Rogawski, Marian Srebrny, Marcin Wójcik Yu Sasaki, Yosuke Todo, Kazumaro Aoki, Yusuke Naito, Takeshi Sugawara, Yumiko Murakami, Mitsuru Matsui, Shoichi Hirose Simon Cogliani, Diana-Ştefania Maimuţ, David Naccache, Rodrigo Portella do Canto, Reza Reyhanitabar, Serge Vaudenay, Damian Vizár Danilo Gligoroski, Hristina Mihajloska, Simona Samardjiska, Håkon Jacobsen, Mohamed El-Hadedy, Rune Erlend Jensen, Daniel Otte Farzaneh Abed, Scott Fluhrer, John Foley, Christian Forler, Eik List, Stefan Lucks, David McGrew, Jakob Wenzel Elena Andreeva, Begül Bilgin, Andrey Bogdanov, Atul Luykx, Florian Mendel, Bart Mennink, Nicky Mouha, Qingju Wang, Kan Yasuda Vincent Grosso, Gaëtan Leurent, François-Xavier Standaert, Kerem Varici, Anthony Journault, François Durvaux, Lubos Gaspar, Stéphanie Kerckhof Elena Andreeva, Andrey Bogdanov, Martin M. Lauridsen, Atul Luykx, Bart Mennink, Elmar Tischhauser, Kan Yasuda Elif Bilge Kavun, Martin M. Lauridsen, Gregor Leander, Christian Rechberger, Peter Schwabe, Tolga Yalçın"
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-submissions.html"
+category = "SitesList"
+tags = ["additional", "broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "final", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptolux.org", "googledrive.com", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["http://competitions.cr.yp.to/nessie.html"]
+title = """
+Crypto competitions:
+NESSIE: New European Schemes for Signatures, Integrity, and Encryption"""
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/nessie.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "encryption", "european", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/caesar-call-4.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 4 (2013.11.23)"""
+full_description = "This document is draft 4 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.01.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.01.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call-4.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to"]
+title = """
+Crypto competitions:
+Introduction"""
+full_description = '''A new competition, CAESAR, is now calling for submissions of authenticated ciphers. This competition follows a long tradition of focused competitions in secret-key cryptography: The AES competition is generally viewed as having provided a tremendous boost to the cryptographic research community's understanding of block ciphers, and a tremendous increase in confidence in the security of some block ciphers. Similar comments apply to eSTREAM and to the SHA-3 competition, and are also expected to apply to CAESAR. Send email to crypto-competitions+subscribe@googlegroups.com to join the crypto-competitions mailing list. This web site is maintained by D. J. Bernstein. Part of the work documented here is supported by NIST grant 60NANB12D261, "Cryptographic competitions", 2013.01.01–2017.12.31.'''
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to"
+category = "SitesList"
+tags = ["authenticated", "broader", "caesar", "ciphers", "competitions", "competitions:", "contributions", "cryptographic", "details:", "evaluations:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/features.html"]
+title = """
+Crypto competitions:
+Features of various secret-key primitives"""
+full_description = '''This web page is a list of various features that have been advertised by, or requested from, designers of various primitives for secret-key cryptography. The features are described in five categories: Designers setting goals for new primitives, and in particular for authenticated ciphers for the CAESAR competition, should keep in mind that the entries in this list vary widely in importance. There is no guarantee that the CAESAR selection committee will place any value upon any particular features; some features may even be controversial and viewed negatively. The list is organized thematically, not as any attempt to indicate importance. It seems unlikely that a single design can simultaneously provide every feature (i.e., every qualitative feature and excellent results for every quantitative feature). Each designer is therefore expected to select some features as goals, and should be prepared to explain the merits of this selection. Of course, a design that sets its goals too narrowly might turn out to be of less interest to the community than a more ambitious design! The following documents provide more perspective on the features of interest to various applications: Each attack goal here corresponds to a potential feature of a secret-key primitive; the feature is that the primitive stops the attacker from reaching this goal. Plaintext corruption, associated-data corruption, message-number corruption. An authenticated cipher produces as output an authenticated ciphertext. This ciphertext encrypts and authenticates a plaintext; it also authenticates, without encrypting or communicating, some associated data; it also authenticates a message number. The attacker's goal here is to forge a combination of plaintext, associated data, and message number that the receiver accepts but that the legitimate sender never encrypted. "INT-PTXT" (integrity of plaintexts) means protection against such attacks. The attacker's chance of successfully forging at least one message (out of many forgery attempts) does not dictate the number of messages that the attacker successfully forges. One can separately consider, for each n, the probability that the attacker successfully forges at least n messages.'''
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/features.html"
+category = "SitesList"
+tags = ["acknowledgments", "area", "associated-data", "attack", "authenticate", "authenticate?", "bandwidth", "block", "broader", "byte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/secret.html"]
+title = """
+Crypto competitions:
+Secret-key cryptography"""
+full_description = "The most fundamental promise made by cryptography is that a sender and receiver, starting from nothing more than shared knowledge of a secret key, can securely exchange messages. Secret-key cryptography protects the confidentiality and integrity of the messages against any possible misbehavior by the intermediate network. The advent of public-key cryptography (1976 Diffie–Hellman) introduced new ways to share secrets and to protect messages, but secret-key cryptography remains the high-performance workhorse of cryptography: the vast bulk of encrypted and authenticated data is protected either by a hybrid of public-key and secret-key cryptography or by secret-key cryptography alone. Message lengthEncryptsAuthenticates Block cipherFixedYesNo Stream cipherVariableYesNo Message-authentication codeVariableNoYes Authenticated cipherVariableYesYes A block cipher encrypts a short fixed-length message using a secret key shared by the sender and receiver. For example, AES is a block cipher that encrypts a 128-bit (16-byte) block using a 128-bit, 192-bit, or 256-bit key. A stream cipher encrypts a variable-length message using a public nonce (a message number used only once) and a secret key shared by the sender and receiver. For example, all of the ciphers in the eSTREAM portfolio expand the nonce into a long random-looking keystream, which is then xor'ed with the message to produce a ciphertext. There are also several ways to build stream ciphers from block ciphers such as AES: for example, AES-CTR expands a nonce n into AES(n,0), AES(n,1), AES(n,2), etc. A message-authentication code produces an authenticator of a variable-length message using a secret key shared by the sender and receiver; some message-authentication codes also use nonces. Sending the authenticator together with the message protects the message against corruption. Message-authentication codes are often built from block ciphers or from cryptographic hash functions such as SHA-3. An authenticated cipher, also known as an authenticated-encryption scheme or AE scheme, encrypts and authenticates messages, using a public nonce and a secret key shared by the sender and receiver. Authenticated ciphers are often built as various combinations of block ciphers, stream ciphers, message-authentication codes, and hash functions."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/secret.html"
+category = "SitesList"
+tags = ["authenticated", "authenticated-encryption", "authenticator", "block", "broader", "caesar", "cipher", "code", "competitions", "competitions:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/caesar.html"]
+title = """
+Crypto competitions:
+CAESAR: Competition for Authenticated Encryption: Security, Applicability, and Robustness"""
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar.html"
+category = "SitesList"
+tags = ["applicability,", "authenticated", "broader", "caesar", "caesar:", "competition", "competitions", "competitions:", "cryptographic", "details:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2013.diac.cr.yp.to", "2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["https://competitions.cr.yp.to/faq.html"]
+title = """
+Crypto competitions:
+CAESAR frequently asked questions"""
+full_description = 'Cipher v2 in the second round is not required to be the same as Cipher v1 in the first round. Designers are free to announce plans for Cipher v2 at any time. However, designers will not be allowed to modify Cipher v1; it is important for evaluators to have stable targets for the duration of the first round. The CAESAR selection committee will select a portfolio of algorithms. Experience with previous competitions suggests that a single-algorithm portfolio is unlikely to provide as much value as a multiple-algorithm portfolio. Of course, final decisions are up to the selection committee. Standards committees may find the CAESAR results to be useful, but CAESAR per se is not a standardization project. No. CAESAR is run by the international cryptologic research community. The University of Illinois at Chicago applied to NIST for funding for a "Cryptographic competitions" grant, and is using some of this funding to support CAESAR benchmarking and the Directions in Authenticated Ciphers workshop series, but NIST has not been consulted regarding the CAESAR details. Of course, NIST cryptographers are welcome to provide public input to CAESAR. No. The AES competition eventually renamed Rijndael as AES, Rijndael-128 as AES-128, etc.; but CAESAR, like eSTREAM, will not rename any algorithms. The selection committee will issue a report that, for each selected algorithm, cites the previously published analyses that led the algorithm to be selected. This report should not be interpreted as a negative comment regarding other algorithms; an excellent algorithm might fail to be selected simply because not enough analysis was available at the time of the committee decision. No. If submitters disagree with published analyses then they are expected to promptly and publicly respond to those analyses, not to wait for subsequent committee decisions.'
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/faq.html"
+category = "SitesList"
+tags = ['"caesar', "algorithms?", "appeal", "asked", "broader", "caesar", 'cipher"?', "cipher?", "committee", "competitions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["https://competitions.cr.yp.to/caesar-call-1.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 1 (2013.04.16)"""
+full_description = "This document is draft 1 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length additional data, a fixed-length (possibly 0-bit) private message number, a fixed-length (possibly 0-bit) public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno additional datayesnono private message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the private message number from the ciphertext, additional data, public message number, and key. Bytes are integers between 0 and 255 inclusive. Authenticated ciphers defined in terms of higher-level objects must specify the relationship between those objects and byte strings: for example, little-endian encoding of 32-bit integers."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call-1.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "additional", "analysis:", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["http://competitions.cr.yp.to/caesar-call-5.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 5 (2013.12.01)"""
+full_description = "This document is draft 5 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.03.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.03.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may eliminate submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.04.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call-5.html"
+category = "SitesList"
+tags = ["2014.03.15", "2014.04.15", "2015.04.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/sha3.html"]
+title = """
+Crypto competitions:
+SHA-3: a Secure Hash Algorithm"""
+full_description = 'MD5 became very widely used and inspired a number of similar-looking hash functions, including SHA-0 (1993), SHA-1 (1995), and SHA-2 (2001). SHA-2 is actually four functions: SHA-224, SHA-256, SHA-384, and SHA-512. On 12 August 2004, Joux, Carribault, Lemuet, and Jalby announced collisions in SHA-0. On 17 August 2004, Xiaoyun Wang independently presented collisions in MD5 and faster collisions in SHA-0. In February 2005, Wang, Yiqun Lisa Yin, and Hongbo Yu announced an attack that could find collisions in SHA-1 using only 2^69 simple operations. The goal of the SHA-3 competition was to specify "a new hash algorithm to augment and revise" FIPS 180-2, the standard that specified SHA-1 and SHA-2. The SHA-3 competition was organized by the United States National Institute of Standards and Technology (NIST). This list includes the 51 submissions accepted for round 1, and 5 of the 13 submissions not accepted for round 1; the other 8 submissions have not been disclosed. winnerfinalistround 2round 1 yesyesyesyesKeccak yesyesyesBLAKE yesyesyesGrøstl yesyesyesJH yesyesyesSkein yesyesBlue Midnight Wish yesyesCubeHash yesyesECHO yesyesFugue yesyesHamsi yesyesLuffa yesyesShabal yesyesSHAvite-3 yesyesSIMD yesARIRANG yesCHI yesCRUNCH yesFSB yesLANE yesLesamnta yesMD6 yesSANDstorm yesSarmal yesSWIFFTX yesTIB3 yesAURORA (broken) yesBlender (broken) yesCheetah (broken) yesDynamic SHA (broken) yesDynamic SHA2 (broken) yesECOH (broken) yesEdon-R (broken) yesEnRUPT (broken) yesESSENCE (broken) yesLUX (broken) yesMCSSHA-3 (broken) yesNaSHA (broken) yesSgàil (broken) yesSpectral Hash (broken) yesTwister (broken) yesVortex (broken) yesAbacus (withdrawn) yesBoole (withdrawn) yesDCH (withdrawn) yesKhichidi-1 (withdrawn) yesMeshHash (withdrawn) yesSHAMATA (withdrawn) yesStreamHash (withdrawn) yesTangle (withdrawn) yesWaMM (withdrawn) yesWaterfall (withdrawn) HASH 2X Maraca NKS 2D Ponic ZK-Crypt'
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/sha3.html"
+category = "SitesList"
+tags = ["algorithm", "broader", "caesar", "candidates", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/estream.html"]
+title = """
+Crypto competitions:
+eSTREAM: the ECRYPT Stream Cipher Project"""
+full_description = "Submissions were allowed to be authenticated ciphers, producing ciphertexts together with authentication tags of length 32 bits (for either profile), 64 bits (for either profile), 96 bits (for profile 2), or 128 bits (for profile 2). In this table, S means profile 1 (high-throughput software); H means profile 2 (highly restricted hardware); A means authenticated. F-FCSR-H was originally in the portfolio but was removed from the revised portfolio. portfoliofinalistround 2round 1 SSSSHC-128 (also HC-256) SSSS+HRabbit SSS+HS+HSalsa20/12 (also Salsa20/8, Salsa20) SSSSSOSEMANUK HHHHGrain v1 (supersedes: Grain v0) HHHHMICKEY 2.0 (also MICKEY-128 v2) HHHHTrivium HHS+HF-FCSR-H (also F-FCSR-16; supersedes: F-FCSR) SSSCryptMT v3 (supersedes: CryptMT v1, Fubuki) SSSDragon SS+HS+HLEX SS+H+AS+H+ANLS v2 (supersedes: NLS v1) HHHDECIM v2 (supersedes: DECIM v1) HHHEdon-80 HHHMOUSTIQUE (supersedes: MOSQUITO) HHHPOMARANCH v3 (supersedes: POMARANCH v1) SSABC v3 (supersedes: ABC v1) SSDICING P2 (supersedes: DICING P1) S+H+AS+H+APhelix S+HS+HPolar Bear v2 (supersedes: Polar Bear v1) SSPy HHAchterbahn-80 (also Achterbahn-128) HS+HHermes8 HHTSC-4 (supersedes: TSC-3) H+AH+AVEST P2 (supersedes: VEST P1) HHWG P2 (supersedes: WG P1) H+AHZK-Crypt P2 (supersedes: ZK-Crypt P1) S+AFrogbit SMir-1 S+HMAG S+H+ASSS S+HTRBDK3 YAEA S+HYamb H+ASFINKS"
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/estream.html"
+category = "SitesList"
+tags = ["broader", "caesar", "candidates", "cipher", "competitions", "competitions:", "cryptographic", "details:", "ecrypt", "estream:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["https://competitions.cr.yp.to/index.html"]
+title = """
+Crypto competitions:
+Introduction"""
+full_description = '''A new competition, CAESAR, is now calling for submissions of authenticated ciphers. This competition follows a long tradition of focused competitions in secret-key cryptography: The AES competition is generally viewed as having provided a tremendous boost to the cryptographic research community's understanding of block ciphers, and a tremendous increase in confidence in the security of some block ciphers. Similar comments apply to eSTREAM and to the SHA-3 competition, and are also expected to apply to CAESAR. Send email to crypto-competitions+subscribe@googlegroups.com to join the crypto-competitions mailing list. This web site is maintained by D. J. Bernstein. Part of the work documented here is supported by NIST grant 60NANB12D261, "Cryptographic competitions", 2013.01.01–2017.12.31.'''
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/index.html"
+category = "SitesList"
+tags = ["authenticated", "broader", "caesar", "ciphers", "competitions", "competitions:", "contributions", "cryptographic", "details:", "evaluations:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/phc.html"]
+title = """
+Crypto competitions:
+PHC: Password Hashing Competition"""
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/phc.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competition", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "focused", "hashing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/caesar-submissions.html"]
+title = """
+Crypto competitions:
+CAESAR submissions"""
+full_description = "See https://bench.cr.yp.to/supercop.html for software implementations, and https://cryptography.gmu.edu/athena/index.php?id=CAESAR_source_codes for VHDL implementations. COLM, second choice for use case 3: v1pre v1 addendum; superseding AES-COPA: v1 v2; and superseding ELmD: v1 clarification v2.0 v2.1 Elena Andreeva, Andrey Bogdanov, Nilanjan Datta, Atul Luykx, Bart Mennink, Mridul Nandi, Elmar Tischhauser, Kan Yasuda Paweł Morawiecki, Kris Gaj, Ekawat Homsirikamol, Krystian Matusiewicz, Josef Pieprzyk, Marcin Rogawski, Marian Srebrny, Marcin Wójcik Yu Sasaki, Yosuke Todo, Kazumaro Aoki, Yusuke Naito, Takeshi Sugawara, Yumiko Murakami, Mitsuru Matsui, Shoichi Hirose Simon Cogliani, Diana-Ştefania Maimuţ, David Naccache, Rodrigo Portella do Canto, Reza Reyhanitabar, Serge Vaudenay, Damian Vizár Danilo Gligoroski, Hristina Mihajloska, Simona Samardjiska, Håkon Jacobsen, Mohamed El-Hadedy, Rune Erlend Jensen, Daniel Otte Farzaneh Abed, Scott Fluhrer, John Foley, Christian Forler, Eik List, Stefan Lucks, David McGrew, Jakob Wenzel Elena Andreeva, Begül Bilgin, Andrey Bogdanov, Atul Luykx, Florian Mendel, Bart Mennink, Nicky Mouha, Qingju Wang, Kan Yasuda Vincent Grosso, Gaëtan Leurent, François-Xavier Standaert, Kerem Varici, Anthony Journault, François Durvaux, Lubos Gaspar, Stéphanie Kerckhof Elena Andreeva, Andrey Bogdanov, Martin M. Lauridsen, Atul Luykx, Bart Mennink, Elmar Tischhauser, Kan Yasuda Elif Bilge Kavun, Martin M. Lauridsen, Gregor Leander, Christian Rechberger, Peter Schwabe, Tolga Yalçın"
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-submissions.html"
+category = "SitesList"
+tags = ["additional", "broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "final", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/features.html"]
+title = """
+Crypto competitions:
+Features of various secret-key primitives"""
+full_description = '''This web page is a list of various features that have been advertised by, or requested from, designers of various primitives for secret-key cryptography. The features are described in five categories: Designers setting goals for new primitives, and in particular for authenticated ciphers for the CAESAR competition, should keep in mind that the entries in this list vary widely in importance. There is no guarantee that the CAESAR selection committee will place any value upon any particular features; some features may even be controversial and viewed negatively. The list is organized thematically, not as any attempt to indicate importance. It seems unlikely that a single design can simultaneously provide every feature (i.e., every qualitative feature and excellent results for every quantitative feature). Each designer is therefore expected to select some features as goals, and should be prepared to explain the merits of this selection. Of course, a design that sets its goals too narrowly might turn out to be of less interest to the community than a more ambitious design! The following documents provide more perspective on the features of interest to various applications: Each attack goal here corresponds to a potential feature of a secret-key primitive; the feature is that the primitive stops the attacker from reaching this goal. Plaintext corruption, associated-data corruption, message-number corruption. An authenticated cipher produces as output an authenticated ciphertext. This ciphertext encrypts and authenticates a plaintext; it also authenticates, without encrypting or communicating, some associated data; it also authenticates a message number. The attacker's goal here is to forge a combination of plaintext, associated data, and message number that the receiver accepts but that the legitimate sender never encrypted. "INT-PTXT" (integrity of plaintexts) means protection against such attacks. The attacker's chance of successfully forging at least one message (out of many forgery attempts) does not dictate the number of messages that the attacker successfully forges. One can separately consider, for each n, the probability that the attacker successfully forges at least n messages.'''
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/features.html"
+category = "SitesList"
+tags = ["acknowledgments", "area", "associated-data", "attack", "authenticate", "authenticate?", "bandwidth", "block", "broader", "byte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/aes.html"]
+title = """
+Crypto competitions:
+AES: the Advanced Encryption Standard"""
+full_description = '''The goal of the Advanced Encryption Standard (AES) competition was to specify "an unclassified, publicly disclosed encryption algorithm capable of protecting sensitive government information well into the next century". The AES competition was organized by the United States National Institute of Standards and Technology (NIST). Each AES submission was required to be a block cipher supporting a block length of 128 bits and key lengths of 128, 192, and 256 bits. The call for proposals specified the following evaluation criteria: Carolynn Burwick, Don Coppersmith, Edward D'Avignon, Rosario Gennaro, Shai Halevi, Charanjit Jutla, Stephen M. Matyas, Luke O'Connor, Mohammad Peyravian, David Safford, Nevenko Zunic Henri Gilbert, Marc Girault, Philippe Hoogvorst, Fabrice Noilhan, Thomas Pornin, Guillaume Poupard, Jacques Stern, Serge Vaudenay Masayuki Kanda, Shiho Moriai, Kazumaro Aoki, Hiroki Ueda, Miyako Ohkubo, Youichi Takashima, Kazuo Ohta, Tsutomu Matsumoto'''
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/aes.html"
+category = "SitesList"
+tags = ["advanced", "aes:", "broader", "caesar", "candidates", "competitions", "competitions:", "cryptographic", "details:", "encryption"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/cryptrec.html"]
+title = """
+Crypto competitions:
+CRYPTREC: Cryptography Research and Evaluation Committee"""
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/cryptrec.html"
+category = "SitesList"
+tags = ["broader", "caesar", "committee", "competitions", "competitions:", "cryptographic", "cryptography", "cryptrec:", "details:", "evaluation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/caesar-call-4.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 4 (2013.11.23)"""
+full_description = "This document is draft 4 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.01.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.01.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call-4.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://competitions.cr.yp.to"]
+title = """
+Crypto competitions:
+Introduction"""
+full_description = '''A new competition, CAESAR, is now calling for submissions of authenticated ciphers. This competition follows a long tradition of focused competitions in secret-key cryptography: The AES competition is generally viewed as having provided a tremendous boost to the cryptographic research community's understanding of block ciphers, and a tremendous increase in confidence in the security of some block ciphers. Similar comments apply to eSTREAM and to the SHA-3 competition, and are also expected to apply to CAESAR. Send email to crypto-competitions+subscribe@googlegroups.com to join the crypto-competitions mailing list. This web site is maintained by D. J. Bernstein. Part of the work documented here is supported by NIST grant 60NANB12D261, "Cryptographic competitions", 2013.01.01–2017.12.31.'''
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to"
+category = "SitesList"
+tags = ["authenticated", "broader", "caesar", "ciphers", "competitions", "competitions:", "contributions", "cryptographic", "details:", "evaluations:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://competitions.cr.yp.to/nessie.html"]
+title = """
+Crypto competitions:
+NESSIE: New European Schemes for Signatures, Integrity, and Encryption"""
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/nessie.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "encryption", "european", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/sha3.html"]
+title = """
+Crypto competitions:
+SHA-3: a Secure Hash Algorithm"""
+full_description = 'MD5 became very widely used and inspired a number of similar-looking hash functions, including SHA-0 (1993), SHA-1 (1995), and SHA-2 (2001). SHA-2 is actually four functions: SHA-224, SHA-256, SHA-384, and SHA-512. On 12 August 2004, Joux, Carribault, Lemuet, and Jalby announced collisions in SHA-0. On 17 August 2004, Xiaoyun Wang independently presented collisions in MD5 and faster collisions in SHA-0. In February 2005, Wang, Yiqun Lisa Yin, and Hongbo Yu announced an attack that could find collisions in SHA-1 using only 2^69 simple operations. The goal of the SHA-3 competition was to specify "a new hash algorithm to augment and revise" FIPS 180-2, the standard that specified SHA-1 and SHA-2. The SHA-3 competition was organized by the United States National Institute of Standards and Technology (NIST). This list includes the 51 submissions accepted for round 1, and 5 of the 13 submissions not accepted for round 1; the other 8 submissions have not been disclosed. winnerfinalistround 2round 1 yesyesyesyesKeccak yesyesyesBLAKE yesyesyesGrøstl yesyesyesJH yesyesyesSkein yesyesBlue Midnight Wish yesyesCubeHash yesyesECHO yesyesFugue yesyesHamsi yesyesLuffa yesyesShabal yesyesSHAvite-3 yesyesSIMD yesARIRANG yesCHI yesCRUNCH yesFSB yesLANE yesLesamnta yesMD6 yesSANDstorm yesSarmal yesSWIFFTX yesTIB3 yesAURORA (broken) yesBlender (broken) yesCheetah (broken) yesDynamic SHA (broken) yesDynamic SHA2 (broken) yesECOH (broken) yesEdon-R (broken) yesEnRUPT (broken) yesESSENCE (broken) yesLUX (broken) yesMCSSHA-3 (broken) yesNaSHA (broken) yesSgàil (broken) yesSpectral Hash (broken) yesTwister (broken) yesVortex (broken) yesAbacus (withdrawn) yesBoole (withdrawn) yesDCH (withdrawn) yesKhichidi-1 (withdrawn) yesMeshHash (withdrawn) yesSHAMATA (withdrawn) yesStreamHash (withdrawn) yesTangle (withdrawn) yesWaMM (withdrawn) yesWaterfall (withdrawn) HASH 2X Maraca NKS 2D Ponic ZK-Crypt'
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/sha3.html"
+category = "SitesList"
+tags = ["algorithm", "broader", "caesar", "candidates", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/cryptrec.html"]
+title = """
+Crypto competitions:
+CRYPTREC: Cryptography Research and Evaluation Committee"""
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/cryptrec.html"
+category = "SitesList"
+tags = ["broader", "caesar", "committee", "competitions", "competitions:", "cryptographic", "cryptography", "cryptrec:", "details:", "evaluation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["http://competitions.cr.yp.to/caesar-call-2.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 2 (2013.04.29)"""
+full_description = "This document is draft 2 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated here. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call-2.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/caesar.html"]
+title = """
+Crypto competitions:
+CAESAR: Competition for Authenticated Encryption: Security, Applicability, and Robustness"""
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar.html"
+category = "SitesList"
+tags = ["applicability,", "authenticated", "broader", "caesar", "caesar:", "competition", "competitions", "competitions:", "cryptographic", "details:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/disasters.html"]
+title = """
+Crypto competitions:
+Disasters"""
+full_description = "The trust that users place in secret-key cryptography has been repeatedly and flagrantly violated. Consider the following recent and ongoing examples: Less obvious, but even more pervasive, is an even more extreme type of disaster, in which the attacker does not need to break an authenticated cipher because the application is failing to use an authenticated cipher. Consider the following examples: It is easy to blame many of these security problems on a lack of user education, where in this case the users are the software and hardware engineers choosing cryptographic primitives to apply. The AES block cipher was standardized more than a decade ago and apparently has none of the weaknesses of RC4, Keeloq, etc.; there is an extensive literature explaining how to use AES to encrypt and authenticate messages of any length (for example, with AES-OCB3); many of these explanations are backed by proofs of security, assuming nothing more than the security of AES; and there is an extensive literature on defenses against timing attacks and other side-channel attacks. However, in many cases there is a tension between security and the performance requirements of the applications. For example, RC4 became popular precisely because it offers high speed in software: AES needs more than 10 cycles per byte on most CPUs, while RC4 typically runs in fewer than 6. HB was introduced, and remains widely studied, precisely because it can fit into very small hardware, under 1000 gates. Software side-channel defenses impose a noticeable cost, and hardware side-channel defenses impose a much larger cost."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/disasters.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "disasters", "evaluations:", "focused", "version:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/faq.html"]
+title = """
+Crypto competitions:
+CAESAR frequently asked questions"""
+full_description = 'Cipher v2 in the second round is not required to be the same as Cipher v1 in the first round. Designers are free to announce plans for Cipher v2 at any time. However, designers will not be allowed to modify Cipher v1; it is important for evaluators to have stable targets for the duration of the first round. The CAESAR selection committee will select a portfolio of algorithms. Experience with previous competitions suggests that a single-algorithm portfolio is unlikely to provide as much value as a multiple-algorithm portfolio. Of course, final decisions are up to the selection committee. Standards committees may find the CAESAR results to be useful, but CAESAR per se is not a standardization project. No. CAESAR is run by the international cryptologic research community. The University of Illinois at Chicago applied to NIST for funding for a "Cryptographic competitions" grant, and is using some of this funding to support CAESAR benchmarking and the Directions in Authenticated Ciphers workshop series, but NIST has not been consulted regarding the CAESAR details. Of course, NIST cryptographers are welcome to provide public input to CAESAR. No. The AES competition eventually renamed Rijndael as AES, Rijndael-128 as AES-128, etc.; but CAESAR, like eSTREAM, will not rename any algorithms. The selection committee will issue a report that, for each selected algorithm, cites the previously published analyses that led the algorithm to be selected. This report should not be interpreted as a negative comment regarding other algorithms; an excellent algorithm might fail to be selected simply because not enough analysis was available at the time of the committee decision. No. If submitters disagree with published analyses then they are expected to promptly and publicly respond to those analyses, not to wait for subsequent committee decisions.'
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/faq.html"
+category = "SitesList"
+tags = ['"caesar', "algorithms?", "appeal", "asked", "broader", "caesar", 'cipher"?', "cipher?", "committee", "competitions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/index.html"]
+title = """
+Crypto competitions:
+Introduction"""
+full_description = '''A new competition, CAESAR, is now calling for submissions of authenticated ciphers. This competition follows a long tradition of focused competitions in secret-key cryptography: The AES competition is generally viewed as having provided a tremendous boost to the cryptographic research community's understanding of block ciphers, and a tremendous increase in confidence in the security of some block ciphers. Similar comments apply to eSTREAM and to the SHA-3 competition, and are also expected to apply to CAESAR. Send email to crypto-competitions+subscribe@googlegroups.com to join the crypto-competitions mailing list. This web site is maintained by D. J. Bernstein. Part of the work documented here is supported by NIST grant 60NANB12D261, "Cryptographic competitions", 2013.01.01–2017.12.31.'''
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/index.html"
+category = "SitesList"
+tags = ["authenticated", "broader", "caesar", "ciphers", "competitions", "competitions:", "contributions", "cryptographic", "details:", "evaluations:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/caesar-call-3.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 3 (2013.05.21)"""
+full_description = "This document is draft 3 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated here. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call-3.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://competitions.cr.yp.to/caesar-committee.html"]
+title = """
+Crypto competitions:
+CAESAR committee"""
+full_description = "CAESAR selection decisions will be made on the basis of published analyses. If submitters disagree with published analyses then they are expected to promptly and publicly respond to those analyses. Any attempt to privately lobby the selection-committee members is contrary to the principles of public evaluation and should be expected to lead to disqualification. A submitter who believes that contacting the committee is required should send email to the CAESAR secretary explaining the issue."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-committee.html"
+category = "SitesList"
+tags = ["broader", "caesar", "committee", "competitions", "competitions:", "contact", "cryptographic", "details:", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://competitions.cr.yp.to/disasters.html"]
+title = """
+Crypto competitions:
+Disasters"""
+full_description = "The trust that users place in secret-key cryptography has been repeatedly and flagrantly violated. Consider the following recent and ongoing examples: Less obvious, but even more pervasive, is an even more extreme type of disaster, in which the attacker does not need to break an authenticated cipher because the application is failing to use an authenticated cipher. Consider the following examples: It is easy to blame many of these security problems on a lack of user education, where in this case the users are the software and hardware engineers choosing cryptographic primitives to apply. The AES block cipher was standardized more than a decade ago and apparently has none of the weaknesses of RC4, Keeloq, etc.; there is an extensive literature explaining how to use AES to encrypt and authenticate messages of any length (for example, with AES-OCB3); many of these explanations are backed by proofs of security, assuming nothing more than the security of AES; and there is an extensive literature on defenses against timing attacks and other side-channel attacks. However, in many cases there is a tension between security and the performance requirements of the applications. For example, RC4 became popular precisely because it offers high speed in software: AES needs more than 10 cycles per byte on most CPUs, while RC4 typically runs in fewer than 6. HB was introduced, and remains widely studied, precisely because it can fit into very small hardware, under 1000 gates. Software side-channel defenses impose a noticeable cost, and hardware side-channel defenses impose a much larger cost."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/disasters.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competitions", "competitions:", "cryptographic", "details:", "disasters", "evaluations:", "focused", "version:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "pi-cipher.org", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg"]
+
+["https://competitions.cr.yp.to/caesar-call.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, final (2014.01.27)"""
+full_description = "CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.03.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.03.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may eliminate submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.04.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key. Bytes are integers between 0 and 255 inclusive. Authenticated ciphers defined in terms of objects other than bytes (e.g., 32-bit integers) must specify the relationship between those objects and byte strings (e.g., little-endian encoding of 32-bit integers)."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call.html"
+category = "SitesList"
+tags = ["2014.03.15", "2014.04.11", "2014.04.15", "2014.04.26", "2014.04.30", "2014.05.15", "2015.04.15", "23:59", "analysis:", "associated"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["http://competitions.cr.yp.to/caesar-call-1.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 1 (2013.04.16)"""
+full_description = "This document is draft 1 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that offer advantages over AES-GCM and that are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit public proposals of authenticated ciphers to CAESAR. First-round submission PDF files must be received by the caesar-submissions email address between 2013.12.01 and 2014.01.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.01.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may exclude submissions that do not meet the requirements below. Reference software implementations must be received by the caesar-submissions email address between 2013.12.01 and 2014.02.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length additional data, a fixed-length (possibly 0-bit) private message number, a fixed-length (possibly 0-bit) public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated in the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno additional datayesnono private message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the private message number from the ciphertext, additional data, public message number, and key. Bytes are integers between 0 and 255 inclusive. Authenticated ciphers defined in terms of higher-level objects must specify the relationship between those objects and byte strings: for example, little-endian encoding of 32-bit integers."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-call-1.html"
+category = "SitesList"
+tags = ["2014.01.15", "2014.02.15", "2015.03.15", "23:59", "additional", "analysis:", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/secret.html"]
+title = """
+Crypto competitions:
+Secret-key cryptography"""
+full_description = "The most fundamental promise made by cryptography is that a sender and receiver, starting from nothing more than shared knowledge of a secret key, can securely exchange messages. Secret-key cryptography protects the confidentiality and integrity of the messages against any possible misbehavior by the intermediate network. The advent of public-key cryptography (1976 Diffie–Hellman) introduced new ways to share secrets and to protect messages, but secret-key cryptography remains the high-performance workhorse of cryptography: the vast bulk of encrypted and authenticated data is protected either by a hybrid of public-key and secret-key cryptography or by secret-key cryptography alone. Message lengthEncryptsAuthenticates Block cipherFixedYesNo Stream cipherVariableYesNo Message-authentication codeVariableNoYes Authenticated cipherVariableYesYes A block cipher encrypts a short fixed-length message using a secret key shared by the sender and receiver. For example, AES is a block cipher that encrypts a 128-bit (16-byte) block using a 128-bit, 192-bit, or 256-bit key. A stream cipher encrypts a variable-length message using a public nonce (a message number used only once) and a secret key shared by the sender and receiver. For example, all of the ciphers in the eSTREAM portfolio expand the nonce into a long random-looking keystream, which is then xor'ed with the message to produce a ciphertext. There are also several ways to build stream ciphers from block ciphers such as AES: for example, AES-CTR expands a nonce n into AES(n,0), AES(n,1), AES(n,2), etc. A message-authentication code produces an authenticator of a variable-length message using a secret key shared by the sender and receiver; some message-authentication codes also use nonces. Sending the authenticator together with the message protects the message against corruption. Message-authentication codes are often built from block ciphers or from cryptographic hash functions such as SHA-3. An authenticated cipher, also known as an authenticated-encryption scheme or AE scheme, encrypts and authenticates messages, using a public nonce and a secret key shared by the sender and receiver. Authenticated ciphers are often built as various combinations of block ciphers, stream ciphers, message-authentication codes, and hash functions."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/secret.html"
+category = "SitesList"
+tags = ["authenticated", "authenticated-encryption", "authenticator", "block", "broader", "caesar", "cipher", "code", "competitions", "competitions:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/caesar-committee.html"]
+title = """
+Crypto competitions:
+CAESAR committee"""
+full_description = "CAESAR selection decisions will be made on the basis of published analyses. If submitters disagree with published analyses then they are expected to promptly and publicly respond to those analyses. Any attempt to privately lobby the selection-committee members is contrary to the principles of public evaluation and should be expected to lead to disqualification. A submitter who believes that contacting the committee is required should send email to the CAESAR secretary explaining the issue."
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/caesar-committee.html"
+category = "SitesList"
+tags = ["broader", "caesar", "committee", "competitions", "competitions:", "contact", "cryptographic", "details:", "evaluations:", "focused"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "info.isl.ntt.co.jp", "ketje.noekeon.org", "keyak.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "perso.uclouvain.be", "primates.ae", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["http://competitions.cr.yp.to/phc.html"]
+title = """
+Crypto competitions:
+PHC: Password Hashing Competition"""
+year_published = 2025
+clearnet = "http://competitions.cr.yp.to/phc.html"
+category = "SitesList"
+tags = ["broader", "caesar", "competition", "competitions", "competitions:", "cryptographic", "details:", "evaluations:", "focused", "hashing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2014.diac.cr.yp.to", "ascon.iaik.tugraz.at", "bench.cr.yp.to", "cryptography.gmu.edu", "cryptonessie.org", "cryptrec.jp", "googledrive.com", "hyperelliptic.org", "icepole.org", "ketje.noekeon.org", "norx.io", "nuee.nagoya-u.ac.jp", "password-hashing.net", "perso.uclouvain.be", "pi-cipher.org", "stribob.com", "uni-weimar.de", "web.cs.ucdavis.edu", "www1.spms.ntu.edu.sg", "xbx.das-labor.org"]
+
+["https://competitions.cr.yp.to/caesar-call-5.html"]
+title = """
+Crypto competitions:
+CAESAR call for submissions, draft 5 (2013.12.01)"""
+full_description = "This document is draft 5 of a call for CAESAR public submissions. Please check http://competitions.cr.yp.to for newer drafts. CAESAR (Competition for Authenticated Encryption: Security, Applicability, and Robustness) will identify a portfolio of authenticated ciphers that (1) offer advantages over AES-GCM and (2) are suitable for widespread adoption. Cryptographic algorithm designers are invited to submit proposals of authenticated ciphers to CAESAR. All proposals will be made public for evaluation. First-round submission PDF files must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.03.15 23:59 GMT. This email must have subject line precisely round 1 submission: NAME where NAME is replaced by the cipher name. After 2014.03.15 the CAESAR secretary will publish all first-round submissions received, except that the CAESAR secretary may eliminate submissions that do not meet requirements stated in this call. Reference software implementations must be received by caesar-submissions at competitions.cr.yp.to between 2014.02.01 and 2014.04.15 23:59 GMT. This email must have subject line precisely round 1 software: NAME where NAME is replaced by the cipher name. The CAESAR secretary may eliminate any submission that does not comply with the reference implementation requirements or other requirements stated in this call. An authenticated cipher is a function with five byte-string inputs and one byte-string output. The five inputs are a variable-length plaintext, variable-length associated data, a fixed-length secret message number, a fixed-length public message number, and a fixed-length key. The output is a variable-length ciphertext. The first four inputs have different security purposes, as indicated by the following table: integrityconfidentialitymay impose single-use requirements plaintextyesyesno associated datayesnono secret message numberyesyesyes public message numberyesnoyes It must be possible to recover the plaintext and the secret message number from the ciphertext, associated data, public message number, and key."
+year_published = 2025
+clearnet = "https://competitions.cr.yp.to/caesar-call-5.html"
+category = "SitesList"
+tags = ["2014.03.15", "2014.04.15", "2015.04.15", "23:59", "analysis:", "associated", "authenticated", "broader", "caesar", "call"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]

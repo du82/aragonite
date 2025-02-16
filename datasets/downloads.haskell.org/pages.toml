@@ -1,0 +1,51 @@
+["https://downloads.haskell.org/~platform"]
+title = "Index of /platform/"
+year_published = 2025
+clearnet = "https://downloads.haskell.org/~platform"
+category = "SitesList"
+tags = ["/platform/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fastly.com", "github.com", "haskell.org", "launchpad.net", "manpages.ubuntu.com"]
+
+["https://downloads.haskell.org/~cabal"]
+title = "Index of /cabal/"
+year_published = 2025
+clearnet = "https://downloads.haskell.org/~cabal"
+category = "SitesList"
+tags = ["/cabal/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fastly.com", "github.com", "haskell.org", "launchpad.net", "manpages.ubuntu.com"]
+
+["https://downloads.haskell.org/~ghc"]
+title = "Index of /ghc/"
+year_published = 2025
+clearnet = "https://downloads.haskell.org/~ghc"
+category = "SitesList"
+tags = ["/ghc/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fastly.com", "github.com", "haskell.org", "launchpad.net", "manpages.ubuntu.com"]
+
+["https://downloads.haskell.org"]
+title = "Haskell.org Downloads"
+full_description = "Welcome! This site hosts downloads for Haskell.org, with lots of great stuff like: The Glasgow Haskell Compiler (Download here). The Haskell Cabal (Download here). The Haskell Platform (Download here). APT Repository for Debian. This site is accelerated and served by Fastly."
+year_published = 2025
+clearnet = "https://downloads.haskell.org"
+category = "SitesList"
+tags = ["welcome!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fastly.com", "haskell.org"]
+
+["http://downloads.haskell.org/debian"]
+title = "GHC & Cabal APT Repository"
+full_description = "This APT repository provides convenient .deb packages for GHC & Cabal releases which can also be installed side-by-side for convenient working/testing with multiple/older GHCs and/or CI systems. The GHC packages install into a respective version-indexed /opt/ghc/$VER/ folder and so in order to use them, one way is to bring a particular GHC version into scope by placing the respective /opt/ghc/$VER/bin folder early in the PATH environment variable. There's also a /opt/ghc/bin (& /opt/cabal/bin) folder which contains version-suffixed symlinks to all currently installed GHC versions for convenient use with Cabal where you can select the desired GHC version simply by the -w CLI flag like in cabal v2-build -w ghc-7.8.4 The default ghc symlinks are idiomatically managed by update-alternatives(1) and can be configured via sudo update-alternatives --config opt-ghc sudo update-alternatives --config opt-cabal Note that /opt/ghc/bin also contains a default symlink for cabal, so it's enough to include /opt/ghc/bin in your PATH to get access to both cabal and ghc. NOTE: Currently, only amd64 binaries are provided; let us know if there's demand for other architectures. NOTE: Debian 11 includes packages named ghc and cabal-install which provide GHC 8.8.4 and Cabal 3.0.0.0 respectively (and which install to /usr/bin/). NOTE: Debian 10 includes packages named ghc and cabal-install which provide GHC 8.4.4 and Cabal 2.2.0.0 respectively (and which install to /usr/bin/). NOTE: Debian 9 includes packages named ghc and cabal-install which provide GHC 8.0.1 and Cabal 1.24.0.1 respectively (and which install to /usr/bin/). NOTE: Debian 8 includes packages named ghc and cabal-install which provide GHC 7.6.3 and Cabal 1.20.0.3 respectively (and which install to /usr/bin/). GHC releases for which the respective Cabal version is also available (albeit packaged differently) as part of the Debian distribution are highlighted blue in the table below. GHC releases for which the respective GHC version is also available (albeit packaged differently) as part of the Debian distribution are highlighted blue in the table below."
+year_published = 2025
+clearnet = "http://downloads.haskell.org/debian"
+category = "SitesList"
+tags = ["cabal", "debian", "instructions", "matrix", "ppa:hvr/ghc", "repository", "ubuntu", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fastly.com", "github.com", "haskell.org", "launchpad.net", "manpages.ubuntu.com"]

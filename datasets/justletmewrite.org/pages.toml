@@ -1,0 +1,156 @@
+["https://justletmewrite.org"]
+title = "Home"
+full_description = '''About While thinking about social media, I realized that all existing social media shares similar issues. These issues include privacy concerns, platform enforced censorship, and low quality content (spam, ai generated trash, influencer garbage, thinly guised advertisements). Additionally, the websites that have a voting system create user enforced censorship. In order to remedy these anti features, certain features have been implemented. To address the privacy concerns, the system lacks the ability to upload images entirely. Users cannot upload their picture directly and are discouraged from using their real names. Platform censorship is wholly nonexistent because it is very difficult to create something that is actually illegal in the US using just text. Low quality content and spam remedied in two ways: all posts and comments must be original (unique) and a minimum character limit is enforced (2000 for posts, 500 for comments). The concept is that high effort posting requirements will increase the barrier to entry. Effort != quality but nothing of value has ever been said in 280 characters or less. Originality, on the other hand, prevents lazy spammers. The voting system exists as a satire of other platforms where voting systems degrade into popularity mechanics. Posts are rated by users on a scale from 0 to 100 and a grade is calculated. Posts are only sorted by date descending so the voting system serves only to briefly inform the reader of the quality of the post before they find themselves filled with regret after reading halfway through a 10000 character long post. Certain quality of life features have been included. The definiton of QOL here is absence of anti-features and the presence of things we actually want. This software is entirely JS-free, login is not required to view posts, it supports markdown (to some extent), and enables the users to change the colorscheme of the website to their own taste. This website will never have ads and is provided for free of charge. Data Policy Every time you connect to this server your IP address, time of access, and request string is stored by httpd for server security purposes. This is a standard security practice. These are not inserted into the database. An example log looks like this: https://justletmewrite.org 127.0.0.1 - - [24/Jan/2024:23:56:41 +0000] "GET /index.php HTTP/1.1" 200 0 When you make an account, everything you submit under that account is stored in the databse. You have the option to export your posts in a CSV or as individual markdown files. Currently, there is no way to delete an account, comment, or votes. No other information that is not strictly necessary for the operation and functionality of the website is stored. General Rules don't hax pls if you find a vulnerability, please submit it (or a patch) at the project's git repository Server Software License this software is licensed under the BSD 2 Clause; Licensing for Individual Posts Licensing for creative works is important. Since all posts on this website are at least a couple of paragraphs long, each post is long enough to justify the use of a license. This website has a simple system that allows users to select a license for your individual posts and a 'default license' system that automatically sets you preferred license. Refer to the licensing page for a brief explanation of the licenses you can choose. If you would like a license that is not implemented, please submit a patch or request at the project's git repository RSS An rss feed containing all posts on the site can be accessed by either https://justletmewrite.org/lib/rss.php or https://justletmewrite.org/lib/rss.php?uid=all. Per user rss feeds are accessed by https://justletmewrite.org/lib/rss.php?uid=(your id here). The link to an individual user's rss feed is on their author page.'''
+year_published = 2025
+clearnet = "https://justletmewrite.org"
+category = "SitesList"
+tags = ["data", "general", "home", "individual", "license", "licensing", "posts", "quality", "rules", "server"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/random.php"]
+title = "Authors"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/random.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/login.php"]
+title = "Login"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/login.php"
+category = "SitesList"
+tags = ["home", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/search.php"]
+title = "Login"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/search.php"
+category = "SitesList"
+tags = ["home", "search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/mypage.php"]
+title = "Not logged in"
+full_description = "You are not logged in. Please refer to to log in or wait to be redirected 's page (edit mode) | Home | Authors | Random | Search | 's page (edit)Create new postTitle: Write something: Choose a license: Default: copyright copyleft cc-zero cc-by cc-by-sa cc-by-nc cc-by-nc-sa cc-by-nd cc-by-nc-nd Save PostYour PostsYou have posted 0 time(s) and commented 0 time(s)Account Settings Set your theme Foreground: Background: Accent color: Save theme Choose a default license Default: copyright copyleft cc-zero cc-by cc-by-sa cc-by-nc cc-by-nc-sa cc-by-nd cc-by-nc-nd Save license Export posts.zip CSV Account deletion Delete my account | Register | Login | Logout | My Page | 's page (edit)Create new postTitle: Write something: Choose a license: Default: copyright copyleft cc-zero cc-by cc-by-sa cc-by-nc cc-by-nc-sa cc-by-nd cc-by-nc-nd Save PostYour PostsYou have posted 0 time(s) and commented 0 time(s)Account Settings Set your theme Foreground: Background: Accent color: Save theme Choose a default license Default: copyright copyleft cc-zero cc-by cc-by-sa cc-by-nc cc-by-nc-sa cc-by-nd cc-by-nc-nd Save license Export posts.zip CSV Account deletion Delete my account"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/mypage.php"
+category = "SitesList"
+tags = ["account", "create", "home", "post", "posts", "settings"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/register.php"]
+title = "Registration"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/register.php"
+category = "SitesList"
+tags = ["home", "registration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/author.php"]
+title = "'s page"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/author.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "en.wikipedia.org", "gitlab.com", "gnu.org"]
+
+["https://justletmewrite.org/lib/do_logout.php"]
+title = "Home"
+full_description = '''About While thinking about social media, I realized that all existing social media shares similar issues. These issues include privacy concerns, platform enforced censorship, and low quality content (spam, ai generated trash, influencer garbage, thinly guised advertisements). Additionally, the websites that have a voting system create user enforced censorship. In order to remedy these anti features, certain features have been implemented. To address the privacy concerns, the system lacks the ability to upload images entirely. Users cannot upload their picture directly and are discouraged from using their real names. Platform censorship is wholly nonexistent because it is very difficult to create something that is actually illegal in the US using just text. Low quality content and spam remedied in two ways: all posts and comments must be original (unique) and a minimum character limit is enforced (2000 for posts, 500 for comments). The concept is that high effort posting requirements will increase the barrier to entry. Effort != quality but nothing of value has ever been said in 280 characters or less. Originality, on the other hand, prevents lazy spammers. The voting system exists as a satire of other platforms where voting systems degrade into popularity mechanics. Posts are rated by users on a scale from 0 to 100 and a grade is calculated. Posts are only sorted by date descending so the voting system serves only to briefly inform the reader of the quality of the post before they find themselves filled with regret after reading halfway through a 10000 character long post. Certain quality of life features have been included. The definiton of QOL here is absence of anti-features and the presence of things we actually want. This software is entirely JS-free, login is not required to view posts, it supports markdown (to some extent), and enables the users to change the colorscheme of the website to their own taste. This website will never have ads and is provided for free of charge. Data Policy Every time you connect to this server your IP address, time of access, and request string is stored by httpd for server security purposes. This is a standard security practice. These are not inserted into the database. An example log looks like this: https://justletmewrite.org 127.0.0.1 - - [24/Jan/2024:23:56:41 +0000] "GET /index.php HTTP/1.1" 200 0 When you make an account, everything you submit under that account is stored in the databse. You have the option to export your posts in a CSV or as individual markdown files. Currently, there is no way to delete an account, comment, or votes. No other information that is not strictly necessary for the operation and functionality of the website is stored. General Rules don't hax pls if you find a vulnerability, please submit it (or a patch) at the project's git repository Server Software License this software is licensed under the BSD 2 Clause; Licensing for Individual Posts Licensing for creative works is important. Since all posts on this website are at least a couple of paragraphs long, each post is long enough to justify the use of a license. This website has a simple system that allows users to select a license for your individual posts and a 'default license' system that automatically sets you preferred license. Refer to the licensing page for a brief explanation of the licenses you can choose. If you would like a license that is not implemented, please submit a patch or request at the project's git repository RSS An rss feed containing all posts on the site can be accessed by either https://justletmewrite.org/lib/rss.php or https://justletmewrite.org/lib/rss.php?uid=all. Per user rss feeds are accessed by https://justletmewrite.org/lib/rss.php?uid=(your id here). The link to an individual user's rss feed is on their author page.'''
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/do_logout.php"
+category = "SitesList"
+tags = ["data", "general", "home", "individual", "license", "licensing", "posts", "quality", "rules", "server"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/editbio.php"]
+title = "Not logged in"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/editbio.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "en.wikipedia.org", "gitlab.com", "gnu.org"]
+
+["https://justletmewrite.org/license.php"]
+title = "Home"
+full_description = 'Copyright (c) 2024, binrc All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.'
+year_published = 2025
+clearnet = "https://justletmewrite.org/license.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/licensing.php"]
+title = "Home"
+full_description = '''Licensing for Creative Works Creative Commons Licenses Creative commons licenses allow you to share your work in a simple and standardized way that enable others to use, share, and modify your work on a set of conditions that you choose. Mix and match from the table. Typically, it is wise to at least include BY with any other license so that derivative works and/or copies are attributed to you, the original author. SA and ND are mutually exclusive. abbreviation full name rights granted BY attribution anyone reusing, copying, or creating a derivative of your work must provide appropriate credit, provide a link to the license, and indicate if changes were made. The licensor does not endorse your work or your use. SA share alike if you create a derivative work you must distribute your new version under the same license as the original. NC non commercial you may not use the material for commercial purposes. ND no derivatives you are not permitted to distribute derivative works. An example license looks like CC BY-SA . This is a creative commons license that allows others to use, modify, and redistribute your work so long as they give you proper attribution. If you add replace SA with ND , derivative works are not permitted. If you add NC , anyone using, modifying, or redistributing your work cannot use it for commercial purposes (ie use it to make money). CC0 is another creative commons license that allows you to dedicate your work to the public domain. For more information, refer to the creative commons website Public Domain Works in the public domain are not actually licensed. Material in the public domain is not copyrighted and no license is required. Work placed in the public domain grants everyone all permissions without any restrictions. Attribution is not required. For more information, refer to the wikipedia article about public domain Copyright Copyright is, in simple terms, a license that means means "this is my intellectual property and I have exclusive rights to distribute, modify, and sell it". Copyright law is not internationally uniform. When copyright expires (typically after 50 years) the work enters the public domain. NOTE: Anything unlicensed is implicitly placed under copyright. Copyleft The copyleft license is nearly the same as the FSF's four essential freedoms or a CC-BY-SA license. For more information, refer to the wikipedia article about copyleft'''
+year_published = 2025
+clearnet = "https://justletmewrite.org/licensing.php"
+category = "SitesList"
+tags = ["commons", "copyleft", "creative", "derivative", "domain", "home", "license", "licenses", "licensing", "public"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "en.wikipedia.org", "gitlab.com", "gnu.org"]
+
+["https://justletmewrite.org/lib/post.php"]
+title = "-"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/post.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "en.wikipedia.org", "gitlab.com", "gnu.org"]
+
+["https://justletmewrite.org/lib/authors.php"]
+title = "Authors"
+full_description = "Newest users: Nfejdekofhofjwdoe jirekdwjfreohogjkerwkrj rekwlrkfekjgoperrkfoek ojeopkfwkferjgiejfwk okfepjfgrihgoiejfklegjroi jeiokferfekfrjgiorjofeko jeoighirhgioejfoekforjgijriogjeo foefojeigjrigklej jkrjfkrejgkrhglrlrk justletmewrite.org - Nfejdekofhofjwdoe jirekdwjfreohogjkerwkrj rekwlrkfekjgoperrkfoek ojeopkfwkferjgiejfwk okfepjfgrihgoiejfklegjroi jeiokferfekfrjgiorjofeko jeoighirhgioejfoekforjgijriogjeo foefojeigjrigklej jkrjfkrejgkrhglrlrk justletmewrite.orgtheocot - im just lurking around thw internet and found this (master? letsee)-piececamp39 - hermit in the mountains. worked as a locksmith for 20 years. i like arduino projects and reading good stuff.Noodlez - Hi! I'm Noodlez and I just really like writing stuff on occasion. This will mostly be a mirror of my existing blogs (when I get around to doing that), but for now, just wanna exist here.Confusion - Hi, I'm Confusion and I run this website https://confusion.codeberg.page/ I figured I'd mirror some of my blog posts here for further visibility. root - It mebinrc - The real dev. Shit no one cares about enthusiast. https://0x19.orgdev - This is the dev test account"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/authors.php"
+category = "SitesList"
+tags = ["home", "newest", "users:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]
+
+["https://justletmewrite.org/lib/do_deleteaccount.php"]
+title = "Not logged in"
+year_published = 2025
+clearnet = "https://justletmewrite.org/lib/do_deleteaccount.php"
+category = "SitesList"
+tags = ["home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "en.wikipedia.org", "gitlab.com", "gnu.org"]
+
+["https://justletmewrite.org/index.php"]
+title = "Home"
+full_description = '''About While thinking about social media, I realized that all existing social media shares similar issues. These issues include privacy concerns, platform enforced censorship, and low quality content (spam, ai generated trash, influencer garbage, thinly guised advertisements). Additionally, the websites that have a voting system create user enforced censorship. In order to remedy these anti features, certain features have been implemented. To address the privacy concerns, the system lacks the ability to upload images entirely. Users cannot upload their picture directly and are discouraged from using their real names. Platform censorship is wholly nonexistent because it is very difficult to create something that is actually illegal in the US using just text. Low quality content and spam remedied in two ways: all posts and comments must be original (unique) and a minimum character limit is enforced (2000 for posts, 500 for comments). The concept is that high effort posting requirements will increase the barrier to entry. Effort != quality but nothing of value has ever been said in 280 characters or less. Originality, on the other hand, prevents lazy spammers. The voting system exists as a satire of other platforms where voting systems degrade into popularity mechanics. Posts are rated by users on a scale from 0 to 100 and a grade is calculated. Posts are only sorted by date descending so the voting system serves only to briefly inform the reader of the quality of the post before they find themselves filled with regret after reading halfway through a 10000 character long post. Certain quality of life features have been included. The definiton of QOL here is absence of anti-features and the presence of things we actually want. This software is entirely JS-free, login is not required to view posts, it supports markdown (to some extent), and enables the users to change the colorscheme of the website to their own taste. This website will never have ads and is provided for free of charge. Data Policy Every time you connect to this server your IP address, time of access, and request string is stored by httpd for server security purposes. This is a standard security practice. These are not inserted into the database. An example log looks like this: https://justletmewrite.org 127.0.0.1 - - [24/Jan/2024:23:56:41 +0000] "GET /index.php HTTP/1.1" 200 0 When you make an account, everything you submit under that account is stored in the databse. You have the option to export your posts in a CSV or as individual markdown files. Currently, there is no way to delete an account, comment, or votes. No other information that is not strictly necessary for the operation and functionality of the website is stored. General Rules don't hax pls if you find a vulnerability, please submit it (or a patch) at the project's git repository Server Software License this software is licensed under the BSD 2 Clause; Licensing for Individual Posts Licensing for creative works is important. Since all posts on this website are at least a couple of paragraphs long, each post is long enough to justify the use of a license. This website has a simple system that allows users to select a license for your individual posts and a 'default license' system that automatically sets you preferred license. Refer to the licensing page for a brief explanation of the licenses you can choose. If you would like a license that is not implemented, please submit a patch or request at the project's git repository RSS An rss feed containing all posts on the site can be accessed by either https://justletmewrite.org/lib/rss.php or https://justletmewrite.org/lib/rss.php?uid=all. Per user rss feeds are accessed by https://justletmewrite.org/lib/rss.php?uid=(your id here). The link to an individual user's rss feed is on their author page.'''
+year_published = 2025
+clearnet = "https://justletmewrite.org/index.php"
+category = "SitesList"
+tags = ["data", "general", "home", "individual", "license", "licensing", "posts", "quality", "rules", "server"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com"]

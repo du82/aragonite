@@ -1,0 +1,239 @@
+["https://gmplib.org/devel"]
+title = "GMP developers' corner"
+full_description = '''We use quite different algorithms for mpz_sqrt/mpz_sqrtrem/mpn_sqrtrem and mpz_root/mpz_rootrem/mpn_rootrem. Here we compare the former group to the latter group for computing square roots. The x-axis represents input operand size in bits. The left-hand diagram is for computing just the root result, the right-hand diagram also computes the remainder. Most GMP's inner-loops run faster on Broadwell than on Haswell in GMP 6.0.0, but unfortunately some of the most critical multiply loops run quite considerably slower. These plots compare Haswell and Broadwell using the dev sources for plain multiplication, squaring, and Hensel remaindering. Dimension is cycles per n-limb operands, meaning that lower is better. We are working to make critical basecase functions perform near-optimally on interesting CPUs. The current status can be seen in the diagrams below. The diagrams are ordered pairwise per CPU, with linear scale to the left and log/log scale to the right. Measured values are in cycles. Well-formed functions should perform smoothly, where the order from slowest to fastest should be redc_1, mul_basecase, sqr_basecase, and mullo_basecase. In most cases where the order is not well-formed, assembly support is missing or inadequate. The diagrams are sorted fastest-CPU-first as measured by mul_basecase, except that Itanium and POWER7 are at the end. The diagrams' ranges are the same for all CPU types, to allow some vertical comparisons. These diagrams show performance for fixed quotient sizes, meaning that the difference between the dividend size and the divisor size is constant. The quotient size can be deduced from the "new-10000", "new-11365", etc. The x-axis is the dividend size. The red line is for the code up until GMP 5.1, the green line is new code. The new code uses more memory, but is almost always faster. Click for larger diagrams. This is a suggested new algorithm (in simple square-and-multiply form, in practice we should use k-ary sliding window): We are working in a modernised set of low-level division loops, splitting several of the current functions that have multiple loops into separate functions. Here we will try to describe the progress.'''
+year_published = 2025
+clearnet = "https://gmplib.org/devel"
+category = "SitesList"
+tags = ["anomalies", "basecase", "better", "broadwell", "code", "comparing", "division", "interface", "itemised", "lower"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bodrato.it", "ftp.gnu.org", "gnu.org", "gnupg.org", "mpfr.org", "pgp.net"]
+
+["https://gmplib.org/devel/mini-gmp-status"]
+title = "Mini-GMP status"
+full_description = "In November 2016 we added automated testing of the separately maintained mini-gmp library-in-the-library. This triggered several previously unknown problems. GMP releaes up to and including 6.1.1 are affected. All problems except for (15) are fixed in GMP 6.1.2."
+year_published = 2025
+clearnet = "https://gmplib.org/devel/mini-gmp-status"
+category = "SitesList"
+tags = ["post-mortem"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "ftp.gnu.org", "gnu.org", "gnupg.org", "mpfr.org", "pgp.net"]
+
+["https://gmplib.org/manual"]
+title = "Top (GNU MP 6.3.0)"
+description = "How to install and use the GNU multiple precision arithmetic library, version 6.3.0."
+full_description = "This manual describes how to install and use the GNU multiple precision arithmetic library, version 6.3.0. Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, with the Front-Cover Texts being “A GNU Manual”, and with the Back-Cover Texts being “You have freedom to copy and modify this GNU Manual, like GNU software”. A copy of the license is included in GNU Free Documentation License."
+year_published = 2025
+clearnet = "https://gmplib.org/manual"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/manual/Contributors"]
+title = "Contributors (GNU MP 6.3.0)"
+description = "How to install and use the GNU multiple precision arithmetic library, version 6.3.0."
+full_description = "Torbjörn Granlund wrote the original GMP library and is still the main developer. Code not explicitly attributed to others was contributed by Torbjörn. Several other individuals and organizations have contributed GMP. Here is a list in chronological order on first contribution: Brian Beuning and Doug Lea helped with testing of early versions of the library and made creative suggestions. Paul Zimmermann wrote the REDC-based mpz_powm code, the Schönhage-Strassen FFT multiply code, and the Karatsuba square root code. He also improved the Toom3 code for GMP 4.2. Paul sparked the development of GMP 2, with his comparisons between bignum packages. The ECMNET project Paul is organizing was a driving force behind many of the optimizations in GMP 3. Paul also wrote the new GMP 4.3 nth root code (with Torbjörn). Ken Weber (Kent State University, Universidade Federal do Rio Grande do Sul) contributed now defunct versions of mpz_gcd, mpz_divexact, mpn_gcd, and mpn_bdivmod, partially supported by CNPq (Brazil) grant 301314194-2. Per Bothner of Cygnus Support helped to set up GMP to use Cygnus’ configure. He has also made valuable suggestions and tested numerous intermediary releases. Joachim Hollman was involved in the design of the mpf interface, and in the mpz design revisions for version 2. Robert Harley of Inria, France and David Seal of ARM, England, suggested clever improvements for population count. Robert also wrote highly optimized Karatsuba and 3-way Toom multiplication functions for GMP 3, and contributed the ARM assembly code. Torsten Ekedahl of the Mathematical Department of Stockholm University provided significant inspiration during several phases of the GMP development. His mathematical expertise helped improve several algorithms. Linus Nordberg wrote the new configure system based on autoconf and implemented the new random functions. Kevin Ryde worked on a large number of things: optimized x86 code, m4 asm macros, parameter tuning, speed measuring, the configure system, function inlining, divisibility tests, bit scanning, Jacobi symbols, Fibonacci and Lucas number functions, printf and scanf functions, perl interface, demo expression parser, the algorithms chapter in the manual, gmpasm-mode.el, and various miscellaneous improvements elsewhere."
+year_published = 2025
+clearnet = "https://gmplib.org/manual/Contributors"
+category = "SitesList"
+tags = ["appendix", "contributors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/list-archives/gmp-devel"]
+title = "The gmp-devel Archives"
+year_published = 2025
+clearnet = "https://gmplib.org/list-archives/gmp-devel"
+category = "SitesList"
+tags = ["archives", "gmp-devel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/gmp6.3"]
+title = "GMP 6.3 News"
+full_description = "GMP 6.3 is upwardly source and binary compatible with 6.2, 6.1, 6.0, 5.1, 5.0, 4.x, and 3.x, except for applications that use the semi-documented mpn_bdivmod function. This release would not have been possible without the continuous work of improvement, revision and refinement by the whole GMP team: Torbjörn Granlund, Niels Möller, Marco Bodrato, and Marc Glisse. Please see the GMP manual for a complete list of GMP contributors. There is a public repository for GMP, please see the GMP repository usage instructions for more information."
+year_published = 2025
+clearnet = "https://gmplib.org/gmp6.3"
+category = "SitesList"
+tags = ["6.3.0", "between", "changes", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/devel/GMPng"]
+title = "Itemised plans for GMP"
+full_description = '''This is an attempt at defining a development target for the next major GMP release. We might not implement every item here for that release, and we will surely make some developments missing from this list. We miss lots of rules in libtool (and configure, elsewhere?) because they match "x86_64" and "i386" instead of all our CPUs. Among unknown things, this causes solaris shared builds to silently fall back to static builds (presumably since anno dazumal). Handle very unbalanced multiplication by "transforming" the smaller operand, then multiply using toomX2, toomX3, using the transformed value. Similarly in FFT range. Merge new mul_fft.c. [Stalls on SFLC analysis.] Alternatively, improve the present code ourselves, or perhaps reimplement the algorithm from scratch. Extend SS FFT table more intelligently, taking 'goodness' into account. (For both plain and fat builds.) Implement the √ 2 trick: 23n/4−2n/4 is a square root of 2 mod (2n+1). This allows for smaller coefficients. Define plain 2/1-division based mod_1 loops (norm, unorm) as separate abstractions, since this is something all processors will need. This loop will in almost all cases be used just for very small n, since mod_1s-family functions will take over very quickly. Selection mechanisms between the mod functions could still be in C. Add companion for mpz_perfect_power_p that returns the exponent and optionally the root. Possible name mpz_rootexact. Marco suggested some alternative functions, which could test a number and extract its nth power. (Sept/Oct 2012). We have an ugly mpn_divexact using Jebelean's bidirectional algorithm. Clean it up, and probably permit even divisors. Unlike most basic functions in GMP, GCD depends on C code and thus on compilers. Furthermore, extended GCD lacks proper basecase code, and instead invoke the heavy machinery. Use special code for when b is much smaller than m, avoiding REDC representation and table precomputation. New pseudo-code at the top devel page. Intra-library references, i.e., function calls and reads/writes of global variables, use various access structures like GOT and PLT. These are not needed, and at least in ELF we may suppress them using attributes such as "protected" and "hidden". (It seems something similar exists also on Darwin; here the compiler adds a .private_extern to the declaration of a function, but does not change calls [until supposedly in the final link].)'''
+year_published = 2025
+clearnet = "https://gmplib.org/devel/GMPng"
+category = "SitesList"
+tags = ["assembly", "balanced", "bugs", "calls", "code", "configuru", "development", "divide-by-fewlimb", "division", "environment"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "ftp.gnu.org", "gnu.org", "gnupg.org", "mpfr.org", "pgp.net"]
+
+["https://gmplib.org/mailman/listinfo/gmp-commit"]
+title = "gmp-commit Info Page"
+full_description = "gmp-commit -- GMP Repository Commit List About gmp-commit English (USA) The GMP Repository Commit List is a read-only list where the Mercurial commit messages are automatically sent, one message per commit operation. To see the collection of prior postings to the list, visit the gmp-commit Archives. Using gmp-commit To post a message to all the list members, send email to gmp-commit@gmplib.org. You can subscribe to the list, or change your existing subscription, in the sections below. Subscribing to gmp-commit Subscribe to gmp-commit by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator. Your email address: Your name (optional): You may enter a privacy password below. This provides only mild security, but should prevent others from messing with your subscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription. You can always request a mail-back of your password when you edit your personal options. Once a month, your password will be emailed to you as a reminder. Pick a password: Reenter password to confirm: Which language do you prefer to display your messages? English (USA) Would you like to receive list mail batched in a daily digest? No Yes gmp-commit Subscribers (The subscribers list is only available to the list administrator.) Enter your admin address and password to visit the subscribers list: Admin address: Password: To unsubscribe from gmp-commit, get a password reminder, or change your subscription options enter your subscription email address: If you leave the field blank, you will be prompted for your email address The GMP Repository Commit List is a read-only list where the Mercurial commit messages are automatically sent, one message per commit operation."
+year_published = 2025
+clearnet = "https://gmplib.org/mailman/listinfo/gmp-commit"
+category = "SitesList"
+tags = ["commit", "gmp-commit", "list", "password", "repository", "subscribers", "subscribing", "using", "valuable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/list-archives/gmp-announce"]
+title = "The gmp-announce Archives"
+year_published = 2025
+clearnet = "https://gmplib.org/list-archives/gmp-announce"
+category = "SitesList"
+tags = ["archives", "gmp-announce"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/mailman/listinfo/gmp-bugs"]
+title = "gmp-bugs Info Page"
+full_description = '''gmp-bugs -- GMP Bugs List About gmp-bugs English (USA) The GMP Bugs mailing list is an unmoderated list for reporting bugs in the GNU Multiple Precision Library (GMP). Before reporting a bug, please make sure that you have read the Reporting Bugs section in the manual. Sending messages to GMP lists with legal threats "this message is confidential blah blah" is not allowed. This is a private mailing list. Sending advertisements to this list is illegal by Swedish and International law. If advertisements are sent, the advertising party agrees to pay SEK 1500:- for administrative costs in lieu of legal action. Such advertisements will be read by the moderators and then deleted. To see the collection of prior postings to the list, visit the gmp-bugs Archives. Using gmp-bugs To post a message to all the list members, send email to gmp-bugs@gmplib.org. You can subscribe to the list, or change your existing subscription, in the sections below. Subscribing to gmp-bugs Subscribe to gmp-bugs by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator. Your email address: Your name (optional): You may enter a privacy password below. This provides only mild security, but should prevent others from messing with your subscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription. You can always request a mail-back of your password when you edit your personal options. Pick a password: Reenter password to confirm: Which language do you prefer to display your messages? English (USA) Would you like to receive list mail batched in a daily digest? No Yes gmp-bugs Subscribers (The subscribers list is only available to the list administrator.) Enter your admin address and password to visit the subscribers list: Admin address: Password: To unsubscribe from gmp-bugs, get a password reminder, or change your subscription options enter your subscription email address: If you leave the field blank, you will be prompted for your email address'''
+year_published = 2025
+clearnet = "https://gmplib.org/mailman/listinfo/gmp-bugs"
+category = "SitesList"
+tags = ["bugs", "gmp-bugs", "list", "password", "subscribers", "subscribing", "using", "valuable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/devel/repo-usage"]
+title = "GMP Repository Usage"
+full_description = '''The GMP project uses Mercurial for its revision control. Mercurial is a distributed SCM, where each checkout is just another repository. Where the central repository lives is just an agreement between developers, not something Mercurial enforces. Once you have your own repository, you need to generate some build files. Perhaps the script .bootstrap works out-of-the box; if it doesn't, you need to install automake (at least version 1.11.6) and autoconf (at least version 2.59) and then try .bootstrap again. You may safely ignore the 4 lines of warnings from libtoolize. Do not use autoreconf; it will overwrite config.guess which in turn will cause any builds to be awful. These resources are open to the public, but we expect them to be used responsibly. Repeated clone command should be avoided. Scripting of clone commands is strongly discouraged. As a guideline, more than one clone command per day is considered excessive. More than 10 is considered abuse, and if you sustain such a clone rate or significantly exceed it in a single day, your IP address will get a dishonorary mention in our firewall's block list. There is really no good reason to repeat a clone command, except if you lost all previous copies. If you clone and then make local changes, they are easy to back out. And you can always clone from your own "master" clone.'''
+year_published = 2025
+clearnet = "https://gmplib.org/devel/repo-usage"
+category = "SitesList"
+tags = ["conditions", "discouraged", "strongly", "usage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/mailman/listinfo/gmp-devel"]
+title = "gmp-devel Info Page"
+full_description = "gmp-devel -- GMP Developers List About gmp-devel English (USA) The GMP Developers' mailing list is a moderated list for discussing the development of the GNU Multiple Precision Library (GMP). This is the place for GMP development issues. It's not meant for discussing the usage of GMP or for mathematical discussions in general. Please also note that this list is not intended for bug reports. See Reporting Bugs in the manual. This is a private mailing list. Sending advertisements to this list is illegal by Swedish and International law. If advertisements are sent, the advertising party agrees to pay SEK 1500:- for administrative costs in lieu of legal action. Such advertisements will be read by the moderators and then deleted. To see the collection of prior postings to the list, visit the gmp-devel Archives. Using gmp-devel To post a message to all the list members, send email to gmp-devel@gmplib.org. You can subscribe to the list, or change your existing subscription, in the sections below. Subscribing to gmp-devel Subscribe to gmp-devel by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator. Your email address: Your name (optional): You may enter a privacy password below. This provides only mild security, but should prevent others from messing with your subscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription. You can always request a mail-back of your password when you edit your personal options. Pick a password: Reenter password to confirm: Which language do you prefer to display your messages? English (USA) Would you like to receive list mail batched in a daily digest? No Yes gmp-devel Subscribers (The subscribers list is only available to the list administrator.) Enter your admin address and password to visit the subscribers list: Admin address: Password: To unsubscribe from gmp-devel, get a password reminder, or change your subscription options enter your subscription email address: If you leave the field blank, you will be prompted for your email address"
+year_published = 2025
+clearnet = "https://gmplib.org/mailman/listinfo/gmp-devel"
+category = "SitesList"
+tags = ["developers", "gmp-devel", "list", "password", "subscribers", "subscribing", "using", "valuable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/mailman/listinfo/gmp-discuss"]
+title = "gmp-discuss Info Page"
+full_description = '''gmp-discuss -- GMP Discussions List About gmp-discuss English (USA) The GMP Discussions mailing list is an unmoderated list for asking questions about and discussing the usage of the GNU Multiple Precision Library (GMP). This a good place for posting general questions about the usage of GMP, but please read the manual first. Please also note that this list is not intended for bug reports. See Reporting Bugs in the manual. Sending messages to GMP lists with legal threats "this message is confidential blah blah" is not allowed. This is a private mailing list. Sending advertisements to this list is illegal by Swedish and International law. If advertisements are sent, the advertising party agrees to pay SEK 1500:- for administrative costs in lieu of legal action. Such advertisements will be read by the moderators and then deleted. To see the collection of prior postings to the list, visit the gmp-discuss Archives. Using gmp-discuss To post a message to all the list members, send email to gmp-discuss@gmplib.org. You can subscribe to the list, or change your existing subscription, in the sections below. Subscribing to gmp-discuss Subscribe to gmp-discuss by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator. Your email address: Your name (optional): You may enter a privacy password below. This provides only mild security, but should prevent others from messing with your subscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription. You can always request a mail-back of your password when you edit your personal options. Pick a password: Reenter password to confirm: Which language do you prefer to display your messages? English (USA) Would you like to receive list mail batched in a daily digest? No Yes gmp-discuss Subscribers (The subscribers list is only available to the list administrator.) Enter your admin address and password to visit the subscribers list: Admin address: Password: To unsubscribe from gmp-discuss, get a password reminder, or change your subscription options enter your subscription email address: If you leave the field blank, you will be prompted for your email address'''
+year_published = 2025
+clearnet = "https://gmplib.org/mailman/listinfo/gmp-discuss"
+category = "SitesList"
+tags = ["discussions", "gmp-discuss", "list", "password", "subscribers", "subscribing", "using", "valuable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/manual/Reporting-Bugs"]
+title = "Reporting Bugs (GNU MP 6.3.0)"
+description = "How to install and use the GNU multiple precision arithmetic library, version 6.3.0."
+full_description = "If you think you have found a bug in the GMP library, please investigate it and report it. We have made this library available to you, and it is not too much to ask you to report the bugs you find. Before you report a bug, check it’s not already addressed in Known Build Problems, or perhaps Notes for Particular Systems. You may also want to check https://gmplib.org/ for patches for this release, or try a recent snapshot from https://gmplib.org/download/snapshot/. Please make an effort to produce a self-contained report, with something definite that can be tested or debugged. Vague queries or piecemeal messages are difficult to act on and don’t help the development effort. It is not uncommon that an observed problem is actually due to a bug in the compiler; the GMP code tends to explore interesting corners in compilers. If your bug report is good, we will do our best to help you get a corrected version of the library; if the bug report is poor, we won’t do anything about it (except maybe ask you to send a better report). If you think something in this manual is unclear, or downright incorrect, or if the language needs to be improved, please send a note to the same address."
+year_published = 2025
+clearnet = "https://gmplib.org/manual/Reporting-Bugs"
+category = "SitesList"
+tags = ["bugs", "reporting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/list-archives/gmp-discuss"]
+title = "The gmp-discuss Archives"
+year_published = 2025
+clearnet = "https://gmplib.org/list-archives/gmp-discuss"
+category = "SitesList"
+tags = ["archives", "gmp-discuss"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/mailman/listinfo/gmp-announce"]
+title = "gmp-announce Info Page"
+full_description = "gmp-announce -- GMP Announcements List About gmp-announce English (USA) The GMP Announcements mailing list is a read-only list for announcements regarding the GNU Multiple Precision Library (GMP). To see the collection of prior postings to the list, visit the gmp-announce Archives. Using gmp-announce To post a message to all the list members, send email to gmp-announce@gmplib.org. You can subscribe to the list, or change your existing subscription, in the sections below. Subscribing to gmp-announce Subscribe to gmp-announce by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator. Your email address: Your name (optional): You may enter a privacy password below. This provides only mild security, but should prevent others from messing with your subscription. Do not use a valuable password as it will occasionally be emailed back to you in cleartext. If you choose not to enter a password, one will be automatically generated for you, and it will be sent to you once you've confirmed your subscription. You can always request a mail-back of your password when you edit your personal options. Pick a password: Reenter password to confirm: Which language do you prefer to display your messages? English (USA) Would you like to receive list mail batched in a daily digest? No Yes gmp-announce Subscribers (The subscribers list is only available to the list administrator.) Enter your admin address and password to visit the subscribers list: Admin address: Password: To unsubscribe from gmp-announce, get a password reminder, or change your subscription options enter your subscription email address: If you leave the field blank, you will be prompted for your email address The GMP Announcements mailing list is a read-only list for announcements regarding the GNU Multiple Precision Library (GMP). Subscribe to gmp-announce by filling out the following form. You will be sent email requesting confirmation, to prevent others from gratuitously subscribing you. This is a hidden list, which means that the list of members is available only to the list administrator."
+year_published = 2025
+clearnet = "https://gmplib.org/mailman/listinfo/gmp-announce"
+category = "SitesList"
+tags = ["announcements", "gmp-announce", "list", "password", "subscribers", "subscribing", "using", "valuable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/list-archives/gmp-bugs"]
+title = "The gmp-bugs Archives"
+year_published = 2025
+clearnet = "https://gmplib.org/list-archives/gmp-bugs"
+category = "SitesList"
+tags = ["archives", "gmp-bugs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/oldrel"]
+title = "Patches for old GMP releases"
+full_description = '''N.B. Patches linked herein do not all carry a copyright header. This does not mean that we do not claim copyright, nor does it mean that we intend it to default to the "All rights reserved" status. The patches herein are under the LGPL 3.0 or later, see https://www.gnu.org/licenses/. Some GNU/Linux distributions have a buggy ar program that omits many of the files from libgmp.a. As a result libgmp.a becomes useless. The best solution is to get a newer GNU release of binutils, version 2.6 or later. As a workaround, you could also apply this patch to the top-level directory of GMP 2.0.2, if you don't want to upgrade your GNU/Linux tools. The patch was written by Alexander Zimmermann.'''
+year_published = 2025
+clearnet = "https://gmplib.org/oldrel"
+category = "SitesList"
+tags = ['"all', "carry", "claim", "copyright,", "default", "header.", "herein", "intend", "later,", "lgpl"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com", "uni-passau.de"]
+
+["https://gmplib.org/gmpbench"]
+title = "GMPbench results"
+full_description = "GMPbench results. We have run the benchmark on the highest-frequency CPU of each type to which we have convenient access. Scaling to lower or higher frequencies should work well, since GMP mainly works off the caches. The GMPbench suite is available for download. To run the benchmarks, you also need to compile gexpr.c and put it somewhere in your path. GMP exercises a particular set of processor capabilities, widening integer multiplication being the most important one. Processors with poor integer multiply support get worse scores on GMPbench than on other benchmarks. GMPbench measures multiplication of same size and different size operands, squaring, division, gcd, and extended gcd, and then RSA encryption and π computation. That's it. GMP typically performs a whole lot more operations which are not measured at all. Let us make it absolutely clear that GMP exercises just integer instructions, and that GMPbench thus is an integer benchmark. We often see claims to the contrary, i.e. that it is a floating-point benchmark. GMPbench is a single-threaded benchmark. Most CPUs below can execute multiple threads in parallel using some separate and some shared hardware resources. Most operations in GMP up to quite large operand sizes would scale very well over multi-core systems, but poorly with SMT. A hypothetical multi-threaded GMPbench would therefore give about 8 times the current Ryzen 2700X score but only about 4 times the current Xeon E3-1270v5 score. The results below have been measured with software workarounds for the various hardware bugs (Meltdown, Spectre, L1TF, MDS, etc) at various stages of completeness. BIOS were at the newest available version, but the latest vendor provided microcode was not provided unless provided by the BIOS. We don't have an estimate of the slowdown GMP will suffer when workarounds are final. Preliminary measurements for Intel Skylake (and thus Kaby Lake, Coffee Lake, Whiskey Lake, Amber Lake, Fool Ake, etc which are all just Sky Lake reiterations) indicate significant slowdown. We see no slowdown for AMD CPUs. There might be newer Intel CPUs which have been bug fixed, but last time we checked (in mid 2020) the bugs were discovered faster than they were fixed. Performance results which are inflated by corners being cut resulting in a security disaster are not of great interest. We have therefore crossed over Intel results."
+year_published = 2025
+clearnet = "https://gmplib.org/gmpbench"
+category = "SitesList"
+tags = ["10351,3,4", "2136t,1,3", "2149t,1,2,3,4", "23101,3", "24791,3", "2491t,1,2,3,4", "2636t,1", "3034t,1", "3108t,1", "32-bit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]
+
+["https://gmplib.org/pi-with-gmp"]
+title = "GMP Pi computation"
+full_description = '''While GMP is a general-purpose library for arithmetic on large numbers, it also works very well for such special tasks as computing a silly number of digits of π. This program, written by Hanhong Xue, is all that's needed. How do these numbers compare to other π computing programs out there? Many π programs proclaim themselves as "the fastest", but then they are actually several times slower than gmp-chudnovsky.c with the current GMP release. Compare the numbers! Using GMP, a fast 64-bit computer, and sufficient memory, it should be possible to compute up to 41 billion digits. Unfortunately, the memory requirements are about 8n bytes for computing n digits, which will make most desktop computers unfit for 41 billion digit computations. Memory locality in GMP's FFT multiply code is not good enough for efficient computation with operands on disk. Attempting computations of more than 41 billion digits will cause overflow in the mpz type. A planned future version of GMP will allow the patient and wealthy to compute up to at least 1 quadrillion (1015) digits, and unlike current GMP, this future GMP will operate fine with operands on disk. One needs around 250 top-capacity rust swap disks in order to compute 1 quadrillion digits, but hopefully that will qualify for a discount ("buy 250, pay for 249"). Note: All Intel processors below are affected by the security bugs Meltdown, Spectre, Foreshadow, and MDS. Skylake is further affected by the security bug Jcc. With proper workarounds, the performance of the Intel processors would be considerably lower!'''
+year_published = 2025
+clearnet = "https://gmplib.org/pi-with-gmp"
+category = "SitesList"
+tags = ["affected", "below", "bugs", "considerably", "devel", "foreshadow,", "further", "intel", "jcc.", "lower!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com", "uni-passau.de"]
+
+["https://gmplib.org"]
+title = "The GNU MP Bignum Library"
+full_description = "Thanks to a very generous donation from Christian Calderon, the GMP project now has a brand new, AMD Epyc server which will replace the old server. This is great for GMP, not only because of the old server's hardware security issues, but also since the new server is 3x more powerful than the old one. GMP is a free library for arbitrary precision arithmetic, operating on signed integers, rational numbers, and floating-point numbers. There is no practical limit to the precision except the ones implied by the available memory in the machine GMP runs on. GMP has a rich set of functions, and the functions have a regular interface. The main target applications for GMP are cryptography applications and research, Internet security applications, algebra systems, computational algebra research, etc. GMP is carefully designed to be as fast as possible, both for small operands and for huge operands. The speed is achieved by using fullwords as the basic arithmetic type, by using fast algorithms, with highly optimised assembly code for the most common inner loops for a lot of CPUs, and by a general emphasis on speed. The first GMP release was made in 1991. It is continually developed and maintained, with a new release about once a year. Since version 6, GMP is distributed under the dual licenses, GNU LGPL v3 and GNU GPL v2. These licenses make the library free to use, share, and improve, and allow you to pass on the result. The GNU licenses give freedoms, but also set firm restrictions on the use with non-free programs. GMP is part of the GNU project. For more information about the GNU project, please see the official GNU web site. GMP's main target platforms are Unix-type systems, such as GNU/Linux, Solaris, HP-UX, Mac OS X/Darwin, BSD, AIX, etc. It also is known to work on Windows in both 32-bit and 64-bit mode. GMP is carefully developed and maintained, both technically and legally. We of course inspect and test contributed code carefully, but equally importantly we make sure we have the legal right to distribute the contributions, meaning users can safely use GMP. To achieve this, we will ask contributors to sign paperwork where they allow us to distribute their work."
+year_published = 2025
+clearnet = "https://gmplib.org"
+category = "SitesList"
+tags = ["2023-07-30", "bugs", "categories", "current", "download", "function", "future", "gmp?", "latest", "lists"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ftp.gnu.org", "gnu.org", "gnupg.org", "mpfr.org", "pgp.net"]
+
+["https://gmplib.org/list-archives/gmp-commit"]
+title = "The gmp-commit Archives"
+year_published = 2025
+clearnet = "https://gmplib.org/list-archives/gmp-commit"
+category = "SitesList"
+tags = ["archives", "gmp-commit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airs.com", "bodrato.it", "en.wikipedia.org", "ftp.gnu.org", "gnu.org", "gnupg.org", "mercurial-scm.org", "mpfr.org", "pgp.net", "selenic.com"]

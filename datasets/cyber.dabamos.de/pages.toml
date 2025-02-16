@@ -1,0 +1,455 @@
+["https://cyber.dabamos.de/unix/tethering"]
+title = "Using USB Tethering on FreeBSD with Android | The Cyber Vanguard"
+description = "Using USB Tethering on FreeBSD with Android"
+full_description = "The Intel Centrino Advanced-N 6205 WiFi chipset can be found in the Lenovo X230 series and other laptops. The iwn(4) driver covers the chipset on FreeBSD. Connecting to a WiFi network should not be a problem but unfortunately, the performance, at least on older FreeBSD versions, is rather poor, especially when using the 5 GHz channels. The signal may be improved when IEEE 802.11n is disabled: Otherwise, an Android-based mobile phone can act as a gateway to a WiFi network, by using USB tethering. The urndis(4) driver has to be loaded for Android-based smartphones: Connect the phone to the Laptop using a (real) USB cable. Make sure that WiFi and USB tethering are enabled on the phone. A new network interface ue0 will be created once the device is connected:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/tethering"
+category = "SitesList"
+tags = ["android", "freebsd", "tethering", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/game-dev"]
+title = "Game Development Resources"
+description = "Game Development Resources"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/game-dev"
+category = "SitesList"
+tags = ["2.5d", "256-colour", "7drl", "a.i.", "adventure", "algorithm", "algorithms", "analyzing", "anarch", "animation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["200wordrpg.github.io", "3dmodelscc0.com", "able.bio", "ace.home.xs4all.nl", "agner.org", "alex.dzyoba.com", "alexgaynor.net", "alexschroeder.ch", "basic-converter.org", "blog.winter.dev", "bp.io", "brackeen.com", "cc0textures.com", "codepo8.github.io", "conwaylife.com", "en.wikipedia.org", "ict.griffith.edu.au", "jigsaw.w3.org", "tau.ac.il", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/programming/fortran/dislin"]
+title = "DISLIN with Digital/Compaq/HP/Intel Visual Fortran | The Cyber Vanguard"
+description = "DISLIN with Digital/Compaq/HP/Intel Visual Fortran"
+full_description = 'DISLIN is a high-level library for displaying data as curves, bar graphs, pie charts, 3D-colour plots, surfaces, contours, and maps. It is developed at the Max Planck Institute for Solar System Research and supports several operating systems and programming languages. DISLIN is free for non-commercial purposes. I tested DISLIN with the dusty Compaq Visual Fortran Professional Edition 6.6c compiler, but it should work with other Visual Fortran versions as well. Attention: Ensure that the active configuration of your Fortran project is set to "Release". The "Debug" configuration seems not to work with DISLIN, as you will likely encounter linking errors (unresolved external symbol).'
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/dislin"
+category = "SitesList"
+tags = ["attention:", "digital/compaq/hp/intel", "dislin", "fortran", "installation", "usage", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "freshmeat.sourceforge.net", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "mipmip.org", "newton.freehostia.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/cgi-bin/magic8"]
+title = "Magic 8 Ball"
+full_description = "A CGI-based virtual Magic 8 Ball for fortune-telling and advice seeking, written in FORTRAN 77. Ask a yes-no question and get the totally correct answer from the computer."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/cgi-bin/magic8"
+category = "SitesList"
+tags = ["ball", "magic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["0x0f0f0f.github.io", "200wordrpg.github.io", "80.lv", "aareed.itch.io", "able.bio", "ace.home.xs4all.nl", "acriticalhit.com", "aelinik.free.fr", "agner.org", "ahelwer.ca", "alex.dzyoba.com", "alexgaynor.net", "alexschroeder.ch", "cs.uwm.edu", "en.wikipedia.org", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/mirrors/multiplayergames"]
+title = "Multi-Player IBM PC Games List"
+full_description = "Robert Mueller maintains a valuable listing of game ftp sites. Finger lsrlight@netcom.com for the list."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/multiplayergames"
+category = "SitesList"
+tags = ['"null', "'nuff", "asked", "command", "contents", "curiosities", "demos", "disclaimer", "email", "frequently"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/fortran/oregon"]
+title = "OREGON 77 – The Oregon Trail in FORTRAN 77"
+description = "The Oregon Trail in FORTRAN 77"
+full_description = "A source port of the 1978 version of The Oregon Trail to FORTRAN 77, originally created in HP time-shared BASIC by Don Rawitsch, Bill Heinemann, and Paul Dillenberger: This program simulates a trip over the Oregon trail from Independence, Missouri to Oregon City, Oregon in 1847. Your family of five will cover the 2040 mile Oregon trail in 5 to 6 months -- if you make it alive. The BASIC source code was first published in Creative Computing magazine in 1978. Ports of the game exist for various platforms. For instance, Westward Ho! is an adaption by David H. Ahl for his book BASIC Computer Adventures that was also released for MS-DOS. The remake in FORTRAN tries to stay close to the gameplay of the BASIC version but some changes to input handling and output formatting had to be made. The Oregon Trail as a QuickWin application on Microsoft Windows 2000 Professional (Compaq Visual Fortran 6.6c) Binaries of the game are provided for DOS and Win32. On all other platforms, please compile the program from source. The executables have been built with Open Watcom FORTRAN 77. Other compiles may produce smaller binaries (due to the run-time library). You can simply execute the included Makefile to compile the game, in case you have the FORTRAN-to-C transcompiler f2c installed: For a more “realistic” gaming experience, you can simulate a 300 baud terminal connection with a tool like trickle: Due to the limitations of the ANSI FORTRAN 77 language standard, no instrinsic timing function is available. Some FORTRAN compilers feature extensions to access CPU time or current system time. You may need to link a wrapper function TIME() that returns a UNIX timestamp or any other relative time value measured in seconds (tab. 1). Depending on the compiler, the file endings of the source files may have to be renamed from .f to .for manually. Absoft Pro Fortran | Compaq Visual Fortran 6.6 | Cray CF90 | Digital Visual Fortran 5.0 | F18/Flang | f2c | Flang | G95 | GNU Fortran | GNU g77 | IBM Professional FORTRAN | Intel Fortran Compiler | Intel oneAPI Fortran | Lahey Fortran 90 | Lahey F77L3-EM/32 | Lahey Personal FORTRAN 77 | Microsoft FORTRAN 4.1 | Microsoft FORTRAN 5.1 | Microsoft FORTRAN PowerStation 1.0 | Microsoft FORTRAN PowerStation 32 1.0 | Microsoft Fortran PowerStation 4.0 | Microway NDP FORTRAN-486 | Open Watcom FORTRAN 77 | Ryan-McFarland RM/FORTRAN 2.43 | Salford FTN77 | Silverfrost FTN95 | Watcom Fortran 11.0 | Watcom WATFOR-77"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/oregon"
+category = "SitesList"
+tags = ["11.0", "2.43", "absoft", "basic", "build", "cf90", "change", "clone", "compaq", "compiler"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "able.bio", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "died-of-dysentery.com", "dsg4.com", "en.wikipedia.org", "flags.net", "freshmeat.sourceforge.net", "home.mcom.com", "ict.griffith.edu.au", "khoral.com", "mipmip.org", "newton.freehostia.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org", "virtuallyfun.com"]
+
+["https://cyber.dabamos.de/unix/rtcw"]
+title = "Return to Castle Wolfenstein (RtCW) on FreeBSD | The Cyber Vanguard"
+description = "Retun to Castle Wolfenstein (RtCW) on FreeBSD"
+full_description = "Several first-person shooter games are available through the FreeBSD ports collection. One of them is Return to Castle Wolfenstein (RtCW), the successor of Wolfenstein 3D. The port is based on the Linux version and requires the Linux binary compatibility layer for FreeBSD to run. Instead of the Linux port, we can compile a native FreeBSD client for RtCW. The source code is hosted on Gitorious (mirror). Clone the repository with: The game binaries are written to the directory build/ afterwards. The RtCW game data has to be copied to the directory main/. Unfortunately, the game data can’t be taken from the CD directly. You either have to use Wine or VirtualBox to install RtCW and then copy the following files to main/: Like other games with id Tech engine, RtCW can be played in wide screen mode by altering the aspect ratio of the screen in the configuration file. To run the game in 1920×1200, change the following parameters in ~/.wolf/main/wolfconfig.cfg: The field of view variable cg_fov should be set to 106.27 for 16:9 and 100.39 for 16:10. If the game crashes at some scenes, for instance, at the ropeway sequence, the aspect ratio can be set to 4:3 temporary as a workaround."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/rtcw"
+category = "SitesList"
+tags = ["castle", "freebsd", "installation", "return", "screen", "wide", "wolfenstein"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/unix/wolf3d"]
+title = "Wolfenstein 3D on FreeBSD | The Cyber Vanguard"
+description = "Wolfenstein 3D on FreeBSD"
+full_description = '''You don't need to run Microsoft® DOS to play your favorite first-person shooter! Turn your Unix workstation into a gaming platform for the fast-paced action world of id Software's Wolfenstein 3D. The hardware accelerated port Wolf4SDL for X11 runs perfectly on FreeBSD, Dragonfly BSD, NetBSD, and other BSD derivates. This short HyperText tutorial shows you the installation. Let's start. To play the game on Unix, you need to get the files of version 1.4 of Wolfenstein 3D. Hopefully, you have the original 3,5" game disk. Otherwise, try to download a full copy from somewhere within the Internet … Wolf4SDL uses the Simple DirectMedia Layer library. Just install the packages of SDL 1.2 and SDL Mixer with your package manager or build them from source. On FreeBSD, you can run: Unfortunately, Wolf4SDL can't be compiled with clang—so you will need gmake and gcc. To compile the source code, run:'''
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/wolf3d"
+category = "SitesList"
+tags = ["compile", "data!", "game", "install", "tip:", "unix", "wolf4sdl", "wolfenstein"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/unix/x230"]
+title = "FreeBSD on Lenovo ThinkPad X230 | The Cyber Vanguard"
+description = "Running FreeBSD on Lenovo ThinkPad X230"
+full_description = "The ThinkPad X230 is well-supported by FreeBSD 11. You can find some hints on the system configuration here. You may want to disable the Touchpad in BIOS in order to use the Trackpoint of the X230. Then, edit /etc/rc.conf and add: For power management, you can either use powerd(8) or sysutils/powerdxx. To use powerd, edit /etc/rc.conf and add: This should perform a suspend to RAM. Press the power button to resume. You will need security/sudo to suspend with non-root privileges. Edit /usr/local/etc/sudoers (use visudo) and add: You can now suspend as a user by running zzz. Execute zzz from your Window Manager by calling tcsh -c zzz. If you like to use the Fn key (Fn + F4) to suspend, load the acpi_ibm(4) kernel module. Add to /boot/loader.conf: Audio output is provided by the snd_hda(4) driver. Load the kernel module at boot time by editing /boot/loader.conf: Load the acpi_ibm(4) kernel module to use the volume keys above the keyboard. Edit /boot/loader.conf and add: Raising and lowering the volume using the volume keys will work now in applications like VLC. You have to configure your Window Manager to map keypress events. For FVWM, add to ~/.fvwm/config: You can connect an external screen by VGA, Mini DisplayPort, or HDMI (docking station). Use x11/xrandr to enable video output and set display resolutions. Default output is LVDS1. List all outputs with: You can use the Fn keys to increase/decrease the screen brightness by loading acpi_ibm(4). Add to /boot/loader.conf: You should be connected now. For more information on Wi-Fi networks, see the FreeBSD online handbook. The card reader of the X230 can be used after loading the appropriate kernel modules. Add the following lines to /boot/loader.conf:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/x230"
+category = "SitesList"
+tags = ["audio", "brightness", "card", "contents", "freebsd", "keys", "lenovo", "management", "overview", "power"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "boku.ac.at", "cs.brandeis.edu", "evl.uic.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "jwz.org", "khoral.com", "mipmip.org", "newbreedsoftware.com", "nvlpubs.nist.gov", "tau.ac.il", "urbandictionary.com", "validator.w3.org", "vidalc.chez.com"]
+
+["https://cyber.dabamos.de/capitalism"]
+title = "Life in Late Stage Capitalism (2025)"
+full_description = "“It’s much easier to imagine the end of all life on earth than a much more modest radical change in capitalism.” Scurvy, a disease caused by severe vitamin C deficiency, is making a comeback in France. A new study links its resurgence, particularly among young children from low-income families, to rising food insecurity and inflation since the Covid pandemic. “[E]mancipatory politics must always destroy the appearance of a ‘natural order’, must reveal what is presented as necessary and inevitable to be a mere contingency, just as it must make what was previously deemed to be impossible seem attainable.”"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/capitalism"
+category = "SitesList"
+tags = ["capitalism", "late", "late capitalism", "late stage capitalism", "life", "stage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["0x0f0f0f.github.io", "200wordrpg.github.io", "80.lv", "aareed.itch.io", "able.bio", "ace.home.xs4all.nl", "acriticalhit.com", "aelinik.free.fr", "agner.org", "ahelwer.ca", "alex.dzyoba.com", "alexgaynor.net", "alexschroeder.ch", "cs.uwm.edu", "en.wikipedia.org", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/links"]
+title = "Hot Sites | The Cyber Vanguard"
+full_description = "Hot links from around the . Enjoy! Please send me an electronic if you know any other hyper links that should be listed here."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/links"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "bellard.org", "blogoscoped.com", "chessprogramming.org", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "indieretronews.com", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/povray"]
+title = "POV-Ray"
+full_description = "A FORTRAN scene for POV-Ray was likely created around the year 2000 by Kurt Bangert, and shows the characteristic companions of a common FORTRAN programmer: continuous form paper, Hollerith punch cards, legacy reference book, Snoopy calendar, and alcoholism. The source code listed on paper is taken from Will Crowther's Adventure (~1976). The book cover texture for4.gif is not included on the website, and therefore, has to be replaced with a similar GIF image. The output in 640x480 takes about 30 seconds on an Intel Core i5-7200U. For 4000x3000 resolution, more patience is required:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/povray"
+category = "SitesList"
+tags = ["cdemo.pov", "corona.inc", "fortran.pov", "pov-ray", "rendered", "rendering", "scene"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/delphi"]
+title = "Programming in Borland Delphi"
+full_description = "These two games are the only applications written in Borland Delphi 5 I could find on old backups. Other treasures of the time between 2002 and 2004, like a CD tray open/close tool, a fake Microsoft Windows 2000 Professional unlock screen for password grabbing, or a DirectX-based Galaga clone, are lost forever. The simple Wa-Tor-like game simulates the dependencies between animals and their environment. It was programmed in 2004 during a secondary school project for biology class. The simulation is written in Borland Delphi 5 and should run on Microsoft Windows 95 upwards. Unfortunately, the source code and the documentation are lost, but it may not be too hard to figure out the simulation options. The user interface is in German only. The user can place single grass, rabbit, and fox tiles on the map. Parameters for energy, breeding values, and so on, can be altered as well. The simulation runs autonomously after clicking the [Start] button. To install the simulation, just unzip the archive and start the executable Simulation.exe. The configuration is stored in a local INI file. The Windows Registry will not be touched. A simple snake game clone with ugly sprites, written in Borland Delphi 5 by using Win32 API calls only. The source code is lost, too. There is nothing special about the game, except the file size of 29.5 KiB. A later version also featured sound, but this is the only one I have a backup of."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/delphi"
+category = "SitesList"
+tags = ["borland", "delphi", "download", "predator-prey", "programming", "simulation", "snake"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/guestbook"]
+title = "Guestbook | The Cyber Vanguard"
+full_description = "I am not human,... and I do not know about philosophers... I am just a traveling dog on the internet, and I hope u r having a wonderful time whevere u r! :3 website like yours are the reason i refuse to give up on the web, and they make me appreciate it even more, i truly miss the early 2000 Internet man ... idk how i got here but i've been down this rabbithole of geocities revival and archiving for two hours and this is fueling it. incredible Awesome website man, I really like and miss this era of Internet. Back when you didn't have to worry about SEO or responsive mobile design :) this is so swag :0 I stumbled across it while looking for the source of someone's firefox button on their spacehey page. def bookmarking this place (I have no idea who these philosophers are so I hope this works) Thank you for the excellent bevy of buttons!! Although there's some that look really cool but IDK if they're made for peoples' personal sites or not so IDK if I can use them :| GOD BLESS THE NATION OF ISRAEL AND THE PEOPLE OF ISRAEL. AM YISRAEL CHAI. BRING THEM HOME! &#127470;&#127473; Awesome website! Many moving images! This makes me excited for what the Web will look like in the 21st century! If we survive Y2K, that is. Found your site when I felt like consuming 88x31 gifs, also since I see others sharing their site, here's mine which is wip: emerald-fox.neocities.org I just stumbled on your List of Cool Xorg Programs when I looked up Xeyes and Xedit and... I'm in love! As someone who populates their entire computer mostly with default X apps without GTK/Qt, I am blown away by the sheer number of cool Xlib/Motif apps there. Thank you so much! Very nice articles. Love from China! No ideas about those philosophers though so I randomly picked one! Also here from HackerNews. Also I have no idea who any of these philosophers are, so I am just going to click the one that looks like he would enjoy a beer and wath Football i really like ur 88x31 site, the rest of this is super cool and vintage-y. spam test is silly too. 10/10"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/guestbook"
+category = "SitesList"
+tags = ["0chan.vip", "0m1rz4r.sh", "807-2", "a-xm", "a.i.", "aaron", "abel-abel", "adam", "adelfetner", "adurant186"]
+language = "en"
+internal-references = ["none"]
+external-references = ["200wordrpg.github.io", "3dmodelscc0.com", "able.bio", "ace.home.xs4all.nl", "agner.org", "alex.dzyoba.com", "alexgaynor.net", "alexschroeder.ch", "basic-converter.org", "blog.winter.dev", "bp.io", "brackeen.com", "cc0textures.com", "codepo8.github.io", "conwaylife.com", "en.wikipedia.org", "ict.griffith.edu.au", "jigsaw.w3.org", "tau.ac.il", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/mirrors/anthony/images/Images.html"]
+title = "Anthony's WWW Images"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/anthony/images/Images.html"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "bellard.org", "blogoscoped.com", "chessprogramming.org", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "indieretronews.com", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/unix/doom3"]
+title = "Doom 3 on FreeBSD | The Cyber Vanguard"
+description = "Doom 3 on FreeBSD"
+full_description = "Doom 3 and the addon Resurrection of Evil can be played on FreeBSD using the native port dhewm 3. The only dependencies to build the game from source are: You will need the game files inside directory base from the Doom 3 DVD. Use CMake to create the Makefile, then compile with gmake: Doom 3 can be played in wide screen mode by altering the aspect ratio of the screen in the configuration file. To play the game in 1920×1200, change the following lines in ~/.config/dhewm3/base/dhewm.cfg: Copy d3xp from the Resurrection of Evil CD-Rom to your local Doom 3 directory. Start the game with parameter +set fs_game d3xp, for instance: RBDOOM-3-BFG is another source port of Doom 3 (BFG Edition), which features soft shadows (see screen shot). Clone the repository with:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/doom3"
+category = "SitesList"
+tags = ["doom", "edition", "evil", "freebsd", "installation", "resurrection", "screen", "wide"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/hp40gs"]
+title = "Programming the HP 40gs Graphing Calculator | The Cyber Vanguard"
+description = "Programming the HP 40gs Graphing Calculator"
+full_description = "A tiny program to calculate the arc point coordinates of a normalised Euler spiral with respect to the arc length L."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/hp40gs"
+category = "SitesList"
+tags = ["40gs", "calculator", "euler", "graphing", "helmert", "normalised", "programming", "spiral", "transformation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/mirrors/fortran77"]
+title = "Fortran 77 Tutorial"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/fortran77"
+category = "SitesList"
+tags = ["course", "fortran", "outline", "tutorial"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "bellard.org", "blogoscoped.com", "chessprogramming.org", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "indieretronews.com", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de"]
+title = "The Cyber Vanguard"
+full_description = 'This website is still under construction. I try to publish content early and often. It may happen that some pages are stubs. "The WWW project merges the techniques of information retrieval and hypertext to make an easy but powerful global information system." In order to preserve some cool sites from vanishing into oblivion, I have mirrored them on this server.'
+year_published = 2025
+clearnet = "https://cyber.dabamos.de"
+category = "SitesList"
+tags = ["88x31", "buttons", "computer", "contact", "cool,", "development", "fortran", "frontier", "game", "games"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chemie.fu-berlin.de", "cs.uwm.edu", "en.wikipedia.org", "freebsd.org", "github.com", "gopher.floodgap.com", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/unix/quake"]
+title = "Quake on FreeBSD | The Cyber Vanguard"
+description = "Quake on FreeBSD"
+full_description = "QuakeSpasm is an SDL port of the Quake I engine. Just download the souce code from SourceForge and unpack the archive file quakespasm-0.93.0.tgz. Inside the quakspasm-0.93.0/Quake/ directory, run: In order to play Quake, you'll need the game files from the CD-ROM. Copy the directory ID1 to quakspasm-0.93.0/Quake/ and rename it and its contents to lower case (for instance, ID1/PAK0.PAK to id1/pak0.pak). After a successful build you can delete all source files. Just execute ./quakespasm to start the game. For a better gaming experience, you may want to change some settings. Create an empty file in the id1 directory and name it autoexec.cfg. Add the following lines: QuakeSpasm supports music playback. Rip the music from the Quake CD-ROM as OGG or MP3, create a new directory music inside id1 and copy all music files into it. The files should be named after the CD tracks, for instance, track02.ogg, track03.ogg, and so on. Instead of ripping the music by yourself, you can use pre-ripped tracks of the original soundtrack. OGG rips can be found online, just use the search engine of your choice."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/quake"
+category = "SitesList"
+tags = ["compilation", "configuration", "freebsd", "music", "quake"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/mirrors/tau/Images.html"]
+title = "Choice of Images"
+full_description = "If you are not a local user, we would be gratefull to you not to refer directely to this server to avoid overload. If you are interrested by some icon please save it on your local site."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/tau/Images.html"
+category = "SitesList"
+tags = ["choice", "directories", "images", "level", "sub-directories"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/88x31"]
+title = "The 88x31 GIF Collection | Part 1"
+full_description = "A collection of 4540 classic 88x31 buttons from the 1990s, 2000s, and today in GIF format. I try to update this page regularly. Feel free to copy buttons to your website, but avoid hot-linking if possible."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/88x31"
+category = "SitesList"
+tags = ["88x31", "avoid", "collection:", "hot-linking", "part"]
+language = "en"
+internal-references = ["none"]
+external-references = ["chemie.fu-berlin.de", "cs.uwm.edu", "en.wikipedia.org", "freebsd.org", "github.com", "gopher.floodgap.com", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/mirrors/htmleinf"]
+title = "HTML - Einfuehrung"
+full_description = 'Die HTML-Elemente werden an Hand von einfachen Beispielen erläutert. Wie im Abschnitt "Inhalt und Form" beschrieben, wird mit HTML nur die logische Struktur der Informationen festgelegt, und das Layout hängt vom jeweils verwendeten Web-Browser (Client) ab. Die Ausgabe, die Sie bei den Beispielen sehen, gilt daher nur für Ihren Web-Browser und nur mit Ihren persönlichen Einstellungen. Ich empfehle Ihnen, die Probe aufs Exempel zu machen, indem Sie die Einführung und die darin enthaltenen Beispiele mit verschiedenen Web-Browsern auf verschiedenen Bildschirmen oder zumindest mit verschiedenen Fenstergrößen und persönlichen Einstellungen (Optionen, Präferenzen) ansehen. Hinweise, in welcher Reihenfolge Sie die einzelnen Abschnitte dieser Einführung am besten lesen, finden Sie im Wegweiser. Ich lade Sie ein, Anregungen und Verbesserungsvorschläge zu dieser Einführung an meine Mail-Adresse partl@mail.boku.ac.at oder an meine Post-Adresse an der BOKU Wien zu senden, und ich bedanke mich bei allen "Internet-Surfern", die mir schon beim Korrekturlesen geholfen haben. Das Lesen über das World Wide Web und das Abspeichern und Ausdrucken für den eigenen Gebrauch ist für jedermann erlaubt. Die Veröffentlichung von Zitaten (kurzen Ausschnitten) mit Angabe des Autors und der Quelle ist erlaubt. Die Erstellung, die Verwendung und die nicht kommerzielle Weitergabe von Kopien der kompletten Dokumentation in elektronischer oder ausgedruckter Form sind erlaubt, wenn der Inhalt (einschließlich der Markup-Befehle, der Autoren-Angabe und dieser Copyright-Information) unverändert bleibt. Die kommerzielle Verwendung oder Weitergabe ist nach Rücksprache mit dem Autor ebenfalls erlaubt. Die Erstellung und Verbreitung von Bearbeitungen (veränderten, erweiterten, gekürzten oder übersetzten Versionen) ist nur nach Rücksprache mit dem Autor erlaubt und nur, wenn in der Autorenliste der neuen Version sowohl der Autor der Bearbeitung als auch der Autor der ursprünglichen Version angegeben werden.'
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/htmleinf"
+category = "SitesList"
+tags = ['"heißen"', "alles", "anderes.", "ausdrucken.", "aussehen", "aussehen.", "beispielen", "bestimmten", "bilder", "bodenkultur"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "chessprogramming.org", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/fortran/transcompiler"]
+title = "FORTRAN Transcompiler | The Cyber Vanguard"
+description = "FORTRAN Transcompiler, FORTRAN I in Fortran 2008"
+full_description = "In 1957, IBM released the first FORTRAN compiler for the IBM 704 mainframe computer. The early language had very limited features: simple I/O, arithmetic IF conditionals, DO loops, and GOTO statements. The only supported variable types were integer, real, and arrays. As the first language version of FORTRAN is more than 60 years old, no compiler for modern platforms exists. Fortunately, a source-to-source compiler has been written in Fortran 2008 that translates FORTRAN code to ANSI C. The C code can then be compiled to native binaries. Let us take a simple example written in FORTRAN I and compile it with the transcompiler. The program just calculates the average of entered values: At first, the user has to input the number of values to average, and hit return. Then, the floating-point numbers do follow one by one, separated by space. Here, the average of five numbers has been calculated:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/transcompiler"
+category = "SitesList"
+tags = ["build", "code", "compile", "compiler", "fortran", "references", "transcompiler"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/blog"]
+title = "Lazy Reading | The Cyber Vanguard"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/blog"
+category = "SitesList"
+tags = ["april", "august", "cyber", "december", "february", "fri,", "january", "july", "june", "lazy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["0x0f0f0f.github.io", "200wordrpg.github.io", "80.lv", "aareed.itch.io", "able.bio", "ace.home.xs4all.nl", "acriticalhit.com", "aelinik.free.fr", "agner.org", "ahelwer.ca", "alex.dzyoba.com", "alexgaynor.net", "alexschroeder.ch", "cs.uwm.edu", "en.wikipedia.org", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "web.stanford.edu"]
+
+["https://cyber.dabamos.de/programming/fortran/rfk"]
+title = "RFK-F77: robotfindskitten in FORTRAN 77"
+description = "RFK-F77: robotfindskitten in FORTRAN 77"
+full_description = "An RFC-RFK-00-compliant version of robotfindskitten for MS-DOS, written in FORTRAN 77. The game is described as: robotfindskitten is a zen simulation wherein a user plays the part of robot whose only purpose is to find kitten in an environment. robot’s task is complicated by many objects which are not kitten (non-kitten objects or NKI) but which are indistinguishable from kitten without direct inspection. Thus, the simulation experience consists of navigating the environment, attempting to locate kitten, and finding kitten (or barring that, quitting). RFK-F77 runs on MS-DOS and Microsoft Windows 9x/NT/2000/XP. On all other platforms, you can use DOSBox. Execute rfk.exe to start the game. Move the robot with the arrow keys, or hit q to quit. The source code of RFK-F77 depends on some compiler extensions of Open Watcom FORTRAN 77 and must be linked with the Tenberry Software DOS/4G 32-bit extender. Simply run:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/rfk"
+category = "SitesList"
+tags = ["dos", "download", "fortran", "links", "open watcom fortran 77", "rfk", "rfk-f77", "rfk-f77-1.1.200-dos.zip", "rfk-f77-1.1.200-src.zip", "robotfindskitten"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/python/simple-games"]
+title = "Simple Games in Python | The Cyber Vanguard"
+description = "Programming simple games in Python 3"
+full_description = "A simple game played between two people, in which each of them has to form one of three gestures: 👊 rock, ✋ paper, or ✌ scissors. In this version, the player has to compete against the computer."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/python/simple-games"
+category = "SitesList"
+tags = ["code", "games", "guess", "number!", "python", "quiz", "rock-paper-scissors", "simple", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/perl"]
+title = "Programming in Perl | The Cyber Vanguard"
+description = "Programming in Perl"
+full_description = "A very simple file-based Content Management System (CMS) that can be used without CGI.pm. CGI::Carp is optional and only used to print warnings and errors to the browser. There is also a PHP script with the same functionality. The template is parsed and the string [% content %] will be replaced with the contents of the accessed page. Open http://www.example.com/index.pl?page=main to show page main.html. This Perl script creates static webpages by concatenating header, content, and footer into HTML files. Use it to generate websites offline. You can then upload the HTML files by SFTP or rsync. The pages are stored in directory $input_dir in HTML format and will be extended by the header and the footer automatically. The output files are saved to $output_dir. You can set the <title> of a webpage to the text of the <h2> heading by inserting [% title %] into it, for example:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/perl"
+category = "SitesList"
+tags = ["code", "generator", "micro", "perl", "programming", "source", "static"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/fortran/adventure"]
+title = "Adventure | The Cyber Vanguard"
+description = "Colossal Cave Adventure"
+full_description = "Colossal Cave Adventure, or Adventure, was one of the first text adventure games. The development started already in 1975. The original version was written by Will Crowther in FORTRAN for the PDP-10 time-sharing computer. Later versions of the game were often ports to other programming languages and computer platforms. The Interactive Fiction Archive shares the source code of all known versions, including the original PDP-10 one. Some of these versions can be compiled on modern Unix operating systems, like the FORTRAN 77 source code of the 440 points version (adv440.tgz):"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/adventure"
+category = "SitesList"
+tags = ["adventure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/thefacebook"]
+title = "The Face Book - Profile of David Lightman"
+full_description = "Protovision Inc - 2407 Rogers Blvd - Sunnyvale California 95051 Optimized for Netscape Navigator at 640x480. 42731 visitors since 06/01/1998."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/thefacebook"
+category = "SitesList"
+tags = ["book", "book.", "contact", "david", "face", "info", "joined", "member"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/fortran/computer-games"]
+title = "FORTRAN Computer Games - The Cyber Vanguard"
+full_description = "FORTRAN is almost as easy to learn as BASIC, and there is much evidence to show that it is still a viable language for programs of any complexity. Outside the field of commercial data processing, where COBOL reigns supreme, there is no doubt that the majority of large systems are implemented in FORTRAN. This is particularly true of simulators which of course have much in common with simulation games. A collection of source code listings of small games & programs in FORTRAN 77, mostly ports of BASIC type-in programs: The ANSI FORTRAN 77 standard does not include any pseudo-random number generator (PRNG). Most compilers provide extensions. In any case, we can link PRNG procedures written in FORTRAN 77: There are many examples of early computer games and simulations originally written in or later ported to FORTRAN:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/computer-games"
+category = "SitesList"
+tags = ["8-ball", "acey", "acorn", "alfred", "basic", "buzzword", "casting", "compiler", "computer", "delmar"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "freshmeat.sourceforge.net", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "mipmip.org", "newton.freehostia.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/zettelkasten"]
+title = "Zettelkasten"
+full_description = "Working for the rat race You know you’re wasting your time Working for the rat race You’re no friend of mine"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/zettelkasten"
+category = "SitesList"
+tags = ["artikel", "bewegungen", "bücher", "diskurs", "diskussionen", "fisher", "ideologiekritik", "interviews", "kapitalistischer", "mark"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "4hour-league.org", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "boku.ac.at", "deutschlandfunkkultur.de", "exit-online.org", "flags.net", "freie-radios.net", "ict.griffith.edu.au", "jwz.org", "khoral.com", "magazinredaktion.tk", "mipmip.org", "nd-aktuell.de", "nvlpubs.nist.gov", "tau.ac.il", "urbandictionary.com", "validator.w3.org"]
+
+["https://cyber.dabamos.de/unix/x11"]
+title = "Cool, but obscure X11 tools"
+description = "Cool, but obscure X11 tools."
+full_description = "A small collection of tools for the X Window System, some more and some less obscure. For cool terminal tools, see Kristof Kovacs’ Cool, but obscure Unix tools. All applications have been tested on FreeBSD but should run on other Unix-like operating systems as well. A roguelike game derived from Moria, based loosely on the books of J. R. R. Tolkien. The ultimate aim of the game is to advance in skill and strength, collecting better and more powerful magical items until you are ready to face the Master of the dungeon: Morgoth himself! Start the X11 mode with angband -mx11. Prints the resources seen by an application. It can be used to determine which resources a particular program will load. Battalion is a 3D game from 1994, originally written for the Silicon Graphics Indy UNIX workstation. The player controls a monster to blow up a city. The author has dedicated a website to the game. Depending on the perspective, the controls are a little awkward. You may want to change the camera with key 1, 2, 3, or 4. Use the mouse to rotate and to move forward/backward. The arrow keys only work if the mouse cursor is placed in the centre of the screen. Shoot with the left control key or the left mouse button, and tilt the head with A and Z to target helicopters and jets. The camera can be rotated with I, J, K, and L. Alter the rendering details with D. Press G to grab the mouse cursor and P to pause the game. I made a quick & dirty FreeBSD port based on the Linux version (no sound). Build and run Battalion with: A 3-D spatial user interface for Internet Gopher, first released in 1995. Explore the Gopher space in 3-D! Pass host and port via command-line arguments, like, gophervr <host> <port>. Available on GitHub. Improved version of the vi editor. The graphical front-end can be compiled either against X11, Motif, Xaw, or GTK+ 2/3. Emulator of the HP-15C programmable calculator, written in Tcl/Tk. The source-code is available on the official website. Motif-based front-end to the Unix diff command. The appearance of mgdiff is based upon a program called gdiff, which runs only on Silicon Graphics workstations and for which source code is not provided."
+author = "The Cyber Vanguard"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/x11"
+category = "SitesList"
+tags = ["angband", "appres", "asclock", "battalion", "clock", "cool,", "free42", "freebsd", "fsv2", "glxgears"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "boku.ac.at", "cs.brandeis.edu", "evl.uic.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "jwz.org", "khoral.com", "mipmip.org", "newbreedsoftware.com", "nvlpubs.nist.gov", "tau.ac.il", "urbandictionary.com", "validator.w3.org", "vidalc.chez.com"]
+
+["https://cyber.dabamos.de/index.html"]
+title = "The Cyber Vanguard"
+full_description = 'This website is still under construction. I try to publish content early and often. It may happen that some pages are stubs. "The WWW project merges the techniques of information retrieval and hypertext to make an easy but powerful global information system." In order to preserve some cool sites from vanishing into oblivion, I have mirrored them on this server.'
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/index.html"
+category = "SitesList"
+tags = ["88x31", "buttons", "computer", "contact", "cool,", "development", "fortran", "frontier", "game", "games"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "aareed.itch.io", "able.bio", "ace.home.xs4all.nl", "acriticalhit.com", "advsys.net", "aelinik.free.fr", "ahelwer.ca", "alexgaynor.net", "alexmeub.com", "atariarchives.org", "bellard.org", "blogoscoped.com", "chessprogramming.org", "en.wikipedia.org", "ict.griffith.edu.au", "it.uu.se", "jigsaw.w3.org", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/mirrors/pics"]
+title = "/pics/"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/mirrors/pics"
+category = "SitesList"
+tags = ["directorys:", "picture-library"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "ahelwer.ca", "alexgaynor.net", "austria.eu.net", "boku.ac.at", "dsg4.com", "en.wikipedia.org", "flags.net", "gifcities.org", "home.mcom.com", "ict.griffith.edu.au", "jigsaw.w3.org", "khoral.com", "pic.net", "tau.ac.il", "uts.cc.utexas.edu", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/fortran/snoopy"]
+title = "Snoopy Calendar | The Cyber Vanguard"
+description = "Snoopy Calendar in Fortran"
+full_description = "An updated version of the famous Snoopy Calendar from the 1960s, originally written in Fortran IV, can be build with modern compilers. You will need the source files snpcal.for and snppic.for as well as the data file SNPCAL.DAT. Build the application with Flang or any other Fortran compiler: Just execute snpcal, and the calendar of 1969 will then be written to SNPCAL.TXT. You can generate an up-to-date calendar by replacing the years 1969 and 1970 in SNPCAL.DAT."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/fortran/snoopy"
+category = "SitesList"
+tags = ["calendar", "snoopy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/modernfortran"]
+title = "Index | Programming in Modern Fortran"
+description = "Programming in Modern Fortran"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/modernfortran"
+category = "SitesList"
+tags = ["contents", "table"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/programming/php"]
+title = "Programming in PHP | The Cyber Vanguard"
+description = "Programming in PHP"
+full_description = "Even if nobody likes PHP1 (especially PHP 4), sometimes it may be a necessary evil imposed by the circumstances to do some scripting in this awful invention of the less noble parts of mankind. Having said that, the source code of a file-based “content management system” (ha ha) is listed below. A very simple Content Management System (CMS) written in PHP 4. Not very useful at a time when you can just use XMLHttpRequest on client-side. Anyways, you may want to save it as index.php along a directory content/ that stores the pages in HTML format and a directory template/ containing the template file: The template is parsed and the string [% content %] will be replaced with the contents of the accessed page. Open http://www.example.com/index.php?page=main to show page main.html."
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/programming/php"
+category = "SitesList"
+tags = ["code", "micro", "programming", "source", "template"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]
+
+["https://cyber.dabamos.de/unix/x270"]
+title = "FreeBSD on Lenovo ThinkPad X270 | The Cyber Vanguard"
+description = "Running FreeBSD on Lenovo ThinkPad X270"
+full_description = "Most features of the ThinkPad X270 laptop are supported by FreeBSD 12. You can find some hints regarding the system configuration here. For further information, see the FreeBSD wiki. You may want to disable the Touchpad in BIOS in order to use the TrackPoint of the X270. Install x11-servers/xorg-server with udev support and x11-drivers/xf86-input-libinput. For evdev support, add: For power management, you can either use powerd(8) or sysutils/powerdxx. To enable powerd, edit /etc/rc.conf and add: This should perform a suspend to RAM. Press the power button to resume. Install security/doas to suspend with non-root privileges. Edit /usr/local/etc/doas.conf and add: You can now suspend as a user by running zzz. Execute zzz from your Window Manager by calling tcsh -c zzz. Audio output is provided by the snd_hda(4) driver. Load the kernel module at boot time by editing /boot/loader.conf and adding: Raising and lowering the volume using the volume keys will work now in applications such as VLC. You have to configure your Window Manager to map keypress events. For FVWM, add to ~/.fvwm/config: You can connect an external screen through HDMI or USB-C (DisplayPort). Use x11/xrandr to change the video output and set display resolutions. The default output is eDP-1. List all outputs with: You can use the Fn keys to increase/decrease the screen brightness by loading acpi_ibm(4). Add to /boot/loader.conf: You should be connected now. For more information on Wi-Fi networks, see the FreeBSD online handbook. Install the (experimental) kernel module sysutils/rtsx-kmod that has been ported from OpenBSD, and supports the Realtek RTS522A:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/x270"
+category = "SitesList"
+tags = ["audio", "brightness", "contents", "freebsd", "hardware", "keys", "lenovo", "management", "overview", "power"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "alexgaynor.net", "boku.ac.at", "cs.brandeis.edu", "evl.uic.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "jwz.org", "khoral.com", "mipmip.org", "newbreedsoftware.com", "nvlpubs.nist.gov", "tau.ac.il", "urbandictionary.com", "validator.w3.org", "vidalc.chez.com"]
+
+["https://cyber.dabamos.de/unix/doom"]
+title = "Doom / Doom II: Hell on Earth / Brutal Doom on FreeBSD | The Cyber Vanguard"
+description = "Doom / Doom II: Hell on Earth / Brutal Doom on FreeBSD"
+full_description = "In order play id Software’s “Doom” or “Doom II: Hell on Earth” on FreeBSD, you can simply choose one of the available FreeBSD ports, like Chocolate Doom, Doom Legacy, or GZDoom. The Brutal Doom modification requires GZDoom. Either install it from ports or compile it manually. At first, install CMake and GNU make to compile GZDoom manually. Then, download the latest source code and unpack the archive. In the main directory, run: The NO_FMOD compiler flag has to be enabled, as no FreeBSD version of FMOD exists. GZDoom will use OpenAL instead. Copy the following files to your game directory: You will need the game files of Doom, Doom II, or Freedoom in order to play one of them. Copy doom.wad and/or doom2.wad to your GZDoom directory. Then run: The game files of Brutal Doom are hosted on moddb.com. Download the Public Beta of Brutal Doom v21 and unpack the archive. Copy bd21RC3.pk3 to your GZDoom directory and run:"
+year_published = 2025
+clearnet = "https://cyber.dabamos.de/unix/doom"
+category = "SitesList"
+tags = ["brutal", "doom", "earth", "freebsd", "hell", "installation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dmodelscc0.com", "400monkeys.com", "able.bio", "ace.home.xs4all.nl", "acme.com", "alexgaynor.net", "atariarchives.org", "bellard.org", "blogoscoped.com", "boku.ac.at", "cs.brandeis.edu", "flags.net", "ict.griffith.edu.au", "if50.substack.com", "khoral.com", "mipmip.org", "mps.mpg.de", "nvlpubs.nist.gov", "tau.ac.il", "validator.w3.org"]

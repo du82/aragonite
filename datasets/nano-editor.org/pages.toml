@@ -1,0 +1,229 @@
+["https://nano-editor.org"]
+title = "nano – Text editor"
+description = "GNU nano is a small editor for on the terminal. It supports syntax highlighting, spell checking, justifying, completion, undo/redo..."
+year_published = 2025
+clearnet = "https://nano-editor.org"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://nano-editor.org/dist/latest"]
+title = "Index of /dist/latest"
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest"
+category = "SitesList"
+tags = ["/dist/latest", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/download.php"]
+title = "nano – Downloads"
+year_published = 2025
+clearnet = "https://nano-editor.org/download.php"
+category = "SitesList"
+tags = ["downloading", "nano"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/dist/latest/ChangeLog"]
+title = ""
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/ChangeLog"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/dist/latest/nanorc.5.html"]
+title = "NANORC"
+full_description = "The nanorc files contain the default settings for nano, a small and friendly text editor. During startup, if --rcfile is not given, nano reads two files: first the system-wide settings, from /etc/nanorc (the exact path might be different on your system), and then the user-specific settings, either from ~/.nanorc or from $XDG_CONFIG_HOME/nano/nanorc or from ~/.config/nano/nanorc, whichever is encountered first. If --rcfile is given, nano reads just the specified settings file. Since version 8.0, to be newcomer friendly, ^F starts a forward search, ^B starts a backward search, M-F searches the next occurrence forward, and M-B searches the next occurrence backward. If you want those keystrokes to do what they did before version 8.0, add the following lines at the end of your nanorc file: The configuration file accepts a series of set and unset commands, which can be used to configure nano on startup without using command-line options. Additionally, there are some commands to define syntax highlighting and to rebind keys -- see the two separate sections on those. nano reads one command per line. All commands and keywords should be written in lowercase. Options in nanorc files take precedence over nano’s defaults, and command-line options override nanorc settings. Also, options that do not take an argument are unset by default. So using the unset command is only needed when wanting to override a setting of the system’s nanorc file in your own nanorc. Options that take an argument cannot be unset. Quotes inside the characters parameters below should not be escaped. The last double quote on the line will be seen as the closing quote. When backing up files, allow the backup to succeed even if its permissions can’t be (re)set due to special OS considerations. You should NOT enable this option unless you are sure you need it. When soft line wrapping is enabled, make it wrap lines at blank characters (tabs and spaces) instead of always at the edge of the screen. Automatically indent a newly created line to the same number of tabs and/or spaces as the previous line (or as the next line if the previous line is the beginning of a paragraph)."
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/nanorc.5.html"
+category = "SitesList"
+tags = ["--backup", "--magic", "--raw", "--rcfile", "--saveonexit", "--speller", "--syntax", "/etc/nanorc", "afterends", "anchor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/dist"]
+title = "Index of /dist"
+year_published = 2025
+clearnet = "https://nano-editor.org/dist"
+category = "SitesList"
+tags = ["/dist", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/more-syntaxes"]
+title = "Index of /more-syntaxes"
+year_published = 2025
+clearnet = "https://nano-editor.org/more-syntaxes"
+category = "SitesList"
+tags = ["/more-syntaxes", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/docs.php"]
+title = "nano – Documentation"
+year_published = 2025
+clearnet = "https://nano-editor.org/docs.php"
+category = "SitesList"
+tags = ["documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["lists.gnu.org", "savannah.gnu.org"]
+
+["https://nano-editor.org/dist/latest/README"]
+title = ""
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/README"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/news.php"]
+title = "nano – News"
+year_published = 2025
+clearnet = "https://nano-editor.org/news.php"
+category = "SitesList"
+tags = ["4.9.1", "4.9.2", "4.9.3", "5.6.1", "nano", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/who.php"]
+title = "nano – Who's who"
+year_published = 2025
+clearnet = "https://nano-editor.org/who.php"
+category = "SitesList"
+tags = ["author", "co-developers", "code", "contributors", "current", "early", "fixes", "former", "maintainer", "maintainers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/screenshots.php"]
+title = "nano – Screenshots"
+year_published = 2025
+clearnet = "https://nano-editor.org/screenshots.php"
+category = "SitesList"
+tags = ["screenshots"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/dist/latest/nano.1.html"]
+title = "NANO"
+full_description = 'Since version 8.0, to be newcomer friendly, ^F starts a forward search, ^B starts a backward search, M-F searches the next occurrence forward, and M-B searches the next occurrence backward. If you want those keystrokes to do what they did before version 8.0, add the following lines at the end of your nanorc file: nano is a small and friendly text editor. It copies the look and feel of Pico, but is free software, and implements several features that Pico lacks, such as: opening multiple files, scrolling per line, undo/redo, syntax coloring, line numbering, and soft-wrapping overlong lines. When giving a filename on the command line, the cursor can be put on a specific line by adding the line number with a plus sign (+) before the filename, and even in a specific column by adding it with a comma. Negative numbers count from the end of the file or line. The cursor can be put on the first or last occurrence of a specific string by specifying that string after +/ or +? before the filename. The string can be made case sensitive and/or caused to be interpreted as a regular expression by inserting c and/or r after the + sign. These search modes can be explicitly disabled by using the uppercase variant of those letters: C and/or R. When the string contains spaces, it needs to be enclosed in quotes. To give an example: to open a file at the first occurrence of the word "Foo", you would do: As a special case: if instead of a filename a dash (-) is given, nano will read data from standard input. Entering text and moving around in a file is straightforward: typing the letters and using the normal cursor movement keys. Commands are entered by using the Control (^) and the Alt or Meta (M-) keys. Typing ^K deletes the current line and puts it in the cutbuffer. Consecutive ^Ks put all deleted lines together in the cutbuffer. Any cursor movement or executing any other command causes the next ^K to overwrite the cutbuffer. A ^U pastes the current contents of the cutbuffer at the current cursor position.'
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/nano.1.html"
+category = "SitesList"
+tags = ["+c/foo", "--afterends", "--atblanks", "--autoindent", "--backup", "--boldtext", "--bookstyle", "--breaklonglines", "--colonparsing", "--constantshow"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/dist/latest/faq.html"]
+title = "The GNU nano editor FAQ"
+description = "The genesis story of the nano editor, plus the solution to some common problems."
+full_description = "1.1. What is GNU nano? 1.2. What is the history behind nano? 1.3. Why the name change from TIP? 1.4. What is the current version of nano? 1.5. I want to read the manpage without having to download the program! 2.1. FTP and WWW sites that carry nano. 2.2. RedHat and derivatives (.rpm) packages. 2.3. Debian (.deb) packages. 2.4. By git (for the brave). 3.1. How do I install the RPM or DEB package? 3.2. Compiling from source: WHAT THE HECK DO I DO NOW? 3.3. Why does everything go into /usr/local? 3.4. nano should automatically run strip on the binary when installing it! 3.5. How can I make the executable smaller? This is too bloated! 3.6. Tell me more about this multibuffer stuff! 3.7. Tell me more about this verbatim input stuff! 3.8. How do I make a .nanorc file that nano will read when I start it? 3.9. Why does my self-compiled nano not read /etc/nanorc? 4.1. Alt+Up does nothing on a Linux console. How can I make it scroll? 4.2. How can I make Ctrl+Shift+Left/Right select words on urxvt? 4.3. Ack! My numeric keypad's keys don't work properly when NumLock is off! What can I do? 4.4. With what keystroke can I paste text from the clipboard into nano? 4.5. How do I select text for or paste text from the clipboard when nano's mouse support is turned on? 4.6. When I paste text into a document, each line gets indented further than the last. Why? And how can I stop this? 4.7. When I paste from Windows into a remote nano, nano rewraps the lines. What gives? 4.8. I've compiled nano with color support, but I don't see any color when I run it! 4.9. How do I make nano my default editor (in Pine, mutt, etc.)? 5.1. There's no translation for my language! 5.2. I don't like the translation for <x> in my language. How can I fix it? 5.3. What is the status of Unicode support? 6.1. Why should I use nano instead of Pico? 6.2. Why should I use Pico instead of nano? 6.3. What is so bad about the older Pine license? 6.4. Okay, well, what mail program should I use then? 7.1. Where can I ask questions or send suggestions? 7.2. How do I submit a bug report or patch? 7.3. I want to send the development team a big load of cash (or just a thank you). 7.4. How do I join the development team? 7.5. Can I have write access to the git tree?"
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/faq.html"
+category = "SitesList"
+tags = ["$file;", "'s/keyboardsignal/up/'", "--disable-browser", "--disable-color", "--disable-comment", "--disable-extra", "--disable-formatter", "--disable-help", "--disable-histories", "--disable-justify"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/dist/latest/nano.html"]
+title = "The GNU nano text editor"
+description = "The complete manual for the GNU nano text editor."
+full_description = "GNU nano is a small and friendly text editor. Besides basic text editing, nano offers features like undo/redo, syntax coloring, interactive search-and-replace, auto-indentation, line numbers, word completion, file locking, backup files, and internationalization support. The original goal for nano was to be a complete bug-for-bug emulation of Pico. But currently the goal is to be as compatible as is reasonable while offering a superset of Pico’s functionality. See Pico Compatibility for more details on how nano and Pico differ. Since version 4.0, nano no longer hard-wraps overlong lines by default. It also by default uses linewise scrolling, and by default includes the line below the title bar in the editing area. In case you want the old, Pico behavior back, you can use the following options: --breaklonglines, --jumpyscrolling, and --emptyline (or -bje). Since version 8.0, ^F starts a forward search, ^B starts a backward search, M-F searches the next occurrence forward, and M-B searches the next occurrence backward. If you want those keystrokes to do what they did before version 8.0, see the rebindings in the sample nanorc file. But it is also possible to specify one or more options (see Command-line Options), and to edit several files in a row. The cursor can be put on a specific line of a file by adding the line number with a plus sign before the filename, and even in a specific column by adding it with a comma. Negative numbers count from the end of the file or line. The cursor can be put on the first or last occurrence of a specific string by specifying that string after +/ or +? before the filename. The string can be made case sensitive and/or caused to be interpreted as a regular expression by inserting a c and/or r after the plus sign. These search modes can be explicitly disabled by using the uppercase variant of those letters: C and/or R. When the string contains spaces, it needs to be enclosed in quotes. A more complete command synopsis thus is: Normally, however, you set your preferred options in a nanorc file (see Nanorc Files). And when using set positionlog (making nano remember the cursor position when you close a file), you will rarely need to specify a line number."
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/nano.html"
+category = "SitesList"
+tags = ["anchors", "basics", "browser", "building", "command-line", "commands", "compatibility", "cutbuffer", "editor", "entering"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/git.php"]
+title = "nano – Source code"
+full_description = "To build and run the bleeding-edge version of GNU nano, read the instructions located in the git repository itself."
+year_published = 2025
+clearnet = "https://nano-editor.org/git.php"
+category = "SitesList"
+tags = ["code", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/history.php"]
+title = "nano – History"
+year_published = 2025
+clearnet = "https://nano-editor.org/history.php"
+category = "SitesList"
+tags = ["history"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/state.php"]
+title = "nano – Current state"
+year_published = 2025
+clearnet = "https://nano-editor.org/state.php"
+category = "SitesList"
+tags = ["distros", "latest", "various", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/dist/latest/TODO"]
+title = ""
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/TODO"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "debian.org", "en.wikipedia.org", "ftp.debian.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "gnu.org", "kojipkgs.fedoraproject.org", "lists.gnu.org", "mutt.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org", "translationproject.org", "washington.edu"]
+
+["https://nano-editor.org/contact.php"]
+title = "nano – Reporting bugs"
+year_published = 2025
+clearnet = "https://nano-editor.org/contact.php"
+category = "SitesList"
+tags = ["bugs", "lists", "mailing", "reporting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["lists.gnu.org", "savannah.gnu.org"]
+
+["https://nano-editor.org/dist/latest/cheatsheet.html"]
+title = "Cheatsheet for GNU nano"
+description = "A concise overview of the command shortcuts for nano, the editor, grouped by category."
+author = "Benno Schulenberg"
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/cheatsheet.html"
+category = "SitesList"
+tags = ["around", "cheatsheet", "commands", "deletion", "editing", "editor", "editor's", "file", "functions", "handling"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]
+
+["https://nano-editor.org/dist/latest/NEWS"]
+title = ""
+year_published = 2025
+clearnet = "https://nano-editor.org/dist/latest/NEWS"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["archlinux.org", "ftpmirror.gnu.org", "git.savannah.gnu.org", "git.wh0rd.org", "lists.gnu.org", "packages.debian.org", "packages.gentoo.org", "savannah.gnu.org", "software.opensuse.org", "src.fedoraproject.org"]

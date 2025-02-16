@@ -1,0 +1,84 @@
+["http://www.hick.org/~rixon"]
+title = "Rixon is kicking it ramen noodle style."
+full_description = "Hi. I'm rixon. I'm just this hacker. No, I don't break into computer systems, install viruses, or steal your identity. I just investigate the world and its contents to understand how it all ticks. Here's my closet of clutter on the information superhighway (remember that buzzword?) Right away, here's an index of the crap I have here. If that's not good enough, you can get ahold of me on gmail (rixoff), or on twitter (@rixon). I'm just about everywhere, either as rixon, or rixoff if some yahoo got to the good username before I could. It is clear that I should learn to use this shit and stop making play pages. I think I'll pick up HTML and CSS pretty quick, (rather, RELEARN this shit,) but that look and feel is going to be the hard part. I'm not artsy. It takes an artsy-fartsy to make a nice page layout. This is emphasis and this is bold. This is emphasis.bold, and this is bold.uppercase. What do you think of that?"
+year_published = 2025
+clearnet = "http://www.hick.org/~rixon"
+category = "SitesList"
+tags = ["bold.", "bold.uppercase.", "conclusion", "heading"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2012.ruxconbreakpoint.com", "breakpointsecurity.net", "catb.org", "channel9.msdn.com", "cobaltstrike.com", "eff.org", "i.redd.it", "metasploit.org", "microsoft.com", "nynaeve.net", "open.afterthedeadline.com", "paulphifer.net", "rjohnson.uninformed.org", "seattle.toorcon.org", "sstic.org", "syscan360.org", "technet.microsoft.com", "toorcon.org", "usenix.org", "youtube.com"]
+
+["https://hick.org"]
+title = "Welcome to HiCK.ORG!"
+year_published = 2025
+clearnet = "https://hick.org"
+category = "SitesList"
+tags = ["friends", "kansas", "life..", "links", "matters!", "projects", "ranch", "stuff"]
+language = "en"
+internal-references = ["none"]
+external-references = ["eff.org", "jircii.dashnine.org", "metasploit.org", "nologin.org", "nynaeve.net", "paulphifer.net", "rjohnson.uninformed.org", "uninformed.org"]
+
+["http://www.hick.org/~david"]
+title = ""
+year_published = 2025
+clearnet = "http://www.hick.org/~david"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["eff.org", "jircii.dashnine.org", "metasploit.org", "nologin.org", "nynaeve.net", "paulphifer.net", "rjohnson.uninformed.org", "uninformed.org"]
+
+["http://www.hick.org/~f"]
+title = ""
+year_published = 2025
+clearnet = "http://www.hick.org/~f"
+category = "SitesList"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["eff.org", "jircii.dashnine.org", "metasploit.org", "nologin.org", "nynaeve.net", "paulphifer.net", "rjohnson.uninformed.org", "uninformed.org"]
+
+["http://hick.org/~mmiller/presentations/woot08"]
+title = "Index of /~mmiller/presentations/woot08"
+year_published = 2025
+clearnet = "http://hick.org/~mmiller/presentations/woot08"
+category = "SitesList"
+tags = ["/~mmiller/presentations/woot08", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2012.ruxconbreakpoint.com", "breakpointsecurity.net", "catb.org", "channel9.msdn.com", "cloudflare.com", "cobaltstrike.com", "eff.org", "i.redd.it", "metasploit.org", "microsoft.com", "nynaeve.net", "open.afterthedeadline.com", "paulphifer.net", "rjohnson.uninformed.org", "seattle.toorcon.org", "sstic.org", "support.cloudflare.com", "toorcon.org", "usenix.org", "youtube.com"]
+
+["https://hick.org/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 91301f0ae99facff • Your IP: Click to reveal 97.95.56.30 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://hick.org/cdn-cgi/l/email-protection"
+category = "SitesList"
+tags = ["91301f0ae99facff", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2012.ruxconbreakpoint.com", "breakpointsecurity.net", "catb.org", "channel9.msdn.com", "cloudflare.com", "cobaltstrike.com", "eff.org", "i.redd.it", "metasploit.org", "microsoft.com", "nynaeve.net", "open.afterthedeadline.com", "paulphifer.net", "rjohnson.uninformed.org", "seattle.toorcon.org", "sstic.org", "support.cloudflare.com", "toorcon.org", "usenix.org", "youtube.com"]
+
+["http://www.hick.org/~mmiller"]
+title = "mmiller [at] hickorg"
+full_description = "[ slides, video ] Trends, challenges, and strategic shifts in the software vulnerability mitigation landscape (BlueHat Israel 2019) [ slides ] Microsoft's strategy and technology improvements toward mitigating arbitrary native code execution (CanSecWest 2017), with David Weston. [ slides ] Modeling the exploitation and mitigation of memory safety vulnerabilities (Breakpoint 2012). [ slides ] Targeted taint driven fuzzing using software metrics (CanSecWest 2011), with Dustin Duran and David Weston. [ slides ] The Evolution of Microosft's Exploit Mitigations: Past, Present, and Future (CanSecWest 2009), with Tim Burrell. Using dual-mappings to evade automated unpackers (Oct, 2008) Automated unpackers such as Renovo, Saffron, and Pandora's Bochs attempt to dynamically unpack executables by detecting the execution of code from regions of virtual memory that have been written to. While this is an elegant method of detecting dynamic code execution, it is possible to evade these unpackers by dual-mapping physical pages to two distinct virtual address regions where one region is used as an editable mapping and the second region is used as an executable mapping. In this way, the editable mapping is written to during the unpacking process and the executable mapping is used to execute the unpacked code dynamically. This effectively evades automated unpackers which rely on detecting the execution of code from virtual addresses that have been written to. Modeling the trust boundaries created by securable objects (Jul, 2008) One of the most critical steps of any security review involves identifying the trust boundaries that an application is exposed to. While methodologies such as threat modeling can be used to help obtain this understanding from an application's design, it can be difficultcult to accurately map this understanding to an application's implementation. This difficultculty suggests that there is a need for techniques that can be used to gain a better understanding of the trust boundaries that exist within an application's implementation. To help address this problem, this paper describes a technique that can be used to model the trust boundaries that are created by securable objects on Windows. Dynamic instrumentation is used to generate object trace logs which describe the contexts in which securable objects are defned, used, and have their security descriptor updated. This information is used to identify the data flows that are permitted by the access rights granted to securable objects. It is then shown how these data flows can be analyzed to gain an understanding of the trust boundaries, threats, and potential elevation paths that exist within a given system."
+year_published = 2025
+clearnet = "http://www.hick.org/~mmiller"
+category = "SitesList"
+tags = ["group", "hickorg", "interests", "leviathan", "microsoft", "mmiller", "non-affiliated", "non-affilitated", "papers", "presentations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2012.ruxconbreakpoint.com", "blackhat.com", "breakpointsecurity.net", "github.com", "jircii.dashnine.org", "metasploit.org", "microsoft.com", "nologin.org", "nynaeve.net", "paulphifer.net", "rjohnson.uninformed.org", "seattle.toorcon.org", "sstic.org", "static.sstic.org", "syscan360.org", "technet.microsoft.com", "toorcon.org", "uninformed.org", "usenix.org", "youtube.com"]
+
+["http://www.hick.org/~raffi"]
+title = "Raphael Mudge's Homepage"
+description = "Personal homepage of Raphael Mudge. This page curates information about some of my past projects and favorite resources."
+full_description = "I'm a sometimes computer programmer and a sometimes entrepreneur. I like to learn and am just curious in-general. I strum chords on my acoustic guitar. I make a mean cappucino. And, I like to run and exercise too. I created the After the Deadline language checking technology. After the Deadline was acquired by Matt Mullenweg's Automattic in 2009. Automattic opted to make After the Deadline open source after this acquisition (something I wholeheartedly supported and was excited about). The project was the spelling and grammar checker for WordPress.com blogs and also the popular JetPack plugin. After the Deadline was retired in 2019. I spent a decade focused on red team security tests. My work included technical research and advocacy around this once-nascent security practice. As part of these efforts, I created the Cobalt Strike security testing software (2012). Cobalt Strike was acquired by Fortra (then, HelpSystems) in 2020 and I transitioned about a year after the acquisition. For context, Fortra is the parent company of Core Security. It's a good home for Cobalt Strike. To see what they're up to, check out the latest on the Cobalt Strike blog. My professional values draw from the hacker ethic. The hacker ethic is a playful, creative, and can-do approach to solving problems. Hacker culture is the shared beliefs that inform how people, who subscribe to the hacker ethic, interact with eachother. Hacker culture celebrates cleverness, values the pursuit of knowledge, respects intellectual freedom, and rewards sharing knowledge. Here are a few resources on this:"
+year_published = 2025
+clearnet = "http://www.hick.org/~raffi"
+category = "SitesList"
+tags = ["after the deadline", "armitage", "books", "cobalt strike", "contact", "ethic", "favorite", "hacker", "jircii", "mudge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2012.ruxconbreakpoint.com", "breakpointsecurity.net", "catb.org", "channel9.msdn.com", "cobaltstrike.com", "eff.org", "i.redd.it", "metasploit.org", "microsoft.com", "nynaeve.net", "open.afterthedeadline.com", "paulphifer.net", "rjohnson.uninformed.org", "seattle.toorcon.org", "sstic.org", "syscan360.org", "technet.microsoft.com", "toorcon.org", "usenix.org", "youtube.com"]

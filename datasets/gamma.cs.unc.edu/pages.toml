@@ -1,0 +1,119 @@
+["http://gamma.cs.unc.edu/AcousticDistancePerception"]
+title = "Effects of virtual acoustics on dynamic auditory distance perception"
+full_description = "Sound propagation encompasses various acoustic phenomena including reverberation. Current virtual acoustic methods ranging from parametric filters to physically accurate solvers can simulate reverberation with varying degrees of fidelity. The effects of reverberant sounds generated using different propagation algorithms on acoustic distance perception are investigated. In particular, two classes of methods for real time sound propagation in dynamic scenes based on parametric filters and ray tracing are evaluated. The study shows that ray tracing enables more distance accuracy as compared to the approximate, filter-based method. This suggests that accurate reverberation in VR results in better reproduction of acoustic distances. Atul Rungta, Nicholas Rekowski, Roberta Klatzky, Ming Lin, and Dinesh Manocha. Effects of virtual acoustics on dynamic auditory distance perception"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/AcousticDistancePerception"
+category = "SitesList"
+tags = ["abstract", "acoustics", "auditory", "distance", "dynamic", "effects", "perception", "virtual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "abc11.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailymail.co.uk", "dailytarheel.com", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "gamma.web.unc.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "sciencedirect.com", "tomshardware.com", "twitter.com"]
+
+["http://gamma.cs.unc.edu/STMG"]
+title = ""
+full_description = "Zherong Pan1, and Dinesh Manocha1 Department of Computer Science, University of North Carolina at Chapel Hill1 We present a novel algorithm to control the physically-based animation of smoke. Given a set of keyframe smoke shapes, we compute a dense sequence of control force fields that can drive the smoke shape to match several keyframes at certain time instances. Our approach formulates this control problem as a PDE constrained spacetime optimization and computes locally optimal control forces as the stationary point of the Karush-Kuhn-Tucker conditions. In order to reduce the high complexity of multiple passes of fluid resimulation, we utilize the coherence between consecutive fluid simulation passes and update our solution using a novel spacetime full approximation scheme (STFAS). We demonstrate the benefits of our approach by computing accurate solutions on 2D and 3D benchmarks. In practice, we observe more than an order of magnitude improvement over prior methods. Efficient Optimal Control of Smoke using Spacetime Multigrid Zherong Pan, and Dinesh Manocha ACM Transaction on Graphics (Presented at SIGGRAPH 2017), [PDF]"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/STMG"
+category = "SitesList"
+tags = ["control", "description", "download", "efficient", "gamma", "group", "links", "multigrid", "optimal", "publication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abc11.com", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "facebook.com", "gamma.umd.edu", "gamma.web.unc.edu", "github.com", "icra2019.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "sciencedirect.com", "tomshardware.com", "twitter.com", "zerotheme.com"]
+
+["http://gamma.cs.unc.edu/GST"]
+title = "GST: GPU-decodable Supercompressed Textures"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/GST"
+category = "SitesList"
+tags = ["abstract:", "gpu-decodable", "gst:", "supercompressed", "textures"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "doi.acm.org", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "tomshardware.com"]
+
+["http://gamma.cs.unc.edu/AutonoVi"]
+title = "Autonomous Driving"
+full_description = "Abstract: We present AutonoVi-Sim, a novel high-fidelity simulation platform for autonomous driving data generation and driving strategy testing. AutonoVi-Sim is a collection of high-level extensible modules which allows the rapid development and testing of vehicle configurations and facilitates construction of complex traffic scenarios. Autonovi-Sim supports multiple vehicles with unique steering or acceleration limits, as well as unique tire parameters and dynamics profiles. Engineers can specify the specific vehicle sensor systems and vary time of day and weather conditions to generate robust data and gain insight into how conditions affect the performance of a particular algorithm. In addition, AutonoVi-Sim supports navigation for non-vehicle traffic participants such as cyclists and pedestrians, allowing engineers to specify routes for these actors, or to create scripted scenarios which place the vehicle in dangerous reactive situations. Autonovi-Sim facilitates training of deep-learning algorithms by enabling data export from the vehicle's sensors, including camera data, LIDAR, relative positions of traffic participants, and detection and classification results. Thus, AutonoVi-Sim allows for the rapid prototyping, development and testing of autonomous driving algorithms under varying vehicle, road, traffic, and weather conditions. In this paper, we detail the simulator and provide specific performance and data benchmarks."
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/AutonoVi"
+category = "SitesList"
+tags = ["army", "autonomous", "autonovi-sim:", "autonovi:", "constraints", "control", "department", "dynamic", "florida", "foundation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailymail.co.uk", "dailytarheel.com", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "tomshardware.com"]
+
+["http://gamma.cs.unc.edu/PedBehavior"]
+title = "Identifying Personality Traits from Crowd Videos"
+description = "Aggressive, Tense, or Shy? Identifying Personality Traits from Crowd Videos"
+full_description = "We present a real-time algorithm to automatically classify the dynamic behavior or personality of a pedestrian based on his or her movements in a crowd video. We present a statistical scheme that dynamically learns the behavior of every pedestrian in a scene and computes that pedestrian's motion model. This model is combined with global crowd characteristics to compute the movement patterns and motion dynamics, which can also be used to predict the crowd movement and behavior."
+author = "Aniket Bera"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/PedBehavior"
+category = "SitesList"
+tags = ["accepted", "acknowledgements", "authors", "automatically", "behaviors", "codec:", "contact", "crowd", "crowds", "email"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "doi.acm.org", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "tomshardware.com", "youtube.com"]
+
+["http://gamma.cs.unc.edu/PCOLLISION"]
+title = "Efficient Probabilistic Collision Detection for Non-Convex Shapes"
+full_description = "We present new algorithms to perform fast probabilistic collision queries between convex as well as non-convex objects. Our approach is applicable to general shapes, where one or more objects are represented using Gaussian probability distributions. We present a fast new algorithm for a pair of convex objects, and extend the approach to non-convex models using hierarchical representations. We highlight the performance of our algorithms with various convex and non-convex shapes on complex synthetic benchmarks and trajectory planning benchmarks for a 7-DOF Fetch robot arm. Efficient Probabilistic Collision Detection for Non-Convex Shapes (PDF)IEEE International Conference on Robotics and Automation (ICRA), 2017. Fast and Bounded Probabilistic Collision Detection for High-DOF Robots in Dynamic Environments (PDF)Workshop on the Algorithmic Foundations of Robotics (WAFR), 2016. Efficient Probabilistic Collision Detection for Non-Gaussian Noise Distributions (PDF)IEEE Robotics and Automation Letters (RA-L), 2020. Our approach is applicable to any models represented in terms of inexact polygons or noisy point cloud data in which we are given two general shapes and the error is represented using Gaussian probability distributions. We compute hierarchical representations of non-convex models using simpler bounding volumes and present a novel hierarchical probabilistic collision detection algorithm. Moreover, we present fast and reliable algorithms to perform probabilistic collision detection on simple shapes such as AABBs (axis-aligned bounding boxes), OBBs (oriented-bounding boxes), k-DOPs (k discretely oriented polytopes), and convex polytopes."
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/PCOLLISION"
+category = "SitesList"
+tags = ["abstract", "algorithm", "benchmarks", "between", "collision", "complex", "description", "detection", "efficient", "human"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "doi.acm.org", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "tomshardware.com", "youtube.com"]
+
+["https://gamma.cs.unc.edu"]
+title = "GAMMA"
+full_description = '''Home The GAMMA Group has moved to the University of Maryland. For up-to-date research, please visit gamma.umd.edu. setREVStartSize({c: 'rev_slider_1_1',rl:[1240,1024,778,480],el:[],gw:[960],gh:[260],layout:'fullwidth',mh:"0"}); var revapi1, tpj; jQuery(function() { tpj = jQuery; if(tpj("#rev_slider_1_1").revolution == undefined){ revslider_showDoubleJqueryError("#rev_slider_1_1"); }else{ revapi1 = tpj("#rev_slider_1_1").show().revolution({ jsFileLocation:"//gamma.web.unc.edu/wp-content/plugins/revslider/public/assets/js/", visibilityLevels:"1240,1024,778,480", gridwidth:960, gridheight:260, minHeight:"", autoHeight:true, lazyType:"smart", responsiveLevels:"1240,1024,778,480", disableProgressBar:"on", shuffle:true, navigation: { mouseScrollNavigation:false, onHoverStop:false, touch: { touchenabled:true, swipe_min_touches:50 }, arrows: { enable:true, style:"hephaistos", hide_onmobile:true, hide_under:600, hide_onleave:true, left: { h_offset:30 }, right: { h_offset:30 } } }, parallax: { levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55], type:"mouse", origo:"slidercenter", speed:2000 }, fallbacks: { ignoreHeightChanges:"", allowHTML5AutoPlayOnAndroid:true }, }); } }); var htmlDivCss = unescape("%23rev_slider_1_1_wrapper%20.hephaistos.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3Argba%280%2C0%2C0%2C0.5%29%3B%0A%09width%3A40px%3B%0A%09height%3A40px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A1000%3B%0A%20%20%20%20border-radius%3A50%25%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.hephaistos.tparrows%3Ahover%20%7B%0A%09background%3A%23000000%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.hephaistos.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%27revicons%27%3B%0A%09font-size%3A18px%3B%0A%09color%3A%23ffffff%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2040px%3B%0A%09text-align%3A%20center%3B%0A%7D%0A%23rev_slider_1_1_wrapper%20.hephaistos.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce82c%27%3B%0A%20%20%20%20margin-left%3A-2px%3B%0A%20%20%0A%7D%0A%23rev_slider_1_1_wrapper%20.hephaistos.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09content%3A%20%27%5Ce82d%27%3B%0A%20%20%20%20margin-right%3A-2px%3B%0A%7D%0A%0A%0A"); var htmlDiv = document.getElementById('rs-plugin-settings-inline-css'); if(htmlDiv) { htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss; }else{ var htmlDiv = document.createElement('div'); htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>'; document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]); } var htmlDivCss = unescape("%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A"); var htmlDiv = document.getElementById('rs-plugin-settings-inline-css'); if(htmlDiv) { htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss; }else{ var htmlDiv = document.createElement('div'); htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>'; document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]); } Recent Publications MPTC: Video Rendering for Virtual Screens using Compressed Textures I3D, 2017 City-Scale Traffic Animation Using Statistical Learning and Metamodel-Based Optimization SIGGRAPH Asia, 2017 Efficient Probabilistic Collision Detection for Non-Convex Shapes ICRA, 2017 Efficient Optimal Control of Smoke using Spacetime Multigrid ACM TOG, 2017 Effects of virtual acoustics on dynamic auditory distance perception JASA, 2017 AutonoVi: Autonomous Vehicle Planning with Dynamic Maneuvers and Traffic Constraints IROS, 2017 Aggressive, Tense, or Shy? Identifying Personality Traits from Crowd Videos IJCAI, 2017 MPARD: A high-frequency wave-based acoustic solver for very large compute clusters Applied Acoustics, 2017 PedVR: Simulating Gaze-Based Interactions between a Real User and Virtual Crowds ACM VRST, 2016 Interactive Modal Sound Synthesis Using Generalized Proportional Damping ACM I3D, 2016 News and Events GAMMA will present 5 papers at IEEE VR 2019. February 07, 2019 GAMMA will present 9 papers at ICRA 2019. February 07, 2019 GAMMA will present four papers at ACM SIGGRAPH in Vancouver in August 2018. June 29, 2018 GAMMA will present eight robotics papers at ICRA, IROS and RSS in 2018. June 29, 2018 Congratulations to 2018 GAMMA PhDs and their families! (Image 1, Image 2, Image 3) May 15, 2018 GAMMA will present eight robotics papers at ICRA, RSS, and IROS in 2017. June 27, 2017 GAMMA has recently published four papers in acoustic journals, including TVCG, JASA, JASA Express, and Applied Acoustics. May 13, 2017 Ravish Mehra, a GAMMA alumni, has won the 2016 VGTC Virtual Reality Best Dissertation Award. March 19, 2017 GAMMA spinoff, Impulsonic, has been acquired by Valve. January 12, 2017 GAMMA has 4 new robotics conference/journal papers: IROS, WAFR, IEEE TRO, and IJRR. October 16, 2016 GAMMA presented two papers at Pacific Graphics. October 15, 2016 The software package, GST, has been released. October 10, 2016 Media Coverage AI gets painting down to a fine art as algorithm learns to mimic the unique styles and brushstrokes of master artists including Van Gogh, Vermeer and Turner. Apr 26, 2019 New, more realistic simulator will improve safety of self-driving vehicles before road testing. Mar 27, 2019 AAAS Fellow Dinesh Manocha: ‘The robots are coming’. Mar 1, 2019 Acoustic Simulation technology developed by GAMMA group used in Oculus Audio SDK. Oct 29, 2018 Dinesh Manocha Joins UMD as the Paul Chrisman Iribe Professor of Computer Science. May 13, 2018 Manocha named AAAI Fellow. February 19, 2018 Ming Lin Named Chair of UMD Department of Computer Science. December 14, 2017 Tech companies look to universities for talent in artificial intelligence. November 11, 2017 Breaking a Sound Barrier June 30, 2017 Tech takeover: Will a robot put you out of a job? June 27, 2017 Real Sound in a Virtual World. March 13, 2017 Fruits Of Valve’s Impulsonic Acquisition Appear: Steam Audio Beta Launched. February 24, 2017 Visit our YouTube Channel and follow us on Facebook, Google+, and Twitter. Leave a Reply Click here to cancel reply. You must be logged in to post a comment.'''
+year_published = 2025
+clearnet = "https://gamma.cs.unc.edu"
+category = "SitesList"
+tags = ["february", "gamma", "gamma.umd.edu.", "group", "home", "htmldiv", "htmldiv.innerhtml", "htmldivcss", "june", "leave"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "abc11.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailymail.co.uk", "dailytarheel.com", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "gamma.web.unc.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "sciencedirect.com", "tomshardware.com", "twitter.com"]
+
+["http://gamma.cs.unc.edu/MPTC"]
+title = "MPTC: Video Rendering for Virtual Screens using Compressed Textures"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/MPTC"
+category = "SitesList"
+tags = ["abstract:", "compressed", "fastc:", "gst:", "mptc:", "paper:", "picture", "rendering", "screens", "texture"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "doi.acm.org", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "tomshardware.com", "youtube.com"]
+
+["http://gamma.cs.unc.edu/gpdsynth"]
+title = "Interactive Modal Sound Synthesis Using Generalized Proportional Damping"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/gpdsynth"
+category = "SitesList"
+tags = ["damping", "generalized", "interactive", "modal", "proportional", "sound", "synthesis", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abc11.com", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "facebook.com", "gamma.umd.edu", "gamma.web.unc.edu", "github.com", "icra2019.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "sciencedirect.com", "tomshardware.com", "twitter.com", "zerotheme.com"]
+
+["http://gamma.cs.unc.edu/pedvr"]
+title = "Crowds in VR"
+full_description = "We present novel approaches for creating user-centric social experiences in virtual environments that are populated with both user controlled avatars, and intelligent virtual agents. We propose algorithms to increase the motion, and behavioral realism of the virtual agents, thus creating immersive virtual experiences. Agents are capable of finding collision-free paths in complex environments, and interacting with the avatars using natural language processing and generation, as well as non-verbal behaviours such as gazing, gesturing, facial expressions etc. We also present a multi-agent simulation framework that can generate pausible behaviors and full body motion for hundreds of agents at interactive rates. We present an interactive algorithm to generate plausible movements for human-like agents interacting with other agents or avatars in a virtual environment. Our approach also allows the user to interact with the agents from a first-person perspective in immersive settings. Interactions generated using our approach lead to an increase in the user’s sense of co-presence. Narang, S., Best, A., & Manocha. D. (2018). Simulating Movement Interactions between Avatars & Agents in Virtual Worlds using Human Motion Constraints. Proceedings of IEEE VR 2018 (to appear). Narang, S., Randhavane, T., Best, A., Shapiro, A., & Manocha, D. (2016). FbCrowd: Interactive Multi-agent Simulation with Coupled Collision Avoidance and Human Motion Synthesis. Technical Report, UNC Chapel Hill. We present a novel algorithm for automatically synthesizing personalized walking gaits for a human user from noisy motion caputre data. The overall approach is robust and can generate personalized gaits with little or no artistic intervention using commodity sensors. Narang, S., Best, A., Shapiro, A., & Manocha. D. (2017, October). Generating Virtual Avatars with Personalized Walking Gaits using Commodity Hardware. ACM Multimedia, Proceedings of Thematic Workshops (to appear). We evaluated factors that affect recognition of motion of self and others, rendered on photo-realistic 3D virtual avatars. Our studies provide several interesting insights into motion recognition on photo-realistic avatars of the subject. In particular, we found that virtual avatars lead to an increase in self-recognition, compared to point lights."
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/pedvr"
+category = "SitesList"
+tags = ["agent", "agents", "andavatars", "avatars", "avatars.", "avoidance", "between", "collision", "commodity", "constraints."]
+language = "en"
+internal-references = ["none"]
+external-references = ["abc11.com", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "facebook.com", "gamma.umd.edu", "gamma.web.unc.edu", "github.com", "icra2019.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "sciencedirect.com", "tomshardware.com", "twitter.com", "zerotheme.com"]
+
+["http://gamma.cs.unc.edu/CityFlowRecon"]
+title = "City-Scale Traffic Animation Using Statistical Learning and Metamodel-Based Optimization"
+full_description = "City-Scale Traffic Animation Using Statistical Learning and Metamodel-Based Optimization Weizi Li, David Wolinski, and Ming C. Lin University of North Carolina at Chapel Hill Abstract Rapid urbanization and increasing traffic have caused severe social, economic, and environmental problems in metropolitan areas worldwide. Traffic reconstruction and visualization using existing traffic data can provide novel tools for vehicle navigation and routing, congestion analysis, and traffic management. While traditional data collection methods are becoming increasingly common (e.g. using in-road sensors), GPS devices are also becoming ubiquitous. In this paper, we address the problem of traffic reconstruction, visualization, and animation using mobile vehicle data (i.e. GPS traces). We first conduct city-scale traffic reconstruction using statistical learning on mobile vehicle data for traffic animation and visualization, and then dynamically complete missing data using metamodel-based simulation optimization in areas of insufficient data coverage. We evaluate our approach quantitatively and qualitatively, and demonstrate our results with 2D visualization of citywide traffic, as well as 2D and 3D animation of reconstructed traffic in virtual environments. Publication DOI, ACM Transactions on Graphics 36(6), 2017 (Proceedings of SIGGRAPH Asia 2017) Preprint (pdf, 8.0MB) Appendix (pdf, 3.0MB) Supplemental Video (mp4, 61.5MB) BibTeX Video Simulation Resource Download (zip, 16.4MB) Acknowledgements The authors would like to thank US Army Research Office and UNC Arts & Science Foundation. Related Links GAMMA Group Traffic Simulation, Reconstruction, and Route Planning"
+year_published = 2025
+clearnet = "http://gamma.cs.unc.edu/CityFlowRecon"
+category = "SitesList"
+tags = ["abstract", "acknowledgements", "animation", "city-scale", "data", "learning", "links", "metamodel-based", "optimization", "publication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaas.org", "arxiv.org", "aszx.net", "bryantsmith.com", "cmns.umd.edu", "cs.umd.edu", "cs.unc.edu", "dailytarheel.com", "doi.acm.org", "endeavors.unc.edu", "facebook.com", "gamma.umd.edu", "icra2019.org", "ieeevr.org", "impulsonic.com", "northcarolina.edu", "oculus.com", "plus.google.com", "prodigy.ist.ucf.edu", "tomshardware.com"]

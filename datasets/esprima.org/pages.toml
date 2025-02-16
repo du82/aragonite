@@ -1,0 +1,215 @@
+["https://esprima.org/test/benchmarks.html"]
+title = "Esprima: Benchmarks"
+full_description = "Note: On a modern machine and up-to-date web browsers, the full benchmarks suite takes ~1 minute. For the quick benchmarks, the running time is only ~15 seconds."
+year_published = 2025
+clearnet = "https://esprima.org/test/benchmarks.html"
+category = "SitesList"
+tags = ["benchmarks", "esprima", "full", "note", "show", "speed", "true"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org"]
+
+["https://esprima.org/demo/precedence.html"]
+title = "Esprima: Operator Precedence"
+full_description = "Deciphering a convoluted expression is far from trivial. The expression in the blue box is compared to the expression in the green box to determine if they are syntatically equivalent."
+year_published = 2025
+clearnet = "https://esprima.org/demo/precedence.html"
+category = "SitesList"
+tags = ["always", "blue", "easy", "esprima", "green", "operator", "precedence"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in"]
+
+["https://esprima.org/demo/collector.html"]
+title = "Esprima: Regex Collector"
+year_published = 2025
+clearnet = "https://esprima.org/demo/collector.html"
+category = "SitesList"
+tags = ["collector", "esprima", "expression", "highlighted", "literals", "note:", "objects", "regexp", "regular", "secrets"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/test/index.html"]
+title = "Esprima: Unit Tests"
+full_description = "A software project is only as good as its QA workflow. This set of unit tests makes sure that no regression is ever sneaked in."
+year_published = 2025
+clearnet = "https://esprima.org/test/index.html"
+category = "SitesList"
+tags = ["correct", "ensures", "esprima", "implementation", "tests", "unit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "ci.appveyor.com", "circleci.com", "codecov.io", "drone.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org", "saucelabs.com", "travis-ci.org"]
+
+["https://esprima.org/demo/parse.html"]
+title = "Esprima: Parser"
+year_published = 2025
+clearnet = "https://esprima.org/demo/parse.html"
+category = "SitesList"
+tags = ["esprima", "parser", "produces", "syntax", "tree"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/index.html"]
+title = "Esprima"
+full_description = "Esprima is a high performance, standard-compliant ECMAScript parser written in ECMAScript (also popularly known as JavaScript). Esprima can be used to perform lexical analysis (tokenization) or syntactic analysis (parsing) of a JavaScript program. Once the full syntax tree is obtained, various static code analysis can be applied to give an insight to the code: syntax visualization, code validation, editing autocomplete (with type inferencing) and many others. Regenerating the code from the syntax tree permits a few different types of code transformation, from a simple rewriting (with specific formatting) to a more complicated minification."
+year_published = 2025
+clearnet = "https://esprima.org/index.html"
+category = "SitesList"
+tags = ["analysis", "code", "ecmascript", "esprima", "infrastructure", "multipurpose", "parsing", "static", "transformation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "ci.appveyor.com", "circleci.com", "codecov.io", "drone.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org", "requirejs.org", "saucelabs.com", "travis-ci.org"]
+
+["https://esprima.org/demo/highlight.html"]
+title = "Esprima: Identifier Highlight"
+full_description = "When the cursor is placed on a variable or a function, all other identical references will be highlighted, particularly its declaration."
+year_published = 2025
+clearnet = "https://esprima.org/demo/highlight.html"
+category = "SitesList"
+tags = ["declaration", "esprima", "everything", "highlight", "identical", "identifier", "references", "spot"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/test/ci.html"]
+title = "Esprima: Continuous Integration"
+full_description = "Thousands of Esprima's unit tests and regression tests are executed in a Node.js environment on Linux using Travis CI and on Windows using AppVeyor. It is integrated with the pull request workflow of GitHub so that a change that causes one or more failing tests will be flagged appropriately. Travis CI build information of Esprima is available at travis-ci.org/jquery/esprima. AppVeyor build status of Esprima is available at ci.appveyor.com/project/ariya/esprima. To prevent any potential coverage regression, the information on the code coverage after running the entire unit tests is posted to Codecov.io. The coverage analysis itself is running on Circle CI. Using Codecov.io integration with Github, the change in code coverage (whether it stays the same, regresses, or improves) for every pull request will be automatically posted as a comment. There are many widely used open-source projects out there, from Istanbul to Recast, which depend on Esprima. An unknown issue in Esprima during its development, that is not caught by its own test suite, may cause those downstream projects to regress. To prevent this from happening, the development version of Esprima is used to run the test suite of a selected set of downstream projects. This is running on Circle CI and the entire process typically takes around 13 minutes to complete. To ensure that Esprima works well with the major popular web browsers out there, its test suite is also executed on a number of different browsers via Sauce Labs. This test is orchestrated using another hosted CI, drone.io. The following browser matrix summarizes the test coverage. The full dashboard is available at saucelabs.com/u/esprima. Every single commit, including the one in every pull request, is subjected to a set of tests to ensure the quality of the corresponding changes."
+year_published = 2025
+clearnet = "https://esprima.org/test/ci.html"
+category = "SitesList"
+tags = ["appveyor", "circle", "code", "codecov.io", "continuous", "drone.io", "esprima", "integration", "labs", "maintains"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "ci.appveyor.com", "circleci.com", "codecov.io", "drone.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org", "saucelabs.com", "travis-ci.org"]
+
+["https://esprima.org/demo/minify.html"]
+title = "Esprima: Minify"
+full_description = "Shorten variable names Remove unreachable branches Remove unused variable definitions Fold (literal) constants Eliminate dead code Minification reduces the size of the code without affecting its execution. Further compression is achieved by compacting the syntax tree, shortening variable names, and removing other unnecessary clutter."
+year_published = 2025
+clearnet = "https://esprima.org/demo/minify.html"
+category = "SitesList"
+tags = ["cover", "esprima", "minify", "obfuscate", "tracks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org"]
+title = "Esprima"
+full_description = "Esprima is a high performance, standard-compliant ECMAScript parser written in ECMAScript (also popularly known as JavaScript). Esprima can be used to perform lexical analysis (tokenization) or syntactic analysis (parsing) of a JavaScript program. Once the full syntax tree is obtained, various static code analysis can be applied to give an insight to the code: syntax visualization, code validation, editing autocomplete (with type inferencing) and many others. Regenerating the code from the syntax tree permits a few different types of code transformation, from a simple rewriting (with specific formatting) to a more complicated minification."
+year_published = 2025
+clearnet = "https://esprima.org"
+category = "SitesList"
+tags = ["analysis", "code", "ecmascript", "esprima", "infrastructure", "multipurpose", "parsing", "static", "transformation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/test/compare.html"]
+title = "Esprima: Speed Comparisons"
+full_description = "When the checkbox above is checked, a new thread (Web Worker) is started for every benchmark cycle, to simulate parsing a single file for the first time. When the checkbox above is not checked, all benchmark cycles are run in the same thread. This allows the JIT compiler to heavily optimize the parsers, simulating parsing the files many times. In both cases, the reported times only include parsing the listed files, not loading and executing the parser's script file."
+year_published = 2025
+clearnet = "https://esprima.org/test/compare.html"
+category = "SitesList"
+tags = ["comparison", "esprima", "everything", "keeps", "perspective", "speed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "ci.appveyor.com", "circleci.com", "codecov.io", "drone.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org", "saucelabs.com", "travis-ci.org"]
+
+["https://esprima.org/demo/index.html"]
+title = "Esprima: Demos"
+full_description = "Once Esprima produces the abstract syntax tree (AST), various types of static analysis can give a useful insight. The code can be seen from a different perspective via a syntax visualization. For testing purposes, it can be checked against the language specification using the code validator. Analyzing the run-time behavior is essential to ensure a consistent application performance. One practical usage is by monitoring the function execution, it will reveal how many times each function is being invoked. Regenerative transformation is made possibly by recreating the code from its AST. This permits both source rewriting (following particular coding style) as well as code minification (for size reduction). Semantic information about the code (as being edited) can be used to give an important assistance, from a simple identifier highlighting to a more complex intelligent autocompletion."
+year_published = 2025
+clearnet = "https://esprima.org/demo/index.html"
+category = "SitesList"
+tags = ["demos", "esprima", "thousand", "words", "worth"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/test/module.html"]
+title = "Esprima: Module Loading Test"
+full_description = "The following tests are to ensure that Esprima can be loaded using AMD (Asynchronous Module Definition) loader such as RequireJS."
+year_published = 2025
+clearnet = "https://esprima.org/test/module.html"
+category = "SitesList"
+tags = ["browsers", "esprima", "loading", "module", "works"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "benchmarkjs.com", "ci.appveyor.com", "circleci.com", "codecov.io", "drone.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org", "requirejs.org", "saucelabs.com", "travis-ci.org"]
+
+["https://esprima.org/doc/index.html"]
+title = "Esprima Documentation"
+full_description = "Warning: since this version is still being actively development, the documentation is subject to change without notice."
+year_published = 2025
+clearnet = "https://esprima.org/doc/index.html"
+category = "SitesList"
+tags = ["documentation", "esprima", "using", "warning"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org"]
+
+["https://esprima.org/demo/autocomplete.html"]
+title = "Esprima: Editing Autocomplete"
+year_published = 2025
+clearnet = "https://esprima.org/demo/autocomplete.html"
+category = "SitesList"
+tags = ["again", "autocomplete", "coding", "esprima", "makes", "tasks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/doc/videos.html"]
+title = "Esprima: Videos"
+year_published = 2025
+clearnet = "https://esprima.org/doc/videos.html"
+category = "SitesList"
+tags = ["ariya", "dubroy", "esprima", "experts", "ficarra", "franko", "greg", "gurdas", "hidayat", "john"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in", "readthedocs.org"]
+
+["https://esprima.org/demo/validate.html"]
+title = "Esprima: Syntax Validator"
+full_description = "Unlike a typical code linter, this syntax validator does not care about coding styles and formatting. If there is a syntax error, place the mouse cursor over the squiggly red line to reveal the detailed error description."
+year_published = 2025
+clearnet = "https://esprima.org/demo/validate.html"
+category = "SitesList"
+tags = ["checks", "errors", "esprima", "line", "mistakes", "squiggly", "syntax", "validator"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in"]
+
+["https://esprima.org/demo/functiontrace.html"]
+title = "Esprima: Function Instrumentation"
+full_description = "Pressing Run button will execute (using eval) the code with some extra instrumentation injected to track the execution. Placing the mouse cursor on the indicator next to every function will show the number of calls for that particular function."
+year_published = 2025
+clearnet = "https://esprima.org/demo/functiontrace.html"
+category = "SitesList"
+tags = ["being", "called", "code!", "esprima", "function", "instrumentation", "never", "reveals", "traces", "untrusted"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com"]
+
+["https://esprima.org/demo/rename.html"]
+title = "Esprima: Rename Refactoring"
+full_description = "When the cursor is placed on a variable or a function, changing the name will also rename all other identical references, which are highlighted."
+year_published = 2025
+clearnet = "https://esprima.org/demo/rename.html"
+category = "SitesList"
+tags = ["assist", "esprima", "identical", "refactoring", "references", "rename", "replace", "search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in"]
+
+["https://esprima.org/demo/rewrite.html"]
+title = "Esprima: Source Rewrite"
+full_description = "Rewriting is a two-step process: parse the code to get the syntax tree and then regenerate a new code from the syntax tree following the specified formatting."
+year_published = 2025
+clearnet = "https://esprima.org/demo/rewrite.html"
+category = "SitesList"
+tags = ["cleans", "esprima", "everything", "note:", "reformats", "regenerate", "rewrite", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ariya.io", "codecov.io", "ecma-international.org", "en.wikipedia.org", "esprima.readthedocs.io", "facebook.github.io", "github.com", "groups.google.com", "mothereff.in"]

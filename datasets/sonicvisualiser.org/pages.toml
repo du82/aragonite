@@ -1,0 +1,433 @@
+["https://sonicvisualiser.org/sonic-lineup/doc/reference/1.0.1/en/index.html"]
+title = "Sonic Lineup: A Brief Reference"
+full_description = 'Sonic Lineup is an application for comparative visualisation and alignment of related audio recordings. This is a brief reference manual explaining the concepts used in Sonic Lineup and how to use it. This manual describes Sonic Lineup version 1.0. This document is Copyright 2019 Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Lineup is intended for visualisation and inspection of multiple audio files which are related by way of representing the same "source material". This could mean they are recordings of different performances of the same work; different recordings of the same performance; different "takes" of parts in a studio session; or perhaps recordings of variant works or cover songs, so long as they are broadly structurally similar. With multiple such audio files loaded, Sonic Lineup will attempt to align them in time, based on an analysis of their audio content, so that you can navigate them in sync with one another in terms of the common musical content they represent. A number of different visualisation modes are provided, and switching modes takes effect for all loaded files at once. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. No editing facilities are included, no adjustable parameters for the visualisation modes are provided, and it is not possible to save or export any kind of annotation or session information. In contrast to Sonic Visualiser, Sonic Lineup is intended for "quick" comparative analysis, rather than for intensive study. Most of the Sonic Lineup window is taken up with views of each of the audio files that you have opened, each in a different colour. In the very centre of each view is the aligned playback position line, a solid white line. The translucent white lines snaking down across the views are the salient feature layer mappings.'
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup/doc/reference/1.0.1/en/index.html"
+category = "SitesList"
+tags = ["align", "aligning", "alignment", "allow", "azimuth", "controlling", "difference", "feature", "file", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "eecs.qmul.ac.uk", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file. Citations: If you are using Sonic Visualiser in research work for publication, please cite (pdf | bib) Chris Cannam, Christian Landone, and Mark Sandler, Sonic Visualiser: An Open Source Application for Viewing, Analysing, and Annotating Music Audio Files, in Proceedings of the ACM Multimedia 2010 International Conference."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org"
+category = "SitesList"
+tags = ["analysis,", "annotation", "audio", "music", "recordings", "sonic", "visualisation,", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["https://sonicvisualiser.org/tony/index.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+full_description = "Tony is a free, open-source application for Windows, Linux, and Mac, designed for high quality pitch and note transcription for scientific applications. It is designed primarily for use with solo vocal recordings. Citations: If you are using Tony in research work for publication, please cite (pdf | bib) Matthias Mauch, Chris Cannam, Rachel Bittner, George Fazekas, Justin Salamon, Jiajie Dai, Juan Bello and Simon Dixon, Computer-aided Melody Note Transcription Using the Tony Software: Accuracy and Efficiency, in Proceedings of the First International Conference on Technologies for Music Notation and Representation, 2015."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/tony/index.html"
+category = "SitesList"
+tags = ["automatic", "correction", "easy", "export", "high", "melody", "quality", "sonification", "tony", "transcription"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["http://www.sonicvisualiser.org/tony/download.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/tony/download.html"
+category = "SitesList"
+tags = ["2.1.1", "download", "tony"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/doc/reference/5.0.1/en"]
+title = "Sonic Visualiser: A Brief Reference"
+full_description = '''Sonic Visualiser is an application for viewing and analysing the contents of music audio files. This is a brief reference manual explaining the concepts used in Sonic Visualiser and how to use it. This manual describes Sonic Visualiser version 5.0.1. This document is Copyright 2006-2024 Chris Cannam and Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Visualiser's user interface is structured around panes and layers. A pane is a horizontally scrollable area of window like a drawing canvas; a layer is one of a set of things that can be shown on a pane, such as a waveform, a line graph of measurements, or a subdivision of the horizontal axis into differently coloured segments. You can stack any number of panes above one another vertically: a scrollbar will appear if you have too many to fit in the window. The horizontal axis of each pane corresponds to time in audio sample frames, and all of the stacked panes will be aligned to the same sample frame at their centre points. Each pane can then display any number of layers, which are conceptually stacked on top of one another like layers in a graphics application. So for example, you may have a spectrogram layer "at the back", with line data, onset positions and notes displayed in separate layers "in front", i.e. drawn over the top of it. There are several different kinds of layer, which differ in the types of data they can represent: instants, curves (time-value plots), and so on. Layers that are stacked on the same pane will always share the same magnification (or zoom) and alignment on the x (time) axis. However, they do not have to have identical scales on the y axis — although Sonic Visualiser will attempt to align them vertically by default if their scale units match. One pane is always the "active" pane, and this one is marked with a black vertical bar to its left, like the one by this paragraph. The front layer on that pane is the active layer. Any menu or keyboard function in Sonic Visualiser that works on a single layer will always operate on the active layer.'''
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/doc/reference/5.0.1/en"
+category = "SitesList"
+tags = ["10.1", "10.2", "12.1", "12.2", "12.3", "12.4", "12.5", "12.6", "12.7", "12.8"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/tony/videos.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/tony/videos.html"
+category = "SitesList"
+tags = ["2019:", "editing", "note", "october", "tony", "videos"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/sonic-lineup/videos.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup/videos.html"
+category = "SitesList"
+tags = ["2019:", "clip,", "lineup", "narration", "october", "overview", "short", "sonic", "videos", "without"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/sonic-lineup/index.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+full_description = '''Sonic Lineup is a free, open-source application for Windows, Linux, and Mac, designed for rapid visualisation of multiple audio files containing versions of the same source material. It's useful for comparing different recordings of the same performance; recordings of different performances of the same work; different "takes" of parts in a recording session or mix; or even recordings of variant works or cover songs, so long as they are structurally similar to one another. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. In fact you might use it for only a few minutes at a time, as an assistance to listening, or an accessory to annotation done elsewhere.'''
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup/index.html"
+category = "SitesList"
+tags = ["audio", "comparative", "lineup", "recordings", "related", "sonic", "visualisation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["https://sonicvisualiser.org/videos.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = '''Dan Stowell looks at temperament in harpsichord recordings, using Sonic Visualiser and the TempEst plugin. Matthias Mauch shows how to install Sonic Visualiser and a Vamp plugin and then demonstrates an automatic chord transcription. Matthias Mauch from the Centre for Digital Music at Queen Mary, University of London talks us through a simple example of labelling a song excerpt with chords in Sonic Visualiser. Chord labelling can be useful for musicological purposes, or as a reference transcription to test automatic chord labelling algorithms. Or just for music-loving fun. Matthias Mauch from the Centre for Digital Music at Queen Mary, University of London talks us through a simple example of loading an audio file and some associated data into Sonic Visualiser and looking at the results. This example is drawn directly from Matthias's everyday use in research on audio chord transcription. Note that the data shown here was calculated by a separate program and is simply loaded (from text files) for inspection in SV, rather than being calculated within the application. For information about the chord transcription and segmentation methods, see Matthias's research. An example of automatic alignment of audio for the purpose of comparing recordings, using Sonic Visualiser with the MATCH audio alignment plugin. This is an example with three different historical recordings of the same classical work. The three audio recordings are loaded, and are first played all together (cacophonously, because they have quite different timing), then solo'ed but unaligned. Then we hit the magic Align button which calculates a time-alignment, and play again with alignment, switching between tracks at will while remaining at the same point in the underlying musical score. The music is Ron Parker's mix of "Cold Duck" played by the Terrace Martin Trio, taken from the tutorial Mastering with JAMin and Ardour. This video dates from the end of 2006, covering Sonic Visualiser 1.0. Some occasional audio dropouts seem to have appeared during conversion: sorry about that. The video quality wasn't all that great to start with, but this is a nice outline — and the music's good!'''
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/videos.html"
+category = "SitesList"
+tags = ["2006:", "2009:", "2010:", "2012:", "alignment", "analysing", "annotating", "audio", "beat", "chord"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "matthiasmauch.net", "particularprograms.co.uk", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/sonic-lineup/doc/reference/1.0/en/index.html"]
+title = "Sonic Lineup: A Brief Reference"
+full_description = 'Sonic Lineup is an application for comparative visualisation and alignment of related audio recordings. This is a brief reference manual explaining the concepts used in Sonic Lineup and how to use it. This manual describes Sonic Lineup version 1.0. This document is Copyright 2019 Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Lineup is intended for visualisation and inspection of multiple audio files which are related by way of representing the same "source material". This could mean they are recordings of different performances of the same work; different recordings of the same performance; different "takes" of parts in a studio session; or perhaps recordings of variant works or cover songs, so long as they are broadly structurally similar. With multiple such audio files loaded, Sonic Lineup will attempt to align them in time, based on an analysis of their audio content, so that you can navigate them in sync with one another in terms of the common musical content they represent. A number of different visualisation modes are provided, and switching modes takes effect for all loaded files at once. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. No editing facilities are included, no adjustable parameters for the visualisation modes are provided, and it is not possible to save or export any kind of annotation or session information. In contrast to Sonic Visualiser, Sonic Lineup is intended for "quick" comparative analysis, rather than for intensive study. Most of the Sonic Lineup window is taken up with views of each of the audio files that you have opened, each in a different colour. In the very centre of each view is the aligned playback position line, a solid white line. The translucent white lines snaking down across the views are the salient feature layer mappings.'
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup/doc/reference/1.0/en/index.html"
+category = "SitesList"
+tags = ["align", "aligning", "alignment", "allow", "azimuth", "controlling", "difference", "feature", "file", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/sonic-lineup"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+full_description = '''Sonic Lineup is a free, open-source application for Windows, Linux, and Mac, designed for rapid visualisation of multiple audio files containing versions of the same source material. It's useful for comparing different recordings of the same performance; recordings of different performances of the same work; different "takes" of parts in a recording session or mix; or even recordings of variant works or cover songs, so long as they are structurally similar to one another. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. In fact you might use it for only a few minutes at a time, as an assistance to listening, or an accessory to annotation done elsewhere.'''
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup"
+category = "SitesList"
+tags = ["audio", "comparative", "lineup", "recordings", "related", "sonic", "visualisation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["http://www.sonicvisualiser.org/sonic-lineup/download.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup/download.html"
+category = "SitesList"
+tags = ["download", "lineup", "sonic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/sonic-lineup/doc/reference/1.0.1/en/index.html"]
+title = "Sonic Lineup: A Brief Reference"
+full_description = 'Sonic Lineup is an application for comparative visualisation and alignment of related audio recordings. This is a brief reference manual explaining the concepts used in Sonic Lineup and how to use it. This manual describes Sonic Lineup version 1.0. This document is Copyright 2019 Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Lineup is intended for visualisation and inspection of multiple audio files which are related by way of representing the same "source material". This could mean they are recordings of different performances of the same work; different recordings of the same performance; different "takes" of parts in a studio session; or perhaps recordings of variant works or cover songs, so long as they are broadly structurally similar. With multiple such audio files loaded, Sonic Lineup will attempt to align them in time, based on an analysis of their audio content, so that you can navigate them in sync with one another in terms of the common musical content they represent. A number of different visualisation modes are provided, and switching modes takes effect for all loaded files at once. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. No editing facilities are included, no adjustable parameters for the visualisation modes are provided, and it is not possible to save or export any kind of annotation or session information. In contrast to Sonic Visualiser, Sonic Lineup is intended for "quick" comparative analysis, rather than for intensive study. Most of the Sonic Lineup window is taken up with views of each of the audio files that you have opened, each in a different colour. In the very centre of each view is the aligned playback position line, a solid white line. The translucent white lines snaking down across the views are the salient feature layer mappings.'
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup/doc/reference/1.0.1/en/index.html"
+category = "SitesList"
+tags = ["align", "aligning", "alignment", "allow", "azimuth", "controlling", "difference", "feature", "file", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/download.html"]
+title = "Download Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/download.html"
+category = "SitesList"
+tags = ["5.0.1", "analysis", "audiounit,", "don't", "download", "effects", "forget", "licensing:", "lv2?", "notes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["http://www.sonicvisualiser.org/doc/tutorial/en/selections-inspection.html"]
+title = "Sonic Visualiser: Using selections when studying sections of a piece"
+full_description = '''For this task we will be referring to this excerpt from the fourth movement of Prokofiev's Scythian Suite (D�sir� Defauw / Chicago Symphony Orchestra 1945, transferred from RCA Victor 78 by Bill Anderson). Playing this piece from the start, you'll notice there are three "humps" visible on the waveform at around 11, 12.5 and 16.5 seconds that correspond to repetitions of a short wind motif. We'll take a closer look at the first of these. Scroll so that the first hump is visible, and zoom in a few times using the mouse wheel or Up cursor key. Then switch to the Select tool by clicking the arrow button on the toolbar, and drag to select an area approximately from the start of the first hump to shortly before the second. As you see, the program is telling us that this selection covers a range from 10.617 seconds up to 12.498 seconds, or 1.88 seconds later. Your exact figures will probably vary, of course. You can adjust the extents of the selection after having initially selected it. Just click-and-drag the left or right edge of the purple selection region (first making sure you have the Select tool active). Let's listen to the selected area. Click the toolbar button, and then play. If the current playback point is in the middle of the selection, Sonic Visualiser will play from it to the end of the selection; if you then Play again, you'll hear the whole selection and nothing else. Adding a spectrogram view will give us another way to look at what's being played here. Use Pane -> Add Peak Frequency Spectrogram: Here we've changed the Bin Display property from Frequencies to All Bins, changed the Colour Scale from Linear to Meter, switched off Normalize Columns, and increased the Gain dial to make quieter regions more distinguishable (at the cost of blowing-out the loud red areas). We also dragged the spectrogram pane downwards to admit a slightly higher frequency range. (If you want to do that, first switch back to the Navigate tool on the toolbar so that you can drag around the spectrogram without disturbing the selection.)'''
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/doc/tutorial/en/selections-inspection.html"
+category = "SitesList"
+tags = ["piece", "sections", "selections", "sonic", "studying", "using", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/sonic-lineup/videos.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup/videos.html"
+category = "SitesList"
+tags = ["2019:", "clip,", "lineup", "narration", "october", "overview", "short", "sonic", "videos", "without"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/download.html"]
+title = "Download Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/download.html"
+category = "SitesList"
+tags = ["5.0.1", "analysis", "audiounit,", "don't", "download", "effects", "forget", "licensing:", "lv2?", "notes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/documentation.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/documentation.html"
+category = "SitesList"
+tags = ["developers", "documentation", "manual", "reference", "sonic", "tutorials", "videos", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["https://sonicvisualiser.org/index.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file. Citations: If you are using Sonic Visualiser in research work for publication, please cite (pdf | bib) Chris Cannam, Christian Landone, and Mark Sandler, Sonic Visualiser: An Open Source Application for Viewing, Analysing, and Annotating Music Audio Files, in Proceedings of the ACM Multimedia 2010 International Conference."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/index.html"
+category = "SitesList"
+tags = ["analysis,", "annotation", "audio", "music", "recordings", "sonic", "visualisation,", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/index.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file. Citations: If you are using Sonic Visualiser in research work for publication, please cite (pdf | bib) Chris Cannam, Christian Landone, and Mark Sandler, Sonic Visualiser: An Open Source Application for Viewing, Analysing, and Annotating Music Audio Files, in Proceedings of the ACM Multimedia 2010 International Conference."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/index.html"
+category = "SitesList"
+tags = ["analysis,", "annotation", "audio", "music", "recordings", "sonic", "visualisation,", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/documentation.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/documentation.html"
+category = "SitesList"
+tags = ["developers", "documentation", "manual", "reference", "sonic", "tutorials", "videos", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/news/index.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/news/index.html"
+category = "SitesList"
+tags = ["10th", "12th", "14th", "16th", "17th", "18th", "20th", "21st", "22nd", "23rd"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["http://www.sonicvisualiser.org/sonic-lineup/index.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+full_description = '''Sonic Lineup is a free, open-source application for Windows, Linux, and Mac, designed for rapid visualisation of multiple audio files containing versions of the same source material. It's useful for comparing different recordings of the same performance; recordings of different performances of the same work; different "takes" of parts in a recording session or mix; or even recordings of variant works or cover songs, so long as they are structurally similar to one another. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. In fact you might use it for only a few minutes at a time, as an assistance to listening, or an accessory to annotation done elsewhere.'''
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup/index.html"
+category = "SitesList"
+tags = ["audio", "comparative", "lineup", "recordings", "related", "sonic", "visualisation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/community.html"]
+title = "Sonic Visualiser community resources"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "There are older bug trackers hosted at SourceForge (bugs, features) and the SoundSoftware site (bugs and features) which are still lightly monitored. If you are thinking of reporting something, check first whether it has already been filed in one of these places — but it's best not to file new reports in these. Do be aware that Sonic Visualiser is a mature project with relatively little developer resource, so stability and continuity are generally the priority. If you would like something done to a deadline or for a specific purpose, Particular Programs Ltd may be able to help you on commercial terms. There is a Sonic Visualiser project on the SoundSoftware site. This is not currently being updated, but there is still some material there of interest. A developer mailing list for Sonic Visualiser exists at SourceForge, but it is not in very active use. See information and subscription options and the list archive."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/community.html"
+category = "SitesList"
+tags = ["community", "developer", "feature", "pages", "project", "reports", "requests", "resources", "sonic", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/community.html"]
+title = "Sonic Visualiser community resources"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "There are older bug trackers hosted at SourceForge (bugs, features) and the SoundSoftware site (bugs and features) which are still lightly monitored. If you are thinking of reporting something, check first whether it has already been filed in one of these places — but it's best not to file new reports in these. Do be aware that Sonic Visualiser is a mature project with relatively little developer resource, so stability and continuity are generally the priority. If you would like something done to a deadline or for a specific purpose, Particular Programs Ltd may be able to help you on commercial terms. There is a Sonic Visualiser project on the SoundSoftware site. This is not currently being updated, but there is still some material there of interest. A developer mailing list for Sonic Visualiser exists at SourceForge, but it is not in very active use. See information and subscription options and the list archive."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/community.html"
+category = "SitesList"
+tags = ["community", "developer", "feature", "pages", "project", "reports", "requests", "resources", "sonic", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/doc/reference/5.0.1/en"]
+title = "Sonic Visualiser: A Brief Reference"
+full_description = '''Sonic Visualiser is an application for viewing and analysing the contents of music audio files. This is a brief reference manual explaining the concepts used in Sonic Visualiser and how to use it. This manual describes Sonic Visualiser version 5.0.1. This document is Copyright 2006-2024 Chris Cannam and Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Visualiser's user interface is structured around panes and layers. A pane is a horizontally scrollable area of window like a drawing canvas; a layer is one of a set of things that can be shown on a pane, such as a waveform, a line graph of measurements, or a subdivision of the horizontal axis into differently coloured segments. You can stack any number of panes above one another vertically: a scrollbar will appear if you have too many to fit in the window. The horizontal axis of each pane corresponds to time in audio sample frames, and all of the stacked panes will be aligned to the same sample frame at their centre points. Each pane can then display any number of layers, which are conceptually stacked on top of one another like layers in a graphics application. So for example, you may have a spectrogram layer "at the back", with line data, onset positions and notes displayed in separate layers "in front", i.e. drawn over the top of it. There are several different kinds of layer, which differ in the types of data they can represent: instants, curves (time-value plots), and so on. Layers that are stacked on the same pane will always share the same magnification (or zoom) and alignment on the x (time) axis. However, they do not have to have identical scales on the y axis — although Sonic Visualiser will attempt to align them vertically by default if their scale units match. One pane is always the "active" pane, and this one is marked with a black vertical bar to its left, like the one by this paragraph. The front layer on that pane is the active layer. Any menu or keyboard function in Sonic Visualiser that works on a single layer will always operate on the active layer.'''
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/doc/reference/5.0.1/en"
+category = "SitesList"
+tags = ["10.1", "10.2", "12.1", "12.2", "12.3", "12.4", "12.5", "12.6", "12.7", "12.8"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = "Sonic Visualiser is a free, open-source application for Windows, Linux, and Mac, designed to be the first program you reach for when want to study a music recording closely. It's designed for musicologists, archivists, signal-processing researchers, and anyone else looking for a friendly way to look at what lies inside the audio file. Citations: If you are using Sonic Visualiser in research work for publication, please cite (pdf | bib) Chris Cannam, Christian Landone, and Mark Sandler, Sonic Visualiser: An Open Source Application for Viewing, Analysing, and Annotating Music Audio Files, in Proceedings of the ACM Multimedia 2010 International Conference."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org"
+category = "SitesList"
+tags = ["analysis,", "annotation", "audio", "music", "recordings", "sonic", "visualisation,", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/tony/download.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/tony/download.html"
+category = "SitesList"
+tags = ["2.1.1", "download", "tony"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/sonic-lineup"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+full_description = '''Sonic Lineup is a free, open-source application for Windows, Linux, and Mac, designed for rapid visualisation of multiple audio files containing versions of the same source material. It's useful for comparing different recordings of the same performance; recordings of different performances of the same work; different "takes" of parts in a recording session or mix; or even recordings of variant works or cover songs, so long as they are structurally similar to one another. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. In fact you might use it for only a few minutes at a time, as an assistance to listening, or an accessory to annotation done elsewhere.'''
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/sonic-lineup"
+category = "SitesList"
+tags = ["audio", "comparative", "lineup", "recordings", "related", "sonic", "visualisation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/tony"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+full_description = "Tony is a free, open-source application for Windows, Linux, and Mac, designed for high quality pitch and note transcription for scientific applications. It is designed primarily for use with solo vocal recordings. Citations: If you are using Tony in research work for publication, please cite (pdf | bib) Matthias Mauch, Chris Cannam, Rachel Bittner, George Fazekas, Justin Salamon, Jiajie Dai, Juan Bello and Simon Dixon, Computer-aided Melody Note Transcription Using the Tony Software: Accuracy and Efficiency, in Proceedings of the First International Conference on Technologies for Music Notation and Representation, 2015."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/tony"
+category = "SitesList"
+tags = ["automatic", "correction", "easy", "export", "high", "melody", "quality", "sonification", "tony", "transcription"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "discourse.appimage.org", "dssi.sourceforge.net", "github.com", "gnu.org", "ladspa.org", "particularprograms.co.uk", "vamp-plugins.org"]
+
+["http://www.sonicvisualiser.org/news/index.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/news/index.html"
+category = "SitesList"
+tags = ["10th", "12th", "14th", "16th", "17th", "18th", "20th", "21st", "22nd", "23rd"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/sonic-lineup/doc/reference/1.0/en/index.html"]
+title = "Sonic Lineup: A Brief Reference"
+full_description = 'Sonic Lineup is an application for comparative visualisation and alignment of related audio recordings. This is a brief reference manual explaining the concepts used in Sonic Lineup and how to use it. This manual describes Sonic Lineup version 1.0. This document is Copyright 2019 Queen Mary, University of London. You may modify and redistribute it under the terms of the Creative Commons Attribution-ShareAlike 2.5 License. See http://creativecommons.org/licenses/by-sa/2.5/ for details. Sonic Lineup is intended for visualisation and inspection of multiple audio files which are related by way of representing the same "source material". This could mean they are recordings of different performances of the same work; different recordings of the same performance; different "takes" of parts in a studio session; or perhaps recordings of variant works or cover songs, so long as they are broadly structurally similar. With multiple such audio files loaded, Sonic Lineup will attempt to align them in time, based on an analysis of their audio content, so that you can navigate them in sync with one another in terms of the common musical content they represent. A number of different visualisation modes are provided, and switching modes takes effect for all loaded files at once. Sonic Lineup is not designed for editing, annotation, precision measurement, or any custom analysis of audio. No editing facilities are included, no adjustable parameters for the visualisation modes are provided, and it is not possible to save or export any kind of annotation or session information. In contrast to Sonic Visualiser, Sonic Lineup is intended for "quick" comparative analysis, rather than for intensive study. Most of the Sonic Lineup window is taken up with views of each of the audio files that you have opened, each in a different colour. In the very centre of each view is the aligned playback position line, a solid white line. The translucent white lines snaking down across the views are the salient feature layer mappings.'
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup/doc/reference/1.0/en/index.html"
+category = "SitesList"
+tags = ["align", "aligning", "alignment", "allow", "azimuth", "controlling", "difference", "feature", "file", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/tony/videos.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/tony/videos.html"
+category = "SitesList"
+tags = ["2019:", "editing", "note", "october", "tony", "videos"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/videos.html"]
+title = "Sonic Visualiser"
+description = "Sonic Visualiser is a program for viewing and analysing the contents of music audio files."
+full_description = '''Dan Stowell looks at temperament in harpsichord recordings, using Sonic Visualiser and the TempEst plugin. Matthias Mauch shows how to install Sonic Visualiser and a Vamp plugin and then demonstrates an automatic chord transcription. Matthias Mauch from the Centre for Digital Music at Queen Mary, University of London talks us through a simple example of labelling a song excerpt with chords in Sonic Visualiser. Chord labelling can be useful for musicological purposes, or as a reference transcription to test automatic chord labelling algorithms. Or just for music-loving fun. Matthias Mauch from the Centre for Digital Music at Queen Mary, University of London talks us through a simple example of loading an audio file and some associated data into Sonic Visualiser and looking at the results. This example is drawn directly from Matthias's everyday use in research on audio chord transcription. Note that the data shown here was calculated by a separate program and is simply loaded (from text files) for inspection in SV, rather than being calculated within the application. For information about the chord transcription and segmentation methods, see Matthias's research. An example of automatic alignment of audio for the purpose of comparing recordings, using Sonic Visualiser with the MATCH audio alignment plugin. This is an example with three different historical recordings of the same classical work. The three audio recordings are loaded, and are first played all together (cacophonously, because they have quite different timing), then solo'ed but unaligned. Then we hit the magic Align button which calculates a time-alignment, and play again with alignment, switching between tracks at will while remaining at the same point in the underlying musical score. The music is Ron Parker's mix of "Cold Duck" played by the Terrace Martin Trio, taken from the tutorial Mastering with JAMin and Ardour. This video dates from the end of 2006, covering Sonic Visualiser 1.0. Some occasional audio dropouts seem to have appeared during conversion: sorry about that. The video quality wasn't all that great to start with, but this is a nice outline — and the music's good!'''
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/videos.html"
+category = "SitesList"
+tags = ["2006:", "2009:", "2010:", "2012:", "alignment", "analysing", "annotating", "audio", "beat", "chord"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/tony"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+full_description = "Tony is a free, open-source application for Windows, Linux, and Mac, designed for high quality pitch and note transcription for scientific applications. It is designed primarily for use with solo vocal recordings. Citations: If you are using Tony in research work for publication, please cite (pdf | bib) Matthias Mauch, Chris Cannam, Rachel Bittner, George Fazekas, Justin Salamon, Jiajie Dai, Juan Bello and Simon Dixon, Computer-aided Melody Note Transcription Using the Tony Software: Accuracy and Efficiency, in Proceedings of the First International Conference on Technologies for Music Notation and Representation, 2015."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/tony"
+category = "SitesList"
+tags = ["automatic", "correction", "easy", "export", "high", "melody", "quality", "sonification", "tony", "transcription"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/sonic-lineup/download.html"]
+title = "Sonic Lineup"
+description = "Sonic Lineup is a program for quick time-aligned comparative visualisation of related audio recordings."
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/sonic-lineup/download.html"
+category = "SitesList"
+tags = ["download", "lineup", "sonic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["https://sonicvisualiser.org/doc/tutorial/en/selections-inspection.html"]
+title = "Sonic Visualiser: Using selections when studying sections of a piece"
+full_description = '''For this task we will be referring to this excerpt from the fourth movement of Prokofiev's Scythian Suite (D�sir� Defauw / Chicago Symphony Orchestra 1945, transferred from RCA Victor 78 by Bill Anderson). Playing this piece from the start, you'll notice there are three "humps" visible on the waveform at around 11, 12.5 and 16.5 seconds that correspond to repetitions of a short wind motif. We'll take a closer look at the first of these. Scroll so that the first hump is visible, and zoom in a few times using the mouse wheel or Up cursor key. Then switch to the Select tool by clicking the arrow button on the toolbar, and drag to select an area approximately from the start of the first hump to shortly before the second. As you see, the program is telling us that this selection covers a range from 10.617 seconds up to 12.498 seconds, or 1.88 seconds later. Your exact figures will probably vary, of course. You can adjust the extents of the selection after having initially selected it. Just click-and-drag the left or right edge of the purple selection region (first making sure you have the Select tool active). Let's listen to the selected area. Click the toolbar button, and then play. If the current playback point is in the middle of the selection, Sonic Visualiser will play from it to the end of the selection; if you then Play again, you'll hear the whole selection and nothing else. Adding a spectrogram view will give us another way to look at what's being played here. Use Pane -> Add Peak Frequency Spectrogram: Here we've changed the Bin Display property from Frequencies to All Bins, changed the Colour Scale from Linear to Meter, switched off Normalize Columns, and increased the Gain dial to make quieter regions more distinguishable (at the cost of blowing-out the loud red areas). We also dragged the spectrogram pane downwards to admit a slightly higher frequency range. (If you want to do that, first switch back to the Navigate tool on the toolbar so that you can drag around the spectrogram without disturbing the selection.)'''
+year_published = 2025
+clearnet = "https://sonicvisualiser.org/doc/tutorial/en/selections-inspection.html"
+category = "SitesList"
+tags = ["piece", "sections", "selections", "sonic", "studying", "using", "visualiser"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]
+
+["http://www.sonicvisualiser.org/tony/index.html"]
+title = "Tony"
+description = "Tony is a program for high quality scientific pitch and note transcription."
+full_description = "Tony is a free, open-source application for Windows, Linux, and Mac, designed for high quality pitch and note transcription for scientific applications. It is designed primarily for use with solo vocal recordings. Citations: If you are using Tony in research work for publication, please cite (pdf | bib) Matthias Mauch, Chris Cannam, Rachel Bittner, George Fazekas, Justin Salamon, Jiajie Dai, Juan Bello and Simon Dixon, Computer-aided Melody Note Transcription Using the Tony Software: Accuracy and Efficiency, in Proceedings of the First International Conference on Technologies for Music Notation and Representation, 2015."
+year_published = 2025
+clearnet = "http://www.sonicvisualiser.org/tony/index.html"
+category = "SitesList"
+tags = ["automatic", "correction", "easy", "export", "high", "melody", "quality", "sonification", "tony", "transcription"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bintray.com", "c4dm.eecs.qmul.ac.uk", "charm.rhul.ac.uk", "code.soundsoftware.ac.uk", "creativecommons.org", "discourse.appimage.org", "dssi.sourceforge.net", "elec.qmul.ac.uk", "github.com", "gnu.org", "jamin.sourceforge.net", "ladspa.org", "lists.sourceforge.net", "matthiasmauch.net", "omras2.org", "particularprograms.co.uk", "sourceforge.net", "vamp-plugins.org", "vimeo.com", "youtube.com"]

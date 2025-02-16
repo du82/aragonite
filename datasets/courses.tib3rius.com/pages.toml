@@ -1,0 +1,463 @@
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490872"]
+title = "Insecure GUI Apps | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490872"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490893"]
+title = "Port Forwarding | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490893"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489349"]
+title = "Service Exploits | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489349"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/1908534"]
+title = "Windows Privilege Escalation for OSCP & Beyond! | Tib3rius Institute"
+description = "Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell."
+full_description = '.b-114471280-top { padding-top: 16.8px; } .b-114471280-bottom { padding-bottom: 16.8px; } .b-114471280-alignment { text-align: center; } .b-114471280-content_width { max-width: 668px; } .b-114471280-image_overlay { opacity: 0.5; } .b-114471280-background_color { background-color: #000; } .b-114471280-heading_text_color { color: #FFFFFF; } .b-114471280-button_border_radius { border-radius: 25px; } .b-114471280-subheading_text_color { color: #FFFFFF; } .banner .b-114471280-heading_text_color { color: #FFFFFF } .banner .b-114471280-subheading_text_color { color: #FFFFFF } .banner__button.b-114471280-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114471280-top { padding-top: 30px; } .b-114471280-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Windows Privilege Escalation for OSCP & Beyond! Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Enroll Now! .b-114471281-top { padding-top: 33.6px; } .b-114471281-bottom { padding-bottom: 33.6px; } .b-114471281-text_color { color: #36414D; } .b-114471281-content_width { max-width: 590px; } .b-114471281-background_color { background-color: #F5F5F8; } .b-114471281-heading_text_color { color: #36414D; } .block__text .b-114471281-text_color { color: #36414D } .block__text .b-114471281-content_width { width: 590px; } .block__text .b-114471281-heading_text_color h1, .block__text .b-114471281-heading_text_color h2, .block__text .b-114471281-heading_text_color h3, .block__text .b-114471281-heading_text_color h4, .block__text .b-114471281-heading_text_color h5, .block__text .b-114471281-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114471281-top { padding-top: 60px; } .b-114471281-bottom { padding-bottom: 60px; } } Course DescriptionThis course teaches privilege escalation in Windows, from basics such as how permissions work, to in-depth coverage and demonstrations of actual privilege escalation techniques. The course comes with a full set of slides (150+), and a script which can be used by students to create an intentionally vulnerable Windows 10 configuration to practice their own privilege escalation skills on. This is a 100% privilege escalation course, with absolutely no filler!Please note that this course is aimed at students currently taking, or planning to take the OSCP, and thus covers more common forms of privilege escalation. Some extra methods are included, and more methods may be added in the future, however this course was not designed to cover every possible (or obscure) method.What will I learn? Multiple methods for escalating privileges on a Windows system. In depth explanations of why and how these methods work. Tools which can help identify potential privilege escalation vulnerabilities on a Windows system. A setup script you can run on a (free) trial version of Windows 10, creating an intentionally vulnerable VM to practice privilege escalation on. Requirements A basic understanding of Windows systems. A familiarity with hacking tools such as Kali Linux and metasploit / msfvenom. .b-114471282-top { padding-top: 16.8px; } .b-114471282-bottom { padding-bottom: 16.8px; } .b-114471282-content_width { width: 710px; } .b-114471282-background_color { background-color: #FFFFFF; } .b-114471282-heading_text_color { color: #36414D; } .b-114471282-lecture_name_background_color { background-color: #F9FAFD; } .b-114471282-section_name_background_color { background-color: #EFEFF5; } @media screen and (min-width: 768px) { .b-114471282-top { padding-top: 30px; } .b-114471282-bottom { padding-bottom: 30px; } } .block__curriculum__section__title.b-114471282-section_name_background_color { background-color: #EFEFF5; } .block__curriculum__section__list__item.b-114471282-lecture_name_background_color { background-color: #F9FAFD; } Course Curriculum Introduction Available in days days after you enroll Introduction (4:15) Start Lab Setup (5:54) Start Privilege Escalation in Windows (3:33) Start Spawning Administrator Shells (1:42) Start Privilege Escalation Tools (5:50) Start Privilege Escalation Techniques Available in days days after you enroll Kernel Exploits (4:10) Start Service Exploits (16:07) Start Registry Exploits (5:12) Start Passwords (11:34) Start Scheduled Tasks (2:16) Start Insecure GUI Apps (2:04) Start Startup Apps (2:29) Start Installed Applications (2:36) Start Hot Potato (2:26) Start Token Impersonation (10:56) Start Port Forwarding (4:08) Start Privilege Escalation Strategy (3:07) Start Extras Available in days days after you enroll getsystem (Named Pipes & Token Duplication) (7:12) Start User Privileges (3:03) Start .b-114471283-top { padding-top: 16.8px; } .b-114471283-bottom { padding-bottom: 16.8px; } .b-114471283-content_width { width: 960px; } .b-114471283-background_color { background-color: #F5F5F8; } .b-114471283-heading_text_color { color: #36414D; } .b-114471283-button_border_radius { border-radius: 25px; } .block__pricing__button.b-114471283-button_border_radius{ border-radius: 25 px; } .block__pricing__button.disabled { cursor: auto; opacity: 0.65; } .block_cap_badge_text { background-color: #F7D7D7; color: #222222; font-size: 14px; font-weight: 600; line-height: 1.2rem; padding: 4px 8px; border-radius: 4px; margin-left: 1rem; width: fit-content; } .block_coupon_badge { background-color: #e4e4e4; } .block_cap_badge_tooltip { position: relative; display: inline-block } .block_cap_badge_tooltip .block_cap_tooltip_text { visibility: hidden; font-size: 13px; font-weight: 600; font-style: normal; line-height: 19px; width: 180px; top: 100%; left: 50%; margin-left: -90px; margin-top: 10px; background-color: #222222; color: #FFFFFF; text-align: center; padding: 5px 2px; border-radius: 4px; position: absolute; z-index: 1; } .block_cap_badge_tooltip .block_cap_tooltip_text::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; } .block_cap_badge_tooltip:hover .block_cap_tooltip_text { visibility: visible; } @media screen and (min-width: 768px) { .b-114471283-top{ padding-top: 30 px; } .b-114471283-bottom{ padding-bottom: 30 px; } } @media screen and (max-width: 767px) { .block_cap_badge_text { display: block; margin: 8px 0; } } Choose a Pricing Option $19.99 One-Time Purchase Once purchased, the student will have full access to the course and any updates for life. or pay in installments: Enroll Now! $(document).ready(function() { $("form.block__pricing").on("submit", function(event) { $("#enroll-button").attr("disabled", true); $("#enroll-button").addClass("disabled"); $("#enroll-button").text("Processing..."); }); }); .b-114471285-top { padding-top: 16.8px; } .b-114471285-bottom { padding-bottom: 16.8px; } .b-114471285-text_color { color: #36414D; } .b-114471285-background_color { background-color: #FFFFFF; } .b-114471285-heading_text_color { color: #36414D; } @media screen and (min-width: 768px) { .b-114471285-top { padding-top: 30px; } .b-114471285-bottom { padding-bottom: 30px; } } Let’s keep in touch Subscribe to the mailing list and receive the latest updates Email Address By clicking this checkbox, you consent to receiving emails from this school or course Subscribe We respect your privacy. Check your inbox to confirm your subscription'
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/1908534"
+category = "SitesList"
+tags = ["#36414d;", "#ffffff;", "16.8px;", "30px;", "@media", "access", "administrator", "available", "background-color:", "beyond!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396142"]
+title = "Privilege Escalation Tools | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396142"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489924"]
+title = "Sudo | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489924"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489020"]
+title = "Privilege Escalation in Linux | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489020"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490862"]
+title = "Registry Exploits | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490862"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/p/terms"]
+title = "Terms of Use | Tib3rius Institute for Cybersecurity"
+full_description = ".b-112927332-top { padding-top: 33.6px; } .b-112927332-bottom { padding-bottom: 33.6px; } .b-112927332-text_color { color: #36414D; } .b-112927332-content_width { max-width: 590px; } .b-112927332-background_color { background-color: #F5F5F8; } .b-112927332-heading_text_color { color: #36414D; } .block__text .b-112927332-text_color { color: #36414D } .block__text .b-112927332-content_width { width: 590px; } .block__text .b-112927332-heading_text_color h1, .block__text .b-112927332-heading_text_color h2, .block__text .b-112927332-heading_text_color h3, .block__text .b-112927332-heading_text_color h4, .block__text .b-112927332-heading_text_color h5, .block__text .b-112927332-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-112927332-top { padding-top: 60px; } .b-112927332-bottom { padding-bottom: 60px; } } Terms of Use1. TermsBy accessing this School, you are agreeing to be bound by these Terms of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this School are protected by applicable copyright and trademark law.2. Use License Permission is granted to temporarily download one copy of any downloadable materials on the School’s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose, or for any public display (commercial or non-commercial); attempt to decompile or reverse engineer any software contained on the School’s web site; remove any copyright or other proprietary notations from the materials; or transfer the materials to another person or 'mirror' the materials on any other server. This license shall automatically terminate if you violate any of these restrictions and may be terminated by Company at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format. 3. DisclaimerThe materials on the School’s website are provided 'as is'. The School makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, the School does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.4. LimitationsIn no event shall the School be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the School’s website, even if the School or an authorized of the School has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.5. Revisions and ErrataThe materials appearing on the School’s website may include technical, typographical, or photographic errors. The School does not warrant that any of the materials on its web site are accurate, complete, or current. The School may make changes to the materials contained on its web site at any time without notice. The School does not, however, make any commitment to update the materials.6. LinksThe School has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by the School of the site. Use of any such linked website is at the user's own risk.7. Site Terms of Use ModificationsThe School may revise these Terms of Use for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these Terms of Use.8. Governing LawAny claim relating to the School’s website shall be governed by the laws of the School Owner’s home jurisdiction without regard to its conflict of law provisions."
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/p/terms"
+category = "SitesList"
+tags = ["color:", "disclaimer", "errata", "governing", "license", "limitations", "linked", "links", "margin-bottom:", "materials"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396136"]
+title = "Privilege Escalation in Windows | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396136"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43280659"]
+title = "Introduction | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43280659"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396147"]
+title = "Kernel Exploits | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396147"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490902"]
+title = "getsystem (Named Pipes & Token Duplication) | Tib3rius Institute for"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490902"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396150"]
+title = "Service Exploits | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396150"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490897"]
+title = "Privilege Escalation Strategy | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490897"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489347"]
+title = "Kernel Exploits | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489347"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489342"]
+title = "Spawning Root Shells | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489342"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43488991"]
+title = "Introduction | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43488991"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/p/linux-privilege-escalation-for-oscp-beyond"]
+title = "Linux Privilege Escalation for OSCP & Beyond! | Tib3rius Institute for"
+full_description = '.b-114462898-top { padding-top: 16.8px; } .b-114462898-bottom { padding-bottom: 16.8px; } .b-114462898-alignment { text-align: center; } .b-114462898-content_width { max-width: 668px; } .b-114462898-image_overlay { opacity: 0.5; } .b-114462898-background_color { background-color: #000000; } .b-114462898-heading_text_color { color: #FFFFFF; } .b-114462898-button_border_radius { border-radius: 25px; } .b-114462898-subheading_text_color { color: #FFFFFF; } .banner .b-114462898-heading_text_color { color: #FFFFFF } .banner .b-114462898-subheading_text_color { color: #FFFFFF } .banner__button.b-114462898-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114462898-top { padding-top: 30px; } .b-114462898-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Linux Privilege Escalation for OSCP & Beyond! Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Enroll Now! .b-114462899-top { padding-top: 16.8px; } .b-114462899-bottom { padding-bottom: 16.8px; } .b-114462899-text_color { color: #36414D; } .b-114462899-content_width { max-width: 590px; } .b-114462899-background_color { background-color: #F5F5F8; } .b-114462899-heading_text_color { color: #36414D; } .block__text .b-114462899-text_color { color: #36414D } .block__text .b-114462899-content_width { width: 590px; } .block__text .b-114462899-heading_text_color h1, .block__text .b-114462899-heading_text_color h2, .block__text .b-114462899-heading_text_color h3, .block__text .b-114462899-heading_text_color h4, .block__text .b-114462899-heading_text_color h5, .block__text .b-114462899-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114462899-top { padding-top: 30px; } .b-114462899-bottom { padding-bottom: 30px; } } Course DescriptionThis course teaches privilege escalation in Linux, from basics such as how permissions work, to in-depth coverage and demonstrations of actual privilege escalation techniques. The course comes with a full set of slides (170+), and an intentionally misconfigured Debian VM which can be used by students to practice their own privilege escalation.Please note that this course is aimed at students currently taking, or planning to take the OSCP, and thus covers more common forms of privilege escalation. Some extra methods are included, and more methods may be added in the future, however this course was not designed to cover every possible (or obscure) method. What will I learn? Multiple methods for escalating privileges on a Linux system. In depth explanations of why and how these methods work. Tools which can help identify potential privilege escalation vulnerabilities on a Linux system. A free intentionally vulnerable Debian Linux VM to practice privilege escalation on. Requirements A basic understanding of Linux systems. A familiarity with hacking tools such as Kali Linux and metasploit / msfvenom. .b-114462900-top { padding-top: 16.8px; } .b-114462900-bottom { padding-bottom: 16.8px; } .b-114462900-content_width { width: 710px; } .b-114462900-background_color { background-color: #FFFFFF; } .b-114462900-heading_text_color { color: #36414D; } .b-114462900-lecture_name_background_color { background-color: #F9FAFD; } .b-114462900-section_name_background_color { background-color: #EFEFF5; } @media screen and (min-width: 768px) { .b-114462900-top { padding-top: 30px; } .b-114462900-bottom { padding-bottom: 30px; } } .block__curriculum__section__title.b-114462900-section_name_background_color { background-color: #EFEFF5; } .block__curriculum__section__list__item.b-114462900-lecture_name_background_color { background-color: #F9FAFD; } Course Curriculum Introduction Available in days days after you enroll Introduction (4:10) Start Privilege Escalation in Linux (0:49) Start Understanding Permissions in Linux (6:24) Start Spawning Root Shells (2:11) Start Privilege Escalation Tools (4:56) Start Privilege Escalation Techniques Available in days days after you enroll Kernel Exploits (3:44) Start Service Exploits (7:29) Start Weak File Permissions (9:36) Start Sudo (9:01) Start Cron Jobs (8:42) Start SUID / SGID Executables (17:20) Start Passwords & Keys (3:32) Start NFS (3:48) Start Conclusions Available in days days after you enroll Privilege Escalation Strategy (3:06) Start .b-114462901-top { padding-top: 16.8px; } .b-114462901-bottom { padding-bottom: 16.8px; } .b-114462901-content_width { width: 710px; } .b-114462901-background_color { background-color: #F5F5F8; } .b-114462901-heading_text_color { color: #36414D; } .b-114462901-button_border_radius { border-radius: 25px; } .block__pricing__button.b-114462901-button_border_radius{ border-radius: 25 px; } .block__pricing__button.disabled { cursor: auto; opacity: 0.65; } .block_cap_badge_text { background-color: #F7D7D7; color: #222222; font-size: 14px; font-weight: 600; line-height: 1.2rem; padding: 4px 8px; border-radius: 4px; margin-left: 1rem; width: fit-content; } .block_coupon_badge { background-color: #e4e4e4; } .block_cap_badge_tooltip { position: relative; display: inline-block } .block_cap_badge_tooltip .block_cap_tooltip_text { visibility: hidden; font-size: 13px; font-weight: 600; font-style: normal; line-height: 19px; width: 180px; top: 100%; left: 50%; margin-left: -90px; margin-top: 10px; background-color: #222222; color: #FFFFFF; text-align: center; padding: 5px 2px; border-radius: 4px; position: absolute; z-index: 1; } .block_cap_badge_tooltip .block_cap_tooltip_text::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; } .block_cap_badge_tooltip:hover .block_cap_tooltip_text { visibility: visible; } @media screen and (min-width: 768px) { .b-114462901-top{ padding-top: 30 px; } .b-114462901-bottom{ padding-bottom: 30 px; } } @media screen and (max-width: 767px) { .block_cap_badge_text { display: block; margin: 8px 0; } } Pricing $19.99 One-Time Purchase Once purchased, the student will have full access to the course and any updates for life. or pay in installments: Enroll Now! $(document).ready(function() { $("form.block__pricing").on("submit", function(event) { $("#enroll-button").attr("disabled", true); $("#enroll-button").addClass("disabled"); $("#enroll-button").text("Processing..."); }); }); .b-114462903-top { padding-top: 16.8px; } .b-114462903-bottom { padding-bottom: 16.8px; } .b-114462903-text_color { color: #36414D; } .b-114462903-background_color { background-color: #FFFFFF; } .b-114462903-heading_text_color { color: #36414D; } @media screen and (min-width: 768px) { .b-114462903-top { padding-top: 30px; } .b-114462903-bottom { padding-bottom: 30px; } } Let’s keep in touch Subscribe to the mailing list and receive the latest updates Email Address By clicking this checkbox, you consent to receiving emails from this school or course Subscribe We respect your privacy. Check your inbox to confirm your subscription'
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/p/linux-privilege-escalation-for-oscp-beyond"
+category = "SitesList"
+tags = ["#36414d;", "#ffffff;", "16.8px;", "30px;", "@media", "access", "available", "background-color:", "beyond!", "border-radius:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489937"]
+title = "Cron Jobs | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489937"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/sign_up"]
+title = "Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/sign_up"
+category = "SitesList"
+tags = ["sign"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489343"]
+title = "Privilege Escalation Tools | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489343"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490883"]
+title = "Token Impersonation | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490883"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/author/1565253"]
+title = "Tib3rius Institute for Cybersecurity"
+full_description = "Category: All All Privilege Escalation (2) Author: Tib3rius All Tib3rius Find a product Tib3rius Courses Windows Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Tib3rius % COMPLETE $19.99 Linux Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Tib3rius % COMPLETE $19.99 © Tib3rius Institute for Cybersecurity 2025 Terms of Use Privacy Policy Teach Online with"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/author/1565253"
+category = "SitesList"
+tags = ["administrator", "beyond!", "courses", "escalation", "exploiting", "finding", "gain", "linux", "misconfigurations", "oscp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490131"]
+title = "Passwords & Keys | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490131"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490866"]
+title = "Passwords | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490866"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490871"]
+title = "Scheduled Tasks | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490871"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com"]
+title = "Homepage | Tib3rius Institute for Cybersecurity"
+full_description = ".b-114460832-top { padding-top: 16.8px; } .b-114460832-bottom { padding-bottom: 16.8px; } .b-114460832-alignment { text-align: center; } .b-114460832-content_width { max-width: 668px; } .b-114460832-image_overlay { opacity: 0.4; } .b-114460832-background_color { background-color: #000000; } .b-114460832-heading_text_color { color: #FFFFFF; } .b-114460832-button_border_radius { border-radius: 25px; } .b-114460832-subheading_text_color { color: #FFFFFF; } .banner .b-114460832-heading_text_color { color: #FFFFFF } .banner .b-114460832-subheading_text_color { color: #FFFFFF } .banner__button.b-114460832-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114460832-top { padding-top: 30px; } .b-114460832-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Tib3rius Institutefor Cybersecurity Quality courses from an instructor with over10 years of Cybersecurity experience Enroll Now! .b-114460833-top { padding-top: 16.8px; } .b-114460833-bottom { padding-bottom: 16.8px; } .b-114460833-text_color { color: #36414D; } .b-114460833-content_width { max-width: 590px; } .b-114460833-background_color { background-color: #F5F5F8; } .b-114460833-heading_text_color { color: #36414D; } .block__text .b-114460833-text_color { color: #36414D } .block__text .b-114460833-content_width { width: 590px; } .block__text .b-114460833-heading_text_color h1, .block__text .b-114460833-heading_text_color h2, .block__text .b-114460833-heading_text_color h3, .block__text .b-114460833-heading_text_color h4, .block__text .b-114460833-heading_text_color h5, .block__text .b-114460833-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114460833-top { padding-top: 30px; } .b-114460833-bottom { padding-bottom: 30px; } } The Tib3rius Institute for Cybersecurity is a hub for all courses created and taught by Tib3rius, a web application penetration tester, twitch streamer, content creator, tool developer, and industry veteran.Tib3rius is most well known for his AutoRecon tool, which has helped countless students pass their OSCP exam. He also developed one of the most popular buffer overflow practice rooms on TryHackMe.During his OSCP studies, Tib3rius realized that there were no dedicated courses for Privilege Escalation, and determined to create one to help future students. In the end, he created two: one for Linux, and one for Windows. Both have over 10k students on the Udemy platform, with average ratings of 4.7+ out of 5.These courses are available now on this platform, with an upcoming web application penetration course planned for release by the end of 2022. .b-114460837-top { padding-top: 16.8px; } .b-114460837-bottom { padding-bottom: 16.8px; } .b-114460837-card_style { --card_style: grid; } .b-114460837-gutter_width { --gutter-width: 24px; } .b-114460837-content_width { max-width: 960px; } .b-114460837-heading_color { color: #36414D; } .b-114460837-background_color { background-color: #F5F5F8; } .b-114460837-card_border_color { border-color: #000000; } .b-114460837-card_border_width { border-width: 0px; } .b-114460837-card_border_radius { border-radius: 0px; } .b-114460837-card_text_alignment { text-align: center; } .b-114460837-button_border_radius { border-radius: 0px; } .b-114460837-card_background_color { background-color: #FFFFFF; } .block__featured-products__heading_text.b-114460837-heading_color { color: #36414D; } .block__featured-products.b-114460837-background_color { background-color: #F5F5F8; } .block__featured-products .b-114460837-card_border_color, .block__featured-products .b-114460837-card_border_width { border: 0px solid #000000; } .block__featured-products .b-114460837-card_text_alignment .featured-product-card__content__title, .block__featured-products .b-114460837-card_text_alignment .course-card__content__subtitle { text-align: center; } .featured-product-card.b-114460837-card_background_color { background-color: #FFFFFF; } .block__featured-products__button .b-114460837-button_border_radius { border-radius: 0px; } @media screen and (min-width: 768px) { .b-114460837-top { padding-top: 30px; } .b-114460837-bottom { padding-bottom: 30px; } .b-114460837-gutter_width .block__columns, .b-114460837-gutter_width .block__columns__fixed { grid-column-gap: 24px; } } Our Courses & Bundles Windows Privilege Escalation for OSCP & Beyond! Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Tib3rius % COMPLETE $19.99 Linux Privilege Escalation for OSCP & Beyond! Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Tib3rius % COMPLETE $19.99 Privilege Escalation for OSCP and Beyond - Bundle! Save money by purchasing both the Windows and Linux Privilege Escalation courses together! Courses: 2 $34.99 View All Products .b-114460838-top { padding-top: 16.8px; } .b-114460838-bottom { padding-bottom: 16.8px; } .b-114460838-text_color { color: #36414D; } .b-114460838-background_color { background-color: #FFFFFF; } .b-114460838-heading_text_color { color: #36414D; } @media screen and (min-width: 768px) { .b-114460838-top { padding-top: 30px; } .b-114460838-bottom { padding-bottom: 30px; } } Let’s keep in touch Subscribe to the mailing list and receive the latest updates Email Address By clicking this checkbox, you consent to receiving emails from this school or course Subscribe We respect your privacy. Check your inbox to confirm your subscription"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com"
+category = "SitesList"
+tags = ["#36414d;", "#ffffff;", "0px;", "16.8px;", "30px;", "@media", "administrator", "background-color:", "beyond", "beyond!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com"]
+
+["https://courses.tib3rius.com/p/privacy"]
+title = "Privacy Policy | Tib3rius Institute for Cybersecurity"
+full_description = ".b-112927331-top { padding-top: 33.6px; } .b-112927331-bottom { padding-bottom: 33.6px; } .b-112927331-text_color { color: #36414D; } .b-112927331-content_width { max-width: 590px; } .b-112927331-background_color { background-color: #F5F5F8; } .b-112927331-heading_text_color { color: #36414D; } .block__text .b-112927331-text_color { color: #36414D } .block__text .b-112927331-content_width { width: 590px; } .block__text .b-112927331-heading_text_color h1, .block__text .b-112927331-heading_text_color h2, .block__text .b-112927331-heading_text_color h3, .block__text .b-112927331-heading_text_color h4, .block__text .b-112927331-heading_text_color h5, .block__text .b-112927331-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-112927331-top { padding-top: 60px; } .b-112927331-bottom { padding-bottom: 60px; } } Privacy PolicyThis Privacy Policy governs the manner in which the School collects, uses, maintains and discloses information collected from users (each, a “Student”) of the School. This Privacy Policy applies to the School and all Courses offered by the School.Personal identification informationWe may collect personal identification information from Students in a variety of ways, including, but not limited to, when Students enroll in the School or a Course within the School, subscribe to a newsletter, and in connection with other activities, services, features, or resources we make available in our School. Students may visit the School anonymously. We will collect personal identification information from Students only if they voluntarily submit such information to us. Students can refuse to supply personal identification information but doing so may prevent them from engaging in certain School related activities.How we use collected informationThe School may collect and use Students’ personal identification information for the following purposes: To improve customer serviceInformation you provide helps us respond to your customer service requests and support needs more efficiently. To personalize user experienceWe may use information in the aggregate to understand how our Students as a group use the services and resources provided in our School. To send periodic emailsWe may use Student email addresses to send Students information and updates pertaining to their order. Student email addresses may also be used to respond to Student inquiries, questions, or other requests. Sharing your personal informationWe do not sell, trade, or rent Student personal identification information to others.Third party websitesStudent may find advertising or other content in our School that link to the websites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these websites and are not responsible for the practices employed by websites linked to or from our School. In addition, these websites or services, including their content and links, may be constantly changing. These websites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Student, is subject to that website's own terms and policies.Changes to this Privacy PolicyThe School has the discretion to update this Privacy Policy at any time. We encourage Students to frequently check this page for any changes. You acknowledge and agree that it is your responsibility to review this Privacy Policy periodically and become aware of modifications.Your acceptance of these termsBy enrolling in the School, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, please do not enroll in the School. Your continued enrollment in the School following the posting of changes to this Privacy Policy will be deemed your acceptance of those changes."
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/p/privacy"
+category = "SitesList"
+tags = ["acceptance", "changes", "collected", "color:", "identification", "information", "margin-bottom:", "party", "personal", "privacy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/p/windows-privilege-escalation-for-oscp-beyond"]
+title = "Windows Privilege Escalation for OSCP & Beyond! | Tib3rius Institute"
+description = "Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell."
+full_description = '.b-114471280-top { padding-top: 16.8px; } .b-114471280-bottom { padding-bottom: 16.8px; } .b-114471280-alignment { text-align: center; } .b-114471280-content_width { max-width: 668px; } .b-114471280-image_overlay { opacity: 0.5; } .b-114471280-background_color { background-color: #000; } .b-114471280-heading_text_color { color: #FFFFFF; } .b-114471280-button_border_radius { border-radius: 25px; } .b-114471280-subheading_text_color { color: #FFFFFF; } .banner .b-114471280-heading_text_color { color: #FFFFFF } .banner .b-114471280-subheading_text_color { color: #FFFFFF } .banner__button.b-114471280-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114471280-top { padding-top: 30px; } .b-114471280-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Windows Privilege Escalation for OSCP & Beyond! Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Enroll Now! .b-114471281-top { padding-top: 33.6px; } .b-114471281-bottom { padding-bottom: 33.6px; } .b-114471281-text_color { color: #36414D; } .b-114471281-content_width { max-width: 590px; } .b-114471281-background_color { background-color: #F5F5F8; } .b-114471281-heading_text_color { color: #36414D; } .block__text .b-114471281-text_color { color: #36414D } .block__text .b-114471281-content_width { width: 590px; } .block__text .b-114471281-heading_text_color h1, .block__text .b-114471281-heading_text_color h2, .block__text .b-114471281-heading_text_color h3, .block__text .b-114471281-heading_text_color h4, .block__text .b-114471281-heading_text_color h5, .block__text .b-114471281-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114471281-top { padding-top: 60px; } .b-114471281-bottom { padding-bottom: 60px; } } Course DescriptionThis course teaches privilege escalation in Windows, from basics such as how permissions work, to in-depth coverage and demonstrations of actual privilege escalation techniques. The course comes with a full set of slides (150+), and a script which can be used by students to create an intentionally vulnerable Windows 10 configuration to practice their own privilege escalation skills on. This is a 100% privilege escalation course, with absolutely no filler!Please note that this course is aimed at students currently taking, or planning to take the OSCP, and thus covers more common forms of privilege escalation. Some extra methods are included, and more methods may be added in the future, however this course was not designed to cover every possible (or obscure) method.What will I learn? Multiple methods for escalating privileges on a Windows system. In depth explanations of why and how these methods work. Tools which can help identify potential privilege escalation vulnerabilities on a Windows system. A setup script you can run on a (free) trial version of Windows 10, creating an intentionally vulnerable VM to practice privilege escalation on. Requirements A basic understanding of Windows systems. A familiarity with hacking tools such as Kali Linux and metasploit / msfvenom. .b-114471282-top { padding-top: 16.8px; } .b-114471282-bottom { padding-bottom: 16.8px; } .b-114471282-content_width { width: 710px; } .b-114471282-background_color { background-color: #FFFFFF; } .b-114471282-heading_text_color { color: #36414D; } .b-114471282-lecture_name_background_color { background-color: #F9FAFD; } .b-114471282-section_name_background_color { background-color: #EFEFF5; } @media screen and (min-width: 768px) { .b-114471282-top { padding-top: 30px; } .b-114471282-bottom { padding-bottom: 30px; } } .block__curriculum__section__title.b-114471282-section_name_background_color { background-color: #EFEFF5; } .block__curriculum__section__list__item.b-114471282-lecture_name_background_color { background-color: #F9FAFD; } Course Curriculum Introduction Available in days days after you enroll Introduction (4:15) Start Lab Setup (5:54) Start Privilege Escalation in Windows (3:33) Start Spawning Administrator Shells (1:42) Start Privilege Escalation Tools (5:50) Start Privilege Escalation Techniques Available in days days after you enroll Kernel Exploits (4:10) Start Service Exploits (16:07) Start Registry Exploits (5:12) Start Passwords (11:34) Start Scheduled Tasks (2:16) Start Insecure GUI Apps (2:04) Start Startup Apps (2:29) Start Installed Applications (2:36) Start Hot Potato (2:26) Start Token Impersonation (10:56) Start Port Forwarding (4:08) Start Privilege Escalation Strategy (3:07) Start Extras Available in days days after you enroll getsystem (Named Pipes & Token Duplication) (7:12) Start User Privileges (3:03) Start .b-114471283-top { padding-top: 16.8px; } .b-114471283-bottom { padding-bottom: 16.8px; } .b-114471283-content_width { width: 960px; } .b-114471283-background_color { background-color: #F5F5F8; } .b-114471283-heading_text_color { color: #36414D; } .b-114471283-button_border_radius { border-radius: 25px; } .block__pricing__button.b-114471283-button_border_radius{ border-radius: 25 px; } .block__pricing__button.disabled { cursor: auto; opacity: 0.65; } .block_cap_badge_text { background-color: #F7D7D7; color: #222222; font-size: 14px; font-weight: 600; line-height: 1.2rem; padding: 4px 8px; border-radius: 4px; margin-left: 1rem; width: fit-content; } .block_coupon_badge { background-color: #e4e4e4; } .block_cap_badge_tooltip { position: relative; display: inline-block } .block_cap_badge_tooltip .block_cap_tooltip_text { visibility: hidden; font-size: 13px; font-weight: 600; font-style: normal; line-height: 19px; width: 180px; top: 100%; left: 50%; margin-left: -90px; margin-top: 10px; background-color: #222222; color: #FFFFFF; text-align: center; padding: 5px 2px; border-radius: 4px; position: absolute; z-index: 1; } .block_cap_badge_tooltip .block_cap_tooltip_text::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; } .block_cap_badge_tooltip:hover .block_cap_tooltip_text { visibility: visible; } @media screen and (min-width: 768px) { .b-114471283-top{ padding-top: 30 px; } .b-114471283-bottom{ padding-bottom: 30 px; } } @media screen and (max-width: 767px) { .block_cap_badge_text { display: block; margin: 8px 0; } } Choose a Pricing Option $19.99 One-Time Purchase Once purchased, the student will have full access to the course and any updates for life. or pay in installments: Enroll Now! $(document).ready(function() { $("form.block__pricing").on("submit", function(event) { $("#enroll-button").attr("disabled", true); $("#enroll-button").addClass("disabled"); $("#enroll-button").text("Processing..."); }); }); .b-114471285-top { padding-top: 16.8px; } .b-114471285-bottom { padding-bottom: 16.8px; } .b-114471285-text_color { color: #36414D; } .b-114471285-background_color { background-color: #FFFFFF; } .b-114471285-heading_text_color { color: #36414D; } @media screen and (min-width: 768px) { .b-114471285-top { padding-top: 30px; } .b-114471285-bottom { padding-bottom: 30px; } } Let’s keep in touch Subscribe to the mailing list and receive the latest updates Email Address By clicking this checkbox, you consent to receiving emails from this school or course Subscribe We respect your privacy. Check your inbox to confirm your subscription'
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/p/windows-privilege-escalation-for-oscp-beyond"
+category = "SitesList"
+tags = ["#36414d;", "#ffffff;", "16.8px;", "30px;", "@media", "access", "administrator", "available", "background-color:", "beyond!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490109"]
+title = "SUID / SGID Executables | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490109"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396125"]
+title = "Lab Setup | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396125"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490878"]
+title = "Installed Applications | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490878"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490881"]
+title = "Hot Potato | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490881"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/category/privilege-escalation"]
+title = "Tib3rius Institute for Cybersecurity"
+full_description = "Category: Privilege Escalation All Privilege Escalation (2) Author: All All Tib3rius Find a product Privilege Escalation Courses Windows Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Tib3rius % COMPLETE $19.99 Linux Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Tib3rius % COMPLETE $19.99 © Tib3rius Institute for Cybersecurity 2025 Terms of Use Privacy Policy Teach Online with"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/category/privilege-escalation"
+category = "SitesList"
+tags = ["administrator", "beyond!", "courses", "escalation", "exploiting", "finding", "gain", "linux", "misconfigurations", "oscp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/1918170"]
+title = "Linux Privilege Escalation for OSCP & Beyond! | Tib3rius Institute for"
+full_description = '.b-114462898-top { padding-top: 16.8px; } .b-114462898-bottom { padding-bottom: 16.8px; } .b-114462898-alignment { text-align: center; } .b-114462898-content_width { max-width: 668px; } .b-114462898-image_overlay { opacity: 0.5; } .b-114462898-background_color { background-color: #000000; } .b-114462898-heading_text_color { color: #FFFFFF; } .b-114462898-button_border_radius { border-radius: 25px; } .b-114462898-subheading_text_color { color: #FFFFFF; } .banner .b-114462898-heading_text_color { color: #FFFFFF } .banner .b-114462898-subheading_text_color { color: #FFFFFF } .banner__button.b-114462898-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114462898-top { padding-top: 30px; } .b-114462898-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Linux Privilege Escalation for OSCP & Beyond! Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Enroll Now! .b-114462899-top { padding-top: 16.8px; } .b-114462899-bottom { padding-bottom: 16.8px; } .b-114462899-text_color { color: #36414D; } .b-114462899-content_width { max-width: 590px; } .b-114462899-background_color { background-color: #F5F5F8; } .b-114462899-heading_text_color { color: #36414D; } .block__text .b-114462899-text_color { color: #36414D } .block__text .b-114462899-content_width { width: 590px; } .block__text .b-114462899-heading_text_color h1, .block__text .b-114462899-heading_text_color h2, .block__text .b-114462899-heading_text_color h3, .block__text .b-114462899-heading_text_color h4, .block__text .b-114462899-heading_text_color h5, .block__text .b-114462899-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114462899-top { padding-top: 30px; } .b-114462899-bottom { padding-bottom: 30px; } } Course DescriptionThis course teaches privilege escalation in Linux, from basics such as how permissions work, to in-depth coverage and demonstrations of actual privilege escalation techniques. The course comes with a full set of slides (170+), and an intentionally misconfigured Debian VM which can be used by students to practice their own privilege escalation.Please note that this course is aimed at students currently taking, or planning to take the OSCP, and thus covers more common forms of privilege escalation. Some extra methods are included, and more methods may be added in the future, however this course was not designed to cover every possible (or obscure) method. What will I learn? Multiple methods for escalating privileges on a Linux system. In depth explanations of why and how these methods work. Tools which can help identify potential privilege escalation vulnerabilities on a Linux system. A free intentionally vulnerable Debian Linux VM to practice privilege escalation on. Requirements A basic understanding of Linux systems. A familiarity with hacking tools such as Kali Linux and metasploit / msfvenom. .b-114462900-top { padding-top: 16.8px; } .b-114462900-bottom { padding-bottom: 16.8px; } .b-114462900-content_width { width: 710px; } .b-114462900-background_color { background-color: #FFFFFF; } .b-114462900-heading_text_color { color: #36414D; } .b-114462900-lecture_name_background_color { background-color: #F9FAFD; } .b-114462900-section_name_background_color { background-color: #EFEFF5; } @media screen and (min-width: 768px) { .b-114462900-top { padding-top: 30px; } .b-114462900-bottom { padding-bottom: 30px; } } .block__curriculum__section__title.b-114462900-section_name_background_color { background-color: #EFEFF5; } .block__curriculum__section__list__item.b-114462900-lecture_name_background_color { background-color: #F9FAFD; } Course Curriculum Introduction Available in days days after you enroll Introduction (4:10) Start Privilege Escalation in Linux (0:49) Start Understanding Permissions in Linux (6:24) Start Spawning Root Shells (2:11) Start Privilege Escalation Tools (4:56) Start Privilege Escalation Techniques Available in days days after you enroll Kernel Exploits (3:44) Start Service Exploits (7:29) Start Weak File Permissions (9:36) Start Sudo (9:01) Start Cron Jobs (8:42) Start SUID / SGID Executables (17:20) Start Passwords & Keys (3:32) Start NFS (3:48) Start Conclusions Available in days days after you enroll Privilege Escalation Strategy (3:06) Start .b-114462901-top { padding-top: 16.8px; } .b-114462901-bottom { padding-bottom: 16.8px; } .b-114462901-content_width { width: 710px; } .b-114462901-background_color { background-color: #F5F5F8; } .b-114462901-heading_text_color { color: #36414D; } .b-114462901-button_border_radius { border-radius: 25px; } .block__pricing__button.b-114462901-button_border_radius{ border-radius: 25 px; } .block__pricing__button.disabled { cursor: auto; opacity: 0.65; } .block_cap_badge_text { background-color: #F7D7D7; color: #222222; font-size: 14px; font-weight: 600; line-height: 1.2rem; padding: 4px 8px; border-radius: 4px; margin-left: 1rem; width: fit-content; } .block_coupon_badge { background-color: #e4e4e4; } .block_cap_badge_tooltip { position: relative; display: inline-block } .block_cap_badge_tooltip .block_cap_tooltip_text { visibility: hidden; font-size: 13px; font-weight: 600; font-style: normal; line-height: 19px; width: 180px; top: 100%; left: 50%; margin-left: -90px; margin-top: 10px; background-color: #222222; color: #FFFFFF; text-align: center; padding: 5px 2px; border-radius: 4px; position: absolute; z-index: 1; } .block_cap_badge_tooltip .block_cap_tooltip_text::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; } .block_cap_badge_tooltip:hover .block_cap_tooltip_text { visibility: visible; } @media screen and (min-width: 768px) { .b-114462901-top{ padding-top: 30 px; } .b-114462901-bottom{ padding-bottom: 30 px; } } @media screen and (max-width: 767px) { .block_cap_badge_text { display: block; margin: 8px 0; } } Pricing $19.99 One-Time Purchase Once purchased, the student will have full access to the course and any updates for life. or pay in installments: Enroll Now! $(document).ready(function() { $("form.block__pricing").on("submit", function(event) { $("#enroll-button").attr("disabled", true); $("#enroll-button").addClass("disabled"); $("#enroll-button").text("Processing..."); }); }); .b-114462903-top { padding-top: 16.8px; } .b-114462903-bottom { padding-bottom: 16.8px; } .b-114462903-text_color { color: #36414D; } .b-114462903-background_color { background-color: #FFFFFF; } .b-114462903-heading_text_color { color: #36414D; } @media screen and (min-width: 768px) { .b-114462903-top { padding-top: 30px; } .b-114462903-bottom { padding-bottom: 30px; } } Let’s keep in touch Subscribe to the mailing list and receive the latest updates Email Address By clicking this checkbox, you consent to receiving emails from this school or course Subscribe We respect your privacy. Check your inbox to confirm your subscription'
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/1918170"
+category = "SitesList"
+tags = ["#36414d;", "#ffffff;", "16.8px;", "30px;", "@media", "access", "available", "background-color:", "beyond!", "border-radius:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490147"]
+title = "NFS | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490147"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490190"]
+title = "Privilege Escalation Strategy | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43490190"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses"]
+title = "Tib3rius Institute for Cybersecurity"
+description = "Save money by purchasing both the Windows and Linux Privilege Escalation courses together!"
+full_description = "Category: All All Privilege Escalation (2) Author: All All Tib3rius Find a product Courses Windows Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Tib3rius % COMPLETE $19.99 Linux Privilege Escalation for OSCP & Beyond! Available until Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Tib3rius % COMPLETE $19.99 Bundles Privilege Escalation for OSCP and Beyond - Bundle! Save money by purchasing both the Windows and Linux Privilege Escalation courses together! Courses: 2 $34.99 © Tib3rius Institute for Cybersecurity 2025 Terms of Use Privacy Policy Teach Online with"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses"
+category = "SitesList"
+tags = ["administrator", "beyond", "beyond!", "bundle!", "bundles", "courses", "escalation", "exploiting", "finding", "gain"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com"]
+
+["https://courses.tib3rius.com/p/privilege-escalation-for-oscp-and-beyond-bundle"]
+title = "Privilege Escalation for OSCP and Beyond - Bundle! | Tib3rius"
+full_description = '.b-114696430-top { padding-top: 16.8px; } .b-114696430-bottom { padding-bottom: 16.8px; } .b-114696430-alignment { text-align: center; } .b-114696430-content_width { max-width: 668px; } .b-114696430-image_overlay { opacity: 0.5; } .b-114696430-background_color { background-color: #000000; } .b-114696430-heading_text_color { color: #FFFFFF; } .b-114696430-button_border_radius { border-radius: 25px; } .b-114696430-subheading_text_color { color: #FFFFFF; } .banner .b-114696430-heading_text_color { color: #FFFFFF } .banner .b-114696430-subheading_text_color { color: #FFFFFF } .banner__button.b-114696430-button_border_radius { border-radius: 25; } @media screen and (min-width: 768px) { .b-114696430-top { padding-top: 30px; } .b-114696430-bottom { padding-bottom: 30px; } } .bl { width: 100%; } Privilege Escalation for OSCP and Beyond - Bundle! Save money by purchasing both the Windows and Linux Privilege Escalation courses together! Enroll Now! .b-114696431-top { padding-top: 16.8px; } .b-114696431-bottom { padding-bottom: 16.8px; } .b-114696431-text_color { color: #36414D; } .b-114696431-content_width { max-width: 590px; } .b-114696431-background_color { background-color: #F5F5F8; } .b-114696431-heading_text_color { color: #36414D; } .block__text .b-114696431-text_color { color: #36414D } .block__text .b-114696431-content_width { width: 590px; } .block__text .b-114696431-heading_text_color h1, .block__text .b-114696431-heading_text_color h2, .block__text .b-114696431-heading_text_color h3, .block__text .b-114696431-heading_text_color h4, .block__text .b-114696431-heading_text_color h5, .block__text .b-114696431-heading_text_color h6 { color: #36414D } .block__text .block__text-wrapper h2{ margin-bottom: 2px; } .block__text .block__text-wrapper h3{ margin-bottom: 5px; } .block__text .block__text-wrapper h4{ margin-bottom: 9px; } .block__text .block__text-wrapper h5{ margin-bottom: 11px; } .block__text .block__text-wrapper h6{ margin-bottom: 14px; } @media screen and (min-width: 768px) { .b-114696431-top { padding-top: 30px; } .b-114696431-bottom { padding-bottom: 30px; } } This bundle contains both the Windows & Linux Privilege Escalation for OSCP and Beyond! courses for a discounted price. .b-114696432-top { padding-top: 16.8px; } .b-114696432-bottom { padding-bottom: 16.8px; } .b-114696432-card_style { --card_style: grid; } .b-114696432-gutter_width { --gutter-width: 24px; } .b-114696432-content_width { max-width: 960px; } .b-114696432-heading_color { color: #36414D; } .b-114696432-background_color { background-color: #F5F5F8; } .b-114696432-card_border_color { border-color: #000000; } .b-114696432-card_border_width { border-width: 0px; } .b-114696432-card_border_radius { border-radius: 0px; } .b-114696432-card_text_alignment { text-align: center; } .b-114696432-card_background_color { background-color: #FFFFFF; } .block__featured-products__heading_text.b-114696432-heading_color { color: #36414D; } .block__featured-products.b-114696432-background_color { background-color: #F5F5F8; } .block__featured-products .b-114696432-card_border_color, .block__featured-products .b-114696432-card_border_width { border: 0px solid #000000; } .block__featured-products .b-114696432-card_text_alignment .featured-product-card__content__title, .block__featured-products .b-114696432-card_text_alignment .course-card__content__subtitle { text-align: center; } .featured-product-card.b-114696432-card_background_color { background-color: #FFFFFF; } @media screen and (min-width: 768px) { .b-114696432-top { padding-top: 30px; } .b-114696432-bottom { padding-bottom: 30px; } .b-114696432-gutter_width .block__columns, .b-114696432-gutter_width .block__columns__fixed { grid-column-gap: 24px; } } Bundle Contents Windows Privilege Escalation for OSCP & Beyond! Finding and exploiting Windows vulnerabilities and misconfigurations to gain an administrator shell. Tib3rius % COMPLETE $19.99 Linux Privilege Escalation for OSCP & Beyond! Finding and exploiting Linux vulnerabilities and misconfigurations to gain a root shell. Tib3rius % COMPLETE $19.99 .b-114696433-top { padding-top: 16.8px; } .b-114696433-bottom { padding-bottom: 16.8px; } .b-114696433-content_width { width: 960px; } .b-114696433-background_color { background-color: #F5F5F8; } .b-114696433-heading_text_color { color: #36414D; } .b-114696433-button_border_radius { border-radius: 25px; } .block__pricing__button.b-114696433-button_border_radius{ border-radius: 25 px; } .block__pricing__button.disabled { cursor: auto; opacity: 0.65; } .block_cap_badge_text { background-color: #F7D7D7; color: #222222; font-size: 14px; font-weight: 600; line-height: 1.2rem; padding: 4px 8px; border-radius: 4px; margin-left: 1rem; width: fit-content; } .block_coupon_badge { background-color: #e4e4e4; } .block_cap_badge_tooltip { position: relative; display: inline-block } .block_cap_badge_tooltip .block_cap_tooltip_text { visibility: hidden; font-size: 13px; font-weight: 600; font-style: normal; line-height: 19px; width: 180px; top: 100%; left: 50%; margin-left: -90px; margin-top: 10px; background-color: #222222; color: #FFFFFF; text-align: center; padding: 5px 2px; border-radius: 4px; position: absolute; z-index: 1; } .block_cap_badge_tooltip .block_cap_tooltip_text::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: transparent transparent black transparent; } .block_cap_badge_tooltip:hover .block_cap_tooltip_text { visibility: visible; } @media screen and (min-width: 768px) { .b-114696433-top{ padding-top: 30 px; } .b-114696433-bottom{ padding-bottom: 30 px; } } @media screen and (max-width: 767px) { .block_cap_badge_text { display: block; margin: 8px 0; } } Pricing $34.99 One-Time Purchase Once purchased, the student will have full access to the courses and any updates for life. or pay in installments: Enroll Now! $(document).ready(function() { $("form.block__pricing").on("submit", function(event) { $("#enroll-button").attr("disabled", true); $("#enroll-button").addClass("disabled"); $("#enroll-button").text("Processing..."); }); });'
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/p/privilege-escalation-for-oscp-and-beyond-bundle"
+category = "SitesList"
+tags = ["#36414d;", "#f5f5f8;", "#ffffff;", "16.8px;", "30px;", "@media", "access", "administrator", "background-color:", "beyond"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396140"]
+title = "Spawning Administrator Shells | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43396140"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489021"]
+title = "Understanding Permissions in Linux | Tib3rius Institute for"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489021"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489590"]
+title = "Weak File Permissions | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/linux-privilege-escalation-for-oscp-beyond/lectures/43489590"
+category = "SitesList"
+tags = ["beyond!", "conclusions", "cron", "escalation", "executables", "exploits", "file", "introduction", "jobs", "kernel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490874"]
+title = "Startup Apps | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490874"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
+
+["https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490912"]
+title = "User Privileges | Tib3rius Institute for Cybersecurity"
+year_published = 2025
+clearnet = "https://courses.tib3rius.com/courses/windows-privilege-escalation-for-oscp-beyond/lectures/43490912"
+category = "SitesList"
+tags = ["administrator", "applications", "apps", "beyond!", "escalation", "exploits", "extras", "forwarding", "getsystem", "impersonation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["teachable.com", "tib3rius.teachable.com"]
