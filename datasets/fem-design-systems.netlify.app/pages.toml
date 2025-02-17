@@ -1,0 +1,885 @@
+["https://fem-design-systems.netlify.app/font-measurements"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Font measurementsThere are several types of measurements you can use to build a type scale. Pixels are units used by designers, however they shouldn't be used to define a type scale. Most browsers allow a user to set their default font-size to another value than the default of 16px. If a user sets their default to 20px, all font-sizes should scale in relation. However if you set font-sizes in terms of px, a heading set at 30px will remain at 30px regardless of the base font-size selected by the user. Em is the unit of typography equal to the currently specified point-size. 1em can compute to different values depending upon where you are in the code. Ems perform in a similar fashion to REM, until it comes to nesting. If you have a div with a font-size of 2em, then you nest a p with a font-size of 2em, the font-size of the paragraph is now 2em relative to the div. REM is the unit of typography equal to the root font size. 1 rem will be equal to the font size defined in the html element. REM is great for creating robust type scale systems which account for user preference and propagate to HTML elements. You can calculate pixels from REM by multiplying the REM value by the pixel base.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/font-measurements"
+category = "research"
+tags = ["design systems", "font", "font-size", "measurements", "pixels", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/css-in-js"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "CSS in JSCSS-in-JS is a styling technique where JavaScript is used to style our components. When the components are parsed, CSS is generated and attached to the DOM. CSS-in-JS prevents style leaking that we saw with plain CSS and CSS naming conventions, and is an alternative to CSS pre-processors. It also allows you to encapsulate styling within a component, which is great for component libraries. There are several popular CSS-in-JS libraries: Emotion Styled Components JSS Styled Components There are several different CSS-in-JS libraries, but the one we'll be using today is styled components. Styled components provides many benefits, like scoped styling (no more worrying about bleeding CSS specificity or rogue !importants).Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/css-in-js"
+category = "research"
+tags = ["components", "design systems", "react", "react spring", "storybook", "styled", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "draculatheme.com", "dsconference.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/color-types"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Color types Primary Colors In the RYB color wheel primary colors are colors which cannot be created by combining other colors. These are red, yellow, and blue. Secondary Colors Secondary colors result from mixing two primary colors. In the RGB color wheel, secondary colors are cyan, magenta, and yellow. In the RYB color wheel the secondary colors are purple, orange, and green. Tertiary Colors Tertiary colors are created by combining a secondary color with a primary color. There are six tertiary colors. The tertiary colors are red-orange, yellow-orange, yellow-green, blue-green, blue-violet, and red-violet. Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color-types"
+category = "research"
+tags = ["color", "colors", "design systems", "primary", "react", "react spring", "secondary", "storybook", "styled components", "tertiary"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/typography"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "TypographyAscender The piece of a letter which rises above the x-height. View the source Descender The piece of a letter which dips below the baseline. View the source Baseline The imaginary line on which most letter characters sit. View the source Cap Line The imaginary line that marks the upper boundary of capital letters and some lowercase letters' ascenders. View the source X-Height Height of the typeface's lowercase letters. View the source Tracking / Letter Spacing The uniform amounts of spacing between characters in a complete section of text. View the source Kerning The horizontal spacing between two consecutive characters. View the source Leading The vertical spacing between lines of text (from baseline to baseline). View the sourcePrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/typography"
+category = "research"
+tags = ["ascender", "baseline", "descender", "design systems", "kerning", "leading", "letter", "line", "react", "react spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/why-design-systems-matter"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Why design systems matterDesign systems allow companies to define their own brand identity and bake it into accessible, consistent, and re-usable components, and this comes with many benefits. Accessibility Everyone, regardless of circumstance, should be able to achieve the same results from your application. Design systems ensure that your application has a color palette with sufficient contrast ratios, typography scales with large enough text sizes, and easy-to-digest content. It also ensures that all of the components within your web application can be used with just a keyboard, that important alerts are read by screen readers, and landmark regions are denoted. Consistency Design systems facilitate consistency. We live in an era where it's common for one company to own many sister products, or suites of products, with similar brand identities. Take Google for example. They have a suite of products that look and feel like they come from the same family. I can use Google Drive, Maps, and Flights and will see the same web components each time. And when your company owns a suite of products similar to Google, consistency is key. Trickle-Down Updates Trickle-down style updates is another huge benefit of design systems. When a design pattern is updated, developers no longer have to sync cross-squads to implement this change. The style can be updated in one component within the system, and will propagate to each product with just a quick update to the library package. Responsiveness Responsiveness. Design systems are built to be responsive. Mobile devices account for about half of all web traffic, worldwide. Our web applications must account for different screen resolutions and devices. Design systems ensure that they do. Onboarding Streamlined on-boarding. This benefit is two-fold. Having a well-documented design system ensures that new team members can be onboarded quickly and efficiently. There is one place for them to go to get all of the information they need to get started. Additionally, design systems facilitate better cross-squad collaboration. If all squads are using the same system, developers from squad A can easily jump into squad B to help with a feature or bug. Flexibility Flexibility. And you're probably a bit confused by this as I've just harped on the importance of consistency. But design systems must be flexible and serve different teams and different use cases. However they must establish boundaries within which teams can customize. We need variations of our components such as small, medium, and large sized buttons or buttons with icons. A design system must serve a variety of use cases, while setting parameters on what exactly those use cases can be. Speed Once the system has had a stable release, designers can use the UI Kit to rapidly prototype designs and developers can use the component library to rapidly develop these new designs.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/why-design-systems-matter"
+category = "research"
+tags = ["accessibility", "consistency", "design", "design systems", "flexibility", "matter", "onboarding", "react", "react spring", "responsiveness"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/adding-utilities"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Adding utilitiesSo this looks great! But it isn't extensible. Now let's build a set of utilities to help us build our components. Let's create a utils/ folder inside of src/ which will hold all of our foundational design system elements. Inside of the utils/ folder create three new files: colors.js, themes.js, and typography.js. Design Tokens Design tokens were created prior to 2014 by Jina Anne (you can watch the conference talk here) and they allow you to 'capture low-level values and then use them to create styles for your product or app.' Inside colors.js add your color palette. Even though we called the primary color swatches primary-100, primary-200, we're going to name the colors by color name (we'll get to the primary color themes in the next section). The color tokens will be an object containing the values in increments of 100 which will allow us to access them using the syntax blue[100]. export const blue = { 100: "#3a36e0", 200: "#0804b8", 300: "#030086", 400: "#5f25a4", 500: "#050449" }; export const green = { 100: "#529e66", 200: "#367b48", 300: "#276738" }; export const yellow = { 100: "#e1c542", 200: "#cab23f", 300: "#b49e35" }; export const red = { 100: "#d0454c", 200: "#b54248", 300: "#95353a" }; export const neutral = { 100: "#ffffff", 200: "#f4f5f7", 300: "#e1e1e1", 400: "#737581", 500: "#4a4b53", 600: "#000000" }; Next let's add our typography. Inside typography.js create and export a variable with your font family of choice. export const primaryFont = '"Roboto Mono", monospace'; Let's also add our typescale. There are many ways to structure these utilities but for this project we'll use an object. export const typeScale = { header1: "1.8rem", header2: "1.6rem", header3: "1.4rem", header4: "1.2rem", header5: "1.1rem", paragraph: "1rem", helperText: "0.8rem", copyrightText: "0.7rem" }; Now that we have the individual tokens, let's create a theme. Themes are great if you need to support a high contrast mode or dark and light theme.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/adding-utilities"
+category = "research"
+tags = ["100:", "200:", "300:", "adding", "color", "const", "create", "design", "design systems", "export"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/designing-a-button"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Designing a buttonLet's design our default primary, secondary, and tertiary buttons. I've created a Figma starter kit for you to copy. You can grab it here, copy and paste it into a new project. Our primary button will be a filled button which uses our primary color (primary-300) and will use either black or white text depending upon color contrast ratios. Our secondary button will be either a ghost button or a filled button having a lighter version of our primary color. Our tertiary button will be the button label without a background color or outline. In the Figma starter you cloned I've created a table with the following axes. It's your job to fill it in with button designs! X-Axis Labels Default Hover Focus Active Disabled Y-Axis Labels Primary Secondary Tertiary Large Small Icon (no text) Labelled icon Warning Error Success We haven't defined colors for warning, success, and error so you can use the following HEX codes. Warning: #fddb3a (black text) Error: #fa4d56 (black text) Success: #6fdc8c (black text) Use the following values for your buttons: Large button vertical padding: 16px Default button vertical padding: 8px Small button vertical padding: 8px Large button horizontal padding: 24px Default button horizontal padding: 12px Small button horizontal padding: 8px Large button minimum width: 125px Default button minimum width: 100px Small button minimum width: 75px Large button icon size: 24 x 24 Default button icon size: 16 x 16 Small button icon size: 8 x 8 8px padding right between the icon and the button text You can choose the button styles that you like (filled versus ghost, border radius, text style). We will use the save icon from The Noun Project to create our icon buttons. Click 'Get this icon' and select basic download. Then download the SVG. You can drag the downloaded SVG into Figma. Take the next 30 minutes and design your buttons in Figma. Once completed, right click on your default elements (primary, secondary, tertiary, etc.) and click "Create component." You can also select the component and type "option + command + k" on a Mac as a shortcut. You can additionally add a component description in the right-hand sidebar. Then on the left sidebar click "Assets" and you should see your components there.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/designing-a-button"
+category = "research"
+tags = ["button", "default", "design systems", "designing", "icon", "labels", "large", "padding:", "primary", "react"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "material.io", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "w3.org"]
+
+["https://fem-design-systems.netlify.app/button-activity-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Button activity solutionexport const SecondaryButton = styled(Button)` border: 2px solid ${primaryBlue}; color: ${primaryBlue}; `; export const TertiaryButton = styled(Button)` border: 2px solid transparent; color: ${primaryBlue}; `; If we import this into index.js and render it underneath our PrimaryButton we should now see our primary, secondary, and tertiary buttons rendering in the UI. import React from "react"; import ReactDOM from "react-dom"; import PrimaryButton, { SecondaryButton, TertiaryButton } from "./components/Buttons"; const App = () => ( <div> <PrimaryButton>Hello world</PrimaryButton> <SecondaryButton>Goodbye world</SecondaryButton> <TertiaryButton>Hey world</TertiaryButton> </div> ); ReactDOM.render(<App />, document.querySelector("#root")); The primary button import is outside of the curly brackets because it's the default export in our Buttons file. We'll change this in a later step.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-activity-solution"
+category = "research"
+tags = ["activity", "button", "design systems", "import", "react", "react spring", "solution", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/other-areas-of-design"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Other areas of designThere are several other areas of design which we won't touch on today, but would be included in a fully-built design system. Some of these areas include: Grid Spacing Accessibility Motion Iconography Resources Canva Color Wheel Smashing Magazine Color Theory Canva Typography Em vs. Rem, vs. Px Type scale: a visual calculator Previous sectionNext section There are several other areas of design which we won't touch on today, but would be included in a fully-built design system."
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/other-areas-of-design"
+category = "research"
+tags = ["areas", "design", "design systems", "react", "react spring", "resources", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/a-practical-example"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''A practical exampleNathan Curtis, a very prominent speaker within design systems, has a great blog post titled "And you thought buttons were easy." I'd like to share some of his insight with you today, because I think it will really drive the point home. We're all familiar with buttons. They're not too hard to make, right? As engineers we can sometimes forget how complex a comprehensive button component truly is from its birth within the design process all the way to its coming of age within quality assurance. Padding, margin, border radius, background color, font size, font family, color, and font weight. These are all factors that go into building a button. And since button elements are one of the most frequently used elements throughout a web application, they can truly impact your brand identity. But we're not finished yet. We can't just worry about the physical properties of a button in its neutral state. We have to make considerations for hover, focus, active, and disabled states. Web applications aren't typically built with just one type of button. So we need more than just a primary button. We also need secondary and tertiary buttons. And we can't forget about icons! We need primary, secondary, and tertiary buttons with icons and text, as well as without text. We also can't forget about light and dark themes. Many enterprise products will have a variation on color palette, so our buttons must work across all themes. OH, and we may need different sized buttons! And now, we're finally complete. At least we're complete with the design. Let's now associate some numbers with this whole process. Suppose we have a designer, engineer, and quality assurance engineer working to design, build, and test these buttons. Averaging each team member at a cost of about $100 per hour, and assuming they spend about 200 hours on the entirety of this process, which is only about 66.6 hours of work per team member, or just over a week and a half, this totals a cost of $20,000. $20,000 to create buttons. And that's just one team creating this library. If your enterprise company has 50 teams each designing, building, and testing buttons, that's a grand total of $1 million you're spending on buttons. And since they're all being built by different teams, you can bet that the quality will vary with each version. This is why you need a design system. Let's break down the three pillars of design systems. We'll start with the design language.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/a-practical-example"
+category = "research"
+tags = ["buttons.", "design", "design systems", "example", "need", "practical", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["medium.com"]
+
+["https://fem-design-systems.netlify.app/using-themes"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Using themesAt the moment, Storybook is unaware of our theme, so our components aren't rendering with the correct styling. To pass the theme prop to our components we have to do a bit of configuration. First install two add-ons: background and contexts. npm i -D @storybook/addon-backgrounds @storybook/addon-contexts Next, add the two add-ons to the addons array in main.js. module.exports = { stories: ["../src/**/*.stories.(js|mdx)"], addons: [ "@storybook/preset-create-react-app", "@storybook/addon-docs", "@storybook/addon-contexts/register", "@storybook/addon-backgrounds/register" ] }; Now let's create a new file, contexts.js inside of the .storybook directory and add the following. import { ThemeProvider } from "styled-components"; import { defaultTheme, darkTheme } from "../src/utils"; export const contexts = [ { icon: "box", // a icon displayed in the Storybook toolbar to control contextual props title: "Themes", // an unique name of a contextual environment components: [ThemeProvider], params: [ // an array of params contains a set of predefined `props` for `components` { name: "Default Theme", props: { theme: defaultTheme, default: true } }, { name: "Dark Theme", props: { theme: darkTheme } } ], options: { deep: true, // pass the `props` deeply into all wrapping components disable: false, // disable this contextual environment completely cancelable: false // allow this contextual environment to be opt-out optionally in toolbar } } ]; Now that we have our context, our themes, we have to tell Storybook about it. Create a new file inside of the .storybook directory called preview.js. import { addParameters } from "@storybook/react"; import { addDecorator } from "@storybook/react"; import { withContexts } from "@storybook/addon-contexts/react"; import { contexts } from "./contexts"; addParameters({ backgrounds: [ { name: "Default theme", value: "#ffffff", default: true }, { name: "Dark theme", value: "#050449" } ] }); addDecorator(withContexts(contexts)); Now if we restart our Storybook server, we should see our buttons rendering in the UI. We also have a Docs tab which houses all of our documentation. Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/using-themes"
+category = "research"
+tags = ["contextual", "design systems", "import", "name:", "react", "react spring", "storybook", "styled components", 'theme",', "themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/conferences"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/conferences"
+category = "research"
+tags = ["conferences", "design systems", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "designsystemslondon.com", "draculatheme.com", "dsconference.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/color-terminology"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Color terminology View the source Hue A hue is any color on the color wheel. Variations on this hue are created by establishing a shade, tint, or tone. Saturation Saturation is the intensity or purity of a color. Luminance Luminance is the amount of brightness, or light, in a color. Shade A shade is created by incorporating black to a base hue, which darkens the color. View the source Tint A tint is created by adding white to a base hue, which lightens the color. View the source Tone A tone is created by combining black or white (gray) with a base hue. Tones are subtle variations of the original color. View the sourcePrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color-terminology"
+category = "research"
+tags = ["color", "color.", "created", "design systems", "react", "react spring", "storybook", "styled components", "terminology"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/design-system-checklist"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Design system checklistBefore a component is considered complete, it must meet several design and development requirements: Design Requirements Accessibly All users, regardless of circumstance, must be able to accomplish the same tasks within our product. Our designs must account for users with visual impairments and must ensure all facets are consumable. Interaction How should a component respond when a user interacts with it? Is there validation feedback that must occur? The interaction definition must be defined. Context How and where should this component be used? When should I use a link versus a tertiary button, for example? Completion Are all states, including neutral, hover, focus, and disabled, defined? Content What type of content does this component rely upon? Does it accurately embody the brand identity? Customization Are aspects of this component customizable? If so, how? For example, if my design system serves multiple products, the primary button might have a different background color for product A versus product B. We must define these customizable parameters. Resolution How does this component look on varying screen resolutions? How does the layout change? Development Checklist Accessibility In addition to an accessible color palette, we must develop our components with semantic HTML elements in order to ensure compliance with assistive technologies. We also must account for keyboard navigation. Responsiveness Our components must respond to browser window resizing and varying screen resolutions. Completion Does this component account for all aspects of the design? Have we implemented a near pixel-perfect component? Customization Have we implemented all of the customizable aspects of this component? Error Handling / Data Validation How do our components respond when something breaks? Have we incorporated type checking with React Prop Types or TypeScript to ensure our parameters comply with expected data types? Browser Compatibility Do the technologies we use work across all supported browsers or must we include polyfills?Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/design-system-checklist"
+category = "research"
+tags = ["checklist", "component", "design", "design systems", "development", "react", "react spring", "requirements", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "docs.netlify.com", "draculatheme.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "lesscss.org", "medium.com", "netlify.com", "npmjs.com", "sass-lang.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/accessibility-resources"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Accessibility resourcesMaking the components you build accessible is an important topic. A component being accessible means that it's usable by as many people as possible regardless of disability. It involves making components easy to operate, perceive and understand by humans, screen readers and voice command applications. Here's a list of websites you can go to learn more: Web Accessibility Initiative - WAI A11y Project WAI-ARIA Authoring Practices Accessibility in JavaScript Applications by Marcy Sutton Web AIM, Introduction to Accessibility Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/accessibility-resources"
+category = "research"
+tags = ["accessibility", "design systems", "operate", "perceive", "react", "react spring", "resources", "storybook", "styled components", "understand"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "medium.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/animating-our-modal-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Animating our modal exerciseFirst install react-spring npm i react-spring Let's first create the state we'll need to show and hide the modal. Inside index.js let's create new state called showModal. Then let's add a button underneath the theme switcher buttons which will toggle the visibility of our modal. You can add this underneath the theme switcher buttons. const [showModal, setShowModal] = useState(false); ... <button style={{ margin: "0 16px 24px", padding: "8px", background: "none" }} onClick={() => setShowModal(true)} > Show modal </button> Lastly, let's pass showModal and setShowModal as properties to our SignUpModal component. <SignUpModal showModal={showModal} setShowModal={setShowModal} /> Inside Modals.js we can now destructure showModal and setShowModal from props. export const SignUpModal = ({ showModal, setShowModal }) => { We'll use react-spring to show and hide our modal. Import animated and useSpring from react-spring. import { useSpring, animated } from "react-spring"; Now let's define our animation. We can use the hook state showModal to determine the styling of our modal. const animation = useSpring({ opacity: showModal ? 1 : 0, transform: showModal ? `translateY(0)` : `translateY(-200%)` }); Lastly, let's wrap WrapperModal in an animated.div element and pass our animation as the style prop. <animated.div style={animation}> <ModalWrapper> <SignUp /> <SignUpHeader>Sign Up</SignUpHeader> <SignUpText> Sign up today to get access to all of our content and features! </SignUpText> <PrimaryButton onClick={() => console.log("You signed up!")}> Sign Up </PrimaryButton> <CloseModalButton onClick={() => setShowModal(false)}> <CloseIcon /> </CloseModalButton> </ModalWrapper> </animated.div> react-spring comes with a config which can be used to change the mass and tension of our components. Let's test it out. Import config from react-spring. import { useSpring, animated, config } from "react-spring"; Now we can add it as property in the useSpring definition. We'll use the slow configuration. const animation = useSpring({ opacity: showModal ? 1 : 0, transform: showModal ? `translateY(0)` : `translateY(-200%)`, config: config.slow }); If we go back to the UI and click 'Show modal' we should see our modal animating in. This is a bit slow for my liking so I'll remove it but config provides some nice configurations for your animations. Now, go ahead add the anmimation to your other modal.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/animating-our-modal-exercise"
+category = "research"
+tags = ["animating", "config", "const", "design systems", "exercise", "import", "let's", "modal", "modal.", "react"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/accessibility"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''AccessibilityWe can use the storybook-addon-a11y add-on to test the accessibility of our components. First let's install the add-on, and then add it to the addons array in main.js. npm i -D @storybook/addon-a11y module.exports = { stories: ["../src/**/*.stories.(js|mdx)"], addons: [ ... "@storybook/addon-a11y/register", ... ] }; Just like the knobs add-on, we have to add withA11y as a decorator. Back in preview.js let's import withA11y and use addDecorator to add it. ... import { withA11y } from "@storybook/addon-a11y"; ... addDecorator(withA11y); If you head back to the Storybook UI and click the canvas tab, you should see "Accessibility" as a bottom tab panel. This will now show you your passing and failing accessibility tests.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/accessibility"
+category = "research"
+tags = ["accessibility", "design systems", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["medium.com"]
+
+["https://fem-design-systems.netlify.app/modal-exercise-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Modal exercise solutionI first downloaded my Sign In illustration as an SVG and added to the assets/illustrations folder. Because it's a simple SVG file we don't have to add it to the exports in index.js. Next inside Modals.js I imported both text fields, secondary button and the sign in illustration. import { CloseIcon } from "../assets"; import { PrimaryButton, SecondaryButton } from "./Buttons"; import { EmailInput, PasswordInput } from "./TextFields"; I refactored SignUpHeader to be ModalHeader so it's more extensible, and updated the respective JSX tags. const ModalHeader = styled.h3` font-size: ${typeScale.header3}; `; ... <ModalHeader>Sign Up</ModalHeader> Next I created the SignInModal component. I need a two-column layout so I created a new ModalWrapper. const ColumnModalWrapper = styled(ModalWrapper)` flex-direction: row; justify-content: space-around; `; export const SignInModal = () => ( <ColumnModalWrapper> <div> <ModalHeader>Sign In</ModalHeader> <EmailInput label="Email" placeholder="emmabostian@gmail.com" /> <PasswordInput label="Password" /> <SecondaryButton style={{ margin: "16px 16px 0 0" }}> Sign Up </SecondaryButton> <PrimaryButton>Sign In</PrimaryButton> </div> <img src={SignIn} alt="Sign in to your account" /> <CloseModalButton onClick={() => console.log("You closed the modal!")}> <CloseIcon /> </CloseModalButton> </ColumnModalWrapper> ); You can import this to index.js and test it out! If you're lost or missed some code, you can check out the branch step-1-styled-components on the GitHub repo!Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/modal-exercise-solution"
+category = "research"
+tags = ["design systems", "exercise", "import", "modal", "react", "react spring", "solution", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/people"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "People Jina Anne Stu Robson Design Systems Twitter List Design Systems io Brad Frost Mina Markham Dan Mall Nathan Curtis Sid Segun Adebayo Max Stoiber Brent Jackson Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/people"
+category = "research"
+tags = ["design systems", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/intro"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "IntroductionDesign systems have been a passion of mine for the last couple of years so I'm thrilled to teach you this course. You will learn many skills, some of which may be new and some of which you may have prior experience with. I will cover the pieces of each technology you need to know to complete this course, but this course will not be an in-depth tutorial for any one technology. We will be coding in React, so it's recommended you have React knowledge prior to taking this course, but the rest of the skills we'll learn don't require prior experience. ` Some of the topics and technologies we'll cover include: Foundations of design systems Foundations of design Designing with Figma Developing styled components Animating components with react-spring Documenting components with Storybook Tooling & resources About Me I'm Emma Bostian, a Software Engineer at LogMeIn in Karlsruhe, Germany. Born and raised in Upstate New York, I graduated from Siena College in 2015 with a B.S. in Computer Science and moved down to Austin, Texas where I began my first full-time software job at IBM. After three years with IBM I sold everything and moved to Germany where I've lived for the past two years. In my spare time I do a multitude of fun activities. I am a co-host of the Ladybug Podcast and panelist on JS Party. I write blogs for Ultimate Courses, Stack Overflow, and Dev. I create courses for LinkedIn Learning, Frontend Masters, and Egghead.io. And I speak at conferences! If you have any questions during or after this course, feel free to contact me on Twitter @emmabostian.Next section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/intro"
+category = "research"
+tags = ["design systems", "introduction", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "frontendmasters.com", "github.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/knobs"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''KnobsStorybook has an add-on called knobs which allows you to interact with your components and change their proprerties in real-time. First let's install knobs with the following command. npm i -D @storybook/addon-knobs Next we have to add the add-on to the Storybook configuration in main.js. module.exports = { stories: ["../src/**/*.stories.(js|mdx)"], addons: [ ... "@storybook/addon-knobs", ... ] }; We also need to tell Storybook to use withKnobs as a decorator. Inside preview.js, import withKnobs and add it as a decorator. import { withKnobs } from "@storybook/addon-knobs"; ... addDecorator(withKnobs); Let's add a knob for setting the disabled state of our buttons. Inside Button.stories.mdx import the following. import { withKnobs, boolean } from "@storybook/addon-knobs"; Then we can add the disabled attribute to our button using the boolean value we just imported. <Preview withToolbar> <Story name="primary"> <PrimaryButton disabled={boolean("Disabled", false)}> Hello world </PrimaryButton> </Story> </Preview> After restarting your storybook server, head back to your UI, under the canvas tab, you should see a knob at the bottom with a checkbox discerning the disabled state. If you click it, it should disable the button.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/knobs"
+category = "research"
+tags = ["design systems", "import", "knobs", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "frontendmasters.com", "github.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/animating-our-modal-exercise-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Animating our modal exercise solutionFirst I extracted out the useSpring config to a function which will return our modal animation object. const getAnimation = showModal => { return { opacity: showModal ? 1 : 0, transform: showModal ? `translateY(0)` : `translateY(-200%)` }; }; Next I refactored the SignUp modal to use this helper function. export const SignUpModal = ({ showModal, setShowModal }) => { return ( <animated.div style={useSpring(getAnimation(showModal))}> Now I just followed the same process for my second SignIn modal. export const SignInModal = ({ showModal, setShowModal }) => ( <animated.div style={useSpring(getAnimation(showModal))}> <ColumnModalWrapper> <div> <ModalHeader>Sign In</ModalHeader> <EmailInput label="Email" placeholder="emmabostian@gmail.com" /> <PasswordInput label="Password" /> <SecondaryButton style={{ margin: "16px 16px 0 0" }}> Sign Up </SecondaryButton> <PrimaryButton>Sign In</PrimaryButton> </div> <SignIn /> <CloseModalButton onClick={() => setShowModal(false)}> <CloseIcon /> </CloseModalButton> </ColumnModalWrapper> </animated.div> ); If you're lost or missed some code, you can check out the branch step-2-animating-components on the GitHub repo!Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/animating-our-modal-exercise-solution"
+category = "research"
+tags = ["animating", "design systems", "exercise", "modal", "react", "react spring", "solution", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/adding-global-styles"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Adding global stylesThere is a way to add global styles to our styled components, which we'll want to do for things such as defining our root font size. First, let's install a helper package called polished. This gives us some great features, one of which we'll use right now: normalize. Let's install the package. npm i polished Inside of the utils/ directory, create a new file called Global.js. Let's add the following. import { createGlobalStyle } from "styled-components"; import { primaryFont } from "./typography"; import { normalize } from "polished"; export const GlobalStyle = createGlobalStyle` ${normalize()} html { box-sizing: border-box; font-size: 16px; } *, *:before, *:after { box-sizing: inherit; } body { margin: 0; font-family: ${primaryFont}; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; } main { width: 90%; margin: 0 auto; } `; Add Global.js to the default export in index.js. export * from "./Global"; Back inside index.js let's import our global styles and render it as a self-closing tag at the end of our JSX. ... import { GlobalStyle } from "./utils"; const App = () => ( <div> <PrimaryButton>Hello World</PrimaryButton> <SecondaryButton>Goodbye World</SecondaryButton> <TertiaryButton>Hey</TertiaryButton> <GlobalStyle /> </div> ); ReactDOM.render(<App />, document.querySelector("#root"));Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/adding-global-styles"
+category = "research"
+tags = ["adding", "design systems", "global", "import", "let's", "react", "react spring", "storybook", "styled components", "styles"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/design-systems"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Design systemsHere's a list of popular design systems you can check out: IBM Carbon Material Design Firefox Photon Lightening Design System Polaris Base Web Chakra UI Atlaskit Material UI To check out more design systems, you also check the design system repoPrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/design-systems"
+category = "research"
+tags = ["design", "design systems", "react", "react spring", "storybook", "styled components", "systems"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "material.io", "medium.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "twitter.com", "w3.org"]
+
+["https://fem-design-systems.netlify.app/team-structure"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Team structureThere are three different team-structures with which you can build a design system and hopefully promote adoption. Centralized Model The first type of team structure is the centralized model. A core group of members are autonomous in running and maintaining the design system. They will Define the foundation & identity of the system Have veto power over the system Manage & create the UI Kit, component library, and style guide The team structure is cross-disciplined. You'll need members from design, engineering, and product in order to build a sustainable and scalable system. Distributed Model In contrast, we have the distributed model which doesn't leverage a core team, but instead is built and maintained by the teams using the system itself. The distributed model instills a sense of ownership within all contributing design system members. And people are more passionate about something when they have a hand in creating it. Additionally, the system will be influenced by many different vantage points leading to more collaboration and potentially more innovation. Finally, as it's being built by the teams using it, progress doesn't stop if one core member is unavailable. In this team model we can see that there is no centralized or core team building the system; the teams which consume the system are simultaneously contributing to the system. Hybrid Model Lastly is the hybrid model, which combines the centralized and distributed team models. This method is the most effective as decisions are made quickly and development of the design system is streamlined due to community contribution. Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/team-structure"
+category = "research"
+tags = ["centralized", "core", "design", "design systems", "distributed", "hybrid", "model", "react", "react spring", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/making-extensible-themes"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Making extensible themesCurrently we're referencing the defaultTheme directly inside of our components, but what if we want a dynamic theme which can be changed? Let's create a second theme object inside themes.js. This will hold our dark theme. export const darkTheme = { primaryColor: neutral[100], primaryHoverColor: neutral[200], primaryActiveColor: neutral[300], textColorOnPrimary: blue[300], textColor: blue[300], textColorInverted: neutral[100], primaryFont: primaryFont, disabled: neutral[400], textOnDisabled: neutral[300], status: { warningColor: yellow[100], warningColorHover: yellow[200], warningColorActive: yellow[300], errorColor: red[100], errorColorHover: red[200], errorColorActive: red[300], successColor: green[100], successColorHover: green[200], successColorActive: green[300] } }; We now need a way to toggle the dark theme. We'll use React's useState to do this. Inside of index.js let's import useState and create a boolean variable useDarkTheme which will tell us which theme we should use. import React, { useState } from "react"; import { GlobalStyle, darkTheme, defaultTheme } from "./utils"; ... const App = () => { const [useDarkTheme, setUseDarkTheme] = useState(false); ... return ( We also need to use the ThemeProvider component which will wrap our entire application and pass the theme as a property. Inside index.js import ThemeProvider, then wrap the entire JSX return statement in <ThemeProvider> import { ThemeProvider } from "styled-components"; const App = () => { const [useDarkTheme, setUseDarkTheme] = useState(false); return ( <ThemeProvider> ... </ThemeProvider> We'll need to pass the theme we want to use as a prop to ThemeProvider so let's do that with a ternary operator. <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}> Let's add two buttons to toggle the dark theme state. You can also use one if you prefer simply toggling the state instead of being explicit with two buttons. return ( <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}> <button style={{ margin: "0 16px 24px", padding: "8px", background: "none", cursor: "pointer", border: "2px solid #000", marginTop: "60px" }} onClick={() => setUseDarkTheme(true)} > Dark theme </button> <button style={{ margin: "0 16px 24px", padding: "8px", background: "none", cursor: "pointer", border: "2px solid #000", marginTop: "60px" }} onClick={() => setUseDarkTheme(false)} > Default theme </button> ... </ThemeProvider> Don't forget to import these two themes from utils. import { darkTheme, defaultTheme } from "./utils"; Let's wrap our primary, secondary, and tertiary buttons in a containing div so we can change the background color depending upon the theme. (If it's dark theme, we need a dark background.) We'll also add some inline styling to this div. const App = () => { const [useDarkTheme, setUseDarkTheme] = useState(false); return ( <ThemeProvider theme={useDarkTheme ? darkTheme : defaultTheme}> <button style={{ margin: "0 16px 24px", padding: "8px", background: "none" }} onClick={() => setUseDarkTheme(true)} > Dark theme </button> <button style={{ margin: "0 16px 24px", padding: "8px", background: "none" }} onClick={() => setUseDarkTheme(false)} > Default theme </button> <div style={{ background: useDarkTheme ? defaultTheme.primaryColor : darkTheme.primaryColor, width: "100vw", height: "90vh", display: "flex", alignItems: "center", justifyContent: "space-around" }} > <PrimaryButton modifiers={["small"]}>Hello World</PrimaryButton> <SecondaryButton modifiers={["large"]}>Goodbye World</SecondaryButton> <TertiaryButton>Hey</TertiaryButton> <GlobalStyle /> </div> </ThemeProvider> ); };Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/making-extensible-themes"
+category = "research"
+tags = ['"8px",', "16px", '24px",', "background:", "const", "dark", "darktheme", "design systems", "extensible", "import"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "frontendmasters.com", "github.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Table of contentsIntroductionIntroductionGetting startedFoundations of Design SystemsWhat is a design system?Why design systems matterDrawbacks of design systemsTeam structureWho are design systems for?A practical exampleThree pillars of design systemsBuilding a design systemDesign system checklistCommon mistakesFoundations of DesignColorColor typesColor palettesColor terminologyColor semanticsColor valuesCreating a color paletteTypographyFont typesFont measurementsTypescaleOther areas of designDesigning Components With FigmaButton statesButton stylesDesigning a buttonDesigning a modalDeveloping Styled ComponentsHow we apply CSSCSS specificityProblems with CSSCSS naming architecturesCSS pre-processorsCSS in JSApplication setupIntegrating styled componentsButton activity exerciseButton activity solutionAdding utilitiesCreating a themeAdding global stylesAdding state exerciseAdding state solutionButton variations exerciseButton variations solutionMaking extensible themesUsing extensible themesModal exerciseModal exercise solutionAnimating Components With React SpringMicro-interactionsTips for creating micro-interactionsUse spring exerciseUse spring exercise solutionUse transition exerciseUse transition exercise solutionAnimating our modal exerciseAnimating our modal exercise solutionDocumenting Components With StorybookDocumenting components with StorybookUsing addonsUsing themesActionsKnobsModal documentation exerciseModal documentation exercise solutionAccessibilityCustomizing StorybookDeploying StorybookTools & ResourcesPeopleConferencesDesign systemsAccessibility resourcesStyle guide toolsConclusionWrap up"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app"
+category = "research"
+tags = ["animating", "components", "conclusion", "contents", "design", "design systems", "designing", "developing", "documenting", "exercise"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]
+
+["https://fem-design-systems.netlify.app/designing-a-modal"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Designing a modalNow we'll create a composite component, which is a component comprised of other components. Create a new page in Figma called "Modals" and add an art board. A modal can contain several different elements but typically has a close button in the upper right-hand corner, some modal content, and an action to complete. Let's build a dialog which informs the user that they can create an account to access more features. It will contain a close button (X) in the top right corner, an illustration, a title (Sign up), and a paragraph containing the following text: "Sign up today to get access to all of our content and features!" It will also contain a button at the bottom: a primary button (Sign up). For the illustration we'll use Undraw.co which is my favorite website to grab illustrations from. I'll use the "Mobile Login" illustration but feel free to choose any illustration. In the top right corner, add a shade from your primary color palette so it fits with your color scheme. Save the illustration as an SVG and drag it into Figma. Press "R" to draw a rectangle and give it a reasonable modal width and height. I chose a width and height of 800px by 580px. Give the rectangle a background color of neutral-100 and click "Effects" to add a drop shadow. Click the sun icon on the left to change the box shadow. Give it a blur of 16, x of 0, and y of 5. Set the opacity to 20%. Head over to the Noun Project and download the SVG version for a close icon. Drag that into Figma. Give it the color neutral-400 and resize it to approximately 24px x 24px. Position in the top right corner, 40px from the top and right modal edges. The illustration should be approximately 280px in height and be placed in the vertical center of the modal 64 from the top. The illustration should be 32px from the title. The title should be an h3 and the header, paragraph, and button should be 16px from each other. Next, I want you to create one more modal which uses some of the components we've made. I've also included a "Text Fields" page in the Figma kit which you can use for your mockups. If you need inspiration I suggest Dribbble.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/designing-a-modal"
+category = "research"
+tags = ["button", "color", "corner,", "create", "design systems", "designing", "illustration", "modal", "react", "react spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/css-pre-processors"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "CSS pre-processorsNext came CSS pre-processors like Sass and Less. These pre-processors provided styling capabilities such as nesting, mixins, and more which allow more control over how our CSS styles are applied. Our shopping cart component might look more like this: .shopping-cart { &__item { color: blue; &--selected { color: red; } } } Sass nesting plays really nicely with the BEM naming architecture and was a viable solution for many large-scale applications. But then a new solution arose which changed how we build components: CSS-in-JSPrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/css-pre-processors"
+category = "research"
+tags = ["design systems", "pre-processors", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "draculatheme.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "lesscss.org", "medium.com", "npmjs.com", "sass-lang.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/common-mistakes"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Common mistakesThere are some common pitfalls you might run into when creating a design system. Starting For Scale While the ability to scale is good, building your components for scale can be a detriment. Only scale when needed. Educating Before Building Educating your teams about your design system can negatively impact your rapport if there's nothing to use. Ensure you have something designed and built before educating so that designers and developers can jump right in. Not Discussing Workflow If you going to be collaborating on a design system, it's important to come to terms on a working model. You even might want to create a social contract. Not Documenting Decisions Design systems require a lot of investment and will often have lots of eyes on them. Documenting decisions will save you and your team the headache of having to explain to each stakeholder why you're doing something a certain way.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/common-mistakes"
+category = "research"
+tags = ["before", "building", "common", "decisions", "design", "design systems", "discussing", "documenting", "educating", "mistakes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/css-specificity"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = 'CSS specificityThere are three buckets of CSS specificity: Type selectors and pseudo-elements Class selectors, attribute selectors, and pseudo-classes ID selectors /* Type selectors and pseudo-elements */ h1 { ...; } h1::before { ...; } /* Class selectors, attribute selectors, and pseudo-classes */ .cat { ...; } input[type="radio"] { ...; } h1:hover { ...; } /* ID selectors */ #cat { ...; } Universal selectors, such as *, combinators, such as > and +, and negation of pseudo-classes, such as :not() have no effect on CSS specificity (however the styles inside of the not() pseudo-class do). Inline styling, styles added directly to the HTML element, will always override any styles declared in an external stylesheet and this is generally bad practice. Lastly, !important statements override all styling.Previous sectionNext section'
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/css-specificity"
+category = "research"
+tags = ["...;", "design systems", "react", "react spring", "selectors", "selectors,", "specificity", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "draculatheme.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "lesscss.org", "medium.com", "npmjs.com", "sass-lang.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/application-setup"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Application setupWe're going to build our components using create-react-app. I wouldn't condone using create-react-app under normal circumstances if you're building an enterprise design system; this tool is great for building React applications but not for creating component libraries. I wanted to focus on the content and not on the deployment and build processes. There was a library I attempted, and hoped, to use for this workshop called create-react-library, which you can check out here, but unfortunately getting it to work with styled components was a hassle and many of the dependent packages were sorely deprecated. If they update this library to use the newest version of React, this is the solution I would opt for! If there's a future version of this workshop, I would love to include the setup of a monorepo, but I simply didn't have time! Editor Settings At the time of this recording I am using the Dank Mono font, which is a paid font for 40 GBP, however you can use Fira Code if you're looking for something similar, with font ligatures, for free! I am also using the VS Code color theme Dracula. Application setup Open your terminal and change directories to the place you want to house your project. I'll save mine to my desktop. cd Desktop Then use create-react-app to create a new React application. I use npx, node.js package runner to use create-react-app. This is a great tool because it allows you to leverage tools without installing them and you can run different versions of the packages with the @version prompt. Once in your desired location, run the following commands to create a new project. npx is a great feature that comes with npm >= 5.2.0, so if you're on a lower npm version, I recommend updating. npx create-react-app my-component-library && cd my-component-library I am then going to open my React application in my editor of choice: VS Code. I use the command code . to open the current project in VSCode. You can install the VSCode command line interface (CLI) here if you'd also like this functionality! Once VSCode is open I prefer to use the integrated terminal. You can open this by clicking control + back tick on Mac, or by going to the View menu and clicking Terminal.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/application-setup"
+category = "research"
+tags = ["application", "applications", "building", "circumstances", "component", "condone", "create-react-app", "creating", "design", "design systems"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/color-palettes"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Color palettesThere are several types of color combinations which can be used to build color palettes. Monochromatic Monochromatic palettes are created by establishing variations on a shade of a single color. View the source Complementary Complementary color palettes are created by selecting two colors directly opposite of each other on the color wheel. View the source Analogous Analogous color palettes are created by selecting three colors which are side by side on the color wheel. View the source Triadic Triadic color palettes are created by selecting three evenly-spaced colors from around the color wheel. View the sourcePrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color-palettes"
+category = "research"
+tags = ["color", "created", "design systems", "palettes", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/color"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "ColorBefore we can code our component library we have to design some of the foundational elements of our design system. Color Color is one of the most important foundational elements of a design system and impacts every single component. Color theory is the combination of art and science that's used to determine how colors interact. Color Mixing There are two methods for producing colors: additive and subtractive. Additive color mixing, also known as RGB, is carried out by mixing different amounts of primary colors such as red, green, and blue to produce secondary colors, yellow, cyan, and magenta. Subtractive color mixing is used when white light reflects off of an object. Additive Color Mixing (RGB) Additive colors start black and become white as more red, blue, or green are added. TVs and computer monitors use additive color mixing. Every pixel begins as black and express color as a percentage of red, green, and blue. View the original image Subtractive Color Mixing (CYMK) While additive color mixing is created by adding colored light to black, subtractive colors are created by absorbing (subtracting) some light wavelengths and reflecting others. Subtractive colors start as white and as filters are added takes on the appearance of color. Photos and magazines use subtractive colors. View the original imagePrevious sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color"
+category = "research"
+tags = ["additive", "color", "colors", "design systems", "mixing", "react", "react spring", "storybook", "styled components", "subtractive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/who-are-design-systems-for"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Who are design systems for?Open-source design systems aren't necessarily meant for public consumption. "If a design system is by a company, then it's for the company. It might also be open source, but any ol' random developer who wants to use it isn't the target audience." - Chris Coyier While you might open source your design system, and technically anyone can clone and use your system, that's not the intended use. Design systems are meant for internal consumption. We open source our design systems to share knowledge and best practices.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/who-are-design-systems-for"
+category = "research"
+tags = ["design", "design systems", "for?", "react", "react spring", "storybook", "styled components", "systems"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/building-a-design-system"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Building a design systemBefore you build anything tangible you should start by defining your design principles. Design Principles Design principles are the grounding values and principles which drive the creation of your products. Atlassian's design principles are "bold, optimistic, and practical." Design principles must support the global vision of your product and express its identity. What do you want your users to feel when using your product? Once we've defined our design principles, we're ready for a UI audit. UI Audit Most of us are not working on a brand new product; often there is legacy code and UI to handle. This is where a UI audit comes in. Take screenshots of all components in your products, in each state and group them visually in one location by functionality. We're not grouping by visual similarity but by functionality because visual design patterns evolve, but the underlying behavior remains. Aggregate all components in one place, whether it's a Sketch or Figma file, or a Google doc. Next, we prioritize. Which components will have the highest impact on the unification of your product? How feasible is this component to build? Prioritize the highest-impact and highest-feasibility elements first. Product, design, and engineering should answer questions which evaluate whether or not this design system change should be accepted, and if so, how it should be prioritized. We need to examine the impact of incorporating this change from a multitude of vantage points. Some questions you may want to ask are: Does this request embody our design principles? Does this requires require a lot of design/development effort? Does this request come with a high risk to the success of our product? Does this request coincide with our product roadmap? Does this request require a lot of maintenance? Does this request improve the user experience of our products? Are we confident in this request or will it need to be revisited again in the near future? Is this request technically feasible? We can take these questions and turn them into impact statements. These impact statements will coincide with one of six metrics. We can do this by creating impact statements with regards to three adoption metrics and three opposition metrics. The adoption metrics are: impact, identity, and confidence. The opposition metrics are: maintenance, risk, and effort. In order to determine whether we should incorporate this change or component into our design system, we must evaluate the benefits of employing this change against the negatives. Product, design, and engineering will evaluate this proposal by rating the change against the impact statements. Once all surveys have been taken, we can average the responses from the adoption metrics and the responses from the opposition metrics, and turn them into x and y coordinates. Finally can take this request and plot it within our four-quadrant graph. Let's take an example of a button. We already know that buttons require a ton of effort and maintenance, however the benefits are huge. Since buttons are the most widely-used components in web applications we can be sure they will go a long way towards unifying the brand identity of our application. Let's suppose we've run the surveys and calculated the mean for both adopter and opposer metrics and we get a score of (4,4) on a 5-point axis for buttons. Now let's take a composite component, like an accordion. Accordions won't provide much benefit to our product as they're used once or maybe twice throughout the product. But they require a lot of effort and maintenance. Given these two components, we can see that we should prioritze our button component above our accordion component because it will provide the most benefit.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/building-a-design-system"
+category = "research"
+tags = ["audit", "building", "change", "component", "components", "design", "design systems", "impact", "metrics", "principles"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/color-values"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Color valuesThere are several color values which we can use in our color palettes. HEX Hex, or hexadecimal, is the base-16 representation of a color where each value can range from 0-9 and A-F. RGB RGB is the additive color mixing model which allows you to create colors by mixing red, green, and blue light sources. This is used in digital media design. RGBA RGBA is additive color mixing model which allows you to create colors by mixing red, green, and blue light sources, but incorporates a fourth value, alpha. Alpha indicates how opaque each pixel is. CYMK CYMK is the subtractive color mixing model used in print design.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color-values"
+category = "research"
+tags = ["color", "cymk", "design systems", "mixing", "react", "react spring", "rgba", "storybook", "styled components", "values"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/customizing-storybook"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Customizing StorybookYou can customize the look and feel of your Storybook environment if you plan to publish it for your company to use. First create a manager.js file inside of .storybook/. You can import themes from @storybook/theming if you want to use their light or dark themes. import { addons } from "@storybook/addons"; import { themes } from "@storybook/theming"; addons.setConfig({ theme: themes.light }); Or you can create your own theme by creating a new JavaScript file, adding the following customizable properties, and importing and using your template inside of manager.js. Create a new file myTheme.js and add the following. import { create } from "@storybook/theming/create"; export default create({ base: "light", colorPrimary: "hotpink", colorSecondary: "deepskyblue", // UI appBg: "white", appContentBg: "silver", appBorderColor: "grey", appBorderRadius: 4, // Typography fontBase: '"Open Sans", sans-serif', fontCode: "monospace", // Text colors textColor: "black", textInverseColor: "rgba(255,255,255,0.9)", // Toolbar default and active colors barTextColor: "silver", barSelectedColor: "black", barBg: "hotpink", // Form colors inputBg: "white", inputBorder: "silver", inputTextColor: "black", inputBorderRadius: 4, brandTitle: "My custom storybook", brandUrl: "https://example.com", brandImage: "https://placehold.it/350x150" }); import { addons } from "@storybook/addons"; import myTheme from "./myTheme"; addons.setConfig({ theme: myTheme });Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/customizing-storybook"
+category = "research"
+tags = ["create", "customizing", "design systems", "import", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "draculatheme.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "lesscss.org", "medium.com", "npmjs.com", "sass-lang.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/what-is-a-design-system"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "What is a design system?The internet was not originally intended to host large-scale social and enterprise applications; it was built as a method for sharing data all across the world. Yet much of the terminology we've coined in regards to web development has its roots in printed books. Webpages, bookmarking, and pagination all allude to a time when printed media was king. This era is long gone. Digital media has taken over as the primary resource for sharing and digesting content. We don't develop websites as full pages anymore, which poses a problem. When we associate websites with the concept of pages, subconsciously we throw re-usability out the window; nothing about the word page indicates re-usability. And when we don't re-use our code consistency, accessibility, and development speed suffer. Instead of thinking in terms of pages, we should be thinking in terms of components. Components allow us to maintain consistent user interfaces which are accessible by nature. And design systems are the way in which we can create these sets of reusable patterns and components. Design systems allow us to create a cohesive experience throughout every leg of a user's journey. What Is A Design System? There is no industry definition for a design system, which can make it a bit tricky to understand. If you hear a designer say design system, they're most likely referring to the design language and UI Kit. If you hear a developer say design system, they're probably referring to the component library or style guide. But a design system encompasses all of these things: design language, UI Kit, component library, and style guide.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/what-is-a-design-system"
+category = "research"
+tags = ["design", "design systems", "react", "react spring", "storybook", "styled components", "system?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/three-pillars-of-design-systems"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Three pillars of design systemsDesign Language A design language is the set of standards and assets which guide the creation of a suite of products underneath a brand. I like to think of a design language as the personality of a brand and its corresponding design assets. A design language is comprised of two areas: Foundation Components The foundation is comprised of the principles which describe how your design language should be leveraged to build products. It includes things such as: Accessibility Brand Color Typography Spacing Grid Motion Icons Content Component Library A component library is the set of components which turn the design language and UI Kit into living, breathing code. Component libraries can be built with many different frameworks and libraries (sometimes more than one) such as Angular, Vue, and React. Native web components are also a great example when thinking about building a component library. Style Guide The style guide is the documentation for the design language, UI Kit, and component library. There are many different ways to build a style guide. Perhaps you just need component documentation, so publishing your Storybook site is enough for your team. Or maybe you want a fully-fledged website. Gatsby is a great option if you know React, and can be used to create beautiful style guides using markdown. The Invision DSM is a CMS solution for creating a style guide if you don't have a ton of time or resources.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/three-pillars-of-design-systems"
+category = "research"
+tags = ["component", "design", "design systems", "guide", "language", "library", "pillars", "react", "react spring", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/tips-for-creating-micro-interactions"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Tips for creating micro-interactionsBefore you build your first micro-interaction, here are a few tips Accessibility Users won’t care about the coolest micro-interaction in the world if it’s not accessible. If the interaction indicates state change, ensure that the proper HTML elements and attributes are used; otherwise, add the appropriate WAI-ARIA counterparts. Intentionality Animations draw the user’s attention, but not all information has the same level of importance. First understand which component on the page has the most pertinent or time sensitive information or priority, and then decide what to animate. Relatability Our goal is to create animations which feel natural and fluid, not robotic and linear. Try to mimic the physics of the real world when designing and developing micro-interactions. Performance Never make your users wait for an animation to complete if their page or data is ready.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/tips-for-creating-micro-interactions"
+category = "research"
+tags = ["accessibility", "creating", "design systems", "intentionality", "micro-interactions", "performance", "react", "react spring", "relatability", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/use-spring-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Use spring exercisereact-spring is a hooks-based and a physics-based animation library, and allows you to create complex animations to delight your users. Typically we use CSS animation libraries with transition timing functions and bezier curves to animate elements in the UI. However, it’s truly difficult to make elements transition in a natural manner. Elements in real life don’t transition linearly through different states, and your UI elements shouldn’t either. useSpring is the "bread and butter" react-spring hook. It allows you to transition an element's CSS properties on enter and exit as well as relative to your React state. You can define your spring in a few ways. You can define both the from and to values. const animation = useSpring({ from: { opacity: 0, transform: `translateY(-200%)` }, to: { opacity: 1, transform: `translateY(0)` } }); You can define just the to value. This will take the default CSS from the DOM element as the from attribute values. const animation = useSpring({ to: { opacity: 1, transform: `translateY(0%)` } }); You can omit the to keyword and wrapping object as well to clean up your syntax. const animation = useSpring({ opacity: 1, transform: `translateY(0%)` }); Or you can use React hook state with a ternary operator to define the spring. const [showModal, setShowModal] = useState(false); const animation = useSpring({ opacity: showModal ? 1 : 0, transform: showModal ? `translateY(0%)` : `translateY(-200%) }); Once you have defined your useSpring hook, you need to preface the animatable element HTML with animated. to tell react-spring that this element will be animated. <animated.div></animated.div> <animated.h1></animated.h1> Lastly, you must pass your animation constant as a style attribute on the animatable DOM element. <animated.div style={animation}></animated.div> Putting that all together we get the following: import React, { useState } from 'react'; import { animated, useSpring } from 'react-spring'; const Modal = () => { const [showModal, setShowModal] = useState(false); const animation = useSpring({ opacity: showModal ? 1 : 0, transform: showModal ? `translateY(0%)` : `translateY(-200%) }); return <animated.div style={animation}>...</animated.div> } export default Modal; Now, it's your turn. Head over to this CodeSandbox and complete the activity in the FadeIn.js file.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/use-spring-exercise"
+category = "research"
+tags = ["animation", "const", "define", "design systems", "elements", "exercise", "opacity:", "react", "react spring", "showmodal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "codesandbox.io", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/font-types"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Font typesThere are several different types of fonts and each has distinguishing characteristics. Serif Serif fonts have short lines or strokes on the open ends of letters. Serif fonts include fonts such as: Times New Roman Georgia Sans-Serif Sans-serif fonts, in contrast to serif fonts, do not have short lines or strokes on the open ends of letters (sans means without in French). Sans-serif fonts include fonts such as: Arial Tahoma Monospaced Monospaced fonts have letters and characters which occupy the same amount of horizontal space. They were typically used on typewriters. Monospaced fonts include fonts such as: Courier IBM Plex Mono Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/font-types"
+category = "research"
+tags = ["design systems", "font", "fonts", "react", "react spring", "serif", "storybook", "styled components", "types"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/drawbacks-of-design-systems"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Drawbacks of design systemsBut while all of these benefits sound great, there are some drawbacks as well. Time We've all heard the saying that "Rome wasn't built in a day" and your design system won't be either. Design systems take time to build. We're not talking a month or two. A robust design system built from the ground up can take many months to several years to be stable. This is all dependent on your team structure. Evolution A design system is never complete. It isn't a project with a finite end date; it's a product serving products and it will evolve over time. Maintenance A design system is a living, breathing product which has lifecycles and requires maintenance. And we cannot build a design system without a team. Investment Stakeholders don't like hearing that a design system requires a large, up-front commitment, but that's the reality. We need designers, engineers, and product managers to ensure the success of the system. And given all of these downsides, the number one reason design systems fail is a lack of adoption.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/drawbacks-of-design-systems"
+category = "research"
+tags = ["design", "design systems", "drawbacks", "evolution", "investment", "maintenance", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/use-spring-exercise-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Use spring exercise solutionimport React, { useState } from "react"; import { animated, useSpring } from "react-spring"; /* ** Exercise 1: useSpring ** In this exercise you'll animate text in and out depending upon the state ** The text will slide in and fade in from the top (30%) on show ** and fade out and slide out towards the top on hide */ const FadeIn = () => { const [show, setShow] = useState(false); const animation = useSpring({ opacity: show ? 1 : 0, transform: show ? `translateY(0)` : `translateY(-30%)` }); return ( <div> <button onClick={() => setShow(!show)}>Toggle animation</button> <animated.p style={animation}>Animate me on click!</animated.p> </div> ); }; export default FadeIn;Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/use-spring-exercise-solution"
+category = "research"
+tags = ["design systems", "exercise", "react", "react spring", "solution", "spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "codesandbox.io", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/modal-documentation-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Modal documentation exerciseGo ahead and add a Modal.stories.mdx file and create stories for your modals.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/modal-documentation-exercise"
+category = "research"
+tags = ["design systems", "documentation", "exercise", "modal", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/button-variations-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Button variations exerciseNow that we have our default buttons, let's add our variations: large, small, icon, labelled icon, warning, success, and error. First let's install a package which will help us create these modifiers. npm i styled-components-modifiers Inside Buttons.js import the applyStyleModifiers module from styled-components-modifiers. import { applyStyleModifiers } from "styled-components-modifiers"; Next, let's define a variable which will hold all of our modifiers. Let's start with small and large. const BUTTON_MODIFIERS = { small: () => ` font-size: ${typeScale.helperText}; padding: 8px; `, large: () => ` font-size: ${typeScale.header5}; padding: 16px 24px; ` }; We now need to use applyStyleModifiers to each button to get them to render. Add the applyStyleModifiers(BUTTON_MODIFIERS) expression to the end of each primary, secondary, and tertiary button (or the styles will be overridden). const PrimaryButton = styled(Button)` background-color: ${defaultTheme.primaryColor}; border: ${defaultTheme.textColorOnPrimary}; color: white; &:disabled { background-color: ${defaultTheme.disabled}; color: ${defaultTheme.textOnDisabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; export const SecondaryButton = styled(Button)` border: 2px solid ${defaultTheme.primaryColor}; color: ${defaultTheme.primaryColor}; background: none; &:disabled { background: none; border: 2px solid ${defaultTheme.disabled}; color: ${defaultTheme.disabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; export const TertiaryButton = styled(Button)` border: 2px solid transparent; color: ${defaultTheme.primaryColor}; background: none; &:disabled { color: ${defaultTheme.disabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; Finally inside index.js we can add the modifiers as an array on the button components, or as simple strings if there is only one. <PrimaryButton modifiers={["small"]}>Hello World</PrimaryButton> <SecondaryButton modifiers='large'>Goodbye World</SecondaryButton> Your primary button should be rendering as a small button and your secondary button should be large. Now it's your turn. Add modifiers for the statuses: warning, error, and success. You'll have to add new variables to your theme. You can use whichever red, yellow, and green color values you like for your hover and focus states.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-variations-exercise"
+category = "research"
+tags = ["border:", "button", "color:", "const", "design systems", "exercise", "let's", "react", "react spring", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/css-naming-architectures"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "CSS naming architecturesCSS naming architectures, like SMAACS and BEM (block-element-modifier) were created to superficially scope CSS styling. However, they were... superficial. This means that they are simply a naming convention for developers to create more scoped styling, and wouldn't actually prevent leaked styling. With BEM our shopping cart CSS styles might look more like this. The block is the shopping cart, the element is the shopping cart item, and the modifier might be something like an out of stock indicator. .shopping-cart__shopping-cart-item { color: blue; } .shopping-cart__shopping-cart-item--out-of-stock { color: red; } And while this might have helped bleeding CSS styling, you can see that the names quickly became long and unruly. As a result, CSS naming architectures didn't truly solve the issue of bleeding styles.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/css-naming-architectures"
+category = "research"
+tags = ["architectures", "design systems", "naming", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "draculatheme.com", "dsconference.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/integrating-styled-components"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Integrating styled componentsBefore we run our React application, let's remove some of the boilerplate. Remove everything inside of the src/ folder. Now let's add a new file inside of the src/ folder called index.js. (You can also manually delete all of these files if you don't feel like re-adding them, however I think it's good to walk through the process and saves me a bit more time as opposed to manually deleting each individual file). Let's just add a simple App component which returns a div containing the words "Hello World". import React from "react"; import ReactDOM from "react-dom"; const App = () => <div>Hello world</div>; ReactDOM.render(<App />, document.querySelector("#root")); When we run npm start to start our development server we should see the words "Hello World" appear in the browser. Let's go ahead and add styled components to see them in action. In your terminal run npm install styled-components. You can also type npm i styled-components as a shorthand. Once installed, create a new folder called components inside the src/ directory and add a file called Buttons.js. You can add a new folder and file at the same time in VSCode by clicking 'Add new file' and typing components/Buttons.js in the name field. Cool right?! Inside the Buttons.js file let's import styled from styled-components and add our first styled component. import styled from "styled-components"; const PrimaryButton = styled.button` background-color: red; border: none; color: white; padding: 12px 24px; font-size: 1rem; `; export default PrimaryButton; Back inside of index.js, import PrimaryButton from ./components/Button and render it inside of the wrapping div. import React from "react"; import ReactDOM from "react-dom"; import PrimaryButton from "./components/Buttons"; const App = () => <PrimaryButton>Hello world</PrimaryButton>; ReactDOM.render(<App />, document.querySelector("#root")); In your browser you should see a red button with the white text "Hello World". We can do some pretty amazing things with styled components.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/integrating-styled-components"
+category = "research"
+tags = ["components", "design systems", "file", "import", "inside", "integrating", "let's", "react", "react spring", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/button-variations-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Button variations solutionFirst I added some new variables to my theme. import { blue, neutral, yellow, green, red } from "./colors"; ... status: { warningColor: yellow[100], warningColorHover: yellow[200], warningColorActive: yellow[300], errorColor: red[100], errorColorHover: red[200], errorColorActive: red[300], successColor: green[100], successColorHover: green[200], successColorActive: green[300] } Next let's add the modifiers for the warning, success, and error states. import styled from "styled-components"; import { applyStyleModifiers } from "styled-components-modifiers"; import { defaultTheme, helperText, header5, paragraph } from "../utils"; const BUTTON_MODIFIERS = { small: () => ` font-size: ${typeScale.helperText}; padding: 8px; `, large: () => ` font-size: ${typeScale.header5}; padding: 16px 24px; `, warning: () => ` background: none; color: ${defaultTheme.status.warningColor}; &:hover, &:focus { background-color: ${defaultTheme.status.warningColorHover}; outline: 3px solid ${defaultTheme.status.warningColorHover}; outline-offset: 2px; border: 2px solid transparent; } &:active { background-color: ${defaultTheme.status.warningColorActive}; } `, primaryButtonWarning: () => ` background-color: ${defaultTheme.status.warningColor}; color: ${defaultTheme.textColorInverted}; `, secondaryButtonWarning: () => ` border: 2px solid ${defaultTheme.status.warningColor}; `, error: () => ` background: none; color: ${defaultTheme.status.errorColor}; &:hover, &:focus { background-color: ${defaultTheme.status.errorColorHover}; outline: 3px solid ${defaultTheme.status.errorColorHover}; outline-offset: 2px; border: 2px solid transparent; } &:active { background-color: ${defaultTheme.status.errorColorActive}; } `, primaryButtonError: () => ` background-color: ${defaultTheme.status.errorColor}; color: ${defaultTheme.textColorInverted}; `, secondaryButtonError: () => ` border: 2px solid ${defaultTheme.status.warningColor}; `, success: () => ` background: none; color: ${defaultTheme.status.successColor}; &:hover, &:focus { background-color: ${defaultTheme.status.successColorHover}; outline: 3px solid ${defaultTheme.status.successColorHover}; outline-offset: 2px; border: 2px solid transparent; } &:active { background-color: ${defaultTheme.status.successColorActive}; } `, primaryButtonSuccess: () => ` background-color: ${defaultTheme.status.successColor}; color: ${defaultTheme.textColorInverted}; `, secondaryButtonSuccess: () => ` border: 2px solid ${defaultTheme.status.warningColor}; ` }; Now inside index.js we can add another modifier to our buttons. <PrimaryButton modifiers={["small", "success", "primaryButtonSuccess"]}> Hello world </PrimaryButton> <SecondaryButton modifiers={["large", "warning", "secondaryButtonWarning"]}> Goodbye world </SecondaryButton> <TertiaryButton modifiers={["error", "tertiaryButtonError"]}> Hey world </TertiaryButton> Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-variations-solution"
+category = "research"
+tags = ["background-color:", "border:", "button", "color:", "design systems", "import", "react", "react spring", "solid", "solution"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/creating-a-theme"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Creating a themeInside themes.js create a default theme and let's add the following values. import { blue, neutral } from "./colors"; import { primaryFont } from "./typography"; export const defaultTheme = { primaryColor: blue[300], primaryHoverColor: blue[200], primaryActiveColor: blue[100], textColorOnPrimary: neutral[100], textColor: neutral[600], textColorInverted: neutral[100], primaryFont: primaryFont }; Lastly let's add an index.js file inside of utils/ which exports each utility. export * from "./colors"; export * from "./typography"; export * from "./themes"; This will allow us to import utilities from the utils folder instead of the individual folder. For example we can simply write the following to import our default theme. import { defaultTheme } from "../utils"; If we didn't have the index file we would have to name the specific file we wanted to import the utility from, so this is much cleaner. // We don't need this now! import { defaultTheme } from "../utils/themes"; Finally let's use our theme inside of our Buttons.js file and remove the hard coded values. We can also remove the primaryBlue constant. import styled from "styled-components"; import { defaultTheme } from "../utils"; import { typeScale } from "../utils"; const Button = styled.button` padding: 8px 12px; font-size: ${typeScale.paragraph}; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: ${defaultTheme.primaryFont}; `; const PrimaryButton = styled(Button)` background-color: ${defaultTheme.primaryColor}; color: ${defaultTheme.textColorOnPrimary}; border: 2px solid transparent; `; export const SecondaryButton = styled(Button)` border: 2px solid ${defaultTheme.primaryColor}; color: ${defaultTheme.primaryColor}; `; export const TertiaryButton = styled(Button)` border: 2px solid transparent; color: ${defaultTheme.primaryColor}; `; export default PrimaryButton; And we should see all of our components rendering perfectly.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/creating-a-theme"
+category = "research"
+tags = ["const", "creating", "defaulttheme", "design systems", "export", "file", "import", "react", "react spring", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "coolors.co", "dank.sh", "designsystemslondon.com", "draculatheme.com", "dsconference.com", "figma.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/adding-state-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = 'Adding state solutionFirst add the disabled states to the theme. export const defaultTheme = { ... disabled: neutral[400], textOnDisabled: neutral[300] }; Next add the states to the buttons. import styled from "styled-components"; import { defaultTheme, paragraph } from "../utils"; const Button = styled.button` padding: 8px 12px; font-size: ${typeScale.paragraph}; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: ${defaultTheme.primaryFont}; transition: background-color 0.2s linear, color 0.2s linear, border 0.2s linear; &:hover { background-color: ${defaultTheme.primaryHoverColor}; color: ${defaultTheme.textColorOnPrimary}; } &:focus { outline: 3px solid ${defaultTheme.primaryHoverColor}; outline-offset: 2px; } &:active { background-color: ${defaultTheme.primaryActiveColor}; border-color: ${defaultTheme.primaryActiveColor}; color: ${defaultTheme.textColorOnPrimary}; } &:disabled { cursor: not-allowed; background: none; color: ${defaultTheme.disabled}; border: none; } `; const PrimaryButton = styled(Button)` background-color: ${defaultTheme.primaryColor}; color: ${defaultTheme.textColorOnPrimary}; border: 2px solid transparent; &:disabled { background-color: ${defaultTheme.disabled}; color: ${defaultTheme.textOnDisabled}; border-color: ${defaultTheme.disabled}; } `; export const SecondaryButton = styled(Button)` border: 2px solid ${defaultTheme.primaryColor}; color: ${defaultTheme.primaryColor}; &:disabled { border: 2px solid ${defaultTheme.disabled}; } `; export const TertiaryButton = styled(Button)` border: 2px solid transparent; color: ${defaultTheme.primaryColor}; `; export default PrimaryButton; We can test out disabled by adding the disabled attribute to one of our buttons. <PrimaryButton disabled>Hello world</PrimaryButton> <SecondaryButton disabled>Goodbye world</SecondaryButton> <TertiaryButton disabled>Hey world</TertiaryButton> You should see your disabled button rendering in the UI. Previous sectionNext section'
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/adding-state-solution"
+category = "research"
+tags = ["adding", "background-color:", "border:", "color:", "const", "design systems", "disabled", "export", "react", "react spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/modal-documentation-exercise-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = 'Modal documentation exercise solutionimport { Meta, Story, Preview } from "@storybook/addon-docs/blocks"; import { withKnobs, boolean } from "@storybook/addon-knobs"; import { SignUpModal, SignInModal } from "./Modals"; <Meta title="Design System|Modals" component={SignUpModal} /> # Modals Modals are dialogs which overlay content to convey. ## Usage Use modals to call the user to action or complete a task. ## Sign In Modal The SignInModal is used to prompt the user to sign in to their account. <Preview withToolbar> <Story name="signIn"> <SignInModal showModal={boolean("Show Modal", true)} /> </Story> </Preview> ## Sign Up Modal The SignUpModal is used to prompt the user to create an account. <Preview withToolbar> <Story name="signUp"> <SignUpModal showModal={boolean("Show Modal", true)} /> </Story> </Preview>Previous sectionNext section'
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/modal-documentation-exercise-solution"
+category = "research"
+tags = ["design systems", "documentation", "exercise", "modal", "react", "react spring", "solution", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/color-semantics"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Color semanticsThe colors we choose for our color palettes can have implications on the semantics of our applications. Let's take a look at the semantics of colors. Red Red is typically associated with fire, violence, war, love, and passion. Red can have a physical effect on users, actually raising their blood pressure and respiration rates as it can instill a sense of anger or danger. Thus, red should be used sparingly throughout your application. Orange Orange is a vibrant and energetic color, typically associated with earth and autumn. Orange can represent change and movement as well as creativity. Yellow Yellow is associated with happiness and sunshine, yet it can also be associated with deceit and cowardice. Yellow designs typically instill a sense of happiness and cheer. Green Green represents new beginnings and growth. It can signify renewal and abundance, or it can represent envy, jealousy or lack of experience. Green has many calming effects, similar to blue, but incorporates some of the energy of yellow. Blue Blue can represent sadness or calmness, responsibility, reliability, and peace. You'll typically see social applications like Facebook and Twitter leverage blue as it subconsciously promotes trust within their users. Purple Purple is the color of luxury, royalty, and wealth. Black Black has long been associated with power, elegance and formality, but can also instill a sense of evil, death and mystery. White White is associated with purity, cleanliness, virtue and is typically seen used for healthcare websites. White can also represent goodness and angels. Gray Gray typically represents moodiness and depression yet can also be used for more conservative, formal, or modern applications. Brown Brown is used to create a sense of dependability, reliability, and earthiness but can also be a bit dull in application design.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/color-semantics"
+category = "research"
+tags = ["associated", "black", "blue", "brown", "color", "design systems", "gray", "green", "orange", "purple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/use-transition-exercise-solution"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Use transition exercise solutionimport React, { useState } from "react"; import { animated, useTransition } from "react-spring"; /* ** Exercise 2: useToggle ** In this exercise you'll transition between two emojis: sad and happy ** You should have a happy state which will be a boolean denoting whether or not the emoji should ** be happy or sad. ** The emojis should transition from opacity: 0 to opacity: 1 ** The button text should change depending upon the happy state: "Make sad" if currently happy and "Make happy" if currently sad */ const EmojiCarousel = () => { const [happy, setHappy] = useState(true); const transition = useTransition(happy, null, { from: { opacity: 0, position: "absolute" }, enter: { opacity: 1 }, leave: { opacity: 0 } }); return ( <div className="emoji-carousel"> <button onClick={() => setHappy(!happy)}> {happy ? "Make sad" : "Make happy"} </button> {transition.map(({ item, props }) => { return item ? ( <animated.span role="img" style={props} aria-label="Happy"> 😀 </animated.span> ) : ( <animated.span role="img" style={props} aria-label="Sad"> 😭 </animated.span> ); })} </div> ); }; export default EmojiCarousel; Other React Spring Hooks There are several other react-spring hooks you can use to create beautiful micro-interactions for your design system. The full list can be found here.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/use-transition-exercise-solution"
+category = "research"
+tags = ['"make', "design systems", "exercise", "happy", "hooks", "opacity:", "react", "react spring", "solution", "spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "react-spring.io", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/actions"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''ActionsWe can use the addon-actions add-on to trigger actions on our form components, like our buttons. First install the add-on then add it to the addons array in main.js. npm i -D @storybook/addon-actions module.exports = { stories: ["../src/**/*.stories.(js|mdx)"], addons: [ ... "@storybook/addon-actions", }; We can now import action and trigger it on our buttons. Inside Button.stories.js import action and add it as a onClick handler on the PrimaryButton component. import { action } from '@storybook/addon-actions'; ... <Preview withToolbar> <Story name="primary"> <PrimaryButton onClick={action('button-click')} disabled={boolean("Disabled", false)}>Hello world</PrimaryButton> </Story> </Preview> Now if we head back to the Storybook UI and click our primary button we should see an action being fired in the Actions tab panel. Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/actions"
+category = "research"
+tags = ["action", "actions", "design systems", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "medium.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/how-we-apply-css"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''How we apply CSSIf you've never worked with CSS-in-JS before, the paradigm shift can be a bit overwhelming. Admittedly it took me quite a while to come to terms with the new syntax, but once I opened up my mind to the new structure I quickly realized the benefits that CSS-in-JS has for component libraries. When we think about how we style our apps, CSS is probably the first thing that comes to mind. CSS, or Cascading Style Sheets, is the language we use to apply styles to HTML DOM elements. In the past we would apply CSS in three ways: External CSS stylesheet with a link in the head HTML element Within the HTML file in a <style> tag Inline on the HTML elements <h1 style="margin-right: 4px"> And while this worked for a while, some problems began to arise. CSS is not a scoped language, meaning its styles can bleed out from one component file and unintentionally affect the styling of unrelated components. This is due to CSS specificity rules which are a point system that governs how CSS styles are applied.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/how-we-apply-css"
+category = "research"
+tags = ["apply", "design systems", "html", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/problems-with-css"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Problems with CSSSo... why is pure CSS problematic? The ability to include styling in so many ways (inline, in the document head, and in external CSS files) causes our styling to be de-centralized and difficult to maintain. De-centralized CSS makes it difficult to remove old CSS when a component is removed and this can lead to dead code bloating your package size. Additionally, a lack of knowledge about CSS specificity leads developers to add !important notations to many styles, which leads to unmaintainable styling. This also leads to bleeding styles. For example, if I want to color all list items in my "Shopping cart" component blue, I might write the following CSS inside of shopping-cart.css: li { color: blue; } While this might seem to work at first glance, this style will be applied to ALL list items in the application, which I don't want. I can try to make this more specific with one of the following CSS declarations: ul.shopping-cart > li { color: blue; } li.shopping-cart-item { color: blue !important; } .shopping-cart > .shopping-cart-item { color: blue; } .shopping-cart-item { color: blue; } None of these is particularly great and can lead to difficult-to-read CSS styling and a multitude of HTML class names. To combat this, CSS naming architectures were created.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/problems-with-css"
+category = "research"
+tags = ["blue;", "color:", "design systems", "problems", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/wrap-up"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Wrap upI hope you enjoyed this course! I had so much fun creating it! If you have any questions, feel free to contact me on Twitter! Happy coding!Previous section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/wrap-up"
+category = "research"
+tags = ["design systems", "react", "react spring", "storybook", "styled components", "wrap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/modal-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Modal exerciseNow we're ready to create our first composite component! Create a new file Modal.js inside of the components/ folder. Additionally, create an index.js file and let's export all components from Buttons.js and Modals.js. export * from "./Buttons"; export * from "./Modals"; Now we will be able to import components from /components instead of /components/Buttons or /components/Modals. You can update index.js accordingly. Adding An Illustration First let's add our illustration. Export the illustration from Figma as an SVG. Inside of src/ create an assets/ folder and inside add an illustrations/ folder. Save your SVG in a file called SignUp.svg and add it to the illustrations folder. Let's also create an index.js file inside of the assets folder and export our newly added illustration. export const Illustrations = { SignUp }; Let's also add a new variable to our themes formElementBackground. For light theme we'll use neutral[100] and for dark theme we'll use blue[100]. blue[100] isn't necessarily the best background color for the dark-theme modal, but I just want to illustrate the state change. You're welcome to use whichever values you like. We'll also need a textOnFormElementBackground variable which will be neutral[600] for the default theme and neutral[100] for the dark theme. // Default theme formElementBackground: neutral[100], textOnFormElementBackground: neutral[600], // Dark theme formElementBackground: blue[100], textOnFormElementBackground: neutral[100], Inside of Modals.js let's import React as well as styled-components. import React from "react"; import styled from "styled-components"; First let's create our modal wrapper which will contain all of the styling for our modal. const ModalWrapper = styled.div` width: 800px; height: 500px; box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2); background-color: ${props => props.theme.formElementBackground}; color: ${props => props.theme.textOnFormElementBackground}; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; border-radius: 2px; background: ${props => props.theme.formElementBackground}; `; Next, let's create the sign up header and sign up content as styled components. They will both use our type scale. First import the typeScale variable then add it to the following declarations. import { typeScale } from "../utils"; const SignUpHeader = styled.h3` font-size: ${typeScale.header3}; `; const SignUpText = styled.p` font-size: ${typeScale.paragraph}; max-width: 70%; text-align: center; `; Now let's create a SignUpModal which inherits from ModalWrapper. This will allow us to be very explicit with our component imports <SignUpModal />. You can of course create a basic Modal element and add children inside, which is great to encapsulate logic closer to where it's being used, but for the sake of this tutorial let's create the sign up modal inside of the Modals file. Don't forget to import PrimaryButton so we can use it in our modal. You can use the default or the named export. We'll also need our SignUp.svg illustration. import { PrimaryButton } from "./Buttons"; import { Illustrations } from "../assets"; export const SignUpModal = () => { return ( <ModalWrapper> <img src={Illustrations.SignUp} alt="Sign up for an account!" /> <SignUpHeader>Sign Up</SignUpHeader> <SignUpText> Sign up today to get access to all of our content and features! </SignUpText> <PrimaryButton onClick={() => console.log("You signed up!")}> Sign Up </PrimaryButton> </ModalWrapper> ); }; Now let's add our close icon. We can export it as an SVG from Figma and create a new file CloseIcon.js inside of our assets folder. Create a new folder icons/ inside of assets/ and place CloseIcon.js inside. Let's make CloseIconWrapper a styled component so we can set some styling on it. import React from "react"; import styled from "styled-components"; const CloseIconWrapper = styled.svg` width: 100%; height: 100%; `; export const CloseIcon = () => ( <CloseIconWrapper aria-hidden="true">...</CloseIconWrapper> ); You should only use inline-SVG for elements whose properties will be changing in response to user interaction (i.e. hover, focus). For static SVG elements, like our illustration, you should use <img src={...} /> to reduce file bloat. Now let's export CloseIcon from the assets index.js. export * from "./icons/CloseIcon"; We can import CloseIcon and our illustrations into Modals.js and use it in our SignUpModal component. import { Illustrations, CloseIcon } from "../assets"; Now let's create a button which will wrap the CloseIcon. Then we'll instantiate the icon inside of the button. import { SignUp, CloseIcon } from "../assets"; ... const CloseModalButton = styled.button` cursor: pointer; background: none; border: none; position: absolute; top: 40px; right: 40px; width: 24px; height: 24px; padding: 0; `; export const SignUpModal = () => { return ( <ModalWrapper> ... <CloseModalButton aria-label="Close modal" onClick={() => console.log("You closed the modal!")}> <CloseIcon /> </CloseModalButton> </ModalWrapper> ); }; If we head back to index.js we can import SignUpModal and instantiate it. import { SignUpModal } from "./components"; ... <SignUpModal /> Now build your second Figma modal which you designed in the last chapter. For the text fields, you can grab the code in the course GitHub repository.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/modal-exercise"
+category = "research"
+tags = ["adding", "bloat.", "changing", "closeicon", "const", "create", "design systems", "elements", "elements,", "exercise"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "codesandbox.io", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/deploying-storybook"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Deploying StorybookYou can run npm run build-storybook to build your storybook documentation and then you can deploy it for all team members to use. Once built, commit and push all of your repository code to the master branch. Next head over to Netlify and log in, or sign up, with GitHub. Click New Site From Git and select GitHub for continuous deployment, then select your repository. Leave the owner as your default team, and the branch to deploy to master. Under Basic build settings, set the following arguments: // Build command npm run build-storybook // Publish directory storybook-static/ Once the deploy has started, you can then head over to the site settings and change the site name. Netlify makes it super easy to add a custom domain with the Domain management panel. You can read more about adding a custom domain here. Resources Storybook Setting up Storybook with Material UI and Styled Components If you're lost or missed some code, you can check out the branch step-3-documenting-components on the GitHub repo!Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/deploying-storybook"
+category = "research"
+tags = ["deploying", "design systems", "react", "react spring", "resources", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bit.ly", "code.visualstudio.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "docs.netlify.com", "draculatheme.com", "emotion.sh", "figma.com", "frontendmasters.com", "github.com", "lesscss.org", "medium.com", "netlify.com", "npmjs.com", "sass-lang.com", "styled-components.com", "twitter.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/adding-state-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Adding state exerciseNow let's implement our button states: hover, focused, active, and disabled. We can nest styling just as you would with a CSS pre-processor like Sass. Since all three of my buttons (primary, secondary, and tertiary) have the same hover state, I'll add the state to the Button component. I'll also add a transition to smooth out the background and color changes. const Button = styled.button` padding: 8px 12px; font-size: ${typeScale.paragraph}; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: ${defaultTheme.primaryFont}; transition: background-color 0.2s linear, color 0.2s linear; &:hover { background-color: ${defaultTheme.primaryHoverColor}; color: ${defaultTheme.textColorOnPrimary}; } `; We should now see our transitions being added to our buttons. Go ahead and add the rest of the states for your buttons. You may also want to add some of these variables to your theme (i.e. disabled).Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/adding-state-exercise"
+category = "research"
+tags = ["adding", "design systems", "exercise", "react", "react spring", "state", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "frontendmasters.com", "github.com", "medium.com", "w3.org", "webaim.org"]
+
+["https://fem-design-systems.netlify.app/button-activity-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Button activity exerciseLet's create a second button called SecondaryButton. We want this button to inherit most of the properties from the first button, like padding, font size, etc. So let's first extract out the common button properties we know we will need in all three base buttons (primary, secondary, tertiary). This will be based on your Figma design, so your code may look a bit different than mine. const Button = styled.button` padding: 8px 12px; font-size: 1rem; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: "Roboto Mono", monospace; `; To use our custom Google font, grab the link which you can find when adding a font within the Google fonts site, and add it within the head in the index.html file. <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" /> Now let's refactor our PrimaryButton component; since we moved the base button functionality out into Button, we don't need all of it inside of PrimaryButton. We now want this component to inherit the properties from the Button component. So instead of setting const PrimaryButton = styled.button we can write const PrimaryButton = styled(Button). We can now remove the styles being applied from the Button component. const Button = styled.button` padding: 8px 12px; font-size: 1rem; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: "Roboto Mono", monospace; `; const PrimaryButton = styled(Button)` background-color: red; border: none; color: white; `; Let's create a new const which contains the hex code for the background color of our primary button. You can add this underneath the styled import. These colors will be your primary colors from your Figma kit. const primaryBlue = "#030086"; Next, let's add the individual properties we want our PrimaryButton component to have. We can use our primaryBlue variable inside of our styled component with the ${} syntax. const PrimaryButton = styled(Button)` background-color: ${primaryBlue}; color: white; border: 2px solid transparent; `; And now if we head back to our browser we should see the primary button with updated styling. Great, now it's your turn. Go add the secondary button and tertiary button to your Buttons.js file and render them inside of index.js.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-activity-exercise"
+category = "research"
+tags = ["activity", "button", "const", "design systems", "exercise", "let's", "primarybutton", "properties", "react", "react spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/use-transition-exercise"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Use transition exerciseuseTransition is a bit more complex and will mount and unmount your elements from the DOM. It can also transition between different elements in the DOM (like in a photo album). To define your useTransition hook, you must define the from, enter, and leave attributes. To get our transition to render we can't simply pass it as a style attribute; we must iterate over it in our return statement. You can transition arrays of elements: const [items, set] = useState([...]) const transitions = useTransition(items, item => item.key, { from: { opacity: 0 }, enter: { opacity: 1 }, leave: { opacity: 0 } }) return transitions.map(({ item, props, key }) => <animated.div key={key} style={props}>{item.text}</animated.div> ) You can toggle between two different elements. const [toggle, set] = useState(false); const transitions = useTransition(toggle, null, { from: { position: "absolute", opacity: 0 }, enter: { opacity: 1 }, leave: { opacity: 0 } }); return transitions.map(({ item, key, props }) => item ? ( <animated.div style={props}>Hello</animated.div> ) : ( <animated.div style={props}>Goodbye</animated.div> ) ); Or you can mount and unmount one element, like a modal, from the DOM based on a conditional statement. const [show, set] = useState(false); const transitions = useTransition(show, null, { from: { position: "absolute", opacity: 0 }, enter: { opacity: 1 }, leave: { opacity: 0 } }); return transitions.map( ({ item, key, props }) => item && ( <animated.div key={key} style={props}> I'm mounted! </animated.div> ) ); Now, it's your turn. Head over to this CodeSandbox and complete the activity in the EmojiCarousel.js file.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/use-transition-exercise"
+category = "research"
+tags = ["const", "design systems", "exercise", "opacity:", "react", "react spring", "return", "storybook", "styled components", "transition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "codesandbox.io", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/using-addons"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Using addonsAdd-ons are neat packages you can install and use with Storybook to gain additional functionality. Let's add a documentation add-on which will allow us to create beautiful design system documentation. Run the following command to install a few add-ons. npm i -D @storybook/preset-create-react-app actions @storybook/addon-docs We then need to tell Storybook that we'll be using this add-on and we can do that in main.js. We'll be creating our documentation and stories using MDX. MDX is a format which lets you write JSX in your markdown files, and we can use it to create stories and documentation. We can use MDX to document our components and create a style guide for our design system. To do that, we'll need a few additional things, known as add-ons. Add the following to the addons array in main.js. module.exports = { stories: ["../src/**/*.stories.(js|mdx)"], addons: ["@storybook/preset-create-react-app", "@storybook/addon-docs"] }; Now we can document and create stories for our button components. import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"; import { PrimaryButton, SecondaryButton, TertiaryButton } from "./Buttons"; <Meta title="Design System|Buttons" component={PrimaryButton} /> # Buttons Buttons are used to trigger actions within an application. ## Usage Buttons are used to trigger internal actions within your web applications. ## Primary Buttons Primary buttons are used as a call to action and indicate the most important action on a page. <Preview withToolbar> <Story name="primary"> <PrimaryButton>Hello world</PrimaryButton> </Story> </Preview> ## Secondary Buttons Primary buttons are used as a call to action and indicate the most important action on a page. <Story name="secondary"> <SecondaryButton>Hello world</SecondaryButton> </Story> ## Tertiary Buttons Primary buttons are used as a call to action and indicate the most important action on a page. <Story name="tertiary"> <TertiaryButton>Hello world</TertiaryButton> </Story>Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/using-addons"
+category = "research"
+tags = ["action", "addons", "buttons", "create", "design systems", "primary", "react", "react spring", "secondary", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/typescale"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "TypescaleThere are several scales to choose from when building an application. Here are some of the most popular. Major Third Major Second Perfect Fourth Golden Ratio Perfect Fifth Creating A Type Scale In Figma In your Figma project, head to the Typography tab and use the provided artboards as a template. You should pick a font family and a typescale. Head to the Google fonts website and find a font family for your design system. I'll choose Poppins, a nice sans-serif font. Now, head over to the type scale calculator and select a type scale. I chose the Major Second. We're going to create text styles for our h1 to h5 headers as well as paragraphs, helper text, and copyright text. Create a new text item by pressing 'T' and typing the following: Paragraph - 16px (1rem) FEM Design System I chose to round my REM values to one decimal place, however you may want to extend this out to the hundredths or thousandths place if you want to be more explicit. We will then use the type scale we just selected to calculate the headers, helper text, and copyright text. H1 - 28px (1.8rem) FEM Design System H2 - 25px (1.6rem) FEM Design System H3 - 22px (1.4rem) FEM Design system H4 - 20px (1.2rem) FEM Design System H5 - 18px (1.1rem) FEM Design System Paragraph - 16px (1rem) FEM Design System Helper Text - 14px (0.8rem) FEM Design System Copyright Text - 12px (0.7rem) FEM Design System Once each of these has been created (with the respective pixel values and font family you chose in the previous step), select each individually, press the four dots next to Text in the right-hand sidebar, and click the plus icon to add a new style. Give it the name of the element it will represent (i.e. Paragraph, Header 1). Select all of the text blocks and next to Fill in the right-hand sidebar, click the four dots and select Text Color from our color palette. Now, let's create the inverted text. Clone the art board we just created and set the background color to black (#000000). Select all of the text blocks and set the color to Text Color Inverted.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/typescale"
+category = "research"
+tags = ["color", "creating", "design", "design systems", "figma", "react", "react spring", "scale", "select", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/documenting-components-with-storybook"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Documenting components with StorybookStorybook allows you to document components in isolation. While there are many uses and benefits above and beyond simply documenting your components, this is how we'll be using it today. Initializing Storybook To add Storybook to our design system, let's run the following command. npx -p @storybook/cli sb init This will create a .storybook directory in the root of your project. It will also create a stories/ directory inside of the src/ folder. If we expand it, we'll see 0-Welcome.stories.js and 1-Button.stories.js. Run npm run storybook to start your development server. Let's delete the src/stories directory completely. Storybook creates the stories/ folder initially because it isn't aware of your project architecture. But we're aware of it so let's refactor.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/documenting-components-with-storybook"
+category = "research"
+tags = ["components", "design systems", "documenting", "initializing", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/getting-started"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Getting startedYou should create an account on Figma. This is where we'll be designing our color palette, typography, and components. You should also create an account on Netlify so you can deploy your Storybook application. What This Course Is This course is a high-level introduction to design systems. It will teach you the foundational skills your team needs to build a set of reusable components and standards. What This Course Is Not This course is not a comprehensive overview to design systems. There is no industry-standard for what a design system truly is, and as a result it can be interpreted differently at different companies. Course Updates If you find any mistakes, feel free to open a PR on the course repository. Getting Started If you'd like to view the working app, follow the steps below. Running the development server Clone this repo git clone https://github.com/emmabostian/fem-design-systems.git Install dependencies with npm i Start the development server npm start _If you hit a "path argument must be of type string" error during build, make sure react-scripts is version 3.4.0, delete node_modules, and re-install dependencies with npm i. You can read more abou this error here. Viewing the Storybook To view the Storybook, you can run it locally with the following steps. Clone this repo git clone https://github.com/emmabostian/fem-design-systems.git Install dependencies with npm i Start Storybook with npm run storybook. You can also visit the Netlify site here.Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/getting-started"
+category = "research"
+tags = ["clone", "course", "design systems", "development", "getting", "react", "react spring", "running", "server", "started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "carbondesignsystem.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "emotion.sh", "frontendmasters.com", "github.com", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "styled-components.com", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]
+
+["https://fem-design-systems.netlify.app/using-extensible-themes"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = '''Using extensible themesFinally let's update our Buttons.js file to use our theme prop. First let's remove the defaultTheme import. Now we can replace the ${defaultTheme.<<prop>>} with the following syntax: ${props => props.theme.<<prop>>}. Our components will take a theme prop from the ThemeProvider and render the proper value. import styled from "styled-components"; import { typeScale } from "../utils"; import { applyStyleModifiers } from "styled-components-modifiers"; const BUTTON_MODIFIERS = { small: () => ` font-size: ${typeScale.helperText}; padding: 8px; `, large: () => ` font-size: ${typeScale.header5}; padding: 16px 24px; `, warning: () => ` background-color: ${props => props.theme.status.warningColor}; color: ${props => props.theme.textColorInverted}; &:hover, &:focus { background-color: ${props => props.theme.status.warningColorHover}; outline: 3px solid ${props => props.theme.status.warningColorHover}; outline-offset: 2px; } &:active { background-color: ${props => props.theme.status.warningColorActive}; } `, error: () => ` background-color: ${props => props.theme.status.errorColor}; color: ${props => props.theme.textColorInverted}; &:hover { background-color: ${props => props.theme.status.errorColorHover}; } &:active { background-color: ${props => props.theme.status.errorColorActive}; } `, success: () => ` background-color: ${props => props.theme.status.successColor}; color: ${props => props.theme.textColorInverted}; &:hover { background-color: ${props => props.theme.status.successColorHover}; } &:active { background-color: ${props => props.theme.status.successColorActive}; } ` }; const Button = styled.button` padding: 8px 12px; font-size: ${typeScale.paragraph}; border-radius: 2px; min-width: 100px; cursor: pointer; font-family: ${props => props.theme.primaryFont}; transition: background-color 0.2s linear, color 0.2s linear; &:hover { background-color: ${props => props.theme.primaryHoverColor}; color: ${props => props.theme.textColorOnPrimary}; } &:focus { outline: 3px solid ${props => props.theme.primaryHoverColor}; outline-offset: 2px; } &:active { background-color: ${props => props.theme.primaryActiveColor}; border-color: ${props => props.theme.primaryActiveColor}; color: ${props => props.theme.textColorOnPrimary}; } `; export const PrimaryButton = styled(Button)` background-color: ${props => props.theme.primaryColor}; border: 2px solid transparent; color: ${props => props.theme.textColorOnPrimary}; &:disabled { background-color: ${props => props.theme.disabled}; color: ${props => props.theme.textOnDisabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; export const SecondaryButton = styled(Button)` border: 2px solid ${props => props.theme.primaryColor}; color: ${props => props.theme.primaryColor}; background: none; &:disabled { background: none; border: 2px solid ${props => props.theme.disabled}; color: ${props => props.theme.disabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; export const TertiaryButton = styled(Button)` border: 2px solid transparent; color: ${props => props.theme.primaryColor}; background: none; &:disabled { color: ${props => props.theme.disabled}; cursor: not-allowed; } ${applyStyleModifiers(BUTTON_MODIFIERS)} `; Now we can dynamically style our components for the theme. Lastly let's change PrimaryButton to also be a named export. This way we can import it as the default component or explicitly with a named import { PrimaryButtton }. If you toggle the state you should see our theme working! You may also find some bugs during the theme toggle but you can fix those later. Previous sectionNext section'''
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/using-extensible-themes"
+category = "research"
+tags = ["&:active", "background-color:", "border:", "color:", "const", "cursor:", "design systems", "extensible", "import", "react"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "engageinteractive.co.uk", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "nodejs.dev", "sass-lang.com", "smashingmagazine.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/button-states"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Button statesWe're finally ready to begin designing our components! First we'll build a button component in all of its variations and states. Then we'll build a composite component, a component comprised of other components, a modal! Button States There are many factors that go into building a button. We touched upon these earlier but here are the use cases we'll cover: Primary Secondary Tertiary Primary with icon Secondary with icon Tertiary with icon Icon button Disabled Neutral Hover Focus Active / pressed Small Default Large Warning Error Success Buttons should be labeled with what they do and it should be clear what action clicking the button will trigger. A modal asking 'Do you want to delete this document' with two buttons labeled 'Okay' and 'Cancel' might at first glance seem sufficient, but the 'Okay' label leaves something to be desired. Instead you should label the button with 'Delete' and give it error styling. Types Of Buttons There are several different types of buttons and each of these conveys a hierarchy. Primary buttons should be used for the most important action on a page (i.e. log in, submit). Secondary buttons should be used for content which, while still important, won't trigger the highest-priority action on the page. You may want to use secondary buttons for navigating to other content on the page. Tertiary buttons are used for miscellaneous actions; actions which are not something the user needs to do at that given second. This might be an action like 'Read more' on a blog post.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-states"
+category = "research"
+tags = ["action", "button", "buttons", "design systems", "icon", "react", "react spring", "secondary", "states", "storybook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/button-styles"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Button stylesThere are many styles you can use to convey your button hierarchy. Your buttons should look and function like a button. Here are some common button patterns which are familiar to most users. Solid Buttons Solid buttons are buttons with a solid background fill. They're easily recognizable and a great choice for a primary button. Line / Ghost Buttons Ghost buttons are buttons without a background fill; they only have an outline. Icon Buttons Icon buttons have no label and are only an icon. Keep in mind that buttons and icons without a label are bad for accessibility and if a label can be used it should. However, if you do choose to forgo the label, be sure to include an aria-label attribute on the button explaining the action that will be completed when triggered and not an explanation of what the icon is. Button Styles Border Radius You may choose to have a button with 90 degree squared edges, a partial border-radius, or a full border-radius and it will impact your brand identity. Rounded buttons are more playful than buttons with squared edges. Your button design should coincide with your brand identity. Drop Shadow You may also choose to add a drop shadow to your button which will elevate it off the page. You can add a drop shadow, or box shadow, to a button on hover or focus as well. Label Style When choosing your label style, be sure you place readability above all else. While uppercase-text buttons look modern, they are often harder for users to read, so you should choose sentence-case over uppercase. You also need to ensure that you have sufficient color contrast between the label and the button. Lastly, use a font-weight which is legible. Vertical Padding You must ensure your buttons are large enough to be accessible and clickable on a mobile device. Instead of stating a hard-coded height for your button, add vertical padding. This will allow the browser to change the text size (for visually impaired users) without cutting off the text. Vertical padding of 16px is a great option for a large button, 8px for a default button, and 4px for a small button. Horizontal Padding To keep your buttons responsive, you can add horizontal padding. You can additionally add a min-width property so you don't get tiny buttons. For example, 32px of padding on the left and right side of the button with a min-width of 100px is a great option. Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/button-styles"
+category = "research"
+tags = ["border", "button", "button.", "buttons", "choose", "design systems", "drop", "ghost", "horizontal", "icon"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "code.visualstudio.com", "dank.sh", "draculatheme.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/style-guide-tools"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/style-guide-tools"
+category = "research"
+tags = ["design systems", "guide", "react", "react spring", "storybook", "style", "styled components", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemsrepo.com", "dribbble.com", "gatsbyjs.org", "github.com", "invisionapp.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co"]
+
+["https://fem-design-systems.netlify.app/creating-a-color-palette"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Creating a color paletteHead over to Figma and create a new project. I've created a starter file for you to use, and you can get that here Copy and paste over the existing artboards from the starter file into the respective tabs on your new project. Now head over to Coolors and select a monochromatic color palette to use. I chose the palette: #A679DC #8D53D2 #742DC8 #5F25A4 #050449 In your art board, create five 200 x 200 squares. You can create one and command + v to copy and paste, or press and hold option while dragging the shape to make a copy. These five squares should have the fill of the five hex codes you've chosen. Re-name each square to be primary-100 through primary-500. Then select one of the squares, click the color style and click the plus button on the right side to add a new color. You can then add labels to each of the squares so it's clear which color it is. I added both the hex and variable name. We're also going to need a neutral palette. I chose the neutral palette below: neutral-600: #000000 neutral-500: #4A4B53 neutral-400: #737581 neutral-300: #E1E1E1 neutral-200: #F4F5F7 neutral-100: #FFFFFF We'll also create text and text-inverted colors. Text Color: #000000; Text Color Inverted: #ffffff; Once you've filled in your squares with your monochromatic palette, select the square with the color, then click the four menu dots underneath the Fill item in the right-hand sidebar, click the plus button and add the label primary-X00. This will allow you to use your colors within your components. Take the next 15 minutes and find a monochromatic color palette you enjoy!Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/creating-a-color-palette"
+category = "research"
+tags = ["color", "create", "creating", "design systems", "palette", "react", "react spring", "storybook", "styled components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "bit.ly", "code.visualstudio.com", "coolors.co", "dank.sh", "designsystemslondon.com", "draculatheme.com", "dsconference.com", "figma.com", "frontendmasters.com", "github.com", "medium.com", "nodejs.dev", "npmjs.com", "twitter.com", "w3.org", "webaim.org", "youtube.com"]
+
+["https://fem-design-systems.netlify.app/micro-interactions"]
+title = "Introduction to Design Systems"
+description = "This course will teach you how to design, build, and document your design system."
+full_description = "Micro-interactionsAnimations not only take your application from good to exceptional, they’re often expected by users. But animations don’t just make your application look and feel nicer, they can be a useful tool for improving perceived performance, giving users updates on the status of a task, and guiding a user through your application. Micro-interactions are small animations whose purpose is to delight the user by providing feedback in regards to a task or inform the user about the status of a process or task. By incorporating micro-interactions we will take our applications from ordinary to exceptional. We can think of the structure of your application—the HTML—as the body, the CSS as the physical appearance, and animations as the body language. Here are a few reasons why you should use micro-interactions throughout your application. Enhancing Perceived Performance “There are two kinds of time: clock time and brain time. The former is the objective measure of time; the latter is how a person perceives time.” Adding micro-interactions, such as a custom progress bar or an animated setup dialog which guides the user through a process, can change the way users perceive the time it takes to complete a task. We can alter our user’s sense of time with animations and this can work in our favor if our performance budget needs some refactoring. Examples Form entry. Inform Users About The Status Of A Task As a user’s request is processing or as their data is loading, we can use a micro-interaction to inform them of its status. Custom progress bars are a great way to keep your users from getting frustrated and will stretch the amount of time they’re willing to wait for a process to finish. Examples Avocado loader Book loader Progress bar Illustrate A State Change If a user is filling out a form and incorrectly enters their password, we can use micro-interactions to illustrate that this form needs to be fixed prior to submission. Examples Form error Incorrect password Draw A User's Attention To Something Using micro-interactions to capture a user’s attention and indicate that there is something of importance is a useful tool for on-boarding or to indicate someone is typing. Examples Chat To Create Habits Social media applications are really good at getting their uses to form habits, and they do so with micro-interactions. Facebook’s like button is a prime example of this, as is Instagram’s heart animation.These small interactions delight users and keep them coming back for more. Examples Reactions To Delight Our Users Micro-interactions can bring joy to our users by enhancing their experience. They can take even the most tedious of forms and bring them to life.Previous sectionNext section"
+year_published = 2025
+clearnet = "https://fem-design-systems.netlify.app/micro-interactions"
+category = "research"
+tags = ["animations", "attention", "change", "create", "delight", "design systems", "draw", "enhancing", "examples", "form"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a11yproject.com", "atlaskit.atlassian.com", "blog.marvelapp.com", "changelog.com", "cssinjs.org", "dank.sh", "designsystemslondon.com", "designsystemsrepo.com", "dribbble.com", "github.com", "ladybug.dev", "lightningdesignsystem.com", "netlify.com", "nodejs.dev", "sass-lang.com", "storybook.js.org", "thenounproject.com", "twitter.com", "undraw.co", "w3.org"]

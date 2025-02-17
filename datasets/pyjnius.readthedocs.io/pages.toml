@@ -1,0 +1,10 @@
+["https://pyjnius.readthedocs.io"]
+title = "pyjnius 1.6.1 documentation"
+full_description = "Welcome to Pyjnius# Pyjnius is a Python library for accessing Java classes. It either starts a new JVM inside the process, or retrieves the already surrounding JVM (for example on Android). This documentation is divided into differents parts. We recommend you to start with Installation, and then head over to the Quickstart. You can also check Android for specific example for the Android platform. If you’d rather dive into the internals of Pyjnius, check out the API documentation. Installation Installation on GNU/Linux distributions Installation for Android Installation for Windows Installation for macOS Installation for Conda Quickstart A minimal example Automatic recursive inspection Android Get the DPI Recording an audio file Playing an audio file Accessing the Activity Accelerometer access Using TextToSpeech API Reflection classes Reflection functions Java class implementation in Python Java signature format Java Lambda implementation in Python using Lambdas and Function References JVM options and the class path Pyjnius and threads Packaging main.py main.spec Running Indices and tables# Index Module Index Search Page"
+year_published = 2025
+clearnet = "https://pyjnius.readthedocs.io"
+category = "research"
+tags = ["android", "indices", "installation", "java", "pyjnius#", "tables#", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "pradyunsg.me", "readthedocs.org", "sphinx-doc.org"]

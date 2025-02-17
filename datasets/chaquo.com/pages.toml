@@ -1,0 +1,356 @@
+["https://chaquo.com/chaquopy/doc/current/changelog.html"]
+title = "Change log - Chaquopy 16.0"
+full_description = "Change log# 16.0.0 (2024-10-15)# Features# Update CA bundle to certifi 2024.8.30. (#1169) Python version 3.13 is now supported. (#1210, #1212) Update runtime Python versions to 3.8.20, 3.9.20, 3.10.15, 3.11.10, 3.12.7 and 3.13.0. (#1211) Android Gradle plugin versions 8.6 to 8.8 are now supported. (#1224, #1245) Deprecations and Removals# minSdk must now be at least API level 24. This still covers 97% of active devices. (#718) buildPython must now be at least Python 3.8. (#1027) Bugfixes# When exceptions are thrown during an import, the traceback now contains only a single copy of import_override, rather than one for every import level. (#889) sys.stdin is no longer overridden, so it has all the standard attributes including buffer. (#1083) 15.0.1 (2023-12-24)# Features# Kotlin build.gradle.kts files are now supported. (#231) A new Gradle DSL has been added, with a top-level chaquopy block. Kotlin build.gradle.kts files must use the new DSL; Groovy build.gradle files may use either the new or the old one. (#231) All Android wheels are now downloaded from https://chaquo.com/pypi-13.1/ – the old pypi-7.0 URL is no longer used. (#808) os.get_terminal_size now returns ENOTTY rather than EPERM, which was causing avc log spam when stdio is redirected. (#886) Update CA bundle to certifi 2023.11.17. (#893) Android Gradle plugin versions 8.1 to 8.5 are now supported. (#908, #1003, #1091, #1140, #1172) Python version 3.12 is now supported. (#931, #967) Update runtime Python versions to 3.8.18, 3.9.18, 3.10.13, 3.11.6, and 3.12.1. (#932) The importlib.resources.files API is now supported in Python 3.9 and later. (#977) Update pkg_resources from setuptools version 68.2.2. Deprecations and Removals# The 32-bit ABIs armeabi-v7a and x86 will no longer be supported on Python 3.12 and later. (#709) Android Gradle plugin versions 4.1 and 4.2 are no longer supported. (#787, #840) Bugfixes# Fix “AttributeError: “‘AssetFinder’ object has no attribute ‘extract_packages’” when AssetFinder subdirectories are on sys.path. (#820) Unsupported socket functions such as if_nametoindex now throw OSError as documented, rather than AttributeError. (#870) Fix FileNotFoundError when pkgutil.iter_modules is called with a nonexistent path. (#917) ZIP files using BZ2 or LZMA compression are now supported. (#953) 14.0.2 (2023-01-29)# Features# sys.stdout and sys.stderr are now line-buffered by default. (#654, #746, #757) Add option to redirect native stdout and stderr to Logcat. (#725) Update to Python version 3.8.16 and OpenSSL version 1.1.1s. This fixes the Google Play warning “Your app uses a defective version of the OpenSSL library”. (#727) Update CA bundle to certifi 2022.12.7. (#747) Add python executable as a final fallback when searching for buildPython. (#752) Restore the extractPackages setting, for code that requires its modules to exist as separate .py files. (#754) Android Gradle plugin version 7.4 is now supported. (#756) Android Gradle plugin version 8.0 is now supported, though projects which use minifyEnabled true will need a workaround. (#842) Update to pip version 20.1. Deprecations and Removals# buildPython must now be at least Python 3.7. (#713) Bugfixes# Enable PEP 517 builds in pip. (#715) Show correct error message when buildPython autodetection fails. (#733) Fix error when calling entry_points with an unreadable directory on sys.path. (#755) Fix “Could not find an activated virtualenv” error when PIP_REQUIRE_VIRTUALENV environment variable is set. (#777) 13.0.0 (2022-11-06)# Android Gradle plugin version 7.3 is now supported (#663). [BACKWARD INCOMPATIBLE] minSdkVersion must now be at least API level 21. This still covers 98% of active devices. Python versions 3.9, 3.10 and 3.11 are now supported (#661). Detect changes to files or directories listed in requirements files (#660). Projects are no longer required to have a local.properties file, as long as the ANDROID_HOME or ANDROID_SDK_ROOT environment variable is set (#672). Enable all warnings, including DeprecationWarning, PendingDeprecationWarning, ImportWarning and ResourceWarning. Update pkg_resources from setuptools version 56.2.0. Update to SQLite version 3.39.2. Update Python 3.9 and later to OpenSSL version 3.0.5. 12.0.1 (2022-07-24)# First open-source release. Apart from removing the license restrictions, this is identical to version 12.0.0. 12.0.0 (2022-05-12)# Android Gradle plugin version 7.2 is now supported (#613). [BACKWARD INCOMPATIBLE] Android Gradle plugin version 4.0 is no longer supported. Update to Python version 3.8.13 (see its changelog for details). Update CA bundle to certifi 2021.10.8. Fix signal.valid_signals on 32-bit ABIs (#600). Allow buildscript configuration to be in a subproject (#615). 11.0.0 (2022-02-01)# Android Gradle plugin version 7.1 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 3.6 is no longer supported. Remove warning about untested Android Gradle plugin versions, as they are usually backward compatible. Gradle pluginManagement and plugins syntax is now supported. Java arrays now support the copy.copy function in Python. Passing an unsupported Java object to copy.copy, copy.deepcopy or pickle now fails with a clearer error message. 10.0.1 (2021-09-22)# Android Gradle plugin versions 4.2 and 7.0 are now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin versions 3.4 and 3.5 are no longer supported. [BACKWARD INCOMPATIBLE] The version setting is no longer supported. Simply remove it to use the current version of Python. Update to Python version 3.8.11 (see its changelog for details). Update to pip version 19.2.3 (see its changelog for details). Update CA bundle to certifi 2021.5.30. Add a buffer attribute to stdout and stderr for bytes output (#464, #516). Java arrays now support the index and count methods in Python. In order to support code with hasattr checks, they also now implement the methods __contains__, __iter__ and __reversed__, rather than relying on the fallback to __getitem__ (#306). Fix “truth value of an array with more than one element is ambiguous” error when passing a NumPy array to a method which takes a Java array (#526). NumPy integer scalars, and anything else which implements the __index__ method, can now be used as a Java array index (#495). Add workaround to help conda Python on Windows find its SSL libraries (#450). Fix “invalid literal for int” error in pip_install when project path includes a symlink (#468). Fix crash caused by empty files in the APK on Android 7 (Electron Cash #2136). importlib.util.spec_from_file_location now works for paths loaded from the APK. 9.1.0 (2021-01-02)# Fix error “‘HTMLParser’ object has no attribute ‘unescape’” on Python 3.9 (#416). Fix error “must supply either home or prefix/exec-prefix – not both” on Homebrew for Mac (#405). buildPython path can now contain spaces. Java API is now annotated with @NotNull where appropriate. Java arrays now support the copy method in Python. Fix bug when using cast to call a functional interface which extends another functional interface. Update CA bundle to certifi 2020.12.5. json module performance improvements. Java API performance improvements. 9.0.0 (2020-11-06)# Android Gradle plugin version 4.1 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 3.3 is no longer supported. Update to Python version 3.8.6 (see its changelog for details). Java/Kotlin objects implementing functional interfaces can now be called from Python using () syntax. This includes lambdas, method references, and any interface with a single abstract method, such as java.lang.Runnable. Java arrays can now be accessed from Python using negative indices and slice syntax. Fix conversion of non-contiguous NumPy arrays to Java arrays. Remove inaccessible directories from os.get_exec_path (#346). Make zipimport implement the new loader API. This affected the package dateparser. If bdist_wheel fails for an unknown reason, fall back on setup.py install. This affected the packages acoustics and kiteconnect (#338). Fix ClassNotFoundException when minifyEnabled is in use (#261). 8.0.1 (2020-07-28)# Make missing multiprocessing primitives throw an exception on use rather than on import. This affected the packages joblib and librosa (#21). Make ctypes.util.find_library search libraries installed with pip. This affected the package soundfile (#201). Fix “invalid constraint” error affecting the packages openpyxl and webcolors. 8.0.0 (2020-06-15)# Android Gradle plugin version 4.0 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 3.2 is no longer supported. Update to Python version 3.8.3 (see its changelog for details). Using Chaquopy in an Android library module (AAR) is now supported (#94). Java primitive arrays now support the Python buffer protocol, allowing high-performance data transfer between the two languages. Data files in top-level non-package directories are now extracted from the APK the first time the app is started, so they can be accessed using a path relative to __file__. 7.0.3 (2020-05-11)# Fix “This platform lacks a functioning sem_open implementation” error when using multiprocessing.dummy.Pool (aka multiprocessing.pool.ThreadPool). This affected many common uses of TensorFlow. Work around dynamic linker bug on 64-bit ABIs before API level 23 (#228). Fix out of memory error when running Gradle with a small heap size. Fix incompatibility with external package importlib_metadata (#276). Fix NoClassDefFoundError when using Python to access certain androidx classes, including AppCompatTextView. Fix conversion of Java byte[] array to Python bytearray. Improve startup speed by deferring pkg_resources initialization until the module is first imported. Update CA bundle to certifi 2020.4.5.1. 7.0.2 (2020-03-05)# [BACKWARD INCOMPATIBLE] Update to Python version 3.8.1 (see the 3.7 and 3.8 release notes for details). All Python standard library modules are now supported except those in this list. In particular, support has been added for bz2, importlib.metadata, importlib.resources and lzma. Most native packages have been upgraded to a more recent version. If you’ve used specific version numbers in a build.gradle or requirements.txt file, you may need to update them. See the repository index for a complete list. Android Gradle plugin version 3.6 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 3.1 is no longer supported. [BACKWARD INCOMPATIBLE] buildPython must now be at least Python 3.5. Expose Java API using api configuration so it’s available to dynamic feature modules. Update CA bundle to certifi 2019.9.11. Fix “cannot create a consistent method resolution order” error when using androidx. Fix a deadlock involving the Java API. Improve local caching of packages which aren’t available as wheels. Reduce some temporary filename lengths to avoid the Windows 260-character limit. Improve startup speed. 6.3.0 (2019-08-25)# Android Gradle plugin version 3.5 is now supported. Pre-compile Python code to .pyc format by default, so it doesn’t have to be compiled on the device. This significantly improves app startup speed and storage usage. Remove the extractPackages setting, as data files are now extracted automatically. See the documentation for details. Change data file location from cache to files directory, to prevent the user from clearing it while the app is running. Hide importer frames in stack traces, unless the exception originated from the importer itself. Fix another metadata parsing issue, this one affecting the package astroid. Fix “has no DT_SONAME” warning (#112). 6.2.1 (2019-04-19)# Android Gradle plugin version 3.4 is now supported. Update to OpenSSL 1.1.1b. This enables the BLAKE2 and SHA-3 algorithms in hashlib. Update CA bundle to certifi 2019.3.9. Implement pkgutil.iter_modules. Build pkg_resources into all apps. Many packages require this but don’t declare a dependency on setuptools. 6.0.0 (2019-03-08)# Android Gradle plugin version 3.3 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 3.0 is no longer supported. The ABI x86_64 is now supported. 5.1.2 (2019-01-19)# Add PyObject primitive conversion methods (toBoolean, toInt, etc.). Add PyObject container view methods (asList, asMap and asSet). If pkg_resources is installed in your app, its “basic resource access” functions will now work. Remove directory names when converting exception stack traces from Python to Java. This works around a bug in Google Play which was causing crash reports to be incomplete. Change default character encoding from ASCII to UTF-8. Make APK build more reproducible. 5.0.0 (2018-11-05)# The ABI arm64-v8a is now supported. [BACKWARD INCOMPATIBLE] Each Chaquopy version will now include only one Python version, so the version setting is no longer required. Simply remove it to use the current version, 3.6.5. Python 2 is no longer included. However, for existing Python 2 users, Chaquopy 4.x will continue to be maintained until the end of 2019 (#39). [BACKWARD INCOMPATIBLE] buildPython must now be at least Python 3.4. [BACKWARD INCOMPATIBLE] minSdkVersion must now be at least API level 16. This still covers 99% of active devices. Runtime components are now distributed as separate Maven artifacts. This fixes various intermittent build errors involving chaquopy_java.jar (#62). If pkg_resources is installed in your app, it will now detect all pip-installed packages. 4.0.0 (2018-08-22)# Android Gradle plugin version 3.2 is now supported. [BACKWARD INCOMPATIBLE] Android Gradle plugin version 2.3 is no longer supported. Add resource module. Remove broken select.kevent/select.kqueue API. This affected PyZMQ, which should now work (Crystax issue #1433). Set HOME environment variable if the system hasn’t already done so, so os.path.expanduser can return a usable location. Implement importlib.abc.InspectLoader.get_code: this allows runpy.run_module to be used. 3.3.2 (2018-08-01)# Fix pip issues involving packages with optional native components (e.g. websockets). Work around inability of Android dynamic linker on API level 22 and older to load multiple modules with the same basename (details here). Fix ctypes.pythonapi and sys.abiflags, and provide partial implementation of sysconfig.get_config_vars. Fix native crash in lrintf / feholdexcept / fegetenv (Crystax issue #1369). Fix pkgutil.get_data when used with extractPackages, and improve extractPackages performance. 3.3.0 (2018-06-20)# Add fast conversions between Python bytes/bytearray and Java byte[] (#41). Make pip evaluate environment markers (PEP 508) and data-requires-python attributes (PEP 503) against the target platform rather than the build platform. Make pip only prioritize native wheels (not pure-Python wheels) over sdists of a newer version. Fix pip issues when multiple packages provide the same directory or filename. Improve pip error messages when packages attempt to build native code. 3.2.0 (2018-06-06)# Add Python"
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/doc/current/changelog.html"
+category = "research"
+tags = ["0.1.0", "0.2.0", "0.3.0", "0.4.0", "0.4.3", "0.4.4", "0.4.5", "0.5.0", "0.6.1", "1.1.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "developer.android.com", "dl.google.com", "docs.python.org", "github.com", "peps.python.org", "pip.pypa.io", "pypi.org", "pypi.python.org", "setuptools.readthedocs.io", "stackoverflow.com", "tracker.crystax.net", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/author/smith"]
+title = "Malcolm Smith – Chaquopy"
+description = """
+Chaquopy
+\t\t\t\t\tPython SDK for Android"""
+full_description = "Chaquopy version 16.0.0 Posted on 2024-10-152024-10-15 Malcolm Smith Features Update CA bundle to certifi 2024.8.30. (#1169) Python version 3.13 is now supported. (#1210, #1212) Update runtime Python versions to 3.8.20, 3.9.20, 3.10.15, 3.11.10, 3.12.7 and 3.13.0. (#1211) Android Gradle plugin versions 8.6 to 8.7 are now supported. (#1224, #1245) Deprecations and Removals minSdk must now be at least API level 24. This still covers 97% of active devices. (#718) buildPython must now be at least Python 3.8. (#1027) Bugfixes When exceptions are thrown during an import, the traceback now contains only a single copy of import_override, rather than one for every import level. (#889) sys.stdin is no longer overridden, so it has all the standard attributes including buffer. (#1083) Chaquopy version 15.0.1 Posted on 2023-12-242023-12-24 Malcolm Smith Features Kotlin build.gradle.kts files are now supported. (#231)A new Gradle DSL has been added, with a top-level chaquopy block. Kotlin build.gradle.kts files must use the new DSL; Groovy build.gradle files may use either the new or the old one. (#231)All Android wheels are now downloaded from https://chaquo.com/pypi-13.1/ – the old pypi-7.0 URL is no longer used. (#808)os.get_terminal_size now returns ENOTTY rather than EPERM, which was causing avc log spam when stdio is redirected. (#886)Update CA bundle to certifi 2023.11.17. (#893)Android Gradle plugin versions 8.1 and 8.2 are now supported. (#908, #1003)Python version 3.12 is now supported. (#931, #967)Update runtime Python versions to 3.8.18, 3.9.18, 3.10.13, 3.11.6, and 3.12.1. (#932)The importlib.resources.files API is now supported in Python 3.9 and later. (#977)Update pkg_resources from setuptools version 68.2.2. Deprecations and Removals The 32-bit ABIs armeabi-v7a and x86 will no longer be supported on Python 3.12 and later. (#709)Android Gradle plugin versions 4.1 and 4.2 are no longer supported. (#787, #840) Bugfixes Fix “AttributeError: “‘AssetFinder’ object has no attribute ‘extract_packages’” when AssetFinder subdirectories are on sys.path. (#820)Unsupported socket functions such as if_nametoindex now throw OSError as documented, rather than AttributeError. (#870)Fix FileNotFoundError when pkgutil.iter_modules is called with a nonexistent path. (#917)ZIP files using BZ2 or LZMA compression are now supported. (#953)"
+year_published = 2024
+year_updated = 2025
+clearnet = "https://chaquo.com/chaquopy/author/smith"
+category = "research"
+tags = ["10.0.1", "11.0.0", "12.0.0", "13.0.0", "14.0.2", "15.0.1", "16.0.0", "9.0.0", "9.1.0", "added"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-version-13-0-0"]
+title = "Chaquopy version 13.0.0 – Chaquopy"
+description = """
+Changes:
+
+
+
+Android Gradle plugin version 7.3 is now supported (#663).[BACKWARD INCOMPATIBLE] minSdkVersion must now be at least API level 21. This still covers 98% of active devices.Python versions 3.9, 3.10 and 3.11 are now supported (#661).Detect changes to files or directories listed in requirem"""
+full_description = "Chaquopy version 13.0.0 Posted on 2022-11-062022-11-06 Malcolm Smith Changes: Android Gradle plugin version 7.3 is now supported (#663).[BACKWARD INCOMPATIBLE] minSdkVersion must now be at least API level 21. This still covers 98% of active devices.Python versions 3.9, 3.10 and 3.11 are now supported (#661).Detect changes to files or directories listed in requirements files (#660).Projects are no longer required to have a local.properties file, as long as the ANDROID_HOME or ANDROID_SDK_ROOT environment variable is set (#672).Enable all warnings, including DeprecationWarning, PendingDeprecationWarning, ImportWarning and ResourceWarning.Update to pkg_resources version 56.2.0.Update to SQLite version 3.39.2.Update Python 3.9 and later to OpenSSL version 3.0.5. The following packages have been updated since the previous version: scikit-image"
+author = ""
+year_published = 2022
+year_updated = 2022
+clearnet = "https://chaquo.com/chaquopy/chaquopy-version-13-0-0"
+category = "research"
+tags = ["13.0.0", "android", "backward", "chaquopy", "incompatible", "navigation", "post", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-version-16-0-0"]
+title = "Chaquopy version 16.0.0 – Chaquopy"
+description = """
+Features
+
+
+
+
+Update CA bundle to certifi 2024.8.30. (#1169)
+
+
+
+Python version 3.13 is now supported. (#1210, #1212)
+
+
+
+Update runtime Python versions to 3.8.20, 3.9.20, 3.10.15, 3.11.10, 3.12.7 and 3.13.0. (#1211)
+
+
+
+Android Gradle plugin versions 8.6 to 8.7 are now supported. (#1224, #1245)
+
+
+
+
+Dep"""
+full_description = "Chaquopy version 16.0.0 Posted on 2024-10-152024-10-15 Malcolm Smith Features Update CA bundle to certifi 2024.8.30. (#1169) Python version 3.13 is now supported. (#1210, #1212) Update runtime Python versions to 3.8.20, 3.9.20, 3.10.15, 3.11.10, 3.12.7 and 3.13.0. (#1211) Android Gradle plugin versions 8.6 to 8.7 are now supported. (#1224, #1245) Deprecations and Removals minSdk must now be at least API level 24. This still covers 97% of active devices. (#718) buildPython must now be at least Python 3.8. (#1027) Bugfixes When exceptions are thrown during an import, the traceback now contains only a single copy of import_override, rather than one for every import level. (#889) sys.stdin is no longer overridden, so it has all the standard attributes including buffer. (#1083)"
+author = ""
+year_published = 2024
+year_updated = 2024
+clearnet = "https://chaquo.com/chaquopy/chaquopy-version-16-0-0"
+category = "research"
+tags = ["16.0.0", "android", "bugfixes", "chaquopy", "deprecations", "features", "navigation", "post", "python", "removals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com"]
+title = "Chaquopy – Python SDK for Android"
+description = """
+Chaquopy provides everything you need to include Python components in an Android app, including:
+
+
+
+
+ Full integration with Android Studio's standard Gradle build system. 
+
+
+
+
+
+Simple APIs for calling Python code from Java/Kotlin, and vice versa.
+
+
+
+
+
+A wide range of third-party Python packages, inc"""
+full_description = "The easiest way to use Python in an Android app Chaquopy provides everything you need to include Python components in an Android app, including: Full integration with Android Studio’s standard Gradle build system. Simple APIs for calling Python code from Java/Kotlin, and vice versa. A wide range of third-party Python packages, including NumPy, SciPy, OpenCV, and many more. To get started, see the documentation. The easiest way to use Python in an Android app Chaquopy provides everything you need to include Python components in an Android app, including: Full integration with Android Studio’s standard Gradle build system. Simple APIs for calling Python code from Java/Kotlin, and vice versa. A wide range of third-party Python packages, including NumPy, SciPy, OpenCV, and many more. To get started, see the documentation."
+author = ""
+year_published = 2024
+clearnet = "https://chaquo.com"
+category = "research"
+tags = ["android", "chaquopy", "easiest", "news", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["athemes.com", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/doc/current/android.html"]
+title = "Gradle plugin - Chaquopy 16.0"
+full_description = 'Gradle plugin# Chaquopy is distributed as a plugin for Android’s Gradle-based build system. It can be used in an Android appplication module (com.android.application), or an Android library module (com.android.library). The Chaquopy plugin can only be used in one module per app: either in the app module, or in exactly one library module. If you use it in multiple modules, the build may fail, and even if it succeeds, only one module’s Python code will be included in the app. Project setup# Gradle plugin# The following instructions use the plugins syntax. If your project uses the previous buildscript and apply syntax, follow the instructions here, but replace the Chaquopy version number with the current one shown below. In your project’s settings.gradle file, find the pluginManagement repositories list, and make sure it includes mavenCentral(). If your project was generated by a recent version of Android Studio, this line should already be there. In your top-level build.gradle file, set the Chaquopy version: plugins { id("com.chaquo.python") version "16.0.0" apply false } Also check the Android Gradle plugin version (com.android.application or com.android.library): it should be between 7.0.x and 8.8.x. Older versions are supported by older versions of Chaquopy. Newer versions may work, but have not been tested. Then apply the Chaquopy plugin in the module-level build.gradle file (usually in the app directory): plugins { id("com.chaquo.python") } minSdk# Your project’s minSdk must be at least 24. Older versions are supported by older versions of Chaquopy. abiFilters# The Python interpreter is a native component, so you must use the abiFilters setting to specify which ABIs you want the app to support. The currently available ABIs are: armeabi-v7a for older Android devices (Python 3.11 and older only) arm64-v8a for current Android devices, and emulators on Apple silicon x86 for older emulators (Python 3.11 and older only) x86_64 for current emulators The following setting will work for most projects: KotlinGroovyandroid { defaultConfig { ndk { // On Apple silicon, you can omit x86_64. abiFilters += listOf("arm64-v8a", "x86_64") } } } android { defaultConfig { ndk { // On Apple silicon, you can omit x86_64. abiFilters "arm64-v8a", "x86_64" } } } There’s no need to actually install the NDK, as all of Chaquopy’s native libraries are already pre-compiled and stripped. Each ABI will add several MB to the size of the app, plus the size of any native requirements. If you find this makes your app too large, see the FAQ. chaquopy block# Note There is also a deprecated DSL which is available in Groovy build.gradle files only. For details, see the Chaquopy 14 documentation. All of the Chaquopy plugin’s settings are configured with the chaquopy block in your module-level build.gradle file. Its structure is similar to the android block: chaquopy { defaultConfig { } productFlavors { } sourceSets { } } The examples below will use defaultConfig, but every setting can also appear within a product flavor. For example, here’s how to create flavors for different Python versions: KotlinGroovyandroid { flavorDimensions += "pyVersion" productFlavors { create("py310") { dimension = "pyVersion" } create("py311") { dimension = "pyVersion" } } } chaquopy { productFlavors { getByName("py310") { version = "3.10" } getByName("py311") { version = "3.11" } } } android { flavorDimensions "pyVersion" productFlavors { create("py310") { dimension = "pyVersion" } create("py311") { dimension = "pyVersion" } } } chaquopy { productFlavors { getByName("py310") { version = "3.10" } getByName("py311") { version = "3.11" } } } buildPython# Some features require Python 3.8 or later to be available on the build machine. These features are indicated by a note in their documentation sections. By default, Chaquopy will try to find Python on the PATH with the standard command for your operating system, first with a matching minor version, and then with a matching major version. For example, if your app’s Python version is 3.8, then: On Linux and Mac it will try python3.8, then python3. On Windows, it will try py -3.8, then py -3. On all platforms, it will finally try python. If this doesn’t work for you, set your Python command using the buildPython setting. For example, on Windows you might use one of the following: chaquopy { defaultConfig { buildPython("C:/path/to/python.exe") buildPython("C:/path/to/py.exe", "-3.8") } } Development# Startup# Before your app can run any Python code, you must call Python.start(). There are two basic ways to achieve this: If the app always uses Python, then call Python.start() from a location which is guaranteed to run exactly once per process, such as Application.onCreate(). The easiest way to do this is to use PyApplication, or your own subclass of it. Simply add the following attribute to the <application> element in AndroidManifest.xml: android:name="com.chaquo.python.android.PyApplication" Alternatively, if the app only sometimes uses Python, then call Python.start() after first checking whether it’s already been started: // "context" must be an Activity, Service or Application object from your app. if (! Python.isStarted()) { Python.start(new AndroidPlatform(context)); } Python version# You can set your app’s Python version like this: chaquopy { defaultConfig { version = "3.8" } } In this version of Chaquopy, the default Python version is 3.8. The other available versions are 3.9, 3.10, 3.11, 3.12 and 3.13, but these may have fewer packages available. Source code# By default, Chaquopy will look for Python source code in the python subdirectory of each source set. This means the default Python source directory is src/main/python. To include Python code from other directories, use the chaquopy.sourceSets block. For example: chaquopy { sourceSets { getByName("main") { srcDir("some/other/dir") } } } The setRoot method only takes effect on the standard Android directories. If you want to set the Python root to the same place, you must do so explicitly, e.g.: KotlinGroovyandroid { sourceSets.getByName("main") { setRoot("some/other/main") } } chaquopy { sourceSets.getByName("main") { setSrcDirs(listOf("some/other/main/python")) } } android { sourceSets.getByName("main") { setRoot("some/other/main") } } chaquopy { sourceSets.getByName("main") { srcDirs = ["some/other/main/python"] } } As with Java, it is usually an error if the source directories for a given build variant include multiple copies of the same filename. This is only permitted if the duplicate files are all empty, such as may happen with __init__.py. Requirements# Note This feature requires Python on the build machine, which can be configured with the buildPython setting. External Python packages may be built into the app using the pip block. Within this block, add install lines, which can take any of the forms accepted by pip install. For example: chaquopy { defaultConfig { pip { // A requirement specifier, with or without a version number: install("scipy") install("requests==2.24.0") // An sdist or wheel filename, relative to the project directory: install("MyPackage-1.2.3-py2.py3-none-any.whl") // A directory containing a setup.py, relative to the project // directory (must contain at least one slash): install("./MyPackage") // "-r"` followed by a requirements filename, relative to the // project directory: install("-r", "requirements.txt") } } } Chaquopy can install almost all pure-Python packages, plus a large selection of packages with native components. To see which native packages are currently available, you can browse the repository here. To add or update a package: Try to build it yourself by following these instructions. Search our issue tracker for advice on the package, and create a new issue if necessary. To pass options to pip install, give them as a comma-separated list to the options method. For example: chaquopy { defaultConfig { pip { options("--extra-index-url", "https://example.com/private/repository") install("MyPackage==1.2.3") } } } Any options in the pip documentation may be used, except for those which relate to the target environment, such as --target, --user or -e. If there are multiple options lines, they will be combined in the order given. Static proxy generator# Note This feature requires Python on the build machine, which can be configured with the buildPython setting. The static proxy feature allows a Python class to extend a Java class, or to be referenced directly in Java code or the AndroidManifest.xml file without going through the Java API. To use this feature, write your Python classes using the syntax described in the “Static proxy” section, then declare the containing modules as follows: chaquopy { defaultConfig { staticProxy("module.one", "module.two") } } Packaging# extractPackages# At runtime, Python modules are usually loaded directly from the APK, and don’t exist as separate files. If there are certain packages in your source code or requirements which need to exist as separate files, you can declare them like this: chaquopy { defaultConfig { extractPackages("package1", "package2.subpkg") } } Each extracted file will slightly slow down your app’s startup, so this setting should be used on the deepest possible package. Data files# Any data files in your source code and requirements will be automatically built into your app. You can read them at runtime using a path relative to __file__. For example, if the data file is in the same directory as the Python file: from os.path import dirname, join filename = join(dirname(__file__), "filename.txt") You can then pass this filename to open, or any other function which reads a file. If the data file and the Python file are in different directories, then change the path accordingly. For example, if the Python file is alpha/hello.py, and the data file is bravo/filename.txt, then replace filename.txt above with ../bravo/filename.txt. Unlike Python modules, data files are always extracted onto the filesystem at runtime. However, files stored within a top-level directory containing an __init__.py file will not be extracted until the corresponding Python package is imported. All other files will be extracted when Python starts. Do not write any files to these directories at runtime, as they may be deleted when the app is upgraded. Instead, write files to os.environ["HOME"], as described in the “os” section. Bytecode compilation# Note This feature requires Python on the build machine, which can be configured with the buildPython setting. Your app will start up faster if its Python code is compiled to .pyc format, so this is enabled by default. If bytecode compilation succeeds, the original .py files will not be included in the APK, unless they’re covered by the extractPackages setting. However, this prevents source code text from appearing in stack traces, so during development you may wish to disable it. There are individual settings for: src: local source code pip: requirements stdlib: the Python standard library For example, to disable compilation of your local source code: chaquopy { defaultConfig { pyc { src = false } } } In the case of src and pip, your buildPython must use the same bytecode format as Chaquopy itself. Usually this means it must have the same minor version, e.g. if your app’s Python version is 3.8, then buildPython can be any version of Python 3.8. If bytecode compilation fails, the build will continue with a warning, unless you’ve explicitly set one of the pyc settings to true. Your app will still work, but its code will have to be compiled on the target device, which means it will start up slower and use more storage space. Python standard library# Chaquopy supports the entire Python standard library, except as documented below. If you discover a problem with any other module, please let us know. Unsupported modules# The following modules are unsupported because they require OS features which aren’t available on Android: crypt grp nis spwd The following modules are unsupported because they require libraries which we don’t currently include: curses dbm.gnu dbm.ndbm readline tkinter turtle multiprocessing# Because Android doesn’t support the System V IPC API, most of the multiprocessing APIs will fail with the error “This platform lacks a functioning sem_open implementation” or “No module named ‘_multiprocessing’”. The simplest solution is to use multiprocessing.dummy instead. os# Don’t pass a simple filename to functions which write a file, as this will try to write to the current directory, which is usually read-only on Android. Instead, use a path relative to os.environ["HOME"], like this: import os from os.path import join filename = join(os.environ["HOME"], "filename.txt") You can then pass this filename to open, or any other function which writes a file. os.environ["HOME"] is set to your app’s internal storage directory. Any files or subdirectories created in this location will persist until the app is uninstalled. If your app is debuggable, you can read and write this directory from Android Studio using the Device File Explorer. Its path will be something like /data/data/your.application.id/files. ssl# The ssl module is configured to use a copy of the CA bundle from certifi version 2024.8.30. The system CA store is not used. sys# sys.stdout and sys.stderr are redirected to the Logcat with the tags python.stdout and python.stderr respectively. These streams are line-buffered by default: if you want to disable that, use io.TextIOWrapper.reconfigure to set write_through=True. This redirection does not affect the native stdout and stderr streams, which may be used by non-Python libraries. If you want to redirect them as well, see AndroidPlatform.redirectStdioToLogcat. sys.stdin always returns EOF. If you want to run some code which takes interactive text input, have a look at the console app template. Android Studio plugin# To add Python editing suppport to the Android Studio user interface, you may optionally install the “Python Community Edition” plugin. However, Chaquopy isn’t integrated with this plugin, so you’ll see the warning “No Python interpreter configured for the module”, and your code will probably display many error indicators such as “Unresolved reference” and “No module named”. These are harmless: just go ahead and run your app, and if there really is an error, the details will be displayed in the Logcat.'
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/doc/current/android.html"
+category = "research"
+tags = ['"pyversion"', "abifilters#", "android", "app’s", "available", "block#", "build", "build.gradle", "buildpython", "buildpython#"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "developer.android.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "pypi.org", "stackoverflow.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/license"]
+title = "Licensing – Chaquopy"
+description = """
+Since version 12.0.1, Chaquopy is now free and open-source, and all license restrictions have been removed. Please upgrade to the current version by editing the Chaquopy version number in your app's top-level build.gradle file. 
+
+
+
+The open-source builds are released on Maven Central, so there's no"""
+full_description = "Licensing Since version 12.0.1, Chaquopy is now free and open-source, and all license restrictions have been removed. Please upgrade to the current version by editing the Chaquopy version number in your app’s top-level build.gradle file. The open-source builds are released on Maven Central, so there’s no longer any need to list the chaquo.com Maven repository in your settings.gradle or build.gradle file. Instead, make sure your project is set up to use mavenCentral(), as shown here. Using older versions Closed-source Chaquopy versions (12.0.0 and older) will display a license warning on startup, and will only run for 5 minutes at a time. To remove these restrictions, add the following line to your project’s local.properties file: chaquopy.license=free The notification and time limit will then be removed the next time you build the project. Building an AAR If you’re using a closed-source Chaquopy version to build an Android library module (AAR), you’ll also need to add this local.properties line to identify the app which the AAR will be built into: chaquopy.applicationId=your.application.id If you want to build a single AAR which is usable in multiple apps, please upgrade to the open-source version as shown above."
+author = ""
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/license"
+category = "research"
+tags = ["android", "chaquopy", "licensing", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "developer.android.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/doc/current/java/com/chaquo/python/android/AndroidPlatform.html"]
+title = "AndroidPlatform (Chaquopy Java API)"
+description = """
+public class AndroidPlatform
+extends Python.Platform
+Platform for Chaquopy on Android."""
+full_description = "Package com.chaquo.python.android Class AndroidPlatform java.lang.Object com.chaquo.python.Python.Platform com.chaquo.python.android.AndroidPlatform public class AndroidPlatform extends Python.Platform Platform for Chaquopy on Android. Constructor Summary Constructors Constructor Description AndroidPlatform​(Context context) Uses the Application context of the given context to initialize Python. Method Summary All Methods Instance Methods Concrete Methods Modifier and Type Method Description Application getApplication() Returns the Application context of the context which was passed to the contructor. String getPath() Returns the value to assign to PYTHONPATH, or null to leave it unset. void onStart​(Python py) Called after Python is started. void redirectStdioToLogcat() Redirects the native stdout and stderr streams to Logcat. Methods inherited from class java.lang.Object clone, equals, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait Constructor Detail AndroidPlatform public AndroidPlatform​(@NotNull Context context) Uses the Application context of the given context to initialize Python. Method Detail getApplication @NotNull public Application getApplication() Returns the Application context of the context which was passed to the contructor. redirectStdioToLogcat public void redirectStdioToLogcat() Redirects the native stdout and stderr streams to Logcat. They will appear with the tags native.stdout and native.stderr respectively. This may be useful for debugging the Python startup process, or seeing messages produced by non-Python libraries. This method has no effect on stdin. It also has no effect on Python's sys.stdout and sys.stderr, which are always redirected as described here. getPath @NotNull public String getPath() Description copied from class: Python.Platform Returns the value to assign to PYTHONPATH, or null to leave it unset. The default implementation returns null. Overrides: getPath in class Python.Platform onStart public void onStart​(@NotNull Python py) Description copied from class: Python.Platform Called after Python is started. The default implementation does nothing. Overrides: onStart in class Python.Platform"
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/doc/current/java/com/chaquo/python/android/AndroidPlatform.html"
+category = "research"
+tags = ["androidplatform", "application", "class", "constructor", "context", "description", "detail", "inherited", "java.lang.object", "method"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "developer.android.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "pypi.org", "stackoverflow.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/news"]
+title = "News – Chaquopy"
+description = """
+Chaquopy
+\t\t\t\t\tPython SDK for Android"""
+full_description = "Chaquopy version 16.0.0 Posted on 2024-10-152024-10-15 Malcolm Smith Features Update CA bundle to certifi 2024.8.30. (#1169) Python version 3.13 is now supported. (#1210, #1212) Update runtime Python versions to 3.8.20, 3.9.20, 3.10.15, 3.11.10, 3.12.7 and 3.13.0. (#1211) Android Gradle plugin versions 8.6 to 8.7 are now supported. (#1224, #1245) Deprecations and Removals minSdk must now be at least API level 24. This still covers 97% of active devices. (#718) buildPython must now be at least Python 3.8. (#1027) Bugfixes When exceptions are thrown during an import, the traceback now contains only a single copy of import_override, rather than one for every import level. (#889) sys.stdin is no longer overridden, so it has all the standard attributes including buffer. (#1083) Chaquopy version 15.0.1 Posted on 2023-12-242023-12-24 Malcolm Smith Features Kotlin build.gradle.kts files are now supported. (#231)A new Gradle DSL has been added, with a top-level chaquopy block. Kotlin build.gradle.kts files must use the new DSL; Groovy build.gradle files may use either the new or the old one. (#231)All Android wheels are now downloaded from https://chaquo.com/pypi-13.1/ – the old pypi-7.0 URL is no longer used. (#808)os.get_terminal_size now returns ENOTTY rather than EPERM, which was causing avc log spam when stdio is redirected. (#886)Update CA bundle to certifi 2023.11.17. (#893)Android Gradle plugin versions 8.1 and 8.2 are now supported. (#908, #1003)Python version 3.12 is now supported. (#931, #967)Update runtime Python versions to 3.8.18, 3.9.18, 3.10.13, 3.11.6, and 3.12.1. (#932)The importlib.resources.files API is now supported in Python 3.9 and later. (#977)Update pkg_resources from setuptools version 68.2.2. Deprecations and Removals The 32-bit ABIs armeabi-v7a and x86 will no longer be supported on Python 3.12 and later. (#709)Android Gradle plugin versions 4.1 and 4.2 are no longer supported. (#787, #840) Bugfixes Fix “AttributeError: “‘AssetFinder’ object has no attribute ‘extract_packages’” when AssetFinder subdirectories are on sys.path. (#820)Unsupported socket functions such as if_nametoindex now throw OSError as documented, rather than AttributeError. (#870)Fix FileNotFoundError when pkgutil.iter_modules is called with a nonexistent path. (#917)ZIP files using BZ2 or LZMA compression are now supported. (#953)"
+year_published = 2024
+year_updated = 2025
+clearnet = "https://chaquo.com/chaquopy/news"
+category = "research"
+tags = ["10.0.1", "11.0.0", "12.0.0", "13.0.0", "14.0.2", "15.0.1", "16.0.0", "9.0.0", "9.1.0", "added"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-version-15-0-1"]
+title = "Chaquopy version 15.0.1 – Chaquopy"
+description = """
+Features
+
+
+
+Kotlin build.gradle.kts files are now supported. (#231)A new Gradle DSL has been added, with a top-level chaquopy block. Kotlin build.gradle.kts files must use the new DSL; Groovy build.gradle files may use either the new or the old one. (#231)All Android wheels are now downloaded from h"""
+full_description = "Chaquopy version 15.0.1 Posted on 2023-12-242023-12-24 Malcolm Smith Features Kotlin build.gradle.kts files are now supported. (#231)A new Gradle DSL has been added, with a top-level chaquopy block. Kotlin build.gradle.kts files must use the new DSL; Groovy build.gradle files may use either the new or the old one. (#231)All Android wheels are now downloaded from https://chaquo.com/pypi-13.1/ – the old pypi-7.0 URL is no longer used. (#808)os.get_terminal_size now returns ENOTTY rather than EPERM, which was causing avc log spam when stdio is redirected. (#886)Update CA bundle to certifi 2023.11.17. (#893)Android Gradle plugin versions 8.1 and 8.2 are now supported. (#908, #1003)Python version 3.12 is now supported. (#931, #967)Update runtime Python versions to 3.8.18, 3.9.18, 3.10.13, 3.11.6, and 3.12.1. (#932)The importlib.resources.files API is now supported in Python 3.9 and later. (#977)Update pkg_resources from setuptools version 68.2.2. Deprecations and Removals The 32-bit ABIs armeabi-v7a and x86 will no longer be supported on Python 3.12 and later. (#709)Android Gradle plugin versions 4.1 and 4.2 are no longer supported. (#787, #840) Bugfixes Fix “AttributeError: “‘AssetFinder’ object has no attribute ‘extract_packages’” when AssetFinder subdirectories are on sys.path. (#820)Unsupported socket functions such as if_nametoindex now throw OSError as documented, rather than AttributeError. (#870)Fix FileNotFoundError when pkgutil.iter_modules is called with a nonexistent path. (#917)ZIP files using BZ2 or LZMA compression are now supported. (#953)"
+author = ""
+year_published = 2023
+year_updated = 2023
+clearnet = "https://chaquo.com/chaquopy/chaquopy-version-15-0-1"
+category = "research"
+tags = ["15.0.1", "android", "bugfixes", "chaquopy", "deprecations", "features", "files", "navigation", "post", "python"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy"]
+title = "Chaquopy – Python SDK for Android"
+description = """
+Chaquopy provides everything you need to include Python components in an Android app, including:
+
+
+
+
+ Full integration with Android Studio's standard Gradle build system. 
+
+
+
+
+
+Simple APIs for calling Python code from Java/Kotlin, and vice versa.
+
+
+
+
+
+A wide range of third-party Python packages, inc"""
+full_description = "The easiest way to use Python in an Android app Chaquopy provides everything you need to include Python components in an Android app, including: Full integration with Android Studio’s standard Gradle build system. Simple APIs for calling Python code from Java/Kotlin, and vice versa. A wide range of third-party Python packages, including NumPy, SciPy, OpenCV, and many more. To get started, see the documentation. The easiest way to use Python in an Android app Chaquopy provides everything you need to include Python components in an Android app, including: Full integration with Android Studio’s standard Gradle build system. Simple APIs for calling Python code from Java/Kotlin, and vice versa. A wide range of third-party Python packages, including NumPy, SciPy, OpenCV, and many more. To get started, see the documentation."
+author = ""
+year_published = 2024
+clearnet = "https://chaquo.com/chaquopy"
+category = "research"
+tags = ["android", "chaquopy", "easiest", "news", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["athemes.com", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-version-14-0-2"]
+title = "Chaquopy version 14.0.2 – Chaquopy"
+description = """
+Features
+
+
+
+sys.stdout and sys.stderr are now line-buffered by default. (#654, #746, #757)Add option to redirect native stdout and stderr to Logcat. (#725)Update to Python version 3.8.16 and OpenSSL version 1.1.1s. This fixes the Google Play warning “Your app uses a defective version of the OpenSSL"""
+full_description = "Chaquopy version 14.0.2 Posted on 2023-01-292023-12-24 Malcolm Smith Features sys.stdout and sys.stderr are now line-buffered by default. (#654, #746, #757)Add option to redirect native stdout and stderr to Logcat. (#725)Update to Python version 3.8.16 and OpenSSL version 1.1.1s. This fixes the Google Play warning “Your app uses a defective version of the OpenSSL library”. (#727)Update CA bundle to certifi 2022.12.7. (#747)Add python executable as a final fallback when searching for buildPython. (#752)Restore the extractPackages setting, for code that requires its modules to exist as separate .py files. (#754)Android Gradle plugin version 7.4 is now supported. (#756)Update to pip version 20.1. Deprecations and Removals buildPython must now be at least Python 3.7. (#713) Bugfixes Enable PEP 517 builds in pip. (#715)Show correct error message when buildPython autodetection fails. (#733)Fix error when calling entry_points with an unreadable directory on sys.path. (#755)Fix “Could not find an activated virtualenv” error when PIP_REQUIRE_VIRTUALENV environment variable is set. (#777)"
+author = ""
+year_published = 2023
+year_updated = 2023
+clearnet = "https://chaquo.com/chaquopy/chaquopy-version-14-0-2"
+category = "research"
+tags = ["14.0.2", "android", "bugfixes", "chaquopy", "deprecations", "features", "navigation", "post", "python", "removals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/contact"]
+title = "Contact – Chaquopy"
+description = """
+For support, bug reports, or feature requests, please use our GitHub page.
+
+For anything else, please email contact@chaquo.com."""
+full_description = "Contact For support, bug reports, or feature requests, please use our GitHub page. For anything else, please email contact@chaquo.com. Contact For support, bug reports, or feature requests, please use our GitHub page. For anything else, please email contact@chaquo.com. Contact For support, bug reports, or feature requests, please use our GitHub page. For anything else, please email contact@chaquo.com. Contact For support, bug reports, or feature requests, please use our GitHub page. For anything else, please email contact@chaquo.com."
+author = ""
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/contact"
+category = "research"
+tags = ["android", "chaquopy", "contact", "python"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/documentation"]
+title = "Documentation – Chaquopy"
+description = """
+Current version (16.0)
+ \t15.0
+ \t14.0
+ \t13.0
+ \t12.0
+ \t11.0
+ \t10.0
+ \t9.1
+ \t9.0
+ \t8.0
+ \t7.0
+ \t6.3
+ \t6.2
+ \t6.0
+ \t5.1
+ \t5.0
+ \t4.0
+ \t3.3
+ \t3.2
+ \t3.1
+ \t3.0
+ \t2.1
+ \t2.0
+ \t1.4
+ \t1.3
+ \t1.2
+ \t1.1"""
+full_description = "Documentation Current version (16.0) 15.0 14.0 13.0 12.0 11.0 10.0 9.1 9.0 8.0 7.0 6.3 6.2 6.0 5.1 5.0 4.0 3.3 3.2 3.1 3.0 2.1 2.0 1.4 1.3 1.2 1.1 Documentation Current version (16.0) 15.0 14.0 13.0 12.0 11.0 10.0 9.1 9.0 8.0 7.0 6.3 6.2 6.0 5.1 5.0 4.0 3.3 3.2 3.1 3.0 2.1 2.0 1.4 1.3 1.2 1.1 Documentation Current version (16.0) 15.0 14.0 13.0 12.0 11.0 10.0 9.1 9.0 8.0 7.0 6.3 6.2 6.0 5.1 5.0 4.0 3.3 3.2 3.1 3.0 2.1 2.0 1.4 1.3 1.2 1.1 Documentation Current version (16.0) 15.0 14.0 13.0 12.0 11.0 10.0 9.1 9.0 8.0 7.0 6.3 6.2 6.0 5.1 5.0 4.0 3.3 3.2 3.1 3.0 2.1 2.0 1.4 1.3 1.2 1.1"
+author = ""
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/documentation"
+category = "research"
+tags = ["android", "chaquopy", "documentation", "python"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-is-now-open-source"]
+title = "Chaquopy is now open-source – Chaquopy"
+description = """
+I'm delighted to announce that, thanks to support from Anaconda, Chaquopy is now free and open-source. The SDK's full source code is available on GitHub under the MIT license.
+
+
+
+The first open-source version is 12.0.1, which was released today. Apart from removing the license restrictions, it's ide"""
+full_description = "Chaquopy is now open-source Posted on 2022-07-242022-08-08 Malcolm Smith I’m delighted to announce that, thanks to support from Anaconda, Chaquopy is now free and open-source. The SDK’s full source code is available on GitHub under the MIT license. The first open-source version is 12.0.1, which was released today. Apart from removing the license restrictions, it’s identical to version 12.0.0. If you’re using an older version of Chaquopy, see here for advice. Chaquopy is now open-source Posted on 2022-07-242022-08-08 Malcolm Smith I’m delighted to announce that, thanks to support from Anaconda, Chaquopy is now free and open-source. The SDK’s full source code is available on GitHub under the MIT license. The first open-source version is 12.0.1, which was released today. Apart from removing the license restrictions, it’s identical to version 12.0.0. If you’re using an older version of Chaquopy, see here for advice. Post navigation Chaquopy version 12.0.0Chaquopy version 13.0.0"
+author = ""
+year_published = 2022
+year_updated = 2022
+clearnet = "https://chaquo.com/chaquopy/chaquopy-is-now-open-source"
+category = "research"
+tags = ["android", "chaquopy", "navigation", "open-source", "post", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/doc/current"]
+title = "Chaquopy 16.0"
+full_description = "Chaquopy# Introduction# To start using Chaquopy, see the examples, then follow the setup instructions in your own app. User guide Examples Gradle plugin Java API Python API Cross-language issues FAQ History Version summary Change log Back to top Toggle Light / Dark / Auto color theme Toggle table of contents sidebar Chaquopy# Introduction# To start using Chaquopy, see the examples, then follow the setup instructions in your own app. User guide Examples Gradle plugin Java API Python API Cross-language issues FAQ History Version summary Change log Next Examples Made with Furo"
+year_published = 2025
+clearnet = "https://chaquo.com/chaquopy/doc/current"
+category = "research"
+tags = ["chaquopy#", "examples", "introduction#"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/pypi-13.1"]
+title = "Index of /pypi-13.1"
+full_description = "As well as the packages listed here, Chaquopy also supports most pure-Python packages on PyPI. For more details, see the documentation."
+year_published = 2025
+clearnet = "https://chaquo.com/pypi-13.1"
+category = "research"
+tags = ["chaquopy", "package", "repository"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "developer.android.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "pypi.org", "stackoverflow.com", "twitter.com", "wordpress.org"]
+
+["https://chaquo.com/chaquopy/chaquopy-version-12-0-0"]
+title = "Chaquopy version 12.0.0 – Chaquopy"
+description = """
+Changes:
+
+
+
+Android Gradle plugin version 7.2 is now supported (#613), and version 4.0 is no longer supported.Update to Python version 3.8.13 (see its changelog for details).Update CA bundle to certifi 2021.10.8.Fix signal.valid_signals on 32-bit ABIs (#600).Allow buildscript configuration to be in"""
+full_description = "Chaquopy version 12.0.0 Posted on 2022-05-122022-05-12 Malcolm Smith Changes: Android Gradle plugin version 7.2 is now supported (#613), and version 4.0 is no longer supported.Update to Python version 3.8.13 (see its changelog for details).Update CA bundle to certifi 2021.10.8.Fix signal.valid_signals on 32-bit ABIs (#600).Allow buildscript configuration to be in a subproject (#615). The following packages have been added to the repository since the previous version: zstandard And the following packages have been updated: cryptography"
+author = ""
+year_published = 2022
+year_updated = 2022
+clearnet = "https://chaquo.com/chaquopy/chaquopy-version-12-0-0"
+category = "research"
+tags = ["12.0.0", "android", "chaquopy", "navigation", "post", "python", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anaconda.com", "athemes.com", "dl.google.com", "docs.python.org", "github.com", "pip.pypa.io", "twitter.com", "wordpress.org"]

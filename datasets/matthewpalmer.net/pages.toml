@@ -1,0 +1,862 @@
+["https://matthewpalmer.net/blog/2014/12/09/swift-generators-colour-gradients/index.html"]
+title = "Using Generators to Create a Gradient — Matthew Palmer"
+full_description = "For my latest app Weekling, I wanted to create a UICollectionView with a lovely background gradient across the cells, similar to Clear. There’s the obvious way to do this—by using a regular for loop—but then there’s the interesting way: with Generators. I’ve been reading Functional Programming in Swift, and they had a great section on Generators. Here’s how I created a Clear-style gradient using functional programming techniques. This effect looks awesome in a tonne of different scenarios, and if we can write a small, reusable component, we can simply drop it in wherever we like, without changing a word. In Swift, they’re defined as a protocol, with only two requirements: typealias Element and func next() -> Element?. The first just tells the generator the type we want to generate, and the function next() -> Element? tells the generator how to create the next value in the sequnce. The first required part of the GeneratorType is the typealias, where we tell the compiler the type of what will be in our sequence. We’re creating a series of colours, so for us it’s UIColor The other required component of a Generator is the next() function. We can define this really simply, without knowing anything else about the class. We just know that the colour that comes after the current one has to have a slightly different hue. At this stage, all that’s left to define is our colour components: hue, saturation, brightness, alpha, and add a way to initialise the class. This is mostly just boilerplate code (which we could reduce if we had used a struct, rather than a class)."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/12/09/swift-generators-colour-gradients/index.html"
+category = "research"
+tags = ["create", "generators", "gradient", "products", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2023/09/18/create-custom-workouts-app-apple-watch/index.html"]
+title = "Create custom workouts on your iPhone and send them to Apple Watch — Matthew Palmer"
+full_description = "I’ve created a new app called Workout Builder that lets you easily create custom workouts that sync to the built-in Workouts app on your Apple Watch. It has great integration with the native iOS and watchOS Workouts capabilities, it’s free to download and create custom workouts, and it comes with a gallery of premium pre-built workouts in case you don’t want to build your own."
+year_published = 2023
+clearnet = "https://matthewpalmer.net/blog/2023/09/18/create-custom-workouts-app-apple-watch/index.html"
+category = "research"
+tags = ["apple", "create", "custom", "iphone", "products", "send", "sync", "watch", "workouts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/03/22/building-better-analytics/index.html"]
+title = "Building Better Analytics — Matthew Palmer"
+full_description = "So you might have seen my last post about setting up Segment.io, Mixpanel and Analytics.js. I wrote that about half an hour after I got my setup working, but now I’ve had some proper time to explore and get some useful info. If I were you, I’d implement as many cool data points you want to collect now. One day your site will get some traffic, and you’ll regret it. Do it now. Lucky for me, my first post about Segment.io was tweeted out by the Segment.io team (after they helped me clean up the code - awesome customer support!), which meant I got a few more hits than usual. It was around twenty or thirty, which is really awesome for me. Unfortunately, I had no way of tracking what they were doing once they got to my site. I quickly set up some Funnels. A new spate of Twitter followers were unaccounted for. I added tracking of the links to social networking; I wanted to see which placements were more productive, and to prevent overloading unhelpful areas. Because of my analytics, I can see which parts are being hit and which aren’t, and I can remove anything that isn’t beneficial. It results in a better site and a better user experience. Additionally, I had no tracking of which blog posts were being viewed, only that the template for the blog post was being loaded. So I extended my post-page-view script to include the title of the post. I now have even more useful custom data in mixpanel. Currently, I’m looking into tracking how far down a user scrolls before they close the page. My site is quite long; it will be interesting to see at which point viewers lose interest. I will be able to prioritise and structure the most important information accordingly. I’ve been wanting to add a section before the ‘Latest Posts’ section filled with a list of the things I’ve made. Depending on how the tracking of scroll distance goes, it might just replace the current ‘Latest Work’ section. I’ll be sure to update my blog if I work something out. Irrespective of any iteration, implementing custom analytics yielded impressive amounts of data that are both helpful and relevant for me personally. Custom analytics are far more beneficial than any site redesign or blog post I have done."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/03/22/building-better-analytics/index.html"
+category = "research"
+tags = ["57.86%", "analytics", "better", "blog", "building", "homepage", "post.", "products", "visit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "theverge.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/01/07/aedle-vk-1-headphone-review/index.html"]
+title = "Aedle VK-1 Headphone Review — Matthew Palmer"
+full_description = "I’ve been watching these beautiful headphones for years, waiting for them to be more widely released and subsequently reviewed. This is the Aedle VK-1 and it is the only product the company makes. It is the singular vision of two men that has taken several years to reach fruition. Instead of being produced in a corner of a giant Far Eastern factory, they are instead made by a small group of workers in Brittany."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/07/aedle-vk-1-headphone-review/index.html"
+category = "research"
+tags = ["aedle", "headphone", "products", "review", "vk-1"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com"]
+
+["https://matthewpalmer.net/screenshot-text-editor-ai"]
+title = "EditScreenshot | Screenshot Text Editor AI to change or remove text in images"
+description = "EditScreenshot is a screenshot text editor AI that lets you change or remove text in screenshots and images in seconds, without having to install Photoshop"
+full_description = "Screenshot Text Editor AI is a powerful, yet simple, tool designed to make your life easier when it comes to editing text in screenshots. With Screenshot Text Editor AI, you can work naturally edit text within your existing screenshots to suit your needs. This app is more than just a text editor for screenshots—it’s your go-to resource for cleaning up and polishing visuals. Whether you’re showcasing your latest app, preparing a product demo, or simply sharing a screenshot with a friend, Screenshot Text Editor AI helps you present your work in the best light. If you’re a designer, product manager, or marketer, Screenshot Text Editor AI is your secret weapon for creating professional visuals. Quickly refine screenshots to ensure they align with the brand’s look and feel. There’s no need to open a full design suite for minor tweaks. Clean up and annotate screenshots before sharing them with stakeholders, making communication clearer. Remove sensitive information and reformat content on the fly. This ensures that every screenshot is perfectly tailored for marketing campaigns or presentations. Getting started with Screenshot Text Editor AI is simple and straightforward. Just follow these steps: Screenshot Text Editor AI is currently available for Individuals and Businesses in Private Beta. Please email [email protected] to get access"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/screenshot-text-editor-ai"
+category = "research"
+tags = ["benefits", "business", "clean", "collaboration:", "designers,", "easier", "easily", "easy", "edit", "editing:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "ftx.com", "github.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "support.cloudflare.com", "tapbots.com"]
+
+["https://matthewpalmer.net/blog/2013/10/06/my-problem-with-the-breaking-bad-finale/index.html"]
+title = "My Problem With the Breaking Bad Finale — Matthew Palmer"
+full_description = "My primary issue with the ending of Breaking Bad, my second favourite show on TV, is the dissonance between the final episode and the rest of season five. Throughout the last few seasons, we’ve seen Walt transform into a monster. A monster whom we are not meant to emulate. For nearly two whole seasons, Vince Gilligan has been convincing us of the dangers of hubris, greed and vanity. In the final episode, Walt wins. Walt achieves a significant majority of the goals he set at the outset: His only original goal which was not fulfilled was having his family not hate him, and to have the cancer catch up to him before the police did. While not all of Walt’s money reaches his family, he wanted enough to make them comfortable. Eleven million dollars sates all of those desires. This proud, murderous, poisoner, abuser of children, self-deifying, monster wins at the end of the series. Gilligan, again and again, has warned us not to follow Walt’s path. And yet there are no significant, lasting repercussions for him. The high school chemistry teacher has transformed into an empirical megalomaniac and he has not faced any consequences. Those whom he loves have suffered, but what’s Gilligan’s message there? Don’t be associated with meth kingpins? Seeing his family destroyed is not a significant consequence for Walt, just as they weren’t the sole contributors to his initial motivations; he said so himself. Both his family’s and Jesse’s ultimate freedom were orchestrated by Walt. Again, Walt gets what he wants. The villain got what he wanted. In the finale, Gilligan inadvertently suggests that doing awful things brings the consequences one wants. My issue is not solely with the finale, which was a strong episode, but the way it fits with the rest of the series, in which Gilligan has portrayed that Walt’s hubris was his hamartia. Walt’s pride was certainly his fatal flaw, but he experienced no downfall at the end of the series. The penultimate episode, in which Walt sinks deeply, is discordant with the finale, in which Walt rises. Despite his immoral actions, Walt will become the greatest meth cook in history, which is exactly what he wanted. All of Gilligan’s warnings are nullified by that fact."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/10/06/my-problem-with-the-breaking-bad-finale/index.html"
+category = "research"
+tags = ["breaking", "chemistry", "consequences.", "dangers", "downfall", "empirical", "etched", "experienced", "faced", "fade"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "tapbots.com", "twitter.com"]
+
+["https://matthewpalmer.net/rocket"]
+title = "Rocket – the best emoji app for Mac"
+description = "Rocket is a free Mac app that makes typing emoji faster and easier using Slack-style shortcuts."
+full_description = "Just start typing an emoji like :thumbsup: (👍) and Rocket will help auto-complete it – in any app!"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/rocket"
+category = "research"
+tags = ["business", "free", "imore", "insider", "lifehacker", "tools", "toys", "verge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "qsapp.com", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/01/16/making-sublime-text-2-feel-more-at-home-on-the-mac-setup/index.html"]
+title = "Making Sublime Text 2 Feel More at Home on the Mac — Matthew Palmer"
+full_description = 'I recently went through a text editor identity crisis, where I decided to install almost every Mac text editor I could find. I wanted to replace the my usual editor—Sublime Text 2—with something more native. Among others, I went through the big three: BBEdit (too cluttered), Chocolat (too slow), TextMate (unstable and a little slow). I also wanted an editor for writing, so I tried out Byword, iA Writer, Ommwriter, Mou and plain old TextEdit. Parts of each editor showed flashes of brilliance. With BBEdit, I could open a 10MB text file without a stutter, whereas all of the others precariously hobbled around. But BBEdit has way too much UI, while most of the others are relatively well designed. My lasting predicament with Sublime was its irregular default UI; that is, it doesn’t look at home at all on the Mac. But Sublime’s flexibility saved it from being replaced. After a few tweaks, here is my default code-editing set up. It blends in well with the general Mac aesthetic. My biggest problem is with the tab bar, which I would prefer to look like the Safari or Xcode’s tabs. The colour scheme is another area I’m not happy with, because orange is far too salient for code comments, and other language-specific keywords need to be more identifiable. It has non-default folder icons, which can be easily enabled by adding "soda_folder_icons": true to your Settings — User file. And best of all, I was able to consolidate my markdown editing into something more powerful than Byword, but which is still quite attractive. Thanks to Sublime’s visual customisablity, my next editor identity crisis should be a long way off.'
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/16/making-sublime-text-2-feel-more-at-home-on-the-mac-setup/index.html"
+category = "research"
+tags = ["feel", "home", "making", "products", "sublime", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/12/01/gif-buffer/index.html"]
+title = "Gif Buffer — Matthew Palmer"
+full_description = "For Combust’s new homepage, I wanted to display a gif. But I didn’t want the gif to stutter or pause halfway through. I made and released Gif Buffer, a little library that switches an image for a gif once the gif is fully loaded."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/12/01/gif-buffer/index.html"
+category = "research"
+tags = ["buffer", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/standing-invitation"]
+title = "Matthew Palmer – Standing Invitation"
+full_description = "I love helping people, answering questions, discussing ideas, and looking at work you’ve done. Anything from blog posts to open source code to your latest designs. I’d like to see it! There are a few areas where I might be particularly useful for you, generally at the intersection of development, product design, and marketing. I have the unfortunate combination of a) being bad at email, and b) getting a reasonable amount of email. Let me set your expectations. Important! If I don’t respond within a week, feel free to send a follow-up email. I probably just got busy on the day your email came through. If you follow up and ask me to reply, I’ll genuinely do my best to write you back. Hi, I'm sending you this email because of the standing invitation page on your website. I need help with/I want your thoughts on/I'd like to share... <Now you elaborate. Please include emoji>"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/standing-invitation"
+category = "research"
+tags = ["deal", "definitely", "don’t", "emails", "getting", "g’day!", "important!", "response", "sometimes", "start?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "qsapp.com", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/01/25/what-i-want-in-an-ergonomic-keyboard/index.html"]
+title = "What I Want in a Keyboard (i.e. someone kickstart this) — Matthew Palmer"
+full_description = "Okay, hardware makers, listen. I’ve been looking around for a nice ergonomic keyboard recently, and none of them seem to fit exactly what I want. Even as I type this my fingers tingle atop the old Lenovo keyboard - frustrating. So, you should make this. I’m probably going to get the 4000, there aren’t really any other good options. If you know of any good alternatives, my hands can’t wait to hear about them on Twitter."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/01/25/what-i-want-in-an-ergonomic-keyboard/index.html"
+category = "research"
+tags = ["ergonomic", "keyboard", "kickstart", "layout", "products", "someone"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "matthewpalmer.tk", "obdev.at", "peachs.co", "pqrs.org", "store.matthewpalmer.net", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2014/01/26/leaky-abstractions/index.html"]
+title = "Leaky Abstractions, Joel on Software — Matthew Palmer"
+full_description = "And you can’t drive as fast when it’s raining, even though your car has windshield wipers and headlights and a roof and a heater, all of which protect you from caring about the fact that it’s raining (they abstract away the weather), but lo, you have to worry about hydroplaning (or aquaplaning in England) and sometimes the rain is so strong you can’t see very far ahead so you go slower in the rain, because the weather can never be completely abstracted away, because of the law of leaky abstractions. At times, Spoelsky confuses abstractions with ignoring the actual issue; good abstractions reduce any needless complexity in the problem. An iPhone could be seen as a leaky abstraction by Spoelsky’s taxonomy, but the simplicity of the iPhone and its operating system are a gift. Abstraction is a game of balance."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/26/leaky-abstractions/index.html"
+category = "research"
+tags = ["abstractions,", "joel", "leaky", "products", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2017/12/01/emoji-bullet-list-launch/index.html"]
+title = "Emoji Bullet List ⚡ Behind the Scenes — Matthew Palmer"
+full_description = "Our @buffer Social blog numbers for October:🖥️ 1,431,160 sessions👀 1,702,867 pageviews🔍 80% search traffic🕑 4m 24s average time on page🏀 12% inverse bounce rate💰 1,641 signups directly from the blogP.S. What else would you want me to share? Painful to write, though. Like, I know emoji better than most, and I struggle to quickly pick out the right emoji to go with each line. I built Emoji Bullet List to make creating emoji dot point lists really easy. Just copy in your list, hit the big “Emojify” button, quickly choose from the suggested emoji if the first suggestion doesn’t fit your needs, and hit “Copy” to get an emojified list back. Too easy! This idea originated as a nice-to-have feature for Rocket, but I realised I could use Rocket’s emoji keyword/phrase dataset to build this into a web app. More people can access it, it’s a bit easier to use, and hopefully a few more people will find Rocket because of it. I added unremarkable-yet-incredibly-useful logging with ten lines of JavaScript that lets me see in detail how (anonymised) users are interacting with the app. (This is great for low volume apps, but I don’t do this for services running at scale.) There are a bunch of fancier ways using external services or adding full user tracking, but honestly there’s nothing more fun than tailing your logs in realtime while someone is successful with your app. I even saw one person come in, play around with the app for a minute, and click on the link to my Twitter profile. I opened up Twitter, and 30 seconds later I had a tweet from them about how much they liked the app 😁. (As a side note, you’ll notice attackers and bots trying to crawl your site for security vulnerabilities. /manager/assets/modext/modx.jsgrps-min.js, /media/system/js/core.js, /privacy_policy.php (why!?), /a2billing/common/javascript/misc.js, are some common ones.) I’ve got a dead simple deployment strategy that’s great for small apps. Put this in a file called node-simple-redeploy.sh (or whatever) in your project."
+year_published = 2017
+clearnet = "https://matthewpalmer.net/blog/2017/12/01/emoji-bullet-list-launch/index.html"
+category = "research"
+tags = ["about,", "anything", "behind", "bullet", "emoji", "know.", "list", "notes", "products", "scenes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2014/01/03/the-birth-of-xbox-live/index.html"]
+title = "The Birth of Xbox Live — Matthew Palmer"
+full_description = "Over time the Millennium E building became bedecked with green lights (the brand color of Xbox) and other decorations to physically differentiate it from the main campus. It was furnished like a game development studio, with games to play, televisions to watch and comfortable places to sit, and as the team worked through 2000 and 2001, its status within Microsoft grew legendary. “Xbox was cool,” says Pobst. “And to have a part of Microsoft that was cool had not really happened before.”"
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/03/the-birth-of-xbox-live/index.html"
+category = "research"
+tags = ["birth", "live", "products", "xbox"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/03/crazy-blog-engine/index.html"]
+title = "A Crazy Blog Engine — Matthew Palmer"
+full_description = "Like Brent Simmons, I’m in need of a new blog engine. I’m currently using Jekyll on Github Pages, which is fairly good and reliable. But it’s missing a few key things, like being able to post from my phone and tablet. I’ve tried out a couple of apps for posting to Jekyll on Github Pages, but they didn’t quite work as I’d like. I like Tumblr’s posting interface, and their iOS apps. The team over there have done a really great job. I’d love to be able to use Tumblr for my blog, but then I wouldn’t have control over the URLs. That’s a deal breaker. So here’s a crazy idea: I’ll post on Tumblr to my Tumblr blog. Then I’ll scrape the Tumblr blog’s RSS feed, and create a page on my actual site based on the content of the Tumblr post. I’ll be able to use Tumblr’s iOS clients and bookmarklets, have custom URLs, and be able to host it for free on Github Pages. If anyone visits my Tumblr site, I can redirect them to my actual site. I haven’t decided whether I’m actually going to do this or not. I’ll be waiting to see what Brent goes with first. So it turns out Tumblr supports custom URLs. Not by a predefined schema, but it’s better than nothing. This changes things, but I’ll still wait to see what Brent does. He’s got me curious."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/03/crazy-blog-engine/index.html"
+category = "research"
+tags = ["blog", "crazy", "engine", "products", "update"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2017/12/10/install-virtualbox-mac-high-sierra/index.html"]
+title = "How to Install VirtualBox on macOS Mojave and High Sierra — Matthew Palmer"
+full_description = "I tried to install VirtualBox on macOS High Sierra, but I got an error about kernel drivers, system extensions, and kernel modules not being installed. The VirtualBox installer fails with “The installation failed” where it “encountered an error that caused the installation to fail.” Go to System Preferences > Security & Privacy. Click the ‘Allow’ button at the bottom. Re-run the installer. More detailed instructions are below. You might see a prompt from macOS about not allowing unsecure system extensions. You can click ‘Next’ for now. Navigate to System Preferences > Security & Privacy. At the bottom of the window, you should see a message saying “System software from developer, ‘Oracle, America, Inc.‘ was blocked from loading.” Open settings for the VM. Click the “Shared Folders” tab. Add your folder and select Yes for “Auto-mount” Select the VirtualBox Guest Additions image, for me this is located at /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso. Once the Choose disk image… option was selected, you were probably shown a file picker. Press Command-Shift-G and then type in that file to choose the VBoxGuesAdditions.iso. Run the following command to install prerequisites for the Mac VirtualBox Guest Additions: sudo apt-get -y install gcc make linux-headers-$(uname -r) Run sudo usermod -aG vboxsf USERNAME where USERNAME is your guest OS username. This will let your user access the shared folder."
+year_published = 2017
+year_updated = 2017
+clearnet = "https://matthewpalmer.net/blog/2017/12/10/install-virtualbox-mac-high-sierra/index.html"
+category = "research"
+tags = ["folder", "high", "host?", "install", "macos", "mojave", "products", "shared", "sierra", "ubuntu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2019/03/11/free-squarespace-referral-program/index.html"]
+title = "How to Set Up a Squarespace Referral Program — Matthew Palmer"
+full_description = "This guide is going to teach you how to set up a referral program (like “refer a friend and get $20 off your next order”) for your Squarespace store. (What’s the difference between a referral program and an affiliate program? A referral program lets regular customers share your store with their friends to earn rewards. An affiliate program lets influential people earn commissions from sharing your store with their large audience.) Studies have shown that 9 out of 10 people trust recommendations from their friends above any other source when it comes to making purchases. So if you can get one of your customers to recommend a product to their friend, odds are pretty good I’m a small business owner, so I know first-hand that you’re probably not in business for the drive-by customers. What keeps you going are the people who come back, who love your products, and who rave about you. You need to reward people like that! First rule of economics is that people respond to incentives – so it makes sense that you should thank and reward your biggest fans. Hands up – who’s burnt some money trying out AdWords? Or – shudders – you paid for a TV ad. Outdated. Modern businesses with modern products need modern marketing. There’s a reason Uber, Dropbox, and fast growing tech companies have refer-a-friend programs. They work. They’re a million times cheaper, and a million times more effective than buying ads. We’re going to use a Peach’s Squarespace referral program to set this up. Peach’s is a platform that plugs right in to your Squarespace site and adds refer-a-friend functionality. This whole thing takes you about 10 minutes, and after that you’ll have a working refer-a-friend program. After you sign up, the site will take you through to the form where you create your referral program. I usually set my referral programs up like “Reward customers who refer a friend with a $20 discount on their next order of $30 or more.” The other popular option for stores that want to grow more quickly is used by companies like Uber and American Express."
+year_published = 2019
+clearnet = "https://matthewpalmer.net/blog/2019/03/11/free-squarespace-referral-program/index.html"
+category = "research"
+tags = ["account", "advertising", "affiliate", "builds", "cheaper", "configure", "confirmation", "create", "customers", "customize"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/fastfolderfinder"]
+title = "FastFolderFinder – A lightning-fast launchbar for apps and folders on your Mac"
+description = "FastFolderFinder is a Mac app that gives you a lightning-fast fuzzy search bar to quickly find and open apps and folders on your Mac"
+full_description = "FastFolderFinder is a Mac app that gives you a lightning-fast fuzzy search bar to quickly launch apps and find and open folders on your Mac. It helps you jump around your Mac’s filesystem faster, without taking your hands off the keyboard. It’s way faster than having to click through your entire directory structure in Finder. Hit your FastFolderFinder keyboard shortcut (like ⇧-⌘-O, though you can customise it), and FastFolderFinder’s launchbar will appear. From there, search for the folder or app you want to open. Hit Return to open your result – or tweak FastFolderFinder to launch any app with a custom shortcut action! FastFolderFinder makes it way faster to navigate your Mac’s folders and apps. You don’t have to futz around clicking through Finder or use the unreliable Finder search behavior. Plus, you can set up custom shortcut actions within FastFolderFinder. Open folders straight from FastFolderFinder into your code editor, terminal, copy the result’s path, or run bash scripts. Yes! Simply add “/Applications” and “/System/Applications” to your Search Locations and apps will be included in your search results. Spotlight — I don’t know if it’s just me, but lately Spotlight a) has gotten really slow, and b) doesn’t have good file or folder search. FastFolderFinder is way better at that. LaunchBar/Alfred/Quicksilver — These are great general purpose launcher apps with a tonne of functionality and tweakability. For me, it’s too much tweaking. I just want find my folders and launch apps quickly. So I built FastFolderFinder. You can tweak FastFolderFinder to suit your Mac, but to get started I use and recommend the following preferences: Folders > Search Locations /Users/your_username (your home directory) /Applications (to launch apps quickly) /System/Applications (for other system apps) Shortcut Actions Return – Open in Default App Command-Return – Show Parent in Finder Option-Return – Copy Path to Clipboard Shift-Return – Open Application with Visual Studio Code Option-Shift-Return – Open Application with Terminal"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/fastfolderfinder"
+category = "research"
+tags = ["actions", "alfred,", "apps", "apps?", "asked", "available", "business", "common", "contact", "cost?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "qsapp.com", "store.matthewpalmer.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/13/how-to-write-effective-email-marketing-for-your-app/index.html"]
+title = "How to Write Effective Emails — Matthew Palmer"
+full_description = "On his great podcast, Hello Internet, C.G.P. Grey[1] started talking about how to send effective email. His technique—you have 3 seconds to convince Grey not to delete your email—will be similar to the other busy people you’re emailing. This discussion particularly resonated with me because I recently launched an app called Combust. Before I’d listened to this episode, I emailed five or six people about its release, and only got one response—not a great success rate. I’m going to apply Grey’s tips to the next batch of emails I send, and I’ll blog about how it goes. I’m going to write about Grey’s tips in terms of app marketing, but they can be applied to any email you send. Always keep the needs of the person you’re emailing in mind. They’re probably busier than you. That’s why you’re emailing them. Make it interesting and beneficial for them. A wall of text is going to obscure your key message and disinterest the person reading your email. Huge chunks of texts are to be avoided. Scrollbars are an instant death! Grey only responds to short emails; he doesn’t even read long ones. What do you want from the person? How will what you’re sharing benefit them? Get straight to the point. When scanning things, we read the first few sentences of each block and make up our minds. In Grey’s robotic efficiency, he makes it a rule to only read the first sentence of each paragraph, at most. If you’re emailing someone who might check email on their phone, the subject line and the first two lines of text will be important. You’re trying to get the person to not delete your email immediately, so click-bait, dull intros, and long subject lines are a no-go. [1]: If you aren’t already aware, C.G.P. Grey makes a series of outstanding, deeply researched YouTube videos. As he says on the podcast, he sends emails to other busy people for research or otherwise. So you’d imagine Grey would be one of the best at sending messages that elicit a response."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/13/how-to-write-effective-email-marketing-for-your-app/index.html"
+category = "research"
+tags = ["attachments", "don’t", "effective", "emails", "golden", "keep", "lines", "products", "rule", "short"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/03/24/introduction-to-test-driven-development-with-node-js-expect-mocha/index.html"]
+title = "Test Driven Development in Node.js — Matthew Palmer"
+full_description = "Test Driven Development is pretty great, there’s nothing better than seeing your red, failing code switch to green after a lateral idea. However, it can be (I found it) quite difficult to get into Node.js TDD from a very basic level. Next, make sure you’ve got Node set up, know how to use npm and aren’t a complete beginner to Node.js. Now you’re ready to start with TDD. This is going to be an extremely basic introduction. Let’s think about the most basic app we can. Probably Hello World right? We’re far too advanced for that. Let’s make a calculator that can do the most advanced of computations: addition. I’m guessing you know how to write an addition calculator, so we may as well start with the tests. In the future, it’s going to be far easier to start with the tests, because then you’ll know when you’ve got something right. If you haven’t done so already, create a new directory. Then create another one within that called test. Inside test, create a test.js file. That’s what we’ll be working in mostly. Now go back up to your starting directory (cd .. from inside test), and create an add.js file. This is where our main functionality goes. We’re going to have to set up a few modules first though. Run npm install mocha and npm install expect.js. Mocha is the testing framework, and Expect.js allows some pretty neat additions to the standard Assert patterns. In the first few lines, we need to include the modules that we need, so add var assert = require(‘assert’);, var expect = require(expect.js); and var add = require(‘../add’);. The latter is our custom add.js file, which should be blank at the moment. With these included, we can now write our first test (for real this time). Here’s the code for the test: As you can see, it’s really simple. Anything in the '’ tags - such as should expose a function are just things we make up to make it easy to see what has failed. Explore the Expect.js docs to find out more about to.be.a and to.equal, but it should be pretty clear what they do. If you run the tests now by going running $ mocha in the root directory, you should see two tests failed appear. This is excellent - our tests have worked!"
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/03/24/introduction-to-test-driven-development-with-node-js-expect-mocha/index.html"
+category = "research"
+tags = ["app.", "calculator", "development", "driven", "file.", "going", "implementation?", "made", "node.js", "now,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "theverge.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/09/combust/index.html"]
+title = "Combust — Matthew Palmer"
+full_description = "Combust is a brand new social network focused on what’s happening right now. You can see what people are sharing before they’ve even hit submit."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/09/combust/index.html"
+category = "research"
+tags = ["combust", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/01/21/my-plan-for-tv/index.html"]
+title = "My Plan For Tv — Matthew Palmer"
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/01/21/my-plan-for-tv/index.html"
+category = "research"
+tags = ["plan", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dotdev.co", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net"]
+
+["https://matthewpalmer.net/blog/2024/08/18/screenshots-text-editor-ai/index.html"]
+title = "Edit and Change Text in Product Screenshots with Screenshot Text Editor AI — Matthew Palmer"
+full_description = "I’ve created a new app called Screenshot Text Editor AI that lets you edit text in screenshots and product demos. Before Screenshot Text Editor AI, when I had to create screenshots for the App Store, marketing websites, platform marketplaces, and presentations, I had to set up a whole demo account with content that was suitable for sharing publicly. This took a long time, was prone to looking bad, and added hours or days of extra work depending on how many platforms I needed to support. With Screenshot Text Editor AI, now I can just take a screenshot of my typical usage, feed the screenshot into Screenshot Text Editor AI, and set the text in the screenshots to whatever I like. This means I have more control over my marketing assets, and can quickly update them if I need to tweak my messaging. It makes my screenshots and marketing resources a lot more professional while also making them faster to create, and more likely to stay updated, and removes any private or personally identifiable information from the screenshots. To try Screenshot Text Editor AI to edit text in your product screenshots and images, shoot me an email at [email protected]"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://matthewpalmer.net/blog/2024/08/18/screenshots-text-editor-ai/index.html"
+category = "research"
+tags = ["change", "edit", "editor", "product", "products", "screenshot", "screenshots", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/07/how-to-write-easy-to-change-code/index.html"]
+title = "Writing Easy to Change Code — Matthew Palmer"
+full_description = "Writing easy to change code is your second most important goal when making software; the first is shipping the product. Clarity is the goal. Clear code is easier to change. Local consistency is important, but this is only the basic level of style. Optimize the things that are slow, the things you understand best, the things that have the clearest role. Try to optimize the slowest and oldest 3% of your code."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/07/how-to-write-easy-to-change-code/index.html"
+category = "research"
+tags = ["blocks", "change", "clarity", "clarity.", "code", "code.", "communicate", "consider", "cruft,", "debugging"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/03/08/how-to-use-and-set-up-netflix-in-australia-apple-tv/index.html"]
+title = "How to Set Up Netflix in Australia on an Apple TV — Matthew Palmer"
+full_description = "I’ve worked out how to get Netflix working worldwide, as well as on the Apple TV. It costs $13 a month. Here are the steps: I made a new email account for all this, then set it to forward all mail to my regular email account. You will need a new email account unless you have a spare one already."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/03/08/how-to-use-and-set-up-netflix-in-australia-apple-tv/index.html"
+category = "research"
+tags = ["account", "account.", "already.", "apple", "australia", "email", "forward", "made", "mail", "need"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "theverge.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/05/26/the-downsides-of-front-end-frameworks/index.html"]
+title = "The Downsides of Front End Frameworks — Matthew Palmer"
+full_description = "It seems that a front end framework is almost mandatory for any modern web app, but these frameworks are often unnecessary. In my latest project, I was looking into using Angular.js. Visit the Angular site, and you’d think it would solve all of your problems. (Note: my project is very simple, larger and more complex apps obviously have other priorities.) I started playing around with Angular; I already had my RESTful API finished in Node.js, and I just wanted to make a simple front end for it. Turns out, a simple front end for an API has two (relatively) large files that need to be included for it to work with Angular. Moreover, Angular introduced unnecessary complexity and syntax that I didn’t want or need. While I’ve done Django and iOS MVC stuff before, Angular feels like another language to learn - it’s not just ‘normal’ javascript. The far better solution was simply jQuery and Mustache.js. I could have done without Mustache, and jQuery was already being included anyway. jQuery’s $.ajax function is incredibly powerful, especially for interactions with a pre-existing API. jQuery fit around my uses; Angular felt like it was trying to force its structure on me. With the $.ajax function, I was able to implement all the access points for my API in under forty lines of code. Had I combined this with a proper templating language like Jade, it would have been less. The plan going forward is to make a loose wrapper for the $.ajax function and combine it with a templating language. That will become my own front end framework, and hopefully I’ll be able to make it have a simple single-page implementation. It would have been nice to have a single page app, but sometimes it’s just more trouble than it’s worth."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/05/26/the-downsides-of-front-end-frameworks/index.html"
+category = "research"
+tags = ["downsides", "frameworks", "front", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/01/17/the-apple-tv-set/index.html"]
+title = "The Apple TV Set — Matthew Palmer"
+full_description = "Steve Jobs’ own voice has been just one current in the maelstrom of rumours eddying around the Apple TV set. “I’d like to create an integrated television set that is completely easy to use… It would be seamlessly synced with all of your devices and with iCloud.” Just like the original iPhone, the success of the future Apple TV set is predicated on two things: smooth user interaction and minimalism. Jobs’ emphasis on the multitouch technology, in the keynote for the introduction of the iPhone, foreshadows the importance Apple will place on input for the TV. Just like the iPod click wheel, Apple’s strengths are in input techniques; I can’t imagine what they’ve crafted, but it will be revolutionary. Apple has a long and bloody history of dismembering devices’ ageing connectors, especially when these inputs are approaching supersession. Components like floppy disks, CDs, spinning hard drives, PS/2 ports, VGA and DVI connectors are becoming a rarity in the Mac lineup, available only in the high-end or vintage market. Apple has led the industry towards the razor of minimalism, cutting out cruft and obsolescence. With Apple’s history, a reduced amount of inputs available to an Apple TV set becomes obvious. This transforms a TV from a cabled mess to something more similar to an iOS device’s cordless magic, satisfying the requirement for minimalism. To predict the future with the past, we can look at the iPad’s rejection of a standard USB port—a move denigrated by many in the tech press—as a huge marker of the iPad’s overall simplicity. I envisage very few inputs on the Apple TV set, only the standard Power connector (with power brick built inside the device) and maybe HDMI. This will be essential to the TV’s simplicity and popularity, but, like the iPad, will be met with disfavour. And most people won’t even need the HDMI connector: the Apple TV set will consist of just a screen and a power cord. Wifi, Apple TV OS, IR receiver and storage will be perfectly integrated, providing access to all of the current services and more. That leaves the Apple TV set with a stunningly minimalistic one cord hanging out of the TV."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/17/the-apple-tv-set/index.html"
+category = "research"
+tags = ["apple", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/04/23/introducing-combust/index.html"]
+title = "Introducing Combust — Matthew Palmer"
+full_description = "Combust is a social network I’ve been working on for the last few months. Posts on Combust disappear after six hours, and all your posts come in real time. You can see what people are writing before they even hit submit! I’m @matt. It’s just been released into beta. I’m working on an iOS app too, which should be released around July. Try it out and let me know what you think."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/04/23/introducing-combust/index.html"
+category = "research"
+tags = ["combust", "introducing", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2023/03/03/big-thief-unreleased-tracks-spreadsheet/index.html"]
+title = "Matt’s Big Thief Unreleased Tracks Spreadsheet — Matthew Palmer"
+full_description = "Here’s my spreadsheet of Big Thief’s unreleased tracks. This was created in February 2023, i.e. the post-DNWMIBIY period. As of March 2023, the list contains 23 tracks. The Google Sheet will get updated more regularly than this blog post."
+year_published = 2023
+year_updated = 2023
+clearnet = "https://matthewpalmer.net/blog/2023/03/03/big-thief-unreleased-tracks-spreadsheet/index.html"
+category = "research"
+tags = ["matt’s", "products", "spreadsheet", "thief", "tracks", "unreleased"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/crypto-exchange-funding-rates"]
+title = "Live Crypto Perpetual Futures Funding Rates for Multiple Exchanges – Matthew Palmer"
+full_description = "Each funding rate is standardized to a daily rate. If an exchange does funding cycles every 8 hours, the table multiplies their eight-hourly rate by 3 to get the daily rate. If funding happens hourly, the hourly funding rate is multiplied by 24. If you’re doing arbitrage or basis trades, it's important to factor the exchange's trading fees into the funding rate… This table helps you identify the exchange and perpetual future that is currently paying the highest or lowest funding rate. DISCLAIMER: This site is not affiliated with any of the exchanges. This information is not trading advice. We do our best, but this data could be unreliable. Check the funding rates with the exchange directly."
+year_published = 2025
+clearnet = "https://matthewpalmer.net/crypto-exchange-funding-rates"
+category = "research"
+tags = ["across", "crypto", "daily", "disclaimer", "discounted", "donate", "exchange", "exchanges", "fees", "funding"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "ftx.com", "github.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "support.cloudflare.com", "tapbots.com"]
+
+["https://matthewpalmer.net/blog/2014/01/03/home-of-the-whopper-thomas-frank/index.html"]
+title = "Home of the Whopper, By Thomas Frank — Matthew Palmer"
+full_description = "But it wasn’t a car that struck me on Hillsborough Road, it was a vision: a spontaneous understanding of fast-food efficiency. I was gazing on a simple yellow structure that contained the workings of a Waffle House when it came to me — the meaning of this whole panorama of chain restaurants. The modular construction, the application of assembly-line techniques to food service, the twin-basket fryers and bulk condiment dispensers, even the clever plastic lids on the coffee cups, with their fold-back sip tabs: these were all triumphs of human ingenuity."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/03/home-of-the-whopper-thomas-frank/index.html"
+category = "research"
+tags = ["frank", "home", "products", "thomas", "whopper,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "pqrs.org", "qsapp.com", "red-sweater.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/12/07/new-linked-post-ia-writer-tumblr/index.html"]
+title = "Automatically Create a New Tumblr Link Post in iA Writer — Matthew Palmer"
+full_description = "To create a new link post for Tumblr that you can edit in iA Writer, you need to create an AppleScript document. Highlight the text you want to quote in Safari, run the script and a new Tumblr link post will open in iA Writer after prompting you for a custom title or you can use the default of the page’s title. I’ve also written instructions for how this file can be posted automatically from iA Writer to Tumblr. Highlight some text in Safari, run the AppleScript and a new iA Writer document should appear with the selected text. To fully automate this process, you can combine the script from here with the one embedded above. Now, you can select text on a site, run the script and a new link post will be sent automatically. You can use the following AppleScript to achieve this:"
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/12/07/new-linked-post-ia-writer-tumblr/index.html"
+category = "research"
+tags = ["automatically", "create", "link", "post", "products", "tumblr", "writer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "tapbots.com", "twitter.com"]
+
+["https://matthewpalmer.net/vanilla"]
+title = "Vanilla - hide Mac menu bar icons for free"
+description = "Vanilla is a free Mac app that lets you hide icons from your menu bar."
+full_description = "Set up a custom keyboard shortcut to toggle your menu bar and desktop icons. (Seriously, I use this with Command-Shift-< like forty times a day. Pro is worth it just for this.) With Vanilla Pro, you get a “Completely Removed” icons section. Icons in this section will only be visible if you open Vanilla’s preferences window. Vanilla Pro is a one-time purchase. Enter your Vanilla Pro license activation code in the app to unlock the Pro features. You can use each license activation code up to 10 times so you can go Pro on all your Macs."
+year_published = 2025
+clearnet = "https://matthewpalmer.net/vanilla"
+category = "research"
+tags = ["auto-hide", "business", "completely", "finder", "hide", "icons", "insider", "keyboard", "lifehacker", "macs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dotdev.co", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net"]
+
+["https://matthewpalmer.net/kubernetes-app-developer"]
+title = "CKAD Course — pass your Certified Kubernetes Application Developer exam"
+description = """
+The most popular resource for the Certified Kubernetes Application Developer certification  Learning Kubernetes is hard.  And trying to learn it quickly? Good luck! (You’ll need it.)  The documentation is so disorganized.  Unexplained wads of YAML everywhere.  Simple Kubernetes concepts feel like a visit to the dentist.  We’re here to help. Learn Kubernetes fast. Smash your CKAD exam."""
+full_description = "I took the test exactly two weeks after I started studying. Your book was an integral part of my success. Thank you for writing it. The graphics are very helpful for visualizing what's going on. I've already recommended it to a few others. It covers all the questions I have about how Kubernetes works internally, and the whole book is super-easy to follow. Thanks again for the book! Love the book! Very straight forward. I didn't write too much YAML to pass the test—you can use imperative commands as well. Thanks a lot for your help – I took your course and it helped me a lot! Even though I have worked on Kubernetes for the last year, the practice session really helped me get up to speed for the exam. Originally went through the LFD259 Kubernetes for Developers training course and wasn’t quite satisfied with the preparation. I looked for more resources and stumbled upon this book and was very impressed. Well organized and packed with clear information, I was more than happy to upgrade to the full package. I would highly recommend for anyone preparing for the CKAD exam or just looking for a solid reference for understanding Kubernetes. Thanks for your exam-prep materials, they were genuinely helpful. I did my CKAD on Monday and whilst time was tight (thanks for the warning!) I passed without a problem. Nothing really surprised me in the exam thanks to your practice test."
+year_published = 2025
+clearnet = "https://matthewpalmer.net/kubernetes-app-developer"
+category = "research"
+tags = ["application", "articles", "author", "book", "certification", "certified", "chapter", "cisco", "ckad", "comprehensive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "qsapp.com", "store.matthewpalmer.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2022/11/21/best-launcher-app-macos-launchbar-alfred/index.html"]
+title = "What is the best launcher app for macOS? — Matthew Palmer"
+full_description = "Launcher apps help you do stuff on your Mac really quickly, without taking your hands off the keyboard. Hit a keyboard shortcut to open the launchbar, search for what you want, and hit return. They make complex tasks really easy. Then you use the launchbar to to open apps and folders, execute scripts, do calculations, search the web, and on and on… I personally use launcher apps for three things: opening apps, quickly navigating to folders in Finder, and opening my projects’ folders in specific apps like VS Code, Sublime Text, and iTerm. I built FastFolderFinder with those three tasks in mind. Plus it’s super fast and the fuzzy search is great. If you want something simple and easy, maybe try FastFolderFinder. Otherwise, use Alfred, LaunchBar, or Quicksilver. You’ll be able to find your files, launch apps, do calculations, search the web, and a lot more, all from one launchbar. The only downside is that there are a lot of settings to tweak. There are like 15 different panels within the “Features” section of the app’s preferences window. Check out the screenshot below. It’s a bit simpler to customise, a bit cheaper, but still offers a tonne of functionality and power. The only thing I didn’t like about it was that some of the “how it works” part of the design didn’t match my expectations for how an app should work. For example, hiding the launchbar takes multiple Esc keypresses, the text input box doesn’t have a cursor I-beam, and the default font feels off. Quicksilver is the oldest, most mature app launcher app on the Mac. For me, it basically defined the category for a lot of years. It’s free to download, has a bunch of powerful features, and can be fully customised to do anything you want. Its default UI style doesn»t quite “blend in” with the system, but the default theme choices are pretty good, and with the Powerpack it’s customisable enough to get it looking the way you want. And with the Powerpack you get Workflows, which are a feature that’s only available in Alfred."
+year_published = 2022
+clearnet = "https://matthewpalmer.net/blog/2022/11/21/best-launcher-app-macos-launchbar-alfred/index.html"
+category = "research"
+tags = ["alfred", "alfred:", "app?", "best", "best?", "but…", "compared", "conclusion:", "cons", "customisable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/11/25/follow-up-swift-ios-keychain-api/index.html"]
+title = "Locksmith (iOS Keychain Library in Swift) — Matthew Palmer"
+full_description = "I previously wrote about the design decisions for a keychain library I was making. Towards the end of the post I was considering separating out the class that performs the requests from the class that constitutes the requests themselves—I called them Locksmith and LocksmithRequest respectively. This is the approach I stuck with, and I think it’s working out well. I’ve made Locksmith, a sane way to work with the keychain in Swift, available on Github. Check it out, and let me know what you think."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/11/25/follow-up-swift-ios-keychain-api/index.html"
+category = "research"
+tags = ["keychain", "library", "locksmith", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net"]
+title = "Matthew Palmer – software developer making Mac apps and SaaS products"
+description = "Matthew Palmer is a software developer from Sydney who has created apps like Rocket & Vanilla, written a Kubernetes book, and published popular open source projects."
+year_published = 2025
+clearnet = "https://matthewpalmer.net"
+category = "research"
+tags = ["apps", "business", "email", "feel", "free", "invitation.", "makes", "matthew", "palmer", "saas."]
+language = "en"
+internal-references = ["none"]
+external-references = ["dribbble.com", "faqtual.co", "github.com", "peachs.co", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/01/22/wilosophy/index.html"]
+title = "Wilosophy, Episode 1 — Matthew Palmer"
+full_description = "Wil Anderson’s latest podcast project Wilosophy (iTunes) explores personal philosophies. Start with the oldest episode interviewing Todd Sampson, who tells us about his childhood friends (murderers and murderees), his adult friends (Sir Edmund Hilary), and his success (CEO and TV Star)."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/22/wilosophy/index.html"
+category = "research"
+tags = ["episode", "products", "wilosophy,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/horo-free-timer-mac"]
+title = "Horo - the best free timer app for Mac"
+description = "Horo is the best free countdown timer app for the Mac menu bar."
+full_description = "“…easy to use, which I love.” David Murphy, Lifehacker ★★★★★ “I‘ve tried many timers in the last few days, but this one fulfills exactly my wishes!” D. Keude ★★★★★ “Everything I need for a sleek, easy, and convenient timer.” Janet L. ★★★★★ “Why oh why isn’t more software designed like this?” Ben I. ★★★★★ “A simple, well-designed application for Mac.” Max H. The timerthat takes no time at all If starting a timer takes more than a second, your timer app sucks. Horo uses a simple and speedy Natural Language interface. Type the time, hit Return, and go. Isn’t that neat? Insanely fastNatural Language Engine Works the way all timers should – just type the time and hit Return. Use stopwatches, #projects and @12pm timers for more power. “1.5hr” “45m #writing” “60s” “@12pm” Multiple timersin case you’ve got a lot going on Start multiple timers and keep track of them in the Timer List window to stay on top of all your tasks. Horo strikes the perfect balance between simplicity, speed, and power. Use it as a countdown clock, your go-to Pomodoro timer, a simple menu bar app, or your secret productivity weapon. Sometimes the simple things are best."
+year_published = 2025
+clearnet = "https://matthewpalmer.net/horo-free-timer-mac"
+category = "research"
+tags = ["#tags", "alert", "case", "engine", "fastnatural", "going", "horo", "insanely", "keyboard", "language"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "qsapp.com", "store.matthewpalmer.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/12/this-is-not-my-todo-list/index.html"]
+title = "This is not my Todo List — Matthew Palmer"
+full_description = "Previously, I’ve kept stuff I want to do, which have a web resource component (think uni assignments), stored in Instapaper, only to be archived when the task is done. This isn’t right. It ruined both Instapaper and my enthusiasm for the assignment. This is not my todo list. My email inbox is not my todo list. My Instapaper queue is not my todo list."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/12/this-is-not-my-todo-list/index.html"
+category = "research"
+tags = ["list", "products", "todo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/09/10/iphone-6-plus-launch-image-adaptive-mode/index.html"]
+title = "How to Add a Launch Image for the iPhone 6 (Plus) — Matthew Palmer"
+full_description = "Use the following steps to enable the new high resolution displays for iPhone 6 (and Plus). To get it to break out of the adaptive mode, you need to force it to use a high resolution Launch Image."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/09/10/iphone-6-plus-launch-image-adaptive-mode/index.html"
+category = "research"
+tags = ["image", "iphone", "launch", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/09/19/twitter-on-ios-lock-screen-notifications/index.html"]
+title = "The New Twitter for iOS 7 is Sending Users' Tweets to my Lock Screen — Matthew Palmer"
+full_description = "I just updated to iOS 7 and, along with that, Twitter for iPhone 5.11. Shortly thereafter, I noticed a bizarre side-effect: I was receiving notifications of tweets from people whom I follow. These were being sent straight to my lock screen without any permission and for no particular reason. This is not really an issue unless you consider the potential consequences. Here’s Twitter, with no changes to settings or any kind of preference, sending me Push Notifications for out of context and useless tweets. Why wouldn’t Twitter start sending out advertisements? Now, I’m not saying that this is them testing the water ahead of their IPO, but it’s a weird product decision if they aren’t readying for rampant advertisement. Tweets to your Lock Screen can be disabled by tapping the first option in this list and switching it off. That didn’t work; I’m still receiving them. I’ll try switching off the enigmatic ‘Other’."
+year_published = 2013
+year_updated = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/09/19/twitter-on-ios-lock-screen-notifications/index.html"
+category = "research"
+tags = ["advertisements?", "lock", "mysterious", "notification", "products", "push", "screen", "sending", "settings", "start"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/01/23/remap-keys-os-x-mountain-lion/index.html"]
+title = "Remapping Keys on Mac OS X Mountain Lion — Matthew Palmer"
+full_description = "Here’s how to remap any of your keyboard keys to any combination of keys on Mac OS X. Initially, I wanted to remap the Caps Lock key to Command+R for two reasons: Here are the steps and workarounds I used to get what I wanted. I’ve essentially remapped the Insert, Home, Page Up, Delete, End and Page Down, and Caps Lock keys into a useful macro block. Not exactly perfect, right? There’s a very limited selection of keys you can remap to. Don’t worry, with a little .xml hacking we can get it to do what we want (in a way). For those of you who are happy to just use it like this, don’t worry about the next bit. For this section, we are going to introduce user-defined key remapping. So, eventually, we worked out a way to remap any key we want to another key or combination of keys. It works really well, and it’s probably good for RSI or something. At the very least, our laziness has been satiated. If I’ve done something wrong or you have questions, feel free to contact me on Twitter."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/01/23/remap-keys-os-x-mountain-lion/index.html"
+category = "research"
+tags = ["keys", "lion", "mountain", "products", "remapping", "uppercase"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net"]
+
+["https://matthewpalmer.net/blog/2013/11/13/automatic-tweet-jekyll-post/index.html"]
+title = "How to Automatically Tweet New Jekyll Posts — Matthew Palmer"
+full_description = "To automatically send out a new tweet every time you post a new article to your Jekyll blog, first, get the link to your RSS feed. Then, sign up for If This Then That (IFTTT) and create a new recipe. Make the trigger ‘Feed’ and add the link to your RSS feed. Next, link your Twitter account as the action for the recipe, and it should have some default values to add the title and the URL of the post."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/11/13/automatic-tweet-jekyll-post/index.html"
+category = "research"
+tags = ["automatically", "jekyll", "posts", "products", "tweet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "tapbots.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/01/21/helloworld/index.html"]
+title = "Hello World — Matthew Palmer"
+full_description = "This is going to be my new blog for the rest of 2013 (and hopefully into the future). I’m looking forward to hosting with Github pages because it’s free, simple and they’re a great bunch of people. Create a Github account if you haven’t already. I’m going to be importing my old posts to the new blog system in the next few days, so if you see some strange things happen don’t stress about it. I’ll write posts in iA Writer (in Markdown), commit them and push to the remote Github repo. This is by no means a revolutionary system, but it certainly beats the old blogging platform I was using. Plus, free hosting! Let’s hope I’m able to continue blogging like I was at the end of 2012, and less like the practically non-existent start of 2012."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/01/21/helloworld/index.html"
+category = "research"
+tags = ["hello", "products", "world"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dotdev.co", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "store.matthewpalmer.net", "theverge.com", "toolsandtoys.net"]
+
+["https://matthewpalmer.net/blog/2014/01/20/apple-needs-to-quit-iads/index.html"]
+title = "Apple Needs to Quit iAd — Matthew Palmer"
+full_description = "Apple’s iAd platform is a forgotten relic of iOS 4.0 and a marker of the bad Apple—the Apple of MobileMe and puck mouses. It’s an abberation from beauty and quality, the purported tenets of iOS. iOS 7’s redesign didn’t quite reach the dark corners of Apple’s web services; iAd remains a ghastly glossy mess. Apple needs to quit the iAd program. iAds are ugly in every way. Like Apple’s official icon for iAd, the ads themselves are visually awful: they are cluttered and clearly designed for archaic versions of the operating system. They also create a terrible experience for the user. If you ever accidentally tap an ad, you’ll be cartwheeled into the App Store or driven up the wall by a modal pop-up. Their pithy attempt to translate web banner ads (which Apple has never done, nor should they) to native apps is confusing and conspicuous—an import corrupting the indigenous polish of iOS. Quality, which continues to define Apple products, is not a word anyone would use to describe iAds. Their connotation is offensive. A porthole through which users see the hell of ad-support content, clawing desperately for Impressions, Interest and CPMs, they instantly make an app look junky and desperate. Ads ruin apps. By deleting iAd, though there are other ad platforms for iOS, Apple creates a way of differentiating from Android: “iOS is the one without ads”. It also cuts the monetary motivation for developers of spam and junk apps, another way to increase quality in the crowded App Store. “Our targeting is built upon a foundation of registration and media consumption data that’s exclusive to iAd.” should not be a sentence on Apple’s website, but it is. Apple shouldn’t be tracking user data, and they definitely shouldn’t be selling it. Google services imply this transaction because they are free; we pay, sometimes exorbitantly, for the security and privacy that Apple suggests, and we don’t want to be targeted by cheap and ugly advertising. But Apple is letting us down. Ads are Google’s game, quality is Apple’s."
+year_published = 2020
+clearnet = "https://matthewpalmer.net/blog/2014/01/20/apple-needs-to-quit-iads/index.html"
+category = "research"
+tags = ["apple", "needs", "products", "quit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/01/19/remap-keyboard-keys-caps-lock-os-x-mavericks/index.html"]
+title = "Remapping Keyboard Keys on Mac OS X Mavericks — Matthew Palmer"
+full_description = "Here’s how to remap any of your keyboard keys to any combination of keys on Mac OS X. Initially, I wanted to remap the Caps Lock key to Command+R for two reasons: Here are the steps and workarounds I used to get what I wanted. I’ve essentially remapped the Insert, Home, Page Up, Delete, End and Page Down, and Caps Lock keys into a useful macro block. Not exactly perfect, right? There’s a very limited selection of keys you can remap to. Don’t worry, with a little .xml hacking we can get it to do what we want (in a way). For those of you who are happy to just use it like this, don’t worry about the next bit. For this section, we are going to introduce user-defined key remapping. So, eventually, we worked out a way to remap any key we want to another key or combination of keys. It works really well, and it’s probably good for RSI or something. At the very least, we’ve satisfied our laziness. For more information on the full power of the private.xml file, check out the reference manual (thanks to @jnlevitan for the tip)."
+year_published = 2014
+year_updated = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/19/remap-keyboard-keys-caps-lock-os-x-mavericks/index.html"
+category = "research"
+tags = ["keyboard", "keys", "mavericks", "products", "remapping", "updated", "uppercase"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/01/21/the-best-post-on-marco-org/index.html"]
+title = "The Best Post on Marco.org — Matthew Palmer"
+full_description = "The One-Person Product, by Marco Arment, strikes me as the pinnacle of blogging. It’s a personal, detailed and purposeful piece telling the story of Tumblr. It offers a unique perspective on fascinating issues that are clearly close to Arment’s heart: quality, independence and craftsmanship. [David Karp, founder of Tumblr,] expects people around him to be similarly into work and Tumblr, and often drove me hard with seemingly impossible demands. But David has a lot of Steve Jobs-like qualities, and like many people who worked for Steve, I look back on Tumblr’s crunch times with mixed feelings: I don’t want to return to that stress level, but David pushed me to do amazing work that I didn’t think was possible. Because the photography is so great, we really get to see the people behind the product—it becomes obvious that great things are made just by people. The unkown, yet essential, people behind Tumblr: Jacob Bijani, Jared Hecht, Meaghan O’Connell, Peter Vidani, and Josh Rachford. Marco’s prose explains the challenges and the triumphs they experienced. The post explores the life of a company, from two people to an acquisition by Yahoo; it’s a tale of growing up, with values intact."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/21/the-best-post-on-marco-org/index.html"
+category = "research"
+tags = ["best", "post", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/10/08/locksmith-api-design-diary-1/index.html"]
+title = "Locksmith API Design Diary — Matthew Palmer"
+full_description = "I’ve started working on a new open source project to make it easier to use the iOS Keychain in Swift. I’ve gotten the basic functionality working, but I want to design the API well. I thought it might be interesting to do an ‘API Design Diary’, particularly because I’m not very good at designing APIs. To study how this API changes as I think about it more, I’ll look at a small, representative section of the API. If these notes seem scrappy, they are. They’re just my rough thoughts, which I tried to translate as plainly as possible. The next version I though about breaking up the API into two separate components, which I’ll call the ‘automatic’ way and the ‘manual’ way. The automatic way would provide sensible defaults, and the manual way would provide full customisation via function composition. I quite like this approach, but I’m not sure the functional style is particularly appropriate. This approach also means there will be separate methods for performReadRequest, performWriteRequest, etc.. Now I could either mandate that the user specify a KeychainRequest for all of their initialization, and provide some standard constructors for the typical requests (but the user would still have to call another function). Or I could make the request parameter optional, and choose a sensible default. Or I could make the user pass in the request as a parameter to the performRequest method—I guess this last option is the most pragmatic. After looking at this, I’m starting to think that maybe a functional API is not suited for this problem—I feel like I’m forcing a functional mindset just because I want to learn functional programming better. Now I’m thinking of switching to a singleton-style class method only design. This makes sense because there is only one keychain, and only one thing can access it at a time. It makes the API a little cleaner in places. However, this limits the convenience of customizing the request. Perhaps I should break the API up into two parts, a KeychainRequest for customizing the request, and Locksmith, for performing the requests. Locksmith would also provide high level convenience methods for doing 90% of the tasks that need to be done."
+year_published = 2014
+year_updated = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/08/locksmith-api-design-diary-1/index.html"
+category = "research"
+tags = ["automatic", "creating", "design", "diary", "initialization", "locksmith", "manual", "performing", "products", "request"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/10/05/i-dont-want-to-pay-up-front-for-your-app/index.html"]
+title = "I Don't Want to Pay Up Front for Your App — Matthew Palmer"
+full_description = "Being an iOS developer, albeit a new and amateur one, I understand the desire and the need for developers to make money from the things they make. I understand why apps cost the money they do, and the consequences of free, paid and in-app purchases for the developer and the reasons for doing so. While I can’t speak for everyone my age, I feel that I am in the minority in this understanding. In the case of apps, it’s not because of the cost - it’s the barrier. I research every purchase I make, regardless of price; I have to look into reviews, screenshots and blog posts as to whether this piece of software is worth it. I don’t know how many normal people do that in order to vindicate their decisions: most will see the price and opt for the free one. If I come across a few sub-standard reviews, a piece of UI I don’t like or any other innocuous detail with which I do not agree, I won’t buy the app. By setting an up front price for your app, you’re stopping people from trying it, and moreover allowing them to feel justified in leaving one-star about the tiny particulars that they dislike - they paid money, after all. If the app is free, I’ll look at a screenshot and maybe the star rating on the reviews. That’s it. There’s zero barrier. It’s not about the cost, it’s about the purchase. With an in-app purchase, I already know what I’m getting - in this context by paying I’m going to receive more of what I already enjoy. With an up front paid app - I’m paying for the opportunity to try your app. To me, a great example of this is the case of Tweetbot vs Letterpress. Tweetbot is $2.99, and is ostensibly the best Twitter experience on iOS devices. I know this; nevertheless, I persist with using the official Twitter client. It’s free - I have to wonder: how much better can Tweetbot be? The answer: a lot better, but the up front price tag is stopping me from wanting to try it out. Now, consider Letterpress, a free app which has in-app purchases to unlock themes and the ability to play more simultaneous games. I didn’t hesitate in downloading Letterpress, and I didn’t hesitate in paying the in-app purchase price because I knew what I was getting and I knew it would be better. With in-app purchases, the user knows that paying will get them more of what they want; paid up front is buying some unknown quantity of an unknown product. The former, in most cases, has a much better degree of user experience. The pricing on the up front purchase is completely intangible and arbitrary to the user."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/10/05/i-dont-want-to-pay-up-front-for-your-app/index.html"
+category = "research"
+tags = ["app,", "apps.", "arbitrary", "completely", "despite", "developers,", "didn’t", "don't", "don’t", "downloading"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "tapbots.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog"]
+title = "Matthew Palmer – Articles"
+full_description = "Edit and Change Text in Product Screenshots with Screenshot Text Editor AI Matthew Palmer August 18, 2024 I’ve created a new app called Screenshot Text Editor AI that lets you edit text in screenshots and product demos. Get Started with Screenshot Text Editor AI here Why use Screenshot Text Editor AI? Before Screenshot Text Editor AI, when I had to create screenshots for the App Store, marketing websites, platform marketplaces, and presentations, I had to set up a whole demo account with content that was suitable for sharing publicly. This took a long time, was prone to looking bad, and added hours or days of extra work depending on how many platforms I needed to support. With Screenshot Text Editor AI, now I can just take a screenshot of my typical usage, feed the screenshot into Screenshot Text Editor AI, and set the text in the screenshots to whatever I like. This means I have more control over my marketing assets, and can quickly update them if I need to tweak my messaging. It makes my screenshots and marketing resources a lot more professional while also making them faster to create, and more likely to stay updated, and removes any private or personally identifiable information from the screenshots. To try Screenshot Text Editor AI to edit text in your product screenshots and images, shoot me an email at [email protected] Create custom workouts on your iPhone and send them to Apple Watch Matthew Palmer September 18, 2023 I’ve created a new app called Workout Builder that lets you easily create custom workouts that sync to the built-in Workouts app on your Apple Watch. Download Workout Builder here for free. It’s only available on iOS 17 and watchOS 10. It has great integration with the native iOS and watchOS Workouts capabilities, it’s free to download and create custom workouts, and it comes with a gallery of premium pre-built workouts in case you don’t want to build your own. How to create workouts that sync to your Apple Watch Workouts app Download Workout Builder from the App Store for free Click the “+” button to create a new workout Enter a title, and optionally customize the icon and color for your workout Choose your activity/sport Choose a workout type (Simple Goal – time or distance, Advanced Workout – custom intervals, Pacer Workout – paced time and duration targeted workouts) Enter your workout details Tap “Done” and then tap “Send to Apple Watch” When you’re ready to do the workout, on your Apple Watch, open the Workouts app and choose your workout"
+year_published = 2024
+year_updated = 2025
+clearnet = "https://matthewpalmer.net/blog"
+category = "research"
+tags = ["account", "across", "activity", "advertising", "affiliate", "alfred", "alfred:", "anker", "app?", "apple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2021/05/13/crypto-perpetual-futures-funding-rate-data/index.html"]
+title = "Live Data Table for Perpetual Future Funding Rates Across Multiple Crypto Exchanges — Matthew Palmer"
+full_description = "I’ve built a data table showing the latest funding rate for various perptual futures across multiple exchanges – including Binance, Bitmex, and FTX. It refreshes with the latest changes from each exchange every minute. Refresh your browser to see the latest rates in the table. Funding rates are payments made periodically between participants in a perpetual futures market. Perpetual futures never expire, which means that spot price and the futures price can diverge. You can go long on the spot market, and short on the futures market, and keep earning the funding rate if the rate stays positive."
+year_published = 2021
+clearnet = "https://matthewpalmer.net/blog/2021/05/13/crypto-perpetual-futures-funding-rate-data/index.html"
+category = "research"
+tags = ["across", "crypto", "data", "exchanges", "funding", "future", "futures?", "live", "multiple", "perpetual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "itunes.apple.com", "obdev.at", "peachs.co", "qsapp.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/10/18/thats-apple/index.html"]
+title = "That's Apple — Matthew Palmer"
+full_description = "While this image is on-screen, the narrator’s doing a deep dive into the new timing controller that powers the display. It’s about as technical as Apple gets in a keynote. But look behind the exploded iMac. Behind the new ‘TCON’ there’s a girl holding her father’s hand. Not brought to the centre of the frame, not inflated to be the story of the video, just a consequence of this device being in their home. That’s incredible storytelling."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/18/thats-apple/index.html"
+category = "research"
+tags = ["apple", "products", "that's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/10/29/an-analysis-of-home-screen-layouts/index.html"]
+title = "An Analysis of Home Screen Layouts — Matthew Palmer"
+full_description = "As you could imagine, home screens are an act of balancing simplicity and speed. I’ve analysed a couple of the most common techniques. This is appealing because of its perfect symmetry on both axes. It features an extremely quick, constant time lookup for your top eight apps, then increasingly slower access to other apps—proportional to how many screenfuls you have. This approach becomes less practical on larger screen iPhones, where the top left corner touch is slowed by the necessary hand-shimmy. It’s about as minimal as a home screen can get. Minimal, but slow. Side swipes and folder-traversals are costly. I categorise these as an unbalanced extension of the Single Row Method. The N-Rows Method features—you guessed it—a couple of rows. For lower values of N, the time to access an app is high, with efficiency increasing over time as muscle memory develops. For N between 2 and 4, we achieve peak balance between minimalism and priority. This comes at the cost of symmetry and depth of access. Management of secondary and tertiary home screens becomes a big issue. This is a hugely cluttered look, balanced against the speed gained from having fewer side-swipes and folder traverals. Fewer swipes come at the cost of visually scanning for an app within a page—a frustrating time-waster. What’s more, you tend to lose track of an app’s spatial location when things are so full. This is the caveman of the bunch: utilitarian, but comes with a club draped over its shoulder. Folders are the hard disk of iOS home screens. Unless they’re for back up, or to hide stuff you’re never going to access, they’re just incredibly slow. You might as well search for something in Spotlight before you go swiping through folders. They do keep a home screen layout clean though. In-page ordering of apps is a mostly subjective topic. I think it feels faster to have your most used posts in the corners (6 and 6 Plus owners: beware). And some apps just feel better in certain spots—for me, it’s social networking (Combust, Tweetbot) in the top left corner, and Settings in the bottom right. That’s how it’s meant to be."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/29/an-analysis-of-home-screen-layouts/index.html"
+category = "research"
+tags = ["analysis", "apps", "arranging", "conclusion", "everything", "filling", "folders", "home", "incomplete", "layouts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/11/05/the-true-android-fragmentation/index.html"]
+title = "The True Android Fragmentation — Matthew Palmer"
+full_description = "Gruber’s been on a bit of a tear lately, pointing out the little inconsistencies in Android’s design values. I’ve been mulling on something for a while, and I think it just crystallised. First, Android. Google and the handset makers made the design decision to support Flash. More to the point, they heavily marketed and promoted their products as being able to play Flash video when iPhones could not. Vocal support of a proprietary non-standard from the group that believes that ‘open always wins’. Android ignored its few open source values for an easy grab at market share. Apple, on the other hand, a supposed walled garden. Except that they were promoting nascent HTML5 video. Apple endured the beating in the press, the marketing attacks from the makers of Android phones, and the dissatisfied customers. All to make the product better in the long run."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/11/05/the-true-android-fragmentation/index.html"
+category = "research"
+tags = ["android", "fragmentation", "products", "true"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2017/06/18/anker-powercore-20100-macbook-pro-2016/index.html"]
+title = "Anker Battery Pack for Macbook Pro Review – Anker PowerCore 20100 — Matthew Palmer"
+full_description = "I’m travelling around for a while, and I’ve been on the hunt for a good way to give my 13-inch 2016 MacBook Pro (Touch Bar edition) a bit of extra charge. There’s information scattered around the internet on what works and what doesn’t, and I wanted to collect it here so that you don’t have to do as much research as I did. The short story: the Anker PowerCore+ 20100 with USB-C is the best way to charge a 2016 MacBook Pro using an external battery pack. I’ve used the Anker for about four months now while travelling around the US. It’s survived camping trips to Washington and Yellowstone, domestic and international flights (N.B. it has to go in your carry-on), buses, trains, hostels in Nashville and hikes in Austin. Here’s what I’ve found: It takes a long time to refill the battery on the Anker brick. At least overnight if you use the regular MacBook charger. The Anker USB-C Rapid Charger improves the charge time here if you need it (which you do). The “user interface” on the thing sucks. If you want to charge something, press the button on the front to make the lights come on. Then plug in your device. If you want to charge the brick itself, plug it in and maybe press the button. (I haven’t figured this out yet, after four months.) It holds about a MacBook Pro’s worth of battery charge when full. This is at least six full iPhone 5 charges (I actually ended up needing to charge my phone way more often than my laptop when I was travelling, so this was super handy) Overall, I highly recommend the Anker power brick. It’s reassuring to know you always have a power source when you need it. The Anker does the job it’s meant to, holds enough power, is well built, and has saved me more than a handful of times."
+year_published = 2017
+year_updated = 2017
+clearnet = "https://matthewpalmer.net/blog/2017/06/18/anker-powercore-20100-macbook-pro-2016/index.html"
+category = "research"
+tags = ["anker", "battery", "discovered", "figured", "here’s", "highly", "last", "macbook", "march", "months"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "amazon.com", "amzn.to", "avforums.com", "businessinsider.com.au", "colourcoding.org", "combustapp.com", "docs.google.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "reddit.com", "segment.io", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2020/09/29/how-to-set-up-milestone-referral-program-prelaunch-squarespace/index.html"]
+title = "How to set up a subscriber milestone referral program on Squarespace to grow your mailing list — Matthew Palmer"
+full_description = "Want to get more email subscribers for your site, store, or service? Generate positive word of mouth on social media? Spread organically through your biggest fans’ social networks? If so, you should run a milestone referral program. Encourage people to sign up for your email newsletter, and give them rewards for any friends they get to sign up as well. In this guide, we’re going to set up a complete milestone referral marketing program using Peach’s. A subscriber milestone referral program lets you give rewards to people who refer their friends to sign up for your mailing list or email newsletter. It’s often used for products that are pre-launch. You’ll create a landing page for your product, connect a referral program, and let people earn early access, discounts, or merch for telling their friends about you. When you’re pre-launch, a subscriber milestone referral program helps you build excitement and viral interest in your products. It lets customers get a sneak peek into your business, and sign up to be notified when your product is available. If you’ve already got a great online store, but you want to do more email marketing, a newsletter milestone referral program will help you grow your mailing list much faster than traditional methods. Since you reward people for sharing as well as signing up, you’ll reach many more people than just your site’s regular visitors. And email marketing is one of the most underrated marketing methods. It’s cheap, super effective, and high quality – way better than running expensive ads on social media. You just need to have a solid mailing list to send to! In this guide, we’ll use Squarespace. (But Peach’s works with any website builder! You’ll just need to translate them for your platform.) What rewards will get people excited about your products and your brand? What’s a cool enough reward to make people want to tell their friends about you? For Harry’s (the company that makes razors and shaving products), they had four milestones in their program. When someone referred five friends, they’d get free shave cream. At 10 and 25 referrals, subscribers got a free razor. And at 50 referrals, they got free shaving for a year."
+year_published = 2020
+clearnet = "https://matthewpalmer.net/blog/2020/09/29/how-to-set-up-milestone-referral-program-prelaunch-squarespace/index.html"
+category = "research"
+tags = ["block", "code", "connect", "create", "customize", "design", "fifteen", "friend", "friends", "grow"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 91330040a8d0a21b • Your IP: Click to reveal 147.219.201.161 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/cdn-cgi/l/email-protection"
+category = "research"
+tags = ["91330040a8d0a21b", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "support.cloudflare.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2013/12/07/post-to-tumblr-from-ia-writer/index.html"]
+title = "How to Post to Tumblr from iA Writer — Matthew Palmer"
+full_description = "You can post to Tumblr right from iA Writer using a simple AppleScript; all you need is your private email publishing address from Tumblr – click here for instructions on how to set this up. Once you have this address, open up the AppleScript Editor on your Mac, create a new document, and paste in the following AppleScript: Now, create a new iA Writer document, type in and save a sample blog post and then run the AppleScript we just made (either from the editor or from something like FastScripts). A Mail window will pop up with your post. Hit send, and a minute later you should see a new post appear on your Tumblr blog. Another option is to set up a Print Automation from iA Writer, but I found this to be a little too cantankerous."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/12/07/post-to-tumblr-from-ia-writer/index.html"
+category = "research"
+tags = ["post", "products", "tumblr", "writer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "pqrs.org", "qsapp.com", "red-sweater.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2013/04/16/mad-men-season-6-episode-3-analysis-and-review/index.html"]
+title = "Mad Men Season 6 Episode 3 Analysis — Matthew Palmer"
+full_description = "I thought this was, as always for Mad Men, a strong episode. The most prevalent themes present were the notions of false love and prostitution, nature and betrayal. Nature is a new addition into the Mad Men fold, and I’m not quite sure of the deeper meaning. Mostly, however, these themes are facades - a thin veil of makeup for the characters’ inner blemishes. This has been a consistent part of Don’s character throughout the series, but as we see Pete and Peggy grow to become more like Don, they will replicate his subterfuge. I feel the transformation of Pete and Peggy into different aspects of Don will be a major plot point for this season, while Don’s decay will become increasingly prevalent. Firstly, we see Pete and Trudy hosting a dinner party. Both are flirting, much like the Don and Betty situation of a few seasons prior. Both seem superficially happy during these scenes, but as soon as the front door shuts, they let their frustrations out. Trudy is unhappy with their guests, but adopted a ‘housewife’ attitude so as to please the guests. Pete is generally unhappy. What does Pete want? What event will make him content? Where will he find happiness? “A temporary bandage on a permanent wound” is the perfect analysis of Pete’s character, but whence did this wound come? This sense of inadequacy is delineated by the malfunctioning remote, which, like the leaky faucet, represents Pete’s inability to control his life. Nature makes its first appearance as well, with a pastel, hideously designed representation of nature being printed on the couch, and a gilded flower entwining the lamp behind Pete. Pete finds himself trapped between false-nature, a suburban household and a desire to be in the city. We see this theme of nature again in the episode, so if you think of any good meaning behind it, please let me know. Next, we see Don in the elevator with Dr. Al Rosen. Elevators are becoming increasingly noticeable in Mad Men; I think Don will get caught cheating in an elevator or reveal himself in the elevator. A fatal blunder will cause him to metaphorically plummet down an empty shaft as was alluded to last season."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/04/16/mad-men-season-6-episode-3-analysis-and-review/index.html"
+category = "research"
+tags = ["alone.”", "analysis", "anything.”", "bed…", "bourbon…", "cash", "champagne…", "cheese", "cleared", "countries"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "eepurl.com", "emojibulletlist.com", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "obdev.at", "peachs.co", "pqrs.org", "qsapp.com", "segment.io", "store.matthewpalmer.net", "theverge.com", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/08/17/draw-circle-core-animation-swift-ios/index.html"]
+title = "How to Draw a Circle Using Core Animation in Swift — Matthew Palmer"
+full_description = "As part of an upcoming project, I’ve been playing around with drawing circular borders. I needed to find the most efficient way to programmatically draw these circles, since they’ll be appearing in really long table views. If you have any suggestions, or this code doesn’t work for you, get in touch on Twitter. The following code will draw a thin, non-animated circular border around a view. (See below for drawing animated circles.) And here’s another snippet of code I found and adapted to draw an animated circular border with Swift. Depending on the version of the beta you’re using, you might need to wrap some of the Floats in CGFloat()s."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/08/17/draw-circle-core-animation-swift-ios/index.html"
+category = "research"
+tags = ["animation", "circle", "core", "draw", "products", "swift", "update:", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/12/10/automate-building-press-list-apple-script/index.html"]
+title = "Using AppleScript to Automate Building a Press List — Matthew Palmer"
+full_description = "I’ve been building up a press list to market my apps. But building a press list involves a lot of tedious Googling, copy and pasting, and Twitter searching—this is frustrating, mindless work. If we have a web page open, we can use this script to add the author’s name, the page title, and the URL to our clipboard. Then we can perform a search on Twitter for that person, so we can grab their Twitter details while we’re at it. All of this in a couple of clicks. Open Script Editor on your Mac (open Applications, then open Utilities, then Script Editor). You’ll see something like this when it’s open. Adding more fields, like an email address or a notes column, is super simple. All you need to do is add a couple of lines below set personName to text returned of result. Save the script. Where you should save it depends on what you like. I generally save my scripts to /Users/matthewpalmer/Library/Scripts/ so that I can use something like FastScripts for easy access to my scripts from the menu bar. Open a web page you want to add, say matthewpalmer.net. Click the Play icon in the menu bar of our script window. Then switch to your text editor, or wherever you’re keeping your press list, and hit Command+V to paste the text. And if switching to your text editor with the keyboard is too much, you can add the following code on the line above the first end tell statement."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/12/10/automate-building-press-list-apple-script/index.html"
+category = "research"
+tags = ["applescript", "automate", "building", "list", "press", "products", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "avforums.com", "businessinsider.com.au", "colourcoding.org", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2018/09/28/top-free-countdown-timer-apps-mac/index.html"]
+title = "Top 4 Free Timer Apps for Mac — Matthew Palmer"
+full_description = "Maybe you’re looking for the best free Pomodoro timer, a great minimalist countdown clock, or a productivity time tracker. Whenever I’m working, I’ve got a timer running. It’s my #1 tip for staying focused and getting a lot done in a short amount of time. Obvious disclaimer – I built Horo. Why did I build it? I believe that if starting a timer takes you more than a second, your timer app sucks. Horo is a simple, easy app that lets you type what time you want (“1m 30s”, “1.5h”), hit Return, and then your timer starts. It’s neat, it’s free, and it shows the timer in the menu bar so you can glance back at it easily. Be Focused is a great, full-featured Pomodoro-style timer. To change the time interval of an individual timer, you have to change the presets in the app’s preferences. This can be a bit annoying, but the benefit is that the app has awesome tracking of the number of times you’ve completed a timer. This, and the built- in break tracking, makes Be Focused a great work timer. If you find yourself using the same four or five time intervals over and over again, this is the app for you. The UI’s looking a little old, but the app itself works great. The Pro version ($2.99) gives you more formatting options for the timer in the menu bar, and you can set presets."
+year_published = 2018
+clearnet = "https://matthewpalmer.net/blog/2018/09/28/top-free-countdown-timer-apps-mac/index.html"
+category = "research"
+tags = ["activity", "apps", "focused", "free", "horo", "howler", "link", "products", "timer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2013/01/25/a-new-ios-app-idea/index.html"]
+title = "A New iOS App Idea — Matthew Palmer"
+full_description = "I’ve had an idea for a new iOS app that I want to make. I’ve already made two; I’m just waiting to turn 18 before I can put them on the App Store. I feel like making something else. Basically, it’s going to be a Todo app with a limited number of slots. It is essentially a test of prioritisation; you’ll have to complete some tasks before you want to move onto the next thing. It’s not at all revolutionary, but sometimes I struggled with overindulging the ‘Add New’ button in Todo apps. I once had 68 incomplete tasks in Clear. That wasn’t healthy. I’m certainly not going to be doing the same daily blog update I did when I was making DailyDo, which you can see on my old blog, because I do not have the time to work on it frequently. I have a ridiculous amount of school work, which is why I’m not doing any of the ideas I had for more complex, web oriented apps. This will be a slow burn, but I’ll try to update at each major step."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/01/25/a-new-ios-app-idea/index.html"
+category = "research"
+tags = ["idea", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "matthewpalmer.tk", "obdev.at", "peachs.co", "pqrs.org", "store.matthewpalmer.net", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2019/08/20/squarespace-affiliate-marketing-program-guide/index.html"]
+title = "How to Set Up an Affiliate Marketing Program on Squarespace — Matthew Palmer"
+full_description = "In this guide, we’re going to set up a complete Squarespace affiliate marketing program using Peach’s. This tutorial takes about ten minutes – after that, you’ll have your affiliate program up and running. Add bloggers, Instagrammers, YouTubes, and authors to your affiliate program. They’ll share your store with their audience. You’ll pay them a commission on any sales. Affiliate programs let you dramatically increase the reach of your store without buying expensive ads or running complicated marketing programs. Say you know an influential person in your industry – a popular blogger, an Instagram personality, etc. You want to reward that person for sharing your product in a way that’s incredibly beneficial to you both. But neither of you really know how much you should pay for a sponsored post (and sponsored posts are risky… what if they’ve bought fake followers?) Instead, you add them to your affiliate program, and offer them a commission on any sales they send to you. They share your products with their followers, their followers buy your products, you reward the affiliate. Affiliate programs are well-suited to most types of businesses. In particular, industries like fashion, beauty, technology, food, and lifestyle brands. The key question to ask is this: does your industry have highly influential people who can organically share your products with their audience? Affiliate programs are when you pay the affiliate a commission based on referred sales to your store. Say, you pay them 20% of sales of all the customers they send to you. Referral programs are more of a friend-to-friend exchange. You can offer a customer a discount off their next order if they tell a friend about your store. This often looks like “Send a friend $10 off, and you’ll get $10 off your next order.” You typically wouldn’t pay a referrer a percentage commission in a referral program. (Would a referrer really be encouraged by a 10% commission on a $25 order?) These are much more natural, small-scale interactions between regular people. Anyone can sign up for the referral program – they don’t need to be able to reach a large audience… they just send a message to their friends."
+year_published = 2020
+clearnet = "https://matthewpalmer.net/blog/2019/08/20/squarespace-affiliate-marketing-program-guide/index.html"
+category = "research"
+tags = ["affiliate", "businesses", "for?", "marketing", "minutes", "peach’s", "products", "program", "program?", "programs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2014/10/11/maybe-centralised-is-better/index.html"]
+title = "Maybe Centralised is Better — Matthew Palmer"
+full_description = "Maybe the reason decentralised networks, like Tent, haven’t taken off is because they just aren’t as good. Since centralised networks have risen, decentralised ones have not. All of the major decentralised networks we have today are from before the modern era of the social internet. Maybe the point of a decentralised network is that there doesn’t need to be one. But who’s the person working late to make it better? Who really, truly has a vested interested, but is also non-partisan? An interesting parallel is Tweetbot 3’s iOS 8 update. They swapped the ‘Send to Instapaper’ button for a default iOS Share Sheet. This is great, and the right thing to do by all accounts, except for one thing: sending an article to Instapaper now blocks the UI with a transparent overlay. It’s no one’s fault—Instapaper has to do it and Tweetbot can’t stop them. But because no one was in charge it sort of just happened. And the user has a worse experience as a result. This concerns me. I love the idea of decentralised networks, and there are so many advantages, but the fact that there aren’t any new, interesting ones is worrying. What else is the cause?"
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/10/11/maybe-centralised-is-better/index.html"
+category = "research"
+tags = ["better", "centralised", "maybe", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/06/21/example-ios-keychain-swift-save-query/index.html"]
+title = "Example Code for Using Swift to Save and Query iOS Keychain — Matthew Palmer"
+full_description = "I wrote a couple of small utility functions for using the iOS Keychain with Swift. This has two very basic functions: to save a string to the Keychain, and to load that string back later. I’ll update this post if I need to update this utility service to handle deletion, updating, and so on. Thanks to rshelby, I’ve updated this code to work on later versions of the beta. Let me know on Twitter if it doesn’t work for you. Xcode 6.1: @godzirra let me know on Twitter that doing let kSecClassValue = kSecClass.takeRetainedValue() as NSString no longer works on Seed 2. Instead, you need to do let kSecClassValue = NSString(format: kSecClass). This applies to all of the arguments we provide to the keychain queries listed at the top of the snippet."
+year_published = 2014
+year_updated = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/06/21/example-ios-keychain-swift-save-query/index.html"
+category = "research"
+tags = ["code", "example", "keychain", "keychainservice", "products", "query", "save", "swift", "update", "updates"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/workout-builder-ios-apple-watch"]
+title = "Workout Builder – create custom workouts for Apple Watch on your iPhone"
+description = "Workout Builder is a free iPhone app that lets you create custom workouts for your Apple Watch"
+full_description = "Use Workout Builder to create your own workouts to send to your Apple Watch to run via the Workouts app. Create your own workouts from scratch for free or use our premium pre-built workouts to perform advanced workouts on your Apple Watch. You can create advanced workouts on your iPhone and easily sync them to your Apple Watch using the following guides:"
+year_published = 2025
+clearnet = "https://matthewpalmer.net/workout-builder-ios-apple-watch"
+category = "research"
+tags = ["activities", "apple", "buidler", "build", "builder", "create", "create?", "custom", "for?", "iphone"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "apps.apple.com", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "ftx.com", "github.com", "gum.co", "imore.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "support.cloudflare.com", "tapbots.com"]
+
+["https://matthewpalmer.net/index.html"]
+title = "Matthew Palmer – software developer making Mac apps and SaaS products"
+description = "Matthew Palmer is a software developer from Sydney who has created apps like Rocket & Vanilla, written a Kubernetes book, and published popular open source projects."
+year_published = 2025
+clearnet = "https://matthewpalmer.net/index.html"
+category = "research"
+tags = ["apps", "business", "email", "feel", "free", "invitation.", "makes", "matthew", "palmer", "saas."]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "apps.apple.com", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "ftx.com", "github.com", "gum.co", "imore.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "support.cloudflare.com", "tapbots.com"]
+
+["https://matthewpalmer.net/archive.html"]
+title = "Archive - Matthew Palmer"
+year_published = 2024
+clearnet = "https://matthewpalmer.net/archive.html"
+category = "research"
+tags = ["$150", "abstractions,", "across", "aedle", "affiliate", "analysis", "analytics", "analytics.js", "android", "animation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["dribbble.com", "faqtual.co", "github.com", "peachs.co", "twitter.com"]
+
+["https://matthewpalmer.net/blog/2014/12/01/monitor-twitter/index.html"]
+title = "Monitor Twitter — Matthew Palmer"
+full_description = "Some of my favourite podcasts record live, and I like to be able to listen live when I am able. They always announe that they’re going live, but I’m not always on Twitter. I created and released Monitor Twitter, a Node.js module for monitoring Twitter for tweets from a certain user matching a certain pattern. The best thing about it is plugging it into another module—say, email or text messaging—to receive more convenient notifications for things I am interested in."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/12/01/monitor-twitter/index.html"
+category = "research"
+tags = ["monitor", "products", "twitter"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/01/19/my-iphone-home-screen-layout-apps/index.html"]
+title = "My Somewhat Unconventional iPhone Home Screen — Matthew Palmer"
+full_description = "My iPhone set-up attempts to maintain two axes of symmetry: horizontal symmetry is achieved by restricting icons to three screens, with my centre screen as a primary default view, and its adjacent screens on either side identically laid out; I get vertical symmetry on the centre screen, but have to acquiesce to efficiency on the other screens, which have two rows on top and one in the tray. On the fourth screen go apps that I’m developing, which creates an imbalance, but can’t be any other way. My ‘home’ screen—that is, my most visited screen—isn’t the first page of the iOS home screen list; I use the middle screen of three app pages, because it gives me fast access to other pages of apps, without feeling claustrophobic. It has never made sense to me why power users have a linear screen ranking (i.e. most important apps on the first screen, second tier on the second screen, and so on), rather than having the centre screen as the top rung, and branching off from there, which minimises horizontal swipes to access your least-used apps. Top-left, my premiere app slot, goes to Tweetbot, because I use it slightly more often than anything else, and it has a lovely icon. I resisted buying the old version, mostly because I thought it was over-designed. I still have problems with the current version: I don’t understand why there needs to be a search bar at the top of each scroll view in the app. The app’s great in almost every other way. I can’t wait for an iPad version. Instagram, which needs an updated icon, comes next, followed by Snapchat and Clear. I use Clear for short notes, reminders and obviously todos; Downcast and Clear battle for the top-right slot regularly, but when I need to access Clear, I need to do it quickly. I generally open Downcast in a much more recumbent position. It’s a shame that I have to use Clear Plus in order to have sync and parity between my iPhone and iPad, but that’s an unfortunate consequence of Realmac splitting their app versions."
+year_published = 2014
+year_updated = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/19/my-iphone-home-screen-layout-apps/index.html"
+category = "research"
+tags = ["centre", "home", "iphone", "left", "products", "restriction", "right", "screen", "simplicity", "somewhat"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2013/03/02/getting-started-with-segmentio-analyticsjs-mixpanel/index.html"]
+title = "Getting Started With Segment.io, Analytics.js and Mixpanel — Matthew Palmer"
+full_description = "I was watching Jack Dorsey (creator of Twitter) do an interview the other day, and he said that the number one tip he’d give to aspiring developers was to develop and implement meaningful and custom analytics. I decided to look into that. For this, we’ll let Segment.io (with Analytics.js) and Mixpanel do most of the heavy lifting, leaving us to just implement the things that are custom. Everything pretty much works perfectly - the guys at Segment.io have done a great job - but it can be a little confusing to put the pieces together initially. Segment.io has Analytics.js kind of built in, though you can use Analytics.js without segment.io. Anyway, sign up for segment.io and create a new project. Do the stuff they tell you in the setup guide, but don’t worry too much if you don’t fully understand the adding events page. We’ll sort that out later. Create a free Mixpanel account, then link your Segment.io account to it by going to Integrations on the Segment.io dashboard, clicking Mixpanel and pasting in your token (from Mixpanel). While Segment.io and Mixpanel each have their pageviews, we’d like to have one that works across both. Add the following in the head tag, but below the other scripts we’ve added. Now if you refresh, you should have a new event in both Segment.io and Mixpanel. Perfect. Every time you call analytics.track a new event is create automatically in Mixpanel. This automation is the real value of Segment.io/Analytics.js; you can do this with all the other analytics services too! Now if you refresh and then click ‘Check’ in the set up stage of Mixpanel it should say the event was received. Good job - you’re now tracking page views in Mixpanel. To track custom events, you need to use the Analytics.js (which comes with Segment.io) API. It’s super easy. Basically, you just call a function whenever you want an event to be tracked. So every time the link is clicked, analytics.track runs and will send the data to the events in Segment.io and Mixpanel. Awesome. You can include more data with the track call, but that’s for another day."
+year_published = 2013
+clearnet = "https://matthewpalmer.net/blog/2013/03/02/getting-started-with-segmentio-analyticsjs-mixpanel/index.html"
+category = "research"
+tags = ["analytics.js", "custom", "events", "getting", "mixpanel", "products", "segment.io,", "started", "tracking", "views"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alfredapp.com", "businessinsider.com.au", "docs.google.com", "dribbble.com", "eepurl.com", "emojibulletlist.com", "faqtual.co", "github.com", "gum.co", "imore.com", "itunes.apple.com", "lifehacker.com", "matthewpalmer.tk", "mixpanel.com", "obdev.at", "peachs.co", "pqrs.org", "segment.io", "store.matthewpalmer.net", "theverge.com"]
+
+["https://matthewpalmer.net/blog/2014/01/18/publish-jekyll-posts-from-sublime-text-2/index.html"]
+title = "How to Publish Jekyll Posts from Sublime Text 2 — Matthew Palmer"
+full_description = 'Publishing to a Jekyll blog—or any blog—from Sublime Text 2 involves setting up a Custom Build System, which you can read about in Addy Osmani’s post here. Create a bash script of the git commands. I called mine publishJekyllPost, and saved it in ~/bin/ (you may need to symlink it to somewhere else—I forget how I got my bin set up). I also had to change permissions for the script, using sudo chmod 755 publishJekyllPost from within the ~/bin/ directory. The chmod value for the file needs to be 755—you can clarify this by running stat -f "%OLp" <file>. On the second line, add -A :/ ensures that all of the files in the git tree are added; you can adjust this as required. Create a .sublime-build file in your ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User directory. I saved this file as Jekyll.sublime-build. Select the build system for your Markdown documents by choosing it in the menu bar: Tools -> Build System -> Jekyll. Run the Build with CMD + B, and you should see the output of a regular git push command in the Sublime console.'
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/01/18/publish-jekyll-posts-from-sublime-text-2/index.html"
+category = "research"
+tags = ["jekyll", "posts", "products", "publish", "sublime", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/04/26/the-downsides-of-storyboards-and-interface-builder-ios-development/index.html"]
+title = "The Downsides of Storyboards and Interface Builder — Matthew Palmer"
+full_description = "In his latest blog post, Brent Simmons talks about his difficulties with storyboards. In particular, he said Exactly. I have several major problems with using storyboards, interface builder or other non-programmatic methods of creating user interfaces. Interface Builder is conceptually great—I love having a visual representation of the UI work I’m doing—and some of the features are brilliant, but I don’t think it’s the best solution for an app in the long run."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/04/26/the-downsides-of-storyboards-and-interface-builder-ios-development/index.html"
+category = "research"
+tags = ["across", "apple", "builder", "can’t", "change.", "code", "code.", "decides", "downsides", "features"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2014/02/19/how-to-deploy-node-js-apps-on-digitalocean-with-dokku/index.html"]
+title = "How to Deploy Node.js Apps on DigitalOcean with Dokku — Matthew Palmer"
+full_description = "DigitalOcean is a great place to host your web apps, being cheaper than other, managed services like Nodejitsu or Heroku. It has a $5/month plan, and using the DigitalOcean promo code OMGSSD10 gives you $10 credit (two months) for free to try it out. This might expire, so Google for promo codes if it has. Nodejitsu and Heroku justify their higher pricetag by offering better support and ease of deployment—the former is hard to gauge, but the complexities of the latter, when using DigitalOcean, can be mitigated thanks to Dokku. Dokku is an awesome abstraction of Docker. Basically, Dokku provides a better interface to app deployment, comparable to the offerings of Heroku and Nodejitsu. It works for any VPS, but I like DigitalOcean. Here is a guide on how to set up and deploy your first application to DigitalOcean using Dokku. Add a credit card—I would love to not have to do this, but they don’t charge you. Don’t forget to use the free promo code. Click SSH Keys in the sidebar. Setting up an SSH key first isn’t mandatory, but it’s better in the long run. Generate an SSH key. Note: I didn’t use the default /Users/username/.ssh/id_rsa because I prefer to name my SSH keys more explicitly. I recommend saving it to /Users/username/.ssh/id_rsa_digitalocean_appname—the rest of the guide assumes the keys are saved to this location. Click Add SSH Key at the top of the DigitalOcean SSH Key page. Paste the contents in. Name it something explicit. SSH into your new Droplet. Your IP address is available from the DigitalOcean website; it’s in the top information bar. If prompted, enter the password emailed to you. You might have to have your password reset and then emailed to you. Do this from the Access tab in the main DigitalOcean web interface. Everything should be configured properly by default, but if it isn’t, you can change your settings here. Hit Finish Set up. Create a garden-variety Node.js application, such as the Hello World example on the Node.js homepage. You can also use your own."
+year_published = 2014
+clearnet = "https://matthewpalmer.net/blog/2014/02/19/how-to-deploy-node-js-apps-on-digitalocean-with-dokku/index.html"
+category = "research"
+tags = ["access", "apps", "configuring", "deploy", "deployment", "digitalocean", "dokku", "droplet", "initial", "keys"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advertising.apple.com", "atebits.com", "avforums.com", "businessinsider.com.au", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "gum.co", "itunes.apple.com", "lifehacker.com.au", "macrelease.matthewpalmer.net", "peachs.co", "polygon.com", "pqrs.org", "segment.io", "tapbots.com", "tumblr.com", "twitter.com", "washingtonpost.com"]
+
+["https://matthewpalmer.net/blog/2019/01/10/free-refer-a-friend-program-gumroad/index.html"]
+title = "Set Up a Free Refer-a-Friend Program on Gumroad — Matthew Palmer"
+full_description = "Uber, Dropbox, and a zillion other companies run promotions like “Tell a friend about us and get a $5 credit when they sign up.” But referral programs are very difficult to create and maintain yourself, especially if you’re not a software developer. Luckily, if you sell things through Gumroad (or a bunch of other services), Peach’s free refer-a-friend software lets you set one up. It takes like ten minutes. It’s free. It increases sales. I wrote a book about Kubernetes that I sell through Gumroad, and I wanted to set up a refer-a-friend program. Here’s how I did it. Open up your product in Gumroad, navigate to the checkout configuration, flip the little toggle that says ‘Preview’, and under ‘More information’ add the field for ‘Referral Code’ On the next step, enter the URL of the page where you sell your product and how many friends need to be referred for your customer to get rewarded. On the last step, authorize Peach’s to use your Gumroad account. It uses this to create coupon codes and track who has been referred. Somewhere on your site (for example) paste in the form embed code from the Peach’s console. This code loads the form that people will use to sign up for your refer-a-friend system. Once you’re done, reload the page where you added the code. Your page will get a fancy new form where people can sign up for a refer-a-friend program. In the Peach’s console, choose which product you want to set up the refer-a-friend program for, select the custom field you created in step 1, and enter your discount. Then click ‘Save’. Two, copy and paste the code from the Peach’s console to your site, right below your Gumroad checkout button. After that’s done, fill out your form from step 4 where people sign up to your refer-a-friend program. Grab the link that’s generated, and visit it. Then start the Gumroad checkout process. You’ll see a neat little pop up that you’ve been referred by a friend. Back in the Peach’s settings screen, click the button that says ‘Send Test Email’. This will send you an email with a link to purchase your product with the discount applied. Click that link and check everything looks good!"
+year_published = 2019
+clearnet = "https://matthewpalmer.net/blog/2019/01/10/free-refer-a-friend-program-gumroad/index.html"
+category = "research"
+tags = ["account", "button", "check", "checkout", "configure", "congrats!", "create", "custom", "discount", "embed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["9to5mac.com", "amzn.to", "combustapp.com", "docs.google.com", "dotfileshare.heroku.com", "emojibulletlist.com", "github.com", "google.com", "gum.co", "imore.com", "lifehacker.com", "lifehacker.com.au", "objc.io", "peachs.co", "polygon.com", "pqrs.org", "qsapp.com", "red-sweater.com", "tapbots.com", "theverge.com"]
