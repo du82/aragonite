@@ -340,6 +340,8 @@ The Open Tech Fund's Internet Freedom Fund (IFF) is a crucial source of support,
 
 Advertisements and user-identifiers are antithetical to Aragonite's value.
 
+We're not just looking for funding; we're looking for a partner that shares the vision and is willing to provide meaningful support you in creating an impactful platform in an unfilled niche.
+
 --
 
 Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
