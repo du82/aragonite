@@ -336,6 +336,10 @@ The OTF stamp of approval will be a sign of legitimacy, driving actual adoption 
 We will not have to worry about someone benefitting/profiting off of our code with a legitimate backer that specializes in this.
 [potentially] funds can be used for living expenses and other direct cost (operational, travel, if needed).
 
+The Open Tech Fund's Internet Freedom Fund (IFF) is a crucial source of support, and it's not feasible to sustain Aragonite as a traditional capitalist venture. The nature of the product requires a different approach, one that prioritizes the values of internet freedom and user privacy over profit.
+
+Advertisements and user-identifiers are antithetical to Aragonite's value.
+
 --
 
 Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
