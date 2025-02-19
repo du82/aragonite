@@ -313,36 +313,39 @@ Relevant technical publications/contributions
 
 ## NOTES ##
 
-+++++++++++++++++++++++++++++++++++++++++
->> REMEMBER TO INCLUDE LINKS TO THINGS <<
-+++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+REMEMBER TO INCLUDE LINKS TO THINGS
++++++++++++++++++++++++++++++++++++
 
-The OTF has a preference of projects that will meet their goals in 6-12 months.
-The OTF has a preference for distributing funds between $10,000 - $200,000.
-
-I believe SimpleX was rejected either due to asking for too much money, or asserting a much longer timeframe than they were comfortable with.
-Perhaps their operational cost is higher than that of Signal or Briar as well.
+1. The OTF has a preference of projects that will meet their goals in 6-12 months.
+2. The OTF has a preference for distributing funds between $10,000 - $200,000.
 
 --
 
 "Why even bother"
 
-> we do not need any money to build out capability. capability is not necessarily the issue.
+We do not need any money to build out capability. capability is not necessarily the issue.
 
-We require the legal protections to properly build out the index (there is a scaling bottleneck and IP blocking concerns).
-We require the funds for long-term mirror hosting and domains (along with any other cost, like renewals).
-We potentially require the funds to bring on another developer.
-The OTF stamp of approval will be a sign of legitimacy, driving actual adoption and trust.
-We will not have to worry about someone benefitting/profiting off of our code with a legitimate backer that specializes in this.
-[potentially] funds can be used for living expenses and other direct cost (operational, travel, if needed).
-
-The Open Tech Fund's Internet Freedom Fund (IFF) is a crucial source of support, and it's not feasible to sustain Aragonite as a traditional capitalist venture. The nature of the product requires a different approach, one that prioritizes the values of internet freedom and user privacy over profit.
-
-Advertisements and user-identifiers are antithetical to Aragonite's value.
-
-We're not just looking for funding; we're looking for a partner that shares the vision and is willing to provide meaningful support you in creating an impactful platform in an unfilled niche.
+1. We require the legal protections to properly build out the index (there is a scaling bottleneck and IP blocking concerns).
+2. We require the funds for long-term mirror hosting and domains (along with any other cost, like renewals).
+3. We potentially require the funds to bring on another developer.
+4. The OTF stamp of approval will be a sign of legitimacy, driving actual adoption and trust.
+5. We will not have to worry about someone benefitting/profiting off of our code with a legitimate backer that specializes in this.
+6. [potentially] funds can be used for living expenses and other direct cost (operational, travel, if needed).
 
 --
 
-Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
-Proposal Guide [https://docs.opentech.fund/otf-application-guidebook/appendix-ii-proposal-guide]
+1. The Open Tech Fund's Internet Freedom Fund (IFF) is a crucial source of support, and it's not feasible to sustain Aragonite as a traditional capitalist venture. The nature of the product requires a different approach, one that prioritizes the values of internet freedom and user privacy over profit.
+
+2. Advertisements and user-identifiers are antithetical to Aragonite's value.
+
+3. We're not just looking for funding; we're looking for a partner that shares the vision and is willing to provide meaningful support you in creating an impactful platform in an unfilled niche.
+
+--
+
+1. Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
+2. Proposal Guide [https://docs.opentech.fund/otf-application-guidebook/appendix-ii-proposal-guide]
+
+--
+
+I believe SimpleX was rejected either due to asking for too much money, or asserting a much longer timeframe than they were comfortable with. Perhaps their operational cost is higher than that of Signal or Briar as well.
