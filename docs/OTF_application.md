@@ -351,3 +351,10 @@ We do not need any money to build out capability. capability is not necessarily 
 --
 
 I believe SimpleX was rejected either due to asking for too much money, or asserting a much longer timeframe than they were comfortable with. Perhaps their operational cost is higher than that of Signal or Briar as well.
+
+
++++++++++++++++++++++
+FEB 20. MEETING NOTES
++++++++++++++++++++++
+
+
