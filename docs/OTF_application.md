@@ -357,4 +357,23 @@ I believe SimpleX was rejected either due to asking for too much money, or asser
 FEB 20. MEETING NOTES
 +++++++++++++++++++++
 
+1. Their mission is in-line with US mandate. Their congressional funding is an offshoot of foreign aid, but not necessarily subject to the same oversight as the rest of it. They are very focused on technology that assists with individuals/groups/organizations in repressive contexts.
+2. They have a Security Lab. [https://www.opentech.fund/labs/security-lab/] that provides free audits. They will audit projects that are further along in the pipeline via their security division.
+3. They have a division that does aggregate security threat modelling
+4. Applications do better with concrete/specific examples of a use-case where it could help  (Even if hypothetical). Really emphasize how it aligns with the mission. -- They prefer to see the fancy tech stuff grounded in real-world examples. 
+5. Timelines are flexible. You can apply for 12 months and get 24 etc.
+6. Can breakup application for larger projects (Probalby not relevant for us)
+7. Can provide access key to a private github repo, whitepapers, technical roadmaps, they like documentation and they like to see how specific goals can be achieved along the timeline.
+8. We are encouraged to apply!
+
+Additional: They have a fellowship program [https://www.opentech.fund/fellowships/icfp/] albeit the deadline closes soon and it costs money. They mentioned it so I'll include it here. Apparently some interesting things go through this, I don't personally feel it's the best option for us.
+
+
+
+
+
+
+
+
+
 
