@@ -365,7 +365,8 @@ FEB 20. MEETING NOTES
 6. Can breakup application for larger projects (Probalby not relevant for us)
 7. Can provide access key to a private github repo, whitepapers, technical roadmaps, they like documentation and they like to see how specific timelines/deadlines at least further along down the pipeline.
 8. They review all applications separately. They do encourage re-applying if we were to be rejected. They should provide tailored feedback if that were to be the case.
-9. We are encouraged to apply!
+9.  We would likely have an assigned project specialist/lead from the OTF to assist us through different parts. A primary point-of-contact inside the organization if you will.
+10. We are encouraged to apply!
 
 Additional: They have a fellowship program [https://www.opentech.fund/fellowships/icfp/] albeit the deadline closes soon and it costs money. They mentioned it so I'll include it here. Apparently some interesting things go through this, I don't personally feel it's the best option for us.
 
