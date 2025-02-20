@@ -341,6 +341,8 @@ We do not need any money to build out capability. capability is not necessarily 
 
 3. We're not just looking for funding; we're looking for a partner that shares the vision and is willing to provide meaningful support you in creating an impactful platform in an unfilled niche.
 
+4. We believe our technology could align with the OTF's Mission Values of censorship resistance and internet freedom for at-risk individuals and communities, such as organizations in authoritarian regimes, minority groups that are at-risk of or actively being persecuted, as well as journalists and activists and researchers more broadly.
+
 --
 
 1. Application [https://apply.opentech.fund/internet-freedom-fund-concept-note/]
