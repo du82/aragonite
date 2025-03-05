@@ -1,0 +1,237 @@
+["https://styled-components.com/ecosystem"]
+title = "styled-components: Ecosystem"
+description = "Ecosystem of styled-components"
+full_description = "This is an incomplete list of awesome things built with styled-components. If you have something to share, please add it to the awesome-styled-components repo on GitHub and it will automatically show up here! If you know any projects build with styled components contributions and suggestions are always welcome! Please read the contribution guidelines first and submit a PR."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/ecosystem"
+tags = ["apps", "built", "contribute", "ecosystem", "further", "reading", "real", "styled-components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "bitbucket.org", "cloverleaf.me", "codesandbox.io", "countminutes.com", "developer.mozilla.org", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "support.eji.org", "twitter.com", "vercel.com"]
+
+["https://www.styled-components.com/showcase"]
+title = "styled-components: Showcase Zillow"
+description = "CSS for the <Component> Age"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/showcase"
+tags = ["awesome", "beings.", "humans", "websites,", "zillow"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coinbase.com", "developer.mozilla.org", "dirtyredz.com", "docs.npmjs.com", "dutchie.com", "earner.ai", "fortnitemaster.com", "getoutline.com", "github.com", "gitpoint.co", "hackclub.com", "mxstbr.blog", "nextjs.org", "npmjs.com", "stackoverflow.com", "support.eji.org", "thejameskyle.com", "unpkg.com", "yarnpkg.com", "zillow.com"]
+
+["https://www.styled-components.com/docs/tooling"]
+title = "styled-components: Tooling"
+description = "Additional Tools for styled-components, babel and TypeScript plugins, testing"
+full_description = '''This plugin adds support for server-side rendering, minification of styles, and a nicer debugging experience. ⚠️ The plugin call order in your .babelrc file matters. If you're using the env property in your babel configuration, then putting this plugin into the plugins array won't suffice. Instead it needs to be put into each env's plugins array to maintain it being executed first. See this for more information. By adding a unique identifier to every styled component, this plugin avoids checksum mismatches due to different class generation on the client and on the server. If you do not use this plugin and try to server-side render styled-components React will complain with an HTML attribute mismatch warning during rehydration. This option enhances the attached CSS class name on each component with richer output to help identify your components in the DOM without React DevTools. In your page source you'll see: <button class="Button-asdf123 asdf123" /> instead of just <button class="asdf123" />. It also allows you to see the component's displayName in React DevTools. For example, consider writing a styled component that renders a button element, called MyButton. It will normally show up in DevTools as styled.button, but with the displayName option enabled, it has the name you gave it: MyButton. By default, the displayName of a component will be prefixed with the filename in order to make the component name as unique as possible. You can force the component displayName to be solely the component name by disabling the fileName option: One example you might want to do this, is testing components with enzyme. While you can always use .find(ComponentName) it's definitely possible to search component by its displayName with .find("ComponentName"). In the latter case you will need to disable the fileName option. If you do want this for testing only, make sure to add this only under your test environment. A common pattern is to put components in Button/index.jsx instead of Button.jsx. By default, if the fileName option is set to true, the plugin will generate the display name using the directory name (<button class="Button-asdf123 asdf123" />) instead of the file name (<button class="index-asdf123 asdf123" />), because the former provides more information.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs/tooling"
+tags = ['"dark"', '"large"', '"light"', "'...'", "'light'", "...", "1.11", "@gandm", "atom", "babel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://styled-components.com"]
+title = "styled-components"
+description = "CSS for the <Component> Age"
+full_description = "It's recommended (but not required) to also use the styled-components Babel plugin if you can. It offers many benefits like more legible class names, server-side rendering compatibility, smaller bundles, and more. Let's say you want to create a simple and reusable <Button /> component that you can use throughout your application. There should be a normal version and a big and primary version for the important buttons. This is what it should look like when rendered: (this is a live example, click on them!) This Button variable here is now a React component that you can use like any other React component! This unusual backtick syntax is a new JavaScript feature called a tagged template literal. You know how you can call functions with parenthesis? (myFunc()) Well, now you can also call functions with backticks! (learn more about tagged template literals) If you render our lovely component now (just like any other component: <Button />) this is what you get: It renders a button! That's not a very nice button though 😕 we can do better than this, let's give it a bit of styling and tickle out the hidden beauty within! As you can see, styled-components lets you write actual CSS in your JavaScript. This means you can use all the features of CSS you use and love, including (but by far not limited to) media queries, all pseudo-selectors, nesting, etc. The last step is that we need to define what a primary button looks like. To do that we also import { css } from styled-components and interpolate a function into our template literal, which gets passed the props of our component: Here we're saying that when the $primary property is set we want to add some more css to our component, in this case change the background and color. Nice 😍 That's a live updating editor too, so play around with it a bit to get a feel for what it's like to work with styled-components! Once you're ready, dive into the documentation to learn about all the cool things styled-components can do for you:"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com"
+tags = ["$primary", "button", "component", "container", "continue", "documentation", "flexibility.", "getting", "installation", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.mozilla.org", "discord.gg", "github.com", "medium.com", "npmjs.com", "support.eji.org", "twitter.com", "vercel.com"]
+
+["https://www.styled-components.com/docs/faqs"]
+title = "styled-components: FAQs"
+description = "Commonly asked questions about styled-components"
+full_description = "Good news for TypeScript enthusiasts – styled-components is now natively written in TypeScript! Even if you haven't used TypeScript before, it's recommended for improving the reliability of your project as it can alert you when you're using an unknown prop or if a prop has a different value than expected. However, if you don't use TypeScript in your project, don't worry! IDEs like VS Code will still pick up the types and provide hints as you write your code. If haven't migrated your styling to use transient props ($prefix), you might notice React warnings about styling props getting through to the DOM in v6. To restore the v5 behavior, use StyleSheetManager: As the web and browsers have matured significantly by 2023, vendor prefixing is often unnecessary. Therefore, for the v6 release, we've decided to omit automatic prefixing by default to reduce the amount of CSS delivered to a page. If you prefer the v5 behavior, you can restore it via StyleSheetManager: To accommodate this change, the original disableVendorPrefixes prop was inverted to enableVendorPrefixes; if you have disableVendorPrefixes set, you can now remove it as it's the new default. styled-components v6 uses the newer stylis v4; if you are providing stylisPlugins to StyleSheetManager, ensure the plugins are up-to-date. For instance, stylis-plugin-rtl released a new version to support the updated stylis. With the stylis v4 upgrade came a change to how nested selectors are handled which now correctly mirrors browser behavior. Specifically, pseudoselectors (e.g. :before) that do not start with & will not have the ampersand implicitly added anymore. To reduce confusion around application order, we've dropped the transient $as and $forwardedAs props. Please use the regular as and forwardedAs props instead. This change has been a long time coming. The withComponent API is no longer supported, so please use the as prop instead. You can specify as at definition time via attrs or at runtime: In line with the maintenance schedule for Node, we now support v16 as the oldest runtime that's still receiving security patches."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs/faqs"
+tags = ["$forwardedas", "$red", "$vertical", "...", "@import", "applications", "aria-hidden", "attribute", "attrs?", "author."]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://www.styled-components.com/docs"]
+title = "styled-components: Documentation"
+description = "Learn how to use styled-components and to style your apps without stress"
+full_description = "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles – using components as a low-level styling construct could not be easier!"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs"
+tags = ["adapting", "additional", "advanced", "animations", "apis", "attaching", "attribute", "attrs?", "author.", "avoid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://styled-components.com/docs/tooling"]
+title = "styled-components: Tooling"
+description = "Additional Tools for styled-components, babel and TypeScript plugins, testing"
+full_description = '''This plugin adds support for server-side rendering, minification of styles, and a nicer debugging experience. ⚠️ The plugin call order in your .babelrc file matters. If you're using the env property in your babel configuration, then putting this plugin into the plugins array won't suffice. Instead it needs to be put into each env's plugins array to maintain it being executed first. See this for more information. By adding a unique identifier to every styled component, this plugin avoids checksum mismatches due to different class generation on the client and on the server. If you do not use this plugin and try to server-side render styled-components React will complain with an HTML attribute mismatch warning during rehydration. This option enhances the attached CSS class name on each component with richer output to help identify your components in the DOM without React DevTools. In your page source you'll see: <button class="Button-asdf123 asdf123" /> instead of just <button class="asdf123" />. It also allows you to see the component's displayName in React DevTools. For example, consider writing a styled component that renders a button element, called MyButton. It will normally show up in DevTools as styled.button, but with the displayName option enabled, it has the name you gave it: MyButton. By default, the displayName of a component will be prefixed with the filename in order to make the component name as unique as possible. You can force the component displayName to be solely the component name by disabling the fileName option: One example you might want to do this, is testing components with enzyme. While you can always use .find(ComponentName) it's definitely possible to search component by its displayName with .find("ComponentName"). In the latter case you will need to disable the fileName option. If you do want this for testing only, make sure to add this only under your test environment. A common pattern is to put components in Button/index.jsx instead of Button.jsx. By default, if the fileName option is set to true, the plugin will generate the display name using the directory name (<button class="Button-asdf123 asdf123" />) instead of the file name (<button class="index-asdf123 asdf123" />), because the former provides more information.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs/tooling"
+tags = ['"dark"', '"large"', '"light"', "'...'", "'light'", "...", "1.11", "@gandm", "atom", "babel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://www.styled-components.com/docs/api"]
+title = "styled-components: API Reference"
+description = "API Reference of styled-components"
+full_description = '''This is the default export. This is a low-level factory we use to create the styled.tagname helper methods. This is what you pass into your styled calls – a tagged template literal. This is an ES6 language feature. You can learn more about them in the Tagged Template Literals section. This can either be a string or a function. Strings are combined with the rules as-is. Functions will receive the styled component's props as the first and only argument. The properties that are passed into an interpolated function get attached a special property, theme, which is injected by a higher level ThemeProvider component. Check the section on Theming for more information on this. You can also return objects from interpolations or input objects directly, and they'll be treated as inline styles. However this is highly discouraged, as the CSS syntax has support for pseudo selectors, media queries, nesting, etc., which the object syntax doesn't. A styled React component. This is returned when you call styled.tagname or styled(Component) with styles. This component can take any prop. It passes it on to the HTML node if it's a valid attribute, otherwise it only passes it into interpolated functions. (see Tagged Template Literal) You can pass an arbitrary classname to a styled component without problem and it will be applied next to the styles defined by the styled call. (e.g. <MyStyledComp className="bootstrap__btn" />) This is a chainable method that attaches some props to a styled component. The first and only argument is an object that will be merged into the rest of the component's props. The attrs object accepts the following values: These can be of any type, except functions. They'll stay static and will be merged into the existing component props. A function that receives the props that are passed into the component and computes a value, that is then going to be merged into the existing component props. If you want to keep all the styling you've applied to a component but just switch out what's being ultimately rendered (be it a different HTML tag or a different custom component), you can use the "as" prop to do this at runtime.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs/api"
+tags = ['"innerref"', "$background", "$draggable", "$padding", "$small", "$whitecolor", "'black'", "'helvetica neue'", "'it works!'", "'mediumseagreen'"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://styled-components.com/docs/basics"]
+title = "styled-components: Basics"
+description = "Get Started with styled-components basics."
+full_description = '''styled-components is the result of wondering how we could enhance CSS for styling React component systems. By focusing on a single use case we managed to optimize the experience for developers as well as the output for end users. You get all of these benefits while still writing the CSS you know and love, just bound to individual components. If you use a package manager like yarn that supports the "resolutions" package.json field, we also highly recommend you add an entry to it as well corresponding to the major version range. This helps avoid an entire class of problems that arise from multiple versions of styled-components being installed in your project. It's highly recommended (but not required) to also use the Babel plugin. It offers many benefits like more legible class names, server-side rendering compatibility, smaller bundles, and more. If you're not using a module bundler or package manager we also have a global ("UMD") build hosted on the unpkg CDN. Simply add the following <script> tag to the bottom of your HTML file: This style of usage requires the react CDN bundles and the react-is CDN bundle to be on the page as well (before the styled-components script.) It removes the mapping between components and styles. This means that when you're defining your styles, you're actually creating a normal React component, that has your styles attached to it. This is a live editor, so play around with the code to get a feel for what it's like to work with styled-components! You can pass a function ("interpolations") to a styled component's template literal to adapt it based on its props. This button component has a primary state that changes its color. When setting the $primary prop to true, we are swapping out its background and text color. Quite frequently you might want to use a component, but change it slightly for a single case. Now, you could pass in an interpolated function and change them based on some props, but that's quite a lot of effort for overriding the styles once.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs/basics"
+tags = ["$inputcolor", "$mode", "$primary", "$size", "...", ".attrs", "2em", "@geelen", "@probablyup", "a bigger password input"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "developer.mozilla.org", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "stackoverflow.com", "support.eji.org", "typescriptlang.org", "vercel.com", "zillow.com"]
+
+["https://styled-components.com/releases"]
+title = "styled-components: Releases"
+description = "Styled Components Releases"
+full_description = "Updating styled components is usually as simple as npm update styled-components. Only major versions have the potential to introduce breaking changes (noted in the following release notes). Revert adding peerDependencies from v6.1.7; apparently some package managers have differing behaviors around peerDependenciesMeta[package].optional which is causing issues. Will revisit at a later date if possible. chore: add all missing peer dependency statements by @quantizor in https://github.com/styled-components/styled-components/pull/4243 NOTE: this change may cause some installed dependency duplication until this NPM bug is addressed but yarn and pnpm have correct behavior. Bun also has a similar bug. Overall these changes ensure that styled-components is specifying a known working version of all utilized libraries, while instructing the client package manager that higher semver-compliant versions are permissible and should work, assuming the relevant libraries are compliant in practice. fix bundling to not hardcode window (should fix some testing use cases that were incorrectly assuming a server environment when JSDOM and similar are in use) Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.5..v6.0.0-rc.6 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.3..v6.0.0-rc.5 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.2...v6.0.0-rc.3 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.1...v6.0.0-rc.2 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.0...v6.0.0-rc.1 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.15...v6.0.0-rc.0 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.14...v6.0.0-beta.15 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.13...v6.0.0-beta.14"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/releases"
+tags = ["2/3,", "@import", "adjustment", "affect", "announcement!", "behavior", "behavioral", "beta", "better", "breaking"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "bitbucket.org", "cloverleaf.me", "codesandbox.io", "countminutes.com", "developer.mozilla.org", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "support.eji.org", "twitter.com", "vercel.com"]
+
+["https://styled-components.com/showcase"]
+title = "styled-components: Showcase Zillow"
+description = "CSS for the <Component> Age"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/showcase"
+tags = ["awesome", "beings.", "humans", "websites,", "zillow"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "bitbucket.org", "cloverleaf.me", "countminutes.com", "developer.mozilla.org", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "support.eji.org", "twitter.com", "vercel.com", "zillow.com"]
+
+["https://www.styled-components.com/docs/basics"]
+title = "styled-components: Basics"
+description = "Get Started with styled-components basics."
+full_description = '''styled-components is the result of wondering how we could enhance CSS for styling React component systems. By focusing on a single use case we managed to optimize the experience for developers as well as the output for end users. You get all of these benefits while still writing the CSS you know and love, just bound to individual components. If you use a package manager like yarn that supports the "resolutions" package.json field, we also highly recommend you add an entry to it as well corresponding to the major version range. This helps avoid an entire class of problems that arise from multiple versions of styled-components being installed in your project. It's highly recommended (but not required) to also use the Babel plugin. It offers many benefits like more legible class names, server-side rendering compatibility, smaller bundles, and more. If you're not using a module bundler or package manager we also have a global ("UMD") build hosted on the unpkg CDN. Simply add the following <script> tag to the bottom of your HTML file: This style of usage requires the react CDN bundles and the react-is CDN bundle to be on the page as well (before the styled-components script.) It removes the mapping between components and styles. This means that when you're defining your styles, you're actually creating a normal React component, that has your styles attached to it. This is a live editor, so play around with the code to get a feel for what it's like to work with styled-components! You can pass a function ("interpolations") to a styled component's template literal to adapt it based on its props. This button component has a primary state that changes its color. When setting the $primary prop to true, we are swapping out its background and text color. Quite frequently you might want to use a component, but change it slightly for a single case. Now, you could pass in an interpolated function and change them based on some props, but that's quite a lot of effort for overriding the styles once.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs/basics"
+tags = ["$inputcolor", "$mode", "$primary", "$size", "...", ".attrs", "2em", "@geelen", "@probablyup", "a bigger password input"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://styled-components.com/docs/advanced"]
+title = "styled-components: Advanced Usage"
+description = "Theming, refs, Security, Existing CSS, Tagged Template Literals, Server-Side Rendering and Style Objects"
+full_description = "styled-components has full theming support by exporting a <ThemeProvider> wrapper component. This component provides a theme to all React components underneath itself via the context API. In the render tree all styled-components will have access to the provided theme, even when they are multiple levels deep. To illustrate this, let's create our Button component, but this time we'll pass some variables down as a theme. You can also pass a function for the theme prop. This function will receive the parent theme, that is from another <ThemeProvider> higher up the tree. This way themes themselves can be made contextual. This example renders our above themed Button and a second one that uses a second ThemeProvider to invert the background and foreground colors. The function invertTheme receives the upper theme and creates a new one. If you ever need to use the current theme outside styled components (e.g. inside big components), you can use the withTheme higher order component. You can also use useContext to access the current theme outside of styled components when working with React Hooks. You can also use useTheme to access the current theme outside of styled components when working with React Hooks. Passing a ref prop to a styled component will give you one of two things depending on the styled target: Using an older version of styled-components (below 4.0.0) or of React? Use the innerRef prop instead. Since styled-components allows you to use arbitrary input as interpolations, you must be careful to sanitize that input. Using user input as styles can lead to any CSS being evaluated in the user's browser that an attacker can place in your application. This example shows how bad user input can even lead to API endpoints being called on a user's behalf. Be very careful! This is obviously a made-up example, but CSS injection can be unobvious and have bad repercussions. Some IE versions even execute arbitrary JavaScript within url declarations. There is an upcoming standard to sanitize CSS from JavaScript, CSS.escape. It's not very well supported across browsers yet, so we recommend using the polyfill by Mathias Bynens in your app."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs/advanced"
+tags = ['"darkorange"', '"royalblue"', "$background", "0 0 20 20", "advanced", "avoiding", "blue", "box", "button", "caveat"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "developer.mozilla.org", "discord.gg", "gatsbyjs.org", "github.com", "medium.com", "mxstbr.blog", "nextjs.org", "npmjs.com", "reactjs.org", "support.eji.org", "twitter.com", "vercel.com"]
+
+["https://styled-components.com/docs/api"]
+title = "styled-components: API Reference"
+description = "API Reference of styled-components"
+full_description = '''This is the default export. This is a low-level factory we use to create the styled.tagname helper methods. This is what you pass into your styled calls – a tagged template literal. This is an ES6 language feature. You can learn more about them in the Tagged Template Literals section. This can either be a string or a function. Strings are combined with the rules as-is. Functions will receive the styled component's props as the first and only argument. The properties that are passed into an interpolated function get attached a special property, theme, which is injected by a higher level ThemeProvider component. Check the section on Theming for more information on this. You can also return objects from interpolations or input objects directly, and they'll be treated as inline styles. However this is highly discouraged, as the CSS syntax has support for pseudo selectors, media queries, nesting, etc., which the object syntax doesn't. A styled React component. This is returned when you call styled.tagname or styled(Component) with styles. This component can take any prop. It passes it on to the HTML node if it's a valid attribute, otherwise it only passes it into interpolated functions. (see Tagged Template Literal) You can pass an arbitrary classname to a styled component without problem and it will be applied next to the styles defined by the styled call. (e.g. <MyStyledComp className="bootstrap__btn" />) This is a chainable method that attaches some props to a styled component. The first and only argument is an object that will be merged into the rest of the component's props. The attrs object accepts the following values: These can be of any type, except functions. They'll stay static and will be merged into the existing component props. A function that receives the props that are passed into the component and computes a value, that is then going to be merged into the existing component props. If you want to keep all the styling you've applied to a component but just switch out what's being ultimately rendered (be it a different HTML tag or a different custom component), you can use the "as" prop to do this at runtime.'''
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs/api"
+tags = ['"innerref"', "$background", "$draggable", "$padding", "$small", "$whitecolor", "'black'", "'helvetica neue'", "'it works!'", "'mediumseagreen'"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "cloverleaf.me", "countminutes.com", "developer.mozilla.org", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "support.eji.org", "twitter.com", "typescriptlang.org", "vercel.com", "zillow.com"]
+
+["https://www.styled-components.com"]
+title = "styled-components"
+description = "CSS for the <Component> Age"
+full_description = "It's recommended (but not required) to also use the styled-components Babel plugin if you can. It offers many benefits like more legible class names, server-side rendering compatibility, smaller bundles, and more. Let's say you want to create a simple and reusable <Button /> component that you can use throughout your application. There should be a normal version and a big and primary version for the important buttons. This is what it should look like when rendered: (this is a live example, click on them!) This Button variable here is now a React component that you can use like any other React component! This unusual backtick syntax is a new JavaScript feature called a tagged template literal. You know how you can call functions with parenthesis? (myFunc()) Well, now you can also call functions with backticks! (learn more about tagged template literals) If you render our lovely component now (just like any other component: <Button />) this is what you get: It renders a button! That's not a very nice button though 😕 we can do better than this, let's give it a bit of styling and tickle out the hidden beauty within! As you can see, styled-components lets you write actual CSS in your JavaScript. This means you can use all the features of CSS you use and love, including (but by far not limited to) media queries, all pseudo-selectors, nesting, etc. The last step is that we need to define what a primary button looks like. To do that we also import { css } from styled-components and interpolate a function into our template literal, which gets passed the props of our component: Here we're saying that when the $primary property is set we want to add some more css to our component, in this case change the background and color. Nice 😍 That's a live updating editor too, so play around with it a bit to get a feel for what it's like to work with styled-components! Once you're ready, dive into the documentation to learn about all the cool things styled-components can do for you:"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com"
+tags = ["$primary", "button", "component", "container", "continue", "documentation", "flexibility.", "getting", "installation", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://styled-components.com/docs"]
+title = "styled-components: Documentation"
+description = "Learn how to use styled-components and to style your apps without stress"
+full_description = "Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles – using components as a low-level styling construct could not be easier!"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs"
+tags = ["adapting", "additional", "advanced", "animations", "apis", "attaching", "attribute", "attrs?", "author.", "avoid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.mozilla.org", "discord.gg", "github.com", "medium.com", "npmjs.com", "support.eji.org", "twitter.com", "vercel.com"]
+
+["https://www.styled-components.com/docs/advanced"]
+title = "styled-components: Advanced Usage"
+description = "Theming, refs, Security, Existing CSS, Tagged Template Literals, Server-Side Rendering and Style Objects"
+full_description = "styled-components has full theming support by exporting a <ThemeProvider> wrapper component. This component provides a theme to all React components underneath itself via the context API. In the render tree all styled-components will have access to the provided theme, even when they are multiple levels deep. To illustrate this, let's create our Button component, but this time we'll pass some variables down as a theme. You can also pass a function for the theme prop. This function will receive the parent theme, that is from another <ThemeProvider> higher up the tree. This way themes themselves can be made contextual. This example renders our above themed Button and a second one that uses a second ThemeProvider to invert the background and foreground colors. The function invertTheme receives the upper theme and creates a new one. If you ever need to use the current theme outside styled components (e.g. inside big components), you can use the withTheme higher order component. You can also use useContext to access the current theme outside of styled components when working with React Hooks. You can also use useTheme to access the current theme outside of styled components when working with React Hooks. Passing a ref prop to a styled component will give you one of two things depending on the styled target: Using an older version of styled-components (below 4.0.0) or of React? Use the innerRef prop instead. Since styled-components allows you to use arbitrary input as interpolations, you must be careful to sanitize that input. Using user input as styles can lead to any CSS being evaluated in the user's browser that an attacker can place in your application. This example shows how bad user input can even lead to API endpoints being called on a user's behalf. Be very careful! This is obviously a made-up example, but CSS injection can be unobvious and have bad repercussions. Some IE versions even execute arbitrary JavaScript within url declarations. There is an upcoming standard to sanitize CSS from JavaScript, CSS.escape. It's not very well supported across browsers yet, so we recommend using the polyfill by Mathias Bynens in your app."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/docs/advanced"
+tags = ['"darkorange"', '"royalblue"', "$background", "0 0 20 20", "advanced", "avoiding", "blue", "box", "button", "caveat"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "gitlab.com", "gitpoint.co", "hackclub.com", "marketplace.visualstudio.com", "medium.com", "stackoverflow.com", "stylelint.io", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://www.styled-components.com/ecosystem"]
+title = "styled-components: Ecosystem"
+description = "Ecosystem of styled-components"
+full_description = "This is an incomplete list of awesome things built with styled-components. If you have something to share, please add it to the awesome-styled-components repo on GitHub and it will automatically show up here! If you know any projects build with styled components contributions and suggestions are always welcome! Please read the contribution guidelines first and submit a PR."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/ecosystem"
+tags = ["apps", "built", "contribute", "ecosystem", "further", "reading", "real", "styled-components"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coinbase.com", "developer.mozilla.org", "dirtyredz.com", "docs.npmjs.com", "dutchie.com", "earner.ai", "fortnitemaster.com", "getoutline.com", "github.com", "gitpoint.co", "hackclub.com", "mxstbr.blog", "nextjs.org", "npmjs.com", "stackoverflow.com", "support.eji.org", "thejameskyle.com", "unpkg.com", "yarnpkg.com", "zillow.com"]
+
+["https://styled-components.com/docs/faqs"]
+title = "styled-components: FAQs"
+description = "Commonly asked questions about styled-components"
+full_description = "Good news for TypeScript enthusiasts – styled-components is now natively written in TypeScript! Even if you haven't used TypeScript before, it's recommended for improving the reliability of your project as it can alert you when you're using an unknown prop or if a prop has a different value than expected. However, if you don't use TypeScript in your project, don't worry! IDEs like VS Code will still pick up the types and provide hints as you write your code. If haven't migrated your styling to use transient props ($prefix), you might notice React warnings about styling props getting through to the DOM in v6. To restore the v5 behavior, use StyleSheetManager: As the web and browsers have matured significantly by 2023, vendor prefixing is often unnecessary. Therefore, for the v6 release, we've decided to omit automatic prefixing by default to reduce the amount of CSS delivered to a page. If you prefer the v5 behavior, you can restore it via StyleSheetManager: To accommodate this change, the original disableVendorPrefixes prop was inverted to enableVendorPrefixes; if you have disableVendorPrefixes set, you can now remove it as it's the new default. styled-components v6 uses the newer stylis v4; if you are providing stylisPlugins to StyleSheetManager, ensure the plugins are up-to-date. For instance, stylis-plugin-rtl released a new version to support the updated stylis. With the stylis v4 upgrade came a change to how nested selectors are handled which now correctly mirrors browser behavior. Specifically, pseudoselectors (e.g. :before) that do not start with & will not have the ampersand implicitly added anymore. To reduce confusion around application order, we've dropped the transient $as and $forwardedAs props. Please use the regular as and forwardedAs props instead. This change has been a long time coming. The withComponent API is no longer supported, so please use the as prop instead. You can specify as at definition time via attrs or at runtime: In line with the maintenance schedule for Node, we now support v16 as the oldest runtime that's still receiving security patches."
+author = "styled-components"
+year_published = 2025
+clearnet = "https://styled-components.com/docs/faqs"
+tags = ["$forwardedas", "$red", "$vertical", "...", "@import", "applications", "aria-hidden", "attribute", "attrs?", "author."]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlaskit.atlassian.com", "babeljs.io", "classic.yarnpkg.com", "countminutes.com", "die.socialisten.at", "dirtyredz.com", "en.kachkaev.ru", "getoutline.com", "github.com", "gitlab.com", "gitpoint.co", "hackclub.com", "medium.com", "mxstbr.blog", "stackoverflow.com", "support.eji.org", "typescriptlang.org", "vercel.com", "webpack.js.org", "zillow.com"]
+
+["https://www.styled-components.com/releases"]
+title = "styled-components: Releases"
+description = "Styled Components Releases"
+full_description = "Updating styled components is usually as simple as npm update styled-components. Only major versions have the potential to introduce breaking changes (noted in the following release notes). Revert adding peerDependencies from v6.1.7; apparently some package managers have differing behaviors around peerDependenciesMeta[package].optional which is causing issues. Will revisit at a later date if possible. chore: add all missing peer dependency statements by @quantizor in https://github.com/styled-components/styled-components/pull/4243 NOTE: this change may cause some installed dependency duplication until this NPM bug is addressed but yarn and pnpm have correct behavior. Bun also has a similar bug. Overall these changes ensure that styled-components is specifying a known working version of all utilized libraries, while instructing the client package manager that higher semver-compliant versions are permissible and should work, assuming the relevant libraries are compliant in practice. fix bundling to not hardcode window (should fix some testing use cases that were incorrectly assuming a server environment when JSDOM and similar are in use) Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.5..v6.0.0-rc.6 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.3..v6.0.0-rc.5 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.2...v6.0.0-rc.3 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.1...v6.0.0-rc.2 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-rc.0...v6.0.0-rc.1 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.15...v6.0.0-rc.0 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.14...v6.0.0-beta.15 Full Changelog: https://github.com/styled-components/styled-components/compare/v6.0.0-beta.13...v6.0.0-beta.14"
+author = "styled-components"
+year_published = 2025
+clearnet = "https://www.styled-components.com/releases"
+tags = ["2/3,", "@import", "adjustment", "affect", "announcement!", "behavior", "behavioral", "beta", "better", "breaking"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coinbase.com", "developer.mozilla.org", "dirtyredz.com", "docs.npmjs.com", "dutchie.com", "earner.ai", "fortnitemaster.com", "getoutline.com", "github.com", "gitpoint.co", "hackclub.com", "mxstbr.blog", "nextjs.org", "npmjs.com", "stackoverflow.com", "support.eji.org", "thejameskyle.com", "unpkg.com", "yarnpkg.com", "zillow.com"]

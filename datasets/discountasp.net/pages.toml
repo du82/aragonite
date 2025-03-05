@@ -1,0 +1,414 @@
+["https://discountasp.net/control-panel/api"]
+title = "DiscountASP.NET Open Control Panel API Initiative for ASP.NET Hosting"
+description = "DiscountASP.NET’s Open Control Panel Initiative for Shared Windows ASP.NET Hosting"
+full_description = "DiscountASP.NET is proud to present the Open Control Panel InitiativeThe goal of the Open Control Panel Initiative is to offer an open hosting system framework which provides maximum control over your hosting presence management. With an Open Control Panel framework, you can move beyond accepting web hosting management via a host-defined web-based control panel and develop your own creative solutions. To support this initiative, DiscountASP.NET introduces the control panel API, a standards-based ASP.NET web service API library you can use to develop your own web, desktop, or mobile applications that interface directly with your web hosting account. News, resources, IIS: methods to display news and resource usage, and manage some aspects of Internet Information Services (IIS), such as recycling the application pool. (See this post in our Community Forum for more info.) SQL database backup: methods to backup SQL databases. Build your own web, desktop, or mobile applications for database backup without logging in to Control Panel. (See this post in our Community Forum for more info.) DNS controls: methods to manage DNS. Build your own web, desktop, or mobile applications for SQL backups and for DNS Management, including A, CNAME, MX, and TXT records. (See this post in our Community Forum for more info.) To demonstrate the use of the control panel API, we have released a sample application that can be downloaded from the DiscountASP.NET Community Forum. The download includes the binary executable as well as the complete source code. You are free to extend these applications. For example, the Usage Alert Tool is a systray application that allows you to set thresholds for various hosting resources such as bandwidth, disk space, email storage space and SQL database disk space. The tool displays an alert when the hosting account reaches any of the thresholds. With this tool, you no longer have to log into the web-based control panel to review resource usage. Access to the API is activated via Control Panel, in the Control Panel API section. You will be assigned a unique Authentication Key, as well as a Sandbox Key to test your applications without the risk of making changes to your hosting account."
+year_published = 2025
+clearnet = "https://discountasp.net/control-panel/api"
+tags = ["api", "application", "backup:", "contact", "control", "control panel", "controls:", "database", "dns", "email"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "cloudflare.com", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "meetings.hubspot.com", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/asp.net-mvc"]
+title = "ASP.NET MVC Hosting and ASP.NET Core MVC Hosting at DiscountASP.NET"
+description = "ASP.NET MVC hosting (MVC 5, 4, 3, 2) compatible ASP.NET hosting at DiscountASP.NET"
+full_description = "This allows developers to build Web applications as a composite of three different roles, namely the Model, View and Controller. The Model represents the state of the application, usually stored in a database table. The View extracts information from the model and displays the information. Finally, the Controller updates the model to reflect the change in state of the application. The MVC project templates are updated to use ASP.NET Identity for authentication and identity management which supports third party login providers like Facebook, Twitter, Google, etc. The Attribute routing NuGet package is now integrated into MVC 5 and allows you to specify routes by annotating actions and controllers. A framework that helps ease building HTTP services to reach users through browsers and mobile devices. ASP.NET Web API is a platform for building RESTful applications on the .NET Framework. This includes new mobile project template to make it easier to build applications for mobile and tablet browsers. The template is based on jQuery Mobile for touch-optimized UI. You can now code asynchronous action methods as single methods that return an object of type Task or Task . This framework helps you reduce the amount of HTTP requests that a Web page makes by combining individual files into a single, bundled file for scripts and CSS. The overall request size is further reduced by minifying the contents of the bundle. Minifying includes activities like eliminating whitespace or shortening variable names or collapsing CSS selectors based on their semantics. MVC 3 ships with a new view-engine option called Razor which minimizes the number of characters and keystrokes required when writing a view template, and improves coding work flow. ASP.NET MVC 3 provides richer JavaScript scenarios with unobtrusive JavaScript approaches, built-in JSON-based parameters, and ships with the jQuery Validate plug-in. MVC3 also takes advantage of emerging HTML5 capabilities. ASP.NET MVC V3 supports partial page output caching that allows you to easily output cache regions or fragments of a response as opposed to the entire thing."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/asp.net-mvc"
+tags = ["1.0", "2.0", "3.0", "4.0", "5.0", "added", "application", "asynchronous", "attribute", "based"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/faq"]
+title = "Frequently Asked Pre-Sales Questions (FAQs) for Shared ASP.NET Hosting"
+description = "Frequently asked questions (FAQs) about Shared ASP.NET Hosting & Shared Windows Hosting at DiscountASP.NET."
+full_description = '''.NET Core is supported on Windows 2019/IIS10 and Windows 2016/IIS10. The latest .NET Core version we support is ASP.NET Core 9.x Most versions of Visual Studio, Visual Studio Community, Visual Studio Code, Visual Studio Express, and Visual Web Developer are supported. See our Visual Studio page for more information. Yes, and we provide a secure database directory that is configured to disallow direct downloading of .mdb files. It's worth noting though that Access databases were not designed for use on the web. We recommend migrating your Access data to Microsoft SQL or MySQL. Every account has an alternative FTP address that you can use to upload your files before your domain resolves to our servers. So you can get started right away whether you are registering a new domain or using an existing domain. Every account also has an alternative URL so you can view your site before your domain resolves to our servers. Perfect for testing your web site before pointing your domain to our servers. If you already own a domain name you do not have to transfer the name to us. You can continue the relationship with your current domain registrar and pay them for your domain renewals. To open an account using an existing domain name, use the "Use an existing domain name" option in our sign up form, and update your domain's name servers to point to our servers. You must specify a domain name when signing up for web hosting. You can purchase a new domain name, use an existing domain name that you have registered elsewhere, or use a domain name that you intend to register later. While we do support all traditional country code domains (.co, .tv, etc.), we do not currently support the new internationalized domain names (IDNs) that use languages other than English. For example, .рф, قطر., .இந்தியா, .新加坡. Domain registration fees are paid annually. When we register a domain name for you, we will lock the registration to prevent unauthorized changes and automatically renew it for as long as your hosting account remains open.'''
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/faq"
+tags = ["accept?", "access", "account", "already", "asked", "audio", "backups?", "before", "center", "charge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/legacy-hosting/silverlight"]
+title = "Silverlight Hosting supported for ASP.NET Hosting at DiscountASP.NET"
+description = "Silverlight Hosting supported at DiscountASP.NET’s Shared ASP.NET Hosting Platform"
+full_description = "Microsoft Silverlight is a cross-browser, cross-platform plug-in for delivering rich interactive Web applications. Unfortunately, Microsoft announced that they will cease development of Silverlight in 2013 and will only provide patches and bug fixes until the end-of-life for Silverlight 5 in 2021. While you may have stopped developing new Silverlight applications, you may still want Silverlight hosting for your legacy apps. We are here for you. Our ASP.NET hosting platform at DiscountASP.NET is Silverlight compatible."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/legacy-hosting/silverlight"
+tags = ["compatible.", "contact", "features", "hosting", "microsoft", "platform", "silverlight"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/orchard"]
+title = "Orchard CMS Hosting with DiscountASP.NET ASP.NET Core Hosting Services"
+description = "Orchard CMS compatible hosting with expert DiscountASP.NET Shared ASP.NET Core Hosting Solution."
+full_description = "Orchard is a free, open source ASP.NET-based CMS application that allows developers to quickly create content-driven websites, with an underlying framework that provides additional functionality through extensions and themes. Orchard is a powerful application, so it isn't surprising that it is also resource intensive. While you may be able to run a small Orchard site on DiscountASP.NET, for optimal performance it really requires more server resources than shared hosting can provide. We can move your Orchard site to Everleap, or we can do a fresh install of Orchard for you. You can try Everleap free for 30 days."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/orchard"
+tags = ["blossom", "contact", "hosting", "orchard", "orchard cms hosting", "orchard hosting", "shared"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "github.com", "joomla.org", "my.discountasp.net", "orchard.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/about-us/sponsorships"]
+title = "DiscountASP.NET Sponsorships: User Groups, Code Camps, Give Camps"
+description = "DiscountASP.NET Sponsorships: User Groups, Code Camps, Give Camps, Conferences, Microsoft Events"
+full_description = "From the day we opened the doors at DiscountASP.NET we knew we wanted to be involved with - and support - the developer community. We accomplish a lot of that support through sponsorships, financial and hosting donations. Over the years we have sponsored .NET user groups in over 90 U.S. cities and more than 20 countries, GiveCamps all over the United States (and in Europe), Code Camps in the U.S. and Canada, and domestic and international events, conferences and popular resource sites. Agile DC ALM Summit AZGroups Scott Guthrie Event CodeMash CodeStock CodepaLOUsa Dallas Day of Dot Net devLINK Technical Conference Heartland Developers Conference Houston Tech Fests Kansas City Developers Conference Little Rock Tech Fest MADExpo Mid Atlantic Developer Expo MVC Conf MVP Summit New Member Mixer NetConf.UY PDC 2010 The Underground Party Pittsburgh Tech Fest Rocky Mountain Tech Tri-fecta Saint Louis Day of .NET Techbash Vancouver Tech Fest Alabama Code Camp Atlanta Code Camp Augusta Code Camp Austin Code Camp Boise Code Camp Boston Code Camp Carolina Code Camp Chicago Code Camp Columbus Code Camp Desert Code Camp Jacksonville Code Camp Iowa Code Camp Nebraska Code Camp New York City Code Camp Northern Virginia Code Camp Ottawa Code Camp Palouse Code Camp Portland Code Camp Raleigh Code Camp Seattle Code Camp Silicon Valley Code Camp Southern California Code Camp South Florida Code Camp Tallahassee Code Camp Toronto Code Camp - Canada Utah Code Camp Vermont Code Camp Acadiana .NET Users Group Agile Austin All About XAML Atlanta Microsoft Database Forum Atlanta Microsoft Pros Augusta Developers Guild Austin .NET Users Group AZgroups Blend SIG Boise .NET Developers Users Group Boise Software Developers Group Boston Microsoft Business Intelligence Users Group Capital Area .NET Users Group Capital City .NET Users Group Cedar Rapids .NET Users Group Cedar Valley .NET Developers Users Group Central Illinois .NET Users Group Central Maryland Association of .NET Professionals Central New York .NET Developers Users Group Central Pennsylvania .NET Users Group Charlotte ALT.NET Cincinnati All Things Mobile Users Group Cincinnati .NET Users Group Connecticut .NET Developers Users Group Dallas .NET Users Group Dallas XAML Users Group Dayton .NET Developers Group Delmarva .NET Users Group Dot Net Valley Users Group Eugene Area .NET Users Group Florida .NET Users Group Fort Worth .NET Users Group Fredericton Developer Users Group Fredericton .NET Users Group Greater New Orleans .NET Users Group Great Lakes Area .NET Users Group Great Lansing .NET Users Group Gwinnett, Georgia Microsoft Users Group Hampton Roads .NET Users Group Houma-Thibodaux .NET Users Group Indianapolis .NET Developers Association INETA Community Champions Inland Empire .NET Users Group Iowa .NET Users Group Kansas City .NET Users Group Lake County .NET Users Group Lehigh Valley .NET Users Group Lexington .NET Users Group Lincoln .NET Users Group Little Rock .NET Users Group Long Island .Net Users Group Los Angeles C# Users Group Los Angeles .NET Users Group Louisiana Arc Users Group Madison .NET Users Group Memphis .NET Users Group Microsoft Developers of Western New York MVC Virtual Users Group Nashville .NET Users Group .NET Developers Association New Hampshire .NET Users Group New Jersey .NET Users Group New Mexico .NET Users Group New York City ALT.NET Group Northern Colorado .NET SIG Northern Houston .NET Users Group Northeast Arkansas .NET Users Group North Florida .NET Users Group Northwest Arkansas .NET Users Group Northwest Valley .NET Users Group Omaha .NET Users Group Orlando .NET Users Group Phoenix Connected Systems Users Group Phoenix Java Users Group Phoenix Silverlight Users Group Pittsburgh .NET Users Group Roanoke Valley .NET Users Group Rockford .NET Users Group Sacramento .NET Users Group Saint Louis .NET Users Group San Antonio Windows Developer Association San Diego .NET Developers Group San Diego .NET User Group San Gabriel Valley .NET Developers Group Sangamon Valley .NET Users Group Seattle .NET Users Group Seattle Silverlight Developers Association Shreveport .NET Users Group Silverlight Developers Association South Bay .NET Users Group South Central Community .NET Users Group Southeast Valley .NET Users Group Southern California DotNetNuke Users Group Southern California .NET Users Group South Dakota .NET Users Group Southern Maryland .NET Users Group Springfield.NET Users Group Space Coast .NET Users Group SQL Professionals of Northern Nevada Tallahassee Architectural SIG Triangle .NET Users Group Tucson .NET Users Group The Telerik Machine Users Group Users Groups of New York Vancouver Silverlight Users Group Virtual Alt.NET Western New York .NET Users Group Western New York Professional Association of SQL Server West Michigan .NET Users Group Wichita .NET Developers Group"
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/sponsorships"
+tags = ["camps", "charity", "code", "code camp", "coding", "contact", "events", "give camp", "givecamps", "groups"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/plan"]
+title = "DiscountASP.NET Shared Windows ASP.NET Hosting Plan Details & Pricing"
+description = "DiscountASP.NET hosting plan details and pricing information. DiscountASP.NET is the best place for ASP.NET developers for their web hosting needs."
+full_description = "These ASP.NET and ASP components are available for use by all of our customers at no cost on our Windows hosting platform. For an up to date list of supported and deprecated components, see this Knowledge Base article. We built our own Control Panel from the ground up so we can introduce new features and technologies without waiting for a third-party to update their control panel. *Available in our Web Application Gallery, an easy to use application installation tool in Control Panel."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/plan"
+tags = ["account", "activesync", "add-on", "additional", "applications", "approved", "authoring", "available", "backup", "bandwidth"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/international-datacenters"]
+title = "DiscountASP.NET's international data centers"
+description = "Information on DiscountASP.NET's international European data center in the UK near London."
+full_description = "We maintain two data centers, one in Southern California and another in London, England. You can choose which location suits your site best, based on where you work and the majority of your users live. Both data centers run equipment that we own, and are maintained and operated by DiscountASP.NET staff. Both data centers employ strict security measures, both for physical and traffic security, including firewalls and DDoS mitigation hardware and software. Both systems undergo daily disaster recovery backups. Secure tier 3 data center (more info) DELL Poweredge Servers, Dual Xeon Quad Core Processor servers, RAID 10 disk arrays Cisco enterprise switches 24/7 security guards Handprint entry system 24/7 video surveillance Multiple redundant networks Redundant OC48 connections 365/24/7 network monitoring Redundant power backup (UPS, diesel generator) Secure tier 3 data center (more info) DELL Poweredge Servers NetApp SAN storage VMware virtualization Cisco enterprise switches 24/7 security guards 24/7 video surveillance 365/24/7 network monitoring Redundant power backup (UPS, diesel generator)"
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/international-datacenters"
+tags = ["california", "center", "centers", "contact", "data", "data center", "european datacenter", "london", "multiple", "security"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/asp.net-versions"]
+title = "ASP.NET Core 9 and ASP.NET 4.8.x Support for Shared .NET Hosting Plans"
+description = "ASP.NET hosting - ASP.NET Core 9 Hosting, ASP.NET Core 8 Hosting, ASP.NET Core 7 Hosting, ASP.NET 4.8.x Hosting"
+full_description = "ASP.NET Core is a complete rewrite of ASP.NET from the ground up. It's a leaner, meaner .NET. We support both framework-dependent deployment and self-contained deployment. We maintain a list of .NET Core versions that are installed on the servers in our knowledge base. The latest .NET Core version we support is ASP.NET Core 9.x. If the ASP.NET Core version you are using is not on the list, then you can use self-contained deployment. If you are using Visual Studio 2013 to target ASP.NET 4.5.1, ASP.NET 4.5.2 is backward compatible with ASP.NET 4.5.1. If you are using Visual Studio 2012 to target ASP.NET 4.5, ASP.NET 4.5.2 is backward compatible with ASP.NET 4.5. .NET Framework 3.5 comes with the addition of Language Integrated Query (LINQ), which facilitates the process of building SQL queries. Complete with compiler and Intellisense support, LINQ makes relational data queries a first-class language construct in C# and Visual Basic. With .NET 3.5 hosting, what was previously an extension to the ASP.NET runtime, ASP.NET AJAX is now built into the platform and makes the complex task of building cross-platform, standards based AJAX applications that much easier. With ASP.NET AJAX, developers can quickly create pages with sophisticated user interfaces and efficient client-server communication by adding a few server controls to their pages. New ListView control provides flexibility in displaying data, by enabling complete control over the HTML markup generated. In addition, the DataPager control can handle large-record page-throughs. With .NET Framework 3.5 hosting, Windows Communication Foundation (WCF) supports building Web services that can be exposed using standard protocols, such as SOAP, RSS, JSON, POX and more. The DiscountASP.NET ASP.NET hosting platform is compatible with the Microsoft Visual Studio 2008 family suite including Visual Studio 2008 and Visual Web Developer 2008 Express Edition. Data access can be accomplished declaratively (without code) using new data source controls. New data source controls can represent different data back ends such as SQL and XML, and there are new data-bound controls for rendering common UI for data, such as grids, details, and forms."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/asp.net-versions"
+tags = ["4.5.1", "4.5.2", "4.6.1", "4.7.x", "4.8.x", "ajax", "compatible", "contact", "controls", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/ecommerce-hosting/nopcommerce"]
+title = "nopCommerce hosting on DiscountASP.NET"
+description = "nopCommerce ecommerce shopping cart hosting on DiscountASP.NET and Everleap"
+full_description = "nopCommerce is an open source e-commerce solution with comprehensive features that are easy to use for new on line businesses, yet powerful enough for the most demanding e-commerce expert. It is secure, scalable and extendable. nopCommerce requires the SQL database add-on. Since nopCommerce is a powerful and flexible application, it isn't surprising that it is also resource intensive. While older nopCommerce versions and small stores perform well on DiscountASP.NET shared hosting, the most current versions of nopCommerce require more server resources to run optimally for active storefronts. We can move your nopCommerce site to Everleap, or we can do a fresh install of nopCommerce for you. You can try Everleap free for 30 days."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/ecommerce-hosting/nopcommerce"
+tags = ["contact", "hosting", "links", "nopcommerce", "resource"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "orchard.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "umbraco.com", "wordpress.org"]
+
+["https://discountasp.net/affiliate/overview"]
+title = "DiscountASP.NET affiliate program ASP.NET Hosting referrals earn money"
+description = "Earn a generous commission for referrals to DiscountASP.NET Shared ASP.NET Hosting, TFS Hosting and Everleap Shared Cloud hosting solutions."
+full_description = "The DiscountASP.NET Affiliate Program is free to join, and you earn cash or account credit for each new hosting account that signs up with an Affiliate ID you create. Earn up to $150 for each sale you refer on DiscountASP.NET hosting, TFS hosting and Everleap cloud hosting. If you believe that you can generate more than 15 sales per month we want to hear from you. We offer special rates to affiliates who drive sales. Contact us to learn more. Everyone who joins the affiliate program will have access to our Affiliate Control Panel, featuring enhanced reporting to chart the success of your campaign and pre-approved marketing materials to use on your sites. You can be paid for your sales via PayPal or by applying your commissions to your DiscountASP.NET or Everleap hosting accounts. If you have any questions about the DiscountASP.NET Affiliate Program, drop us a line at [email protected]."
+year_published = 2025
+clearnet = "https://discountasp.net/affiliate/overview"
+tags = ["accounts", "affiliate", "annual", "believe", "cloud", "commission", "commissions", "contact", "earn", "everleap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/dotnetnuke"]
+title = "DotNetNuke Hosting – DNN Hosting – CMS Hosting at DiscountASP.NET"
+description = "DotNetNuke / DNN hosting is available at DiscountASP.NET and Everleap."
+full_description = "DotNetNuke is an open source, extensible content management system that is ideal for creating and maintaining professional websites and compatible with DiscountASP.NET's ASP.NET hosting platform. You will need the SQL database add-on for DotNetNuke hosting. DNN is Fully extensible and scalableSuitable for many projects, from the smallest website to the largest corporate deployment. Internet or intranet sites can be developed entirely with built-in DotNetNuke features, or can be augmented through third-party private assembly tools. Clearly licensed under a BSD-style licenseSoftware can be completely incorporated, modified, and adapted to personal/business use without having to worry about legalities. So no licensing issues are of concern with Dot Net Nuke Hosting. Constantly evolving through real world trialThe open source nature of DotNetNuke allows programmers and web masters to read, redistribute, and modify the source code, essentially evolving the software at a rapid pace. End-user suggestions result in quick improvements and enhancements to the software. User friendly interfaceWell-researched interface makes it easy for users to manage all aspects of their projects. Site wizards, help icons, and an intuitive user interface allow universal ease-of-operation. Large user base and community supportWith a dedicated core programming team, over 750,000 registered users, and a growing legion of third-party DotNetNuke developers, hosts, and resellers, community support is always close-at-hand."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/dotnetnuke"
+tags = ["base", "bsd-style", "clearly", "cms", "community", "constantly", "contact", "dnn hoisting", "dotnetnuke", "dotnetnuke hosting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "dnnsoftware.com", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/ecommerce-hosting/dotnetinvoice"]
+title = "DotNetInvoice at DiscountASP.NET"
+description = "DotNetInvoice hosting using DiscountASP.NET ASP.NET Hosting solutions. Also supported at Everleap.com."
+full_description = "DotNetInvoice is an ASP.NET invoicing and billing system that is fully compatible with DiscountASP.NET, takes less than 5 minutes to install, and is used by over 400 customers worldwide. DotNetInvoice provides recurring invoicing, recurring credit card charges, automated email reminders, and real time payments using cash, check, credit card or PayPal. It's ideal for web developers, designers, consultants, or anyone who wants to send professional invoices via email. DotNetInvoice requires the SQL add-on."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/ecommerce-hosting/dotnetinvoice"
+tags = ["contact", "dotnetinvoice", "features", "hosting", "recurring billing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "github.com", "joomla.org", "my.discountasp.net", "orchard.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "twitter.com", "umbraco.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/ecommerce-hosting/znode"]
+title = "Znode hosting with DiscountASP.NET’s Everleap Managed Hosting Service"
+description = "Znode ecommerce application and shopping cart hosting best with Everleap Managed Hosting solutions."
+full_description = "Since Znode is a powerful and flexible application, it isn't surprising that it is also resource intensive. While older versions performed well on DiscountASP.NET shared hosting, the most current versions of Znode require more server resources to run optimally."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/ecommerce-hosting/znode"
+tags = ["contact", "hosting", "znode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "wordpress.org"]
+
+["https://discountasp.net/about-us/contact"]
+title = "Contact experts at DiscountASP.NET for ASP.NET, SQL, ASP, TFS Hosting"
+description = "Contact DiscountASP.NET for expert support in ASP.NET hosting, SQL hosting, ASP hosting, windows hosting, TFS hosting"
+full_description = "Technical support is provided through our Support Portal. Log in with your Control Panel credentials. You can open or respond to tickets (even if your email is down), see your ticket history and search our extensive Knowledge Base. DiscountASP.NET 417 East Huntington Drive Suite 200 Monrovia, CA 91016 (626) 628-3430 (We are unable to provide support or billing assistance at this number, for support please use the Support Portal.)"
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/contact"
+tags = ["comments", "contact", "contacting", "contacts", "customer", "questions", "support"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/forum-hosting/yet-another-forum"]
+title = "YetAnotherForum Hosting Supported with DiscountASP.NET ASP.NET Hosting"
+description = "YetAnotherForum hosting is compatible with Shared Windows Hosting at DiscountASP.NET"
+full_description = "YetAnotherForum.NET (YAF) is an open source discussion forum for sites running ASP.NET. Written in C#, it is a combination of open source, Microsoft's .NET platform and an international collaboration of the .NET developer community. The DiscountASP.NET hosting platform is fully compatible with YetAnotherForum (you'll need the SQL database add-on)."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/forum-hosting/yet-another-forum"
+tags = ["contact", "discussion", "features", "forum", "hosting", "yetanotherforum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/about-us/partners"]
+title = "Technology partners that fortify our Shared ASP.NET Hosting platform"
+description = "Technology partners that DiscountASP.NET uses to fortify our ASP.NET Hosting platform"
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/partners"
+tags = ["century link", "cisco", "contact", "dell equallogic", "juniper networks", "partners", "technology", "technology partners", "tipping point"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/drupal"]
+title = "Drupal Hosting supported on DiscountASP.NET Windows Hosting solutions"
+description = "Drupal compatible hosting is available on DiscountASP.NET Shared Windows Hosting platform."
+full_description = "Drupal is popular content management software that boasts easy content authoring, reliable performance, and excellent security. Flexibility and modularity are among its core principles. Drupal can be extended with many add-ons and modules, and themes let you customize presentation. Drupal is open source software. There are no licensing fees. The DiscountASP.NET hosting platform is fully compatible with Drupal. Some of the high profile organizations that use Drupal are The Baseball Hall of Fame, ArtInfo, the City of Chicago, Greenpeace, the University of Oxford and even the official Beatles website."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/drupal"
+tags = ["cms hosting", "contact", "drupal", "drupal hosting", "hosting", "links", "mysql hosting", "php hosting", "resource", "windows hosting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "dnnsoftware.com", "drupal.org", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/legacy-hosting/webmatrix"]
+title = "Legacy Microsoft WebMatrix support at DiscountASP.NET ASP.NET Hosting"
+description = "DiscountASP.NET ASP.NET Hosting plans support webmatrix hosting - sites built with Microsoft legacy publishing tool, WebMatrix."
+full_description = "Microsoft WebMatrix is a free web development tool that includes everything you need for website development. You can choose to start with open source web applications, built-in web templates or just start writing code yourself. It should be noted that in August 2016, Microsoft announced their decision to deprecate WebMatrix in favor of their new free Visual Studio Code IDE. Microsoft will no longer be updating WebMatrix or fixing any bugs. Remote Site EditingYou can open your remote sites and make changes. And remote site editing includes full editing capabilities so it makes it feel like you are editing locally. Integrated with GitWebMatrix is now integrated with source control systems like Git which makes it even more convenient to publish your applications. Optimized for Open SourceTo get started developing websites easily, you can start with an open source application. WebMatrix takes the often time-consuming deployment of open source apps and simplifies installation with an auto-installer for a growing list of open source apps. This includes ASP.net apps like DotNetNuke, nopCommerce and BlogEngine as well as PHP apps like WordPress, Drupal, and Joomla...etc. Support for popular languages beyond ASP.NETWebMatrix is a Microsoft tool, so you would expect first class support for ASP.NET, which it has. However, WebMatrix also provides support for other commonly used languages such as PHP, HTML5, JQuery, CSS3 and even Node.js. Optimized for MobileWebMatrix helps you design your websites not only for the desktop, but also for these new mobile form factors. WebMatrix comes with mobile friendly templates, code-completion for jquery mobile, and mobile device emulators. ExtensionsWebMatrix supports extensions that extend its core functionality. Microsoft provides a means of extension discovery in their new Extension Gallery and also allows you to create your own extensions. WebMatrix Publish SettingsIn the DiscountASP.NET Control Panel you can navigate to the Account Info section and download the XML Web Deploy publish settings for WebMatrix."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/legacy-hosting/webmatrix"
+tags = ["beyond", "built", "contact", "editing", "extensions", "features", "hosting", "ide", "integrated", "languages"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/cloud-hosting/custom-private-cloud"]
+title = "DiscountASP.NET: Fully Managed Hosting Solutions, Custom Private Cloud"
+description = "DiscountASP.NET offers Fully Managed Hosting Solutions - Custom Private Cloud Solutions under their sister brand, Everleap."
+full_description = "Let's talk - we offer custom cloud solutions with our Managed Services division. That includes private clouds - completely customizable server configurations and platforms, application hosting, devops environments, database servers and maintenance, clustering, disaster recovery, backups - whatever your needs may be, we have the experience and expertise to consult and propose a solution. Custom Private Cloud services are provided through Everleap, DiscountASP.NET's sister cloud hosting company."
+year_published = 2025
+clearnet = "https://discountasp.net/cloud-hosting/custom-private-cloud"
+tags = ["application", "beyond", "cloud", "contact", "custom", "database", "devops", "hosting?", "intranet", "needs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "cloudflare.com", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "meetings.hubspot.com", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/mojoportal"]
+title = "mojoPortal Hosting with DiscountASP.NET Shared ASP.NET Hosting Service"
+description = "mojoPortal Hosting with DiscountASP.NET Microsoft Windows Shared ASP.NET Hosting Service"
+full_description = "mojoPortal is an Object-Oriented web site content management framework written in C# that runs under ASP.NET on Windows. Available for free, think of mojoPortal as a Starter Kit for advanced ASP.NET websites and portals. The DiscountASP.NET hosting platform is fully compatible with mojoPortal (requires the SQL add-on to the base ASP.NET hosting plan)."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/mojoportal"
+tags = ["contact", "features", "mojoportal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "joomla.org", "mojoportal.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting"]
+title = "Shared ASP.NET Hosting and Shared Windows Hosting with DiscountASP.NET"
+description = "Shared Windows hosting, ASP.NET Hosting, SQL Hosting, TFS Hosting, Managed Hosting with expert technical support is DiscountASP.NET's specialty."
+full_description = "Shared Windows hosting is our specialty, we've been doing it since 2003. In addition to bringing you the latest technology in the Microsoft Web Platform, we also continue to support many of the older Microsoft technologies. So if your old host has abandoned support for your legacy applications, chances are we can help. DiscountASP.NET is independently owned and operated, and comes to you from Monrovia, California, in the beautiful San Gabriel Valley, with data centers in Los Angeles and London."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting"
+tags = ["cloud hosting", "contact", "hosting", "independently", "ms sql", "operated", "owned", "shared", "site hosting", "sql"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/legacy-hosting/expression"]
+title = "Microsoft Expression Hosting on DiscountASP.NET’s ASP.NET Hosting Plan"
+description = "Microsoft Expression Hosting on Shared Windows ASP.NET Hosting Plan at DiscountASP.NET"
+full_description = "Expression has been discontinued by Microsoft. Microsoft Expression Web was to be the replacement for FrontPage (discontinued in 2014), however Microsoft decided to discontinue Expression, and mainstream support ended in 2015. If you are still using Expression, DiscountASP.NET supports sites built with Expression Web. However, you can only target older ASP.NET versions with Expression. Professional code editor Increase your productivity for editing and debugging with IntelliSense and color-coding for HTML, CSS, JavaScript, and PHP. Professional design surface Expression helps you generate elegant and modern CSS layouts and provides the ability to directly manipulate positioning, sizing, margins and padding. You can also see a faithful representation of the final browser-rendered page. Standards-based websites With support for a broad range of scripting and server-side technologies, Expression Web provides the flexibility and supports PHP, HTML/XHTML, XML/XSLT, CSS, JavaScript, ASP.NET or ASP.NET AJAX, Silverlight, Flash, Windows Media, and Photoshop, as well as integration with Microsoft Visual Studio and Expression Studio. Built-in support for Web standards makes it easy to optimize your sites for cross-browser compatibility. Build dynamic sites You can build sites with rich with video, audio, or animation. You can easily add Silverlight, Flash, and DeepZoom with drag-and-drop controls. Rich data presentation Expression Web allows you to build and format views of standard XML data using drag-and-drop tools for quick visualization and XML data can be retrieved and presented via live RSS feeds."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/legacy-hosting/expression"
+tags = ["build", "built", "code", "contact", "data", "design", "dynamic", "editor", "expression", "expression blend"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/about-us/news"]
+title = "DiscountASP.NET news and press releases"
+description = "DiscountASP.NET news and press releases about ASP.NET Hosting solutions. TFS Hosting solutions, Everleap Cloud Hosting solutions."
+full_description = "October 1, 2024DiscountASP.NET Announced as Visual Studio Magazine 2024 Reader’s Choice Bronze Award Winner for Web Hosting. July 12, 2024DiscountASP.NET renews EU-U.S. Data Privacy Framework with UK Extension, and Swiss-U.S. Data Privacy Framework Certification. July 28, 2023DiscountASP.NET attains EU-U.S. Data Privacy Framework with UK Extension, and Swiss-U.S. Data Privacy Framework Certification. May 2022Microsoft Silver Partner Status RenewedDiscountASP.NET renews Microsoft Silver Partner status with the Silver Cloud Platform competency. May 2021Microsoft Silver Partner Status RenewedDiscountASP.NET renews Microsoft Silver Partner status with the Silver Cloud Platform competency. November 28, 2020DiscountASP.NET updated .NET Core 3.x and .NET Core 2.x and updated PHP PHP 7.3 and PHP 7.2 May 27, 2020Microsoft Silver Partner Status RenewedDiscountASP.NET renews Microsoft Silver Partner status with two competencies. May 11, 2019Microsoft Silver Partner Status RenewedDiscountASP.NET renews Microsoft Silver Partner status with three competencies. April 23, 2019SQL 2017 Hosting is availableDiscountASP.NET launches SQL 2017 hosting as a new shared SQL hosting option in the USA- and UK- based datacenter. December 18, 2018DiscountASP.NET wins Visual Studio Magazine Award AgainDiscountASP.NET wins Visual Studio Magazine 2019 Readers Choice Award for Best ASP.NET WEb Hosting October 16, 2018Privacy Shield Certifications RenewedDiscountASP.NET renews EU-US Privacy Shield and Swiss-US Privacy Shield Certifications. November 1st, 2017Live chat support (beta)We're testing live chat support in Control Panel. The link will be visible when someone from support is available. October 31st, 2017Reducing .NET Core Memory UsageIf your .NET Core application is using more memory than you anticipated, check out this article about reducing memory use. July 20, 2017DiscountASP.NET launches new corporate websiteThis rates as news considering the last time the site underwent a design change was 2003 (when it was established)."
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/news"
+tags = ["1st,", "31st,", "april", "august", "contact", "december", "february", "hosting", "january", "july"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "twitter.com"]
+
+["https://discountasp.net/control-panel/master-control-panel"]
+title = "DiscountASP.NET Master Control Panel: Multi-Account Consolidation Tool"
+description = "DiscountASP.NET Master Control Panel: Multi-Account Tool to consolidate management of multiple accounts"
+full_description = 'DiscountASP.NET offers the most advanced Microsoft-based shared web hosting system in the industry today, which is why many of our customers host multiple accounts with us. To facilitate the management of multiple hosting accounts, we have developed a Master Control Panel system to allow you to bind and manage multiple Control Panels together under one login. To access the Master Control Panel, go to the regular hosting Control Panel and use your Master Login credentials. You will then be able to toggle between all of your bound Control Panels. See this Knowledge Base article How to log in to multiple Control Panels with one login for instructions on managing multiple Control Panels. "I just wanted to say thank you for your latest innovation, the master control panel. Great work. Makes my life easier!! When I was looking for a site ...I was looking for ASP.NET support, good tech support, reliable service and all at a reasonable price. I now have 4 hosting sites on DiscountASP.NET and I will probably have more." - P. Nolan'
+year_published = 2025
+clearnet = "https://discountasp.net/control-panel/master-control-panel"
+tags = ["contact", "control", "control panel", "customers", "master", "master control panel", "multi-account control", "panel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "cloudflare.com", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "meetings.hubspot.com", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/asp-hosting"]
+title = "ASP hosting, Active Server Page hosting at DiscountASP.NET"
+description = "ASP Hosting, Active Server Page webhosting, Classic ASP Web Hosting, ASP 3.0 Hosting at DiscountASP.NET"
+full_description = "Microsoft Active Server Pages (ASP, Classic ASP, ASP 3.0) is an older Microsoft server-side scripting environment that is fully supported on the DiscountASP.NET platform. ASP can be used to create and run dynamic, interactive web applications. With ASP, you can combine HTML pages and script commands to create interactive web pages or powerful web-based applications. Microsoft ASP enables HTML pages to be dynamic and interactive by embedding scripts, e.g., VBScript or JScript. ASP pages with the file extension .asp are processed on-the-fly by the web server, and any browser can render the pages as the resulting output is standard HTML."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/asp-hosting"
+tags = ["contact", "hosting", "server"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/cloud-hosting"]
+title = "DiscountASP.NET operates Everleap.com, ASP.NET Cloud & Managed Hosting"
+description = "DiscountASP.NET operates a sister cloud hosting solution at Everleap.com. Shared ASP.NET cloud hosting and Fully Managed Hosting solutions."
+full_description = "We have developed a new cloud platform that is the next step in the evolution of website hosting. Everleap is a fast, flexible, scalable, fault tolerant, load balanced ASP.NET cloud hosting. Whether your .NET applications have simply outgrown traditional shared Windows hosting, or you want to stop having server management headaches with a VPS server or dedicated server, or you're in search of a simpler, affordable alternative to Azure or AWS, we invite you to take a look at Everleap."
+year_published = 2025
+clearnet = "https://discountasp.net/cloud-hosting"
+tags = ["cloud", "cloud hosting", "contact", "everleap", "hosting", "load balanced hosting", "managed hosting", "windows", "windows cloud"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "cloudflare.com", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "trustpilot.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/blog-hosting/wordpress"]
+title = "WordPress Hosting on DiscountASP.NET Windows-Based Hosting Platform"
+description = "DiscountASP.NET hosts thousands of WordPress installations for some of the most demanding developers in the world."
+full_description = "With 25% of the world's websites running on top of a WordPress back end, it is easily the most popular web application of any kind. You may not immediately think of a Windows server as a natural host for a php/MySQL application, but we host thousands of WordPress installations for some of the most discerning and demanding developers in the world. WordPress began as just a blogging system, but has evolved to be used as full content management system (CMS) through the thousands of plugins and widgets and themes. The core WordPress software is built and maintained by hundreds of community volunteers. There are thousands of plugins and themes available to transform your site into almost anything you can imagine. Read the Documentationand become a WordPress expert. You don't need much in the way of documentation to get started though. Install, write, publish - it couldn't be easier."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/blog-hosting/wordpress"
+tags = ["contact", "documentation", "download", "hosting", "install", "mysql", "php", "wordpress"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net"]
+title = "ASP.NET Hosting Experts in .NET, .NET Core, ASP.NET, SQL, MVC, ASP"
+description = "ASP.NET hosting trusted by developers since 2003. Reliable full trust .NET Core, SQL, MVC, Access, ASP hosting."
+full_description = "Expert .NET Core hosting and ASP.NET hosting, SQL and MySQL, ASP, get 3 months free with the annual plan. All the advantages of Team Foundation Server with none of the server maintenance. Free for 30 days with 5 users. We also offer scalable ASP.NET Shared Cloud Hosting and Managed Hosting under the brand, Everleap.com. Check it out. We've been hosting ASP.NET sites since day one, and we have become the most trusted and respected ASP.NET host in the field. With multiple awards from Visual Studio Magazine, Code Project, asp.netPRO Magazine (DevPro Connections) and many others, DiscountASP.NET is the established leader in ASP.NET hosting. - $10 a month base ASP.NET hosting plan - We support the very latest Microsoft Web Platform - Expert, local support staff helps you solve problems - Over a decade of award-winning service since 2003! - Instant account activation We have sponsored .NET user groups in over 90 U.S. cities and more than 20 countries, GiveCamps in the United States and Europe, Code Camps in the U.S. and Canada, as well as domestic and international events, conferences and popular ASP.NET resource sites. Have been a customer of DiscountAsp.NET for over 10 years and have never been left down. Excellent Knowledge base articles and prompt Tech Support when needed. I have ASP.NET & SQL Server hosting and everything from initial setup to recurring backups is a breeze. Definitely recommend for projects of any size. - Happy Programmer I own a small software company. I have hosted sites with DiscountASP.NET for many years. They are, without question, the best. Because of client demands, I host sites in other places, with other companies and in every cloud in the sky. Some of these companies are good but none match the service, the response time and the professional approach of DiscountASP.NET - V. Stack I think I've been with DiscountASP.NET for probably 10 years or very close to that. That is because I had no reason to change! As a developer, everything I needed and more, was always there at the ready... I've never had a problem and when I had questions, they were answered immediately. I always found I had the same freedom as my development workstation, whether it was privileged access to my databases, code deployment, 3rd-party tools, latest version of a framework—no issues. I hosted on Windows servers and I would recommend DiscountASP.NET to any developer. - Madvox"
+year_published = 2025
+clearnet = "https://discountasp.net"
+tags = ["access hosting", "asp hosting", "awards", "cloud", "community", "contact", "customers", "experience", "free", "givecamps"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "twitter.com"]
+
+["https://discountasp.net/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 919e9c281bb34411 • Your IP: Click to reveal 199.19.75.73 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://discountasp.net/cdn-cgi/l/email-protection"
+tags = ["919e9c281bb34411", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "cloudflare.com", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "trustpilot.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/joomla"]
+title = "Joomla Hosting on DiscountASP.NET, Joomla! Hosting at DiscountASP.NET"
+description = "Joomla Hosting on Shared Windows PHP Hosting Platform at DiscountASP.NET"
+full_description = "Joomla! is an award-winning content management system which enables you to build websites and powerful online applications. Its ease-of-use and extensibility have made it one of the most popular web site software packages available. Joomla! is an open source solution that is freely available to everyone. The DiscountASP.NET hosting platform is fully compatible with Joomla!."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/joomla"
+tags = ["cms", "contact", "hosting", "joomla", "joomla!", "links", "mysql", "php", "resource"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "joomla.org", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/umbraco"]
+title = "Umbraco Hosting, Umbraco CMS Hosting, ASP.NET Hosting, DiscountASP.NET"
+description = "Umbraco CMS hosting on DiscountASP.NET’s Windows ASP.NET Hosting Plan."
+full_description = "Umbraco is a free, open-source CMS application that is both simple to use, yet has unlimited potential. It is a full-featured web content management system that is easy to customize and robust enough to run large sites such as ASP.NET, SanDisk, Wired UK and Heinz ketchup. The DiscountASP.NET hosting platform is fully compatible with Umbraco."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/umbraco"
+tags = ["cloud hosting", "contact", "developers", "features", "hosting", "umbraco", "umbraco cms", "umbraco hosting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "github.com", "joomla.org", "my.discountasp.net", "orchard.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "twitter.com", "umbraco.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/blog-hosting/blogengine"]
+title = "BlogEngine.Net compatible ASP.NET Hosting with DiscountASP.NET Hosting"
+description = "BlogEngine.Net compatible hosting is available with DiscountASP.NET ASP.NET Hosting service."
+full_description = '''Focused on simplicity, ease of extendibility, and innovative features, BlogEngine.NET is an open source .NET blogging project with less complexity, easy customization, and one that takes advantage of the latest .NET features. The DiscountASP.NET hosting platform is fully compatible with BlogEngine.NET. Plug 'n playBlogEngine.NET is very easy to setup and customize. To make it work, just upload the files to an ASP.NET 4.5 webserver and you’re ready to start writing. No database configuration, just plug ‘n play. Multi-Author SupportBlogEngine.NET supports multiple authors posting to the same blog. Visitors can subscribe to the individual author’s RSS feed or view posts only from their favorite author. ThemesBlogEngine.NET includes some themes for you to skin your blogging site. You can also easily modify or create new themes. "Web 2.0" FeaturesBlogEngine.NET features social bookmarks, OpenSearch support, AJAX, APML, Gravatars, coComments, tag cloud, Google sitemap and other Web 2.0 features.'''
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/blog-hosting/blogengine"
+tags = ['"web', '2.0"', "blog", "blogengine", "contact", "dotnetblogengine", "features", "hosting", "multi-author", "play"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/about-us/company-history"]
+title = "The Story Behind Award-Winning ASP.NET Hosting Leader, DiscountASP.NET"
+description = "The Story Behind DiscountASP.NET, Award-Winning ASP.NET Hosting Leader"
+full_description = "DiscountASP.NET comes to you from great metropolis of Los Angeles, where we began back in 2003. Before that, most of us worked for other hosting companies in town. And like good employees everywhere, we all figured that we knew a much better way to run things. As it turns out, Frank Cheung and Takeshi Eto actually did know a better way. They felt so strongly about their ideas that they decided to put them into motion, and DiscountASP.NET was born. Frank wanted to build a platform for developers based on the latest Microsoft technology at the time, ASP.NET. Takeshi wanted to continue his pioneering work in providing high quality hosting services at below market prices. Together they laid the groundwork for DiscountASP.NET and got to work building a team that could bring their ideas to life. DiscountASP.NET was among the very first companies anywhere to offer ASP.NET hosting, and it was a big hit from day one. It's cool to be first, but we also wanted to be the best option for ASP.NET hosting, so we focused on support and staying a step ahead of everyone else in the game when it came to introducing new technology, and new versions of existing technology. To genuinely focus on support means that our tech support team has to stay abreast of the changing technology and be prepared for anything that comes their way. They do that through weekly training (yes, weekly) and constant immersion in ASP.NET technology. The .NET community has enthusiastically responded to our way of doing things, and we've returned the favor with support for the .NET community through User Group, CodeCamp and GiveCamp sponsorships and appearances, as well as support for other tech-centric gatherings all over the world. If there's one thing you can be sure of it's that the hosting technology landscape will continue to change. But no matter how it changes, you can be sure that we will always keep and value our core focus on .NET, and we'll continue to be here to support your ASP.NET applications and websites."
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/company-history"
+tags = ["award-winning", "contact", "history", "hosting", "leader", "story"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "twitter.com"]
+
+["https://discountasp.net/about-us/reviews"]
+title = "DiscountASP.NET reviews and testimonials"
+description = "Read DiscountASP.NET reviews, testimonials and kudos for DiscountASP.NET ASP.NET web hosting services"
+year_published = 2025
+clearnet = "https://discountasp.net/about-us/reviews"
+tags = ["advice", "almost", "best!", "contact", "customer", "development", "excellent", "fantastic", "for?", "for…"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.discountasp.net", "blog.everleap.com", "community.discountasp.net", "everleap.com", "facebook.com", "my.discountasp.net", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com"]
+
+["https://discountasp.net/asp.net-hosting/cms-hosting/sitefinity"]
+title = "Sitefinity Hosting: Sitefinity CMS runs best on Everleap Cloud Hosting"
+description = "Sitefinity Hosting: Sitefinity CMS runs best on Everleap Cloud Hosting or Everleap Managed Hosting Solutions."
+full_description = "Sitefinity is a robust CMS that provides an extensive tool set for addressing the challenges associated with managing a modern website. Solutions for mobile, email campaigns, social media, e-commerce, blogs, forums, search, and much more are instantly accessible. Since Sitefinity is a powerful and flexible application, it isn't surprising that it is also very resource intensive. While older versions performed well on DiscountASP.NET shared hosting, current versions of Sitefinity require more server resources to run optimally. We can move your Sitefinity site to Everleap, or we can do a fresh install of Sitefinity for you. You can try Everleap free for 30 days."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/cms-hosting/sitefinity"
+tags = ["cloud hosting", "contact", "hosting", "shared", "sitefinity", "sitefinity cms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "community.discountasp.net", "dnnsoftware.com", "docs.joomla.org", "drupal.org", "everleap.com", "facebook.com", "github.com", "joomla.org", "my.discountasp.net", "orchard.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "wordpress.org"]
+
+["https://discountasp.net/asp.net-hosting/legacy-hosting/frontpage"]
+title = "Microsoft FrontPage Hosting: Support for Legacy Technologies/Software"
+description = "DiscountASP.NET offers limited support for Microsoft FrontPage Hosting. We support Legacy Technologies and Software"
+full_description = "Microsoft discontinued support for FrontPage some time ago (the last new version was released in 2002). But while the interactive features and publishing are no longer supported (see below), you can still use old versions of FrontPage for basic page editing and publish using standard FTP. So if you need a home for Your FrontPage site while you consider options for modernizing Your development environment, DiscountASP.NET is here for you. Note that the interactive bot features of FrontPage websites, including hit counters, feedback forms, guest books and search boxes require FrontPage server extensions which are no longer available. The Microsoft FrontPage website publishing feature also relies on FrontPage extensions so this feature is also no longer available."
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/legacy-hosting/frontpage"
+tags = ["contact", "frontpage", "frontpage hosting", "hosting", "microsoft", "microsoft frontpage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "blog.discountasp.net", "blog.everleap.com", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "drupal.org", "everleap.com", "github.com", "joomla.org", "my.discountasp.net", "nopcommerce.com", "nopcommerce.on-everleap.com", "sitefinity.on-everleap.com", "support.discountasp.net", "tfs.discountasp.net", "trustpilot.com", "twitter.com", "umbraco.com", "yetanotherforum.net"]
+
+["https://discountasp.net/asp.net-hosting/visual-studio"]
+title = "Visual Studio supported for Shared ASP.NET Hosting at DiscountASP.NET"
+description = "DiscountASP.NET supports Visual Studio 2022 and many earlier Visual Studio versions"
+full_description = 'Visual Studio 2015 supports building apps with ASP.NET Core. You can download the Visual Studio SDK here. Drag visual guides from rulers to precisely place elements and create custom layouts with ease. The XAML editor supports IntelliSense for databinding and resources and smart commenting. Use the Peek Definition command to view and edit code without having to switch away from the code that you are writing. When working with long code files, you can customize the code window scroll bar to give you a better view of what is happening in your code. VS 2013 includes .NET Framework memory analysis, enhanced unit test filtering, enhanced C++ code analysis rules categorization and filtering. Visual Studio adds search functions that span the entire environment including code, menus, dialog boxes and controlsâ€"but also extends across the entire environment. For more responsive applications, Visual Studio 2012 supports new async methods modifiers and wait operators in C# and Visual Basic languages. VS 2012 provides tooling for several different platform such as desktop, web, Windows Phone and Xbox 360. Visual Studio 2012 comes with .NET Framework 4.5 and will support developing applications targeting Windows 8. NOTE: Our platform is at .NET 4.5.2 now and is backward compatible with .NET 4.5. Project compatibility means that developers using different versions of Visual Studio can work together. The Microsoft team has worked hard to de-clutter the interface design so that you can remain focused on your development tasks without distraction. There are many application marketplaces such as the Windows Phone Marketplace for Windows Phone. Visual Studio 2012 offers integrated tools to publish applications to app stores so that you can expose your application to a large market. Document windows such as the Code Editor and the Design view window can float outside the IDE window, so you can drag the Code Editor and view it side by side with the Design view window. The new Code Editor makes code easier to read as you can zoom in on text and scroll with the mouse wheel. When you click a symbol in your code, all instances of that symbol are highlighted. A new Navigate To feature provides search-as-you-type support for files, types, and members. Navigate To enables you to take advantage of Camel casing and underscores to abbreviate your search text, so you can use for example, "AOH" to search for "AddOrderHeader."'
+year_published = 2025
+clearnet = "https://discountasp.net/asp.net-hosting/visual-studio"
+tags = ["4.5.2", "4.6.1", "and...", "angular.js", "applications", "async-aware", "asynchronous", "capabilities", "code", "codelens"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliate.discountasp.net", "alphasierrapapa.com", "aspupload.com", "blog.discountasp.net", "blogengine.io", "codex.wordpress.org", "community.discountasp.net", "everleap.com", "github.com", "joomla.org", "microsoft.com", "nopcommerce.com", "sitefinity.on-everleap.com", "support.discountasp.net", "support.persits.com", "trustpilot.com", "twitter.com", "umbraco.com", "visualstudio.com", "yetanotherforum.net"]

@@ -1,0 +1,409 @@
+["https://pdos.csail.mit.edu/~aguayo"]
+title = ""
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~aguayo"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["anish.io", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "dx.doi.org", "fs.net", "imconf.net", "intel.com", "jon.thesquareplanet.com", "mit.edu", "nms.csail.mit.edu", "nms.lcs.mit.edu", "pdos.lcs.mit.edu", "sigops.org", "sosp19.rcs.uwaterloo.ca", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/software"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Noria A new data-flow system for high-performance web applications Vuvuzela Private messaging system that hides metadata P2Psim Event driven peer-to-peer simulator Click A modular software router Pastwatch Robust, Distributed Version Control Asbestos Prototype operating system with IFC Exokernel Novel kernel that concentrates solely on securely multiplexing the raw hardware Grid Protocols for routing in ad hoc wireless networks, including GLS, a scalable location service. `C and tcc An ANSI C extension for dynamic code generation and its compiler Prolac A language for network protocol implementation CRL All-software distributed shared memory system Rover Application toolkit for mobile computing Fugu An exokernel for a scalable multiuser parallel system Logical disks An approach to improving file systems IRIS Infrastructure for Resilient Internet Systems RON Resilient Overlay Networks"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/software"
+tags = ["pdos", "software", "system"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "bencw12.github.io", "benkettle.xyz", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.utexas.edu", "css.csail.mit.edu", "darpa.mil", "fs.net", "mplayerhq.hu", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "read.cs.ucla.edu", "youtube.com"]
+
+["https://pdos.csail.mit.edu/~sbw"]
+title = "Silas Boyd-Wickizer"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~sbw"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~kaminsky"]
+title = "Michael Kaminsky"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~kaminsky"
+tags = ["please"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/projects/hwsec.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview We are working on building systems that are free of correctness bugs, security bugs, and timing side channels using formal verification. Our most recent project is Parfait (SOSP ‘24), a scalable approach to verifying HSMs’ correctness and security. It builds on our past research on K2 (KISV ‘23), an architecture for formally-verified HSMs; Chroniton (PLARCH ‘23), a tool for verifying constant-time cryptography at a cycle-precise level; Knox (OSDI ‘22), a framework for verifying HSMs’ correctness and security; Kronos (CARRV ‘21), a system for verifying output determinism for SoCs with multiple clock domains; and Notary (SOSP ‘19), a device for secure transaction approval. Parfait Parfait is a framework for proving that an implementation of a hardware security module (HSM) leaks nothing more than what is mandated by an application specification. Parfait proofs cover the software and the hardware of an HSM, which catches bugs above the cycle-level digital circuit abstraction, including timing side channels. Parfait’s contribution is a scalable approach to proving security and non-leakage by using intermediate levels of abstraction and relating them with transitive information-preserving refinement. This enables Parfait to use different techniques to verify the implementation at different levels of abstraction, reuse existing verified components such as CompCert, and automate parts of the proof, while still providing end-to-end guarantees. We use Parfait to verify four HSMs, including an ECDSA certificate-signing HSM and a password-hashing HSM, on top of the OpenTitan Ibex and PicoRV32 processors. Parfait provides strong guarantees for these HSMs: for instance, it proves that the ECDSA-on-Ibex HSM implementation—2,300 lines of code and 13,500 lines of Verilog—leaks nothing more than what is allowed by a 40-line specification of its behavior. Publications Modular Verification of Secure and Leakage-Free Systems: From Application Specification to Circuit-Level Implementation (SOSP ‘24) Code: IPR theory, verified HSMs Talk (slides) Formally Verifying Secure and Leakage-Free Systems: From Application Specification to Circuit-Level Implementation (PhD thesis) K2 K2 is a new architecture and verification approach for hardware security modules (HSMs). The K2 architecture’s rigid separation between I/O, storage, and computation over secret state enables modular proofs and allows for software development and verification independent of hardware development and verification while still providing correctness and security guarantees about the composed system. For a key step of verification, K2 introduces a new tool called Chroniton that automatically proves timing properties of software running on a particular hardware implementation, ensuring the lack of timing side channels at a cycle-accurate level. Publications The K2 architecture for trustworthy hardware security modules (KISV ‘23) Slides Chroniton We propose abandoning leakage models for verifying timing properties of cryptographic software, instead directly verifying software with respect to a hardware implementation at the RTL level. Early experiments include verifying that an Ed25519 implementation running on a 6-stage pipelined processor executes in a constant number of cycles. Many challenges remain, including scaling up to modern out-of-order speculative cores and extending the approach to reason about library code outside the context of a whole application. Publications Leakage models are a leaky abstraction: the case for cycle-level verification of constant-time cryptography (PLARCH ‘23) Code Slides Knox Knox is a framework for building correct and secure hardware security modules (HSMs) through formal verification spanning an implementation’s hardware and software. One key challenge addressed by Knox is defining what it means for an HSM to be secure. With information-preserving refinement (IPR), we capture the idea that an HSM implementation (spanning hardware and software), modeled at the level of wires and cycles, leaks no more information beyond what is allowed by its functional specification. Publications Verifying Hardware Security Modules with Information-Preserving Refinement (OSDI ‘22) Code: Knox framework, HSMs Talk (slides) Kronos Kronos is a system for verifying output determinism of SoCs with multiple clock domains. Output determinism says that after a reset (+ running initialization code), a SoCs externally-observable behavior does not depend on its pre-reset state, including microarchitectural state. Publications rtlv: push-button verification of software on hardware (CARRV ‘21) Code: rtlv, benchmark, kronos Talk Kronos: Verifying leak-free reset for a system-on-chip with multiple clock domains (MEng thesis) Notary Notary is a new hardware and software architecture for running isolated approval agents in the form factor of a USB stick with a small display and buttons. Approval agents allow factoring out critical security decisions, such as getting the user’s approval to sign a Bitcoin transaction or to delete a backup, to a secure environment. The key challenge addressed by Notary is to securely switch between agents on the same device. Prior systems either avoid the problem by building single-function devices like a USB U2F key, or they provide weak isolation that is susceptible to kernel bugs, side channels, or Rowhammer-like attacks. Notary achieves strong isolation using reset-based switching, along with the use of physically separate systems-on-a-chip for agent code and for the kernel, and a machine-checked proof of both the hardware’s register-transfer-level design and software, showing that reset-based switching leaks no state. Notary also provides a trustworthy I/O path between the agent code and the user, which prevents an adversary from tampering with the user’s screen or buttons. Publications Notary: A Device for Secure Transaction Approval (SOSP ‘19) Code Talk (slides)"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/hwsec.html"
+tags = ["abstraction:", "application", "approach", "approval", "architecture", "case", "chroniton", "circuit-level", "clock", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "att.com", "bencw12.github.io", "benkettle.xyz", "brynosaurus.com", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.utexas.edu", "css.csail.mit.edu", "darpa.mil", "sosp19.rcs.uwaterloo.ca", "youtube.com"]
+
+["https://pdos.csail.mit.edu/~benjie"]
+title = "Benjie Chen"
+full_description = "I received my Ph.D. in computer science in 2004, after being part of PDOS at CSAIL, MIT. See my LinkedIn profile. With Melina Fan, I co-founded Addgene in 2004, a non-profit organization that archives and distributes DNA-based reagents called plasmids. Addgene is a global leader in promoting and facilitating sharing in science. By 2011, Addgene has become a financially stable, self sustaining enterprise working with thousands of academic institutions world-wide."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~benjie"
+tags = ["graudate", "papers", "patents:", "theses:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "anish.io", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "eecs.mit.edu", "fs.net", "jon.thesquareplanet.com", "linkedin.com", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "sosp19.rcs.uwaterloo.ca", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~jsr"]
+title = "jsr"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~jsr"
+tags = ["james", "robertson"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~meelap"]
+title = "Meelap Shah"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~meelap"
+tags = ["meelap", "shah"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "ci.cambridge.ma.us", "city.davis.ca.us", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~xi"]
+title = "Xi Wang"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~xi"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~ydmao"]
+title = "Yandong Mao"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~ydmao"
+tags = ["yandong"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/projects/cspec.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview CSPEC is a framework in the Coq proof assistant for proving concurrent software correct using movers. The idea behind movers is to reduce the number of concurrent interleavings the programmer needs to consider. We’ve used CSPEC to prove a concurrent mail server correct which involves lock-free concurrency control with the file system. People Tej Chajed (PhD) Prof. M. Frans Kaashoek Prof. Nickolai Zeldovich Butler Lampson (Microsoft Research) Publications Verifying concurrent software using movers in CSPEC Tej Chajed, M. Frans Kaashoek, Butler Lampson, and Nickolai Zeldovich OSDI 2018"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/cspec.html"
+tags = ["concurrency", "concurrent", "cspec:", "movers", "overview", "project", "publications", "verification"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/jastr"]
+title = "Jacob Strauss"
+full_description = "Up until 2010 I was a a graduate student in the PDOS group at MIT CSAIL, where I worked on distributed systems, including networks, operating systems, and storage systems. Past projects include Eyo, a device transparent storage system that presents a single view of personal data collections, even from disconnected devices that cannot hold the entire collection locally, UIA, an overlay network that allows individuals to group devices by short readable names, and reach them regardless of their current network location, and Spruce (download code), an available bandwidth estimation tool. My CV. 6.033 Spring 2013 6.033 Spring 2011 6.001 Fall 2007 6.090 IAP 2007 6.001 Spring 2006 6.033 Spring 2004 6.829 Fall 2002 6.001 Spring 2001 Eyo: Device-Transparent Personal Storage. Jacob Strauss, Justin Mazzola Paluska, Chris Lesniewski-Laas, Bryan Ford, Robert Morris, and Frans Kaashoek. In the Proceedings of the 2011 USENIX Annual Technical Conference (USENIX '11), Portland, OR, June 2011. (PDF, talk slides) Device-Transparency: a New Model for Mobile Storage. Jacob Strauss, Chris Lesniewski-Laas, Justin Mazzola Paluska, Bryan Ford, Robert Morris, and Frans Kaashoek. In the Proceedings of the SOSP Workshop on Hot Topics in Storage and File Systems (HotStorage'09), Big Sky, MT, October 2009. Also published in SIGOPS Oper. Syst. Rev., 44(1):5-9, 2010 (PDF, talk slides) An Offline Foundation for Online Accountable Pseudonyms. Bryan Ford and Jacob Strauss. In the Proceedings of the First International Workshop on Social Network Systems (SocialNets 2008), Glasgow, Scotland, April 2008. (PDF, talk slides) Mynet: A Platform for Secure P2P Personal and Social Networking Services. Dimitris N. Kalofonos, Zoe Antoniou, Franklin D. Reynolds, Max Van-Kleek, Jacob Strauss, and Paul Wisner. In the Proceedings of the Sixth Annual IEEE International Conference on Pervasive Computing and Communications (PerCom 2008), Hong Kong, March 2008. (PDF) Persistent Personal Names for Globally Connected Mobile Devices. Bryan Ford, Jacob Strauss, Chris Lesniewski-Laas, Sean Rhea, Frans Kaashoek, and Robert Morris. In the Proceedings of the 7th USENIX Symposium on Operating Systems Design and Implementation (OSDI '06), Seattle, Washington, November 2006. (PDF)"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/jastr"
+tags = ["committees", "conference", "jacob", "program", "publications", "strauss", "teaching", "workshop"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anish.io", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "dx.doi.org", "fs.net", "imconf.net", "intel.com", "jon.thesquareplanet.com", "mit.edu", "nms.csail.mit.edu", "nms.lcs.mit.edu", "pdos.lcs.mit.edu", "sigops.org", "sosp19.rcs.uwaterloo.ca", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~neha"]
+title = "Neha Narula"
+full_description = "I'm a PhD student in PDOS, the Parallel and Distributed Operating Systems group at MIT, advised by Robert Morris and Eddie Kohler. My research interests are in distributed systems, particularly having to do with consistency and performance. I'm graduating soon and looking for opportunities in industry. Here is my CV. I worked for Google as a Software Engineer on Native Client, Blobstore, a system for efficiently storing and serving terabytes of large binary objects, and Froogle. I blog here to reflect on academia, systems research, the future of technology, and myself. I'm also on Twitter and Facebook, and these are the tools I use to work. Splitting and Replicating Data For Fast Transactions - Don't Give Up On Serializability Just Yet! CRAFT. Budapest, Hungary. April 24, 2015. Phase Reconciliation for Contended In-Memory Transactions. RICON. Las Vegas, NV. October 29, 2014. [slides, video] Phase Reconciliation for Contended In-Memory Transactions. OSDI. Broomfield, CO. October 5, 2014. [slides, video] Phase Reconciliation for Contended In-Memory Transactions. MIT IAP Cloud Workshop. Cambridge, MA. September 26, 2014. [slides] Consensus and Consistency: Why Should I Care? Berlin Buzzwords. Berlin, Germany. May 25, 2014. [slides, video] The Good, the Bad, and the Ugly (of Caching). All Your Base. Oxford, UK. October 18, 2013. [slides, video] Executing Queries on a Sharded Database. Strange Loop. St. Louis, MO. September 25, 2012. [slides, video] Executing Web Application Queries on a Partitioned Database. USENIX Webapps. Boston, MA. June 13, 2012. [video] Doppel. Doppel is an in-memory multicore transactional database designed to improve performance on workloads with many conflicting transactions. Doppel uses a technique called phase reconciliation; we take advantage of commutativity and executing transactions in explicit phases in order to increase concurrency. Doppel provides a dramatic performance improvement on highly conflicting workloads. Pequod. Pequod is an in-memory distributed caching layer which can automatically materialize and update the results of simple joins. It simplifies programs which manually perform incremental updates to cached objects, like Twitter timelines."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~neha"
+tags = ["advice", "award", "best", "bflow", "conference", "dixie", "doppel", "grad", "graduated!", "hearsay"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/projects/multicore.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview We build and investigate software systems for multicore computers. We have analyzed and fixed scalability problems in existing software, such as the Linux kernel, and built scalable software from scratch, such as RadixVM and the Corey kernel. To facilitate this work and help identify scalability bottlenecks on multicore computers we have built analysis tools, like DProf. Research directions The Scalable Commutativity Rule/Commuter The scalable commutativity rule is a formal rule for deciding when an implementation can scale based on interface-level properties. Commuter is a tool for using this to check the scalability of real software implementation. Papers and software RadixVM RadixVM is a scalable virtual memory system designed to parallelize VM operations on non-overlapping regions of the address space. Papers and software Linux Scalability This work analyzes the scalability of seven system applications running on Linux on a 48-core computer. Most applications trigger scalability bottlenecks inside a recent Linux kernel. Using mostly standard parallel programming techniques these bottlenecks can be removed from the kernel or avoided by changing the applications slightly. Modifying the kernel required in total 3002 lines of code changes. A speculative conclusion from this work is that there is no scalability reason to give up on traditional operating system organizations just yet. Papers, benchmarks, and kernel patches DProf DProf is a statistical profiler that helps programmers understand cache miss costs by attributing misses to data types instead of code. Papers and software Metis Metis is an in-memory MapReduce library optimized for multicore architectures. The high efficiency of Metis relies on the use of hash tables to store intermediate key/value pairs. To guarantee high performance, Metis determines the size of hash table by sampling the input, so that key/value insertions and queries are O(1). Metis also organizes key/value pairs within each hash table slot as a B+Tree and Parallel Sorting by Regular Sampling sorting algorithm for the Merge phase to prevent the inacurracy of sampling from degrading the performance. Papers and software Corey Corey is an experimental operating system designed to give applications control of sharing kernel data structures. Multiprocessor application performance can be limited by the operating system when the application uses the operating system frequently and the operating system services use data structures shared and modified by multiple processing cores. If the application does not need the sharing, then the operating system will become an unnecessary bottleneck to the applications’ performance. Corey arranges each kernel data structure so that only a single processor need update it, unless directed otherwise by the application. Papers and software"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/multicore.html"
+tags = ["applications", "commutativity", "corey", "data", "directions", "dprof", "kernel", "linux", "metis", "multicore"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Verifying transactional database systems Verifying practical and high-performance transactional database systems. Perennial: verifying concurrent storage systems Verifying crash-safe, concurrent systems using Iris and Coq. We at PDOS build and investigate software systems for parallel and distributed environments, and have conducted research in systems verification, operating systems, multi-core scalability, security, networking, mobile computing, language and compiler design, and systems architecture. PDOS builds high-performance, reliable, and working systems. We are part of MIT CSAIL. See our publications for more details about our research. We work concurrently on a number of research projects. Our currently active research projects can be roughly grouped into the following categories. Verified hardware/software systems Proving hardware security modules (HSMs) correct and secure. Verifying transactional database systems Verifying practical and high-performance transactional database systems. Perennial: verifying concurrent storage systems Verifying crash-safe, concurrent systems using Iris and Coq. See also the related Systems Security Group. Thanks to the National Science Foundation, DARPA, Quanta Computer, Google, Intel, AT&T, and IBM for supporting our research."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu"
+tags = ["at&t,", "computer,", "darpa,", "foundation,", "google,", "intel,", "national", "quanta", "research.", "science"]
+language = "en"
+internal-references = ["none"]
+external-references = ["att.com", "csail.mit.edu", "css.csail.mit.edu", "darpa.mil", "google.com", "ibm.com", "intel.com", "nsf.gov", "quantatw.com"]
+
+["https://pdos.csail.mit.edu/~decouto"]
+title = "Douglas S. J. De Couto's home page"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~decouto"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "anish.io", "bbn.com.", "caltech.edu.", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~rsc"]
+title = "Russ Cox @ MIT"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~rsc"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~jbicket"]
+title = "John Bicket"
+description = "John Bicket's home page"
+full_description = "I am a Ph.D. student in the Parallel & Distributed Operating Systems Group (pdos), where I work with Robert Morris. We are building inexpensive wireless networking equipment that anyone can deploy without a lot of technical expertise. John Bicket, Daniel Aguayo, Sanjit Biswas and Robert Morris, Architecture and Evaluation of an Unplanned 802.11b Mesh Network, Mobicom 2005, August 2005. Best Paper Award Winner John Bicket, Bit-rate Selection in Wireless Networks, Master's thesis, Massachusetts Institute of Technology, February 2005. Daniel Aguayo, John Bicket, Sanjit Biswas, Glenn Judd, Robert Morris, Link-level Measurements from an 802.11b Mesh Network, SIGCOMM 2004, August 2004. Best Paper Award Winner Douglas S. J. De Couto, Daniel Aguayo, John Bicket, and Robert Morris, A High-Throughput Path Metric for Multi-Hop Wireless Routing, Mobicom 2003, September 2003."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~jbicket"
+tags = ["bicket", "jbicket", "john"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/projects/vuvuzela.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview We aim to build communication systems that protect metadata (who is talking to whom) for large numbers of users. Vuvuzela is the first messaging system to provide strong metadata privacy for millions of connected users by using techniques such as mixnets and differential privacy. Alpenhorn builds on these techniques to solve the “bootstrapping problem” for metadata-private communication. Stadium, our latest system, shows how to scale these techniques horizontally over many more servers to support even more users. We are working to deploy Vuvuzela and Alpenhorn at vuvuzela.io. The code for these systems is available on Github: Vuvuzela Alpenhorn Publications Vuvuzela (SOSP ‘15): Scalable Private Messaging Resistant to Traffic Analysis. Alpenhorn (OSDI ‘16): Bootstrapping Secure Communication Without Leaking Metadata. Stadium (SOSP ‘17): A Distributed Metadata-Private Messaging System. Karaoke (OSDI ‘18): Distributed Private Messaging Immune to Passive Traffic Analysis. Yodel (SOSP ‘19): Strong Metadata Security for Voice Calls. People David Lazar Yossi Gilad Jelle van den Hooff Nirvan Tyagi Derek Leung Prof. Nickolai Zeldovich Prof. Matei Zaharia"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/vuvuzela.html"
+tags = ["alpenhorn", "communication", "karaoke", "messaging", "metadata-private", "overview", "project", "publications", "stadium", "vuvuzela"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "infoq.com", "jon.tsp.io", "linkedin.com", "nms.csail.mit.edu", "systems.cs.brown.edu", "tickc", "winterlodge.com", "zdnet.com"]
+
+["https://pdos.csail.mit.edu/projects/splinter-sieve.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview As companies experience more security breaches and data leakages (intentional or unintentional), there has been a need for systems that can provide stronger guarantees in face of these breaches. The goal of this line of research is to apply cryptographic techniques practically to secure web application databases and provide strong guarantees against realistic adversaries. Projects Splinter Many online services let users query public datasets such as maps, flight prices, or restaurant reviews. Unfortunately, the queries to these services reveal highly sensitive information that can compromise users’ privacy. A user splits her query into multiple parts and sends each part to a different provider that holds a copy of the data. As long as any one of the providers is honest and does not collude with the others, the providers cannot determine the query. Splinter uses and extends a new cryptographic primitive called Function Secret Sharing (FSS) that makes it up to an order of magnitude more efficient than prior systems based on Private Information Retrieval and garbled circuits. We develop protocols extending FSS to new types of queries, such as MAX and TOPK queries. We also provide an optimized implementation of FSS using AES-NI instructions and multicores. Splinter achieves end-to-end latencies below 1.6 seconds for realistic workloads including a Yelp clone, flight search, and map routing. Sieve Sieve is a new platform which selectively (and securely) exposes user data to web services. Sieve has a user-centric storage model: each user uploads encrypted data to a single cloud store, and by default, only the user knows the decryption keys. Given this storage model, Sieve defines an infrastructure to support rich, legacy web applications. Using attribute-based encryption, Sieve allows users to define intuitively understandable access policies that are cryptographically enforceable. Using key homomorphism, Sieve can re-encrypt user data on storage providers in situ, revoking decryption keys from web services without revealing new keys to the storage provider. Using secret sharing and two-factor authentication, Sieve protects cryptographic secrets against the loss of user devices like smartphones and laptops. The result is that users can enjoy rich, legacy web applications, while benefiting from cryptographically strong controls over which data a web service can access. People Frank Wang (PhD) Cathie Yun (MEng) Prof. James Mickens (Harvard) Prof. Nickolai Zeldovich Prof. Vinod Vaikuntanathan Prof. Shafi Goldwasser Prof. Matei Zaharia (Stanford) Publications Splinter: Practical Private Queries on Public Data Frank Wang, Catherine Yun, Shafi Goldwasser, Vinod Vaikuntanathan, Matei Zaharia. NSDI’17 (Slides) Sieve: Cryptographically Enforced Access Control for User Data in Untrusted Clouds. Frank Wang, James Mickens, Nickolai Zeldovich, Vinod Vaikuntanathan. NSDI ‘16 (Slides) Publicity Sieve MIT, Harvard researchers push new way for users to control access to personal data, Computer World Could this encrypted cloud service make apps take your privacy seriously again?, ZDNet Cryptographic system would allow users to decide which applications access which aspects of their data, MIT News"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/splinter-sieve.html"
+tags = ["access", "cryptographic", "data", "databases", "overview", "prof.", "project", "projects", "publications", "publicity"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "infoq.com", "jon.tsp.io", "linkedin.com", "nms.csail.mit.edu", "systems.cs.brown.edu", "tickc", "winterlodge.com", "zdnet.com"]
+
+["https://pdos.csail.mit.edu/~athicha"]
+title = "Athicha Muthitacharoen"
+full_description = "I'm a Ph.D. student at MIT CSAIL. My advisor is Robert Morris. I'm interested in building robust distributed systems, especially storage systems. I'm also interested in analyzing and optimizing the performance of these systems. Projects I have contributed include LBFS (A Low-Bandwidth File System) and Ivy. Marcos K. Aguilera, Jeffrey C. Mogul, Janet Wiener, Patrick Reynolds and Athicha Muthitacharoen. Performance debugging for distributed systems of black boxes. In the proceedings of the 19th ACM Symposium on Operating Systems Principles, October 2003. PDF. Benjie Chen, Thomer Gil, Athicha Muthitacharoen, and Robert Morris. Building Data Structures on Untrusted Peer-to-Peer Storage with Per-participant Logs. In the proceedings of the 22nd PODC. Extended Abstract. Boston, Massachusetts. July, 2003. PDF. Athicha Muthitacharoen, Robert Morris, Thomer Gil, and Benjie Chen. Ivy: A Read/Write Peer-to-peer File System. In the proceedings of the Fifth Symposium on Operating Systems Design and Implementation (OSDI). Boston, MA. December 2002. PostScript, Compressed PostScript, PDF, Source Code. Russ Cox, Athicha Muthitacharoen, Robert T. Morris. Serving DNS using a Peer-to-Peer Lookup Service. In the proceedings of the First International Workshop on Peer-to-Peer Systems (IPTPS '02). March, 2002; Cambridge, MA. Postscript PDF Athicha Muthitacharoen, Benjie Chen, and David Mazières. A Low-bandwidth Network File System. In the Proceedings of the 18th Symposium on Operating Systems Principles (SOSP). Banff, Canada. October, 2001. Abstract, Bibtex, PostScript, Compressed PostScript, PDF, Source Code. Athicha Muthitacharoen, Benjie Chen, and David Mazières. A Low-bandwidth Network File System. In the Proceedings of the First Annual Student Oxygen Workshop. Gloucester, MA USA. July, 2001. PDF."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~athicha"
+tags = ["athicha", "muthitacharoen", "publications"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anish.io", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "eecs.mit.edu", "fs.net", "imconf.net", "jon.thesquareplanet.com", "mit.edu", "nms.csail.mit.edu", "nms.lcs.mit.edu", "pdos.lcs.mit.edu", "podc.org", "sosp19.rcs.uwaterloo.ca", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~micahbro"]
+title = "Home | Micah Brodsky"
+full_description = 'Freelance researcher and software developer affiliated with MIT, specializing in self-maintaining and self-organizing systems. Experienced in biophysical & agent-based simulation, bio-mimetic engineering, and bottom-up design, as well as traditional operating systems & networking. Currently working in collaboration with the Allen Discovery Center at Tufts University. Bio-inspired approaches to software, hardware, security, and fabrication.Engineering-inspired approaches to development, regeneration, cancer, and synthetic biology.Systems researcher and hacker. "Full stack" — electrons and up. Alum of the MAC and DIG groups (and previously PDOS) at CSAIL, advised by the one and only Gerald Jay Sussman.'
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~micahbro"
+tags = ["brodsky", "micah"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "english.pku.edu.cn", "fs.net.", "imconf.net", "linkedin.com", "nms.csail.mit.edu", "org.lcs.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~petar"]
+title = ""
+full_description = "PhD candidate at MIT, Computer Science and Artificial Intelligence Lab, happy to be advised by Prof. Jonathan Kelner and supported by Prof. Frans Kaashoek. Avid Ashtangi. I am interested in Applied Theory, Network Design, Convex Geometry and Probability in Computer Science. According to the Internet, I am best known as the co-creator of Kademlia. My current ambition is Tonika."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~petar"
+tags = ["@maymounkov", "address", "email:", "essays", "google+", "homepage", "mailing", "moved", "office:", "tweets"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~alex"]
+title = "Aleksey Pesterev"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~alex"
+tags = ["aleksey", "pesterev", "projects", "publications"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anish.io", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "dx.doi.org", "eecs.mit.edu", "fs.net", "imconf.net", "jon.thesquareplanet.com", "mit.edu", "nms.csail.mit.edu", "nms.lcs.mit.edu", "pdos.lcs.mit.edu", "sigops.org", "sosp19.rcs.uwaterloo.ca", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/projects/vmvcc.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview The goal of this project is to build and formally verify practical and high-performance transactional database systems, based on the Perennial verification framework. Our OSDI ‘23 vMVCC paper reports on our first step toward the goal: verifying a high-performance transaction library. vMVCC vMVCC is a high-performance transaction library with a formal specification and a machine-checked proof of correctness. vMVCC addresses the core technical challenge faced by the transaction layer in a database—correctly and efficiently executing concurrent transactions. vMVCC adopts multi-version concurrency control (MVCC), a popular technique used in many other research and commercial database systems. MVCC improves concurrency by retaining past versions for readers to read, while allowing writers to add new versions. Formally reasoning about MVCC requires advanced proof techniques, such as logical atomicity and prophecy variables. Results Paper (OSDI ‘23) Code Proof People Yun-Sheng Chang (PhD) Upamanyu Sharma (PhD) Prof. Ralf Jung (ETH Zürich) Prof. Joseph Tassarotti (New York University) Prof. M. Frans Kaashoek Prof. Nickolai Zeldovich"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/vmvcc.html"
+tags = ["database", "overview", "prof.", "project", "results", "systems", "transactional", "verifying", "vmvcc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "att.com", "bencw12.github.io", "benkettle.xyz", "brynosaurus.com", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.utexas.edu", "css.csail.mit.edu", "darpa.mil", "sosp19.rcs.uwaterloo.ca", "youtube.com"]
+
+["https://pdos.csail.mit.edu/~ericp"]
+title = "Eric's Homepage"
+description = "Eric Peterson's useful documents"
+author = "ECP"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~ericp"
+tags = ["albums", "books", "ericp pdos eric peterson", "exotic", "lounge", "manuals", "papers", "software", "tutorials"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "anish.io", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~kerr"]
+title = "Deborah Wallach"
+full_description = "I used to be a member of the Concurrent VLSI Architecture group with Professor William Dally in the MIT Artificial Intelligence Laboratory, where I worked on the J-Machine Project among other things. After 12/18/96, I will be reachable at: 4735 Cowell Blvd., Apt 43 Davis, CA 95616 This is a temporary address only."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~kerr"
+tags = ["deborah", "wallach"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "ci.cambridge.ma.us", "city.davis.ca.us", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/people"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Group Leaders Professor Adam Belay Professor Henry Corrigan-Gibbs Professor M. Frans Kaashoek Professor Robert Morris Professor Nickolai Zeldovich Professor Fernando J. Corbató (emeritus) Research Affiliates Joseph Tassarotti Malte Schwarzkopf Postdocs Ankit Bhardwaj Emma Dauterman Julia Len PhD Students Alexandra Henzinger Ariel Szekely Baltasar Dinis Ben Holmes Derek Leung Dongjae Lee Gohar Irfan Chaudhry Hannah Gross Josh Fried Ryan Lehmkuhl Sanjit Bhat Upamanyu Sharma Yun-Sheng Chang Undergrad and MEng Students Alumni Alana Marzoev Aleksey Pesterev Alex Snoeren Alex Yip Anish Athalye Anthony Joseph Atalay Mert Ileri Arvid Lunnemark Assel Ismoldayeva Athicha Muthitacharoen Austin Clements Benjamin Chambers Ben Kettle Benjie Chen Bryan Ford Cel Skeggs Charles Coffing Chris Lesniewski-Laas Chuck Blake Cliff Frey Cody Cutler Constantine Christakos Constantine Sapuntzakis C. Scott Ananian Daniel Aguayo Danilo Almeida David Lazar David Mazières David Montgomery Dawson Engler Deborah Wallach Doug De Couto Doug Wyatt Eddie Kohler Emil Sit Emmett Witchel Eric Peterson Erik Nygren Frank Dabek Frank Wang George M. Candea George Savvides Greg Ganger Haogang Chen Héctor Briceño Hu Imm Lee Inho Cho Jacob Strauss James Robertson Jason Hickey Jayashree Subramanian Jeff Arnold Jelle van den Hooff Jeremy Stribling Jessica Xu Jinyang Li Jon Gjengset John Bicket John Jannotti Josh Cates Jonathan Behrens Joshua A. Tauber Katherine Zhao Kevin Fu Kevin Lew Kevin Liao Kirk Johnson Lara Timbó Araújo Lily Tsai Martijn Stevenson Massimiliano Poletto Matei Zaharia Max Krohn Meelap Shah Micah Brodsky Michael Freedman Michael Kaminsky Michael Shurpik Natan Cliffer Neha Narula Nickolai Zeldovich Omprakash D. Gnawali Peilei Fan Petar Maymounkov Rachel Greenstadt Ralf Jung Ramesh Chandra Rick Ono Robert Grimm Russ Cox Rusty Hunt Sandeep K. Gupta Sanjit Biswas Sean Rhea Silas Boyd-Wickizer Srivatsa S. Bhat Taesoo Kim Tej Chajed Thomer M. Gil Timo Burkard Tina Tyan Tom Pinckney Wilson Hsieh Xi Wang Yandong Mao Yizheng He Yossi Gilad Zach Bodnar Zain Ruan"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/people"
+tags = ["affiliates", "alumni", "group", "humans", "leaders", "meng", "pdos", "postdocs", "professor", "research"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "att.com", "bencw12.github.io", "benkettle.xyz", "brynosaurus.com", "bsdinis.site", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.nyu.edu", "cs.utexas.edu", "csail.mit.edu", "css.csail.mit.edu", "darpa.mil", "quantatw.com"]
+
+["https://pdos.csail.mit.edu/projects/perennial.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview Perennial is a Coq framework for verifying concurrent storage systems. It supports verifying systems written in Go by translating them to Coq to complete the proof using Perennial. Perennial extends Iris, a logic for concurrent verification, with support for proving crash safety. We used Goose to write a concurrent mail server with a proof that delivered messages are never lost. We’re now using Perennial to verify a concurrent file system. People Tej Chajed (PhD) Joe Tassarotti (postdoc) Lily Tsai (PhD) Mark Theng (undergraduate) Sharon Lin (undergraduate) Prof. M. Frans Kaashoek Prof. Nickolai Zeldovich"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/perennial.html"
+tags = ["concurrent", "overview", "perennial:", "project", "storage", "systems", "verifying"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "att.com", "bencw12.github.io", "benkettle.xyz", "brynosaurus.com", "bsdinis.site", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.utexas.edu", "css.csail.mit.edu", "darpa.mil", "sosp19.rcs.uwaterloo.ca", "youtube.com"]
+
+["https://pdos.csail.mit.edu/~cblake"]
+title = "Chuck Blake"
+full_description = "Currently a quantitative analyst at a large, old and well known hedge fund in Manhattan. Formerly a researcher in computational quantitative finance for a an equity options trading firm in Chicago, and more formerly still a research scientist at the Laboratory for Computer Science at MIT working with Frans Kaashoek in the Parallel & Distributed Operating Systems (PDOS) group and really the whole motley crew of graduate students also in NMS, ANA, and PMG. Sachin Katti, Dina Katabi, Charles Blake, Eddie Kohler, and Jacob Strauss MultiQ: Automated Detection of Multiple Bottlenecks Along a Path ACM Internet Measurement Conference, Sicily, October 2004. Rodrigo Rodrigues, Charles Blake When Multi-Hop Peer-to-Peer Routing Matters International Peer-to-Peer Systems 2004, La Jolla, December 2004. Charles Blake, Dina Katabi Cross Traffic: Noise or Data?, Bandwidth Estimation 2003, San Diego, December 2003. Charles Blake, Rodrigo Rodrigues, High Availability, Scalable Storage, Dynamic Peer Networks: Pick Two, Proceedings of the 9th Workshop on Hot Topics in Operating Systems (HotOS '03), Lihue (Kauai), Hawaii, May 2003. Dina Katabi, Charles Blake, Inferring Congestion Sharing and Path Characteristics for Packet Interarrival times, MIT TR-828, December 2001. Jinyang Li, Charles Blake, Douglas S. J. De Couto, Hu Imm Lee, and Robert Morris, Capacity of Ad Hoc Wireless Networks, Proceedings of the 7th ACM International Conference on Mobile Computing and Networking (MobiCom '01), Rome, Italy, July 2001, pages 61-69. Abstract, PostScript, PDF. Charles Blake and Steven Bauer, Simple and General Profiling with PCT, Proceedings of the USENIX 2002 Annual Technical Conference, June 2002, pages ??-??. Abstract,, PostScript, PDF, HTML, Home Page. I used work a bit on SFS -- the MIT secure/self-certifying file system. I used to caretake the exokernel project. I participate at some level in most of the various research going on at PDOS, and several other 5th floor LCS activities. In addition to systems and networks, I'm also interested in performance analysis, support tools, reflection in programming languages, search structure library design issues, and dynamic data representation runtimes. Non-CS academic interests include applied statistics (errors-in-variables methods, semiparametric estimation, learning theory, density estimation, small sample methods), quantum computation and algorithms, the philosophy of science, various areas of physics, biology, economics, and finance."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~cblake"
+tags = ['"at"', "background", "blake", "chuck", "hobbies", "mit.edu", "papers", "past", "recent", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "anish.io", "bbn.com.", "caltech.edu.", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/projects/fscq.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview FSCQ is the first file system with a machine-checkable proof (in the Coq proof assistant) that its implementation meets its specification and whose specification includes behavior under crashes. The original version of FSCQ (as presented in the SOSP 2015 paper) guaranteed transactional behavior for every system call: if the system crashes and recovers, either the entire system call or none of it appears to execute. We also wrote a CACM paper, which is a more accessible version of the SOSP paper. A followup paper (presented in SOSP 2017) improved performance by deferring durability of writes and specifying the new relaxed behavior. We’ve also extended the system with a proof that file data remains confidential, as described in the DiskSec paper in OSDI 2018. People Tej Chajed (PhD) Atalay İleri (PhD) Alex Konradi (MEng, alum) Daniel Ziegler (MEng, alum) Haogang Chen (PhD, alum) Prof. M. Frans Kaashoek Prof. Nickolai Zeldovich Prof. Adam Chlipala Publications Proving confidentiality in a file system using DiskSec Atalay Ileri, Tej Chajed, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich OSDI 2018 Verifying a high-performance crash-safe file system using a tree specification Haogang Chen, Tej Chajed, Alex Konradi, Stephanie Wang, Atalay Ileri, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich SOSP 2017 Verifying an I/O-Concurrent File System Tej Chajed Master’s thesis, advised by M. Frans Kaashoek and Nickolai Zeldovich. Using Crash Hoare Logic for Certifying the FSCQ File System Haogang Chen, Daniel Ziegler, Tej Chajed, Adam Chlipala, M. Frans Kaashoek, and Nickolai Zeldovich SOSP 2015 (Best paper award) Specifying crash safety for storage systems Haogang Chen, Daniel Ziegler, Adam Chlipala, M. Frans Kaashoek, Eddie Kohler, and Nickolai Zeldovich. HotOS 2015 Publicity MIT researchers create file system guaranteed not to lose data even if a PC crashes, Computer World. MIT Researchers Create Crash-Tolerant File System Guaranteed Not To Lose Data, Forbes. Source code Our source code is available on GitHub at mit-pdos/fscq. Funding support This research was supported in part by NSF award 1563763."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/fscq.html"
+tags = ["adam", "chlipala,", "code", "file", "file-system", "frans", "fscq:", "funding", "haogang", "kaashoek,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/projects"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Verified hardware/software systems Parfait is a framework that enables developers to build correct and secure hardware security modules (HSMs) through formal verification spanning an implementation’s hardware and software. Verifying transactional database systems vMVCC is a high-performance transaction library with a formal specification and a machine-checked proof of correctness. Perennial: verifying concurrent storage systems Perennial is a Coq framework for verifying concurrent storage systems. It supports verifying systems written in Go by translating them to Coq to complete the proof using Perennial. Metadata-private communication Vuvuzela is the first messaging system that provides strong metadata privacy while scaling to millions of users. Noria: data-flow for web applications Noria is an attempt at designing a database specifically tailored for web applications, providing automatic caching, safe and effortless schema migrations, and native support for reactive use. Biscuit: An OS kernel in a high-level language Biscuit is a monolithic, POSIX-subset operating system kernel in Go for x86-64 CPUs. We wrote it to study the performance trade-offs of using a high-level language with garbage collection to implement a kernel with a common style of architecture. Secure web-application databases The goal of this line of research is to apply cryptographic techniques practically to secure web application databases and provide strong guarantees against realistic adversaries. CSPEC: Concurrency verification with movers CSPEC is a framework in the Coq proof assistant for proving concurrent software correct using movers. The idea behind movers is to reduce the number of concurrent interleavings the programmer needs to consider. We've used CSPEC to prove a concurrent mail server correct which involves lock-free concurrency control with the file system. FSCQ: File-system verification FSCQ is the first file system with a machine-checkable proof (in the Coq proof assistant) that its implementation meets its specification and whose specification includes behavior under crashes."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects"
+tags = ["concurrent", "current", "past", "pdos", "present", "projects", "proof", "storage", "systems", "verifying"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "att.com", "bencw12.github.io", "benkettle.xyz", "brynosaurus.com", "bsdinis.site", "chajed.io", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.nyu.edu", "cs.utexas.edu", "csail.mit.edu", "css.csail.mit.edu", "darpa.mil", "quantatw.com"]
+
+["https://pdos.csail.mit.edu/~engler"]
+title = "Dawson Engler"
+full_description = '''I used to have a fetish involving oil, stages, and weights (since outgrown). This picture is from the 1991 Jr. California, a "drug-free-for-life" competition, where I finished 2nd. A reliance on the body's natural supply of androgenic aids combined with over-exuberant dieting translated into muscles only slightly larger than those of an olympic marathon runner. Cool computer-related people and places. The following position papers give a somewhat dated overview of the exokernel project; we are currently implementing a prototype exokernel called Aegis.'''
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~engler"
+tags = ["dawson", "engler", "papers", "recent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "anish.io", "bbn.com.", "caltech.edu.", "carrv.github.io", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/projects/amber.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview In theory, the web provides users with the ability to share their data freely with an open-ended set of applications and users. In practice, however, web sites silo user data in private storage behind proprietary interfaces. While some sites do allow external applications to manipulate users’ data, these abilities tend to be limited and site-specific. In this project, we aimed to change this. We envisioned a web without artificial application boundaries — where users choose which applications they use to view and manipulate their data, and which users to share that data with. And where that data is effortlessly available to all applications, globally. Project components User-centric cloud storage Amber was a project to collect a users’ data in a common, federated storage, to give users control over their data’s storage and facilitate better sharing among applications. Amber stores data per user, not per application, in cloud storage controlled by the user. Users may choose to give applications (their own, or those of other users) access to their data, but no data is tied to a particular application. Global application queries To make it feasible to build multi-user applications in this distributed world, the follow-on work in Oort continued iterating on Amber’s vision by providing global queries across cloud providers. Applications can issue SQL-like queries that conceptually scan all objects of all users at all cloud providers. Oort proposes several techniques for making such queries scale well, even in the face of per-user and per-object access control policies. People Jon Gjengset (PhD) Tej Chajed (PhD) Prof. James Mickens (Harvard) Prof. Nickolai Zeldovich Prof. M. Frans Kaashoek Prof. Robert Morris Publications Amber: Decoupling User Data from Web Applications Tej Chajed, Jon Gjengset, Jelle van den Hoof, M. Frans Kaashoek, James Mickens, Robert Morris, Nickolai Zeldovich HotOS’15 Oort: User-Centric Cloud Storage with Global Queries Tej Chajed, Jon Gjengset, M. Frans Kaashoek, James Mickens, Robert Morris, Nickolai Zeldovich"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/amber.html"
+tags = ["amber:", "application", "applications", "cloud", "components", "data", "global", "overview", "prof.", "project"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/projects/biscuit.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview Biscuit is a monolithic, POSIX-subset operating system kernel in Go for x86-64 CPUs. We wrote it to study the performance trade-offs of using a high-level language with garbage collection to implement a kernel with a common style of architecture. The code OSDI’18 paper Cody Cutler’s PhD dissertation ;login: article People Cody Cutler (PhD) Prof. M. Frans Kaashoek Prof. Robert Morris Biscuit is a monolithic, POSIX-subset operating system kernel in Go for x86-64 CPUs. We wrote it to study the performance trade-offs of using a high-level language with garbage collection to implement a kernel with a common style of architecture."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/biscuit.html"
+tags = ["biscuit:", "high-level", "kernel", "language", "overview", "project"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/publications"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Many cloud applications use both serverless functions, for bursts of stateless parallel computation, and container orchestration, for long-running microservices and tasks that need to interact. Ideally a single platform would offer the union of these systems' capabilities, but neither is sufficient to act as that single platform: serverless functions are lightweight but cannot act as servers with long-term state, while container orchestration offers general-purpose computation but instance start-up takes too long to support burst parallelism. SigmaOS is a new multi-tenant cloud operating system that combines the best of container orchestration and serverless in one platform with one API. SigmaOS computations, called procs, can be long-running, stateful, and interact with each other, making them a good match for both serverless and microservice tasks. A key aspect of the SigmaOS design is its *cloud-centric* API, which provides flexible management of computation, a novel abstraction for communication endpoints, SigmaEPs ---which allow procs of a tenant to communicate efficiently but prohibits procs from sending packets to other tenants---and a flexible naming system to name, for example, SigmaEPs. Quick start-up is important for serverless uses. A key enabling observation is that both serverless and microservice applications rely on cloud services for much of the work traditionally done by the local OS (e.g., access to durable storage and additional compute resources). SigmaOS exploits this observation by providing only a small and generic local operating system image to each , which can be created much more quickly than a container orchestration instance since SigmaOS need not install application-specific filesystem content or (due to SigmaOS's SigmaEPs) configure an isolated overlay network. Microbenchmarks show that SigmaOS can cold start a in msec and can create procs per second, distributing them over a 24-machine cluster. An evaluation of SigmaOS with two microservice applications from DeathStarBench, a MapReduce application, and an image processing benchmark, shows that the SigmaOS API supports both microservices and lambda-style computations, and provides better performance than corresponding versions on AWS Lambda and Kubernetes."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/publications"
+tags = ["802.11b", "abstraction", "abstraction:", "abstractions", "access", "accountable", "acetone:", "achieving", "across", "active"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alanamarzoev.com", "alum.mit.edu", "anish.io", "arielszekely.github.io", "bencw12.github.io", "benkettle.xyz", "carrv.github.io", "chajed.io", "cookies.lcs.mit.edu", "cs.berkeley.edu", "cs.brown.edu", "cs.colorado.edu", "cs.cornell.edu", "cs.utexas.edu", "css.csail.mit.edu", "darpa.mil", "fs.net", "mplayerhq.hu", "pdos.lcs.mit.edu", "youtube.com"]
+
+["https://pdos.csail.mit.edu/~yipal"]
+title = "Alexander S. Yip"
+full_description = "I graduated with a PhD in 2009. Previously, I was a PhD student in MIT CSAIL's Parallel and Distributed Operating Systems group. I worked primarily with Robert T. Morris and Nickolai Zeldovich. I am interested in Web security, Web platforms, cloud computing, distributed computing, and performance. In addition to computer science research, I have been involved with a number of other activities and projects over the years. Network Virtualization in Multi-tenant Datacenters. Teemu Koponen, Keith Amidon, Peter Balland, Martin Casado, Anupam Chanda, Bryan Fulton, Igor Ganichev, Jesse Gross, Natasha Gude, Paul Ingram, Ethan Jackson, Andrew Lambeth, Romain Lenglet, Shih-Hao Li, Amar Padmanabhan, Justin Pettit, Ben Pfaff, and Rajiv Ramanathan, VMware; Scott Shenker, International Computer Science Institute and the University of California, Berkeley; Alan Shieh, Jeremy Stribling, Pankaj Thakkar, Dan Wendlandt, Alexander Yip, and Ronghua Zhang, VMware. Proceedings of the 11th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2014). Seattle, WA, USA. Apr, 2014. Improving Application Security with Data Flow Assertions. Alexander Yip, Xi Wang, Nickolai Zeldovich, M. Frans Kaashoek. Proceedings of the 22nd ACM Symposium on Operating Systems Principles (SOSP 2009). Big Sky, MT, USA. October 2009. Privacy-Preserving Browser-Side Scripting With BFlow. Alexander Yip, Neha Narula, Maxwell Krohn, Robert Morris. Proceedings of the ACM EuroSys Conference (EuroSys 2009). Nuremberg, Germany. March 2009. A World Wide Web Without Walls. Maxwell Krohn, Alexander Yip, Micah Brodsky, Robert Morris, Michael Walfish. 6th ACM Workshop on Hot Topics in Networks (HotNets 2007). Atlanta, GA, USA. November 2007. Information Flow Control for Standard OS Abstractions. Maxwell Krohn, Alexander Yip, Micah Brodsky, Natan Cliffer, M. Frans Kaashoek, Eddie Kohler, Robert Morris. Proceedings of the 21st ACM Symposium on Operating Systems Principles (SOSP 2007). Stevenson, Washington, USA. October 2007."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~yipal"
+tags = ["alexander", "blog", "class", "contact", "entries:", "non-research", "particularly", "position", "publications", "refereed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~strib"]
+title = "Jeremy Stribling"
+full_description = "I work at Nicira Networks in Palo Alto, CA. I graduated from the doctorate program of the Computer Science and Artificial Intelligence Laboratory at MIT. I worked in the Parallel & Distributed Operating Systems group. This website will hopefully be kept up-to-date with the things I do to keep myself busy. If it's not, send me an email at strib@mit.edu to yell at me."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~strib"
+tags = ["jeremy", "stribling"]
+language = "en"
+internal-references = ["none"]
+external-references = ["act.mit.edu", "addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "fs.net.", "imconf.net", "infoq.com", "linkedin.com", "nms.csail.mit.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/projects/noria.html"]
+title = "MIT CSAIL Parallel and Distributed Operating Systems Group"
+full_description = "Project overview Noria is an attempt at designing a database specifically tailored for web applications, providing automatic caching, safe and effortless schema migrations, and native support for reactive use. Noria observes that, by having developers provide the set of queries their application will make in advance, the database can be smarter about how to execute those queries. In particular, it can choose to pre-compute, and incrementally maintain, the results for queries. This allows Noria to answer those queries quickly, and essentially obviates the need for application caches. Project components Streaming data model Noria is built from the bottom-up to be a streaming data system by using data-flow. This allows web applications to observe a stream of changes to the result set of queries they are interested in, which fits well with the new reactive-style web applications inspired by Meteor. Distribution and scaling The data-flow computation model used in Noria enables efficient multi-core and cross-machine implementation of the application’s set of queries. By carefully analyzing the graph, Noria can make strategic choices about what operators should be placed on which computers, what state should be materialized, and how to shard and partition the data for availability and performance. Safe schema migrations By smartly re-using this materialized state, Noria can also provide fast schema migrations. Since the raw data log is always kept, migrations can be undone easily, and queries using the pre-migration queries can still be satisfied. Furthermore, since the users only specify queries, not the underlying schema, the system can choose to internally implement the user’s queries in whatever schema it deems to be most efficient. People Jon Gjengset (PhD) Jonathan Behrens (PhD) Alana Marzoev (PhD) Lara Timbó Araújo (MEng) Gina Yuan (MEng) Samyukta Yagati (MEng) Martin Ek (NUST) Malte Schwarzkopf (Postdoc) Prof. Eddie Kohler (Harvard) Prof. M. Frans Kaashoek Prof. Robert Morris Publications Scalable fault tolerance for high-performance streaming dataflow Gina Yuan Master’s thesis, Massachusetts Institute of Technology, September 2019 Towards multiverse databases Alana Marzoev, Lara Timbó Araújo, Malte Schwarzkopf, Samyukta Yagati, Eddie Kohler, Robert Morris, M. Frans Kaashoek, and Sam Madden. HotOS XVII 2019 Noria: A new take on fast web application backends Jon Gjengset, Malte Schwarzkopf, Jonathan Behrens, Lara Timbó Araújo, Martin Ek, Eddie Kohler, M. Frans Kaashoek, and Robert Morris. ;login: The USENIX Magazine 44(1), March 2019. GDPR compliance by construction Malte Schwarzkopf, Eddie Kohler, M. Frans Kaashoek, and Robert Morris Poly 2019 Noria: dynamic, partially-stateful data-flow for high-performance web applications Jon Gjengset, Malte Schwarzkopf, Jonathan Behrens, Lara Timbó Araújo, Martin Ek, Eddie Kohler, M. Frans Kaashoek, Robert Morris OSDI’18 Multiverse databases for secure web applications Lara Timbó Araújo Master’s thesis, Massachusetts Institute of Technology, February 2018. Soup: A Flexibility-First Database Jon Gjengset, Malte Schwarzkopf, Nikhil Benesch, Eddie Kohler, M. Frans Kaashoek, Robert Morris NENS’16 Open source Noria is available on GitHub at mit-pdos/noria."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/projects/noria.html"
+tags = ["applications", "components", "data", "data-flow", "distribution", "eddie", "frans", "kaashoek,", "kohler,", "lara"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "eecs.harvard.edu", "fs.net.", "imconf.net", "infoq.com", "jon.tsp.io", "linkedin.com", "nms.csail.mit.edu", "systems.cs.brown.edu", "tickc", "winterlodge.com"]
+
+["https://pdos.csail.mit.edu/~hchen"]
+title = "Haogang Chen"
+full_description = "I am a graduate student in the PDOS group at MIT CSAIL, working with Frans Kaashoek and Nickolai Zeldovich. Before joining MIT, I received my B.S. and M.S. degree in Computer Science from Peking University."
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~hchen"
+tags = ["chen", "csail", "haogang", "hchen", "papers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~hilee"]
+title = "H I L E E"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~hilee"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys11.ucsd.edu", "bbn.com.", "caltech.edu.", "chajed.io", "cs.berkeley.edu", "cs.cornell.edu", "cs.utexas.edu", "darpa.mil", "exokernel.lcs.mit.edu", "fs.net", "fs.net.", "lcs.mit.edu.", "mit.edu", "ncbi.nlm.nih.gov", "nms.csail.mit.edu", "pdos.lcs.mit.edu", "podc.org", "research.ibm.com", "www4.comp.polyu.edu.hk"]
+
+["https://pdos.csail.mit.edu/~mfreed"]
+title = "Michael J. Freedman"
+year_published = 2025
+clearnet = "https://pdos.csail.mit.edu/~mfreed"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["addgene.org", "apsys2012.kaist.ac.kr", "bbn.com.", "bsdinis.site", "carrv.github.io", "cgm.cs.mcgill.ca", "chajed.io", "cs.berkeley.edu", "cs.rice.edu", "cs.utexas.edu", "darpa.mil", "dl.acm.org", "english.pku.edu.cn", "fs.net.", "imconf.net", "linkedin.com", "nms.csail.mit.edu", "org.lcs.mit.edu", "tickc", "winterlodge.com"]

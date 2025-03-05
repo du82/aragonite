@@ -1,0 +1,89 @@
+["https://coveo-turbo.github.io/2020/08/19/coveo-turbo-launch.html"]
+title = "Launch of the Coveo Turbo Blog"
+full_description = "Content will start to slowly be added on the website to help users get more familiar with Coveo Turbo. In the meantime, if you have any questions regarding Turbo, don’t hesitate to contact Coveo. You can also ask your questions on the Coveo Forum."
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/2020/08/19/coveo-turbo-launch.html"
+tags = ["blog", "coveo", "launch", "turbo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "levelup.coveo.com", "platform.cloud.coveo.com"]
+
+["https://coveo-turbo.github.io/docs/Getting-Started"]
+title = "Getting Started with Coveo Turbo"
+full_description = 'Coveo Turbo is a CLI-based tool designed to speed up development by standardizing and automating common tasks to quick start the creation of a reusable custom component or implementation project. This article explains how to get started using Coveo Turbo to create, modify, and publish a component. To learn how to test an existing component without cloning an existing project, see Testing Coveo Turbo Components. To install Coveo Turbo, you need a Node environment with npm. You can download and install both on the node.js website. Coveo Turbo is compatible with version 12 to 14 of Node.js. While using previous or newer versions may work for certain commands, it’s possible that other commands will not work properly. For example, when creating a new project, run ‘nvm use 14’ before creating the project. If you want to use JavaScript instead of TypeScript, you should add --template vanilla to the command. Similarly, to use pure CSS instead of Sass, add --styles-template vanilla to the command. The search page is not automatically connected to a Coveo Cloud organization; this can be added when serving the component. Once you have created your component, you can start modifying the created template to develop your functionality. In the generated src folder, you should be able to find a TestComponent.ts (where TestComponent is replaced with the name you gave your component). This file handles the logic of your component, and is written in Typescript. To learn how to create custom TypeScript components, see Advanced Integration With Custom TypeScript Component (Implementation). If you’ve created a JavaScript component instead, see Implementing a Custom Component in JavaScript. You can also change the styling of the component by changing the src\stylesheets\TestComponent.scss Sass file (where TestComponent is replaced with the name you gave your component). Once you have modified your component and are ready to test it, you need to run the build command, so the code can be built.'
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/Getting-Started"
+tags = ["build", "component", "creating", "install", "modifying", "prerequisites", "project", "serving"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "github.com", "levelup.coveo.com", "marketplace.visualstudio.com", "nodejs.org", "platform.cloud.coveo.com", "sass-lang.com"]
+
+["https://coveo-turbo.github.io/docs/Testing-Components.html"]
+title = "Testing Coveo Turbo Components"
+full_description = "Coveo Turbo offers a bunch of components that work hand in hand with the Coveo JavaScript Search Framework. To use an existing Coveo Turbo component, it is usually recommended to install it through npm. However, when you just want to quickly test a component to see if it answers your requirements, you can use a reference to the compiled JavaScript instead. The format of the compiled JavaScript looks like this, where {component-name} is replaced with the name of the component: You are discouraged from using unpkg as a production CDN. However, to ease the early steps of development, you are welcome to reference the unpkg code directly. Once you have loaded the script on your page, you can reference the Coveo Turbo component like any other Coveo component. The exact name is usually indicated in the readme of the component, but it typically looks like this: You add the following tag in the header of your page, so the script loads from unpkg. Since this is a test environment on your local machine, you are not worried about being throttled. In the CoveoSearchInterface component of the search page where you are testing the component, you add the following markup: Because the counted-tabs component expects a field to be used, you add it in the data attributes, as such:"
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/Testing-Components.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "github.com", "levelup.coveo.com", "marketplace.visualstudio.com", "nodejs.org", "platform.cloud.coveo.com", "sass-lang.com"]
+
+["https://coveo-turbo.github.io/docs/CLI-reference.html"]
+title = "Cli Reference"
+full_description = "Replace the COMMAND with the appropriate one from the table below with its corresponding arguments and options. You can also add the command to your package.json scripts to continue using familiar hooks like npm run build Coveo injects custom components into its root object by using a custom utility called SwapVar. With Coveo Turbo, this utility is injected into the root index of the code during build time, so no additional effort or integration is necessary in a project. Thanks to the SwapVar utility, the exported component is referenced in implementation JavaScript code as such: Without the SwapVar utility, achieved by using the disable-swapvar option in the build, the exported component library is referenced in implementation JavaScript code such: If no org-id or token are used, then a sample Coveo organization with some already indexed content is used. For example, importing a component installed from @coveops/test-component will have the following assets served: Alternatively, these installed components can be bundled into the library via the corresponding index file in the src before being built. The serve command generates a JavaScript snippet that is injected into the page by importing the /config.js file, which contains some of the information that was passed through environment variables or CLI arguments in a global demoConfig variable. This allows a page to remain decoupled from the test settings to allow portability between environments where component-level dependencies permit. The following information is passed in the demoConfig object and is available to use within the application at runtime: This command adds the necessary files to kick-start a project to create a shareable component and optionally the component itself. When ran using npx, the create:project utility initializes a package.json and installs itself as a dev dependency for you. This command creates a blank component to be used to canvas for your needs. It is currently available as vanilla and typescript types."
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/CLI-reference.html"
+tags = ["adding", "build", "component", "content:", "coveo", "create", "dependency", "deploy", "docker", "environment"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "levelup.coveo.com", "platform.cloud.coveo.com"]
+
+["https://coveo-turbo.github.io/docs/Salesforce-Integration.html"]
+title = "Using Coveo Turbo with Coveo for Salesforce"
+full_description = "This article explains how to use Coveo Turbo to build customizations that will be deployed to the Salesforce cloud. All the translation steps are currently manual. Start by creating a new Turbo project - you can use the --page-layout option as a shortcut to specify a starter layout. To ease development, you may need to use the viewAllContent argument locally so that templates you otherwise won’t see are accessible during development. To enable this in your local environment, add the following piece of Javascript code within the DOMContentLoaded event handler found in the <head> section of the markup of your page. Your local API key will require the View All Content permission to be granted, see Privilege Reference - View all Content Domain To integrate custom Javascript and CSS that is compiled by Turbo in the dist folder into a Lightning component, there are a few main steps that are necessary to get started: Create a new static resource (preferably a zip type) in Salesforce with the compiled assets from Coveo Turbo. When you use the build command, Coveo Turbo compiles your src folder and adds the final minified code to the dist folder. Here is the relative mapping of files you want to include in the static resource: The static resource file does not have to have the same name as the output in the dist folder, but for simplicity this guide will refer to them on a one-to-one basis. The index.min.js file in the root of the static resource path must be wrapped in the following code snippet. Copy-paste the code from the dist/index.min.js within the code block as shown. Replace 'default' with the name of the visualforce component using this script if necessary. More concretely, the minified Javascript generated by Coveo Turbo will look similar to the following screenshot - which also replicates the default folder structure. In order for this code to work within Salesforce, the block in the dist file will sit within a function call which returns a promise. Create a custom lightning component to wrap the out of the box Coveo for Salesforce lightning components and add references to your static resource."
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/Salesforce-Integration.html"
+tags = ["changes", "code", "component", "components", "contents:", "coveo", "creating", "customizing", "deploying", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "github.com", "levelup.coveo.com", "marketplace.visualstudio.com", "nodejs.org", "platform.cloud.coveo.com", "sass-lang.com"]
+
+["https://coveo-turbo.github.io/docs/Getting-Started.html"]
+title = "Getting Started with Coveo Turbo"
+full_description = 'Coveo Turbo is a CLI-based tool designed to speed up development by standardizing and automating common tasks to quick start the creation of a reusable custom component or implementation project. This article explains how to get started using Coveo Turbo to create, modify, and publish a component. To learn how to test an existing component without cloning an existing project, see Testing Coveo Turbo Components. To install Coveo Turbo, you need a Node environment with npm. You can download and install both on the node.js website. Coveo Turbo is compatible with version 12 to 14 of Node.js. While using previous or newer versions may work for certain commands, it’s possible that other commands will not work properly. For example, when creating a new project, run ‘nvm use 14’ before creating the project. If you want to use JavaScript instead of TypeScript, you should add --template vanilla to the command. Similarly, to use pure CSS instead of Sass, add --styles-template vanilla to the command. The search page is not automatically connected to a Coveo Cloud organization; this can be added when serving the component. Once you have created your component, you can start modifying the created template to develop your functionality. In the generated src folder, you should be able to find a TestComponent.ts (where TestComponent is replaced with the name you gave your component). This file handles the logic of your component, and is written in Typescript. To learn how to create custom TypeScript components, see Advanced Integration With Custom TypeScript Component (Implementation). If you’ve created a JavaScript component instead, see Implementing a Custom Component in JavaScript. You can also change the styling of the component by changing the src\stylesheets\TestComponent.scss Sass file (where TestComponent is replaced with the name you gave your component). Once you have modified your component and are ready to test it, you need to run the build command, so the code can be built.'
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/Getting-Started.html"
+tags = ["build", "component", "creating", "install", "modifying", "prerequisites", "project", "serving"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "levelup.coveo.com", "nodejs.org", "platform.cloud.coveo.com", "sass-lang.com"]
+
+["https://coveo-turbo.github.io/docs/Testing-Components"]
+title = "Testing Coveo Turbo Components"
+full_description = "Coveo Turbo offers a bunch of components that work hand in hand with the Coveo JavaScript Search Framework. To use an existing Coveo Turbo component, it is usually recommended to install it through npm. However, when you just want to quickly test a component to see if it answers your requirements, you can use a reference to the compiled JavaScript instead. The format of the compiled JavaScript looks like this, where {component-name} is replaced with the name of the component: You are discouraged from using unpkg as a production CDN. However, to ease the early steps of development, you are welcome to reference the unpkg code directly. Once you have loaded the script on your page, you can reference the Coveo Turbo component like any other Coveo component. The exact name is usually indicated in the readme of the component, but it typically looks like this: You add the following tag in the header of your page, so the script loads from unpkg. Since this is a test environment on your local machine, you are not worried about being throttled. In the CoveoSearchInterface component of the search page where you are testing the component, you add the following markup: Because the counted-tabs component expects a field to be used, you add it in the data attributes, as such:"
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/Testing-Components"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "github.com", "levelup.coveo.com", "marketplace.visualstudio.com", "nodejs.org", "platform.cloud.coveo.com", "sass-lang.com"]
+
+["https://coveo-turbo.github.io/docs/CLI-reference"]
+title = "Cli Reference"
+full_description = "Replace the COMMAND with the appropriate one from the table below with its corresponding arguments and options. You can also add the command to your package.json scripts to continue using familiar hooks like npm run build Coveo injects custom components into its root object by using a custom utility called SwapVar. With Coveo Turbo, this utility is injected into the root index of the code during build time, so no additional effort or integration is necessary in a project. Thanks to the SwapVar utility, the exported component is referenced in implementation JavaScript code as such: Without the SwapVar utility, achieved by using the disable-swapvar option in the build, the exported component library is referenced in implementation JavaScript code such: If no org-id or token are used, then a sample Coveo organization with some already indexed content is used. For example, importing a component installed from @coveops/test-component will have the following assets served: Alternatively, these installed components can be bundled into the library via the corresponding index file in the src before being built. The serve command generates a JavaScript snippet that is injected into the page by importing the /config.js file, which contains some of the information that was passed through environment variables or CLI arguments in a global demoConfig variable. This allows a page to remain decoupled from the test settings to allow portability between environments where component-level dependencies permit. The following information is passed in the demoConfig object and is available to use within the application at runtime: This command adds the necessary files to kick-start a project to create a shareable component and optionally the component itself. When ran using npx, the create:project utility initializes a package.json and installs itself as a dev dependency for you. This command creates a blank component to be used to canvas for your needs. It is currently available as vanilla and typescript types."
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io/docs/CLI-reference"
+tags = ["adding", "build", "component", "content:", "coveo", "create", "dependency", "deploy", "docker", "environment"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "levelup.coveo.com", "platform.cloud.coveo.com"]
+
+["https://coveo-turbo.github.io"]
+title = "Coveo Turbo"
+description = "The reference documentation for the CLI tool"
+year_published = 2025
+clearnet = "https://coveo-turbo.github.io"
+tags = ["accelerator", "blog", "collection", "components", "coveo", "documentation", "getting", "launch", "reference", "salesforce"]
+language = "en"
+internal-references = ["none"]
+external-references = ["connect.coveo.com", "coveo.com", "docs.coveo.com", "levelup.coveo.com", "platform.cloud.coveo.com"]

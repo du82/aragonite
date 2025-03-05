@@ -1,0 +1,147 @@
+["https://13thmonkey.org/documentation/misc"]
+title = "Index of documentation/misc/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/misc"
+tags = ["documentation/misc/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/PA-RISC"]
+title = "Index of documentation/PA-RISC/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/PA-RISC"
+tags = ["documentation/pa-risc/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/UDF"]
+title = "Index of documentation/UDF/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/UDF"
+tags = ["documentation/udf/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/Artdraw/index.html"]
+title = "13thmonkey.org : Artdraw"
+full_description = "Artdraw is a easy to use yet very powerfull library for the creation of fully anti-aliased images. It is completely vector based and thus has no floodfill nor bitmap operations like weird filters etc. They might be added later as an appendage to it but it isnt part of the initial specification. The basic set of drawing primitives supported in Artdraw are the ones found in many graphical languages such as Adobe's PostScript extended with alpha blending, powerfull fill and clipping methods and bitmap fill patterns. Drawing bitmaps like photo's is integrated in Artdraw but maybe a bit different than one is used to in other libraries as it logically integrates as `yet another' fill methods on the vector based drawing operations. This has the advantage that all other operations normally done on vectors are possible on bitmaps too like gradual transparency and clipping to name a few. A programmer using the Artdraw library is more or less instructing the library in a graphic language with primitives like moveto, lineto, curveto and fill. Very complex and diverse images can be constructed using these simple primitives alone. This relieves the artist / programmer of a lot of administrational tasks as found in other drawing libraries and is as extra benefit far less error-prone. Artdraw currently consists of the selfcontained library and a few regression test programs to check the basic functionalities of the library. Artdraw consists of 100% my own code and only needs to link to libz and libm as found on all machines nowadays or at least obtainable for them. Libz isn't strictly nessisary if you drop out the png image loading. Artdraw has been developped on a range of machines running NetBSD but also runs and compiles fine on other BSDs and Linux. Last time i checked it also ran fine on Sun's Solaris but has been quite some time ago regretfully. Under Linux you will have to use the BSD/Posix make sometimes installed as `pmake' or `bmake' due to gmake being non posix. Currently Artdraw is nearly finished for its 1st release. Its now very suitable for the creation of PNGs in programs and webpages. The example images show that most desired features are operational now so most complex images are ready to be drawn!"
+year_published = 2025
+clearnet = "https://13thmonkey.org/Artdraw/index.html"
+tags = ["artdraw"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/~boris/jgame/index.html"]
+title = "JGame: a Java/Flash game engine for 2D games"
+full_description = 'What is JGame? JGame is an open source 2D game engine that makes multiplatform development easier. It runs on the Java JRE 1.3+ platform with optional OpenGL (JOGL) enhancements, the J2ME (MIDP2.0/CLDC1.1) mobile platform, and the Android (2.1+) platform. There is also a Flash (Actionscript 3) version. JGame features sprites with automatic animation and collision detection, a tile-based background with easy sprite-tile interaction facilities, sound, game state, persistent storage, and game options. Games are programmed at a fixed "virtual" resolution, but can be scaled to any screen resolution. The engine provides an enhanced graphics API, with a fallback to simpler and more efficient graphics on J2ME and plain JRE. A patched version of the JBox2D physics engine that runs on all platforms has now been included. Fundraiser: I am trying to collect 100 euros for covering the cost of the hardware for the Android version. Currently received: 94.56 euros. You can help with a donation of as little as 1 euro. Pay using Paypal or creditcard (no paypal account needed!). Pay using phone or SMS (some countries only, not available in USA). Download / Run Download JGame 3.6 (20120810) as tar.gz (28Mb) or as ZIP (28Mb). The package comes with all the docs and games. Or use this mirror: tar.gz or zip, or the sourceforge download mirror. Older versions are available in the archive section. Download JGame 3.6.2 beta (source only) as ZIP Download JGame Flash 1.0 (20110430) as Zip (3.6Mb) or view the README. Browse through the games: Applet page J2ME MIDlet page tmtg.net: the best games for all platforms, including new arrivals. Try the (prototype) online action game generator Documentation View the docs online: Setting up JGame with Eclipse Tutorial README - intro and install instructions Manual - general concepts and troubleshooting Changelog Javadoc License (BSD) The Box2D documentation (API is very similar to JBox2D) Also try: the JGame tutorial by Jeff Friesen. Note: he assumes the JGame 1.x API. In JGame 2.X, the initialisation API has changed. In JGame 3.X, some classes and methods are replaced. And: Set up and use JGame in NetBeans, a JGame tutorial by Techfleck. Contact For problems or bugs, mail me at schooten@cs.utwente.nl or check out the forums hosted at How to get Java Macos X comes with Java 1.4+ onboard. For Unix or Windows, we advise you to download the newest Oracle Java (either Java 6.29 or Java 7), or OpenJDK. If you want to compile stuff, make sure you get the JDK (development kit). If you only want to run games, get the JRE (runtime environment). See the Readme for info on other Java platforms (Android, J2ME). Get Oracle Java 7 JDK or JRE Get OpenJDK here Example code So, what does the code of a JGame game look like? Nebula Alpha source (87 lines) - a minimal but complete game using the JGame base classes Space Run source (64 lines) - a minimal but complete game using the StdGame class Matrix Miner source (226 lines) - a more complex game with tiles and using StdGame and Std objects. More code examples are found in: the JGame tutorial.'
+year_published = 2025
+clearnet = "https://13thmonkey.org/~boris/jgame/index.html"
+tags = ["3.6.2", "action", "applet", "archive", "arrivals.", "best", "beta", "blog", "browse", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.facebook.com", "box2d.org", "cgi.algonet.se", "community.java.net", "croftsoft.com", "easyway.sourceforge.net", "flyingyogi.com", "freebsd.org", "goldenstudios.or.id", "gug.sunsite.dk", "interactivepulp.com", "j2megl.sourceforge.net", "javagaming.org", "javaunlimited.net", "javaworld.com", "linux.org", "netbsd.org", "openbsd.org", "osta.org", "pkgsrc.org"]
+
+["https://13thmonkey.org/udfclient/index.html"]
+title = "13thmonkey.org : udfclient"
+full_description = '''UDFclient is a userland implementation of the UDF filingsystem as defined by the OSTA group. UDFclient was created as a study platform for the full read and write kernel level implementation found in the NetBSD kernel. The NetBSD kernel can now read and write all media and upto UDF 2.50 though it can't resize metadata partitions yet. UDFclient basicly provides a userinterface not unlike ftp(1) but differs in that it allways fetches or writes files recursively from the disc(s). As from version 0.4.9 it supports the basic get, mget, put, mput, mv, rm, mkdir, cd, lcd, free, pwd, lls command set. get and put can now also retrieve or store using different names than the origional. Update DirectCD/Drag2Disc will now read and write discs formatted with UDFclient fine! Older DirectCD/Drag2Disc versions might only accept media formatted with the -2 option. Feedback is much apreciated also when its running fine!; please do mail me about any failure of disc reading with a small report to reinoud@netbsd.org consisting of the following points (replace "/dev/cdrom" by the device or file you used): Resqueing files and directories from unreadable, incomplete or broken recordables can be done by using the -r flag. By using the cd_sessions command you can see the number of CD/DVD sessions the disc has and specify wich session(s) you would like to give a try. These can be seen as older snapshots of the disc. Roxio DirectCD/Drag2Disc interoperatibility. Newer DirectCD/Drag2Disc versions that support UDF version 2.00 and higher will happily read and write media created by UDFclient and vice versa. Older versions might only be able to read and write UDFclient discs created with the -2 flag that forces it to use older descriptors. Important for DirectCD/Drag2Disc is to select in the advanced eject settings of DirectCD/Drag2Disc the option "use UDF version used on current disc". It will otherwise try to use a mechanism that is breaking certain UDF rules in order to try to be more compatible with older customer appliances.'''
+year_published = 2025
+clearnet = "https://13thmonkey.org/udfclient/index.html"
+tags = ["bugs", "note:", "please", "problem", "releases", "reporting", "serious", "supported", "systems", "tips"]
+language = "en"
+internal-references = ["none"]
+external-references = ["dragonflybsd.org", "freebsd.org", "hacktic.nl", "linux.org", "netbsd.org", "openbsd.org", "osta.org", "pkgsrc.org", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/ARM"]
+title = "Index of documentation/ARM/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/ARM"
+tags = ["documentation/arm/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/Postscript"]
+title = "Index of documentation/Postscript/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/Postscript"
+tags = ["documentation/postscript/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/DVD"]
+title = "Index of documentation/DVD/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/DVD"
+tags = ["documentation/dvd/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/SCSI"]
+title = "Index of documentation/SCSI/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/SCSI"
+tags = ["documentation/scsi/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/Graphics"]
+title = "Index of documentation/Graphics/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/Graphics"
+tags = ["documentation/graphics/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/documentation/CAD"]
+title = "Index of documentation/CAD/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/CAD"
+tags = ["documentation/cad/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/Artdraw/images"]
+title = "Index of Artdraw/images/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/Artdraw/images"
+tags = ["artdraw/images/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.facebook.com", "box2d.org", "cgi.algonet.se", "community.java.net", "croftsoft.com", "easyway.sourceforge.net", "flyingyogi.com", "freebsd.org", "goldenstudios.or.id", "gug.sunsite.dk", "interactivepulp.com", "j2megl.sourceforge.net", "javagaming.org", "javaunlimited.net", "javaworld.com", "linux.org", "netbsd.org", "openbsd.org", "osta.org", "pkgsrc.org"]
+
+["https://13thmonkey.org"]
+title = "13thmonkey.org"
+year_published = 2025
+clearnet = "https://13thmonkey.org"
+tags = ["documentation", "projects"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]
+
+["https://13thmonkey.org/~boris/photopnmtools/index.html"]
+title = "PhotoPNMTools"
+full_description = "Download Version 1.3 (Changes) Download Version 1.2.1 Download Version 1.2 (patchlevel 2,fixed rounding error problem) Download Version 1.1 Download Version 1.0 A better solution is to weigh the source pixels in the destination image according to their relative position to the four closest destination pixels. I first tried this algorithm to render fractals, with very good results. While the perceived sharpness may be less than without anti-aliasing (i.e. details have a somewhat soft contrast), this is misleading, as the method retains significantly more visually-useful detail than without anti-aliasing. The weights can be made non-linear, or one can use a sharpening filter, to compensate for the soft detail contrast. Theoretically, an anti-aliased image does not contain more information than a non-anti-aliased one, but in practice, an anti-aliased image is visually more meaningful: the resulting image looks as if you were looking at it from such a distance that the details look blurred. There are some cases in which anti-aliasing shows very much improved results. For example, the effect of anti-aliasing really shows in fractals. I did a really wonderful fractal print by shrinking a large image, and sharpening it afterwards. Sinc also has a disadvantage: it produces ripples, sometimes referred to as `ripple artifacts', even though they are not, strictly speaking, artifacts, but rather, the result of a wrong assumption. The assumption is that the original image of which the sampled image was taken does not contain signals of greater frequencies than could be recorded by the sampled image. While this assumption is not necessarily false, it usually is in practice. I did not find the ripples very obtrusive, though, and they do produce some extra sharpness to the image, which is what they are for. They are worst in line drawing type images, and least obtrusive in photographic images. When applying sharpening filters though, they may become obtrusive in some cases. For large magnifications, an advantage is that the pixels of the original image are minimally visible."
+year_published = 2025
+clearnet = "https://13thmonkey.org/~boris/photopnmtools/index.html"
+tags = ["appetite:", "brightness", "characteristics", "colour", "editing", "enlarging", "gamma", "images!", "information", "interpolating"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.facebook.com", "box2d.org", "cgi.algonet.se", "community.java.net", "croftsoft.com", "easyway.sourceforge.net", "flyingyogi.com", "freebsd.org", "goldenstudios.or.id", "gug.sunsite.dk", "interactivepulp.com", "j2megl.sourceforge.net", "javagaming.org", "javaunlimited.net", "javaworld.com", "linux.org", "netbsd.org", "openbsd.org", "osta.org", "pkgsrc.org"]
+
+["https://13thmonkey.org/documentation/NetBSD"]
+title = "Index of documentation/NetBSD/"
+year_published = 2025
+clearnet = "https://13thmonkey.org/documentation/NetBSD"
+tags = ["documentation/netbsd/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["hacktic.nl", "wwwhome.cs.utwente.nl"]

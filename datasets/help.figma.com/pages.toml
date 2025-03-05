@@ -1,0 +1,403 @@
+["https://help.figma.com/hc/sections/13148115222551"]
+title = "Common questions – Figma Learn - Help Center"
+description = "Get answers to common questions"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Help Common questions var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Common questions Get answers to common questions Config 2024 UI3: a guide for admins How do I get access to Figma AI? What's new from Config 2024 Config 2024: a guide for admins Navigating UI3: Figma's new UI Common questions Which plan am I on? What Figma features are in beta? How do I configure my browser for Figma? What can I do offline in Figma? What are the system requirements for Figma? See all 14 articles"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/13148115222551"
+tags = ["common", "common questions", "community", "config", "courses", "design", "figjam", "figma", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/13166489863319"]
+title = "Files and projects – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage files and projects Files and projects var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Files and projects Guide to collaborating with clients in Figma Guide to files and projects Create a new file Create a new project Move a file Move a project Rename files and projects Duplicate or copy files Save a local copy of files Delete and restore files Delete and restore projects Leave a file or prototype Create and manage pages View a file's version history"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/13166489863319"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "files", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/360002051633"]
+title = "FigJam – Figma Learn - Help Center"
+full_description = "var categoryid = 360002051633; var templateName = 'category'; FigJam Tour the interface Work on boards Run meetings Import and export Use AI in FigJam Tour the interface Guide to FigJam Explore FigJam files FigJam for iPad Use FigJam with a screen reader Work on boards Create and manage pages in FigJam Get FigJam templates Create custom templates in FigJam Build faster with quick create in FigJam Create mindmaps in FigJam Organize your FigJam board with sections See all 24 articles Run meetings Facilitate meetings with spotlight Stay on track with the timer in FigJam Run voting sessions in FigJam Invite visitors to an open session Stamps, emotes, and high-fives Send messages with cursor chat See all 10 articles Import and export Import Mural content to FigJam Import Lucid documents to FigJam Migrate Google Jamboards to FigJam Import and export with FigJam Import spreadsheet data, images, and designs to FigJam Import Miro boards to FigJam See all 7 articles Use AI in FigJam Use AI tools in FigJam Generate boards and diagrams with FigJam AI Sort and summarize stickies with FigJam AI Use Jambot in FigJam"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/360002051633"
+tags = ["boards", "common", "common questions", "community", "courses", "create", "design", "export", "figjam", "figma"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/18867379681559"]
+title = "Use AI in FigJam – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center FigJam Use AI in FigJam var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in FigJam Use AI tools in FigJam Generate boards and diagrams with FigJam AI Sort and summarize stickies with FigJam AI Use Jambot in FigJam var templateName = 'sections'; Figma Learn - Help Center FigJam Use AI in FigJam var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in FigJam Use AI tools in FigJam Generate boards and diagrams with FigJam AI Sort and summarize stickies with FigJam AI Use Jambot in FigJam"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/18867379681559"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode", "new"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/en-us/requests/new"]
+title = "Submit a request – Figma Learn - Help Center"
+full_description = '''var templateName = 'new_request'; Figma Learn - Help Center Submit a request Submit a request As the Figma Support team grows, we are able to offer help in French, German, and Japanese. Longer wait times may apply. Please choose your issue below - Untriaged Account and file management Payments and invoices Data protection and security Product question Report a bug Community plugins, widgets, and files Figma Events (Config) Report abuse Article feedback Performance Report const requester_email = document.querySelector('#request_anonymous_requester_email'); const placeholder_text = `Figma account email address`; requester_email ? requester_email.placeholder = placeholder_text : null const attachmentDropzone = document.querySelector('#upload-dropzone'); if (attachmentDropzone) { const tip = document.createElement('div'); tip.className = 'tip technical_tip'; tip.innerHTML = ` <p style="margin-top:0px;"> <ul> <li><b>For performance reports: </b><a href="https://help.figma.com/hc/en-us/articles/360041468414-Record-a-Chrome-performance-profile" target="_blank">You can save the performance profile</a> after reproducing the issue and attach to this form.</li> <br> <li> <b>Share a video: </b>If you’d like to share a brief video showing the issue, please include the entire Figma window with the properties and layers panels visible, relevant layers expanded, and any affected layers selected.</li> </ul> </p> ` attachmentDropzone.parentNode.insertBefore(tip, attachmentDropzone); } // document.querySelector('#new_request').addEventListener("submit", trackEvent('Submit a request - HC', 'Submit'));'''
+year_published = 2025
+clearnet = "https://help.figma.com/hc/en-us/requests/new"
+tags = ["common", "common questions", "community", "const", "courses", "design", "figjam", "figma", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23691657321239"]
+title = "Courses – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Courses, tutorials, projects Courses var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Courses Figma for beginners (4 parts) ▶️ Beginner 1: Explore ideas ▶️ Beginner 2: Create designs ▶️ Beginner 3: Build prototypes ▶️ Beginner 4: Prepare for handoff Introduction to design systems (5 parts) Overview: Introduction to design systems Lesson 1: Welcome to design systems Lesson 2: Define your design system Lesson 3: Build your design system Lesson 4: Document and manage your system See all 6 articles Build your first plugin (5 parts) ▶️ BYFP 1: Overview ▶️ BYFP 2: Introduction to Plugins & API ▶️ BYFP 3: Plugin Environment Setup ▶️ BYFP 4: Building Your Plugin ▶️ BYFP 5: Publishing to the Community"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23691657321239"
+tags = ["beginner", "beginners", "build", "byfp", "common", "common questions", "community", "courses", "design", "figjam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc"]
+title = "Figma Learn - Help Center"
+full_description = '''// Add a custom body class so we can target new layouts without affecting old layouts. Eventually remove this once everything has been updated. document.body.classList.add("figma-learn"); Hello, how can we help? Find answers and inspiration on all things Figma. Figma Slides Create, present, and share beautiful presentations with Figma Slides. What's new at Figma Looking for updates... Popular topics Fetching topics... Featured videos See our best features in action. Subscribe on YouTube so you never miss a video. Fetching videos... Get started, super fast Guides that will help you get familiar with Figma and FigJam quickly so you can start collaborating with your team to build better products. Level up with a video course Couldn't find what you needed? Don’t worry, we’ve got more options for you. Forums Jam together with the Figma community. Best practice guides Make the most of Figma. Contact support Our support team is ready to assist.'''
+year_published = 2025
+clearnet = "https://help.figma.com/hc"
+tags = ["common", "common questions", "community", "couldn't", "course", "courses", "design", "fast", "featured", "fetching topics..."]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/24146049244695"]
+title = "Create and edit slides – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Slides Create and edit slides var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Create and edit slides Create slide decks Create a new slide deck Add, delete, and organize slides Use slide transitions Add Figma Design libraries to your slide deck Copy slide decks from Figma Design to Figma Slides See all 11 articles Use slide deck templates Find and use slide deck templates Publish slide deck templates to a team or organization Add interactive elements Add interactive prototypes to slides Add live interactions to slides Collaborate on slides Work on slide decks together"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/24146049244695"
+tags = ["collaborate", "common", "common questions", "community", "courses", "create", "deck", "decks", "design", "edit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/19818052690455"]
+title = "Work with support – Figma Learn - Help Center"
+description = "Get faster answers by sharing logs and specs with Figma's support team"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Help Work with support var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work with support Get faster answers by sharing logs and specs with Figma's support team Get help with Figma Submit a bug report Export console logs Export network logs Record a Chrome performance profile Download Figma desktop app debug logs View your graphics card specifications var templateName = 'sections'; Figma Learn - Help Center Help Work with support var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work with support Get faster answers by sharing logs and specs with Figma's support team Get help with Figma Submit a bug report Export console logs Export network logs Record a Chrome performance profile Download Figma desktop app debug logs View your graphics card specifications"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/19818052690455"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "logs", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/13148571463703"]
+title = "Tour the interface – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Tour the interface var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Tour the interface Explore Explore design files Change the background color of the canvas Access design tools from the toolbar View layers and pages in the left sidebar Design, prototype, and explore layer properties in the right sidebar File utilities Use the actions menu in Figma Design Keyboard shortcuts in Figma Set small and big nudge values Adjust your zoom and view options Set custom thumbnails for files See all 8 articles"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/13148571463703"
+tags = ["common", "common questions", "community", "courses", "design", "explore", "figjam", "figma", "file", "forum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23512714336151"]
+title = "Turn designs to code – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Turn designs to code var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Turn designs to code Code Connect Use code snippets in Dev Mode Link Dev resources to layers in Dev Mode Figma for VS Code var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Turn designs to code var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Turn designs to code Code Connect Use code snippets in Dev Mode Link Dev resources to layers in Dev Mode Figma for VS Code"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23512714336151"
+tags = ["code", "common", "common questions", "community", "courses", "design", "designs", "figjam", "figma", "forum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/360002772634"]
+title = "Community – Figma Learn - Help Center"
+description = "Explore files and plugins made just for Figma. Duplicate, install, and remix thousands of Figma resources. Connect and learn from other..."
+full_description = "var categoryid = 360002772634; var templateName = 'category'; Community Explore the Community Creator tools and resources Explore the Community About the Figma Community Guide to the Figma Community Resources Duplicate slide deck templates from Community Duplicate Community files Use widgets in files Use plugins in files Purchase Community resources See all 8 articles Interact Comments on Community Follow creators and save resources Report a Community resource or comment Creator tools and resources Become a creator Figma Community Guidelines Create a Community profile Create a team or organization Community profile Add or remove profile connections Grow your audience on Community Files Community publishing permissions Publish files to the Figma Community Remove or unpublish Community files Plugins & Widgets Plugin and widget review guidelines Security disclosure principles Make widgets for the Figma Community Create a widget for development Widget Code Generator by Figma See all 13 articles Slide deck templates Publish slide deck templates to the Figma Community Sell resources About selling Community resources Activate your Stripe account View your sales metrics Delist paid resources"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/360002772634"
+tags = ["become", "common", "common questions", "community", "courses", "creator", "deck", "design", "explore", "figjam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/15023066873239"]
+title = "Dev Mode – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Dev Mode Tour the interface Guide to Dev Mode Navigate designs in Dev Mode What's new in Dev Mode? Dev Mode for admins Inspect designs Guide to inspecting Compare changes in Dev Mode Add measurements and annotate designs in Dev Mode Variables in Dev Mode Turn designs to code Code Connect Use code snippets in Dev Mode Link Dev resources to layers in Dev Mode Figma for VS Code Dev Mode across your organization Dev Mode statuses and notifications Dev Mode focus view Dev Mode ready for dev view Manage Dev Mode settings for an organization"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/15023066873239"
+tags = ["across", "code", "common", "common questions", "community", "courses", "design", "designs", "figjam", "figma"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/19100866155543"]
+title = "Manage billing groups – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage Enterprise plan settings and permissions Manage billing groups var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage billing groups What’s the difference between workspaces and billing groups? Launch billing groups in an organization Manage billing groups in an organization var templateName = 'sections'; Figma Learn - Help Center Administration Manage Enterprise plan settings and permissions Manage billing groups var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage billing groups What’s the difference between workspaces and billing groups? Launch billing groups in an organization Manage billing groups in an organization"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/19100866155543"
+tags = ["billing", "common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "groups"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23536356509975"]
+title = "Build design systems – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Build design systems var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Build design systems Styles Styles in Figma Create color, text, effect, and layout grid styles Manage and share styles Components Guide to components in Figma Create components to reuse in designs Create and use variants Create interactive components with variants Explore component properties See all 7 articles Variables The difference between variables and styles Guide to variables in Figma Overview of variables, collections, and modes Create and manage variables Modes for variables See all 6 articles Create and share libraries Guide to libraries in Figma Add descriptions to styles, components, and variables Publish a library Move published components Edit main components See all 7 articles Use libraries Get started with Apple's UI kit Start designing with UI kits Apply styles to layers and objects Review and accept library updates Swap style and component libraries See all 9 articles Manage your libraries Add or remove a library from a design file Enable access to libraries in your drafts Enable a library for a team Swap components and instances Remove your access to a library"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23536356509975"
+tags = ["articles", "build", "common", "common questions", "community", "components", "courses", "create", "design", "figjam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/15329473545623"]
+title = "Tour the interface – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center FigJam Tour the interface var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Tour the interface Guide to FigJam Explore FigJam files FigJam for iPad Use FigJam with a screen reader var templateName = 'sections'; Figma Learn - Help Center FigJam Tour the interface var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Tour the interface Guide to FigJam Explore FigJam files FigJam for iPad Use FigJam with a screen reader"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/15329473545623"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "interface", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/en-us"]
+title = "Figma Learn - Help Center"
+full_description = '''// Add a custom body class so we can target new layouts without affecting old layouts. Eventually remove this once everything has been updated. document.body.classList.add("figma-learn"); Hello, how can we help? Find answers and inspiration on all things Figma. Figma Slides Create, present, and share beautiful presentations with Figma Slides. What's new at Figma Looking for updates... Popular topics Fetching topics... Featured videos See our best features in action. Subscribe on YouTube so you never miss a video. Fetching videos... Get started, super fast Guides that will help you get familiar with Figma and FigJam quickly so you can start collaborating with your team to build better products. Level up with a video course Couldn't find what you needed? Don’t worry, we’ve got more options for you. Forums Jam together with the Figma community. Best practice guides Make the most of Figma. Contact support Our support team is ready to assist.'''
+year_published = 2025
+clearnet = "https://help.figma.com/hc/en-us"
+tags = ["common", "common questions", "community", "couldn't", "course", "courses", "design", "fast", "featured", "fetching topics..."]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/1500000700042"]
+title = "Run meetings – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center FigJam Run meetings var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Run meetings Facilitate meetings with spotlight Stay on track with the timer in FigJam Run voting sessions in FigJam Invite visitors to an open session Stamps, emotes, and high-fives Send messages with cursor chat Mention people in FigJam text objects Comments in FigJam Use audio to chat with your team Use closed captioning for audio var templateName = 'sections'; Figma Learn - Help Center FigJam Run meetings var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Run meetings Facilitate meetings with spotlight Stay on track with the timer in FigJam Run voting sessions in FigJam Invite visitors to an open session Stamps, emotes, and high-fives Send messages with cursor chat Mention people in FigJam text objects Comments in FigJam Use audio to chat with your team Use closed captioning for audio"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/1500000700042"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "meetings", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23512742846487"]
+title = "Dev Mode across your organization – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Dev Mode across your organization var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Dev Mode across your organization Dev Mode statuses and notifications Dev Mode focus view Dev Mode ready for dev view Manage Dev Mode settings for an organization var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Dev Mode across your organization var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Dev Mode across your organization Dev Mode statuses and notifications Dev Mode focus view Dev Mode ready for dev view Manage Dev Mode settings for an organization"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23512742846487"
+tags = ["across", "common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/1500000378401"]
+title = "Troubleshoot – Figma Learn - Help Center"
+description = "Try these resources if you run into an issue"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Help Troubleshoot var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Troubleshoot Try these resources if you run into an issue General Troubleshoot AI tools in Figma Design Troubleshooting checklist Error 404 when loading Figma files Connection or server error 403 My files are not opening See all 11 articles Fonts Missing font alert in Figma Design Manage conflicting fonts Access and troubleshoot missing Adobe fonts in Figma Design Uninstall the Figma font helper Images Image loading and performance Audio Troubleshooting audio"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/1500000378401"
+tags = ["audio", "common", "common questions", "community", "courses", "design", "figjam", "figma", "fonts", "forum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/23556790977431"]
+title = "Platform – Figma Learn - Help Center"
+full_description = "var categoryid = 23556790977431; var templateName = 'category'; Platform Work across Figma Integrations and applications Work across Figma Work across Figma What is Figma? Work between Figma and FigJam Guide to the Figma desktop app Guide to the Figma mobile app Use spell check Figma AI About Figma AI Control AI features and content training settings Integrations and applications Meetings Figma and Zoom Figma and Google Meet Add Figma files to Google Calendar events Figma and Microsoft Teams Get Figma notifications in Slack See all 6 articles Collaboration FigJam and Google Classroom Jira and Figma Asana and Figma StoriesOnBoard and Figma Productboard and Figma See all 12 articles Prototyping Test prototype usability with dscout Test your prototypes with UserTesting Flinto and Figma Principle and Figma ProtoPie and Figma Research and insights Automate reports with Maze Add insights with UserTesting UXtweak and Figma Analyze engagement with Mixpanel Sprig and Figma See all 7 articles Design and development Lens Studio and Figma Frontify and Figma Lingo and Figma Bubble and Figma AWS Amplify Studio and Figma See all 8 articles Third party services notice"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/23556790977431"
+tags = ["across", "applications", "articles", "collaboration", "common", "common questions", "community", "courses", "design", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/13148624530967"]
+title = "Projects – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Courses, tutorials, projects Projects Projects var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Projects Design a file thumbnail Create a tooltip component set Design an interactive button Create a responsive card with auto layout and constraints Create a loading animation in Figma Create an onboarding flow with advanced prototyping Design a search icon Create a reusable icon grid Create a photo gallery prototype Create your first meeting board in FigJam Run meetings in FigJam Create pixel art in Figma Design Design your first button Create a basic wireframe and prototype Create an illustration in Figma Design Make a custom profile card"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/13148624530967"
+tags = ["common", "common questions", "community", "courses", "create", "design", "figjam", "figma", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23696252338455"]
+title = "Use AI in Figma Design – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Use AI in Figma Design var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in Figma Design Use AI tools in Figma Design Use First Draft with Figma AI Find assets and designs using AI Rewrite, translate, and shorten text with AI Make interactions with AI Rename layers with AI Make an image with AI Replace text content with AI var templateName = 'sections'; Figma Learn - Help Center Figma Design Use AI in Figma Design var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in Figma Design Use AI tools in Figma Design Use First Draft with Figma AI Find assets and designs using AI Rewrite, translate, and shorten text with AI Make interactions with AI Rename layers with AI Make an image with AI Replace text content with AI"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23696252338455"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode", "new"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/24146015318551"]
+title = "Figma Slides – Figma Learn - Help Center"
+full_description = "var categoryid = 24146015318551; var templateName = 'category'; Figma Slides Tour the interface Create and edit slides Present slide decks Use AI in Figma Slides Import and export Tour the interface Explore Figma Slides Create and edit slides Create slide decks Create a new slide deck Add, delete, and organize slides Use slide transitions Add Figma Design libraries to your slide deck Copy slide decks from Figma Design to Figma Slides See all 11 articles Use slide deck templates Find and use slide deck templates Publish slide deck templates to a team or organization Add interactive elements Add interactive prototypes to slides Add live interactions to slides Collaborate on slides Work on slide decks together Present slide decks Present a slide deck Add and view presenter notes Skip or unskip slides Spotlight yourself or other presenters Use AI in Figma Slides Generate a slide deck outline from a FigJam board using Figma AI Adjust tone using Figma AI Import and export Export from Figma Slides"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/24146015318551"
+tags = ["collaborate", "common", "common questions", "community", "courses", "create", "deck", "decks", "design", "edit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/20833164749719"]
+title = "Manage security features – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage Enterprise plan settings and permissions Manage security features var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage security features Set an idle session timeout Set an expiration on public links in design files Restrict or prevent guest access Restrict access to content from outside your organization Enable localized file hosting in the EU Disable cursor chat var templateName = 'sections'; Figma Learn - Help Center Administration Manage Enterprise plan settings and permissions Manage security features var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage security features Set an idle session timeout Set an expiration on public links in design files Restrict or prevent guest access Restrict access to content from outside your organization Enable localized file hosting in the EU Disable cursor chat"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/20833164749719"
+tags = ["common", "common questions", "community", "courses", "design", "features", "figjam", "figma", "forum", "manage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/20832705104407"]
+title = "Manage Enterprise plan settings and permissions – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage Enterprise plan settings and permissions var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage Enterprise plan settings and permissions Manage billing groups What’s the difference between workspaces and billing groups? Launch billing groups in an organization Manage billing groups in an organization Manage workspaces Launch workspaces in your organization Manage workspaces in an organization Change the visibility of a workspace in an organization Guide to workspaces Create a workspace See all 14 articles Manage security features Set an idle session timeout Set an expiration on public links in design files Restrict or prevent guest access Restrict access to content from outside your organization Enable localized file hosting in the EU See all 6 articles Figma for Government"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/20832705104407"
+tags = ["billing", "common", "common questions", "community", "courses", "design", "enterprise", "features", "figjam", "figma"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/24146082007959"]
+title = "Use AI in Figma Slides – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Slides Use AI in Figma Slides var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in Figma Slides Generate a slide deck outline from a FigJam board using Figma AI Adjust tone using Figma AI var templateName = 'sections'; Figma Learn - Help Center Figma Slides Use AI in Figma Slides var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Use AI in Figma Slides Generate a slide deck outline from a FigJam board using Figma AI Adjust tone using Figma AI"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/24146082007959"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode", "new"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/20832780119959"]
+title = "Manage teams in an organization – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage a Figma organization Manage teams in an organization var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage teams in an organization Download a list of teams in a workspace or organization Manage teams in an organization Manage who can create a team in an organization Transfer a project or team to a different account Create a team in an organization Change access to a team in an organization"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/20832780119959"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "manage", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/20832795476375"]
+title = "Overview – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage a Figma organization Overview var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Overview Guide to managing a Figma organization Guide to merging organizations Privacy and security in organizations var templateName = 'sections'; Figma Learn - Help Center Administration Manage a Figma organization Overview var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Overview Guide to managing a Figma organization Guide to merging organizations Privacy and security in organizations"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/20832795476375"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode", "new"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23537156813975"]
+title = "Work together in files – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Work together in files var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work together in files Comments Guide to comments in Figma Add comments to files View and manage comments Move or edit comments Comment on prototypes See all 6 articles Multiplayer tools See viewer history for your files Present to collaborators using spotlight Use cursor chat in Figma Design Optimize design files for developer handoff Branching and merging Guide to branching Share a branch Get updates from main files View and manage branches Request a branch review See all 8 articles"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23537156813975"
+tags = ["branching", "comments", "common", "common questions", "community", "courses", "design", "figjam", "figma", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/1500000672561"]
+title = "Import and export – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center FigJam Import and export var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Import and export Import Mural content to FigJam Import Lucid documents to FigJam Migrate Google Jamboards to FigJam Import and export with FigJam Import spreadsheet data, images, and designs to FigJam Import Miro boards to FigJam Export your FigJam board var templateName = 'sections'; Figma Learn - Help Center FigJam Import and export var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Import and export Import Mural content to FigJam Import Lucid documents to FigJam Migrate Google Jamboards to FigJam Import and export with FigJam Import spreadsheet data, images, and designs to FigJam Import Miro boards to FigJam Export your FigJam board"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/1500000672561"
+tags = ["common", "common questions", "community", "courses", "design", "export", "figjam", "figma", "forum", "import"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/23691965907223"]
+title = "Work across Figma – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Platform Work across Figma var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work across Figma Work across Figma What is Figma? Work between Figma and FigJam Guide to the Figma desktop app Guide to the Figma mobile app Use spell check Figma AI About Figma AI Control AI features and content training settings var templateName = 'sections'; Figma Learn - Help Center Platform Work across Figma var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work across Figma Work across Figma What is Figma? Work between Figma and FigJam Guide to the Figma desktop app Guide to the Figma mobile app Use spell check Figma AI About Figma AI Control AI features and content training settings"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/23691965907223"
+tags = ["across", "common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/15329445881111"]
+title = "Work on boards – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center FigJam Work on boards var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Work on boards Create and manage pages in FigJam Get FigJam templates Create custom templates in FigJam Build faster with quick create in FigJam Create mindmaps in FigJam Organize your FigJam board with sections Pan and zoom in FigJam Doodle and highlight in FigJam with drawing tools Select, move, and order objects in FigJam Visualize information using shapes with text Create accessible FigJam boards Resize, rotate, and flip objects in FigJam Sticky notes in FigJam Group objects in FigJam Place images, video, and GIFs in FigJam Create text and links in FigJam Apply colors in FigJam Create diagrams and flows with connectors and lines Tables in FigJam Find and replace text in FigJam boards Lock and unlock objects in FigJam Add link previews in FigJam Use stickers and libraries in FigJam Code blocks in FigJam"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/15329445881111"
+tags = ["boards", "common", "common questions", "community", "courses", "create", "design", "figjam", "figma", "forum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/360002042553"]
+title = "Figma Design – Figma Learn - Help Center"
+full_description = "var categoryid = 360002042553; var templateName = 'category'; Figma Design Tour the interface Create designs Build design systems Dev Mode Create prototypes Import and export Work together in files Use AI in Figma Design Tour the interface Explore Explore design files Change the background color of the canvas Access design tools from the toolbar View layers and pages in the left sidebar Design, prototype, and explore layer properties in the right sidebar File utilities Use the actions menu in Figma Design Keyboard shortcuts in Figma Set small and big nudge values Adjust your zoom and view options Set custom thumbnails for files See all 8 articles Create designs Create and edit layers Flattening objects Frames in Figma Design Sketch on the canvas with the pencil tool Vector networks Shape tools See all 9 articles Work with layers Edit objects on the canvas in bulk Identify matching objects Parent, child, and sibling relationships Select layers and objects Adjust alignment, rotation, position, and dimensions See all 19 articles Text and typography Guide to text in Figma Design Explore text properties Add a font to Figma Design Browse and apply fonts Create and apply text styles See all 14 articles Color, gradients, and images Sample colors with the eyedropper tool Paints in Figma Color models in Figma Design Add fills to text and shape layers Upload an image as a fill See all 13 articles Additional properties Apply and adjust stroke properties Apply shadow or blur effects Adjust corner radius and smoothing Use auto layout Explore auto layout properties Add auto layout to a design Build design systems Styles Styles in Figma Create color, text, effect, and layout grid styles Manage and share styles Components Guide to components in Figma Create components to reuse in designs Create and use variants Create interactive components with variants Explore component properties See all 6 articles Variables The difference between variables and styles Guide to variables in Figma Overview of variables, collections, and modes Create and manage variables Modes for variables See all 6 articles Create and share libraries Guide to libraries in Figma Add descriptions to styles, components, and variables Publish a library Move published components Edit main components See all 7 articles Use libraries Get started with Apple's UI kit Start designing with UI kits Apply styles to layers and objects Review and accept library updates Swap style and component libraries See all 9 articles Manage your libraries Add or remove a library from a design file Enable access to libraries in your drafts Enable a library for a team Swap components and instances Remove your access to a library Dev Mode Tour the interface Guide to Dev Mode Navigate designs in Dev Mode What's new in Dev Mode? Dev Mode for admins Inspect designs Guide to inspecting Compare changes in Dev Mode Add measurements and annotate designs in Dev Mode Variables in Dev Mode Turn designs to code Code Connect Use code snippets in Dev Mode Link Dev resources to layers in Dev Mode Figma for VS Code Dev Mode across your organization Dev Mode statuses and notifications Dev Mode focus view Dev Mode ready for dev view Manage Dev Mode settings for an organization Create prototypes Guides Guide to prototyping in Figma State management for prototypes Use animated GIFs in prototypes Use videos in prototypes Prototype triggers See all 8 articles Create prototypes Use sections in prototyping Connect your prototype Add prototype connections from main components Create and manage prototype flows Create overlays in your prototypes See all 7 articles Advanced prototyping Advanced prototyping examples Smart animate layers between frames Variable modes in prototypes Multiple actions and conditionals Use expressions in prototypes See all 6 articles View prototypes Present prototypes offline Set prototype device and background settings View prototype connections Play your prototypes View prototypes on a mobile device See all 6 articles Import and export Guide to imports in Figma Design Import files to the file browser Import Sketch files Copy assets between design tools Export from Figma Design Export formats and settings Work together in files Comments Guide to comments in Figma Add comments to files View and manage comments Move or edit comments Comment on prototypes See all 6 articles Multiplayer tools See viewer history for your files Present to collaborators using spotlight Use cursor chat in Figma Design Optimize design files for developer handoff Branching and merging Guide to branching Share a branch Get updates from main files View and manage branches Request a branch review See all 8 articles Use AI in Figma Design Use AI tools in Figma Design Use First Draft with Figma AI Find assets and designs using AI Rewrite, translate, and shorten text with AI Make interactions with AI Rename layers with AI See all 8 articles"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/360002042553"
+tags = ["across", "additional", "adjust", "advanced", "apply", "articles", "auto", "branching", "build", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/20830735292567"]
+title = "Manage seats – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Billing Manage seats var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage seats Manage seats in Figma Set default seat types Approve or decline seat upgrade requests Request an upgrade to a paid seat Manage seats via SCIM Manage seats via SCIM using Okta Manage seats via SCIM using Microsoft Entra ID var templateName = 'sections'; Figma Learn - Help Center Administration Billing Manage seats var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Manage seats Manage seats in Figma Set default seat types Approve or decline seat upgrade requests Request an upgrade to a paid seat Manage seats via SCIM Manage seats via SCIM using Okta Manage seats via SCIM using Microsoft Entra ID"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/20830735292567"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "manage", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/1500001018842"]
+title = "Pay for Figma – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Billing Pay for Figma var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Pay for Figma Supported billing currencies Failed payments Sales tax and VAT var templateName = 'sections'; Figma Learn - Help Center Administration Billing Pay for Figma var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Pay for Figma Supported billing currencies Failed payments Sales tax and VAT"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/1500001018842"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "forum", "mode", "new"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com"]
+title = "Figma Learn - Help Center"
+full_description = '''// Add a custom body class so we can target new layouts without affecting old layouts. Eventually remove this once everything has been updated. document.body.classList.add("figma-learn"); Hello, how can we help? Find answers and inspiration on all things Figma. Figma Slides Create, present, and share beautiful presentations with Figma Slides. What's new at Figma Looking for updates... Popular topics Fetching topics... Featured videos See our best features in action. Subscribe on YouTube so you never miss a video. Fetching videos... Get started, super fast Guides that will help you get familiar with Figma and FigJam quickly so you can start collaborating with your team to build better products. Level up with a video course Couldn't find what you needed? Don’t worry, we’ve got more options for you. Forums Jam together with the Figma community. Best practice guides Make the most of Figma. Contact support Our support team is ready to assist.'''
+year_published = 2025
+clearnet = "https://help.figma.com"
+tags = ["common", "common questions", "community", "couldn't", "course", "courses", "design", "fast", "featured", "fetching topics..."]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/1500001331382"]
+title = "Sharing and permissions – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Administration Manage files and projects Sharing and permissions var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Sharing and permissions Guide to sharing and permissions Embed files and prototypes Interact with embeds Team permissions Admins in Figma Share files and prototypes Accept invitations Add password protection to files and prototypes File sharing in an organization Restrict copying and sharing on files Share libraries in an organization Request to edit a file Remove or adjust access Manage personal access tokens Transfer ownership of files or projects Starter plan permissions Education plan permissions Professional plan permissions Organization plan permissions Enterprise plan permissions"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/1500001331382"
+tags = ["common", "common questions", "community", "courses", "design", "figjam", "figma", "files", "forum", "mode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/sections/15331553202455"]
+title = "Inspect designs – Figma Learn - Help Center"
+full_description = "var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Inspect designs var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Inspect designs Guide to inspecting Compare changes in Dev Mode Add measurements and annotate designs in Dev Mode Variables in Dev Mode var templateName = 'sections'; Figma Learn - Help Center Figma Design Dev Mode Inspect designs var categoryid = $('.breadcrumbs li:nth-child(2) a').attr('href').match(/[0-9]+/)[0]; Inspect designs Guide to inspecting Compare changes in Dev Mode Add measurements and annotate designs in Dev Mode Variables in Dev Mode"
+year_published = 2025
+clearnet = "https://help.figma.com/hc/sections/15331553202455"
+tags = ["common", "common questions", "community", "courses", "design", "designs", "figjam", "figma", "forum", "inspect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]
+
+["https://help.figma.com/hc/categories/360002051613-Get-started"]
+title = "Get started – Figma Learn - Help Center"
+full_description = '''// Add a custom body class so we can target new layouts without affecting old layouts. Eventually remove this once everything has been updated. const locale = window.location.pathname.replace("/", "").replace("?", "/").split("/")[1]; if(locale == "en-us") { document.body.classList.add("figma-learn"); } Welcome to Figma Start your learning journey with beginner-friendly resources that will have you creating in no time. 1. Find your way around Get to know the basics of navigating Figma and FigJam files with these tours. 2. Discover your inner maker New to Figma or FigJam? These starter projects are the perfect way to get some hands-on experience in the editor. Figma for beginners Ready for more? Apply your new skills and design a social media mobile app and realistic prototype. 3. Expand your knowledge Dive into the core features of Figma and FigJam. Topics to explore next Fetching topics... Learning is better with multiplayer Join the growing community of Figma users to ask questions, share tips, and level up together. Couldn't find what you needed? Don’t worry, we’ve got more options for you. Forums Jam together with the Figma community. Best practice guides Make the most of Figma. Contact support Our support team is ready to assist.'''
+year_published = 2025
+clearnet = "https://help.figma.com/hc/categories/360002051613-Get-started"
+tags = ["around", "beginners", "better", "common", "common questions", "community", "couldn't", "courses", "design", "discover"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "figma.com", "forum.figma.com", "instagram.com", "releases.figma.com", "status.figma.com", "x.com", "youtube.com"]

@@ -1,0 +1,11 @@
+["https://qifi.org"]
+title = "pure JS WiFi QR Code Generator"
+description = "pure JS WiFi QR Code Generator"
+full_description = "Ever wanted to create a cool QR code for your guests? But never wanted to type in your WiFi credentials into a form that submits them to a remote webserver to render the QR code? QiFi for the rescue! It will render the code in your browser, on your machine, so the WiFi stays as secure as it was before (read the code if you do not trust text on the internet :-))! If you use the Save-button to store a code, this is still secure, as the data is stored in HTML5 localStorage and is never transmitted to the server (in contrast to cookie-based solutions). Don't trust your browser either? Just pipe the string WIFI:S:<SSID>;T:<WPA|WEP|>;P:<password>;; through the QR code generator of your choice after reading the documentation. Huawei phones have a QR code scanner in HiVision mode. This mode has an eye-shaped icon and can be lauched from the lock screen by swiping up or from the camera. QR Reader for iPhone from TapMedia and Avira Insight QR Code Scanner by Avira Holding GmbH & Co. KG also support WiFi QR codes. Please note: Due to iOS design, third-party apps cannot modify WiFi settings directly and you'll have to copy&paste the details. Every other QR scanner out there should be able to scan the code too, but probably won't interpret it as intended. If your scanner supports WiFi QR codes, please send me a mail!"
+author = "Evgeni Golov"
+year_published = 2025
+clearnet = "https://qifi.org"
+tags = ["android", "code", "contact", "generator", "maemo", "none", "passphrase:", "pure", "scanners", "ssid:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["die-welt.net", "getbootstrap.com", "github.com", "itunes.apple.com", "jeromeetienne.github.io", "jquery.com", "macrumors.com", "maemo.org", "play.google.com", "yckart.github.io"]

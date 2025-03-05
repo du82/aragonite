@@ -1,0 +1,87 @@
+["https://newsblur.com/tos"]
+title = "Terms of Service"
+full_description = "This website is operated by NewsBlur, Inc.. Throughout the site, the terms “we”, “us” and “our” refer to NewsBlur, Inc.. NewsBlur, Inc. offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content. Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service. Any new features or tools which are added to the current store shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website following the posting of any changes constitutes acceptance of those changes. Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell our products and services to you. By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site."
+year_published = 2025
+clearnet = "https://newsblur.com/tos"
+tags = ["account", "accuracy", "accuracy,", "agreement", "billing", "changes", "comments,", "completeness", "conditions", "contact"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mongodb.com", "nodejs.org", "play.google.com", "policies.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "support.google.com", "x.com", "youtube.com"]
+
+["https://newsblur.com/ios"]
+title = "The NewsBlur iPad & iPhone App"
+year_published = 2025
+clearnet = "https://newsblur.com/ios"
+tags = ["built", "comments", "easy", "expand", "francisco.", "friends", "ipad", "iphone", "network", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com/android"]
+title = "The NewsBlur Android App"
+year_published = 2025
+clearnet = "https://newsblur.com/android"
+tags = ["android", "built", "comments", "easy", "expand", "francisco.", "friends", "network", "news", "newsblur"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "rabbitmq.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com/profile/forgot_password"]
+title = "NewsBlur"
+year_published = 2025
+clearnet = "https://newsblur.com/profile/forgot_password"
+tags = ["forgot", "password?", "problem!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com/about"]
+title = "About NewsBlur"
+year_published = 2025
+clearnet = "https://newsblur.com/about"
+tags = ["android", "behind", "better", "blurblogs", "client-side", "design", "how:", "jquery", "labor", "legal:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "postgresql.com", "rabbitmq.com", "readkitapp.com", "redis.io", "reederapp.com", "samuelclay.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com/api"]
+title = "The NewsBlur API"
+description = "Login as an existing user."
+full_description = "NewsBlur is a personal news reader that brings people together to talk about the world. A new sound of an old instrument. NewsBlur's API allows users to retrieve their feeds, feed counts, feed icons, feed statistics, and individual feed stories. No API key is required, but you are required to authenticate before using any of the API endpoints. Please be considerate, and don't hammer our servers. We're quite pleased to point out that this entire API is open-source, including the implementation of the endpoints. You can find the source of the /reader/ views source, /social/ views source, /rss_feeds/ views source, as well as the API definitions in YAML. We love pull requests. If you want to add an endpoint, modify output, or make something better, NewsBlur's repo on Github is the place to make that happen. NewsBlur supports OAuth but to have an OAuth enabled client you must email Samuel to request a client ID and secret. You will need to provide your NewsBlur username, redirect URI (often just your client app's website), and app name. To use OAuth when authenticating requests, be sure to pass the Bearer HTTP header with every request, just as you would on any other OAuth API. Use the /oauth/authorize endpoint to begin the OAuth authentication procedure. Use the /oauth/token endpoint to receive your authorized token, which you can pass in with every request. You are not required to use OAuth, in which case you will need to pass the newsblur_sessionid cookie with every request. This cookie is set on login. NewsBlur's API allows users to retrieve their feeds, feed counts, feed icons, feed statistics, and individual feed stories. No API key is required, but you are required to authenticate before using any of the API endpoints. Please be considerate, and don't hammer our servers. If your project or application allows users to interact with data from NewsBlur, you must cite NewsBlur as the source of your data. You may use the API commercially, by which we mean you may charge people money to use your project which itself uses the API. You may not, however, sell advertising against any data retrieved from NewsBlur's API. Essentially, you can charge money for your application or service, but not wrap NewsBlur in advertisements."
+year_published = 2025
+clearnet = "https://newsblur.com/api"
+tags = ["/api/login", "/api/logout", "/api/signup", "/classifier/:id", "/classifier/save", "/reader/favicons", "/reader/feed/:id", "/reader/feeds", "/reader/page/:id", "/social/activities"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com"]
+title = "NewsBlur"
+description = "Discover related sites (free+premium) and stories (premium archive only). Read the blog post."
+full_description = "NewsBlur is free on the web, iPad, iPhone, and Android. By subscribing to a premium account, you support a growing service and unlock a few restrictions."
+year_published = 2025
+clearnet = "https://newsblur.com"
+tags = ["community", "dashboard", "features", "feed", "feedback", "feeds", "fetching", "full", "global", "grid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.newsblur.com", "facebook.com", "forum.newsblur.com", "github.com", "mastodon.social", "readkitapp.com", "reederapp.com", "supertop.co", "x.com"]
+
+["https://newsblur.com/privacy"]
+title = "Privacy Policy"
+full_description = "This policy applies to all information collected or submitted on NewsBlur’s website and our apps for iPhone, Android, and any other devices and platforms. When creating an account, you will be asked to enter an email address and a password. Email addresses are only used for logging in and password resets. We don’t sell emails. If you enable notifications, we must store a token to send them. We use push notifications to initiate background downloads and notify you of new stories. We never use notifications for marketing. We store information about the stories you've read to sync this information between the website and your devices. We also collect anonymous statistics of training data that is available for all users under Statistics on a per feed basis. We use cookies on the site and similar tokens in the app to keep you logged in. Like most websites and apps, we also store information through the use of software that may be transparent to users. For example, we may log your IP address and general information about your browser or device. NewsBlur’s iOS, Android, and web apps collects aggregate, anonymous statistics, such as the percentage of users who use particular features, to improve the app and prioritize future development efforts. Crash reports are also collected to help improve the app. We do not share your personal information with outside parties except to the extent necessary to accomplish NewsBlur’s functionality. In other words, your information is not sold or given away to any third-parties. In the future, we may sell to, buy, merge with, or partner with other businesses. In such transactions, user information may be among the transferred assets. For instance, if you choose to use SSL/https, all communication with the app and website will be sent over HTTPS, and passwords are not stored: they are hashed using advanced, well-researched methods. You may access or change your information or delete your account at any time from the website, under Manage > Account. You may also choose to cancel your subscription from the website in the same dialog."
+year_published = 2025
+clearnet = "https://newsblur.com/privacy"
+tags = ["california", "changes", "children’s", "compliance", "consent", "contacting", "customers", "european", "information", "international"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]
+
+["https://newsblur.com/faq"]
+title = "Frequently Asked Questions"
+full_description = "To control where stories begin in the Original view, you can use any of these class names in your HTML: If you would like to opt-out of the Original view, simply email Samuel Clay and let him know. He will place your site on an opt-out list. Note that users will still be able to read the Feed view. However, consider that when in the Original view, your ads and original content are unaffected. Consider instead placing an exception rule in your iFrame buster code that looks for 'www.newsblur.com' in the URL and prevents your iFrame buster from running."
+year_published = 2025
+clearnet = "https://newsblur.com/faq"
+tags = ["asked", "frequently", "information", "intelligence", "publishers", "questions", "reader", "something's", "wrong"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.github.com", "blog.newsblur.com", "djangoproject.com", "documentcloud.github.com", "facebook.com", "forum.newsblur.com", "github.com", "instapaper.com", "jquery.com", "mastodon.social", "mongodb.com", "nodejs.org", "play.google.com", "postgresql.com", "readkitapp.com", "redis.io", "reederapp.com", "supertop.co", "x.com", "youtube.com"]

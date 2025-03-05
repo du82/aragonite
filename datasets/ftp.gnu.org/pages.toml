@@ -1,19 +1,8 @@
-["https://ftp.gnu.org/gnu"]
-title = "Index of /gnu"
+["https://ftp.gnu.org/gnu+linux-distros"]
+title = "Index of /gnu+linux-distros"
 year_published = 2025
-clearnet = "https://ftp.gnu.org/gnu"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org/MISSING-FILES"]
-title = ""
-year_published = 2025
-clearnet = "https://ftp.gnu.org/MISSING-FILES"
-category = "SitesList"
-tags = []
+clearnet = "https://ftp.gnu.org/gnu+linux-distros"
+tags = ["/gnu+linux-distros", "index"]
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
@@ -22,38 +11,16 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = ""
 year_published = 2025
 clearnet = "https://ftp.gnu.org/README"
-category = "SitesList"
 tags = []
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
 
-["https://ftp.gnu.org/tmp"]
-title = "Index of /tmp"
+["https://ftp.gnu.org/welcome.msg"]
+title = ""
 year_published = 2025
-clearnet = "https://ftp.gnu.org/tmp"
-category = "SitesList"
-tags = ["/tmp", "index"]
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org/gnu+linux-distros"]
-title = "Index of /gnu+linux-distros"
-year_published = 2025
-clearnet = "https://ftp.gnu.org/gnu+linux-distros"
-category = "SitesList"
-tags = ["/gnu+linux-distros", "index"]
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org/video"]
-title = "Index of /video"
-year_published = 2025
-clearnet = "https://ftp.gnu.org/video"
-category = "SitesList"
-tags = ["/video", "index"]
+clearnet = "https://ftp.gnu.org/welcome.msg"
+tags = []
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
@@ -62,17 +29,6 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = "Index of /pub"
 year_published = 2025
 clearnet = "https://ftp.gnu.org/pub"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org"]
-title = "Index of /"
-year_published = 2025
-clearnet = "https://ftp.gnu.org"
-category = "SitesList"
 tags = []
 language = "en"
 internal-references = ["none"]
@@ -82,8 +38,16 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = ""
 year_published = 2025
 clearnet = "https://ftp.gnu.org/MISSING-FILES.README"
-category = "SitesList"
 tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org/tmp"]
+title = "Index of /tmp"
+year_published = 2025
+clearnet = "https://ftp.gnu.org/tmp"
+tags = ["/tmp", "index"]
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
@@ -92,17 +56,60 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = "Index of /old-gnu"
 year_published = 2025
 clearnet = "https://ftp.gnu.org/old-gnu"
-category = "SitesList"
 tags = ["/old-gnu", "index"]
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
 
-["https://ftp.gnu.org/welcome.msg"]
+["https://ftp.gnu.org/mirrors"]
+title = "Index of /mirrors"
+year_published = 2025
+clearnet = "https://ftp.gnu.org/mirrors"
+tags = ["/mirrors", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org/non-gnu"]
+title = "Index of /non-gnu"
+year_published = 2025
+clearnet = "https://ftp.gnu.org/non-gnu"
+tags = ["/non-gnu", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org/video"]
+title = "Index of /video"
+year_published = 2025
+clearnet = "https://ftp.gnu.org/video"
+tags = ["/video", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org"]
+title = "Index of /"
+year_published = 2025
+clearnet = "https://ftp.gnu.org"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org/gnu"]
+title = "Index of /gnu"
+year_published = 2025
+clearnet = "https://ftp.gnu.org/gnu"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
+
+["https://ftp.gnu.org/MISSING-FILES"]
 title = ""
 year_published = 2025
-clearnet = "https://ftp.gnu.org/welcome.msg"
-category = "SitesList"
+clearnet = "https://ftp.gnu.org/MISSING-FILES"
 tags = []
 language = "en"
 internal-references = ["none"]
@@ -112,28 +119,7 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = "Index of /savannah"
 year_published = 2025
 clearnet = "https://ftp.gnu.org/savannah"
-category = "SitesList"
 tags = ["/savannah", "index"]
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org/CRYPTO.README"]
-title = ""
-year_published = 2025
-clearnet = "https://ftp.gnu.org/CRYPTO.README"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
-
-["https://ftp.gnu.org/non-gnu"]
-title = "Index of /non-gnu"
-year_published = 2025
-clearnet = "https://ftp.gnu.org/non-gnu"
-category = "SitesList"
-tags = ["/non-gnu", "index"]
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
@@ -142,18 +128,16 @@ external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org",
 title = "Index of /third-party"
 year_published = 2025
 clearnet = "https://ftp.gnu.org/third-party"
-category = "SitesList"
 tags = ["/third-party", "index"]
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]
 
-["https://ftp.gnu.org/mirrors"]
-title = "Index of /mirrors"
+["https://ftp.gnu.org/CRYPTO.README"]
+title = ""
 year_published = 2025
-clearnet = "https://ftp.gnu.org/mirrors"
-category = "SitesList"
-tags = ["/mirrors", "index"]
+clearnet = "https://ftp.gnu.org/CRYPTO.README"
+tags = []
 language = "en"
 internal-references = ["none"]
 external-references = ["fsf.org", "gnu.org", "libreplanet.org", "lists.gnu.org", "my.fsf.org", "savannah.gnu.org"]

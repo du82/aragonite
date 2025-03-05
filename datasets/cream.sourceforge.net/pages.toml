@@ -1,0 +1,89 @@
+["https://cream.sourceforge.net/home.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "But Vim has a steep learning curve. It was not primarily designed to be easy to use, favoring performance and technical flexibility instead. Because it is so different, learning to use Vim takes time. Cream shapes Vim into an interface you probably already know (sometimes called Common User Access). Whether you are writing emails or developing large software applications, Cream saves you time and gets you up and running quickly."
+year_published = 2011
+clearnet = "https://cream.sourceforge.net/home.html"
+tags = ["configuration", "cream", "download", "editor", "home", "modern", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cream.cvs.sourceforge.net", "en.wikipedia.org", "freshmeat.net", "freshports.org", "gnomefiles.org", "gnu.org", "google.com", "iccf-holland.org", "linux-mag.com", "linuxhelp.blogspot.com", "linuxlinks.com", "lists.sourceforge.net", "open.itworld.com", "packages.gentoo.org", "pthree.org", "sourceforge.net", "tips.webdesign10.com", "u.webring.com", "vim.org", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/contributors.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = '''Thanks to the following individuals who have contributed code or gave permission for their code to be used within the project (in reverse chronological order): Ciaran McCreesh and Thomas de Grenier de Latour build Cream for Gentoo and have fixed several bugs as a result. Ciaran also wrote the smoldering Inkpot color scheme, as well as the secure modelines for Vim that Cream uses. Gerald Williams wrote the visually tasty ChocolateLiquor color scheme, a flavor enhancement to the Cream already in Vim. Preben "Peppe" Guldberg wrote the right and center justification functions and the string inversion add-on logic. Yegappan Lakshmanan authored taglist.vim which Cream uses to list all the valid functions and variables within the current file, as well as obtain function prototypes for our pop up prototype menus. Srinath Avadhanula wrote the original version of the clever imaps.vim template script now modified in Cream to add a virtually unlimited number of expansions. (An improved version might be found in the Vim-LaTeX suite's CVS repository.) Gontran Baerts wrote EasyHtml.vim, the powerful listing script once included for listing HTML and CSS items. (Now obsolete by Vim's Omni-Completion feature.) Xavier Nodet, Christian Göebel and Jean-Philippe Leboeuf assisted in assembling the original French spell check and dictionary. Patrick Schiel created the Opsplorer file explorer that Cream used until it began using the operating system's file manager. Wolfgang Hommel assembled the original German spell check dictionary. He also wrote wordlist utilities used to create Cream dictionaries and was instrumental in propelling the project's spell check to multi-lingual flexibility and case sensitivity. Hari Krishna Dara wrote the most useful multvals.vim array library Cream depends on. Equally useful is his genutils.vim library. Both libraries are well-written pieces of code that help Cream be both smarter and smoother. Matthew Hawkins created the continues-to-grow-on-you Navajo Night color scheme based on the psychedelic experience caused by his sticky Esc key while using Navajo. ;)'''
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/contributors.html"
+tags = ['"dr.', '"peppe"', "ajit", "alberto", "anthony", "armstrong", "avadhanula", "baerts", "benji", "bram"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cream.cvs.sourceforge.net", "cvs.sourceforge.net", "en.wikipedia.org", "freshports.org", "fsf.org", "gnomefiles.org", "gnu.org", "google.com", "groups.yahoo.com", "linux.com", "linuxlinks.com", "lists.sourceforge.net", "nsis.sourceforge.net", "open.itworld.com", "pthree.org", "sourceforge.net", "u.webring.com", "video.google.com", "vim-latex.sourceforge.net", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/faq.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = '''Turn on Auto Wrap in the Settings menu. Auto Wrap also links line wrapping at the Wrap Width (also in Settings), but if you don't like this, just set your width to something high, like 9999. You can start column mode with Alt+Shift+motion key/mouse or from the Edit >Column Select menu. Once in column mode, extend the selection by holding down the Shift key (and optionally, the Alt key) while using other motion keys. End the selection by using motion keys or mouse keys without Shift. Please see the Keyboard Shortcut section "Column Mode" for more specifics. You can also select Expert Mode from the Settings menu to toggle between Normal and Insert mode with the Esc key. Create an environment variable $CREAM that points to wherever you put your Cream folder before using a revised startup command. You could put this in a single file, ~/mycream.sh: Create the registry entry HKEY_CLASSES_ROOT\*\Shell\Cream named "Edit with Cream/&Vim" with the command (all on one line): Verify that the path is correct for your system. You might also change "%1" to "%*" to open more than one file at a time, although Windows usually gets this wrong and passes a single path with spaces as multiple strings that Vim interprets as multiple files. Create the registry entry HKEY_CLASSES_ROOT\txtfile\shell\open with the same command as the previous item above. Create the registry entry HKEY_CLASSES_ROOT\Unknown\shell\Open with the same command as the previous item above. Beginning with Cream version 0.29, all user customizations belong under the user's home directory. By default this is $HOME/.cream/ on either Windows or Linux, but enter :echo g:cream_user at the command line to see the actual path found. The files: cream-user.vim -- loaded at the end of startup. We recommend that all customizations be placed here so they are able to over-ride any Cream settings if desired. cream-conf.vim -- loaded at the beginning of startup. This file can be used to condition variables affecting Cream startup, but this is recommended only for advanced users that are trying to add or counter-affect autocmds. See the distributed cream-conf.example.vim for more information.'''
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/faq.html"
+tags = ["advanced", "advanced:", "answers", "asked", "buffer", "configuration", "cream", "developers", "editor", "features"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cream.cvs.sourceforge.net", "cvs.sourceforge.net", "cvsbook.red-bean.com", "en.wikipedia.org", "freshports.org", "fsf.org", "gnomefiles.org", "gnu.org", "google.com", "groups.yahoo.com", "linux.com", "linuxlinks.com", "lists.sourceforge.net", "nsis.sourceforge.net", "pthree.org", "sourceforge.net", "u.webring.com", "video.google.com", "vim-latex.sourceforge.net", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/features.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "The lengthy feature list describes Cream's capabilities, all accessible through menus and keyboard shortcuts. Common questions asked by users and developers are answered on the frequently asked questions (FAQ) page."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/features.html"
+tags = ["configuration", "cream", "editor", "features", "modern", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.com", "cream.cvs.sourceforge.net", "en.wikipedia.org", "freshmeat.net", "freshports.org", "gnomefiles.org", "gnu.org", "google.com", "iccf-holland.org", "linux-mag.com", "linuxhelp.blogspot.com", "linuxlinks.com", "lists.sourceforge.net", "open.itworld.com", "packages.gentoo.org", "pthree.org", "sourceforge.net", "tips.webdesign10.com", "u.webring.com", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/index.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "A modern configuration of the powerful and famous Vim, Cream is for Microsoft Windows, GNU/Linux, and FreeBSD."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/index.html"
+tags = ["configuration", "cream", "download", "editor", "editor.", "features", "free", "home", "modern", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cream.cvs.sourceforge.net", "en.wikipedia.org", "freshmeat.net", "freshports.org", "gnomefiles.org", "gnu.org", "google.com", "iccf-holland.org", "linux-mag.com", "linuxhelp.blogspot.com", "linuxlinks.com", "lists.sourceforge.net", "open.itworld.com", "packages.gentoo.org", "pthree.org", "sourceforge.net", "tips.webdesign10.com", "u.webring.com", "vim.org", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/download.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "Windows Vim installers without Cream : : Includes both GUI and console Vim versions. Note this does not include Vim's standard install.exe, we rely soley on the Nullsoft Installer."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/download.html"
+tags = ["configuration", "cream", "download", "editor", "home", "modern", "text", "without"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.com", "cream.cvs.sourceforge.net", "en.wikipedia.org", "freshmeat.net", "freshports.org", "gnomefiles.org", "gnu.org", "google.com", "iccf-holland.org", "linux-mag.com", "linuxhelp.blogspot.com", "linuxlinks.com", "lists.sourceforge.net", "open.itworld.com", "packages.gentoo.org", "pthree.org", "sourceforge.net", "tips.webdesign10.com", "u.webring.com", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net/about.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "cream-announce : : a low volume announcement mailing list with the occasional release or bug-fix mail. cream-general : : all general discussion about Cream for users and developers, including help and feature requests."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/about.html"
+tags = ["articles", "charity", "configuration", "cream", "editor", "features", "general", "modern", "text", "vim's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ask.com", "cream.cvs.sourceforge.net", "en.wikipedia.org", "freshmeat.net", "gnomefiles.org", "google.com", "iccf-holland.org", "linux-mag.com", "linux.com", "linuxhelp.blogspot.com", "linuxlinks.com", "lists.sourceforge.net", "open.itworld.com", "productivelinux.com", "pthree.org", "sourceforge.net", "tips.webdesign10.com", "u.webring.com", "video.google.com", "vim.sourceforge.net"]
+
+["https://cream.sourceforge.net"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "A modern configuration of the powerful and famous Vim, Cream is for Microsoft Windows, GNU/Linux, and FreeBSD."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net"
+tags = ["configuration", "cream", "download", "editor", "editor.", "features", "free", "home", "modern", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["sourceforge.net"]
+
+["https://cream.sourceforge.net/featurelist.html"]
+title = "Cream :: a modern configuration of the Vim text editor"
+full_description = "Following are all the features that Cream directly supports through pull-down menus and/or keyboard shortcuts. Cream provides additional functionality through add-ons, modules that can provide a vast library of functionality specific to your tastes."
+year_published = 2025
+clearnet = "https://cream.sourceforge.net/featurelist.html"
+tags = ["add-ons", "advanced", "basic", "configuration", "cream", "editor", "features", "modern", "programmer", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cream.cvs.sourceforge.net", "ctags.sourceforge.net", "cvs.sourceforge.net", "cvsbook.red-bean.com", "en.wikipedia.org", "freshports.org", "fsf.org", "gnomefiles.org", "gnu.org", "gnupg.org", "google.com", "groups.yahoo.com", "imagemagick.org", "linux.com", "lists.sourceforge.net", "nsis.sourceforge.net", "pthree.org", "sourceforge.net", "video.google.com", "vim.sourceforge.net"]

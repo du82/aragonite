@@ -1,0 +1,230 @@
+["https://libgosu.org/cpp.html"]
+title = "C++ / iOS • Gosu"
+full_description = "Gosu is written in C++ 2017 with minimal dependencies (no boost). It has CMake files for macOS and Linux, Xcode support for macOS and iOS, and project files for Visual C++ 2019. You can check out the GitHub CI configurations to see which compilers and OS versions are verified to work at the moment. The port is unfinished and rough, but the project can be built for Linux and macOS with CMake, and for macOS and iOS with Xcode. The motion-gosu GitHub project includes an example project that is structured in a way that makes it easy to run the same code with ‘normal’ Ruby, RubyMotion for macOS, and RubyMotion for iOS. The C++ and RubyMotion versions of Gosu are not for the faint of heart. They are nowhere near as polished as Ruby/Gosu. You’ll see terrible error messages, and you’ll need to know your tools well enough to fix them. Poking around the source code often helps, too. Nevertheless, if you have written a great Ruby/Gosu game, porting it to RubyMotion or C++ might be the best way to share it with the world through Apple’s App Store for iOS and macOS. Please file an issue if you run into unexpected limitations."
+year_published = 2025
+clearnet = "https://libgosu.org/cpp.html"
+tags = ["ask,", "development", "documentation", "explain,", "gosu", "ios,", "motion-gosu", "project", "ruby/gosu", "rubymotion:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "youtube.com"]
+
+["https://www.libgosu.org/cpp"]
+title = "Gosu: Gosu C++ Documentation"
+full_description = "These pages serve as a reference on the C++ interface of Gosu. For a higher-level discussion of concepts and ideas behind the library, see the Wiki entries linked from the official website, https://www.libgosu.org/."
+year_published = 2025
+clearnet = "https://www.libgosu.org/cpp"
+tags = ["documentation", "gosu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum_show.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum_show.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum_search.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum_search.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/topic_show.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/topic_show.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/user_register.pl"]
+title = "Gosu Forums"
+full_description = "If you already have an account, you can login on the login page, where you can also replace lost passwords."
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/user_register.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/user_login.pl"]
+title = "Gosu Forums"
+full_description = "If you don't have an account yet, you can register one. If you just registered an account, you should receive the password by email (check your spam folder, too). If you have lost your password, you can have a login ticket link sent to your registered email address."
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/user_login.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum_feeds.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum_feeds.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org"]
+title = "Hello • Gosu"
+full_description = "Gosu is mostly used to teach or learn Ruby or in short game development competitions. It’s also a great prototyping tool and should work for indie game development, though nobody has really tried that. In addition to the documentation linked from the sidebar, there is a free book by Mark Sobkowicz that will guide you through the creation of four different games: Gosu and all documentation © 2001-2024 Julian Raschke, Jan Lücker, and other contributors. Gosu is released under the MIT licence."
+year_published = 2025
+clearnet = "https://www.libgosu.org"
+tags = ["ask,", "development", "documentation", "explain,", "game", "library", "licensing", "linux,", "macos,", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum_help.pl"]
+title = "Gosu Forums"
+full_description = '''Note: as the mwForum software is highly configurable, not all of the features mentioned below are necessarily enabled in this installation. The forum is the whole installation, and usually contains multiple boards. You should always enter the forum through a link that ends in "forum.pl" (not "forum_show.pl") to let the forum know when you start a new session. Otherwise the forum won't know when to display posts as new or old. A user is anyone who registers an account in the forum. Registration is usually not required for reading most boards, but depending on configuration only registered users will have access to certain boards and features. Users can be granted membership in user groups. Open groups can also be joined by users themselves. The groups in turn are granted member or moderator rights in selected boards, allowing members of the group to read and write in or moderate those boards. A board contains topics, which in turn contain the posts. Boards can be set to be visible to registered users or to moderators and board members only. Boards can optionally allow posts by unregistered guests. Announcement boards can be read-only, so that they only allow posts by moderators and members, or reply-only, which means that only moderators and members can start new topics, but everybody can reply. Another option for boards is moderation. If this option is activated, new posts will be invisible to normal users until a moderator approves them. A topic, otherwise known as thread, contains all the posts on a specific subtopic, that should be named in the topic's subject. Boards have expiration values that determine after how many days their topics will expire or get locked after their last post has been made. Moderators can also manually lock topics, so that no replies can be made and no post can be edited anymore. A post is a public message by a user. It can be either a base post, which starts a new topic, or a reply to an existing topic. Posts can be edited and deleted, which may be limited to a certain time frame. Posts can be locked by moderators, making it impossible to reply or edit. Posts can be reported to the moderators in case of rule violations.'''
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum_help.pl"
+tags = ["administrator", "attach", "board", "bold", "displayed", "don't", "files", "forum", "group", "icons"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/user_register.pl"]
+title = "Gosu Forums"
+full_description = "If you already have an account, you can login on the login page, where you can also replace lost passwords."
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/user_register.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum_info.pl"]
+title = "Gosu Forums"
+full_description = "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum_info.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/ruby.html"]
+title = "Ruby • Gosu"
+full_description = "On Windows, you can install Gosu through RubyGems: gem install gosu Installation instructions for macOS | Installation instructions for Linux Gosu has a companion gem for examples (gosu/gosu-examples on GitHub). gem install gosu-examples gosu-examples # ...to show the example box You can select examples from the right sidebar and jump straight into the source code by pressing S. We recommend starting with the Ruby Tutorial on the wiki. For more documentation, check out the links in the sidebar."
+year_published = 2025
+clearnet = "https://libgosu.org/ruby.html"
+tags = ["ask,", "code", "development", "documentation", "example", "explain,", "getting", "gosu", "gosu-examples", "show"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/forum.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/forum.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "youtube.com"]
+
+["https://www.libgosu.org/rdoc"]
+title = """
+File: README
+  — Documentation for gosu (1.4.6)"""
+full_description = "Welcome to Gosu! Gosu is a 2D game development library for Ruby and C++. The main website is www.libgosu.org. The source code, wiki, issue tracker and change log are all hosted on GitHub. Gosu is released under the MIT license. Getting Started The best entry point into Gosu's documentation is the wiki home page. Try doing the tutorials there if you don't know how to get started, or look at existing projects in the Gosu Showcase. Community There is a lively Discord community. If you want to discuss or announce something in a more permanent place than a chat room, we also have a message board. Please file bugs and feature requests on GitHub."
+year_published = 2025
+clearnet = "https://www.libgosu.org/rdoc"
+tags = ["community", "file:", "getting", "gosu", "gosu!", "readme", "started", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/board_show.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/board_show.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/forum_help.pl"]
+title = "Gosu Forums"
+full_description = '''Note: as the mwForum software is highly configurable, not all of the features mentioned below are necessarily enabled in this installation. The forum is the whole installation, and usually contains multiple boards. You should always enter the forum through a link that ends in "forum.pl" (not "forum_show.pl") to let the forum know when you start a new session. Otherwise the forum won't know when to display posts as new or old. A user is anyone who registers an account in the forum. Registration is usually not required for reading most boards, but depending on configuration only registered users will have access to certain boards and features. Users can be granted membership in user groups. Open groups can also be joined by users themselves. The groups in turn are granted member or moderator rights in selected boards, allowing members of the group to read and write in or moderate those boards. A board contains topics, which in turn contain the posts. Boards can be set to be visible to registered users or to moderators and board members only. Boards can optionally allow posts by unregistered guests. Announcement boards can be read-only, so that they only allow posts by moderators and members, or reply-only, which means that only moderators and members can start new topics, but everybody can reply. Another option for boards is moderation. If this option is activated, new posts will be invisible to normal users until a moderator approves them. A topic, otherwise known as thread, contains all the posts on a specific subtopic, that should be named in the topic's subject. Boards have expiration values that determine after how many days their topics will expire or get locked after their last post has been made. Moderators can also manually lock topics, so that no replies can be made and no post can be edited anymore. A post is a public message by a user. It can be either a base post, which starts a new topic, or a reply to an existing topic. Posts can be edited and deleted, which may be limited to a certain time frame. Posts can be locked by moderators, making it impossible to reply or edit. Posts can be reported to the moderators in case of rule violations.'''
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/forum_help.pl"
+tags = ["administrator", "attach", "board", "bold", "displayed", "don't", "files", "forum", "group", "icons"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org"]
+title = "Hello • Gosu"
+full_description = "Gosu is mostly used to teach or learn Ruby or in short game development competitions. It’s also a great prototyping tool and should work for indie game development, though nobody has really tried that. In addition to the documentation linked from the sidebar, there is a free book by Mark Sobkowicz that will guide you through the creation of four different games: Gosu and all documentation © 2001-2024 Julian Raschke, Jan Lücker, and other contributors. Gosu is released under the MIT licence."
+year_published = 2025
+clearnet = "https://libgosu.org"
+tags = ["ask,", "development", "documentation", "explain,", "game", "library", "licensing", "linux,", "macos,", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/forum_search.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/forum_search.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/cgi-bin/mwf/forum_show.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://libgosu.org/cgi-bin/mwf/forum_show.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/user_mark.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/user_mark.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/board_show.pl"]
+title = "Gosu Forums"
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/board_show.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://www.libgosu.org/cgi-bin/mwf/user_login.pl"]
+title = "Gosu Forums"
+full_description = "If you don't have an account yet, you can register one. If you just registered an account, you should receive the password by email (check your spam folder, too). If you have lost your password, you can have a login ticket link sent to your registered email address."
+year_published = 2025
+clearnet = "https://www.libgosu.org/cgi-bin/mwf/user_login.pl"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "brew.sh", "confreaks.tv", "discord.gg", "doxygen.org", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "gnu.org", "ldjam.com", "libsdl.org", "lurado.com", "mariadb.org", "mwforum.org", "perl.org", "rubymotion.com", "yardoc.org", "youtube.com"]
+
+["https://libgosu.org/imprint.html"]
+title = "Imprint • Gosu"
+year_published = 2025
+clearnet = "https://libgosu.org/imprint.html"
+tags = ["ask,", "development", "documentation", "explain,", "imprint", "show"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brew.sh", "confreaks.tv", "discord.gg", "dreamingechoes.github.io", "gameswithcode.com", "github.com", "ldjam.com", "libsdl.org", "lurado.com", "mwforum.org", "rubymotion.com", "youtube.com"]

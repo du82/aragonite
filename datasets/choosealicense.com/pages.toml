@@ -1,0 +1,651 @@
+["https://choosealicense.com/licenses/ofl-1.1"]
+title = "SIL Open Font License 1.1 | Choose a License"
+description = "The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla."
+full_description = "The Open Font License (OFL) is maintained by SIL International. It attempts to be a compromise between the values of the free software and typeface design communities. It is used for almost all open source font projects, including those by Adobe, Google and Mozilla. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your font's source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] ([email]) with the name and contact email address of each copyright holder. You may take the additional step of appending a Reserved Font Name notice. This option requires anyone making modifications to change the font's name, and is not ideal for web fonts (which all users will modify by changing formats and subsetting for their own needs.) This license doesn't require source provision, but recommends it. All files derived from OFL files must remain licensed under the OFL. Add OFL-1.1-no-RFN (or OFL-1.1-RFN if a Reserved Font Name is specified after the copyright statement) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/ofl-1.1"
+tags = ["apply", "font", "license", "license?", "ofl-1.1-no-rfn", "ofl-1.1-rfn", "open", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/cern-ohl-p-2.0"]
+title = "CERN Open Hardware Licence Version 2 - Permissive | Choose a License"
+description = "A permissive license for hardware designs, with conditions only requiring preservation of notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without sources."
+full_description = "A permissive license for hardware designs, with conditions only requiring preservation of notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without sources. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. CERN recommends adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product. Add CERN-OHL-P-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cern-ohl-p-2.0"
+tags = ["apply", "cern", "cern-ohl-p-2.0", "hardware", "licence", "license", "license?", "open", "permissive", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/non-software"]
+title = "Non-Software Licenses | Choose a License"
+description = "Non-judgmental guidance on choosing a license for your open source project"
+full_description = "Open source software licenses can be also used for non-software works and are often the best choice, especially when the works in question can be edited and versioned as source. Choose an open source license. CC0-1.0, CC-BY-4.0, and CC-BY-SA-4.0 are open licenses used for non-software material ranging from datasets to videos. Note that Creative Commons does not recommend its licenses be used for software or hardware. Any open source software license or open license for media (see above) also applies to software documentation. If you use different licenses for your software and its documentation, be sure to specify that source code examples in the documentation are also licensed under the software license. Designs for open source hardware ranging from furniture to FPGAs are covered by CERN Open Hardware licenses: CERN-OHL-P-2.0 (permissive), CERN-OHL-W-2.0 (weakly reciprocal), and CERN-OHL-S-2.0 (strongly reciprocal). If your project contains a mix of different types of material, you can include multiple licenses, as long as you are explicit about which license applies to each part of the project. See the license notice for this site as an example."
+year_published = 2025
+clearnet = "https://choosealicense.com/non-software"
+tags = ["data,", "documentation", "etc.", "fonts", "hardware", "licenses", "media,", "mixed", "non-software", "projects"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/appendix"]
+title = "Appendix | Choose a License"
+description = "Non-judgmental guidance on choosing a license for your open source project"
+full_description = '''If you’re here to choose a license, start from the home page to see a few licenses that will work for most cases. Open source licenses grant to the public permissions to do things with licensed works which copyright or other "intellectual property" laws might otherwise disallow. Most open source licenses also have limitations that usually disclaim warranty and liability, and sometimes expressly exclude patents or trademarks from licenses' grants.'''
+year_published = 2025
+clearnet = "https://choosealicense.com/appendix"
+tags = ["appendix", "conditions", "home", "legend", "limitations", "permissions", "start"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/mit-0"]
+title = "MIT No Attribution | Choose a License"
+description = "A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A short and simple permissive license with no conditions, not even requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add MIT-0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/mit-0"
+tags = ["apply", "attribution", "license", "license?", "mit-0", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/osl-3.0"]
+title = "Open Software License 3.0 | Choose a License"
+description = "OSL 3.0 is a copyleft license that does not require reciprocal licensing on linked works. It also provides an express grant of patent rights from contributors to users, with a termination clause triggered if a user files a patent infringement lawsuit."
+full_description = 'OSL 3.0 is a copyleft license that does not require reciprocal licensing on linked works. It also provides an express grant of patent rights from contributors to users, with a termination clause triggered if a user files a patent infringement lawsuit. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under OSL 3.0 must also include the notice "Licensed under the Open Software License version 3.0" adjacent to the copyright notice. Add OSL-3.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories.'
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/osl-3.0"
+tags = ["apply", "license", "license?", "open", "osl-3.0", "software", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/cern-ohl-s-2.0"]
+title = "CERN Open Hardware Licence Version 2 - Strongly Reciprocal | Choose a License"
+description = "Permissions of this strongly reciprocal license for hardware designs are conditioned on making available complete sources of licensed works and modifications, which include larger works using a licensed work, under the same license. Notices must be preserved. Contributors provide an express grant of patent rights."
+full_description = "Permissions of this strongly reciprocal license for hardware designs are conditioned on making available complete sources of licensed works and modifications, which include larger works using a licensed work, under the same license. Notices must be preserved. Contributors provide an express grant of patent rights. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. CERN recommends adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product. Add CERN-OHL-S-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cern-ohl-s-2.0"
+tags = ["apply", "cern", "cern-ohl-s-2.0", "hardware", "licence", "license", "license?", "open", "reciprocal", "strongly"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/unlicense"]
+title = "The Unlicense | Choose a License"
+description = "A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A license with no conditions whatsoever which dedicates works to the public domain. Unlicensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named UNLICENSE or UNLICENSE.txt) in the root of your source code and copy the text of the license disclaimer into the file. Add Unlicense to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/unlicense"
+tags = ["apply", "license", "license?", "suggest", "unlicense", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/gfdl-1.3"]
+title = "GNU Free Documentation License v1.3 | Choose a License"
+description = "A copyleft license for software documentation."
+full_description = 'Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named COPYING, as per GNU conventions) in the root of your source code and copy the text of the license into the file. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice after the title of a licensed document. The boilerplate can be found at the "addendum" part of the license. Add GFDL-1.3-or-later (or GFDL-1.3-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories.'
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/gfdl-1.3"
+tags = ["apply", "documentation", "free", "gfdl-1.3-only", "gfdl-1.3-or-later", "license", "license?", "suggest", "using", "v1.3"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/community"]
+title = "Existing projects and communities | Choose a License"
+description = "Non-judgmental guidance on choosing a license for your open source project"
+full_description = "If you’re contributing to or extending an existing project, it’s almost always easiest to continue using that project’s license. To find its license, look for a file called LICENSE or COPYING, and skim the project’s README. If you can’t find a license, ask the maintainers. Depending on the original project’s license, using the same license might be a requirement, not just the easiest thing to do. (See the “same license” condition of some licenses.) Some communities have strong preferences for particular licenses. If you want to participate in one of these, it will be easier to use their preferred license, even if you’re starting a brand new project with no existing dependencies. Some examples include: Communities come in all shapes and sizes, and more than one community might be pertinent (e.g., keep in mind your company if you work for one). The examples above are very well established. If the community you’re building a project for doesn’t have set-in-stone licensing traditions, or you don’t see your project as part of any particular community, that’s fine: make your own choice of an open source license."
+year_published = 2025
+clearnet = "https://choosealicense.com/community"
+tags = ["communities", "existing", "projects"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "rust-lang.github.io", "spdx.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/gpl-3.0"]
+title = "GNU General Public License v3.0 | Choose a License"
+description = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights."
+full_description = "Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named COPYING, as per GNU conventions) in the root of your source code and copy the text of the license into the file. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license. Add GPL-3.0-or-later (or GPL-3.0-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/gpl-3.0"
+tags = ["apply", "general", "gpl-3.0-only", "gpl-3.0-or-later", "license", "license?", "public", "suggest", "using", "v3.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "guides.rubygems.org", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/cc-by-4.0"]
+title = "Creative Commons Attribution 4.0 International | Choose a License"
+description = "Permits almost any use subject to providing credit and license notice. Frequently used for media assets and educational materials. The most common license for Open Access scientific publications. Not recommended for software."
+full_description = "Permits almost any use subject to providing credit and license notice. Frequently used for media assets and educational materials. The most common license for Open Access scientific publications. Not recommended for software. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the canonical URL for the license. Add CC-BY-4.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cc-by-4.0"
+tags = ["apply", "attribution", "cc-by-4.0", "commons", "creative", "international", "license", "license?", "suggest", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/cecill-2.1"]
+title = "CeCILL Free Software License Agreement v2.1 | Choose a License"
+description = "Strong copyleft license made by three French public research organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0, EUPL-1.1, and GPL-2.0, or later versions of those licenses."
+full_description = "Strong copyleft license made by three French public research organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0, EUPL-1.1, and GPL-2.0, or later versions of those licenses. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENCE) in the root of your source code and copy the text of the license into the file. Add CECILL-2.1 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cecill-2.1"
+tags = ["agreement", "apply", "cecill", "cecill-2.1", "free", "license", "license?", "software", "suggest", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/mpl-2.0"]
+title = "Mozilla Public License 2.0 | Choose a License"
+description = "Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work."
+full_description = "Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Mozilla Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license (Exhibit A). Add MPL-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/mpl-2.0"
+tags = ["apply", "license", "license?", "mozilla", "mpl-2.0", "public", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/ms-pl"]
+title = "Microsoft Public License | Choose a License"
+description = "An open source license with a patent grant."
+full_description = "Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add MS-PL to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/ms-pl"
+tags = ["apply", "license", "microsoft", "ms-pl", "public", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/about"]
+title = "What’s this about? | Choose a License"
+description = "Non-judgmental guidance on choosing a license for your open source project"
+full_description = "If you already know what you’re doing and have a license you prefer to use, that’s great! We’re not here to change your mind. But if you are bewildered by the large number of choices, maybe we can help. This site is not a comprehensive directory of open source licenses. The vast majority of projects will likely be well served by one of the three options highlighted on the homepage — choosing the license preferred by projects similar to yours, or the most popular permissive license (MIT), or the most popular copyleft license (GNU GPLv3). Just in case you have specific needs not covered by these, we also highlight a few other licenses to consider and have a page about licenses for non-software projects. See our appendix for a table of every license cataloged in the choosealicense.com repository and the links below for even more licenses that you do not need to learn about to still choose a great license for your project. Choosealicense.com isn’t just about open source; the site itself is open source as well. See something you think could be done better? Feel free to fork the project on GitHub and submit a pull request. We welcome your improvements. We are not lawyers. Well, most of us anyway. It is not the goal of this site to provide legal advice. The goal of this site is to provide a starting point to help you make an informed choice by providing information on popular open source licenses in a simplified fashion. If you have any questions regarding the best license for your code or any other legal issues relating to it, it’s your responsibility to do further research or consult with a professional."
+year_published = 2025
+clearnet = "https://choosealicense.com/about"
+tags = ["about?", "additional", "comprehensive", "disclaimer", "help", "improve", "resources", "what’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "joinup.ec.europa.eu", "opensource.guide", "opensource.org"]
+
+["https://choosealicense.com/licenses/vim"]
+title = "Vim License | Choose a License"
+description = "There are no restrictions on using or distributing an unmodified copy of the software. Parts of the software may also be distributed, but the license text must always be included. For modified versions a few restrictions apply. The license is GPL compatible, you may compile the software with GPL libraries and distribute it."
+full_description = "There are no restrictions on using or distributing an unmodified copy of the software. Parts of the software may also be distributed, but the license text must always be included. For modified versions a few restrictions apply. The license is GPL compatible, you may compile the software with GPL libraries and distribute it. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [project] with the project name. Add Vim to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/vim"
+tags = ["apply", "license", "license?", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/odbl-1.0"]
+title = "Open Data Commons Open Database License v1.0 | Choose a License"
+description = "The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use a database while maintaining this same freedom for others."
+full_description = "The Open Database License (ODbL) is a license agreement intended to allow users to freely share, modify, and use a database while maintaining this same freedom for others. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add ODbL-1.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/odbl-1.0"
+tags = ["apply", "commons", "data", "database", "license", "license?", "odbl-1.0", "open", "suggest", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/afl-3.0"]
+title = "Academic Free License v3.0 | Choose a License"
+description = "The Academic Free License is a variant of the Open Software License that does not require that the source code of derivative works be disclosed. It contains explicit copyright and patent grants and reserves trademark rights in the author."
+full_description = 'The Academic Free License is a variant of the Open Software License that does not require that the source code of derivative works be disclosed. It contains explicit copyright and patent grants and reserves trademark rights in the author. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Files licensed under AFL 3.0 must also include the notice "Licensed under the Academic Free License version 3.0" adjacent to the copyright notice. Add AFL-3.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories.'
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/afl-3.0"
+tags = ["academic", "afl-3.0", "apply", "free", "license", "suggest", "v3.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/bsd-4-clause"]
+title = "BSD 4-Clause “Original” or “Old” License | Choose a License"
+description = "A permissive license similar to the BSD 3-Clause License, but with an “advertising clause” that requires an acknowledgment of the original source in all advertising material."
+full_description = 'A permissive license similar to the BSD 3-Clause License, but with an "advertising clause" that requires an acknowledgment of the original source in all advertising material. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work. Add BSD-4-Clause to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories.'
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsd-4-clause"
+tags = ["4-clause", "apply", "bsd-4-clause", "license", "license?", "suggest", "using", "who’s", "“old”", "“original”"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/agpl-3.0"]
+title = "GNU Affero General Public License v3.0 | Choose a License"
+description = "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available."
+full_description = "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license. Add AGPL-3.0-or-later (or AGPL-3.0-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/agpl-3.0"
+tags = ["affero", "agpl-3.0-only", "agpl-3.0-or-later", "apply", "general", "license", "license?", "public", "suggest", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/postgresql"]
+title = "PostgreSQL License | Choose a License"
+description = "A very short, BSD-style license, used specifically for PostgreSQL."
+full_description = "Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add PostgreSQL to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/postgresql"
+tags = ["apply", "license", "license?", "postgresql", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/0bsd"]
+title = "BSD Zero Clause License | Choose a License"
+description = "The BSD Zero Clause license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software without requirements to include the copyright notice, license text, or disclaimer in either source or binary forms."
+full_description = "The BSD Zero Clause license goes further than the BSD 2-Clause license to allow you unlimited freedom with the software without requirements to include the copyright notice, license text, or disclaimer in either source or binary forms. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. You may take the additional step of removing the copyright notice. Add 0BSD to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/0bsd"
+tags = ["0bsd", "apply", "clause", "license", "license?", "suggest", "using", "who’s", "zero"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/zlib"]
+title = "zlib License | Choose a License"
+description = "A short permissive license, compatible with GPL. Requires altered source versions to be documented as such."
+full_description = "A short permissive license, compatible with GPL. Requires altered source versions to be documented as such. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add Zlib to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/zlib"
+tags = ["apply", "license", "license?", "suggest", "using", "who’s", "zlib"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/blueoak-1.0.0"]
+title = "Blue Oak Model License 1.0.0 | Choose a License"
+description = "A permissive license whose main conditions require providing notice of the license. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A permissive license whose main conditions require providing notice of the license. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE.md) in the root of your source code and copy the text of the license into the file. Add BlueOak-1.0.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/blueoak-1.0.0"
+tags = ["1.0.0", "apply", "blue", "blueoak-1.0.0", "license", "license?", "model", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/ms-rl"]
+title = "Microsoft Reciprocal License | Choose a License"
+description = "An open source license with a patent grant similar to the Microsoft Public License, with the additional condition that any source code for any derived file be provided under this license."
+full_description = "An open source license with a patent grant similar to the Microsoft Public License, with the additional condition that any source code for any derived file be provided under this license. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add MS-RL to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/ms-rl"
+tags = ["apply", "license", "microsoft", "ms-rl", "reciprocal", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/cc-by-sa-4.0"]
+title = "Creative Commons Attribution Share Alike 4.0 International | Choose a License"
+description = "Similar to CC-BY-4.0 but requires derivatives be distributed under the same or a similar, compatible license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software."
+full_description = "Similar to CC-BY-4.0 but requires derivatives be distributed under the same or a similar, compatible license. Frequently used for media assets and educational materials. A previous version is the default license for Wikipedia and other Wikimedia projects. Not recommended for software. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It is also acceptable to solely supply a link to a copy of the license, usually to the canonical URL for the license. Add CC-BY-SA-4.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cc-by-sa-4.0"
+tags = ["alike", "apply", "attribution", "cc-by-sa-4.0", "commons", "creative", "international", "license", "license?", "share"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/bsd-3-clause-clear"]
+title = "BSD 3-Clause Clear License | Choose a License"
+description = "A variant of the BSD 3-Clause License that explicitly does not grant any patent rights."
+full_description = "Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add BSD-3-Clause-Clear to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsd-3-clause-clear"
+tags = ["3-clause", "apply", "bsd-3-clause-clear", "clear", "license", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/wtfpl"]
+title = "Do What The F*ck You Want To Public License | Choose a License"
+description = "The easiest license out there. It gives the user permissions to do whatever they want with your code."
+full_description = "The easiest license out there. It gives the user permissions to do whatever they want with your code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add WTFPL to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/wtfpl"
+tags = ["apply", "license", "public", "suggest", "wtfpl"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/bsd-2-clause-patent"]
+title = "BSD-2-Clause Plus Patent License | Choose a License"
+description = "This license is designed to provide: a) a simple permissive license; b) that is compatible with the GNU GPL-2.0; and c) which also has an express patent grant included."
+full_description = "This license is designed to provide: a) a simple permissive license; b) that is compatible with the GNU GPL-2.0; and c) which also has an express patent grant included. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add BSD-2-Clause-Patent to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsd-2-clause-patent"
+tags = ["apply", "bsd-2-clause", "bsd-2-clause-patent", "license", "license?", "patent", "plus", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/lgpl-3.0"]
+title = "GNU Lesser General Public License v3.0 | Choose a License"
+description = "Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work."
+full_description = "Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work. This license is an additional set of permissions to the GNU GPLv3 license. Follow the instructions to apply the GNU GPLv3, in the root of your source code. Then add another file named COPYING.LESSER and copy the text. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the GNU GPLv3 license. Insert the word “Lesser” before “General” in all three places in the boilerplate notice to make sure that you refer to the GNU LGPLv3 and not the GNU GPLv3. Add LGPL-3.0-or-later (or LGPL-3.0-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/lgpl-3.0"
+tags = ["apply", "general", "lesser", "lgpl-3.0-only", "lgpl-3.0-or-later", "license", "public", "v3.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/bsl-1.0"]
+title = "Boost Software License 1.0 | Choose a License"
+description = "A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Boost recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the Boost Software License FAQ. Add BSL-1.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsl-1.0"
+tags = ["apply", "boost", "bsl-1.0", "license", "license?", "software", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/upl-1.0"]
+title = "Universal Permissive License v1.0 | Choose a License"
+description = "A permissive, OSI- and FSF-approved, GPL-compatible license, expressly allowing attribution with just a copyright notice and a short form link rather than the full text of the license. Includes an express grant of patent rights. Licensed works and modifications may be distributed under different terms and without source code, and the patent grant may also optionally be expanded to larger works to permit use as a contributor license agreement."
+full_description = "A permissive, OSI- and FSF-approved, GPL-compatible license, expressly allowing attribution with just a copyright notice and a short form link rather than the full text of the license. Includes an express grant of patent rights. Licensed works and modifications may be distributed under different terms and without source code, and the patent grant may also optionally be expanded to larger works to permit use as a contributor license agreement. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Insert the license or a link to it along with a copyright notice into your source file(s), and/or create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file, replacing [year] with the current year and [fullname] with the name (or names) of the copyright holders. It is recommended to add a link to the license and copyright notice at the top of each source file, example text can be found at https://oss.oracle.com/licenses/upl/. Add UPL-1.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/upl-1.0"
+tags = ["apply", "license", "license?", "permissive", "suggest", "universal", "upl-1.0", "using", "v1.0", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/cc0-1.0"]
+title = "Creative Commons Zero v1.0 Universal | Choose a License"
+description = "The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you’ve created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense."
+full_description = "The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Creative Commons recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found on their website. Add CC0-1.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cc0-1.0"
+tags = ["apply", "cc0-1.0", "commons", "creative", "license", "license?", "suggest", "universal", "using", "v1.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/eupl-1.2"]
+title = "European Union Public License 1.2 | Choose a License"
+description = "The European Union Public Licence (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 23 official languages of the European Union."
+full_description = "The European Union Public Licence (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 23 official languages of the European Union. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Indicate “Licensed under the EUPL” following the copyright notice of your source code, for example in a README file or directly in a source code file as a comment. Add EUPL-1.2 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/eupl-1.2"
+tags = ["apply", "eupl-1.2", "european", "license", "license?", "public", "suggest", "union", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/mulanpsl-2.0"]
+title = "Mulan Permissive Software License, Version 2 | Choose a License"
+description = "A permissive license similar to the Apache License, but explicitly states that it does not grant trademark rights. Mulan Permissive Software License is the first open source license in both Chinese and English approved by OSI."
+full_description = "A permissive license similar to the Apache License, but explicitly states that it does not grant trademark rights. Mulan Permissive Software License is the first open source license in both Chinese and English approved by OSI. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. It's suggested to take the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license. Add MulanPSL-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/mulanpsl-2.0"
+tags = ["apply", "license", "license,", "license?", "mulan", "mulanpsl-2.0", "permissive", "software", "suggest", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/epl-1.0"]
+title = "Eclipse Public License 1.0 | Choose a License"
+description = "This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones."
+full_description = "This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add EPL-1.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/epl-1.0"
+tags = ["apply", "eclipse", "epl-1.0", "license", "license?", "public", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/terms-of-service"]
+title = "Terms of Service | Choose a License"
+description = "Terms governing your use of choosealicense.com"
+full_description = "Welcome to Choosealicense.com (the “Site”). The Site is operated by GitHub, Inc. (“GitHub” or “we”), a Delaware corporation headquartered in lovely San Francisco, California. This document – the Site’s terms of service – is an agreement between you, the beloved user, and GitHub. It’s referred to as the “Terms” or the “Agreement”. These Terms govern your use of the Site and this Site only. The Terms neither relate to any other GitHub website, service or property nor your use of any other GitHub website, service or property. For example, these Terms don’t govern your use of www.github.com. Terms of service agreements are contracts. That means that this Agreement is a contract between you and GitHub for the limited purpose of laying out what our respective rights and obligations are with respect to Choosealicense.com. If there’s something in these Terms you don’t agree with or don’t understand, please don’t use the Site. By accessing or using the Site, you signal your agreement with and consent to the Terms. By accessing or using any Website or Service you also represent that you have the legal authority to accept the Terms on behalf of yourself and any party you represent in connection with your use of any Website or Service. Unless otherwise agreed to in writing with GitHub, your use of any Website or Service will always be subject to, at a minimum, the terms and conditions set out in this document. GitHub is a lot of things, but it’s not a law firm. GitHub does not provide legal advice. Using the Site or sending us an email about the Site does not create an attorney-client relationship. Use of Choosealicense.com does not constitute legal advice nor does it create an attorney-client relationship. If you have any questions about the Site or its content, you should consult with your own legal counsel before moving forward with your project. In fact, you should always consult with your own lawyer before making any decisions that might have legal ramifications or that may impact your legal rights."
+year_published = 2025
+clearnet = "https://choosealicense.com/terms-of-service"
+tags = ["advice", "agreement", "being", "breach", "disclaimer", "indemnification", "introduction", "legal", "liability", "limitation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/ncsa"]
+title = "University of Illinois/NCSA Open Source License | Choose a License"
+description = "The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the MIT/X11 license and the BSD 3-clause License. Its conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibition of using the names of the authors or the project organization to promote or endorse derived products."
+full_description = "The University of Illinois/NCSA Open Source License, or UIUC license, is a permissive free software license, based on the MIT/X11 license and the BSD 3-clause License. Its conditions include requiring the preservation of copyright and license notices both in source and in binary distributions and the prohibition of using the names of the authors or the project organization to promote or endorse derived products. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Replace [project] with the project organization, if any, that sponsors this work. Add NCSA to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/ncsa"
+tags = ["apply", "illinois/ncsa", "license", "license?", "ncsa", "open", "source", "suggest", "university", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/cern-ohl-w-2.0"]
+title = "CERN Open Hardware Licence Version 2 - Weakly Reciprocal | Choose a License"
+description = "Permissions of this weakly-reciprocal license are conditioned on making available complete sources of licensed works and modifications under the same license. Notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without sources for the larger work."
+full_description = "Permissions of this weakly-reciprocal license are conditioned on making available complete sources of licensed works and modifications under the same license. Notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without sources for the larger work. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. CERN recommends adding the following information in the source files: copyright and license notice, a disclaimer of warranties and a source location. You can also include the source location in a part of the design which will be visible in the end product. Add CERN-OHL-W-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/cern-ohl-w-2.0"
+tags = ["apply", "cern", "cern-ohl-w-2.0", "hardware", "licence", "license", "license?", "open", "reciprocal", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses"]
+title = "Licenses | Choose a License"
+description = "Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available."
+full_description = "Open source licenses grant permission for anybody to use, modify, and share licensed software for any purpose, subject to conditions preserving the provenance and openness of the software. The following licenses are sorted by the number of conditions, from most (GNU AGPLv3) to none (Unlicense). Notice that the popular licenses featured on the home page (GNU GPLv3 and MIT) fall within this spectrum. Permissions of this strongest copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. When a modified version is used to provide a service over a network, the complete source code of the modified version must be made available. Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work. Permissions of this weak copyleft license are conditioned on making available source code of licensed files and modifications of those files under the same license (or in certain cases, one of the GNU licenses). Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work may be distributed under different terms and without source code for files added in the larger work."
+year_published = 2025
+clearnet = "https://choosealicense.com/licenses"
+tags = ["agplv3", "apache", "boost", "gplv3", "lgplv3", "license", "licenses", "mozilla", "public", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "rust-lang.github.io", "spdx.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/epl-2.0"]
+title = "Eclipse Public License 2.0 | Choose a License"
+description = "This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones."
+full_description = "This commercially-friendly copyleft license provides the ability to commercially license binaries; a modern royalty-free patent license grant; and the ability for linked works to use other licenses, including commercial ones. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Add EPL-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/epl-2.0"
+tags = ["apply", "eclipse", "epl-2.0", "license", "license?", "public", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/ecl-2.0"]
+title = "Educational Community License v2.0 | Choose a License"
+description = "The Educational Community License version 2.0 (“ECL”) consists of the Apache 2.0 license, modified to change the scope of the patent grant in section 3 to be specific to the needs of the education communities using this license."
+full_description = 'The Educational Community License version 2.0 ("ECL") consists of the Apache 2.0 license, modified to change the scope of the patent grant in section 3 to be specific to the needs of the education communities using this license. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Apereo Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text. Add ECL-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories.'
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/ecl-2.0"
+tags = ["apply", "community", "ecl-2.0", "educational", "license", "license?", "suggest", "using", "v2.0", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/apache-2.0"]
+title = "Apache License 2.0 | Choose a License"
+description = "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Apache Software Foundation recommends taking the additional step of adding a boilerplate notice to the header of each source file. You can find the notice in the appendix at the very end of the license text. Add Apache-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/apache-2.0"
+tags = ["apache", "apache-2.0", "apply", "license", "license?", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com"]
+title = "Choose an open source license | Choose a License"
+description = "Non-judgmental guidance on choosing a license for your open source project"
+full_description = "An open source license protects contributors and users. Businesses and savvy developers won’t touch a project without this protection. Use the license preferred by the community you’re contributing to or depending on. Your project will fit right in. The MIT License is short and to the point. It lets people do almost anything they want with your project, like making and distributing closed source versions. The GNU GPLv3 also lets people do almost anything they want with your project, except distributing closed source versions."
+year_published = 2025
+clearnet = "https://choosealicense.com"
+tags = ["best", "care", "choices.", "choose", "community.", "describes", "don’t", "following", "improvements.", "isn’t"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "git.gnome.org", "git.savannah.gnu.org", "github.com"]
+
+["https://choosealicense.com/licenses/mit"]
+title = "MIT License | Choose a License"
+description = "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code."
+full_description = "A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add MIT to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/mit"
+tags = ["apply", "license", "license?", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "guides.rubygems.org", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/no-permission"]
+title = "No License | Choose a License"
+description = "You’re under no obligation to choose a license and it’s your right not to include one with your code or project. But please note that opting out of open source licenses doesn’t mean you’re opting out of copyright law."
+full_description = "When you make a creative work (which includes code), the work is under exclusive copyright by default. Unless you include a license that specifies otherwise, nobody else can copy, distribute, or modify your work without being at risk of take-downs, shake-downs, or litigation. Once the work has other contributors (each a copyright holder), “nobody” starts including you. Even in the absence of a license file, you may grant some rights in cases where you publish your source code to a site that requires accepting terms of service. For example, if you publish your source code in a public repository on GitHub, you have accepted the Terms of Service, by which you allow others to view and fork your repository. Others may not need your permission if limitations and exceptions to copyright apply to their particular situation. Neither site terms nor jurisdiction-specific copyright limitations are sufficient for the kinds of collaboration that people usually seek on a public code host, such as experimentation, modification, and sharing as fostered by an open source license. You don’t have to do anything to not offer a license. You may, however, wish to add a copyright notice and statement that you are not offering any license in a prominent place (e.g., your project’s README) so that users don’t assume you made an oversight. If you’re going to accept others’ contributions to your non-licensed project, you may wish to explore adding a contributor agreement to your project with your lawyer so that you maintain copyright permission from contributors, even though you’re not granting the same. Disallowing use of your code might not be what you intend by “no license.” An open source license allows reuse of your code while retaining copyright. If your goal is to completely opt-out of copyright restrictions, try a public domain dedication instead. If you find software that doesn’t have a license, that generally means you have no permission from the creators of the software to use, modify, or share the software. Although a code host such as GitHub may allow you to view and fork the code, this does not imply that you are permitted to use, modify, or share the software for any purpose."
+year_published = 2025
+clearnet = "https://choosealicense.com/no-permission"
+tags = ["don’t", "license", "license.", "maintainers", "negotiate", "nicely", "private", "software.", "users"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opensource.guide", "opensource.org", "rust-lang.github.io", "spdx.github.io", "spdx.org", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/bsd-3-clause"]
+title = "BSD 3-Clause “New” or “Revised” License | Choose a License"
+description = "A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent."
+full_description = "A permissive license similar to the BSD 2-Clause License, but with a 3rd clause that prohibits others from using the name of the copyright holder or its contributors to promote derived products without written consent. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add BSD-3-Clause to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsd-3-clause"
+tags = ["3-clause", "apply", "bsd-3-clause", "license", "license?", "suggest", "using", "who’s", "“new”", "“revised”"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/isc"]
+title = "ISC License | Choose a License"
+description = "A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the BSD 2-Clause and MIT licenses, removing some language that is no longer necessary."
+full_description = "A permissive license lets people do anything with your code with proper attribution and without warranty. The ISC license is functionally equivalent to the BSD 2-Clause and MIT licenses, removing some language that is no longer necessary. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add ISC to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/isc"
+tags = ["apply", "license", "license?", "suggest", "using", "who’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/lgpl-2.1"]
+title = "GNU Lesser General Public License v2.1 | Choose a License"
+description = "Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the GNU LGPL."
+full_description = "Primarily used for software libraries, the GNU LGPL requires that derived works be licensed under the same license, but works that only link to it do not fall under this restriction. There are two commonly used versions of the GNU LGPL. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license. Add LGPL-2.1-or-later (or LGPL-2.1-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories. If you would like your project to adopt the GPL-3.0’s cure provision, add the text of the GPL Cooperation Commitment to a file named COMMITMENT in the same directory as your LGPL-2.1 license file."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/lgpl-2.1"
+tags = ["apply", "general", "lesser", "lgpl-2.1-only", "lgpl-2.1-or-later", "license", "public", "suggest", "v2.1"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/gpl-2.0"]
+title = "GNU General Public License v2.0 | Choose a License"
+description = "The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements."
+full_description = "The GNU GPL is the most widely used free software license and has a strong copyleft requirement. When distributing derived works, the source code of the work must be made available under the same license. There are multiple variants of the GNU GPL, each with different requirements. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the license. Add GPL-2.0-or-later (or GPL-2.0-only to disallow future versions) to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories. If you would like your project to adopt the GPL-3.0’s cure provision, add the text of the GPL Cooperation Commitment to a file named COMMITMENT in the same directory as your GPL-2.0 license file."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/gpl-2.0"
+tags = ["apply", "general", "gpl-2.0-only", "gpl-2.0-or-later", "license", "license?", "public", "suggest", "using", "v2.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.gnome.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "help.github.com", "joinup.ec.europa.eu", "libraries.io", "openbsd.org", "opendefinition.org", "opensource.guide", "rust-lang.github.io", "spdx.github.io", "tm.joomla.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/lppl-1.3c"]
+title = "LaTeX Project Public License v1.3c | Choose a License"
+description = "The LaTeX Project Public License (LPPL) is the primary license under which the LaTeX kernel and the base LaTeX packages are distributed."
+full_description = "The LaTeX Project Public License (LPPL) is the primary license under which the LaTeX kernel and the base LaTeX packages are distributed. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Place in each of the components of your work both an explicit copyright notice including your name, and the year the work was authored and/or last substantially modified. Include also a statement that the distribution and/or modification of that component is constrained by the conditions in this license. An example boilerplate and more information about how to use the license can be found at the end of the license. Add LPPL-1.3c to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/lppl-1.3c"
+tags = ["apply", "latex", "license", "lppl-1.3c", "project", "public", "suggest", "v1.3c"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "code.qt.io", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org"]
+
+["https://choosealicense.com/licenses/bsd-2-clause"]
+title = "BSD 2-Clause “Simplified” License | Choose a License"
+description = "A permissive license that comes in two variants, the BSD 2-Clause and BSD 3-Clause. Both have very minute differences to the MIT license."
+full_description = "A permissive license that comes in two variants, the BSD 2-Clause and BSD 3-Clause. Both have very minute differences to the MIT license. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Replace [year] with the current year and [fullname] with the name (or names) of the copyright holders. Add BSD-2-Clause to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/bsd-2-clause"
+tags = ["2-clause", "apply", "bsd-2-clause", "license", "license?", "suggest", "using", "who’s", "“simplified”"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/artistic-2.0"]
+title = "Artistic License 2.0 | Choose a License"
+description = "Heavily favored by the Perl community, the Artistic license requires that modified versions of the software do not prevent users from running the standard version."
+full_description = "Heavily favored by the Perl community, the Artistic license requires that modified versions of the software do not prevent users from running the standard version. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named LICENSE or LICENSE.txt) in the root of your source code and copy the text of the license into the file. Do not replace the copyright notice (year, author), which refers to the license itself, not the licensed project. Add Artistic-2.0 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/artistic-2.0"
+tags = ["apply", "artistic", "artistic-2.0", "license", "suggest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]
+
+["https://choosealicense.com/licenses/eupl-1.1"]
+title = "European Union Public License 1.1 | Choose a License"
+description = "The “European Union Public Licence” (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 22 official languages of the European Union."
+full_description = "The “European Union Public Licence” (EUPL) is a copyleft free/open source software license created on the initiative of and approved by the European Commission in 22 official languages of the European Union. Make a pull request to suggest this license for a project that is not licensed. Please be polite: see if a license has already been suggested, try to suggest a license fitting for the project’s community, and keep your communication with project maintainers friendly. Create a text file (typically named COPYING or LICENCE.txt) in the root of your source code and copy the text of the license into the file. The European Commission recommends taking the additional step of adding a boilerplate notice to the top of each file. Add EUPL-1.1 to your project’s package description, if applicable (e.g., Node.js, Ruby, and Rust). This will ensure the license is displayed in package directories."
+year_published = 2025
+year_updated = 2025
+clearnet = "https://choosealicense.com/licenses/eupl-1.1"
+tags = ["apply", "eupl-1.1", "european", "license", "public", "suggest", "union"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "boost.org", "creativecommons.org", "doc.rust-lang.org", "docs.npmjs.com", "en.wikipedia.org", "git.savannah.gnu.org", "github.com", "gnu.org", "gplcc.github.io", "guides.rubygems.org", "help.github.com", "libraries.io", "ohwr.org", "openbsd.org", "opensource.guide", "opensource.org", "tm.joomla.org", "wiki.creativecommons.org", "wordpress.org"]

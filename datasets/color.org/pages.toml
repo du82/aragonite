@@ -1,0 +1,109 @@
+["https://color.org"]
+title = "INTERNATIONAL COLOR CONSORTIUM"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = 'The v4 ICC specification is widely used and is referred to in many International and other de-facto standards. It was first approved as an International Standard, ISO 15076-1, in 2005 and revised in 2010. The International Color Consortium Developers Conference ICC DevCon2020 was held on-line as a series of webinars during November 2020 and January 2021. Slides and recordings of the event are all available. The iccMAX specification was approved by the ICC Steering Committee in July 2016, and was published as ISO 20677 in February 2019. According to William Li, ICC Co-Chair and Kodak Color Technology Manager, "iccMAX is a major expansion of the original ICC profile format. Users will no longer be constrained by the need to base everything on a standard D50 light source, by the lack of support for spectral data, or by the inability to use 3D measurements." He added, "The result is a next-generation colour management system, together with a reference implementation, that will aid companies in quickly developing solutions for their market segment." The current version of the specification is Version 4.4. Color management products are now mostly v4 compatible, and vendors are strongly urged to upgrade their products to be compatible with the v4 specification and its Perceptual Reference Medium Gamut. The v4 menu above provides links to documents and resources on the v4 specification, including a summary of the main advantages of the v4 specification, and the reasons to use v4 profiles in colour workflows. The v2 specification is still supported and recommendations on making v2 profiles that can interoperate in v4 workflows are provided. Profile creation software that will produce profiles that conform to v4 are listed in the Profiling Tools page, and applications that will utilize them are widely available.'
+year_published = 2025
+clearnet = "https://color.org"
+tags = ["2020:", "cielab", "cmyk", "color", "color control", "color devices", "color management", "color measurment", "color profiles", "color science"]
+language = "en"
+internal-references = ["none"]
+external-references = ["iso.org"]
+
+["http://www.color.org/events/hk2018"]
+title = "ICC Color Symposium Hong Kong October 22 2018"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "Digital Color Management Techniques Mr. William Li Digital workflows lead to more flexibility in how color gets handled. This talk is about how to take advantage of this flexibility without falling prey to the dangers, with examples drawn from digital printing, expanded color gamut, and traditional CMYK printing. Textile Color Management Dr. Max Derhak Increasingly textiles are printed using digital inkjet printers, enabling new types of products. This talk addresses some of the challenges involved in color managing digital printing on textiles. Softproofing Revisit and Reborn Mr. Chris Bai Soft proofing has been around for quite a period of time already, but still has not been widely adopted yet. With the recent advancement in display technology and the latest iccMAX architecture, soft proofing has become active again. We?ll take another look at how the latest technology could help you improve your color communication efficiency. Setting Color Expectations from Creation to Production for Packaging Mr. Raymond Cheydleur This talk will give a quick overview of the different stages of packaging from Design through execution and where ICC profiles can enhance the quality of reproduction and communication along the way. He will address spot color in a couple of different ways including the use of ICC with expanded color gamut. Standards in Color Specification Mr. Steve Smiley Standards are a vital part of ensuring that print buyers and brand owners get the results they expect, even and especially when using color management. This talk describes some of the standards which impact color management, and how to use them in the workflow, both as buyers and print service providers. How to get consistency in color appearance? Mr. Juergen Seitz Color management workflows are helping to automate the color rendering of your data for the many output conditions. How consistent are these many outputs in color? Is there a way to measure the consistency between several output results? What standards, tools and technologies are there to control and secure best color consistency?"
+year_published = 2025
+clearnet = "http://www.color.org/events/hk2018"
+tags = ["cielab", "cmyk", "color", "color control", "color devices", "color management", "color measurment", "color profiles", "color science", "color separations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org", "web.aptec.hkprinters.org"]
+
+["http://www.color.org/events/munich2018/munich2018.xalter"]
+title = "ICC Working Group meetings"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "Venue Fogra Research Institute for Media Technologies Einsteinring 1a Map 85609 Aschheim b. M�nchen, Germany There will be an option of remote participation, including remote presentation, but please note that you should register as usual in advance (see above)."
+year_published = 2025
+clearnet = "http://www.color.org/events/munich2018/munich2018.xalter"
+tags = ["25-26", "agenda", "architecture", "arts", "assessment", "cielab", "cmyk", "color", "color control", "color devices"]
+language = "en"
+internal-references = ["none"]
+external-references = ["barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org", "web.aptec.hkprinters.org"]
+
+["http://www.color.org/events/HDR_experts.xalter"]
+title = "ICC HDR Experts' Day"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "In this meeting industry experts addressed a wide range of topics with a focus on colour management of HDR still and moving images. Full details of all the speakers and their talks are here, and slides are available to download below. The Perceptual Quantizer: design considerations and applications Timo Kunkel, Dolby Systems | Recording ISO TC42 development of ISO TS 22028-5 Colour encodings for HDR still images Nicolas Bonnier, Apple | Recording"
+year_published = 2025
+clearnet = "http://www.color.org/events/HDR_experts.xalter"
+tags = ["cielab", "cmyk", "color", "color control", "color devices", "color management", "color measurment", "color profiles", "color science", "color separations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bigmarker.com", "fogra.org", "iso.org"]
+
+["http://www.color.org/DevCon/devcon2020"]
+title = "ICC DevCon 2020: The Future of Color Management"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = '''International Color Consortium Developers Conference "ICC DevCon 2020" had the theme 'The Future of Color Management. It was held on-line as a series of six webinars during November 2020 and January 2021. DevCon2020 included talks from international researchers, presentations from ICC members on implementing advanced colour management solutions, and an extended hands-on workshop on using iccMAX. Full program details including abstracts of talks and speaker details are here. Links to the recordings of each session will be posted below. With the publication in 2019 of ISO 20677, ICC's next-generation colour management architecture, the stage is set for a major rethink of colour management. In response to new hardware technology and new user requirements, researchers and developers have been working on colour management solutions that aim to quantify and reproduce visual appearance beyond the diffuse, 2D colorimetry supported in ICC v4. New developments are arising in the measurement and modelling of appearance, in lighting and display technology, the production of complex gonio-chromatic surface effects, combined with with a move towards colour matching for individual observers instead of a 'one colour fits all' approach. ICC DevCon 2020 focused on these new and emerging developments and how they can be implemented in a colour managed workflow. ICC invited presentations on recent work on topics including HDR imaging, BRDF (and other directional models of appearance), colorimetric observers and illuminants, measurement and modelling of appearance, the reproduction of complex surface properties such as gonio-chromatism, fluorescence and texture. It also focused on key application areas of the future, such as multi-colour 2D and 3D printing, cultural heritage, and web and broadcast imaging. Color Management in the 21st Century Danny Rich, Sun Chemical (a division of Dainippon Ink and Printing) Led by Max Derhak, the initial contributor and maintainer of the iccMAX reference implementation, RefIccMAX. These sessions will include hands-on participation.'''
+year_published = 2025
+clearnet = "http://www.color.org/DevCon/devcon2020"
+tags = ["2020:", "2021:", "appearance", "cielab", "close", "cmyk", "color", "color control", "color devices", "color management"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bigmarker.com", "fogra.org", "iso.org"]
+
+["http://www.color.org/events/munich2020/munich2020.xalter"]
+title = "ICC Working Group meetings"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "Venue Fogra Research Institute for Media Technologies Einsteinring 1a Map 85609 Aschheim b. M�nchen, Germany There will be an option of remote participation, including remote presentation, but please note that you should register as usual in advance (see above)."
+year_published = 2025
+clearnet = "http://www.color.org/events/munich2020/munich2020.xalter"
+tags = ["10-11", "approval", "architecture", "arts", "assessment", "cielab", "cmyk", "color", "color control", "color devices"]
+language = "en"
+internal-references = ["none"]
+external-references = ["barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org", "web.aptec.hkprinters.org"]
+
+["http://www.color.org/events/bressanone"]
+title = "ICC Color Experts' Day, Bressanone"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "ICC held an Experts' Day on colour management in printing on non-paper substrates using wide-format printing. The meeting was hosted by Barbieri Electronic at Durst HQ In this meeting industry experts address a wide range of topics with a focus on colour management of printing on textiles, signage, ceramics, floor coverings and other non-paper substrates. Full details of all the speakers and the presentations are on the program page, where you can also find the slides to download. Welcome Christoph Gamper, CEO Durst-Group Hans Peter Schneeberger, Prepress-digital Markus Barbieri, Barbieri Electronic Using eciCMYK as working colour space for wide gamut printers (nChannel, CMYK+) Peter Kleinheider, Prepress Digital Profiling for non-standardized printing conditions (CMYK or Multicolor, Digital or Conventional) Jurgen Seitz, GMG The measurement and profiling of special materials: glass, leather, laminates, etc: problems and solutions, practical experiences Andrea DeRossi, Tecnologie Grafiche Overcoming challenges surrounding color management in ceramic digital printing through new approaches Jan Seguda, ColorGATE"
+year_published = 2025
+clearnet = "http://www.color.org/events/bressanone"
+tags = ["advanced", "applications", "approaches", "backlit", "ceramic", "challenges", "cielab", "cmyk", "color", "color control"]
+language = "en"
+internal-references = ["none"]
+external-references = ["barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org"]
+
+["http://www.color.org/events/grandrapids"]
+title = "ICC Working Group meetings"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "There will be an option of remote participation, including remote presentation, but please note that you should register as usual in advance (see above)."
+year_published = 2025
+clearnet = "http://www.color.org/events/grandrapids"
+tags = ["30-31", "architecture", "arts", "assessment", "cielab", "cmyk", "color", "color control", "color devices", "color management"]
+language = "en"
+internal-references = ["none"]
+external-references = ["barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org"]
+
+["http://www.color.org/events/prague"]
+title = "Prague Graphic Arts Experts' Day June 29 2017"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = "The ICC is holding a graphic arts Color Experts' Day in Prague in June 2017, in conjunction with the Czech Printers' Association SPP, University of Pardubice and the Slovak University of Technology. The focus of the one day event will be on current issues in colour management that concern the printing, packaging and publishing industries in the Eastern Europe region. BRDF measurement and color appearance simulation based on iccMAX framework Wei-Chun Hung, National Taiwan University of Science and Technology Multi-angle spectroscopic measurements at University of Pardubice Petr Jan�cek, University of Pardubice"
+year_published = 2025
+clearnet = "http://www.color.org/events/prague"
+tags = ["cielab", "cmyk", "color", "color control", "color devices", "color management", "color measurment", "color profiles", "color science", "color separations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["avcr.cz", "barbierielectronic.com", "bigmarker.com", "durst-group.com", "fogra.org", "iso.org", "web.aptec.hkprinters.org"]
+
+["http://www.color.org/DevCon/devcon2018"]
+title = "ICC Developer Conference 2018"
+description = "The International Color Consortium....promoting and encouraging the standardization of an open color management system"
+full_description = 'February 27 2018 Fogra Research Institute for Media Technologies Einsteinring 1a 85609 Aschheim b. M�nchen The International Color Consortium Developers Conference "ICC DevCon 2018" was held in Munich on February 27 2018, co-located with the Fogra Color Management Symposium. There was a panel of expert speakers on advanced colour management topics, and an iccMAX hands-on workshop.'
+year_published = 2025
+clearnet = "http://www.color.org/DevCon/devcon2018"
+tags = ["cielab", "cmyk", "color", "color control", "color devices", "color management", "color measurment", "color profiles", "color science", "color separations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["fogra.org", "iso.org"]

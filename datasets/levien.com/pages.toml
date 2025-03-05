@@ -1,0 +1,314 @@
+["https://levien.com/fps.html"]
+title = "Proposal: fps discussion group"
+full_description = '''This is a proposal for a new discussion group called 'fps' (Frames Per Second). Its focus is to obtain consistently high frame rates for Linux desktop applications. The goal of consistently high frame rates cuts across many areas of Linux development, including application development, Gui toolkits, X server issues, a number of areas of the Linux kernel (mtrr and scheduling being the most visible), hardware design and configuration, and possibly the design of new hardware that is optimized with Linux in mind. Consequently, the focus of the list addresses people from many different communities. Thus, the fps discussion would not fit easily within any single existing forum (that I know of, anyway). The purpose of the mailing list is to improve communication between the different groups involved, and to foster the knowledge that's needed to bring truly high performance to the general Linux desktop. I've definitely experienced the lack of communication - the first time I heard about mtrr write combining is when someone posted results to my GdkRgb survey page. Yet, this is perhaps the single most important improvement in Linux graphics performance in a while. As the developer of GdkRgb, I should have found out about this earlier. One of the primary elements of the 'fps philosophy' is that a high frame rate isn't simply the number of frames that can be displayed in one second, but also includes delivering those frames at a consistent rate and with low latency. Thus, a better working definition of 'frames per second' might be the inverse of the maximum delay between frames. This effect is especially visible in jerky animations, but shows up as uneven cursor motion, jerky scrolling, and a feeling of sluggish response. Lots of applications can benefit from high frame rates. Animation and games are simply the most obvious. My own personal interest is in highly responsive desktop applications with relatively sophisticated graphics displays (i.e. antialiased fonts and vector graphics, "themes," transparency, etc.). Image editing applications (such as the Gimp) primarily need an absolute minimum latency, so that they appear to respond instantly to the artist's pen. Some of the issues carry over into other areas of multimedia, especially sound.'''
+year_published = 2025
+clearnet = "https://levien.com/fps.html"
+tags = ["discussion", "frames", "group", "proposal:", "second", "subscribe"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.wikipedia.org", "fontfabrik.com", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "hem1.passagen.se", "hivelogic.com", "husted.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "patft.uspto.gov", "raphlinus.github.io", "scripts.sil.org", "slashdot.org", "tug.org", "typophile.com", "xilem.dev", "youtube.com"]
+
+["https://levien.com/spiro"]
+title = "Spiro"
+full_description = "Spiro is also shipping in development versions of FontForge and Inkscape. You might also enjoy the YouTube video of the latter integration, and some examples by Andy Fitzsimon. Mac users: ppedit.dmg contains a toy Carbon build of the app. It is a Universal binary, and (probably) requires 10.4. There are a couple of ways to get the source code. Developers should probably use the darcs repository. To build from that, use: The tarball also contains some utilities for Bezier optimization, and for segmenting scans into letter classes, suitable for tracing over. The code is GPL'ed, with a patent grant for the curve technology. The current version requires Gtk2 and cairo. More details are in the README. Raph has been using Spiro to design his own fonts for a while. In addition, the plate files for Inconsolata are here."
+year_published = 2025
+clearnet = "https://levien.com/spiro"
+tags = ["code", "discussion", "fonts", "spiro"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "fontly.com", "fonts.google.com", "ghostscript.com", "gnome.org", "google.com", "gtk.org", "gzilla.com", "mastodon.online", "patents.google.com", "patft.uspto.gov", "quaker.org", "raph.levien.com", "raphlinus.github.io", "sourceforge.net", "typophile.com", "xilem.dev", "youtube.com"]
+
+["https://levien.com/free/prpat"]
+title = ""
+year_published = 2025
+clearnet = "https://levien.com/free/prpat"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "pmt.sourceforge.net", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tigert.gimp.org", "tug.org", "web.archive.org", "winehq.org"]
+
+["https://levien.com/free/tmetric-HOWTO.html"]
+title = "Attack Resistant Trust Metric Metadata HOWTO"
+full_description = "3 Jul 2002: Advogato is now running an implementation of the generic metadata engine described below. The code is available at the mod_virgule CVS, hosted on casper. Please note that PageRank is covered by US Patent 6,285,999. The implementation linked below is for research only. Seriously. I've done a fair amount of thinking about attack-resistant trust metrics as part of my PhD research. I did a testbed implementation, Advogato, and now feel that the potential applications for this technology are much wider. I'm very busy with real work, though, and much as I would love to see my newer ideas implemented, I don't have time right now to do it myself. Hence, I am writing this document to entice others with community websites into implementing some of the ideas, especially the ones having to do with generalized metadata. You don't have to be a mathematician or trust researcher to do a good job implementing a trust metric. However, understanding the basic ideas really helps. The best writeup of Advogato's existing trust metric is fc.ps, my draft submission to the FC '00 conference. This describes the trust metric implemented in Advogato in fairly good detail. For my newer thinking, my thesis-in-progress is the best bet. I am trying to make the writing more accessible than your average PhD thesis, so please don't be too intimidated. The metadata work is in Chapter 6. I can also heartily recommend the original PageRank paper. It's fairly easy to read, and PageRank itself kicks ass. For insight into actual implementations of trust metrics, I've split out testbed implementations of both Advogato's trust metric and PageRank into a small tarball. This testbed should also be fairly fun to play with. You have to understand basic graph theory: nodes and edges, predecessor and successor sets, indegree and outdegree. If your interest is implementing a trust metric, rather than trying to analyze it, you don't have to understand network flows, random walks, or eigenvectors. Of course, it never hurts to understand more."
+year_published = 2025
+clearnet = "https://levien.com/free/tmetric-HOWTO.html"
+tags = ["2002:", "another", "applications", "aspects", "attack", "background", "computing", "howto", "issues", "metadata"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "pmt.sourceforge.net", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tigert.gimp.org", "tug.org", "web.archive.org", "winehq.org"]
+
+["https://levien.com/type/myfonts/inconsolata.html"]
+title = "Inconsolata"
+full_description = '''Update 2015-12-04: The official release of Inconsolata is at Google Fonts, and official upstream is on github. These versions have better Windows hinting and some fixes. I also have an experimental version (tentatively titled InconsolataGo) with straight quotes in the inconsolata directory here. Inconsolata is my first serious original font release. It is a monospace font, designed for code listings and the like, in print. There are a great many "programmer fonts," designed primarily for use on the screen, but in most cases do not have the attention to detail for high resolution rendering. Inconsolata draws from many inspirations and sources. I was particularly struck by the beauty of Luc(as) de Groot's Consolas, which is his monospaced design for Microsoft's upcoming Vista release. This font, similar to his earlier TheSansMono, demonstrated clearly to me that monospaced fonts do not have to suck. First and foremost, Inconsolata is a humanist sans design. I strove for the clarity and clean lines of Adrian Frutiger's Avenir (the lowercase "a", in particular, pays homage to this wonderful design), but also looked to Morris Fuller Benton's Franklin Gothic family for guidance on some of my favorite glyphs, such as lowercase "g" and "S", and, most especially, the numerals. Designing a monospace font poses unique challenges. I have carefully studied many other monospaced fonts to see how they solve these problems. Many of the available monospace fonts are adaptations of existing proportionally-spaced fonts, but some, such as Letter Gothic, draw strength from being their own designs. I hope Inconsolata upholds that tradition. Some details will be most apparent in print, such as the subtle curves in lowercase "t", "v", "w", and "y". Inconsolata also borrows "micro-serifs" from some Japanese Gothic fonts, which enhance the appearance of crispness and legibility. I'm still working on completing this font, refining the base ASCII set and filling out the Latin 1, 2, and 9 complements. It will be released under the new Open Font License of SIL. Completion of this font is being generously sponsored by the TeX Users Group Development Fund. If you like this font and want to see more sponsored and released freely, please consider donating to TUG.'''
+year_published = 2025
+clearnet = "https://levien.com/type/myfonts/inconsolata.html"
+tags = ["links"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.wikipedia.org", "fontfabrik.com", "fontforge.sourceforge.net", "fontly.com", "ghostscript.com", "github.com", "gtk.org", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "patft.uspto.gov", "raphlinus.github.io", "scripts.sil.org", "tug.org", "typophile.com", "xilem.dev", "youtube.com"]
+
+["https://levien.com/type/myfonts"]
+title = "Fonts in progress"
+full_description = "Here are the fonts I'm currently working on. Some of them are very incomplete or rough, especially in spacing and fit. In most cases, I've posted a PDF file so you can zoom in and see the letters up close, and also a FontForge SFD file so you can play with the outlines yourself. I'm always open to criticism and encouragement, so drop me a note (firstname.lastname@gmail.com is most likely to be read). This font is currently the closest to release, with a decent glyph complement. It's a straightforward revival of a somewhat forgotten, but handsome and utilitarian, font from the ATF collection. It's obviously very similar to the familiar Century Oldstyle, but with more refined proportions and stroke. This version is based on the 18pt from the 1923 catalog. I've fallen in love with the Centaur of Bruce Rogers. There is a respectable digital version by Monotype, but, as some have noted, it suffers from overly crisp rendering on modern devices. I think there's a lot of potential to implement optical scaling, and perhaps revive the Bible Centaur version as well. It may well be years until I release this font, as I want to do it justice. I also want to make sure to strictly follow ethical guidelines for the release, as a version of the font is being sold by more or less the same company that first released it. One of the most revelatory plates in Harry Carter's View of Early Typography is a specimen by one Guillaume LeBe. I have done a very literal tracing of both titling and book sizes of the letters, which might be the basis for a good font. I'm not really happy with the book size, as it faithfully reproduces the serious degradation I'm sure the specimen sheet endured in its (reduced size) reproduction. The ATF Bodonis are quite beautiful, and technical tour de force as well. As part of an effort to understand the optical scaling done by Morris Benton Fuller, I traced a number of the Bodoni Book 12pt lowercase letters. I now realize that, both for better quality and to be more faithful to the scaling technology developed by Morris Benton and his father Linn Boyd Benton, I should consider the 18pt size of Bodoni Book to be the authoritative master. I have a feeling I'll come back to this one."
+year_published = 2025
+clearnet = "https://levien.com/type/myfonts"
+tags = ["bodoni", "caps", "catalogue", "century", "fonts", "franklin", "gothic", "inconsolata", "lebe", "museum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "fontly.com", "fonts.google.com", "ghostscript.com", "gnome.org", "google.com", "gtk.org", "gzilla.com", "mastodon.online", "myfonts.com", "patents.google.com", "patft.uspto.gov", "raph.levien.com", "raphlinus.github.io", "scripts.sil.org", "typophile.com", "xilem.dev", "youtube.com"]
+
+["http://levien.com/garden/x3"]
+title = "Index of /garden/x3"
+year_published = 2025
+clearnet = "http://levien.com/garden/x3"
+tags = ["/garden/x3", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/gdkrgb"]
+title = "GdkRgb"
+full_description = "26 Sep 1998: See the fps mailing list homepage for a proposal on a new mailing list devoted to maximizing Frames Per Second on the Linux desktop. GdkRgb is an upgrade to the Gtk+ toolkit, enhancing the display of RGB image data. Simply put, the module draws RGB images (from a 24-bit packed RGB image buffer) on the screen. GdkRgb is very fast, renders at very high quality (including a 16 bit per pixel dithered mode that is truly excellent), and has a simple API. It is highly recommended for all applications that directly touch 24-bit RGB image data. GdkRgb came about as part of the gfonted project. It is the low-level basis of GtkCaanvas, an antialiased canvas widget. I'm working on integrating GdkRgb into the 1.2 release of Gtk+. In the meantime, you can use it in apps and still be compatible with Gtk+ 1.0, simply by including a few files in your source tree and making minor additions to your autoconf files. When Gtk 1.2 comes out, the make process will automatically switch over to the GdkRgb module included there. The testrgb program included in the distribution documents how to use GdkRgb by example. 27 Aug 1998: There's a CGI-based survey of GdkRgb performance. This should help test GdkRgb, as well as provide interesting benchmark data for 2D graphics performance. I'm especially interested in results from slightly nonstandard X setups, including grayscale displays, SGI workstations, etc."
+year_published = 2025
+clearnet = "https://levien.com/gdkrgb"
+tags = ["1998:", "gdkrgb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tigert.gimp.org", "tug.org", "web.archive.org", "winehq.org"]
+
+["http://levien.com/type/myfonts"]
+title = "Fonts in progress"
+full_description = "Here are the fonts I'm currently working on. Some of them are very incomplete or rough, especially in spacing and fit. In most cases, I've posted a PDF file so you can zoom in and see the letters up close, and also a FontForge SFD file so you can play with the outlines yourself. I'm always open to criticism and encouragement, so drop me a note (firstname.lastname@gmail.com is most likely to be read). This font is currently the closest to release, with a decent glyph complement. It's a straightforward revival of a somewhat forgotten, but handsome and utilitarian, font from the ATF collection. It's obviously very similar to the familiar Century Oldstyle, but with more refined proportions and stroke. This version is based on the 18pt from the 1923 catalog. I've fallen in love with the Centaur of Bruce Rogers. There is a respectable digital version by Monotype, but, as some have noted, it suffers from overly crisp rendering on modern devices. I think there's a lot of potential to implement optical scaling, and perhaps revive the Bible Centaur version as well. It may well be years until I release this font, as I want to do it justice. I also want to make sure to strictly follow ethical guidelines for the release, as a version of the font is being sold by more or less the same company that first released it. One of the most revelatory plates in Harry Carter's View of Early Typography is a specimen by one Guillaume LeBe. I have done a very literal tracing of both titling and book sizes of the letters, which might be the basis for a good font. I'm not really happy with the book size, as it faithfully reproduces the serious degradation I'm sure the specimen sheet endured in its (reduced size) reproduction. The ATF Bodonis are quite beautiful, and technical tour de force as well. As part of an effort to understand the optical scaling done by Morris Benton Fuller, I traced a number of the Bodoni Book 12pt lowercase letters. I now realize that, both for better quality and to be more faithful to the scaling technology developed by Morris Benton and his father Linn Boyd Benton, I should consider the 18pt size of Bodoni Book to be the authoritative master. I have a feeling I'll come back to this one."
+year_published = 2025
+clearnet = "http://levien.com/type/myfonts"
+tags = ["bodoni", "caps", "catalogue", "century", "fonts", "franklin", "gothic", "inconsolata", "lebe", "museum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com"]
+title = "Raph Levien"
+full_description = "I am now back at Google, on the Google Fonts team, where my main role is research on GPU font rendering and related technology. I am also very active in the Rust community, including the Xilem family of projects From 2018-2020 I took a break from full-time work, originally intending to create a game with sound synthesis as a core mechanic, but ultimately becoming far more drawn to the graphics rendering infrastructure needed for such a game, leading to a deep dive into vector graphics rendering on GPU. Before that, I worked at Google on the Fuchsia team, working on text processing and Rust. Previously, I worked on Android, the Web Fonts team, and before that, on spam in apps. For fun, I tinker with emulating vintage synthesizers. You can find source code and Play Store links on my Android projects page. I used to be maintainer of Ghostscript, and have played a role in a number of other free software projects. I have a number of patents, all of which are available for licensing, and all of which are subject to a patent grant for GPL-licensed software. A special prize is the Even Toned Screening, an exceptionally high quality suite of halftoning algorithms for inkjet printers. I have completed a PhD on techniques for interactive curve design. Spiro is a free software library containing these techniques, and I also used them to design a number of fonts, including Inconsolata. You may also be interested in a draft of an earlier attempt at a PhD, on Attack-Resistant Trust Metrics. The best source for that work is the chapter in Computing with Social Trust."
+year_published = 2025
+clearnet = "https://levien.com"
+tags = ["levien", "raph"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.wikipedia.org", "fonts.google.com", "ghostscript.com", "google.com", "mastodon.online", "quaker.org", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["http://levien.com/garden/ppedit/README"]
+title = ""
+year_published = 2025
+clearnet = "http://levien.com/garden/ppedit/README"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/athshe"]
+title = "Athshe"
+full_description = '''I have been kicking around the Athshe design around for many, many years now. I've found it difficult to explain clearly what it's about. Lately (in the fall of 2003), I've been working out more aspects of the design, and realize that much of that difficulty is because I don't understand it too well myself. Athshe is named after the planet in Ursula K. Le Guin's wonderful story, "The Word for World is Forest".'''
+year_published = 2025
+clearnet = "https://levien.com/athshe"
+tags = ["athshe"]
+language = "en"
+internal-references = ["none"]
+external-references = ["en.wikipedia.org", "fontfabrik.com", "fontforge.sourceforge.net", "fontly.com", "ghostscript.com", "github.com", "hem1.passagen.se", "hivelogic.com", "husted.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "patft.uspto.gov", "raphlinus.github.io", "scripts.sil.org", "tug.org", "typophile.com", "xilem.dev", "youtube.com"]
+
+["https://levien.com/libart"]
+title = "Libart"
+description = "Libart, a library for high-performance 2D vector and bitmap graphics"
+full_description = "Libart is a library for high-performance 2D graphics. It is currently being used as the antialiased rendering engine for the Gnome Canvas. It is also the rendering engine for Gill, the Gnome Illustration app. Libart is free software (all components are either GPL or LGPL). Libart is also available for commercial licensing. I own the copyright to the libart code base. Libart supports a very powerful imaging model, basically the same as SVG and the Java 2D API. It includes all PostScript imaging operations, and adds antialiasing and alpha-transparency. Libart is also highly tuned for incremental rendering. It contains data structures and algorithms suited to rapid, precise computation of Region of Interest, as well as a two-phase rendering pipeline optimized for interactive display."
+year_published = 2025
+clearnet = "https://levien.com/libart"
+tags = ["libart"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "developer.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "home.pacbell.net", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "textism.com", "tug.org", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/gnome/gdome.html"]
+title = "Gdome: The Gnome DOM Engine"
+full_description = "Gdome is the Gnome DOM Engine. It promises to create a fully standards-compliant DOM interface. It is based on Daniel Veillard's libxml. Currently, it is being used in Gill, the Gnome implementation of SVG. There are a fair number of projects related to Gdome, including free software implementations of DOM and other interfaces for XML or XML-like trees."
+year_published = 2025
+clearnet = "https://levien.com/gnome/gdome.html"
+tags = ["documents", "engine", "gdome:", "gnome", "links", "older", "projects", "related"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "google.com", "gzilla.com", "hivelogic.com", "home.pacbell.net", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "textism.com", "tug.org", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/phd/phd.html"]
+title = "Raph Levien’s thesis"
+full_description = "This is the Web home of Raph Levien's PhD thesis. He completed it and presented his defense on Sept. 3, 2009. The final, official version (PDF) is 191 pages, in 11 points and formatted according to the (revised) official rules. (There's also a version formatted to the old paper rules, double spaced, odd margins, etc.) The thesis itself is in LaTeX format, and many of the figures are drawn using Python code (generally to Postscript). You'll need darcs to access the respository, Python, Ghostscript, NumPy, and Gnuplot. All should be standard in any decent Linux distro, and not hard install on a Mac (I used MacPorts, but fink should also work). Among other things, the thesis describes the mathematical theory and numerical techniques behind Spiro, a library for interactive curve design."
+year_published = 2025
+clearnet = "https://levien.com/phd/phd.html"
+tags = ["building", "curve", "design", "fonts", "interactive", "levien's", "optimal", "raph", "source", "spiral"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advogato.org", "code.google.com", "developers.google.com", "en.wikipedia.org", "events.berkeley.edu", "fonts.google.com", "ghostscript.com", "gimp.org", "google.com", "gtk.org", "linuxresources.com", "mastodon.online", "patents.google.com", "patft.uspto.gov", "play.google.com", "quaker.org", "raph.levien.com", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["https://levien.com/free.html"]
+title = "Raph Levien: Free Software"
+full_description = "I'm coordinating support for the Wacom Intuos graphics tablets within XFree86, Linux in general, and Gimp specifically. If you spend a lot of time looking at patents, this prpat Perl script will no doubt come in handy. It automatically fetches patents from the IBM patent server and prints them to your PostScript printer. I am the primary author of premail, an email encryption client. I am, however, no longer actively maintaining it. You might be interested in fps, a mailing list devoted to highly responsive interactive Linux applications."
+year_published = 2025
+clearnet = "https://levien.com/free.html"
+tags = ["essays", "free", "levien:", "raph", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advogato.org", "code.google.com", "developers.google.com", "en.wikipedia.org", "fonts.google.com", "ghostscript.com", "gimp.org", "gnome.org", "google.com", "gtk.org", "gzilla.com", "linuxresources.com", "mastodon.online", "patft.uspto.gov", "play.google.com", "quaker.org", "raph.levien.com", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["https://levien.com/patents.html"]
+title = "Patents"
+full_description = '''Here's a list of my patents as of December 2, 2020. Each of the patents is linked to its page on Google. Whereas, Raph Levien (hereinafter "Inventor") has obtained patent protection for related technology (hereinafter "Patented Technology"), Inventor wishes to aid the the GNU free software project in achieving its goals, and Inventor also wishes to increase public awareness of Patented Technology, Inventor hereby grants a fully paid up, nonexclusive, royalty free license to practice the patents listed below ("the Patents") if and only if practiced in conjunction with software distributed under the terms of any version of the GNU General Public License as published by the Free Software Foundation, 59 Temple Place, Suite 330, Boston, MA 02111. Inventor reserves all other rights, including without limitation, licensing for software not distributed under the GNU General Public License.'''
+year_published = 2025
+clearnet = "https://levien.com/patents.html"
+tags = ["patents"]
+language = "en"
+internal-references = ["none"]
+external-references = ["advogato.org", "code.google.com", "developers.google.com", "en.wikipedia.org", "fonts.google.com", "ghostscript.com", "gimp.org", "google.com", "gtk.org", "gzilla.com", "linuxresources.com", "mastodon.online", "patents.google.com", "patft.uspto.gov", "play.google.com", "quaker.org", "raph.levien.com", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["http://levien.com/phd"]
+title = "Index of /phd"
+year_published = 2025
+clearnet = "http://levien.com/phd"
+tags = ["/phd", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/gimp"]
+title = "Gimp and GTK+"
+full_description = "This page is clearly quite spartan. You might look at my free software page for more details about what I'm up to now."
+year_published = 2025
+clearnet = "https://levien.com/gimp"
+tags = ["gimp", "gtk+", "new:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tug.org", "web.archive.org", "winehq.org"]
+
+["https://levien.com/gnome"]
+title = "My Gnome stuff"
+full_description = "I have developed a pretty solid rebuild script for rebuilding the gnome modules out of cvs. I use it for my nightly gnome builds."
+year_published = 2025
+clearnet = "https://levien.com/gnome"
+tags = ["gnome", "stuff"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tug.org", "web.archive.org", "winehq.org"]
+
+["http://www.levien.com"]
+title = "Raph Levien"
+full_description = "I am now back at Google, on the Google Fonts team, where my main role is research on GPU font rendering and related technology. I am also very active in the Rust community, including the Xilem family of projects From 2018-2020 I took a break from full-time work, originally intending to create a game with sound synthesis as a core mechanic, but ultimately becoming far more drawn to the graphics rendering infrastructure needed for such a game, leading to a deep dive into vector graphics rendering on GPU. Before that, I worked at Google on the Fuchsia team, working on text processing and Rust. Previously, I worked on Android, the Web Fonts team, and before that, on spam in apps. For fun, I tinker with emulating vintage synthesizers. You can find source code and Play Store links on my Android projects page. I used to be maintainer of Ghostscript, and have played a role in a number of other free software projects. I have a number of patents, all of which are available for licensing, and all of which are subject to a patent grant for GPL-licensed software. A special prize is the Even Toned Screening, an exceptionally high quality suite of halftoning algorithms for inkjet printers. I have completed a PhD on techniques for interactive curve design. Spiro is a free software library containing these techniques, and I also used them to design a number of fonts, including Inconsolata. You may also be interested in a draft of an earlier attempt at a PhD, on Attack-Resistant Trust Metrics. The best source for that work is the chapter in Computing with Social Trust."
+year_published = 2025
+clearnet = "http://www.levien.com"
+tags = ["levien", "raph"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/free/mod_virgule"]
+title = "mod_virgule"
+full_description = '''Mod_virgule is the code used to drive Advogato, the free software developer's community resource. It's an Apache C module, and also requires glib and gnome-xml. The code is released under GPL, and is available in ghostscript.com CVS. Note that the "virgule" project on SourceForge is a fork of the mainline codebase. It's pretty different than the codebase used to power this site.'''
+year_published = 2025
+clearnet = "https://levien.com/free/mod_virgule"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["datatracker.ietf.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "hem1.passagen.se", "hivelogic.com", "husted.com", "lepied.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "scripts.sil.org", "slashdot.org", "tug.org", "w3.org", "winehq.org", "xilem.dev", "youtube.com"]
+
+["http://levien.com/type/myfonts/inconsolata/source"]
+title = "Index of /type/myfonts/inconsolata/source"
+year_published = 2025
+clearnet = "http://levien.com/type/myfonts/inconsolata/source"
+tags = ["index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["http://levien.com/garden/ppedit"]
+title = "Index of /garden/ppedit"
+year_published = 2025
+clearnet = "http://levien.com/garden/ppedit"
+tags = ["/garden/ppedit", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/free/patent-rant.html"]
+title = "A rant against bad patents"
+full_description = "While reading a bit on the current W3C patent controversy in Linux Weekly News, I came across a posting describing a patent taken out by Apple on alpha compositing. Looking at patent US5379129 itself, I see that it contains no new intellectual content. Usually, when I see a claim that Company X has patented Obvious Technique Y, I'm skeptical. Whether you agree with the patent system or not, in many cases the actual patent contains claims that show that Company X has at least used Obvious Technique Y in a new context, or figured out an implementation trick. Here, however, the patent really is as dumb as it looks at first glance. Every person whose name appears on it should be deeply ashamed of themselves - the inventors, Konstantin Othmer (now a venture capitalist) and Bruce A. Leak (later a cofounder of WebTV), for being so unaware of the field that they actually believed it patentable, the Apple lawyer, Mark Aaker, for not bothering to find out whether it was patentable, and of course the primary examiner, Bentsu Ro, for letting the patent go through. And Mr. Ro has been honored on the Patents Recognition Wall, at that! At the time that this patent was filed in 1992, the technique of integral alpha had already been published for about 12 years: Smith, A.R., Painting Tutorial Notes, SIGGRAPH '79 course on Computer Animation Techniques, 1979, ACM. Alvy Ray Smith went on to receive an Academy Award for this work in 1996. In the interim, this seminal work has been cited by many, many other researchers, including Bruce Wallace's 1981 SIGGRAPH paper, and the landmark Porter-Duff paper, which added the additional innovations of premultiplied alpha and an image algebra: However, the Apple patent contains no trace of these later innovations. Everything in it is in the Wallace paper's description of Alvy Ray Smith's work, and in essentially identical mathematical terminology to boot. Thus, this patent can easily serve as a poster child for well known techniques, widely published in the academic literature, and then patented."
+year_published = 2025
+clearnet = "https://levien.com/free/patent-rant.html"
+tags = ["against", "patents", "rant", "update"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "pmt.sourceforge.net", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tigert.gimp.org", "tug.org", "web.archive.org", "winehq.org"]
+
+["https://levien.com/gfonted"]
+title = "gfonted"
+full_description = '''The development of gfonted has been transferred to the Gill project. Gill is not quite as capable as gfonted at actually editing bezier glyphs, but will soon. Gill uses the Gnome Canvas instead of GtkCaanvas. Basically, all of the "live" development is going into the Gnome version of the code. The gfonted project is destined to become a font editor for Adobe Type 1 format fonts. It is currently in the very early stages of development. The gfonted project is also a vehicle for some infrastructure upgrades to Gtk+. Currently, gfonted contains: A current module in progress provides general vector path operations, including intersection, union, symmetric difference, and stroke outline. 29 Sep 1998: This module is now almost complete - it just needs some code to handle the degenerate cases with numerical stability. It is anticipated that most of these infrastructure improvements will be folded back into the Gtk+ development tree, hopefully in time for the 1.2 release. Here's a screenshot of gfonted, showing a glyph loaded from an Adobe Type1 font (the URW version of Times Roman):'''
+year_published = 2025
+clearnet = "https://levien.com/gfonted"
+tags = ["1998:", "1999:", "gfonted"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "cvs.ghostscript.com", "developers.google.com", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "google.com", "gzilla.com", "hivelogic.com", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "rfc-editor.org", "textism.com", "tug.org", "web.archive.org", "winehq.org"]
+
+["https://levien.com/android"]
+title = "Raph's Android projects"
+full_description = "I work on the Android frameworks team, where I work on fonts and text rendering. As a 20% project, I also tinker with audio and synthesis. I presented some of this work, with my colleague Glenn Kasten, in the High Performance Audio session at Google I/O 2013."
+year_published = 2025
+clearnet = "https://levien.com/android"
+tags = ["android", "projects", "raph’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["code.google.com", "developers.google.com", "en.wikipedia.org", "fonts.google.com", "ghostscript.com", "google.com", "mastodon.online", "play.google.com", "quaker.org", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["https://levien.com/free/linux_intuos.html"]
+title = "Wacom Intuos tablets on Linux"
+full_description = "This page is a central location for information about using Wacom Intuos tablets on Linux and other free software platforms. 7 Jul 1999: Fred Lepied has been actively updating the driver. I highly recommend that you get the driver from his page. It's built for XFree86 3.3.3.1. New features include support for the airbrush wheel, device ID, and a wider range of devices. Fortunately, his driver is being merged with the XFree86 distribution. Thus, the driver on this page is becoming of historical interest. We've also gotten quite a bit more feedback from people using the Intuos with the new filters. The bottom line is that the filters work well. It still would be nice to see the jumps fixed in hardware, but that has more to do with my feelings of purism than anything real. 17 Dec 1998: The latest version of the driver here now contains an adaptive filter for suppressing the jumps mentioned below, as well as reducing jitter. The main drawback to the filter is that it increases latency by one sample period (usually 5ms). This filter is technically quite a bit better than the one shipping in Wacom drivers - their filter also reduces jitter, but doesn't suppress jumps as much, adds more latency, and loses tracking accuracy for very fast pen motion. 30 Nov 1998: After some careful beta-testing, we have found significant jitter (more than +/15 on the mouse) and position errors (up to 80 counts on the pen). This is definitely in the hardware. You might be able to minimize the interference by moving the pad farther from your monitor. I'm working on a driver that attempts to compensate for these problems. However, you may want to wait until Wacom addresses these problems in the pad. 25 Nov 1998: XFree86 3.3.3 is shipping now. It contains a usable but quite unpolished Intuos driver. New binary and build kit are available now. 21 Nov 1998: Fixes to mouse driver (it was only reporting at half the rate). Suppress is now implemented in software, greatly reducing jitter. Currently, there is a beta driver for XFree86 3.3.2. This driver basically provides the same capabilities as the existing ArtPad driver. As such, it doesn't report rotation information from the mouse, or wheel information on the airbrush (wheel information from the mouse is reported as pressure, however). Further, it has no multi support. But you can use it with existing applications such as Gimp or Gsumi."
+year_published = 2025
+clearnet = "https://levien.com/free/linux_intuos.html"
+tags = ["1998:", "1999:", "intuos", "linux", "tablets", "wacom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["datatracker.ietf.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "hem1.passagen.se", "hivelogic.com", "husted.com", "lepied.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "scripts.sil.org", "slashdot.org", "tug.org", "w3.org", "winehq.org", "xilem.dev", "youtube.com"]
+
+["https://levien.com/free/decommoditizing.html"]
+title = "The decommoditization of protocols"
+full_description = '''One of the most interesting things about Microsoft's Halloween Memo is the concept of "de-commoditizing" protocols. This short essay attempts to explain what this means, and what its effects on free software are. I argue that decommoditized protocols are a very effective weapon against free software in the short term, but in the long term will help free software become more fulfilling to users. I use the term "protocol" in a rather inclusive sense, encompassing APIs, file formats, etc., not just the narrow sense of networking protocols - in short, anything that software modules need to be able to work with each other. Decommoditized protocols are a marker for some fundamental differences between free software and proprietary software, and the philosophy that goes into them. In an ideal world, software would be created to fulfill user needs, and would be designed to be maximally usable. However, real software gets created for somewhat different aims, sometimes in line with these user needs, sometimes less so. Proprietary software is created to make money for its authors. To a first approximation, the best way to make money is to create a highly usable product, so that users will be willing to pay for it. However, at least two other factors come into play: For proprietary software to be profitable, it must create a proprietary advantage. Thus, simple software that just gets the job done has one serious disadvantage: a competitor can duplicate it. Given the extremely low marginal cost of software, this inevitably drives the price to near-zero. Thus, all truly profitable software has built-in barriers to competition. And the most effective way of creating those barriers is to exploit network effects. Software doesn't exist in isolation - it's constantly interworking with other modules, loading and storing files in file formats, calling APIs, and communicating over the network. In most cases the usefulness of the software depends more on how well it interworks with other stuff than its own intrinsic merits. For example, even if a new word processor comes along that's better than Word, many people would be reluctant to switch because there are so many existing documents in Word format.'''
+year_published = 2025
+clearnet = "https://levien.com/free/decommoditizing.html"
+tags = ["'80s:", "background:", "case", "commodity", "complexity", "conclusion", "de-commoditization", "de-commoditized", "decommoditization", "decommoditize"]
+language = "en"
+internal-references = ["none"]
+external-references = ["datatracker.ietf.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "hem1.passagen.se", "hivelogic.com", "husted.com", "mastodon.online", "myfonts.com", "nodnod.net", "patents.google.com", "patft.uspto.gov", "scripts.sil.org", "slashdot.org", "tug.org", "w3.org", "winehq.org", "xilem.dev", "youtube.com"]
+
+["https://levien.com/svg"]
+title = "SVG in Gnome"
+full_description = "I am coordinating Gill, which is the Gnome Illustration app. Gill will eventually support all of SVG (the World Wide Web Consortium's proposed Scalable Vector Graphics standard). Currently, it supports enough SVG to display a few test files. It does include most of the PostScript bezier imaging model, including stroking and filling, line cap style, line join style, and other goodies. The tiger above was translated from the tiger.ps file included in GhostScript (which was originally created in Adobe Illustrator). Here's the resulting tiger.svg file. The tiger above takes about 1.5 seconds to render on a P2 233, including application startup and loading the file. 30 Dec 1999: An interim report on the status of Gill. This page has been quiet (I've been busy with other stuff), but there's been quite a bit going on behind the scenes. 26 Jul 1999: Gill now has some support for the <text> element. We still need to fight with the font specification mess and add more refinements like ligatures and kerning, but it's a good start. Here's a screenshot. 21 Jul 1999: Take a look at the CSIRO SVG viewer. This package uses the Java 2D renderer, and has some very cool rendering capabilities. 20 Jul 1999: Gill now supports images, using the gdk-pixbuf image loading library. Full PNG-alpha is supported, as well as JPEG, GIF, and TIFF. The URL link code is still not finished, but it will load images in the current directory. 7 Jul 1999: Development versions of the GraphViz toolkit have SVG export capabilities. These SVG files work with Gill. Here's an example SVG file and resulting gif. In addition, GraphViz is being released under a new, fairly unrestrictive license. Very good news for people who work with graphs! 21 Jun 1999: Gill now supports the fill-opacity and stroke-opacity parameters, allowing alpha-transparent vector objects. The example below is specified as three circles (SVG source: opacity.xml). Gill is named in honor of type designer, artist, and stonecutter Eric Gill. Eric Gill's most well-known typeface is Gill Sans, although Perpetua and Joanna are also very beautiful designs."
+year_published = 2025
+clearnet = "https://levien.com/svg"
+tags = ["1999:", "gnome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alvyray.com", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "developer.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "home.pacbell.net", "mastodon.online", "myfonts.com", "partners.adobe.com", "raphlinus.github.io", "textism.com", "tug.org", "winehq.org", "xmlsoft.org"]
+
+["https://levien.com/artofcode/eventone"]
+title = "Even Toned Screening"
+full_description = '''7 Oct 2005: Version 1.37 of ETS is now available. This release contains a number of refinements over previous versions, including a much refined static threshold modulation pattern (previous versions used white noise), and improvements to the vector-optimized versions to make them more consistent with the C version. 9 Feb 2004: Version 1.30 of ETS is now available. This release contains a number of dramatic improvements over previous releases. For one, it includes full support for variable ink droplet sizes. It also screens multiple ink planes at the same time to optimize interactions between the planes. Last but not least, this version also contains assembly language speedups for Altivec and Pentium 4 architectures. Even Toned Screening controls undesirable halftone patterns and textures, a form of error diffusion screening optimized for inkjet printers, using a technique known as Output-Dependent Feedback Screening. The earliest error diffusion algorithm was invented by Floyd and Steinberg in 1975, and is still considered one of the best. However, many error diffusion algorithms produce visually noticeable artifacts as a result of the dot placement choices. Techniques to reduce these artifacts are an active area of research. Exceptional features of error diffusion screening include total freedom from moire, as well as unparalleled fidelity in reproducing fine detail. These features have helped ensure error diffusion's dominant role in halftoning for inkjet printers. This high quality screening technique adds output-dependent feedback to the conventional error diffusion halftone, improving these halftones significantly. Error diffusion halftones are plagued by a "wormy" texture in highlights and shadows. This undesirable effect is caused by limitations in the logic used by error diffusion to place dots. With Even Toned Screening, the visual texture of highlight and shadow tones are made more uniform, eliminating the wormy textures that can occur with conventional error diffusion halftones.'''
+year_published = 2025
+clearnet = "https://levien.com/artofcode/eventone"
+tags = ['"tearing"', '"wormy"', "2004:", "2005:", "adjacent", "areas", "availability", "high-contrast", "highlights", "screening"]
+language = "en"
+internal-references = ["none"]
+external-references = ["code.google.com", "developers.google.com", "en.wikipedia.org", "fonts.google.com", "ghostscript.com", "google.com", "mastodon.online", "patft.uspto.gov", "play.google.com", "quaker.org", "raph.levien.com", "raphlinus.github.io", "springer.com", "xilem.dev"]
+
+["https://levien.com/tp600.html"]
+title = "Linux on IBM ThinkPad 600"
+full_description = '''22 Oct 2002: I've summarized the battery problem and feedback I've gotten on its own page. As far as I know, this is a defect in the product, and affects both Windows and Linux users. 20 Oct 2002: Redhat 8.0 installs cleanly, with the exception of sound. I'm sure it can be made to work, but don't really care enough. 13 Feb 2001: IBM has released a GPL modem driver for the MWave modems. More discussion is at Slashdot. Huzzah! I haven't really been updating this page, but a few notes are in order. I haven't resolved the battery issues. I broke down and bought an Xtend B320 replacement battery, and so far it's working just fine. I've also switched my laptop to Debian Potato. For the most part, the installation went easily, although I did have to recompile the kernel to get APM working. Unfortunately, I did the install in a bit of a hurry, so I didn't have time to post a blow-by-blow description here. 7 Feb 2000: Till Straumann has written a user mode TrackPoint driver for ThinkPads. It enables Z-axis clicking. Till would like help with raw Z-axis data, as well as the usual testing. Check it out! 6 Feb 2000: I've been experiencing frustrating lifetime problems with my battery, and am determined to fix them. See the Battery section below. 14 Sep 1999: Amazingly, IBM has a Guide to installing Red Hat Linux 6.0 on their support webpage. It's quite informative. 14 Jul 1999: Benedikt Eric Heinen has set up a linux-tp600 mailing list. Subscription info is below, archive is coming soon. I've reinstalled my system more or less from scratch using RedHat 6.0. You can also read about my experiences setting up older Linux versions on the ThinkPad. As before, the basic install went smoothly, but there were quite a number of issues to iron out before the machine really came up to speed. I've divided the rest of this page into individual sections. The only insoluble problem currently is the modem. Aside from that, the ThinkPad 600 makes a nice Linux platform. Very good news for the video display: the default install for RH 6.0 works fine. I set "Generic 1024x768 monitor" with 31.5-57.0 KHz horizontal and 50-100 Hz vertical.'''
+year_published = 2025
+clearnet = "https://levien.com/tp600.html"
+tags = ["1999:", "2000:", "2001:", "2002:", "alsa", "battery", "currently", "display", "issues", "links"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4front-tech.com", "alsa-project.org", "artofcode.com", "bowerbird.com.au", "cvs.gnome.org", "en.wikipedia.org", "fontforge.sourceforge.net", "ghostscript.com", "github.com", "gnome.labs.redhat.com", "hivelogic.com", "ibm.com", "mastodon.online", "partners.adobe.com", "precisioninsight.com", "textism.com", "tug.org", "watson.mbb.sfu.ca", "winehq.org", "xmlsoft.org"]

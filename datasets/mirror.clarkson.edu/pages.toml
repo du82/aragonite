@@ -1,0 +1,449 @@
+["https://mirror.clarkson.edu/isabelle"]
+title = "Isabelle"
+full_description = "What is Isabelle? Isabelle is a generic proof assistant. It allows mathematical formulas to be expressed in a formal language and provides tools for proving those formulas in a logical calculus. Isabelle was originally developed at the University of Cambridge and Technische Universität München, but now includes numerous contributions from institutions and individuals worldwide. See the Isabelle overview for a brief introduction. Now available: Isabelle2024 (May 2024) Download for Linux (Intel) Download for Linux (ARM) Download for Windows Download for macOS Hardware requirements: Small experiments: 4 GB memory, 2 CPU cores Medium applications: 8 GB memory, 4 CPU cores Large projects: 16 GB memory, 8 CPU cores Extra-large projects: 64 GB memory, 16 CPU cores Some notable changes: More robust and scalable support for distributed build clusters. Official support for ARM64 on Linux (notably Docker on Apple Silicon). HOL: various improvements of theory libraries, notably in HOL-Analysis. HOL: updates and improvements of Sledgehammer. ML: antiquotations for try-catch-finally. ML: physical interrupts are now distinguished from runtime system failures. System: support for global registry in TOML format. System: support the Go development environment (all platforms). System: bundled MLton now includes both Linux and macOS (Intel). See also the cumulative NEWS. Distribution & Support Isabelle is distributed for free under a conglomerate of open-source licenses, but the main code-base is subject to BSD-style regulations. The application bundles include source and binary packages and documentation, see the detailed installation instructions. A vast collection of Isabelle examples and applications is available from the Archive of Formal Proofs. Support is available by the official documentation and mailing lists: The isabelle-users mailing list provides a forum for Isabelle users to discuss problems, exchange information, and make announcements. Users of official Isabelle releases should subscribe or see the archive. The isabelle-dev mailing list covers the Isabelle development process, including intermediate repository versions, and administrative issues concerning the website or testing infrastructure. Early adopters of development snapshots or repository versions should subscribe or see the archive. Zulip Chat is a real-time discussion platform to exchange ideas, ask questions, and collaborate on Isabelle projects, with minimalistic public archive. Stack Overflow and Stack Exchange are a question-and-answer platform, with complex review process but limited discussion facilities."
+author = "Tobias Nipkow, Lawrence Paulson, Makarius Wenzel, Gerwin Klein, Florian Haftmann, Tjark Weber, Johannes Hölzl"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/isabelle"
+tags = ["available:", "changes:", "cores", "distribution", "download", "hardware", "home", "isabelle", "isabelle-dev", "isabelle-users"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/linuxmint-images"]
+title = "Index of /linuxmint-images/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/linuxmint-images"
+tags = ["/linuxmint-images/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/centos9"]
+title = "Index of /centos9/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/centos9"
+tags = ["/centos9/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender3d.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "git.blender.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/map"]
+title = "Projects - mirror.clarkson.edu"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/map"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["clarkson.edu", "cosi.clarkson.edu", "github.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu"]
+title = "Home - mirror.clarkson.edu"
+full_description = '''Distributions We host over 20 distributions, including Debian, Ubuntu, Arch Linux, Linux Mint, and many more. Many are official mirrors, and the majority are updated 4 times per day. Software We host a variety of third party software including Blender, KiCad, Cygwin, Eclipse, among many others. This site is a public repository of Free and Open Source Software hosted by the Clarkson Open Source Institute at Clarkson University in Potsdam, NY, US. This service strives to provide exposure to and ensure availability of open source software and operating systems to the general public. We mirror many Linux distributions, several third party software repositories, and miscellaneous data dumps. Distributions We host over 20 distributions, including Debian, Ubuntu, Arch Linux, Linux Mint, and many more. Many are official mirrors, and the majority are updated 4 times per day. Software We host a variety of third party software including Blender, KiCad, Cygwin, Eclipse, among many others. Miscellaneous We also host miscellaneous projects, including Wikipedia dumps and torrents. Contact Us To get in touch with the Mirror team, send a message to mirroradmin [AT] clarkson [DOT] edu We check this inbox periodically, however if a matter is time-sensitive we ask that you also contact COSI directly. Request a Mirror We are always looking for new projects to mirror! If there's something you'd like us to mirror, please open an issue with the "Mirror Request" tag on our GitHub repository. The issue template includes instructions on what information we need to start syncing the mirror. If possible, rsync is preferred, but we can also sync over HTTP.'''
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu"
+tags = ["contact", "distributions", "mirror", "miscellaneous", "open", "request", "software", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clarkson.edu", "cosi.clarkson.edu", "github.com"]
+
+["https://mirror.clarkson.edu/debian-archive"]
+title = "Index of /debian-archive/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/debian-archive"
+tags = ["/debian-archive/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/linux-lite"]
+title = "Index of /linux-lite/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/linux-lite"
+tags = ["/linux-lite/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/artix-linux"]
+title = "Index of /artix-linux/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/artix-linux"
+tags = ["/artix-linux/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/RebornOS-ARM"]
+title = "Index of /RebornOS-ARM/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/RebornOS-ARM"
+tags = ["/rebornos-arm/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/archlinux32"]
+title = "Index of /archlinux32/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/archlinux32"
+tags = ["/archlinux32/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/almalinux"]
+title = "Index of /almalinux/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/almalinux"
+tags = ["/almalinux/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/debian"]
+title = "Index of /debian/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/debian"
+tags = ["/debian/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/debian-cd"]
+title = "Index of /debian-cd/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/debian-cd"
+tags = ["/debian-cd/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/cygwin"]
+title = "Index of /cygwin/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/cygwin"
+tags = ["/cygwin/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/gentoo-portage"]
+title = "Index of /gentoo-portage/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/gentoo-portage"
+tags = ["/gentoo-portage/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/manjaro"]
+title = "Index of /manjaro/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/manjaro"
+tags = ["/manjaro/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/slackware"]
+title = "Index of /slackware/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/slackware"
+tags = ["/slackware/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/ctan"]
+title = "The CTAN archive"
+full_description = "This is the root of the Comprehensive TeX Archive Network directory tree. Most information in CTAN is contained in subdirectories: In addition, CTAN archives maintain lists of their contents as plain text files, in a number of ways:"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/ctan"
+tags = ["archive", "comprehensive", "ctan", "directory", "network", "root", "searching"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/ipfire"]
+title = "Index of /ipfire/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/ipfire"
+tags = ["/ipfire/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/kicad"]
+title = "Index of /kicad/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/kicad"
+tags = ["/kicad/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/msys2"]
+title = "Index of /msys2/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/msys2"
+tags = ["/msys2/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/slitaz"]
+title = "Index of /slitaz/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/slitaz"
+tags = ["/slitaz/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/about"]
+title = "About - mirror.clarkson.edu"
+full_description = "History Mirror has been one of our longest running services, and as of today, we can be fairly certain that it now has existed for about 20 years with the earliest knowledge of it existing in October 2002. As part of a COSI History project, we have gone through the history of different pages, including past presentations, and websites archived on the wayback machine. With this, let's take a journey back all the way to the beginning of Mirror and see its progress over the years. We start in December 2001. In this archive of cosi.clarkson.edu, there is a section on the right titled Distributions which lists a few distros as well as plans of wanting to make a Clarkson University Linux distro. Below that it states that COSI would like to pursue mirroring other distributions on the same server as the website. This is the first time that we have evidence of people wanting to have a Mirror in COSI. Jump forward to February 2003 with this archive on mirror.clarkson.edu. At this time, we see that there is now a set of machines actually running just for mirroring. According to the site, the storage was donated by Winchester Systems while the website was running on a SUN Ultra 60 workstation which was loaned out by Mathematics Prof. Scott Fulton. Looking through the site, we were hosting a decent amount of versions of Linux, BSD, and even the kernel (v2.6). Jump ahead to 2009, and the labs have looked at getting a new server for Mirror. On Mathew McCarrell's MP* Page, it was recorded that the server had been obtained and he and Roger Ignazio had worked on trying to install CentOS onto the machine, but ran into some issues. They then tried going over to Open Solaris so they could use ZFS as the filesystem for Mirror, we still use ZFS today. After a bit of tweaking they got CentOS working on Mirror and begun syncing again. Through the history, we can consider this the 2nd iteration of Mirror. Progressing into the 2010s and there were minor software tweaks and changes where we eventually switched over to Debian around 2013. And this brings us up to the fairly modern day. The end of Mirror 2 had about 8TB of usable storage, and we were filling it up to almost max capacity. The drives were aging as well, and around Spring 2015, we begun plans on the 3rd iteration of Mirror. After successfully fundraising for the new mirror in Fall 2015, we purchased the hardware for the machine in December 2015. Through spring 2016, we set up the machine and retired the 2nd iteration of Mirror. At this point Mirror has ~30TB of usable space in the ZFS pool. The 4th iteration of Mirror is the most recent. In Spring 2022 we installed Debian 11 and upgraded the cache ssd, operating system ssd, and created a ZFS pool with eight 16 TB drives. With RAID we have about 60TB of usable space, and potentially more if we continue using the previous drives. We also overhauled the website, tracking, and scheduling subsystems with our own custom code. As servers come and go, there has always been one server for almost the entirety of COSI's existence that has been used as our Mirror. Sponsors Mirror exists today due to generous contributions from students, faculty, and friends of Clarkson University over its lifetime. We would like to thank everyone who has contributed to Mirror, including Eric Busse, Ted Champagne, Steve Evanchik, Wenjin Hu, and Mark Platek. We would also like to thank VMware and Siege Technologies for their support."
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/about"
+tags = ["history", "iteration", "mirror", "mirror.", "server", "sponsors", "through"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clarkson.edu", "cosi.clarkson.edu", "github.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/centos"]
+title = "Index of /centos/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/centos"
+tags = ["/centos/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender3d.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "git.blender.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/opensuse"]
+title = "Index of /opensuse/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/opensuse"
+tags = ["/opensuse/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/linuxmint-packages"]
+title = "Index of /linuxmint-packages/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/linuxmint-packages"
+tags = ["/linuxmint-packages/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/photonvision"]
+title = "Index of /photonvision/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/photonvision"
+tags = ["/photonvision/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/ubuntu"]
+title = "Index of /ubuntu/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/ubuntu"
+tags = ["/ubuntu/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aliexpress.com", "alpinelinux.org", "archive.org", "archlinux32.org", "artixlinux.org", "bbrfoundation.org", "cran.r-project.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "mailman46.in.tum.de", "maximumcomfy.com", "netactuate.com", "pause.perl.org", "perl.org", "riot.kiwifarms.net", "templeos.org", "web.archive.org", "www21.in.tum.de"]
+
+["https://mirror.clarkson.edu/fedora"]
+title = "Index of /fedora/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/fedora"
+tags = ["/fedora/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/templeos"]
+title = "TempleOS"
+full_description = '''Terry A. Davis (1969 - 2018). Rest in peace! In the wake of Terry A. Davis' passing his family has requested supporters of his donate to "organizations working to ease the pain and suffering caused by mental illness" such as The Brain & Behavior Research Foundation and National Alliance on Mental Illness. Downloads | Wiki Archive: Archive.org | LBRY.tv (invite) | Rumble | Latest Torrent | Magnet Video Streams: Odysee (NSFW) | Twitch.TV (SFW) Communities: Reddit | Discord | Matrix | #templeos on Rizon (IRC) | Steam Group | Telegram Merch: D3VUR | Maximum Comfy | Temple OS Store | RedBubble | AliExpress Support NOTE: The providing of these links are not endorsements. Simply a list known communities and services. Additional links can be added by request. In the wake of Terry A. Davis' passing his family has requested supporters of his donate to "organizations working to ease the pain and suffering caused by mental illness" such as The Brain & Behavior Research Foundation and National Alliance on Mental Illness. All content related to Terry A. Davis, TempleOS, J Operating System, SparrowOS, or LoseThos should be considered public domain.'''
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/templeos"
+tags = ["added", "additional", "communities", "davis", "endorsements.", "known", "links", "list", "note:", "peace!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aliexpress.com", "alpinelinux.org", "archive.org", "archlinux32.org", "artixlinux.org", "bbrfoundation.org", "cran.r-project.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "mailman46.in.tum.de", "maximumcomfy.com", "netactuate.com", "pause.perl.org", "perl.org", "riot.kiwifarms.net", "templeos.org", "web.archive.org", "www21.in.tum.de"]
+
+["https://mirror.clarkson.edu/raspbian"]
+title = "Index of /raspbian/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/raspbian"
+tags = ["/raspbian/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/home"]
+title = "Home - mirror.clarkson.edu"
+full_description = '''Distributions We host over 20 distributions, including Debian, Ubuntu, Arch Linux, Linux Mint, and many more. Many are official mirrors, and the majority are updated 4 times per day. Software We host a variety of third party software including Blender, KiCad, Cygwin, Eclipse, among many others. This site is a public repository of Free and Open Source Software hosted by the Clarkson Open Source Institute at Clarkson University in Potsdam, NY, US. This service strives to provide exposure to and ensure availability of open source software and operating systems to the general public. We mirror many Linux distributions, several third party software repositories, and miscellaneous data dumps. Distributions We host over 20 distributions, including Debian, Ubuntu, Arch Linux, Linux Mint, and many more. Many are official mirrors, and the majority are updated 4 times per day. Software We host a variety of third party software including Blender, KiCad, Cygwin, Eclipse, among many others. Miscellaneous We also host miscellaneous projects, including Wikipedia dumps and torrents. Contact Us To get in touch with the Mirror team, send a message to mirroradmin [AT] clarkson [DOT] edu We check this inbox periodically, however if a matter is time-sensitive we ask that you also contact COSI directly. Request a Mirror We are always looking for new projects to mirror! If there's something you'd like us to mirror, please open an issue with the "Mirror Request" tag on our GitHub repository. The issue template includes instructions on what information we need to start syncing the mirror. If possible, rsync is preferred, but we can also sync over HTTP.'''
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/home"
+tags = ["contact", "distributions", "mirror", "miscellaneous", "open", "request", "software", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clarkson.edu", "cosi.clarkson.edu", "github.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/eclipse"]
+title = "Index of /eclipse/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/eclipse"
+tags = ["/eclipse/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/archlinux"]
+title = "Index of /archlinux/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/archlinux"
+tags = ["/archlinux/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/dragonflybsd-img"]
+title = "Index of /dragonflybsd-img/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/dragonflybsd-img"
+tags = ["/dragonflybsd-img/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/cran"]
+title = "The Comprehensive R Archive Network"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/cran"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/cpan"]
+title = "The Comprehensive Perl Archive Network - www.cpan.org"
+full_description = "Welcome to CPAN The Comprehensive Perl Archive Network (CPAN) currently has 221,742 Perl modules in 45,709 distributions, written by 14,548 authors, mirrored on 1 servers. The archive has been online since October 1995 and is constantly growing. Search CPAN via metacpan.org Recent Uploads LyricFinder-1.50 Convert-Braille-0.06 Oh-0.09 Oh-0.08 Oh-0.07 OpenAPI-Modern-0.083 JSON-Schema-Modern-0.603 AI-Ollama-Client-0.04 HTML-OSM-0.07 ExtUtils-MakeMaker-7.71_05 more... Getting Started Installing Perl Modules Learn Perl How to contribute Read this Visit https://pause.perl.org/ Perl Resources The Perl Programming language Perl Documentation Mailing Lists Perl FAQ"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/cpan"
+tags = ["archive", "comprehensive", "contribute", "cpan", "getting", "more...", "network", "perl", "recent", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/parrot"]
+title = "Index of /parrot/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/parrot"
+tags = ["/parrot/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/alpine"]
+title = "Index of /alpine/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/alpine"
+tags = ["/alpine/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/tailsos"]
+title = "Index of /tailsos/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/tailsos"
+tags = ["/tailsos/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/linux"]
+title = "Index of /linux/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/linux"
+tags = ["/linux/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/ravynos"]
+title = "Index of /ravynos/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/ravynos"
+tags = ["/ravynos/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/ubuntu-releases"]
+title = "Index of /ubuntu-releases/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/ubuntu-releases"
+tags = ["/ubuntu-releases/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aliexpress.com", "alpinelinux.org", "archive.org", "archlinux32.org", "artixlinux.org", "bbrfoundation.org", "cran.r-project.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "mailman46.in.tum.de", "maximumcomfy.com", "netactuate.com", "pause.perl.org", "perl.org", "riot.kiwifarms.net", "templeos.org", "web.archive.org", "www21.in.tum.de"]
+
+["https://mirror.clarkson.edu/projects"]
+title = "Projects - mirror.clarkson.edu"
+full_description = "AlmaLinux (Official) HTTP: http://mirror.clarkson.edu/almalinux HTTPS: https://mirror.clarkson.edu/almalinux Homepage: https://almalinux.org Alpine Linux (Official) HTTP: http://mirror.clarkson.edu/alpine HTTPS: https://mirror.clarkson.edu/alpine Homepage: https://www.alpinelinux.org/ Arch Linux (Official) HTTP: http://mirror.clarkson.edu/archlinux HTTPS: https://mirror.clarkson.edu/archlinux Homepage: http://www.archlinux.org/ Arch Linux 32 (Official) HTTP: http://mirror.clarkson.edu/archlinux32 HTTPS: https://mirror.clarkson.edu/archlinux32 Homepage: http://www.archlinux32.org/ Artix Linux (Official) HTTP: http://mirror.clarkson.edu/artix-linux HTTPS: https://mirror.clarkson.edu/artix-linux Homepage: https://artixlinux.org/ CentOS (≤8) (Official) HTTP: http://mirror.clarkson.edu/centos HTTPS: https://mirror.clarkson.edu/centos Homepage: https://www.centos.org/ CentOS Stream 9 (Official) HTTP: http://mirror.clarkson.edu/centos9 HTTPS: https://mirror.clarkson.edu/centos9 Homepage: https://centos.org/ Debian (Official) HTTP: http://mirror.clarkson.edu/debian HTTPS: https://mirror.clarkson.edu/debian Homepage: https://www.debian.org Debian Images HTTP: http://mirror.clarkson.edu/debian-cd HTTPS: https://mirror.clarkson.edu/debian-cd Homepage: https://www.debian.org/CD/ Debian Archive HTTP: http://mirror.clarkson.edu/debian-archive HTTPS: https://mirror.clarkson.edu/debian-archive Homepage: DragonflyBSD Disc Images HTTP: http://mirror.clarkson.edu/dragonflybsd-img HTTPS: https://mirror.clarkson.edu/dragonflybsd-img Homepage: https://www.dragonflybsd.org/ DragonflyBSD Packages HTTP: http://mirror.clarkson.edu/dragonflybsd HTTPS: https://mirror.clarkson.edu/dragonflybsd Homepage: https://www.dragonflybsd.org/ Fedora HTTP: http://mirror.clarkson.edu/fedora HTTPS: https://mirror.clarkson.edu/fedora Homepage: https://www.fedoraproject.org/ Gentoo (Official) HTTP: http://mirror.clarkson.edu/gentoo HTTPS: https://mirror.clarkson.edu/gentoo Homepage: https://www.gentoo.org/ Gentoo Portage HTTP: http://mirror.clarkson.edu/gentoo-portage HTTPS: https://mirror.clarkson.edu/gentoo-portage Homepage: https://www.gentoo.org/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/projects"
+tags = ["almalinux", "alpine", "arch", "archive", "archives", "artix", "blender", "centos", "cpan", "cran"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/dragonflybsd"]
+title = "Index of /dragonflybsd/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/dragonflybsd"
+tags = ["/dragonflybsd/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/gentoo"]
+title = "Index of /gentoo/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/gentoo"
+tags = ["/gentoo/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "cygwin.com", "developer.blender.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "git.blender.org", "lists.perl.org", "metacpan.org", "pause.perl.org", "perl.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/blender"]
+title = ""
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/blender"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender3d.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "git.blender.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/RebornOS"]
+title = "Index of /RebornOS/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/RebornOS"
+tags = ["/rebornos/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "artixlinux.org", "blender.org", "centos.org", "cosi.clarkson.edu", "cpan.org", "cran.r-project.org", "ctan.org", "debian.org", "documentfoundation.org", "dumps.wikimedia.org", "eclipse.org", "fedoraproject.org", "gentoo.org", "web.archive.org", "web2.clarkson.edu"]
+
+["https://mirror.clarkson.edu/tdf"]
+title = "Index of /tdf/"
+year_published = 2025
+clearnet = "https://mirror.clarkson.edu/tdf"
+tags = ["/tdf/", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["airyx.org", "almalinux.org", "alpinelinux.org", "archlinux.org", "archlinux32.org", "centos.org", "cpan.org", "documentfoundation.org", "dragonflybsd.org", "dumps.wikimedia.org", "gentoo.org", "isabelle.in.tum.de", "isatest.sketis.net", "lists.cam.ac.uk", "lists.perl.org", "mailman46.in.tum.de", "metacpan.org", "proofassistants.stackexchange.com", "web.archive.org", "web2.clarkson.edu"]

@@ -1,0 +1,123 @@
+["http://soumith.ch/eyescream"]
+title = ""
+full_description = "* Some of the images above are being generated live in the browser, and are unique to you and only you Making a machine generate (dream, hallucinate, ...) natural images is a lot of fun, and quite complicated. About two months ago, we decided to try something that's been at the back of our heads since Ian Goodfellow first presented (the awesome) Generative Adversarial Networks at NIPS last year. Ian's work came close to generating natural-ish images, but still fell short in terms of image quality. The paper excited us, and we discussed it to length at the conference and after. You pit a generative (G) machine against a discriminative (D) machine and make them fight. The G machine attempts to produce fake data that looks so real that the D machine cannot tell it is fake. The D machine is learning to not get fooled by the G machine. After these have played their minimax game, you hope to get a good quality generator that can generate as many real looking samples as you want. Street Fighter as an analogy for Adversarial Nets. Two networks fight against each other, and slowly get better at the game after playing long enough To keep this section brief, this did not work. It didn't work at all. The adversarial training was more unstable, and when we did get a stable model, it did not improve image sample quality. The key idea that got us going was to train a Laplacian pyramid of networks, each network predicting the next finer scale. What that means in simpler terms is that the network at a particular scale gets the coarsened version of the image to predict, and generates the refinement necessary to reconstruct the original image. Each network Gx generates the difference image, when added to the input image, gives a finer-scaled image. The multi-scale generation worked extremely well. It got us to a point where we had samples that looked much more real than previous attempts at generating such samples. However, there was one problem. Looking at the image at a glance would totally wow you, but looking closer, you'd be scratching your head. This wasn't going as well as we'd hoped, we needed another advance to get us closer to generating objects that actually were objects."
+year_published = 2025
+clearnet = "http://soumith.ch/eyescream"
+tags = ["arthur", "bigger", "cheating", "checking", "class-conditional,", "code", "deeper", "details", "dreaming", "emily,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anthropic.com", "arxiv.org", "cs.nyu.edu", "discuss.pytorch.org", "dobb-e.com", "eblearn.sourceforge.net", "gist.github.com", "github.com", "groups.google.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com"]
+
+["http://soumith.ch/blog/2022-01-19-pytorch-retro.md.html"]
+title = ""
+year_published = 2025
+clearnet = "http://soumith.ch/blog/2022-01-19-pytorch-retro.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch/blog/2021-08-02-growing-opensource.md.html"]
+title = ""
+year_published = 2025
+clearnet = "https://soumith.ch/blog/2021-08-02-growing-opensource.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["http://soumith.ch/blog/2023-12-17-pytorch-design-origins.md.html"]
+title = ""
+year_published = 2025
+clearnet = "http://soumith.ch/blog/2023-12-17-pytorch-design-origins.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["http://soumith.ch/blog/2024-10-02-training-10k-scale.md.html"]
+title = ""
+full_description = "I realize I have absolutely no clue how you train a single model with e.g. 10k h100s.What is where, updated when, with what?"
+year_published = 2025
+clearnet = "http://soumith.ch/blog/2024-10-02-training-10k-scale.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["http://soumith.ch/blog"]
+title = "Posts"
+full_description = "2024-10-02 - Training 10k scale 2023-12-17 - Pytorch design origins 2022-01-19 - Pytorch retro 2021-08-02 - Growing opensource"
+year_published = 2025
+clearnet = "http://soumith.ch/blog"
+tags = ["chintala", "soumith"]
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch/blog"]
+title = "Posts"
+full_description = "2024-10-02 - Training 10k scale 2023-12-17 - Pytorch design origins 2022-01-19 - Pytorch retro 2021-08-02 - Growing opensource"
+year_published = 2025
+clearnet = "https://soumith.ch/blog"
+tags = ["chintala", "soumith"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anthropic.com", "arxiv.org", "cs.nyu.edu", "discuss.pytorch.org", "eblearn.sourceforge.net", "gist.github.com", "github.com", "groups.google.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch"]
+title = "Soumith Chintala"
+full_description = "I am an AI researcher, engineer and community builder. I occassionally invest. You can reach me at myfirstname@gmail.com Some things about me: Live in New York. Grew up in Hyderabad, India. Studied at NYU and VIT Vellore. Currently at Meta and NYU, focusing on AI Infrastructure, AI Research and Robotics. Co-founded PyTorch, maintained Torch-7 and actively work on open-source. [expand] PyTorch is the most impactful project that I've been involved in, and now powers most of the world's AI research and product -- with hundreds of companies, research labs and individuals using and maintaining it. It has significant and tangible real-world impact from self-driving cars (Tesla, Cruise, Uber, etc.) to drug discovery (Astra Zenenca, Genentech, etc.) to cancer research (Bamfield / MARS Company) to NASA and other space research to several consumer products (Instagram, TikTok, Snapchat, Pinterest, etc.), and this amount of real-world usage often intimidates me. There's more than one bug in PyTorch, when it was uncovered, I couldn't sleep thinking about what the downstream effects could be. PyTorch has been impactful far beyond my expectations or ambition. Torch-7 at it’s peak was used by Google Deepmind, Twitter and Meta and singificant AI research was powered by it. Created convnet-benchmarks, a once popular benchmarking suite for deep learning. It was used from 2015 to 2017 as a gold standard by NVIDIA, AMD, Intel Nervana and many other hardware manufacturers to optimize their systems I used to maintain EBLearn, a C++ based Deep Learning Framework pre-2012, together with Pierre Sermanet and Yann LeCun. Published well-cited AI research in Generating Images and other AI things. [expand] Some of my most cited work is on Generative Adversarial networks (GANs), where I co-authored three well-cited papers: LAPGAN (demo), DCGAN (code/demo) and Wasserstein GAN. I gave up on GANs after failing to make them stable training algorithms. I've worked on object and human detection, generative modeling of {images, videos}, AI for video games, ML systems research. A full list of my peer-reviewed or pre-print manuscripts are on my Google Scholar page. Working on automating chores at home using robots. Some thoughts and directions: I embrace laziness. Automate everything that you dont want to do. I embrace simplicity and reducing paging, even if complexity has upside. In programming – fast iteration, fast time-to-first-output. For a large enough project, it breaks. I embrace iterating and incremental ambition I think products and communities have to be rapidly iterated and evolved to get to a good state – with feedback loops and incentive structures designed very carefully to get to good dynamics. I avoid toy or hypothetical problems, even as proxies. I’ve seen way too many people build up their own toy complexity and solve useless problems. I ground work towards applications with obvious benefits. This makes my funnel limited, but I’m okay with it. I rabidly love open-source and open research. This love is borne out of growing up without answers to all the questions I had. Giving away technology and knowledge is one of the best ways to equal the playing field. I think deeply about communities, ecosystems, incentives, social dynamics and power. I’ve studied them via two avenues so far: open-source ecosystems, large organizations maintaining Torch-7 was interesting – a large project written in a niche language. It’s been very interesting to contrast that to PyTorch. Keeping close to the grassroots is really important to build great products and organizations. I’ve answered thousands of questions across the PyTorch and Torch forums, investing a significant portion of my lifetime on this. Grassroots signals have been disproportionately important to me in building good products and organizations. Home Robots: I want to build a household robot that helps me with all kinds of chores. To help this robot reason well with little data, I want to build a world simulator (so that it can rollout scenarios in it’s head and pick the best ones). To build this world simulator, I’ve been interested in multi-modal models (that combine vision, speech, text, robots), generative models (for vision and speech) and efficient representations for encoding the human-centric world. I’ve recently made a decent amount of progress on home robotics at NYU, with my collaborator Lerrel Pinto, often using a Hello Robot | Stretch. Here’s some of my recent work that I’m excited about: Robot Utility Models: enable basic tasks – door opening, drawer opening, object reorientation, etc. – at ~90% accuracy without ANY finetuning (i.e. zero-shot) in unseen new environments. On Bringing Robots Home: 109 tasks. 10 NYC homes. 81% success rate. 20 minutes to learn a new task Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory Holo-Dex: Teaching Dexterity with Immersive Mixed Reality Investments: I mostly invest within my network – when friends start companies. Rarely do I invest otherwise. I’ve invested in Runway, 1X, Osmo, Anthropic, Together.ai, Lepton among others."
+year_published = 2025
+clearnet = "https://soumith.ch"
+tags = ["build", "chintala", "i’ve", "products", "research", "robot", "soumith"]
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "discuss.pytorch.org", "dobb-e.com", "eblearn.sourceforge.net", "github.com", "groups.google.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "openaccess.thecvf.com", "osmo.ai", "papers.nips.cc", "pytorch.org", "robotutilitymodels.com"]
+
+["http://soumith.ch/blog/2021-08-02-growing-opensource.md.html"]
+title = ""
+year_published = 2025
+clearnet = "http://soumith.ch/blog/2021-08-02-growing-opensource.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch/blog/2023-12-17-pytorch-design-origins.md.html"]
+title = ""
+year_published = 2025
+clearnet = "https://soumith.ch/blog/2023-12-17-pytorch-design-origins.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch/blog/2024-10-02-training-10k-scale.md.html"]
+title = ""
+full_description = "I realize I have absolutely no clue how you train a single model with e.g. 10k h100s.What is where, updated when, with what?"
+year_published = 2025
+clearnet = "https://soumith.ch/blog/2024-10-02-training-10k-scale.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["https://soumith.ch/blog/2022-01-19-pytorch-retro.md.html"]
+title = ""
+year_published = 2025
+clearnet = "https://soumith.ch/blog/2022-01-19-pytorch-retro.md.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]
+
+["http://soumith.ch"]
+title = "Soumith Chintala"
+full_description = "I am an AI researcher, engineer and community builder. I occassionally invest. You can reach me at myfirstname@gmail.com Some things about me: Live in New York. Grew up in Hyderabad, India. Studied at NYU and VIT Vellore. Currently at Meta and NYU, focusing on AI Infrastructure, AI Research and Robotics. Co-founded PyTorch, maintained Torch-7 and actively work on open-source. [expand] PyTorch is the most impactful project that I've been involved in, and now powers most of the world's AI research and product -- with hundreds of companies, research labs and individuals using and maintaining it. It has significant and tangible real-world impact from self-driving cars (Tesla, Cruise, Uber, etc.) to drug discovery (Astra Zenenca, Genentech, etc.) to cancer research (Bamfield / MARS Company) to NASA and other space research to several consumer products (Instagram, TikTok, Snapchat, Pinterest, etc.), and this amount of real-world usage often intimidates me. There's more than one bug in PyTorch, when it was uncovered, I couldn't sleep thinking about what the downstream effects could be. PyTorch has been impactful far beyond my expectations or ambition. Torch-7 at it’s peak was used by Google Deepmind, Twitter and Meta and singificant AI research was powered by it. Created convnet-benchmarks, a once popular benchmarking suite for deep learning. It was used from 2015 to 2017 as a gold standard by NVIDIA, AMD, Intel Nervana and many other hardware manufacturers to optimize their systems I used to maintain EBLearn, a C++ based Deep Learning Framework pre-2012, together with Pierre Sermanet and Yann LeCun. Published well-cited AI research in Generating Images and other AI things. [expand] Some of my most cited work is on Generative Adversarial networks (GANs), where I co-authored three well-cited papers: LAPGAN (demo), DCGAN (code/demo) and Wasserstein GAN. I gave up on GANs after failing to make them stable training algorithms. I've worked on object and human detection, generative modeling of {images, videos}, AI for video games, ML systems research. A full list of my peer-reviewed or pre-print manuscripts are on my Google Scholar page. Working on automating chores at home using robots. Some thoughts and directions: I embrace laziness. Automate everything that you dont want to do. I embrace simplicity and reducing paging, even if complexity has upside. In programming – fast iteration, fast time-to-first-output. For a large enough project, it breaks. I embrace iterating and incremental ambition I think products and communities have to be rapidly iterated and evolved to get to a good state – with feedback loops and incentive structures designed very carefully to get to good dynamics. I avoid toy or hypothetical problems, even as proxies. I’ve seen way too many people build up their own toy complexity and solve useless problems. I ground work towards applications with obvious benefits. This makes my funnel limited, but I’m okay with it. I rabidly love open-source and open research. This love is borne out of growing up without answers to all the questions I had. Giving away technology and knowledge is one of the best ways to equal the playing field. I think deeply about communities, ecosystems, incentives, social dynamics and power. I’ve studied them via two avenues so far: open-source ecosystems, large organizations maintaining Torch-7 was interesting – a large project written in a niche language. It’s been very interesting to contrast that to PyTorch. Keeping close to the grassroots is really important to build great products and organizations. I’ve answered thousands of questions across the PyTorch and Torch forums, investing a significant portion of my lifetime on this. Grassroots signals have been disproportionately important to me in building good products and organizations. Home Robots: I want to build a household robot that helps me with all kinds of chores. To help this robot reason well with little data, I want to build a world simulator (so that it can rollout scenarios in it’s head and pick the best ones). To build this world simulator, I’ve been interested in multi-modal models (that combine vision, speech, text, robots), generative models (for vision and speech) and efficient representations for encoding the human-centric world. I’ve recently made a decent amount of progress on home robotics at NYU, with my collaborator Lerrel Pinto, often using a Hello Robot | Stretch. Here’s some of my recent work that I’m excited about: Robot Utility Models: enable basic tasks – door opening, drawer opening, object reorientation, etc. – at ~90% accuracy without ANY finetuning (i.e. zero-shot) in unseen new environments. On Bringing Robots Home: 109 tasks. 10 NYC homes. 81% success rate. 20 minutes to learn a new task Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory Holo-Dex: Teaching Dexterity with Immersive Mixed Reality Investments: I mostly invest within my network – when friends start companies. Rarely do I invest otherwise. I’ve invested in Runway, 1X, Osmo, Anthropic, Together.ai, Lepton among others."
+year_published = 2025
+clearnet = "http://soumith.ch"
+tags = ["build", "chintala", "i’ve", "products", "research", "robot", "soumith"]
+language = "en"
+internal-references = ["none"]
+external-references = ["1x.tech", "anthropic.com", "arxiv.org", "cs.nyu.edu", "eblearn.sourceforge.net", "gist.github.com", "github.com", "hello-robot.com", "holo-dex.github.io", "lepton.ai", "lerrelpinto.com", "linkedin.com", "mahis.life", "nyu.edu", "osmo.ai", "papers.nips.cc", "research.facebook.com", "robotutilitymodels.com", "scholar.google.com", "twitter.com"]

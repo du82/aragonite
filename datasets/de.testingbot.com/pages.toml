@@ -1,0 +1,365 @@
+["https://de.testingbot.com/security"]
+title = "Sicherheit der Enterprise-Klasse – TestingBot"
+description = "Sicherheit der Enterprise-Klasse für Cloud-basierte Selenium-Tests."
+full_description = "Für jeden Test, den Sie ausführen, erstellen wir eine brandneue virtuelle Maschine (VM) mit der Plattform / dem Browser / Gerät, auf der Sie testen möchten. Jeder Test läuft auf einer makellosen, frisch gestarteten Maschine. Alles, was Ihr Test auf der VM macht, wird durch COW (Copy-On-Write) auf eine RAM-Disk (Speicher) geschrieben. Am Ende des Tests, nachdem wir Screenshots, Protokolle und Videos des Tests gesammelt haben, weisen wir unseren Hypervisor an, die RAM-Disk und die VM vollständig zu löschen. Jeder Test läuft auf eigene Faust, Firewall, VM. TestingBot stellt sicher, dass nur Sie auf die VM zugreifen können. Der gesamte andere Verkehr wird blockiert, indem eine Firewall für jede ausgeführte VM durchgesetzt wird. VMs können nur auf das öffentliche Internet zugreifen. Oder, falls Sie einen TestingBot-Tunnel betreiben, den Inhalt auf Ihrem Computer / Netzwerk. Standardmäßig erstellen wir Screenshots und ein Video Ihres Tests zusammen mit der Protokollierung verschiedener Komponenten (Selenium-Logs, Chrome-Treiber-Logs, Firefox-Treiber-Logs, Konsolen-Logs, ...). Diese Assets werden über SSL auf unsere Asset-Server hochgeladen. Der Zugriff auf diese Ressourcen ist eingeschränkt: Wir erstellen eine signierte URL für jedes Asset. Auf jedes Asset kann nur für 30 Minuten über SSL zugegriffen werden. Sie können auch Protokollierung, Screenshot und Videoaufnahme deaktivieren. Auf diese Weise werden wir nichts während Ihres Tests aufzeichnen. Als Eigentümer oder Administrator können Sie die Anzahl der parallelen Tests verteilen, die Ihr Abonnement zwischen Mitgliedern Ihres Teams ausführen darf. Sie können einen Überblick über die Aktivitäten eines Benutzers (Testläufe, Logins, ...) sehen und Benutzer zu Ihrem Team hinzufügen / entfernen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/security"
+tags = ["alle", "automation", "automatisierte", "automatisierungs-frameworks", "codeless", "device", "firewall", "funktionen", "headless-tests", "kontaktiere"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/puppeteer"]
+title = "Puppeteer Automatisierung in der Cloud"
+description = """
+Verbinden Sie Ihre Puppeteer Skripte mit einem Cloud-basierten Browser-Grid.            Führen Sie Puppeteer Tests auf Chrome und Edge in verschiedenen Betriebssystemen durch."""
+full_description = "Online Puppeteer Browser-Grid Verbinden Sie Ihre Puppeteer Skripte mit einem Online-Browser-Grid, das aus über 50 verschiedenen Browser-, Betriebssystem- und Versionskombinationen besteht. Führen Sie Tests im Headless- oder Headful-Modus durch. Skalieren Sie mit Puppeteer ganz einfach von 1 bis +100 gleichzeitige Sitzungen. Paralleles Testen Führen Sie mehrere Puppeteer-Tests gleichzeitig durch und verkürzen Sie so Ihre gesamte Puppeteer Ausführungszeit. CI/CD-Integration Integrieren Sie Puppeteer ganz einfach in Ihr CI/CD. Beta und Dev Führen Sie Ihre Tests gegen aktuelle Beta und Entwicklerversionen durch. Geo Location Testing Führen Sie Puppeteer Skripte von verschiedenen geografischen Standorten aus aus."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/puppeteer"
+tags = ["alle", "apps", "automated", "automation", "automatisierte", "automatisierung", "automatisierungs-frameworks", "beginnen?", "bereit,", "beta"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/pricing"]
+title = "Cross-Browser-Tests – Preise und Pläne für Online-Tests"
+description = "Führen Sie Ihre Cross-Browser Selenium-Tests zu dem günstigsten Preis durch. Dazu bieten wir viele Extra-Funktionen."
+full_description = "Jeder Plan beinhaltet alle unseren OS-/Browser-/Geräteplattformen mit in Echtzeit verfügbaren VMs. Außerdem enthalten sind Videowiedergaben von Tests, unbegrenzte manuelle Tests, unbegrenzte Screenshots und Debugging-Tools. TestingBot integriert sich mit allen Sprachumgebungen und CI-Systemen. Nein, Sie benötigen keine Kreditkarte Mit Ihrem kostenlosen Plan können Sie unseren Dienst für zwei Wochen ausprobieren - ohne etwas zu bezahlen. Wenn Sie einen bezahlten Plan erweitern möchten, können Sie dies ganz einfach mittels Kreditkarte oder Banküberweisung vornehmen. Unsere Pläne basieren auf monatliche Abonnements, die Sie jederzeit kündigen können. Wenn Sie in der Mitte des Monats kündigen, wird der laufende Monat berechnet. Es fallen aber keine weitere Kosten für einen jährlichen Vertrag oder ähnliche Gebühren an. Parallele Tests geben an, wie viele Tests gleichzeitig ausgeführt werden können. Mehr parallele Tests bedeuten eine höhere Verkürzung der Gesamttestzeit. Wir lieben Open-Source-Projekte! Wenn Sie ein Open-Source-Projekt haben, melden Sie sich bitte für unseren Open-Source-Plan an. Wenn Ihre verfügbare Testzeit für den Monat aufgebraucht wurde, können Sie für den restlichen Monat keine weiteren Tests durchführen. Wenn Sie weitere Tests laufen lassen möchten, sollten Sie in Erwägung ziehen, Ihren derzeitigen Plan zu erweitern"
+year_published = 2025
+clearnet = "https://de.testingbot.com/pricing"
+tags = ["$20/monat", "$50/monat", "$90/monat", "5200+", "abonnement", "alle", "android/ios", "appium,", "auswahl", "automation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/selenium"]
+title = "Selenium-Automatisierung in der Cloud"
+description = """
+Beschleunigen Sie Ihre Selenium-Testautomatisierung mit einem Cloud-basierten Browser und einem Geräte-Grid.      Verbinden Sie Ihre Selenium-Tests mit einem Browserraster von +5200 Desktop- und mobilen Browsern."""
+full_description = "Beschleunigen Sie Ihre Selenium-Testautomatisierung mit einem Cloud-basierten Browser und einem Geräte-Grid. Verbinden Sie Ihre Selenium-Tests mit einem Browserraster von +5200 Desktop- und mobilen Browsern. Jedes Selenium-Testergebnis wird mit Screenshots, Protokollen und einem Video des Tests geliefert. Markieren Sie Selenium-Tests als bestanden oder nicht bestanden, rufen Sie Testartefakte über unsere REST-API ab und verbinden Sie Ihre Testergebnisse durch verschiedene Integrationen. Benutzerdefinierte Selenium-Version (Selenium 4 + W3C-Unterstützung verfügbar und demnächst WebDriver BiDi) TestingBot lässt sich in verschiedene Testframeworks und -dienste integrieren. Konvertieren Sie ganz einfach Ihre bestehenden Selenium-Tests und verbinden Sie sich mit Ihrem bevorzugten CI/CD. TestingBot lässt sich in die beliebtesten CI/CD-Dienste integrieren, darunter Jenkins, Bamboo, TeamCity, Circle CI, GitLab CI und mehr. Ihre Tests laufen in einem sicheren Rechenzentrum auf realen Betriebssystemen. Jeder Test wird in einer dedizierten Single-Use VM ausgeführt, die nach Abschluss des Tests zerstört wird. Unsere Infrastruktur ist auf Leistung und geringe Testflackigkeit optimiert. Führen Sie Geolocation-Tests in verschiedenen Regionen der Welt durch. Testen Sie Geo-Targeting, Geo-Blocking und Geo-Lokalisierung in 10 Ländern, darunter Australien, Belgien, Großbritannien, USA, Deutschland, Frankreich, Spanien, China und mehr. Paralleles TestenaVerkürzen Sie Ihre gesamte Selenium-Testdauer drastisch, indem Sie Tests gleichzeitig durchführen. TestingBot bietet Single-Use VMs unter Windows, Linux und macOS, optimiert für Geschwindigkeit und Stabilität. Testen Sie auf physischen iOS- und Android-Mobilgeräten oder iOS-Simulatoren und Android-Emulatoren. Testen Sie Ihre Website-Funktionalität und Benutzeroberfläche auf verschiedenen mobilen Geräten und Versionen mit Geolocation-Unterstützung. In unserem TestLab können Sie Selenium IDE-Tests hochladen und TestingBot nutzen, um diese automatisch auszuführen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/selenium"
+tags = ["alerting", "alle", "apps", "automation", "automatisierte", "automatisierungs-frameworks", "bereit,", "beschleunigen?", "browsers", "ci/cd-diensten"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/enterprise/private-device-cloud"]
+title = "Private Real Device Cloud für automatisiertes Testen"
+description = "Dedizierte iOS- und Android-Geräte für Sie und Ihr Team. Wir stellen Ihnen die gewünschten Geräte bereit, angepasst an Ihre Bedürfnisse."
+full_description = "Dedizierte iOS- und Android-Geräte für Sie und Ihr Team. Wir stellen Ihnen die gewünschten Geräte bereit, angepasst an Ihre Bedürfnisse. Wählen Sie Ihre eigenen iOS- und Android-Geräte. Wir kaufen diese Geräte und installieren und konfigurieren sie in unserem sicheren Rechenzentrum. Diese Geräte stehen Ihnen rund um die Uhr zur Verfügung und werden nur von Ihnen verwendet. Da dies Ihre Geräte sind, können Sie den Bereinigungsfortschritt nach jedem Test von uns deaktivieren / konfigurieren lassen. Lassen Sie uns bestimmte Profile und Apps installieren oder bestimmte Einstellungen des Geräts ändern. Du entscheidest. Wir können Ihre Geräte mit einer SIM-Karte ausstatten. Auf diese Weise können Sie Tests mit Netzbetreiberkonnektivität durchführen. Mit dieser Funktion können Sie Testszenarien ausführen, die mit Wi-Fi nicht möglich sind. Zum Beispiel SMS vom / zum Gerät, Wählen / Empfangen von Anrufen, ... In unserer Private Device Cloud werden Geräte nur von Ihnen verwendet. Obwohl TestingBot nach jedem Test eine gründliche Reinigung des Geräts durchführt, können wir aufgrund der Komplexität mobiler Geräte nicht garantieren, dass alle Daten nach Ihren Tests entfernt werden. Sie müssen nicht darauf warten, dass jemand anderes die Verwendung eines öffentlichen Geräts beendet. Die Geräte sind rund um die Uhr für manuelle und automatisierte Tests bereit."
+year_published = 2025
+clearnet = "https://de.testingbot.com/enterprise/private-device-cloud"
+tags = ["alle", "automation", "automatisierte", "automatisierungs-frameworks", "cloud", "codeless", "device", "eigenen", "funktionen", "headless-tests"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/playwright"]
+title = "Playwright Automation in der cloud"
+description = """
+Verbinden Sie Ihre Playwright Scripts mit einem Cloud-basierten Browser-Grid.            Führen Sie Playwright Tests auf verschiedenen Browsern und Betriebssystemen durch."""
+full_description = "Umfangreiches Online Browser-Grid Verbinden Sie Ihre Playwright Skripte mit einem Online Browser-Grid, das aus über 100 verschiedenen Browser-, Betriebssystem- und Versionskombinationen besteht. Führen Sie Tests im Headless- oder Headful-Modus durch. Skalieren Sie mit Playwright ganz einfach von 1 bis +100 gleichzeitige Tests. Paralleles Testen Führen Sie Playwright-Tests in großem Maßstab mit einem Cloud-basierten Grid durch. Verkürzen Sie Ihre gesamte Ausführungszeit von Playwright mit TestingBot drastisch. CI/CD Integration Integrieren Sie Playwright ganz einfach in Ihr CI/CD. Beta und Dev Führen Sie Ihre Tests gegen aktuelle Beta und Entwicklerversionen durch. Keine Wartung Keine Notwendigkeit, Playwright-Instanzen einzurichten, zu patchen, zu aktualisieren und zu warten. Das übernehmen wir für Sie."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/playwright"
+tags = ["alle", "apps", "automation", "automatisierte", "automatisierung", "automatisierungs-frameworks", "beginnen?", "bereit,", "beta", "betriebssystem-"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-in-internet-explorer"]
+title = "Testen des Internet Explorers: Moderner IE 6-11"
+description = "Testen Sie einfach auf Internet Explorer Online! Sofortiger Zugriff auf alle IE-Browserversionen (7-11). Testen Sie Ihre Website auf echten IE-Browsern. Keine IE-Emulatoren oder -Simulatoren.Registrieren Sie sich und starten Sie den kostenlosen Test!"
+full_description = "Interaktives Testen auf Internet Explorer-Browsern IE 11, IE 10, IE 9, IE 8, IE 7 Führen Sie Tests sowohl auf älteren als auch auf neuen IE-Versionen auf echten Windows-Desktops durch. Responsive Testing Passen Sie die Bildschirmauflösung spontan an oder ändern Sie die Größe Ihres Browsers, um Responsive-Tests durchzuführen. Keine VMs mehr Es müssen keine VMs mehr gewartet oder Software installiert werden. TestingBot ist für Sie da. +5200 Kombinationen Sofortiger Zugriff auf jeden Browser auf Mac, Linux, Windows und Mobile."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-in-internet-explorer"
+tags = ["+5200", "alle", "anmeldung", "automation", "automatisierte", "automatisierungs-frameworks", "beim", "browser-übergreifender", "codeless", "device"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-on-safari"]
+title = "Testen Sie Ihre Website im Safari Browser Online"
+description = "Testen Sie auf echten Safari-Browsern, die auf macOS oder iOS ausgeführt werden. Keine Emulatoren oder Simulatoren, nur Safari, das auf echten Desktops und physischen Geräten ausgeführt wird.Registrieren Sie sich und starten Sie den kostenlosen Test!"
+full_description = "Testen Sie auf verschiedenen Safari-Browsern online Entwicklerwerkzeuge Testen Sie Ihre Website interaktiv mit den nativen Entwicklertools von Safari. Responsives Testen Passen Sie die Bildschirmauflösung spontan an oder ändern Sie die Größe Ihres Browsers, um Responsive-Tests durchzuführen. Safari-Geolokalisierungstests Testen Sie Ihre Website mit Safari aus verschiedenen Regionen der Welt. Safari 8 bis 18 Sofortiger Zugriff auf verschiedene Safari-Versionen, sowohl auf dem Desktop als auch auf dem Handy. Desktop macOS Sequoia: Safari 18 macOS Sonoma: Safari 17 macOS Ventura: Safari 16 macOS Monterey: Safari 15 macOS BigSur: Safari 14 macOS Catalina: Safari 13 macOS Mojave: Safari 12 OSX High Sierra: Safari 11 OSX Sierra: Safari 10 OSX El Capitan: Safari 9 OSX Yosemite: Safari 8 Mobile iOS 18.0 iOS 17.4 iOS 17.2 iOS 17.0 iOS 16.2 iOS 16.0 iOS 15.0 iOS 14.2 iOS 14.0 iOS 13.4 iOS 13.3 iOS 12.2 iOS 12.1 iOS 11.4 Automatisierte mobile Safari-Tests mit Appium Verwenden Sie Appium, um sich mit unserem Grid aus physischen iOS-Geräten zu verbinden und automatisierte mobile Safari-Tests für Ihre Website durchzuführen. Paralleles Testen Führen Sie mehrere Appium-Tests gleichzeitig aus und verkürzen Sie so Ihre gesamte Appium-Ausführungszeit. Schreiben Sie Ihre Tests in einer beliebigen Sprache Da Appium die WebDriver-API verwendet, können Sie Ihre Tests in jeder Sprache schreiben und auf TestingBot ausführen. Geräteabdeckung Testen Sie auf den relevanten Geräten, die einen großen Anteil der weltweiten Gerätenutzung ausmachen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-on-safari"
+tags = ["alle", "anmeldung", "appium", "automation", "automatisieren?", "automatisierte", "automatisierungs-frameworks", "beim", "beliebigen", "beta"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/appium"]
+title = "Appium Automatisierung in der Cloud"
+description = """
+Appium ist ein Automatisierungstool zum Testen mobiler Anwendungen.            Führen Sie Ihre Automatisierungstests für mobile Apps auf dem großen Grid physischer mobiler Geräte und Simulatoren von TestingBot durch."""
+full_description = "Appium-Automatisierungscloud Verbinden Sie Ihre Appium-Tests mit einem zuverlässigen, skalierbaren und leistungsstarken Geräte-Grid.Führen Sie mit Appium Tests auf echten iOS- und Android-Geräten durch. Skalieren Sie mit Appium ganz einfach von 1 bis +100 gleichzeitige Sitzungen. Paralleles Testen Führen Sie mehrere Appium-Tests gleichzeitig aus und verkürzen Sie so Ihre gesamte Appium-Ausführungszeit. Schreiben Sie Ihre Tests in einer beliebigen Sprache Da Appium die WebDriver-API verwendet, können Sie Ihre Tests in jeder Sprache schreiben und auf TestingBot ausführen. Geräteabdeckung Testen Sie auf den relevanten Geräten, die einen großen Anteil der weltweiten Gerätenutzung ausmachen. Funktionen der TestingBot Appium Automation Platform Echte Geräte Führen Sie Ihre Appium-Tests auf physischen Mobilgeräten durch, ohne ein eigenes internes Gerätelabor zu unterhalten. Video, Protokolle und Testartefakte Jeder Test auf TestingBot wird mit einem Video-Screencast des Geräts, Protokollen und anderen generierten Artefakten geliefert. Native App-Funktionen Testen Sie native Apps, Push-Benachrichtigungen, In-App-Käufe, Mediendateien und Apps aus dem PlayStore, AppStore und über TestFlight. Geolokalisierungstests Führen Sie Appium-Tests mit der integrierten Geolokalisierungs-Testfunktion von TestingBot durch. Wählen Sie aus bis zu 20 Regionen rund um den Globus. TestingBot Tunnel Führen Sie Appium-Tests für Websites in einer sicheren Umgebung durch, z. B. in einem privaten Netzwerk, einer Staging-Umgebung oder einem lokalen Computer. Gesten und Interaktionen Automatisieren Sie Taps, Swipes, Scrolls und andere Interaktionen mit Appium."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/appium"
+tags = ["actions", "alle", "app-funktionen", "appium", "appium automatisierung", "appium tests", "appium-automatisierungscloud", "appium-frameworks", "appium-testen", "appium-tests"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-on-ipad"]
+title = "Online-iPad-Tests für Websites und Apps"
+description = "Testen Sie Ihre mobile iOS-App oder -Website auf einer Vielzahl von physischen iPad-Geräten. Wir bieten Zugriff auf Geräte wie das iPad der 8. Generation, das iPad der 6. Generation und weitere iOS-Geräte.Melden Sie sich an und beginnen Sie kostenlos mit dem Testen!"
+full_description = "Auf verschiedenen iPads online testen Große Auswahl an iPad-Geräten Testen Sie Ihre mobilen Apps und Websites auf physischen iPads. Wählen Sie aus einer Reihe von iPads, vom iPad der 6. Generation bis zum iPad der 8. Generation. Cloud für echte iPad-Geräte Keine Notwendigkeit, eigene iPad-Geräte zu kaufen und zu warten. Erhalten Sie sofortigen Zugriff auf physische iPad-Geräte für manuelle und automatisierte Tests. Sicher und privat TestingBot bietet unberührte iPad-Geräte mit der Möglichkeit privater iPad-Geräte. Echtzeit-Debugging Debuggen Sie Ihre Websites und mobilen Apps. Greifen Sie auf Absturzberichte und Protokolle zu, um Fehler sofort zu beheben. Tap, Swipe, Pinch und mehr Interagieren Sie mit einem physischen iPad-iOS-Gerät. Genau wie Sie es tun würden, während Sie es in der Hand halten. Tippen, wischen, kneifen und andere Gesten ausführen. Testen Sie verschiedene Netzwerkgeschwindigkeiten Führen Sie iPad-Tests mit unterschiedlichen Netzwerkgeschwindigkeiten durch: Wählen Sie zwischen WiFi, 5G, 4G, Edge und mehr. Automatisierte iPad-Tests mit Appium Verwenden Sie Appium, um sich mit unserem Raster aus physischen iPads zu verbinden und automatisierte mobile Tests mit Ihrer Website oder mobilen App durchzuführen. Paralleles Testen Führen Sie mehrere Appium-Tests gleichzeitig aus und verkürzen Sie so Ihre gesamte Appium-Ausführungszeit. Schreiben Sie Ihre Tests in einer beliebigen Sprache Da Appium die WebDriver-API verwendet, können Sie Ihre Tests in jeder Sprache schreiben und auf TestingBot ausführen. Zuverlässiger Dienst Testen Sie auf einer zuverlässigen Plattform, ohne Testflockigkeit. Versenden Sie Ihre Website und mobile App mit Zuversicht."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-on-ipad"
+tags = ["alle", "anmeldung", "anstelle", "appium", "auswahl", "automation", "automatisierte", "automatisierungs-frameworks", "beliebigen", "cloud"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-on-chrome"]
+title = "Chrome-Browser online testen | TestingBot"
+description = "Testen Sie mit echten Chrome-Browsern, die unter Windows, macOS und Linux laufen. Echte Chrome-Browser von Google, verfügbar für automatisierte, visuelle und manuelle Tests.Registrieren Sie sich und testen Sie kostenlos!"
+full_description = "Testen Sie online verschiedene Chrome-Versionen Entwicklerwerkzeuge Testen Sie Ihre Website mit den DevTools von Chrome. Überprüfen und debuggen Sie mit Ihrer Maus und Tastatur. Responsive Chrome-Tests Passen Sie die Bildschirmauflösung im Handumdrehen an oder ändern Sie die Größe Ihres Browsers, um Responsive-Tests durchzuführen. Chrome Beta- und Entwicklungstests Stellen Sie sicher, dass Ihre Website in kommenden Chrome-Versionen funktioniert und korrekt aussieht. Chrome 35 bis zur neuesten Version Testen Sie mit früheren Chrome-Versionen, von Google Chrome 33 bis zur neuesten. Testen des Chrome-Browsers TestingBot bietet automatisierte, manuelle und visuelle Tests auf Chrome. Leistungstest Testen Sie die Leistung Ihrer Website mit Geschwindigkeitstests wie Lighthouse und den DevTools von Chrome. Chrome-Erweiterungen Automatisiertes oder manuelles Testen von Chrome-Erweiterungen auf verschiedenen Chrome-Versionen und Plattformen. Kamera-, Mikrofon- und WebGL-Tests Test mit Dummy-Kamera und Mikrofon. Führen Sie WebGL-Tests in der Cloud aus."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-on-chrome"
+tags = ["alle", "anmeldung", "automation", "automatisierte", "automatisiertes", "automatisierungs-frameworks", "beim", "beta,", "beta-", "browsertests"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/headless"]
+title = "Headless automatisierte Tests auf Chrome und Firefox"
+description = "Beschleunigen Sie Ihre Tests mit Headless Testing. Beginnen Sie frühzeitig mit dem Testen und erhalten Sie sofortiges Feedback während der Entwicklung."
+full_description = "Vorher testen Headless-Tests laufen viel schneller als Selenium-Tests, während sie in einem echten Browser ausgeführt werden. Der Unterschied besteht darin, dass im Gegensatz zu normalen Selenium-Tests die Headless-Tests nicht warten oder mit der Browser-Benutzeroberfläche interagieren müssen. Diese Art des Testens liefert Entwicklern schnelle Erfolgsdaten und eignet sich perfekt für schnelle Tests. Sanity Checks, Pull Requests, Smoke Tests ... Beschleunigen Sie Ihre Tests mit Headless Testing. Beginnen Sie frühzeitig mit dem Testen und erhalten Sie sofortiges Feedback während der Entwicklung. Headless-Tests laufen viel schneller als Selenium-Tests, während sie in einem echten Browser ausgeführt werden. Der Unterschied besteht darin, dass im Gegensatz zu normalen Selenium-Tests die Headless-Tests nicht warten oder mit der Browser-Benutzeroberfläche interagieren müssen. Diese Art des Testens liefert Entwicklern schnelle Erfolgsdaten und eignet sich perfekt für schnelle Tests. Sanity Checks, Pull Requests, Smoke Tests ... Mit TestingBot Tunnel können Sie kopflose Tests auf sichere Weise für Websites und Apps in Ihrem privaten Netzwerk ausführen. Konfigurieren Sie Ihre Tests für die Verwendung von TestingBot Tunnel, um kopflose Tests für Websites und Apps durchzuführen, die sich noch in der Entwicklung befinden. Ihre Tests laufen auf echten Browsern (neueste Versionen von Chrome und Firefox). Headless-Tests sind eine ergänzende Lösung zu unserem Angebot für Cross-Browser-Tests, das sich am besten für umfassende Funktionstests eignet. Verbinden Sie sich mit Puppeteer und Playwright mit dem TestingBot-Browser-Grid, um Browsertests sofort parallel auszuführen. Weitere Informationen zu den ersten Schritten finden Sie in unserer Dokumentation zu kopflosen Tests. Puppeteer combined with a test framework provides a great way to run automated browser tests. Follow this guide for more information. Playwright provides automated browser testing. It offers a built-in feature to perform visual regression testing for your website."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/headless"
+tags = ["alle", "automated", "automation", "automatisierte", "automatisierungs-frameworks", "bereit", "browser", "cloud", "codeless", "device"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-edge-browser"]
+title = "Microsoft Edge Cross-Browser-Tests"
+description = "Testen Sie einfach auf Microsoft Edge Online! Stellen Sie sicher, dass Ihre Website auf den neuesten Edge-Browserversionen funktioniert, die mit Microsoft Windows geliefert werden. Testen Sie Ihre Website auf echten Edge-Browsern.Melden Sie sich an und beginnen Sie kostenlos mit dem Testen!"
+full_description = "Interaktives Testen auf Microsoft Edge-Browsern Legacy-Versionen bis zur neuesten Version Führen Sie Tests auf verschiedenen Microsoft Edge-Versionen auf echten Windows- und macOS-Desktops durch. Reaktionsschnelles Testen Passen Sie die Bildschirmauflösung spontan an oder ändern Sie die Größe Ihres Browsers, um Responsive-Tests durchzuführen. Keine VMs mehr Es müssen keine VMs mehr gewartet oder Software installiert werden. TestingBot ist für Sie da. +5200 Kombinationen Sofortiger Zugriff auf mehrere Microsoft Edge-Browser unter Windows und macOS."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-edge-browser"
+tags = ["+5200", "alle", "anmeldung", "automation", "automatisierte", "automatisierungs-frameworks", "beim", "browserübergreifender", "browserübergreifendes", "codeless"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features"]
+title = "Optionen und Features für Online-Selenium-Tests"
+description = "Testen Sie Ihre Website und App auf 5200+ echten Browsern und Geräten. Ersetzen Sie Ihre internen Browser-Tools durch unser Cloud-basiertes Selenium Grid."
+full_description = "Testen Sie Ihre Website und App auf 5200+ echten Browsern und Geräten. Ersetzen Sie Ihre internen Browser-Tools durch unser Cloud-basiertes Selenium Grid. Mit der TestingBot Cloud können Sie Tests mit Ihrer Webanwendung auf +5200 verschiedenen Browserkombinationen durchführen. Überlassen Sie uns Ihre Testinfrastruktur. Wir unterhalten eine Cloud von Desktop- und mobilen Plattformen. Erhalten Sie sofortigen Zugriff auf ein Grid von 5200+ Browser-Kombinationen. Unser Test-Grid bietet viele Variationen: Internet Explorer, Microsoft Edge, FireFox, Chrome, (Mobil-)Safari,... Es sind alle Versionen verfügbar, die auf echten Windows-, macOS, Android- und Linux-Maschinen laufen. Das Mobile Automation Framework, das WebDriver verwendet, kann auf physischen Geräten und Simulatoren / Emulatoren ausgeführt werden. Chrome DevTools-basiertes Automatisierungsframework von Google. Unterstützt Chrome- und Edge-Browser. Wir bieten Testbeispiele für Appium, PHP, Java, Ruby, Python, NodeJS, C# und viele weitere Sprachen. Mit unseren vielen Beispielen können Sie Ihre ersten, automatisierten Browser-Tests in kürzester Zeit durchführen. Dokumentation anzeigen Falls Sie eine Übersicht über Ihre Tests suchen oder einen bestimmten, fehlgeschlagenen Test festnageln möchten, unsere erweiterten Berichttools werden Ihr Leben leichter machen. Mit unserem Berichtfilter können Sie eine detaillierte Suche durch alle Tests, die Sie ausgeführt haben, durchführen. In unserem TestLab können Sie Selenium IDE-Tests hochladen und TestingBot nutzen, um diese automatisch auszuführen. Erstellen Sie einen Selenium-Test mit dem Selenium IDE-Addon und laden Sie ihn zu unserem TestLab hoch. Geben Sie an, wann der Test und auf welchen Browsern der Test ausgeführt werden soll. TestingBot wird Ihren Selenium IDE-Test ausführen. Betrachten Sie unser TestLab als ein Continuous-Integration-System in der Cloud für Selenium IDE. Choose on which browsers & platforms you want your test to run. TestingBot will run your test in parallel on all the browser combinations you specified."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features"
+tags = ["5200+", "alerting", "alle", "anmeldung", "automation", "automatisierte", "automatisierte selenium-tests", "automatisierter", "automatisierungs-frameworks", "berichterstattung"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com"]
+title = "Cross-Browser-Selenium-Tests auf Browsern und Mobilgeräten"
+description = "Erreichen Sie für Ihre automatisierten und manuellen Testverfahren neue Dimensionen mit TestingBot. Sofortiger Zugriff auf Hunderte von echten Browsern."
+full_description = "Automatisiertes Testen Ersetzen Sie Ihre internen Browser-Tools durch unser Cloud-basiertes Selenium Grid. TestingBot unterstützt diese Automation Frameworks: Selenium Cypress Appium Puppeteer Playwright Espresso XCUITest Mehr erfahren Live Web Testen Greifen Sie von Ihrem eigenen Computer auf jeden Browser oder jedes Gerät zu und steuern Sie ihn. Test auf Desktop-Browsern und echten Mobilgeräten. Mehr erfahren 5200+ Desktop-Browser Führen Sie Tests unter verschiedenen Windows-, Linux- und MacOS-Betriebssystemen durch. Testen Sie Ihre nativen mobilen Apps auf physischen iOS- und Android-Geräten. Überprüfen Sie die verfügbaren Browser und Geräte"
+year_published = 2025
+clearnet = "https://de.testingbot.com"
+tags = ["5200+", "alle", "automation", "automatisierte", "automatisierten", "automatisiertes", "automatisierungs-frameworks", "azure", "bamboo", "bringen"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-on-iphone"]
+title = "Testen von Websites und mobilen Apps auf dem iPhone"
+description = "Testen Sie Ihre mobile iOS-App oder -Website auf einer Vielzahl echter iOS-Geräte. Sofortiger Zugriff auf Geräte wie iPhone 15, iPhone 14, iPhone 13, iPhone 12, iPhone XR, iPhone 6s, iPad und weitere iOS-Geräte.Registrieren Sie sich und starten Sie den kostenlosen Test!"
+full_description = "Auf verschiedenen iPhones online testen Große Auswahl an iPhone-Geräten Testen Sie Ihre mobilen Apps und Websites auf physischen mobilen iPhones. Wählen Sie aus einer Reihe von iPhones, von iPhone 6s bis iPhone 15. Echte iOS-Geräte-Cloud Sie müssen keine eigenen iPhones kaufen und warten. Erhalten Sie sofortigen Zugriff auf ein physisches iOS-Gerät für manuelle und automatisierte Tests. Sicher und privat TestingBot bietet makellose iPhones und die Möglichkeit privater iPhone-Geräte. Echtzeit-Debugging Debuggen Sie Ihre Websites und mobilen Apps. Greifen Sie auf Absturzberichte und Protokolle zu, um Fehler sofort zu beheben. Tippen, wischen, kneifen und mehr Interagieren Sie mit einem physischen, entfernten iOS-Gerät, als würden Sie es in der Hand halten. Tippen, wischen, kneifen und andere Gesten ausführen. Testen Sie verschiedene Netzwerkgeschwindigkeiten Führen Sie iPhone-Tests mit unterschiedlichen Netzwerkgeschwindigkeiten durch: Wählen Sie zwischen WLAN, 5G, 4G, Edge und mehr. Automatisierte iPhone-Tests mit Appium Verwenden Sie Appium, um sich mit unserem Grid physischer iPhones zu verbinden und automatisierte mobile Tests für Ihre Website oder mobile App durchzuführen. Paralleles Testen Führen Sie mehrere Appium-Tests gleichzeitig aus und verkürzen Sie so Ihre gesamte Appium-Ausführungszeit. Schreiben Sie Ihre Tests in einer beliebigen Sprache Da Appium die WebDriver-API verwendet, können Sie Ihre Tests in jeder Sprache schreiben und auf TestingBot ausführen. Zuverlässiger Service Testen Sie auf einer zuverlässigen Plattform ohne Testflockigkeit. Versenden Sie Ihre Website und mobile App mit Zuversicht."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-on-iphone"
+tags = ["alle", "anmeldung", "anstelle", "appium", "auswahl", "automation", "automatisierte", "automatisierungs-frameworks", "beliebigen", "cloud"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/about"]
+title = "TestingBot ermöglicht automatisierte und manuelle Cross-Browser-Tests."
+description = "TestingBot wurde 2011 gegründet und hat sich zum Ziel gesetzt, ein einfach zu bedienendes System für Cross-Browser-Tests bereitzustellen. Indem wir die Leistungsfähigkeit des Cloud Computing nutzen, können wir schnell auf Ihre Bedürfnisse skalieren."
+full_description = "TestingBot wurde 2011 gegründet und hat sich zum Ziel gesetzt, ein einfach zu bedienendes System für Cross-Browser-Tests bereitzustellen. Indem wir die Leistungsfähigkeit des Cloud Computing nutzen, können wir schnell auf Ihre Bedürfnisse skalieren. Wir bieten verschiedene Pakete an, um sowohl großen als auch kleinen Unternehmen dabei zu helfen, ihre Website(s) auf Hunderten von echten Browser/Mobile-Kombinationen zu testen. Zusammen mit einem exzellenten Kundenservice sind wir zuversichtlich, dass Sie Ihre Websites mit TestingBot gerne testen werden. Wir bieten ein Browser Grid, dass ein breites Spektrum an Brower-Versionen bzw. Mobilgeräten zur Verfügung stellt. Unsere gesamte Infrastruktur befindet sich in Europa, genauer gesagt in Brüssel. Wir bei TestingBot sind sehr stolz auf unser Niveau in puncto Sicherheit, Stabilität und Geschwindigkeit."
+year_published = 2025
+clearnet = "https://de.testingbot.com/about"
+tags = ["alle", "automation", "automatisierte", "automatisierungs-frameworks", "beitreten?", "browser/mobile-kombinationen", "cloud", "codeless", "computing", "device"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/users/sign_up"]
+title = "Registrieren Sie sich gratis bei TestingBot"
+description = "Registrieren Sie sich für ein kostenloses Konto bei TestingBot und Sie können beginnen, in kürzester Zeit Cross-Browser-Tests durchzuführen."
+full_description = "Beginnen Sie mit dem Testen von +5200 Browser-Kombinationen: Automatisiertes, Live- und visuelles Testen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/users/sign_up"
+tags = ["alle", "automation", "automatisierte", "automatisierungs-frameworks", "beinhaltet:", "codeless", "dein", "device", "diesen", "funktionen"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/integrations"]
+title = "TestingBot-Integrationen"
+description = "TestingBot lässt sich in verschiedene Dienste und Produkte von Drittanbietern integrieren."
+full_description = "Automation Framework (8) Project Management (4) CI/CD (10) Record and Playback (6) App Distribution (1) Other (1) Automation Framework Run tests on our Selenium grid, over 5200 browser combinations. Get Started Run Appium tests on physical devices and simulators/emulators. Test native, hybrid and webapps concurrently. Get Started Cypress Testing in the Cloud. Run Cypress tests on macOS and Windows 10. Get Started Testing with Puppeteer in the cloud. Get Started Testing with Playwright in the cloud. Get Started Automated Mobile App testing with Espresso on Android. Get Started Automated testing on iOS with XCUITest. Get Started Automated testing on iOS and Android with Maestro. Get Started Project Management Adds a Slack bot which will notify you when a test finishes, succeeds or fails. Adds custom commands to fetch test details and analytics. Activate Create issues in Atlassian Jira with test meta-data and assets from TestingBot. Activate Create an issue, with details and a screenshot in Bugsnag. Activate Zebrunner offers test management with smart analysis of test results. Activate CI/CD TeamCity plugin for this build management/CI system created by Jetbrains. Integrate TestingBot inside TeamCity. Activate Jenkins Plugin which integrates TestingBot in Jenkins CI. Pipeline + test asset/tunnel support. Activate Bamboo Plugin to integrate TestingBot tests in Atlassian Bamboo. Activate Integrate TestingBot test details in Azure Devops (VSTS). Activate Integrate TestingBot with CircleCI. Activate Integrate TestingBot with Bitbucket Pipelines. Activate Integrate TestingBot with GitLab. Activate Integrate TestingBot with Travis CI. Activate Launch your TestingBot tests directly from GitHub Action workflows. Activate Integrate with Bitrise with TestingBot Mobile App Testing. Activate Record and Playback Record tests with the Selenium IDE browser extension. Import the tests in our TestLab and run on any browser/schedule. Activate Record tests with Katalon Studio and run these on TestingBot. Activate Record and playback tests with Oxygen IDE. Activate Record tests with Ranorex Studio and run on TestingBot. Activate Run tests created with Cerberus on TestingBot Activate Run tests created with Tricentis Tosca on TestingBot Activate App Distribution Test your mobile apps, distributed using Microsoft App Center, on our Real Device Cloud. Activate Other With Appium Inspector you can visualize and inspect all the different elements in your mobile app. Locate XPaths and element identifiers by selecting the elements in the live view. Activate"
+year_published = 2025
+clearnet = "https://de.testingbot.com/integrations"
+tags = ["activate", "alle", "automation", "automatisierte", "automatisierungs-frameworks", "ci/cd", "cloud.", "codeless", "device", "distribution"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/espresso"]
+title = "Android Espresso Cloud-Automatisierung"
+description = """
+Skalieren Sie Ihre Espresso-Tests mit TestingBot.        Führen Sie Espresso-Tests für Ihre nativen und hybriden Apps auf physischen Android-Geräten und Android-Emulatoren durch."""
+full_description = "Erstellen Sie Ihre App und Tests Erstellen Sie eine .apk- oder .aab-Datei Ihrer nativen Android-App und eine .apk-Datei Ihrer Espresso-Tests. Sie können diese Dateien mit Android Studio oder Gradle erstellen. App und Tests hochladen Laden Sie Ihre mobile App (.apk oder .aab) und Tests (.apk) über die TestingBot REST API hoch. Mehr erfahren Espresso-Tests ausführen Lösen Sie die Tests über einen API-Aufruf aus. Ihre Tests werden im TestingBot-Dashboard mit Videos, Protokollen und mehr angezeigt."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/espresso"
+tags = ["alle", "anderen", "android", "android-espresso-cloud", "android-espresso-tests", "android-geräte", "ausführen", "auszuführen?", "automation", "automatisierte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/cypress"]
+title = "Cypress Automation in der Cloud"
+description = "Führen Sie mit TestingBot automatisierte Cypress-Tests in großem Maßstab durch. Führen Sie E2E-Tests mit Cypress in einem großen Browser-Grid durch."
+full_description = "Installieren Sie die Runner Installieren Sie die TestingBot Cypress CLI, um Tests auszulösen und Testergebnisse zu erhalten. Konfigurieren Sie die Runner Konfigurieren Sie die JSON-Datei, um den Speicherort Ihrer Cypress-Testdateien und andere zusätzliche Optionen anzugeben. Mehr erfahren Cypress Testen durchführen Lösen Sie die Tests über den CLI-Runner aus. Ihre Cypress-Tests werden parallel ausgeführt und im TestingBot-Dashboard mit Protokollen und einem Video angezeigt. Skalieren Sie Ihre Cypress-Tests mit TestingBot. Funktionale und browserübergreifende Tests mit Cypress auf über 40 Browsern in der Cloud. Führen Sie Cypress-Tests auf über 40 Browsern in der Cloud durch. TestingBot bietet Windows- und macOS-Tests für Cypress auf mehreren Browserversionen. Fügen Sie Ihrem Cypress Testing sofort Testkapazität hinzu. TestingBot bietet die Infrastruktur und den Service, um Ihre Cypress-Browser-Tests zu skalieren. Installieren Sie die TestingBot Cypress CLI, um Tests parallel auszuführen. Jeder Test wird mit einem Video und Protokollen des Tests zur einfachen Fehlerbehebung geliefert. Konfigurieren Sie die JSON-Datei, um den Speicherort Ihrer Cypress-Testdateien und andere zusätzliche Optionen anzugeben. Lösen Sie die Tests über den CLI-Runner aus. Ihre Cypress-Tests werden parallel ausgeführt und im TestingBot-Dashboard mit Protokollen und einem Video angezeigt. TestingBot bietet und wartet die Infrastruktur, um Cypress-Tests parallel auf mehreren Browsern, Versionen und Betriebssystemen auszuführen. Sie müssen keine virtuellen Maschinen oder Docker-Images mehr warten, patchen und aktualisieren.TestingBot bietet hochskalige Parallelisierung mit einfacher Integration in Ihre CI/CD-Pipeline. Das Starten von Cypress-Tests von Ihrem CI/CD ist dem Ausführen der Tests auf Ihrem lokalen Computer sehr ähnlich. Installieren Sie die TestingBot-Cypress-CLI, stellen Sie die erforderliche Konfiguration bereit und Ihr CI/CD-Server kann Cypress-Tests auf TestingBot ausführen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/cypress"
+tags = ["alle", "ausführen?", "automation", "automatisierte", "automatisierungs-frameworks", "beginnen?", "bereit,", "beschleunigen", "browser", "browsern"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/enterprise"]
+title = "TestingBot für Unternehmen"
+description = """
+Wir helfen Unternehmen dabei, Code mit Test-Vertrauen zu versenden.
+\t\t\t
+\t\t\tTestingbot bietet unternehmensweite Sicherheitsadministrationskontrollen und leistungsstarke Berichte."""
+full_description = "Passen Sie das Betriebssystem an Da wir für jeden Test eine neue VM verwenden, können Sie das Betriebssystem vor jedem Testlauf anpassen. Liefern Sie Skripts oder Programme, die vor dem Test ausgeführt werden müssen, um jedes Betriebssystem nach Ihren Wünschen anzupassen. Wenn der Test beendet ist, werden Ihre Anpassungen zusammen mit der VM gelöscht. Sicherheit Für jeden Test, den Sie ausführen, schalten wir eine brandneue virtuelle Maschine (VM) ein, die nur für die Dauer Ihres Tests läuft. Jeder Test wird auf einer VM ausgeführt, die Firewall ist. Nur Sie können mit der virtuellen Maschine interagieren. Wenden Sie Benutzerrichtlinien an, um die Sicherheit Ihrer Teamkonten zu erhöhen. Mehr erfahren Arbeiten Sie in Echtzeit zusammen Einfaches Teilen von manuellen Live-Tests in Zusammenarbeit mit Teammitgliedern in Echtzeit, um ein Problem zu beheben. Teilen Sie automatisierte Testläufe, Videos und Screenshots. Laden Sie Teammitglieder zu Ihren Gruppenteammitgliedern ein, die dasselbe Abonnement verwenden, und können Sie Testergebnisse von anderen Teammitgliedern anzeigen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/enterprise"
+tags = ["alle", "arbeiten", "automation", "automatisierte", "automatisierungs-frameworks", "benutzerrichtlinien", "betriebssystem", "brandneue", "ci-integrationen", "cloud"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/screenshot-testing"]
+title = "Vergleichen Sie Screenshots visuell auf verschiedenen Browsern und Geräten."
+description = """
+Erkennen und beheben Sie visuelle Probleme mit Ihren Webseiten oder mobilen Apps frühzeitig. Testen Sie auf echten Browsern und physischen Mobilgeräten.        Verwenden Sie die codelosen visuellen UI-Tests von TestingBot, um Benachrichtigungen zu erhalten, wenn ein visuelles Problem auf Ihrer Website erkannt wird."""
+full_description = "Erkennen und beheben Sie visuelle Probleme mit Ihren Webseiten oder mobilen Apps frühzeitig. Testen Sie auf echten Browsern und physischen Mobilgeräten. Verwenden Sie die codelosen visuellen UI-Tests von TestingBot, um Benachrichtigungen zu erhalten, wenn ein visuelles Problem auf Ihrer Website erkannt wird. Beginnen Sie in wenigen Minuten mit dem Testen Ihrer Website auf UI-Fehler. Geben Sie einfach Ihre URL ein und wählen Sie aus, auf welchen Browsern Sie testen möchten. Legen Sie fest, wie oft der Test ausgeführt werden soll und wie Sie benachrichtigt werden möchten. Wenn eine visuelle Änderung vorgenommen wurde, erhalten Sie sofort eine Benachrichtigung mit einem Screenshot und einem Vergleichsbild, das die Änderung hervorhebt. Ersetzen Sie Testaussagen durch einen einzigen visuellen Schnappschuss. Decken Sie Bereiche ab, die mit herkömmlichen Funktionstests nicht möglich sind, und erhöhen Sie die Testabdeckung und das Vertrauen in die Qualitätssicherung. Erfassen Sie Screenshots und vergleichen Sie diese automatisch mit den Baselines. Durch die verbesserte visuelle Abdeckung stellen Teams Code mit größerer Sicherheit bereit. Sie und Ihr Team können die Ergebnisse der visuellen Tests einsehen und bestimmte visuelle Änderungen genehmigen oder ablehnen. Vergleichen Sie mit einem Schieberegler zwischen dem Basis-Screenshot und dem neuen Screenshot oder überprüfen Sie ein Diff-Bild der aufgetretenen Änderungen. Ändern Sie den Schwellenwert für die Pixelempfindlichkeit und testen Sie ihn mit verschiedenen Bildschirmauflösungen. Finden Sie visuelle Fehler im Quer-/Hochformat auf echten Android-/iOS-Geräten. Die UI-Tests von TestingBot lassen sich in Selenium, Appium, Puppeteer und Playwright integrieren. Fügen Sie einfach eine Codezeile hinzu, um automatisierte Regressionstests zu Ihren bestehenden Tests freizuschalten. TestingBot entfernt Fehlalarme, die durch Werbung, dynamische Inhalte oder andere Ursachen ausgelöst werden. Auf echten Mobilgeräten ignorieren wir die Statusleiste."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/screenshot-testing"
+tags = ["abdecken?", "alle", "angular", "anmeldung", "automated visual testing", "automation", "automatisierte", "automatisierungs-frameworks", "codeless", "codelose"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/contact/new"]
+title = "Kontaktieren Sie TestingBot"
+description = "Kontaktieren Sie uns, wenn Sie zu unserem Test-Service fragen haben."
+full_description = "Sollten Sie Unterstützung benötigen, einen Plan kaufen oder eine Frage haben, lassen Sie es uns wissen und wir werden umgehend antworten. TestingBot bietet einen Service zum automatischen oder manuellen Testen Ihrer Website auf mehreren Browsern und Betriebssystemen. Ebenso können Sie Ihre mobilen Apps auf mehreren Geräten testen und so sicherstellen, dass die App auf einer Vielzahl mobiler Endbenutzergeräte funktioniert. Sie können sich für eine 28-tägige kostenlose Testversion mit 100 kostenlosen Testminuten anmelden . Bei Fragen können Sie uns gerne über das obenstehende Formular kontaktieren. Darüber hinaus finden Sie in unserem Dokumentationsbereich ausführliche Beispiele und Tipps zur Fehlerbehebung."
+year_published = 2025
+clearnet = "https://de.testingbot.com/contact/new"
+tags = ["adresse", "alle", "aufnehmen?", "automation", "automatisierte", "automatisierungs-frameworks", "bietet", "codeless", "device", "eine"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/codeless-automation"]
+title = "Codeless Automation - Erstellen Sie Tests ohne Codierung"
+description = """
+Erstellen Sie schnell und einfach automatisierte Tests.            Zeichnen Sie Ihre Aktionen einmal auf und spielen Sie sie in über 5200 Browsern und auf Mobilgeräten ab."""
+full_description = "Erstellen Sie schnell und einfach automatisierte Tests. Zeichnen Sie Ihre Aktionen einmal auf und spielen Sie sie in über 5200 Browsern und auf Mobilgeräten ab. Verwenden Sie das offizielle Selenium IDE-Browser-Plug-In, um Ihren Testfluss einfach über Ihren eigenen Browser aufzuzeichnen. Importieren Sie den Test und führen Sie den aufgezeichneten Test in über 5200 Browser- und Gerätekombinationen parallel aus. Keine Programmierkenntnisse erforderlich. Manuelle Tester können ihre Testabläufe aufzeichnen und mühelos automatisierte Tests erstellen, ohne eine einzige Codezeile schreiben zu müssen. Führen Sie Ihren importierten Test parallel in Hunderten von Browsern, Geräten und Betriebssystemkombinationen aus. Sehen Sie sich Videos, Screenshots und Protokolle Ihres Tests an, die auf echten Browsern, iOS- und Android-Emulatoren oder physischen iOS- und Android-Mobilgeräten ausgeführt werden. Planen Sie Ihre Tests so, dass sie an bestimmten Tagen und in bestimmten Intervallen ausgeführt werden. Geben Sie ein Cron-Format an und geben Sie an, an welchen Tagen und Stunden Sie Ihren Test in unseren Browsern parallel ausführen möchten. Mit TestingBot werden Sie informiert, wenn ein Test fehlschlägt, und es werden Details dazu angezeigt, warum der Test fehlgeschlagen ist. Erhalten Sie Benachrichtigungen per E-Mail oder SMS. Planen Sie tägliche oder wöchentliche Berichte Ihrer Tests. Weitere Informationen zu den ersten Schritten finden Sie in unserer Dokumentation zu codeless testing."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/codeless-automation"
+tags = ["alerting", "alle", "android", "aufnahme und wiedergabe", "automation", "automatisierte", "automatisierungs-frameworks", "bereit", "browser", "code?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/manual-browser-testing"]
+title = "Live-Cross-Browser testet online - 5200 Browserkombinationen"
+description = "Steuern Sie jeden echten Browser in unserer Cloud direkt von Ihrem Browser aus.Erhalten Sie sofortigen Zugriff auf echte Browser und sehen Sie, wie Ihre Website auf mehreren Plattformen aussieht und sich verhält."
+full_description = "Mehrere Umgebungen und Konfigurationen Native Debugging Tools Alle Browser sind mit nativen Debugging-Tools wie FireBug und Chrome DevTools ausgestattet. Responsive Testing Passen Sie die Bildschirmauflösung im laufenden Betrieb an oder ändern Sie die Größe Ihres Browsers, um ansprechende Tests durchzuführen. Beta und Dev Führen Sie Ihre Tests gegen aktuelle Beta und Entwicklerversionen durch. +5200 Kombinationen Sofortiger Zugriff auf jeden Browser auf Mac, Linux, Windows und Mobile. Steuern Sie jeden echten Browser in unserer Cloud direkt von Ihrem Browser aus.Erhalten Sie sofortigen Zugriff auf echte Browser und sehen Sie, wie Ihre Website auf mehreren Plattformen aussieht und sich verhält. Passen Sie die Bildschirmauflösung im laufenden Betrieb an oder ändern Sie die Größe Ihres Browsers, um ansprechende Tests durchzuführen. Mit TestingBot können Sie Ihre Website auf iOS und Android testen, Screenshots machen und das Gerät drehen. Sie können Screenshots erstellen, den Bildschirm drehen und auf Debugging-Tools wie Safari Developer Tools und Chrome Devtools zugreifen, um Ihre Website auf Mobilgeräten zu debuggen. Wir bieten nur echte Browser an, die auf echten Desktop-Plattformen laufen. Das Testen in unseren Browsern ist identisch mit dem Testen in den Browsern Ihres Kunden, Ihre Testergebnisse werden immer korrekt sein. Debuggen Sie in unseren Browsern mit nativen Entwicklertools. Kopieren / Einfügen von Daten von Ihrem Computer auf den Remote-Browser ohne Plugins. Teilen Sie Ihre Live-Browsersitzung mit einem Mitarbeiter, um das Debuggen zu unterstützen. Das Teilen von Screenshots mit Ihren Teammitgliedern ist eine großartige Möglichkeit, Fehler zu beheben. Sie können verschiedene Auflösungen auswählen und Screenshots für jede gewünschte Auflösung, Plattform und Browser erstellen. Während des manuellen Tests werden ein Video und verschiedene Protokolle aufgezeichnet, die Sie herunterladen und freigeben können. Mit unserem sicheren Tunnel können Sie Ihre Staging-Website in allen unseren Browsern schnell und einfach testen."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/manual-browser-testing"
+tags = ["+5200", "alle", "anmeldung", "apps", "automation", "automatisierte", "automatisierungs-frameworks", "beta", "browser", "codeless"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/performance"]
+title = "Leistungstests mit Selenium WebDriver"
+description = """
+Messen Sie die Leistung Ihrer Websites und mobilen Apps.                Erhalten Sie einen Einblick in die Leistung Ihrer Websites und Apps."""
+full_description = "CPU-, Speicher- und Netzwerk-Einblicke Holen Sie sich CPU-, Speicher- und Netzwerkinformationen von jedem Test, den Sie mit TestingBot ausführen. TestingBot zeichnet alle diese Metriken während Ihres Tests auf. Sobald Ihr Test abgeschlossen ist, können Sie diese Metriken im TestingBot-Dashboard anzeigen. Messen Sie die Leistung Ihrer Websites und mobilen Apps. Erhalten Sie einen Einblick in die Leistung Ihrer Websites und Apps. Holen Sie sich CPU-, Speicher- und Netzwerkinformationen von jedem Test, den Sie mit TestingBot ausführen. TestingBot zeichnet alle diese Metriken während Ihres Tests auf. Sobald Ihr Test abgeschlossen ist, können Sie diese Metriken im TestingBot-Dashboard anzeigen. Jeder Test hat Zugriff auf Leistungsmessdaten mit der erweiterten Debugging-Funktion von TestingBot. Überwachen Sie Metriken wie firstPaint, domContentLoaded, pageSize, ... Konfigurieren Sie Ihre Tests so, dass sie bestehen oder nicht bestehen, wenn eine Metrik einen Grenzwert überschreitet oder unterschreitet von dir gesetzt. Überprüfen Sie die Netzwerkdaten: Rufen Sie die Anforderungsheader und -antworten vom Browser ab. Falsche Netzwerkantworten, Netzwerkgeschwindigkeit drosseln und mehr."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/performance"
+tags = ["alle", "automation", "automatisierte", "automatisierungs-frameworks", "beginnen?", "codeless", "cpu-,", "device", "devtools-integration", "diesen"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/mobile/realdevicetesting"]
+title = "Echtes Testen mobiler Geräte mit Selenium und Appium."
+description = """
+TestingBot bietet echte Geräte in einem sicheren Rechenzentrum. Diese Android- und iOS-Geräte sind für die Ausführung automatisierter und manueller Tests konfiguriert.
+\t    \tRichten Sie Ihre Tests einfach auf unser Selenium Grid und führen Sie Ihre mobilen Web- und App-Tests auf den von uns bereitgestellten Geräten durch."""
+full_description = "TestingBot bietet echte Geräte in einem sicheren Rechenzentrum. Diese Android- und iOS-Geräte sind für die Ausführung automatisierter und manueller Tests konfiguriert. Richten Sie Ihre Tests einfach auf unser Selenium Grid und führen Sie Ihre mobilen Web- und App-Tests auf den von uns bereitgestellten Geräten durch. Führen Sie automatisierte Tests für Ihre nativen iOS- und Android-Anwendungen durch. Laden Sie einfach Ihre .ipa oder .apk Datei in unsere TestingBot Storage hoch, und Sie können Verwenden Sie sofort Frameworks wie Appium, um Tests auszuführen. TestingBot richtet das Gerät zu Beginn eines Tests automatisch für Sie ein. Sie erhalten eine Bildschirmaufnahme, Screenshots, Protokolle und andere Metadaten Ihres Tests. Wenn Ihr Test beendet ist, wird das Gerät automatisch und gründlich gereinigt, bevor der nächste Test beginnt. Mit unserem Private Device Cloud-Angebot kümmern wir uns um die Einrichtung, Konfiguration und Wartung von Geräten, die speziell für Sie entwickelt wurden. Im Gegensatz zu unserer Public Device Cloud werden diese Geräte nur von Ihnen und Ihrem Team verwendet. Wählen Sie Ihre eigenen Geräte aus und wir stellen Ihnen diese Geräte in unserem Rechenzentrum zur Verfügung. Weiterlesen Wir haben eine Sammlung der beliebtesten Geräte, darunter einige der neuesten iPhone- und Android-Geräte. Testen Sie auf Geräten, die wichtig sind. Unser Gerätemix macht über 80% der weltweiten Gerätenutzung aus. Find out how to perform localisation testing with mobile apps. Change your language or locale with Appium, XCUITest and Espresso."
+year_published = 2025
+clearnet = "https://de.testingbot.com/mobile/realdevicetesting"
+tags = ["alle", "anmeldung", "appium", "apps", "automation", "automatisierte", "automatisiertes", "automatisierungs-frameworks", "cloud", "codeless"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/automation/xcuitest"]
+title = "iOS XCUITest Cloud Automation"
+description = """
+Beschleunigen Sie Ihre XCUITesting-Fähigkeiten mit einem Remote-Raster für iOS-Geräte.        Laden Sie Ihre native iOS-App (in Swift oder Objective-C) hoch und führen Sie XCUITests auf Hunderten von iPhone- und iPad-Geräten durch."""
+full_description = "Bereiten Sie Ihre Anwendung und Tests vor Erstellen Sie eine .ipa-Datei mit Ihrer nativen iOS-App und eine .zip-Datei mit Ihren XCUI-Tests. Mit XCode, Swift oder Objective-C, können Sie beide Dateien erstellen. App und Tests hochladen Laden Sie Ihre mobile Anwendung (im ipa-Format) und Tests (.zip-Dateien) über die TestingBot REST API hoch. Mehr erfahren XCUI-Tests ausführen Starten Sie die Tests durch einen API-Aufruf. Die Testergebnisse werden im TestingBot-Mitgliederbereich angezeigt, zusammen mit einem Video, Protokollen, Viewport-Screenshots und anderen generierten Daten."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/automation/xcuitest"
+tags = ["alle", "anderen", "anwendung", "apps", "ausführen", "ausführung", "automate", "automation", "automatisierte", "automatisierungs-frameworks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/manual-mobile-testing"]
+title = "Testen Sie Ihre iOS- und Android-Apps auf echten Mobilgeräten."
+description = "Steuern Sie ein echtes Mobilgerät in unserer Cloud manuell und testen Sie Ihre mobile App. Laden Sie Ihre iOS- oder Android-App hoch und testen Sieauf einem echten Gerät, direkt über Ihren eigenen Browser."
+full_description = "Veröffentlichte Apps und Entwickler-Builds testen Verwenden Sie unsere Real Mobile Devices, um Ihre App aus dem Apple App Store oder Google Play Store herunterzuladen und zu testen. Oder laden Sie ein .ipa oder .apk Build Ihrer App hoch und testen Sie es auf einem echten iPhone oder Android-Telefon oder Tablet. Steuern Sie ein echtes Mobilgerät in unserer Cloud manuell und testen Sie Ihre mobile App. Laden Sie Ihre iOS- oder Android-App hoch und testen Sieauf einem echten Gerät, direkt über Ihren eigenen Browser. Verwenden Sie unsere Real Mobile Devices, um Ihre App aus dem Apple App Store oder Google Play Store herunterzuladen und zu testen. Oder laden Sie ein .ipa oder .apk Build Ihrer App hoch und testen Sie es auf einem echten iPhone oder Android-Telefon oder Tablet. Führen Sie manuelle Tests auf Geräten in unserer Public Cloud durch (Geräte werden mit anderen Kunden geteilt), oder wählen Sie Ihre eigenen reservierten Geräte in unserer Private Cloud aus. Testen Sie auf iPhones, iPads, Samsung- und Nexus-Handys sowie auf mehreren Versionen von iOS und Android. Dies sind echte Geräte, die ohne Änderungen ausgeführt werden. TestingBot verwendet keine Geräte mit Jailbreak. Steuern Sie das Gerät, das in unserem Rechenzentrum ausgeführt wird, direkt über Ihren eigenen Browser. Streichen oder tippen Sie auf. Öffnen Sie native Anwendungen, ändern Sie die Bildschirmausrichtung oder das Gebietsschema des Geräts. Finden Sie Locators, die Sie in Ihren automatisierten Tests verwenden können. TestingBot hebt den Bereich in Ihrem Layout hervor, während Sie die verschiedenen Elemente in der Layouthierarchie durchgehen. Lokalisieren Sie ganz einfach XPath-, XCUITest- und Espresso-Locators, die Sie dann für automatisierte Tests verwenden können. Hast du einen Fehler in deiner App gefunden? Sie können einen Screenshot des Geräts machen, eine Bildschirmaufnahme freigeben oder sofort mit dem Debuggen beginnen. TestingBot bietet Live-Protokolle des Geräts. Zeigen Sie Stacktraces und Ausnahmemeldungen während des Testens live an."
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/manual-mobile-testing"
+tags = ["alle", "anmeldung", "apps", "automation", "automatisierte", "automatisierungs-frameworks", "beheben", "codeless", "device", "echte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/features/smart-tv-testing"]
+title = "OTT-Testautomatisierung mit Appium für Smart TVs: Apple TV & Android TV"
+description = "OTT-Testautomatisierung auf Wohnzimmergeräten wie Apple TV, Amazon Fire TV und Chromecast mit TestingBot. Manuelle und automatisierte plattformübergreifende Tests auf echten Apple TV- (tvOS) und Android TV-Geräten."
+full_description = "Automatisiertes Testen für Smart-TV-Apps Führen Sie Appium-Tests für TV-Apps durch, die auf Apple TV 4K, Chromecast und mehr laufen. Erhalten Sie Zugriff auf rohes Video und Audio, das vom Smart-TV-Gerät generiert wurde. Testen Sie DRM-geschützte Inhalte, indem Sie über manuelle oder automatisierte Tests auf ein Gerät zugreifen. Automatisiertes Testen mit Appium Laden Sie Ihre Smart-TV-App hoch und führen Sie automatisierte Tests mit Appium auf dem Remote-Gerät durch. Stellen Sie eine Verbindung zu einem Remote-TV-Gerät her Greifen Sie über Ihren eigenen Browser auf vom Gerät generierte Live-Videos und -Audios zu und steuern Sie die Fernbedienung, als ob sie in Ihrer Hand wäre. Geräteabdeckung Testen Sie auf verschiedenen Geräten wie Apple TV 4K, Chromecast und mehr. Treten Sie der Warteliste bei"
+year_published = 2025
+clearnet = "https://de.testingbot.com/features/smart-tv-testing"
+tags = ["alle", "androidtv", "appium", "appletv", "automation", "automatisierte", "automatisiertes", "automatisierungs-frameworks", "beim", "bietet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]
+
+["https://de.testingbot.com/test-on-galaxy"]
+title = "Test auf Samsung Galaxy Geräten (S8 - S23) & Tabs"
+description = "Beginnen Sie mit dem Testen und Interagieren mit echten Android-Geräten, einschließlich Samsung Galaxy S23, Galaxy S21, Galaxy S20, Galaxy S10, Galaxy S10, S8, Galaxy Tabs und mehr.Melden Sie sich an und beginnen Sie kostenlos mit dem Testen!"
+full_description = "Auf Galaxy-Geräten online testen Große Auswahl an Samsung Galaxy-Geräten Testen Sie Ihre mobilen Apps und Websites auf physischen Samsung Galaxy-Geräten. Wählen Sie aus einer Reihe von Android Galaxy-Versionen, einschließlich Galaxy S21. Physische Android-Geräte-Cloud Keine Notwendigkeit, ein Gerätelabor aufzubauen und zu unterhalten. Erhalten Sie sofortigen Zugriff auf ein physisches Galaxy-Gerät für manuelle und automatisierte Tests. Sicher und privat TestingBot bietet physische Galaxy-Geräte ohne jegliche Modifikation. Echtzeit-Debugging Debuggen Sie Ihre Websites und mobilen Apps. Greifen Sie auf Absturzberichte und Protokolle zu, um Fehler sofort zu beheben. Tippen, Wischen, Kneifen und mehr Interagieren Sie mit einem physischen Galaxy-Gerät. Tippen, wischen, kneifen und führen Sie andere Gesten aus, genau so, als würden Sie es in der Hand halten. Testen Sie verschiedene Netzwerkgeschwindigkeiten Führen Sie Android-Tests mit unterschiedlichen Netzwerkgeschwindigkeiten durch: Wählen Sie zwischen WiFi, 5G, 4G, Edge und mehr. Automatisierte Android-Tests mit Appium Verwenden Sie Appium, um sich mit unserem Grid physischer Samsung Galaxy-Geräte zu verbinden und automatisierte mobile Tests mit Ihrer Website oder mobilen App durchzuführen. Paralleles Testen Führen Sie mehrere Appium-Tests gleichzeitig aus und verkürzen Sie so Ihre gesamte Appium-Ausführungszeit. Schreiben Sie Ihre Tests in einer beliebigen Sprache Da Appium die WebDriver-API verwendet, können Sie Ihre Tests in jeder Sprache schreiben und auf TestingBot ausführen. Zuverlässiger Dienst Testen Sie auf einer zuverlässigen Plattform, ohne Testflockigkeit. Versenden Sie Ihre Website und mobile App mit Zuversicht."
+year_published = 2025
+clearnet = "https://de.testingbot.com/test-on-galaxy"
+tags = ["alle", "android", "android-geräte-cloud", "android-test", "android-tests", "anmeldung", "appium", "auswahl", "automation", "automatisierte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudsecurityalliance.org", "es.testingbot.com", "fr.testingbot.com", "ja.testingbot.com", "join.slack.com", "linkedin.com", "status.testingbot.com", "testingbot.com", "twitter.com", "zh.testingbot.com"]

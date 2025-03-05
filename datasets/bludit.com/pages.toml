@@ -5,8 +5,19 @@ full_description = "Bludit speichert die Inhalte in Dateien des Formats JSON. Du
 author = "Diego Najar"
 year_published = 2025
 clearnet = "https://www.bludit.com/de"
-category = "SitesList"
 tags = ["blog", "bludit", "dsgvo", "flat-file", "markdown", "plugins", "themes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
+
+["https://www.bludit.com/ja"]
+title = "Bludit - フラットファイルCMS"
+description = "Bluditは、あなたのWebサイトやブログが秒速で構築できるWebアプリケーションです。そして、完全に自由でオープンソースです。Markdownサポート。"
+full_description = "Bluditは、コンテンツをJSON形式で管理します。データベースのインストールや設定をする必要はありません。 Bluditのサイトをを美しく、クールなテーマでカスタマイズしましょう。テーマは、公式サイトからダウンロードできます。 素晴らしいプラグインでBluditに機能を追加しましょう。プラグインは、公式サイトからダウンロードできます。 Bluditには、すべての検索エンジンとSNSでサイトランキングを上げるためのSEOツールが含まれています。 Bluditのコンテンツは、MarkdownとHTMLをサポートしています。また、MarkdownエディタとWYSIWYGエディタも提供しています。 Bluditは、ユーザーのセキュリティとプライバシー保護にも配慮しています。Bluditはユーザーを追跡しませんし、外部ライブラリやフレームワーク、その他リソースも使用していません。 必要要件やインストールガイド、How Toなどについては、ドキュメントをお読みください。 サポートが必要ですか? フォーラムやチャット、Github Issueから解決しましょう。"
+author = "Diego Najar"
+year_published = 2025
+clearnet = "https://www.bludit.com/ja"
+tags = ["bludit", "gdpr準拠", "markdownサポート", "seoフレンドリー", "webサイト", "テーマ", "フラットファイル", "ブログ", "プラグイン"]
 language = "en"
 internal-references = ["none"]
 external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
@@ -18,8 +29,19 @@ full_description = "Bludit использует файлы в формате JSO
 author = "Diego Najar"
 year_published = 2025
 clearnet = "https://www.bludit.com/ru"
-category = "SitesList"
 tags = ["bludit", "gdpr", "markdown", "блог", "вебсайт", "дружелюбна", "на", "основана", "плагины", "поддержка"]
+language = "en"
+internal-references = ["none"]
+external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
+
+["https://bludit.com"]
+title = "Bludit - Flat-File CMS"
+description = "Bludit is a web application to build your own website or blog in seconds, it's completely free and open source. Markdown support."
+full_description = "Bludit uses files in JSON format to store the content, you don't need to install or configure a database. Customize your Bludit powered site with beautiful and cool themes. You can download themes from the official site. Bludit incorporates all the SEO tools to improve your ranking in all the search engines and social networks. Bludit supports Markdown and HTML code for the content, also provide Markdown Editor and WYSIWYG Editor. Bludit takes care of the security and privacy of the users. Bludit doesn't track or uses external libraries, frameworks and other resources."
+author = "Diego Najar"
+year_published = 2025
+clearnet = "https://bludit.com"
+tags = ["blog", "bludit", "compliant", "file", "flat", "friendly", "gdpr", "markdown", "plugins", "support"]
 language = "en"
 internal-references = ["none"]
 external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
@@ -31,7 +53,6 @@ full_description = "Bludit utiliza archivos en formato JSON para almacenar el co
 author = "Diego Najar"
 year_published = 2025
 clearnet = "https://www.bludit.com/es"
-category = "SitesList"
 tags = ["amigable", "blog", "bludit", "compatible", "file", "flat", "gdpr", "markdown", "plugins", "sitio"]
 language = "en"
 internal-references = ["none"]
@@ -44,34 +65,7 @@ full_description = "Bludit uses files in JSON format to store the content, you d
 author = "Diego Najar"
 year_published = 2025
 clearnet = "https://www.bludit.com"
-category = "SitesList"
 tags = ["blog", "bludit", "compliant", "file", "flat", "friendly", "gdpr", "markdown", "plugins", "support"]
-language = "en"
-internal-references = ["none"]
-external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
-
-["https://bludit.com"]
-title = "Bludit - Flat-File CMS"
-description = "Bludit is a web application to build your own website or blog in seconds, it's completely free and open source. Markdown support."
-full_description = "Bludit uses files in JSON format to store the content, you don't need to install or configure a database. Customize your Bludit powered site with beautiful and cool themes. You can download themes from the official site. Bludit incorporates all the SEO tools to improve your ranking in all the search engines and social networks. Bludit supports Markdown and HTML code for the content, also provide Markdown Editor and WYSIWYG Editor. Bludit takes care of the security and privacy of the users. Bludit doesn't track or uses external libraries, frameworks and other resources."
-author = "Diego Najar"
-year_published = 2025
-clearnet = "https://bludit.com"
-category = "SitesList"
-tags = ["blog", "bludit", "compliant", "file", "flat", "friendly", "gdpr", "markdown", "plugins", "support"]
-language = "en"
-internal-references = ["none"]
-external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]
-
-["https://www.bludit.com/ja"]
-title = "Bludit - フラットファイルCMS"
-description = "Bluditは、あなたのWebサイトやブログが秒速で構築できるWebアプリケーションです。そして、完全に自由でオープンソースです。Markdownサポート。"
-full_description = "Bluditは、コンテンツをJSON形式で管理します。データベースのインストールや設定をする必要はありません。 Bluditのサイトをを美しく、クールなテーマでカスタマイズしましょう。テーマは、公式サイトからダウンロードできます。 素晴らしいプラグインでBluditに機能を追加しましょう。プラグインは、公式サイトからダウンロードできます。 Bluditには、すべての検索エンジンとSNSでサイトランキングを上げるためのSEOツールが含まれています。 Bluditのコンテンツは、MarkdownとHTMLをサポートしています。また、MarkdownエディタとWYSIWYGエディタも提供しています。 Bluditは、ユーザーのセキュリティとプライバシー保護にも配慮しています。Bluditはユーザーを追跡しませんし、外部ライブラリやフレームワーク、その他リソースも使用していません。 必要要件やインストールガイド、How Toなどについては、ドキュメントをお読みください。 サポートが必要ですか? フォーラムやチャット、Github Issueから解決しましょう。"
-author = "Diego Najar"
-year_published = 2025
-clearnet = "https://www.bludit.com/ja"
-category = "SitesList"
-tags = ["bludit", "gdpr準拠", "markdownサポート", "seoフレンドリー", "webサイト", "テーマ", "フラットファイル", "ブログ", "プラグイン"]
 language = "en"
 internal-references = ["none"]
 external-references = ["demo.bludit.com", "discord.gg", "docs.bludit.com", "facebook.com", "forum.bludit.org", "github.com", "plugins.bludit.com", "pro.bludit.com", "themes.bludit.com", "twitter.com"]

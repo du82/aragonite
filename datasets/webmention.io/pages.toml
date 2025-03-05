@@ -1,0 +1,9 @@
+["https://webmention.io"]
+title = "Webmention.io"
+full_description = 'Once you have signed up, add the following tags to your HTML, replacing "username" with the username you got when you signed up: Note that the "username" here will most likely be your domain. For instance, if your domain is https://aaronparecki.com/, then your username will be aaronparecki.com. To retrieve the data manually (via Fetch API, jQuery, raw XHR, etc.), you can make a request like the following. Webmention.io sets Access-Control-Allow-Origin: * in response headers, so you can query from a browser as well as from a server. You can include some simple markup and a Javascript file to automatically display the mention counter for one or more URLs on a page. First, choose an element that will be used to display the counter. Add the attribute data-webmention-count to it, as well as data-url="" with the full URL of the page you would like to count. This might look something like the following: You can also use the API to show all mentions of a URL. As with the count request, this will work from a browser or you can use the API directly from a server.'
+year_published = 2025
+clearnet = "https://webmention.io"
+tags = ["automatically", "counter", "counts", "data", "display", "displaying", "docs", "getting", "manually", "mention"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aaronparecki.com", "github.com", "indieweb.org"]

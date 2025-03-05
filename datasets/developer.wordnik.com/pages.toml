@@ -1,0 +1,129 @@
+["https://developer.wordnik.com/pricing"]
+title = "Wordnik Developer Pricing"
+description = "API for Wordnik Dictionary: Biggest English Dictionary Online with Thesaurus. Definitions, pronunciations, synonyms, images, lists and more!"
+full_description = "We offer paid API plans for developers who need more calls or more data than our free basic plan offers."
+year_published = 2025
+clearnet = "https://developer.wordnik.com/pricing"
+tags = ["$149", "pricing", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "clojars.org", "curl.haxx.se", "eepurl.com", "epolite.net", "games.wordnik.com", "git.sr.ht", "github.com", "glitch.com", "jeremybrooks.net", "joshrotenberg.com", "npmjs.com", "pub.dartlang.org", "rubydoc.info", "rubygems.org", "tess.oconnor.cx", "wordnik.com", "wordnik.threadless.com"]
+
+["https://developer.wordnik.com/gettingstarted"]
+title = "Getting Started With The Wordnik API"
+description = "The Wordnik API: All the words"
+full_description = '''Check out these helpful tips for getting started with the Wordnik API. Don't find what you need? Email us at apiteam@wordnik.com for more help! Before you can sign up for a Wordnik API key, you will need a Wordnik username (which you can get here). Once you have validated your email address, log in and sign up for an API key here. When you sign up for your key, please give us enough information to understand your use case. If you will be using the Wordnik API in an existing app or on a website, please give us an app store link or a web link. If you donate US$5 when you sign up, you will get your key within 24 hours. Otherwise, it may take up to seven days to receive your key. Please note: we are not able to send keys to mailinator addresses or addresses at other disposable-email-address domains. Wordnik API key plan limits are calculated per-minute and per hour. You can see your plan limits and your remaining calls per hour and minute in the response headers from your API call. The headers are: x-ratelimit-remaining-hour x-ratelimit-remaining-minute x-ratelimit-limit-minute x-ratelimit-limit-hour Please note: the remaining limits may not be consistent from call to call as we reconcile limits at intervals. You will never receive a lower limit than your plan allows. Wordnik uses the OpenAPI Specification to describe our API. You can explore the available calls on our docs page, here. In your language: Check out our libraries page to get help using Wordnik in the programming language of your choice. All API responses that require attribution will include an "attributionText" property in the response, as in this definition response for the word 'fragor': If your application or site uses Wordnik data in any way, you must link to Wordnik and cite Wordnik as your source. Check out our complete attribution requirements here. If you are an employer using the Wordnik API for coding tests or job applications, we'd appreciate a heads-up! This helps us offer appropriate support. You can email us at apiteam@wordnik.com with details.'''
+year_published = 2025
+clearnet = "https://developer.wordnik.com/gettingstarted"
+tags = ["browser:", "getting", "language:", "note:", "please", "started", "terminal:", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "buy.stripe.com", "curl.haxx.se", "eepurl.com", "en.wikipedia.org", "games.wordnik.com", "github.com", "glitch.com", "wordnik.com", "wordnik.threadless.com", "wordplays.com"]
+
+["https://developer.wordnik.com"]
+title = "Wordnik for Developers"
+description = "Wordnik provides information about millions of words through our developer-friendly RESTful API with a generous free tier."
+full_description = "Request definitions, example sentences, spelling suggestions, synonyms and antonyms (and other related words), word phrases, pronunciations, random words, words of the day, and much more. Sign up today!"
+year_published = 2025
+clearnet = "https://developer.wordnik.com"
+tags = ["api!", "get:", "welcome", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "github.com", "wordnik.com"]
+
+["https://developer.wordnik.com/terms"]
+title = "The Wordnik API Terms of Service"
+description = "The Wordnik API: All the words"
+full_description = "The section names are on the left, the legally-binding language is in the middle; the human-friendly language is on the right. Questions? Please email us at apiteam@wordnik.com. By accessing and using the Wordnik API (the “API TOS”) you agree that you are authorized to accept the terms set forth below (the “API Terms of Use” or “API TOS”) on behalf of yourself and your company (“You”), and You explicitly agree to comply with and be bound by the API Terms of Use. Wordnik reserves the right, at its sole discretion, to change, modify, update, add, or remove portions of the API Terms of Use at any time, with or without notice to You. Please review these terms and conditions periodically and check the version date for changes. Your continued use of the API TOS after the posting of any changes to the API Terms of Service Agreement will signify Your acceptance of those changes. If you use our API, you agree that these rules apply to you. We can change these rules when necessary, and if you continue using the API after changes, the new rules apply to you. The Wordnik API is a service that allows pre-approved Wordnik licensees to use the Wordnik APIs to retrieve certain data regarding words including without limitation looking up the meaning of words (“Wordnik Data”) to enable You to provide related services on Your website. Wordnik reserves the right to modify or discontinue Your access to the Wordnik APIs or Wordnik Data, or a portion or feature thereof, or the offering of any information, good, content, product or service with or without notice to You. Wordnik shall not be liable to You or any third party should Wordnik exercise its right to modify or discontinue Your access to the Wordnik APIs or Wordnik Data or any part of it. This is where we describe our service, which lets you get data about words. We can discontinue our service or change it without liability. By accessing and using the Wordnik API (the “API TOS”) you agree that you are authorized to accept the terms set forth below (the “API Terms of Use” or “API TOS”) on behalf of yourself and your company (“You”), and You explicitly agree to comply with and be bound by the API Terms of Use. Wordnik reserves the right, at its sole discretion, to change, modify, update, add, or remove portions of the API Terms of Use at any time, with or without notice to You. Please review these terms and conditions periodically and check the version date for changes. Your continued use of the API TOS after the posting of any changes to the API Terms of Service Agreement will signify Your acceptance of those changes."
+year_published = 2025
+clearnet = "https://developer.wordnik.com/terms"
+tags = ["agreement", "service", "terms", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "appsonline.gr", "blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "curl.haxx.se", "epolite.net", "github.com", "joshrotenberg.com", "m.me", "panabee.com", "phraseup.com", "pub.dartlang.org", "specgram.com", "stackoverflow.com", "status.wordnik.com", "tess.oconnor.cx", "wordnik.com", "wordogram.com", "wordswithfriendscheat.io"]
+
+["https://developer.wordnik.com/gameset"]
+title = "Wordnik For Game Developers"
+description = "Wordnik's downloadable dataset and dictionary for word game developers"
+full_description = "We also offer a complete, downloadable, licensable dataset specifically created for word-game developers. Annual updates of new words and corrections are available for a small fee. Join our API Announcements email list to be notified when an update is available!"
+year_published = 2025
+clearnet = "https://developer.wordnik.com/gameset"
+tags = ["dataset", "developer’s", "features", "game", "pricing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "buy.stripe.com", "eepurl.com", "en.wikipedia.org", "games.wordnik.com", "github.com", "wordnik.com", "wordnik.threadless.com", "wordplays.com"]
+
+["https://developer.wordnik.com/docs"]
+title = "Wordnik Developer"
+description = "The Wordnik API: All the words"
+year_published = 2025
+clearnet = "https://developer.wordnik.com/docs"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "github.com", "wordnik.com"]
+
+["https://developer.wordnik.com/faq"]
+title = "Wordnik API FAQ"
+description = "The Wordnik API: All the words"
+full_description = '''To get a Wordnik API key, first go sign up for a Wordnik.com account, and validate your email address. Then sign up here. If you already have a paid plan, you can change your Wordnik API plan from your API dashboard. To start a paid plan, visit the Pricing page. Email us at apiteam@wordnik.com with your Wordnik username, and we'll check it out. Remember that we reserve the right to turn off keys that are exceeding our limits, that don't obey our attribution requirements, that have been accidentally or deliberately made public, or that show other signs of abuse, at our sole discretion. Absolutely. We want your product or service to be successful! We do ask that if you have a commercial app (beyond the proof-of-concept stage) that you upgrade to a paid API plan, so that we can continue to provide our API service. If you aren't sure whether or not your app qualifies, ask yourself: "Is my app or service a clone of the Wordnik API?" If not, you're probably good. Still not sure? Please email us at apiteam@wordnik.com. Users with a paid API plan can temporarily cache display text (not the raw data sent from our API) for offline use. We do not allow caching of any data with the Basic Plan. We also offer a downloadable dataset of nearly 200,000 words and definitions optimized for use in word games. You can find more information about that dataset here. Absolutely. Please send screenshots to apiteam@wordnik.com. Unfortunately, we are unable to install applications. Unfortunately we are not able to amend our terms of service for users on the Basic, Hobby, or Pro plans. Depending on the adjustment, some separate agreements may be possible for users with Enterprise plans. If you have significantly different requirements, please email us at apiteam@wordnik.com! We're happy to chat with you about raising your limits! Please email us at apiteam@wordnik.com and include a link to your app (or at least a description) and any other information you think we might need. Now that Wordnik is a non-profit we have to support our mission—to find and share data about every single word of English!—by charging for our API services.'''
+year_published = 2025
+clearnet = "https://developer.wordnik.com/faq"
+tags = ["wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "buy.stripe.com", "github.com", "wordnik.com", "wordnik.threadless.com"]
+
+["https://developer.wordnik.com/games-license"]
+title = "Wordnik Games Dataset License"
+description = "The Wordnik API: All the words"
+full_description = "The section names are on the left, the legally-binding language is in the middle; the human-friendly language is on the right. Questions? Please email us at apiteam@wordnik.com. The Wordnik Games Dataset (Wordnik Gameset) is a downloadable, offline dataset containing a selection of English words and related data (including, but not limited to, parts-of-speech, labels, and definitions). You are granted a perpetual, non-sublicensable right to use the Wordnik Gameset and use the Wordnik Data for your commercial and informational use in your game(s) or application(s) only in accordance with the terms of this Agreement, and any terms of service, documentation and specifications, or privacy policies provided to you by Wordnik from time to time. Wordnik may monitor Your use of the Wordnik Gameset to ensure quality, improve Wordnik products and services, and verify your compliance with these terms. You shall not interfere with such monitoring or otherwise obscure from Wordnik. The license granted to You in this Section 1 is subject to the condition that You adhere to the Wordnik Attribution Requirements below and subject to change or modification by Wordnik in its sole discretion if Wordnik Data is served in your games(s) or application(s). You can use this dataset FOREVER, as long as you follow these terms, and any clarifications we send from time to time. We may check on your use to make sure you're following our rules, and if you try to stop us, that itself breaks the rules. The most important parts here? You must not sell the dataset to anyone else, and you have to follow our attribution requirements for the data. For the purposes of this agreement, a single game is taken to mean one discrete, unique title. A single game may have multiple releases, but the title, SKU, or other identifying information will not change. E.g., a game called ‘Excellent Word Game’ in three updates (v1, v2, v3) is the same game; however a brand extension, rebranding, or re-titling (e.g., ‘Excellent Word Game: Baseball Edition’) is not considered the same game for the purposes of this license."
+year_published = 2025
+clearnet = "https://developer.wordnik.com/games-license"
+tags = ["dataset", "games", "license", "really", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "appsonline.gr", "blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "curl.haxx.se", "epolite.net", "github.com", "joshrotenberg.com", "m.me", "panabee.com", "phraseup.com", "pub.dartlang.org", "specgram.com", "stackoverflow.com", "status.wordnik.com", "tess.oconnor.cx", "wordnik.com", "wordogram.com", "wordswithfriendscheat.io"]
+
+["https://developer.wordnik.com/changelog"]
+title = "Wordnik API Changelog"
+description = "Wordnik provides information about millions of words through our developer-friendly RESTful API with a generous free tier."
+year_published = 2025
+clearnet = "https://developer.wordnik.com/changelog"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "github.com", "wordnik.com"]
+
+["https://developer.wordnik.com/libraries"]
+title = "Wordnik Developer Libraries"
+description = "The Wordnik API: All the words"
+full_description = "Knicker is a Java library for the Wordnik API. It is designed to be very simple to use—just get an API key and start calling methods. It does not require any additional libraries, and is freely available under the GPL. By Jeremy Brooks. An idiomatic Clojure library for accessing the Wordnik API, written by Josh Rotenberg, lover of functional programming and tom yum goong. A Swagger-generated Objective-C library for accessing the Wordnik API. With full source code and tests. An iOS UI toolkit for Wordnik. Provies iOS-specific UI functionality on top of the generic (iOS and MacOS) Objective-C Data SDK. Downloaded as part of the Objective-C SDK DMG. This library is not compatible with armV7 architecture."
+year_published = 2025
+clearnet = "https://developer.wordnik.com/libraries"
+tags = ["architecture.", "armv7", "compatible", "libraries", "library", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "clojars.org", "curl.haxx.se", "eepurl.com", "epolite.net", "games.wordnik.com", "git.sr.ht", "github.com", "glitch.com", "jeremybrooks.net", "joshrotenberg.com", "npmjs.com", "pub.dartlang.org", "rubydoc.info", "rubygems.org", "tess.oconnor.cx", "wordnik.com", "wordnik.threadless.com"]
+
+["https://developer.wordnik.com/showcase"]
+title = "Wordnik Showcase"
+description = "The Wordnik API: All the words"
+full_description = "If your app uses words, you can use Wordnik's APIs to enhance and extend it. Check out the games, mobile dictionaries, and editing tools that have been created so far—and if you build something cool, please email us at apiteam@wordnik.com so we can add it to the showcase! Improve your vocabulary skills by challenging yourself and others with different activities and word games. Google Play An educative game with words, giving the opportunity to sharpen and enrich your English vocabulary. App Store Tilt your phone or tablet to roll the white ball to collide with the ball next to the correctly spelled word.Google Play It's a great way to learn the best play you could have made or help you figure out which play to go with.Google Play A great way to learn the best play you could have made or help you figure out which play to go with. Google Play Helps you hone your Words With Friends or Scrabble skills playing against the full ENABLE word list. Google Play The most efficient way to create and memorize new words, idioms, terms or any other types of information! App Store Add the definition for a random word—and other things—to new activities in your Strava feed. Site Improve your Verbal score for TOEFL, ASVAB, SAT, ACT, GRE, GMAT, LSAT, MCAT, PCAT, DAT, VCAT, MAT.App Store Sometimes finding rhyming words for a song or poem is not as easy like flying is for birds.Google Play Word Learner helps you build and retain a strong vocabulary. Great for GRE, CAT, CMAT, XAT, SAT, GMAT, etc.Google Play Lets you solve crosswords, anagrams, Scrabble and Wordscraper type games, such as Words with Friends, Wordfeud etc. Google Play We take your boring, old, and hard-to-remember color codes, and find similar colors which when converted to English using ‘l337’-speak, yield interesting words!Site"
+year_published = 2025
+clearnet = "https://developer.wordnik.com/showcase"
+tags = ["showcase", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "appsonline.gr", "blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "curl.haxx.se", "epolite.net", "github.com", "hexna.me", "joshrotenberg.com", "m.me", "panabee.com", "phraseup.com", "pub.dartlang.org", "smartlittlegames.com", "specgram.com", "tess.oconnor.cx", "wordnik.com", "wordogram.com", "wordswithfriendscheat.io"]
+
+["https://developer.wordnik.com/support"]
+title = "Wordnik Support"
+description = "The Wordnik API: All the words"
+full_description = "If you have contributed an answer on StackOverflow or in our Google Group, we may reach out and offer you Wordnik stickers as a thank-you. :) If you don't hear from us, please email us at apiteam@wordnik.com and let us know! Unfortunately, as a small nonprofit, we are unable to pay bug bounties. We welcome all bug reports (please email us at apiteam@wordnik.com), and we are happy to send reporters Wordnik stickers!"
+year_published = 2025
+clearnet = "https://developer.wordnik.com/support"
+tags = ["support", "wordnik"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "appsonline.gr", "blog.wordnik.com", "boodoo.biz", "buy.stripe.com", "curl.haxx.se", "epolite.net", "github.com", "joshrotenberg.com", "m.me", "panabee.com", "phraseup.com", "pub.dartlang.org", "specgram.com", "stackoverflow.com", "status.wordnik.com", "tess.oconnor.cx", "wordnik.com", "wordogram.com", "wordswithfriendscheat.io"]

@@ -1,0 +1,60 @@
+["https://coveralls.io/continuous-integration"]
+title = "Continuous Integration Services | Coveralls - Test Coverage History & Statistics"
+description = "The leading provider of test coverage analytics. Measure, track and drive improvement in code coverage across your engineering organization. Works with all CI services. Always free for open source."
+full_description = "Continuous Integration (CI) testing is a software development practice where code changes are immediately tested with the entire codebase every time that new code is committed and merged into the source code. The goal of CI is to provide rapid feedback so that if bugs are introduced into the code base, they can be identified and corrected as soon as possible. Continuous Integration has changed over time, originally, a daily build was the standard practice in the development world. Time and resources constrained running the test suite too frequently. Now, the usual rule is for each team member to commit new work to the repository frequently, and for builds to be conducted with each significant change. Used properly, continuous integration provides various benefits, such as constant feedback on the status of the software. Because CI detects deficiencies early on in development, defects are typically smaller, less complex and easier to resolve. Traditionally source code was tested by developers locally by running the testing suite on their development machine as they finished new software modules. While this worked fine for small projects, larger projects' test suites could frequently take a very long time to run, as well as stress local system resources during the test. As a result CI testing was frequently only done on a daily basis across the entire project, or during development downtime. With cloud based continuous integration services, the actual test process is moved from the local development environment onto cloud servers so that developers don't need to sit through the long process of running tests locally. As code changes are committed to the repository, the cloud CI services spin up resources to run the test suite and check the new code. When the automated test suite is completely processed by the cloud CI service, statistics are passed back as to what portions of the code in the build passed tests and what failed. Coveralls takes the build data from whichever CI service your project uses, parses it, and provides constant updates and statistics on your projects' code coverage to show you how coverage has changed with the new build, and what isn't covered by tests. Coveralls even breaks down the test coverage on a file by file basis. You can see the relevant coverage, covered and missed lines, and the hits per line for each file, as well as quickly browse through individuals files that have changed in a new commit, and see exactly what changed in the build coverage."
+year_published = 2025
+clearnet = "https://coveralls.io/continuous-integration"
+tags = ["automated testing", "cloud", "code coverage", "code coverage history", "code coverage statistics", "continuous", "continuous integration", "continuous integration testing", "coveralls", "coveralls gem"]
+language = "en"
+internal-references = ["none"]
+external-references = ["calendly.com", "docs.coveralls.io", "enterprise.coveralls.io", "github.com", "status.coveralls.io", "twitter.com"]
+
+["https://coveralls.io"]
+title = "Coveralls - Test Coverage History & Statistics"
+description = "The leading provider of test coverage analytics. Measure, track and drive improvement in code coverage across your engineering organization. Works with all CI services. Always free for open source."
+full_description = "We help you deliver code confidently by showing which parts of your code aren’t covered by your test suite. Free for open source repos. Pro accounts for private repos. Instant sign up through GitHub, Bitbucket, and Gitlab. “Coveralls has been an extremely valuable tool for helping us gain insight into our testing suite health beyond the binary red or green metric. We won’t merge a PR without it!” - Marc Campbell (Co-Founder and CTO Replicated) Figuring out where your tests are lacking can be painful. You're already running your tests on a continuous integration server, so shouldn't it be doing the heavy lifting? Coveralls works with your CI server and sifts through your coverage data to find issues you didn't even know you had before they become a problem. If you're just running your code coverage locally, you won't be able to see changes and trends that occur during your entire development cycle. Display your coverage percentage like a badge of honor with our — well — Badges of Honor. Encourage others to join the movement for code coverage! There might be an entire area of your application that is an apocalyptic hellstorm of bugs just waiting to attack your customers. And their families."
+year_published = 2025
+clearnet = "https://coveralls.io"
+tags = ["always", "automated testing", "awareness", "better", "bugs!", "code", "code coverage", "code coverage history", "code coverage statistics", "confidence"]
+language = "en"
+internal-references = ["none"]
+external-references = ["calendly.com", "docs.coveralls.io", "enterprise.coveralls.io", "github.com", "status.coveralls.io", "twitter.com"]
+
+["https://coveralls.io/careers"]
+title = "Coveralls Careers: We're Looking for YOU | Coveralls - Test Coverage History & Statistics"
+description = "The leading provider of test coverage analytics. Measure, track and drive improvement in code coverage across your engineering organization. Works with all CI services. Always free for open source."
+full_description = "Are you as passionate about code quality as we are? Do your repos proudly show off your coverage percentage? We are looking for someone to join us to help build Coveralls and help developers across the world deliver better code. We really want to find someone special, because you’ll be joining us as a founding employee of the most well known code coverage service used by devop teams at companies ranging from Apple, Google, and Microsoft to Bloomberg, Viacom and Intel. What that means to us, is that we want to find someone who is in it for the long haul – not just a replaceable cog in the machinery of writing code. Someone who is going to have a big part making the company, product, community, and service great."
+year_published = 2025
+clearnet = "https://coveralls.io/careers"
+tags = ["automated testing", "code coverage", "code coverage history", "code coverage statistics", "continuous integration", "continuous integration testing", "coveralls", "coveralls gem", "experience", "github badge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["calendly.com", "docs.coveralls.io", "enterprise.coveralls.io", "github.com", "status.coveralls.io", "twitter.com"]
+
+["https://coveralls.io/code-coverage"]
+title = "Automated Testing and Code Coverage | Coveralls - Test Coverage History & Statistics"
+description = "The leading provider of test coverage analytics. Measure, track and drive improvement in code coverage across your engineering organization. Works with all CI services. Always free for open source."
+full_description = "In software development, test automation is the use of special software (separate from the software being tested) to control the execution of tests and the comparison of actual outcomes to predicted outcomes. Test automation can automate previous repetitive but necessary testing in a formalized testing process already in place, or add additional testing that would be difficult to perform manually. In other words, if an application has a robust automated test suite it is no longer necessary to actually run the application and test each new feature by clicking on links and buttons, creating or updating information, or uploading or manipulating assets. Some software testing tasks, such as extensive low-level interface regression testing, can be laborious and time consuming to do manually. In addition, a manual approach might not always be effective in finding certain classes of defects. Test automation offers a possibility to perform these types of testing effectively. Once tests have been automated, they can be run quickly and repeatedly. Many times, this can be a cost effective method for regression testing of software products that have a long maintenance life. Even minor patches over the lifetime of the application can cause features to break which were working at an earlier point in time."
+year_published = 2025
+clearnet = "https://coveralls.io/code-coverage"
+tags = ["automated", "automated testing", "code coverage", "code coverage history", "code coverage statistics", "continuous integration", "continuous integration testing", "coveralls", "coveralls gem", "github badge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["calendly.com", "docs.coveralls.io", "enterprise.coveralls.io", "github.com", "status.coveralls.io", "twitter.com"]
+
+["https://coveralls.io/announcements"]
+title = "Coveralls - Test Coverage History & Statistics"
+description = """
+WED, MAY 31 2023
+
+New Github Integration (Beta)
+Our new Github integration is now live in (closed) beta. Make the switch now before the rush and reap the benefits of close developer support.
+
+Details"""
+full_description = "FRI, APRIL 7 2023 New Versions of Official Integrations We've just released major updates of our Universal Coverage Reporter, Github Action and Orb for CircleCI. Details FRI, APRIL 7 2023 Fully Updated Documentation A full re-write of our documentation lays the foundation for a better onboarding experience. Details WED, FEBRUARY 1 2023 Reminder: Plan & Pricing Changes for 2023 We are 30-days into the 60-day grace period for existing customers. Plans will update on March 1, 2023. Questions about your plan? Reach out. Details WED, DECEMBER 28 2022 PR Comments for Bitbucket! We’ve been attacking Bitbucket issues in our backlog. Now we want to close the support gap for Bitbucket at Coveralls and we need your help testing PR Comments. Details FRI, DECEMBER 23 2022 Happy Holidays! From our team to yours, thanks for another year of your business and support. It being the holidays, it’s our pleasure to announce some new features—some here now, some in beta—that we’ll be posting about in coming weeks. Details"
+year_published = 2025
+clearnet = "https://coveralls.io/announcements"
+tags = ["announcements", "automated testing", "better", "bitbucket!", "carryforward", "changes", "channels", "code coverage", "code coverage history", "code coverage statistics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["calendly.com", "docs.coveralls.io", "enterprise.coveralls.io", "github.com", "status.coveralls.io", "twitter.com"]

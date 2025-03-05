@@ -1,0 +1,304 @@
+["https://totalspaces.binaryage.com/registration2"]
+title = "Registering TotalSpaces2"
+full_description = "Please make sure you copy and paste your license information from the email exactly and without quotes."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/registration2"
+tags = ["articles", "change", "dialog", "enter", "license", "licenses", "registration", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/upgrade"]
+title = "Upgrading TotalSpaces to TotalSpaces2"
+full_description = "TotalSpaces2 is a paid upgrade from TotalSpaces. Please download and test it before upgrading your license. Existing TotalSpaces users can get a 50% Discount when purchasing TotalSpaces2. Please email support@binaryage.com for a coupon code."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/upgrade"
+tags = ["articles", "change", "discount", "licenses", "totalspaces2", "upgrade", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/defaults-settings2"]
+title = "TotalSpaces2 Defaults settings"
+full_description = "This is a list of the user accessible defaults settings that you can adjust using the ‘defaults’ command line program in Terminal.app. The normal preferences slider goes to 110, but 130 is the hard limit; do not set it higher - anyway you won’t even see the transitions at that speed. Note that there is a small built in delay after you press the hotkey that is unavoidable with transitions - they take a little time to set up. The notification graphic remains on the screen for this period, unless the transition was triggered by hotkeys in which case it stays on screen for as long as you hold the modifier keys down. These adjust the dwell and repeat period for triggering space changes by bringing your mouse to the edge of the screen. The range is 0.1 - 20.0, the default is 1.1 seconds. This setting also affects how quickly you can drag windows from desktop to desktop. Normally windows stay where you drop them in the overview grid, but pressing the ALT (option) key whilst dragging will cause the windows to retain their original position, so will be positioned as they were in the space the window came from. You can swap this behaviour so that keeping the position is the default, and pressing the ALT key will allow the to be dropped in an exact position. If you are using key combinations such as ALT with the arrow keys to change space, it can be useful to differentiate between the keys on each side of the keyboard so that the left side ones can be used for the usual functions, and the right side ones for changing space. Turning this setting on means TotalSpaces2 will only recognise space change hotkeys if the modifier keys on the right side of the keyboard are used. In some isolated cases we found that the caching that makes the overview grid faster to bring up was causing Mail.app to slow down unacceptably. In order to work around the problem in these cases, there is a command line setting to turn off this caching. It is not recommended unless you have this problem, it will slow down the performance of the overview grid."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/defaults-settings2"
+tags = ["active", "articles", "behaviour", "caching/lower", "change", "changing", "color", "defaults", "dragging", "graphic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/changes2"]
+title = "Recent changes in TotalSpaces2"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/changes2"
+tags = ["articles", "change", "changes", "licenses", "recent", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/overview-backgrounds2"]
+title = "TotalSpaces2 Overview Grid Backgrounds"
+full_description = "TotalSpaces2 allows you to configure the kind of desktop backgrounds that are shown in the overview grid. Find the setting in general preferences. If you choose to use hi resolution images the backgrounds will look sharper, but it may take a little longer to bring up the grid if you have more than one monitor."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/overview-backgrounds2"
+tags = ["articles", "backgrounds", "change", "grid", "licenses", "navigation", "overview", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/sip-details"]
+title = "What is System Integrity Protection?"
+full_description = "TotalSpaces2 versions 2.3.5 and above (for OSX 10.11 El Capitan and later) cannot be installed on a normally configured machine due to System Integrity Protection (SIP), a new security feature introduced in El Capitan. It must be disabled. In macOS versions up to 10.13 High Sierra, you can turn System Integrity Protection back on after you have installed TotalSpaces2 if you wish. This does not apply to 10.14 Mojave and later. Here is some information about what System Integrity Protection is, and what it means to turn it off. Technical details are well covered in the El Capitan review on Ars Technica. Apple also provide some information here. TotalSpaces2 works by changing the way the Dock program handles spaces. macOS does not provide any other way to control spaces, this is the only way the functionality of TotalSpaces2 can be achieved. In order to change some features inside Dock, we use a technique called code injection. This means we add some additional code to the Dock program whilst it is running to do what we need. This is relatively safe - in fact we do not change any part of macOS on the disk. You only have to quit TotalSpaces2, and the Dock program will restart and everything will be as if TotalSpaces2 was never running. However, in El Capitan and later the macOS developers added a feature that disallows this kind of modification even if you have administrator access. It will also disallow other kinds of modifications (such as replacing parts of the system on disk). In order for TotalSpaces2 to be installed, this new feature must be disabled. When you disable SIP and run TotalSpaces2, it installs its plugin component in the location /System/Library/ScriptingAdditions. This component usually does not change between TotalSpaces2 versions, and even when you turn SIP back on it will continue to allow TotalSpaces2 to load. To remove TotalSpaces2 from your system, run the uninstaller found on the [latest dmg download of TotalSpaces2(/changes-beta). Note that if you have SIP turned on, then the uninstaller will not be able to remove the file in /System/Library/ScriptingAdditions. This is not harmful (it won’t ever be loaded if you do not run TotalSpaces2), but to be totally clean you should disable SIP and either manually remove it, or run the uninstaller again."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/sip-details"
+tags = ["10.13", "10.14", "apply", "articles", "change", "details", "earlier", "further", "high", "information"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/documentation2"]
+title = "TotalSpaces2 Documentation"
+full_description = "TotalSpaces2 was discontinued and is no longer offered for sale. Please read our blog post with announcement here. An easy to use 2D grid of desktops. Navigate using the cursor keys (by default together with SHIFT-ALT), choose your transitions, and quickly access a birds eye view of your grid of spaces where you can manage your application windows. You can even give your spaces names. Having a grid of spaces allows you to keep a mental picture of where each of your applications is, and to navigate easily and quickly between them. From there, you can control TotalSpaces2, and access the preferences where you can set up your grid, name your spaces, and configure your desktops just how you like them. TotalSpaces2 allows you to easily navigate between your spaces, by swiping, with hotkeys, or by just moving your mouse the the edge of the screen in the direction you wish to move."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/documentation2"
+tags = ["apple", "articles", "catalina", "change", "compatible", "documentation", "grid", "hotkeys", "info", "instructions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/overview2"]
+title = "TotalSpaces2 Overview Grid"
+full_description = "TotalSpaces2 allows you to bring up an overview of all the desktops in your main grid by triggering a configurable hotkey or by triggering a hot corner. The overview is an excellent way to manage your windows and desktops. When the overview is visible you can navigate to a new desktop by either using the cursor keys, and the enter key to select, or choosing by clicking on a desktop. You can also organise your windows by dragging them from desktop to desktop, and putting them just where you want them. And you can zoom in on a particular window by pressing the shift key whilst hovering over it with the cursor. If you can’t see the window you need, just press the space bar, and all the windows will move to visible positions. You can set a hotcorner for this too. If you click on a window it will come to the front, and the space will activate - so it’s a quick way to select the window you need to work with. You can drag windows between desktops when they are exposed like this, and you can cancel this mode by pressing the space bar again. You can choose the animation to the grid, and you can choose the way the desktop backgrounds are displayed in General preferences. When dragging a window from one desktop to another (and they are not in exposed mode), you choose to have the system place the window in the same place on the new desktop (as it was in the previous desktop) by pressing the alt (option) key as you move the window. Otherwise the window is moved to exactly where you drop it. When you move windows within one desktop, they will always stay where you put them no matter which way you have set the setting. Note that there are some places where windows cannot be placed - for instance where the title bar of the window is not on the screen."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/overview2"
+tags = ["articles", "change", "desktop", "dragging", "exposing", "exposé", "extra", "grid", "info", "licenses"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/apps2"]
+title = "TotalSpaces2 App Assignments"
+full_description = "Press the + button to open a dialog and choose the application you want to assign. Then choose the desktop you want to assign it to from the dropdown list. You can also choose All spaces if you would like an app to appear on all desktops. These assignments allow you to choose where apps start, but note that you may still move windows from desktop to desktop - for instance by dragging them in the Overview Grid. Finder is not in the normal Applications folder. In order to add it you should navigate to /System/Library/CoreServices/Finder"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/apps2"
+tags = ["adding", "articles", "assignments", "change", "desktops", "finder", "full", "licenses", "screen", "spaces"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/hotkeys2"]
+title = "TotalSpaces2 Hotkeys"
+full_description = "TotalSpaces2 allows you to set hotkeys for going Left, Right, Up and Down in your grid of desktops, and for opening the Overview Grid. You can also choose to use the center or 3rd button to trigger the grid if you have a 3 button mouse, or even the 4th or 5th buttons if you have those. To change the modifier keys to use with the arrow keys, just click on the symbols. They are, in order, shift, ctrl, option/alt and cmd. Here I have selected shift-ctrl for changing space, and shift-cmd for moving a window and changing space. If you wish to set custom hotkeys and not use the arrow keys, you can do this by clicking the Arrow keys button, and choosing Custom in the popover dialog. Some hotkey combinations are already reserved - TotalSpaces will warn you about this if it’s the case, and give you the option to try to force assignment of the hotkey, as some system hotkeys are still marked as reserved by the system even when they are not being used. You can also set hotkeys for going to a particular space by clicking the spaces in Layout preferences."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/hotkeys2"
+tags = ["articles", "change", "hotkeys", "licenses", "swiping", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/single-desktop-expose"]
+title = "TotalSpaces2 single desktop exposé"
+full_description = "TotalSpaces2 allows you to assign a hotkey or hotcorner to Single desktop exposé. This feature will expose all the windows on your current desktop allowing you to see all of them in a glance. A title is displayed for those windows that have one."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/single-desktop-expose"
+tags = ["articles", "backgrounds", "change", "desktop", "exposé", "grid", "licenses", "overview", "single", "totalspaces2"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/installing-mojave"]
+title = "Installing TotalSpaces2 v2.7.2 and above"
+full_description = "These instructions apply to TotalSpaces2 v.2.7.2 and above on macOS 10.14 and above. If you are upgrading from High Sierra to a more recent version, note that TotalSpaces2 can no longer work with SIP turned on due to changes made by Apple. These instructions are for macOS Big Sur, Catalina or Mojave - see here if you are running High Sierra or earlier. TotalSpaces2 requires changes to your security settings to be installed. Carefully read more about it here. In the window that opens, type csrutil disable and press return. This turns off System Integrity Protection so that TotalSpaces2 can be installed. Note: Advanced users who want to only partially disable SIP may use the command csrutil enable --without debug --without fs However, csrutil will warn that this configuration is unsupported. Double click on the DMG file you downloaded with TotalSpace2 in it. Drag TotalSpaces2 into your Applications folder. Run TotalSpaces2 from your Applications folder. It will ask for your password in order to install its plugin component. If you are installing on macOS 10.14 Mojave or later then unfortunately SIP must remain disabled or partially disabled for TotalSpaces2 to work. Note that if you are installing on versions of macOS prior to 10.14 Mojave then there is an optional step 3 to turn SIP back on, see here."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/installing-mojave"
+tags = ["apple", "articles", "change", "changes", "compatible", "install", "licenses", "longer", "macs.", "made"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/sipsettings"]
+title = "Installing TotalSpaces2 v2.5.4 and above"
+full_description = "These instructions apply to TotalSpaces2 v.2.5.4 and above on macOS 10.11 and above. If you are installing on macOS 10.14 Mojave or later see here. TotalSpaces2 requires temporary changes to your security settings to be installed. Read more about it here. In the window that opens, type csrutil disable and press return. This turns off System Integrity Protection so that TotalSpaces2 can be installed. Double click on the DMG file you downloaded with TotalSpace2 in it. Drag TotalSpaces2 into your Applications folder. Run TotalSpaces2 from your Applications folder. It will ask for your password in order to install its plugin component. When the plugin has been installed successfully, TotalSpaces2 will tell you that you can turn SIP back on. In the window that opens, type csrutil enable and press return. This turns on System Integrity Protection so your machine is fully protected."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/sipsettings"
+tags = ["articles", "change", "install", "integrity", "licenses", "protection", "step", "system", "totalspaces2", "turn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/licensing2"]
+title = "Licensing TotalSpaces2"
+full_description = "This allows you to evaluate TotalSpaces2’s functionality and decide whether you want to buy it or not. When you buy a TotalSpaces2 license you get my permission to use the software. Here is the legal code. Please visit the store where you can purchase TotalSpaces2. It is easy and safe (powered by FastSpring). When you buy a license you may freely update to all TotalSpaces2 versions within one major OS release. For example by buying TotalSpaces2 today you will get free updates for all versions compatible with Mavericks (OS X 10.9). A new major OS release (after OS X Mavericks) may require substantial rewrites and intensive testing. I may charge existing users an upgrade fee for a new OS. TotalSpaces2 does not connect to or communicate over the network. It works perfectly on a computer disconnected from the internet. We have tested TotalSpaces2 with our systems and we did our best to make it bug-free and stable. However it may still contain undiscovered bugs or issues."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/licensing2"
+tags = ["agreement", "articles", "buying", "change", "computer", "computers", "free", "license", "licenses", "licensing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/hotcorners2"]
+title = "TotalSpaces2 Hot corners"
+full_description = "TotalSpaces2 allows you to set a hot corner for opening the Overview Grid, the birds-eye view of your desktops. You can also set a hotcorner to toggle the windows exposé mode once in the overview grid, or to directly open the grid in exposé mode."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/hotcorners2"
+tags = ["articles", "assignments", "change", "corners", "licenses", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/swipe2"]
+title = "TotalSpaces2 Swipe navigation"
+full_description = "Use the transitions preferences pane to enable finger swiping gestures on your trackpad to change desktops. You can choose to invert the direction your fingers should move if the way it works does not suit your preference. It’s important to note that the system also uses three and four finger gestures, and these could conflict with your settings in TotalSpaces2. In most cases everything should work as expected (and TotalSpaces2 will override the system settings if they are set to use the same number of fingers), but if you use three finger swiping you must disable “Three finger drag” in trackpad preferences. Note also that if you have chosen only one row of spaces in your layout, then you can still use 3 or 4 finger vertical swipes for Mission Control / Exposé."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/swipe2"
+tags = ["articles", "change", "licenses", "mouse", "navigate", "navigation", "swipe", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/free-licenses2"]
+title = "Free licenses for TotalSpaces2"
+full_description = "I love to read articles about TotalSpaces2 and I will be happy to give you a NFR license in exchange. For your articles you may grab any graphics assets you see around. You may also browse these public github projects:"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/free-licenses2"
+tags = ["apple", "articles", "change", "contributed", "directly", "employee", "engineer", "free", "google", "helped"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "github.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/faq2"]
+title = "TotalSpaces2 Questions"
+full_description = "TotalSpaces2 is tested on OSX Mavericks 10.9 and OSX Yosemite 10.10 and should work on any mac that can run these operating systems. We also try to add support for new versions as soon as the betas are available. TotalSpaces2 runs without an icon in the Dock, but instead an icon like this should appear in your menu bar. There is an option to hide the menu bar icon, and perhaps this is turned on for some reason. In order to re-show the menu bar icon, double click on TotalSpaces2 in your Applications folder (as if to launch the app). This should tell the app to show the menu bar icon again. The dashboard can be removed from your grid by unchecking “Show dashboard as a space” in Mission Control preferences, or setting Dashboard to “Off” (in Yosemite). TotalSpaces2 is a normal app that can be dragged to the Trash, except for one additional file that must be removed from /Library/ScriptingAdditions. The uninstaller will remove this file along with the app itself, as well as restarting Dock so that no trace of TotalSpaces2 remains running in the system. Note: TotalSpaces2 is built on top of Mission Control. Underneath TotalSpaces2, the desktops are normal OSX desktops. The uninstaller will not remove any desktops you have created whilst running TotalSpaces2, you must adjust your desktops how you like them in Mission Control once you have uninstalled TotalSpaces2. TotalSpaces does not make any changes whatsoever to the system software or to OSX - once you have uninstalled it the system will be running only the original OSX software. Final note: If you wish to be super-clean you can also remove the preferences files in ~/Library/Preferences/com.binaryage.TotalSpaces2.plist and ~/Library/Preferences/com.binaryage.totalspacescrashwatcher.plist As we have rewritten the system transitions for TotalSpaces2, it may be that we can support diagonal transitions for some of the animations in the future. The normal preferences slider goes to 110, but 130 is the hard limit; do not set it higher - anyway you won’t even see the transitions at that speed."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/faq2"
+tags = ["10.10", "10.9", "adjust", "allows?", "answers", "articles", "can’t", "change", "changes", "dashboard?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/overview-grid-app2"]
+title = "TotalSpaces2 Overview Grid App"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/overview-grid-app2"
+tags = ["articles", "change", "defaults", "grid", "licenses", "overview", "settings", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/layout2"]
+title = "TotalSpaces2 Grid Layout"
+full_description = "Instead of having a single row of desktops, TotalSpaces2 lets you define a grid that you can navigate using up, down, left and right shortcuts (by default mapped to alt-shift-cursor keys). By using this grid, you can very quickly move between the desktops you commonly use, and using a hotkey or hot corner you can get a birds-eye overview of all of your desktops. Just click on the row and column + and - buttons to choose any dimensions you wish. Here, I have selected 3 columns x 3 rows. If you choose a layout that requires you to set up more desktops, TotalSpaces2 will prompt you to do this. Pressing the button will automatically add the desktops for you. You can also add desktops in mission control if you wish. If you select a layout with fewer desktops than you actually have, TotalSpaces2 will offer you the option to remove the unused desktops. Click on the numbered space to name it, and to set a hotkey. The names show up in the notification when you change space, in the TotalSpaces2 menu, and in Mission Control."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/layout2"
+tags = ["adding", "articles", "change", "desktops", "direct", "grid", "hotkeys", "layout", "licenses", "naming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/changes-beta"]
+title = "TotalSpaces2 Pre-releases"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/changes-beta"
+tags = ["articles", "change", "licenses", "pre-releases", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/mouse-edges2"]
+title = "TotalSpaces2 Mouse navigation"
+full_description = "Use the transitions preferences pane to enable changing spaces by moving your mouse to the edge of the screen. If you choose to use this feature without any modifier key selected, the system will activate the desktop change after your mouse cursor has been at the edge of the screen for about 1 second. If you select one of the modifier keys (shift, ctrl, alt or cmd), then you must hold this key down and move the mouse to the edge of the screen in the direction you want to go for the space change the happen. In this case the system will activate faster as there is less chance that space changes will be activated by accident."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/mouse-edges2"
+tags = ["articles", "change", "edge", "licenses", "mouse", "navigate", "totalspaces2", "transitions", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com"]
+title = "TotalSpaces brings grid spaces to your Mac and more!"
+description = "TotalSpaces2 is a desktop manager aims to re-create the classic 2D 'spaces' grid functionality on macOS."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com"
+tags = ["app", "apple", "application", "apps", "assignments", "between", "binaryage", "choose", "define", "desktops"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/differences2"]
+title = "Differences from TotalSpaces"
+full_description = "TotalSpaces2 is a substantial rewrite of TotalSpaces. It focuses on the grid, and the most important idea is that all spaces participate in the grid, whether regular desktops, fullscreens, or the dashboard. There is support for both multi-monitor modes provided by OSX Mavericks (Mission Control’s “Displays have separate Spaces” setting), and a more active overview grid that allows you to move your spaces to where you want them. The space transitions have also been rewritten, and there is a new preferences pane for the layout allowing you to easily choose the grid you want. Here is a brief list of changes so you can review whether TotalSpaces2 will do everything you need. Please download and test TotalSpaces2 before you pay for the upgrade."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/differences2"
+tags = ["articles", "before", "change", "different", "download", "licenses", "please", "test", "totalspaces", "totalspaces2"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/multi-monitors2"]
+title = "Multi-monitors"
+full_description = "In OSX Mavericks, there are two different modes, selected by “Displays have separate Spaces” in Mission Control preferenes. When “Displays have separate Spaces” is checked, each display will have its own grid of spaces, and they operate independently. You can set up each grid separately in Layout preferences by selecting the display. When you activate the overview grid, each monitor will display its own grid. You can then easily drag windows between your spaces, and between monitors. You navigate between spaces using your usual hotkeys, but which display the mouse cursor is on will determine which display’s grid changes space. If you uncheck “Displays have separate Spaces” in Mission Control preferences, the grid and your spaces will behave the same as on OSX Mountain Lion and before. All displays share the same grid, and navigation happens simultaneously. Because the monitor screens are shown together on your main display, you can easily drag windows between each of your monitors."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/multi-monitors2"
+tags = ["articles", "change", "checked", "hotkeys", "licenses", "multi-monitors", "separate", "spaces”", "totalspaces2", "uncheck"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/elcapitan"]
+title = "Running TotalSpaces2 on El Capitan or Sierra"
+full_description = "TotalSpaces2 versions 2.3.5 and above have support for OSX 10.11 El Capitan and macOS 10.12 Sierra, but cannot run on a normally configured machine due to system integrity protection, a new security feature in El Capitan. This article will tell you how to configure your machine by modifying the new setting, so that you can run TotalSpaces2. Starting with version 2.5.4 of TotalSpaces2, you can turn System Integrity Protection back on after you have installed TotalSpaces2 if you wish. See here for information. Before you do this, it is important to get informed about what System Integrity Protection is, and what it means to turn it off. Technical details are well covered in the El Capitan review on Ars Technica. Apple also provide some information here. Anyway, if you decide to modify the setting under El Capitan/Sierra, you will be able to install and run TotalSpaces2 as before. Just to be clear… You must boot into the Recovery OS. You do this by restarting your machine, and holding until the Apple logo appears. In the window that opens, type csrutil enable --without debug and press return. This turns off the part of System Integrity Protection that TotalSpaces2 needs to run, and OSX complains that it is an unsupported configuration. Note, you can also use the csrutil disable command to completely disable System Integrity Protection. This has the advantage that there is no scary warning about an unsupported configuration, but the disadvantage that the whole of SIP (rather than just part) is disabled. TotalSpaces2 works by changing the way the Dock program handles spaces. OSX does not provide any other way to control spaces, this is the only way the functionality of TotalSpaces2 can be achieved. In order to change some features inside Dock, we use a technique called code injection. This means we add some additional code to the Dock program whilst it is running to do what we need. This is relatively safe - in fact we do not change any part of OSX on the disk. You only have to quit TotalSpaces2, and the Dock program will restart and everything will be as if TotalSpaces2 was never running."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/elcapitan"
+tags = ["2.5.4", "articles", "capitan", "change", "details", "doing.", "don’t", "information.", "installed", "integrity"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/older-versions"]
+title = "Older versions of TotalSpaces"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/older-versions"
+tags = ["articles", "change", "licenses", "older", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binaryage.com", "blog.binaryage.com", "creativecommons.org", "discuss.binaryage.com", "downloads.binaryage.com", "player.vimeo.com", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/navigation2"]
+title = "TotalSpaces2 Navigation"
+full_description = "As you navigate between your desktops, you will notice that on each movement there appears a notification graphic. The highlight animates to show you which desktop you came from, and which you are now on. (You can turn this off in General preferences if you don’t like it.) If you attempt to navigate off the edge of the grid, and you have circulation turned off (so you cannot go that direction), then the notification will show to remind you of your current position. The currently active desktop is highlighted with a light border. You can either click on the desktop you wish to go to, or you can navigate using the cursor keys to move the border and hit enter to change to the desktop you want. You can dismiss the overview grid by pressing the hotkey again, clicking outside of it, or pressing esc. You can also use a hotcorner to access the overview grid, this can be set up in Hotcorner preferences. Hotcorners are placed in all the appropriate corners when multi monitor setups are used. If you enable circulation, going left from the left side of your grid will move you to the right side, and vice-versa. There are two modes for horizontal circulation - when set to join to “Next row”, going right from the end of a row of desktops takes you to the left most desktop on the next row below. If it’s the bottom row you are going from, you end up on the left most space on the top row. When set to “Same row”, the change of row behaviour does not occur, and the right end of the rows join to the left ends of the same rows."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/navigation2"
+tags = ["articles", "change", "circulation", "licenses", "multi-monitors", "navigation", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/changes"]
+title = "TotalSpaces for Lion and Mountain Lion versions"
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/changes"
+tags = ["10.7", "10.8.", "10.9", "articles", "change", "later.", "licenses", "lion", "mountain", "totalspaces"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/transitions2"]
+title = "TotalSpaces2 Transitions"
+full_description = "You can select whether to use transitions - the animation that is shown when you change desktop - and which type and the speed they go in the Transitions preferences. Some people prefer to turn the transitions off altogether, and this provides the fastest possible way of changing desktops. If you like the transitions (and I do), I recommend you use Slide or Cube transitions. But the Reveal, Fade, Flip and Inside cube settings are fun too - try them out! The transitions will reinforce the impression that your desktops are in a grid, and help you to remember where each application is. The Slide transition is slightly faster than the others to activate, so if you want things to be super snappy, try Slide. Also see the FAQ where there is some additional information about transition animations. The transitions preferences pane is also where you configure swiping gestures and using the mouse to trigger space changes."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/transitions2"
+tags = ["articles", "change", "hotcorners", "licenses", "totalspaces2", "transitions", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "fastspring.com", "player.vimeo.com", "sites.fastspring.com", "sparkle.andymatuschak.org", "static.binaryage.com"]
+
+["https://totalspaces.binaryage.com/full-screen-desktops2"]
+title = "TotalSpaces2 Full screen desktops"
+full_description = "TotalSpaces2 fully supports full screen apps, and they will appear in your overview grid. When you make an app fullscreen, it will be added as a new item in your grid, making a new row at the bottom if needed."
+year_published = 2025
+clearnet = "https://totalspaces.binaryage.com/full-screen-desktops2"
+tags = ["articles", "change", "desktops", "full", "grid", "licenses", "overview", "screen", "totalspaces2", "versions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arstechnica.com", "binaryage.com", "blog.binaryage.com", "creativecommons.org", "developer.apple.com", "discuss.binaryage.com", "downloads.binaryage.com", "en.wikipedia.org", "player.vimeo.com", "static.binaryage.com"]

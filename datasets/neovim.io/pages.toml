@@ -1,0 +1,1489 @@
+["https://neovim.io/doc/user/luvref.html"]
+title = "Luvref - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/luvref.html"
+tags = ["async", "base", "check", "checking", "constants", "contents", "counting", "credits", "deprecated:", "error"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/usr_11.html"]
+title = "Usr_11 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_11.html"
+tags = ["11.2", "11.3", "11.4", "attention", "attention e325", "basic", "crashed", "e325", "file?", "further"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2023/08"]
+title = "Vim Boss - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Bram is one of my heroes. That’s literal and recursive: when I say it, internally I check before making a frivolous claim, which is a feature of this particular role-model; “What would Bram do?” is a fixture in me which informs my choices. Those who studied vim_dev and the Vim source and docs, accumulated treasure from a stream of copious messages and spare impressions. But also from what he omitted: he never appealed to sensationalism or personal judgements. Even when treated rudely, Bram usually responded only to advance his understanding of a problem to solve. Bram was one of those humans quietly providing deep value to the universe, but there was no parade and little celebrity. Bram was anchored to reality, directly interested in results and adjusting what produced them. The “Problem/Solution” mantra in his commit messages is simple yet profoundly effective. He used that approach to help people in Uganda, managing resources directly instead of abstractly. Bram’s principles (as I observed them) extended beyond mere technical craftsmanship. The ability to adopt a position of modesty is a mind-trick that channels an endeavor through a “narrow waist”, a voluntary constraint. That lens can create a more composable and powerful result. Plugins like unimpaired riff on the theme. And this touches on a central point: the main utility—not ideology, but utility—of “lifestyle software” like Emacs and Vim, is that the ecosystem is alive, and has escape velocity, so its momentum is self-perpetuated. Neovim has always been intentionally positioned as a derivative of Vim, which means simultaneously it both continues and diverges from Vim. I’m convinced that forks create energy rather than destroy it. So although we can’t deliver Vim without Bram, we can continue some essential parts: Agide is not a monolitic application. Separate tools can be plugged in. Thus you are not forced to use one editor. … Each tool implements part of the plugin interface."
+year_published = 2025
+clearnet = "https://neovim.io/news/2023/08"
+tags = ["boss", "discuss", "neovim?", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/if_ruby.html"]
+title = "If_ruby - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/if_ruby.html"
+tags = [":rub", ":ruby", ":rubyd", ":rubydo", ":rubyf", ":rubyfile", "commands", "e265", "e266", "e267"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/diagnostic.html"]
+title = "Diagnostic - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/diagnostic.html"
+tags = ["diagnostic", "diagnostic-api", "diagnostic-events", "diagnostic-handlers", "diagnostic-handlers-example", "diagnostic-highlights", "diagnostic-loclist-example", "diagnostic-quickstart", "diagnostic-severity", "diagnostic-signs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/news/2024/05"]
+title = "Neovim 0.10 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news/2024/05"
+tags = ["0.10", "discuss", "neovim", "neovim?", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "matrix.to", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtu.be"]
+
+["https://neovim.io/news/2021/07"]
+title = "Neovim News #11 - The Christmas Issue - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = '''The long-awaited release of Neovim v0.5.0 finally happened on July 2, 2021. It took longer than everybody had hoped for, but it was worth the wait: With over 4000 commits, it is so big that it broke some of the release tooling. So these notes will not be able to touch on each of the many changes that were made over the course of development and only focus on the most user-visible improvements, of which the biggest are Neovim 0.5 went far in making Lua a first-class scripting language for Neovim, both for plugin development and for user configuration. As a reminder, Lua is a small scripting language designed for embedding and is often used in, e.g., game development. Furthermore, there is a just-in-time compiler (LuaJIT, which Neovim is built with on platforms where it is available) that can provide impressive performance on relevant tasks. In essence, Lua was chosen over other languages because it is For more details on this choice, see Justin M Keyes’ presentation at Vim Conf 2019 and TJ DeVries’ presentation at Vimconf.live. Neovim exposes its API natively to Lua via, e.g., vim.api.nvim_open_win(). It also provides methods for accessing vimscript (ex) commands and variables via, e.g., vim.cmd("echo 'foo'") and vim.g.syntax_on, respectively. This allows writing plugins with the same capabilities as those written in Vimscript while exploiting the performance of Lua(JIT) at core programming language tasks like loops. It is also possible to make use of Lua’s own luarocks plugin ecosystem. Correspondingly, over the course of the 0.5 development cycle, there has been an explosion in the number of Lua plugins, ranging from rewrites of popular Vimscript plugins to completely new ones that would not have been possible in Vimscript – often from contributors who were completely new to (neo)vim plugin development and were averse to learning Vimscript for that task. As a positive side effect of the long development cycle, many of these are already fully-featured and stable at the time of the 0.5 release!'''
+year_published = 2025
+clearnet = "https://neovim.io/news/2021/07"
+tags = ["between", "changes", "christmas", "community", "config", "decorations", "development", "difference", "discourse", "discuss"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/tagsrch.html"]
+title = "Tagsrch - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/tagsrch.html"
+tags = ["'tagfunc'", ":checkp", ":checkpath", ":dj", ":djump", ":dli", ":dlist", ":ds", ":dsearch", ":dsp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/map.html"]
+title = "Map - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/map.html"
+tags = ["1.10", "1.11", "1.13", ":ab", ":abbreviate", ":abbreviate-local", ":abbreviate-verbose", ":abc", ":abclear", ":ca"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/news-0.10.html"]
+title = "News-0.10 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/news-0.10.html"
+tags = ["breaking", "changed", "changes", "deprecations", "features", "news-0.10", "note:", "removed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/job_control.html"]
+title = "Job_control - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/job_control.html"
+tags = ["concepts", "job-control", "job-control-usage", "job-id", "note:", "usage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/news"]
+title = "News - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news"
+tags = ["code", "discuss", "google", "neovim?", "news", "summer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/ft_raku.html"]
+title = "Ft_raku - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_raku.html"
+tags = ["files", "raku", "raku-unicode", "unicode", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/vim_diff.html"]
+title = "Vim_diff - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/vim_diff.html"
+tags = ["'al'", "'aleph'", "'balloondelay'", "'ballooneval'", "'balloonexpr'", "'bdlay'", "'beval'", "'bexpr'", "'browsedir'", "'bsdir'"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "hachyderm.io", "inf.puc-rio.br", "lua-users.org", "lua.org", "matrix.to", "msgpack.org", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtu.be"]
+
+["https://neovim.io/doc/user/motion.html"]
+title = "Motion - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/motion.html"
+tags = ["'quote", ":changes", ":cle", ":clearjumps", ":delm", ":delmarks", ":go", ":goto", ":ju", ":jumps"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/usr_20.html"]
+title = "Usr_20 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_20.html"
+tags = ["20.2", "20.3", "20.4", "20.5", "abbreviations", "cancelling", "command", "completion", "context", "deleting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/vi_diff.html"]
+title = "Vi_diff - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/vi_diff.html"
+tags = ["additions", "e75", "interesting", "limits", "vim-additions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/dev_tools.html"]
+title = "Dev_tools - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/dev_tools.html"
+tags = ["backtraces", "debugging", "dev-tools-backtrace", "dev-tools-gdb", "functional", "gdbserver", "linux", "lldb", "macos", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/autocmd.html"]
+title = "Autocmd - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/autocmd.html"
+tags = [":au", ":aug", ":augroup", ":augroup-delete", ":autocmd", ":autocmd-verbose", ":do", ":doau", ":doaut", ":doautoa"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/remote.html"]
+title = "Remote - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/remote.html"
+tags = ["--remote", "--remote-expr", "--remote-send", "--remote-silent", "--remote-tab", "--remote-tab-silent", "--remote-tab-wait", "--remote-tab-wait-silent", "--remote-ui", "--remote-wait"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/index.html"]
+title = "Help - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/index.html"
+tags = ["advanced", "bars", "basic", "deprecated", "developing", "doc-file-list", "documentation", "editing", "example", "general"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/digraph.html"]
+title = "Digraph - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/digraph.html"
+tags = [":dig", ":digraphs", "default", "defining", "digraph", "digraph-encoding", "digraph-table", "digraph-table-mbyte", "digraphs", "digraphs-default"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/mlang.html"]
+title = "Mlang - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/mlang.html"
+tags = [":lan", ":lang", ":language", ":menut", ":menutrans", ":menutranslate", "alias", "e197", "locale", "menus"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2016/11"]
+title = "Newsletter #7 - Summer of Road - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "It’s time for the Neovim newsletter! Skip to the Fun and Features sections if you only care about new features. There are also changes in project management that you should know about. Each minute, a new text editor is born (source: Hacker News). There are endless text editors that address the “common case”. Instead of another Vim-like text editor, Neovim users want a better Vim. Thousands of small decisions live in the Vim core, accumulated over decades; most of those decisions are still relevant, solving subtle problems that new projects have yet to encounter, digest and decide. Neovim is a refactor of Vim to make it viable for another 30 years of hacking. See :help vim-differences for a reference of changes and improvements. Neovim very intentionally builds on the long history of Vim community knowledge and user habits. That means “switching” from Vim to Neovim is just an “upgrade”—like installing a new version of Vim. If you log onto a server or workstation with only Vim, you won’t be lost. If you find an article about Vim, it likely also applies to Neovim, unless it’s about :smile. We want a hackable Vim: a codebase and community that enables experimentation and low-cost trials of new features. And there’s evidence of real progress towards that ambition. We’ve successfully executed non-trivial “off-the-roadmap” patches: features which are important to their authors, but not the highest priority for the project. There are clients for go, julia, perl, Java, R, Elixir, Clojure, and more. Visit the related projects wiki page to discover new projects as they emerge! In July, Thiago (@tarruda) took a less active role in the project, for personal reasons. He hopes to resume active contributions in the future. Some have asked for a “BDFL” to be named. @justinmk has that role, unless you want it: we’ve made steps to document the role of maintainer, so that anyone trusted by most contributors can step up in the future. The ultimate goal is to spread out tasks as horizontally as possible, and to continue to give the “commit bit” to people we’ve grown to trust. There are currently 14 core contributors; we’d like to scale that to 50. We don’t want the project to depend on heroic effort, but a flow of interested parties working within the conventions and etiquette of the Vim community."
+year_published = 2025
+clearnet = "https://neovim.io/news/2016/11"
+tags = [":smile?", ":substitute", "adapts", "alternative", "auto-completion", "behavior", "benevolent", "breaking", "buffer-local", "built-in"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clang-analyzer.llvm.org", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "godoc.org", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "news.ycombinator.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/health.html"]
+title = "Health - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/health.html"
+tags = [":che", ":checkhealth", "checkhealth", "commands", "create", "e5009", "g:health", "health", "health-commands", "health-dev"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "fleiner.com", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/uganda.html"]
+title = "Uganda - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/uganda.html"
+tags = ["centre", "charity", "children's", "copying", "copyright", "donate", "iccf", "iccf-donations", "kcc", "kcc kibaale  charity"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/provider.html"]
+title = "Provider - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/provider.html"
+tags = ["bracketed-paste-mode", "clipboard", "clipboard-osc52", "clipboard-tool", "clipboard-wsl", "clipboard-x11", "clipboard-x11 x11-selection", "e319", "g:clipboard", "g:termfeatures"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/pi_spec.html"]
+title = "Pi_spec - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_spec.html"
+tags = ["customizing", "format", "info", "insert", "inserting", "items", "note:", "release", "setting", "spec-customizing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/builtin.html"]
+title = "Builtin - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/builtin.html"
+tags = ["builtin", "builtin-function-details", "builtin-functions", "chmod", "deprecated", "details", "e1109", "e1110", "e1111", "e1112"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/eval.html"]
+title = "Eval - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/eval.html"
+tags = ["$quote", "$quote interpolated-string", ":brea", ":break", ":cat", ":catch", ":con", ":cons", ":const", ":continue"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "developers.google.com", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/cmdline.html"]
+title = "Cmdline - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/cmdline.html"
+tags = ["%:.", "%:8", "%:e", "%:gs", "%:h", "%:p", "%:r", "%:s", "%:t", "%:~"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/windows.html"]
+title = "Windows - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/windows.html"
+tags = [":abo", ":aboveleft", ":al", ":all", ":ba", ":bad", ":badd", ":ball", ":balt", ":bd"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/tui.html"]
+title = "Tui - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/tui.html"
+tags = ["$term", "builtin-terms", "e557", "e558", "e559", "fast", "note:", "scroll-region", "size", "slow"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/indent.html"]
+title = "Indent - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/indent.html"
+tags = ["cinkeys-format", "cino-#", "cino-+", "cino-/", "cino-:", "cino-^", "cino-b", "cino-c", "cino-e", "cino-f"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/ft_rust.html"]
+title = "Ft_rust - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_rust.html"
+tags = [":cargo", ":cbench", ":cbuild", ":cclean", ":cdoc", ":cinit", ":cinstall", ":cpublish", ":crun", ":cruntarget"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_24.html"]
+title = "Usr_24 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_24.html"
+tags = ["24.10", "24.2", "24.3", "24.4", "24.5", "24.6", "24.7", "24.8", "24.9", "abbreviating"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2020/04"]
+title = "Newsletter #9 - Three's company - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a fork of the venerable text-editor vim, focused on extensibility and usability. It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. See a list of differences via :help vim-differences. If you are interested in contributing to Neovim, visit the github page for details. We have a great test suite and automated CI, so you can just jump in and have a go. Don’t be afraid to open a PR to get comments or just take advantage of the infrastructure! To get in touch with the team, join the gitter channel (also accessible via IRC), or visit the Neovim subreddit, which many of the developers read. Taking part in conversations is a contribution, too! New contributor shoutout: @janlazo has been on a rampage for both windows support and porting neovim patches since about September 2017. Thank you! Old contributor shoutout: @jamessan has been around since March 2014, and, while being generally smart and helpful, has been doing tremendous work on the debian package of neovim. Thank you! The last newsletter covered everything up to release 0.2.2 of Neovim. Two years have passed, and the project has been as busy as ever improving both user and developer experience. Along the way we released in June 2018 the version 0.3. Though this newsletter arrives late (after version 0.4 was released), we still deemed it worth to introduce 0.3 in case you missed anything (0.4 will be covered in a future newsletter): A lot of work has been put into making Neovim work better with different terminal emulators, and is still ongoing (@justinmk, #7664, #7653, #7720, #7640, #7624, @florolf, #7676 and @erw7 #8408) Output from system() and :! supports multibyte chars, and also handles control chars (CR, TAB) somewhat better (@bfredl, #7844) Neovim treats stdin as text, rather than commands. If you want to run stdin as normal mode commands, use nvim -s - (@justinmk, #7679, @ZyX-I, #6299 and @b-r-o-c-k, #8276)"
+year_published = 2025
+clearnet = "https://neovim.io/news/2020/04"
+tags = ["@b-r-o-c-k", "@bfredl", "@brammool", "@docwhat", "@equalsraf,", "@erw7", "@florolf", "@geekodour", "@hardenedapple", "@justinmk"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "matrix.to", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/usr_41.html"]
+title = "Usr_41 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_41.html"
+tags = ["41.10", "41.11", "41.12", "41.13", "41.14", "41.15", "41.16", "41.2", "41.3", "41.4"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/usr_01.html"]
+title = "Usr_01 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_01.html"
+tags = ["01.2", "01.3", "01.4", "around", "frombook", "installed", "jumping", "manual-copyright", "manuals", "tutor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/change.html"]
+title = "Change - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/change.html"
+tags = ["&-default", ":&&", ":ce", ":center", ":ch", ":change", ":co", ":copy", ":de", ":del"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/editorconfig.html"]
+title = "Editorconfig - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/editorconfig.html"
+tags = ["b:editorconfig", "editorconfig", "editorconfig-custom-properties", "editorconfig-properties", "editorconfig.charset", "editorconfig.root", "g:editorconfig", "integration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "fleiner.com", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/ft_ps1.html"]
+title = "Ft_ps1 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_ps1.html"
+tags = ["compiler", "folding", "introduction", "keyword", "lookup", "note:", "ps1-about", "ps1-compiler", "ps1-folding", "ps1-keyword"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/undo.html"]
+title = "Undo - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/undo.html"
+tags = [":ea", ":earlier", ":lat", ":later", ":red", ":redo", ":rundo", ":un", ":undo", ":undoj"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/editing.html"]
+title = "Editing - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/editing.html"
+tags = ["++bad", "++bin", "++edit", "++enc", "++ff", "++nobin", "++opt", "++p", "+cmd", ":0file"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "developers.google.com", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/vimindex.html"]
+title = "Index - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/vimindex.html"
+tags = [":index", "bracket", "command-line", "commands", "ctrl-w", "editing", "ex-cmd-index", "ex-commands", "ex-edit-index", "holy-grail"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/if_pyth.html"]
+title = "If_pyth - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/if_pyth.html"
+tags = [":py", ":py3", ":py3do", ":py3file", ":pydo", ":pyf", ":pyfile", ":python", ":python3", ":pythonx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "fleiner.com", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/news/gsoc-2019"]
+title = "Google Summer of Code 2019 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim was again accepted into the Google Summer of Code program. View our page on the GSoC website for details. Our ideas list runneth over! You’re also welcome to propose other ideas in chat or on the ticket tracker. Brock Mammen implemented a C# client for Nvim, and even went further with a Nvim extension for Visual Studio! He also made significant improvements to the build system, particularly for Windows/MSVC. breaks up the screen grid in per-window grids, allows UIs to set different sizes for each window grid and receive grid based events. The final product was integrated by mentor Björn Linse into the Nvim master branch, providing the foundation for the floating windows feature. This demo shows the feature being used in a popular plugin to reveal documentation with completion results: Our mentors are looking forward to your GSoC proposals in the next weeks! The best way to get familiar with Neovim development is to send a pull request to help out with a small bug or feature request. Working with students on pull requests is extremely helpful for determining mentor-student workflow. Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news/gsoc-2019"
+tags = ["code", "discuss", "forward", "google", "last", "looking", "neovim?", "news", "results", "summer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/charter"]
+title = "About - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a refactor, and sometimes redactor, in the tradition of Vim (which itself derives from Stevie). It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/charter"
+tags = ["discuss", "goals", "management", "neovim?", "non-goals", "project", "vision"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/reports/vimpatch"]
+title = "Vim Patch Report"
+description = "vim out of the box"
+year_published = 2025
+clearnet = "https://neovim.io/doc/reports/vimpatch"
+tags = ["merged", "patch", "pull", "report", "requests"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "npmjs.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/lua-guide.html"]
+title = "Lua-guide - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/lua-guide.html"
+tags = ["also:", "autocommands", "commands", "creating", "credits", "deleting", "files", "functions", "grouping", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/treesitter.html"]
+title = "Treesitter - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/treesitter.html"
+tags = [":editquery", ":inspecttree", "directives", "files", "highlighting", "injections", "language", "languagetree", "lua-treesitter", "lua-treesitter-core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/message.html"]
+title = "Message - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/message.html"
+tags = [":mes", "e10", "e12", "e13", "e139", "e140", "e141", "e142", "e1513", "e162"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/lsp.html"]
+title = "Lsp - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/lsp.html"
+tags = ["events", "gra", "gri", "grn", "grr", "highlight", "highlights", "hl-lspcodelens", "hl-lspcodelensseparator", "hl-lspinlayhint"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binpress.com", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "matrix.to", "microsoft.github.io", "msgpack.org", "neovide.dev", "opencollective.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/sponsors"]
+title = "Sponsors - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = 'Neovim operates a campaign to fund ongoing development. This makes it possible for core developers to work full-time for a month or longer, accelerating projects like Lua stdlib, treesitter parser engine, LSP framework, extended marks, embedded terminal, job control, RPC API, and remote UIs. Sponsorship is also used to maintain (very minimal) infrastructure costs for the Neovim project, such as hosting fees. Donations are managed via open collective, which provides public tracking for all expenses. Bitcoin transactions are visible on the blockchain explorer. The only donation options for neovim are via GitHub sponsors, open collective, and Bitcoin. All prior funding sources have been transferred into open collective. Funded work is a way to support active contributors who have weeks of time to focus on the project. This opportunity is available to contributors who have a developed a reputation for reliable, high-quality contributions (code/documentation, GitHub review comments, and GitHub technical discussions; not IRC or other "ephemeral" places). It works like this: funded contributors are expected to focus full-time for weeks or even months, yielding tangible, high-quality contributions, with conspicuous, reliable, regular activity on GitHub.'
+year_published = 2025
+clearnet = "https://neovim.io/sponsors"
+tags = ["development", "fundraiser", "neovim", "original", "sponsoring", "sponsors", "sponsors:", "thanks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/usr_05.html"]
+title = "Usr_05 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_05.html"
+tags = ["05.2", "05.3", "05.4", "05.5", "05.6", "05.7", "05.8", "add-filetype-plugin", "add-filetype-plugin ftplugins", "add-global-plugin"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/spell.html"]
+title = "Spell - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/spell.html"
+tags = [".aff", ".dic", ".sug", ":mksp", ":mkspell", ":spe", ":spelld", ":spelldump", ":spellgood", ":spelli"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/repeat.html"]
+title = "Repeat - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/repeat.html"
+tags = [":@:", ":@@", ":breaka", ":breakadd", ":breakd", ":breakdel", ":breakl", ":breaklist", ":debug", ":debug-name"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/usr_25.html"]
+title = "Usr_25 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_25.html"
+tags = ["25.2", "25.3", "25.4", "25.5", ":justify", "aligning", "alignment", "breaking", "changing", "dealing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/lua-bit.html"]
+title = "Lua-bit - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/lua-bit.html"
+tags = ["bitop", "caveats", "defining", "example", "examples", "functions", "loading", "lua-bit", "lua-bit-api", "lua-bit-caveats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/pi_zip.html"]
+title = "Pi_zip - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_zip.html"
+tags = ["additional", "contents", "extensions", "history", "usage", "zip", "zip zip-contents", "zip-contents", "zip-extension", "zip-history"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_26.html"]
+title = "Usr_26 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_26.html"
+tags = ["26.2", "26.3", "26.4", "change", "files", "making", "mode", "normal", "note:", "reading"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/gui.html"]
+title = "Gui - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/gui.html"
+tags = ["$mygvimrc", ":am", ":amenu", ":an", ":anoremenu", ":aun", ":aunmenu", ":cme", ":cmenu", ":cnoreme"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "fleiner.com", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/tabpage.html"]
+title = "Tabpage - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/tabpage.html"
+tags = ["'guitablabel'", "'tabline'", ":tab", ":tabc", ":tabclose", ":tabd", ":tabdo", ":tabe", ":tabedit", ":tabf"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/dev_arch.html"]
+title = "Dev_arch - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/dev_arch.html"
+tags = ["data", "events", "structures"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_21.html"]
+title = "Usr_21 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_21.html"
+tags = ["21.2", "21.3", "21.4", "21.5", "21.6", "another", "commands", "executing", "file", "getting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_12.html"]
+title = "Usr_12 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_12.html"
+tags = ['"first', '"last,', "12.2", "12.3", "12.4", "12.5", "12.6", "12.7", "12.8", "blanks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_42.html"]
+title = "Usr_42 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_42.html"
+tags = ["42.2", "42.3", "42.4", "accelerators", "characters", "commands", "deleting", "introduction", "listing", "menu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_08.html"]
+title = "Usr_08 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_08.html"
+tags = ["08.2", "08.3", "08.4", "08.5", "08.6", "08.7", "08.8", "08.9", "another", "between"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/pi_msgpack.html"]
+title = "Pi_msgpack - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_msgpack.html"
+tags = ["arguments", "contents", "function", "introduction", "manual", "msgpack#equal", "msgpack#strftime", "msgpack#strptime", "msgpack.vim", "msgpack.vim-arguments"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/dev_vimpatch.html"]
+title = "Dev_vimpatch - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/dev_vimpatch.html"
+tags = ["code", "detection", "dev-vimpatch-code-differences", "dev-vimpatch-documentation", "dev-vimpatch-filetype", "dev-vimpatch-list-management", "dev-vimpatch-not-applicable", "dev-vimpatch-pull-requests", "dev-vimpatch-quickstart", "dev-vimpatch-version.c"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2014/june"]
+title = "Newsletter #1 - A New Hope - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Welcome to the first newsletter for Neovim, a project that hopes to give a new beginning to a text editor that we all love. The plan is to release a newsletter each month to detail the progress and anything else newsworthy for the project. Future newsletters will be released on the first Friday of every month. That makes the next one scheduled for July 4th. You may be wondering, “just how much has changed since it forked from Vim?” Well, let’s look at some Git statistics. Taking into account the initial import of Vim which happened January 31, 2014, there have been 1,010 commits across 77 contributors. This has resulted in: 887 files changed, 575371 insertions(+), 500868 deletions(-) according to git diff --stat. Using a more sophisticated tool such as gitinspector, we can see some more interesting statistics. The entire report of the analysis can be viewed in this Gist. Now that we have detailed some of the milestones before the month of May started, we can now look at what has happened in the last month. Neovim has turned on some of the features that were optional in Vim at compile time. This has led to various ifdef FEAT_* macros that are no longer needed. These macros were removed. Discussion arose regarding Neovim’s inherited crypto code. It was determined that the crypto code should be removed rather than to provide a possibly insecure implementation. The removal was then promptly handled. Due to name collisions with some of Neovim’s headers, the source code was moved into a ‘nvim’ namespace. It was also determined that nvim would be the internal/technical identifier for the project from that point on. Vim did have some logging in place but effort was made to create a better logging utility. The utility uses macros and can log a standard debug message, basic info, a warning message or an error. The logging can be turned on or off depending on if NDEBUG or DISABLE_LOG is defined. There are Vim specific types that are used where standard types would be better options. The complete information regarding these types can be found in this guideline."
+year_published = 2025
+clearnet = "https://neovim.io/news/2014/june"
+tags = ["20,000", "built-in", "catch", "contributing", "coverity", "default", "development", "discuss", "donating", "encryption"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "news.ycombinator.com", "npmjs.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "travis-ci.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/dev_style.html"]
+title = "Dev_style - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/dev_style.html"
+tags = ["background", "comments", "dev-style-comments", "dev-style-features", "dev-style-format", "dev-style-header", "dev-style-naming", "dev-style-scope", "features", "files"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/dev_theme.html"]
+title = "Dev_theme - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/dev_theme.html"
+tags = ["design", "groups", "highlight", "palettes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/pattern.html"]
+title = "Pattern - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pattern.html"
+tags = ["//;", "/atom", "/bar", "/branch", "/character-classes", "/collection", "/concat", "/ignorecase", "/magic", "/multi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/channel.html"]
+title = "Channel - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/channel.html"
+tags = ["buffer", "bytes", "channel", "channel-buffered", "channel-bytes", "channel-callback", "channel-id", "channel-intro", "channel-lines", "channel-pty"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "meta.com", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/usr_30.html"]
+title = "Usr_30 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_30.html"
+tags = ["30.2", "30.3", "30.4", "30.5", "30.6", "another", "automatic", "changing", "comments", "compiler"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2017/12"]
+title = "Newsletter #8 - Open up the Windows - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a fork of the venerable text-editor vim, focused on extensibility and usability. It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. See a list of differences at :help vim-differences. If you are interested in contributing to Neovim, read CONTRIBUTING.md to get started. We have a great test suite and automated CI, so you can just jump in and have a go. Don’t be afraid to open a PR to get comments or just take advantage of the infrastructure! To get in touch with the team, join the gitter channel (also accessible via IRC), or visit the Neovim subreddit, which many of the developers read. Taking part in conversations is a contribution, too! New contributor shoutout: @ckelsel has been responsible for porting a large number of vim patches, as has @lonerover. Thank you! Old contributor shoutout: @oni-link isn’t a name you read a lot in the commit logs, but he’s been very helpful in reviewing changes and improving complicated PR’s for quite some time. Thank you! This release brings a host of fixes and improvements. We’ll look at some of them closer below, but be sure to also check out the release page for all the gory details. This is a fast-and-furious containing mostly bug-fixes. See the release-notes for details. Some new features are in, too: For an overview of planned features, goals and ideas for Neovim head to the road map. Some noteworthy upcoming PRs are: API clients are at the heart of Neovim’s architecture, and significantly improve developer experience. Write a plugin in any language you want! Since the last newsletter, we’ve seen the addition of another C++ client, one for Elixir, and a Racket client. The node client got an overhaul and a new maintainer. Thanks @billyvg for taking over! While not totally new, a special shoutout goes to the ruby client for being very well-maintained. Thanks, @alexgenco!"
+year_published = 2025
+clearnet = "https://neovim.io/news/2017/12"
+tags = ["0.2.1", "0.2.2", "0.2.3-dev", "@adnoc", "@aignas", "@alexgenco", "@bfredl", "@billyvg", "@brammool", "@chrisbra"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clang-analyzer.llvm.org", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gitlab.com", "godoc.org", "lua-users.org", "lwn.net", "meta.com", "news.ycombinator.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/arabic.html"]
+title = "Arabic - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/arabic.html"
+tags = ["arabic", "arabicfonts", "arabickeymap", "bugs", "font", "fonts", "highlights", "installation", "introduction", "keymap/keyboard"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_04.html"]
+title = "Usr_04 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_04.html"
+tags = ["04.10", "04.2", "04.3", "04.4", "04.5", "04.6", "04.7", "04.8", "04.9", "blocks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/faq.html"]
+title = "Faq - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/faq.html"
+tags = ["build", "design", "faq-build", "faq-design", "faq-general", "faq-runtime", "general", "issues", "note:", "questions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/screenshots"]
+title = "Screenshots - Neovim"
+description = "Hyperextensible Vim-based text editor"
+year_published = 2025
+clearnet = "https://neovim.io/screenshots"
+tags = ["disclaimer", "screenshots", "terminal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc"]
+title = "Documentation - Neovim"
+description = "Hyperextensible Vim-based text editor"
+year_published = 2025
+clearnet = "https://neovim.io/doc"
+tags = ["clients", "developer", "documentation", "install", "resources", "user"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/hebrew.html"]
+title = "Hebrew - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/hebrew.html"
+tags = ["'isprint'", "characters", "details", "hebrew", "introduction", "note:", "pasting", "rightleft", "variable", "window"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/options.html"]
+title = "Options - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/options.html"
+tags = ["$home", "$home-windows", "'acd'", "'ai'", "'allowrevins'", "'ambiwidth'", "'ambw'", "'ar'", "'arab'", "'arabic'"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/news/2022/12"]
+title = "What Neovim shipped in 2022 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "“Lua plugins are basically the same as a vim plugin, except the file extension is .lua instead of .vim and the file contains Lua code instead of Vimscript.” Automated generation of the online Nvim documentation was rewritten by replacing an old AWK script with Lua + tree-sitter. We can have nice things. Nvim now sets the $NVIM environment variable in jobstart() and :terminal jobs, so child processes have an unambiguous hint that they are children of Nvim. The old $NVIM_LISTEN_ADDRESS, which had conflicting “dual purposes”, is no longer passed to children. Nvim UIs are just (inverted) plugins. And now nvim itself is a self-hosting UI: when you run nvim in a terminal, it starts the TUI as a nvim --embed child process. Just like Nvim GUIs, you can connect the nvim TUI to any Nvim server to see its UI! You can try it right now: Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news/2022/12"
+tags = ["control", "defaults", "deprecations", "discuss", "documentation", "editor", "maintenance", "neovim", "neovim?", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/terminal.html"]
+title = "Terminal - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/terminal.html"
+tags = [":arguments", ":asm", ":break", ":clear", ":continue", ":down", ":evaluate", ":finish", ":frame", ":gdb"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 91baa216ed5ae118 • Your IP: Click to reveal 143.198.35.227 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://neovim.io/cdn-cgi/l/email-protection"
+tags = ["91baa216ed5ae118", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "neovim.io"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/userfunc.html"]
+title = "Userfunc - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/userfunc.html"
+tags = ["...", ":cal", ":call", ":defer", ":delf", ":delfunction", ":endf", ":endfunction", ":fu", ":func-abort"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/ft_sql.html"]
+title = "Ft_sql - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_sql.html"
+tags = ["adding", "completion", "customization", "default", "dialect", "dialects", "dynamic", "filetypes", "informix", "macros"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/pi_tutor.html"]
+title = "Pi_tutor - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_tutor.html"
+tags = ["contributing", "creating", "tutorials", "usage", "vim-tutor-create", "vim-tutor-usage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/news.html"]
+title = "News - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/news.html"
+tags = ["breaking", "build", "changed", "changes", "defaults", "deprecations", "diagnostics", "editor", "events", "experimental"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/develop.html"]
+title = "Develop - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/develop.html"
+tags = ["api-client", "design", "design-documented", "design-goals", "design-improved", "design-maintain", "design-not", "design-speed-size", "dev", "dev-api"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "creativecommons.org", "developers.google.com", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/doc/user/usr_07.html"]
+title = "Usr_07 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_07.html"
+tags = ["07.2", "07.3", "07.4", "07.5", "07.6", "07.7", "another", "arglist-quit", "arguments", "automatic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/node-client"]
+title = "neovim"
+description = "Documentation for neovim"
+full_description = '''Or for non-plugin purposes, neovim works like any other NPM package. See below for a quickstart example that you can copy and run immediately. Neovim supports remote plugins, which are plugins implemented as Nvim API clients. This package contains both the "API client" (which talks to nvim) and "remote plugin host" (which discovers and runs Nvim node.js remote plugins). You can define a remote plugin as a file or folder in an rplugin/node/ directory on Nvim's 'runtimepath'. If the plugin is a folder, the main script from package.json will be loaded. The plugin must export a function which takes a NvimPlugin object as its only parameter. You may then register autocmds, commands and functions by calling methods on the NvimPlugin object. Avoid heavy initialisation or async functions at this stage, because Nvim may only be collecting information about your plugin without wishing to actually use it. Instead, wait for one of your autocmds, commands or functions to be called before starting any processing. Set your plugin to dev mode, which will cause the module to be reloaded on each invocation. alwaysInit will always attempt to attempt to re-instantiate the plugin. e.g. your plugin class will always get called on each invocation of your plugin's command. Registers an autocmd for the event name, calling your function fn with options. Pattern is the only required option. If you wish to call a method on an object you may pass fn as an array of [object, object.method]. By default autocmds, commands and functions are all treated as asynchronous and should return Promises (or should be async functions). Registers a command named by name, calling function fn with options. This will be invoked from nvim by entering :name in normal mode. Registers a function with name name, calling function fn with options. This will be invoked from nvim by entering eg :call name() in normal mode. For debugging and configuring logging, you can set the following environment variables which are used by the neovim package (or nvim itself where noted):'''
+year_published = 2025
+clearnet = "https://neovim.io/node-client"
+tags = ["async", "avoid", "break", "channel", "client", "connect", "contributors", "create", "debug", "develop"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "npmjs.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/visual.html"]
+title = "Visual - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/visual.html"
+tags = ["area", "blockwise", "blockwise-examples", "blockwise-operators", "blockwise-visual", "changing", "charwise-visual", "ctrl-v", "examples", "linewise-visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/community"]
+title = "Community - Neovim"
+description = "Hyperextensible Vim-based text editor"
+year_published = 2025
+clearnet = "https://neovim.io/community"
+tags = ["community", "usage/configuration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "news.ycombinator.com", "npmjs.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "travis-ci.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/diff.html"]
+title = "Diff - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/diff.html"
+tags = [":dif", ":diff", ":diffg", ":diffget", ":diffo", ":diffoff", ":difforig", ":diffp", ":diffpatch", ":diffpu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/deprecated.html"]
+title = "Deprecated - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/deprecated.html"
+tags = ["'fe'", "'highlight'", "'hl'", "'langnoremap'", "'nopaste'", "'paste'", "'vi'", "'viminfo'", "'viminfofile'", "0.10"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/syntax.html"]
+title = "Syntax - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/syntax.html"
+tags = ["2html.vim", ":colo", ":colorscheme", ":hi", ":hi-clear", ":hi-default", ":hi-link", ":hi-normal", ":hi-normal-cterm", ":highlight"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/usr_toc.html"]
+title = "Usr_toc - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_toc.html"
+tags = ["editing", "effectively", "getting", "overview", "started", "tuning", "usr"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_43.html"]
+title = "Usr_43 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_43.html"
+tags = ["43.2", "adding", "contents", "filetype", "filetype-plugin", "plugins", "recognizing", "your-runtime-dir"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/intro.html"]
+title = "Intro - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/intro.html"
+tags = ["'character'", "'option'", "alt", "backslash", "backspace", "book", "bram", "bram-moolenaar", "brammool", "bug-report"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/usr_10.html"]
+title = "Usr_10 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_10.html"
+tags = ["10.2", "10.3", "10.4", "10.5", "10.6", "10.7", "10.8", "10.9", "block", "case"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/scroll.html"]
+title = "Scroll - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/scroll.html"
+tags = [":sync", ":syncbind", "ctrl-b", "ctrl-d", "ctrl-e", "ctrl-f", "ctrl-u", "ctrl-y", "cursor", "downwards"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/api.html"]
+title = "Api - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/api.html"
+tags = ["ansi-colorize", "api", "api-autocmd", "api-buffer", "api-buffer-updates", "api-buffer-updates-lua", "api-command", "api-contract", "api-definitions", "api-extended-marks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binpress.com", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "matrix.to", "msgpack.org", "neovide.dev", "opencollective.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/doc/user/usr_45.html"]
+title = "Usr_45 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_45.html"
+tags = ["45.2", "45.3", "45.4", "45.5", "another", "different", "do-it-yourself", "editing", "encoding", "entering"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/tips.html"]
+title = "Tips - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/tips.html"
+tags = ["autocommands", "c-editing", "change", "change-name", "collapse", "commands", "common", "compressing", "correcting", "count-bytes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/helphelp.html"]
+title = "Helphelp - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/helphelp.html"
+tags = [":exu", ":exusage", ":help", ":helpc", ":helpclose", ":helpg", ":helpgrep", ":helpt", ":helptags", ":lh"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/quickfix.html"]
+title = "Quickfix - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/quickfix.html"
+tags = [":cabo", ":cabove", ":cad", ":cadd", ":caddbuffer", ":cadde", ":caddexpr", ":caddf", ":caddfile", ":caf"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/luaref.html"]
+title = "Luaref - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/luaref.html"
+tags = ["2.10", "2.10.1", "2.10.2", "2.11", "2.2.1", "2.4.1", "2.4.2", "2.4.3", "2.4.4", "2.4.5"]
+language = "en"
+internal-references = ["none"]
+external-references = ["coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "jakarta.apache.org", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "pyunit.sourceforge.net", "rapideuphoria.com", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/pi_gzip.html"]
+title = "Pi_gzip - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_gzip.html"
+tags = ["autocommands", "bzip2", "compress", "gzip-autocmd"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/lua.html"]
+title = "Lua - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/lua.html"
+tags = [":inspect", ":inspect!", ":lua", ":lua-heredoc", ":luado", ":luafile", ":open", ":tohtml", "bridge", "commands"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "inf.puc-rio.br", "lua.org", "matrix.to", "microsoft.github.io", "msgpack.org", "neovide.dev", "semver.org", "store.neovim.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/doc/user/mbyte.html"]
+title = "Mbyte - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/mbyte.html"
+tags = [":loadk", ":loadkeymap", "arguments", "bom-bytes", "charset", "charset-conversion", "chinese", "codeset", "command", "conversion"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/credits.html"]
+title = "Credits - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/credits.html"
+tags = ["anonymous", "backers", "backers.txt", "credits", "elvis", "friendship", "fundraiser", "gross-national-happiness", "list", "love"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/filetype.html"]
+title = "Filetype - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/filetype.html"
+tags = [":filet", ":filetype", ":filetype-indent-off", ":filetype-indent-on", ":filetype-off", ":filetype-overview", ":filetype-plugin-off", ":filetype-plugin-on", ":man", "arduino"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "digitalocean.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/insert.html"]
+title = "Insert - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/insert.html"
+tags = ["'expandtab',", "'smarttab'", "'softtabstop'", "'textwidth'", "'wrapmargin'", ":append", ":in", ":insert", ":r!", ":re"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/vvars.html"]
+title = "Vvars - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/vvars.html"
+tags = ["$nvim", "argv-variable", "assert-return", "char-variable", "cmdarg-variable", "cmdbang-variable", "collate-variable", "count-variable", "count1-variable", "ctype-variable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/if_perl.html"]
+title = "If_perl - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/if_perl.html"
+tags = [":perl", ":perldo", ":perlfile", "commands", "lexical", "module", "objects", "perl", "perl-blob", "perl-buffer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/fold.html"]
+title = "Fold - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/fold.html"
+tags = [":fo", ":fold", ":foldc", ":foldclose", ":foldd", ":folddo", ":folddoc", ":folddoclosed", ":folddoopen", ":foldo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/ft_hare.html"]
+title = "Ft_hare - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_hare.html"
+tags = ["contents", "filetype", "hare-intro", "hare-plugin", "hare-settings", "introduction", "plugin", "settings"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/ft_ada.html"]
+title = "Ft_ada - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ft_ada.html"
+tags = ['"ctags"~', '"gnat', ":adalines", ":adarainbow", ":adaspaces", ":adatagdir", ":adatagfile", ":adatypes", ":gnatfind", ":gnatpretty"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_06.html"]
+title = "Usr_06 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_06.html"
+tags = ["06.2", "06.3", "06.4", "06.5", ":syn-default-override", ":syn-manual", "colors", "colors?", "different", "further"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2014/nov"]
+title = "Newsletter #4 - Thanksvimming Day - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Welcome to the fourth newsletter for Neovim, the project that aims to overhaul the Vim code base. It also hopes to provide out of the box features yet a more powerful interface for extending the editor. You can now add a Neovim sticker to your laptop by heading over to the Neovim section of Unixstickers. Unixstickers will be donating a portion of the profits to ICCF Holland in support of Bram Moolenar’s work on Vim. During the last two months, the repo reached over 10,000 stargazers on Github. The repository also just tipped over the 100 person contributor mark. Floobits, a service that integrates with editors to make it easier to write code together, has deprecated its Vim plugin in favor of a plugin for Neovim. Already Floobits says that the new plugin “has fewer bugs and performs better” than their previous plugin. Read their entire write up to learn more about their thoughts or view the repository to see the code. @Shougo, creator of many Vim plugins, gave a talk about his experience and perspective of Neovim so far. Check out the English version of the slides to read his thoughts. @tarruda finished his pull request that did two things. It gave the initial implementation of remote plugins which are going to be plugins that run in external processes and communicate to Nvim through msgpack-rpc. Details can be found in :h remote-plugin. The second change is an improvement to the existing provider infrastructure to allow providers to be implemented in VimScript. This gives more flexibility as previously providers needed to be implemented using msgpack. More details for this can be found in the :h nvim-provider. If you run into issues with this new plugin system, it might be caused by stale files from old builds and/or old configurations. iconv is a library “for use on systems which don’t have one, or whose implementation cannot convert from/to Unicode.” During the migration to CMake, the macro USE_ICONV was missed which was used to indicate such a system. Thus Neovim never triggered specific encoding conversions when needed."
+year_published = 2025
+clearnet = "https://neovim.io/news/2014/nov"
+tags = ["analyzer", "approved", "clang", "contributing", "development", "discuss", "donating", "fixes", "floobits", "general"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clang-analyzer.llvm.org", "creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/pi_paren.html"]
+title = "Pi_paren - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/pi_paren.html"
+tags = [":domatchparen", ":nomatchparen"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/archive"]
+title = "News archive - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news/archive"
+tags = ["0.10", "archive", "better", "boss", "christmas", "code", "company", "discuss", "dream", "google"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "matrix.to", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtu.be"]
+
+["https://neovim.io/doc/user/usr_40.html"]
+title = "Usr_40 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_40.html"
+tags = ["40.2", "40.3", "abbreviations", "additionally...", "arguments", "autocommands", "characters", "command-line", "commands", "defining"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/news/2020/10"]
+title = "Newsletter #10 - Neovim v0.4.4 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a fork of the venerable text-editor vim, focused on extensibility and usability. It is not a rewrite but a continuation and extension of Vim. Many clones and derivatives exist, some very clever—but none are Vim. Neovim is built for users who want the good parts of Vim, and more. See a list of differences via :help vim-differences. If you are interested in contributing to Neovim, visit the github page for details. We have a great test suite and automated CI, so you can just jump in and have a go. Don’t be afraid to open a PR to get comments or just take advantage of the infrastructure! To get in touch with the team, join the gitter channel (also accessible via IRC), or visit the Neovim subreddit, which many of the developers read. Taking part in conversations is a contribution, too! The last newsletter covered the release of Neovim v0.3.0, it is now time to do the same thing with the most exciting Neovim release that happened since then: v0.4.4! Neovim started detecting the background color of the terminal for xterm-compatible terminals (@joshtriplett, #9509) The 'fillchars' setting now has an eob option, letting users configure the character used to represent lines after the end of a buffer (previously hardcoded to ~) (@FriedSock, #8546) The CursorLine type will now be smarter: if its foreground color is not set, the text of the CursorLine will use the CursorLine’s background color and default syntax highlighting colors as foreground (@zhou13, #8578). The terminal UI can now support undercurl and colored underline, provided that your terminal has support for that (@blueyed, #9052). Neovim’s 'background' setting now defaults to dark to get a consistent setting across platforms (@justinmk, #9205). Floating windows! This enables all kinds of useful features, such as big clocks (@bfredl, @dzhou121, #6619) The wildmenu can now be turned into a popup menu with wildoptions=pum (@bfredl, #9607). In fact, that’s the default! There now are two events triggered when a UI connects to and disconnects from Neovim: UIEnter and UILeave (@equalsraf, #6917)."
+year_published = 2025
+clearnet = "https://neovim.io/news/2020/10"
+tags = ["@andreypopp", "@bfredl", "@blueyed", "@brammool", "@bredl", "@chemzqm", "@dzhou121", "@equalsraf", "@friedsock", "@joshtriplett"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "matrix.to", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/doc/user/sign.html"]
+title = "Sign - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/sign.html"
+tags = [":sig", ":sign", ":sign-define", ":sign-fname", ":sign-jump", ":sign-list", ":sign-list e156", ":sign-place", ":sign-place e158", ":sign-place-list"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/roadmap"]
+title = "Roadmap - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "The roadmap is an overview of the project direction. Detailed plans and priorities are tracked in milestones: Here are the headline features of the previous releases; for details see the corresponding release notes. Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/roadmap"
+tags = ['"the', "0.1.x", "0.10", "0.11", "0.12+:", "0.2.x", "0.3.x", "0.5.1", "completed", "discuss"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "x.com", "youtu.be"]
+
+["https://neovim.io/news/2025/02"]
+title = "Google Summer of Code 2025 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim is a Vim-based text editor engineered for extensibility and usability, to encourage new applications and contributions. Follow @Neovim !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');"
+year_published = 2025
+clearnet = "https://neovim.io/news/2025/02"
+tags = ["code", "discuss", "google", "neovim?", "news", "summer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["app.element.io", "blockchain.com", "coderabbit.ai", "creativecommons.org", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "matrix.to", "neovide.dev", "opencollective.com", "stackoverflow.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtu.be"]
+
+["https://neovim.io/doc/user/ui.html"]
+title = "Ui - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/ui.html"
+tags = ["cmdline", "detailed", "events", "extension", "global", "grid", "highlight", "message/dialog", "multigrid", "note:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/usr_27.html"]
+title = "Usr_27 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_27.html"
+tags = ["27.2", "27.3", "27.4", "27.5", "27.6", "27.7", "27.8", "27.9", "alternatives", "around"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_44.html"]
+title = "Usr_44 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_44.html"
+tags = ["44.10", "44.11", "44.12", "44.2", "44.3", "44.4", "44.5", "44.6", "44.7", "44.8"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/usr_03.html"]
+title = "Usr_03 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_03.html"
+tags = ["03.10", "03.2", "03.3", "03.4", "03.5", "03.6", "03.7", "03.8", "03.9", "around"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/rileft.html"]
+title = "Rileft - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/rileft.html"
+tags = ["bugs", "highlights", "ins-reverse", "interest...", "introduction", "rileft"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/about"]
+title = "About - Neovim"
+description = "Hyperextensible Vim-based text editor"
+year_published = 2025
+clearnet = "https://neovim.io/about"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["binpress.com", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "matrix.to", "msgpack.org", "neovide.dev", "opencollective.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/doc/user/recover.html"]
+title = "Recover - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/recover.html"
+tags = [":nos", ":noswapfile", ":pre", ":preserve", ":rec", ":recover", ":sw", ":swapname", "e1364", "e305"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/usr_29.html"]
+title = "Usr_29 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/usr_29.html"
+tags = ["29.2", "29.3", "29.4", "29.5", "blocks", "braces", "code", "commands", "comments", "defined"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/nvim.html"]
+title = "Nvim - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/nvim.html"
+tags = ["kickstart", "lazyvim", "neovim", "next?", "note:", "nvchad", "nvim", "nvim-from-vim", "nvim-intro", "nvim-quickstart"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "inf.puc-rio.br", "lazyvim.org", "lua.org", "matrix.to", "msgpack.org", "neovide.dev", "semver.org", "store.neovim.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/news/2022/04"]
+title = "Neovim News #12 - What's New In Neovim 0.7 - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Neovim 0.7 was just released, bringing with it lots of new features (and of course plenty of bug fixes). You can find the full release notes here, but in this post I’ll cover just a few of the new additions. Neovim 0.5 saw the introduction of Lua as a first-class citizen in the Neovim ecosystem: Lua could now be used in the user’s init file, plugins, colorschemes, ftplugins, etc. Basically, anywhere that you could use a .vim file, you could now use .lua instead. However, there were still some shortcomings in the Lua API at that time. Notably absent was the ability to create autocommands in Lua, as well as bind key mappings directly to Lua functions. In order to do either of these things, users needed to resort to workarounds involving a round trip through Vimscript conversion, which is a bit clunky: In Neovim 0.7, it is now possible to use all of the usual configuration primitives (key mappings, autocommands, user commands, etc.) directly in Lua, with no Vimscript conversion necessary. This also makes it possible to bind key mappings and autocommands directly to local Lua functions: You may notice that nvim_set_keymap must set the Lua callback as a key in the final table argument, while nvim_create_user_command can pass the callback function directly as a positional parameter. This is a consequence of Neovim’s strict API contract, which mandates that after an API function makes it into a stable release, it’s signature must not change in any way. However, because nvim_create_user_command is a new API function, we are able to add a bit of convenience by making its second argument accept either a string or a function. Neovim 0.7 also includes a Lua-only convenience function vim.keymap.set for easily creating new key mappings: Finally, users can now use the API function nvim_set_hl to modify global highlight groups (the equivalent of using :hi), opening the door to pure-Lua colorschemes. Being a terminal based application, Neovim has long been subject to the constraints of terminal emulators, one of which being that many keys are encoded the same and thus indistinguishable to applications running in the terminal. For example, <Tab> and <C-I> use the same representation, as do <CR> and <C-M>. This has long meant that it is not possible to separately map <C-I> and <Tab>: mapping one necessarily maps both."
+year_published = 2025
+clearnet = "https://neovim.io/news/2022/04"
+tags = ["ahead", "client-server", "communication", "contents", "discuss", "distinguishing", "everywhere!", "filetype.lua", "global", "keys"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aktau.be", "coderabbit.ai", "creativecommons.org", "developers.google.com", "digitalocean.com", "editorconfig.org", "enlightenment.org", "fennel-lang.org", "fleiner.com", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "packages.debian.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "vi.stackexchange.com"]
+
+["https://neovim.io/news/2014/sept"]
+title = "Newsletter #3 - Better Late than Never - Neovim"
+description = "Hyperextensible Vim-based text editor"
+full_description = "Welcome to the third (and delayed) newsletter for Neovim, the project that aims to overhaul the Vim codebase. The next newsletter will be coming out near the beginning of November. It has changed to be every other month as to not overload any sensitive Neovim lovers with too much staggering awe. The Issue tracker on GitHub now has over 1,000 issues/pull requests. The lucky 1000th pull request was opened shortly before August. As mentioned in last July’s newsletter, the documentation has successfully been moved to neovim.io/doc/. It features some general documenation links as well as some more specific reports directed towards developers and contributors. These reports have already helped developers contribute and improve the codebase. @aktau has finished implementing the VimL system() function to use pipes and the job system instead of redirecting to temporary files. The change provides a nice speed boost and avoids some permission issues (mainly affecting Windows, which is not supported yet). The slowness of the old implementation of system() was especially noticeable when the called process had large output. An example of this is: system('cat largefile'). There has been one bug report concerning the new system() code: it doesn’t work well with the Selecta plugin as described here. @aktau leveraged libuv’s ability to provide a high resolution clock on many systems to improve Neovim’s profiling capability with this pull request. The previous implementation was using gettimeofday(). This was a blocker in getting Neovim to run on Windows (as detailed in the previous section) as this function wasn’t supported in Windows. MoonScript (a language that compiles to Lua) was chosen to be the language for unit tests. After updating the unit test library, Busted, some unit tests were failing. Thus it was decided to drop the dependency to simplify the tests and remove a layer of abstraction. @tarruda made the accompanying changes and pull request. Discussion arose regarding how Neovim wasn’t fully compliant with the specification of msgpack-rpc."
+year_published = 2025
+clearnet = "https://neovim.io/news/2014/sept"
+tags = ["1,000", "better", "bounty", "claimed!", "client", "code", "contributing", "core", "cross", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["clang-analyzer.llvm.org", "creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "pynvim.readthedocs.io", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io/doc/user/news-0.9.html"]
+title = "News-0.9 - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/news-0.9.html"
+tags = ["breaking", "changed", "changes", "deprecations", "features", "news-0.9", "note:", "removed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ahri.net", "aktau.be", "creativecommons.org", "developers.google.com", "digitalocean.com", "fennel-lang.org", "github.com", "gitlab.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "msdn.microsoft.com", "news.ycombinator.com", "npmjs.com", "opencontent.org", "pragprog.com", "pynvim.readthedocs.io", "rapideuphoria.com", "savannah.gnu.org", "vi.stackexchange.com", "wiki.services.openoffice.org"]
+
+["https://neovim.io/doc/user/quickref.html"]
+title = "Quickref - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/quickref.html"
+tags = ["abbreviations", "argument", "argument-list", "automatic", "buffer", "changes", "changing", "characters", "command-line", "commands"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/various.html"]
+title = "Various - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/various.html"
+tags = ["8g8", ":!!", ":!cmd", ":#!", ":as", ":ascii", ":filt", ":filter", ":list", ":mod"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bford.info", "coderabbit.ai", "creativecommons.org", "dart.dev", "developers.google.com", "digitalocean.com", "flatassembler.net", "fleiner.com", "github.com", "lua-users.org", "lwn.net", "matrix.to", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "stackoverflow.com", "summerofcode.withgoogle.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]
+
+["https://neovim.io"]
+title = "Home - Neovim"
+description = "Hyperextensible Vim-based text editor"
+year_published = 2025
+clearnet = "https://neovim.io"
+tags = ["chat", "continues...", "detach", "drop-in", "editor", "extensible", "features", "guis", "hyperextensible", "impressions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["binpress.com", "blockchain.com", "coderabbit.ai", "creativecommons.org", "dotfyle.com", "geoff.greer.fm", "github.com", "hachyderm.io", "matrix.to", "msgpack.org", "neovide.dev", "opencollective.com", "store.neovim.io", "tree-sitter.github.io", "twitter.com", "vi.stackexchange.com", "warp.dev", "youtube.com"]
+
+["https://neovim.io/doc/user/starting.html"]
+title = "Starting - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/starting.html"
+tags = ["$myvimrc", "$vim", "$vimruntime", "-+/", "-+c", "---", "--api-info", "--clean", "--cmd", "--embed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blockchain.com", "creativecommons.org", "developers.google.com", "geoff.greer.fm", "github.com", "gpanders.com", "lua-users.org", "lua.org", "lwn.net", "neovide.dev", "opencollective.com", "stackoverflow.com", "twitter.com", "unicode.org", "vi.stackexchange.com", "w3.org", "warp.dev", "x.com", "youtu.be", "ziglang.org"]
+
+["https://neovim.io/doc/user/remote_plugin.html"]
+title = "Remote_plugin - Neovim docs"
+description = "Neovim user documentation"
+year_published = 2025
+clearnet = "https://neovim.io/doc/user/remote_plugin.html"
+tags = [":updateremoteplugins", "example", "hosts", "introduction", "manifest", "plugin", "remote", "remote-plugin-example", "remote-plugin-hosts", "remote-plugin-intro"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "cygwin.com", "dart.dev", "developers.google.com", "digitalocean.com", "editorconfig.org", "flatassembler.net", "github.com", "gnuwin32.sourceforge.net", "jakarta.apache.org", "lua-users.org", "lwn.net", "meta.com", "msdn.microsoft.com", "rapideuphoria.com", "ruby-lang.org", "stackoverflow.com", "tree-sitter.github.io", "vi.stackexchange.com", "warp.dev"]

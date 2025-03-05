@@ -1,0 +1,10 @@
+["https://okeanos.grnet.gr"]
+title = """
+Home   | ~okeanos IAAS"""
+full_description = '''X play var video_settings = { 'wrapper': $(".video-thumb"), 'youtube_id': 'EaiUIfANtFg', }; function onYouTubeIframeAPIReady() { var youtube = new YouTube(video_settings); window.youtube = youtube; } // This code loads the IFrame Player API code asynchronously. var tag = document.createElement('script'); tag.src = "https://www.youtube.com/iframe_api"; var firstScriptTag = document.getElementsByTagName('script')[0]; firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); STATISTICS Spawned VMs0 Active VMs0 Spawned Networks0 var stats_settings = { 'compute_url': 'https://cyclades.okeanos.grnet.gr/admin/stats', }; var serviceStats = new ServiceStats(stats_settings, $(".stats-block")); serviceStats.startUpdate(10000); WELCOME TO OKEANOS! This is GRNET's cloud service, for the Greek Research and Academic Community. With ~okeanos you are one click away from your own Virtual Machines, Networks and Storage. create an account now > find out more about the services > LATEST NEWS 8 months ago, by okeanos Disruptions in ~okeanos service 1 year, 7 months ago, by okeanos Scheduled upgrade on ~okeanos-knossos infrastructure 4 years, 7 months ago, by okeanos DISRUPTIONS IN ~OKEANOS SERVICE'''
+year_published = 2025
+clearnet = "https://okeanos.grnet.gr"
+tags = ["disruptions", "infrastructure", "latest", "news", "okeanos!", "scheduled", "service", "statistics", "upgrade", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accounts.okeanos.grnet.gr", "digitalplan.gov.gr", "espa.gr", "europa.eu", "grnet.gr"]

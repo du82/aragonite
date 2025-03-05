@@ -1,236 +1,232 @@
-["https://cygwin.com/mirrors.html"]
-title = "Cygwin Mirror Sites"
-full_description = "The following sites have generously agreed to mirror our Cygwin package repository. To save on download time, please select a mirror near you when using setup to install or update Cygwin. Note: We automatically poll these mirrors periodically to ensure that they have the latest Cygwin packages available. The list of mirrors below reflects all of the mirrors who appear to have up-to-date copies of the Cygwin package repository. If you would like to be added to this list of available mirrors then send email to the cygwin mailing list. When you send your message, remember that this site does not accept html-formatted email. When asking to be added, please provide contact information, the URL of the mirror, and the location of the mirror (in a similar format to that used for existing mirrors in the mirror site list). Make sure that your mirror rsyncs directly from cygwin.com at least twice a day. Please do not send questions asking how to set up a mirror. We don't provide technical support for setting up mirrors. Sorry. The mirror list is automatically maintained so that only active mirrors are listed. A mirror is temporarily removed from the list if it remains out of date for more than 24 hours. If your mirror was dropped from the list, do not panic. It means that a program has determined that the content on your mirror is not up-to-date. Ensure that your mirror is up-to-date. It will be added again automatically once it has has up-to-date content. There is no need to contact anyone about this. Mirrors which remain out-of-date for more than 28 days are manually reviewed (sporadically), and disabled if the owner is unresponsive."
+["https://cygwin.com/cgit/cygwin-htdocs"]
+title = "cygwin-htdocs - cygwin htdocs -  The cygwin website files"
+full_description = 'BranchCommit messageAuthorAge masterimprove chapters mount-table and cygdriveCorinna Vinschen2 weeks TagDownloadAuthorAge before-new-websitecommit 6e44f8f371...cvs2svn14 years BEFORE_UPDATE_FOR_MODULAR_Xcommit bfdbebf744...cvs2svn16 years precgfcommit dab8d38f0c...cvs2svn17 years AgeCommit messageAuthorFilesLines 2025-02-15improve chapters mount-table and cygdriveHEADmasterCorinna Vinschen3-16/+19 2025-02-10fix snapshots/index.html yet againCorinna Vinschen1-2/+2 2025-02-10fix snapshots/index.html againCorinna Vinschen1-1/+1 2025-02-10fix snapshots/index.htmlCorinna Vinschen1-3/+2 2025-02-10add snapshots/index.html to hide the old snapshotsCorinna Vinschen1-0/+23 2025-02-04Enable SSI in new contrib pageJon Turney1-0/+0 2025-02-03Gold star for Michael CookAndrew Schulman3-34/+42 2025-02-02Make a more general "how do I contribute page"Jon Turney3-171/+189 2025-01-29Cygwin 3.5.7 releaseCorinna Vinschen1-1/+1 2025-01-26Cygwin 3.5.6 releaseCorinna Vinschen10-32/+35 2024-12-20Cygwin 3.5.5 releaseCorinna Vinschen3-1/+1 2024-11-06Move cygwin-pkg-maint to separate repositoryJon Turney2-4109/+2 [...] Clone git://cygwin.com/git/cygwin-htdocs ssh://cygwin.com/git/cygwin-htdocs https://cygwin.com/git/cygwin-htdocs'
 year_published = 2025
-clearnet = "https://cygwin.com/mirrors.html"
-category = "SitesList"
-tags = ["administrators.", "administrators:", "automatically", "cygwin", "information", "list", "maintained", "mirror", "sites", "this!"]
+clearnet = "https://cygwin.com/cgit/cygwin-htdocs"
+tags = []
 language = "en"
 internal-references = ["none"]
-external-references = ["cygwin.cathedral-networks.org", "cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "mingw-w64.org", "paypal.com", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/licensing.html"]
-title = "Cygwin Licensing Terms"
-full_description = "Most of the tools are covered by the GNU GPL, some are public domain, and others have a X11 style license. To cover the GNU GPL requirements, the basic rule is if you give out any binaries, you must also make the source available. For the full details, be sure to read the text of the GNU General Public License (GPL). The Cygwin™ API library found in the winsup subdirectory of the source code is covered by the GNU Lesser General Public License (LGPL) version 3 or later. For details of the requirements of LGPLv3, please read the GNU Lesser General Public License (LGPL). As a special exception, the copyright holders of the Cygwin library grant you additional permission to link libcygwin.a, crt0.o, and gcrt0.o with independent modules to produce an executable, and to convey the resulting executable under terms of your choice, without any need to comply with the conditions of LGPLv3 section 4. An independent module is a module which is not itself based on the Cygwin library. No. Cygwin source and binary are made publicly available and free of charge to download so Cygwin is provided under TSU/TSPA exemption. As a result, Cygwin does not require an ECCN number."
-year_published = 2025
-clearnet = "https://cygwin.com/licensing.html"
-category = "SitesList"
-tags = ["cygwin", "cygwin™", "eccn", "exception", "licensing", "linking", "number?", "terms?"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "freenode.net", "git-scm.com", "google.com", "hosted.weblate.org", "ietf.org", "libera.chat", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
-
-["https://cygwin.com/acronyms"]
-title = "Cygwin Acronyms"
-full_description = "Note that this is not intended to be an all-inclusive list of all possible acronyms. If you can't find the acronym you're looking for here, try another acronym resource, like The Canonical Acronym List or AcronymFinder.com."
-year_published = 2025
-clearnet = "https://cygwin.com/acronyms"
-category = "SitesList"
-tags = ["acronyms", "bloda", "bwam", "cygwin", "iwfm", "msfteu", "shtdi", "tofu", "wjffm"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
-
-["https://cygwin.com/ml/cygwin-xfree/2003-05/msg00084.html"]
-title = "Sam Edge - Re: XWin design suggestion"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin-xfree/2003-05/msg00084.html"
-category = "SitesList"
-tags = ["design", "follow-ups", "references", "suggestion", "xwin"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/contrib.html"]
-title = "Cygwin Contribution"
-full_description = "This project is entirely dependent on volunteer time. Volunteer time is always in short supply, so if you are thinking about contributing, rest assured that your efforts will be welcome and appreciated."
-year_published = 2025
-clearnet = "https://cygwin.com/contrib.html"
-category = "SitesList"
-tags = ["cygwin", "help", "out?"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "git.zx2c4.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
 
 ["https://cygwin.com/contrib/dll.html"]
 title = "Cygwin Contribution"
 full_description = '''Note: The newlib library (used by Cygwin for some common "libc"-like functions) has different contribution rules. See their project page for more information. The code corresponding to cygwin1.dll is mostly in the winsup directory with additional code coming from newlib/libc and newlib/libm. Any changes you make should be to the current development sources. This makes it much easier to integrate your changes once they're completed and tested. Note that the current Git tree should compile, but it should always be assumed to be unstable since it contains potentially untested, experimental code. Once you've checked out the sources, you will be able to avail yourself of the "how*" files in the winsup/cygwin directory. These are developer-written files which summarize various techniques involved in cygwin design. You should familiarize yourself with their content before making changes to the subsystems that they describe. If your change is going to be a significant one in terms of the size of your code changes, be aware that for changes to all source files under the "winsup" directory you will have to license your code changes under the 2-clause BSD license before we can include your changes in the main source tree. (This is necessary for the next few years so that Red Hat can meet its continuing obligations to Cygwin buyout license customers while Cygwin transitions away from this licensing model.). To do this, just make a public statement that you provide your patches to the Cygwin sources under the 2-clause BSD license. You can do that with your first patch submission. After your first patch has been approved and applied, your name and email address will be added to the new winsup/CONTRIBUTORS file. For the wording of the 2-clause BSD license, see the winsup/CONTRIBUTORS file in the Cygwin git repository. If you already have a Cygwin Copyright Assignment signed and submitted, you can ignore this procedure. If you're not sure if you already signed the Copyright Assignment, see the list of signees in the winsup/CONTRIBUTORS file.'''
 year_published = 2025
 clearnet = "https://cygwin.com/contrib/dll.html"
-category = "SitesList"
 tags = ["before", "building", "changes", "contributing", "cygwin", "development", "finalized", "needs", "started", "version"]
 language = "en"
 internal-references = ["none"]
 external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
 
-["https://cygwin.com/goldstars"]
-title = "Cygwin Gold Stars"
-full_description = "This page is dedicated to the Cygwin Gold Star award. The award is given to people who have pleased a Cygwin project lead by their actions or contributions. Each star is a link detailing the circumstances in which it was awarded."
+["https://cygwin.com/pipermail/cygwin-announce/2025-January/012119.html"]
+title = "cygwin 3.5.7-1"
 year_published = 2025
-clearnet = "https://cygwin.com/goldstars"
-category = "SitesList"
-tags = ["awards", "cygwin", "distinguished", "gold", "recipients", "star"]
+clearnet = "https://cygwin.com/pipermail/cygwin-announce/2025-January/012119.html"
+tags = ["3.5.7-1", "corinna", "cygwin", "messages", "sorted", "vinschen"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "mozilla.org", "repology.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
 
-["https://cygwin.com/news.html"]
-title = "Cygwin Newsgroups"
-full_description = "Cygwin mailing lists are mirrored by the gmane.io NNTP gateway. You can use any Newsreader (e.g. Thunderbird, Knode, Tin) to access the Cygwin mailing lists. Please note that the gmane website and its newsgroup search interface is down since August 2016. Only the aforementioned NNTP gateway is still up. Gmane Cygwin newsgroups always start with the prefix gmane.os.cygwin. Here's a list of the active Cygwin mailing lists and their Gmane newsgroup counterparts:"
+["https://cygwin.com/git.html"]
+title = "Cygwin in Git"
+full_description = "The sources to the core Cygwin libraries and utilities (Cygwin and Newlib) are available via anonymous Git access. If you don't know what Git is, visit the Git home page. Coincidentally enough, Git comes with the Cygwin net release. Starting December 2022, regular, automated test releases are created whenever a significant patch is pushed to the Cygwin git repository. You can download the cygwin package test releases just like any other test release for any Cygwin package using the Cygwin Setup program. This allows following development even if you're not comfortable with Git. The cygwin.com website is under Git control, too. You can also view the website Git repo via a web interface. Note that this is only the framework. The User's Guide, API and FAQ are maintained as part of the aforementioned Cygwin source Git repository."
 year_published = 2025
-clearnet = "https://cygwin.com/news.html"
-category = "SitesList"
-tags = ["2016.", "aforementioned", "august", "cygwin", "cygwin-announce", "cygwin-apps", "cygwin-apps-cvs", "cygwin-cvs", "cygwin-developers", "cygwin-patches"]
+clearnet = "https://cygwin.com/git.html"
+tags = ["access", "anonymous", "cygwin", "developers", "git-less", "read-only", "read/write", "releases", "test", "web-based"]
 language = "en"
 internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "paypal.com", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/ml/cygwin-apps/2003-11/msg00314.html"]
-title = "Christopher Faylor - Re: Maintainers/Packages List, 2003-11-22"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin-apps/2003-11/msg00314.html"
-category = "SitesList"
-tags = ["2003-11-22", "follow-ups", "list,", "maintainers/packages", "references"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.gwdg.de", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/install.html"]
-title = "Cygwin Installation"
-full_description = "The signature for setup-x86_64.exe can be used to verify the validity of this binary using the public key here. When installing packages for the first time, the setup program does not install every package. Only the minimal base packages from the Cygwin distribution are installed by default, which takes up about 100 MB. Clicking on categories and packages in the setup program package installation screen allows you to select what is installed or updated. Individual packages like bash, gcc, less, etc. are released independently of the Cygwin DLL, so the Cygwin DLL version is not useful as a general Cygwin release number. The setup program tracks the versions of all installed components and provides the mechanism for installing or updating everything available from this site for Cygwin. Once you've installed your desired subset of the Cygwin distribution, the setup program will remember what you selected, so re-running it will update your system with any new package releases. The setup program will check by default if it runs with administrative privileges and, if not, will try to elevate the process. If you want to avoid this behaviour and install under an unprivileged account just for your own usage, run setup with the --no-admin option. Tip: if you don't want to also upgrade existing packages, select 'Keep' at the top-right of the package chooser page. A: Yes and no. The setup program understands command-line arguments which allow you to control its behavior and choose individual packages to install. While this provides some functionality similar to such tools as apt-get or yum it is not as full-featured as those package managers. A: The basic reason for not using a more full-featured package manager is that such a program would need full access to all of Cygwin's POSIX functionality. That is, however, difficult to provide in a Cygwin-free environment, such as exists on first installation. Additionally, Windows does not easily allow overwriting of in-use executables so installing a new version of the Cygwin DLL while a package manager is using the DLL is problematic."
-year_published = 2025
-clearnet = "https://cygwin.com/install.html"
-category = "SitesList"
-tags = ["64-bit", "apt,", "base", "command-line", "cygwin", "etc.?", "everything?", "existing", "favourite", "general"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
 
 ["https://cygwin.com/ml/cygwin/2003-11/msg00077.html"]
 title = "Brian Dessent - Re: Multiple Cygwins/ Distributing Cygwin apps"
 year_published = 2025
 clearnet = "https://cygwin.com/ml/cygwin/2003-11/msg00077.html"
-category = "SitesList"
 tags = ["apps", "cygwin", "cygwins/", "distributing", "follow-ups", "multiple", "references"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
 
-["https://cygwin.com/ml/cygwin/2007-09/msg00014.html"]
-title = 'Dave Korn - RE: Vista/cygwin tar problem - "file changed as we read it"'
+["https://cygwin.com/ml/cygwin-apps/2004-01/msg00236.html"]
+title = "Daniel Reed - Re: [sources.redhat.com: Cron <sourceware> cd /sourceware/ftp/anonftp/pu"
 year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2007-09/msg00014.html"
-category = "SitesList"
-tags = ['"file', "changed", "follow-ups", "problem", "references", "vista/cygwin"]
+clearnet = "https://cygwin.com/ml/cygwin-apps/2004-01/msg00236.html"
+tags = ["-c-u", "-q-q", "/usr/local/bin/upx", "cron", "exit", "follow-ups", "references", "setup.exe", "setup.ini;"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.fau.de", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org"]
 
 ["https://cygwin.com/donations.html"]
 title = "Cygwin Donations"
 full_description = '''A: Yes, it is. You get to use the software for free. The only "strings attached" are that, in general, you must comply with the terms of the GNU General Public License. Cygwin relies on hosting, infrastructure and system administration provided by sourceware.org and its sponsors. Please consider donating to support its work. However, the fact that you can get the software for free doesn't mean that there is no cost to the people involved in producing it for you. The people who bring you the packages in the Cygwin distribution have often invested a considerable amount of their personal time into the providing you with the best possible Cygwin experience. This is particularly true of the people who work on the Cygwin DLL itself.'''
 year_published = 2025
 clearnet = "https://cygwin.com/donations.html"
-category = "SitesList"
 tags = ["corinna", "cygwin", "donation", "donations", "effort", "individual", "links", "paying"]
 language = "en"
 internal-references = ["none"]
 external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "sourceware.org", "x.cygwin.com"]
-
-["https://cygwin.com/faq/faq.html"]
-title = "Cygwin FAQ"
-full_description = "Cygwin is a distribution of popular GNU and other Open Source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect. The Cygwin distribution contains thousands of packages from the Open Source world including most GNU tools, many BSD tools, an X server and a full set of X applications. If you're a developer you will find tools, headers and libraries allowing to write Windows console or GUI applications that make use of significant parts of the POSIX API. Cygwin allows easy porting of many Unix programs without the need for extensive changes to the source code. This includes configuring and building most of the available GNU or BSD software, including the packages included with the Cygwin distribution themselves. They can be used from one of the provided Unix shells like bash, tcsh or zsh. Cygwin can be expected to run on all modern, released versions of Windows. This includes Windows 7, Windows Server 2008 R2 and all later versions of Windows, except Windows S mode due to its limitations, on 64 bit AMD/Intel compatible PCs, and under x64 emulation on ARM PCs running Windows 11. Keep in mind that Cygwin can only do as much as the underlying OS supports. Because of this, Cygwin will behave differently, and exhibit different limitations, on the various versions of Windows. The home page for the Cygwin project is https://cygwin.com/. There you should find everything you need for Cygwin, including links for download and setup, a current list of mirror sites, a User's Guide, an API Reference, mailing lists and archives. You can find documentation for the individual GNU tools typically as man pages or info pages as part of the Cygwin net distribution. Additionally you can get the latest docs at http://www.gnu.org/manual. Yes. Parts are GNU software (gcc, gas, ld, etc...), parts are covered by the standard X11 license, some of it is public domain, some of it was written by Red Hat (or the former Cygnus Solutions) and placed under the GPL. None of it is shareware. You don't have to pay anyone to use it but you should be sure to read the copyright section of the FAQ for more information on how the GNU General Public License may affect your use of these tools."
-year_published = 2025
-clearnet = "https://cygwin.com/faq/faq.html"
-category = "SitesList"
-tags = ["/bin/bash", "/bin/sh", "/cygwin-terminal.ico", "1.1.", "1.2.", "1.3.", "1.4.", "1.5.", "1.6.", "2.1."]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.gwdg.de", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/ml/cygwin-apps/2004-01/msg00236.html"]
-title = "Daniel Reed - Re: [sources.redhat.com: Cron <sourceware> cd /sourceware/ftp/anonftp/pu"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin-apps/2004-01/msg00236.html"
-category = "SitesList"
-tags = ["-c-u", "-q-q", "/usr/local/bin/upx", "cron", "exit", "follow-ups", "references", "setup.exe", "setup.ini;"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/ml/cygwin/2003-11/msg00099.html"]
-title = "Christopher Faylor - Re: Multiple cygwins/ Distributing cygwin apps"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2003-11/msg00099.html"
-category = "SitesList"
-tags = ["apps", "cygwin", "cygwins/", "distributing", "follow-ups", "multiple", "references"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com"]
-title = "Cygwin"
-full_description = '''The Cygwin DLL currently works with all recent, commercially released x86_64 versions of Windows, starting with Windows 8.1. For more information see the FAQ. Cygwin 3.4.10 was the last Cygwin version supporting Windows 7, Windows 8, Windows Server 2008 R2 and Windows Server 2012. It will stay available via the Cygwin installer for a while, but there's no guarantee that updated Cygwin packages will still run on these systems. If you need Cygwin on these or even older systems, consider using the Cygwin Time Machine. Keep in mind that individual packages in the distribution are updated separately from the DLL so the Cygwin DLL version is not useful as a general Cygwin distribution release number. For all Cygwin-related questions, observations, suggestions and bug reports, please check the resources available at this site, such as the FAQ, the User's Guide and the mailing list archives. If you've exhausted these resources then please send email to the appropriate mailing list. Please send notification of technical problems (bad html, broken links) concerning these web pages to the Cygwin mailing list. Please do not send personal email with "quick questions" to individual Cygwin contributors. The Cygwin mailing lists are the places for all questions. Really. I mean it. The Cygwin DLL and utilities are Copyright © Cygwin authors. Other packages have other copyrights. UNIX ® is a registered trademark of the Open Group in the United States and other countries.'''
-year_published = 2025
-clearnet = "https://cygwin.com"
-category = "SitesList"
-tags = ["...is", "...isn't", "3.5.7", "appropriate", "cygwin", "home", "install", "installing", "list", "mailing"]
-language = "en"
-internal-references = ["none"]
-external-references = ["crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "linuxfoundation.org", "sourceware.org", "x.cygwin.com"]
-
-["https://cygwin.com/pipermail/cygwin-announce/2025-January/012119.html"]
-title = "cygwin 3.5.7-1"
-year_published = 2025
-clearnet = "https://cygwin.com/pipermail/cygwin-announce/2025-January/012119.html"
-category = "SitesList"
-tags = ["3.5.7-1", "corinna", "cygwin", "messages", "sorted", "vinschen"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "repology.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/packages"]
-title = "Cygwin Packages"
-year_published = 2025
-clearnet = "https://cygwin.com/packages"
-category = "SitesList"
-tags = ["cygwin", "data", "feeds", "packages", "reports"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "repology.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/packages.html"]
-title = "Cygwin Packages"
-full_description = "The cygwin-apps mailing list is the correct place to discuss any package creation or maintenance issues. It is not a place for end user bug reports - direct those to the cygwin mailing list instead."
-year_published = 2025
-clearnet = "https://cygwin.com/packages.html"
-category = "SitesList"
-tags = ["cygwin", "details", "information", "maintainers", "package", "packages", "packaging", "technical"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "repology.org", "sourceware.org", "support.citrix.com"]
 
 ["https://cygwin.com/problems.html"]
 title = "Reporting Cygwin Problems"
 full_description = '''Well, maybe not... We'd like to hear what you've uncovered but it's in your best interests to do some initial research. First, you need to verify that your potential problem hasn't already been reported by reading the Cygwin FAQ and the mailing list archives. If your issue is still unresolved, feel free to write to the cygwin list with your problem. Before you start asking questions please take a moment to read and understand some very good general advice on how to ask smart questions. Once you've followed that link and read the advice, please demonstrate that you've actually gained some smartness by not sending your Cygwin question to the authors at the link. That would be a really stupid thing to do. It is not always easy to figure out when you have a user problem and when you've found a valid Cygwin bug. If you have tracked things down as far as verifying to yourself that you've found a bug, please consider investigating it yourself and sending us patches if you figure out a solution. Bug reports without solutions are also ok, of course, although if you really want a bug fixed you can exercise the power implicit in free software and provide the patch yourself. Otherwise, if you can't determine if you've discovered a bug or just are having problems that require help, send a detailed description (with a test case if possible) to the appropriate mailing list after reading all of problem reporting guidelines on this page. Due to the mailing list volume, we don't always reply to individual reports sent to the list but we do keep track of them. Using the correct Cygwin mailing list is absolutely the proper way to report problems or make observations. The mailing lists were created for this express purpose. Reporting problems to a public forum means that the workload is shared and, since your report will be read by many people, it may get more attention than one person would be able to provide. So, there is generally no need to "Cc" a package maintainer with your observations. All maintainers should be reading the appropriate mailing list so Ccing them will result in sending them two copies of your email.'''
 year_published = 2025
 clearnet = "https://cygwin.com/problems.html"
-category = "SitesList"
 tags = ["attach", "attachment", "before", "bother", "compress", "cygcheck", "cygcheck.out", "cygwin", "developer", "don't"]
 language = "en"
 internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "repology.org", "sourceware.org", "support.citrix.com"]
+external-references = ["acronymfinder.com", "chiark.greenend.org.uk", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "mozilla.org", "repology.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/links.html"]
+title = "Cygwin Related Sites"
+full_description = "The MinGW-w64 project provides toolchains which produce native Windows binaries for i686 32 bit as well as AMD64 64 bit Windows. IA-64 and ARM targets are supported as well. These binaries do not use the Cygwin DLL and only support the Windows APIs. If you are interested in DOS-based GNU tools, see the DJGPP Home Page. DJGPP is a somewhat similar project that concentrates solely on DOS-hosted tools."
+year_published = 2025
+clearnet = "https://cygwin.com/links.html"
+tags = ["cygwin", "djgpp", "mingw", "mingw-w64", "related", "sites"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "delorie.com", "freenode.net", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "libera.chat", "linuxfoundation.org", "marshall.freeshell.org", "mingw-w64.org", "osdn.net", "racinfo.indiana.edu", "rsync.samba.org", "ssllabs.com", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/install.html"]
+title = "Cygwin Installation"
+full_description = "The signature for setup-x86_64.exe can be used to verify the validity of this binary using the public key here. When installing packages for the first time, the setup program does not install every package. Only the minimal base packages from the Cygwin distribution are installed by default, which takes up about 100 MB. Clicking on categories and packages in the setup program package installation screen allows you to select what is installed or updated. Individual packages like bash, gcc, less, etc. are released independently of the Cygwin DLL, so the Cygwin DLL version is not useful as a general Cygwin release number. The setup program tracks the versions of all installed components and provides the mechanism for installing or updating everything available from this site for Cygwin. Once you've installed your desired subset of the Cygwin distribution, the setup program will remember what you selected, so re-running it will update your system with any new package releases. The setup program will check by default if it runs with administrative privileges and, if not, will try to elevate the process. If you want to avoid this behaviour and install under an unprivileged account just for your own usage, run setup with the --no-admin option. Tip: if you don't want to also upgrade existing packages, select 'Keep' at the top-right of the package chooser page. A: Yes and no. The setup program understands command-line arguments which allow you to control its behavior and choose individual packages to install. While this provides some functionality similar to such tools as apt-get or yum it is not as full-featured as those package managers. A: The basic reason for not using a more full-featured package manager is that such a program would need full access to all of Cygwin's POSIX functionality. That is, however, difficult to provide in a Cygwin-free environment, such as exists on first installation. Additionally, Windows does not easily allow overwriting of in-use executables so installing a new version of the Cygwin DLL while a package manager is using the DLL is problematic."
+year_published = 2025
+clearnet = "https://cygwin.com/install.html"
+tags = ["64-bit", "apt,", "base", "command-line", "cygwin", "etc.?", "everything?", "existing", "favourite", "general"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "git-scm.com", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/packages"]
+title = "Cygwin Packages"
+year_published = 2025
+clearnet = "https://cygwin.com/packages"
+tags = ["cygwin", "data", "feeds", "packages", "reports"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "mozilla.org", "repology.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/index.html"]
+title = "Cygwin"
+full_description = '''The Cygwin DLL currently works with all recent, commercially released x86_64 versions of Windows, starting with Windows 8.1. For more information see the FAQ. Cygwin 3.4.10 was the last Cygwin version supporting Windows 7, Windows 8, Windows Server 2008 R2 and Windows Server 2012. It will stay available via the Cygwin installer for a while, but there's no guarantee that updated Cygwin packages will still run on these systems. If you need Cygwin on these or even older systems, consider using the Cygwin Time Machine. Keep in mind that individual packages in the distribution are updated separately from the DLL so the Cygwin DLL version is not useful as a general Cygwin distribution release number. For all Cygwin-related questions, observations, suggestions and bug reports, please check the resources available at this site, such as the FAQ, the User's Guide and the mailing list archives. If you've exhausted these resources then please send email to the appropriate mailing list. Please send notification of technical problems (bad html, broken links) concerning these web pages to the Cygwin mailing list. Please do not send personal email with "quick questions" to individual Cygwin contributors. The Cygwin mailing lists are the places for all questions. Really. I mean it. The Cygwin DLL and utilities are Copyright © Cygwin authors. Other packages have other copyrights. UNIX ® is a registered trademark of the Open Group in the United States and other countries.'''
+year_published = 2025
+clearnet = "https://cygwin.com/index.html"
+tags = ["...is", "...isn't", "3.5.7", "appropriate", "cygwin", "home", "install", "installing", "list", "mailing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/ml/cygwin/2007-09/msg00014.html"]
+title = 'Dave Korn - RE: Vista/cygwin tar problem - "file changed as we read it"'
+year_published = 2025
+clearnet = "https://cygwin.com/ml/cygwin/2007-09/msg00014.html"
+tags = ['"file', "changed", "follow-ups", "problem", "references", "vista/cygwin"]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
+
+["https://cygwin.com/cygwin-ug-net.html"]
+title = "Cygwin User's Guide"
+year_published = 2025
+clearnet = "https://cygwin.com/cygwin-ug-net.html"
+tags = ["cygwin", "guide", "user's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
+
+["https://cygwin.com/licensing.html"]
+title = "Cygwin Licensing Terms"
+full_description = "Most of the tools are covered by the GNU GPL, some are public domain, and others have a X11 style license. To cover the GNU GPL requirements, the basic rule is if you give out any binaries, you must also make the source available. For the full details, be sure to read the text of the GNU General Public License (GPL). The Cygwin™ API library found in the winsup subdirectory of the source code is covered by the GNU Lesser General Public License (LGPL) version 3 or later. For details of the requirements of LGPLv3, please read the GNU Lesser General Public License (LGPL). As a special exception, the copyright holders of the Cygwin library grant you additional permission to link libcygwin.a, crt0.o, and gcrt0.o with independent modules to produce an executable, and to convey the resulting executable under terms of your choice, without any need to comply with the conditions of LGPLv3 section 4. An independent module is a module which is not itself based on the Cygwin library. No. Cygwin source and binary are made publicly available and free of charge to download so Cygwin is provided under TSU/TSPA exemption. As a result, Cygwin does not require an ECCN number."
+year_published = 2025
+clearnet = "https://cygwin.com/licensing.html"
+tags = ["cygwin", "cygwin™", "eccn", "exception", "licensing", "linking", "number?", "terms?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "freenode.net", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "libera.chat", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/ml/cygwin/2004-10/msg00099.html"]
+title = "Christopher Faylor - Re: Weird bug with cp -f"
+year_published = 2025
+clearnet = "https://cygwin.com/ml/cygwin/2004-10/msg00099.html"
+tags = ["follow-ups", "references", "weird"]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
+
+["https://cygwin.com/ml/cygwin/2003-03/msg01076.html"]
+title = "Ronald Landheer-Cies - Re: cygwin 1.3.21 breaks ssh terminal interaction"
+year_published = 2025
+clearnet = "https://cygwin.com/ml/cygwin/2003-03/msg01076.html"
+tags = ["1.3.21", "breaks", "cygwin", "follow-ups", "interaction", "references", "terminal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
 
 ["https://cygwin.com/who.html"]
 title = "Cygwin Notables"
 full_description = "* Please note that all of the people above prefer that project related communications go to the proper mailing list rather than private email."
 year_published = 2025
 clearnet = "https://cygwin.com/who.html"
-category = "SitesList"
 tags = ["cygwin"]
 language = "en"
 internal-references = ["none"]
-external-references = ["cygwin.mirror.constant.com", "cygwin.osuosl.org", "cygwin.uib.no", "delorie.com", "download.nus.edu.sg", "freenode.net", "ftp-stud.hs-esslingen.de", "ftp.eq.uc.pt", "ftp.fagskolen.gjovik.no", "ftp.funet.fi", "ftp.iij.ad.jp", "hosted.weblate.org", "ietf.org", "kde.org", "linuxfoundation.org", "mingw-w64.org", "news.gmane.io", "repology.org", "sourceware.org", "support.citrix.com"]
+external-references = ["acronymfinder.com", "chiark.greenend.org.uk", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "mozilla.org", "repology.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/ml/cygwin/2003-11/msg00099.html"]
+title = "Christopher Faylor - Re: Multiple cygwins/ Distributing cygwin apps"
+year_published = 2025
+clearnet = "https://cygwin.com/ml/cygwin/2003-11/msg00099.html"
+tags = ["apps", "cygwin", "cygwins/", "distributing", "follow-ups", "multiple", "references"]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
+
+["https://cygwin.com/faq.html"]
+title = "Cygwin FAQ"
+full_description = "Cygwin is a distribution of popular GNU and other Open Source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect. The Cygwin distribution contains thousands of packages from the Open Source world including most GNU tools, many BSD tools, an X server and a full set of X applications. If you're a developer you will find tools, headers and libraries allowing to write Windows console or GUI applications that make use of significant parts of the POSIX API. Cygwin allows easy porting of many Unix programs without the need for extensive changes to the source code. This includes configuring and building most of the available GNU or BSD software, including the packages included with the Cygwin distribution themselves. They can be used from one of the provided Unix shells like bash, tcsh or zsh. Cygwin can be expected to run on all modern, released versions of Windows. This includes Windows 7, Windows Server 2008 R2 and all later versions of Windows, except Windows S mode due to its limitations, on 64 bit AMD/Intel compatible PCs, and under x64 emulation on ARM PCs running Windows 11. Keep in mind that Cygwin can only do as much as the underlying OS supports. Because of this, Cygwin will behave differently, and exhibit different limitations, on the various versions of Windows. The home page for the Cygwin project is https://cygwin.com/. There you should find everything you need for Cygwin, including links for download and setup, a current list of mirror sites, a User's Guide, an API Reference, mailing lists and archives. You can find documentation for the individual GNU tools typically as man pages or info pages as part of the Cygwin net distribution. Additionally you can get the latest docs at http://www.gnu.org/manual. Yes. Parts are GNU software (gcc, gas, ld, etc...), parts are covered by the standard X11 license, some of it is public domain, some of it was written by Red Hat (or the former Cygnus Solutions) and placed under the GPL. None of it is shareware. You don't have to pay anyone to use it but you should be sure to read the copyright section of the FAQ for more information on how the GNU General Public License may affect your use of these tools."
+year_published = 2025
+clearnet = "https://cygwin.com/faq.html"
+tags = ["/bin/bash", "/bin/sh", "/cygwin-terminal.ico", "1.1.", "1.2.", "1.3.", "1.4.", "1.5.", "1.6.", "2.1."]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/docs.html"]
+title = "Cygwin Documentation"
+year_published = 2025
+clearnet = "https://cygwin.com/docs.html"
+tags = ["additional", "current", "cygwin", "documentation", "major", "next", "preview", "release"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
+
+["https://cygwin.com/packages.html"]
+title = "Cygwin Packages"
+full_description = "The cygwin-apps mailing list is the correct place to discuss any package creation or maintenance issues. It is not a place for end user bug reports - direct those to the cygwin mailing list instead."
+year_published = 2025
+clearnet = "https://cygwin.com/packages.html"
+tags = ["cygwin", "details", "information", "maintainers", "package", "packages", "packaging", "technical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "mozilla.org", "repology.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/acronyms"]
+title = "Cygwin Acronyms"
+full_description = "Note that this is not intended to be an all-inclusive list of all possible acronyms. If you can't find the acronym you're looking for here, try another acronym resource, like The Canonical Acronym List or AcronymFinder.com."
+year_published = 2025
+clearnet = "https://cygwin.com/acronyms"
+tags = ["acronyms", "bloda", "bwam", "cygwin", "iwfm", "msfteu", "shtdi", "tofu", "wjffm"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
+
+["https://cygwin.com/irc.html"]
+title = "Cygwin Mailing Lists"
+full_description = '''The Libera channel #cygwin is for user communication and user questions. This is the right channel if you want to discuss running Cygwin and problems with Cygwin setup, etc. It's not a bug report channel. For this, use the Cygwin mailing list. Help on the mailing list will also be of higher quality, usually, but for the occasional problem discussion, the #cygwin channel is pretty neat. The Libera channel #cygwin-developers is reserved for communication between Cygwin developers and Cygwin package maintainers. It's not a channel for reporting bugs and it's not a channel for idle "it would be nice if Cygwin ..." type of discussion. Only join this channel if you honestly, seriously want to get your hands dirty and work for the project. Otherwise, expect to be ignored. Incidentally, Cygwin itself comes with a few IRC clients like ii, irssi, naim, tinyirc, tirc and weechat. Please see the Libera homepage for help setting up your IRC client to connect to Libera. Note that there are still equivalent #cygwin and #cygwin-developers channels on Freenode.net. We moved to Libera end of May 2021. We're just keeping the Freenode channels as backup solution for now.'''
+year_published = 2025
+clearnet = "https://cygwin.com/irc.html"
+tags = ["#cygwin", "#cygwin-developers", "channels", "chat", "cygwin", "irssi", "naim", "project?", "tinyirc", "tirc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "freenode.net", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "libera.chat", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
 
 ["https://cygwin.com/cygwin-api"]
 title = "Cygwin API Reference"
@@ -238,145 +234,113 @@ description = "Cygwin API Reference"
 full_description = "Permission is granted to make and distribute verbatim copies of this documentation provided the copyright notice and this permission notice are preserved on all copies. Permission is granted to copy and distribute modified versions of this documentation under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one. Permission is granted to copy and distribute translations of this documentation into another language, under the above conditions for modified versions, except that this permission notice may be stated in a translation approved by the Free Software Foundation."
 year_published = 2025
 clearnet = "https://cygwin.com/cygwin-api"
-category = "SitesList"
 tags = ["above", "abstract", "another", "approved", "authorspermission", "conditions", "contents", "copies", "copies.permission", "copy"]
 language = "en"
 internal-references = ["none"]
 external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
 
-["https://cygwin.com/ml/cygwin/2003-12/msg00139.html"]
-title = "Christopher Faylor - Re: mount points"
+["https://cygwin.com"]
+title = "Cygwin"
+full_description = '''The Cygwin DLL currently works with all recent, commercially released x86_64 versions of Windows, starting with Windows 8.1. For more information see the FAQ. Cygwin 3.4.10 was the last Cygwin version supporting Windows 7, Windows 8, Windows Server 2008 R2 and Windows Server 2012. It will stay available via the Cygwin installer for a while, but there's no guarantee that updated Cygwin packages will still run on these systems. If you need Cygwin on these or even older systems, consider using the Cygwin Time Machine. Keep in mind that individual packages in the distribution are updated separately from the DLL so the Cygwin DLL version is not useful as a general Cygwin distribution release number. For all Cygwin-related questions, observations, suggestions and bug reports, please check the resources available at this site, such as the FAQ, the User's Guide and the mailing list archives. If you've exhausted these resources then please send email to the appropriate mailing list. Please send notification of technical problems (bad html, broken links) concerning these web pages to the Cygwin mailing list. Please do not send personal email with "quick questions" to individual Cygwin contributors. The Cygwin mailing lists are the places for all questions. Really. I mean it. The Cygwin DLL and utilities are Copyright © Cygwin authors. Other packages have other copyrights. UNIX ® is a registered trademark of the Open Group in the United States and other countries.'''
 year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2003-12/msg00139.html"
-category = "SitesList"
-tags = ["mount", "points", "references", "statfs"]
+clearnet = "https://cygwin.com"
+tags = ["...is", "...isn't", "3.5.7", "appropriate", "cygwin", "home", "install", "installing", "list", "mailing"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "linuxfoundation.org", "sourceware.org", "x.cygwin.com"]
 
-["https://cygwin.com/git.html"]
-title = "Cygwin in Git"
-full_description = "The sources to the core Cygwin libraries and utilities (Cygwin and Newlib) are available via anonymous Git access. If you don't know what Git is, visit the Git home page. Coincidentally enough, Git comes with the Cygwin net release. Starting December 2022, regular, automated test releases are created whenever a significant patch is pushed to the Cygwin git repository. You can download the cygwin package test releases just like any other test release for any Cygwin package using the Cygwin Setup program. This allows following development even if you're not comfortable with Git. The cygwin.com website is under Git control, too. You can also view the website Git repo via a web interface. Note that this is only the framework. The User's Guide, API and FAQ are maintained as part of the aforementioned Cygwin source Git repository."
+["https://cygwin.com/ml/cygwin-xfree/2003-05/msg00084.html"]
+title = "Sam Edge - Re: XWin design suggestion"
 year_published = 2025
-clearnet = "https://cygwin.com/git.html"
-category = "SitesList"
-tags = ["access", "anonymous", "cygwin", "developers", "git-less", "read-only", "read/write", "releases", "test", "web-based"]
+clearnet = "https://cygwin.com/ml/cygwin-xfree/2003-05/msg00084.html"
+tags = ["design", "follow-ups", "references", "suggestion", "xwin"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
 
-["https://cygwin.com/cygwin-ug-net.html"]
-title = "Cygwin User's Guide"
+["https://cygwin.com/ml/cygwin-apps/2003-11/msg00314.html"]
+title = "Christopher Faylor - Re: Maintainers/Packages List, 2003-11-22"
 year_published = 2025
-clearnet = "https://cygwin.com/cygwin-ug-net.html"
-category = "SitesList"
-tags = ["cygwin", "guide", "user's"]
+clearnet = "https://cygwin.com/ml/cygwin-apps/2003-11/msg00314.html"
+tags = ["2003-11-22", "follow-ups", "list,", "maintainers/packages", "references"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.itefix.net", "cygwin.uib.no", "ftp.fau.de", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org"]
 
-["https://cygwin.com/ml/cygwin/2004-10/msg00099.html"]
-title = "Christopher Faylor - Re: Weird bug with cp -f"
+["https://cygwin.com/mirrors.html"]
+title = "Cygwin Mirror Sites"
+full_description = "The following sites have generously agreed to mirror our Cygwin package repository. To save on download time, please select a mirror near you when using setup to install or update Cygwin. Note: We automatically poll these mirrors periodically to ensure that they have the latest Cygwin packages available. The list of mirrors below reflects all of the mirrors who appear to have up-to-date copies of the Cygwin package repository. If you would like to be added to this list of available mirrors then send email to the cygwin mailing list. When you send your message, remember that this site does not accept html-formatted email. When asking to be added, please provide contact information, the URL of the mirror, and the location of the mirror (in a similar format to that used for existing mirrors in the mirror site list). Make sure that your mirror rsyncs directly from cygwin.com at least twice a day. Please do not send questions asking how to set up a mirror. We don't provide technical support for setting up mirrors. Sorry. The mirror list is automatically maintained so that only active mirrors are listed. A mirror is temporarily removed from the list if it remains out of date for more than 24 hours. If your mirror was dropped from the list, do not panic. It means that a program has determined that the content on your mirror is not up-to-date. Ensure that your mirror is up-to-date. It will be added again automatically once it has has up-to-date content. There is no need to contact anyone about this. Mirrors which remain out-of-date for more than 28 days are manually reviewed (sporadically), and disabled if the owner is unresponsive."
 year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2004-10/msg00099.html"
-category = "SitesList"
-tags = ["follow-ups", "references", "weird"]
+clearnet = "https://cygwin.com/mirrors.html"
+tags = ["administrators.", "administrators:", "automatically", "cygwin", "information", "list", "maintained", "mirror", "sites", "this!"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["acronymfinder.com", "conemu.github.io", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "gnu.org", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "paypal.com", "rsync.samba.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/ml/cygwin/2005-05/msg00747.html"]
+title = "Christopher Faylor - Re: How to separate backspace and control-J functions?"
+year_published = 2025
+clearnet = "https://cygwin.com/ml/cygwin/2005-05/msg00747.html"
+tags = ["backspace", "control-j", "functions?", "references", "separate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
+
+["https://cygwin.com/news.html"]
+title = "Cygwin Newsgroups"
+full_description = "Cygwin mailing lists are mirrored by the gmane.io NNTP gateway. You can use any Newsreader (e.g. Thunderbird, Knode, Tin) to access the Cygwin mailing lists. Please note that the gmane website and its newsgroup search interface is down since August 2016. Only the aforementioned NNTP gateway is still up. Gmane Cygwin newsgroups always start with the prefix gmane.os.cygwin. Here's a list of the active Cygwin mailing lists and their Gmane newsgroup counterparts:"
+year_published = 2025
+clearnet = "https://cygwin.com/news.html"
+tags = ["2016.", "aforementioned", "august", "cygwin", "cygwin-announce", "cygwin-apps", "cygwin-apps-cvs", "cygwin-cvs", "cygwin-developers", "cygwin-patches"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acronymfinder.com", "conemu.github.io", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.mirror.constant.com", "cygwin.mirror.uk.sargasso.net", "cygwin.uib.no", "ftp-stud.hs-esslingen.de", "ftp.acc.umu.se", "ftp.byfly.by", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "mozilla.org", "rsync.samba.org", "tin.org", "www-03.ibm.com", "x.cygwin.com"]
+
+["https://cygwin.com/faq/faq.html"]
+title = "Cygwin FAQ"
+full_description = "Cygwin is a distribution of popular GNU and other Open Source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect. The Cygwin distribution contains thousands of packages from the Open Source world including most GNU tools, many BSD tools, an X server and a full set of X applications. If you're a developer you will find tools, headers and libraries allowing to write Windows console or GUI applications that make use of significant parts of the POSIX API. Cygwin allows easy porting of many Unix programs without the need for extensive changes to the source code. This includes configuring and building most of the available GNU or BSD software, including the packages included with the Cygwin distribution themselves. They can be used from one of the provided Unix shells like bash, tcsh or zsh. Cygwin can be expected to run on all modern, released versions of Windows. This includes Windows 7, Windows Server 2008 R2 and all later versions of Windows, except Windows S mode due to its limitations, on 64 bit AMD/Intel compatible PCs, and under x64 emulation on ARM PCs running Windows 11. Keep in mind that Cygwin can only do as much as the underlying OS supports. Because of this, Cygwin will behave differently, and exhibit different limitations, on the various versions of Windows. The home page for the Cygwin project is https://cygwin.com/. There you should find everything you need for Cygwin, including links for download and setup, a current list of mirror sites, a User's Guide, an API Reference, mailing lists and archives. You can find documentation for the individual GNU tools typically as man pages or info pages as part of the Cygwin net distribution. Additionally you can get the latest docs at http://www.gnu.org/manual. Yes. Parts are GNU software (gcc, gas, ld, etc...), parts are covered by the standard X11 license, some of it is public domain, some of it was written by Red Hat (or the former Cygnus Solutions) and placed under the GPL. None of it is shareware. You don't have to pay anyone to use it but you should be sure to read the copyright section of the FAQ for more information on how the GNU General Public License may affect your use of these tools."
+year_published = 2025
+clearnet = "https://cygwin.com/faq/faq.html"
+tags = ["/bin/bash", "/bin/sh", "/cygwin-terminal.ico", "1.1.", "1.2.", "1.3.", "1.4.", "1.5.", "1.6.", "2.1."]
+language = "en"
+internal-references = ["none"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.itefix.net", "cygwin.uib.no", "ftp.fau.de", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org"]
 
 ["https://cygwin.com/lists.html"]
 title = "Cygwin Mailing Lists"
 full_description = "Before you send any mail to one of these lists, please check out the FAQ, the documentation, the web and the mailing list archives (click on a mailing list name below to view the archive), so that you don't ask a question that someone has already asked or report a bug that has already been reported. If you searched those information sources and came up blank, there are a lot of friendly folk who will probably try to answer your questions. Please consider our problem reporting guidelines, so that you ask in a way which allows the folks on the list to answer your question most easily. Vague, content-free, or repetitive queries or observations are not likely to get a useful answer. Clicking on any of the above mailing list links will take you to the form for subscribing to or unsubscribing from the respective mailing list."
 year_published = 2025
 clearnet = "https://cygwin.com/lists.html"
-category = "SitesList"
 tags = ["180kb", "above", "accept", "addresses", "addresses,", "anyone.", "archived.", "archives", "being", "below?"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "delorie.com", "freenode.net", "git-scm.com", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "inbox.sourceware.org", "linuxfoundation.org", "marshall.freeshell.org", "mingw-w64.org", "osdn.net", "paypal.com", "rsync.samba.org", "sourceware.org", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
+external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "delorie.com", "freenode.net", "git-scm.com", "gnu.org", "google.com", "hosted.weblate.org", "ietf.org", "inbox.sourceware.org", "marshall.freeshell.org", "osdn.net", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "ssllabs.com", "www-03.ibm.com", "x.cygwin.com"]
 
-["https://cygwin.com/cgit/cygwin-htdocs"]
-title = "cygwin-htdocs - cygwin htdocs -  The cygwin website files"
-full_description = 'BranchCommit messageAuthorAge masterimprove chapters mount-table and cygdriveCorinna Vinschen34 hours TagDownloadAuthorAge before-new-websitecommit 6e44f8f371...cvs2svn14 years BEFORE_UPDATE_FOR_MODULAR_Xcommit bfdbebf744...cvs2svn16 years precgfcommit dab8d38f0c...cvs2svn17 years AgeCommit messageAuthorFilesLines 34 hoursimprove chapters mount-table and cygdriveHEADmasterCorinna Vinschen3-16/+19 6 daysfix snapshots/index.html yet againCorinna Vinschen1-2/+2 6 daysfix snapshots/index.html againCorinna Vinschen1-1/+1 6 daysfix snapshots/index.htmlCorinna Vinschen1-3/+2 6 daysadd snapshots/index.html to hide the old snapshotsCorinna Vinschen1-0/+23 12 daysEnable SSI in new contrib pageJon Turney1-0/+0 13 daysGold star for Michael CookAndrew Schulman3-34/+42 14 daysMake a more general "how do I contribute page"Jon Turney3-171/+189 2025-01-29Cygwin 3.5.7 releaseCorinna Vinschen1-1/+1 2025-01-26Cygwin 3.5.6 releaseCorinna Vinschen10-32/+35 2024-12-20Cygwin 3.5.5 releaseCorinna Vinschen3-1/+1 2024-11-06Move cygwin-pkg-maint to separate repositoryJon Turney2-4109/+2 [...] Clone git://cygwin.com/git/cygwin-htdocs ssh://cygwin.com/git/cygwin-htdocs https://cygwin.com/git/cygwin-htdocs'
+["https://cygwin.com/ml/cygwin/2003-12/msg00139.html"]
+title = "Christopher Faylor - Re: mount points"
 year_published = 2025
-clearnet = "https://cygwin.com/cgit/cygwin-htdocs"
-category = "SitesList"
-tags = []
+clearnet = "https://cygwin.com/ml/cygwin/2003-12/msg00139.html"
+tags = ["mount", "points", "references", "statfs"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["catb.org", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "cygwin.cathedral-networks.org", "cygwin.uib.no", "ftp.halifax.rwth-aachen.de", "ftp.inf.tu-dresden.de", "git-scm.com", "google.com", "kde.org", "marshall.freeshell.org", "mozilla.org", "naim-users.org", "news.gmane.io", "osdn.net", "paypal.com", "rsync.samba.org", "ssllabs.com", "tin.org", "xfree86.cygwin.com"]
 
-["https://cygwin.com/irc.html"]
-title = "Cygwin Mailing Lists"
-full_description = '''The Libera channel #cygwin is for user communication and user questions. This is the right channel if you want to discuss running Cygwin and problems with Cygwin setup, etc. It's not a bug report channel. For this, use the Cygwin mailing list. Help on the mailing list will also be of higher quality, usually, but for the occasional problem discussion, the #cygwin channel is pretty neat. The Libera channel #cygwin-developers is reserved for communication between Cygwin developers and Cygwin package maintainers. It's not a channel for reporting bugs and it's not a channel for idle "it would be nice if Cygwin ..." type of discussion. Only join this channel if you honestly, seriously want to get your hands dirty and work for the project. Otherwise, expect to be ignored. Incidentally, Cygwin itself comes with a few IRC clients like ii, irssi, naim, tinyirc, tirc and weechat. Please see the Libera homepage for help setting up your IRC client to connect to Libera. Note that there are still equivalent #cygwin and #cygwin-developers channels on Freenode.net. We moved to Libera end of May 2021. We're just keeping the Freenode channels as backup solution for now.'''
+["https://cygwin.com/goldstars"]
+title = "Cygwin Gold Stars"
+full_description = "This page is dedicated to the Cygwin Gold Star award. The award is given to people who have pleased a Cygwin project lead by their actions or contributions. Each star is a link detailing the circumstances in which it was awarded."
 year_published = 2025
-clearnet = "https://cygwin.com/irc.html"
-category = "SitesList"
-tags = ["#cygwin", "#cygwin-developers", "channels", "chat", "cygwin", "irssi", "naim", "project?", "tinyirc", "tirc"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "ctm.crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "freenode.net", "git-scm.com", "google.com", "hosted.weblate.org", "ietf.org", "libera.chat", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
-
-["https://cygwin.com/links.html"]
-title = "Cygwin Related Sites"
-full_description = "The MinGW-w64 project provides toolchains which produce native Windows binaries for i686 32 bit as well as AMD64 64 bit Windows. IA-64 and ARM targets are supported as well. These binaries do not use the Cygwin DLL and only support the Windows APIs. If you are interested in DOS-based GNU tools, see the DJGPP Home Page. DJGPP is a somewhat similar project that concentrates solely on DOS-hosted tools."
-year_published = 2025
-clearnet = "https://cygwin.com/links.html"
-category = "SitesList"
-tags = ["cygwin", "djgpp", "mingw", "mingw-w64", "related", "sites"]
-language = "en"
-internal-references = ["none"]
-external-references = ["conemu.github.io", "ctm.crouchingtigerhiddenfruitbat.org", "delorie.com", "en.wikipedia.org", "freenode.net", "git-scm.com", "hosted.weblate.org", "ietf.org", "libera.chat", "marshall.freeshell.org", "mingw-w64.org", "osdn.net", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
-
-["https://cygwin.com/index.html"]
-title = "Cygwin"
-full_description = '''The Cygwin DLL currently works with all recent, commercially released x86_64 versions of Windows, starting with Windows 8.1. For more information see the FAQ. Cygwin 3.4.10 was the last Cygwin version supporting Windows 7, Windows 8, Windows Server 2008 R2 and Windows Server 2012. It will stay available via the Cygwin installer for a while, but there's no guarantee that updated Cygwin packages will still run on these systems. If you need Cygwin on these or even older systems, consider using the Cygwin Time Machine. Keep in mind that individual packages in the distribution are updated separately from the DLL so the Cygwin DLL version is not useful as a general Cygwin distribution release number. For all Cygwin-related questions, observations, suggestions and bug reports, please check the resources available at this site, such as the FAQ, the User's Guide and the mailing list archives. If you've exhausted these resources then please send email to the appropriate mailing list. Please send notification of technical problems (bad html, broken links) concerning these web pages to the Cygwin mailing list. Please do not send personal email with "quick questions" to individual Cygwin contributors. The Cygwin mailing lists are the places for all questions. Really. I mean it. The Cygwin DLL and utilities are Copyright © Cygwin authors. Other packages have other copyrights. UNIX ® is a registered trademark of the Open Group in the United States and other countries.'''
-year_published = 2025
-clearnet = "https://cygwin.com/index.html"
-category = "SitesList"
-tags = ["...is", "...isn't", "3.5.7", "appropriate", "cygwin", "home", "install", "installing", "list", "mailing"]
+clearnet = "https://cygwin.com/goldstars"
+tags = ["awards", "cygwin", "distinguished", "gold", "recipients", "star"]
 language = "en"
 internal-references = ["none"]
 external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "git-scm.com", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "people.redhat.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
 
-["https://cygwin.com/docs.html"]
-title = "Cygwin Documentation"
+["https://cygwin.com/contrib.html"]
+title = "Cygwin Contribution"
+full_description = "This project is entirely dependent on volunteer time. Volunteer time is always in short supply, so if you are thinking about contributing, rest assured that your efforts will be welcome and appreciated."
 year_published = 2025
-clearnet = "https://cygwin.com/docs.html"
-category = "SitesList"
-tags = ["additional", "current", "cygwin", "documentation", "major", "next", "preview", "release"]
+clearnet = "https://cygwin.com/contrib.html"
+tags = ["cygwin", "help", "out?"]
 language = "en"
 internal-references = ["none"]
-external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]
-
-["https://cygwin.com/faq.html"]
-title = "Cygwin FAQ"
-full_description = "Cygwin is a distribution of popular GNU and other Open Source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect. The Cygwin distribution contains thousands of packages from the Open Source world including most GNU tools, many BSD tools, an X server and a full set of X applications. If you're a developer you will find tools, headers and libraries allowing to write Windows console or GUI applications that make use of significant parts of the POSIX API. Cygwin allows easy porting of many Unix programs without the need for extensive changes to the source code. This includes configuring and building most of the available GNU or BSD software, including the packages included with the Cygwin distribution themselves. They can be used from one of the provided Unix shells like bash, tcsh or zsh. Cygwin can be expected to run on all modern, released versions of Windows. This includes Windows 7, Windows Server 2008 R2 and all later versions of Windows, except Windows S mode due to its limitations, on 64 bit AMD/Intel compatible PCs, and under x64 emulation on ARM PCs running Windows 11. Keep in mind that Cygwin can only do as much as the underlying OS supports. Because of this, Cygwin will behave differently, and exhibit different limitations, on the various versions of Windows. The home page for the Cygwin project is https://cygwin.com/. There you should find everything you need for Cygwin, including links for download and setup, a current list of mirror sites, a User's Guide, an API Reference, mailing lists and archives. You can find documentation for the individual GNU tools typically as man pages or info pages as part of the Cygwin net distribution. Additionally you can get the latest docs at http://www.gnu.org/manual. Yes. Parts are GNU software (gcc, gas, ld, etc...), parts are covered by the standard X11 license, some of it is public domain, some of it was written by Red Hat (or the former Cygnus Solutions) and placed under the GPL. None of it is shareware. You don't have to pay anyone to use it but you should be sure to read the copyright section of the FAQ for more information on how the GNU General Public License may affect your use of these tools."
-year_published = 2025
-clearnet = "https://cygwin.com/faq.html"
-category = "SitesList"
-tags = ["/bin/bash", "/bin/sh", "/cygwin-terminal.ico", "1.1.", "1.2.", "1.3.", "1.4.", "1.5.", "1.6.", "2.1."]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "conemu.github.io", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "gnu.org", "google.com", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "paypal.com", "racinfo.indiana.edu", "rsync.samba.org", "sourceware.org", "ssllabs.com", "support.citrix.com", "www-03.ibm.com", "x.cygwin.com"]
-
-["https://cygwin.com/ml/cygwin/2003-03/msg01076.html"]
-title = "Ronald Landheer-Cies - Re: cygwin 1.3.21 breaks ssh terminal interaction"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2003-03/msg01076.html"
-category = "SitesList"
-tags = ["1.3.21", "breaks", "cygwin", "follow-ups", "interaction", "references", "terminal"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
-
-["https://cygwin.com/ml/cygwin/2005-05/msg00747.html"]
-title = "Christopher Faylor - Re: How to separate backspace and control-J functions?"
-year_published = 2025
-clearnet = "https://cygwin.com/ml/cygwin/2005-05/msg00747.html"
-category = "SitesList"
-tags = ["backspace", "control-j", "functions?", "references", "separate"]
-language = "en"
-internal-references = ["none"]
-external-references = ["acronymfinder.com", "ctm.crouchingtigerhiddenfruitbat.org", "cygwin.itefix.net", "cygwin.mirror.rafal.ca", "cygwin.osuosl.org", "cygwin.uib.no", "ftp.funet.fi", "ftp.halifax.rwth-aachen.de", "ftp.iij.ad.jp", "git-scm.com", "google.com", "ietf.org", "kde.org", "marshall.freeshell.org", "naim-users.org", "news.gmane.io", "redhat.com", "rsync.samba.org", "sourceware.org", "support.citrix.com"]
+external-references = ["acronymfinder.com", "crouchingtigerhiddenfruitbat.org", "en.wikipedia.org", "ietf.org", "linuxfoundation.org", "marshall.freeshell.org", "sourceware.org", "x.cygwin.com"]

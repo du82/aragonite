@@ -1,0 +1,11 @@
+["https://remark.js.org"]
+title = "remark - markdown processor powered by plugins"
+description = "Markdown processor powered by plugins part of the unified collective"
+full_description = "remark is an ecosystem of plugins that work with markdown as structured data, specifically ASTs (abstract syntax trees). ASTs make it easy for programs to deal with markdown. We call those programs plugins. Plugins inspect and change trees. You can use the many existing plugins or you can make your own.To learn markdown, see this cheatsheet and tutorial. For more about who makes remark, see unifiedjs.com. To support our efforts financially, sponsor us on GitHub, thanks.dev, or OpenCollective. This lets us spend more time maintaining our projects and developing new ones.PlaygroundHere you can see how remark does things. Write some markdown to find out what it turns into. You can see the the generated code and the intermediary ASTs. This can be helpful for debugging or exploring."
+author = "Titus Wormer"
+year_published = 2019
+clearnet = "https://remark.js.org"
+tags = ["ast", "asts", "compliant", "javascript", "markdown", "playground", "plugins", "popular", "powered", "processor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["commonmark.org", "github.com", "opencollective.com", "thanks.dev", "unifiedjs.com"]

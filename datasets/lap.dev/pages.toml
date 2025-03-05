@@ -1,0 +1,140 @@
+["https://lap.dev/privacy"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = "Your privacy is important to us. It is Lapdev's policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you. If you have any questions about my privacy policy or our use of your personal information, cookies or similar technologies, please contact us by email [email protected]. your name, email address, address or postal code, payment method and telephone number. We collect this information in a number of ways, including when you enter it while using our service, interact with our Customer Support Team, or participate in surveys or marketing promotions; information when you choose to provide reviews or ratings, account settings, or otherwise provide information to us through our service or elsewhere. details of your interactions with our Customer Support team, such as the date, time and reason for contacting us, transcripts of any chat conversations; information collected via the use of cookies, web beacons and other technologies, including ad data (such as information on the availability and delivery of ads, the site URL, as well as the date and time). We use information to provide, analyse, administer, enhance and personalize our services and marketing efforts, to process your account creation, your orders and your payments, and to communicate with you on these and other topics. For example, we use information to: determine your general geographic location, provide localized content, provide you with customized and personalized recommendations for movies, determine your Internet service provider, and help us quickly and efficiently respond to inquiries and requests; prevent, detect and investigate potentially prohibited or illegal activities, including fraud, and enforcing our terms (such as determining free trial eligibility); analyse and understand our customers, improve our service (including our user interface experiences) and optimize our product and its standard of quality; communicate with you concerning our service (for example by email, push notifications text messaging, and online messaging channels), so that we can send you news, details about new features and content available on Lapdev;"
+year_published = 2025
+clearnet = "https://lap.dev/privacy"
+tags = ["company", "lapdev", "platform", "privacy", "resources", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/contact"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+year_published = 2025
+clearnet = "https://lap.dev/contact"
+tags = ["company", "fill", "form", "lapdev", "platform", "resources", "tools", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "github.com", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/terms"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = 'These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Lapdev ("Company," “we," “us," or “our”), concerning your access to and use of the https://lap.dev website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”). You agree that by accessing the Site, you have read, understood, and agreed to be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY. The Site is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Site. Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the “Content”) and the trademarks, service marks, and logos contained therein (the “Marks”) are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions. The Content and the Marks are provided on the Site “AS IS” for your information and personal use only. Except as expressly provided in these Terms of Use, no part of the Site and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission. Provided that you are eligible to use the Site, you are granted a limited license to access and use the Site and to download or print a copy of any portion of the Content to which you have properly gained access solely for your personal, non-commercial use. We reserve all rights not expressly granted to you in and to the Site, the Content and the Marks.'
+year_published = 2025
+clearnet = "https://lap.dev/terms"
+tags = ["company", "lapdev", "platform", "resources", "service", "terms", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/blog/full-stack-development-in-rust"]
+title = "Full Stack Development in Rust"
+description = "We used Rust for everything in Lapdev, and we'd like to talk how nice it was."
+full_description = '''Lapdev consists of a few components at different layers of the stack, and we've used Rust for all the them, including web frontend, web backend, server daemon, and an SSH/HTTP proxy. You may argue that Typescript/Javascript could have been a better choice for things like web frontend since it's the dominant language there, with lots of available libraries you can pick from. But for us, Rust has been nicer for reasons that I'll talk about below. When people talk about Rust, their first impression is that Rust is a system language. You'd probably be surprised to hear me say Rust is actually a very good language for full stack development. Rust indeed came out as a system language with memory safety without a garbage collector. But being a system language doesn't prevent Rust to be shining in developing "high level" applications. With its wonderful type system, and more and more crates, Rust is fit for lots of different areas of development. The frontend uses Leptos to provide a single page web application. Signal is something we love to use as they are Copy. SeaORM is used for talking to the database. SeaORM uses sqlx under the hood which is a pure Rust implementation for different database drivers. Also, the migration bits can be written in Rust code, where normally you'd need to write the migration scripts in SQL in other ORM tools. For the RPC part, we use tarpc. We prefer tarpc over gRPC because you can define the schema in code, rather than in a separate language such as .proto. We're just trying to write everything in Rust, because you get all the goodies from the compiler and ecosystem, e.g., type checks at compile time, and auto completion from rust-analyzer etc. All the types that need to be serialised/deserialised are put in a "common" crate so that whichever part of the system needs that type can import it, and then the compiler will make sure there can't be data inconsistently anywhere in the code. And whenever you're adding/removing a field from that struct, you know for sure the compiler can point you all the places that need to be changed, which gives the developer peace of mind, i.e. fearless refactoring.'''
+year_published = 2025
+clearnet = "https://lap.dev/blog/full-stack-development-in-rust"
+tags = ["company", "development", "full", "lapdev", "platform", "resources", "rust", "stack", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/floem"]
+title = "Floem - Cross-platform GUI framework for Rust"
+description = "Cross-platform GUI framework for Rust with performance and developer ergonomics"
+full_description = '''Floem is cross-platform GUI framework for Rust 🦀. It aims to be extremely performant while providing world-class developer ergonomics. Supporting both GPU and CPU rendering, Floem gives you performance that's closest to bare metal. Also primitives are provided to help the developer to write performant UI code without too much effect. Supports Windows, macOS and Linux with rendering using wgpu. In case a GPU is unavailable, a CPU renderer powered by tiny-skia will be used. The entire library is built around reactive primitives inspired by leptos_reactive. The reactive "signals" allow you to keep your UI up-to-date with minimal effort, all while maintaining very high performance. The view tree is only run once, safeguarding you from accidentally creating a bottleneck in a view generation function that slows down your entire application. Floem also provides tools to help you write efficient UI code, such as a virtual list. Using Taffy, the library provides the Flexbox (or Grid) layout system, which can be applied to any View node. Don't want the default look? You can change pretty much anything you want using the styling API, or install a third-party theme.'''
+year_published = 2025
+clearnet = "https://lap.dev/floem"
+tags = ["bare", "company", "cross", "cross-platform", "customisable", "desktop", "element", "fine-grained", "flexbox", "framework"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/blog/a-performance-review-of-cloud-dev-envs"]
+title = "A Performance Review of Cloud Development Environments"
+description = "Lapdev outperforms cloud development environments like GitHub Codespaces and Gitpod in development tasks such as code compilation by leveraging high-performance single-core CPU."
+full_description = "Cloud development environments, such as GitHub Codespaces, Gitpod, and Lapdev, are becoming increasingly popular for developers who want quick and convenient access to pre-configured development workspaces. These platforms allow you to offload hardware requirements to the cloud, handling tasks such as code compilation and running tests using cloud infrastructure. However, while cloud environments promise flexibility and scalability, there’s often an assumption that cloud-based hardware automatically translates to superior performance. But is this always the case? Cloud Dev Env platforms like Codespaces and Gitpod typically use server-grade hardware in data centers to power development environments. At first glance, this seems like an advantage—after all, servers in cloud data centers are built for high-end performance, right? However, server hardware is optimized for running many parallel tasks with high core density, meaning they prioritize the number of CPU cores over the performance of individual cores. This is excellent for handling multiple workloads simultaneously, but it may not always be the best choice for tasks that rely heavily on single-core CPU performance—a critical factor in development tasks like code compilation. Single-core performance matters in development because many processes, such as compiling code or running tests, are CPU-bound and not easily parallelized. A CPU with strong single-core performance could complete these tasks more quickly than a CPU with many slower cores. To explore how these different environments perform, we conducted a test comparing three cloud development platforms: 3. Lapdev: Another cloud-based environment, but powered by AMD Ryzen 9 7950X3D, a CPU known for its exceptional single-core performance, often used in gaming setups. For this test, we selected 4 vCPU workspace types from each platform. Our task: compiling Rust’s Regex Library. Rust, a systems programming language, is known for its powerful performance and memory safety but also for its slow compilation times. This makes it a great candidate for comparing the performance of different cloud development environments."
+year_published = 2025
+clearnet = "https://lap.dev/blog/a-performance-review-of-cloud-dev-envs"
+tags = ["cloud", "company", "development", "environments", "lapdev", "performance", "platform", "resources", "review", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "github.com", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = '''Using the Devcontainer specification, you can define your dev environment as code. Open your dev environment and start to code instantly. Lapdev cloud uses powerful gaming CPUs to provide high single core performance which is essential for development. No more "it works on my machine". Using the Devcontainer open specification, Lapdev allows you to define your development environment as code. Onboarding developers to new projects don't need hours or days to prepare the environment on their machines. They can start to code instantly. Want to share your work-in-progress with your team? Just provide them with a direct URL to your workspace. You can also set it to public, allowing anyone with the link to view it. Need to review a PR while working on your own branch? Simply open a new workspace - no need to stash or commit your current changes. Lapdev offers a browser-based IDE right out of the box, but you can also use your preferred tools like VSCode, JetBrains IDEs, or Lapce. Alternatively, you can SSH directly into the environment and use editors like Vim or Emacs. VSCode can connect through SSH Remote plugin, and JetBrains IDEs can connect via JetBrains Gateway SSH connection. Or you can directly SSH in, and use Vim or Emacs. There’s also a browser version of VSCode out of the box.'''
+year_published = 2025
+clearnet = "https://lap.dev"
+tags = ["asked", "between", "branches", "cloud", "code", "company", "consistent", "development", "editor", "environment"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "github.com", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 919e44132dcd4267 • Your IP: Click to reveal 199.19.75.73 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://lap.dev/cdn-cgi/l/email-protection"
+tags = ["919e44132dcd4267", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "lap.dev"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "support.cloudflare.com", "ws.lap.dev"]
+
+["https://lap.dev/pricing"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = "The free plan give you access to all features Lapdev provides, with 30 hours of free usage per month. Team plan will be suitable for a team who's looking for performant consistent dev environment and can purchase usage bundles based on their usage needs. You can also self host Lapdev on your own hardware or on your Cloud provider. Contact us for Enterprise License which gives you extra enterprise features. Billing is based on the consumption of your workspaces, where charges are applied for the seconds your workspaces are running. VSCode can connect through SSH Remote plugin, and JetBrains IDEs can connect via JetBrains Gateway SSH connection. Or you can directly SSH in, and use Vim or Emacs. There’s also a browser version of VSCode out of the box."
+year_published = 2025
+clearnet = "https://lap.dev/pricing"
+tags = ["$0.18", "$10.00", "asked", "billing", "choose?", "company", "custom", "frequently", "ides", "included:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "support.cloudflare.com", "ws.lap.dev"]
+
+["https://lap.dev/blog/introducing-lapdev"]
+title = "Introducing Lapdev"
+description = "For our first blog post, we're talking about what is Lapdev and why we built it."
+full_description = '''Today we're announcing the open source and initial beta release v0.1.0 for Lapdev. You can read how to get started here, or check out the source code on GitHub. Lapdev is a self hosted application that spins up remote development environments on your own servers or clouds. If you have VSCode Remote Development in your workflow, you probably already know the benefits of remote development, with which you can unleash the full power of the remote machine, while still feeling as if you're developing "locally". Or you may have heard of or tried Github Codespaces, on which you can directly open a "workspace" from the GitHub repository with a simple one click, and you can start to code instantly, with all the development environment preconfigured for you. And Lapdev tries to bring the same experience to you with a self hosted approach for you to deploy to your own servers or cloud. Lapdev uses the same underlying standard Devcontainer that VSCode and Codespaces use, so you can seamlessly open your repository on Lapdev if you have Devcontainer configured already. Lapdev's core is open sourced under AGPL-3.0, and with selected features gated under an Enterprise License. Before Lapdev, we've also developed two other open source projects, one code editor project Lapce, and a native UI toolkit Floem. So it's only logical for us to make Lapdev open source as well. But to sustain the development efforts of all our open source projects, we've also introduced Enterprise License to be able to bring in direct revenue to support all of them. You might want to ask why reinventing the wheel while there are already a few solutions out there, and they cover all the spectrum of cloud offerings and self hosted solutions, open source and proprietary. Firstly, cloud offerings out there are rather expensive compared to normal Public Cloud prices. It would be good to have a self hosted solution where we could host on a Cloud, or bare metal providers like Hetzner, to save costs and potentially have a better performance (You could shop around to pick the right CPU for your heavy compiling work, yeah Rust you know).'''
+year_published = 2025
+clearnet = "https://lap.dev/blog/introducing-lapdev"
+tags = ["company", "introducing", "lapdev", "platform", "resources", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/lapce"]
+title = "Lapce - Lightning-fast and Powerful Code Editor"
+description = "Lightning-fast and Powerful Code Editor"
+full_description = '''Native GUI and Rust powered performance, we as developers know what you need for an essential tool like a code editor. Write code with joy in Lapce. Native GUI with GPU acceleration in Floem, no more waiting on launching the editor, and any lag on your keystroke will be treated as a bug and get fixed. You can connect to a remote machine seamlessly, with a "local" experience, benefiting from an identical environment with your production server, or utilizing the full performance of the remote machine. We also have Lapdev which can help manage your remote dev environments. Code syntax highlighting using Tree-sitter, much faster and better than regex based highlighting. Also with built-in LSP support, to give you code intelligence like code completion, diagnostics and code actions etc. Vim users, we've got you covered! Built-in support for a Vim like editing experience, without a plugin. You can write a plugin for Lapce with any programing language that compiles to WASI. Choose a familiar language for writing a plugin without learning a new language.'''
+year_published = 2025
+clearnet = "https://lap.dev/lapce"
+tags = ["batteries", "built-in", "code", "company", "development", "editing", "editor", "fast", "included", "lapdev"]
+language = "en"
+internal-references = ["none"]
+external-references = ["crates.io", "discord.gg", "docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "docs.rs", "github.com", "lapce.dev", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/about"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = "We started our dev tools journey by writing our code editor from scratch. The remote development feature was a key feature for us, so we built the feature in Lapce from the very beginning, shaping the entire architecture of the editor around it. We had a bit of a detour on developing Lapce and wrote our own GUI toolkit Floem because there were no good ones in Rust that suited our needs. Then we started to have this need to manage the remote development environments. Because Lapce and Floem are cross platform applications, we used Lapce’s remote development feature to develop it on different operating systems, from the same editor without the need to switch machines. But still, the actual remote development environments, i.e. the different remote systems that Lapce connects to, need to be managed, and ideally we’d like a system which can manage them and spin new environments, so that our contributors can easily debug or test the cross platform features if needed. We looked at existing solutions but can't find one that matches our needs. Some of them are very complicated to install and maintain, and as DevOps engineer, I really appreciate self hosted systems to be easy to install and understand. So the idea came into mind, why not create a new solution ourselves, that embodies simplicity, but without compromising on functionality and extensibility?"
+year_published = 2025
+clearnet = "https://lap.dev/about"
+tags = ["company", "floem", "lapce", "lapdev", "platform", "resources", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "github.com", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]
+
+["https://lap.dev/blog"]
+title = "Lapdev - Performant Cloud Development Environment"
+description = "Lapdev is a performant cloud development environment that's instant ready to code."
+full_description = "Lapdev outperforms cloud development environments like GitHub Codespaces and Gitpod in development tasks such as code compilation by leveraging high-performance single-core CPU."
+year_published = 2025
+clearnet = "https://lap.dev/blog"
+tags = ["blog", "cloud", "company", "development", "environments", "full", "introducing", "lapdev", "performance", "platform"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.floem.dev", "docs.lap.dev", "docs.lapce.dev", "github.com", "plugins.lapce.dev", "status.lap.dev", "ws.lap.dev"]

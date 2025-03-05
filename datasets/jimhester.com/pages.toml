@@ -1,0 +1,160 @@
+["https://jimhester.com/talk"]
+title = "All Talks & Workshops | Jim Hester"
+description = "Personal website of Jim Hester where I blog about data science and programming in R."
+full_description = "The key to well-documented, well-tested and easily-distributed R code is the package. This half day class will teach you how to make …"
+author = "Jim Hester"
+year_published = 2025
+clearnet = "https://jimhester.com/talk"
+tags = ["actions", "bench:", "benchmarking", "cite", "cpp11", "debugging", "development", "file", "github", "import"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "blog.codinghorror.com", "ccf.org", "cpp11.r-lib.org", "cran.r-project.org", "en.wikipedia.org", "explorys.com", "facebook.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "resources.rstudio.com", "rstudio.com", "service.weibo.com", "speakerdeck.com", "twitter.com", "web.whatsapp.com", "youtube.com"]
+
+["https://jimhester.com/post"]
+title = "Videos / Posts | Jim Hester"
+description = "Personal website of Jim Hester where I blog about data science and programming in R."
+author = "Jim Hester"
+year_published = 2020
+clearnet = "https://jimhester.com/post"
+tags = ["best", "cite", "connections", "gmailr", "lintr", "odbc", "pipe", "posts", "readr", "rstats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "ccf.org", "cleveland.com", "cran.r-project.org", "creativecommons.org", "explorys.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "youtu.be"]
+
+["https://jimhester.com/post/2020-08-20-best-os-for-r"]
+title = "Best OS for R users | Jim Hester"
+description = """
+Recently there have been a couple of people looking to buy a new computer and asked on twitter which OS is best for R users.
+There are three main choices you can make, Windows, Linux and macOS. I have used R extensively on all three operating systems. I used Windows and linux when I worked at the Cleveland Clinic. Linux when I was on the Bioconductor core team, and macOS at Explorys and RStudio."""
+full_description = "Photo by Paweł Czerwiński on Unsplash Best OS for R users Aug 20, 2020 Photo by Paweł Czerwiński on Unsplash Best OS for R users Aug 20, 2020 Recently there have been a couple of people looking to buy a new computer and asked on twitter which OS is best for R users. There are three main choices you can make, Windows, Linux and macOS. I have used R extensively on all three operating systems. I used Windows and linux when I worked at the Cleveland Clinic. Linux when I was on the Bioconductor core team, and macOS at Explorys and RStudio. My standard advice to this question is for R macOS or linux are much better experiences than Windows. Windows There are some advantages to using R on windows. One advantage is that CRAN provides R package binaries for all CRAN packages on Windows. This means if you are only installing CRAN packages you don’t need to worry about compiling R packages with FORTRAN, C, or C++ code. Another advantage is most of the popular R packages that have extra system dependencies use static libraries available from the rwinlib project. This means that R users on Windows typically don’t need to download any additional software to install and use the vast majority of R packages on CRAN. This is even true for most packages on GitHub or elsewhere as well. However using R on windows also comes with a large number of disadvantages. In my opinion these disadvantages outweigh the above advantages significantly. Rtools The first major disadvantage to R on windows is the fact that Windows does not ship with a built in C, C++ or FORTRAN compiler. This means R users on Windows need to install Rtools in order to compile packages with compiled code in them. Many R users do not have Rtools installed, as it is not needed unless you are compiling packages themselves. Also Rtools comes with a number of additional command line tools, which can sometimes cause bad interactions with other software on your machine if you put Rtools on your %PATH%, or on the wrong place on your %PATH%. Installation issues Windows users report substantially increased numbers of package installation issues compared to other OSs. Ultimately most of these issues are caused by DLL locking. DLLs (Dynamic-link libaries) are what R packages use to link compiled code to the R executable so the compiled code can be run by R. Any file on Windows cannot be deleted if another process has a handle to it. This applies to all open files, but crucially in R’s case to the DLL files used by an R package with compiled code. This restriction means that if you have an R package loaded and try to install a new version of that package, the DLL will be locked. Because the DLL is locked the old version will not be removed and the new version cannot be copied, so users can end up with a package with new R code and an old DLL, which will break the next time they try to load the package. Also if you have multiple versions of R running at the same time this restriction still applies, so if you forgot you had a package loaded in one session and try to update to the latest version in another process your installation will be broken. This issue is compounded by the fact that install.packages() does not fail in these cases, it only issues a warning, so users do not always even realize something has gone wrong until they try to load the package. This issue is fundamental to the way Windows is designed, so there are limited things we can do to address it. The pak installer has some workarounds and will definitely have a more informative error message if this occurs. Unicode encodings Internally unicode strings in R have a ‘native’ encoding. On macOS and linux by default this native encoding is UTF-8, which can handle basically any of unicode’s 140,000+ characters without issue. On windows however the native encoding is not UTF-8, but instead is one of the many code pages chosen based on the particular locale set on your machine. Each of these code pages can only encode a limited subset of unicode. This means that you are dealing with data that is not in the same locale as your machine you will likely run into characters that R cannot convert to your native locale. In these cases where R cannot translate the data it will degrade it to characters that look like U+XYZ123. If you ever see this in your data this is the cause. R does support UTF-8 for strings on Windows, but these strings need to be explicitly marked as UTF-8. Crucially this encoding needs to be maintained throughout all of your data manipulations with those strings. Unfortunately there are many places internally where R will implicitly convert strings into the native encoding and back. If your happens to encounter any of these they will be converted to the U+XYZ format and you will lose the UTF-8 representation, with no real way to retrieve it. 3rd party R packages can also cause problems with encodings on Windows unless they are very careful. Dealing with encodings as a package developer is very much a Pit of Dispair rather than a Pit of Success. It is much easier to unwittingly do the wrong thing than write code to handle the encodings correctly. These issues are compounded by the fact that most of the R core developers and many packages authors do not use Windows as their primary OS, so users are often the first to see any encoding issues. This makes dealing with non-english text on Windows a fraught experience. If you work with this type of data often I would strongly suggest looking into using R on linux or macOS instead. Linux R on linux is generally a pretty nice experience, provided you are comfortable using the command line and debugging build systems. The major package managers all have R available, though often the R versions in the official repositories are somewhat old. However often backports of more recent versions of R are available, and compiling R on linux is usually just a standard ./configure && make install away. Unlike Windows linux does not have any issues with shared library locking when installing packages. When you delete a file on linux only the name in the file system is removed, the file itself remains until there are no processes with handles to it. This means you can happily have a package loaded in the same R session, or another R session and install a new version few the package. Linux also does not have issues with string encodings. As mentioned in the windows section the native encoding on linux by default is UTF-8, which can happily encode basically all of unicode and there is no worries about accidentally being translated to the native encoding. The largest downside of using R on linux is the lack of R package binaries from CRAN. Fortunately RStudio now provides a public version of the RStudio Package Manager which does provide R package binaries for ubuntu, CentOS, Red Hat Linux and SUSE Linux. Choosing a linux distribution that is supported by RSPM and configuring R to use these binaries will greatly improve your experience with R on linux. RSPM also provides a database of needed system dependencies for each package, so they can be installed as needed. The system package managers, apt-get, yum etc. are all generally very good and work well to install system dependencies. RSPM even has a helpful listing of needed system dependencies for their R binaries. Without R package binaries users will have to compile all packages themselves, which can take additional time and require extensive debugging if package compilation fails. One additional issue with R on linux, particularly with CentOS and Red Hat distributions is the age of the default compilers. Often they are 5-10+ years old and may not have all the features needed for R packages targeting newer versions of C++ standards. However there are methods to install newer compilers on these systems if needed. macOS R on macOS generally has all of same benefits to R on linux. It also has the added benefit that CRAN provides R package binaries on macOS. However some people unknowingly remove this advantage by installing R from homebrew with brew install r, which does not use the CRAN binaries! If you want to use R on macOS you should instead use brew cask install r which installs the CRAN version of R, or use the manual installers. The clang toolchain on macOS is also very current. While Apple doesn’t provide a built in command line package manager, homebrew has become the de-facto package manager for most people and works very well. One wrinkle to be aware of is Apple’s switch to ARM based architectures in the future. As of August 2020 gfortran (or any other FORTRAN compiler) is not (yet) available for Apple Silicon. R requires a FORTRAN compiler to compile R itself, so R would have to be run using Apple’s Rosetta 2 translation. This will result in a speed decrease relative to running the equivalent code natively, and potentially other issues. Hopefully by the time macOS machines with Apple Silicon are available to purchase this will no longer be a concern. Conclusion No solution for R is perfect. For many Windows may be most familiar. It has the best price per performance for hardware compared to macOS and has much better support for games. However for R Windows has a lot of drawbacks, particularly around Rtools, DLL locking and Unicode. In addition Windows support for a unix style command line is still lacking compared to linux and macOS, though this has improved with the Windows Subsystem for Linux. Linux is a good alternative if you are comfortable with debugging system issues and unix command line tools. Particularly if you take advantage of R package binaries from the RStudio Package Manager. macOS has arguably the best experience for R out of the box. However macOS hardware is also the most expensive, and Apple Silicon in the future may make this less ideal. I hope this post helps illuminate some of the differences between operating systems and inform you in choosing which would be best for you. R Jim Hester Software Engineer I’m a Senior Software Engineer at Netflix and R package developer. Related cpp11 RStats tip #3 use pipe connections vroom: Read and Write Rectangular Text Data Quickly vroom Submitting vroom to CRAN, LIVE!"
+author = "Jim Hester"
+year_published = 2020
+year_updated = 2020
+clearnet = "https://jimhester.com/post/2020-08-20-best-os-for-r"
+tags = ["additional", "advantage", "another", "apple", "best", "binaries", "cannot", "cite", "code", "command"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ccf.org", "cleveland.com", "cran.r-project.org", "creativecommons.org", "en.wikipedia.org", "explorys.com", "facebook.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "pak.r-lib.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "youtu.be"]
+
+["https://jimhester.com/authors/jim"]
+title = "| Jim Hester"
+description = """
+I am a Senior Software Engineer at Netflix where I build
+infrastructure and support the R community at Netflix.
+
+Prior to Netflix I worked as a Software Engineer at RStudio, where I worked on
+Hadley Wickham’s team developing open source R packages for the
+tidyverse and r-lib
+projects.
+
+I use my knowledge of R, C++ and other languages to build useful, correct, and
+performant R packages.
+
+My background is originally in bioinformatics and heathcare data science, I worked in the
+Genomic Medicine Institute at the Cleveland Clinic, Explorys Inc., and on the Bioconductor
+core team prior to more pure software engineering roles at RStudio and Netflix.
+
+
+        Interests                Programming            Data science / statistics            Data visualization            The NBA            Parenting"""
+full_description = "I am a Senior Software Engineer at Netflix where I build infrastructure and support the R community at Netflix. Prior to Netflix I worked as a Software Engineer at RStudio, where I worked on Hadley Wickham’s team developing open source R packages for the tidyverse and r-lib projects. I use my knowledge of R, C++ and other languages to build useful, correct, and performant R packages. My background is originally in bioinformatics and heathcare data science, I worked in the Genomic Medicine Institute at the Cleveland Clinic, Explorys Inc., and on the Bioconductor core team prior to more pure software engineering roles at RStudio and Netflix."
+author = "Jim Hester"
+year_published = 2025
+clearnet = "https://jimhester.com/authors/jim"
+tags = ["cite", "engineer", "hester", "interests", "latest", "netflix", "search", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "ccf.org", "cran.r-project.org", "explorys.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "youtu.be"]
+
+["https://jimhester.com/project/cpp11"]
+title = "cpp11 | Jim Hester"
+description = "I’m a Senior Software Engineer at Netflix and R package developer."
+full_description = "Photo by Christopher Burns Sanker on Unsplash cpp11 Jim Hester Apr 18, 2020 package video slides code site Photo by Christopher Burns Sanker on Unsplash cpp11 Jim Hester Apr 18, 2020 package video slides code site cpp11 is a header-only R package that helps R package developers handle R objects with C++ code. Its goals and syntax are similar to the excellent Rcpp package. R C++ cpp11 package Jim Hester Software Engineer I’m a Senior Software Engineer at Netflix and R package developer. Talks cpp11 - welding R and C++ R and S have a long history of interacting with compiled languages. The Rcpp package has been a widely successful project, however … Nov 14, 2020 9:00 AM Virtual Jim Hester Project slides video"
+author = "Jim Hester"
+year_published = 2020
+year_updated = 2020
+clearnet = "https://jimhester.com/project/cpp11"
+tags = ["cite", "cpp11", "engineer", "hester", "package", "search", "software", "talks", "welding"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "blog.codinghorror.com", "ccf.org", "cpp11.r-lib.org", "cran.r-project.org", "en.wikipedia.org", "explorys.com", "facebook.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "resources.rstudio.com", "rstudio.com", "service.weibo.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "web.whatsapp.com"]
+
+["https://jimhester.com/projects"]
+title = "Projects | Jim Hester"
+description = "See some of the projects I have worked on"
+full_description = "This half day class will teach you how to make package development as easy as possible with devtools and usethis. This is a two-day hands on workshop designed for experienced R and RStudio users who want to (re)design their R lifestyle. Track and report code coverage for your package and (optionally) upload the results to a coverage service like Codecov or Coveralls."
+author = "Jim Hester"
+year_published = 2019
+year_updated = 2019
+clearnet = "https://jimhester.com/projects"
+tags = ["cite", "projects", "search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "blog.codinghorror.com", "ccf.org", "cpp11.r-lib.org", "cran.r-project.org", "en.wikipedia.org", "explorys.com", "facebook.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "resources.rstudio.com", "rstudio.com", "service.weibo.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "web.whatsapp.com"]
+
+["https://jimhester.com/post/readr-1-4-0"]
+title = "readr v1.4.0 | Jim Hester"
+description = "The newest release of readr brings improved argument consistency, better messages and more flexible output options."
+full_description = "Photo by Anastasia Zhenina on Unsplash readr v1.4.0 Oct 6, 2020 Go to Project Site Project Photo by Anastasia Zhenina on Unsplash readr v1.4.0 Oct 6, 2020 Go to Project Site Project See full post on tidyverse.org package Jim Hester Software Engineer I’m a Senior Software Engineer at Netflix and R package developer. Related cpp11 vroom v1.1.0 odbc v1.2.0 lintr v2.0.0 vroom"
+author = "Jim Hester"
+year_published = 2020
+year_updated = 2020
+clearnet = "https://jimhester.com/post/readr-1-4-0"
+tags = ["cite", "engineer", "hester", "package", "project", "readr", "related", "search", "software", "v1.4.0"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "blog.codinghorror.com", "ccf.org", "cleveland.com", "cran.r-project.org", "en.wikipedia.org", "explorys.com", "facebook.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "resources.rstudio.com", "rstudio.com", "service.weibo.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "web.whatsapp.com"]
+
+["https://jimhester.com/contact"]
+title = "About / Contact | Jim Hester"
+description = "A little more about me and how to get in touch"
+full_description = "I have lived in northeast Ohio for over 25 years and have long had an interest in computers and programming, starting with writing programs in BASIC on our family’s IBM PS/1. I have also long had an interest in biology, particularly genetics. Combining my two interests led me to pursue bioinformatics and a job as a Program Analyst at the Cleveland Clinic. My research at CCF focused on using high-throughput sequencing to study a variety of issues, such as maternal obesity in mice, microbial populations in the Cuyahoga river, and Plasmodium Vivax malaria. While at the Cleveland Clinic, I became an avid user of the statistical programming language R, using it to process, visualize, model and report our data. I also began writing R packages and contributing to open source packages on GitHub. I enjoyed working with open source software and being part of the R community, so looked for opportunities that allowed me to continue to do so, which eventually landed me at RStudio. At RStudio I have worked on numerious projects including writing and/or maintaining 25+ R packages on CRAN. I have also given a number of talks and workshops about R and R packages, which has allowed my to travel to Europe and Australia, as well as throughout the United States. After a number of years at RStudio I decided to pursue an exciting opportunity and Netflix, building infrastructure and supporting the R community there."
+author = "Jim Hester"
+year_published = 2019
+year_updated = 2019
+clearnet = "https://jimhester.com/contact"
+tags = ["analyst", "analyst/programmer", "analytics", "bioconductor", "cite", "cleveland", "clinic", "core", "data", "engineer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "ccf.org", "cleveland.com", "cran.r-project.org", "explorys.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "youtu.be"]
+
+["https://jimhester.com/license"]
+title = "LICENSE: CC-BY-SA | Jim Hester"
+description = "My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License."
+full_description = "LICENSE: CC-BY-SA My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License. My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License."
+author = "Jim Hester"
+year_published = 2018
+year_updated = 2018
+clearnet = "https://jimhester.com/license"
+tags = ["cc-by-sa", "cite", "license:", "search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "ccf.org", "cleveland.com", "cran.r-project.org", "creativecommons.org", "explorys.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "youtu.be"]
+
+["https://jimhester.com"]
+title = "Jim Hester"
+description = """
+I am a Senior Software Engineer at Netflix where I build
+infrastructure and support the R community at Netflix.
+
+Prior to Netflix I worked as a Software Engineer at RStudio, where I worked on
+Hadley Wickham’s team developing open source R packages for the
+tidyverse and r-lib
+projects.
+
+I use my knowledge of R, C++ and other languages to build useful, correct, and
+performant R packages.
+
+My background is originally in bioinformatics and heathcare data science, I worked in the
+Genomic Medicine Institute at the Cleveland Clinic, Explorys Inc., and on the Bioconductor
+core team prior to more pure software engineering roles at RStudio and Netflix.
+
+
+        Interests                Programming            Data science / statistics            Data visualization            The NBA            Parenting"""
+full_description = "I am a Senior Software Engineer at Netflix where I build infrastructure and support the R community at Netflix. Prior to Netflix I worked as a Software Engineer at RStudio, where I worked on Hadley Wickham’s team developing open source R packages for the tidyverse and r-lib projects. I use my knowledge of R, C++ and other languages to build useful, correct, and performant R packages. My background is originally in bioinformatics and heathcare data science, I worked in the Genomic Medicine Institute at the Cleveland Clinic, Explorys Inc., and on the Bioconductor core team prior to more pure software engineering roles at RStudio and Netflix."
+author = "Jim Hester"
+year_published = 2020
+clearnet = "https://jimhester.com"
+tags = ["actions", "best", "cite", "cpp11", "engineer", "github", "hester", "interests", "netflix", "readr"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bioconductor.org", "ccf.org", "cran.r-project.org", "explorys.com", "github.com", "gohugo.io", "linkedin.com", "my.clevelandclinic.org", "netflix.com", "orcid.org", "resources.rstudio.com", "rstudio.com", "sourcethemes.com", "speakerdeck.com", "tidyverse.org", "twitter.com", "youtu.be"]

@@ -1,0 +1,198 @@
+["https://blog.codetree.com/articles/keyboard-shortcuts.html"]
+title = "Boost your productivity with keyboard shortcuts"
+description = "You don't have to be a hardcore vim hacker to appreciate the value of a good keyboard shortcut. Now, you can navigate your way around Codetree without lifting your fingers from the keyboard — because who needs a mouse, anyway?"
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/keyboard-shortcuts.html"
+tags = ["anchored", "appreciate", "around", "articles", "boost", "codetree", "don't", "fingers", "game.", "hacker"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "christophjanz.blogspot.com", "codetree.com", "convertkit.com", "csisoftware.com", "ctt.ec", "docs.google.com", "getdrip.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com", "twitter.com"]
+
+["https://blog.codetree.com/articles/using-dependencies-to-understand-the-state-of-your-in-flight-features.html"]
+title = "Using dependencies to understand the state of your in-flight features"
+description = "How we use dependencies at Codetree to augment GitHub issues and manage our software projects effectively."
+full_description = '''You can use dependencies to answer several helpful questions about the state of your epics and features during planning and delivery. In this article we'll first give you some context on our workflow so the rest of the article makes sense. Then we'll cover how we use dependencies when structuring our relationships between epics, features, and tasks (we call them "work items"). And finally we'll describe key questions you have about planning and delivering your features and how using dependencies can help you answer them. To make sense of this article it's key that you have a sense of the workflow we use to deliver features. We could be a lot more granular with our workflow (for example, splitting resolved into UAT, code review, and ready for deploy stages). But our small team prefers pragmatism over dogma, so we do what works until it doesn't and then reevaluate. To understand how we use dependencies, it's necessary to understand how we break a feature up into atomic units that can be coded. Here's our breakdown. The feature's Product Manager breaks the Epic down into smaller "feature issues" of deliverable customer value. Each feature is needed-by the parent Epic issue (to create a dependency in Codetree you type needed-by #123 or needs #456, where 123 and 456 are issue numbers. More on creating dependencies here.) Looking at an Epic's dependencies is useful because it'll tell you what's been delivered and what's still left to work on. The Dev assigned to each feature will either use a checklist or break the feature down into smaller "work item" issues. If the latter, each work item is "needed-by" the feature. If you use work items, the dependencies table helps you understand what needs to be completed before the feature is ready for acceptance testing. We usually use checklists as they're lighter weight, but there are certainly more complicated work items that justify having their own issue. Other than specifying relationships between issues when we create epics, features, and work items, there's one place in our workflow where creating dependencies helps us understand what's going on with our project: in acceptance testing.'''
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/using-dependencies-to-understand-the-state-of-your-in-flight-features.html"
+tags = ['"how', '''"who's''', "answer", "answering", "article,", "articles", "before", "build", "codetree", "codetree."]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "codetree.com", "convertkit.com", "csisoftware.com", "ctt.ec", "docs.google.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/a-framework-for-picking-and-funding-your-business-idea.html"]
+title = "A framework for picking and funding your business idea"
+description = "Picking your idea and funding your business are key problems for every entrepreneur. Here's a framework to help you get those decisions right."
+full_description = '''This is part two in a three-part series. Part one was about how we defined success for our new, creatively-titled venture "Next Biz". This post is about how we evaluated the different paths to maximize our chances of success. Part three covers the details of buying Codetree. The first step was to define what success looked like for us. The next step was to figure out the path that would give us the highest chance of getting there. We’ve built four successful SaaS businesses, and consulted with companies that have done $100M+ in revenue. We have the battle scars and seen them on others. Based on these mistakes and wins, we built a set criteria to evaluate opportunities. We broke these criteria down into the "must haves" and the "very nice to haves". Does the product solve a hair on fire problem ("I'm a sales person and need a CRM to track my deals")? Or is a must-have ("I need to process credit cards online")? Or core to business ("I need a member management system to run my gym")? Are we selling something where the customer’s thought process is "which [blank] are we going to buy" rather than "do we need to buy [blank]"? Sequoia invests in large markets because your upside is not capped by a small number of potential customers. Large markets also have lots of niches to serve - especially important for bootstrappers. It’s much easier to e.g. make a list of your potential customers and call them up (e.g. "a tool for VPs of HR") rather than a horizontal tool where “anybody is your customer”. Can we imagine yourself doing this for 10 years and enjoying it? We’re in this for the long haul so let’s enjoy the ride. CRUD apps are preferable to businesses that scale with humans, or that have lots of software complexity. If you’re running Heroku and it goes down, your customers bloody hate you because they’re losing money. If you’re running a help desk and it goes down, it’s an all-hands on deck emergency. It's only marginally less stressful than if you’re running Heroku. But that margin lets us sleep better at night.'''
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/a-framework-for-picking-and-funding-your-business-idea.html"
+tags = ["$300/m", "$30m", "accomplish", "american", "another", "answer.", "approval", "aren't", "articles", "average"]
+language = "en"
+internal-references = ["none"]
+external-references = ["25iq.com", "a16z.com", "blog.oribi.io", "blog.ycombinator.com", "codetree.com", "csisoftware.com", "ctt.ec", "dangrover.com", "docs.google.com", "en.wikipedia.org", "groovehq.com", "heavybit.com", "hiten.com", "levelup.pm", "mobilesyrup.com", "quora.com", "revangale.wordpress.com", "sedar.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/global-task-boards.html"]
+title = "Task boards now available everywhere"
+full_description = "To get around the confusion problem mentioned above, we put a simple restriction in place: if the task board you are viewing is not filtered down by a single milestone (or assignee, depending on how your project is prioritized), then sorting cards within columns is disabled. Everything else, however, will continue to work as expected."
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/global-task-boards.html"
+tags = ['"global', "announce", "articles", "assignee", "attempting", "available", "avoid", "behavior", 'board"', "boards"]
+language = "en"
+internal-references = ["none"]
+external-references = ["25iq.com", "a16z.com", "blog.oribi.io", "blog.ycombinator.com", "codetree.com", "csisoftware.com", "ctt.ec", "dangrover.com", "docs.google.com", "en.wikipedia.org", "getdrip.com", "groovehq.com", "heavybit.com", "hiten.com", "levelup.pm", "quora.com", "revangale.wordpress.com", "sedar.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/announcing-codetree.html"]
+title = "Announcing Codetree: GitHub Issues, Managed"
+full_description = "After six months of intense product development, Codetree is officially open to the public. If you use GitHub issues, I think you're going to love what we've built. But don't take my word for it — sign up for a free trial and take it for a spin. If you're interested in more details, keep reading. Six months ago, I set out to transform the way product teams interact with their GitHub issues. Before I get to the punch line, let me set some context for you. In addition to founding Codetree, I'm the tech lead for a burgeoning marketing automation app. Like many product teams these days, we settled on using the GitHub Flow™ and almost immediately began reaping the benefits. We were iterating faster, shipping higher quality code, and at the end of the day, making our customers happier. As my team continued to grow, I found myself spending more time on administrivia and less time in the code. My daily routine involved hopping between our project management tool and GitHub, solely to keep things happening in our GitHub issues and pull requests in sync with our PM tool. That's when I realized that my tools were getting in the way more than they were helping me. The endless back and forth between the project management app and GitHub was killing my productivity. And if your workflow is anything like mine, chances are it's killing your productivity too. GitHub Issues is an amazing product. Dare I say my favorite quality about GitHub Issues is what it doesn't do. You get a title, description, labels, milestone, and assignee. That's it. No giant list of fields to populate or boxes to tick. But, as we moved further towards migrating all project management to GitHub, we discovered there was some key functionality missing that was preventing us from making the leap. Codetree is a lightweight project management app that sits directly on top of GitHub. Every issue in Codetree corresponds to a GitHub issue and projects are kept continually in sync. We provide just the features needed for project management, without reinventing what GitHub already executes beautifully."
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/announcing-codetree.html"
+tags = ["announcing", "articles", "beginning", "boards", "born", "codetree", "codetree:", "compact", "dependency", "estimates"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/github.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/github.html"
+tags = ['"projects"', "across", "appears", "articles", "articles tagged as github", "believe", "between", "board", "called", "central"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/codetree-has-new-owners.html"]
+title = "Codetree has new owners"
+description = "Three experienced software entrepreneurs have bought Codetree."
+full_description = "Our first order of business is to do no harm. We're talking to as many current and former customers as possible to understand what they like and don't like about Codetree. The longer-term roadmap is still emerging, but based on what we've heard so far, here's what we're going to build in the short-term: In the upcoming weeks, we'll be writing in more depth about the experience of acquiring Codetree. We'll share why we decided to buy Codetree, specific numbers, our negotiation strategy, our financial models, and a whole lot more. Try our free trial if you're looking for a lightweight Project Management tool built on top of GitHub Issues. You'll get the best multi-repo support in the business, dependency tracking, powerful searching and saved queries, a table view and Kanban board, and a lot more."
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/codetree-has-new-owners.html"
+tags = ["acquired", "acquisition", "arif,", "articles", "better", "build", "building", "codetree", "codetree.", "codetree?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["25iq.com", "a16z.com", "blog.oribi.io", "blog.ycombinator.com", "codetree.com", "csisoftware.com", "ctt.ec", "dangrover.com", "docs.google.com", "en.wikipedia.org", "getdrip.com", "groovehq.com", "heavybit.com", "hiten.com", "levelup.pm", "quora.com", "revangale.wordpress.com", "sedar.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/what-its-like-buying-a-128k-side-project.html"]
+title = "What it's like buying a $128k side project"
+description = "What's it like buying a small SaaS software business? Learn about our experience negotiating, doing due diligence, and ultimately buying Codetree here."
+full_description = 'This is last article in a three-part series. This part covers the details of buying Codetree. Part one was about how we defined success for our new, creatively-titled venture "Next Biz". Part two was about how we evaluated the different paths to maximize our chances of success. Three days after we decided to build an Issue Tracker, we heard from FE International. FE is a web app broker and they had a B2B SaaS Project Management tool for sale. We had talked to FE a few years back about selling another SaaS business that we were running. Since talking to FE, we’d seen 60+ prospectuses from them, but nothing had been promising enough for us to buy. We had even looked an an issue tracker. We passed on it because it seemed like it sold to agencies for project work, a segment that is prone to high churn. The asking price was affordable and we already modeled out what the payback period could look like for various purchase prices here The founder, Derrick Reimer, had co-founded Drip. We were familiar with Drip because his co-founder, Rob Walling, has an excellent podcast called Startups For the Rest of Us. Rob seems like a good guy, and so Derrick and Codetree benefitted from a halo effect / social proof of being associated with Drip and Rob. There was lots of room to manoeuvre in the niche. We could make it a great layer on top of GitHub issues, or build layers on other services like BitBucket, or build a standalone app. We asked some detailed questions over email to unpack some of the above questions. We also hopped on a phone call with Derrick and his broker from FE - David - on May 18th. Convince Derrick we could pay. When we sold our previous SaaS business, we learned that sellers get a lot of lookie-loos. If the potential buyer can’t afford the price, the conversation is a waste of time. Convince Derrick we’d make a good home for Codetree. Even if you get a check for your baby, you want it to end up in a good home. We’d been following Drip and the Micropreneur movement for a long time, so we had a lot of common beliefs. We’d also sold a business before so we had an idea of the kinds of things we wanted to see in a buyer to make us feel good about this (smart, credible, pragmatic, knowledge of the market, experienced, nice).'
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/what-its-like-buying-a-128k-side-project.html"
+tags = ["$128k", "2.8x", "acquisition", "additional", "adjustments", "agreement", "analysis", "articles", "asset", "believe"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/how-to-avoid-building-a-company-youll-hate.html"]
+title = "How to avoid building a company that you'll hate"
+description = "How do you know if the business you're running will help you live a happy life?  Read about the framework we used to define success for our venture here."
+full_description = '''This is the first in a three-part series. In this post, we'll talk about how we defined success for "Project Next Biz". We'll also share the framework and exercise we used to figure that out. Part two is about how we evaluated the different paths we could take to maximize our chances of success. We'll share the framework we used to choose an opportunity to work on for the 7-10 years it takes for a SaaS business to hit its stride. We'll also talk about how we arrived at our ideal financing approach. Hint: venture-backed isn't the only road. A little about us before we jump in. We're three business-minded software devs with 45 combined years of professional experience building software. We've started, run, folded and sold several SaaS businesses. We've done venture backed and bootstrapped startups. We've worked at companies like Microsoft, ESPN, and MySpace. We've worked together before and we wanted to work together again. We're big fans of Warren Buffett's business partner Charlie Munger. Charlie is big on avoiding mistakes and our past ventures had given us a long list of mistakes to avoid. One mistake we'd made is that we'd never defined success when starting previous companies. We'd skipped this step and headed right to the problem/solution and financing approach. Munger talks about the concept of "inverting". He borrowed the idea from German algebraist Carl Gustav Jacob Jacobi, who said "Invert, always invert." In a 1986 speech Munger said: "It is in the nature of things, as Jacobi knew, that many hard problems are best solved only when they are addressed backwards." In other words, begin with the end in mind. If you don't know where you're going, you'll end up in the wrong place by definition. (click to tweet) One exercise we did to figure out where we wanted to be was to write down what a day in our lives looked like when Next Biz was successful. We answered things like: Each of us did this independently and talked through our answers with each other. We drew on our own previous founder experiences, conversations with other founders, and things we'd read to paint a picture of what an ideal day looked like.'''
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/how-to-avoid-building-a-company-youll-hate.html"
+tags = ['"project', "$80m", "accountability", "agenda", "aligned", "articles", "avoid", 'biz".', "bottle", "building"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "christophjanz.blogspot.com", "codetree.com", "convertkit.com", "csisoftware.com", "ctt.ec", "docs.google.com", "getdrip.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com", "twitter.com"]
+
+["https://blog.codetree.com/articles/project-management-launch-partner-in-github-marketplace.html"]
+title = "Codetree is a launch partner in GitHub Marketplace"
+description = "GitHub Marketplace launches today, and Codetree is a Launch Partner in the Project Management category."
+full_description = '''Today, we're thrilled to be one of a small number of launch partners in GitHub Marketplace. It offers a place for developers to find "best of breed" tools for tasks like Project Management (where you'll find Codetree), Continuous Integration, Code Quality, and more. We're thrilled to participate. If you want to see if Codetree gives you a better view of your in-flight software projects, you can sign up for Codetree in GitHub Marketplace here.'''
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/project-management-launch-partner-in-github-marketplace.html"
+tags = ["across", "ago.", "articles", "believe", "bought", "central", "codetree", "daily", "developers", "github"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "christophjanz.blogspot.com", "codetree.com", "convertkit.com", "csisoftware.com", "ctt.ec", "docs.google.com", "getdrip.com", "github.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com"
+tags = ['"global', '"how', '"projects"', "$128k", "acquired", "across", "agile", "announce", "answer", "answer."]
+language = "en"
+internal-references = ["none"]
+external-references = ["codetree.com"]
+
+["https://blog.codetree.com/articles/the-important-differences-between-github-projects-and-codetree.html"]
+title = "The Important Differences between GitHub Projects and Codetree"
+description = "Here are the key differences between Codetree and GitHub Project's Kanban boards."
+full_description = '''Click here if you want to skip to a table that summarizes the key differences between Codetree and GitHub Projects. GHP lets you create multiple Kanban-style boards within a repository. Each board can have custom stages. It’s a very lightweight Kanban tool, like GitHub Issues is a lightweight issue tracking tool. It is very Trello-esque: a card can be an issue or a note (more on notes below), and cards can be dragged and dropped from column-to-column. They’re Kanban boards. We’ll cover how to create a board, and then talk about three wrinkles that you might not expect: A GHP lives within a repo. Which means you can only add issues from a repo to a board that lives in the same repo. In other words, if you need to see a rolled-up view of issues across multiple repos, GitHub Projects won’t work for you. You can create as many Kanban boards as you want within a repo. Each board contains a combination of a subset of issues in the repo, and a new construct called a "note". We'll cover both. If you’re trying to use a board to manage your entire project, you’ll probably be frustrated at having to add every issue to your board manually. GHP introduces the concept of "notes". Notes are simply plaintext snippets that you add to a board. They can be easily converted to a full-fledged Issue. An issue can belong to multiple boards at once. You can see what stage and board(s) an issue belongs to on the Issue page: GHPs are simply a way to group together a set of related issues and to visualize them. One way you may want to group issues together is if those issues are children of a larger feature. You can use a board to track the N features that need to be finished to deliver some larger feature. You could create a board for each milestone and see the work remaining before closing that milestone, what stage it’s in, and who it’s assigned to. First, Codetree will show you all your issues from as many repos as you want rolled up into a single Kanban board. GitHub Projects can only show you a Kanban board that contains a subset of issues from a single repo.'''
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/the-important-differences-between-github-projects-and-codetree.html"
+tags = ['"projects"', "appears", "articles", "between", "board", "boards", "called", "codetree", "codetree's", "codetree’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "christophjanz.blogspot.com", "codetree.com", "convertkit.com", "csisoftware.com", "ctt.ec", "docs.google.com", "getdrip.com", "github.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/articles/custom-stages.html"]
+title = "Custom task board stages have arrived"
+full_description = "All projects come preloaded with an In Progress stage that aptly corresponds to the in progress label. Each custom stage corresponds to a GitHub label for maximum flexibility. To customize your workflow for any given project, head to Settings > Workflow. Once you have configured your custom stages, they will appear between the To Do and Done columns on all your task boards."
+year_published = 2025
+clearnet = "https://blog.codetree.com/articles/custom-stages.html"
+tags = ["agile", "arrived", "articles", "awesome", "board", "boards", "custom", "demand,", "game", "organizing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["25iq.com", "a16z.com", "blog.oribi.io", "blog.ycombinator.com", "codetree.com", "csisoftware.com", "ctt.ec", "dangrover.com", "docs.google.com", "en.wikipedia.org", "getdrip.com", "groovehq.com", "heavybit.com", "hiten.com", "levelup.pm", "quora.com", "revangale.wordpress.com", "sedar.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/page/2"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+full_description = "After six months of intense product development, Codetree is officially open to the public. If you use GitHub issues, I think you're going to love what we've built. But don't take my word for it —"
+year_published = 2025
+clearnet = "https://blog.codetree.com/page/2"
+tags = ["announcing", "articles", "codetree:", "github", "issues,", "managed", "recent", "tags"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/announcements.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+full_description = "After six months of intense product development, Codetree is officially open to the public. If you use GitHub issues, I think you're going to love what we've built. But don't take my word for it —"
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/announcements.html"
+tags = ["acquired", "announcements", "announcing", "arif,", "articles", "building", "codetree", "codetree blog", "codetree has new owners", "codetree:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/product-management.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/product-management.html"
+tags = ['"how', "answer", "article,", "articles", "before", "build", "codetree", "codetree blog", "codetree.", "dependencies"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/features.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/features.html"
+tags = ['"global', "across", "agile", "announce", "appreciate", "around", "arrived", "articles", "articles tagged as features", "available"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/startups.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/startups.html"
+tags = ["$128k", "answer.", "articles", "articles tagged as startups", "avoid", "believe", "building", "business", "business.", "business?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]
+
+["https://blog.codetree.com/tags/workflows.html"]
+title = "Codetree Blog"
+description = "Building better software one developer at a time."
+year_published = 2025
+clearnet = "https://blog.codetree.com/tags/workflows.html"
+tags = ['"how', "answer", "article,", "articles", "articles tagged as workflows", "before", "build", "codetree", "codetree blog", "codetree."]
+language = "en"
+internal-references = ["none"]
+external-references = ["a16z.com", "amazon.com", "basecamp.com", "blog.asmartbear.com", "blog.oribi.io", "bothsidesofthetable.com", "buffer.com", "convertkit.com", "csisoftware.com", "ctt.ec", "feinternational.com", "getdrip.com", "github.com", "help.codetree.com", "hubstaff.com", "pediapedia.org", "quora.com", "revangale.wordpress.com", "seekingwisdom.io", "techcrunch.com"]

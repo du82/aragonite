@@ -1,0 +1,39 @@
+["https://dataintensive.net"]
+title = "Designing Data-Intensive Applications (DDIA) — an O’Reilly book by Martin Kleppmann (The Wild Boar Book)"
+full_description = "As software engineers, we need to build applications that are reliable, scalable and maintainable in the long run. We need to understand the range of available tools and their trade-offs. For that, we have to dig deeper than buzzwords. This book will help you navigate the diverse and fast-changing landscape of technologies for storing and processing data. We compare a broad variety of tools and approaches, so that you can see the strengths and weaknesses of each, and decide what’s best for your application. This book compares the fundamental ideas behind a broad variety of systems. It doesn’t go into the details of how to configure and use one particular tool. But it does explain the trade-offs and fundamental limitations that systems face, so that you can make informed decisions. We discuss many good ideas from academic research, but we always tie them back to reality. Just because it looks good on a whiteboard doesn’t mean it actually works in practice. We care about ideas that have been proven under intensive workloads, at big companies and at startups. We go under the hood of the systems you already use, teasing apart how they work internally. The aim is to help you think about data systems in new ways — not just how they work, but why they were designed that way. Your own software will be better as a result. This book should be required reading for software engineers. The explosion of data and its increased importance to the applications we build has created a new set of complex challenges. Designing Data-Intensive Applications is a rare resource that bridges theory and practice to help developers make smart decisions as they design and implement data infrastructure and systems. Designing Data-Intensive Applications is one of the greatest reference books. When I was working on databases at Google I regularly recommended it to coworkers who needed more background on particular distributed systems topics. It will keep being a go-to book as long as I work in this field."
+year_published = 2025
+clearnet = "https://dataintensive.net"
+tags = ["author", "available", "book", "compare", "deeper", "designs", "different", "don’t", "hack", "practice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amplifypartners.com", "aws.amazon.com", "bsky.app", "confluent.io", "crunchbase.com", "cst.cam.ac.uk", "kafka.apache.org", "linkedin.com", "martin.kleppmann.com", "martinkl.substack.com", "microsoft.com", "oreilly.com", "twitter.com", "wework.com"]
+
+["https://dataintensive.net/translations.html"]
+title = "Translations of Designing Data-Intensive Applications (DDIA)"
+full_description = "Diseño de aplicaciones mediante el uso intensivo de datos Los grandes conceptos sobre los sistemas confiables, escalables y mantenibles 데이터 중심 애플리케이션 설계 신뢰할 수 있고 확장 가능하며 유지보수하기 쉬운 시스템을 지탱하는 핵심 아이디어 Przetwarzanie danych w dużej skali. Niezawodność, skalowalność i łatwość konserwacji systemów Высоконагруженные приложения Программирование, масштабирование, поддержка データ指向アプリケーションデザイン ―信頼性、拡張性、保守性の高い分散システム設計の原理"
+year_published = 2025
+clearnet = "https://dataintensive.net/translations.html"
+tags = ["anwendungen", "aplicaciones", "chinese", "danych", "datenintensive", "datos", "designen", "diseño", "dużej", "german"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aladin.co.kr", "allegro.pl", "amazon.co.uk", "amazon.es", "aws.amazon.com", "barnesandnoble.com", "bennadel.com", "bsky.app", "casadellibro.com", "cb-india.com", "chapters.indigo.ca", "crunchbase.com", "cst.cam.ac.uk", "ebooks.com", "flipkart.com", "kafka.apache.org", "kickstarter.com", "ksiegarniainternetowa.co.uk", "martin.kleppmann.com", "twitter.com"]
+
+["https://dataintensive.net/buy.html"]
+title = "Where to buy Designing Data-Intensive Applications (DDIA)"
+full_description = "Beware: the Google Play store sells a PDF edition of the book, but it does not have the print layout or O’Reilly design! Google appears to have converted the ePub to PDF, and the result looks terrible. Don't buy it! eBooks.com sells the properly formatted PDF. Note: some of the links above are affiliate links that earn me (the author) a small commission if you buy through them."
+year_published = 2025
+clearnet = "https://dataintensive.net/buy.html"
+tags = ["ebooks", "print", "reviews"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affiliates.abebooks.com", "amazon.co.uk", "amazon.es", "andriybuday.com", "angusrobertson.com.au", "aws.amazon.com", "barnesandnoble.com", "bennadel.com", "bookshop.blackwell.co.uk", "bsky.app", "cb-india.com", "chapters.indigo.ca", "crunchbase.com", "cst.cam.ac.uk", "ebooks.com", "fishpond.com.au", "flipkart.com", "kafka.apache.org", "martin.kleppmann.com", "twitter.com"]
+
+["https://dataintensive.net/poster.html"]
+title = "The poster to accompany Designing Data-Intensive Applications (DDIA)"
+full_description = "Each chapter in Designing Data-Intensive Applications is accompanied by a map. And we’ve turned those maps into a beautiful poster. Designing Data-Intensive Applications contains something very unusual for a computing book: every chapter is accompanied by a map. It is drawn in the style of a geographic map, but it is actually a graphical table of contents for the chapter, showing the key ideas and how they relate to each other. Don’t take it too seriously — some of it is a little tongue-in-cheek, we have taken some artistic license, and the things included on the map are not exhaustive. But it does reflect the structure of the chapter: political or geographic regions represent ways of doing something, and cities represent particular implementations of those approaches. Similar things are more likely to be close together, and roads or rivers represent concepts that connect different implementations or regions. Most computing books describe one particular piece of software and discuss all the aspects of how it works. Designing Data-Intensive Applications is structured differently: it starts with the concepts — discussing the high-level approaches of how you might solve some problem, and comparing the pros and cons of each — and then points out which pieces of software use which approach. The maps use the same structure: the region in which a city is located tells you what approach it uses. In both the print and ebook editions of the book, the map for each chapter appears at the start of each chapter. However, we have also gone further: we have taken all the maps from the individual chapters, and assembled them into a poster — an archipelago of islands representing technologies in the sea of distributed data. You can download a JPG file of this poster for free (for your personal, non-commercial use only). In September 2017 I ran a Kickstarter campaign to finance a print run. That campaign was successful, and backers of the campaign have received their posters."
+year_published = 2025
+clearnet = "https://dataintensive.net/poster.html"
+tags = ["data", "distributed", "guide", "illustrated", "landscape", "poster", "prints", "systems", "thank"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.co.uk", "amazon.es", "andriybuday.com", "angusrobertson.com.au", "aws.amazon.com", "barnesandnoble.com", "bennadel.com", "bookshop.blackwell.co.uk", "bsky.app", "cb-india.com", "chapters.indigo.ca", "crunchbase.com", "cst.cam.ac.uk", "ebooks.com", "fishpond.com.au", "flipkart.com", "kafka.apache.org", "kickstarter.com", "martin.kleppmann.com", "twitter.com"]

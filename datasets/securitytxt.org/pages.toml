@@ -1,0 +1,30 @@
+["https://securitytxt.org/contact"]
+title = "Contact us - security.txt: Proposed standard for defining security policies"
+description = "A proposed standard that allows websites to define security policies."
+year_published = 2025
+clearnet = "https://securitytxt.org/contact"
+tags = ["generator", "ietf", "proposed standard", "security", "security policy", "security.txt", "security.txt file", "text file", "txt"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cyber.dhs.gov", "cyber.gov.au", "datatracker.ietf.org", "digitaltrustcenter.nl", "docs.italia.it", "docs.oasis-open.org", "drupal.org", "en.wikipedia.org", "facebook.com", "github.com", "google.com", "gotsecuritytxt.com", "gov.uk", "harmless.systems", "legifrance.gouv.fr", "linkedin.com", "rfc-editor.org", "security-guidance.service.justice.gov.uk", "tools.ietf.org", "twitter.com"]
+
+["https://securitytxt.org"]
+title = "security.txt: Proposed standard for defining security policies"
+description = "A proposed standard that allows websites to define security policies."
+full_description = "Recent changes to the specification The date format for Expires has changed to ISO 8601. An example of the new format is Expires: 2021-12-31T18:37:07.000Z. The Contact field failed to validate. Please ensure it starts with mailto: for e-mail addresses, tel: for telephone numbers, or https:// for web URIs. For example, mailto:[email protected]. Frequently asked questions What is the main purpose of security.txt? The main purpose of security.txt is to help make things easier for companies and security researchers when trying to secure platforms. Thanks to security.txt, security researchers can easily get in touch with companies about security issues. Is security.txt an RFC? Yes! We welcome contributions from the public: https://github.com/securitytxt/security-txt Where should I put the security.txt file? For websites, the security.txt file should be placed under the /.well-known/ path (/.well-known/security.txt) [RFC8615]. It can also be placed in the root directory (/security.txt) of a website, especially if the /.well-known/ directory cannot be used for technical reasons, or simply as a fallback. The file can be placed in both locations of a website at the same time. Are there any settings I should apply to the file? The security.txt file should have an Internet Media Type of text/plain and must be served over HTTPS. Will adding an email address expose me to spam bots? The email value is an optional field. If you are worried about spam, you can set a URI as the value and link to your security policy. Video summary LiveOverflow produced a video summarising the most important facts surrounding security.txt files. Please note: the video was produced on April Fool's Day and therefore includes a few tongue-in-cheek comments about people getting LiveOverflow and EdOverflow mixed up."
+year_published = 2025
+clearnet = "https://securitytxt.org"
+tags = ["allows", "asked", "clipboard!", "copied", "define", "file", "frequently", "generator", "ietf", "include"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cyber.dhs.gov", "cyber.gov.au", "datatracker.ietf.org", "digitaltrustcenter.nl", "docs.italia.it", "docs.oasis-open.org", "en.wikipedia.org", "facebook.com", "github.com", "google.com", "gov.uk", "legifrance.gouv.fr", "linkedin.com", "rfc-editor.org", "security-guidance.service.justice.gov.uk", "tools.ietf.org", "twitter.com"]
+
+["https://securitytxt.org/projects"]
+title = "Projects - security.txt: Proposed standard for defining security policies"
+description = "A proposed standard that allows websites to define security policies."
+year_published = 2025
+clearnet = "https://securitytxt.org/projects"
+tags = ["generator", "ietf", "proposed standard", "security", "security policy", "security.txt", "security.txt file", "text file", "txt"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cyber.dhs.gov", "cyber.gov.au", "datatracker.ietf.org", "digitaltrustcenter.nl", "docs.italia.it", "docs.oasis-open.org", "drupal.org", "en.wikipedia.org", "facebook.com", "github.com", "google.com", "gotsecuritytxt.com", "gov.uk", "harmless.systems", "legifrance.gouv.fr", "linkedin.com", "rfc-editor.org", "security-guidance.service.justice.gov.uk", "tools.ietf.org", "twitter.com"]

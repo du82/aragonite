@@ -1,0 +1,508 @@
+["https://attack.mitre.org/tactics"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/matrices/enterprise"]
+title = "Matrix - Enterprise | MITRE ATT&CK®"
+full_description = "Below are the tactics and techniques representing the MITRE ATT&CK® Matrix for Enterprise. The Matrix contains information for the following platforms: Windows, macOS, Linux, PRE, Office Suite, Identity Provider, SaaS, IaaS, Network, Containers."
+year_published = 2025
+clearnet = "https://attack.mitre.org/matrices/enterprise"
+tags = ["benefactors", "blog", "defenses", "enterprise", "matrices", "matrix", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/mitigations/enterprise"]
+title = "Mitigations - Enterprise | MITRE ATT&CK®"
+full_description = "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."
+year_published = 2025
+clearnet = "https://attack.mitre.org/mitigations/enterprise"
+tags = ["benefactors", "blog", "defenses", "enterprise", "matrices", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/mitigations/ics"]
+title = "Mitigations - ICS | MITRE ATT&CK®"
+full_description = "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."
+year_published = 2025
+clearnet = "https://attack.mitre.org/mitigations/ics"
+tags = ["benefactors", "blog", "defenses", "matrices", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/datasources"]
+title = "Data Sources | MITRE ATT&CK®"
+full_description = "Data sources represent the various subjects/topics of information that can be collected by sensors/logs. Data sources also include data components, which identify specific properties/values of a data source relevant to detecting a given ATT&CK technique or sub-technique. A database and set of services that allows administrators to manage permissions, access to network resources, and stored data objects (user, group, application, or devices) Events collected by third-party services such as mail servers, web applications, or other appliances (not by the native OS or platform) Data sources with information about the set of devices found within the network, along with their current software and configurations A digital document, which highlights information such as the owner's identity, used to instill trust in public keys used while encrypting network communications Infrastructure, platforms, or software that are hosted on-premise or by third-party providers, made available to users through network connections and/or APIs Data object storage infrastructure hosted on-premise or by third-party providers, made available to users through network connections and/or APIs A directive given to a computer program, acting as an interpreter of some kind, in order to perform a specific task A standard unit of virtualized software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another Information obtained (commonly through registration or activity logs) regarding one or more IP addresses registered with human readable names (ex: mitre.org) A non-volatile data storage device (hard drive, floppy disk, USB flash drive) with at least one formatted partition, typically mounted to the file system and/or assigned a drive letter A computer program that operates or controls a particular type of device that is attached to a computer. Provides a software interface to hardware devices, enabling operating systems and other computer programs to access hardware functions without needing to know precise details about the hardware being used"
+year_published = 2025
+clearnet = "https://attack.mitre.org/datasources"
+tags = ["benefactors", "blog", "data", "defenses", "matrices", "mitigations", "resources", "sources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/resources/attackcon"]
+title = "ATT&CKCon | MITRE ATT&CK®"
+full_description = "At MITRE ATT&CK's annual conference, cybersecurity leaders and practitioners of all levels are invited to strengthen capabilities and engage with others in the community through multiple days of programming, featuring knowledgeable speakers, engaging content, and meaningful collaboration, all designed to help leverage the ATT&CK framework. Browse the archive of presentations below."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/attackcon"
+tags = ["22nd", "23rd", "23rd,", "24th", "24th,", "25th,", "29th", "30th,", "att&ckcon", "benefactors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/campaigns"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/campaigns"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/matrices"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/matrices"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/software"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/software"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0001"]
+title = "Initial Access, Tactic TA0001 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to get into your network.Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords."
+full_description = "Initial Access consists of techniques that use various entry vectors to gain their initial foothold within a network. Techniques used to gain a foothold include targeted spearphishing and exploiting weaknesses on public-facing web servers. Footholds gained through initial access may allow for continued access, like valid accounts and use of external remote services, or may be limited-use due to changing passwords."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0001"
+tags = ["access", "benefactors", "blog", "created:", "defenses", "initial", "last", "matrices", "mitigations", "modified:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/matrices/mobile"]
+title = "Matrix - Mobile | MITRE ATT&CK®"
+full_description = "Below are the tactics and techniques representing the MITRE ATT&CK® Matrix for Mobile. The Matrix covers techniques involving device access and network-based effects that can be used by adversaries without device access. The Matrix contains information for the following platforms: Android, iOS."
+year_published = 2025
+clearnet = "https://attack.mitre.org/matrices/mobile"
+tags = ["benefactors", "blog", "defenses", "matrices", "matrix", "mitigations", "mobile", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/tactics/TA0005"]
+title = "Defense Evasion, Tactic TA0005 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to avoid being detected.Defense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise. Techniques used for defense evasion include uninstalling/disabling security software or obfuscating/encrypting data and scripts. Adversaries also leverage and abuse trusted processes to hide and masquerade their malware. Other tactics’ techniques are cross-listed here when those techniques include the added benefit of subverting defenses."
+full_description = "Defense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise. Techniques used for defense evasion include uninstalling/disabling security software or obfuscating/encrypting data and scripts. Adversaries also leverage and abuse trusted processes to hide and masquerade their malware. Other tactics’ techniques are cross-listed here when those techniques include the added benefit of subverting defenses."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0005"
+tags = ["benefactors", "blog", "created:", "defense", "defenses", "evasion", "last", "matrices", "mitigations", "modified:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0040"]
+title = "Impact, Tactic TA0040 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to manipulate, interrupt, or destroy your systems and data.Impact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes. Techniques used for impact can include destroying or tampering with data. In some cases, business processes can look fine, but may have been altered to benefit the adversaries’ goals. These techniques might be used by adversaries to follow through on their end goal or to provide cover for a confidentiality breach."
+full_description = "Impact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes. Techniques used for impact can include destroying or tampering with data. In some cases, business processes can look fine, but may have been altered to benefit the adversaries’ goals. These techniques might be used by adversaries to follow through on their end goal or to provide cover for a confidentiality breach."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0040"
+tags = ["benefactors", "blog", "created:", "defenses", "impact", "last", "matrices", "mitigations", "modified:", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/ics"]
+title = "Tactics - ICS | MITRE ATT&CK®"
+full_description = '''Tactics represent the "why" of an ATT&CK technique or sub-technique. It is the adversary's tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.'''
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/ics"
+tags = ["benefactors", "blog", "defenses", "matrices", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0002"]
+title = "Execution, Tactic TA0002 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to run malicious code.Execution consists of techniques that result in adversary-controlled code running on a local or remote system. Techniques that run malicious code are often paired with techniques from all other tactics to achieve broader goals, like exploring a network or stealing data. For example, an adversary might use a remote access tool to run a PowerShell script that does Remote System Discovery."
+full_description = "Execution consists of techniques that result in adversary-controlled code running on a local or remote system. Techniques that run malicious code are often paired with techniques from all other tactics to achieve broader goals, like exploring a network or stealing data. For example, an adversary might use a remote access tool to run a PowerShell script that does Remote System Discovery."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0002"
+tags = ["benefactors", "blog", "created:", "defenses", "execution", "last", "matrices", "mitigations", "modified:", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/techniques/T1001/003"]
+title = "Data Obfuscation: Protocol or Service Impersonation, Sub-technique T1001.003 - Enterprise | MITRE ATT&CK®"
+description = "Adversaries may impersonate legitimate protocols or web service traffic to disguise command and control activity and thwart analysis efforts. By impersonating legitimate protocols or web services, adversaries can make their command and control traffic blend in with legitimate network traffic.  Adversaries may impersonate a fake SSL/TLS handshake to make it look like subsequent traffic is SSL/TLS encrypted, potentially interfering with some security tooling, or to make the traffic look like it is related with a trusted entity. Adversaries may also leverage legitimate protocols to impersonate expected web traffic or trusted services. For example, adversaries may manipulate HTTP headers, URI endpoints, SSL certificates, and transmitted data to disguise C2 communications or mimic legitimate services such as Gmail, Google Drive, and Yahoo Messenger.[1][2]"
+full_description = "Adversaries may impersonate legitimate protocols or web service traffic to disguise command and control activity and thwart analysis efforts. By impersonating legitimate protocols or web services, adversaries can make their command and control traffic blend in with legitimate network traffic. Adversaries may impersonate a fake SSL/TLS handshake to make it look like subsequent traffic is SSL/TLS encrypted, potentially interfering with some security tooling, or to make the traffic look like it is related with a trusted entity. Adversaries may also leverage legitimate protocols to impersonate expected web traffic or trusted services. For example, adversaries may manipulate HTTP headers, URI endpoints, SSL certificates, and transmitted data to disguise C2 communications or mimic legitimate services such as Gmail, Google Drive, and Yahoo Messenger.[1][2] Bankshot generates a false TLS handshake using a public certificate to disguise C2 network communications.[4] During C0017, APT41 frequently configured the URL endpoints of their stealthy passive backdoor LOWKEY.PASSIVE to masquerade as normal web application traffic on an infected server.[5] Cobalt Strike can leverage the HTTP protocol for C2 communication, while hiding the actual data in either an HTTP header, URI parameter, the transaction body, or appending it to the URI.[6] FakeM C2 traffic attempts to evade detection by resembling data generated by legitimate messenger applications, such as MSN and Yahoo! messengers. Additionally, some variants of FakeM use modified SSL code for communications back to C2 servers, making SSL decryption ineffective.[7] FRAMESTING uses a cookie named DSID to mimic the name of a cookie used by Ivanti Connect Secure appliances for maintaining VPN sessions.[9] Lazarus Group malware also uses a unique form of communication encryption known as FakeTLS that mimics TLS but uses a different encryption method, potentially evading SSL traffic inspection/decryption.[15][16][17][18] Ninja has the ability to mimic legitimate services with customized HTTP URL paths and headers to hide malicious traffic.[19]"
+year_published = 2025
+clearnet = "https://attack.mitre.org/techniques/T1001/003"
+tags = ["benefactors", "blog", "contributors:", "created:", "data", "defenses", "detection", "examples", "impersonation", "last"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "bitdefender.com", "crowdstrike.com", "fortinet.com", "group-ib.com", "i.blackhat.com", "lockheedmartin.com", "mcafee.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "symantec-enterprise-blogs.security.com", "twitter.com", "us-cert.cisa.gov", "us-cert.gov", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0042"]
+title = "Resource Development, Tactic TA0042 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to establish resources they can use to support operations.Resource Development consists of techniques that involve adversaries creating, purchasing, or compromising/stealing resources that can be used to support targeting. Such resources include infrastructure, accounts, or capabilities. These resources can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using purchased domains to support Command and Control, email accounts for phishing as a part of Initial Access, or stealing code signing certificates to help with Defense Evasion."
+full_description = "Resource Development consists of techniques that involve adversaries creating, purchasing, or compromising/stealing resources that can be used to support targeting. Such resources include infrastructure, accounts, or capabilities. These resources can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using purchased domains to support Command and Control, email accounts for phishing as a part of Initial Access, or stealing code signing certificates to help with Defense Evasion."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0042"
+tags = ["benefactors", "blog", "created:", "defenses", "development", "last", "matrices", "mitigations", "modified:", "resource"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/techniques/T1001"]
+title = "Data Obfuscation, Technique T1001 - Enterprise | MITRE ATT&CK®"
+description = "Adversaries may obfuscate command and control traffic to make it more difficult to detect.[1] Command and control (C2) communications are hidden (but not necessarily encrypted) in an attempt to make the content more difficult to discover or decipher and to make the communication less conspicuous and hide commands from being seen. This encompasses many methods, such as adding junk data to protocol traffic, using steganography, or impersonating legitimate protocols."
+full_description = 'Adversaries may obfuscate command and control traffic to make it more difficult to detect.[1] Command and control (C2) communications are hidden (but not necessarily encrypted) in an attempt to make the content more difficult to discover or decipher and to make the communication less conspicuous and hide commands from being seen. This encompasses many methods, such as adding junk data to protocol traffic, using steganography, or impersonating legitimate protocols. DarkGate will retrieved encrypted commands from its command and control server for follow-on actions such as cryptocurrency mining.[2] Gamaredon Group has used obfuscated VBScripts with randomly generated variable names and concatenated strings.[5] Okrum leverages the HTTP protocol for C2 communication, while hiding the actual messages in the Cookie and Set-Cookie headers of the HTTP requests.[7] During Operation Wocao, threat actors encrypted IP addresses used for "Agent" proxy hops with RC4.[8] RDAT has used encoded data within subdomains as AES ciphertext to communicate from the host to the C2.[9] SLOTHFULMEDIA has hashed a string containing system information prior to exfiltration via POST requests.[11] Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. [13]'
+year_published = 2025
+clearnet = "https://attack.mitre.org/techniques/T1001"
+tags = ["benefactors", "blog", "created:", "data", "defenses", "detection", "examples", "last", "matrices", "mitigations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "bitdefender.com", "crowdstrike.com", "docs.github.com", "fortinet.com", "fox-it.com", "i.blackhat.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "twitter.com", "us-cert.cisa.gov", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources"]
+title = "Get Started | MITRE ATT&CK®"
+full_description = "ATT&CK is knowledge base of adversarial techniques based on real-world observations. ATT&CK focuses on how adversaries interact with systems during an operation, reflecting the various phases of an adversary’s attack lifecycle and the platforms they are known to target. Read the ATT&CK 101 Blog post for more information on the basics of ATT&CK and check the short video below. For more information on the principles behind ATT&CK, its creation, and its ongoing maintenance, read the ATT&CK Philosophy Paper. For additional information focused on ATT&CK for ICS, including the unique elements and commonalities with ATT&CK, read the ATT&CK for ICS Extension. ATT&CK can help cyber defenders develop analytics that detect the techniques used by an adversary. Getting Started with ATT&CK: Detection and Analytics Blog Post This blog post describes how you can get started using ATT&CK for detection and analytics at three different levels of sophistication. (June 2019) Finding Cyber Threats with ATT&CK-Based Analytics Presents a methodology for using ATT&CK to build, test, and refine behavioral-based analytic detection capabilities. (June 2017) ATT&CKing the Status Quo Presentation The latter part of this presentation provides an introduction to using ATT&CK to create analytics. Slides are also available. (August 2018) ATT&CK gives analysts a common language to structure, compare, and analyze threat intelligence. Getting Started with ATT&CK: Threat Intelligence Blog Post This blog post describes how you can get started using ATT&CK for detection and analytics at three different levels of sophistication. (June 2019) ATT&CKing Your Adversaries Presentation This presentation covers how to use ATT&CK to take cyber threat intelligence and operationalize it into behaviors that can drive relevant detections. (August 2019) Blog posts on threat intelligence These blog posts explain the fundamentals of how to use ATT&CK for threat intelligence. (September 2018) ATT&CK provides a common language and framework that red teams can use to emulate specific threats and plan their operations. Getting Started with ATT&CK: Adversary Emulation and Red Teaming Blog Post This blog post describes how you can get started using ATT&CK for adversary emulation and red teaming at three different levels of sophistication. (July 2019) Do-It-Yourself ATT&CK Evaluations to Improve Your Security Posture Presentation This presentation explains how defenders can improve their security posture through the use of adversary emulation by performing their very own ATT&CK Evaluations. (June 2019) APT ATT&CK - Threat-based Purple Teaming with ATT&CK Continued Presentation This presentation covers how to use ATT&CK to take cyber threat intelligence and operationalize it into behaviors that can drive relevant detections. (May 2019)"
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources"
+tags = ["adversary", "adversary.", "analysts", "analytics", "analyze", "assess", "assessment", "att&ck", "att&ck?", "benefactors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/resources/legal-and-branding/privacy"]
+title = "Privacy Policy | MITRE ATT&CK®"
+full_description = '''This Privacy Policy explains the types of information collected by MITRE ATT&CK® from website visitors ("User") or that you provide to MITRE through other means, such as via e-mail and web forms (collectively "Site"), and how MITRE uses, shares, protects, and retains that information. By visiting the Site, you understand and agree to terms outlined in this Privacy Policy. "Cookies" are data that may be sent to your web browser and stored on your computer. Most web browsers can be configured not to accept cookies, or to notify you if a cookie is sent to you. If you wish not to have cookies set during your visit to this MITRE managed Site, you can disable them in your web browser. The MITRE ATT&CK website is hosted on GitHub®. MITRE and GitHub use a free third-party software service called Google Analytics® to capture and analyze non-personally identifiable website usage information. MITRE logs all accesses and the following information is recorded for each Site user: IP address, date and time of access, the requested URL, the referring URL (if provided by the Web browser), and the browser type (if provided by the Web browser). The IP address and its associated domain name (if any) are used to determine broad demographic information. The IP address may be used to track how users navigate through the Site. MITRE additionally collects User-entered keyword search strings to gauge User interest in specific types of vulnerability information. Each access of an individual ATT&CK entry or candidate page is used to gauge User interest. Web log information may be provided to limited research groups within MITRE to support research related to the World Wide Web. This information does not identify you personally. MITRE may store such information, or it may be included in databases owned and maintained by our service providers. For specific information about GitHub's collection and use of information collected from Cookies on web traffic reporting and content tools, please review GitHub's Terms of Use and Privacy Policy at https://docs.github.com/en/github/site-policy.'''
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/legal-and-branding/privacy"
+tags = ["benefactors", "blog", "changes", "collected", "date:", "defenses", "detection,", "diligence", "e-mail,", "effective"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0008"]
+title = "Lateral Movement, Tactic TA0008 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to move through your environment.Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier."
+full_description = "Lateral Movement consists of techniques that adversaries use to enter and control remote systems on a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0008"
+tags = ["benefactors", "blog", "created:", "defenses", "last", "lateral", "matrices", "mitigations", "modified:", "movement"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/assets"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/assets"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/resources/legal-and-branding"]
+title = "Legal & Branding | MITRE ATT&CK®"
+full_description = "ATT&CK is open and available to any person or organization for use at no charge. If you decide to use ATT&CK, then follow the Terms of Use and follow guidelines for referencing the use of ATT&CK in your work. Your first references in writing must include “MITRE” preceding “ATT&CK®” - but subsequently should just reference “ATT&CK” (no registered trademark symbol required). The brand guide provides further detail on the consistent implementation of the MITRE ATT&CK® brand identity, both visually and verbally, to both internal and external audiences, while respecting our legal trademark restrictions. If you have further questions, please reach out to as at attack@mitre.org."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/legal-and-branding"
+tags = ["additional", "att&ck", "benefactors", "blog", "brand", "branding", "defenses", "don’ts", "example", "guide"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources/faq"]
+title = "FAQ | MITRE ATT&CK®"
+full_description = 'ATT&CK is a knowledge base of cyber adversary behavior and taxonomy for adversarial actions across their lifecycle. ATT&CK has two parts: ATT&CK for Enterprise, which covers behavior against enterprise IT networks and cloud, and ATT&CK for Mobile, which focuses on behavior against mobile devices. MITRE started ATT&CK in 2013 to document common tactics, techniques, and procedures (TTPs) that advanced persistent threats use against Windows enterprise networks. It was created out of a need to document adversary behaviors for use within a MITRE research project called FMX. The objective of FMX was to investigate use of endpoint telemetry data and analytics to improve post-compromise detection of adversaries operating within enterprise networks. ATT&CK was used as the basis for testing the efficacy of the sensors and analytics under FMX and served as the common language both offense and defense could use to improve over time. Tactics represent the “why” of an ATT&CK technique or sub-technique. It is the adversary’s tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access. Techniques represent “how” an adversary achieves a tactical goal by performing an action. For example, an adversary may dump credentials to achieve credential access. Sub-techniques are a more specific description of the adversarial behavior used to achieve a goal. They describe behavior at a lower level than a technique. For example, an adversary may dump credentials by accessing the Local Security Authority (LSA) Secrets. Procedures are the specific implementation the adversary uses for techniques or sub-techniques. For example, a procedure could be an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim. Procedures are categorized in ATT&CK as the observed in the wild use of techniques in the "Procedure Examples" section of technique pages. Sub-techniques and procedures describe different things in ATT&CK. Sub-techniques are used to categorize behavior and procedures are used to describe in-the-wild use of techniques. Furthermore, since procedures are specific implementations of techniques and sub-techniques, they may include several additional behaviors in how they are performed. For example, an adversary using PowerShell to inject into lsass.exe to dump credentials by scraping LSASS memory on a victim is a procedure implementation containing several (sub)techniques covering the PowerShell, Process Injection, and Credential Dumping against LSASS behaviors.'
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/faq"
+tags = ['"favorite"', '"procedures"?', '"sub-techniques"?', '"tactics"?', '"techniques"?', "access", "and/or", "apis", "apply", "asked"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "github.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources/learn-more-about-attack"]
+title = "Learn More About ATT&CK | MITRE ATT&CK®"
+full_description = "The featured presentations highlight applications, new techniques, and current topics of interest to ATT&CK. All MITRE presentations were developed by members of the ATT&CK team at MITRE. This presentation from Black Hat walks through the story of a fictional organization in order to explain how different teams can use ATT&CK as a powerful force to improve defenses. This presentation introduces ATT&CK's newer categorization of Campaigns - a method of classification that more easily enables the tracking of the abilities and sophistication over time, in addition to enabling stakeholders to better identify potential targets based on industry. This presentation provides a high-level explanation of the ATT&CK framework for MacOS and its components, then walks through the application of the ATT&CK framework to a real-world campaign using Pandas as a model. Emphasizes community-driven aspects of ATT&CK. Using MITRE ATT&CK for Cyber Threat Intelligence Training by Katie Nickels and Adam Pennington provides several modules to help you learn how to apply ATT&CK and improve your threat intelligence practices. These materials provide an in-depth look at why we created these ATT&CK domains, how we maintain and update them, and what the community commonly uses them for. This paper outlines the process MITRE used to create ATT&CK, and the philosophy that has developed for curating new content. For individuals already familiar with ATT&CK, this document can be viewed as an extension to the ATT&CK Design and Philosophy whitepaper above that highlights unique, as well as some common, aspects of the design and philosophy of ATT&CK for ICS."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/learn-more-about-attack"
+tags = ["att&ck", "att&ck:", "benefactors", "blog", "campaigns", "defenses", "design", "drawing", "edition", "extension"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org"]
+title = "MITRE ATT&CK®"
+full_description = "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community. With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems for a safer world — by bringing communities together to develop more effective cybersecurity. ATT&CK is open and available to any person or organization for use at no charge."
+year_published = 2025
+clearnet = "https://attack.mitre.org"
+tags = ["att&ck", "benefactors", "blog", "defenses", "enterprise", "matrices", "matrix", "mitigations", "resources", "tactics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/tactics/TA0003"]
+title = "Persistence, Tactic TA0003 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to maintain their foothold.Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access. Techniques used for persistence include any access, action, or configuration changes that let them maintain their foothold on systems, such as replacing or hijacking legitimate code or adding startup code."
+full_description = "Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access. Techniques used for persistence include any access, action, or configuration changes that let them maintain their foothold on systems, such as replacing or hijacking legitimate code or adding startup code."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0003"
+tags = ["benefactors", "blog", "created:", "defenses", "last", "matrices", "mitigations", "modified:", "persistence", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0006"]
+title = "Credential Access, Tactic TA0006 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to steal account names and passwords.Credential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals."
+full_description = "Credential Access consists of techniques for stealing credentials like account names and passwords. Techniques used to get credentials include keylogging or credential dumping. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0006"
+tags = ["access", "benefactors", "blog", "created:", "credential", "defenses", "last", "matrices", "mitigations", "modified:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0010"]
+title = "Exfiltration, Tactic TA0010 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to steal data.Exfiltration consists of techniques that adversaries may use to steal data from your network. Once they’ve collected data, adversaries often package it to avoid detection while removing it. This can include compression and encryption. Techniques for getting data out of a target network typically include transferring it over their command and control channel or an alternate channel and may also include putting size limits on the transmission."
+full_description = "Exfiltration consists of techniques that adversaries may use to steal data from your network. Once they’ve collected data, adversaries often package it to avoid detection while removing it. This can include compression and encryption. Techniques for getting data out of a target network typically include transferring it over their command and control channel or an alternate channel and may also include putting size limits on the transmission."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0010"
+tags = ["benefactors", "blog", "created:", "defenses", "exfiltration", "last", "matrices", "mitigations", "modified:", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/mobile"]
+title = "Tactics - Mobile | MITRE ATT&CK®"
+full_description = '''Tactics represent the "why" of an ATT&CK technique or sub-technique. It is the adversary's tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.'''
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/mobile"
+tags = ["benefactors", "blog", "defenses", "matrices", "mitigations", "mobile", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/techniques"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/techniques"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/groups"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/groups"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/tactics/TA0004"]
+title = "Privilege Escalation, Tactic TA0004 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to gain higher-level permissions.Privilege Escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow through on their objectives. Common approaches are to take advantage of system weaknesses, misconfigurations, and vulnerabilities. Examples of elevated access include: SYSTEM/root levellocal administratoruser account with admin-like access user accounts with access to specific system or perform specific functionThese techniques often overlap with Persistence techniques, as OS features that let an adversary persist can execute in an elevated context."
+full_description = "Privilege Escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network. Adversaries can often enter and explore a network with unprivileged access but require elevated permissions to follow through on their objectives. Common approaches are to take advantage of system weaknesses, misconfigurations, and vulnerabilities. Examples of elevated access include: These techniques often overlap with Persistence techniques, as OS features that let an adversary persist can execute in an elevated context."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0004"
+tags = ["benefactors", "blog", "created:", "defenses", "escalation", "last", "matrices", "mitigations", "modified:", "privilege"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/mitigations/mobile"]
+title = "Mitigations - Mobile | MITRE ATT&CK®"
+full_description = "Mitigations represent security concepts and classes of technologies that can be used to prevent a technique or sub-technique from being successfully executed."
+year_published = 2025
+clearnet = "https://attack.mitre.org/mitigations/mobile"
+tags = ["benefactors", "blog", "defenses", "matrices", "mitigations", "mobile", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/resources/changelog.html"]
+title = "Changelog | MITRE ATT&CK®"
+full_description = 'This release promotes the Mobile sub-techniques from beta to stable. It also fixes a few minor STIX abnormalities for ICS Techniques. This update includes a major refactor of the ATT&CK catalog versioning system, previously referred to as "previous versions."'
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/changelog.html"
+tags = ["benefactors", "blog", "bugfixes", "changelog", "defenses", "docs", "documentation", "features", "improved", "matrices"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.mitre.org", "github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/techniques/T1001/001"]
+title = "Data Obfuscation: Junk Data, Sub-technique T1001.001 - Enterprise | MITRE ATT&CK®"
+description = "Adversaries may add junk data to protocols used for command and control to make detection more difficult.[1] By adding random or meaningless data to the protocols used for command and control, adversaries can prevent trivial methods for decoding, deciphering, or otherwise analyzing the traffic. Examples may include appending/prepending data with junk characters or writing junk characters between significant characters."
+full_description = 'Adversaries may add junk data to protocols used for command and control to make detection more difficult.[1] By adding random or meaningless data to the protocols used for command and control, adversaries can prevent trivial methods for decoding, deciphering, or otherwise analyzing the traffic. Examples may include appending/prepending data with junk characters or writing junk characters between significant characters. APT28 added "junk data" to each encoded string, preventing trivial decoding without knowledge of the junk removal algorithm. Each implant was given a "junk length" value when created, tracked by the controller software to allow seamless communication but prevent analysis of the command protocol on the wire.[2] Downdelph inserts pseudo-random characters between each original character during encoding of C2 network requests, making it difficult to write signatures on them.[4] Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.[17]'
+year_published = 2025
+clearnet = "https://attack.mitre.org/techniques/T1001/001"
+tags = ["benefactors", "blog", "created:", "data", "defenses", "detection", "examples", "junk", "last", "matrices"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "bitdefender.com", "crowdstrike.com", "fortinet.com", "fox-it.com", "group-ib.com", "i.blackhat.com", "lockheedmartin.com", "medium.com", "microsoft.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "twitter.com", "us-cert.cisa.gov", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/mitigations"]
+title = ""
+year_published = 2025
+clearnet = "https://attack.mitre.org/mitigations"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/resources/engage-with-attack/contribute"]
+title = "Contribute | MITRE ATT&CK®"
+full_description = "ATT&CK is in a constant state of development. We are always on the lookout for new information to help refine and extend what is covered. If you have additional techniques, know about variations on one already covered, have examples of techniques in use, or have other relevant information, then we would like to hear from you. We are looking for contributions in the following areas, but all contributions and feedback to ATT&CK are appreciated. If you have other information you think may be useful, please reach us at attack@mitre.org. Due to the high volume of contributions, it may take us about a week to get back to you. We recommend you read our philosophy paper to understand our approach to maintaining ATT&CK so that we get the right details up front. Content updates happen roughly every 6 months. Let us know what new variations of behaviors real adversaries are using in the wild! Please share a brief description of the behavior, any references or knowledge about how it works and was used, and how this behavior is not already captured in ATT&CK.To understand the process of how the MITRE team develops techniques, refer to the video below. We map Group and Software examples on our site, and appreciate your help with referenced information about how Groups and Software samples use ATT&CK techniques. Please share the sub-technique or technique name, group or associated group name, a brief description of how the technique is implemented, and the publicly-available reference. If you find errors or typos on the site related to content, please let us know by submitting the url where you found the error and a short description. Examples include typos and syntax errors, improperly formatted web pages, and 404 errors when links are clicked. Data Sources: Windows API, Process monitoring, or other sources that can be used to detect this activity Description: Component Object Model (COM) servers associated with Graphics Interchange Format (JIF) image viewers can be abused to corrupt arbitrary memory banks. Adversaries may leverage this opportunity to modify, mux, and maliciously annoy (MMA) read-only memory (ROM) regularly accessed during normal system operations."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/engage-with-attack/contribute"
+tags = ["benefactors", "blog", "contribute", "contributors", "defenses", "error", "errors", "example", "group", "intelligence"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.mitre.org", "github.com", "join.slack.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0009"]
+title = "Collection, Tactic TA0009 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to gather data of interest to their goal.Collection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to either steal (exfiltrate) the data or to use the data to gain more information about the target environment. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input."
+full_description = "Collection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to either steal (exfiltrate) the data or to use the data to gain more information about the target environment. Common target sources include various drive types, browsers, audio, video, and email. Common collection methods include capturing screenshots and keyboard input."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0009"
+tags = ["benefactors", "blog", "collection", "created:", "defenses", "last", "matrices", "mitigations", "modified:", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources/attack-data-and-tools"]
+title = "ATT&CK Data & Tools | MITRE ATT&CK®"
+full_description = "The ATT&CK Navigator is a web-based tool for annotating and exploring ATT&CK matrices. It can be used to visualize defensive coverage, red/blue team planning, the frequency of detected techniques, and more. The ATT&CK Workbench is an application allowing users to explore, create, annotate, and share extensions of the ATT&CK knowledge base. ATT&CK provides a variety of Python tools for accessing, querying, and processing the ATT&CK dataset. These scripts can be useful utilities or serve as examples for how to work with ATT&CK programmatically. Structured Threat Information Expression (STIX™) is a language and serialization format used to exchange cyber threat intelligence (CTI). The ATT&CK dataset is available in STIX 2.0 and STIX 2.1. Other presentations of this dataset, including the ATT&CK Navigator and this website, are built from the STIX data. STIX is a machine-readable format providing access to the ATT&CK knowledge base. It is the most granular representation of the ATT&CK data, and all other representations are derived from the STIX dataset. The ATT&CK STIX representation is most easily manipulated in Python using the stix2 library. However, because STIX is represented in JSON, other programming languages can easily interact with the raw content. The ATT&CK STIX data can also be accessed via the official ATT&CK TAXII™ server. Trusted Automated Exchange of Intelligence Information (TAXII) is an application protocol for exchanging CTI over HTTPS. The ATT&CK TAXII server provides API access to the ATT&CK STIX knowledge base. The ATT&CK Data Model provides a standardized way to represent ATT&CK data using Zod schemas. It enables developers to parse, validate, and utilize the ATT&CK knowledge base efficiently in various formats. These spreadsheets are built from the STIX dataset and provide a more human-accessible view into the knowledge base while also supporting rudimentary querying/filtering capabilities. The Excel representation of the ATT&CK dataset below includes both master spreadsheets, containing all object types, and individual spreadsheets for each object type. The individual type spreadsheets break out relationships (e.g procedure examples connecting groups to techniques) into separate sheets by relationship type, while the master spreadsheet includes all relationship types in a single sheet."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/attack-data-and-tools"
+tags = ["accessing", "att&ck", "benefactors", "blog", "consider", "converter", "data", "dataset:", "defenses", "enterprise-attack-v16.1.xlsx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0007"]
+title = "Discovery, Tactic TA0007 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to figure out your environment.Discovery consists of techniques an adversary may use to gain knowledge about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are often used toward this post-compromise information-gathering objective."
+full_description = "Discovery consists of techniques an adversary may use to gain knowledge about the system and internal network. These techniques help adversaries observe the environment and orient themselves before deciding how to act. They also allow adversaries to explore what they can control and what’s around their entry point in order to discover how it could benefit their current objective. Native operating system tools are often used toward this post-compromise information-gathering objective."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0007"
+tags = ["benefactors", "blog", "created:", "defenses", "discovery", "last", "matrices", "mitigations", "modified:", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/enterprise"]
+title = "Tactics - Enterprise | MITRE ATT&CK®"
+full_description = '''Tactics represent the "why" of an ATT&CK technique or sub-technique. It is the adversary's tactical goal: the reason for performing an action. For example, an adversary may want to achieve credential access.'''
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/enterprise"
+tags = ["benefactors", "blog", "defenses", "enterprise", "matrices", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0011"]
+title = "Command and Control, Tactic TA0011 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to communicate with compromised systems to control them.Command and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid detection. There are many ways an adversary can establish command and control with various levels of stealth depending on the victim’s network structure and defenses."
+full_description = "Command and Control consists of techniques that adversaries may use to communicate with systems under their control within a victim network. Adversaries commonly attempt to mimic normal, expected traffic to avoid detection. There are many ways an adversary can establish command and control with various levels of stealth depending on the victim’s network structure and defenses."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0011"
+tags = ["benefactors", "blog", "command", "control", "created:", "defenses", "last", "matrices", "mitigations", "modified:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources/engage-with-attack/benefactors"]
+title = "Benefactors | MITRE ATT&CK®"
+full_description = "MITRE ATT&CK® is a globally-accessible, community-driven knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK framework is used as a blueprint for the development of specific threat models and methodologies across the private sector, government, and the cybersecurity product and service community. Benefactors sustain and advance ATT&CK through their financial contributions, ensuring that it adapts along with evolving cyber threats and changing environments. Become an ATT&CK Benefactor! Benefactors help propel the evolution of ATT&CK through financial contributions. Donations directly support framework progression, pioneering research into underrepresented domains and emerging threats, and community engagement. To show our thanks, ATT&CK benefactors are also the recipient of many benefits, including public recognition as a benefactor of MITRE ATT&CK as well as briefings with the ATT&CK leadership team. You can find additional information and opportunities with the benefactor program at the program link below. You are welcome to email us with any questions or concerns."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/engage-with-attack/benefactors"
+tags = ["att&ck!", "benefactors", "blog", "companies", "defenses", "following", "matrices", "mitigations", "program", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.mitre.org", "github.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/matrices/ics"]
+title = "Matrix - ICS | MITRE ATT&CK®"
+year_published = 2025
+clearnet = "https://attack.mitre.org/matrices/ics"
+tags = ["benefactors", "blog", "defenses", "matrices", "matrix", "mitigations", "resources", "tactics", "techniques"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "medium.com", "mitre-attack.github.io", "mitre.org", "na.eventscloud.com", "twitter.com"]
+
+["https://attack.mitre.org/resources/engage-with-attack/contact"]
+title = "Contact | MITRE ATT&CK®"
+full_description = "Follow us @MITREattack to hear about news, latest updates, and what community members are doing with ATT&CK. Join the ATT&CK slack workspace! With over 3,000 members and 15 channels, find and start discussions with the community on all things ATT&CK. For feedback or issues on the ATT&CK Navigator or Website, please submit issues to the related git repository. We rely on the community to help us improve ATT&CK. For learning how to submit contributions to ATT&CK, read our contribute page to learn how to reach out and what we’re looking for."
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/engage-with-attack/contact"
+tags = ["benefactors", "blog", "contact", "contribute", "defenses", "email", "github", "informed", "matrices", "medium"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.mitre.org", "github.com", "join.slack.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtube.com"]
+
+["https://attack.mitre.org/resources/legal-and-branding/terms-of-use"]
+title = "Terms of Use | MITRE ATT&CK®"
+full_description = '''The MITRE Corporation (MITRE) hereby grants you a non-exclusive, royalty-free license to use ATT&CK® for research, development, and commercial purposes. Any copy you make for such purposes is authorized provided that you reproduce MITRE's copyright designation and this license in any such copy. "© 2024 The MITRE Corporation. This work is reproduced and distributed with the permission of The MITRE Corporation." MITRE does not claim ATT&CK enumerates all possibilities for the types of actions and behaviors documented as part of its adversary model and framework of techniques. Using the information contained within ATT&CK to address or cover full categories of techniques will not guarantee full defensive coverage as there may be undisclosed techniques or variations on existing techniques not documented by ATT&CK. ALL DOCUMENTS AND THE INFORMATION CONTAINED THEREIN ARE PROVIDED ON AN "AS IS" BASIS AND THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS OR IS SPONSORED BY (IF ANY), THE MITRE CORPORATION, ITS BOARD OF TRUSTEES, OFFICERS, AGENTS, AND EMPLOYEES, DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION THEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.'''
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/legal-and-branding/terms-of-use"
+tags = ["benefactors", "blog", "defenses", "matrices", "mitigations", "resources", "tactics", "techniques", "terms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/techniques/T1001/002"]
+title = "Data Obfuscation: Steganography, Sub-technique T1001.002 - Enterprise | MITRE ATT&CK®"
+description = "Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult. Steganographic techniques can be used to hide data in digital messages that are transferred between systems. This hidden information can be used for command and control of compromised systems. In some cases, the passing of files embedded using steganography, such as image or document files, can be used for command and control."
+full_description = "Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult. Steganographic techniques can be used to hide data in digital messages that are transferred between systems. This hidden information can be used for command and control of compromised systems. In some cases, the passing of files embedded using steganography, such as image or document files, can be used for command and control. When the Duqu command and control is operating over HTTP or HTTPS, Duqu uploads data to its controller by appending it to a blank JPG file.[3] LightNeuron is controlled via commands that are embedded into PDFs and JPGs using steganographic methods.[5] LunarMail can parse IDAT chunks from .png files to look for zlib-compressed and AES encrypted C2 commands.[6] During Operation Ghost, APT29 used steganography to hide the communications between the implants and their C&C servers.[7] RDAT can process steganographic images attached to email messages to send and receive C2 commands. RDAT can also embed additional messages within BMP images to communicate with the RDAT operator.[8] SUNBURST C2 data attempted to appear as benign XML related to .NET assemblies or as a faux JSON blob.[10][11][12] ZeroT has retrieved stage 2 payloads as Bitmap images that use Least Significant Bit (LSB) steganography.[13][14] Network intrusion detection and prevention systems that use network signatures to identify traffic for specific adversary malware can be used to mitigate some obfuscation activity at the network level. Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used.[15]"
+year_published = 2025
+clearnet = "https://attack.mitre.org/techniques/T1001/002"
+tags = ["benefactors", "blog", "created:", "data", "defenses", "detection", "examples", "last", "matrices", "mitigations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "bitdefender.com", "crowdstrike.com", "fortinet.com", "fox-it.com", "group-ib.com", "i.blackhat.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "symantec-enterprise-blogs.security.com", "twitter.com", "us-cert.cisa.gov", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/resources/versions"]
+title = "Version History | MITRE ATT&CK®"
+full_description = "The overall ATT&CK catalog is versioned using a major.minor version schema. The bi-annual content releases listed on the updates pages increment the major version number. The minor version number increments for our other small releases, which include typo and data corrections but not typically new content. Below are a list of versions of the ATT&CK website preserved for posterity, including a permalink to the current version of the site:"
+year_published = 2025
+clearnet = "https://attack.mitre.org/resources/versions"
+tags = ["att&ck", "benefactors", "blog", "current", "defenses", "history", "matrices", "mitigations", "older", "recent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]
+
+["https://attack.mitre.org/tactics/TA0043"]
+title = "Reconnaissance, Tactic TA0043 - Enterprise | MITRE ATT&CK®"
+description = "The adversary is trying to gather information they can use to plan future operations.Reconnaissance consists of techniques that involve adversaries actively or passively gathering information that can be used to support targeting. Such information may include details of the victim organization, infrastructure, or staff/personnel. This information can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using gathered information to plan and execute Initial Access, to scope and prioritize post-compromise objectives, or to drive and lead further Reconnaissance efforts."
+full_description = "Reconnaissance consists of techniques that involve adversaries actively or passively gathering information that can be used to support targeting. Such information may include details of the victim organization, infrastructure, or staff/personnel. This information can be leveraged by the adversary to aid in other phases of the adversary lifecycle, such as using gathered information to plan and execute Initial Access, to scope and prioritize post-compromise objectives, or to drive and lead further Reconnaissance efforts."
+year_published = 2025
+clearnet = "https://attack.mitre.org/tactics/TA0043"
+tags = ["benefactors", "blog", "created:", "defenses", "last", "matrices", "mitigations", "modified:", "reconnaissance", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["activeresponse.org", "collaborate.mitre.org", "docs.github.com", "github.com", "i.blackhat.com", "join.slack.com", "lockheedmartin.com", "medium.com", "mitre-attack.github.io", "mitre-engenuity.org", "mitre.org", "na.eventscloud.com", "oasis-open.github.io", "sans.org", "slideshare.net", "twitter.com", "x33fcon.com", "youtu.be", "youtube.com"]

@@ -1,0 +1,78 @@
+["https://p11-glue.freedesktop.org/pkcs11-uris.html"]
+title = "PKCS#11 URIs"
+full_description = "Spec: PKCS#11 URIs PKCS#11 URIs are a way to identify a certain crypto object that resides in a PKCS#11 module. These URIs can be used in configuration files, or when one application needs to refer another to a cryptographic object, like a key or a certificate. A PKCS#11 URI looks like: pkcs11:token=The%20Software%20PKCS#11%20softtoken;object=my-certificate; objecttype=cert;id=%69%95%3e%5c%f4%bd%ec%91 Implementations and Integration GnuTLS: Used to lookup certificate and key objects. Gck library: API for parsing and building PKCS#11 URIs p11-kit: Used in configuration. Also has an API for parsing and building PKCS#11 URIs Specification An IETF RFC Draft: draft-pechanec-pkcs11uri Discussion: saag@ietf.org Authors: J. Pechanec, D. Moffat"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/pkcs11-uris.html"
+tags = ["implementations", "integration", "p11-glue", "pkcs#11", "spec:", "specification", "uris"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "ietf.org", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openvpn.net", "people.collabora.co.uk", "projects.gnome.org", "rsa.com", "subversion.tigris.org", "tools.ietf.org", "truecrypt.org"]
+
+["https://p11-glue.freedesktop.org/sharing-trust-policy.html"]
+title = "p11-kit"
+full_description = "Spec: Sharing Trust Policy Various crypto libraries have various ways to represent and store information about which Certificate Authorities are to be used as trust anchors. They also have different ways to represent certificates that are blacklisted. This has led to a poor experience and a lack of coherency on Linux when it comes to validating certificates. This is an effort to define a standard way to represent trust policy, anchor certificates and black lists. These should be represented in a coherent and future-proof manner. The outlined solution, in addition to be an extensible concept, is relatively easy to implement and retrofit into existing code. The specification document is in a state of early construction. Contributing Mailing list: p11-glue@lists.freedesktop.org Bugs: github issue tracker"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/sharing-trust-policy.html"
+tags = ["contributing", "p11-glue", "sharing", "spec:", "trust"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "ietf.org", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openvpn.net", "people.collabora.co.uk", "projects.gnome.org", "rsa.com", "subversion.tigris.org", "tools.ietf.org", "truecrypt.org"]
+
+["https://p11-glue.freedesktop.org/trust-module.html"]
+title = "Trust Storage Module"
+full_description = '''Project: Trust Storage Module This is a PKCS#11 module that exposes read-only storage of system certificates and trust policy. It loads the certificates and trust storage from a directory of files. Crypto libraries are able to use this as a shared source of certificate authority anchors, black lists, and other locally stored system trust policy. There is work going on to define a comprehensive representation of this shared trust policy. Once such a solution matures we hope to implement it in this PKCS#11 trust storage module. Also included is a tool called p11-kit extract-trust that can be used to extract certificates anchors with trust information in various formats for crypto libraries not (or not yet) able to read from this PKCS#11 trust module directly. A goal is to have minimal dependencies, and be crypto library agnostic so this can be used by any library or app. Accesses information owned by root and configured by a system administrator or distro creator. These PKCS#11 objects are read-only and so don't need to go through a coordinating daemon. Thus we can implement an efficient, reliable lookup for these system certs and other objects, with less moving parts. Source Repository Code has been merged into the main p11-kit repository, and is found in the trust/ subdirectory. The extract code is found in the tools subdirectory: $ git clone https://github.com/p11-glue/p11-kit $ cd p11-kit Status An implementation of the module is available, and you can try it out. A dependency on libtasn1-devel is required to build the PKCS#11 trust module. The extract tool is also implemented. $ sh autogen.sh --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib64 --enable-debug \ --with-trust-paths=/etc/pki/ca-trust/source:/usr/share/pki/ca-trust-source $ make $ sudo make install $ sudo mv -v /usr/lib64/libnssckbi.so /opt/libnssckbi.so.orig-nss $ sudo ln -sv pkcs11/p11-kit-trust.so /usr/lib64/libnssckbi.so Now place some certificates in the --with-trust-paths location(s). Right now, as input, you can use DER, PEM or OpenSSL style 'trusted certificates'. For example you can tweak some trust policy bits like so: $ openssl x509 -addtrust serverAuth -addreject clientAuth \ -in /path/to/my-ca.pem -out /etc/pki/ca-trust/source/anchors/my-ca.pem Now you can run apps like Firefox and see the certificates appear in the Certificate manager and are trusted as appropriate. You can use a command like this to see some debug output: $ P11_KIT_DEBUG=all firefox Run the extraction tool, and/or customize it: $ p11-kit extract-trust Documentation Trust policy module documentation Extract tool documentation Contributing Mailing list: p11-glue@lists.freedesktop.org Bugs: github issue tracker'''
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/trust-module.html"
+tags = ["certificates", "contributing", "documentation", "extract", "module", "p11-glue", "p11-kit", "pkcs#11", "project:", "repository"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "ietf.org", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openvpn.net", "people.collabora.co.uk", "projects.gnome.org", "rsa.com", "subversion.tigris.org", "tools.ietf.org", "truecrypt.org"]
+
+["https://p11-glue.freedesktop.org/revocation-cache.html"]
+title = "Common Revocation Lists"
+full_description = "Project: Common Revocation Lists This is a cache of OSCP responses (via a proxy) and CRLs (via a PKCS#11 module) so applications and crypto libraries can share their queries and responses as desired. Rather than each application or library downloading and caching their own copy of the CRLs, this module and accompanying daemon, keeps track of and updates CRLs. Applications then access this information in a consistent manner. Documentation Still in proposal/conceptual stages. Source Repository No source available yet. Implementations and Integration Still being planned. Contributing Mailing list: p11-glue@lists.freedesktop.org Bugs: github issue tracker"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/revocation-cache.html"
+tags = ["common", "contributing", "documentation", "implementations", "integration", "lists", "p11-glue", "project:", "repository", "revocation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "ietf.org", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openvpn.net", "people.collabora.co.uk", "projects.gnome.org", "rsa.com", "subversion.tigris.org", "tools.ietf.org", "truecrypt.org"]
+
+["https://p11-glue.freedesktop.org"]
+title = "p11 glue"
+full_description = "Introduction This is an effort to use and promote PKCS#11 as glue between crypto libraries and security applications on the open source desktop. On the desktop today we have a variety of technically excellent crypto libraries (such as NSS, GnuTLS, OpenSSL etc.) The diversity allows each to excel and progress in its area of focus. Applications choose to use different crypto libraries for all sorts of good reasons. Users suffer because the desktop lacks a consistent way to use certificates or keys with all the various applications. For example different applications look for their trust anchor certificates in different places, and configuring each application with a client certificate is a laborious task. Developers suffer because when an application needs to use security (like TLS), the application needs to provide support for all sorts of security configuration, cetrificate/key file locations, security exceptions, smart cards, and so on. And so progress suffers because there's no foundation for consistent place to store security stuff on the desktop. PKCS#11 is a standard for accessing crypto objects like keys and certificates and performing cryptographic operations on them. It's often used together with smart cards. By using PKCS#11 to provide a pluggable way for crypto libraries and other software to access keys, certificate, and things like trust anchors, we can solve the above problems. We can use PKCS#11 to make apps more secure (through the support use of smart cards), more usable (through common storage), and easier to develop (through standard ways to store and access crypto objects). The PKCS#11 Specification Application and Library support for PKCS#11"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org"
+tags = ["application", "cache", "crypto", "introduction", "libraries", "module", "p11-glue", "p11-kit", "pkcs#11", "project:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["freecsstemplates.org", "freedesktop.org", "lists.freedesktop.org", "rsa.com"]
+
+["https://p11-glue.freedesktop.org/p11-kit.html"]
+title = "p11-kit"
+full_description = "Project: p11-kit Provides a way to load and enumerate PKCS#11 modules. Provides a standard configuration setup for installing PKCS#11 modules in such a way that they're discoverable. Also solves problems with coordinating the use of PKCS#11 by different components or libraries living in the same process. Implementations and Integration Drop in compatible with any application or library that can use PKCS#11 modules. Some additional benefits are gained from integrating directly. Glib Library GTlsDatabase PKCS#11 database: Will use p11-kit to load PKCS#11 modules, and load configuration (In progress). Gck Library: Use p11-kit to load and enumerate PKCS#11 modules. Use p11-kit to parse PKCS#11 URIs (In progress). Gcr Library: Use p11-kit to load configuration for looking up and storing trust assertions (In progress). Documentation All Documentation API Reference Source Code The source code releases are available for download here: https://github.com/p11-glue/p11-kit/releases The release keyring is available for download here: https://p11-glue.github.io/p11-glue/p11-kit/p11-kit-release-keyring.gpg The source code is available via git, or browsable online. $ git clone https://github.com/p11-glue/p11-kit Contributing Mailing list: p11-glue@lists.freedesktop.org Bugs: github issue tracker Guide to building, contributor and packaging."
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/p11-kit.html"
+tags = ["code", "contributing", "documentation", "implementations", "integration", "load", "p11-glue", "p11-kit", "pkcs#11", "project:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["freecsstemplates.org", "freedesktop.org", "github.com", "library.gnome.org", "lists.freedesktop.org", "p11-glue.github.io", "rsa.com"]
+
+["https://p11-glue.freedesktop.org/pkcs11-support.html"]
+title = "PKCS#11 Support"
+full_description = "PKCS#11 Support This project is all about using providing the glue so that different crypto libraries and apps can provide consistent experience for users and developers. This is possible because PKCS#11 is supported by so many applications. The support for PKCS#11 is not obviously not consistent across the board, but that will improve as PKCS#11 becomes more used. Here is an incomplete list (a-z): Libraries Gnome Keyring GnuTLS Java Mozilla NSS OpenSC PAM QCA Solaris Applications Empathy Evolution Firefox Google Chrome OpenSSH OpenVPN Subversion Strong Swan Thunderbird Truecrypt Patched or in Progress Glib OpenSSL"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/pkcs11-support.html"
+tags = ["applications", "libraries", "p11-glue", "patched", "pkcs#11", "progress", "support"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openssh.com", "openvpn.net", "p11-glue.github.io", "projects.gnome.org", "rsa.com", "strongswan.org", "subversion.tigris.org", "truecrypt.org"]
+
+["https://p11-glue.freedesktop.org/doc/storing-trust-policy"]
+title = "Storing Trust Policy"
+year_published = 2025
+clearnet = "https://p11-glue.freedesktop.org/doc/storing-trust-policy"
+tags = ["inc.", "insight", "others", "othersrevision:", "policystef", "stef", "storing", "trust", "walter", "walterred"]
+language = "en"
+internal-references = ["none"]
+external-references = ["delta.affinix.com", "download.oracle.com", "freecsstemplates.org", "github.com", "google.com", "ietf.org", "library.gnome.org", "lists.freedesktop.org", "live.gnome.org", "mozilla.com", "mozilla.org", "mozillamessaging.com", "opensc-project.org", "openvpn.net", "people.collabora.co.uk", "projects.gnome.org", "rsa.com", "subversion.tigris.org", "tools.ietf.org", "truecrypt.org"]

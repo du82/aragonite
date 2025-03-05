@@ -1,0 +1,415 @@
+["https://ndepend.com/Download"]
+title = "Download NDepend"
+description = """
+Download NDepend                                    Enter your email address to immediately download a fully functional 14-day free trial of ndepend.                     We will send you a confirmation email with backup download link.                     The redistributable you will download is suitable for Windows, macOS and Linux"""
+full_description = "Download NDepend Enter your email address to immediately download a fully functional 14-day free trial of ndepend. We will send you a confirmation email with backup download link. The redistributable you will download is suitable for Windows, macOS and Linux Enter your email address to immediately download a fully functional 14-day free trial of ndepend. We will send you a confirmation email with backup download link. The redistributable you will download is suitable for Windows, macOS and Linux Optional: If you would like to get personal assistance during your trial period, please also let us know who you are: We respect your privacy and take protecting it seriously. We will never sell, rent, lease or give away any information you provide to any third party. * required"
+year_published = 2025
+clearnet = "https://ndepend.com/Download"
+tags = ["14-day", "already", "code quality", "connect", "documentation", "download", "edition", "free", "fully", "functional"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/partners"]
+title = "NDepend Partners"
+description = "Introducing Ndepend's frictionless partners."
+full_description = "Postsharp eliminates repetitive code from your C# projects so you can get back to the bright side of programming. With PostSharp, you can dramatically reduce the boilerplate code that stems from the implementation of design patterns or non-functional requirements like logging or caching. The result: your code is more readable and maintainable; you can make better use of your time; and your apps are more reliable. PostSharp combines aspect-oriented programming, metaprogramming, IL weaving and static analysis, and takes them to the next level in a well-engineered approach. elmah.io may be the coolest cloud based error management service for .NET web applications. Based on the de-facto standard error component ELMAH, logging errors from your webserver requires nothing more than installing a NuGet package. All exceptions on your webservers will automatically be synced to elmah.io's powerful infrastructure based on Elasticsearch and Windows Azure. When indexed, everything from full-text to time-based searches fly at supersonic speed. VOLUMIC 3D is a french brand producing desktop 3D printer for the professional universe and the creative industry. Based on the FDM (Fused Deposition Modeling) open source technology, all the Volumic printers propose precision, reliability and multi-material objets production. All our machines can print in different kind of plastics, wood, brick, bronze, flexible plastics, etc. Our company is always involved in strong and innovative technology and software, and we are proudly partners of NDepend Willing to promote values such as Clean Code, Agility, Objects and Patterns, Viseo has been using internally NDepend since its early versions. Ever since, Viseo is recommending NDepend to its numerous customers. Build upon this expertise, Viseo provides comprehensive training on NDepend thanks to its 4 training centers. Did you try once to build your .NET API documentation with Sandcastle? We at NDepend we've tried and we estimate it is way too painful. This is why we build our API documentation with Innovasys DocumentX, that makes the documentation tunning and building process super easy!"
+year_published = 2025
+clearnet = "https://ndepend.com/partners"
+tags = ["code quality", "connect", "documentation", "frictionless", "information?", "meet", "ndepend", "ndepend.", "need", "partners"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "hibernatingrhinos.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "stackoverflow.com", "visualstuart.net", "volumic3d.com"]
+
+["https://ndepend.com/release-notes.aspx"]
+title = "NDepend Release Notes"
+description = "Major milestones in NDepend's release history. Find the version you are looking for and see the update log."
+full_description = "Even though more information are packed into the redesigned report, the analysis process for generating it is now 40% quicker. Even for very large code bases with thousands of source files and millions of lines of code scanned, the report generation takes less than a minute on a modern hardware, and just a few seconds for regular code bases (2.000 classes or less). NDependReport.html report file size is now divided by 2 thanks to new optimizations. It now ranges between one and 5MB ensuring easy sharing and streamlined usability. In rules C# source code, you can now define a pattern for issue explanations, offering a new level of customization. Such pattern is now integrated into all default rules. These issue explanations are displayed in both the NDepend UI and within the source code views in the report, enhancing your understanding and analysis capabilities. The NDepend code model is now filled with properties and events thanks to the new interfaces IProperty and IEvent. Until now only accessors methods and backing fields were analyzed and some details like attributes tagging properties and events were missing. The Class Browser panel has been replaced with a Search Panel Tab. This way there can be multiple Class Browser instances and the user can filter by name or by kind of code element (Assembly, Namespace, Type, Method, Field, Property or Event). When right-clicking a project, an assembly, a namespace or a type, the 6x menus under What was changed have been simplified to a single menu button Diff since the Baseline. This new menu generates a code query that lists all changes within the element. The .NET solution chooser dialog now also lists Rider and VSCode Most Recently Used (MRU) Solutions if these IDEs are installed. When installing the extension in Visual Studio a second time, VSIXIntaller.exe popped-up an annoying message box This extension is already installed to all applicable products. Not anymore. When installing or uninstalling the NDepend VS extension, the installation status is reflected by a check icon instead of showing a message-box about the success of the operation."
+year_published = 2025
+clearnet = "https://ndepend.com/release-notes.aspx"
+tags = ['"help"', ".runsettings", "/32bit+", "/force", "1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.3.1", "1.3.2"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "reflector.red-gate.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/screenshots"]
+title = "NDepend Screenshots"
+description = "Screenshots of NDepend's code visualization tools and features, includnig treemap, code rules, dependency matrix, and custom reports."
+full_description = "You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license."
+year_published = 2025
+clearnet = "https://ndepend.com/screenshots"
+tags = ["blue", "built", "code quality", "connect", "cqlinq", "dark,", "details", "documentation", "edition", "exported"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "reflector.red-gate.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/testimonials"]
+title = "NDepend Testimonials"
+description = "Hear from users on what they like and don't like about NDepend"
+full_description = "The entire community of real-world .NET developers is enthusiast about NDepend capabilities that help writing better code. Download NDepend Trial Edition Now and see the tool's benefits by yourself!"
+year_published = 2025
+clearnet = "https://ndepend.com/testimonials"
+tags = ["abilov", "adam", "adzic", "andrew", "andréo", "arjan", "barnett", "bigyan", "booysen", "brad"]
+language = "en"
+internal-references = ["none"]
+external-references = ["4guysfromrolla.com", "amazon.com", "andriybuday.com", "bigjimindc.blogspot.com", "blog.bluecog.co.nz", "blog.componentoriented.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "facebook.com", "hanselman.com", "hibernatingrhinos.com", "innovasys.com", "iprcom.com", "marketplace.visualstudio.com", "ncover.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/Docs/Dependency-Structure-Matrix-DSM"]
+title = "Dependency Structure Matrix"
+description = "How to setup and use NDepend's Dependency Matrix to get a burd's eye view of how your code base is related alongside the dependency graph."
+full_description = "The DSM (Dependency Structure Matrix) is a compact way to represent and navigate across dependencies between components. For most engineers, talking of dependencies means talking about something that looks like that: As a consequence, in the snapshot below, the coupling from IronPython to Microsoft.Dynamic is represented by a non empty cell in the matrix and by an arrow in the graph. Why using two different ways, graph and DSM, to represent the same information? There used to be a trade-off: NDepend offers Context-Sensitive Help to educate the user about what he sees on DSM. NDepend's DSM relies on a simple 3 coloring scheme for DSM cell: Blue, Green and Black. When hovering a row or a column with the mouse, the Context-Sensitive Help explains the meaning of this coloring scheme: A non-empty DSM Cell contain a number. This number represent the strengths of the coupling represented by the cell. The coupling strength can be expressed in terms of number of members/methods/fields/types or namespaces involved in the coupling, depending on the actual value of the option Weight on Cells. In addition to the Context-Sensitive Help, the DSM offers as well a Info Panel that explains coupling with a plain-english description: It is advised to experience all these features by yourself, by analyzing dependencies into your code base. As explained in the introduction, DSM comes with the particularity to offer easy identification of popular Code Structure Patterns. Let's present most common scenarios: One pattern that is made obvious by a DSM is layered structure (i.e acyclic structure). When the matrix is triangular, with all blue cells in the lower-left triangle and all green cells in the upper-right triangle, then it shows that the structure is perfectly layered. In other words, the structure doesn’t contain any dependency cycle. On the right part of the snapshot, the same layered structure is represented with a graph. All arrows have the same left to right direction. The problem with graph, is that the graph layout doesn’t scale. Here, we can barely see the big picture of the structure. If the number of boxes would be multiplied by 2, the graph would be completely un-readable. On the other side, the DSM representation wouldn’t be affected; we say that DSM scales better than graph."
+year_published = 2025
+clearnet = "https://ndepend.com/Docs/Dependency-Structure-Matrix-DSM"
+tags = ["better", "cells", "change", "class", "code", "code quality", "cohesion", "component", "connect", "context-sensitive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/write-clean-code"]
+title = "Write Clean Code From Now On"
+description = "Write clean code from now on by prioritizing new issues and technical debt introduced since the last release"
+full_description = "Static analysis consists in analyzing the code without executing it. NDepend is a static analyzer for .NET code. The main problem with all static analyzers is that when it analyzes a large code base, hundreds if not thousands of issues are found. This avalanche of issues overwhelms the user. This is why NDepend proposes to define a baseline. In the NDepend Dashboard Issues section, found in both Visual Studio extension and in the Azure DevOps extension, the tool shows: Each of this number in the Dashboard can be clicked to list concerned issues and then jump in the code and fix it. If you prefer from the Dashboard Issue panel you can change the issues grouping options to group them by rules, assemblies, namespaces or classes. Typically the baseline is the analysis result of the last version of the code base in production. When a new NDepend project is created, the first analysis result obtained becomes automatically the baseline. This baseline will be compared against further analysis results. After a few days you might want to update the baseline because the first analysis result might miss some data (like code coverage data for example). The baseline can be defined from: NDepend > NDepend Project Properties > Analysis > Baseline for Comparison The NDepend Dashboard contains a Choose Baseline row that proposes recent analysis results available. Just click an N days ago link to compare against the corresponding analysis result. All rules are then re-executed within a few seconds to update the target set new issues added since the baseline. Note that changing the baseline is a temporary action and doesn't update the baseline settings in the NDepend project."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/write-clean-code"
+tags = ["added", "baseline", "choose", "clean", "clean code", "code", "connect", "documentation", "first.", "information?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/getting-started-with-ndepend"]
+title = "Getting Started with NDepend on Windows"
+description = "A getting started guide and documentation for NDepend on Windows, the .NET static analysis and data visualization tool."
+full_description = "The NDepend Visual Studio extension has no impact on the Visual Studio process performances. However if you prefer you can use 100% of NDepend features outside Visual Studio thanks to the standalone executable VisualNDepend.exe. To do so: NDepend generates interactive web reports that provides valuable and detailed insights about your .NET code quality: You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license. NDepend is a feature rich product. To help you get started quickly you can refer to the use cases that best fulfill your needs:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/getting-started-with-ndepend"
+tags = ["2013,", "2015,", "2017,", "2019,", "2022,", "analyzing", "applications", "cases", "code quality", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "linkedin.com", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/Getting-Started-With-NDepend-Linux-macOS"]
+title = "Getting Started with NDepend on Linux and macOS"
+description = "A getting started guide and documentation for NDepend on Linux and macOS, the .NET static analysis and data visualization tool."
+full_description = '''The primary goal of using NDepend.Console.MultiOS.dll on macOS or Linux is to generate code quality reports from a CI/CD pipeline. See some sample reports below.. We have plans to integrate with IDEs on macOS and Linux (Visual Studio for Mac, Rider, VS Code...) but we are not there yet. To run NDepend on macOS or Linux pre-installating .NET 9.0 or .NET 8.0 or .NET 7.0 is required. It can be downloaded from the official Microsoft page. Then download the NDepend zip redistributable that works on Windows, Linux and macOS. It is recommended to unzip the NDepend files in the /home/$user$/ndepend folder. This way no permission access exception should be thrown. ./net9.0/NDepend.Console.MultiOS.dll is a net9.0 cross-platform dll with entry point. Start evaluation with the command switch RegEval. (Same for ./net8.0 or ./net7.0) Here is an alternative guide by Nadir Badnjevic that could be helpful: "How to Set Up and Use NDepend on macOS for .NET Development." More information about report generation in the section Run an analysis and build a report below. Notice that on Linux and macOS the 4 diagrams are not yet generated. You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license. NDepend.Console.MultiOS.dll can be used with these arguments to register or unregister NDepend on a Linux or macOS machine (case-insensitive): A switch can be used as-is like RegEval or preceded by variousindicator like /RegEval, -RegEval or --RegEval. Each of these operation requires internet access to do a roundtrip with the NDepend server. If the current machine doesn't have internet access, a procedure is proposed to complete the operation by accessing manually the NDepend server from a connected machine. Notice that on Windows, a license key registered from NDepend v2021.1 (or lower) doesn't work with v2021.2 (or upper) NDepend.Console.MultiOS.dll. The reason is that .NET Core only supports Rijndael encryption algorithm with a block size of 128 bits while we used to rely on 256 bits in NDepend v2021.1 and lower (as shown in .NET Core source code).'''
+year_published = 2025
+clearnet = "https://ndepend.com/docs/Getting-Started-With-NDepend-Linux-macOS"
+tags = ['"how', "--createproject", "--refreshlic", "--regeval", "--reglic", "--unreglic", "-regeval", "-test", "./ndepend.console.exe", ".csproj"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "learn.microsoft.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/videos.aspx"]
+title = "NDepend Walkthrough Videos"
+description = "Watch the NDepend intro and walkthrough videos and get up to speed fast on how to use this powerful code query and quality tool."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/videos.aspx"
+tags = ["code quality", "connect", "documentation", "information?", "meet", "ndepend", "ndepend.", "need", "product", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/features"]
+title = "NDepend Product Features"
+description = '''
+Product Features
+					                NDepend is a .NET tool that provides deep insight into code bases.                                    The tool empowers developers, architects and executives to make intelligent decisions on projects.                                    The community name it the "Swiss Army Knife" for .NET programmers.'''
+full_description = "Code Rule and Code Query Hundreds of default code rules to check against best practices. Support for Code Query over C# LINQ (CQLinq) to easily customize rules and query code. Powerful Dependency Graph and Matrix Explore how the code is actually structured and shed light on architectural flaws thanks to the most powerful code dependency graph and dependency matrix available in the tool industry. Smart Technical Debt Estimation For each issue, the cost to fix and the severity are estimated through smart and customizable C# formulas. Thus estimations proposed are realistic. Interactive Web Report Integrate NDepend analysis into your CI / CD pipeline and obtain interactive and detailed web reports to explore progression and prevent code quality degradation. Quality Gates Fail the build pipeline upon customizable PASS / WARN / FAIL code quality and security criteria. Import Roslyn and ReSharper Issues Gain a 360 view of your .NET code quality by importing your preferred Roslyn Analyzers' issues and ReSharper Code Inspections' issues into the NDepend web report and UI. Code Quality and Code Metrics Lines of Code, Cyclomatic Complexity, Coupling, Nesting Depth, Rank, NDepend supports them all (and much more). Trend Monitoring Get Trend Charts about pretty much any code metrics to master the evolution of your application. Harness Test Coverage Data Import test coverage data, and make the most of it in the NDepend feature-rich context. Code Diff since Baseline Compare two versions of a code base and its issues set, and browse diff and changes in any way you can think of. Warnings on Build Process Health Be warned of potential build process problems before they end up causing friction and pain. Detect Dependency Cycles Get rid of dependency cycles between components to achieve higher code maintainability. Enforce Immutability and Purity NDepend helps maintaining clean side-effects free code to write highly maintainable products. Real-World Proof Integrate with Visual Studio, Azure DevOps, GitHub and any other CI/CD pipeline, super fast and lightweight analysis, NDepend is conceived for real-world programmers."
+year_published = 2025
+clearnet = "https://ndepend.com/features"
+tags = ["accurately", "allows", "analysis", "application", "application,", "approach", "architects", "baseline", "between", "build"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/editions"]
+title = "NDepend Editions Comparison"
+description = "A comparison of the different editions of NDepend. Which one is the best for you or your team? Find out!"
+full_description = "It only runs on Windows. Each machine on which NDepend for Developer is activated, counts as a license seat. NDepend for Build Machine is dedicated to Windows, Linux and Mac build servers and Continuous Integration (CI) servers that integrate NDepend analysis into their build processes and produce NDepend reports (see sample reports here). Each physical machine, each virtual machine (VM), each agent, on which NDepend for Build Machine is activated, counts as a license seat. NDepend for Build Machine is required to integrate NDepend into: SonarQube, TeamCity, Jenkins, AppVeyor, Bamboo. The NDepend Azure DevOps / TFS Extension lets run an NDepend analysis after each rebuild and explore results in an interactive dashboard embedded in the AzureDevOps / TFS dashboard. This Extension can also fail the build upon some Quality Gate(s) failure. The NDepend Azure DevOps / TFS Extension is sold per 5x users allowed to access the extension dashboard. Only users accessing the hub are counted. Let's precise that the NDepend analysis is triggered no matter if the user responsible for commit is allowed to access the extension dashboard or not. You can test the Azure DevOps / TFS Extension full-featured trial-version for 28 days from its marketplace page here. The GitHub Action lets run an NDepend analysis after each rebuild and explore results in a shared interactive HTML+js report. This Action can also fail the build upon some Quality Gate(s) failure. With a Developer license, the standalone app VisualNDepend.exe or the NDepend Visual Studio extension can be used to explore the result in more details. The GitHub Action is sold per 5x users triggering the action. Only users triggering the action are counted. Integration in Visual Studio 2022, 2019, 2017, 2015, 2013, 2012 and 2010 (see screenshots of NDepend within Visual Studio here) Manual Report Productionwith up to 15 source files listed in the report(see some sample reports here) Automatic Report Production throughNDepend.Console.exe (see some sample reports here). Unlimited number of source files listed in report."
+year_published = 2025
+clearnet = "https://ndepend.com/editions"
+tags = ["accessing", "action", "azure", "build", "build-machine", "code", "code quality", "common", "compare", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/getting-started-with-ndepend.aspx"]
+title = "Getting Started with NDepend on Windows"
+description = "A getting started guide and documentation for NDepend on Windows, the .NET static analysis and data visualization tool."
+full_description = "The NDepend Visual Studio extension has no impact on the Visual Studio process performances. However if you prefer you can use 100% of NDepend features outside Visual Studio thanks to the standalone executable VisualNDepend.exe. To do so: NDepend generates interactive web reports that provides valuable and detailed insights about your .NET code quality: You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license. NDepend is a feature rich product. To help you get started quickly you can refer to the use cases that best fulfill your needs:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/getting-started-with-ndepend.aspx"
+tags = ["2013,", "2015,", "2017,", "2019,", "2022,", "analyzing", "applications", "cases", "code quality", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "linkedin.com", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/Docs/Visual-Studio-Dependency-Graph"]
+title = "Visual Studio - Explore existing .net code architecture"
+description = "In this article you'll learn how to benefit from NDepend's dependency graph in order to explore your existing code architecture in the most comprehensive way."
+full_description = "The NDepend dependency graph has been completely rebuilt within NDepend version 2020.1 released in April 2020. You might have used the NDepend dependency graph in the past but the new graph is certainly worth a try because it represents an important milestone in how code can be explored and navigated. Depending on the size of the application the default application map is made of application assemblies, namespaces, types or members. The algorithm to chose the level of elements shown on map is simple: it attempts to have around 1.000 elements. Search for elements by name on large graphs consisting of hundreds or thousands of elements in real-time. The short animation below searches all namespaces whose names contain the string customer, selects them and then expands them to show all their children classes. Files and Directories in the Visual Studio Solution Explorer can be dragged and dropped onto the graph. The short animation below shows a graph made of 15,000+ classes of .NET Core 3 with a zoom on System.String and then System.Dictionary<K,V>. Visually cluster nodes have an hexagonal honeycomb icon and their borders are dotted. Edges between cluster nodes are also dotted. Note that the number in parenthesis near Filter counts the number of code elements actually filtered-out. Instead of saving a list of elements shown on graph, the list of actions that leads to the persisted graph is persisted. This way the graph remains in-sync with changes when the code changes. If a pivot element is missing, like for example when attempting to restore an inheritance graph rooted on a base class removed or renamed, the load operation fails and a message is shown to the user explaining that a pivot element cannot be found by name. To get an inheritance graph just select one or several interfaces and click the link Classes Implementer in the navigation bar, or select one or several base classes and click the link Derived Classes in the navigation bar. It is often needed to know the types and methods involved in the coupling between two assemblies or two namespaces. Especially when we want to anticipate the impact of a refactoring."
+year_published = 2025
+clearnet = "https://ndepend.com/Docs/Visual-Studio-Dependency-Graph"
+tags = ["application", "applications", "architecture", "assembly", "bar,", "bar:", "bitmap", "call", "callees", "callers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/ndepend-use-cases"]
+title = "Introduction to NDepend Use Cases"
+description = "NDepend is a feature rich product. Get started quickly with NDepend by discovering most common use cases"
+full_description = "NDepend is a feature rich product. Actually users named it the swiss army knife for .NET developers. However there is so much you can do with our toolset that it can be daunting, especially for NDepend newbies. To help you get started quickly with NDepend you can refer to the use cases that best fulfill your needs:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/ndepend-use-cases"
+tags = ["army", "cases", "connect", "developers", "documentation", "information?", "introduction", "knife", "meet", "ndepend"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/roslyn-analyzer-issue-import"]
+title = "Roslyn Analyzers Issues Import in NDepend"
+description = "Get Started with Importing Roslyn Analyzers Issues in NDepend"
+full_description = '''See Reporting Roslyn Analyzers' Issues that explains the benefit of importing Roslyn Analyzers's Issues with NDepend. When an NDepend project references one or several .NET solution file(s) the tool expects to collect Roslyn Analyzers' issues in .json files in the directory $(SolutionDir)\.sarif. The json format expected to describe issues to import is SARIF (Static Analysis Results Interchange Format). SARIF is not just about Roslyn Analyzers. Any .NET tool exporting code issues in a SARIF file format can be used, like for example, some custom tools in your company. To obtain SARIF .json files in a directory $(SolutionDir)\.sarif just create the file $(SolutionDir)\Directory.Build.Props that contains: When this Directory.Build.Props file exists, when compiling a solution, a file named ProjectFileName.json is created for each project in the directory $(SolutionDir)\.sarif. This file contains Roslyn Analyzers issues described through the SARIF format. Roslyn Analyzers issues are first-class citizens in NDepend. They are shown side by side with issues generated by CQLinq rules and ReSharper Code Inspections everywhere in the product. The file $(SolutionDir)\Directory.Build.Props can also be used to define one or several Roslyn Analyzers suite(s) applied to the projects of the solution. For example you might want to use... To avoid having duplicated rules you can turn-off some Roslyn Analyzers in a file named $(SolutionDir)\.editorconfig This way:'''
+year_published = 2025
+clearnet = "https://ndepend.com/docs/roslyn-analyzer-issue-import"
+tags = ["accessing", "analyzer", "analyzers", "analyzers'", "before", "collect", "compiling", "connect", "create", "directory"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/purchase"]
+title = "NDepend Purchase"
+description = "Purchase NDepend, a tool for .NET architects and developers that empowers them to make good decisions in working with complex projects or legacy code."
+full_description = "It only runs on Windows. Each machine on which NDepend for Developer is activated, counts as a license seat. NDepend for Build Machine is dedicated to Windows, Linux and Mac build servers and Continuous Integration (CI) servers that integrate NDepend analysis into their build processes and produce NDepend reports (see sample reports here). Each physical machine, each virtual machine (VM), each agent, on which NDepend for Build Machine is activated, counts as a license seat. NDepend for Build Machine is required to integrate NDepend into: SonarQube, TeamCity, Jenkins, AppVeyor, Bamboo. You can test the Azure DevOps / TFS Extension full-featured trial-version for 28 days from its marketplace page here. The NDepend Azure DevOps / TFS Extension lets run an NDepend analysis after each rebuild and explore results in an interactive dashboard embedded in the AzureDevOps / TFS dashboard. This Extension can also fail the build upon some Quality Gate(s) failure. The NDepend Azure DevOps / TFS Extension is sold per 5x users allowed to access the extension dashboard. Only users accessing the hub are counted. Let's precise that the NDepend analysis is triggered no matter if the user responsible for commit is allowed to access the extension dashboard or not. ⓘ It is recommended to also order at least one Developer seat or one Build-Machine seat to customize all aspects of the analysis in NDepend project files (custom assemblies-set to analyze, custom rules-set...). The GitHub Action lets run an NDepend analysis after each rebuild and explore results in a shared interactive HTML+js report. This Action can also fail the build upon some Quality Gate(s) failure and provide Build Summary. With a Developer license, the standalone app VisualNDepend.exe or the NDepend Visual Studio extension can be used to explore the result in details. The GitHub Action is sold per 5x users triggering the action. Only users triggering the action are counted. ⓘ It is recommended to also order at least one Developer seat to customize all aspects of the analysis in NDepend project files (custom assemblies-set to analyze, custom rules-set...) and to explore details of the GitHub Action analysis result."
+year_published = 2025
+clearnet = "https://ndepend.com/purchase"
+tags = ["accept", "accessing", "action", "actual", "align", "anti-spam", "avoid", "azure", "benefit", "bluesnap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "hibernatingrhinos.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "stackoverflow.com", "visualstuart.net", "volumic3d.com"]
+
+["https://ndepend.com/editions.aspx"]
+title = "NDepend Editions Comparison"
+description = "A comparison of the different editions of NDepend. Which one is the best for you or your team? Find out!"
+full_description = "It only runs on Windows. Each machine on which NDepend for Developer is activated, counts as a license seat. NDepend for Build Machine is dedicated to Windows, Linux and Mac build servers and Continuous Integration (CI) servers that integrate NDepend analysis into their build processes and produce NDepend reports (see sample reports here). Each physical machine, each virtual machine (VM), each agent, on which NDepend for Build Machine is activated, counts as a license seat. NDepend for Build Machine is required to integrate NDepend into: SonarQube, TeamCity, Jenkins, AppVeyor, Bamboo. The NDepend Azure DevOps / TFS Extension lets run an NDepend analysis after each rebuild and explore results in an interactive dashboard embedded in the AzureDevOps / TFS dashboard. This Extension can also fail the build upon some Quality Gate(s) failure. The NDepend Azure DevOps / TFS Extension is sold per 5x users allowed to access the extension dashboard. Only users accessing the hub are counted. Let's precise that the NDepend analysis is triggered no matter if the user responsible for commit is allowed to access the extension dashboard or not. You can test the Azure DevOps / TFS Extension full-featured trial-version for 28 days from its marketplace page here. The GitHub Action lets run an NDepend analysis after each rebuild and explore results in a shared interactive HTML+js report. This Action can also fail the build upon some Quality Gate(s) failure. With a Developer license, the standalone app VisualNDepend.exe or the NDepend Visual Studio extension can be used to explore the result in more details. The GitHub Action is sold per 5x users triggering the action. Only users triggering the action are counted. Integration in Visual Studio 2022, 2019, 2017, 2015, 2013, 2012 and 2010 (see screenshots of NDepend within Visual Studio here) Manual Report Productionwith up to 15 source files listed in the report(see some sample reports here) Automatic Report Production throughNDepend.Console.exe (see some sample reports here). Unlimited number of source files listed in report."
+year_published = 2025
+clearnet = "https://ndepend.com/editions.aspx"
+tags = ["accessing", "action", "azure", "build", "build-machine", "code", "code quality", "common", "compare", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/sample-reports"]
+title = "Sample Web Reports with NDepend"
+description = "Sample reports Generated with NDepend, code visualization and diff tools, executed on a variety of popular code bases."
+full_description = "You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license."
+year_published = 2025
+clearnet = "https://ndepend.com/sample-reports"
+tags = ["code quality", "connect", "documentation", "information?", "meet", "ndepend", "ndepend.", "need", "product", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "reflector.red-gate.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/screenshots.aspx"]
+title = "NDepend Screenshots"
+description = "Screenshots of NDepend's code visualization tools and features, includnig treemap, code rules, dependency matrix, and custom reports."
+full_description = "You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license."
+year_published = 2025
+clearnet = "https://ndepend.com/screenshots.aspx"
+tags = ["blue", "built", "code quality", "connect", "cqlinq", "dark,", "details", "documentation", "edition", "exported"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "reflector.red-gate.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/docs/Getting-Started-With-NDepend.aspx"]
+title = "Getting Started with NDepend on Windows"
+description = "A getting started guide and documentation for NDepend on Windows, the .NET static analysis and data visualization tool."
+full_description = "The NDepend Visual Studio extension has no impact on the Visual Studio process performances. However if you prefer you can use 100% of NDepend features outside Visual Studio thanks to the standalone executable VisualNDepend.exe. To do so: NDepend generates interactive web reports that provides valuable and detailed insights about your .NET code quality: You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license. NDepend is a feature rich product. To help you get started quickly you can refer to the use cases that best fulfill your needs:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/Getting-Started-With-NDepend.aspx"
+tags = ["2013,", "2015,", "2017,", "2019,", "2022,", "analyzing", "applications", "cases", "code quality", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "learn.microsoft.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/visual-studio-dependency-graph"]
+title = "Visual Studio - Explore existing .net code architecture"
+description = "In this article you'll learn how to benefit from NDepend's dependency graph in order to explore your existing code architecture in the most comprehensive way."
+full_description = "The NDepend dependency graph has been completely rebuilt within NDepend version 2020.1 released in April 2020. You might have used the NDepend dependency graph in the past but the new graph is certainly worth a try because it represents an important milestone in how code can be explored and navigated. Depending on the size of the application the default application map is made of application assemblies, namespaces, types or members. The algorithm to chose the level of elements shown on map is simple: it attempts to have around 1.000 elements. Search for elements by name on large graphs consisting of hundreds or thousands of elements in real-time. The short animation below searches all namespaces whose names contain the string customer, selects them and then expands them to show all their children classes. Files and Directories in the Visual Studio Solution Explorer can be dragged and dropped onto the graph. The short animation below shows a graph made of 15,000+ classes of .NET Core 3 with a zoom on System.String and then System.Dictionary<K,V>. Visually cluster nodes have an hexagonal honeycomb icon and their borders are dotted. Edges between cluster nodes are also dotted. Note that the number in parenthesis near Filter counts the number of code elements actually filtered-out. Instead of saving a list of elements shown on graph, the list of actions that leads to the persisted graph is persisted. This way the graph remains in-sync with changes when the code changes. If a pivot element is missing, like for example when attempting to restore an inheritance graph rooted on a base class removed or renamed, the load operation fails and a message is shown to the user explaining that a pivot element cannot be found by name. To get an inheritance graph just select one or several interfaces and click the link Classes Implementer in the navigation bar, or select one or several base classes and click the link Derived Classes in the navigation bar. It is often needed to know the types and methods involved in the coupling between two assemblies or two namespaces. Especially when we want to anticipate the impact of a refactoring."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/visual-studio-dependency-graph"
+tags = ["application", "applications", "architecture", "assembly", "bar,", "bar:", "bitmap", "call", "callees", "callers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/eula"]
+title = "NDepend End-User License Agreement"
+description = "NDepend End User License Agreement"
+full_description = '''EULA – NDepend / VisualNDepend / NDepend.Console / NDepend API / CQLinq Copyright (C) 2004-2025 ZEN PROGRAM END-USER LICENSE AGREEMENT FOR ALL SOFTWARE PRODUCT(S) IMPORTANT- READ CAREFULLY: This ZEN PROGRAM ("ZEN PROGRAM") End-User License Agreement ("EULA") is a legal agreement between you, a developer of software applications, ("Developer End User") and ZEN PROGRAM for all ZEN PROGRAM’s products, controls, source code, demos, intermediate files, media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT(S)") contained in this installation file. Note: In case the terms of this Agreement are in conflict with the terms of any agreement individually negotiated and agreed between ZEN PROGRAM and Licensee, the terms of the latter shall prevail. 1.1. "ZEN PROGRAM" , "We" or “Us” means ZEN PROGRAM. having its principal place of business at 3rd Floor, Rogers House, No.5 President John Kennedy Street, Port Louis, 11307, Republic of Mauritius 1.2. "Licensee" means the sole proprietor or legal entity specified in the Subscription Confirmation. For legal entities, "Licensee" includes any entity which controls, is controlled by, or is under common control with Licensee. For purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares or beneficial ownership of such entity. 2.5. "Product Version" means a release, update, or upgrade of a particular Product that is not identified by ZEN PROGRAM as being made for the purpose of fixing software bugs. 2.6. "Bug Fix Update" for a particular Product Version means a software update or release that is specifically identified by ZEN PROGRAM as a bug fix for that Product Version. 2.7. "NDepend" means all of ZEN PROGRAM individual developer productivity software (as identified on the NDepend website). 2.8. "Subscription Confirmation" means an email confirming Licensee's rights to access and use Products, including NDepend Subscription plans and number of licenses acquired.'''
+year_published = 2025
+clearnet = "https://ndepend.com/eula"
+tags = ["access", "agreement", "code quality", "connect", "damages", "definitions", "disclaimer", "documentation", "end-user", "eula"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "docs.oasis-open.org", "dotnet.microsoft.com", "facebook.com", "github.com", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com"]
+title = "Improve your .NET code quality with NDepend"
+description = """
+Make your .NET code beautiful with ndepend static analysis
+\t\t\t\t\t\t\tMonitor code quality, focus on progress, detect regressions and code smells, generate diagrams and reports, take the right decisions and enforce them. Take back control!
+\t\t\t\t\t\t
+\t\t\t\t\t\t
+\t\t\t\t\t\t\tDownload now."""
+full_description = "Make your .NET code beautiful with ndepend static analysis Monitor code quality, focus on progress, detect regressions and code smells, generate diagrams and reports, take the right decisions and enforce them. Take back control! Download now. Powerful Dependency Graph Navigate your code and make better structural decisions with the most powerful code dependency graph available in the developer tools space. Download now. Get In-Depth Code Quality Web Reports Share detailed web reports with developers and management. The report is seamlessly generated in seconds through a DevOps task. See sample reports here. Download now. Track Roslyn Analyzers and R# Code Inspections results NDepend imports your Roslyn Analyzers and R# Code Inspections issues and sheds light on the ones introduced recently vs. the unresolved and fixed ones. Download now. Azure DevOps and TFS Powerful Extension Quality is checked both in Visual Studio and in the Continuous Integration process. All other DevOps and CI/CD platforms supported. Download now. PASS/FAIL Quality Gates Check Quality Gates are customizable criteria written in C#, that must be verified before committing source or delivering the application to production. Download now. Make the most of your Code Reviews The NDepend report provides an all-in-one view for each source file:diff, issue, regression, coverage, effort-to-fix estimations Download now. Monitor Trending and Evolution Visualize your team’s progress through custom tailored code metrics displayed on smart trend charts. Download now. Manage Legacy Code NDepend’s analytics empowers teams to work more efficiently when updating old code bases Download now. Inspect which Code needs more Tests NDepend goes far beyond raw numbers and implements the latest visualization discoveries to show your code. Download now."
+year_published = 2025
+clearnet = "https://ndepend.com"
+tags = ["8.0,", "9.0,", "action", "analysis", "analyzers", "architecture", "around", "azure", "base", "baseline"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.ndepend.com", "cppdepend.com", "danylkoweb.com", "engineerspock.com", "facebook.com", "growthlabs.marketing", "jarchitect.com", "linkedin.com", "ndepend.uservoice.com", "stackoverflow.com", "twitter.com"]
+
+["https://ndepend.com/Sample-Reports/OnNodaTime/NDependReport.html"]
+title = "NodaTime 3.1.0"
+year_published = 2025
+clearnet = "https://ndepend.com/Sample-Reports/OnNodaTime/NDependReport.html"
+tags = ["3.1.0", "nodatime"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/azure-devops-tfs-vsts-integration-ndepend"]
+title = "Integrate NDepend with Azure DevOps"
+description = ".NET Code Quality in Azure DevOps with the NDepend ADO Extension"
+full_description = "Yes the extension supports both versions : Azure DevOps Services for the cloud version and Azure DevOps Server for the on-premises version. The NDepend extension does not use an endpoint to do the analysis. The NDepend tool is embedded in the extension and all the results are stored as a build artifacts in your server. No data goes outside of your server. To analyse an assembly , NDepend needs also its ODB file. And if for some assemblies the PDB file is not generated the assembly will not be parsed. More information in the Understand the NDepend Analysis Inputs documentation. To exclude some of your projects, you have to specify an NDepend project file (.ndproj extension) to your task. In such NDepend project you can specify the assemblies to analyze, and enable the Analyze only the assemblies from the NDepend Task flag (see the screenshot in the Build Task section of this documentation). The coverage ratio reported by the NDepend Azure DevOps/TFS extension can differ from the one you get from Visual Studio. This is because the NDepend coverage doesn't consider C# open and close braces characters { } as line of code that can be tested. If the discrepency is too high to be explained this way, maybe you need to take account of a .runsettings file during NDepend analysis. How to specify a .runsettings file is explained here. To have the same results you have to use the same .ndproj project file, define the same baseline and import the same coverage data. The NDepend Azure DevOps extension consists of a build task that analyses code and code coverage data yielded by the build process. The NDepend Azure DevOps/TFS hub presents the results which embed the NDepend dashboard and makes data actionable by drilling down into any item through a single click. The hub's Dashboard shows a recap of the most relevant data including technical debt estimations, code size, Quality Gates status, rules and issues numbers. A TFS build can be used as a baseline. All dashboard data is then diff-ed since the baseline. Each Dashboard item is clickable to view more."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/azure-devops-tfs-vsts-integration-ndepend"
+tags = [".runsettings", "access", "activate", "ado", "against", "agent.", "analysis", "analysis?", "analyze", "analyzed?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "linkedin.com", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/default"]
+title = "Improve your .NET code quality with NDepend"
+description = """
+Make your .NET code beautiful with ndepend static analysis
+\t\t\t\t\t\t\tMonitor code quality, focus on progress, detect regressions and code smells, generate diagrams and reports, take the right decisions and enforce them. Take back control!
+\t\t\t\t\t\t
+\t\t\t\t\t\t
+\t\t\t\t\t\t\tDownload now."""
+full_description = "Make your .NET code beautiful with ndepend static analysis Monitor code quality, focus on progress, detect regressions and code smells, generate diagrams and reports, take the right decisions and enforce them. Take back control! Download now. Powerful Dependency Graph Navigate your code and make better structural decisions with the most powerful code dependency graph available in the developer tools space. Download now. Get In-Depth Code Quality Web Reports Share detailed web reports with developers and management. The report is seamlessly generated in seconds through a DevOps task. See sample reports here. Download now. Track Roslyn Analyzers and R# Code Inspections results NDepend imports your Roslyn Analyzers and R# Code Inspections issues and sheds light on the ones introduced recently vs. the unresolved and fixed ones. Download now. Azure DevOps and TFS Powerful Extension Quality is checked both in Visual Studio and in the Continuous Integration process. All other DevOps and CI/CD platforms supported. Download now. PASS/FAIL Quality Gates Check Quality Gates are customizable criteria written in C#, that must be verified before committing source or delivering the application to production. Download now. Make the most of your Code Reviews The NDepend report provides an all-in-one view for each source file:diff, issue, regression, coverage, effort-to-fix estimations Download now. Monitor Trending and Evolution Visualize your team’s progress through custom tailored code metrics displayed on smart trend charts. Download now. Manage Legacy Code NDepend’s analytics empowers teams to work more efficiently when updating old code bases Download now. Inspect which Code needs more Tests NDepend goes far beyond raw numbers and implements the latest visualization discoveries to show your code. Download now."
+year_published = 2025
+clearnet = "https://ndepend.com/default"
+tags = ["8.0,", "9.0,", "action", "analysis", "analyzers", "architecture", "around", "azure", "base", "baseline"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/resources.aspx"]
+title = "Resources | NDepend"
+description = "Resources and additional information about the .NET static analysis tool NDepend. Guides, community projects, case studies, and more."
+full_description = "Siemens Healthcare uses NDepend to ensure the quality of their products. Their Architects use NDepend's custom code metrics to maintain their 5 million plus lines of code across a team of 200 developers. Stago uses NDepend as the backbone of its development effort. The tool ensures they always deliver quality code, on time, on budget and with the minimum required level of effort. We have compiled a quick getting started guide to help you out with your trial. We have collected some resources and guides from both our own site and from the .NET community to help developers and architects get a jump start in using NDepend. A community collection of great blog writing around the topics of static analysis, code quality, and NDepend. We particularly looked for problems solved with NDepend and how code quality and testing fit into their development process."
+year_published = 2025
+clearnet = "https://ndepend.com/resources.aspx"
+tags = ["better", "book", "case", "code", "code quality", "community", "connect", "documentation", "getting", "guide"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "devblogs.microsoft.com", "docs.microsoft.com", "docs.oasis-open.org", "dotnet.microsoft.com", "elmah.io", "github.com", "innovasys.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "ncover.com", "ndepend.uservoice.com", "postsharp.net", "reflector.red-gate.com", "stackoverflow.com", "volumic3d.com"]
+
+["https://ndepend.com/docs/code-metrics"]
+title = "NDepend Code Metrics Definitions"
+description = "Descriptions and uses of NDepend's 100 plus different C# code metrics. View your codebase from any angle, and tackle the problems you feel are important."
+full_description = "To learn metrics, you can print this Placemat Visualization Expert by Stuart Celarier MVP (Corillian) or you can print this Metrics Cheat Sheet by Frank-Leonardo Quednau' NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbAssemblies, NbNamespaces, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbNamespaces, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, Assembly level, Afferent coupling (Ca), Efferent coupling (Ce), Relational Cohesion(H), Instability (I), Abstractness (A), Distance from main sequence (D), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, Namespace level, Afferent coupling at namespace level (NamespaceCa), Efferent coupling at namespace level (NamespaceCe), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbMethods, NbFields, NbProperties, NbEvents, NbInterfacesImplemented, Type level, Type rank, Afferent coupling at type level (TypeCa), Efferent coupling at type level (TypeCe), Lack of Cohesion Of Methods (LCOM), Lack of Cohesion Of Methods Henderson-Sellers (LCOM HS), Code Source Cyclomatic Complexity, IL Cyclomatic Complexity (ILCC), Size of instance, Association Between Class (ABC) Number of Children (NOC), Depth of Inheritance Tree (DIT), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, Method level, Method rank, Afferent coupling at method level (MethodCa), Efferent coupling at method level (MethodCe), Code Source Cyclomatic Complexity, IL Cyclomatic Complexity (ILCC), IL Nesting Depth, NbParameters, NbVariables, NbOverloads, PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered, PercentageBranchCoverage"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/code-metrics"
+tags = ["100+", "abstract", "abstractness", "afferent", "application", "assemblies", "association", "between", "characters:", "children"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "linkedin.com", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/reporting-roslyn-analyzers-issues"]
+title = "Reporting Roslyn Analyzers' and reSharper Code Inspections' Issue"
+description = "This document explains how Roslyn Analyzers' issues can be reported by NDepend"
+full_description = "See Roslyn Analyzers Issues Import in NDepend and ReSharper Code Inspections Issues Import in NDepend that explains how to import issues. Issues generated by any Roslyn Analyzer and ReSharper Code Inspection can be imported into the NDepend model. There are several reasons why you might want to do this: Roslyn Analyzers and ReSharper Code Inspections issues are first-class citizens in NDepend. They are shown side by side with issues generated by CQLinq rules everywhere in the product."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/reporting-roslyn-analyzers-issues"
+tags = ["achieve", "analyzer", "analyzers", "analyzers'", "build", "code", "code quality", "code:", "comprehensive", "conditions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/ramp-up-in-a-new-code-base"]
+title = "Ramp Up in a New Code Base"
+description = "Ramp up in a new code base, understand code and visualize code with the NDepend dependency graph and matrix"
+full_description = "A usual task for a developer is to discover a new code base to start working on it. The best way to ramp up in a new codebase is to understand the dependencies between its modules and then follow critical paths. NDepend offers the most powerful code structure visualization tools available in the software industry. When the code is well visualized it can be understood, explained and mastered at a deeper level than ever before. No matter how large and complex is your code base, the NDepend dependency graph will help visualize it and understand it. The NDepend dependency graph proposes various tools to navigate and understand your code. To quickly understand the interactions in a complex set of classes, files and directories can be drag and dropped from the Visual Studio Solution Explorer to the graph: The larger the code base the more difficult it is to understand it. This is why the NDepend graph is optimized. For example it handles live all the complexity of the 15,000+ classes of the .NET base class library. This 6 minutes video below presents a tour of scenarios that can be handled with the NDepend dependency graph. NDepend also proposes a Dependency Matrix to visualize and understand code. In most scenarios the dependency graph is more intuitive and more informative than the matrix but there are some situations that are better handled by the matrix. For example in the NDepend OSS Power Tools documentation it is valuable to visualize which power tool uses which NDepend API type. The best way to present this architecture information is the dependency matrix: This blog post Clean Architecture for ASP.NET Core Solution: A Case Study relies on various NDepend features (graph, matrix, metrics, rules...) to present and validate the clean architecture of an ASP.NET Core application."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/ramp-up-in-a-new-code-base"
+tags = ["architecture", "base", "call", "case", "clean", "code", "code architecture", "code structure", "connect", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/contact"]
+title = "Contact Us"
+description = "Contact information for Ndepend's different departments, for any questions, support, suggestions, or just to say hello."
+year_published = 2025
+clearnet = "https://ndepend.com/contact"
+tags = ["code quality", "connect", "contact", "documentation", "information?", "meet", "ndepend", "ndepend.", "need", "product"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "jarchitect.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/audit-legacy-code"]
+title = "Audit Legacy Code"
+description = "Audit any legacy .NET code base with NDepend. Save time and take rational decisions based on facts"
+full_description = "Many .NET consultants worldwide are using NDepend to both save time and perform better audit of their client's code. Once you are acquainted with NDepend various features, assessing the health of a legacy code base and starting to provide valuable advices is a matter of minutes. The dashboard provides a SQALE Technical-Debt rate, here it is D. NDepend estimates that it took 50 human-days to develop this code base. And to fix all issues the tool estimates it would take 11 human-days. Hence this code base contains more than 20% of technical-debt (11 days / 50 days). This 20%+ value leads to a D rating. By clicking the 479 issues label on the Dashboard with Group issues by rules we immediately see which rules generate most of the technical-debt. Here the code base is poorly covered by tests (32.67%) and NDepend estimates that it would take almost 8 human-days (7 days + 7 hours) to write tests to cover it all. This is not surprising that 72% of the technical debt (8 days on a total of 11 days) comes from poorly covered code. Originally the technical-debt metaphor concerned only untested code and then other kind of code-smells added up. We received good feedback from the community about the accuracy of these technical-debt cost estimations. If needed the estimations can easily be adjusted to each situation. These estimations can help the management to take rational decisions based on facts to improve the code base. The Metric view lines of code vs. code coverage immediately shows which class is well covered or not:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/audit-legacy-code"
+tags = ["audit", "based", "code", "connect", "decisions", "documentation", "facts", "information?", "legacy", "meet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "learn.microsoft.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/devops-quality-gate-strategy"]
+title = "Implement a Quality Gate strategy in your DevOps to fail the build when required"
+description = "Implement a Quality Gate strategy in your DevOps to fail the build when some comitted code does'nt respect quality criterias"
+full_description = "A quality gate is a code quality goal. A quality goal must be enforced before releasing and eventually, before committing to source control. A dozen of default Quality Gates are proposed by NDepend related to measures like technical debt amount, code coverage or amount of issues with particular severity. Quality Gates can be used to fail the build when certain criteria are not-verified. When at least one quality gate fails, NDepend.Console.exe returns a non-zero value that can be used to fail the build. In the Azure DevOps / TFS extension there is the setting Stop the build when at least one Quality Gate fails. The NDepend GitHub Action proposes a setting stopIfQGFailed to fail the build if at least one Quality Gate fails. What makes NDepend unique is that a quality gate is a textual C# LINQ Query that can be easily created, edited and customized. For example if you wish to enforce a certain amount of code coverage through a quality gate, you can just write: Notice also the special clauses failif (mandatory clause) and warnif (optional clause) that are specific to NDepend CQLinq. codebase.PercentageCoverage is actually a C# statement that NDepend evaluates. Both the quality gate fail/warn thresholds and its logic are embedded into a short textual query that can be easily edited. The quality gate logic can query anything:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/devops-quality-gate-strategy"
+tags = ["azure", "build", "build failure", "code", "codebase", "connect", "coverage", "create", "devops", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "linkedin.com", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/Getting-Started-With-NDepend"]
+title = "Getting Started with NDepend on Windows"
+description = "A getting started guide and documentation for NDepend on Windows, the .NET static analysis and data visualization tool."
+full_description = "The NDepend Visual Studio extension has no impact on the Visual Studio process performances. However if you prefer you can use 100% of NDepend features outside Visual Studio thanks to the standalone executable VisualNDepend.exe. To do so: NDepend generates interactive web reports that provides valuable and detailed insights about your .NET code quality: You can generate the report using a trial license, a Build-Machine license or with the NDepend GitHub Action, which requires a GitHub Action license. NDepend is a feature rich product. To help you get started quickly you can refer to the use cases that best fulfill your needs:"
+year_published = 2025
+clearnet = "https://ndepend.com/docs/Getting-Started-With-NDepend"
+tags = ["2013,", "2015,", "2017,", "2019,", "2022,", "analyzing", "applications", "cases", "code quality", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "dsmweb.org", "engineerspock.com", "github.com", "growthlabs.marketing", "iprcom.com", "jarchitect.com", "josefpihrt.github.io", "learn.microsoft.com", "linkedin.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "twitter.com", "visualstuart.net"]
+
+["https://ndepend.com/docs/ndepend-github-action"]
+title = "NDepend GitHub Action"
+description = "How to use the NDepend GitHub Action"
+full_description = "This GitHub Action lets run an NDepend analysis after each rebuild and explore results in a shared interactive HTML+js report (see some sample reports here). Reports generated by the GitHub action contain links to code source hosted by GitHub. This Action can also fail the build upon some Quality Gate(s) failure and provide code quality estimations for each build or each pull-request. With a Developer license, the standalone app VisualNDepend.exe or the NDepend Visual Studio extension can download the NDepend Github Action analysis results locally for further exploration. From the left side bar goto Secrets > Actions, create a new secret named NDependLicense and paste the trial activation data obtained. The NDepend GitHub Action license activation is similar to the trial activation explained above. Associate your license key XYZ with your GitHub account from this url: https://www.ndepend.com/activation_githubaction?license=XYZ From there you obtain a textual activation data. Then go to the Settings of your GitHub repository. From the left side bar goto Secrets > Actions, create a new secret named NDependLicense and paste the textual activation data obtained. The ndepend action must be added after your build and unit testing actions, note that only the license parameter is mandatory. After the analysis, the ndepend result is stored as an artifact of your build, and to explore it you have two options: A quality gate is a code quality goal. Such quality goal must be enforced before releasing and eventually, before committing to source control. A dozen of default quality gates are proposed by NDepend. They are related to measures like technical debt amount, code coverage or amount of issues with particular severity. NDepend makes it easy to modify existing quality gates or create your own ones. This is explained here. If the build fails because of a quality gate failure and this option stopIfQGFailed, this is explained with an annotation: The detail of which quality gate(s) fail is then shown in the build summary (see the screenshot below in the next section)."
+year_published = 2025
+clearnet = "https://ndepend.com/docs/ndepend-github-action"
+tags = ["28-day", "access", "account", "action", "actions", "activate", "activation", "analyzed", "artifact", "baseline"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "devblogs.microsoft.com", "docs.github.com", "dotnet.microsoft.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "iprcom.com", "josefpihrt.github.io", "marketplace.visualstudio.com", "mitpress.mit.edu", "ncover.com", "ndepend.uservoice.com", "stackoverflow.com", "visualstuart.net"]
+
+["https://ndepend.com/Docs/Code-Metrics"]
+title = "NDepend Code Metrics Definitions"
+description = "Descriptions and uses of NDepend's 100 plus different C# code metrics. View your codebase from any angle, and tackle the problems you feel are important."
+full_description = "To learn metrics, you can print this Placemat Visualization Expert by Stuart Celarier MVP (Corillian) or you can print this Metrics Cheat Sheet by Frank-Leonardo Quednau' NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbAssemblies, NbNamespaces, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbNamespaces, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, Assembly level, Afferent coupling (Ca), Efferent coupling (Ce), Relational Cohesion(H), Instability (I), Abstractness (A), Distance from main sequence (D), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbTypes, NbMethods, NbFields, NbProperties, NbEvents, Namespace level, Afferent coupling at namespace level (NamespaceCa), Efferent coupling at namespace level (NamespaceCe), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, NbMethods, NbFields, NbProperties, NbEvents, NbInterfacesImplemented, Type level, Type rank, Afferent coupling at type level (TypeCa), Efferent coupling at type level (TypeCe), Lack of Cohesion Of Methods (LCOM), Lack of Cohesion Of Methods Henderson-Sellers (LCOM HS), Code Source Cyclomatic Complexity, IL Cyclomatic Complexity (ILCC), Size of instance, Association Between Class (ABC) Number of Children (NOC), Depth of Inheritance Tree (DIT), PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered NbLinesOfCode, NbLinesOfComment, PercentageComment, NbILInstructions, Method level, Method rank, Afferent coupling at method level (MethodCa), Efferent coupling at method level (MethodCe), Code Source Cyclomatic Complexity, IL Cyclomatic Complexity (ILCC), IL Nesting Depth, NbParameters, NbVariables, NbOverloads, PercentageCoverage, NbLinesOfCodeCovered, NbLinesOfCodeNotCovered, PercentageBranchCoverage"
+year_published = 2025
+clearnet = "https://ndepend.com/Docs/Code-Metrics"
+tags = ["100+", "abstract", "abstractness", "afferent", "application", "assemblies", "association", "between", "characters:", "children"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "blog.ndepend.com", "blogs.msdn.com", "cppdepend.com", "danylkoweb.com", "engineerspock.com", "facebook.com", "github.com", "growthlabs.marketing", "hanselman.com", "icsharpcode.net", "iprcom.com", "jarchitect.com", "linkedin.com", "ncover.com", "ndepend.uservoice.com", "realfiction.net", "stackoverflow.com", "twitter.com", "visualstuart.net"]

@@ -1,0 +1,221 @@
+["https://zsh.sourceforge.net/Arc/index.html"]
+title = "ZSH - Mirrors"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/index.html"
+tags = ["mirrors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "apress.com", "bash2zsh.com", "cygwin.com", "developer.symbian.com", "en.wikipedia.org", "ftp.funet.fi", "ftp.lilypond.org", "gitlab.com", "gnu.org", "nongnu.org", "pubs.opengroup.org", "reblaze.com", "sourceforge.net", "sunsite.icm.edu.pl", "symbian.com", "wwwcn.cern.ch", "zsh-nt.sourceforge.net", "zsh.sourceforge.io", "zshbuch.org"]
+
+["https://zsh.sourceforge.net/Contrib"]
+title = "ZSH - User Contributions"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Contrib"
+tags = ["contributions", "user"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Arc/mlist.html"]
+title = "ZSH - Mailing Lists"
+full_description = "You will receive a confirmation request. Reply to the request to authorise your subscription to (or unsubscription from) the mailing list. You must unsubscribe from the mailing list you subscribed to. If you don't know which list you are subscribed to, look in the headers of mailing list messages. The should be numerous pointers (e.g. Mailing-List: header) YOU ONLY NEED TO JOIN ONE OF THE MAILING LISTS AS THEY ARE NESTED.All submissions to zsh-users are automatically forwarded to zsh-workers. If you have problems subscribing/unsubscribing to any of the mailing lists, send mail to the mailing list administrator <zsh-announce-owner@zsh.org> There is also a hypertext archive, maintained by zsh.org volunteers, available at https://www.zsh.org/mla/."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/mlist.html"
+tags = ["archives", "different", "join", "lists", "mailing", "method", "n.b.", "need", "nested.", "subscribed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "github.com", "gitlab.com", "gnu.org", "libera.chat", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Arc"]
+title = "ZSH - Mirrors"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc"
+tags = ["mirrors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "sourceforge.net", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Intro/intro_toc.html"]
+title = "An Introduction to the Z Shell - Table of Contents"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Intro/intro_toc.html"
+tags = ["introduction", "shell"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "nongnu.org", "sourceforge.net", "sourceware.org", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/News"]
+title = "News about ZSH"
+full_description = "This is likely to be the last 4.0 release. After 4.1.2, there will be a 4.2.0 as the 4.1 line looks stable. The detailed changelog for the 4.0 series is available. There is one new feature: the option KSH_TYPESET provides compatibility with other shells for assignment arguments of `typeset', `export' and related builtins. Work has also started on the 4.1 branch. New features include `for' loops taking multiple parameter names before the `in' or left parenthesis, each of which takes one word from the list on each iteration."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/News"
+tags = ["3.0.5", "3.0.6", "3.0.7", "3.0.8", "3.1.6", "3.1.7", "3.1.9", "4.0.1", "4.0.2", "4.0.4"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "apress.com", "developer.symbian.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "linktr.ee", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io", "zshwiki.org"]
+
+["https://zsh.sourceforge.net/FAQ/index.html"]
+title = "Z-Shell Frequently-Asked Questions"
+full_description = "This document contains a list of frequently-asked (or otherwise significant) questions concerning the Z-shell, a command interpreter for many UNIX systems which is freely available to anyone with FTP access. Zsh is among the most powerful freely available Bourne-like shells for interactive use. If you have never heard of sh, csh or ksh, then you are probably better off to start by reading a general introduction to UNIX rather than this document. If you just want to know how to get your hands on the latest version, skip to question 1.6; if you want to know what to do with insoluble problems, go to 6.2."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/FAQ/index.html"
+tags = ["$editor?", "$var", ".zshrc", "1.1:", "1.2:", "1.3:", "1.4:", "1.5:", "1.6:", "1.7:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "apress.com", "bash2zsh.com", "cygwin.com", "developer.symbian.com", "en.wikipedia.org", "ftp.funet.fi", "ftp.lilypond.org", "gitlab.com", "gnu.org", "nongnu.org", "pubs.opengroup.org", "reblaze.com", "sourceforge.net", "sunsite.icm.edu.pl", "symbian.com", "wwwcn.cern.ch", "zsh-nt.sourceforge.net", "zsh.sourceforge.io", "zshbuch.org"]
+
+["https://zsh.sourceforge.net/Arc/source.html"]
+title = "ZSH - Source download"
+full_description = "As xzed tar archive: zsh-5.9.tar.xz (3.2MiB, gpg signature), zsh-5.9-doc.tar.xz (3.1MiB, gpg signature)"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/source.html"
+tags = ["download", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/links.html"]
+title = "ZSH - Useful Links"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/links.html"
+tags = ["articles", "books", "informational", "links", "sites", "useful", "workers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "amazon.com", "apress.com", "bash2zsh.com", "bugs.debian.org", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "grml.org", "libera.chat", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Doc"]
+title = "ZSH - Documentation"
+full_description = "The documentation is prepared using Yodl which provides the conversion to troff man pages and to TeXinfo. The HTML version is derived from the TeXinfo version using texi2html."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Doc"
+tags = ["documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "nongnu.org", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/releases.html"]
+title = "ZSH - Release Notes"
+full_description = '''1. "function -T { ... }". It used to define a function named "-T". It now defines and executes an anonymous function with single-level tracing enabled --- same as "function f { ... }; functions -T f; f", but without naming the function. 2. "function -T foo { ... }". It used to define two functions, named "-T" and "foo" (see the MULTI_FUNC_DEF option). It now defines a function "foo" with tracing enabled. 3. "function -- { ... }". It used to define a function named "--". It now defines and executes an anonymous function. The "--" is taken to be an end-of-options guard (same as "ls --"). CVE-2021-45444: Some prompt expansion sequences, such as %F, support 'arguments' which are themselves expanded in case they contain colour values, etc. This additional expansion would trigger PROMPT_SUBST evaluation, if enabled. This could be abused to execute code the user didn't expect. e.g., given a certain prompt configuration, an attacker could trick a user into executing arbitrary code by having them check out a Git branch with a specially crafted name. This is fixed in the shell itself by no longer performing PROMPT_SUBST evaluation on these prompt-expansion arguments. Users who are concerned about an exploit but unable to update their binaries may apply the partial work-around described in the file Etc/CVE-2021-45444-VCS_Info-workaround.patch included with the shell source. [ Reported by RyotaK. Additional thanks to Marc Cornellà. ] For some time the shell has had a POSIX_TRAPS option which determines whether the EXIT trap has POSIX behaviour (the trap is only run at shell exit) or traditional zsh behaviour (the trap is run once and discarded when the enclosing fuction or shell exits, whichever happens first). The use of this option has now been made "sticky" on the EXIT trap --- in other words, the setting of the option at the point where the trap is set now determines whether the trap has POSIX or traditional zsh behaviour. This means that changing the option after the trap was set no longer has any effect.'''
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/releases.html"
+tags = ["3.0.6", "3.1.6", "3.1.7", "3.1.8", "3.1.9", "4.0.1", "4.2.0", "4.3.10", "4.3.11", "4.3.12"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "amazon.com", "apress.com", "bash2zsh.com", "bugs.debian.org", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "grml.org", "libera.chat", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net"]
+title = "ZSH - THE Z SHELL"
+full_description = "Zsh is a shell designed for interactive use, although it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh; many original features were added.The introductory document details some of the unique features of zsh. It assumes basic knowledge of the standard UNIX shells; the intent is to show a reader already familiar with one of the other major shells what makes zsh more useful or more powerful. This document is not at all comprehensive; read the manual entry for a description of the shell that is complete, concise and up-to-date, although somewhat overwhelming and devoid of examples. Alternatively, the user guide offers wordy explanations of many of the shell's features. If you want to read something that has been polished by a professional editor you can buy the book."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net"
+tags = ["documentation", "download", "information", "shell", "support"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "sourceforge.net", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Arc/irc.html"]
+title = "ZSH - IRC"
+full_description = "(Prior to 2021-05-19 we used Freenode; references to that IRC network for Zsh are stale and should be updated.)"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/irc.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "github.com", "gitlab.com", "gnu.org", "libera.chat", "sourceforge.net", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Refcard"]
+title = "ZSH - Reference Card"
+full_description = "This is a reference card for zsh. It was created based on version 3.1.9 so is a little out-of-date. It is seven pages long, even with three columns per page, so you will need a very big piece of card to stick it to. It is only formatted for A4 paper, since it tries to use the paper to the maximum; I would be glad to support letter format if someone sends me appropriate changes. Meanwhile, Maciej Kalisiak suggests simply rescaling using the widely available psnup program from psutils: The reference card does not currently cover the shell's line editor (zle), which may (or may not) appear in a separate card."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Refcard"
+tags = ["card", "reference"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "apress.com", "developer.symbian.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "linktr.ee", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io", "zshwiki.org"]
+
+["https://zsh.sourceforge.net/Arc/list-contents.html"]
+title = "ZSH - Archive contents"
+full_description = "The following is a list of the files for the current release found at the master archive and its mirrors. The archives also contain beta versions of zsh. The developers would like to caution use of these beta versions as the code may not be very stable. In each archive you should be able to find an MD5SUM file containing Message digest checksums for all files within the archive and pubring.pgp file containing some of the developer's public pgp keys. Filenames ending in .gz are compressed using GNU gzip and those ending in .bz2 are compressed using bzip2."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/list-contents.html"
+tags = ["archive", "contents", "development", "md5sum", "meta-faq", "zsh-3.0.7-3.0.8.diff.gz", "zsh-doc.tar.bz2", "zsh-doc.tar.gz", "zsh.tar.bz2", "zsh.tar.gz"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "github.com", "gitlab.com", "gnu.org", "libera.chat", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/Arc/git.html"]
+title = "ZSH - Git"
+full_description = "The source code is managed in a Git repository hosted by SourceForge. To clone the repository use the following command. To build it, you will need to run Util/preconfig to build the configure script. This requires that you have a copy of autoconf installed. Documentation is pre-built for the releases so unless you have Yodl installed builds from Git sources will fail when they come to build documentation. This is after zsh itself has been built so don't let that error worry you. Be aware that if you obtain your copy of Zsh in any of the ways described on this page, it is likely to contain many more bugs than the official releases. If you're not interested in having the very latest features and just want to get on with some real work get the latest stable release. Contributions should be sent to the zsh-workers@zsh.org mailing list in the form of patch files. To generate a patch, you can use git diff. We prefer patches to be included inline in the body of the message because it makes it easier to comment on particular lines. However, if you can't do that without your e-mail program wrapping long lines, then attachments are also fine. Note that you don't as such need to be subscribed to post to the mailing list. It does have a spam filter that is sometimes over zealous so please keep an eye on the list archives to ensure that your message arrives. There is an unofficial mirror of the git repository at github. The associated issue tracket is not used but in the case of contributions to completion functions, you are welcome to submit pull requests."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Arc/git.html"
+tags = ["code", "contributing", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "github.com", "gitlab.com", "gnu.org", "sourceforge.net", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/FAQ"]
+title = "Z-Shell Frequently-Asked Questions"
+full_description = "This document contains a list of frequently-asked (or otherwise significant) questions concerning the Z-shell, a command interpreter for many UNIX systems which is freely available to anyone with FTP access. Zsh is among the most powerful freely available Bourne-like shells for interactive use. If you have never heard of sh, csh or ksh, then you are probably better off to start by reading a general introduction to UNIX rather than this document. If you just want to know how to get your hands on the latest version, skip to question 1.6; if you want to know what to do with insoluble problems, go to 6.2."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/FAQ"
+tags = ["$editor?", "$var", ".zshrc", "1.1:", "1.2:", "1.3:", "1.4:", "1.5:", "1.6:", "1.7:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "nongnu.org", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/about.html"]
+title = "ZSH - About these Pages"
+full_description = "These hypertext pages contain a collection of information concerning the Z-shell (ZSH), a freely available command interpreter for many UNIX systems. The information is provided as a series of links on the World Wide Web although many of the links are local now. This project began with the HTML'ification of the ZSH Frequently Asked Questions (FAQ). This is now partially integrated with hypertext links to the ZSH manual pages and indices. Note, however, that this hypertext manual may be temporarily lagging behind the development version of ZSH."
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/about.html"
+tags = ["pages"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "apress.com", "developer.symbian.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "linktr.ee", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io", "zshwiki.org"]
+
+["https://zsh.sourceforge.net/disclaimer.html"]
+title = "Disclaimer"
+full_description = "If you notice something incorrect or have any comment regarding the ZSH page contents, feel free to mail us at Zsh-maintainers"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/disclaimer.html"
+tags = ["disclaimer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "apress.com", "developer.symbian.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "linktr.ee", "nongnu.org", "reblaze.com", "sourceforge.net", "sourceware.org", "symbian.com", "wwwcn.cern.ch", "zsh.org", "zsh.sourceforge.io", "zshwiki.org"]
+
+["https://zsh.sourceforge.net/Guide"]
+title = "A User's Guide to ZSH"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Guide"
+tags = ["guide", "user's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "nongnu.org", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]
+
+["https://zsh.sourceforge.net/FAQ/zshfaq01.html"]
+title = "Z-Shell Frequently-Asked Questions"
+full_description = '''Information on zsh is available via the World Wide Web. The URL is https://zsh.sourceforge.io/ . The server provides this FAQ and much else and is now maintained by the zsh workers (email zsh-workers@zsh.org). The FAQ is at https://zsh.sourceforge.io/FAQ/ . The site also contains some contributed zsh scripts and functions; we are delighted to add more, or simply links to your own collection. This document was originally written in YODL, allowing it to be converted easily into various other formats. The master source file lives at https://zsh.sourceforge.io/FAQ/zshfaq.yo and the plain text version can be found at https://zsh.sourceforge.io/FAQ/zshfaq.txt . Another useful source of information is the collection of FAQ articles posted frequently to the Usenet news groups comp.unix.questions, comp.unix.shells and comp.answers with answers to general questions about UNIX. The fifth of the seven articles deals with shells, including zsh, with a brief description of differences. There is also a separate FAQ on shell differences and how to change your shell. Usenet FAQs are available via FTP from rtfm.mit.edu and mirrors and also on the World Wide Web; see You can also get it via email by emailing mail-server@rtfm.mit.edu with, in the body of the message, send faqs/unix-faq/shell/zsh. The latest version of this FAQ is also available directly from any of the zsh archive sites listed in question 1.6. I have put together a user guide to complement the manual by explaining the most useful features of zsh in a more easy to read way. This can be found at the zsh web site: https://zsh.sourceforge.io/Guide/ (As a method of reading the following in Emacs, you can type \M-2 \C-x $ to make all the indented text vanish, then \M-0 \C-x $ when you are on the title you want.) Zsh is a UNIX command interpreter (shell) which of the standard shells most resembles the Korn shell (ksh); its compatibility with the 1988 Korn shell has been gradually increasing. It includes enhancements of many types, notably in the command-line editor, options for customising its behaviour, filename globbing, features to make C-shell (csh) users feel more at home and extra features drawn from tcsh (another `custom' shell).'''
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/FAQ/zshfaq01.html"
+tags = ["1.1:", "1.2:", "1.3:", "1.4:", "1.5:", "1.6:", "1.7:", "access:", "chapter", "don't"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "apress.com", "bash2zsh.com", "cygwin.com", "developer.symbian.com", "en.wikipedia.org", "ftp.funet.fi", "ftp.lilypond.org", "gitlab.com", "gnu.org", "nongnu.org", "pubs.opengroup.org", "reblaze.com", "sourceforge.net", "sunsite.icm.edu.pl", "symbian.com", "wwwcn.cern.ch", "zsh-nt.sourceforge.net", "zsh.sourceforge.io", "zshbuch.org"]
+
+["https://zsh.sourceforge.net/FAQ/META.html"]
+title = "Zsh META-FAQ"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/FAQ/META.html"
+tags = ["australia", "finland", "ftp.cs.elte.hu", "ftp.math.gatech.edu", "germany", "meta-faq", "poland", "primary", "sites"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adamspiers.org", "apress.com", "bash2zsh.com", "developer.symbian.com", "en.wikipedia.org", "ftp.funet.fi", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "nongnu.org", "pubs.opengroup.org", "reblaze.com", "sourceforge.net", "sourceware.org", "sunsite.icm.edu.pl", "symbian.com", "wwwcn.cern.ch", "zsh.sourceforge.io", "zshbuch.org"]
+
+["https://zsh.sourceforge.net/Guide/zshguide.html"]
+title = "A User's Guide to the Z-Shell"
+year_published = 2025
+clearnet = "https://zsh.sourceforge.net/Guide/zshguide.html"
+tags = ["1.1:", "1.2:", "1.3:", "1.4:", "2.1:", "2.2:", "2.3:", "2.4:", "2.5:", "2003/03/23"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "en.wikipedia.org", "ftp.lilypond.org", "github.com", "gitlab.com", "gnu.org", "libera.chat", "nongnu.org", "sourceforge.net", "sourceware.org", "zsh.org", "zsh.sourceforge.io"]

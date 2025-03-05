@@ -1,0 +1,27 @@
+["https://sqlfum.pt/about"]
+title = "sequel  fumpt"
+full_description = "sqlfmt is an online SQL formatter. It is pronounced sequel fumpt. Its purpose is to beautifully format SQL statements. There is a box in which to paste or type SQL statements. Multiple statements are supported by separating them with a semicolon (;). The slider below the box controls the desired maximum line width in characters. Various options on the side control tab/indentation width, the use of spaces or tabs, simplification, and alignment modes. Simplification causes the formatter to remove unneeded parentheses and words when the meaning will be the same without them. There are four alignment modes. The default, no, uses left alignment. partial right aligns keywords at the width of the longest keyword at the beginning of all lines immediately below. full is the same as partial but the keywords AND and OR are deindented, in a style similar to the sqlite tests. other is like partial but instead of deindenting AND and OR, their arguments are instead indented."
+year_published = 2025
+clearnet = "https://sqlfum.pt/about"
+tags = ["background", "features", "full:", "other:", "partial:", "usage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cockroachlabs.com", "github.com", "homepages.inf.ed.ac.uk", "prettier.io", "twitter.com", "youtu.be"]
+
+["https://sqlfum.pt/editor"]
+title = "sequel  fumpt"
+year_published = 2025
+clearnet = "https://sqlfum.pt/editor"
+tags = ["configuration", "editor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cockroachlabs.com", "github.com", "homepages.inf.ed.ac.uk", "prettier.io", "twitter.com", "youtu.be"]
+
+["https://sqlfum.pt"]
+title = "sequel  fumpt"
+year_published = 2025
+clearnet = "https://sqlfum.pt"
+tags = ["fumpt", "sequel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["none"]

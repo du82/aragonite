@@ -1,184 +1,359 @@
-["https://news.ycombinator.com/jobs"]
-title = "jobs | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/jobs"
-category = "SitesList"
-tags = ["agent", "agents", "ai-driven", "alto", "android", "applied", "artie", "backend,", "berlin", "build"]
-language = "en"
-internal-references = ["none"]
-external-references = ["audacityteam.org", "blunderchess.net", "chadnauseam.com", "donhopkins.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jellyfin.org", "jobs.ashbyhq.com", "jobs.lever.co", "keelinglabs.com", "nabraj.com", "nango.dev", "nti-group.com", "perplexity.ai", "poweroutage.us", "quantamagazine.org", "source-robotics.github.io", "svix.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/lists"]
-title = "Lists | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/lists"
-category = "SitesList"
-tags = ["hacker", "news"]
-language = "en"
-internal-references = ["none"]
-external-references = ["audacityteam.org", "blunderchess.net", "chadnauseam.com", "donhopkins.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jellyfin.org", "jobs.ashbyhq.com", "jobs.lever.co", "keelinglabs.com", "nabraj.com", "nango.dev", "nti-group.com", "perplexity.ai", "poweroutage.us", "quantamagazine.org", "source-robotics.github.io", "svix.com", "ycombinator.com"]
-
-["https://news.ycombinator.com"]
-title = "Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com"
-category = "SitesList"
-tags = ["'running", "26th", "3d-printed", "analyzer", "antonov", "anyone", "app?", "audacity", "automatic", "available"]
-language = "en"
-internal-references = ["none"]
-external-references = ["audacityteam.org", "bbc.com", "blunderchess.net", "caddyserver.com", "chadnauseam.com", "donhopkins.com", "eurogamer.net", "events.ycombinator.com", "github.com", "h.43z.one", "history2701.fandom.com", "ihopethisisfun.franzai.com", "kk.org", "langfuse.com", "lukeplant.me.uk", "old.reddit.com", "oliverkwebb.github.io", "perplexity.ai", "phys.org", "poweroutage.us"]
-
-["https://news.ycombinator.com/security.html"]
-title = "Hacker News Security"
-full_description = "If you find a security hole, please let us know at security@ycombinator.com. We try to respond (with fixes!) as soon as possible, and really appreciate the help. Thanks to the following people who have discovered and responsibly disclosed security holes in Hacker News: Missing From This List? If you reported a vulnerability to us and don't see your name, please shoot us an email and we'll happily add you. We crawled through tons of emails trying to find all reports but inevitably missed some."
-year_published = 2025
-clearnet = "https://news.ycombinator.com/security.html"
-category = "SitesList"
-tags = ["2009-06-03:", "2010-01-12:", "2012-07-20:", "2012-08-01:", "2014-05-01:", "2014-10-27:", "2014-11-01:", "2015-03-02:", "2015-06-24:", "2015-08-27:"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "newatlas.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/show"]
-title = "Show | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/show"
-category = "SitesList"
-tags = ["2.7k", "annotation", "assistant", "async", "atproto", "bluesky", "blunder", "book", "bored", "brief"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "eli.lipsitz.net", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/user"]
+["https://news.ycombinator.com/forgot"]
 title = ""
 year_published = 2025
-clearnet = "https://news.ycombinator.com/user"
-category = "SitesList"
-tags = []
+clearnet = "https://news.ycombinator.com/forgot"
+tags = ["password", "reset"]
 language = "en"
 internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "eli.lipsitz.net", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/bestcomments"]
-title = "Best Comments | Hacker News"
-full_description = '''Kubernetes is not the first thing that comes to mind when I think of "understanding where their code is running and what it's doing"... It's pretty colorful language, but my mind immediately jumps to "financial terrorist". He's using his enormous amount of wealth and influence as a weapon to bludgeon anyone and anything in his way. * Valuations for server-side vulnerabilities are low, because vendors don't compete for them. There is effectively no grey market for a server-side vulnerability. It is difficult for a third party to put a price on a bug that Google can kill instantaneously, that has effectively no half-life once discovered, and whose exploitation will generate reliable telemetry from the target. * Similarly, bugs like full-chain Android/Chrome go for hundreds of thousands of dollars because Google competes with a well-established grey market; a firm can take that bug and sell it to potentially 6 different agencies at a single European country. * Even then, bounty vs. grey market is an apples-oranges comparison. Google will pay substantially less than the grey market, because Google doesn't need a reliable exploit (just proof that one can be written) and doesn't need to pay maintenance. The rest of the market will pay a total amount that is heavily tranched and subject to risk; Google can offer a lump-sum payment which is attractive even if discounted. * Threat actors buy vulnerabilities that fit into existing business processes. They do not, as a general rule, speculate on all the cool things they might do with some new kind of vulnerability and all the ways they might make money with it. Collecting payment information? Racking up thousands of machines for a botnet? Existing business processes. Unmasking Google accounts? Could there be a business there? Sure, maybe. Is there one already? Presumably no. A bounty payout is not generally a referendum on how clever or exciting a bug is. Here, it kind of is, though, because $10,000 feels extraordinarily high for a server-side web bug.'''
-year_published = 2025
-clearnet = "https://news.ycombinator.com/bestcomments"
-category = "SitesList"
-tags = ["hacker", "news"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "chrastecky.dev", "cnbc.com", "crates.io", "eli.lipsitz.net", "events.ycombinator.com", "figgie.com", "grnh.se", "haterade.substack.com", "jobs.ashbyhq.com", "jon.bo", "lowlow.bot", "meyerweb.com", "oliverkwebb.github.io", "phys.org", "poweroutage.com", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/newest"]
-title = "New Links | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/newest"
-category = "SitesList"
-tags = ['"whoami"', "access", "agents", "amazon", "attack", "audio", "auto", "backdoor", "badseek:", "basic"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "events.ycombinator.com", "figgie.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "newatlas.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/newcomments"]
-title = "New Comments | Hacker News"
-full_description = ">This means that even if a single person wrote every line of code of a language's compiler themselves, when it comes to thinking about the project, they need to think of themselves as stewards and not owners I respect the author if they believe this and stick to it (they are involved in OS too), but for the rest of us this is a sure way to burn out. For many of us, the addictive technology is tightly integrated with technology that we want or need to use. For example, I use local facebook groups for certain things, I use youtube to learn how to do things, I sometimes use instagram to communicate with certain people who prefer that. All of these have integrated those horrible short videos that can become very addictive - I've seen myself get stuck there, and many people I know who were never tech or phone addicts before this technology came around, including my mom. I could and maybe should radically change my life and just not use these things - facebook and instgram I could get by without, but youtube would be difficult - I am a musician and use it for finding music, and also for how to do or fix anything. I finally three months ago got a combination of firefox extensions and android apps to make it impossible for me to see these short videos, as well as all social media feeds etc, unless I specifically go change the settings to bring them back. And I've managed to avoid doing that. So in total over the last three months I've spent about 10 minutes watching the horrible short videos (when some slipped through the cracks) compared to before where I often found myself stuck there for an hour or two. I do still waste time on the internet often, but it's usually in a specific online community that's stuff I want to read and not random crap the algorithm gives me. I think it's like trying to quit a sugar addiction while having a donut strapped to your hand at all times. It really makes it easier if you can get rid of the donut. But when the donut is tied to your work or hobbies and there's no way to do the work or hobbies without the donut being there, it's hard. It can be done, and many people do it, but there are also many people who would choose to never see the donut if that option was easily available, but it's not."
-year_published = 2025
-clearnet = "https://news.ycombinator.com/newcomments"
-category = "SitesList"
-tags = ["hacker", "news"]
-language = "en"
-internal-references = ["none"]
-external-references = ["audacityteam.org", "blunderchess.net", "chadnauseam.com", "donhopkins.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jellyfin.org", "jobs.ashbyhq.com", "jobs.lever.co", "keelinglabs.com", "nabraj.com", "nango.dev", "nti-group.com", "perplexity.ai", "poweroutage.us", "quantamagazine.org", "source-robotics.github.io", "svix.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/best"]
-title = "Top Links | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/best"
-category = "SitesList"
-tags = ["$10k", "$97b", "'the", "again", "agent", "answers", "anthropic", "anyone", "app?", "arbitrary"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "chrastecky.dev", "cnbc.com", "crates.io", "eli.lipsitz.net", "events.ycombinator.com", "figgie.com", "grnh.se", "haterade.substack.com", "jobs.ashbyhq.com", "jon.bo", "lowlow.bot", "meyerweb.com", "oliverkwebb.github.io", "phys.org", "poweroutage.com", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/newsfaq.html"]
-title = "Hacker News FAQ"
-full_description = "The basic algorithm divides points by a power of the time since a story was submitted. Comments in threads are ranked the same way. Other factors affecting rank include user flags, anti-abuse software, software which demotes overheated discussions, account or site weighting, and moderator action. Roughly, the number of upvotes on their posts minus the number of downvotes. These don't match up exactly. Some votes are dropped by anti-abuse software. There are no down arrows on stories. They appear on comments after users reach a certain karma threshold, but never on direct replies. You can't. This is to prevent people from submitting a link with their comments in a privileged position at the top of the page. If you want to submit a link with comments, just submit the link, then add a regular comment. Ask HN lists questions and other text submissions. Show HN is for sharing your personal work and has special rules. All Ask HNs appear on newest and asknew, and all Show HNs on newest and shownew, but there is a small points threshold before a post makes it to ask or show. Faded text means that a comment has been downvoted. You can read the comment in normal text by clicking on its timestamp to go to its page. Moderators sometimes also add [flagged] (though not usually on submissions), and sometimes turn flags off when they are unfair. Click on its timestamp to go to its page, then click the 'flag' link at the top. There's a small karma threshold before flag links appear. Dead posts aren't displayed by default, but you can see them all by turning on 'showdead' in your profile. If you see a [dead] post that shouldn't be dead, you can vouch for it. Click on its timestamp to go to its page, then click 'vouch' at the top. When enough users do this, the post is restored. There's a small karma threshold before vouch links appear. The author deleted the post, or asked us to. Unlike dead posts, these remain deleted even when showdead is turned on. If a story has not had significant attention in the last year or so, a small number of reposts is ok. Otherwise we bury reposts as duplicates."
-year_published = 2025
-clearnet = "https://news.ycombinator.com/newsfaq.html"
-category = "SitesList"
-tags = ["account?", "address", "appeared", "arrows?", "banned.", "below", "between", "calculated?", "can't", "change"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "newatlas.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
-
-["https://news.ycombinator.com/front"]
-title = "2025-02-15 front | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/front"
-category = "SitesList"
-tags = ["3d-printed", "3dbenchy", "actors", "ahead", "alternative,", "alzheimer's", "around", "async", "authentication", "backported"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "bbc.com", "blunderchess.net", "chadnauseam.com", "donhopkins.com", "events.ycombinator.com", "ihopethisisfun.franzai.com", "jellyfin.org", "kk.org", "lukeplant.me.uk", "nabraj.com", "nti-group.com", "oliverkwebb.github.io", "perplexity.ai", "phys.org", "poweroutage.us", "quantamagazine.org", "source-robotics.github.io", "ycombinator.com"]
-
-["https://news.ycombinator.com/active"]
-title = "Active Threads | Hacker News"
-year_published = 2025
-clearnet = "https://news.ycombinator.com/active"
-category = "SitesList"
-tags = ["26th", "against", "amazon,", "analyzer", "anyone", "app?", "apple", "automatic", "available", "basketball"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "eli.lipsitz.net", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "macrumors.com", "npr.org", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
 
 ["https://news.ycombinator.com/newsguidelines.html"]
 title = "Hacker News Guidelines"
 full_description = '''On-Topic: Anything that good hackers would find interesting. That includes more than hacking and startups. If you had to reduce it to a sentence, the answer might be: anything that gratifies one's intellectual curiosity. Off-Topic: Most stories about politics, or crime, or sports, or celebrities, unless they're evidence of some interesting new phenomenon. Videos of pratfalls or disasters, or cute animal pictures. If they'd cover it on TV news, it's probably off-topic. Please don't do things to make titles stand out, like using uppercase or exclamation points, or saying how great an article is. It's implicit in submitting something that you think it's important. Please submit the original source. If a post reports on something found on another site, submit the latter. Please don't use HN primarily for promotion. It's ok to post your own stuff part of the time, but the primary use of the site should be for curiosity. If the title includes the name of the site, please take it out, because the site name will be displayed after the link. If the title contains a gratuitous number or number + adjective, we'd appreciate it if you'd crop it. E.g. translate "10 Ways To Do X" to "How To Do X," and "14 Amazing Ys" to "Ys." Exception: when the number is meaningful, e.g. "The 5 Platonic Solids." Please don't delete and repost. Deletion is for things that shouldn't have been submitted in the first place. Don't solicit upvotes, comments, or submissions. Users should vote and comment when they run across something they personally find interesting—not for promotion. When disagreeing, please reply to the argument instead of calling names. "That is idiotic; 1 + 1 is 2, not 3" can be shortened to "1 + 1 is 2, not 3." Please respond to the strongest plausible interpretation of what someone says, not a weaker one that's easier to criticize. Assume good faith. Please don't post shallow dismissals, especially of other people's work. A good critical comment teaches us something. Please don't comment on whether someone read an article. "Did you even read the article? It mentions that" can be shortened to "The article mentions that".'''
 year_published = 2025
 clearnet = "https://news.ycombinator.com/newsguidelines.html"
-category = "SitesList"
 tags = ["comments", "guidelines", "hacker", "news", "submissions", "submit"]
 language = "en"
 internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "events.ycombinator.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "newatlas.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
+external-references = ["affixes.org", "app.dover.com", "azsh.it", "ballingt.com", "bengarcia.dev", "delightlylinux.wordpress.com", "deno.com", "efabless.com", "flashgamehistory.com", "ghuntley.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "nextgov.com", "privacytests.org", "sensible-med.com", "tanelpoder.com", "terrainag.com", "x.com"]
 
-["https://news.ycombinator.com/item"]
-title = ""
-year_published = 2025
-clearnet = "https://news.ycombinator.com/item"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "bbc.com", "blunderchess.net", "chadnauseam.com", "donhopkins.com", "events.ycombinator.com", "ihopethisisfun.franzai.com", "jellyfin.org", "kk.org", "lukeplant.me.uk", "nabraj.com", "nti-group.com", "oliverkwebb.github.io", "perplexity.ai", "phys.org", "poweroutage.us", "quantamagazine.org", "source-robotics.github.io", "ycombinator.com"]
-
-["https://news.ycombinator.com/news"]
+["https://news.ycombinator.com/context"]
 title = "Hacker News"
 year_published = 2025
-clearnet = "https://news.ycombinator.com/news"
-category = "SitesList"
-tags = ["'running", "26th", "3d-printed", "analyzer", "antonov", "anyone", "app?", "audacity", "automatic", "available"]
+clearnet = "https://news.ycombinator.com/context"
+tags = ['"life', '"reformed"', "'music", "abusing", "algomidi", "americans", "analyzing", "apple", "archives", "automation"]
 language = "en"
 internal-references = ["none"]
-external-references = ["arstechnica.com", "audacityteam.org", "blunderchess.net", "cnbc.com", "events.ycombinator.com", "figgie.com", "grnh.se", "ihopethisisfun.franzai.com", "jobs.ashbyhq.com", "jobs.lever.co", "jon.bo", "kk.org", "meyerweb.com", "newatlas.com", "oliverkwebb.github.io", "phys.org", "quantamagazine.org", "source-robotics.github.io", "svix.com", "ycombinator.com"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
 
-["https://news.ycombinator.com/classic"]
-title = "Classic | Hacker News"
+["https://news.ycombinator.com/hide"]
+title = ""
 year_published = 2025
-clearnet = "https://news.ycombinator.com/classic"
-category = "SitesList"
-tags = ["'running", "26th", "3d-printed", "analyzer", "animal", "antonov", "anyone", "app?", "async", "audacity"]
+clearnet = "https://news.ycombinator.com/hide"
+tags = ["account", "create", "login"]
 language = "en"
 internal-references = ["none"]
-external-references = ["arstechnica.com", "chrastecky.dev", "cnbc.com", "crates.io", "eli.lipsitz.net", "events.ycombinator.com", "figgie.com", "grnh.se", "haterade.substack.com", "jobs.ashbyhq.com", "jon.bo", "lowlow.bot", "meyerweb.com", "oliverkwebb.github.io", "phys.org", "poweroutage.com", "source-robotics.github.io", "svix.com", "venturebeat.com", "ycombinator.com"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "affixes.org", "apps.apple.com", "azsh.it", "ballingt.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "failurecriteria.com", "flashgamehistory.com", "ghuntley.com", "hms.harvard.edu", "lifeweeks.app", "lwn.net", "nextgov.com", "oddbird.net", "phys.org", "plus.nasa.gov"]
+
+["https://news.ycombinator.com/active"]
+title = "Active Threads | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/active"
+tags = ["$28b", "adhd", "america", "american", "americans", "angry", "appears", "apple", "apps", "avoid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/jobs"]
+title = "jobs | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/jobs"
+tags = ["agent", "ai-driven", "applied", "artie", "ashby", "austria", "berlin", "bitmovin", "build", "business"]
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "ashbyhq.com", "azsh.it", "bitmovin.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "flashgamehistory.com", "hms.harvard.edu", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "x.com"]
+
+["https://news.ycombinator.com/pool"]
+title = "Second-Chance Pool | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/pool"
+tags = ["40-year", "8-bit", "aaron", "actor", "adam:", "algolia", "amplification", "archive", "associations:", "asteroid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
 
 ["https://news.ycombinator.com/ask"]
 title = "Ask | Hacker News"
 year_published = 2025
 clearnet = "https://news.ycombinator.com/ask"
-category = "SitesList"
-tags = ['"surprisers"?', "affected", "alternative", "always", "anybody", "anyone", "area", "attend", "being", "berkeley"]
+tags = ['"tariffed"', "advice", "affect", "agentic", "almost", "alternative?", "anyone", "apple's", "arazzo", "around"]
 language = "en"
 internal-references = ["none"]
-external-references = ["audacityteam.org", "bbc.com", "blunderchess.net", "caddyserver.com", "chadnauseam.com", "donhopkins.com", "eurogamer.net", "events.ycombinator.com", "github.com", "h.43z.one", "history2701.fandom.com", "ihopethisisfun.franzai.com", "langfuse.com", "lukeplant.me.uk", "old.reddit.com", "oliverkwebb.github.io", "perplexity.ai", "phys.org", "poweroutage.us", "ycombinator.com"]
+external-references = ["admiralcloudberg.medium.com", "apps.apple.com", "ballingt.com", "bengarcia.dev", "blog.transparency.dev", "bloomberg.com", "construction-physics.com", "daringfireball.net", "efabless.com", "euclid-ec.org", "events.ycombinator.com", "flashgamehistory.com", "github.com", "lifeweeks.app", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "redvice.org", "ycombinator.com"]
+
+["https://news.ycombinator.com"]
+title = "Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com"
+tags = ['"life', '"reformed"', "'music", "abusing", "algomidi", "americans", "analyzing", "apple", "archives", "automation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["admiralcloudberg.medium.com", "apps.apple.com", "ballingt.com", "bengarcia.dev", "blog.transparency.dev", "bloomberg.com", "construction-physics.com", "daringfireball.net", "efabless.com", "euclid-ec.org", "events.ycombinator.com", "flashgamehistory.com", "github.com", "lapcatsoftware.com", "lifeweeks.app", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "redvice.org"]
+
+["https://news.ycombinator.com/leaders"]
+title = "Leaders | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/leaders"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "hannahilea.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nautil.us", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "ticotimes.net", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/item"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/item"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "affixes.org", "apps.apple.com", "azsh.it", "ballingt.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "failurecriteria.com", "flashgamehistory.com", "ghuntley.com", "hms.harvard.edu", "lifeweeks.app", "lwn.net", "nextgov.com", "oddbird.net", "phys.org", "plus.nasa.gov"]
+
+["https://news.ycombinator.com/user"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/user"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/formatdoc"]
+title = "Formatting Options | Hacker News"
+full_description = "Text after a blank line that is indented by two or more spaces is reproduced verbatim. (This is intended for code.)"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/formatdoc"
+tags = ["formatting", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/launches"]
+title = "Launch HNs | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/launches"
+tags = ["a0.dev", "affairs", "agent", "agents", "aiops", "airports", "alert", "apis", "apps", "attacker's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "hannahilea.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nautil.us", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "ticotimes.net", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/invited"]
+title = "invited reposts | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/invited"
+tags = ["40-year", "aaron", "adventure:", "agents", "anywhere", "apartments", "arsenic", "artwork", "authoritative", "autocorrect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "hannahilea.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nautil.us", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "ticotimes.net", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/best"]
+title = "Top Links | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/best"
+tags = ['"when', "$10k", "$500b,", "'the", "abuse", "action", "alert,", "along", "american", "angry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "jamanetwork.com", "jmspae.se", "jobs.gem.com", "kibty.town", "langfuse.com", "lifeweeks.app", "linkedin.com", "medium.com", "mooreds.com", "nextgov.com", "nytimes.com", "tanelpoder.com", "titanous.com", "v0-llm-token-visualizer.vercel.app", "world-price.com", "x.com"]
+
+["https://news.ycombinator.com/show"]
+title = "Show | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/show"
+tags = ['"life', '"story', "128k", "addon", "agnostic", "algolia", "analysis", "antilang", 'arena"', "authentication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/newcomments"]
+title = "New Comments | Hacker News"
+full_description = "The calculus is very different. IE could be developed at a 100% loss for the company if it still otherwise helped Microsoft, which is what happened. Chrome operates similarly. Firefox needs to generate enough money to sustain itself indefinitely. So when there are signs their main source of funding may vanish, they need to keep a war chest together and have investments to weather any oncoming storm. Otherwise they just collapse. The only real functional way forward at this point is some form of mass protest or resistance, which I see as unlikely to occur (and which I am not necessarily advocating for here on HN). Barring that, the reality is that scientific progress will move away from the US and towards our enemies, and we will just have to live with the consequences of the choices we made. The only thing Congress could do is impeach the president and remove him from office, but that seems unlikely when roughly half the country is ecstatic about what he is doing. Congress is supposed to control spending and taxation. The administration is claiming a ton of powers related, especially, to spending. Various actions they’ve taken certainly violate the constitution and laws that exist to ensure Congress’ budget isn’t simply ignored by a president. This is another matter for the courts… unless the Supreme Court decides to rule that the radical and unprecedented far-right “unitary executive” interpretation is correct, in which case we’ve just entered a new and far worse era of American government, and it’s all “legal”. I give it 50/50 they do that. > The Department of Justice said it would move to dismiss all the charges against Meng when the deferral period ends on 21 December 2022… > On 1 December 2022, the prosecution asked a judge to dismiss bank fraud and other charges against her,[58] and the judge dismissed the charges.[17] Impeachment. In a functioning government. Because the elected person campaigned on not doing any of these things. In fact he's putting into play Project 2025, the thing that he explicitly disclaimed knowledge of prior to the elections."
+year_published = 2025
+clearnet = "https://news.ycombinator.com/newcomments"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "ashbyhq.com", "azsh.it", "bitmovin.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "flashgamehistory.com", "hms.harvard.edu", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "x.com"]
+
+["https://news.ycombinator.com/showhn.html"]
+title = "Show HN Guidelines"
+full_description = '''On topic: things people can run on their computers or hold in their hands. For hardware, you can post a video or detailed article. For books, a sample chapter is ok. Off topic: blog posts, sign-up pages, newsletters, lists, and other reading material. Those can't be tried out, so can't be Show HNs. Make a regular submission instead. The project must be something you've worked on personally and which you're around to discuss. See these tips about how to present your work. A Show HN needn't be complicated or look slick. The community is comfortable with work that's at an early stage. Please make it easy for users to try your thing out, ideally without barriers such as signups or emails. You'll get more feedback that way. If your work isn't ready for users to try out, please don't do a Show HN. Once it's ready, come back and do it then. Don't post landing pages or fundraisers. Every Show HN appears on shownew. Once it clears a small points threshold, it will appear on the show page in the top bar. New features and upgrades ("Foo 1.3.1 is out") generally aren't substantive enough to be Show HNs. A major overhaul is probably ok. Instead of "you're doing it wrong", suggest alternatives. When someone is learning, help them learn more.'''
+year_published = 2025
+clearnet = "https://news.ycombinator.com/showhn.html"
+tags = ["comments", "show"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/front"]
+title = "2025-03-01 front | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/front"
+tags = ['"life', "affixes:", "agnostic", "american", "analyzing", "appears", "authentication", "automation", "avx-512", "azure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "affixes.org", "apps.apple.com", "azsh.it", "ballingt.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "failurecriteria.com", "flashgamehistory.com", "ghuntley.com", "hms.harvard.edu", "lifeweeks.app", "lwn.net", "nextgov.com", "oddbird.net", "phys.org", "plus.nasa.gov"]
+
+["https://news.ycombinator.com/topcolors"]
+title = "Custom Colors | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/topcolors"
+tags = ["colors", "custom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/highlights"]
+title = "highlights | Hacker News"
+full_description = '''In any event, the elaborate arm mechanism, dome plastics we would not know until the model was unveiled to the world at whatever the event was. Before that though, the steel box didn't stop us from opening it up to look inside. Though our steel enclosures had something closer to a baseball "home plate" footprint, when we peeked inside we saw the circular PCB and knew we were being duped. With the dangly display they seemed to go quicker than other prototypes to the dumpsters left in Apple's hallways when the actual product was released. I am aware of three MAME machines I built around discarded prototypes. (Shhh!!!!) I think two of the three prototypes running MAME died eventually — the third I left behind at Apple when I retired. So, fate unknown. Shortly after though is probably when Apple started locking the dumpsters to keep out the divers like me. (Well, probably more to keep them from ending up on eBay I suspect.) It became almost a ritual in the first term of the school year for us to make a visit to IT Support and request a second account... there was always a bit of contention between us about who got the 'proper' username and who got the disambiguated one! In the Blekko search engine back end we built an index that was 'eventually consistent' which allowed updates to the index to be propagated to the user facing index more quickly, at the expense that two users doing the exact same query would get slightly different results. If they kept doing those same queries they would eventually get the exact same results. Systems like this bring in a lot of control systems theory because they have the potential to oscillate if there is positive feedback (and in search engines that positive feedback comes from the ranker which is looking at which link you clicked and giving it a higher weight) and it is important that they not go crazy. Some of the most interesting, and most subtle, algorithm work was done keeping that system "critically damped" so that it would converge quickly.'''
+year_published = 2025
+clearnet = "https://news.ycombinator.com/highlights"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "ticotimes.net", "titanous.com", "v0-llm-token-visualizer.vercel.app", "world-price.com", "x.com"]
+
+["https://news.ycombinator.com/login"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/login"
+tags = ["account", "create", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "ashbyhq.com", "azsh.it", "bitmovin.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "flashgamehistory.com", "hms.harvard.edu", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "x.com"]
+
+["https://news.ycombinator.com/security.html"]
+title = "Hacker News Security"
+full_description = "If you find a security hole, please let us know at security@ycombinator.com. We try to respond (with fixes!) as soon as possible, and really appreciate the help. Thanks to the following people who have discovered and responsibly disclosed security holes in Hacker News: Missing From This List? If you reported a vulnerability to us and don't see your name, please shoot us an email and we'll happily add you. We crawled through tons of emails trying to find all reports but inevitably missed some."
+year_published = 2025
+clearnet = "https://news.ycombinator.com/security.html"
+tags = ["2009-06-03:", "2010-01-12:", "2012-07-20:", "2012-08-01:", "2014-05-01:", "2014-10-27:", "2014-11-01:", "2015-03-02:", "2015-06-24:", "2015-08-27:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affixes.org", "azsh.it", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "ghuntley.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/asknew"]
+title = "New Ask | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/asknew"
+tags = ["advice", "agents", "another", "answers", "app,", "around", "boosted", "bounties?", "broken?", "build"]
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/lists"]
+title = "Lists | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/lists"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["18f.org", "admiralcloudberg.medium.com", "ashbyhq.com", "azsh.it", "bitmovin.com", "blog.transparency.dev", "bloomberg.com", "deno.com", "efabless.com", "flashgamehistory.com", "hms.harvard.edu", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "x.com"]
+
+["https://news.ycombinator.com/newsfaq.html"]
+title = "Hacker News FAQ"
+full_description = "The basic algorithm divides points by a power of the time since a story was submitted. Comments in threads are ranked the same way. Other factors affecting rank include user flags, anti-abuse software, software which demotes overheated discussions, account or site weighting, and moderator action. Roughly, the number of upvotes on their posts minus the number of downvotes. These don't match up exactly. Some votes are dropped by anti-abuse software. There are no down arrows on stories. They appear on comments after users reach a certain karma threshold, but never on direct replies. You can't. This is to prevent people from submitting a link with their comments in a privileged position at the top of the page. If you want to submit a link with comments, just submit the link, then add a regular comment. Ask HN lists questions and other text submissions. Show HN is for sharing your personal work and has special rules. All Ask HNs appear on newest and asknew, and all Show HNs on newest and shownew, but there is a small points threshold before a post makes it to ask or show. Faded text means that a comment has been downvoted. You can read the comment in normal text by clicking on its timestamp to go to its page. Moderators sometimes also add [flagged] (though not usually on submissions), and sometimes turn flags off when they are unfair. Click on its timestamp to go to its page, then click the 'flag' link at the top. There's a small karma threshold before flag links appear. Dead posts aren't displayed by default, but you can see them all by turning on 'showdead' in your profile. If you see a [dead] post that shouldn't be dead, you can vouch for it. Click on its timestamp to go to its page, then click 'vouch' at the top. When enough users do this, the post is restored. There's a small karma threshold before vouch links appear. The author deleted the post, or asked us to. Unlike dead posts, these remain deleted even when showdead is turned on. If a story has not had significant attention in the last year or so, a small number of reposts is ok. Otherwise we bury reposts as duplicates."
+year_published = 2025
+clearnet = "https://news.ycombinator.com/newsfaq.html"
+tags = ["account?", "address", "appeared", "arrows?", "banned.", "below", "between", "calculated?", "can't", "change"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affixes.org", "app.dover.com", "azsh.it", "ballingt.com", "bengarcia.dev", "delightlylinux.wordpress.com", "deno.com", "efabless.com", "flashgamehistory.com", "ghuntley.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "nextgov.com", "privacytests.org", "sensible-med.com", "tanelpoder.com", "terrainag.com", "x.com"]
+
+["https://news.ycombinator.com/newpoll"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/newpoll"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/noobstories"]
+title = "Noob Submissions | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/noobstories"
+tags = ["'ai'", "across", "advises", "alternative", "alternatives", "america", "american", "amid", "answers", "approach"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nautil.us", "portfoliovisualizer.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/news"]
+title = "Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/news"
+tags = ['"life', '"reformed"', "'music", "abusing", "algomidi", "americans", "analyzing", "apple", "archives", "automation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affixes.org", "app.dover.com", "azsh.it", "ballingt.com", "bengarcia.dev", "delightlylinux.wordpress.com", "deno.com", "efabless.com", "flashgamehistory.com", "ghuntley.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "nextgov.com", "privacytests.org", "sensible-med.com", "tanelpoder.com", "terrainag.com", "x.com"]
+
+["https://news.ycombinator.com/shownew"]
+title = "New Show | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/shownew"
+tags = ['"rat', '"story', "128k", "ai-powered", "alternative", "alternatives", 'arena"', "assistant", "berlin", "boilerplate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/from"]
+title = "Submissions from  | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/from"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["admiralcloudberg.medium.com", "apps.apple.com", "ballingt.com", "bengarcia.dev", "blog.transparency.dev", "bloomberg.com", "construction-physics.com", "daringfireball.net", "efabless.com", "euclid-ec.org", "events.ycombinator.com", "flashgamehistory.com", "github.com", "lifeweeks.app", "lwn.net", "oddbird.net", "phys.org", "plus.nasa.gov", "redvice.org", "ycombinator.com"]
+
+["https://news.ycombinator.com/newest"]
+title = "New Links | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/newest"
+tags = ['"reformed"', "$3.5b", "'craven.", "2025?", "adventure", "against", "agents", "animation", "animations", "architecture"]
+language = "en"
+internal-references = ["none"]
+external-references = ["affixes.org", "app.dover.com", "azsh.it", "ballingt.com", "bengarcia.dev", "delightlylinux.wordpress.com", "deno.com", "efabless.com", "flashgamehistory.com", "ghuntley.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "nextgov.com", "privacytests.org", "sensible-med.com", "tanelpoder.com", "terrainag.com", "x.com"]
+
+["https://news.ycombinator.com/vote"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/vote"
+tags = ["account", "create", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/classic"]
+title = "Classic | Hacker News"
+year_published = 2025
+clearnet = "https://news.ycombinator.com/classic"
+tags = ['"life', '"reformed"', "'immune", "3,200%", "americans", "amnesia'", "analyzing", "apple", "automation", "avoid"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "jamanetwork.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "titanous.com", "v0-llm-token-visualizer.vercel.app", "world-price.com", "x.com"]
+
+["https://news.ycombinator.com/submit"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/submit"
+tags = ["account", "create", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["azsh.it", "breakout.lecaro.me", "carter.sande.duodecima.technology", "delightlylinux.wordpress.com", "deno.com", "docs.rs", "efabless.com", "en.wikipedia.org", "flashgamehistory.com", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "slatersf.com", "tanelpoder.com", "terrainag.com", "titanous.com", "tjosse.me", "twitter.com", "x.com"]
+
+["https://news.ycombinator.com/submitted"]
+title = ""
+year_published = 2025
+clearnet = "https://news.ycombinator.com/submitted"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "goto10retro.com", "hannahilea.com", "helsinkitimes.fi", "jmspae.se", "jobs.gem.com", "karpathy.github.io", "langfuse.com", "lifeweeks.app", "linkedin.com", "mattcutts.com", "nautil.us", "portfoliovisualizer.com", "ratdance.net", "researchgate.net", "tanelpoder.com", "titanous.com", "x.com"]
+
+["https://news.ycombinator.com/bestcomments"]
+title = "Best Comments | Hacker News"
+full_description = '''But boy, will the nations of the world remember this -- how quickly the US can turn from ally to bully. A really bad day for US foreign policy. Whether the senior powers in America are compromised, complicit, or opportunist, it doesn't matter. America is being damaged. Russian interests are being prioritized over American interests. Our military is too powerful for direct conflict, so alternative conflict against our political structure and economy is more logical. America is experiencing a decapitation strike, and our military is not defending us from these domestic enemies. https://archive.is/1xkxK (Decapitation Strike -- Timothy Snyder) 1. There are claims that federal spending is out of control. How do you square that with the fact that spending as a percentage of GDP is only slightly elevated compared to the historical average going back to at least the 1970s, with the main deviation in the past few years coming from the after-effects of the pandemic? [1] 2. Federal spending largely falls into a few categories: taking care of the elderly (36%), defense and veterans (20%), taking care of the poor or disabled (22%), and interest on existing debt (13%). [2] This adds up to 91% of the budget. The US population is aging, which means that 36% slice is going to naturally grow. What do you think should be cut, and how? 3. The US pays far more for health care (28% of the budget if you include Medicare) and with worse outcomes on average. Why shouldn't the health insurance industry be the first item on the chopping block? 4. Corporate tax receipts have been steadily falling as a percentage of GDP. [3] Why shouldn't corporations (that benefit from a healthy and educated workforce, a safe and secure environment, a working transportation system, etc.) be paying their fair share to keep the national debt in check? "We don't really know what this is good for, but spent a lot of money and time making it and are under intense pressure to announce new things right now. If you can figure something out, we need you to help us."'''
+year_published = 2025
+clearnet = "https://news.ycombinator.com/bestcomments"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "jamanetwork.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "titanous.com", "v0-llm-token-visualizer.vercel.app", "world-price.com", "x.com"]
+
+["https://news.ycombinator.com/noobcomments"]
+title = "Noob Comments | Hacker News"
+full_description = '''In fact the only reason I'm replying to your comment is because instead of being a bottle deep in front of the TV at this point in the evening I got bored after one glass and decided to noddle around on the internets. Ask any heavy drinker/alcoholic and they will tell you that one doesn't just have 'one' drink and then move on with something else. One is always too much, and never enough. Now it feels like enough. India which was at that was relatively in a good economic state, should've been a industrial super-power. Except, the "benign" British scuttled not only industrialization, but India's own traditional education and social systems. Revenue did indeed decline from 2000 to 2010, but the trend begins to reverse quite immediately after 2010. On page 15 of the 2023 IRS Data Book [0], total reported revenues were: Adjusted to 2010 dollars using a calculator from the Federal Reserve Bank of Minneapolis [1] for sake of comparison: Using the population figures from the census data you provided, this works out to a per capita revenue of: I notice that some of the decreases and increases in revenue seem to correlate with periods of relative economic prosperity (e.g. the height of the dotcom boom around the year 2000) and periods of relative privation (e.g. the economy was still recovering from the Great Recession in 2010). I don't have any insight into whether these macro events have a more substantial impact on revenue collection in comparison to any changes in tax policy that might have occurred during these periods, but it doesn't seem like a coincidence. Like, I just paid off a car for a friend out of pocket. He burst into tears and cooked me a three course dinner. This man isn't even below the poverty line, but he still struggles to budget rent, food, car payments, healthcare payments, and support his family. Saving is simply not possible most months of the year. Money very literally represents completely different value when you have none. It's.... survival. It's what prevents you from being as happy as the people on tv.'''
+year_published = 2025
+clearnet = "https://news.ycombinator.com/noobcomments"
+tags = ["hacker", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berthub.eu", "carter.sande.duodecima.technology", "docs.rs", "ghuntley.com", "hannahilea.com", "jmspae.se", "jobs.gem.com", "langfuse.com", "lifeweeks.app", "linkedin.com", "mooreds.com", "nautil.us", "nextgov.com", "nytimes.com", "quitmanga.gov", "researchgate.net", "tanelpoder.com", "ticotimes.net", "titanous.com", "x.com"]

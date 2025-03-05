@@ -1,0 +1,64 @@
+["https://extensions.gnome.org/accounts/register"]
+title = "GNOME Shell Extensions"
+year_published = 2025
+clearnet = "https://extensions.gnome.org/accounts/register"
+tags = ["account", "gnome", "project", "registration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org/about"]
+title = "What's this? - GNOME Shell Extensions"
+full_description = '''GNOME Shell provides core user interface functions for GNOME, like switching to windows and launching applications. User interface elements provided by GNOME Shell include the Panel at the top of the screen, the Activities Overview, and Message Tray at the bottom of the screen. GNOME Shell extensions are small pieces of code written by third party developers that modify the way GNOME works. (If you are familiar with Chrome Extensions or Firefox Addons, GNOME Shell extensions are similar to them.) You can find and install GNOME Shell extensions using this website. Since extensions are created outside of the normal GNOME design and development process, they are supported by their authors, rather than by the GNOME community. Some features first implemented as extensions might find their way into future versions of GNOME. Extensions may make small changes, like moving your clock to the right-hand side of the screen, or make big changes, like arranging the windows in the Activities Overview in a different way. The code in a GNOME Shell extension becomes part of the core operating system. For this reason, the potential exists for an extension to cause system misbehavior, crashes, or even to have malicious behavior like spying on the user or displaying unwanted advertisements. All extensions uploaded to this site are carefully reviewed for malicious behavior before they are made available for download. This process of code review is similar to the process for Firefox add-ons submitted to addons.mozilla.org. If you encounter problems with an extension, such as a crash, make sure to report the problem using the Bug Report link on the extension's page. The easiest way to get GNOME Shell is to install a Linux distribution that provides GNOME 3. See the Getting GNOME page on the main GNOME site to learn how to grab a Linux distribution with GNOME 3. If you are using GNOME 3.4 or newer and installation still doesn't work, check to make sure that the "GNOME Shell Integration" plugin is installed and enabled in your browser preferences. Some browsers have a feature, click-to-play, which make it so the plugin cannot start without user intervention. Make sure that either https://extensions.gnome.org is whitelisted for the click-to-play feature, or click-to-play is turned off entirely. Check your browser's help for more details.'''
+year_published = 2025
+clearnet = "https://extensions.gnome.org/about"
+tags = ["can't", "don't", "extensions", "extensions?", "extension»?", "gnome", "install", "project", "safe?", "shell"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org"]
+title = "GNOME Shell Extensions"
+year_published = 2025
+clearnet = "https://extensions.gnome.org"
+tags = ["gnome", "project"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org/accounts/login"]
+title = "GNOME Shell Extensions"
+year_published = 2025
+clearnet = "https://extensions.gnome.org/accounts/login"
+tags = ["gnome", "login", "project", "user"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org/upload"]
+title = "GNOME Shell Extensions"
+year_published = 2025
+clearnet = "https://extensions.gnome.org/upload"
+tags = ["gnome", "login", "project", "user"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org/local"]
+title = "Installed Extensions - GNOME Shell Extensions"
+year_published = 2025
+clearnet = "https://extensions.gnome.org/local"
+tags = ["extensions", "gnome", "installed", "project", "settings", "shell"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]
+
+["https://extensions.gnome.org/accounts/password/reset"]
+title = "GNOME Shell Extensions"
+full_description = "Forgot your password? Enter your e-mail address below, and we’ll e-mail instructions for setting a new one."
+year_published = 2025
+clearnet = "https://extensions.gnome.org/accounts/password/reset"
+tags = ["gnome", "password", "project", "reset"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "creativecommons.org", "developer.gnome.org", "djangoproject.com", "foundation.gnome.org", "gitlab.gnome.org", "gjs.guide", "gnome.org", "help.gnome.org", "mail.gnome.org", "planet.gnome.org", "redhat.com", "shop.gnome.org", "thisweek.gnome.org", "welcome.gnome.org", "wiki.gnome.org"]

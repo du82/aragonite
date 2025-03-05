@@ -1,0 +1,136 @@
+["https://pwmt.org/projects/zathura/index.html"]
+title = "pwmt.org"
+full_description = '''zathura is a highly customizable and functional document viewer. It provides a minimalistic and space saving interface as well as an easy usage that mainly focuses on keyboard interaction. You only want to view PDF documents? How about PostScript or DjVu? All together? zathura now uses a plugin based system for supported document types which makes it possible for you to choose which file formats you want your version of zathura to support. This also makes it possible to use different backends for the same document type: For instance we provide a plugin for PDF documents using either the poppler or the mupdf library. zathura makes it possible to completely view and navigate through different documents without using a mouse. Functions to scroll or zoom are mapped to certain keys as well as the possibility to follow or open links that are shown in the document. By simply pressing the "f" key on your keyboard, zathura highlights all links shown on the current screen. By typing one of the shown numbers you can easily follow links to chapters or open them with your favourite web browser. But of course... you still can use the mouse as well. The Synchronization TeXnology named SyncTeX is a new feature allows to synchronize between input and output, which means to navigate from the source document to the typeset material and vice versa. zathura supports that feature in both directions and makes writing LaTeX documents even more fun! Whenever you want to find a certain page of the document later on you can use bookmarks which are saved by using the command ":bmark". You can easily move to your saved bookmarks with the ":blist" command or delete them with ":bdelete". Or you can simply use quickmarks. A quickmark is simply a page assigned to a letter or number and can therefore saved or opened with only two key presses. To create a new quickmark just type "m" followed by a letter or number. To view a saved quickmark just use "'" and then the previously used letter or number. Whenever the file that you are currently looking at changes (e.g.: you are working heavily on a LaTeX document and you compile it to view the changes), zathura automatically detects that and reloads the document without any hesitation.'''
+year_published = 2025
+clearnet = "https://pwmt.org/projects/zathura/index.html"
+tags = ["automatic", "bookmarks", "choose", "code", "customizable!", "document", "download", "easily", "file", "formats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "git.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "sqlite.org", "tools.suckless.org", "transifex.net"]
+
+["https://pwmt.org/help/donate"]
+title = "pwmt.org"
+full_description = "All our projects are free and open source software. You can download, use and modify them without any charge, but the development and hosting of our projects still requires time, code, more time and money. If you are able to make a contribution, no matter what size, we are able to continue the further development and support of our software. In addition we would like to say thanks to all people who have and are donating in any way to pwmt.org - We really appreciate it!"
+year_published = 2025
+clearnet = "https://pwmt.org/help/donate"
+tags = ["bitcoin", "donate", "github", "help", "paypal", "sponsors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at"]
+
+["https://pwmt.org/help/localization"]
+title = "pwmt.org"
+full_description = '''Both zathura and girara support translations as of version 0.1.1. Since we currently only provide German translation files we need your help to get them translated into other languages. ## Transifex transifex is an open source platform for localization which offers users an easy-to-use interface to submit translations to various projects hosted on a number of hosting platform types. If you don't want to signup on transifex, there is another possibility to help us: At first you have to check out the "develop" branch of girara or zathura. For girara this is done like this: Then you should run the update-po make target to get an up-to-date version of the PO template and update the existing translations: Now you can have a look at the files in the "po" directory. If you want to create a new translation, copy the pot file to "$name_of_the_locale.po" and start working on it. If you want to update an existing translation file just edit the file. When you're done please send the file to the mailing list to zathura@lists.pwmt.org for zathura and to girara@lists.pwmt.org for girara. You can also create a bug in our bug tracker.'''
+year_published = 2025
+clearnet = "https://pwmt.org/help/localization"
+tags = ["help", "localization", "projects", "translating"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "github.com", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/help/coding-standard"]
+title = "pwmt.org"
+year_published = 2025
+clearnet = "https://pwmt.org/help/coding-standard"
+tags = ["coding", "standard"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "irc.oftc.net", "mlq.me", "oftc.net", "ramacher.at"]
+
+["https://pwmt.org/news"]
+title = "pwmt.org"
+year_published = 2025
+clearnet = "https://pwmt.org/news"
+tags = ["0.4.5", "0.5.10", "0.5.11", "0.5.8", "0.5.9", "2024/08/04", "2024/12/09", "2024/12/10", "2024/12/18", "categories"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "github.com", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/projects/girara"]
+title = "pwmt.org"
+full_description = "girara is a library that implements a user interface that focuses on simplicity and minimalism. Currently based on GTK+, a cross-platform widget toolkit, it provides an interface that focuses on three main components: A so-called view widget that represents the actual application (e.g. a website (browser), an image (image viewer) or the document (document viewer)), an input bar that is used to execute commands of the application and the status bar which provides the user with current information. girara was designed to replace and enhance the user interface that is used by zathura and jumanji and other features that those applications share."
+year_published = 2025
+clearnet = "https://pwmt.org/projects/girara"
+tags = ["code", "download", "girara", "interface", "library", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/projects/girara/index.html"]
+title = "pwmt.org"
+full_description = "girara is a library that implements a user interface that focuses on simplicity and minimalism. Currently based on GTK+, a cross-platform widget toolkit, it provides an interface that focuses on three main components: A so-called view widget that represents the actual application (e.g. a website (browser), an image (image viewer) or the document (document viewer)), an input bar that is used to execute commands of the application and the status bar which provides the user with current information. girara was designed to replace and enhance the user interface that is used by zathura and jumanji and other features that those applications share."
+year_published = 2025
+clearnet = "https://pwmt.org/projects/girara/index.html"
+tags = ["code", "download", "girara", "interface", "library", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/about"]
+title = "pwmt.org"
+full_description = "pwmt.org – programs with movie titles – is a community developing functional open source applications and libraries that mainly focus on simplistic and space saving user interfaces and key board interaction. We try to keep our code as documented and tested as possible, so that everyone easily can understand and extend it. Moritz studies computer science at Graz University of Technology and is the founder of pwmt. He loves photography, spending time in the kitchen to cook and bake and to build things. Sebastian studies mathematics at the University of Graz and computer science at the Graz University of Technology. Besides developing quality code for pwmt he is a Debian developer and a coffee enthusiast."
+year_published = 2025
+clearnet = "https://pwmt.org/about"
+tags = ["clean", "code", "community", "lipp", "moritz", "open", "ramacher", "sebastian", "sebastinas", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "mlq.me", "ramacher.at"]
+
+["https://pwmt.org/contact"]
+title = "pwmt.org"
+full_description = "If you have any suggestions, ideas, problems or just want to talk, feel free to join us on our IRC channel, contact us by e-mail or discuss it on one of our mailing lists. If you want to get in touch with us personally you can write us an e-mail or checkout our about page."
+year_published = 2025
+clearnet = "https://pwmt.org/contact"
+tags = ["channel", "contact", "e-mail"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "irc.oftc.net", "mlq.me", "oftc.net", "ramacher.at"]
+
+["https://pwmt.org/projects/jumanji/index.html"]
+title = "pwmt.org"
+full_description = "jumanji is a highly customizable and functional web browser based on the libwebkit web content engine and the gtk+ toolkit. The idea behind jumanji is a web browser that provides a minimalistic and space saving interface as well as an easy usage that mainly focuses on keyboard interaction like vimperator does. ## Source code If you are interested in the source code you can either browse it online or clone the repository:"
+year_published = 2025
+clearnet = "https://pwmt.org/projects/jumanji/index.html"
+tags = ["browser", "code", "jumanji", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "git.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/projects/zathura"]
+title = "pwmt.org"
+full_description = '''zathura is a highly customizable and functional document viewer. It provides a minimalistic and space saving interface as well as an easy usage that mainly focuses on keyboard interaction. You only want to view PDF documents? How about PostScript or DjVu? All together? zathura now uses a plugin based system for supported document types which makes it possible for you to choose which file formats you want your version of zathura to support. This also makes it possible to use different backends for the same document type: For instance we provide a plugin for PDF documents using either the poppler or the mupdf library. zathura makes it possible to completely view and navigate through different documents without using a mouse. Functions to scroll or zoom are mapped to certain keys as well as the possibility to follow or open links that are shown in the document. By simply pressing the "f" key on your keyboard, zathura highlights all links shown on the current screen. By typing one of the shown numbers you can easily follow links to chapters or open them with your favourite web browser. But of course... you still can use the mouse as well. The Synchronization TeXnology named SyncTeX is a new feature allows to synchronize between input and output, which means to navigate from the source document to the typeset material and vice versa. zathura supports that feature in both directions and makes writing LaTeX documents even more fun! Whenever you want to find a certain page of the document later on you can use bookmarks which are saved by using the command ":bmark". You can easily move to your saved bookmarks with the ":blist" command or delete them with ":bdelete". Or you can simply use quickmarks. A quickmark is simply a page assigned to a letter or number and can therefore saved or opened with only two key presses. To create a new quickmark just type "m" followed by a letter or number. To view a saved quickmark just use "'" and then the previously used letter or number. Whenever the file that you are currently looking at changes (e.g.: you are working heavily on a LaTeX document and you compile it to view the changes), zathura automatically detects that and reloads the document without any hesitation.'''
+year_published = 2025
+clearnet = "https://pwmt.org/projects/zathura"
+tags = ["automatic", "bookmarks", "choose", "code", "customizable!", "document", "download", "easily", "file", "formats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "git.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "sqlite.org", "tools.suckless.org", "transifex.net"]
+
+["https://pwmt.org"]
+title = "pwmt.org"
+full_description = "The development and hosting of our projects requires time and money. We are grateful if you can help us out a bit."
+year_published = 2025
+clearnet = "https://pwmt.org"
+tags = ["contact", "girara", "help?", "jumanji", "need", "open", "source", "support", "zathura"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com"]
+
+["https://pwmt.org/projects/jumanji"]
+title = "pwmt.org"
+full_description = "jumanji is a highly customizable and functional web browser based on the libwebkit web content engine and the gtk+ toolkit. The idea behind jumanji is a web browser that provides a minimalistic and space saving interface as well as an easy usage that mainly focuses on keyboard interaction like vimperator does. ## Source code If you are interested in the source code you can either browse it online or clone the repository:"
+year_published = 2025
+clearnet = "https://pwmt.org/projects/jumanji"
+tags = ["browser", "code", "jumanji", "source"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bt.pwmt.org", "git.pwmt.org", "github.com", "gtk.org", "irc.oftc.net", "mlq.me", "oftc.net", "paypal.com", "ramacher.at", "transifex.net"]
+
+["https://pwmt.org/help"]
+title = "pwmt.org"
+year_published = 2025
+clearnet = "https://pwmt.org/help"
+tags = ["error"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "irc.oftc.net", "mlq.me", "oftc.net", "ramacher.at"]

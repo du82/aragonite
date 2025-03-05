@@ -1,0 +1,478 @@
+["https://gcompris.net/docbook/stable5/en/index.html"]
+title = "The GCompris Administration Handbook"
+description = "GCompris is a multi-activity educational software."
+full_description = "The GCompris Administration Handbookhttps://gcompris.net/ NextThe GCompris Administration Handbook Johnny Jazeix Timothée Giet The GCompris TeamDevelopers 4.2Legal NoticeAbstract GCompris is a multi-activity educational software. Table of Contents1. Administration HandbookIntroductionInstallationThe User InterfaceMain windowKiosk ModeKeyboard ShortcutsNotes on InternationalizationLanguage learningCustomizing activitiesConsole SwitchesWindows® ExampleGNU/Linux® Example2. Credits and License Next Administration Handbookhttps://gcompris.net/"
+year_published = 2025
+clearnet = "https://gcompris.net/docbook/stable5/en/index.html"
+tags = ["4.2legal", "abstract", "administration", "children", "contents", "education", "educational", "games", "gcompris", "giet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "gnu.org", "invent.kde.org", "kde.org", "patreon.com"]
+
+["https://gcompris.net/index-pt_BR.html"]
+title = "Software Educacional GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris é uma suite de aplicativos educacionais de alta qualidade, incluindo um grande número de atividades para crianças com idade entre 2 e 10 anos. Atualmente o GCompris oferece mais de 100 atividades e está em constante evolução. O GCompris é um software livre, o que significa que você pode adaptá-lo às suas necessidades, melhorá-lo e, o mais importante, compartilhá-lo com as crianças de toda a parte."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-pt_BR.html"
+tags = ["adições", "amigo", "aprenda", "ciclo", "clique", "contra", "cores", "descubra", "escrita", "horas"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/faq-en.html"]
+title = "FAQ - GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = '''Including the voices for all languages would make the installer way too heavy and most users are only interested in the voices for their language. Also the extra images and background music take relatively lot of space while not being required to use the software. So to minimize the base installer size we decided to not include those and let users download them from the software if they want to. If you don't want the software to download anything automatically, you can disable the option "Enable automatic downloads/updates of external assets" in the main configuration page. IMPORTANT: for GCompris versions older than 4.0, you need to replace "data3" with "data2" in all instructions below. IMPORTANT: from GCompris version 4.0, we added the date of the last update in the .rcc filenames. So you need to look in the "Contents" files what is the name of the latest one before downloading it. For example: backgroundMusic-ogg-2024-03-19-11-10-30.rcc . For older versions, the filenames don't contain the date. Example: backgroundMusic-ogg.rcc For the background music, you need to go in the folder named "backgroundMusic" and download those 2 files: It is both. From the beginning, GCompris has always been and still is a GNU package. Since 2014 it is maintained by the KDE community. The name GCompris sounds like "J'ai compris" in French, which means "I understand" in English. Also, the G stands for GNU. The requirements to build and publish software for iOS are not compatible with the GPLv3 and AGPLv3 licenses used by this software. For android we already publish on the Play store and F-Droid, publishing on all the stores would require too much work. If you are using a Fire tablet, you can directly install the latest apk from our website, and use a third party launcher to access the application from a child profile.'''
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/faq-en.html"
+tags = ["amazon", "asked", "assets", "assets?", "available", "called", "contained", "content?", "depend", "download"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-hu.html"]
+title = "GCompris oktatási szoftverek"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "A GCompris egy magas színvonalú oktatási szoftvercsomag, amely számos tevékenységet kínál 2-10 éves gyermekeknek. Jelenleg a GCompris több mint 100 tevékenységet kínál, és folyamatosan fejlődik. A GCompris szabad szoftver, ami azt jelenti, hogy a saját szükségleteire alakítható, fejleszthető, és ami a legfontosabb, megosztható a gyerekekkel."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-hu.html"
+tags = ["barát", "ellen", "felfedezése", "felismerése", "gyakolrása", "gyakorlása", "gépelés", "kattints", "kattintás", "kisbetűre!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-br.html"]
+title = "Meziant kelennadel GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "Un dastumadeg a-feson gant obererezhioù ha c'hoarioù kelennadel evit ar vugale etre 2 ha 10 vloaz eo GCompris. Ouzhpenn 100 obererezh zo kinniget gant GCompris evit ar poent ha reoù all zo war ar stern. Ur meziant digor eo GCompris, da lârout eo ez oc'h aotreet da azasaat ar meziant diouzh hoc'h ezhommoù, d'e wellaat hag ar pep pouezusañ, aotreet oc'h da rannañ GCompris gant an holl vugale er bed."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-br.html"
+tags = ["c'heneil", "c'hlavier", "c'hoari", "desk", "dizolo", "dour", "echedoù", "gant", "horolajoù", "kelc'hiad"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-es.html"]
+title = "Software educativo GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris es un conjunto de programas educativos de alta calidad que contiene un gran número de actividades para niños entre 2 y 10 años. En la actualidad, GCompris ofrece más de 100 actividades y hay más en desarrollo. GCompris es software libre, por lo que tiene la posibilidad de adaptarlo a sus necesidades, de mejorarlo y, lo más importante, de compartirlo con niños de todo el mundo."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-es.html"
+tags = ["agua", "ajedrez", "amigo", "aprende", "ciclo", "colores", "contra", "descubre", "horas", "identifica"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-it.html"]
+title = "Software didattico GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris è una collezione di software didattico di alta qualità che include molte attività per bambini dai 2 ai 10 anni. Attualmente GCompris offre più di 100 attività, e molte altre sono in fase di sviluppo. GCompris è un software libero, e questo significa che si può adattare alle proprie esigenze, migliorare e, soprattutto, condividere ovunque con i bambini."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-it.html"
+tags = ["addizioni", "amico", "ciclo", "clic", "colori", "contro", "dell'acqua", "esercitazione", "gioca", "identifica"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ca.html"]
+title = "Programari educatiu GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys. Actualment el GCompris ofereix més de 100 activitats, i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ca.html"
+tags = ["amic", "aprendre", "cicle", "clic", "colors", "contra", "descobrir", "entrenar", "escacs", "identificar"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ml.html"]
+title = "ജികോംപ്രി വിദ്യാഭ്യാസ സോഫ്റ്റ്‌വെയർ"
+description = "ജികോംപ്രി വിദ്യാഭ്യാസ സോഫ്റ്റ്‌വെയർ"
+full_description = "2 മുതൽ 10 വയസ്സു വരെയുള്ള കുട്ടികൾക്കു വേണ്ടിയുള്ള ധാരാളം പ്രവർത്തനങ്ങൾ അടങ്ങിയ, നല്ല നിലവാരമുള്ള വിദ്യാഭ്യാസ സോഫ്റ്റ്‌വെയർ ആണ് ജികോംപ്രി. ചില പ്രവർത്തനങ്ങൾ കളികളിലൂടെയാണ്, എന്നിരുന്നാലും വിദ്യാഭ്യാസപരമാണ്. പ്രവർത്തനങ്ങളെ തരംതിരിച്ച് ചില ഉദാഹരണങ്ങളോടു കൂടിയുള്ള പട്ടിക ഇവിടെ കൊടുത്തിരിക്കുന്നു: നിലവിൽ 100-ലധികം പ്രവർത്തനങ്ങൾ ജികോംപ്രിയിൽ ഉണ്ട്, മാത്രമല്ല കൂടുതൽ എണ്ണം ഡവലപ്പുചെയ്യുന്നുമുണ്ട്. ജികോംപ്രി ഒരു സ്വതന്ത്ര സോഫ്റ്റ്‌വെയർ ആണ്, അതായത് ഇതിനെ താങ്കളുടെ ആവശ്യാനുസരണം മാറ്റങ്ങൾ വരുത്താനും മെച്ചപ്പെടുത്താനും അതിലും പ്രധാനമായി ലോകത്തെവിടെയുമുള്ള കുട്ടികളുമായി പങ്കുവെക്കാനും കഴിയും. ജികോംപ്രി പ്രൊജക്ട് ഹോസ്റ്റു ചെയ്യുന്നതും ഡവലപ്പു ചെയ്യുന്നതും കെഡിഇ കമ്മ്യൂണിറ്റിയാണ്."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ml.html"
+tags = ["അക്ഷരത്തിൽ", "കളിക്കാം", "കാണാം", "കീബോർഡ്", "ക്ലിക്കോ", "ക്ലിക്ക്", "ക്ലോക്ക്", "ചെയ്യൂ", "ചെറിയ", "ചെസ്സ്"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/downloads-en.html"]
+title = "Download - GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = '''Note: If your system doesn't have Direct3D 11 support or if it's not working properly, please use the entry GCompris (Safe Mode) in the start menu to launch GCompris with the software rendering mode. If you really need a version that runs on Windows XP, or if your system doesn't support the new version, you can use the last installer from the old GCompris 15.10. To enable all the activities in this old version, you can use the code 200202 in the entry box that contains the word CODE when you start the application. We support both android 32bit and 64bit from the Play Store. The appropriate version is downloaded automatically depending on your Android operating system. We also provide standalone packages for GNU/Linux. They should work on any recent distribution. System requirements: linux kernel 4.18, glibc 2.28. Then read the license or press q to skip it, answer yes to the questions, and the software will be installed in a new folder next to the installer. Note: If your system doesn't have OpenGL 2 support or if it's not working properly, please add the option "--software-renderer" at the end of the last line of the script gcompris-qt.sh. Another way is to edit the configuration file (in ~/.config/gcompris-qt/gcompris-qt.conf): find the line renderer=auto , replace auto with software and save the file. The last version available for 32bit Linux distributions can be downloaded from the following link. System requirements: linux kernel 3.10, glibc 2.17, pulseaudio, gstreamer 1.0. Then read the license or press q to skip it, answer yes to the questions, and the software will be installed in a new folder next to the installer. To check the integrity of your downloads, you can get the original SHA-256 hash of the files by adding ".sha256" at the end of their download url. The source tarball and the Linux installer are signed with the GPG key from Timothée Giet (public key: 0x63d7264c05687d7e.asc)'''
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/downloads-en.html"
+tags = ["android", "code", "download", "gnu/linux", "macos", "raspberry", "sha-256", "source", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-fi.html"]
+title = "GCompris Educational Software"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10. Currently GCompris offers more than 100 activities, and more are being developed. GCompris is free software, it means that you can adapt it to your own needs, improve it, and most importantly share it with children everywhere."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-fi.html"
+tags = ["harjoittele", "kaveria", "kello", "kierto", "kirjainta", "napauta", "napsauta", "näppäimistöä", "pelaa", "tunnista"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-be.html"]
+title = "Адукацыйнае праграмнае забеспячэнне GCompris"
+description = "Адукацыйнае праграмнае забеспячэнне GCompris"
+full_description = "GCompris - гэты высакаякаснае адукацыйнае праграмнае забеспячэнне, якое аб'ядноўвае шэраг практыкаванняў для дзетак узростам ад 2 да 10 год. Некаторыя практыкаванні арыентаваныя на гульню, але ўсё ж маюць адукацыйны характар. Цяпер GCompris прапануе як найменш 100 практыкаванняў і яшчэ распрацоўваюцца новыя. GCompris - гэта вольнае праграмнае забеспячэнне, і гэта значыць, што Вы можаце адаптаваць яго пад свае мэты, паляпшаць і, што найважней - дзяліцца ім з дзеткамі паўсюль."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-be.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/donate-en.html"]
+title = "Donate - GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "If you want to support the development of GCompris in a sustainable way, please become a patron of GCompris on Patreon: Alexey Vazhnov ☀ Andrei Baltuta ☀ Anthony Stalker ☀ A Distinguished Robot ☀ Bart Van Loon ☀ Chandresh Prakash ☀ Denys Yakubets ☀ Fabien Benetou ☀ Fabio Armon Camichel ☀ Jim Garrison ☀ Patrick Nafarrete ☀ Sebastian Tur ☀ 郝晨煜 Albert Astals Cid ☀ Alexander Riethmüller ☀ Ilya Diallo ☀ Karl Ove Hufthammer ☀ Philipp Leibelt ☀ roman_the_ant ☀ Stephen Paul Weber Bruno Rocha ☀ Chris Niewlotti ☀ Chris Olsen ☀ Cyrille Largillier ☀ Danny Ricard-Lavergne ☀ Entesar Alruhidy ☀ Errepunto ☀ Filip Sedlák ☀ Gastão ☀ Hasan adnan khawaja ☀ karina ☀ Nikodimos ☀ PlayKodo - Aprendizaje Digital ☀ Sebastian Blei ☀ Simon Chatain ☀ svuorela"
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/donate-en.html"
+tags = ["donate", "patreon"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "gnu.org", "invent.kde.org", "kde.org", "patreon.com"]
+
+["https://gcompris.net/index-cs.html"]
+title = "GCompris vzdělávací softwarový"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris je vysoce kvalitní vzdělávací softwarový balík, skládající se z mnoha aktivit pro děti ve věku 2-10 let. V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že si jej můžete přizpůsobit svým vlastním potřebám, zlepšovat jej a co je nejdůležitější sdílet s dětmi po celém světě."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-cs.html"
+tags = ["barvy", "hodiny", "hraj", "kamarádem", "klepni", "klikni", "klávesnice", "koloběh", "malé", "nauč"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-de.html"]
+title = "GCompris Bildungs-Software"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris ist eine hochwertige Bildungs-Software mit vielen Aktivitäten für Kinder im Alter von 2 bis 10 Jahren. Zur Zeit bietet GCompris mehr als 100 Aktivitäten und weitere werden entwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, es nach ihren Bedürfnissen anzupassen und zu verbessern, und vor allem mit allen Kindern auf der Welt zu teilen."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-de.html"
+tags = ["addition", "einen", "entdecke", "farben", "freund", "gegen", "identifizieren", "keyboard", "kleinbuchstaben", "klicke"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ko.html"]
+title = "GCompris 교육용 소프트웨어"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris는 2세에서 10세 사이의 아동을 위한 많은 활동이 들어 있는 고품질의 교육용 소프트웨어 제품군입니다. 현재 GCompris는 100가지 이상의 활동을 제공하고 있으며 더 많은 활동이 개발 중입니다. GCompris는 자유 소프트웨어입니다. 필요에 따라 변경 및 개선할 수 있으며, 가장 중요한 것은 전 세계의 어린이들과 공유할 수 있습니다."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ko.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-eu.html"]
+title = "GCompris hezkuntza-softwarea"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris kalitate handiko hezkuntza-software multzo bat da, 2 eta 10 urte bitarteko haurrentzako jarduera kopuru handia duena. Une honetan GCompris-ek 100dik gora jarduera eskaintzen ditu, eta gehiago ari dira garatzen. GCompris software askea da, horrek esan nahi du zure beharretara egokitu dezakezula, hobetu, eta garrantzitsuena dena, leku guztietako haurrekin partekatu dezakezula."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-eu.html"
+tags = ["aurka", "bati", "batuketak", "egin", "egiten", "ezagutu", "identifikatzea", "ikasi", "ikastea", "jokatu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-el.html"]
+title = "GCompris Εκπαιδευτικό Λογισμικό"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "Το GCompris είναι μια σουίτα εκπαιδευτικού λογισμικού υψηλού επιπέδου, που περιλαμβάνει έναν μεγάλο αριθμό δραστηριοτήτων για παιδιά ηλικίας 2 έως 10 ετών. Μερικές από τις δραστηριότητες αν και έχουν παιγνιώδη χαρακτήρα, ωστόσο διατηρούν τον εκπαιδευτικό τους προσανατολισμό. Εδώ είναι μια λίστα των κατηγοριών με μερικά παραδείγματα: Αυτή τη στιγμή το GCompris προσφέρει περισσότερες από 100 δραστηριότητες, ενώ αρκετές βρίσκονται στο στάδιο της ανάπτυξης. Το GCompris είναι ελεύθερο λογισμικό, που σημαίνει ότι μπορείτε να το προσαρμόσετε στις δικές σας ανάγκες, να το βελτιώσετε και, το πιο σημαντικό, να το μοιραστείτε με όλα τα παιδιά του κόσμου. Το έργο GCompris αναπτύσσεται και φιλοξενείται από την κοινότητα KDE."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-el.html"
+tags = ["ένα", "αναγνώριση", "ανακάλυψη", "γράμμα", "εκμάθηση", "εξάσκηση", "κάνε", "κλικ", "κύκλου", "με"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-mk.html"]
+title = "Образовен софтвер Жикомпри"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "Жикомпри е високо квалитетен образовен софтверски пакет, кој вклучува голем број активности за деца на возраст од 2 до 10 години. Некои од активностите се ориентирани кон игра, но сепак се образовни. Еве го списокот со категории со активности низ неколку примери: Во моментов Жикомпри нуди повеќе од 100 активности и уште повеќе се развиваат. Жикомпри е слободен софтвер, тоа значи дека можете да го прилагодите на вашите сопствени потреби, да го подобрите и што е најважно да го споделите со децата насекаде. Проектот Жикомпри е вклучен и развиен од KDE заедницата ."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-mk.html"
+tags = ["боите.", "буква", "водата", "ги", "го", "допри", "за", "играј", "или", "кликнете"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-nl.html"]
+title = "GCompris educatieve software"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar. Momenteel biedt GCompris meer dan 100 activiteiten en er worden er nog meer ontwikkeld. GCompris is vrije software, hetgeen betekent dat u het aan uw behoeftes kunt aanpassen, kunt verbeteren en vooral dat u het met kinderen overal kunt delen."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-nl.html"
+tags = ["benoemen", "kleine", "kleuren", "klik", "klikken", "klokkijken", "leren", "letter", "ontdekken", "optellen"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net"]
+title = "GCompris Educational Software"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10. Currently GCompris offers more than 100 activities, and more are being developed. GCompris is free software, it means that you can adapt it to your own needs, improve it, and most importantly share it with children everywhere."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "gnu.org", "invent.kde.org", "kde.org", "patreon.com"]
+
+["https://gcompris.net/index-en.html"]
+title = "GCompris Educational Software"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10. Currently GCompris offers more than 100 activities, and more are being developed. GCompris is free software, it means that you can adapt it to your own needs, improve it, and most importantly share it with children everywhere."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-en.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-gd.html"]
+title = "Bathar-bog foghlaim GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "'S e sreath de phrògraman foghlaim a th' ann an GCompris le deagh chàileachd is tha iomadh cleas na bhroinn airson clann aois 2 gu 10. Tha GCompris a' tairgse tuilleadh is 100 chleas a-nis agus tha barrachd 'gan leasachadh. 'S e bathar-bog saor a th' anns a' GCompris, 's e seo gum faod thu gleus a chur air a-rèir nam feumalachdan agad fhèin, a leasachadh is gu h-àraidh a cho-roinn leis a' chlann air fheadh an t-saoghail."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-gd.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-pl.html"]
+title = "GCompris oprogramowanie edukacyjne"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris to wysokiej jakości pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat. Program zawiera już ponad 100 ćwiczeń, następne są w trakcie tworzenia. GCompris jest otwartym programem, co oznacza, że możesz go zmienić dostosowując do swoich potrzeb i co najważniejsze, dzielić się nim z dziećmi z całego świata."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-pl.html"
+tags = ["barw", "dodawania", "klawiaturą", "kolegą/koleżanką", "literę", "małą", "naciśnij", "nauka", "obiegu", "odkrywanie"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-pt.html"]
+title = "'Software' Educativo GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "O GCompris é um pacote aplicacional educativo de alta qualidade, composto por uma grande quantidade de actividades para crianças dos 2 aos 10 anos. De momento, o GCompris oferece cerca de 100 actividades, estando mais em desenvolvimento. O GCompris é 'software' livre, o que significa que o poderá adaptar às suas próprias necessidades, melhorá-lo e, o mais importante, partilhá-lo com as crianças em todo o lado."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-pt.html"
+tags = ["adições", "amigo", "aprender", "carregar", "carregue", "ciclo", "contra", "cores", "descobrir", "identificar"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-nn.html"]
+title = "GCompris pedagogisk programvare"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris har over 100 aktivitetar, og fleire er under utvikling. Det er òg fri programvare. Det vil seia at du kan tilpassa spelet slik du ønskjer, forbetra det og dela det med ungar i heile verda."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-nn.html"
+tags = ["bokstav", "bruka", "eller", "fargar", "fingeren", "kjenn", "klokka", "liten", "lær", "musa"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-fr.html"]
+title = "Logiciel éducatif enfant GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "En tout, GCompris propose plus de 100 activités et il continue à évoluer. GCompris est un logiciel libre, il vous est donc possible de l'adapter à votre besoin ou de l'améliorer, et pourquoi pas, d'en faire bénéficier les enfants du monde entier."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-fr.html"
+tags = ["additions", "apprends", "clavier", "clique", "couleurs", "cycle", "découvre", "entraînement", "face", "identifie"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-gl.html"]
+title = "GCompris software Educativo"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris é unha colección de programas educativos que inclúe numerosas actividades para nenas e nenos de entre 2 e 10 anos. Actualmente GCompris ofrece máis de 100 actividades e máis están sendo desenvolvidas. GCompris é un software libre, o que significa que pode adaptalo ás súas propias necesidades, melloralo e, máis importante, compartilo con todos os nenos."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-gl.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ca@valencia.html"]
+title = "Programari educatiu GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a xiquets i xiquetes entre els 2 i els 10 anys. Actualment GCompris oferix més de 100 activitats, i encara se'n desenvolupen més. GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ca@valencia.html"
+tags = ["amic", "aprendre", "cicle", "clic", "colors", "contra", "descobrir", "entrenar", "escacs", "identificar"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-id.html"]
+title = "Perangkat Lunak Pendidikan GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris adalah perangkat lunak untuk pendidikan dengan kualitas terbaik, yang mempunyai banyak aktifitas untuk anak-anak usia 2 sampai 10 tahun. Pada saat ini GCompris menawarkan lebih dari 100 aktivitas, dan masih banyak yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, yang berarti Anda dapat menyesuaikan untuk kebutuhan Anda, meningkatkannya, dan yang terpenting adalah untuk membagikannya kepada anak-anak dimana saja."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-id.html"
+tags = ["atau", "belajar", "bermain", "catur", "huruf", "kecil", "ketik", "ketuk", "klik", "melawan"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-lt.html"]
+title = "„GCompris“ mokomoji programinė įranga"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "„GCompris“ – tai mokomųjų ir lavinamųjų žaidimų rinkinys 3–12 metų vaikams, skirtas mokytis skaityti, rašyti, skaičiuoti, pažinti gamtos dėsnius, spręsti galvosūkius, lavinti atmintį, išmokti naudotis kompiuteriu ir t.t. Šiuo metu „GCompris“ siūlo daugiau nei 150 pamokėlių, dar daugiau jų yra kuriamos. „GCompris“ yra laisva programinė įranga – tai reiškia, kad Jūs ją galite pritaikyti savo poreikiams, ją tobulinti ir, svarbiausia, ja dalintis su vaikais."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-lt.html"
+tags = ["apytakos", "atrask", "draugu", "išgirstą", "klaviatūra", "mokykis", "naudotis", "paliesk", "pažink", "raidę"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-bg.html"]
+title = "Образователна програма GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris е висококачествен образователен софтуерен пакет, включващ голям брой занимания за деца на възраст от 2 до 10 години. Някои от дейностите са игри, но въпреки това са и образователни. В момента GCompris предлага повече от 100 дейности и се разработват още. GCompris е свободен софтуер, това означава, че можете да го приспособите към нуждите си, да го подобрите и най-важното, да го споделите с децата навсякъде."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-bg.html"
+tags = ["буква", "водния", "докосни", "запознаване", "играй", "или", "клавиатурата.", "кликни", "малка", "на"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ru.html"]
+title = "GCompris образовательные программы"
+description = "GCompris образовательные программы"
+full_description = "GCompris — большая коллекция обучающих игр и упражнений для детей от 2 до 10 лет. Некоторые из заданий представлены в игровой форме, но и они являются обучающими. В настоящее время GCompris содержит более 100 упражнений, и новые находятся в разработке. GCompris — свободное ПО, и это значит, что вы можете приспособить его для своих нужд, улучшить, а самое главное — поделиться им с детьми во всём мире."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ru.html"
+tags = ["additions", "against", "chess", "clock", "colors", "discover", "friend", "identify", "keyboard", "learn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-he.html"]
+title = "חבילת הלומדות GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "חבילת הלומדות האיכותיות Gcompris כוללת מספר גדול של פעילויות לילדים וילדות בגילאי 2 עד 10. כרגע מציעה חבילת ג'יקומפריס יותר מ־100 פעילויות ונוספות נמצאות בפיתוח. ג'יקומפריס היא תוכנה חופשית, מה שאומר שאפשר לשנות אותה לפי הצרכים שלך, לשפר אותה, והכי חשוב, לחלוק אותה עם ילדים בכל מקום."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-he.html"
+tags = ["או", "אימוני", "האותיות", "המים", "הקטנות", "חבר/ה", "חיבור", "טאפ", "להקיש", "לזהות"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-sk.html"]
+title = "Vzdelávací softvér GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "Momentálne GCompris ponúka prístup k stovke aktivít a ďalšie sú práve vo vývoji. GCompris je slobodný softvér, čo znamená, že si ho môžete prispôsobiť vlastným potrebám, vylepšiť si ho a hlavne, zdielať ho s deťmi nech sú kdekoľvek."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-sk.html"
+tags = ["alebo", "cvičenie", "cyklus", "dotkni", "farby", "hodiny", "hraj", "kamarátovi", "klikni", "klávesnicou"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-eo.html"]
+title = "GCompris Eduka Programaro"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris estas altkvalita eduka programaro, inkluzive de granda nombro da agadoj por infanoj de 2 ĝis 10 jaroj. Nuntempe GCompris ofertas pli ol 100 agadojn, kaj pli disvolviĝas. GCompris estas libera programaro, tio signifas, ke vi povas adapti ĝin al viaj propraj bezonoj, plibonigi ĝin kaj plej grave dividi ĝin kun infanoj ĉie."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-eo.html"
+tags = ["akvociklon", "aldonojn", "amiko", "frapeti", "horloĝon", "identigi", "klaki", "klaku", "klavartrejnado", "kolorojn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ro.html"]
+title = "Suita de software educațional GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris este o suită educațională software de înaltă calitate, constând în numeroase activități pentru copii între 2 și 10 ani. În prezent, GCompris oferă peste 100 de activități și dezvoltă permanent altele noi. GCompris este un software educațional gratuit, ceea ce înseamnă că îl puteți adapta la propriile dvs. necesități, îl puteți îmbunătăți și, cel mai important, îl puteți împărtăși cu copiii de pretutindeni."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ro.html"
+tags = ["adunările", "apei", "bătaie", "ceasul", "ciclul", "clic", "contra", "culorile", "cunoașterea", "degetul"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-et.html"]
+title = "Õpitarkvara GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris on kvaliteetne õpirakenduse komplekt, mis koosneb paljudest tegevustest lastele vanuses 2-10. Praegu pakub GCompris üle tegevuse ning neid tuleb aina juurde. GCompris on vaba tarkvara, mis tähendab, et sul on võimalik seda just oma vajadustele kohandada, täiustada ja, mis kõige olulisem, jagada teiste lastega kogu maailmas."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-et.html"
+tags = ["avasta", "kella", "klaviatuuri", "klõpsa", "klõpsake", "koolitus", "liitmise", "malet", "mängi", "puuduta"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-hr.html"]
+title = "Obrazovni softver GCompris"
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = "GCompris je visokokvalitetni obrazovni programski paket koji uključuje velik broj aktivnosti za djecu od 2 do 10 godina. Trenutačno GCompris nudi više od 100 aktivnosti, ali i dalje razvijamo nove. GCompris je besplatan softver, što znači da ga možeš prilagoditi svojim potrebama, poboljšati i, što je najvažnije, djeca ga mogu svugdje koristiti."
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-hr.html"
+tags = ["boje", "ciklus", "dodirni", "igraj", "klikni", "koristiti", "malo", "nauči", "otkrij", "prepoznaj"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]
+
+["https://gcompris.net/index-ar.html"]
+title = 'برنامج "فهمت" التعليمي'
+description = "educational software gcompris. Logiciel educatif gcompris"
+full_description = 'فهمت هو طقم برمجيّات تعليميّة عالية الجودة يضمّ مختلف الأنشطة للأطفال من سنتين إلى 10 سنوات. تقدم "فهمت" حاليًا أكثر من 100 نشاط، ويجري تطوير المزيد. "فهمت" هو برنامج حرّ وهذا يعني أنه يمكنك تكييفه مع احتياجاتك الخاصة، وتحسينه، والأهم من ذلك مشاركته مع الأطفال في كل مكان.'
+author = "Timothée Giet"
+year_published = 2025
+clearnet = "https://gcompris.net/index-ar.html"
+tags = ["أو", "اضغط", "اكتشف", "الألوان", "التدرّب", "الجّمع", "الحرف", "الساعة", "الشّطرنج", "الصّغير"]
+language = "en"
+internal-references = ["none"]
+external-references = ["collaborate.kde.org", "creativecommons.org", "download.kde.org", "f-droid.org", "flathub.org", "gnu.org", "invent.kde.org", "kde.org", "microsoft.com", "patreon.com", "play.google.com", "snapcraft.io"]

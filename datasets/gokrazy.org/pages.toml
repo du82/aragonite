@@ -1,0 +1,276 @@
+["https://gokrazy.org/prototyping"]
+title = "https://gokrazy.org/development/non-go/"
+year_published = 2025
+clearnet = "https://gokrazy.org/prototyping"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.docker.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "golang.org", "grafana.com", "irssi.org", "min.io", "openwrt.org", "periph.io", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/bluetooth"]
+title = "Using Bluetooth :: gokrazy"
+full_description = "gokrazy has limited support for Bluetooth. The usual Bluetooth utilities (bluez) have a lot of dependencies that are not available on gokrazy and those are out of scope here. But the basic Bluetooth hardware are supported on low level. This is useful in particular for applications using Bluetooth LE natively in Go. To enable Bluetooth in gokrazy, first add the github.com/gokrazy/bluetooth package to your gokrazy instance:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/bluetooth"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "bluetooth", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "gitlab.com", "go.dev", "gohugo.io", "gokrazy.monkey-turtle.ts.net", "grafana.com", "irssi.org", "login.tailscale.com", "periph.io", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "tailscale.com", "youtube.com"]
+
+["https://gokrazy.org/userguide"]
+title = "Configuration :: gokrazy"
+full_description = "After following the Quickstart guide, you should have a working gokrazy instance to further customize. These configuration guides walk you through various topics. If you feel a common use-case should be included here but isn’t, please file an issue on GitHub."
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "configuration", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "dcpri.me", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/quickstart"]
+title = "https://gokrazy.org/quickstart/"
+year_published = 2025
+clearnet = "https://gokrazy.org/quickstart"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "dcpri.me", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/packages/caddy-http-server"]
+title = "Caddy HTTP server :: gokrazy"
+full_description = "Then, create the referenced Caddyfile extra file and modify it to your liking. In this example, we explicitly configure an HTTP listener to disable Caddy’s automatic HTTPS setup, so that your server will work without a publically reachable address."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/caddy-http-server"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "caddy", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "caddyserver.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "grafana.com", "periph.io", "pinout.xyz", "pkg.go.dev", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/packages/showcase"]
+title = "Showcase :: gokrazy"
+full_description = "scan2drive is an appliance (with a web interface) that scans paper documents 📄 from a scanner 🖨️ as PDFs to Google Drive for full-text search. hmgo is a minimal HomeMatic house automation central control unit replacement (specific to stapelberg’s home network). beatbox is a Raspberry Pi 3-based toy that combines a Mir:ror and NFC figurines for playing music stored on the device or directly from Spotify. consrv is a Raspberry Pi 4-based appliance that provides a basic SSH to serial console bridge for accessing remote devices. krazyotelcol is an appliance running the OpenTelemetry Collector, a vendor-agnostic implementation on how to receive, process and export telemetry data. Rest Server is a high performance HTTP server that implements restic’s REST backend API. Running it requires some setup and other configurations which are available in this blog post. waiw is a Go webserver to store movies/series/animes ratings and comments. Running it requires some setup but the README describes every step to make it work. The following third-party programs have been successfully used with gokrazy but might require additional setup: The Prometheus node exporter exposes various metrics of the system on which it is running for use with the prometheus monitoring and alerting system. The Prometheus blackbox exporter allows blackbox probing of endpoints over HTTP, HTTPS, DNS, TCP and ICMP for use with the prometheus monitoring and alerting system. You can prototype your idea by temporarily using existing software to close the gap. See Prototyping."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/showcase"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "beatbox", "blackbox", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "dcpri.me", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/wifi"]
+title = "Connecting to WiFi networks :: gokrazy"
+full_description = "To make gokrazy connect to a WiFi network, first add the github.com/gokrazy/wifi package to your gokrazy instance: Alternatively, you can also create the wifi.json manually on the permanent data partition with path /perm/wifi.json. In case you have trouble getting your Raspberry Pi to connect to your network, this is how I set up my TP-LINK TL-WDR4300 with OpenWrt 19.07: The MAC address filter isn’t a security measure, but prevents others from accidentally joining this open network."
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/wifi"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "configure", "connecting", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gokrazy", "golang.org", "grafana.com", "min.io", "openwrt.org", "periph.io", "pkg.go.dev", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/packages/docker-containers"]
+title = "Docker containers :: gokrazy"
+full_description = "gokrazy’s goal is to make it easy to build Go appliances. In an ideal world, all building blocks you need would be available in Go. In reality, that is not entirely the case. Perhaps you need to run a C program next to your Go programs. Docker containers make incremental (or partial) adoption of gokrazy easy. We’re going to use podman, a drop-in replacement for Docker, because there is a statically compiled version for amd64 and arm64 available that we could easily re-package into https://github.com/gokrazy/podman. Now that you have the required tools, there are a couple of decisions you have to make depending on what you want to run in your container(s): Aside from these broad questions, you very likely need to set a bunch of detail options for your container, such as additional environment variables, volume mounts, networking flags, or command line arguments."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/docker-containers"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "connecting to wifi", "containers", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.docker.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "golang.org", "grafana.com", "irssi.org", "min.io", "openwrt.org", "periph.io", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/development/modules"]
+title = "Working with Go modules :: gokrazy"
+full_description = "If you are not yet familiar with Go modules in general (outside of gokrazy), please read the Go wiki page on Modules first. Since September 2022, the gokrazy packer builds each package in its own build directory, with its own go.mod and go.sum files. This is done for isolation: if you update one program, that will not have any effect on the other programs you include in your gokrazy instance. Throughout this page, let’s assume your gokrazy instance is named scanner, and will hence store its files in ~/gokrazy/scanner. A single additional program, scan2drive, is included: When building this instance (using gok overwrite initially, or gok update afterwards), the gok CLI will create the following build directory structure: You can see that there is one subdirectory for each package listed in the Packages field of your instance’s config.json (see gok edit), which includes the explicitly added scan2drive, plus a couple extra ones that gokrazy always installs, e.g. github.com/gokrazy/gokrazy/cmd/dhcp. If you want to influence the content of any newly created go.mod (no effect on existing go.mod files), you can create a go.mod template in your instance directory: ~/gokrazy/scanner/go.mod. If you want to make the gokrazy packer pick up a local working copy with not-yet-published code, or a working copy with local changes to existing code, use gok add with a directory name: Often, one Go package will be the only package you use from a certain Go module. But this isn’t always the case: for example, the system packages github.com/gokrazy/gokrazy/cmd/dhcp and github.com/gokrazy/gokrazy/cmd/ntp both come from the github.com/gokrazy/gokrazy module. The packer will by default create a separate builddir, including a separate go.mod and go.sum, for each package, even when they come from the same module. If you want to add module-wide replace directives to your go.mod file, you can influence the granularity at which gokr-packer works as follows. Move the go.mod/go.sum files to the directory level within the builddir/ hierarchy at which you would like to work. gokr-packer will look for go.mod/go.sum files at the package level, going one level up until it finds the files."
+year_published = 2025
+clearnet = "https://gokrazy.org/development/modules"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "building", "code:", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "periph.io", "pinout.xyz", "youtube.com"]
+
+["https://gokrazy.org/development/process-interface"]
+title = "Process interface / requirements :: gokrazy"
+full_description = "gokrazy’s init process (pid 1) supervises all the binaries the user specified via gokr-packer flags. gokrazy sets the HOME environment variable to HOME=/perm/home/<cmd>, where <cmd> is the name of your binary. For example, tailscale.com/cmd/tailscaled is started with HOME=/perm/home/tailscaled. An easy way to implement privilege dropping in Go is to re-execute the process with syscall.SysProcAttr fields set. For example, this is how you would drop privileges to user nobody (uid/gid 65534):"
+year_published = 2025
+clearnet = "https://gokrazy.org/development/process-interface"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "connecting to wifi", "data backup with rsync", "dhcp client"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "grafana.com", "periph.io", "pinout.xyz", "pkg.go.dev", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/remotesyslog"]
+title = "Remote Syslog: sending gokrazy logs over the network :: gokrazy"
+full_description = "If you update your gokrazy installations daily, as we recommend you do, logs will be cleared daily as a side effect of rebooting the device. You can use Remote Syslog to persist logs elsewhere for later analysis. To enable remote syslog, you need to configure a target by creating the file remote_syslog/target on the permanent data partition. I recommend using a (static) IP address for increased reliability, so that remote syslog works even when DNS does not. If you want to run your syslog server on a regular Linux distribution, this is how I instructed syslog-ng via its /etc/syslog-ng/syslog-ng.conf to write syslog messages it received from e.g. host gokrazy to /var/log/remote/gokrazy-log:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/remotesyslog"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "client", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pkg.go.dev", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/automation"]
+title = "Automation :: gokrazy"
+full_description = "This page demonstrates different ways of creating automation around gokrazy, in two different scenarios: As a provider of a package that can be used with gokrazy, who wants to ensure the program(s) can be built into a gokrazy instance in a continuous integration service like GitHub Actions. For example, I use the following Makefile. I run make get && make update from cron every day. I sometimes manually run make overwrite with /dev/sdx being my USB SD card reader. And for debugging, make root produces a SquashFS image I can inspect with unsquashfs -ll. The first line is the so-called “gokline”. In this line, you can centrally put all the command-line flags, environment variables or config templating hooks. For example, in router7, I set the GOARCH=amd64 environment variable to make Go compile for x86-64 (PC) instead of ARM (Raspberry Pi): You can place the following gokrazy.yml into your .github/workflows directory to verify that your program builds as a gokrazy appliance:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/automation"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "actions", "automating", "automation", "common"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/development/non-go"]
+title = "Non-Go Prototyping :: gokrazy"
+full_description = "To realize the full benefits of gokrazy, you need to use only software written in Go. If there is no Go software for what you want to do, creating that piece of software can pose a seemingly unsurmountable hurdle. To make some quick progress and figure out if your idea can be implemented, it might make sense to temporarily use existing software before starting your own implementation. This article shows a couple of techniques for getting non-Go software to work on gokrazy, in increasing order of complexity. Note that software which is manually installed like shown here will not be automatically updated by gokrazy and hence poses a security risk. Use these techniques only for prototyping. It would not suffice to add Grafana to your gokr-packer command, as the resulting Grafana binary requires assets, supports plugins, keeps state, etc. Hence, you need to manually install Grafana into a directory underneath /perm. A convenient way to do that is to use breakglass to download the “Standalone Linux Binaries” release from https://grafana.com/grafana/download?platform=arm. Note that I am serving the file from my computer because my busybox version supports neither HTTPS nor DNS. We cannot start Grafana yet, as its binary is dynamically linked. One way to fix this is to place the sources which correspond to the release you just unpacked (e.g. from https://github.com/grafana/grafana/tree/v5.3.2) in your $GOPATH and recompile the binaries: Note that it is usually easier to set the environment variable CGO_ENABLED=0 to get a statically linked binary, but Grafana uses sqlite3, which is written in C, so we resort to the -ldflags variant. WireGuard is a modern VPN tunnel, which consists of a Linux kernel module and a configuration tool. See rtr7/kernel@c7afbc1f for how the kernel module was added to the router7 kernel. The configuration tool can be statically cross-compiled. We can run Debian in a Docker container to not mess with our host system: tc is a special case in that it requires to be dynamically linked. The different queueing disciplines are implemented as plugins, and statically linking tc results in a binary which starts but won’t be able to display or change queueing disciplines."
+year_published = 2025
+clearnet = "https://gokrazy.org/development/non-go"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automatically", "automation", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "grafana.com", "periph.io", "pinout.xyz", "youtube.com"]
+
+["https://gokrazy.org/userguide/rsync-backups"]
+title = "Permanent data backup with the gokrazy rsync :: gokrazy"
+full_description = "I like to periodically back up all scans from my scan2drive appliance to my PC. The PC is backed up as well, so that automatically distributes my scans to multiple machines in case one of them fails. A convenient way to set up an efficient partial or full backup of a gokrazy device’s permanent data partition is to use the gokrazy rsync daemon. This article walks you through how I have set up my backup, but many variants are possible to cater to different requirements. (You don’t typically need backups of your gokrazy device’s root partition because it can be built reproducibly any time using Go.) On your PC (not the gokrazy instance), add an SSH configuration stanza to your ~/.ssh/config to configure the custom port (22873 for ssh+rsync) and which passwordless identity file to use (for the cron job in step 4): Then wrap the above rsync command in an rsync-prom invocation in a shell script called scan2drive-backup-sync.sh:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/rsync-backups"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "backup", "configure", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pkg.go.dev", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/tls-for-untrusted-networks"]
+title = "Using TLS in untrusted networks :: gokrazy"
+full_description = 'Let’s assume that you have installed gokrazy on a Raspberry Pi and are currently successfully updating it over the network like so: In the config.json, in the Update field, add a "UseTLS": "self-signed" line (don’t forget adding a comma to the previous line): The gokrazy installation will start listening on TCP port 443 for HTTPS connections and redirect any HTTP traffic to HTTPS. When opening the gokrazy web interface in your browser, you will need to explicitly permit communication due to the self-signed certificate. You can now safely update your gokrazy installation over untrusted networks, such as unencrypted WiFi networks. Run gok update --insecure, and afterwards gokrazy will no longer contain the certificates and will serve unencrypted HTTP again.'
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/tls-for-untrusted-networks"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "connecting to wifi", "data backup with rsync", "dhcp client"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pkg.go.dev", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/development/gpio"]
+title = "Controlling a GPIO input/output pin :: gokrazy"
+full_description = "In this guide, we are using periph.io, a library for peripheral I/O in Go, to set one of the Raspberry Pi’s General Purpose I/O (GPIO) pins to a logical high (3.3V) or low (0V) signal. periph.io supports the Raspberry Pi 3, Raspberry Pi Zero 2W and Raspberry Pi 4, starting with version v3.6.4. To verify the code is doing what we expect, let’s connect a multimeter as per pinout.xyz’s pinout: To set the pin high and low, alternatingly, with a 5 second frequency, we will be using the hello-gpio program, which is a slightly modified version of the example at periph.io/device/led: At this point, we should be able to see the high/low signal on the multimeter, alternating between 3.3V (high) and 0V (low) every 5 seconds: To setup a Pin as an input and to act on change to High level, such as a button, we must poll the Pin periodically because periph.io’s edge detection, which examples like the periph.io/device/button example rely on, is not available on gokrazy. The below example configures a single Pin for Input and uses Go channels to signal level changes that can be acted on. Keep in mind that shortening the polling interval will increase CPU usage."
+year_published = 2025
+clearnet = "https://gokrazy.org/development/gpio"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "based", "connect", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "periph.io", "pinout.xyz", "youtube.com"]
+
+["https://gokrazy.org/userguide/qemu"]
+title = "QEMU x86-64 virtual machine :: gokrazy"
+full_description = "In addition to running gokrazy on a Raspberry Pi or another ARM board, you can also run it in a QEMU x86-64 virtual machine. The following guide covers what’s necessary to build and run a gokrazy image on QEMU. Your hypervisor may require additional configuration. The -i flag specifies the name of the instance. In this case, we’re using virtual, but you can use any name you like. The instance configuration will be created in your home directory under ~/gokrazy/virtual. Run gok -i virtual edit to open the instance configuration file in your favorite editor. You’ll need to make the following changes: The following command will build a single image file that contains the kernel, firmware, and root filesystem. The --target_storage_bytes flag must be specified to set the size of the image. The example below creates a 4GB image. You can now use the image with QEMU. The following command will boot the image in QEMU with a serial console: You can also use the image with other hypervisors, such as Proxmox PVE. Start by creating a new VM without a storage device. Then, upload the image to the Proxmox host and add it as a hard disk to the VM. Visit the Proxmox web UI and choose the unattached disk on the VM Hardware tab. Click “Edit” and select “SCSI” as the Bus/Device. Click “Add” to add the disk to the VM. Visit the “Options” tab and edit “Boot Order”. Make sure the SCIS disk is checked and move it to the top of the list. Click “OK” to save your changes. If you’re using Proxmox PVE, you can deploy a QEMU guest agent to the VM. This will allow you to discover the VM’s IP address. The qemu-guest-kragent project provides a simple agent that can be used with gokrazy. Visit the Proxmox web UI and choose the VM. Click “Options” and select “QEMU Guest Agent”. Make sure “Use QEMU Guest Agent” is checked. Click “OK” to save your changes. You can now use this gokrazy VM instance as you would any other gokrazy instance. For example, you can add packages, configure the instance, and update it."
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/qemu"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "agent", "automation", "bonus:", "build"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pkg.go.dev", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/packages"]
+title = "Available packages :: gokrazy"
+full_description = "To add existing Go software to your gokrazy instance, run gok add with the import path of the program you want to add (the import path must refer to a package main in Go terminology)."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "available", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "grafana.com", "periph.io", "pinout.xyz", "pkg.go.dev", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org"]
+title = "gokrazy Go appliances :: gokrazy"
+full_description = "With gokrazy, you can deploy one or more Go programs as appliances to a Raspberry Pi, Virtual Machine, embedded or normal PC (see supported platforms). This minimalist approach offers several advantages in terms of security, maintainability and reliability: For a long time, we were unhappy about having to spend so much time on each of our various Raspberry Pis, taking care of security updates and other general Linux distribution maintenance. Then, we had a crazy idea: what if we massively reduced the overall system complexity by getting rid of all software we don’t strictly need, and instead built up a minimal system from scratch entirely in Go, a memory safe programming language? Turns out this is feasible. gokrazy is the result. See it in action in this first installation demo video: What’s appealing about building an appliance entirely in Go? You get the same advantages you get when building Go software elsewhere: On a regular Linux distribution, we’d largely use systemctl’s start, stop, restart and status verbs to manage our applications. gokrazy comes with a convenient web interface for seeing process status and stopping/restarting processes. Sometimes, an interactive busybox session or a quick tcpdump run are invaluable. breakglass allows you to temporarily enable SSH/SCP-based authenticated remote code execution: scp your statically compiled binary, then run it interactively via ssh. Due to no C runtime environment being present, your code must compile with the environment variable CGO_ENABLED=0. To cross-compile for the Raspberry Pi 3 or 4, use GOARCH=arm64. If your program still builds, you’re good to go! After building a new gokrazy image on your computer, you can easily update an existing gokrazy installation in-place thanks to the A/B partitioning scheme we use. Just use the gok update command. A tiny amount of configuration is built into the images (e.g. hostname, password, serial console behavior). In general, we prefer auto-configuration (e.g. DHCP) over config files. If you need more configurability, you may need to replace some of our programs."
+year_published = 2025
+clearnet = "https://gokrazy.org"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "appliances", "automation", "backstory", "configuration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "youtube.com"]
+
+["https://gokrazy.org/userguide/dhcp"]
+title = "DHCP Client :: gokrazy"
+full_description = "Each gokrazy instance comes with a built-in DHCP client (see Instance Config → GokrazyPackages for more details on system packages) to set the IP address after obtaining a DHCPv4 lease from the local network’s DHCP server. The gokrazy DHCP client by default runs for eth0. If you want to use a different network interface, perhaps a USB ethernet adapter, you can set the -interface command-line flag: If you configure gokrazy to connect to a WiFi network, the gokrazy/wifi package will run another instance of the gokrazy DHCP client with the -interface=wlan0 flag set. If you want the DHCP client to not actually fetch a lease, but apply a statically supplied network configuration instead, you can set the -static_network_config flag to the name of a file which contains a JSON-encoded DHCP lease in rtr7/dhcp4.Lease format, for example: You can configure the gokrazy DHCP client to pick up this configuration by setting Package config: Command-line flags and Package config: Extra files: The gokrazy DHCP client automatically configures the route priority for default routes of ethernet interfaces (eth*) to 1, whereas on WiFi interfaces (wlan*), the priority is 5 (Linux prefers lower priorities). This means you can configure your gokrazy instance to work with both, WiFi and wired network. Whenever a link is down, the gokrazy DHCP client changes its priority to 1024, meaning outgoing traffic will quickly switch away when an interface loses its link. In other words: When you un-plug the network cable, the device still works via WiFi. If you need to influence the interface’s route priority, you can use the -extra_route_priority flag to add to the default priority. For example, to prefer sending traffic out via the WiFi interface if both WiFi and ethernet are connected, use:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/dhcp"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "client", "configuration", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/platforms"]
+title = "https://gokrazy.org/platforms/"
+year_published = 2025
+clearnet = "https://gokrazy.org/platforms"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "dcpri.me", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/development"]
+title = "Package development :: gokrazy"
+full_description = "A gokrazy package corresponds to a Go package (which in turn is part of a Go module). The gokr-packer program is a wrapper around go install."
+year_published = 2025
+clearnet = "https://gokrazy.org/development"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "connecting to wifi", "data backup with rsync", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "youtube.com"]
+
+["https://gokrazy.org/packages/minio"]
+title = "MinIO object storage :: gokrazy"
+full_description = "MinIO is high-performance object storage that is API compatible to Amazons Simple Storage Service (S3), but is open source and written in Go. It can be used as a building block for applications involving file storage and file transmission and while its native to the cloud, it turns out one can also use it on gokrazy. :) There are nice practical examples on the different options once you execute minio server --help if you have it installed locally or more advanced use cases in the official MinIO docs. The ports for the storage server and console do not have to be explicitly set, but for me the default port collided with another service (Port 9000). If no port is set the console just chooses an arbitrary free one. For some reason the HOME variable has to be set to the storage folder. See Issue #12641 on why that is the case. As default gokrazy sets HOME to HOME=/perm/<cmd>, so if you want to change your storage location to something different modify the Environment field accordingly. If you have the mc command installed you can check out whether your installation of MinIO really works: Also check out the output in the logs on the gokrazy webinterface and login into the MinIO management console (http://gokrazy:3002 in this guide) to create service accounts view logs, bucket contents and more."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/minio"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "command-line", "configuring", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/migration-guide"]
+title = "Instance Config Migration Guide :: gokrazy"
+full_description = "Before 2023, the concept of gokrazy instance configuration was only a convention. Each gokrazy build was created using the gokr-packer CLI tool, and configured by the packer’s command-line flags, parameters, config files in ~/.config and per-package config files in the current directory (e.g. flags/github.com/gokrazy/breakglass/flags.txt). Now, each gokrazy instance, which typically corresponds to one Raspberry Pi or other machine, has its own directory within the gokrazy parent directory (~/gokrazy by default), e.g. ~/gokrazy/scanner. The new gok CLI tool works in the instance directory (e.g. ~/gokrazy/scanner) and reads the single config.json file, which contains all settings. If you’re using the old mechanism (gokr-packer commands), here is how to migrate to the new gok CLI. Assuming you use a command like the following:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/migration-guide"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "config", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/development/buildtags"]
+title = "The gokrazy Go build tag :: gokrazy"
+full_description = "If you want to add code to your project that is specific to gokrazy, you can conditionally compile it using the gokrazy Go build tag. Place this line at the top of your file, followed by a blank line: By convention, the file name for such code should end in _gokrazy.go, similar to how the go tool picks up on GOOS and GOARCH from, for example, source_windows_amd64.go. As an example, take a look at the qrbill programm, which changes its default listen address (in api_gokrazy.go) depending on where it runs. For development, it listens on localhost:9933, but on gokrazy, it listens on :9933 (all IP addresses)."
+year_published = 2025
+clearnet = "https://gokrazy.org/development/buildtags"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "build", "connecting to wifi", "data backup with rsync"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "golang.org", "youtube.com"]
+
+["https://gokrazy.org/packages/prometheus"]
+title = "Prometheus :: gokrazy"
+full_description = "Note: In the following we will assume that your instance is called hello (default) as well as that the hostname is hello as well. We need a valid prometheus config for prometheus to start successfully. Start with the default prometheus.yml from the prometheus repository. Save it to your gokrazy instance directory, e.g. ~/gokrazy/hello/prometheus.yml. In theory, this is enough to deploy prometheus, but unfortunately we are missing the web assets for the web UI which are not included in our build of prometheus. You can use prometheus as is, if you never want to go to the web UI on hello:9090. If you visit the web UI anyway, you will get this (or a similar) error: The web assets are released with every prometheus release and you need to update them by hand with every new version."
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/prometheus"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "assets", "automation", "build", "connecting to wifi"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/userguide/package-config"]
+title = "Package config: flags, environment variables, extra files :: gokrazy"
+full_description = "gokrazy will arrange for each included package to be started at boot. For example, given the following instance config.json (open in your editor using gok edit): Each bit of configuration is nested under the PackageConfig map field in your instance’s config.json, see Instance Config Reference → PackageConfig. The map is keyed by package name (from the Packages field), and each map entry can have the following fields: If you want to influence the build of the package at image-creation time (as opposed to runtime), you can specify flags to be passed to the Go build invocation. This example overwrites the value of the world variable using the -X linker flag, which is a common technique to embed version information: If your program needs extra files to be present in gokrazy’s root file system image at a specific location, you can add them with the extrafiles mechanism: Or, if managing the file contents within the config.json becomes unwieldy, you can manage it in a separate file:"
+year_published = 2025
+clearnet = "https://gokrazy.org/userguide/package-config"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "automation", "build", "command-line", "config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["about.sourcegraph.com", "aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy", "golang.org", "grafana.com", "min.io", "periph.io", "pinout.xyz", "pkg.go.dev", "prometheus.io", "router7.org", "sourcegraph.com", "youtube.com"]
+
+["https://gokrazy.org/packages/tailscale"]
+title = "Tailscale VPN :: gokrazy"
+full_description = "Zero config VPN. Installs on any device in minutes, manages firewall rules for you, and works from anywhere. Tailscale’s networking will come in handy when accessing your gokrazy server remotely (no static DHCP leases, port-forwarding and DynDNS required!), or even to secure your communication when gokrazy is connected to an unencrypted WiFi network. Tailscale requires re-authentication periodically. You can disable key expiry from Tailscale console for the gokrazy instance to not require login every 3 months. To allow hosts in your Tailnet to access devices in your network other than your gokrazy appliance, you can set up Tailscale as a subnet router. To access the gokrazy appliance using SSH authenticating using Tailscale, you can enable Tailscale SSH. Note that Tailscale SSH needs to be allowed by your Tailnet ACL. You can configure to allow, for example, each user to access their own devices using Tailscale SSH, or define which hosts users can access. Before Tailscale v1.56.1, Tailscale used Userspace networking mode on gokrazy, meaning you needed to use Tailscale as an HTTP proxy to establish outgoing connections into your tailnet. With Tailscale v1.56.1 and newer, programs running on gokrazy can connect to other devices in your tailnet without extra steps! 🎉 DNS resolution and TCP connections work out of the box. Before Tailscale v1.56.1, Tailscale used Userspace networking mode on gokrazy, meaning you needed to use the tsnet package if you wanted to restrict a listener to Tailscale. With Tailscale v1.56.1 and newer, you can listen on Tailscale addresses and use LocalClient.WhoIs to obtain the remote identity:"
+year_published = 2025
+clearnet = "https://gokrazy.org/packages/tailscale"
+tags = ["1. quickstart", "2. supported platforms", "3. configuration", "4. available packages", "5. package development", "access permanent data", "accessing", "auth", "authenticate", "authentication"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "caddyserver.com", "docs.min.io", "en.wikipedia.org", "getgrav.org", "github.com", "go.dev", "gohugo.io", "gokrazy.monkey-turtle.ts.net", "grafana.com", "irssi.org", "login.tailscale.com", "min.io", "periph.io", "prometheus.io", "proxmox.com", "router7.org", "sourcegraph.com", "tailscale.com", "youtube.com"]

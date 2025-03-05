@@ -1,0 +1,138 @@
+["https://meetings-archive.debian.net"]
+title = "Index of /"
+full_description = "This file archive belongs to Academic Computer Club in Umeå, Sweden. Technical and contact information can be found here. ACC is transitioning from the acc.umu.se domain to accum.se, see the FAQ on the ACC homepage for more information."
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "mirror.accum.se"]
+
+["https://meetings-archive.debian.net/pub"]
+title = "Index of /pub"
+description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+full_description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories. This file archive belongs to Academic Computer Club in Umeå, Sweden. Technical and contact information can be found here. We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/pub"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "lists.debian.org", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/images"]
+title = "Index of /images"
+full_description = "All the installer images are distributed as ISO and jigdo files. Please use jigdo if you can, as it significantly reduces the load on our servers and it may greatly speed up your download too. The official release images are also normally available via bittorrent. If you encounter any problems with these images, please check the Debian CDs FAQ. The most common complaint at the moment is about wrongly-sized or corrupt DVD ISO images, which is normally a bug in your http download program. The Debian Images Team is a small team of people working on creating, testing and distributing Debian images for you. For more information about the team and how it all works, see the Debian wiki page about us. NameLast modifiedSize Parent Directory - archive/2025-01-11 19:45 - cd-sources/2021-10-09 18:14 - cloud/2023-07-29 08:03 - daily-builds/2025-03-05 16:10 - firmware/2023-08-02 21:40 - openstack/2024-07-01 23:19 - ports/2024-02-25 21:24 - release/2025-01-11 19:45 - snapshot-alternate/2021-01-08 01:27 - snapshot-amd64/2005-05-24 00:00 - snapshot/2025-03-03 10:16 - trixie_di_alpha1/2024-12-31 14:19 - unofficial/2021-09-22 18:24 - weekly-builds/2025-03-05 16:10 - weekly-live-builds/2025-03-03 08:24 -"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/images"
+tags = ["12.9.0", "cloud", "debian", "images", "images,", "images:", "installer", "last", "live", "multiple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "almalinux.org", "alpinelinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "lists.debian.org", "mirror.accum.se", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/ubuntu"]
+title = "Index of /ubuntu"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/ubuntu"
+tags = ["/ubuntu", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "cdimage.ubuntu.com", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "lists.debian.org", "ubuntu.com", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/about/index.html"]
+title = "About the mirror.accum.se file archive"
+full_description = 'For larger files (like .iso images) we use http redirects to send these off to one of the offloaders. The choice of which offloader to redirect to is done by a perl program and is cached in apache as a dbm-cached rewrite rule. To keep cache size reasonably low a certain URL is always redirected to the same offloader. As a precaution against nosey users, the offloaders redirect directory indexes back to the main frontends. And as a precaution against stupid download agents we limit the max connections per IP to 10, and we always deliver data from cache if the data is cached, even if the user agent sends "Cache-control: no cache" or similar.'
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/about/index.html"
+tags = ["archive", "backends", "contact", "disk", "file", "frontends", "information", "mirror.accum.se", "mirrored", "names"]
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "accum.se", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "mirror.accum.se"]
+
+["https://meetings-archive.debian.net/mirror"]
+title = "Index of /mirror"
+description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+full_description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories. This file archive belongs to Academic Computer Club in Umeå, Sweden. Technical and contact information can be found here. We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/mirror"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "lists.debian.org", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/tails"]
+title = "Index of /tails"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/tails"
+tags = ["/tails", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "cdimage.ubuntu.com", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "lists.debian.org", "ubuntu.com", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/debian"]
+title = "Index of /debian"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/debian"
+tags = ["/debian", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "almalinux.org", "alpinelinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "lists.debian.org", "mirror.accum.se", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/debian-cd"]
+title = "Index of /debian-cd"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/debian-cd"
+tags = ["/debian-cd", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "almalinux.org", "alpinelinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "lists.debian.org", "mirror.accum.se", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/Public"]
+title = "Index of /Public"
+description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+full_description = "We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories. This file archive belongs to Academic Computer Club in Umeå, Sweden. Technical and contact information can be found here. We currently have 88 mirrors updating from an upstream/master site, occupying 159TiB in 34M files and 1.2M directories."
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/Public"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "accum.se", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "mirror.accum.se"]
+
+["https://meetings-archive.debian.net/releases"]
+title = "Ubuntu Releases"
+full_description = "There are 2 types of Ubuntu releases: Interim and LTS. Each Ubuntu LTS is maintained for 10 years total: 5 years of standard support + 5 years of ESM. Interim releases are maintained for 9 months. We are happy to provide hosting for the following projects via the cdimage server. While they are not commercially supported by Canonical, they receive full support from their communities. The cdimage server also hosts releases of other Ubuntu images not found on this server, such as builds for less popular architectures and other non-standard and unsupported images. For Ubuntu Desktop and Server on popular architectures, please see the links above instead."
+author = "Canonical"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/releases"
+tags = ["available", "extended", "maintenance", "releases", "security", "standard", "support", "ubuntu"]
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "cdimage.ubuntu.com", "chimera-linux.org", "cran.r-project.org", "ctan.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "lists.debian.org", "ubuntu.com", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/conspiracy"]
+title = "The Swedish Conspiracy"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/conspiracy"
+tags = ["conspiracy", "swedish"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "almalinux.org", "alpinelinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "lists.debian.org", "mirror.accum.se", "wiki.debian.org"]
+
+["https://meetings-archive.debian.net/about"]
+title = "About the mirror.accum.se file archive"
+full_description = 'For larger files (like .iso images) we use http redirects to send these off to one of the offloaders. The choice of which offloader to redirect to is done by a perl program and is cached in apache as a dbm-cached rewrite rule. To keep cache size reasonably low a certain URL is always redirected to the same offloader. As a precaution against nosey users, the offloaders redirect directory indexes back to the main frontends. And as a precaution against stupid download agents we limit the max connections per IP to 10, and we always deliver data from cache if the data is cached, even if the user agent sends "Cache-control: no cache" or similar.'
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/about"
+tags = ["archive", "backends", "contact", "disk", "file", "frontends", "information", "mirror.accum.se", "mirrored", "names"]
+language = "en"
+internal-references = ["none"]
+external-references = ["6581-8580.com", "accum.se", "almalinux.org", "alpinelinux.org", "archlinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "mirror.accum.se"]
+
+["https://meetings-archive.debian.net/cdimage"]
+title = "Index of /cdimage"
+full_description = "All the installer images are distributed as ISO and jigdo files. Please use jigdo if you can, as it significantly reduces the load on our servers and it may greatly speed up your download too. The official release images are also normally available via bittorrent. If you encounter any problems with these images, please check the Debian CDs FAQ. The most common complaint at the moment is about wrongly-sized or corrupt DVD ISO images, which is normally a bug in your http download program. The Debian Images Team is a small team of people working on creating, testing and distributing Debian images for you. For more information about the team and how it all works, see the Debian wiki page about us. NameLast modifiedSize Parent Directory - archive/2025-01-11 19:45 - cd-sources/2021-10-09 18:14 - cloud/2023-07-29 08:03 - daily-builds/2025-03-05 16:10 - firmware/2023-08-02 21:40 - openstack/2024-07-01 23:19 - ports/2024-02-25 21:24 - release/2025-01-11 19:45 - snapshot-alternate/2021-01-08 01:27 - snapshot-amd64/2005-05-24 00:00 - snapshot/2025-03-03 10:16 - trixie_di_alpha1/2024-12-31 14:19 - unofficial/2021-09-22 18:24 - weekly-builds/2025-03-05 16:10 - weekly-live-builds/2025-03-03 08:24 -"
+year_published = 2025
+clearnet = "https://meetings-archive.debian.net/cdimage"
+tags = ["12.9.0", "cloud", "debian", "images", "images,", "images:", "installer", "last", "live", "multiple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accum.se", "almalinux.org", "alpinelinux.org", "archstrike.org", "arcolinux.info", "aur.chaotic.cx", "bioconductor.org", "calculate-linux.org", "chiark.greenend.org.uk", "chimera-linux.org", "cran.r-project.org", "cygwin.com", "deb-multimedia.org", "debconf.org", "debian.org", "deepin.org", "github.com", "lists.debian.org", "mirror.accum.se", "wiki.debian.org"]

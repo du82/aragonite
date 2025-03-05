@@ -1,0 +1,204 @@
+["https://miai.ha.edu.cn/resource4.php"]
+title = "相关资源"
+full_description = "作者：Dongyang Kuang1 and Tanya Schmah 1 单位：1 Department of Math & Stat University of Ottawa, Ottawa, Canada发表期刊：Lecture Notes in Computer Science,2019,LNCS 11861:46-54论文简介：本文提出了一种新的无监督学习算法“ FAIM”，用于3D医学图像配准。与流行的“ U-net” 相比，该网络具有不同的体系结构，可获取一对完整的图像体积，并预测将源对准目标所需的位移场。与基于V-elMorph的基于“ U-net”的配准网络相比，FAIM具有较少的可训练参数，但可以通过Mindboggle-101数据集中区域标签上的Dice得分判断获得更高的配准精度。FAIM产生的变形具有较少的“折叠”，即表面在其自身折叠的不可逆区域。我们发现，在一定范围的超参数（两个网络使用相同的值）下，FAIM能够保持较高的精度和与VoxelMorph相比更少的“折叠”位置的优点。此外，当为了获得更好的可逆性而权衡配准精度时，FAIM需要更少的配准精度牺牲。研究方向：医学图像配准（深度学习） 作者：MGuha Balakrishnan 1, Amy Zhao1, Mert R. Sabuncu2, John Guttag 1, and Adrian V. Dalca 1单位：1 Computer Science and Artificial Intelligence Lab, MIT, Cambridge, MA, USA， 2 School of Electrical and Computer Engineering, Cornell University, Ithaca, NY, USA发表期刊：IEEE TRANSACTIONS ON MEDICAL IMAGING,2019,38:1788-1800论文简介：我们提出了VoxelMorph，这是一个基于快速学习的框架，用于可变形的成对的医学图像配准。我们通过卷积神经网络（CNN）参数化函数，并在一组图像上优化神经网络的参数。给定新的扫描对，VoxelMorph通过直接评估函数快速计算变形场。在这项工作中，我们探索两种不同的训练策略。在第一个（无监督）设置中，我们训练模型以最大化基于图像强度的标准图像匹配目标函数。在第二种设置中，我们利用训练数据中可用的辅助分割。我们证明了无监督模型的准确性可与最先进方法相媲美，而运算速度要快几个数量级。我们还表明，使用辅助数据训练的VoxelMorph在测试时可提高的配准准确性，并评估训练集大小对配准的影响。我们的方法有望加快医学图像分析和处理流程，同时促进基于学习的配准及其应用的新颖方向。研究方向：医学图像配准（深度学习）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource4.php"
+tags = ["1.论文题目：faim", "10.论文题目：a", "11.论文题目：fast", "2.论文题目：voxelmorph:", "3.论文题目：unsupervised", "4.论文题目：phiseg:", "5.论文题目：probabilistic", "6.论文题目：registering", "7.论文题目：image", "8.论文题目：deep"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/contact.php"]
+title = "联系我们"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/contact.php"
+tags = ["快速链接", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "iopscience.iop.org", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/tuanduichengyuan.html"]
+title = "团队成员"
+full_description = "林予松，男，博士，郑州大学软件与应用科技学院教授，博士生导师。1993年获得南京大学计算机应用学士学位，1998年获得郑州大学计算机软件硕士学位，2005年获得解放军信息工程大学通信与信息系统博士学位。 2006年-2008年在美国波士顿从事Web-based Application的研究和开发工作。现任河南省教育科研网网络中心常务副主任，郑州大学互联网医疗与健康服务河南省协同创新中心副主任，河南首教育信息安全监测中心主任。发表互联网及医疗领域学术论文60余篇，主持国家级科研项目2项，省部级科研项目6项；出版专业著作5部，获得省级科研奖励3项。目前主要研究方向：医学影像与人工智能，互联网新技术。 王梅云，河南省人民医院影像科主任，河南省医学影像中心主任。博士、主任医师、教授，博士生导师，美国哈佛大学医学院博士后，美国约翰霍普金斯医学院访问教授。 国际华人医学磁共振学会（OCSMRM）“突出贡献奖”及中华放射学会年度金奖-杰出青年奖获得者。首批入选爱思唯尔国际影像数据库中国知名放射学专家。国际医学磁共振学会(ISMRM)理事，河南省放射学会副主任委员，国际权威SCI期刊Radiology等多家杂志审稿专家。主持国家自然科学基金重点国际合作项目1项、国家重点研发计划政府间合作重点专项1项，国家自然科学基金项目3项、省杰出人才、省杰出青年等省部级项目6项；发表论文60余篇，其中SCI论文40余篇，被引用900余次，且论文入选全球TOP 1% ESI高被引论文；获省科技进步奖4项。研究方向：神经系统疾病影像诊断与研究、磁共振新技术的应用。 李英豪，博士，副教授，硕士生导师，2010年毕业于郑州大学计算机科学与技术专业，获得工学学士学位；2016年毕业于重庆大学计算机科学与技术专业，获得工学博士学位。2016年至今在郑州大学软件学院任教。 主要研究方向：图像配准，点云配准，机器学习，模式识别等"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/tuanduichengyuan.html"
+tags = ["博士生", "吴亚平", "已毕业", "张茜", "快速链接", "教师", "李英豪", "林予松", "王梅云", "硕士生"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aicloud.ha.edu.cn", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource6.php"]
+title = "相关资源"
+full_description = "作者：Bin Xiao, Han Tang, Yanjun Jiang, Weisheng Li, Guoyin Wang 单位：Chongqing Key Laboratory of Computational Intelligence, Chongqing University of Posts and Telecommunications, Chongqing 400065, China发表期刊：June 2015 Neurocomputing 157 DOI:10.1016/j.neucom.2015.01.025论文简介：本文提出了一种新的空间配准多模态医学图像融合框架，该框架主要基于非下采样轮廓变换(NSCT)。该方法能够将源医学图像分解为NSCT域的低频段和高频段。然后应用不同的融合规则应用于变换图像的不同频带。融合系数由以下融合规则实现：低频分量使用归一化香农熵的活动度量进行融合，它本质上是从具有高度集中的聚焦区域中选择低频分量。相反，高频分量使用指令对比度进行融合，该对比度本质上从源收集所有信息纹理。以四组人脑和两幅来自不同来源的临床骨图作为实验对象，说明了该框架的性能。实验结果和与其他方法的比较表明，该框架在主观和客观评估标准上都具有较好的性能。研究方向：医学图像融合 作者：Ming Yin a, Xiaoning Liu a, Yu Liu b, and Xun Chen C单位：a School of Mathematics, Hefei University of Technology, Hefei 230009, China. b Department of Biomedical Engineering, Hefei University of Technology, Hefei 230009, China (e-mail: yuliu@hfut.edu.cn). c Department of Electronic Science and Technology,University of Science and Technology of China, Hefei 230026, China.发表期刊：IEEE Transactions on Instrumentation and Meaurement,2019,68(1):49-64论文简介：本文提出了一种新的非下采样剪切变换(NSST)领域的多模态医学图像融合方法。在所提出的方法中，首先对源图像进行NSST分解，得到它们的多尺度和多方向表示。通过参数自适应脉冲耦合神经网络(PA-PCNN)模型对高频波段进行融合，其中所有PCNN参数都可以由输入波段自适应估计。低频波段被一种新的策略合并，该策略同时处理两个医学图像融合的关键问题，即能量保存和细节提取。最后，通过对融合的高频和低频进行逆NSST重建融合图像。通过四种不同类型的医学图像融合问题(计算机断层扫描(CT)和磁共振(MR)、MR-T1和MR-T2，MR和PET，MR和单光子发射CT]总共有80对以上的源图像验证了该方法的有效性。实验结果表明，该方法与另外九种具有代表性的医学图像融合方法相比，具有竞争力的性能，也是目前视觉质量和客观评估的最好结果。研究方向：图像融合"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource6.php"
+tags = ["1.论文题目：a", "2.论文题目：medical", "3.论文题目：a", "4.论文题目：perceptual", "5.论文题目：covid-19", "6.论文题目：visualisation", "accurate", "assessment", "based", "classification"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource3.php"]
+title = "相关资源"
+full_description = "作者：Lijun Liu a,b,c, Lizhen Wang a,∗, Qingsong huang b,c, Lihua Zhou a, Xiaodong Fu b,c, Li Liu b,c单位：a Department of Computer Science and Engineering, School of Information Science and Engineering, Yunnan University, Kunming 650091, China; b Computer Technology Application Key Laboratory of Yunnan Province (Faculty of Information Engineering and Automation, Kunming University of Science and Technology), Kunming, 650500, China; c Faculty of Information Engineering and Automation, Kunming University of Science and Technology, Kunming, 650500, China发表期刊：Computer Methods and Programs in Biomedicine, 2019, 187:105088论文简介：医学高分辨率图像在图像处理和计算机视觉应用中非常重要，在图像指导的诊断，临床试验，咨询和病例讨论中发挥着至关重要的作用。如何有效地访问移动远程医疗系统中的医学高分辨率图像成为一个巨大的挑战。因此，本文提出了一种有效的金字塔体系结构，用于优化医学高分辨率图像的传输和渲染。本文所提出的体系结构包括三个核心方案：（1）基于几何关系的不平衡金字塔方案；（2）基于哈希表和晶格划分的索引方案；（3）基于相似匹配的查询方案。然后，我们设计响应式服务组件：生成服务，索引服务和查询服务。最终，这些服务被组合到一个原型系统中，该系统能够有效传输和渲染医学高分辨率图像。结果表明，不平衡金字塔方案可以快速生成金字塔结构和相应的图像文件。索引方案可以实时创建索引结构和索引文件。该查询方案不仅可以实时匹配图像块所属的最佳层，而且可以准确地捕获查询图像块。基于该架构的原型系统完全符合DICOM标准，该标准可以与其他现有医疗系统或移动应用程序无缝集成，并可以用于各种情况，例如诊断，研究和教育。研究方向：医学图像传输（金字塔方案）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource3.php"
+tags = ["1.论文题目：an", "2.论文题目：towards", "3.论文题目：a", "4.论文题目：multiple", "5.论文题目：medical", "6.论文题目：a", "7.论文题目：a", "aided", "algorithm", "architecture"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource8.php"]
+title = "相关资源"
+full_description = "作者：Xiaomei Zhao1,2, Yihong Wu1, Guidong Song3, Zhenye Li4, Yazhuo Zhang3,4,5,6, and Yong Fan7单位：1. National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences 2.University of Chinese Academy of Sciences, Beijing, China 3.Beijing Neurosurgical Institute, Capital Medical University, Beijing, China 4.Department of Neurosurgery, Beijing Tiantan Hospital, Capital Medical University, Beijing, China 5.Beijing Institute for Brain Disorders Brain Tumor Center, Beijing, China 6.China National Clinical Research Center for Neurological Diseases, Beijing, China 7.Department of Radiology, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA发表期刊：Medical image analysis, 2018, 43: 98-111.论文简介：论文将全卷积神经网络与条件随机场结合实现肿瘤分割，归一化、偏置场校正做预处理，利用三个二维方向（轴向，冠状，矢状）上的图像做分割，融合三个方向上的分割结果，删除小连通区域做后处理。研究方向：脑肿瘤分割 作者：Olaf Ronneberger, Philipp Fischer, and Thomas Brox单位：Computer Science Department and BIOSS Centre for Biological Signalling Studies, University of Freiburg, Germany发表期刊：International Conference on Medical image computing and computer-assisted intervention. Springer, Cham, 2015: 234-241.论文简介：论文提出了医学图像中经典的分割网络U-Net，该网络包括一个用于获取图像上下文信息的下采样路径和一个能够进行精确定位的对称上采样路径，可以快速高效的完成分割。研究方向：医学影像数据预处理（图像增强） 作者：Konstantinos Kamnitsasa,∗, Christian Lediga , Virginia F.J. Newcombeb,c, Joanna P. Simpsonb, Andrew D. Kaneb, David K. Menonb,c, Daniel Rueckerta, Ben Glockera单位：a. Biomedical Image Analysis Group, Imperial College London, UK b. University Division of Anaesthesia, Department of Medicine, Cambridge University, UK c. Wolfson Brain Imaging Centre, Cambridge University, UK发表期刊：Medical image analysis, 2017, 36: 61-78.论文简介：论文提出了一个网络结构DeepMedic用来解决3D图像中的脑肿瘤分割问题，该结构包含双路卷积通道，共11层，以多尺度图像块为输入，在脑损伤、脑肿瘤等分割任务中达到了SOTA的性能。研究方向：脑肿瘤分割"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource8.php"
+tags = ["1.论文题目：a", "10.论文题目：unsupervised", "12.论文题目：nnu-net", "13.论文题目：two-stage", "2.论文题目：u-net:", "3.论文题目：efficient", "5.论文题目：deep", "6.论文题目：brain", "7.论文题目：mammographic", "8.论文题目：conditional"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource9.php"]
+title = "相关资源"
+full_description = "作者：Muhammad Sajjad a,1, Salman Khan b,1, Khan Muhammad b, Wanqing Wu c, Amin Ullah b, Sung Wook Baik b,∗单位：a Digital Image Processing Laboratory, Department of Computer Science, Islamia College, Peshawar, Pakistan b Intellignet Media Laboratory, College of Electronics and Information Engineering, Sejong University, Seoul, Republic of Korea c CAS Key Laboratory of Human-Machine Intelligence-Synergy Systems, Shenzhen Institutes of Advanced Technology (SIAT), Shenzhen, 518055, China发表期刊：Journal of Computational Science 30 (2019) 174–182论文简介：许多计算机辅助诊断(CAD)系统最近出现在医学影像学的历史上，以帮助放射科医生了解他们的病人。为了充分协助放射科医师和更好地分析磁共振成像(MRI)，脑肿瘤的分级是必不可少的程序。在本文中，我们提出了一种新的基于卷积神经网络(CNN)的脑肿瘤分级系统。首先，利用深度学习技术对MR图像中的肿瘤区域进行分割。其次，通过大量的数据扩充，有效的训练了所提出的系统，避免了MRI在多级别脑肿瘤分类时缺乏数据的问题。最后，利用增强数据对预训练的CNN模型进行微调，用于脑肿瘤分级分类。在增强数据和原始数据上对该系统进行了实验评估，结果表明，与现有方法相比，该系统具有令人信服的性能。研究方向：脑胶质瘤分级 作者：Geethu Mohan, M. Monica Subashini ∗单位：School of Electrical Engineering, VIT University, Vellore, 632014, India发表期刊：Biomedical Signal Processing and Control 39 (2018) 139–161论文简介：本文就近年来脑磁共振影像的分割和肿瘤分级技术作一综述。脑瘤的早期发现和分级的必要性是本研究的动机。在磁共振成像(MRI)中，肿瘤可能显示清晰，但医生需要量化肿瘤区域以进一步治疗。这就是数字图像处理方法与机器学习一起帮助进一步诊断、治疗、术前和术后程序，以及放射科医生和计算机之间的协同作用。这些混合技术提供了第二意见和协助放射科医师理解医学图像，从而提高诊断准确性。本文以包括星形细胞瘤在内的胶质瘤为靶点，回顾了肿瘤感染人脑MR图像的分割和分类的发展趋势。该方法用于提取和分级的肿瘤，可纳入标准的临床成像协议阐明。最后，对该技术的现状、未来发展和趋势进行了重要的评估。研究方向：基于MRI图像的脑肿瘤分类综述"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource9.php"
+tags = ["1.论文题目：multi-grade", "2.论文题目：mri", "4.论文题目：fusing", "5.论文题目：multi-scale", "8.论文题目：collaborative", "adaptation", "analysis:", "augmentation", "based", "brain"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/timeline.php"]
+title = "科研成果"
+full_description = "泛影云（AnyImaging Cloud）项目是基于IPv6、5G、云计算、边缘计算、移动计算等新技术实现的一个医学影像云服务平台，支持患者、基层医院和三甲医院间的数据传输，能够对医学影像数据进行自动分析和辅助诊断，实现远程诊疗和分级诊疗功能。 泛影阅片（AnyImaging Reader）是一款医学图像阅读、处理软件，为医生、科研人员、病人提供免费易用的医学影像阅片功能。本软件在国家“信创”产业发展的背景下，聚焦基础性的医学影像处理软件研发，支持国产软硬件平台，推动医学影像处理软件的国产化。"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/timeline.php"
+tags = ["产品研发", "名次", "学术论文", "快速链接", "指导教师", "时间", "比赛名称", "科研奖励", "科研项目", "竞赛奖励"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aicloud.ha.edu.cn", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource10.php"]
+title = "相关资源"
+full_description = "作者：Jing Zhao a, Xijiong Xie a, Xin Xu b, Shiliang Sun a,∗单位：a Department of Computer Science and Technology, East China Normal University, 3663 North Zhongshan Road, Shanghai 200062, PR China b College of Mechatronics and Automation, National University of Defense Technology, Changsha, 410073, PR China发表期刊：Information Fusion, 2017, 38:43-54论文简介：多视角学习是机器学习中的一个新兴方向，它考虑通过多视角学习来提高泛化性能。多视角学习也称为来自多个功能集的数据融合或数据集成。文中首先回顾了理论基础，以了解多视角学习的属性和行为。然后，按照三个类别描述多视角学习方法，以提供一个整洁的分类和组织。对于每种类别，都提出了代表性算法和新提出的算法。这项调查的主要特点是，我们在与早期方法保持一致的基础上，为多视角学习方法的最新发展提供了全面的介绍。我们还将尝试确定有前途的场所，并指出一些具体的挑战，这些挑战有望推动这一快速发展领域的进一步研究。研究方向：多视角学习(综述) 作者：Hongliu CAO∗a,b, Simon BERNARDa, Robert SABOURINb, Laurent HEUTTEa单位：a Normandie Univ, UNIROUEN, UNIHAVRE, INSA Rouen, LITIS, 76000 Rouen, France b Laboratoire d’Imagerie, de Vision et d’Intelligence Artificielle, École de Technologie Supérieure, Université du Québec, Montreal, Canada发表期刊：Pattern Recognition, 2019, 88:185-197论文简介：文中首先表明Radiomics分类问题应被视为高维，低样本量，多视角的学习问题。然后，提出了一种基于差异的方法，用于合并来自不同视角的信息，基于随机森林分类器。在不同的公共多视角数据集以及Radiomics数据集上，将所提出的方法与不同的最新Radiomics和多视角解决方案进行了比较。实验表明，所提出的方法比Radiomics以及多视角学习文献中的最新方法效果更好。研究方向：多视角学习（医学影像分类）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource10.php"
+tags = ["1.论文题目：multi-view", "2.论文题目：random", "3.论文题目：multiview", "4.论文题目：multi-view", "5.论文题目：multi-view", "6.论文题目：soft", "analysis", "application", "based", "boosting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["academictorrents.com", "aclcargo.com", "aclweb.org", "aime21.aimedicine.info", "anaconda.com", "arxiv-sanity.com", "bilibili.com", "blog.csdn.net", "britannica.com", "cancerimagingjournal.biomedcentral.com", "clips.ua.ac.be", "cs229.stanford.edu", "cse.cuhk.edu.hk", "cvpr2021.thecvf.com", "embc.embs.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "softschool.zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource.php"]
+title = "相关资源"
+full_description = "作者：Virendra Kumar a, Yuhua Gu a, Satrajit Basu b, Anders Berglund c, Steven A. Eschrich c, Matthew B. Schabathd, Kenneth Forster e, Hugo J.W.L. Aerts f ,h, Andre Dekker f , David Fenstermacher c, Dmitry B. Goldgof b, Lawrence O. Hall b, Philippe Lambin f , Yoganand Balagurunathan a, Robert A. Gatenby g, Robert J. Gillies a, g,⁎单位：a Department of Cancer Imaging and Metabolism, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, USA; b Department of Computer Science and Engineering, University of South Florida, Tampa, FL, USA; c Department of Bioinformatics, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, USA; d Department of Cancer Epidemiology, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, USA; e Department of Radiation Oncology, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, USA; f Department of Radiation Oncology (MAASTRO), GROW-School for Oncology and Developmental Biology, Maastricht University Medical Center, Maastricht, the Netherlands; g Department of Radiology, H. Lee Moffitt Cancer Center and Research Institute, Tampa, FL, USA; h Computational Biology and Functional Genomics Laboratory, Department of Biostatistics and Computational Biology, Dana-Farber Cancer Institute, Harvard School of Public Health, Boston, MA, USA发表期刊：Magnetic Resonance Imaging 30 (2012) 1234–1248论文简介：影像组学是指从计算机断层扫描，正电子发射断层扫描或磁共振成像获得的医学图像中提取和分析大量具有高通量的高级定量成像特征。影像组学一般采用数据挖掘建立图像特征与表型或基因蛋白特征关系的描述性和预测性模型，为后续的诊断、预后和预测提供有价值的信息。影像组学的流程包括图像采集和重建，图像分割和渲染，特征提取和特征限定，数据库和数据共享以及信息分析。每个过程都需要克服其自身的挑战，例如，必须确定和协调用于图像获取和重建的最佳协议；分段必须是鲁棒的，并且涉及最少的操作输入；必须生成允许结合图像特征和图像注释以及医学和遗传数据的信息数据库。 由于影像组学不是一个成熟的研究领域，因此必须优化用于分析这些数据的统计方法。本文将依次讨论每一个子过程，过程中所面临的挑战以及解决这些挑战的建议方法。研究方向：影像组学（综述）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource.php"
+tags = ["1.论文题目：radiomics:", "2.论文题目：radiomics:", "3.论文题目：radiomics:", "4.论文题目：radiomics:", "5.论文题目：radiological", "6.论文题目：2d", "7.论文题目：prediction", "across", "between", "bridge"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "iopscience.iop.org", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource12.php"]
+title = "相关资源"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource12.php"
+tags = ["4.《radiomics》", "5.《trex》", "快速链接", "相关资源", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["academictorrents.com", "aclcargo.com", "aclweb.org", "aime21.aimedicine.info", "anaconda.com", "blog.csdn.net", "britannica.com", "cancerimagingjournal.biomedcentral.com", "clips.ua.ac.be", "cvpr2021.thecvf.com", "eletel.p.lodz.pl", "embc.embs.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itk.org", "mitk.org", "osirix-viewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource2.php"]
+title = "相关资源"
+full_description = "作者：Qing Zhou1,2,Zhiyong Zhou1,Chunmiao Chen3;单位：1 Chinese Academy of Sciences ,2 University of Science and Technology of China ,3 Wenzhou Medical College ,4 Soochow University (Suzhou)发表期刊：Computers in Biology and Medicine, vol. 107, 2019, pp. 47–57.论文简介：肝细胞癌（HCC）分化的临床组织学分级对临床诊断、治疗和预后有重要意义。然而，对于放射科医生来说，从医学图像中评估肝癌分级是一个挑战。本研究将三维密集卷积网络（DenseNet）中的压缩与激励网络（SENets）相结合，发展了一种新的深部神经网络，称为三维sedensenet，利用来自两个不同临床中心的增强临床磁共振（MR）图像对HCC分级进行分类。在三维DenseNet的密集块之间增加一层SENet，以减轻特征冗余的影响。对于HCC分级任务，在数据增强后训练3D-SE-DenseNet，其性能优于基于临床数据集的3D-DenseNet。基于该数据集，对两级HCC分级任务中的3D-SE-DenseNet进行了定量评价，其中包括213个动态增强MR图像样本。与3D-DenseNet的72%精度相比，所提出的3D-SE-DenseNet的精度为83%。三维SE-DenseNet具有SE层自动特征学习的优点，可以同时处理有用的特征增强和多余的特征抑制。定量实验证实了3D-SE-DenseNet在评价肝癌分级中的优越性。研究方向：深度学习（模型修改） 作者：Mingxing Tan,Quoc V. Le单位：google发表期刊：International Conference on Machine Learning, 2019, pp. 6105–6114.论文简介：卷积神经网络（ConvNets）通常是在固定的资源预算下发展起来的，如果有更多的资源可用的话，则会扩大规模以获得更好的精度。在本文中，我们系统地研究了模型缩放，并发现仔细地平衡网络的深度、宽度和分辨率可以获得更好的性能。在此基础上，我们提出了一种新的标度方法，该方法使用简单而高效的复合系数均匀地标度深度/宽度/分辨率的所有维度。我们证明了这种方法在放大MobileNets和ResNet上的有效性。 更进一步，我们使用神经架构搜索设计了一个新的基线网络，并将其放大以获得一个称为有效网的模型族，该模型比以前的有效网具有更好的精度和效率。特别是，我们的EfficientNet-B7在ImageNet上达到了最先进的84.4%的top-1/97.1%的top-5精度，同时比现有最好的ConvNet小8.4倍，推理速度快6.1倍。我们的效率集在CIFAR-100（91.7%）、Flowers（98.8%）和其他3个传输学习数据集上也传输良好，达到了最新的精确度，参数减少了一个数量级。研究方向：深度学习（卷积神经网络框架）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource2.php"
+tags = ["1.论文题目：grading", "2.论文题目：efficientnet:", "3.论文题目：learning", "4.论文题目：stacked", "5.论文题目：imagenet", "6.论文题目：fully", "autoencoders", "carcinoma", "classification", "convolutional"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn"]
+title = "医学影像与人工智能"
+full_description = "郑州大学医学影像与人工智能团队致力于医工交叉的医学影像辅助诊断技术与应用研究，基于多模态临床影像数据，采用机器学习和深度学习方法，挖掘影像中的量化信息，构建多种疾病预测及分类模型，用于临床辅助诊断及个性化医疗。 团队目前包括教授2人，副教授2人，讲师4人，助理研究员2人，其中博士生导师2人，硕士生导师5人。团队依托互联网医疗与健康服务河南省协同创新中心以及郑州大学网络空间安全学院开展研究工作，近年来团队成员主持多项国家和省部级科研课题，获得河南省科技进步一等奖2项、河南省医学科技进步一等奖1项，发表学术论文100余篇，其中包括多篇JCR一区、二区论文。 团队的学术带头人为林予松教授，主要成员包括：王梅云教授、张茜副教授、李英豪副教授、赵哲讲师、崔勇讲师、董洁讲师、吴亚平助理研究员、赵国桦助理研究员等。 医学影像与人工智能领域的重要论文、软件、代码、视频资料，以及丰富的机器学习资料。 医学影像与人工智能领域重要的学术期刊和学术会议信息，可以作为研究人员的投稿参考。"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn"
+tags = ["快速链接", "期刊&会议", "相关资源", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ih.ha.edu.cn", "softschool.zzu.edu.cn", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/index.html"]
+title = "医学影像与人工智能"
+full_description = "郑州大学医学影像与人工智能团队致力于医工交叉的医学影像辅助诊断技术与应用研究，基于多模态临床影像数据，采用机器学习和深度学习方法，挖掘影像中的量化信息，构建多种疾病预测及分类模型，用于临床辅助诊断及个性化医疗。 团队目前包括教授2人，副教授2人，讲师4人，助理研究员2人，其中博士生导师2人，硕士生导师5人。团队依托互联网医疗与健康服务河南省协同创新中心以及郑州大学网络空间安全学院开展研究工作，近年来团队成员主持多项国家和省部级科研课题，获得河南省科技进步一等奖2项、河南省医学科技进步一等奖1项，发表学术论文100余篇，其中包括多篇JCR一区、二区论文。 团队的学术带头人为林予松教授，主要成员包括：王梅云教授、张茜副教授、李英豪副教授、赵哲讲师、崔勇讲师、董洁讲师、吴亚平助理研究员、赵国桦助理研究员等。 医学影像与人工智能领域的重要论文、软件、代码、视频资料，以及丰富的机器学习资料。 医学影像与人工智能领域重要的学术期刊和学术会议信息，可以作为研究人员的投稿参考。"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/index.html"
+tags = ["快速链接", "期刊&会议", "相关资源", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "iopscience.iop.org", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/Journal.php"]
+title = "会议&期刊"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/Journal.php"
+tags = ["医学图像处理sci期刊", "医学图像处理会议", "快速链接", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2020.biomedicalimaging.org", "2020.midl.io", "aapm.onlinelibrary.wiley.com", "academic.oup.com", "aime21.aimedicine.info", "bmcmedimaging.biomedcentral.com", "britannica.com", "cancerimagingjournal.biomedcentral.com", "cvpr2021.thecvf.com", "degruyter.com", "embc.embs.org", "iccv2021.thecvf.com", "ieeexplore.ieee.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "iopscience.iop.org", "ipmi2019.cse.ust.hk", "ismrm.org", "zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource5.php"]
+title = "相关资源"
+full_description = "作者：Wangmeng Zuo, Lei Zhang, Chunwei Song, David Zhang and Huijun Gao单位：Computer Science, Medicine, Mathematics IEEE Transactions on Image Processing发表期刊：Lecture Notes in Computer Science,2019,LNCS 11861:46-54论文简介：自然图像统计在图像去噪中起着重要的作用，基于梯度、基于稀疏表示和基于非局部自相似性的自然图像先验在去噪中得到了广泛的研究和应用。尽管许多去噪算法取得了巨大的成功，但它们在去噪时往往会使尺度较细的图像纹理变得平滑，从而降低图像的视觉质量。为了解决这一问题，本文提出了一种纹理增强的图像去噪方法，使去噪图像的梯度直方图与原始图像的参考梯度直方图保持一致。在参考梯度直方图的基础上，提出了一种新的梯度直方图保存算法，在去除噪声的同时增强纹理结构。针对由不同纹理区域组成的图像，提出了两种基于区域的GHP变量去噪方法。提出了一种基于噪声观测的未知图像的参考梯度直方图估计算法。实验结果表明，该算法能够很好地保留去噪后图像的纹理外观，使图像看起来更加自然。研究方向：医学影像数据预处理（图像增强） 作者：Chengwei Liu, Xiubao Sui *, Xiaodong Kuang, Yuan Liu, Guohua Gu and Qian Chen单位：School of Electronic and Optical Engineering, Nanjing University of Science and Technology, Nanjing 210094, China;发表期刊：April 2019·Remote Sensing 11(7):849 DOI:10.3390/rs11070849论文简介：为了提高红外图像的视觉质量，提出了一种结合全局和局部增强结果的优化对比度增强方法。全局增强和局部增强各有优缺点。该方法利用了两种方法的互补特性，实现了明显的对比度增强而不产生伪影。该方法首先计算包含全局和局部灰度分布特征的二维直方图。然后，在二维直方图的基础上，全局和局部应用直方图规范，得到全局和局部增强的结果。最后，通过求解一个全局和局部约束条件下的优化方程来计算增强结果。基于原始图像的边缘信息自适应确定优化方程的像素级正则化参数。因此，该方法能够在保持原始图像自然度的同时增强局部对比度。定性和定量评价结果表明，该方法在提高红外图像的视觉质量方面优于基于分块的方法。研究方向：医学影像数据预处理（图像增强）"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource5.php"
+tags = ["1.论文题目：gradient", "11.论文题目：medga:", "12.论文题目：brightness", "13.论文题目：medga:", "2.论文题目：optimized", "3.论文题目：image", "4.论文题目：image", "5.论文题目：brightness", "6.论文题目：brain", "7.论文题目：fuzzy-rough"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource13.php"]
+title = "相关资源"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource13.php"
+tags = ["1.《hugo", "2.《radiomics-", "aerts", "decoding", "imaging》", "medical", "meets", "non-invasive", "phenotype", "plenary"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/ML.html"]
+title = "机器学习资源"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/ML.html"
+tags = ["1.入门学习：", "10、机器学习相关资料", "1、arxiv", "1、nlp是什么", "1、公开课", "1、推荐系统是什么", "1、数学", "1、知识图谱是什么", "1、计算机视觉的应用", "1、评分卡模型简介"]
+language = "en"
+internal-references = ["none"]
+external-references = ["academictorrents.com", "aclcargo.com", "aclweb.org", "aime21.aimedicine.info", "anaconda.com", "arxiv-sanity.com", "bilibili.com", "blog.csdn.net", "britannica.com", "cancerimagingjournal.biomedcentral.com", "clips.ua.ac.be", "cs229.stanford.edu", "cse.cuhk.edu.hk", "cvpr2021.thecvf.com", "embc.embs.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "softschool.zzu.edu.cn"]
+
+["https://miai.ha.edu.cn/resource7.php"]
+title = "相关资源"
+full_description = "作者：Yvan Saeys 1, * , In˜aki Inza 2 and Pedro Larran˜aga 2单位：1 Department of Plant Systems Biology, VIB, B-9052 Ghent, Belgium and Bioinformatics and Evolutionary Genomics group, Department of Molecular Genetics, Ghent University, B-9052 Ghent, Belgium 2 Department of Computer Science and Artificial Intelligence, Computer Science Faculty, University of the Basque Country, Paseo Manuel de Lardizabal 1, 20018 Donostia - San Sebastia´n, Spain.发表期刊：BIOINFORMATICS, 2007, 23, 2507-2517论文简介：特征选择技术已成为许多生物信息学应用的明显需要。除了在机器学习和数据挖掘领域已经开发出的大量技术之外，生物医学中的具体应用也催生了大量新技术。文中，作者让感兴趣的读者了解特征选择的可能性，提供了特征选择技术的基本分类，并讨论了它们在许多常见的和即将到来的生物信息学应用程序中的使用、多样性和潜力。研究方向：特征选择（生物医学方向综述） 作者：Ling Wanga,b,∗, Jianyao Menga,b, Ruixia Huanga,b, Hui Zhua,b, Kaixiang Peng a,b单位：a College of Automation and Electrical Engineering, University of Science and Technology Beijing, Beijing 100083, China b Key Laboratory of Knowledge Automation For Industrial Processes, University of Science and Technology Beijing, Ministry of Education, Beijing 100083, China发表期刊：FUZZY sets and systems, 2019, 368, 1-19.论文简介：本文主要研究模糊数据流的模糊特征选择。提出了一种新的增量特征加权方法，该方法包括离线模糊特征选择和在线模糊特征选择两个主要阶段。使用滑动窗口对模糊数据集进行划分。在每一个新的滑动窗口中执行在线特征选择算法。根据模糊输入特征的重要程度，将前一个滑动窗口的模糊特征选择结果与当前候选模糊特征集相结合，对当前窗口的特征子集进行更新。最后，利用滑动窗口之间的模糊特征权值，找出模糊输入特征的演化关系。研究方向：特征选择算法"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource7.php"
+tags = ["1.论文题目：a", "2.论文题目：incremental", "3.论文题目：a", "4.论文题目：weighted", "5.论文题目：a", "algorithm", "bioinformatics", "cancer", "datasets", "factor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource14.php"]
+title = "相关资源"
+full_description = "作者：Jana Lipkova a,b,c,d, Richard J. Chen a,b,c,d,e, Bowen Chen a,b,h, Ming Y. Lu a,b,c,d,g, Matteo Barbieri a, Daniel Shao a,b,f, Anurag J. Vaidya a,b,f, Chengkuan Chen a,b,c,d, Luoting Zhuang a,c, Drew F.K. Williamson a,b,c,d, Muhammad Shaban a,b,c,d, Tiffany Y. Chen a,b,c,d, Faisal Mahmood a,b,c,d,i,*单位：a Department of Pathology, Brigham and Women’s Hospital, Harvard Medical School, Boston, MA, USA.b Department of Pathology, Massachusetts General Hospital, Harvard Medical School, Boston, MA, USA.c Cancer Program, Broad Institute of Harvard and MIT, Cambridge, MA, USA.d Data Science Program, Dana-Farber Cancer Institute, Boston, MA, USA.e Department of Biomedical Informatics, Harvard Medical School, Boston, MA, USA.f Harvard-MIT Health Sciences and Technology (HST), Cambridge, MA, USA.g Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology (MIT), Cambridge, MA, USA.h Department of Computer Science, Harvard University, Cambridge, MA, USA.i Harvard Data Science Initiative, Harvard University, Cambridge, MA, USA.*发表期刊：Cancer Cell, 2022, 40(10): 1095-1110.论文简介：在肿瘤学中，会从多种模态中获取患者状态的特征，如放射学、组织学和基因组学到电子健康记录。 当前的人工智能 (AI) 模型主要在单一模态下运作，忽略了更广泛的临床背景，这不可避免地削弱了它们的潜力。不同数据模态的融合为提高诊断和预后模型的稳健性和准确性提供了机会，使人工智能更接近临床实践。人工智能模型还能够发现适用于解释患者结果或治疗抵抗差异的模态内和模态间的新模态。从这些模型中收集的知识可以指导探索性研究，并有助于发现新的生物标志物和治疗靶点。为了支持这些进步，我们在此简要介绍了用于多模态数据融合和关联发现的 AI 方法和策略。我们概述了 AI 可解释性的方法和通过多模态数据互连进行 AI 驱动探索的方向。我们研究了在临床使用中的挑战并讨论新兴的解决方案。研究方向：多模态数据融合(综述)"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource14.php"
+tags = ["1.论文题目：artificial", "data", "integration", "intelligence", "multimodal", "oncology", "快速链接", "相关资源", "联系我们"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aapm.onlinelibrary.wiley.com", "aclcargo.com", "aclweb.org", "anaconda.com", "arxiv.org", "auai.org", "bilibili.com", "blog.csdn.net", "caicai.science", "cancerimagingjournal.biomedcentral.com", "cs229.stanford.edu", "cvpr2021.thecvf.com", "embc.embs.org", "iccv2021.thecvf.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itksnap.org", "radiantviewer.com", "vtk.org"]
+
+["https://miai.ha.edu.cn/resource11.php"]
+title = "相关资源"
+full_description = "DCMTK 是由德国offis公司提供的开源项目，并拥有相应的版权。这个开发包经过10多年的开发和维护，已经基本实现了 DICOM 协议的所有内容。该开发包提供所有的源代码、 支持库和帮助文档。DCMTK 提供了在各种操作系统下使用的可能版本,如LINUX、SUN、WINDOWS 等，用户可更具自己的开发平台进行编译。 ITK 是一个开源的跨平台库，由C++实现，为开发人员提供了一套广泛的图像分析软件工具。ITK 通过极限编程方法开发，建立在经过验证的面向空间的架构上，用于处理、分割和配准两个、三个或更多维度的科学图像。ITK 功能强大用于图像的分析和处理，但是无法完成可视化，需要结合一些其它的工具，如VIK，来显示信息。 ITK-SNAP 是用于分割3D医学图像中的结构的软件应用程序。ITK-SNAP 是免费、开源和多平台的。ITK-SNAP使用主动轮廓方法以及手动描绘和图像导航提供半自动分割。除了这些核心功能之外，ITK-SNAP 还提供了许多支持实用程序。与其他更大的开源图像分析工具相比，ITK-SNAP 设计专门针对图像分割问题，将无关或不相关的特征保持在最低限度。该设计还强调交互性和易用性，大部分开发工作都致力于用户界面。 MaZda 是用于计算数字化图像中的纹理参数（特征）的计算机程序。程序代码是用 C++ 和 Delphi© 编写的。它是为使用 MS Windows® 9x/NT/2000/XP 操作系统的 PC 计算机编译的。除了 MaZda 软件之外，MaZda 软件包还包含用于纹理分析和可视化的 B11 程序。 Medical Imaging Interaction Toolkit (MITK) 是一个免费的开源软件，用于开发交互式医学图像处理软件。该软件结合了 ITK 和 VTK 的特性，在 ITK 和 VTK 的基础上开发了更多用户交互的特性。MITK 的主要目的是为医学图像社区提供一个一致的框架，以结合医学图像分割、配准和可视化的功能。"
+year_published = 2025
+clearnet = "https://miai.ha.edu.cn/resource11.php"
+tags = ["1.dcmtk", "2.itk", "3.itk-snap", "4.mazda", "5.mitk", "6.mitk-cas", "7.vtk", "8.radiant", "9.osirix", "快速链接"]
+language = "en"
+internal-references = ["none"]
+external-references = ["academictorrents.com", "aclcargo.com", "aclweb.org", "aime21.aimedicine.info", "anaconda.com", "blog.csdn.net", "britannica.com", "cancerimagingjournal.biomedcentral.com", "clips.ua.ac.be", "cvpr2021.thecvf.com", "eletel.p.lodz.pl", "embc.embs.org", "ietresearch.onlinelibrary.wiley.com", "ih.ha.edu.cn", "insightsimaging.springeropen.com", "ipmi2019.cse.ust.hk", "itk.org", "mitk.org", "osirix-viewer.com", "vtk.org"]

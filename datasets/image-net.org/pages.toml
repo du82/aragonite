@@ -1,0 +1,626 @@
+["http://www.image-net.org"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "http://www.image-net.org"
+tags = ["imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/download"]
+title = "ImageNet"
+full_description = '[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the ImageNet database (the "Database") at Princeton University and Stanford University. In exchange for such permission, Researcher hereby agrees to the following terms and conditions: © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement'
+year_published = 2025
+clearnet = "https://image-net.org/download"
+tags = ["database", "download", "imagenet", "princeton", "stanford", "university"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "arxiv.org", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2013/index.php"]
+title = "ImageNet"
+full_description = 'Note: people detection on ILSVRC2013 may be of particular interest. There are 12125 images for training (9877 of them contain people, for a total of 17728 instances), 20121 images for validation (5756 of them contain people, for a total of 12823 instances) and 40152 images for testing. There is significant variability in pose and appearance, in part due to interaction with a variety of objects. In the validation set, people appear in the same image with 196 of the other labeled object categories. The data for the classification and classification with localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image.'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/index.php"
+tags = ["advisors", "challenge", "citationnew", "classification", "comparative", "contact", "data", "dataset", "detection", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sites.google.com", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/announcement-May-19-2015.php"]
+title = "ImageNet"
+full_description = 'Over the past years, the ImageNet Challenge, and in particular the classification task, has become one of the benchmarks to evaluate the progress of image classification. New results often attract significant attention from not only the academic community, but also industry and the popular press at large. It was recently brought to our attention that one group has circumvented our policy of allowing only 2 evaluations on the test set per week. (As stated on our test server page: "Please note that you cannot make more than 2 submissions per week."). This group submitted evaluation requests to our test server more frequently than permitted by creating and using multiple ImageNet accounts. As organizers of the ImageNet Challenge, we feel that it is necessary to inform our research community of this incident. We have reached out to the group. We will make additional effort to closely monitor the submission server. We will keep our community informed if there is further development. Finally, we would like to take this opportunity to thank all of you who have adhered to the submission policy when it comes to evaluating methods on the ILSVRC test set. We look forward to continued progress in visual recognition! © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/announcement-May-19-2015.php"
+tags = ["challenge", "imagenet", "large", "recognition", "scale", "submissions", "visual", "week."]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/download-attributes.php"]
+title = "ImageNet"
+full_description = "Annotations of object attributes are freely available for download ( no signing-in required ). The attributes are annotated and verified through Amazon Mechanical Turk. Currently, we have 25 attributes for ~400 popular synsets available. Please click here to obtain the list of synsets available. For each synset, there are 25 images annotated with the following attributes: © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/download-attributes.php"
+tags = ["attribute", "color", "datasets.", "download", "large-scale", "learning", "pattern", "shape", "texture"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "arxiv.org", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/filtering-and-balancing"]
+title = "ImageNet"
+full_description = "Computer vision technology is being used by many but remains representative of only a few. People have reported misbehavior of computer vision models, including offensive prediction results and lower performance for underrepresented groups. Current computer vision models are typically developed using datasets consisting of manually annotated images or videos; the data and label distributions in these datasets are critical to the models' behavior. In this paper, we examine ImageNet, a large-scale ontology of images that has spurred the development of many modern computer vision methods. We consider three key factors within the person subtree of ImageNet that may lead to problematic behavior in downstream computer vision technology: (1) the stagnant concept vocabulary of WordNet, (2) the attempt at exhaustive illustration of all categories with images, and (3) the inequality of representation in the images within concepts. We seek to illuminate the root causes of these concerns and take the first steps to mitigate them constructively. © 2016 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/filtering-and-balancing"
+tags = ["abstract", "balancing", "datasets:", "distribution", "fairer", "filtering", "hierarchy", "hierarchy.", "imagenet", "paper"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/static_files/papers/imagenet_cvpr09.bib"]
+title = ""
+year_published = 2025
+clearnet = "https://image-net.org/static_files/papers/imagenet_cvpr09.bib"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2015/index.php"]
+title = "ImageNet"
+full_description = "The training and validation data for the object detection task will remain unchanged from ILSVRC 2014. The test data will be partially refreshed with new images for this year's competition. There are 200 basic-level categories for this task which are fully annotated on the test data, i.e. bounding boxes for all categories in the image have been labeled. The categories were carefully chosen considering different factors such as object scale, level of image clutterness, average number of object instance, and several others. Some of the test images will contain none of the 200 categories. Browse all annotated detection images here. For each image, algorithms will produce a set of annotations $(c_i, s_i, b_i)$ of class labels $c_i$, confidence scores $s_i$ and bounding boxes $b_i$. This set is expected to contain each instance of each of the 200 object categories. Objects which were not annotated will be penalized, as will be duplicate detections (two annotations for the same object instance). The winner of the detection challenge will be the team which achieves first place accuracy on the most object categories. The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data."
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2015/index.php"
+tags = ["additional", "annotations", "challenge", "citation", "classification", "competition?", "competitions", "computational", "contact", "database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sites.google.com", "uit.stanford.edu", "vision.cs.unc.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["http://image-net.org/challenges/ilsvrc+coco2016.php"]
+title = "ILSVRC and COCO workshop 2016"
+year_published = 2025
+clearnet = "http://image-net.org/challenges/ilsvrc+coco2016.php"
+tags = ["affinity", "award", "bayesian", "challenges", "classification/parsing:", "coco", "contact", "crafting", "data", "deep"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "factory.datatang.com", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/face-obfuscation"]
+title = "ImageNet"
+full_description = "Image obfuscation (blurring, mosaicing, etc.) is widely used for privacy protection. However, computer vision research often overlooks privacy by assuming access to original unobfuscated images. In this paper, we explore image obfuscation in the ImageNet challenge. Most categories in the ImageNet challenge are not people categories; nevertheless, many incidental people are in the images, whose privacy is a concern. We first annotate faces in the dataset. Then we investigate how face blurring---a typical obfuscation technique---impacts classification accuracy. }. © 2016 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/face-obfuscation"
+tags = ["abstract", "face", "imagenet", "obfuscation", "paper", "study"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/about"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2021
+year_updated = 2021
+clearnet = "https://image-net.org/about"
+tags = ["10,000", "alex", "analysis", "annotation", "attribute", "avocados", "balancing", "been?", "benchmarking", "berg"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2015/browse-synsets.php"]
+title = "ILSVRC2015"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2015/browse-synsets.php"
+tags = ["challenge", "competition", "ilsvrc2012", "large", "main", "recognition", "scale", "synsets", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://image-net.org/challenges/LSVRC/2013/iccv2013.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013) Workshop"
+full_description = "The ILSVRC2013 evaluates algorithms for object detection and image classification at large scale. This year there are three competitions: The new Fine-Grained Challenge 2013 runs concurrently with ILSVRC2013 this year, and targets classification among categories which are both visually and semantically similar. For more details, please visit Fine-Grained Challenge 2013."
+year_published = 2025
+clearnet = "http://image-net.org/challenges/LSVRC/2013/iccv2013.php"
+tags = ["10:30", "10:50", "11:10", "11:30", "11:40", "12:00", "14:00", "14:40", "8:30", "8:50"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "itunes.apple.com", "koen.me", "linkedin.com", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2015/index"]
+title = "ImageNet"
+full_description = "The training and validation data for the object detection task will remain unchanged from ILSVRC 2014. The test data will be partially refreshed with new images for this year's competition. There are 200 basic-level categories for this task which are fully annotated on the test data, i.e. bounding boxes for all categories in the image have been labeled. The categories were carefully chosen considering different factors such as object scale, level of image clutterness, average number of object instance, and several others. Some of the test images will contain none of the 200 categories. Browse all annotated detection images here. For each image, algorithms will produce a set of annotations $(c_i, s_i, b_i)$ of class labels $c_i$, confidence scores $s_i$ and bounding boxes $b_i$. This set is expected to contain each instance of each of the 200 object categories. Objects which were not annotated will be penalized, as will be duplicate detections (two annotations for the same object instance). The winner of the detection challenge will be the team which achieves first place accuracy on the most object categories. The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data."
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2015/index"
+tags = ["additional", "annotations", "challenge", "citation", "classification", "competition?", "competitions", "computational", "contact", "database"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2011/index.php"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2011/index.php"
+tags = ["alex", "amsterdam", "berg", "challenge", "citationnew", "classification", "contact", "data", "development", "florent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2015/results.php"]
+title = "ILSVRC2015 Results"
+full_description = "Legend: Yellow background = winner in this task according to this metric; authors are willing to reveal the method White background = authors are willing to reveal the method Grey background = authors chose not to reveal the method Italics = authors requested entry not participate in competition Team name Entry description Number of object categories won mean AP MSRA An ensemble for detection. 194 0.620741 Qualcomm Research NeoNet ensemble with bounding box regression. Validation mAP is 54.6 4 0.535745 CUImage Combined multiple models with the region proposals of cascaded RPN, 57.3% mAP on Val2. 2 0.527113 The University of Adelaide 9 models 0 0.514434 MCG-ICT-CAS 2 models on 2 proposals without category information: {[SS+EB]+(SS)}+{[RPN] +(RPN)} 0 0.453622 MCG-ICT-CAS Category aggregation + Co-occurrence reﬁnement with 2 models on 2 proposals: {[SS+EB]+(SS)}+{[RPN] +(RPN)} 0 0.453606 MCG-ICT-CAS Category aggregation with 2 models on 2 proposals: {[SS+EB]+(SS)}+{[RPN] +(RPN)} 0 0.451932 DROPLET-CASIA A combination of 6 models with selective regression 0 0.448598 Trimps-Soushen no extra data 0 0.44635 MCG-ICT-CAS Category aggregation + Co-occurrence reﬁnement with single model on single proposal: [SS+EB] +(SS) 0 0.444896 DROPLET-CASIA A combination of 6 models without regression 0 0.442696 MCG-ICT-CAS Category aggregation + Co-occurrence reﬁnement with single model on single proposal: [RPN] +(RPN) 0 0.440436 Yunxiao A single model, Fast R-CNN baseline 0 0.429423 Trimps-Fudan-HUST Best single model 0 0.421353 HiVision Single detection model 0 0.418474 SYSU_Vision vgg16+edgebox 0 0.402298 SYSU_Vision vgg16+selective search+spl 0 0.394901 FACEALL-BUPT a simple strategy to merge the three results, 38.7% MAP on validation 0 0.386014 FACEALL-BUPT googlenet, fast-rcnn, pretrained on the 1000 classes, selective search, add ROIPooling after inception_5, input size 786(max 1280), pooled size 4x4, the mean AP on validation is 37.8% 0 0.378955 DEEPimagine Fusion step 1 and 2 hybrid 0 0.371965 SYSU_Vision vgg16+selective search 0 0.371149 DEEPimagine Category adaptive multi-model fusion stage 3 0 0.370756 DEEPimagine Category adaptive multi-model fusion stage 2 0 0.369696 ITLab - Inha average ensemble of 2 detection models 0 0.366185 ITLab - Inha single detection model(B) with hierarchical BB 0 0.365423 ITLab - Inha single detection model(B) 0 0.359213 ITLab - Inha weighted ensemble of 2 detection models with hierarchical BB 0 0.359109 DEEPimagine Category adaptive multi-model fusion stage 1 0 0.357192 DEEPimagine No fusion. Single deep depth model. 0 0.351264 FACEALL-BUPT alexnet, fast-rcnn, pretrained on the 1000 classes, selective search, the mean AP on validation is 34.9% 0 0.34843 ITLab - Inha single detection model(A) with hierarchical BB 0 0.346269 FACEALL-BUPT googlenet, fast-rcnn, relu layers replaced by prelu layers, pretrained on the 1000 classes, selective search, add ROIPooling after inception_4d, the mean AP on validation is 34.0% 0 0.343141 JHL Fast-RCNN with Selective Search 0 0.311042 USTC_UBRI --- 0 0.177112 hustvision yolo-balance 0 0.143461 darkensemble A single model but ensembled pipline trained on part of data due to time limit. 0 0.096197 ESOGU MLCV independent test results 0 0.093048 ESOGU MLCV results after mild suppression 0 0.092512 N-ODG Detection results. 0 0.03008 MSRA A single model for detection. --- 0.588451 Qualcomm Research NeoNet ensemble without bounding box regression. Validation mAP is 53.6 --- 0.531957 [top]"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2015/results.php"
+tags = ["additional", "categories", "challenge", "classification", "classification+localization", "data", "detection", "error", "information", "large"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/signup.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/signup.php"
+tags = ["account", "imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["https://image-net.org/recoverpasswd.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/recoverpasswd.php"
+tags = ["account", "imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2012/index.php"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2012/index.php"
+tags = ["challenge", "citationnew", "classification", "contact", "cost", "data", "evaluate", "fei-fei", "fine-grained", "hierarchical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2011/browse-synsets.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)"
+full_description = "Some synsets from the ILSVRC 2010 challenge have been removed which were inappropriate for the detection task of the challenge. For eg., synsets under the plant subtree. The 1000 synsets in ILSVRC 2011 are listed separately."
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2011/browse-synsets.php"
+tags = ["challenge", "ilsvrc2010", "large", "recognition", "retained", "scale", "synsets", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org"
+tags = ["imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["princeton.edu", "qz.com", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2012/browse-synsets.php"]
+title = "ImageNet"
+full_description = "Some synsets from the ILSVRC 2011 challenge have been replaced with more dog synsets due to the introduction of the fine-grained classification task this year. © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2012/browse-synsets.php"
+tags = ["challenge", "ilsvrc2011", "imagenet", "large", "recognition", "retained", "scale", "synsets", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2011/results.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2011 (ILSVRC2011)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2011/results.php"
+tags = ["challenge", "classification", "cost", "filename", "flat", "hierarchical", "large", "localization", "members", "name"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/update-mar-11-2021.php"]
+title = "ImageNet"
+full_description = '''We are proud to see ImageNet's wide adoption going beyond what was originally envisioned. However, the decade-old website was burdened by growing download requests. To serve the community better, we have redesigned the website and upgraded its hardware. The new website is simpler; we removed tangential or outdated functions to focus on the core use case—enabling users to download the data, including the full ImageNet dataset and the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). Meanwhile, the computer vision community has progressed, and so has ImageNet. The dataset was created to benchmark object recognition—at a time when it barely worked. The problem then was how to collect labeled images at a sufficiently large scale to be able to train complex models in laboratories. Today, computer vision is in real-world systems impacting people's Internet experience and daily lives. An emerging problem now is how to make sure computer vision is fair and preserves people's privacy. We are continually evolving ImageNet to address these emerging needs. In a FAT* 2020 paper, we filtered 2,702 synsets in the "person" subtree that may cause problematic behaviors of the model. We have updated the full ImageNet data on the website to remove these synsets. The update does not affect the 1,000 categories in ILSVRC. In a more recent paper, we investigate privacy issues in ILSVRC. 997 out of 1000 categories in ILSVRC are not people categories; nevertheless, many incidental people are in the images, whose privacy is a concern. We first annotated faces in the images and then constructed a face-blurred version of ILSVRC. Experiments show that one can use the face-blurred version for benchmarking object recognition and for transfer learning with only marginal loss of accuracy. We release our face annotations to facilitate further research on privacy-aware visual recognition. Team members working on these new improvements: Kaiyu Yang (Princeton), Jacqueline Yau (Stanford), Li Fei-Fei (Stanford), Jia Deng (Princeton), Olga Russakovsky (Princeton).'''
+year_published = 2025
+clearnet = "https://image-net.org/update-mar-11-2021.php"
+tags = ["dataset", "imagenet", "update"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "linkedin.com", "princeton.edu", "profiles.stanford.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["https://image-net.org/challenges/LSVRC/2012/index"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2012/index"
+tags = ["challenge", "citationnew", "classification", "contact", "cost", "data", "evaluate", "fei-fei", "fine-grained", "hierarchical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2014/index"]
+title = "ImageNet"
+full_description = 'NEW: The training set of the detection dataset will be significantly expanded this year compared to ILSVRC2013. 60658 new images have been collected from Flickr using scene-level queries. These images were fully annotated with the 200 object categories, yielding 132953 new bounding box annotations. The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 and ILSVRC 2013 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image. Let $d(c_i,C_k) = 0$ if $c_i = C_k$ and 1 otherwise. Let $f(b_i,B_k) = 0$ if $b_i$ and $B_k$ have more than $50\%$ overlap, and 1 otherwise. The error of the algorithm on an individual image will be computed using two metrics:'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2014/index"
+tags = ["15th", "according", "additional", "annotations", "august", "challenge", "citationnew", "classification", "classification-only", "comparative"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/api/imagenet.attributes.obtain_synset_wordlist.php"]
+title = ""
+year_published = 2025
+clearnet = "https://image-net.org/api/imagenet.attributes.obtain_synset_wordlist.php"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2013/browse-synsets.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/browse-synsets.php"
+tags = ["challenge", "ilsvrc2012", "large", "recognition", "scale", "synsets", "task", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/download-bboxes.php"]
+title = "ImageNet"
+full_description = "Annotations of object bounding boxes are freely available for download ( no signing-in required ). The bounding boxes are annotated and verified through Amazon Mechanical Turk. Currently, we have bounding boxes for over 3000 popular synsets available. Please click here to obtain the list of synsets available. For each synset, there are on average 150 images with bounding boxes. The image annotations are saved in XML files in PASCAL VOC format. Users can parse the annotations using the PASCAL Development Toolkit. Remark: In the bounding box annotations, there are two fields(<width> and <height>) indicating the size of the image. The location and size of a bounding box in the annotation file are relative to this size. However, this size may not be identical to the real image size in the downloaded package. (The reason is that the size in the annotation file is the displayed size in which the image was shown to an annotator). Therefore to locate the actual pixels on the original image, you might need to rescale the bounding boxes accordingly. © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/download-bboxes.php"
+tags = ["airplane", "croquette", "download", "frog", "remark"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/update-sep-17-2019.php"]
+title = "ImageNet"
+full_description = "This research post describes the effort to improve ImageNet data, initiated, conceptualized, and executed solely by the above authors as part of a NSF funded project that started one year ago on September 1, 2018. The full technical report is published at FAT* 2020. [paper] [project] As AI technology advances from research lab curiosities into people’s daily lives, ensuring that AI systems produce appropriate and fair results has become an important scientific question. This requires multiple iterations of research on the data, algorithms, and design choices in all stages of building an AI system.To this end, ImageNet, as an influential research dataset, deserves to be critically examined. Below we summarize the most recent effort from our research team on this topic. In this work, we consider three key factors within ImageNet that may lead to problematic behavior in downstream computer vision technology: (1) the stagnant concept vocabulary, (2) the exhaustive illustration of all concepts with images, and (3) the inequality of representation in the images within concepts. We seek to illuminate the root causes of these concerns and take the first steps to mitigate them constructively. The full technical report was submitted for peer review in August 2019 and will be made available shortly. ImageNet is an image database with a total of 14 million images and 22 thousand visual categories. As it is publicly available for research and educational use, it has been widely used in the research of object recognition algorithms, and has played an important role in the deep learning revolution. As computer vision technology becomes widespread in people's Internet experience and daily lives, it is increasingly important for computer vision models to produce results that are appropriate and fair, particularly in domains involving people. However, there are notorious and persistent issues. For example, face recognition systems have been demonstrated to have disproportionate error rates across race groups, in part attributed to the underrepresentation of some skin tones in face recognition datasets [3]."
+year_published = 2025
+clearnet = "https://image-net.org/update-sep-17-2019.php"
+tags = ["2018.", "2020.", "above", "authors", "balancing", "concept", "concepts.", "conceptualized,", "construction", "data,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2011/index"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2011/index"
+tags = ["alex", "amsterdam", "berg", "challenge", "citationnew", "classification", "contact", "data", "development", "florent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2013/index"]
+title = "ImageNet"
+full_description = 'Note: people detection on ILSVRC2013 may be of particular interest. There are 12125 images for training (9877 of them contain people, for a total of 17728 instances), 20121 images for validation (5756 of them contain people, for a total of 12823 instances) and 40152 images for testing. There is significant variability in pose and appearance, in part due to interaction with a variety of objects. In the validation set, people appear in the same image with 196 of the other labeled object categories. The data for the classification and classification with localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image.'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/index"
+tags = ["advisors", "challenge", "citationnew", "classification", "comparative", "contact", "data", "dataset", "detection", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://www.image-net.org/challenges/LSVRC/2012/index.php"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "http://www.image-net.org/challenges/LSVRC/2012/index.php"
+tags = ["challenge", "citationnew", "classification", "contact", "cost", "data", "evaluate", "fei-fei", "fine-grained", "hierarchical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/eval_server.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/eval_server.php"
+tags = ["account", "imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2010/browse-synsets.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2010/browse-synsets.php"
+tags = ["categories", "challenge", "ilsvrc2010", "large", "recognition", "scale", "synsets", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/static_files/papers/ImageNet_VSS2009.bib"]
+title = ""
+year_published = 2025
+clearnet = "https://image-net.org/static_files/papers/ImageNet_VSS2009.bib"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/about.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2021
+year_updated = 2021
+clearnet = "https://image-net.org/about.php"
+tags = ["10,000", "alex", "analysis", "annotation", "attribute", "avocados", "balancing", "been?", "benchmarking", "berg"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2013/browse-det-synsets.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/browse-det-synsets.php"
+tags = ["challenge", "large", "recognition", "scale", "synsets", "tasks", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://image-net.org/challenges/beyond_ilsvrc"]
+title = "Beyond ILSVRC workshop 2017"
+full_description = "The workshop will mark the last of the ImageNet Challenge competitions, and focus on unanswered questions and directions for the future. The workshop will 1) present current results on the challenge competitions including new taster challenges, 2) review the state of the art in recognition as viewed through the lens of the object detection in images and videos, and classification competitions in the challenge. There will be a focus on 3) how this relates to the state of the art in computer vision techniques that are deployed in industry---one of the original goals of the challenge. The invited speakers will also be tasked with 4) presenting views on remaining future challenges, from cognitive vision, to robot vision, and beyond."
+year_published = 2025
+clearnet = "http://image-net.org/challenges/beyond_ilsvrc"
+tags = ["2010-2016", "affiliated", "applications", "bdat", "been?", "beyond", "challenge", "challenges", "contact", "detection"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.cmu.edu", "cs.princeton.edu", "cvpr2017.thecvf.com", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "larryzitnick.org", "linkedin.com", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2010/index.php"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). For each image, algorithms will produce a list of at most 5 object categories in the descending order of confidence. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. There will be two versions of the evaluation criteria: a) non-hierarchical, treating all categories equally, and b) taking into account the hierarchical structure of the set of categories. For each image, an algorithm will produce 5 labels lj, j=1,...,5. The ground truth labels for the image are gk, k=1,...,n with n objects labeled. The error of the algorithm for that image would be e=1/nΣkminjd(lj,gk). For criteria a)d(x,y)=0 if x=y and 1 otherwise. For criteria b) d(x,y)=height of the lowest common ancestor of x and y in the category hierarchy ( a subset of WordNet ). This is equivalent of predicting a path along the hierarchy and evaluating where the ground truth path and the predicted path diverge. For each criteria the overall error score for an algorithm is the average error over all test images. Note that for this initial version of the competition, n=1, that is, one ground truth label per image. © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2010/index.php"
+tags = ["challenge", "citationnew", "contact", "data", "development", "features", "imagenet", "introduction", "large", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "github.com", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["http://www.image-net.org/challenges/LSVRC/2012/index"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "http://www.image-net.org/challenges/LSVRC/2012/index"
+tags = ["challenge", "citationnew", "classification", "contact", "cost", "data", "evaluate", "fei-fei", "fine-grained", "hierarchical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2017/index.php"]
+title = "ImageNet"
+full_description = '''The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a localization labeling will be evaluated based on the label that best matches the ground truth label for the image and also the bounding box that overlaps with the ground truth. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image. Let $d(c_i,C_k) = 0$ if $c_i = C_k$ and 1 otherwise. Let $f(b_i,B_k) = 0$ if $b_i$ and $B_k$ have more than $50\%$ overlap, and 1 otherwise. The error of the algorithm on an individual image will be computed using: The training and validation data for the object detection task will remain unchanged from ILSVRC 2014. The test data will be partially refreshed with new images based upon last year's competition(ILSVRC 2016). There are 200 basic-level categories for this task which are fully annotated on the test data, i.e. bounding boxes for all categories in the image have been labeled. The categories were carefully chosen considering different factors such as object scale, level of image clutterness, average number of object instance, and several others. Some of the test images will contain none of the 200 categories. Browse all annotated detection images here.'''
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2017/index.php"
+tags = ["additional", "annotations", "challenge", "challenges", "citation", "competition?", "contact", "cvpr", "details", "detection"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2014/index.php"]
+title = "ImageNet"
+full_description = 'NEW: The training set of the detection dataset will be significantly expanded this year compared to ILSVRC2013. 60658 new images have been collected from Flickr using scene-level queries. These images were fully annotated with the 200 object categories, yielding 132953 new bounding box annotations. The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 and ILSVRC 2013 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image. Let $d(c_i,C_k) = 0$ if $c_i = C_k$ and 1 otherwise. Let $f(b_i,B_k) = 0$ if $b_i$ and $B_k$ have more than $50\%$ overlap, and 1 otherwise. The error of the algorithm on an individual image will be computed using two metrics:'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2014/index.php"
+tags = ["15th", "according", "additional", "annotations", "august", "challenge", "citationnew", "classification", "classification-only", "comparative"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/download-images.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/download-images.php"
+tags = ["download", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2014/results.php"]
+title = "ILSVRC2014 Results"
+full_description = "Legend:Yellow background = winner in this task according to this metric; authors are willing to reveal the methodWhite background = authors are willing to reveal the methodGrey background = authors chose not to reveal the methodItalics = authors requested entry not participate in competition Team nameEntry descriptionNumber of object categories wonmean AP NUSMultiple Model Fusion with Context Rescoring1060.37212 MSRA Visual ComputingA combination of multiple SPP-net-based models (no outside data)450.351103 UvA-EuvisionDeep learning with provided data210.320253 1-HKUSTrun 2180.288669 Southeast-CASIACNN-based proposal classification with proposal filtration and model combination40.304022 1-HKUSTrun 440.285616 Southeast-CASIACNN-based proposal classification with proposal filtration and sample balance20.304783 1-HKUSTrun 200.288669 CASIA_CRIPAC_2CNN-based proposal classification with part classification and object regression00.286158 1-HKUSTrun 300.284595 1-HKUSTrun 100.261543 MSRA Visual ComputingA single SPP-net model for detection (no outside data)---0.318403 Team nameEntry descriptionmean APNumber of object categories won NUSMultiple Model Fusion with Context Rescoring0.37212106 MSRA Visual ComputingA combination of multiple SPP-net-based models (no outside data)0.35110345 UvA-EuvisionDeep learning with provided data0.32025321 MSRA Visual ComputingA single SPP-net model for detection (no outside data)0.318403--- Southeast-CASIACNN-based proposal classification with proposal filtration and sample balance0.3047832 Southeast-CASIACNN-based proposal classification with proposal filtration and model combination0.3040224 1-HKUSTrun 20.2886690 1-HKUSTrun 20.28866918 CASIA_CRIPAC_2CNN-based proposal classification with part classification and object regression0.2861580 1-HKUSTrun 40.2856164 1-HKUSTrun 30.2845950 1-HKUSTrun 10.2615430 Team nameEntry descriptionDescription of outside data usedNumber of object categories wonmean AP GoogLeNetEnsemble of detection models. Validation is 44.5% mAPPretraining on ILSVRC12 classification data.1420.439329 CUHK DeepID-NetCombine multiple models described in the abstract without contextual modelingImageNet classification and localization data290.406659 Deep InsightCombination of three detection modelsThree CNNs from classification task are used for initialization.270.404517 UvA-EuvisionDeep learning with outside dataImageNet 100010.354213 Berkeley VisionR-CNN baselineThe CNN was pre-trained on the ILSVRC 2013 CLS dataset.10.345213 Trimps-SoushenTwo models combined with nms ILSVRC2012 classification data00.337485 Trimps-SoushenFour models combinationILSVRC2012 classification data00.332469 Trimps-SoushenCombine SS regions and RP regions to train a new regressor.ILSVRC2012 classification data00.317869 Trimps-SoushenSingle model trained with RP regions.ILSVRC2012 classification data00.315643 MILRCNN + FV RescoringWe used pretrained codebooks (trained on Imageclef) for PQ coding of fisher vectors00.303669 ORANGE-BUPTselective search, models trained in 2014 dataset,bounding box regresssionClassification Training Set00.27703 ORANGE-BUPTselective search, models trained in 2014 dataset,bounding box regresssionClassification Training Set00.271499 ORANGE-BUPTselective search, models trained in 2014 datasetClassification Training Set00.269317 ORANGE-BUPTselective search, models trained in 2013 dataset,bounding box regresssionClassification Training Set00.265701 MPG_UTSS, OB, TR proposals + RCNNRCNN and Caffe pre-trained models00.264344 ORANGE-BUPTselective search, models trained in 2014 datasetClassification Training Set00.264307 Trimps-SoushenA simple method which use our localization pipline plus nms.ILSVRC2012 classification data00.201702 MPG_UTSS, OB, TR proposals + RCNNRCNN and Caffe pre-trained models00.159337 MPG_UTSS, OB, TR proposals + RCNNRCNN and Caffe pre-trained models00.156382 CUHK DeepID-NetCombine multiple models described in the abstract without contextual modeling. The training data includes the validation dataset 2. ImageNet classification and localization data---0.406998 CUHK DeepID-Net2Combine multiple models described in the abstract without contextual modeling. The training data includes the validation dataset 2.ImageNet classification and localization data---0.40352 CUHK DeepID-Net2Combine multiple models described in the abstract without contextual modelingImageNet classification and localization data---0.403417 Deep InsightA single detection model.A CNN from classification task is used for initialization.---0.401568 Deep InsightAnother single detection model.A CNN from classification task is used for initialization.---0.396982 GoogLeNetSingle detection model. Validation is 38.75% mAPPretraining on ILSVRC12 classification data.---0.380277 CUHK DeepID-Net2Multi-stage deep CNN without contextual modelingImageNet classification and localization data---0.377471 CUHK DeepID-NetA single deep CNN with deformation layers and without contextual modelingImageNet classification and localization data---0.349798 Virginia TechRCNN with finetuningILSVRC 2012 Classification data (Training)---0.303374 lffallRCNN trained on val+train1k, tested on testILSVRC 2012 classification data---0.303068"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2014/results.php"
+tags = ["additional", "categories", "challenge", "classification", "classification+localization", "data", "detection", "error", "information", "large"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2010/results.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2010 (ILSVRC2010)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2010/results.php"
+tags = ["challenge", "cost", "flat", "hierarchical", "large", "ranked", "recognition", "scale", "submissions", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://image-net.org/challenges/ilsvrc+mscoco2015.php"]
+title = "ILSVRC and COCO workshop 2015"
+year_published = 2025
+clearnet = "http://image-net.org/challenges/ilsvrc+mscoco2015.php"
+tags = ["attentionnet", "award", "ballroom", "cascade", "centric", "challenges", "classification:", "coco", "contact", "convolutional"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/download.php"]
+title = "ImageNet"
+full_description = '[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the ImageNet database (the "Database") at Princeton University and Stanford University. In exchange for such permission, Researcher hereby agrees to the following terms and conditions: © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement'
+year_published = 2025
+clearnet = "https://image-net.org/download.php"
+tags = ["database", "download", "imagenet", "princeton", "stanford", "university"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["https://image-net.org/challenges/LSVRC/2013/iccv2013.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013) Workshop"
+full_description = "The ILSVRC2013 evaluates algorithms for object detection and image classification at large scale. This year there are three competitions: The new Fine-Grained Challenge 2013 runs concurrently with ILSVRC2013 this year, and targets classification among categories which are both visually and semantically similar. For more details, please visit Fine-Grained Challenge 2013."
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/iccv2013.php"
+tags = ["10:30", "10:50", "11:10", "11:30", "11:40", "12:00", "14:00", "14:40", "8:30", "8:50"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://image-net.org/challenges/LSVRC/2017/results.php"]
+title = "ILSVRC2017"
+full_description = "Legend: Yellow background = winner in this task according to this metric; authors are willing to reveal the method White background = authors are willing to reveal the method Grey background = authors chose not to reveal the method Italics = authors requested entry not participate in competition Team name Entry description Number of object categories won mean AP BDAT submission4 85 0.731392 BDAT submission3 65 0.732227 BDAT submission2 30 0.723712 DeepView(ETRI) Ensemble_A 10 0.593084 NUS-Qihoo_DPNs (DET) Ensemble of DPN models 9 0.656932 KAISTNIA_ETRI Ensemble Model5 1 0.61022 KAISTNIA_ETRI Ensemble Model4 0 0.609402 KAISTNIA_ETRI Ensemble Model2 0 0.608299 KAISTNIA_ETRI Ensemble Model1 0 0.608278 KAISTNIA_ETRI Ensemble Model3 0 0.60631 DeepView(ETRI) Single model A using ResNet for detection 0 0.587519 QINIU-ATLAB+CAS-SARI Ensemble 3 0 0.526601 QINIU-ATLAB+CAS-SARI Ensemble 4 0 0.523595 QINIU-ATLAB+CAS-SARI Ensemble 2 0 0.518426 QINIU-ATLAB+CAS-SARI Ensemble 5 0 0.51703 QINIU-ATLAB+CAS-SARI Ensemble 1 0 0.515529 FACEALL_BUPT faster-rcnn with soft-nms 0 0.499586 PaulForDream YOLOv2 608*608 0 0.494288 Sheep based on ssd_512 0 0.459223 Sheep according to YOLO and SSD 0 0.43453 FACEALL_BUPT single rfcn with class-aware model baseline 0 0.433957 FACEALL_BUPT Ensembles of three models 0 0.416489 Sheep based on ssd_300 0 0.401165 XBENTURY-THU Ensemble three models A 0 0.392799 Handsight 3 Yes-Net model with different input size, parameter and anchor boxes. Yes-Net get 39 FPS running on titan x pascal with 416 x 416 image. 0 0.32725 FACEALL_BUPT Ensembles of two models 0 0.288323 ReadSense use val dataset to train 0 0.282997 BUPT-PRIV resnext101-fpn single model 0 0.260561 BUPT-PRIV ensemble 4 models 0 0.254045 BUPT-PRIV ensemble 4 models 0 0.25175 XBENTURY-THU Ensemble three models B 0 0.243063 glee Submission1: baseline with frcnn 0 0.221268 YYF --- 0 0.20668 NUS-Qihoo_DPNs (DET) Training with val2 data --- 0.657634 NUS-Qihoo_DPNs (DET) Baseline ensemble of DPN models --- 0.645912 NUS-Qihoo_DPNs (DET) DPN models with class-wise weights --- 0.645023 Sheep based on YOLO --- 0.405691 Sheep based on vgg_16 --- 0.369627 [top]"
+year_published = 2025
+clearnet = "http://image-net.org/challenges/LSVRC/2017/results.php"
+tags = ["additional", "categories", "challenge", "classification", "classification+localization", "data", "detection", "detection/tracking", "error", "information"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.cmu.edu", "cs.princeton.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "factory.datatang.com", "iccv2013.org", "ics.forth.gr", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu", "wordnetweb.princeton.edu"]
+
+["https://image-net.org/login.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/login.php"
+tags = ["account", "imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["http://image-net.org/challenges/LSVRC/2012/analysis"]
+title = "ImageNet Challenge 2012 Analysis"
+full_description = 'Detecting avocados to zucchinis: what have we done, and where are we going? Olga Russakovsky, Jia Deng, Zhiheng Huang, Alexander C. Berg, Li Fei-Fei. International Conference on Computer Vision (ICCV), 2013. [pdf] [supplement] [slides pptx | slides pdf] [bibTex] - If we take the top 562 synsets from ILSVRC 2012 (out of 1000 synsets) measured by localization difficulty, ILSVRC is comparable to PASCAL VOC in terms of chance performance of localization and object scale. - ILSVRC is similar to PASCAL VOC with respect to the average number of object instances and the amount of clutter per image. - For the classification challenge, the SuperVision algorithm outperforms the second place competitor ISI on nearly all categories - For the detection challenge, SuperVision consistently outperforms the second place competitor Oxford VGG except when considering the set of 239 hardest categories with respect to localization difficulty. We visualize the variety of the ILSVRC 2012 data using the validation set images. The images are first rescaled to the canonical size of 300x300 pixels. For each resized image we generate a 300x300 heat map where the region occupied by the annotated object of interest has value 1 while the rest of the image has value 0. The first column shows the average heat map. The red overlaid box is the average of all the annotated ground truth bounding boxes (computed by averaging each of the 4 coordinates). The second column shows the average of all images in this category We demonstrate that the ILSVRC is a challenging testbed for evaluating object detection algorithms. We compare it to the PASCAL VOC which has been accepted by the computer vision community as the benchmark detection dataset. We define the chance performance of localization (CPL) measure as the expected accuracy of a detector which first randomly samples an object instance of that class and then uses its bounding box directly as the proposed localization window on all other images (after rescaling the images to the same size). Concretely, let B_1, B2, \ldots, B_N be all the bounding boxes of the object instances within a class, define the interesection over union(IOU) measure as'
+year_published = 2025
+clearnet = "http://image-net.org/challenges/LSVRC/2012/analysis"
+tags = ["according", "analysis", "average", "avocados", "categories", "categories.", "challenge", "chance", "classes", "classification"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2012/results.html"]
+title = "ImageNet Large Scale Visual Recognition Competition 2012 (ILSVRC2012)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2012/results.html"
+tags = ["abstract", "abstracts", "challenge", "description", "error", "filename", "information", "large", "members", "name"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/2013/results.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2013 (ILSVRC2013)"
+full_description = "Legend: Dark grey background = outside training data; Light grey background = not participating in competition (as requested by authors)Valid submissions = entries which participated in competition and did not use outside training data Team nameCommentmean APNumber of categories won(only valid submissions)Number of categories won(all submissions)UvA-EuvisionRun 2 (with prior)0.2258113056 NEC-MURegionlets with HOG, LBP, Covariance feature and Neural Patterns, Nerual Patterns extractor uses a publicly avaliable image classification model0.208954--35 UvA-EuvisionRun 30.208183--12 NEC-MURegionlets with HOG, LBP and Covariance feature, trained with boosting on train dataset, results merged by precision alignment using validation data0.196172513 OverFeat - NYU1 ConvNet (trained with CLS data for pre-training, then supplied DET data only)0.194009--55 UvA-EuvisionRun 10.192062--3 NEC-MURegionlets with HOG, LBP and Covariance feature, trained with boosting on train+val dataset, 0.1917853524 Toronto ADetector conv net also predicts the aspect ratio of the bounding box in addition to the class label. The output is branched at the penultimate layer of the conv net.0.11459561 Toronto AMultiplicative gating with 5 parts-based conv net detector. The learning algorithm is the same as before.0.10583800 SYSU_VisionDPM without context0.10450131 GPU_UCLApartial submission, no outside training data0.09833800 Toronto AIncorporates multiplicative gating with a separate streaming classifier conv network. The separate stream provides context and helps to reduce overfitting by reducing the scores.0.083910 Toronto AThis models have 1 root conv net and 4 additional conv net detecting 4 parts, with scanning window approach and NMS, does not use any outside training data. 0.08073800 Toronto AThis model uses 1 root conv net with linear svm on top. Features are learned from the positive images. Learning is performed using SGD with minibatches of 128.0.07776100 SYSU_VisionDPM with CNN context0.0754500 Delta200 classes + 1 background, no outside training data0.06077200 Delta200 classes, no outside training data0.06054100 Delta200 classes + 200 backgrounds, no outside training data0.05110400 UIUC-IFPConvnet for object detection.0.010489--0"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2013/results.php"
+tags = ["categories", "challenge", "classification", "classification+localization", "details", "detection", "error", "ilsvrc2013", "information", "large"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/index.php"]
+title = "ImageNet"
+full_description = "© 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/index.php"
+tags = ["imagenet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["https://image-net.org/challenges/LSVRC/2016/index.php"]
+title = "ImageNet"
+full_description = '''The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a localization labeling will be evaluated based on the label that best matches the ground truth label for the image and also the bounding box that overlaps with the ground truth. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image. Let $d(c_i,C_k) = 0$ if $c_i = C_k$ and 1 otherwise. Let $f(b_i,B_k) = 0$ if $b_i$ and $B_k$ have more than $50\%$ overlap, and 1 otherwise. The error of the algorithm on an individual image will be computed using: The training and validation data for the object detection task will remain unchanged from ILSVRC 2014. The test data will be partially refreshed with new images for this year's competition. There are 200 basic-level categories for this task which are fully annotated on the test data, i.e. bounding boxes for all categories in the image have been labeled. The categories were carefully chosen considering different factors such as object scale, level of image clutterness, average number of object instance, and several others. Some of the test images will contain none of the 200 categories. Browse all annotated detection images here.'''
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2016/index.php"
+tags = ["additional", "annotations", "challenge", "challenges", "citation", "classification", "competition?", "contact", "database", "deep"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "bits.blogs.nytimes.com", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "eccv2012.unifi.it", "imagenet.stanford.edu", "koen.me", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "people.eecs.berkeley.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "sceneparsing.csail.mit.edu", "sites.google.com", "uit.stanford.edu", "vision.stanford.edu", "xrce.xerox.com"]
+
+["https://image-net.org/challenges/LSVRC/2012/analysis"]
+title = "ImageNet Challenge 2012 Analysis"
+full_description = 'Detecting avocados to zucchinis: what have we done, and where are we going? Olga Russakovsky, Jia Deng, Zhiheng Huang, Alexander C. Berg, Li Fei-Fei. International Conference on Computer Vision (ICCV), 2013. [pdf] [supplement] [slides pptx | slides pdf] [bibTex] - If we take the top 562 synsets from ILSVRC 2012 (out of 1000 synsets) measured by localization difficulty, ILSVRC is comparable to PASCAL VOC in terms of chance performance of localization and object scale. - ILSVRC is similar to PASCAL VOC with respect to the average number of object instances and the amount of clutter per image. - For the classification challenge, the SuperVision algorithm outperforms the second place competitor ISI on nearly all categories - For the detection challenge, SuperVision consistently outperforms the second place competitor Oxford VGG except when considering the set of 239 hardest categories with respect to localization difficulty. We visualize the variety of the ILSVRC 2012 data using the validation set images. The images are first rescaled to the canonical size of 300x300 pixels. For each resized image we generate a 300x300 heat map where the region occupied by the annotated object of interest has value 1 while the rest of the image has value 0. The first column shows the average heat map. The red overlaid box is the average of all the annotated ground truth bounding boxes (computed by averaging each of the 4 coordinates). The second column shows the average of all images in this category We demonstrate that the ILSVRC is a challenging testbed for evaluating object detection algorithms. We compare it to the PASCAL VOC which has been accepted by the computer vision community as the benchmark detection dataset. We define the chance performance of localization (CPL) measure as the expected accuracy of a detector which first randomly samples an object instance of that class and then uses its bounding box directly as the proposed localization window on all other images (after rescaling the images to the same size). Concretely, let B_1, B2, \ldots, B_N be all the bounding boxes of the object instances within a class, define the interesection over union(IOU) measure as'
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2012/analysis"
+tags = ["according", "analysis", "average", "avocados", "categories", "categories.", "challenge", "chance", "classes", "classification"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "arxiv.org", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/announcement-June-2-2015.php"]
+title = "ImageNet"
+full_description = "This is a follow up to the announcement on May 19, 2015 with some more details and the status of the test server. During the period of November 28th, 2014 to May 13th, 2015, there were at least 30 accounts used by a team from Baidu to submit to the test server at least 200 times, far exceeding the specified limit of two submissions per week. This includes short periods of very high usage, for example with more than 40 submissions over 5 days from March 15th, 2015 to March 19th, 2015. Figure A below shows submissions from ImageNet accounts known to be associated with the team in question. Figure B shows a comparison to the activity from all other accounts. The results obtained during this period are reported in a recent arXiv paper. Because of the violation of the regulations of the test server, these results may not be directly comparable to results obtained and reported by other teams. To make this clear, by exploiting the ability to test many slightly different solutions on the test server it is possible to 1) select the best out of a set of very similar solutions based on test performance and achieve a small but potentially significant advantage and 2) choose methods for further research and development based directly on the test data instead of using only the training and validation data for such choices. We noticed these irregularities on May 14th, 2015. The authors of the paper were notified on May 17th, 2015. On May 22nd, 2015, upon further discussion and consultation with senior advisors in our research community, we informed the authors that We are in communication with the team involved in this incident. They have asked us to forward the message included further below to the community. Note that in order to stay neutral and independent, we have not and cannot work with any team to interpret or review results. Recently the ILSVRC organizers contacted the Heterogeneous Computing team to inform us that we exceeded the allowable number of weekly submissions to the ImageNet servers (~ 200 submissions during the lifespan of our project)."
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/announcement-June-2-2015.php"
+tags = ["challenge", "imagenet", "large", "message", "question:", "recognition", "scale", "team", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "arxiv.org", "cs.cmu.edu", "cs.unc.edu", "cvpr2017.thecvf.com", "dl.acm.org", "kaggle.com", "koen.me", "larryzitnick.org", "linkedin.com", "pascallin.ecs.soton.ac.uk", "people.eecs.berkeley.edu", "princeton.edu", "profiles.stanford.edu", "rebootingcomputing.ieee.org", "stanford.edu", "uit.stanford.edu", "vision.stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2014/browse-synsets.php"]
+title = "ImageNet Large Scale Visual Recognition Competition 2014 (ILSVRC2014)"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2014/browse-synsets.php"
+tags = ["challenge", "ilsvrc2012", "large", "recognition", "scale", "synsets", "task", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/data/attrann.mat"]
+title = ""
+year_published = 2025
+clearnet = "https://image-net.org/data/attrann.mat"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["http://image-net.org/challenges/LSVRC/2017"]
+title = "ImageNet"
+full_description = '''The data for the classification and localization tasks will remain unchanged from ILSVRC 2012 . The validation and test data will consist of 150,000 photographs, collected from flickr and other search engines, hand labeled with the presence or absence of 1000 object categories. The 1000 object categories contain both internal nodes and leaf nodes of ImageNet, but do not overlap with each other. A random subset of 50,000 of the images with labels will be released as validation data included in the development kit along with a list of the 1000 categories. The remaining images will be used for evaluation and will be released without labels at test time. The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data. In this task, given an image an algorithm will produce 5 class labels $c_i, i=1,\dots 5$ in decreasing order of confidence and 5 bounding boxes $b_i, i=1,\dots 5$, one for each class label. The quality of a localization labeling will be evaluated based on the label that best matches the ground truth label for the image and also the bounding box that overlaps with the ground truth. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. The ground truth labels for the image are $C_k, k=1,\dots n$ with $n$ class labels. For each ground truth class label $C_k$, the ground truth bounding boxes are $B_{km},m=1\dots M_k$, where $M_k$ is the number of instances of the $k^\text{th}$ object in the current image. Let $d(c_i,C_k) = 0$ if $c_i = C_k$ and 1 otherwise. Let $f(b_i,B_k) = 0$ if $b_i$ and $B_k$ have more than $50\%$ overlap, and 1 otherwise. The error of the algorithm on an individual image will be computed using: The training and validation data for the object detection task will remain unchanged from ILSVRC 2014. The test data will be partially refreshed with new images based upon last year's competition(ILSVRC 2016). There are 200 basic-level categories for this task which are fully annotated on the test data, i.e. bounding boxes for all categories in the image have been labeled. The categories were carefully chosen considering different factors such as object scale, level of image clutterness, average number of object instance, and several others. Some of the test images will contain none of the 200 categories. Browse all annotated detection images here.'''
+year_published = 2025
+clearnet = "http://image-net.org/challenges/LSVRC/2017"
+tags = ["additional", "annotations", "challenge", "challenges", "citation", "competition?", "contact", "cvpr", "details", "detection"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.cmu.edu", "cs.princeton.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "factory.datatang.com", "iccv2013.org", "ics.forth.gr", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "stanford.edu", "web.eecs.umich.edu", "wordnet.princeton.edu", "wordnetweb.princeton.edu"]
+
+["https://image-net.org/challenges/LSVRC/2015/browse-det-synsets.php"]
+title = "ILSVRC2015"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2015/browse-det-synsets.php"
+tags = ["challenge", "competition", "large", "main", "recognition", "scale", "synsets", "visual"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]
+
+["https://image-net.org/challenges/LSVRC/index.php"]
+title = "ImageNet"
+full_description = "These are some additional publications directly related to collecting the challenge dataset and evaluating the results. These papers are all discussed in the main paper above. Please refer to the individual challenge webpages for information about the most successful entries, and to the ImageNet publications page for a complete list of publications. © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/index.php"
+tags = ["additional", "annotation", "annotations", "avocados", "challenge", "citation", "competition", "contact", "crowdsourcing", "database."]
+language = "en"
+internal-references = ["none"]
+external-references = ["acberg.com", "ai.stanford.edu", "arxiv.org", "cs.princeton.edu", "cvpr2019.thecvf.com", "dl.acm.org", "kaggle.com", "link.springer.com", "princeton.edu", "qz.com", "stanford.edu", "thephotographersgallery.org.uk", "uit.stanford.edu", "vision.stanford.edu", "wordnet.princeton.edu", "youtube.com"]
+
+["https://image-net.org/challenges/LSVRC/2010/index"]
+title = "ImageNet"
+full_description = "The training data, the subset of ImageNet containing the 1000 categories and 1.2 million images, will be packaged for easy downloading. The validation and test data for this competition are not contained in the ImageNet training data (we will remove any duplicates). For each image, algorithms will produce a list of at most 5 object categories in the descending order of confidence. The quality of a labeling will be evaluated based on the label that best matches the ground truth label for the image. The idea is to allow an algorithm to identify multiple objects in an image and not be penalized if one of the objects identified was in fact present, but not included in the ground truth. There will be two versions of the evaluation criteria: a) non-hierarchical, treating all categories equally, and b) taking into account the hierarchical structure of the set of categories. For each image, an algorithm will produce 5 labels lj, j=1,...,5. The ground truth labels for the image are gk, k=1,...,n with n objects labeled. The error of the algorithm for that image would be e=1/nΣkminjd(lj,gk). For criteria a)d(x,y)=0 if x=y and 1 otherwise. For criteria b) d(x,y)=height of the lowest common ancestor of x and y in the category hierarchy ( a subset of WordNet ). This is equivalent of predicting a path along the hierarchy and evaluating where the ground truth path and the predicted path diverge. For each criteria the overall error score for an algorithm is the average error over all test images. Note that for this initial version of the competition, n=1, that is, one ground truth label per image. © 2020 Stanford Vision Lab, Stanford University, Princeton University imagenet.help.desk@gmail.com Copyright infringement"
+year_published = 2025
+clearnet = "https://image-net.org/challenges/LSVRC/2010/index"
+tags = ["challenge", "citationnew", "contact", "data", "development", "features", "imagenet", "introduction", "large", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.stanford.edu", "aws.amazon.com", "bits.blogs.nytimes.com", "cilvr.nyu.edu", "cs.brown.edu", "cs.cmu.edu", "cvpr2017.thecvf.com", "eccv2012.unifi.it", "ee.cuhk.edu.hk", "google.cl", "homepages.inf.ed.ac.uk", "imagenet.stanford.edu", "itunes.apple.com", "larryzitnick.org", "mscoco.org", "pascallin.ecs.soton.ac.uk", "people.csail.mit.edu", "research.microsoft.com", "wordnet.princeton.edu", "yincui.org"]

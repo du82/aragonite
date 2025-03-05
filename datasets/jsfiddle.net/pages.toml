@@ -1,22 +1,69 @@
-["https://jsfiddle.net/user/login"]
-title = "Log in - JSFiddle - Code Playground"
+["https://jsfiddle.net/subprocessors"]
+title = "JSFiddle − Subprocessors"
+full_description = "We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. JSFiddle uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services."
 year_published = 2025
-clearnet = "https://jsfiddle.net/user/login"
-category = "SitesList"
-tags = ["👋"]
+clearnet = "https://jsfiddle.net/subprocessors"
+tags = ["digital", "jsfiddle", "love", "ocean.", "sentry.", "stripe.", "subprocessors"]
 language = "en"
 internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
+external-references = ["cdnjs.cloudflare.com", "cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io", "support.cloudflare.com"]
+
+["https://jsfiddle.net/terms"]
+title = "JSFiddle − Terms & Conditions"
+full_description = '''We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. Use of the terms "we" and "us" in this Terms of Service means JSFiddle ("JSFiddle Inc"). Capitalized words not defined in this Terms of Service have the meaning as defined in the Terms. The following terms and conditions govern all use of the JSFiddle.net website and all content, services, and products available at or through the website. Our Services are offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, JSFiddle's Privacy Policy) and procedures that may be published from time to time by JSFiddle (collectively, the "Agreement"). You agree that we may automatically upgrade our Services, and these terms will apply to any upgrades. Please read this Agreement carefully before accessing or using our Services. By accessing or using any part of our services, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access or use any of our services. If these terms and conditions are considered an offer by JSFiddle, acceptance is expressly limited to these terms. Our Services are not directed to children younger than 13, and access and use of our Services is only offered to users 13 years of age or older. If you are under 13 years old, please do not register to use our Services. Any person who registers as a user or provides their personal information to our Services represents that they are 13 years of age or older.'''
+year_published = 2025
+clearnet = "https://jsfiddle.net/terms"
+tags = ["account.", "advertising.", "automatic", "changes.", "conditions", "contributors.", "deletion", "description.", "detection", "disclaimer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io"]
 
 ["https://jsfiddle.net/user/reset_password"]
 title = "Change Password - JSFiddle - Code Playground"
 year_published = 2025
 clearnet = "https://jsfiddle.net/user/reset_password"
-category = "SitesList"
 tags = ["forgot", "password?", "🤫"]
 language = "en"
 internal-references = ["none"]
 external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
+
+["https://jsfiddle.net/user/signup"]
+title = "Create an account - JSFiddle - Code Playground"
+year_published = 2025
+clearnet = "https://jsfiddle.net/user/signup"
+tags = ["account", "create", "🚀"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
+
+["https://jsfiddle.net/user/login"]
+title = "Log in - JSFiddle - Code Playground"
+year_published = 2025
+clearnet = "https://jsfiddle.net/user/login"
+tags = ["👋"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
+
+["https://jsfiddle.net/privacy"]
+title = "JSFiddle − Privacy Policy"
+full_description = "We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. When you sign up for JSFiddle, we ask for your name, and email address. That's just so you can personalize your new account, and we can send you invoices, updates, or other essential information. We’ll never sell your personal info to third parties, and we won’t use your name or company in marketing statements without your permission, either. You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Accordingly, JSFiddle recognizes and will comply with GDPR and those rights, except as limited by applicable law. The rights under GDPR include: Many of these rights can be exercised by signing in and directly updating your account information. If you have questions about exercising these rights or need assistance, please contact us at [email protected]. As part of the services we provide, and only to the extent necessary, we may use certain third party processors to process some or all of your personal information. For identification of these processors, and where they are located, please see our Subprocessor listing. JSFiddle won’t hand your data over to law enforcement unless a court order says we have to. We flat-out reject requests from local and federal law enforcement when they seek data without a court order. And unless we're legally prevented from it, we’ll always inform you when such requests are made. All data is encrypted via SSL/TLS when transmitted from our servers to your browser. Data isn’t encrypted while it's live in our database (since it needs to be ready to send to you when you need it), but we go to great lengths to secure your data at rest—you can read more about that on our security page."
+year_published = 2025
+clearnet = "https://jsfiddle.net/privacy"
+tags = ["access", "changes", "data", "deleted", "encryption", "enforcement", "identity", "information", "jsfiddle", "location"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
+
+["https://jsfiddle.net/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 91bab103be1cac09 • Your IP: Click to reveal 143.198.35.227 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://jsfiddle.net/cdn-cgi/l/email-protection"
+tags = ["91bab103be1cac09", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io", "support.cloudflare.com"]
 
 ["https://jsfiddle.net"]
 title = "JSFiddle - Code Playground"
@@ -25,8 +72,7 @@ full_description = "HTML JavaScript CSS Language HTML HAML Doctype XHTML 1.0 Str
 author = "JSFiddle"
 year_published = 2025
 clearnet = "https://jsfiddle.net"
-category = "SitesList"
-tags = ["ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs", "change"]
+tags = ["ability", "ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs"]
 language = "en"
 internal-references = ["none"]
 external-references = ["jsfiddle.gitbook.io"]
@@ -38,43 +84,10 @@ full_description = "HTML JavaScript CSS Language HTML HAML Doctype XHTML 1.0 Str
 author = "JSFiddle"
 year_published = 2025
 clearnet = "https://jsfiddle.net/rxwyeo73"
-category = "SitesList"
-tags = ["ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs", "change"]
+tags = ["ability", "ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs"]
 language = "en"
 internal-references = ["none"]
 external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
-
-["https://jsfiddle.net/cdn-cgi/l/email-protection"]
-title = "Email Protection | Cloudflare"
-full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 913034cc8e1ba225 • Your IP: Click to reveal 97.95.56.30 • Performance & security by Cloudflare"
-year_published = 2025
-clearnet = "https://jsfiddle.net/cdn-cgi/l/email-protection"
-category = "SitesList"
-tags = ["913034cc8e1ba225", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io", "support.cloudflare.com"]
-
-["https://jsfiddle.net/user/signup"]
-title = "Create an account - JSFiddle - Code Playground"
-year_published = 2025
-clearnet = "https://jsfiddle.net/user/signup"
-category = "SitesList"
-tags = ["account", "create", "🚀"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
-
-["https://jsfiddle.net/terms"]
-title = "JSFiddle − Terms & Conditions"
-full_description = '''We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. Use of the terms "we" and "us" in this Terms of Service means JSFiddle ("JSFiddle Inc"). Capitalized words not defined in this Terms of Service have the meaning as defined in the Terms. The following terms and conditions govern all use of the JSFiddle.net website and all content, services, and products available at or through the website. Our Services are offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, JSFiddle's Privacy Policy) and procedures that may be published from time to time by JSFiddle (collectively, the "Agreement"). You agree that we may automatically upgrade our Services, and these terms will apply to any upgrades. Please read this Agreement carefully before accessing or using our Services. By accessing or using any part of our services, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access or use any of our services. If these terms and conditions are considered an offer by JSFiddle, acceptance is expressly limited to these terms. Our Services are not directed to children younger than 13, and access and use of our Services is only offered to users 13 years of age or older. If you are under 13 years old, please do not register to use our Services. Any person who registers as a user or provides their personal information to our Services represents that they are 13 years of age or older.'''
-year_published = 2025
-clearnet = "https://jsfiddle.net/terms"
-category = "SitesList"
-tags = ["account.", "advertising.", "automatic", "changes.", "conditions", "contributors.", "deletion", "description.", "detection", "disclaimer"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io"]
 
 ["https://jsfiddle.net/6he52mnr/1"]
 title = "test 3 - JSFiddle - Code Playground"
@@ -83,19 +96,7 @@ full_description = "HTML JavaScript CSS Language HTML HAML Doctype XHTML 1.0 Str
 author = "JSFiddle"
 year_published = 2025
 clearnet = "https://jsfiddle.net/6he52mnr/1"
-category = "SitesList"
-tags = ["ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs", "change"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
-
-["https://jsfiddle.net/privacy"]
-title = "JSFiddle − Privacy Policy"
-full_description = "We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. When you sign up for JSFiddle, we ask for your name, and email address. That's just so you can personalize your new account, and we can send you invoices, updates, or other essential information. We’ll never sell your personal info to third parties, and we won’t use your name or company in marketing statements without your permission, either. You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Accordingly, JSFiddle recognizes and will comply with GDPR and those rights, except as limited by applicable law. The rights under GDPR include: Many of these rights can be exercised by signing in and directly updating your account information. If you have questions about exercising these rights or need assistance, please contact us at [email protected]. As part of the services we provide, and only to the extent necessary, we may use certain third party processors to process some or all of your personal information. For identification of these processors, and where they are located, please see our Subprocessor listing. JSFiddle won’t hand your data over to law enforcement unless a court order says we have to. We flat-out reject requests from local and federal law enforcement when they seek data without a court order. And unless we're legally prevented from it, we’ll always inform you when such requests are made. All data is encrypted via SSL/TLS when transmitted from our servers to your browser. Data isn’t encrypted while it's live in our database (since it needs to be ready to send to you when you need it), but we go to great lengths to secure your data at rest—you can read more about that on our security page."
-year_published = 2025
-clearnet = "https://jsfiddle.net/privacy"
-category = "SitesList"
-tags = ["access", "changes", "data", "deleted", "encryption", "enforcement", "identity", "information", "jsfiddle", "location"]
+tags = ["ability", "ad-free", "alive.", "async", "attribute", "autoresizing", "behavior", "blocker.", "blocking", "cdnjs"]
 language = "en"
 internal-references = ["none"]
 external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
@@ -105,19 +106,7 @@ title = "Log in - JSFiddle - Code Playground"
 full_description = "Join the our fantastic supporters, and keep the JSFiddle dream alive. Code with these and 1,5M other devs // Define function so that we can call it again later if we need to reset it // This executes reCAPTCHA and then calls our callback. function executeRecaptchaForSubscribe() { grecaptcha.ready(function() { grecaptcha.execute('6Ld-VIYoAAAAAFcXu3kzVsf5vYpU4gJbYH7t51gj', {action: 'subscribe'}).then(function(token) { setInputWithRecaptchaResponseTokenForSubscribe('g-recaptcha-response-data-subscribe', token) }); }); }; // Invoke immediately executeRecaptchaForSubscribe() // Async variant so you can await this function from another async function (no need for // an explicit callback function then!) // Returns a Promise that resolves with the response token. async function executeRecaptchaForSubscribeAsync() { return new Promise((resolve, reject) => { grecaptcha.ready(async function() { resolve(await grecaptcha.execute('6Ld-VIYoAAAAAFcXu3kzVsf5vYpU4gJbYH7t51gj', {action: 'subscribe'})) }); }) }; var setInputWithRecaptchaResponseTokenForSubscribe = function(id, token) { var element = document.getElementById(id); if (element !== null) element.value = token; } $8 per month Cancel anytime One time $90 1-year license, no subscription, no auto-renewal Powered by Join as JSFiddle supporter ($8 per month)"
 year_published = 2025
 clearnet = "https://jsfiddle.net/pro"
-category = "SitesList"
 tags = ["ad-free", "alive.", "collections", "console", "dream", "extra", "fantastic", "features", "fiddle", "fiddles"]
 language = "en"
 internal-references = ["none"]
 external-references = ["cdnjs.cloudflare.com", "jsfiddle.gitbook.io"]
-
-["https://jsfiddle.net/subprocessors"]
-title = "JSFiddle − Subprocessors"
-full_description = "We (the folks at JSFiddle) run a code hosting platform called JSFiddle.net and would love for you to use it. JSFiddle.net's basic service is free. Our service is designed to give you as much control and ownership over what goes on your website as possible. However, be responsible in what you publish. In particular, make sure that none of the prohibited items (like spam, viruses, or serious threats of violence) appear in your content. JSFiddle uses third party subprocessors, such as cloud computing providers and customer support software, to provide our services."
-year_published = 2025
-clearnet = "https://jsfiddle.net/subprocessors"
-category = "SitesList"
-tags = ["digital", "jsfiddle", "love", "ocean.", "sentry.", "stripe.", "subprocessors"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cdnjs.cloudflare.com", "cloudflare.com", "en.wordpress.com", "jsfiddle.gitbook.io", "support.cloudflare.com"]

@@ -1,0 +1,9 @@
+["https://docs.celeryq.dev"]
+title = "Celery - Distributed Task Queue — Celery 5.4.0 documentation"
+full_description = "This document describes the current stable version of Celery (5.4). For development docs, go here. Celery - Distributed Task Queue¶ Celery is a simple, flexible, and reliable distributed system to process vast amounts of messages, while providing operations with the tools required to maintain such a system. It’s a task queue with focus on real-time processing, while also supporting task scheduling. Celery has a large and diverse community of users and contributors, you should come join us on IRC or our mailing-list. Celery is Open Source and licensed under the BSD License. Donations¶ This project relies on your generous donations. If you are using Celery to create a commercial product, please consider becoming our backer or our sponsor to ensure Celery’s future. Getting Started¶ If you’re new to Celery you can get started by following the First Steps with Celery tutorial. You can also check out the FAQ. Contents¶ Copyright Getting Started Introduction to Celery Backends and Brokers First Steps with Celery Next Steps Resources User Guide Application Tasks Calling Tasks Canvas: Designing Work-flows Workers Guide Daemonization Periodic Tasks Routing Tasks Monitoring and Management Guide Security Optimizing Debugging Concurrency Signals Testing with Celery Extensions and Bootsteps Configuration and defaults Documenting Tasks with Sphinx Django Contributing Community Resources Tutorials Frequently Asked Questions Change history API Reference Internals History Glossary Indices and tables¶ Index Module Index Search Page"
+year_published = 2025
+clearnet = "https://docs.celeryq.dev"
+tags = ["celery", "contents¶", "distributed", "donations", "donations¶", "getting", "indices", "navigation", "queue¶", "quick"]
+language = "en"
+internal-references = ["none"]
+external-references = ["opencollective.com", "opensource.org"]

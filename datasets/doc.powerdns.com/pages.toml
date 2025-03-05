@@ -1,0 +1,70 @@
+["https://doc.powerdns.com"]
+title = "PowerDNS Documentation"
+description = "PowerDNS Documentation - Authoritative Server and Recursor documentation"
+full_description = "PowerDNS offers three main products: the Authoritative Server, the Recursor, and dnsdist. The Authoritative Server and Recursor are separate components that can be mixed seamlessly, while dnsdist provides high-performance load balancing and DDoS protection. The Authoritative Server answers questions about domains it knows about, but will not go out on the net to resolve queries about other domains. When the Authoritative Server answers a question, it comes out of the database, and can be trusted as being authoritative. The Recursor, by default has no knowledge of domains itself, but will always consult other authoritative servers to answer questions given to it. It's designed for high-performance recursive DNS resolution. dnsdist is a highly DNS-, DoS- and abuse-aware loadbalancer that can be used to distribute incoming traffic across multiple DNS servers."
+author = "PowerDNS"
+year_published = 2025
+clearnet = "https://doc.powerdns.com"
+tags = ["additional", "authoritative", "cloud", "control", "dnsdist", "documentation", "dstore", "lightning", "powerdns", "products"]
+language = "en"
+internal-references = ["none"]
+external-references = ["dnsdist.org"]
+
+["https://doc.powerdns.com/recursor"]
+title = "Introduction — PowerDNS Recursor  documentation"
+full_description = "The PowerDNS Recursor is a high-performance DNS recursor with built-in scripting capabilities. It is known to power the resolving needs of over 150 million internet connections. The documentation is only for the 4.1 and higher series, users of older versions are urged to read End of life statements and upgrade! PowerDNS is an open source program so you may get help from the PowerDNS users’ community or from its authors. You may also help others (please do). The Open-Xchange/PowerDNS company can provide help or support you in private as well. Please contact PowerDNS. If you desire privacy, please consider entering a support relationship with us, in which case we invite you to contact PowerDNS. Start out with stating what you think should be happening. Quite often, wrong expectations are the actual problem. Furthermore, your operating system, which version of PowerDNS you use and where you got it from (RPM, .DEB, tar.bz2). If you compiled it yourself, what were the ./configure parameters. As much as we’d like to think we are perfect, bugs happen. If you have found a bug, please file a bug report on GitHub bug report. Please fill in the template and we’ll try our best to help you. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+year_published = 2025
+clearnet = "https://doc.powerdns.com/recursor"
+tags = ["bug!¶", "confidential,", "contents", "details", "discuss", "feature!¶", "features¶", "found", "getting", "github"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "en.m.wikipedia.org", "github.com", "irc.oftc.net", "lua.org", "powerdns.com", "sphinx.pocoo.org", "squidfunk.github.io"]
+
+["https://doc.powerdns.com/zonecontrol/latest"]
+title = "PowerDNS ZoneControl — PowerDNS ZoneControl 1.7.1 documentation"
+full_description = "PowerDNS ZoneControl¶ Release 1.7.1 ZoneControl is a Python-based Domain editor using the PowerDNS API. Downloading¶ ZoneControl is a commercial PowerDNS product and unlike our open-source offerings cannot be downloaded for free. About this document¶ This document is split into two parts: Administrator Guide User’s Guide These HTML pages can be downloaded as a single tarball here: HTML tarball PDF versions of the guides can be found here: PowerDNS Administrator Guide PowerDNS User’s Guide Indices and Tables¶ Index Module Index Search Page"
+year_published = 2025
+clearnet = "https://doc.powerdns.com/zonecontrol/latest"
+tags = ["document¶", "downloading¶", "indices", "powerdns", "quick", "related", "search", "tables¶", "topics", "zonecontrol¶"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "en.m.wikipedia.org", "github.com", "irc.oftc.net", "lua.org", "powerdns.com", "sphinx-doc.org", "sphinx.pocoo.org", "squidfunk.github.io"]
+
+["https://doc.powerdns.com/authoritative"]
+title = "PowerDNS Authoritative Nameserver — PowerDNS Authoritative Server  documentation"
+full_description = "The PowerDNS Authoritative Server is a versatile nameserver which supports a large number of backends. These backends can either be plain zone files or be more dynamic in nature. PowerDNS has the concepts of ‘backends’. A backend is a datastore that the server will consult that contains DNS records (and some metadata). The backends range from database backends (MySQL, PostgreSQL) and BIND zone files to co-processes and JSON API’s. Multiple backends can be enabled in the configuration by using the launch option. Each backend can be configured separately. PowerDNS is an open source program so you may get help from the PowerDNS users’ community or from its authors. You may also help others (please do). The Open-Xchange/PowerDNS company can provide help or support you in private as well. Please contact PowerDNS. If you desire privacy, please consider entering a support relationship with us, in which case we invite you to contact PowerDNS. Start out with stating what you think should be happening. Quite often, wrong expectations are the actual problem. Furthermore, your operating system, which version of PowerDNS you use and where you got it from (RPM, .DEB, tar.bz2). If you compiled it yourself, what were the ./configure parameters. As much as we’d like to think we are perfect, bugs happen. If you have found a bug, please file a bug report on GitHub. Please fill in the template and we’ll try our best to help you."
+year_published = 2025
+clearnet = "https://doc.powerdns.com/authoritative"
+tags = ["authoritative", "bug!¶", "confidential,", "contents", "details", "discuss", "feature!¶", "found", "getting", "github"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "github.com", "irc.oftc.net", "powerdns.com", "sphinx.pocoo.org"]
+
+["https://doc.powerdns.com/cloudcontrol/latest"]
+title = "Cloud Control - Cloud Control"
+full_description = "Cloud Control Cloud Control facilitates orchestration, management & monitoring of PowerDNS products in Kubernetes deployments. As of release 3.0, Cloud Control offers Helm Charts to deploy the following components of a comprehensive DNS landscape: Userplane: The PowerDNS base products for DNS Loadbalancing, Recursive DNS, Authoritative DNS and accompanying security solutions Controlplane: PowerDNS products for reporting, management of Userplane deployments and provisioning of feeds for Userplane security solutions Monitoring: A comprehensive monitoring blueprint which can be deployed alongside Userplane and Controlplane deployments The Helm Charts are built in such a way that you can use PowerDNS products in any combination."
+year_published = 2025
+clearnet = "https://doc.powerdns.com/cloudcontrol/latest"
+tags = ["cloud", "cloud control", "control", "overview", "powerdns", "products", "userplane"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "github.com", "irc.oftc.net", "powerdns.com", "sphinx.pocoo.org", "squidfunk.github.io"]
+
+["https://doc.powerdns.com/dstore/latest"]
+title = "Dstore Documentation"
+full_description = "Overview¶ How It Works¶ PowerDNS dstore consists of software for the processing and distribution of protobuf log messages from PowerDNS Recursor, DNSdist and Authoritative server. All the software components in dstore accept events over the network and process them in some way; for example distributing them to different destinations, converting them to different formats, aggregating them into reports etc. Each event contains a DNS message (source address, query name, query type, etc.) representing either a DNS query or a DNS query+response augmented by performance counters. In this documentation, the terms event and message are used interchangeably. dstore receives events wrapped in Protocol Buffers format (a.k.a. protobuf). These are a language-neutral, platform-neutral, extensible mechanism for serializing structured data. The events destined for dstore can be emitted by a variety of sources: PowerDNS Recursor PowerDNS DNSdist PowerDNS Authoritative Server (not currently, but potentially in a future version) dnspcap2protobuf from the PowerDNS distribution For information on how to configure DNSdist and Recursor to emit protobuf, and example configuration for the dstore components, see Getting Started. Components¶ dstore consists of a number of components which interact with each other, as shown in the figure below. dstore-dist¶ dstore-dist is the primary daemon which listens for events on TCP port 2000, and performs a variety of processing on those events, including filtering, distribution to different destinations, and conversion to new protocols such as Kafka. It is responsible for listening for events, decoding protobufs, and the onwards forwarding of events. dstore-dist-top-reporter¶ dstore-dist-top-reporter is used to generate reports from protobuf messages. These reports are usually based on sampled data (dstore-dist can be used to perform the data sampling before passing the events to dstore-dist-top-reporter). Reports are stored in an Elastic/Opensearch backend. dstore-dist-eventforwarder¶ dstore-dist-eventforwarder is used to store events related to DNS filtering in Elastic/Opensearch. Those reports can then later be retrieved/searched by the dstore-dist-report-api component. dstore-dist-report-api¶ dstore-dist-report-api is used to retrieve reports about events related to DNS filtering in Elastic/Opensearch. dnspcap2protobuf¶ dnspcap2protobuf utility from the PowerDNS distribution reads a pcap file and converts it to protobuf format which you can subsequently feed to dstore-dist: The following code excerpt will capture some DNS traffic, and then send it to dstore-dist in protobuf format on port 2000. tcpdump -i enp0s25 udp port 53 -w example.pcap dnspcap2protobuf example.pcap /dev/stdout | nc 127.0.0.1 2000"
+year_published = 2025
+clearnet = "https://doc.powerdns.com/dstore/latest"
+tags = ["command", "components¶", "configuration", "contents", "distribution", "dnsdist", "dnspcap2protobuf", "dnspcap2protobuf¶", "documentation", "dstore"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "en.m.wikipedia.org", "github.com", "irc.oftc.net", "powerdns.com", "sphinx.pocoo.org", "squidfunk.github.io"]
+
+["https://doc.powerdns.com/lightningstream"]
+title = "PowerDNS Lightning Stream Documentation"
+year_published = 2025
+clearnet = "https://doc.powerdns.com/lightningstream"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.powerdns.com", "dnsdist.org", "en.m.wikipedia.org", "github.com", "irc.oftc.net", "powerdns.com", "sphinx.pocoo.org", "squidfunk.github.io"]

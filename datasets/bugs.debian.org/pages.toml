@@ -1,32 +1,9 @@
-["https://bugs.debian.org/contact"]
-title = "Bugs in package contact in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for contact. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+["https://bugs.debian.org/MailingLists"]
+title = "Bugs in package MailingLists in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for MailingLists. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
 year_published = 2025
-clearnet = "https://bugs.debian.org/contact"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "contact", "debian", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/Access"]
-title = "Bugs in package Access in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for Access. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/Access"
-category = "SitesList"
-tags = ["access", "bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/News"]
-title = "Bugs in package News in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for News. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/News"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "news", "options"]
+clearnet = "https://bugs.debian.org/MailingLists"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "mailinglists", "misc", "options"]
 language = "en"
 internal-references = ["none"]
 external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
@@ -36,129 +13,7 @@ title = "Bugs in package blends in unstable -- Debian Bug report logs"
 full_description = "You may want to refer to the following packages that are part of the same source: blends-common, blends-dev, blends-doc, blends-tasks, python3-blends. You might like to refer to the blends package page, to the Package Tracking System, or to the source package src:blends's bug page. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
 year_published = 2025
 clearnet = "https://bugs.debian.org/blends"
-category = "SitesList"
 tags = ["blends", "bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/events"]
-title = "Bugs in package events in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for events. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/events"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "events", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/Reporting"]
-title = "Bugs in package Reporting in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for Reporting. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/Reporting"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/Developer"]
-title = "Bugs in package Developer in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for Developer. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/Developer"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "developer", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/distrib"]
-title = "Bugs in package distrib in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for distrib. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/distrib"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "distrib", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/devel"]
-title = "Bugs in package devel in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for devel. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/devel"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "devel", "exclude", "found!", "include", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/CD"]
-title = "Bugs in package CD in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for CD. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/CD"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/MailingLists"]
-title = "Bugs in package MailingLists in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for MailingLists. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/MailingLists"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "mailinglists", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/international"]
-title = "Bugs in package international in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for international. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/international"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "international", "logs:", "misc", "options"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/Bugs"]
-title = "Bugs in package Bugs in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for Bugs. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/Bugs"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/code_of_conduct"]
-title = "Bugs in package code_of_conduct in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for code_of_conduct. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/code_of_conduct"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
-language = "en"
-internal-references = ["none"]
-external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
-
-["https://bugs.debian.org/doc"]
-title = "Bugs in package doc in unstable -- Debian Bug report logs"
-full_description = "There is no maintainer for doc. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
-year_published = 2025
-clearnet = "https://bugs.debian.org/doc"
-category = "SitesList"
-tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
 language = "en"
 internal-references = ["none"]
 external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
@@ -168,8 +23,147 @@ title = "Debian bug tracking system"
 full_description = '''Debian bug tracking system Debian has a bug tracking system (BTS) in which we file details of bugs reported by users and developers. Each bug is given a number, and is kept on file until it is marked as having been dealt with. How to report a bug in Debian A separate page has instructions and tips on how to report a bug if you encounter problems in the Debian distribution. Bug tracking system documentation Advanced information on how to use the system Information on manipulating bugs by email Mailservers' reference card Ways of accessing the bug report logs Requesting bug reports by email Viewing bug reports on the WWW Find a bug by number: as mbox show all headers show boring messages Select bug reports on the WWW Select bugs in packagetaggedwith severityin source packagein packages maintained bysubmitted byowned bywith statuswith mail fromnewest bugs More selections can be added after the first search. If a later selection is on the same search field, the results are ORed. If it is on a different field, the results are ANDed. Valid severities are critical, grave, serious, important, normal, minor, wishlist, fixed. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, potato, woody, sarge, etch, lenny, squeeze, wheezy, jessie, stretch, buster, bullseye, bookworm, trixie, forky, sid, experimental, sarge-ignore, etch-ignore, lenny-ignore, squeeze-ignore, wheezy-ignore, jessie-ignore, stretch-ignore, buster-ignore, bullseye-ignore, bookworm-ignore, trixie-ignore, forky-ignore . Include Bugs with subject containingtaggedwith severitywith pending statewith submitter containingwith forwarded containingwith owner containingwith package Exclude Bugs with subject containingtaggedwith severitywith pending statewith submitter containingwith forwarded containingwith owner containingwith package Order by normaloldviewrawage Misc options Repeat Merged Reverse Bugs Reverse Pending Reverse Severity No Bugs which affect packages None testing oldstable stable experimental unstableUnarchivedArchivedArchived and Unarchived Submit The above queries can also be made by visiting URLs of the following forms, respectively: https://bugs.debian.org/number https://bugs.debian.org/mbox:number https://bugs.debian.org/package https://bugs.debian.org/src:sourcepackage https://bugs.debian.org/maintainer@email.address https://bugs.debian.org/from:submitter@email.address https://bugs.debian.org/severity:severity https://bugs.debian.org/tag:tag Searching bug reports The Ultimate Debian Database (UDD) provides a multi-criteria search engine for bugs. Another way to search bug reports is to use Google Groups. Alternative sites that allow searching for bug reports include The Mail Archive. Supplementary information The current list of Release Critical Bugs. The current list of pseudo-packages recognized by the Debian bug tracking system. The following bug report indices are available: Packages with active and archived bug reports. Source packages with active and archived bug reports. Maintainers of packages with active and archived bug reports. Submitters of active and archived bug reports. Note: some of the previously available indices of bug reports aren't available due to internal problems with the program that generated them. We apologize for the inconvenience. Spam Reports The Bug Tracking system often receives spam. To report spam in the bug tracking system, find the bug report by number, and click "this bug log contains spam" near the bottom. Debian BTS administrators <owner@bugs.debian.org> Debian bug tracking system Copyright © 1999 Darren O. Benham, 1997, 2003 nCipher Corporation Ltd, 1994-1997 Ian Jackson.'''
 year_published = 2025
 clearnet = "https://bugs.debian.org"
-category = "SitesList"
 tags = ["active", "archived", "bugs", "containingwith", "debian", "documentation", "exclude", "home", "include", "information"]
 language = "en"
 internal-references = ["none"]
 external-references = ["bits.debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/distrib"]
+title = "Bugs in package distrib in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for distrib. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/distrib"
+tags = ["bugs", "categorize/order", "debian", "distrib", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/events"]
+title = "Bugs in package events in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for events. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/events"
+tags = ["bugs", "categorize/order", "debian", "events", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/Access"]
+title = "Bugs in package Access in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for Access. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/Access"
+tags = ["access", "bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/Developer"]
+title = "Bugs in package Developer in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for Developer. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/Developer"
+tags = ["bugs", "categorize/order", "debian", "developer", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/code_of_conduct"]
+title = "Bugs in package code_of_conduct in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for code_of_conduct. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/code_of_conduct"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/Reporting"]
+title = "Bugs in package Reporting in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for Reporting. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/Reporting"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/CD"]
+title = "Bugs in package CD in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for CD. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/CD"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/News"]
+title = "Bugs in package News in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for News. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/News"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "news", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/devel"]
+title = "Bugs in package devel in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for devel. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/devel"
+tags = ["bugs", "categorize/order", "debian", "devel", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/doc"]
+title = "Bugs in package doc in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for doc. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/doc"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/cgi-bin/pkgindex.cgi"]
+title = "Debian Bug report logs by package"
+full_description = "Note that with multi-binary packages there may be other reports filed under the different binary package names. Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/cgi-bin/pkgindex.cgi"
+tags = ["debian", "logs", "package", "report"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/international"]
+title = "Bugs in package international in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for international. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/international"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "international", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/contact"]
+title = "Bugs in package contact in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for contact. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/contact"
+tags = ["bugs", "categorize/order", "contact", "debian", "exclude", "found!", "include", "logs:", "misc", "options"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "packages.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "tracker.debian.org", "udd.debian.org", "wiki.debian.org"]
+
+["https://bugs.debian.org/Bugs"]
+title = "Bugs in package Bugs in unstable -- Debian Bug report logs"
+full_description = "There is no maintainer for Bugs. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore, forky, forky-ignore Debbugs is free software and licensed under the terms of the GNU General Public License version 2. The current version can be obtained from https://bugs.debian.org/debbugs-source/. Copyright © 1999 Darren O. Benham, 1997,2003 nCipher Corporation Ltd, 1994-97 Ian Jackson, 2005-2017 Don Armstrong, and many other contributors."
+year_published = 2025
+clearnet = "https://bugs.debian.org/Bugs"
+tags = ["bugs", "categorize/order", "debian", "exclude", "found!", "include", "logs:", "misc", "options", "package"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bits.debian.org", "debian.org", "groups.google.com", "mail-archive.com", "micronews.debian.org", "planet.debian.org", "salsa.debian.org", "search.debian.org", "udd.debian.org", "wiki.debian.org"]

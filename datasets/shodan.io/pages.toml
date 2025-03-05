@@ -1,86 +1,13 @@
-["https://shodan.io/search"]
-title = "Shodan Search Engine"
-description = "Search engine of Internet-connected devices. Create a free account to get started."
-full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
-year_published = 2025
-clearnet = "https://shodan.io/search"
-category = "SitesList"
-tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://shodan.io/explore/category/industrial-control-systems"]
-title = "Industrial Control Systems - Explore"
+["https://shodan.io/explore/category/videogames"]
+title = "Video Games - Explore"
 description = "Search Engine for the Internet of Things"
-full_description = "Industrial control systems (ICS) are computers that control the world around you. They're responsible for managing the air conditioning in your office, the turbines at a power plant, the lighting at the theatre or the robots at a factory Shodan continuously crawls the Internet and discovers Internet-accessible ICS devices. If you have an enterprise subscription to Shodan you can use the tag search filter with a value of ics to get a list all ICS on the Internet right now. Modbus is a popular protocol for industrial control systems (ICS). It provides easy, raw access to the control system without requiring any authentication. S7 (S7 Communication) is a Siemens proprietary protocol that runs between programmable logic controllers (PLCs) of the Siemens S7 family. DNP3 (Distributed Network Protocol) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies. The Fox protocol, developed as part of the Niagara framework from Tridium, is most commonly seen in building automation systems (offices, libraries, Universities, etc.) BACnet is a communications protocol for building automation and control networks. It was designed to allow communication of building automation and control systems for applications such as heating, air-conditioning, lighting, and fire detection systems. EtherNet/IP was introduced in 2001 and is an industrial Ethernet network solution available for manufacturing automation. Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from PLCs The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is an early implementation of Fieldbus, a digital industrial automation protocol. Its most notable advantage is that it can communicate over legacy wiring. MELSEC-Q Series use a proprietary network protocol for communication. The devices are used by equipment and manufacturing facilities to provide high-speed, large volume data processing and machine control."
+full_description = "Minecraft is a sandbox video game that enables players to explore a blocky, procedurally-generated 3D world with infinite terrain, and may extract raw materials, craft tools and items, and build structures or earthworks. CS: GO is an objective-based multiplayer first-person shooter. Each player joins either the Terrorist or Counter-Terrorist team and attempts to complete objectives or eliminate the enemy team. Starbound takes place in a two-dimensional, procedurally generated universe which the player will explore in order to obtain new weapons, armour, and miscellaneous items. Ark: Survival Evolved is an action-adventure survival video game played from either a third-person or first-person view and its world is navigated on foot or by riding a dinosaur. Farming Simulator 19 is the richest and most complete farming experience ever made! You’ll take control of vehicles and machines faithfully recreated from all the leading brands in the industry. An online multiplayer survival game, now with mounts and mounted combat, set in the lands of Conan the Barbarian. Survive in a vast open world sandbox, build a home and kingdom, dominate your enemies in single or multiplayer. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive. Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats! The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players."
 year_published = 2025
-clearnet = "https://shodan.io/explore/category/industrial-control-systems"
-category = "SitesList"
-tags = ["commonterms", "control", "industrial", "searchfilter", "systems", "thebasics"]
+clearnet = "https://shodan.io/explore/category/videogames"
+tags = ["games", "video", "video games"]
 language = "en"
 internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/explore/category/databases"]
-title = "Databases - Explore"
-description = "Search Engine for the Internet of Things"
-full_description = "MySQL is an open-source relational database management system. It is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open-source web application software stack. PostgreSQL, often simply Postgres, is an ORDBMS with an emphasis on extensibility and standards-compliance. It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. MongoDB is a document-oriented database that is classified as a NoSQL database. It eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas. Riak is a distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability. In addition to the open-source version, it comes in a supported enterprise version and a cloud storage version. Elastic is a NoSQL database and search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Redis is an open source, in-memory data structure store, used as database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering. It is intended for use in speeding up dynamic web applications by alleviating database load. Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. CouchDB is a database that uses JSON for documents, JavaScript for MapReduce indexes and regular HTTP for its API. By default, MongoDB used to listen on the public network interface. This has resulted in many MongoDB users inadvertently making their data viewable to anyone on the Internet."
-year_published = 2025
-clearnet = "https://www.shodan.io/explore/category/databases"
-category = "SitesList"
-tags = ["commonterms", "data", "databases", "exposed", "memoryas", "mongodb", "service", "terabytesof"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://shodan.io/explore/recent"]
-title = "Explore: Recently Shared"
-description = "Search Engine for the Internet of Things"
-full_description = "Pfizer Jabber Servers/Client Pfizer Inc (Pharma) Jabber clients across the world. 2 pfizerpharmajabber"
-year_published = 2025
-clearnet = "https://shodan.io/explore/recent"
-category = "SitesList"
-tags = ["208.83.148.0/26", "access", "adb", "browseby", "crosslink", "explore:", "exposure", "iis", "internet", "iot"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://shodan.io/explore/popular"]
-title = "Explore: Top Voted"
-description = "Search Engine for the Internet of Things"
-full_description = 'default password Finds results with "default password" in the banner; the named defaults might work! 2,111 routerdefaultpassword MayGion IP cameras (admin:admin) Web interface to MayGion IP cameras. Default user/pass is admin/admin. 746 webcam'
-year_published = 2025
-clearnet = "https://shodan.io/explore/popular"
-category = "SitesList"
-tags = ["1,049", "1,161", "1,413", "12,519", "2,111", "2,697", "5,290", "browseby", "cam", "camera"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/search"]
-title = "Shodan Search Engine"
-description = "Search engine of Internet-connected devices. Create a free account to get started."
-full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
-year_published = 2025
-clearnet = "https://www.shodan.io/search"
-category = "SitesList"
-tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/about/products"]
-title = "Shodan Search Engine"
-description = "Search Engine for the Internet of Things"
-full_description = "Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Explore the world of Internet-connected devices using a map. Zoom in, pan around and narrow down results based on the GeoIP information. Shodan collects screenshots for many different services and as a member you get access to a new search interface that makes browsing those screenshots much easier. Not sure where to get started? Check out our Help Center where we have articles for many common use cases. If there's something we're not yet answering there let us know! All Shodan websites are built entirely on-top of the same public Shodan API that all of our users have access to. This is the core platform API. The InternetDB API provides a fast way to see the open ports for an IP address. It gives a quick, at-a-glance view of the type of device that is running behind an IP address to help you make decisions based on the open ports. The GeoNet API lets you run common network tools from servers that are located around the world. Identify different network behavior depending on the region that the end-user is located in. Want to see how a cronjob in Kubernetes is progressing or if your shell script finished? Use Chrono to have a progress bar on the web for your scripts or containers. The CVEDB API offers a quick way to access insights into vulnerabilities. This aids you in making well-informed decisions regarding security measures. Full, unlimited access to all aspects of the Shodan platform - including bulk data access. The enterprise product gives organizations unprecedented insight about the Internet. How secure is your country? The Internet Exposure Observatory provides a high-level view of the services that are exposed in a country."
-year_published = 2025
-clearnet = "https://www.shodan.io/about/products"
-category = "SitesList"
-tags = ["center", "cvedbapi", "geonetapi", "internetdbapi", "internetexposure", "observatory", "products", "shodan", "shodanchrono", "shodandeveloper"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exploits.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
 
 ["https://shodan.io/explore/category/network-infrastructure"]
 title = "Network Infrastructure - Explore"
@@ -88,107 +15,21 @@ description = "Search Engine for the Internet of Things"
 full_description = "Weave Scope is a visualization and monitoring tool for Docker and Kubernetes. It provides a top down view into your app as well as your entire infrastructure, and allows you to diagnose any problems with your distributed containerized app. BeyondTrust’s integrations allow you to launch a remote support session directly from the ticket or record, automatically update tickets with details from the support session and include the chat transcript and session recording in the ticket. Citrix Virtual Apps is application virtualization software produced by Citrix Systems that allows Windows applications to be accessed via individual devices from a shared server or cloud system. Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network. Polycom's video conferencing system provides companies of all sizes with flexible deployments for mobile devices, desktop computers and meeting rooms. A network device that converts voice and fax calls, in real time, between the public switched telephone network (PSTN) and an IP network. Intel Active Management Technology is hardware and firmware for remote out-of-band management of select business computers, running on the Intel Management Engine. A collection of interesting and often surprising search queries to plug into Shodan. Explore the world of network devices using this curated list of queries:"
 year_published = 2025
 clearnet = "https://shodan.io/explore/category/network-infrastructure"
-category = "SitesList"
 tags = ["awesomeshodan", "infrastructure", "network", "queries"]
 language = "en"
 internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
 
-["https://www.shodan.io/explore/category/industrial-control-systems"]
-title = "Industrial Control Systems - Explore"
-description = "Search Engine for the Internet of Things"
-full_description = "Industrial control systems (ICS) are computers that control the world around you. They're responsible for managing the air conditioning in your office, the turbines at a power plant, the lighting at the theatre or the robots at a factory Shodan continuously crawls the Internet and discovers Internet-accessible ICS devices. If you have an enterprise subscription to Shodan you can use the tag search filter with a value of ics to get a list all ICS on the Internet right now. Modbus is a popular protocol for industrial control systems (ICS). It provides easy, raw access to the control system without requiring any authentication. S7 (S7 Communication) is a Siemens proprietary protocol that runs between programmable logic controllers (PLCs) of the Siemens S7 family. DNP3 (Distributed Network Protocol) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies. The Fox protocol, developed as part of the Niagara framework from Tridium, is most commonly seen in building automation systems (offices, libraries, Universities, etc.) BACnet is a communications protocol for building automation and control networks. It was designed to allow communication of building automation and control systems for applications such as heating, air-conditioning, lighting, and fire detection systems. EtherNet/IP was introduced in 2001 and is an industrial Ethernet network solution available for manufacturing automation. Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from PLCs The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is an early implementation of Fieldbus, a digital industrial automation protocol. Its most notable advantage is that it can communicate over legacy wiring. MELSEC-Q Series use a proprietary network protocol for communication. The devices are used by equipment and manufacturing facilities to provide high-speed, large volume data processing and machine control."
-year_published = 2025
-clearnet = "https://www.shodan.io/explore/category/industrial-control-systems"
-category = "SitesList"
-tags = ["commonterms", "control", "industrial", "searchfilter", "systems", "thebasics"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/explore"]
-title = "Explore"
-description = "Search Engine for the Internet of Things"
-full_description = "How exposed to the Internet is your country? What is the most common vulnerability? Get a high-level view of the Internet using our Observatory. Favicons are the small icons you see in your browser tab at the top. See the most common favicons across the Internet. Shodan lets users share their search queries with the community by saving them to the search directory. Shodan doesn't otherwise store or share your search queries. The queries in the search directory were explicitly shared by our users for the benefit of the community."
-year_published = 2025
-clearnet = "https://www.shodan.io/explore"
-category = "SitesList"
-tags = ["access", "airplay", "apple", "board", "controllers", "cryptocurrency", "directory?", "door", "door/", "ethereum"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://shodan.io"]
+["https://www.shodan.io/about/products"]
 title = "Shodan Search Engine"
-description = "Search engine of Internet-connected devices. Create a free account to get started."
-full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
-year_published = 2025
-clearnet = "https://shodan.io"
-category = "SitesList"
-tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
-language = "en"
-internal-references = ["none"]
-external-references = ["account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "developer.shodan.io", "enterprise.shodan.io", "facebook.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
-
-["https://www.shodan.io"]
-title = "Shodan Search Engine"
-description = "Search engine of Internet-connected devices. Create a free account to get started."
-full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
-year_published = 2025
-clearnet = "https://www.shodan.io"
-category = "SitesList"
-tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/explore/category/network-infrastructure"]
-title = "Network Infrastructure - Explore"
 description = "Search Engine for the Internet of Things"
-full_description = "Weave Scope is a visualization and monitoring tool for Docker and Kubernetes. It provides a top down view into your app as well as your entire infrastructure, and allows you to diagnose any problems with your distributed containerized app. BeyondTrust’s integrations allow you to launch a remote support session directly from the ticket or record, automatically update tickets with details from the support session and include the chat transcript and session recording in the ticket. Citrix Virtual Apps is application virtualization software produced by Citrix Systems that allows Windows applications to be accessed via individual devices from a shared server or cloud system. Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network. Polycom's video conferencing system provides companies of all sizes with flexible deployments for mobile devices, desktop computers and meeting rooms. A network device that converts voice and fax calls, in real time, between the public switched telephone network (PSTN) and an IP network. Intel Active Management Technology is hardware and firmware for remote out-of-band management of select business computers, running on the Intel Management Engine. A collection of interesting and often surprising search queries to plug into Shodan. Explore the world of network devices using this curated list of queries:"
+full_description = "Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Explore the world of Internet-connected devices using a map. Zoom in, pan around and narrow down results based on the GeoIP information. Shodan collects screenshots for many different services and as a member you get access to a new search interface that makes browsing those screenshots much easier. Not sure where to get started? Check out our Help Center where we have articles for many common use cases. If there's something we're not yet answering there let us know! All Shodan websites are built entirely on-top of the same public Shodan API that all of our users have access to. This is the core platform API. The InternetDB API provides a fast way to see the open ports for an IP address. It gives a quick, at-a-glance view of the type of device that is running behind an IP address to help you make decisions based on the open ports. The GeoNet API lets you run common network tools from servers that are located around the world. Identify different network behavior depending on the region that the end-user is located in. Want to see how a cronjob in Kubernetes is progressing or if your shell script finished? Use Chrono to have a progress bar on the web for your scripts or containers. The CVEDB API offers a quick way to access insights into vulnerabilities. This aids you in making well-informed decisions regarding security measures. Full, unlimited access to all aspects of the Shodan platform - including bulk data access. The enterprise product gives organizations unprecedented insight about the Internet. How secure is your country? The Internet Exposure Observatory provides a high-level view of the services that are exposed in a country."
 year_published = 2025
-clearnet = "https://www.shodan.io/explore/category/network-infrastructure"
-category = "SitesList"
-tags = ["awesomeshodan", "infrastructure", "network", "queries"]
+clearnet = "https://www.shodan.io/about/products"
+tags = ["center", "cvedbapi", "geonetapi", "internetdbapi", "internetexposure", "observatory", "products", "shodan", "shodanchrono", "shodandeveloper"]
 language = "en"
 internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/explore/category/videogames"]
-title = "Video Games - Explore"
-description = "Search Engine for the Internet of Things"
-full_description = "Minecraft is a sandbox video game that enables players to explore a blocky, procedurally-generated 3D world with infinite terrain, and may extract raw materials, craft tools and items, and build structures or earthworks. CS: GO is an objective-based multiplayer first-person shooter. Each player joins either the Terrorist or Counter-Terrorist team and attempts to complete objectives or eliminate the enemy team. Starbound takes place in a two-dimensional, procedurally generated universe which the player will explore in order to obtain new weapons, armour, and miscellaneous items. Ark: Survival Evolved is an action-adventure survival video game played from either a third-person or first-person view and its world is navigated on foot or by riding a dinosaur. Farming Simulator 19 is the richest and most complete farming experience ever made! You’ll take control of vehicles and machines faithfully recreated from all the leading brands in the industry. An online multiplayer survival game, now with mounts and mounted combat, set in the lands of Conan the Barbarian. Survive in a vast open world sandbox, build a home and kingdom, dominate your enemies in single or multiplayer. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive. Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats! The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players."
-year_published = 2025
-clearnet = "https://www.shodan.io/explore/category/videogames"
-category = "SitesList"
-tags = ["games", "video", "video games"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://shodan.io/explore/category/videogames"]
-title = "Video Games - Explore"
-description = "Search Engine for the Internet of Things"
-full_description = "Minecraft is a sandbox video game that enables players to explore a blocky, procedurally-generated 3D world with infinite terrain, and may extract raw materials, craft tools and items, and build structures or earthworks. CS: GO is an objective-based multiplayer first-person shooter. Each player joins either the Terrorist or Counter-Terrorist team and attempts to complete objectives or eliminate the enemy team. Starbound takes place in a two-dimensional, procedurally generated universe which the player will explore in order to obtain new weapons, armour, and miscellaneous items. Ark: Survival Evolved is an action-adventure survival video game played from either a third-person or first-person view and its world is navigated on foot or by riding a dinosaur. Farming Simulator 19 is the richest and most complete farming experience ever made! You’ll take control of vehicles and machines faithfully recreated from all the leading brands in the industry. An online multiplayer survival game, now with mounts and mounted combat, set in the lands of Conan the Barbarian. Survive in a vast open world sandbox, build a home and kingdom, dominate your enemies in single or multiplayer. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive. Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats! The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players."
-year_published = 2025
-clearnet = "https://shodan.io/explore/category/videogames"
-category = "SitesList"
-tags = ["games", "video", "video games"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
-
-["https://www.shodan.io/explore/recent"]
-title = "Explore: Recently Shared"
-description = "Search Engine for the Internet of Things"
-full_description = "Pfizer Jabber Servers/Client Pfizer Inc (Pharma) Jabber clients across the world. 2 pfizerpharmajabber"
-year_published = 2025
-clearnet = "https://www.shodan.io/explore/recent"
-category = "SitesList"
-tags = ["208.83.148.0/26", "access", "adb", "browseby", "crosslink", "explore:", "exposure", "iis", "internet", "iot"]
-language = "en"
-internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "github.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "trends.shodan.io", "twitter.com"]
+external-references = ["account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exploits.shodan.io", "exposure.shodan.io", "facebook.com", "faviconmap.shodan.io", "geonet.shodan.io", "images.shodan.io", "internetdb.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
 
 ["https://shodan.io/explore"]
 title = "Explore"
@@ -196,11 +37,109 @@ description = "Search Engine for the Internet of Things"
 full_description = "How exposed to the Internet is your country? What is the most common vulnerability? Get a high-level view of the Internet using our Observatory. Favicons are the small icons you see in your browser tab at the top. See the most common favicons across the Internet. Shodan lets users share their search queries with the community by saving them to the search directory. Shodan doesn't otherwise store or share your search queries. The queries in the search directory were explicitly shared by our users for the benefit of the community."
 year_published = 2025
 clearnet = "https://shodan.io/explore"
-category = "SitesList"
 tags = ["access", "airplay", "apple", "board", "controllers", "cryptocurrency", "directory?", "door", "door/", "ethereum"]
 language = "en"
 internal-references = ["none"]
 external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
+
+["https://shodan.io/search"]
+title = "Shodan Search Engine"
+description = "Search engine of Internet-connected devices. Create a free account to get started."
+full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
+year_published = 2025
+clearnet = "https://shodan.io/search"
+tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io/explore/recent"]
+title = "Explore: Recently Shared"
+description = "Search Engine for the Internet of Things"
+full_description = "Pfizer Jabber Servers/Client Pfizer Inc (Pharma) Jabber clients across the world. 2 pfizerpharmajabber"
+year_published = 2025
+clearnet = "https://www.shodan.io/explore/recent"
+tags = ["208.83.148.0/26", "access", "adb", "browseby", "crosslink", "explore:", "exposure", "iis", "internet", "iot"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io"]
+title = "Shodan Search Engine"
+description = "Search engine of Internet-connected devices. Create a free account to get started."
+full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
+year_published = 2025
+clearnet = "https://www.shodan.io"
+tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
+
+["https://www.shodan.io/explore/category/databases"]
+title = "Databases - Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "MySQL is an open-source relational database management system. It is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open-source web application software stack. PostgreSQL, often simply Postgres, is an ORDBMS with an emphasis on extensibility and standards-compliance. It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. MongoDB is a document-oriented database that is classified as a NoSQL database. It eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas. Riak is a distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability. In addition to the open-source version, it comes in a supported enterprise version and a cloud storage version. Elastic is a NoSQL database and search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Redis is an open source, in-memory data structure store, used as database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering. It is intended for use in speeding up dynamic web applications by alleviating database load. Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. CouchDB is a database that uses JSON for documents, JavaScript for MapReduce indexes and regular HTTP for its API. By default, MongoDB used to listen on the public network interface. This has resulted in many MongoDB users inadvertently making their data viewable to anyone on the Internet."
+year_published = 2025
+clearnet = "https://www.shodan.io/explore/category/databases"
+tags = ["commonterms", "data", "databases", "exposed", "memoryas", "mongodb", "service", "terabytesof"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://shodan.io/explore/category/industrial-control-systems"]
+title = "Industrial Control Systems - Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "Industrial control systems (ICS) are computers that control the world around you. They're responsible for managing the air conditioning in your office, the turbines at a power plant, the lighting at the theatre or the robots at a factory Shodan continuously crawls the Internet and discovers Internet-accessible ICS devices. If you have an enterprise subscription to Shodan you can use the tag search filter with a value of ics to get a list all ICS on the Internet right now. Modbus is a popular protocol for industrial control systems (ICS). It provides easy, raw access to the control system without requiring any authentication. S7 (S7 Communication) is a Siemens proprietary protocol that runs between programmable logic controllers (PLCs) of the Siemens S7 family. DNP3 (Distributed Network Protocol) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies. The Fox protocol, developed as part of the Niagara framework from Tridium, is most commonly seen in building automation systems (offices, libraries, Universities, etc.) BACnet is a communications protocol for building automation and control networks. It was designed to allow communication of building automation and control systems for applications such as heating, air-conditioning, lighting, and fire detection systems. EtherNet/IP was introduced in 2001 and is an industrial Ethernet network solution available for manufacturing automation. Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from PLCs The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is an early implementation of Fieldbus, a digital industrial automation protocol. Its most notable advantage is that it can communicate over legacy wiring. MELSEC-Q Series use a proprietary network protocol for communication. The devices are used by equipment and manufacturing facilities to provide high-speed, large volume data processing and machine control."
+year_published = 2025
+clearnet = "https://shodan.io/explore/category/industrial-control-systems"
+tags = ["commonterms", "control", "industrial", "searchfilter", "systems", "thebasics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io/explore"]
+title = "Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "How exposed to the Internet is your country? What is the most common vulnerability? Get a high-level view of the Internet using our Observatory. Favicons are the small icons you see in your browser tab at the top. See the most common favicons across the Internet. Shodan lets users share their search queries with the community by saving them to the search directory. Shodan doesn't otherwise store or share your search queries. The queries in the search directory were explicitly shared by our users for the benefit of the community."
+year_published = 2025
+clearnet = "https://www.shodan.io/explore"
+tags = ["access", "airplay", "apple", "board", "controllers", "cryptocurrency", "directory?", "door", "door/", "ethereum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://shodan.io/explore/recent"]
+title = "Explore: Recently Shared"
+description = "Search Engine for the Internet of Things"
+full_description = "Pfizer Jabber Servers/Client Pfizer Inc (Pharma) Jabber clients across the world. 2 pfizerpharmajabber"
+year_published = 2025
+clearnet = "https://shodan.io/explore/recent"
+tags = ["208.83.148.0/26", "access", "adb", "browseby", "crosslink", "explore:", "exposure", "iis", "internet", "iot"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://shodan.io"]
+title = "Shodan Search Engine"
+description = "Search engine of Internet-connected devices. Create a free account to get started."
+full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
+year_published = 2025
+clearnet = "https://shodan.io"
+tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "developer.shodan.io", "enterprise.shodan.io", "facebook.com", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "twitter.com"]
+
+["https://www.shodan.io/explore/category/network-infrastructure"]
+title = "Network Infrastructure - Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "Weave Scope is a visualization and monitoring tool for Docker and Kubernetes. It provides a top down view into your app as well as your entire infrastructure, and allows you to diagnose any problems with your distributed containerized app. BeyondTrust’s integrations allow you to launch a remote support session directly from the ticket or record, automatically update tickets with details from the support session and include the chat transcript and session recording in the ticket. Citrix Virtual Apps is application virtualization software produced by Citrix Systems that allows Windows applications to be accessed via individual devices from a shared server or cloud system. Pi-hole is a Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole and optionally a DHCP server, intended for use on a private network. Polycom's video conferencing system provides companies of all sizes with flexible deployments for mobile devices, desktop computers and meeting rooms. A network device that converts voice and fax calls, in real time, between the public switched telephone network (PSTN) and an IP network. Intel Active Management Technology is hardware and firmware for remote out-of-band management of select business computers, running on the Intel Management Engine. A collection of interesting and often surprising search queries to plug into Shodan. Explore the world of network devices using this curated list of queries:"
+year_published = 2025
+clearnet = "https://www.shodan.io/explore/category/network-infrastructure"
+tags = ["awesomeshodan", "infrastructure", "network", "queries"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
 
 ["https://shodan.io/explore/category/databases"]
 title = "Databases - Explore"
@@ -208,8 +147,51 @@ description = "Search Engine for the Internet of Things"
 full_description = "MySQL is an open-source relational database management system. It is a popular choice of database for use in web applications, and is a central component of the widely used LAMP open-source web application software stack. PostgreSQL, often simply Postgres, is an ORDBMS with an emphasis on extensibility and standards-compliance. It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. MongoDB is a document-oriented database that is classified as a NoSQL database. It eschews the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas. Riak is a distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability. In addition to the open-source version, it comes in a supported enterprise version and a cloud storage version. Elastic is a NoSQL database and search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Redis is an open source, in-memory data structure store, used as database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries. Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering. It is intended for use in speeding up dynamic web applications by alleviating database load. Apache Cassandra is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. CouchDB is a database that uses JSON for documents, JavaScript for MapReduce indexes and regular HTTP for its API. By default, MongoDB used to listen on the public network interface. This has resulted in many MongoDB users inadvertently making their data viewable to anyone on the Internet."
 year_published = 2025
 clearnet = "https://shodan.io/explore/category/databases"
-category = "SitesList"
 tags = ["commonterms", "data", "databases", "exposed", "memoryas", "mongodb", "service", "terabytesof"]
 language = "en"
 internal-references = ["none"]
-external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "blog.shodan.io", "chrono.shodan.io", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "faviconmap.shodan.io", "help.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io/explore/category/videogames"]
+title = "Video Games - Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "Minecraft is a sandbox video game that enables players to explore a blocky, procedurally-generated 3D world with infinite terrain, and may extract raw materials, craft tools and items, and build structures or earthworks. CS: GO is an objective-based multiplayer first-person shooter. Each player joins either the Terrorist or Counter-Terrorist team and attempts to complete objectives or eliminate the enemy team. Starbound takes place in a two-dimensional, procedurally generated universe which the player will explore in order to obtain new weapons, armour, and miscellaneous items. Ark: Survival Evolved is an action-adventure survival video game played from either a third-person or first-person view and its world is navigated on foot or by riding a dinosaur. Farming Simulator 19 is the richest and most complete farming experience ever made! You’ll take control of vehicles and machines faithfully recreated from all the leading brands in the industry. An online multiplayer survival game, now with mounts and mounted combat, set in the lands of Conan the Barbarian. Survive in a vast open world sandbox, build a home and kingdom, dominate your enemies in single or multiplayer. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns. Space Engineers is a sandbox game about engineering, construction, exploration and survival in space and on planets. Players build space ships, space stations, planetary outposts of various sizes and uses, pilot ships and travel through space to explore planets and gather resources to survive. Nine distinct classes provide a broad range of tactical abilities and personalities. Constantly updated with new game modes, maps, equipment and, most importantly, hats! The only aim in Rust is to survive - Overcome struggles such as hunger, thirst and cold. Build a fire. Build a shelter. Kill animals. Protect yourself from other players."
+year_published = 2025
+clearnet = "https://www.shodan.io/explore/category/videogames"
+tags = ["games", "video", "video games"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io/search"]
+title = "Shodan Search Engine"
+description = "Search engine of Internet-connected devices. Create a free account to get started."
+full_description = "Websites are just one part of the Internet. Use Shodan to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Keep track of all your devices that are directly accessible from the Internet. Shodan provides a comprehensive view of all exposed services to help you stay secure. Learn more about who is using various products and how they're changing over time. Shodan gives you a data-driven view of the technology that powers the Internet. Within 5 minutes of using Shodan Monitor you will see what you currently have connected to the Internet within your network range and be setup with real-time notifications when something unexpected shows up. The entire Shodan platform (crawling, IP lookups, searching, data streaming) is available to developers. Use our API to understand whether users are connecting from a VPN, whether the website you're visiting has been compromised and more. Check out the Shodan Help Center which answers the most frequently-asked questions and provides hands-on guides for common tasks:"
+year_published = 2025
+clearnet = "https://www.shodan.io/search"
+tags = ["1,000+", "better", "beyondthe", "cloud", "decisions.", "devices.", "discover", "engine", "everything", "exposure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://shodan.io/explore/popular"]
+title = "Explore: Top Voted"
+description = "Search Engine for the Internet of Things"
+full_description = 'default password Finds results with "default password" in the banner; the named defaults might work! 2,111 routerdefaultpassword MayGion IP cameras (admin:admin) Web interface to MayGion IP cameras. Default user/pass is admin/admin. 746 webcam'
+year_published = 2025
+clearnet = "https://shodan.io/explore/popular"
+tags = ["1,049", "1,161", "1,413", "12,519", "2,111", "2,697", "5,290", "browseby", "cam", "camera"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]
+
+["https://www.shodan.io/explore/category/industrial-control-systems"]
+title = "Industrial Control Systems - Explore"
+description = "Search Engine for the Internet of Things"
+full_description = "Industrial control systems (ICS) are computers that control the world around you. They're responsible for managing the air conditioning in your office, the turbines at a power plant, the lighting at the theatre or the robots at a factory Shodan continuously crawls the Internet and discovers Internet-accessible ICS devices. If you have an enterprise subscription to Shodan you can use the tag search filter with a value of ics to get a list all ICS on the Internet right now. Modbus is a popular protocol for industrial control systems (ICS). It provides easy, raw access to the control system without requiring any authentication. S7 (S7 Communication) is a Siemens proprietary protocol that runs between programmable logic controllers (PLCs) of the Siemens S7 family. DNP3 (Distributed Network Protocol) is a set of communications protocols used between components in process automation systems. Its main use is in utilities such as electric and water companies. The Fox protocol, developed as part of the Niagara framework from Tridium, is most commonly seen in building automation systems (offices, libraries, Universities, etc.) BACnet is a communications protocol for building automation and control networks. It was designed to allow communication of building automation and control systems for applications such as heating, air-conditioning, lighting, and fire detection systems. EtherNet/IP was introduced in 2001 and is an industrial Ethernet network solution available for manufacturing automation. Service Request Transport Protocol (GE-SRTP) protocol is developed by GE Intelligent Platforms (earlier GE Fanuc) for transfer of data from PLCs The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is an early implementation of Fieldbus, a digital industrial automation protocol. Its most notable advantage is that it can communicate over legacy wiring. MELSEC-Q Series use a proprietary network protocol for communication. The devices are used by equipment and manufacturing facilities to provide high-speed, large volume data processing and machine control."
+year_published = 2025
+clearnet = "https://www.shodan.io/explore/category/industrial-control-systems"
+tags = ["commonterms", "control", "industrial", "searchfilter", "systems", "thebasics"]
+language = "en"
+internal-references = ["none"]
+external-references = ["2000.shodan.io", "account.shodan.io", "addons.mozilla.org", "beta.shodan.io", "chrome.google.com", "cvedb.shodan.io", "developer.shodan.io", "enterprise.shodan.io", "exposure.shodan.io", "facebook.com", "geonet.shodan.io", "images.shodan.io", "linkedin.com", "maps.shodan.io", "mastodon.shodan.io", "monitor.shodan.io", "snippets.shodan.io", "trends.shodan.io", "twitter.com", "wikipedia.org"]

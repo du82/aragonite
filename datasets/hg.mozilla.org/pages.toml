@@ -1,0 +1,89 @@
+["https://hg.mozilla.org/build"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/build"
+tags = ["ash-mozharness", "autoland", "braindump", "buildapi", "buildbot", "buildbot-configs", "buildbotcustom", "cloud-tools", "compare-locales", "layout"]
+language = "en"
+internal-references = ["none"]
+external-references = ["firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/comm-unified"]
+title = "comm-unified: Summary"
+description = "A summary of repository state for comm-unified"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/comm-unified"
+tags = ["0d6c0c369be4", "1831fbda1191", "1858157.", "1925117,", "8dceb73c2222", "able", "add-jquery", "add-protovis", "additional", "alexander"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/conduit-testing"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/conduit-testing"
+tags = ["layout", "production-repo", "repository", "test-repo", "test-repo-clone"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/comm-central"]
+title = "comm-central: Summary"
+description = "A summary of repository state for comm-central"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/comm-central"
+tags = ["1925117,", "8dceb73c2222", "able", "additional", "alexander", "another", "applicable", "architecture", "attempt", "backed"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/integration"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/integration"
+tags = ["autoland", "b2g-inbound", "fx-team", "layout", "mozilla-inbound", "repository"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/experimental"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/experimental"
+tags = ["firefox-unified-stage", "gecko-dev", "layout", "mozilla-central-cvs", "mozilla-unified-treemanifests", "repository", "thunderbird-unified-stage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org/hgcustom"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/hgcustom"
+tags = ["hghooks", "hgscripts", "layout", "pushlog", "repository", "version-control-tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.mozilla.org", "firefox-source-docs.mozilla.org", "github.com"]
+
+["https://hg.mozilla.org"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org"
+tags = ["comm-central", "comm-unified", "layout", "mozilla-build", "mozilla-central", "mozilla-unified", "repository", "try-comm-central"]
+language = "en"
+internal-references = ["none"]
+external-references = ["firefox-source-docs.mozilla.org"]
+
+["https://hg.mozilla.org/SeaMonkey"]
+title = "Mercurial repositories index"
+description = "hg.mozilla.org repository index"
+year_published = 2025
+clearnet = "https://hg.mozilla.org/SeaMonkey"
+tags = ["buildbot-configs", "buildbotcustom", "layout", "puppet", "repository", "seamonkey-project-org", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["firefox-source-docs.mozilla.org"]

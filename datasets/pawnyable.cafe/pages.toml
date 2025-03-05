@@ -1,0 +1,35 @@
+["https://pawnyable.cafe"]
+title = "PAWNYABLE!"
+description = "Let's learn pwnable with cute animals."
+full_description = "🐾What's Pawnyable?🐾 Pawnyableは、中〜上級者がpwn(Binary Exploitation)を勉強するための資料です。 🐾Contents🐾 🐤 Linux Userland [工事中] 🐺 Linux Kernel 🐑 Windows Userland [工事中] 🐻 Windows Kernel [工事中] 🐼 Browser Exploit [工事中] 🐰 VM Escape [工事中] 🦝 Android/iOS Exploit [工事中] 🐯 and more...? [工事中] 🐾Author🐾 著者・挿絵：@ptrYudai"
+author = "ptr-yudai"
+year_published = 2025
+clearnet = "https://pawnyable.cafe"
+tags = ["binary exploit", "browser", "exploit", "exploitation", "kernel", "linux", "pawnyable?🐾", "pwn", "pwnable", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["twitter.com"]
+
+["https://pawnyable.cafe/about"]
+title = "Pawnyableについて | PAWNYABLE!"
+description = "Let's learn pwnable with cute animals."
+full_description = "Pawnyableについて Pawnyableとは対象読者更新について Pawnyableとは PawnyableはBinary Exploitation (pwnable)を学習するための中級者向けのWebサイトです。 中〜上級者向けのpwn系技術を日本語で学べるサイトがなかったので作りました。 対象読者 アセンブリの読み書き、BOFやUAF等の知識、ROPの構築など基礎的な能力がある人を対象としています。 更新について 現在Kernel Exploit章の一部が完成しています。 以後次のような章・機能を実装予定です。 優先度高 Linux Kernel章の完成（おおかみ） 優先度中 例題解答の追加 演習問題（Practiceページ）の追加 VM Escape章の追加（うさぎ） Browser Exploit章の追加（ぱんだ） Windows Kernel章の追加（くま） 優先度低 Windows Userland章の追加（ひつじ） Linux Userland章の追加（ひよこ） 多言語対応 記事はGitHubでオープンソースにしています。 細かい文章の校正から章・例題の追加まで、PRを受け付けています。 window.onload = detectors();"
+author = "ptr-yudai"
+year_published = 2025
+clearnet = "https://pawnyable.cafe/about"
+tags = ["binary exploit", "browser", "exploit", "exploitation", "kernel", "linux", "pawnyableとは", "pawnyableについて", "pwn", "pwnable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "twitter.com"]
+
+["https://pawnyable.cafe/linux-kernel"]
+title = "Linux Kernel Exploitation | PAWNYABLE!"
+description = "Let's learn pwnable with cute animals."
+full_description = "Linux Kernel Exploitation この章ではカーネル空間におけるExploit手法、いわゆる権限昇格について勉強します。 WindowsのKernel Exploitでも共通のハードウェアセキュリティ機構や権限昇格の手法が登場するから、この章の知識はLinuxに限らず使えるよ。 実行環境とデバッグ方法 カーネルexploitへの導入 gdbによるカーネルのデバッグ セキュリティ機構 コンパイルとexploitの転送 カーネルエクスプロイトの基礎（LK01: Holstein） Holsteinモジュールの解析と脆弱性の発火 Holstein v1: Stack Overflowの悪用 Holstein v2: Heap Overflowの悪用 Holstein v3: Use-after-Freeの悪用 Holstein v4: Race Conditionの悪用 カーネル空間特有の攻撃 NULL Pointer Dereference (LK02: Angus) Double Fetch (LK03: Dexter) userfaultfdの利用 (LK04: Fleckvieh) FUSEの利用 (LK04: Fleckvieh) 脆弱なmmap実装の悪用 (LK05: Highland) (工事中) eBPFとJITコンパイラ (LK06: Brahman) BPFの導入 検証器とJITコンパイラ eBPFのバグの悪用 オオカミくん オオカミの群れで権限昇格してリーダーになったという伝説がある。 動物界ではOS開発の第一人者。基本寝ている。 好きなもの：牛 / Linux 苦手なもの：ハイエナ / Windows window.onload = detectors();"
+author = "ptr-yudai"
+year_published = 2025
+clearnet = "https://pawnyable.cafe/linux-kernel"
+tags = ["binary exploit", "browser", "exploit", "exploitation", "holstein", "kernel", "linux", "pwn", "pwnable", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "twitter.com"]

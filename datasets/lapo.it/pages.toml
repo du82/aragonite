@@ -1,0 +1,142 @@
+["https://lapo.it/JEG"]
+title = "JEG test page"
+year_published = 2025
+clearnet = "https://lapo.it/JEG"
+tags = ["test"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "pgp.com", "thawte.com"]
+
+["https://lapo.it/JEG2/speed.html"]
+title = "SHA-256 Javascript Speed Test"
+year_published = 2025
+clearnet = "https://lapo.it/JEG2/speed.html"
+tags = ["javascript", "sha-256", "speed", "test"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "anmar.eu.org", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.it", "monotone.ca", "mozilla.org", "thawte.com", "webtoolkit.info"]
+
+["https://lapo.it/COTT"]
+title = "Company Of The Thrush"
+year_published = 2025
+clearnet = "https://lapo.it/COTT"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["brainserver.thebrain.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "foat.sourceforge.net", "gnu.org", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "sim-icq.sourceforge.net", "sm.freebsd.org"]
+
+["https://lapo.it/chinese.html"]
+title = "LAPO.it - How-to input chinese in FreeBSD/XFree86"
+full_description = "I'm writing this mini-how-to because... well, I found no existing how-to written in english! First of all you need to install a XIM server, e.g. one of the following ports: Anyway I'll talk only of chinese/chinput3 as I didn't manage to use xcin (though probably it does work perfectly and I just don't know the correct keyboard trigger). This is the list of commands you need to install and try chinput (please notice that I'm using the bash shell, not the FreeBSD default tcsh shell, though you should easily adapt the commands for you shell of choice): And now be ready for the key information that you just need to input chinese text: the key that activates XIM input! I guess that chinput's FAQ covers that topic, but I really don't know, as it is only available in chinese. What was I talking about? Ah! The key info: very easy, just hit ctrl-space to switch between 'normal' and 'chinese' input mode, and then you can just write in pinyin and obtain chinese symbols."
+year_published = 2025
+clearnet = "https://lapo.it/chinese.html"
+tags = ["chinese", "freebsd/xfree86", "how-to", "input", "l.a.p.o."]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "cs.auckland.ac.nz", "csrc.nist.gov", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "idf.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "monotone.ca", "opencjk.org", "opensource.org", "rawcdn.githack.com", "webtoolkit.info"]
+
+["https://lapo.it/RayTraccio.html"]
+title = "LAPO.it - RayTraccio"
+full_description = "Did I mention that it uses it's own Scene Definition Language to easily create scenes? Look at the default example! As of version 1.50 (with a new marmored torus in the scene) I objtained the following rendering times viewing this very page (with and without antialiasing):"
+year_published = 2025
+clearnet = "https://lapo.it/RayTraccio.html"
+tags = ["raytraccio"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "anmar.eu.org", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.it", "monotone.ca", "mozilla.org", "thawte.com", "webtoolkit.info"]
+
+["https://lapo.it/geek.html"]
+title = "LAPO.it - Geek Code"
+year_published = 2025
+clearnet = "https://lapo.it/geek.html"
+tags = ["l.a.p.o."]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "cs.auckland.ac.nz", "csrc.nist.gov", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "idf.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "monotone.ca", "opencjk.org", "opensource.org", "rawcdn.githack.com", "webtoolkit.info"]
+
+["https://lapo.it/FMDB"]
+title = "LAPO.it - FMDB"
+year_published = 2025
+clearnet = "https://lapo.it/FMDB"
+tags = ["f.m.d.b.", "project"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "foat.sourceforge.net", "ftpsearch.ntnu.no", "gnu.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "lyrics.ch", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "pgp.com"]
+
+["https://lapo.it/asn1js"]
+title = "ASN.1 JavaScript decoder"
+full_description = 'This page contains a JavaScript generic ASN.1 parser that can decode any valid ASN.1 DER or BER structure whether Base64-encoded (raw base64, PEM armoring and begin-base64 are recognized) or Hex-encoded. This tool can be used online at the address https://asn1js.eu/ or offline, unpacking the ZIP file in a directory and opening index-local.html in a browser. On the left of the page will be printed a tree representing the hierarchical structure, on the right side an hex dump will be shown. Hovering on the tree highlights ancestry (the hovered node and all its ancestors get colored) and the position of the hovered node gets highlighted in the hex dump (with header and content in a different colors). Clicking a node in the tree will hide its sub-nodes (collapsed nodes can be noticed because they will become italic). WARNING: starting from 2024-03-28 this website is using ES6 features (and modules), which can break it for very old browsers. You can access last version before ES6 on githack (which still works on IE11). ASN.1 JavaScript decoder Copyright © 2008-2025 Lapo Luchini <lapo@lapo.it> Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies. THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. ASN.1 JavaScript decoder Copyright © 2008-2024 Lapo Luchini; released as opensource under the ISC license.'
+year_published = 2025
+clearnet = "https://lapo.it/asn1js"
+tags = ["asn.1", "decoder", "instructions", "javascript", "links", "warning:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "cs.auckland.ac.nz", "csrc.nist.gov", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "idf.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.it", "monotone.ca", "opensource.org", "rawcdn.githack.com", "webtoolkit.info"]
+
+["https://lapo.it/HashCash.html"]
+title = "LAPO.it - HashCash"
+full_description = "Please check Adam Back's homepage to get some info about HashCash (I'll put something here, someday)."
+year_published = 2025
+clearnet = "https://lapo.it/HashCash.html"
+tags = ["hashcashdemo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "pgp.com", "thawte.com"]
+
+["https://lapo.it/DBMotori/Motori.html"]
+title = "Lapo's Search Page"
+full_description = "Search type: Case insensitive substring search Case sensitive substring search Case insensitive glob search Case sensitive glob search Regular expression search Exact search Navigate Case insensitive substring match Case sensitive substring match Case insensitive glob match Case sensitive glob match Regular expression match Try exact hits first Max hits: Max matches: Max hits/match: Limit to domain: Limit to path: Hide: Packages Distfiles FreeBSD OpenBSD NetBSD Linux Output fields: -HostSizeDatePathNameModeTypeLenTimeCount -HostSizeDatePathNameModeTypeLenTimeCount -HostSizeDatePathNameModeTypeLenTimeCount -HostSizeDatePathNameModeTypeLenTimeCount -HostSizeDatePathNameModeTypeLenTimeCount -HostSizeDatePathNameModeTypeLenTimeCount Per-host header: nothing just host Host and country Sort by: nothing (unsorted) Host, path Host (distance) Size, date Date, host Truncate hostnames (longer than characters.)"
+year_published = 2025
+clearnet = "https://lapo.it/DBMotori/Motori.html"
+tags = ["altavistatm", "boolean", "count", "documents", "domain:", "enter", "exact", "expression.", "fields", "freesms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "foat.sourceforge.net", "ftpsearch.ntnu.no", "gnu.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "lyrics.ch", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "pgp.com"]
+
+["https://lapo.it/Dr.Brain/lapo.html"]
+title = "Dr. Brain's little HomePage"
+year_published = 2025
+clearnet = "https://lapo.it/Dr.Brain/lapo.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "foat.sourceforge.net", "ftpsearch.ntnu.no", "gnu.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "lyrics.ch", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "pgp.com"]
+
+["https://lapo.it/rclean"]
+title = "LAPO.it - rclean"
+full_description = '''rclean provides a command-line tool to order and clean content of rc.conf, using option order from /etc/defaults/rc.conf and printing only choices that were different by the default value in /etc/rc.conf. Output is customizable from "only used values" to "full listing". rclean is licensed under a BSD-like license. rclean uses system regex.h to ease the parsing of the cofnig files and uses getopt to parse the command line options (popt is way better but a little huge and unncessary for such a small project, having no package requirements has got precedence). Follows the ChangeLog: Revision 1.14 2002/12/22 17:12:30 lapo - FreeBSD needs sys/types.h defined before regexp.h, very strange Revision 1.13 2002/12/22 17:00:25 lapo - Removed rclean.h, it was too small to have sense - Changed indentation to be more 'standard', in a K&R way - Reversed include order, as suggested by Bruce Eckel's books - Defined a couple of string to avoid redundancy in the code - Generalized the first (and only) key name exception - Corrected the bug that did halt the program when a unknown exception key name was found - Added command line option to print exceptions list - Added line numbers in parse errors of the conf files Revision 1.12 2002/07/07 17:18:51 lapo - Added comments - Order of 'exception' options is now preserved - Default files are now printed in help - Changed help so that '-a' no more occupies more than 80 columns Revision 1.11 2002/04/29 14:16:14 lapo - Added '-a' option to print all lines present in rc.conf, even if with default value - Added '-w' option to write to file the output - Fixed tab creation for comments Revision 1.10 2002/04/29 10:54:50 lapo - Fixed bug in options code (long lines got no comment) - Added generic support for element "exceptions" - Added '-h' command line option for 'help' Revision 1.9 2002/04/28 23:40:18 lapo - license relaxed (now it's BSD-style) - getopt instead of popt (smaller executable and no required packages) Revision 1.8 2002/04/28 12:42:14 lapo - Added javadoc-style comments - Removed extra backslashes Revision 1.7 2002/04/28 10:58:03 lapo - Added header to generated output - Removed reference to REG_OKAY (was not present in FreeBSD's regex.h) Revision 1.6 2002/04/27 23:27:00 lapo - Added verbosity options - Changed default file values to fit FreeBSD Revision 1.5 2002/04/27 22:47:04 lapo - Added command line parsing using the popt library - Added GPL notes in source Revision 1.4 2002/04/27 21:13:10 lapo - Added generic support for keys not present in defaults file Revision 1.3 2002/04/27 21:02:53 lapo - Simplified using regex.h - Corrected error in memory allocation (strlen+1 instead of strlen) Revision 1.2 2002/04/25 07:37-07:48 lapo - speedup in final difference printing Revision 1.1 2002/04/25 00:40-03:26 lapo - hardcoded filenames - no options - strange problems with xntpd_enable and inetd_enable - sometimes names get followed by a nonprintable char (|>)'''
+year_published = 2025
+clearnet = "https://lapo.it/rclean"
+tags = ["rclean"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "bichlmeier.info", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "cs.auckland.ac.nz", "csrc.nist.gov", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "idf.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "monotone.ca", "opencjk.org", "opensource.org", "rawcdn.githack.com", "webtoolkit.info"]
+
+["https://lapo.it/sproloquio.html"]
+title = "LAPO.it - Sproloquio"
+full_description = '''Four to go, people! The Time of Study is soon to be at and... then what? I have no idea (of course not! it's patented 'till 2011!). What? You know not what I'm studying? But at the Poli of course! 0=) Ehy, people, you know that I created MegaTokyo Italy, you do? Nowadays I write there if I have something to rant on. Bon't blame on me, as a webmaster I've got some "responsabilities" and moreover writing rants in italian is somewhat easier too ;-) FO@T rules. Yes indeed. In many ways. First of all many FO@T rules are now well defined, but more important is that FO@T will actually 'rule the Rogue-like scene'. When it wil be finished it will rule it, believe me. If not for trust in the FO@T Team just because it will not be anywhere near being finished until it WILL be better that anything else 0=) And that link bring to my memory another thing: Wiki! I have not the skill to explain wiki, just follow the link and discover it yourself (that's the only real way to learn things, isn't it?). Re-reading MegaTokyo from scratch (including all the rants, though I'm not finished yet) I discovered a bunch of other interesting sites.. first of all Exploitation Now, another webcomic that I enjoyed reading very much (and I did it at a time, of course (wget can be very useful, at times)). What the heck, this page was way too 'technical' and way 'out-of-date'... or maybe I just changed my mind about it. But I just decided to put this paragraph -here- to include some random ideas; please remember that english is not my natural language... Lately, coding on SourceForge I noticed the MegaTokyo banner. Not that it was the first time my retina was impressed by it, but it's the first time the information actually reached my brain (someway advertisement is classified as 'uninteresting' in one of the first layers far below my consciousness). Let's end the rant, I just wanted you to know that I immediately fell in love with that webcomic (just like a few months ago I fell in love with Jappilas webcomic and actually proposed myself to do the website). As with all the stories I really like (I think this is one of the major reasons behind it, after all) I feel a deep emotional link with (some) characters and with the authors themself (of course do not I know them, but I like persuading myself that you put a part of you in what you produce, and that can be 'felt' using/reading/watching/appropriate_verb it). Why do I tell you? Why would you care? Why did I never put personal ranting on this webpage? I don't know, I just feel like it. I bet you don't care, unless you care about me and what I think. Because I always thought it made a page "unprofessional" in some way. I guess that Piro's comments in the lower half of MegaTokyo pages has something to do with this decision. There's something, a self-luminous halo (I think this confirm that my english is much closer to POV-Ray manual than to Shakespeare, which of course I never read in english - but the little dual-language "midsummer's night dream" Marta gifted to me is on my nightstand to be read), about Authors that difference them from Others. What do I mean? Well first of all I needed previous sentence to be short because it already contained a too long spawn (I really hate forced linearity of written text, sometime), but that's another story. I was talking about the "greatness halo", right? Well even when I read a simple comic written by a friend (just like clem131's Cappuccetto Rosso ("Red Cap and the wolf"? I really don't know)) I see him as the Author and me as "one humble member of the Others", and this also with clem131, which is a Friend of mine... creating something I really like puts him in Authors' heaven, in the Drawing section, somewhere near Ombra or Piro or Luca Enoch or the Drawing-God himself (I'm talking about Masamune Shirow, of course). They all share something: they create something that really gives me Emotions. Please note that I do not use upper-case in a english/german way (with substantives) but only to put emphasis: so a Friend is something more than a simple friend, and so on, it's use like "true-" or "ultimate-". Anyway I owe much to them, to all of them. They're Authors and so they're perfect, they make no mistake (I know that this is actually *NOT* true, but I feel it nonetheless) and I can only thank them for creating it and for enjoing themself thing it (well at least I hope so, I think things done with no enjoiment can't really be "good"). When I think about Authors my minds always goes to other concepts like "I would like to be creative like them" and (in a much lesser way) "I don't feel adequate in respect to them, perfect people that gives away their godly fire to humankind"... of course that's their biggest hobby and of course drawing in NOT my primary objective. Not the secondary. Nor the tertiary. And that's why I will never be like them in drawing but of course I'm not THEM and I have different objectives in my life... and I'm pretty good in the thing I apply the most (well, of course). But maybe you don't know me and would like to know which are my objectives? Well of course the things I most like: coding, cryptography (and number theory as a prerequisite), opensource/sharing/earning respect. Maybe you, as a person that either knows me or found this page in Google think that also coders are Authors. Tron is the only place where a coder is referred to as a Creator (which is just like an Author). I would like that, really. Of course I never created anything really worth it I think. Of course there's Raytraccio. Of course there will be FOAT. Well I think I just kinda depressed, but I'm used to it, no problem =)'''
+year_published = 2025
+clearnet = "https://lapo.it/sproloquio.html"
+tags = ["01:00", "13:00", "14:20", "15:30", "15:50", "2002-03-25", "2002-04-09", "2002-08-07", "2003-01-29", "2003-07-02"]
+language = "en"
+internal-references = ["none"]
+external-references = ["altavista.com", "asn1js.eu", "bichlmeier.info", "c2.com", "cvs.sourceforge.net", "exploitationnow.com", "foat.sourceforge.net", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "lovehina.bandai-ent.com", "megatokyo.it", "mozilla.org", "neon1.net", "opensource.org", "sourceforge.net", "thawte.com", "us.imdb.com", "webtoolkit.info"]
+
+["https://lapo.it"]
+title = "lapo luchini"
+full_description = '''// escape from any unwanted frame if (top!=self) top.location=location; l=new Array( // aggettivo "Liquid", "Logorrheic", "Luminous", "Labile", "Laborious", "Lacerated", "Lacertine", "Laconic", "Lacrimal", "Lacustrine", "Lacteal", "Lambdoid", "Lamentable", "Languid", "Larval" ); a=new Array( // sostantivo "Animal", "Anion", "Annex", "Anode", "Antenna", "Ant", "Anthropoid", "Anti-icer", "Antibody", "Antic", "Anticatalyst", "Antichlorine", "Antichrist", "Anticoagulant","Antifascist", "Aardvark", "Abacus", "Abb", "Abdomen", "Abductor", "Abhorrence", "Abode" ); p=new Array( // verbo "Performing", "Pacing", "Paganizing", "Paginating", "Painting", "Palatalizing", "Palisading", "Palpating", "Pantomiming", "Parading", "Pacificating", "Packing", "Padlocking", "Pampering", "Papalizing", "Paralysing", "Pendulating", "Peptonizing", "Piercing", "Poeticizing", "Puckering", "Puking" ); o=new Array( // azione-oggetto "Orations", "Oaks", "Oats", "Obelisks", "Oblations", "Obscenities", "Occultness", "Ocelots", "Octanes", "Octants", "Oecologies", "Off-keys", "Offals", "Offsprings", "Ogees" ); function cas(arr) { return arr[Math.floor(Math.random()*arr.length)]; } document.write(cas(l)+" "+cas(a)+" "+cas(p)+" "+cas(o)); I fear that you don't support JavaScript, what a shame. if(is_gecko) document.write("I see you've made the right browser choice! Mozilla rulez!"); else if(is_nav) document.write("Netscape? Good but why don't you upgrade to latest Mozilla release?"); else if(is_ie) document.write("Microsoft Internet Explorer, uh? Mozilla is far better!"); else if(is_opera) document.write("Opera. Hmm... I strongly prefer Mozilla."); else if(is_aol||is_webtv) document.write("You can't choose your browser, but Mozilla would be a better choice."); else document.write("You browser is strange, very strange... I like strangeness!"); Mozilla homepage.'''
+year_published = 2025
+clearnet = "https://lapo.it"
+tags = ["informazioni", "infos", "lapo", "luchini", "personal", "personale", "politecnico", "progetti", "programmazione", "programming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brainserver.thebrain.com", "chtulhu.lapo.it", "comicsdb.com", "cvs.sourceforge.net", "cypherspace.org", "en.wikipedia.org", "foat.sourceforge.net", "gzip.org", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "sim-icq.sourceforge.net", "sm.freebsd.org", "thawte.com", "validator.w3.org"]
+
+["https://lapo.it/AES.html"]
+title = "LAPO.it - AES Applet"
+year_published = 2025
+clearnet = "https://lapo.it/AES.html"
+tags = ["applet"]
+language = "en"
+internal-references = ["none"]
+external-references = ["brainserver.thebrain.com", "chtulhu.lapo.it", "comicsdb.com", "cryptix.org", "csrc.nist.gov", "cvs.sourceforge.net", "foat.sourceforge.net", "gnu.org", "gzip.org", "home.lapo.it", "itl.nist.gov", "jcraft.com", "jigsaw.w3.org", "megatokyo.com", "megatokyo.it", "monotone.ca", "mozilla.org", "neon1.net", "sim-icq.sourceforge.net", "sm.freebsd.org"]

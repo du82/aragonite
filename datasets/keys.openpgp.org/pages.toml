@@ -1,0 +1,95 @@
+["https://keys.openpgp.org/manage"]
+title = "keys.openpgp.org"
+year_published = 2025
+clearnet = "https://keys.openpgp.org/manage"
+tags = ["manage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "github.com", "gitlab.com", "gpgtools.org", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "openwall.com", "play.google.com", "sequoia-pgp.org", "toptal.com"]
+
+["https://keys.openpgp.org/about"]
+title = "keys.openpgp.org"
+full_description = '''The keys.openpgp.org server is a public service for the distribution and discovery of OpenPGP-compatible keys, commonly referred to as a "keyserver". Traditionally, these pieces of information have always been distributed together. On keys.openpgp.org, they are treated differently. While anyone can upload all parts of any OpenPGP key to keys.openpgp.org, our keyserver will only retain and publish certain parts under certain conditions: Any non-identity information will be stored and freely redistributed, if it passes a cryptographic integrity check. Anyone can download these parts at any time as they contain only technical data that can't be used to directly identify a person. Good OpenPGP software can use keys.openpgp.org to keep this information up to date for any key that it knows about. This helps OpenPGP users maintain secure and reliable communication. The identity information in an OpenPGP key is only distributed with consent. It contains personal data, and is not strictly necessary for a key to be used for encryption or signature verification. Once the owner gives consent by verifying their email address, the key can be found via search by address. This service is run as a community effort. You can talk to us in #hagrid on OFTC IRC, also reachable as #hagrid:stratum0.org on Matrix. Of course you can also reach us via email, at support at keys dot openpgp dot org. The folks who are running this come from various projects in the OpenPGP ecosystem, including Sequoia-PGP, OpenKeychain, and Enigmail. Technically, keys.openpgp.org runs on the Hagrid keyserver software, which is based on Sequoia-PGP. We are running on eclips.is, a hosting platform focused on Internet Freedom projects, which is managed by Greenhost.'''
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about"
+tags = ["community", "guide.", "identity", "information", "instructions,", "news", "non-identity", "platform", "privacy", "stats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["eclips.is", "gitlab.com", "greenhost.net", "sequoia-pgp.org", "toptal.com"]
+
+["https://keys.openpgp.org/about/api"]
+title = "keys.openpgp.org"
+full_description = "Retrieves the key with the given Fingerprint. The Fingerprint may refer to the primary key, or any subkey. Hexadecimal digits MUST be uppercase, and MUST NOT be prefixed with 0x. The returned key is ASCII Armored, and has a content-type of application/pgp-keys. Retrieves the key with the given long KeyID. The KeyID may refer to the primary key, or any subkey. Hexadecimal digits MUST be uppercase, and MUST NOT be prefixed with 0x. The returned key is ASCII Armored, and has a content-type of application/pgp-keys. Retrieves the key with the given Email Address. Only exact matches are accepted. Lookup by email address requires opt-in by the owner of the email address. The returned key is ASCII Armored, and has a content-type of application/pgp-keys. A single key may be submitted using a POST request to /vks/v1/upload. The body of the request must be application/json. The JSON data must contain a single field keytext, which must contain the keys to submit. The value of keytext can be formatted in standard OpenPGP ASCII Armor, or base64. The returned JSON data contains the fields token, key_fpr, and status. The token field contains an opaque value, which can be used to perform request-verify requests (see below). The key_fpr field contains the fingerprint of the uploaded primary key. The status token contains a map of email addresses contained in the key, with one of the values unpublished, published, revoked, or pending, indicating the status of this email address. A key that has been uploaded can be made discoverable by one or more of its email addresses by proving ownership of the address via a verification email. This endpoint requests verification for one or more email addresses. The body of the request must be application/json. The JSON data must include the opaque token value (obtained via /vks/v1/upload) and an addresses field, which is a list of email addresses (not full User IDs) to request verification mails for. It can optionally include a locale field, which is list of locales, ordered by preference, which to use for the verification email. The reply will be the same as for the /vks/v1/upload endpoint, with addresses marked as pending where a verification email has been sent."
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/api"
+tags = ["clients", "error", "errors", "gracefully", "handle", "handling", "interface", "keyserver", "limiting", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dev.gnupg.org", "dnsviz.net", "eclips.is", "enigmail.net", "frobese.de", "gnupg.org", "greenhost.net", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "play.google.com", "sequoia-pgp.org", "tools.ietf.org", "torproject.org", "wiki.debian.org", "zkaan2xfbuxia2wpf7ofnkbz6r5zdbbvxbunvp5g2iebopbfc4iqmbad.onion"]
+
+["https://keys.openpgp.org/about/faq"]
+title = "keys.openpgp.org"
+full_description = '''No. The federation model of the SKS pool has various problems in terms of reliability, abuse-resistance, privacy, and usability. We might do something similar to it, but keys.openpgp.org will never be part of the SKS pool itself. For the moment, no. We do plan to decentralize keys.openpgp.org at some point. With multiple servers run by independent operators, we can hopefully improve the reliability of this service even further. Several folks offered to help out by "running a Hagrid server instance". We very much appreciate the offer, but we will probably never have an "open" federation model like SKS, where everyone can run an instance and become part of a "pool". This is for two reasons: We require explicit consent to distribute identity information. Identities that aren't email addresses, such as pictures or website URLs, offer no simple way for us to acquire this consent. Note: Some OpenPGP software creates keys with incorrectly formatted email addresses. These addresses might not be recognized correctly on keys.openpgp.org. An email address can only be associated with a single key. When an address is verified for a new key, it will no longer appear in any key for which it was previously verified. Non-identity information will still be distributed for all keys. This means a search by email address will only return a single key, not multiple candidates. This eliminates an impossible choice for the user ("Which key is the right one?"), and makes key discovery by email much more convenient. We use a modern standard called MTA-STS, combined with STARTTLS Everywhere by the EFF, to make sure verification emails are sent out securely. This protects against eavesdropping and interception during delivery. The MTA-STS mechanism only works if supported by the recipient's email provider. Otherwise, emails will be delivered as usual. You can run this test to see if your email provider supports it. If the "MTA-STS" entry on the left isn't a green checkmark, please ask your provider to update their configuration.'''
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/faq"
+tags = ['"sks"', '"third', "address", "address,", "address?", "addresses?", "aren't", "bug?", "cannot", "distribute"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dev.gnupg.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "github.com", "gitlab.com", "gpgtools.org", "greenhost.net", "hardenize.com", "medium.com", "openkeychain.org", "openwall.com", "play.google.com", "toptal.com", "wiki.debian.org"]
+
+["https://keys.openpgp.org/about/privacy"]
+title = "keys.openpgp.org"
+full_description = "keys.openpgp.org is a community effort. You can find more information about us, and our contact, details here. The public keyserver running on keys.openpgp.org processes, stores, and distributes OpenPGP certificate data. The specific way in which data is processed differs by type as follows: Email addresses of individuals contained in User IDs are personal data. Special care is taken to make sure they are used only with consent, which you can withdraw at any time: We process the cryptographic content of OpenPGP certificates - such as public key material, self-signatures, and revocation signatures – for the legitimate interest of providing the service. This data is not usually collectively available (“as a dump“), but may be handed upon request to third parties for purposes of development or research. If you upload your OpenPGP certificates to the service, you are the source of this data. It is also possible for anyone who has your public OpenPGP certificate to upload them to this service – for example, if you have published them somewhere else, or sent them to someone. This does not include publication of Email Addresses, which are only used with explicit consent as described above. An OpenPGP certificate may contain personal data other than email addresses, such as User IDs that do not contain email addresses, or image attributes. This data is stripped during upload and never stored, processed, or distributed in any way. OpenPGP packet types that were not specifically mentioned above are stripped during upload and never stored, processed or distributed in any way. Data is never relayed to third parties outside of what is available from the public API interfaces, and what is described in this policy and on our about page. This service is available on the Internet, so anyone, anywhere in the world, can access it and retrieve data from it. We will retain your email address linked with your OpenPGP certificates until you remove it. We will remove your Public Key Data if you wish, but note that anyone can re-upload it to the service, in keeping with the “public” nature of this key material."
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/privacy"
+tags = ["contact", "data", "details", "name", "news", "periods", "privacy", "process", "retention", "rights"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dev.gnupg.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "gitlab.com", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "openwall.com", "play.google.com", "sequoia-pgp.org", "wiki.debian.org", "zkaan2xfbuxia2wpf7ofnkbz6r5zdbbvxbunvp5g2iebopbfc4iqmbad.onion"]
+
+["https://keys.openpgp.org"]
+title = "keys.openpgp.org"
+year_published = 2025
+clearnet = "https://keys.openpgp.org"
+tags = ["news:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["gitlab.com", "sequoia-pgp.org", "toptal.com"]
+
+["https://keys.openpgp.org/about/stats"]
+title = "keys.openpgp.org"
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/stats"
+tags = ["addresses", "average", "email", "load", "news", "privacy", "stats", "usage", "verified"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dev.gnupg.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "gitlab.com", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "openwall.com", "play.google.com", "sequoia-pgp.org", "wiki.debian.org", "zkaan2xfbuxia2wpf7ofnkbz6r5zdbbvxbunvp5g2iebopbfc4iqmbad.onion"]
+
+["https://keys.openpgp.org/upload"]
+title = "keys.openpgp.org"
+year_published = 2025
+clearnet = "https://keys.openpgp.org/upload"
+tags = ["upload"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "github.com", "gitlab.com", "gpgtools.org", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "openwall.com", "play.google.com", "sequoia-pgp.org", "toptal.com"]
+
+["https://keys.openpgp.org/about/news"]
+title = "keys.openpgp.org"
+full_description = "It's been quite a while since the last update. Not a lot happened around keys.openpgp.org during this time, operationally. 😴 But no news is good news in this case: A few bugs were fixed, some software maintenance was perfomed to keep up with the ecosystem. There were no significant outages, we've had some steady growth of users, things are generally working as expected. Hurray! There is, however, an important bit of news: keys.openpgp.org has a governance process now. In particular, there is now a written constitution for the service, which you can find here. Most importantly, there is now a board, who were elected by a community of contributors to the OpenPGP ecosystem. This board currently consists of: The primary responsibility of the board is to make decisions on the future of keys.openpgp.org. Which features should go in, which not? We are having regular meetings at the moment, and progress is slow but steady. We'll be sure to let you know (via this news blog) when anything exciting happens! You can find more info about governance in the repository. You can also reach the board via email at board at keys.openpgp.org. Thanks to everyone using this service! And thanks especially to those who have provided us with feedback, translations, or even code contributions! If you would like to see keys.openpgp.org translated into your native language, please join the translation team over on Transifex. We would appreciate help especially for Russian, Italian, Polish and Dutch. It has been three months now since we launched keys.openpgp.org. We are happy to report: It has been a resounding success! 🥳 The keys.openpgp.org keyserver has been received very well by users, and clients are adopting it rapidly. It is now used by default in GPGTools, Enigmail, OpenKeychain, GPGSync, Debian, NixOS, and others. Many tutorials have also been updated, pointing users our way. A special shout-out here goes to GPGTools for macOS. They implemented the update process so smoothly, the number of verified addresses completely exploded when they released their update."
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/news"
+tags = ["100.000", "2019-06-12", "2019-09-12", "2019-11-12", "2023-04-28", "addresses!", "atom", "celebrating", "dutch", "email"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dnsviz.net", "eclips.is", "en.wikipedia.org", "enigmail.net", "github.com", "gitlab.com", "gpgtools.org", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "openwall.com", "play.google.com", "sequoia-pgp.org", "toptal.com"]
+
+["https://keys.openpgp.org/about/usage"]
+title = "keys.openpgp.org"
+full_description = "On this page, we collect information on how to use keys.openpgp.org with different OpenPGP software products. We are still in the process of adding more. If you are missing some, please write to us and we'll try to add it. Keys can be uploaded with GnuPG's --send-keys command, but identity information can't be verified that way to make the key searchable by email address (what does this mean?). This configuration is no longer necessary, but prevents regular certificates from working. It is recommended to simply remove this line from the configuration. For users who want to be extra careful, keys.openpgp.org can be reached anonymously as an onion service. If you have Tor installed, use the following configuration: The Web Key Directory (WKD) is a standard for discovery of OpenPGP keys by email address, via the domain of its email provider. It is used to discover unknown keys in some email clients, such as GpgOL. keys.openpgp.org can be used as a managed WKD service for any domain. To do so, the domain simply needs a CNAME record that delegates its openpgpkey subdomain to wkd.keys.openpgp.org. It should be possible to do this in the web interface of any DNS hoster. Once enabled for a domain, its verified addresses will automatically be available for lookup via WKD. Missing a guide for your favorite implementation? This site is a work-in-progress, and we are looking to improve it. Drop us a line at support at keys dot openpgp dot org if you want to help out!"
+year_published = 2025
+clearnet = "https://keys.openpgp.org/about/usage"
+tags = ["enigmail", "gnupg", "interface", "news", "openkeychain", "others", "pignus", "privacy", "service", "stats"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aykevl.nl", "bitbucket.org", "blog.sumptuouscapital.com", "blog.torproject.org", "dev.gnupg.org", "dnsviz.net", "eclips.is", "enigmail.net", "frobese.de", "gnupg.org", "greenhost.net", "hardenize.com", "medium.com", "nongnu.13855.n7.nabble.com", "openkeychain.org", "play.google.com", "sequoia-pgp.org", "torproject.org", "wiki.debian.org", "zkaan2xfbuxia2wpf7ofnkbz6r5zdbbvxbunvp5g2iebopbfc4iqmbad.onion"]

@@ -1,0 +1,9 @@
+["https://hoogle.haskell.org"]
+title = "Hoogle"
+full_description = "Hoogle is a Haskell API search engine, which allows you to search the Haskell libraries on Stackage by either function name, or by approximate type signature. Example searches: map (a -> b) -> [a] -> [b] Ord a => [a] -> [a] Data.Set.insert +bytestring concat Enter your own search at the top of the page. The Hoogle manual contains more details, including further details on search queries, how to install Hoogle as a command line application and how to integrate Hoogle with Firefox/Emacs/Vim etc. I am very interested in any feedback you may have. Please email me, or add an entry to my bug tracker."
+year_published = 2025
+clearnet = "https://hoogle.haskell.org"
+tags = ["hoogle", "links", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["downloads.haskell.org", "github.com", "hackage.haskell.org", "haskell.org", "ndmitchell.com", "wiki.haskell.org"]

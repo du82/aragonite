@@ -1,0 +1,547 @@
+["https://challenges.re/3"]
+title = "Reverse Engineering challenge #3."
+full_description = "What does this code do? The function has array of 64 32-bit integers, I removed it in each assembly code snippet to save space. The array is:"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/3"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/20"]
+title = "Reverse Engineering challenge #20."
+full_description = "As you may notice, it uses SSEx instructions for floating point number processing. The code below was compiled by the same version of GCC, but using -march=pentium3 -m32 switches, that forces it to compile code for 80x87 FPU:"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/20"
+tags = ["#20.", "-m32", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/17"]
+title = "Reverse Engineering challenge #17."
+full_description = "This is a quite esoteric piece of code, but nevertheless, the task it does is very mundane and well-known to anyone. The function has 4 32-bit arguments and returns a 32-bit one. What does it do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/17"
+tags = ["#17.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/35"]
+title = "Reverse Engineering challenge #35."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/35"
+tags = ["#35.", "4.4.5", "4.6.3", "4.9.1", "challenge", "engineering", "keil", "msvc", "optimizing", "raspberry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/21"]
+title = "Reverse Engineering challenge #21."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/21"
+tags = ["#21.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/4"]
+title = "Reverse Engineering challenge #4."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/4"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/41"]
+title = "Reverse Engineering challenge #41."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/41"
+tags = ["#41.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/46"]
+title = "Reverse Engineering challenge #46."
+full_description = "Here is a very primitive toy web-server that supports only static files, without CGI, etc. At least 4 vulnerabilities are left here intentionally. Try to find them all and exploit them in order to break into a remote host."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/46"
+tags = ["#46.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/47"]
+title = "Reverse Engineering challenge #47."
+full_description = "It's a well known data compression algorithm. However, due to a mistake (or typo) in the (closed) source code, it decompresses incorrectly. Here we can see this bug in these examples."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/47"
+tags = ["#47.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/39"]
+title = "Reverse Engineering challenge #39."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/39"
+tags = ["#39.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/49"]
+title = "Reverse Engineering challenge #49."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/49"
+tags = ["#49.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/31"]
+title = "Reverse Engineering challenge #31."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/31"
+tags = ["#31.", "challenge", "engineering", "msvc", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/14"]
+title = "Reverse Engineering challenge #14."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/14"
+tags = ["#14.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/40"]
+title = "Reverse Engineering challenge #40."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/40"
+tags = ["#40.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/43"]
+title = "Reverse Engineering challenge #43."
+full_description = "There is a small executable file, some utility. It opens another file, reads it, calculate something and prints a real number. Try to understand what it does."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/43"
+tags = ["#43.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/22"]
+title = "Reverse Engineering challenge #22."
+full_description = "This can be tricky, but the algorithm is well known and heavily used almost everywhere. What does the following code do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/22"
+tags = ["#22.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/24"]
+title = "Reverse Engineering challenge #24."
+full_description = "It is known that it supports 4 arithmetic operations and negative numbers can be denoted with minus before the number. But it's also known that there are at least 7 undocumented features. Try to find them all."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/24"
+tags = ["#24.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/23"]
+title = "Reverse Engineering challenge #23."
+full_description = "This is another implementation of a well-known library function, works only in a 64-bit environment. What does the following code do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/23"
+tags = ["#23.", "4.8.2", "4.9.3", "arm64", "challenge", "engineering", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/36"]
+title = "Reverse Engineering challenge #36."
+full_description = "A well-known algorithm again. What does it do? Also, take notice that the code for x86 uses FPU, but SIMD instructions are used instead in the x64 code. That's OK."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/36"
+tags = ["#36.", "4.4.5", "4.4.6", "4.8.1", "4.9.1", "challenge", "cortex-r4f", "engineering", "keil", "msvc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/1"]
+title = "Reverse Engineering challenge #1."
+full_description = "What does this code do? The function has 4 arguments and it is compiled by GCC for Linux x64 ABI (i.e., arguments are passed in registers)."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/1"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/13"]
+title = "Reverse Engineering challenge #13."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/13"
+tags = ["#13.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/12"]
+title = "Reverse Engineering challenge #12."
+full_description = "Executable file is also available for download: here. Don't forget to set executable flag: chmod +x e12."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/12"
+tags = ["#12.", "challenge", "chmod", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/29"]
+title = "Reverse Engineering challenge #29."
+full_description = 'This is a very short program, compiled using the patched Tiny C compiler. Try to find out what it does. Multiple visitors complained the file has malware. It may be false positive. Or maybe my patched Tiny C compiler was used by some malware authors. So the file is now packed by RAR with the password "obfuscation".'
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/29"
+tags = ["#29.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/45"]
+title = "Reverse Engineering challenge #45."
+full_description = "This is a software copy protection imitation, which uses a key file. The key file contain a user (or customer) name and a serial number."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/45"
+tags = ["#45.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/50"]
+title = "Reverse Engineering challenge #50."
+full_description = "This is the file encrypted by a simple application of a 4-byte XOR mask. Try to find the key and decrypt the file."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/50"
+tags = ["#50.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["http://challenges.re/12/binary/e12"]
+title = ""
+year_published = 2025
+clearnet = "http://challenges.re/12/binary/e12"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/53"]
+title = "Reverse Engineering challenge #53."
+full_description = "This code, compiled in Linux x86-64 using GCC is crashing while execution (segmentation fault). It's also crashed if compiled by MinGW for win32. However, it works in Windows environment if compiled by MSVC 2010 x86. Why?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/53"
+tags = ["#53.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/11"]
+title = "Reverse Engineering challenge #11."
+full_description = "This is a somewhat large function (in contrast to the other exercises in this blog), but heavily used nowadays in various software. As it can be clearly seen, it uses standard C/C++ functions including strlen() and sscanf(). Some other helper function is also used. I intentionally gave it this name to conceal its real function. So what does the whole code snippet do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/11"
+tags = ["#11.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/37"]
+title = "Reverse Engineering challenge #37."
+full_description = "Well-known function. What does it compute? Why does the stack overflow if 4 and 2 are supplied at input? Is there any error?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/37"
+tags = ["#37.", "4.4.5", "4.9.1", "challenge", "engineering", "keil", "msvc", "non-optimizing", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/10"]
+title = "Reverse Engineering challenge #10."
+full_description = "This code snippet is short, but tricky. What does it do? It's used heavily in low-level programming and is well-known to many low-level programmers. There are several ways to calculate it, and this is the one of them."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/10"
+tags = ["#10.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/19"]
+title = "Reverse Engineering challenge #19."
+full_description = "This is tricky. The algorithm is well-known in computer science, but probably not to the general public. The task it does is high demand and very mundane."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/19"
+tags = ["#19.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/44"]
+title = "Reverse Engineering challenge #44."
+full_description = "There is an utility which encrypts/decrypts files using a password. There is an encrypted text file, the password is unknown. The encrypted file is a text in the English language. The utility uses a relatively strong cryptosystem, nevertheless, it was implemented with a serious blunder. With the mistake present, it is possible to decrypt the file with a little effort."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/44"
+tags = ["#44.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/54"]
+title = "Reverse Engineering challenge #54."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/54"
+tags = ["#54.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/15"]
+title = "Reverse Engineering challenge #15."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/15"
+tags = ["#15.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/25"]
+title = "Reverse Engineering challenge #25 (black box)."
+full_description = "It's a secret algorithm hidden inside of a black box (e.g. a smart card). It's not possible to reveal it (well, at least, let's say, using our current hypothetical budget). But we can send a lot of random data to it and observe responses. The problem is to find expression which will be correct for each pair. The problem is generally known to be unsolvable, but it can be practically solved if there are few operations in expressions. Here is one method: http://yurichev.com/writings/z3_rockey.pdf. To make things slightly harder, inputs like 0, 0xFFFFFFFF, 0x55555555, 0xAAAAAAAA, etc, were not sent to black boxes. Black boxes for this example were constructed in the sense of naive amateur cryptography (security through chaotic mess of operations and random constants), so they all contains no more than 6 primitive mathematical/logical operations and also small constants (smaller than 64 for the most black boxes, but one of them has a bigger constant as exception)."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/25"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/27"]
+title = "Reverse Engineering challenge #27."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/27"
+tags = ["#27.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/48"]
+title = "Reverse Engineering challenge #48."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/48"
+tags = ["#48.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/51"]
+title = "Reverse Engineering challenge #51."
+full_description = 'If we compile this piece of code in MSVC and run it, three numbers are printed. Where do they come from? Where do they come from if you compile it in MSVC with optimization (\Ox)? Why is the situation completely different if we compile with GCC?'
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/51"
+tags = ["#51.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/38"]
+title = "Reverse Engineering challenge #38."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/38"
+tags = ["#38.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/28"]
+title = "Reverse Engineering challenge #28."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/28"
+tags = ["#28.", "4.4.5", "4.8.2", "4.9.3", "5.05", "arm64", "challenge", "engineering", "keil", "mips"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/42"]
+title = "Reverse Engineering challenge #42."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/42"
+tags = ["#42.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/16"]
+title = "Reverse Engineering challenge #16."
+full_description = "Now this is getting harder. Clang did a lot of optimization tricks and this code is heavily optimized for SSE2. Nevertheless, the original function is tiny and simple. What does it do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/16"
+tags = ["#16.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/2"]
+title = "Reverse Engineering challenge #2."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/2"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/34"]
+title = "Reverse Engineering challenge #34."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/34"
+tags = ["#34.", "4.4.5", "4.9.1", "challenge", "engineering", "keil", "msvc", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/5"]
+title = "Reverse Engineering challenge #5."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/5"
+tags = ["challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/52"]
+title = "Reverse Engineering challenge #52."
+full_description = "Additional question: why MSVC replaced time() with time64()? Is it correct? Dangerous? What printf() will print after year 2038?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/52"
+tags = ["#52.", "4.4.5", "challenge", "engineering", "keil", "msvc", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "microsoft.com", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/26"]
+title = "Reverse Engineering challenge #26."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/26"
+tags = ["#26.", "challenge", "compiler", "compiler:", "engineering", "ildasm", "java", "output", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/32"]
+title = "Reverse Engineering challenge #32."
+full_description = "This is a standard C library function. The source code is taken from MSVC 2010. What does this code do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/32"
+tags = ["#32.", "4.4.1", "4.4.5", "4.9.1", "challenge", "engineering", "keil", "msvc", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re"]
+title = "Reverse Engineering challenges"
+full_description = '''Reverse Engineering for Beginners. Discord server. How to start learning reverse engineering in 2023. Subscribe to my news feed. 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20; 21; 22; 23; 24; 25 (black boxes); 26; 27; 28; 29 (obfuscation); 30; 31; 32; 33; 34; 35; 36; 37; 38; 39; 40; 41; 42 (unknown cryptoalgorithm); 43; 44; 45 (simple copyprotection); 46 (toy-level web server); 47 (broken data compression algorithm); 48; 49; 50 (4-byte XOR mask); 51 (stack); 52 (stack); 53; 54 (LOOP instruction); 55 (simple patching exercise); 56; 57; 58; 59; 60; 61; 62 (array); 63 (array); 64 (array); 65 (array); 66 (array); 67 (bit field); 68 (bit field); 69 (bit field); 70 (bit field); 71 (structure); 72 (structure); 73; 74; 75; 76; 77; 78; 79; 80; 81; 82; 83; 84; 85; 86; 87. Level 1: 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15; 16; 17; 18; 19; 20; 21; 22; 23; 26; 27; 28; 30; 31; 32; 33; 34; 35; 36; 37; 38; 39; 41; 43; 48; 49; 51 (stack); 52 (stack); 53; 54 (LOOP instruction); 55 (simple patching exercise); 56; 57; 58; 59; 60; 61; 62 (array); 63 (array); 64 (array); 65 (array); 66 (array); 67 (bit field); 68 (bit field); 69 (bit field); 70 (bit field); 71 (structure); 72 (structure); 74; 75; 76; 79; 80; 81; 82; 83; 84; 85; 86. Level 2: 1; 24; 29 (obfuscation); 40; 42 (unknown cryptoalgorithm); 44; 45 (simple copyprotection); 46 (toy-level web server); 73; 74; 77; 78. Distinction between levels is very blurred and not very strict, so don't rely on them fully. But feel free to send me recommendations about them. I would love to hear comments like "it was so easy/hard" or "I've spent 2 hours for this", so I can gather some statistics about exercises and promote/demote them. Piece of assembly listing: 1; 2; 3; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 15; 16; 17; 18; 19; 20; 21; 22; 23; 27; 28; 31; 32; 33; 34; 35; 36; 48; 49; 52 (stack); 56; 58; 59; 60; 61; 62 (array); 63 (array); 64 (array); 65 (array); 66 (array); 67 (bit field); 68 (bit field); 69 (bit field); 70 (bit field); 72 (structure); 75; 76; 77; 78; 79; 80; 81; 82; 83; 84; 85.'''
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re"
+tags = ["architecture", "challenges", "duplicates", "engineering", "exercise", "level", "numbers", "reverse", "solutions", "thanks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/33"]
+title = "Reverse Engineering challenge #33."
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/33"
+tags = ["#33.", "4.4.5", "4.9.1", "challenge", "engineering", "keil", "msvc", "optimizing", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/30"]
+title = "Reverse Engineering challenge #30."
+full_description = "As an additional exercise, try to change the password by patching the executable file. Also try using one with a different length. What is the shortest possible password here?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/30"
+tags = ["#30.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "blog.yurichev.com", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]
+
+["https://challenges.re/18"]
+title = "Reverse Engineering challenge #18."
+full_description = "Now this is easy. Keep in mind, the code is 64-bit, because it uses 64-bit value(s). That is why I've omitted code fragments for 32-bit ARM and MIPS. So what does it do?"
+author = "Dennis Yurichev"
+year_published = 2025
+clearnet = "https://challenges.re/18"
+tags = ["#18.", "challenge", "engineering", "reverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["beginners.re", "creativecommons.org", "cryptopals.com", "discord.gg", "en.wikipedia.org", "inf.ethz.ch", "projecteuler.net", "reddit.com", "yurichev.com", "yurichev.org"]

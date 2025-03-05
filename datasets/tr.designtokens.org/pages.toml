@@ -1,0 +1,23 @@
+["https://tr.designtokens.org"]
+title = "Design Tokens Technical Reports"
+description = """
+Design tokens are indivisible pieces of a design system such as colors,     spacing, typography scale."""
+full_description = "Design tokens were created by the Salesforce design system team, and the name comes from them (Jon & Jina). We'd also like to thank the following contributors: Abhishek Warokar, Adam Stankiewicz, Ale Muñoz, Asher, Benjamin Kindle, Bjørn Madsen, Chase McCoy, Dale Sande, Daniel Flynn, Daniel Rinehart, Dominique Hazael-Massieux, Drew Powers, Evan Lovely, Fabian Friedl, Guilherme Nagüeva, Guy Lepage, Ivan Maksimovic, Jan Toman, Jina Anne, Jon Levine, Kaelig Deloumeau-Prigent, Kilian Valkhof, KLS, Laurent Thiebault, Lukas Oppermann, Marcos Castro, Mark Tomlinson, Mike Kamminga, Miriam Suzanne, Namık Özgür Aydın, Pavel Laptev, Pavel Vostrikov, Red Huang, Rob Eisenberg, Robin, Roman Komarov, Salem Cobalt, Sébastien Barbieri, Sigurd Fosseng, and Zhihao Cui."
+year_published = 2025
+clearnet = "https://tr.designtokens.org"
+tags = ["abstract", "acknowledgements", "contents", "design", "modules", "reports", "resources", "table", "technical", "tokens"]
+language = "en"
+internal-references = ["none"]
+external-references = ["designtokens.org", "github.com", "twitter.com"]
+
+["https://tr.designtokens.org/format"]
+title = "Design Tokens Format Module"
+description = """
+This document describes the technical specification for a file format to    exchange design tokens between different tools."""
+full_description = '''5.2.1 Description A plain text description explaining the token's purpose can be provided via the optional $description property. Tools MAY use the description in various ways. For example: Style guide generators MAY display the description text alongside a visual preview of the token IDEs MAY display the description as a tooltip for auto-completion (similar to how API docs are displayed) Design tools MAY display the description as a tooltip or alongside tokens wherever they can be selected Translation tools MAY render the description to a source code comment alongside the variable or constant they export. The value of the $description property MUST be a plain JSON string, for example: Example 4 { "Button background": { "$value": "#777777", "$type": "color", "$description": "The background color for buttons in their normal state." } }'''
+year_published = 2025
+clearnet = "https://tr.designtokens.org/format"
+tags = ["$deprecated", "$extensions", "$value", "100:", "101:", "102:", "103:", "@deprecated", "@link", "abstract"]
+language = "en"
+internal-references = ["none"]
+external-references = ["adobe.com", "affinity.serif.com", "amzn.github.io", "bsky.app", "cirrus.twiddles.com", "datatracker.ietf.org", "design-tokens.github.io", "designtokens.org", "docs.microsoft.com", "drafts.csswg.org", "en.wikipedia.org", "figma.com", "getpaint.net", "github.com", "inkscape.org", "json.org", "knapsack.cloud", "rfc-editor.org", "sketch.com", "twitter.com"]

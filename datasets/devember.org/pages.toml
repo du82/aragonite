@@ -1,0 +1,84 @@
+["https://devember.org/resources/coollibraries"]
+title = "Devember - Resources - Cool Libraries"
+description = "Devember has been, and it will come again."
+full_description = "The stb library (Sean’s Tool Box) is a nice library with a lot of basic essential tools to make C programming more agile. There you can find all the other stb_* libraries that add up to stb.h, providing multimedia IO and more. They are all single file libraries and in public domain: easy to include in your project, and to tweak as you like . On stb site there is a list of single file libraries for c/c++, and some cool ones that have more than one file. IMGUI is a super cool library useful to add to your program debug graphical interfaces, without the weight of MVC pattern. SDL2 lets you get access to basic multimedia functionalities in a portable manner. You can create windows, use input devices, output audio, dynamically load code, work with files, create GPU contexts and render something. This library is thought for games, but you could use it for other things, for example VLC can output video using SDL. It is written in C and can be used in C++. Look at the wiki for documentation. If you use SDL2 you can get SDL_Mixer and SDL_TTF too. The former lets you play sounds easily, the latter loads fonts and lets you render them. Rapidjson is the fastest C++ json loading library. It's pretty simple to use. You could use it to save and load custom data in your program. Bootstrap is a well known and vastly used framework that lets you build up websites with cool appearance without being a html/js/css genius. It’s based on grids and has a cool navbar. jQuery is a fast high-level Javascript library that enables you to make your websites interactive and dynamic without all the Javascript-DOM madness. If you want to make use of grids in your website, but you want more than Bootstrap you have a lot of choices: Sammy.js “is a tiny JavaScript framework developed to ease the pain and provide a basic structure for developing JavaScript applications”. With it you can make web applications that never reload the page, but clicking links changes the url in the browser and the content of the page, like Twitter or Google Inbox."
+year_published = 2025
+clearnet = "https://devember.org/resources/coollibraries"
+tags = ["c/c++", "cool", "javascript/css", "libraries"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blogger.com", "copy.com", "detectmobilebrowsers.com", "dropbox.com", "getbootstrap.com", "gist.github.com", "git-scm.com", "github.com", "google.com", "help.github.com", "jquery.com", "libsdl.org", "mega.co.nz", "primercss.io", "reddit.com", "salvattore.com", "tumblr.com", "twitter.com", "wordpress.com", "zenorocha.github.io"]
+
+["https://devember.org/contacts"]
+title = "Devember - Contacts"
+description = "Devember has been, and it will come again."
+year_published = 2025
+clearnet = "https://devember.org/contacts"
+tags = ["contacts", "devember's", "e-mail", "facebook", "mastodon", "reddit", "twitter"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "mastodon.gamedev.place", "reddit.com", "twitter.com", "when.gamehappens.com"]
+
+["https://devember.org/why"]
+title = "Devember - Why?"
+description = "Devember has been, and it will come again."
+full_description = "We think everybody should learn to code. If this sounds strange to you, try to imagine the people that fought against illiteracy, not much time ago. Probably their ideas sounded strange to many, back then. Nowaday, having quite won against illiteracy, we face a new form of it: code illiteracy. People that don't know how to code are code illiterate. Code literacy enables a great power, a power of freedom. Like reading and writing, coding can ( and has to! ) be fun. Through coding you can craft interactive creations, a unique and powerful medium. Being able to code you can think about something and give it life. Coding is awesome. And it's quite simple, at its basics. The awesome guys at Code.org have shot a lot of cool videos on this matter. We particularly like these two. Mitch Resnick is one of the creators of Scratch, a visual programming language. It helps to introduce kids to programming all over the world. Watch his passionate TED talk about it and why we should teach kids to code! Everyone is encouraged to join Devember. From newbies to pro developers. Everyone can learn. Learning is life. Sharing boosts learning. When, in the contract, you agree to keep a devlog, is because of two reasons. In the first instance it gives you a dayly motivation to keep faith to the contract, but it also makes you share your experience with everyone else. This means you will get both the feedback from others and their own experiences. And all this is mutual. This is humanity superpower: community learning. It is together that our societies evolved through history. Now, Devember is coming. Will you join the others? Will you join the learning? Will you join the fun? Will you join Devember?"
+year_published = 2025
+clearnet = "https://devember.org/why"
+tags = ["code", "devember?", "enought", "everybody", "everyone", "join", "learn", "links", "now!", "text"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blogger.com", "codecombat.com", "copy.com", "detectmobilebrowsers.com", "dropbox.com", "getbootstrap.com", "git-scm.com", "github.com", "google.com", "jquery.com", "learncodethehardway.org", "mega.co.nz", "ocw.mit.edu", "reddit.com", "salvattore.com", "ted.com", "tumblr.com", "twitter.com", "udacity.com", "zenorocha.github.io"]
+
+["https://devember.org"]
+title = "Devember has been, and it will come again."
+description = "Devember has been, and it will come again."
+year_published = 2025
+clearnet = "https://devember.org"
+tags = ["again.", "been,and", "devember"]
+language = "en"
+internal-references = ["none"]
+external-references = ["mastodon.gamedev.place", "when.gamehappens.com"]
+
+["https://devember.org/resources/basics"]
+title = "Devember - Resources - Basics"
+description = "Devember has been, and it will come again."
+full_description = "Version control systems! (VCS) What are they? A VCS is a software that keeps track of the intermediate versions you generate modifying something. Basically it lets you undo the modifications. Quite like Word, but the history is saved on file. In this way you can go back when you want and send the data and its history where you want. Your code and its history together are called repository, or repo if you want to spare some characters. A repo can be easily put online, so that anyone can read it. Git is a cool VCS and it happens to have two free online interactive courses about it at Codecademy and Codeschool. Repos are better because you can upload in a simpler and faster way, they are not time limited, the encourage sharing. A devlog is the captain’s log of the developer. There you can write about your progress, the problems you have encountered, the solutions you have looked for or the strokes of genius you had. If you have a blog you can post it there and tag the posts with “devlog” and “#Devember”. You can create a blog for free in a lot of places. Fashionable ones are"
+year_published = 2025
+clearnet = "https://devember.org/resources/basics"
+tags = ["basics", "code?", "devember", "devlog?", "share"]
+language = "en"
+internal-references = ["none"]
+external-references = ["atlassian.com", "bitbucket.org", "blogger.com", "codecademy.com", "codeschool.com", "copy.com", "dropbox.com", "en.wikipedia.org", "facebook.com", "git-scm.com", "github.com", "google.com", "labnol.org", "mastodon.gamedev.place", "mega.co.nz", "onedrive.live.com", "pastebin.com", "reddit.com", "tumblr.com", "twitter.com"]
+
+["https://devember.org/whatisit"]
+title = "Devember - What is it?"
+description = "Devember - What is it?"
+year_published = 2025
+clearnet = "https://devember.org/whatisit"
+tags = ["challenge", "code", "devember", "devember?", "excuse", "learning", "programming,", "sharing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blogger.com", "codecombat.com", "copy.com", "detectmobilebrowsers.com", "dropbox.com", "getbootstrap.com", "gist.github.com", "git-scm.com", "github.com", "google.com", "jquery.com", "learncodethehardway.org", "mega.co.nz", "ocw.mit.edu", "reddit.com", "salvattore.com", "tumblr.com", "twitter.com", "udacity.com", "zenorocha.github.io"]
+
+["https://devember.org/resources/newbie"]
+title = "Devember - Resources - Newbie"
+description = "Devember has been, and it will come again."
+full_description = "Codecademy is a great resource for novices. There you can find nice courses, from ground up. You can code in the browser! There are many exercises, with automatic validation and hints. Subjects are web oriented ( ruby, javascript, HTML, CSS, ... ). Khan Academy has a section about programming in which you can interactively learn “how to program drawings, animations, and games using JavaScript & ProcessingJS, or learn how to create webpages with HTML & CSS.” If you can’t decide which course to pick you can do the hours of code and make yourself an idea. Codeavengers offers you interactive learning about building websites, apps and games with HTML, CSS, JavaScript & Python. Codeschool is quite like codecademy, but with video lessons. They have 10 free courses and 50+ through a monthly subscription. Udacity has a lot of courses material, all for free. The courses are made by “Silicon Valley tech giants”. MIT offers free online courses, of which you can download the material. Here there are four that could interest you: At Code.org there are courses and resources for beginners. If code scares you too much you could try with visual programming. There are some courses made for kids, but if you're an adult you could try them anyway. Some are even translated in many languages."
+year_published = 2025
+clearnet = "https://devember.org/resources/newbie"
+tags = ["beginner?", "code", "don’t", "idea", "newbie", "start?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blogger.com", "codecombat.com", "copy.com", "detectmobilebrowsers.com", "dropbox.com", "getbootstrap.com", "gist.github.com", "git-scm.com", "github.com", "google.com", "jquery.com", "learncodethehardway.org", "mega.co.nz", "ocw.mit.edu", "reddit.com", "salvattore.com", "tumblr.com", "twitter.com", "udacity.com", "zenorocha.github.io"]
+
+["https://devember.org/rules"]
+title = "Devember - Rules"
+description = "Devember has been, and it will come again."
+full_description = "But, hey, remember that it's a challenge to yourself by yourself. It's your challenge. You can do a soft Devember, if you think so, and make it yours. Remember what Devember really is. Programming for at least 1 hour. Updating a public devlog about the code done. Updating a public repository with the code done. I, *insert name*, will participate to the next Devember. My Devember will be *insert objective*. I promise I will program for my Devember for at least an hour, every day of the next December. I will also write a daily public devlog and will make the produced code publicly available on the internet. No matter what, I will keep my promise. *here describe your Devember* In the final section describe more in the detail what your Devember will be. What guide, or book, will you be following. What language, libraries, tools will you be using. What are your plans. You can have the same Devember together with other people! If so write their names in this section. Put your contract somewhere public. It can be your blog, your Facebook, your Tumblr, your Devember devlog, etc."
+year_published = 2025
+clearnet = "https://devember.org/rules"
+tags = ["#devember", "activity", "contract", "duration", "rules", "rules?", "summary", "wait,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blogger.com", "codecombat.com", "copy.com", "detectmobilebrowsers.com", "dropbox.com", "getbootstrap.com", "gist.github.com", "git-scm.com", "github.com", "google.com", "jquery.com", "learncodethehardway.org", "mega.co.nz", "ocw.mit.edu", "reddit.com", "salvattore.com", "tumblr.com", "twitter.com", "udacity.com", "zenorocha.github.io"]

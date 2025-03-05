@@ -1,0 +1,116 @@
+["https://nasm.us/docs.php"]
+title = "NASM"
+description = "The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture, used by developers worldwide"
+full_description = "The NASM documentation is auto-generated on every new release (including release candidates, that named -rc) and accessible either online or in various offline archives. Such archives provide documentation in the following formats: PDF, PostScript, plain text, HTML and info."
+author = "Netwide Assembler (NASM) Team"
+year_published = 2025
+clearnet = "https://nasm.us/docs.php"
+tags = ["2.16.03", "assembler", "assembly language", "documentation", "downloadable", "nasm", "online"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["http://www.nasm.us/pub/nasm/releasebuilds/2.16.03"]
+title = "Index of /pub/nasm/releasebuilds/2.16.03"
+description = "Description"
+year_published = 2025
+clearnet = "http://www.nasm.us/pub/nasm/releasebuilds/2.16.03"
+tags = ["index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.nasm.us", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["https://nasm.us/patches.php"]
+title = "NASM"
+description = "The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture, used by developers worldwide"
+full_description = "The NASM project uses the GIT version control system. We prefer receiving well-formatted patches that can be seamlessly merged into the repository with minimal effort. To improve tracking of who did what we've introduced a sign-off procedure on patches that are being emailed around. The sign-off is a simple line at the end of the explanation for the patch, which certifies that you wrote it or otherwise have the right to pass it on as open-source patch. (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it. (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved. From: Random J Developer <random@developer.example.org> Subject: [PATCH] Short patch description Long patch description (could be skipped if the patch is trivial enough) Signed-off-by: Random J Developer <random@developer.example.org>"
+author = "Netwide Assembler (NASM) Team"
+year_published = 2025
+clearnet = "https://nasm.us/patches.php"
+tags = ["assembler", "assembly language", "certificate", "developer's", "example", "message", "nasm", "origin", "patch", "patches"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "git-scm.com", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["https://www.nasm.us/pub/nasm/releasebuilds"]
+title = "Index of /pub/nasm/releasebuilds"
+description = "Description"
+year_published = 2025
+clearnet = "https://www.nasm.us/pub/nasm/releasebuilds"
+tags = ["/pub/nasm/releasebuilds", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "git-scm.com", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["http://www.nasm.us/pub/nasm/releasebuilds"]
+title = "Index of /pub/nasm/releasebuilds"
+description = "Description"
+year_published = 2025
+clearnet = "http://www.nasm.us/pub/nasm/releasebuilds"
+tags = ["/pub/nasm/releasebuilds", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "git-scm.com", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["http://www.nasm.us/pub/nasm/snapshots"]
+title = "Index of /pub/nasm/snapshots"
+description = "Description"
+year_published = 2025
+clearnet = "http://www.nasm.us/pub/nasm/snapshots"
+tags = ["/pub/nasm/snapshots", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.nasm.us", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["https://nasm.us/index.php"]
+title = "NASM"
+description = "The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture, used by developers worldwide"
+full_description = "This is the project webpage for the Netwide Assembler (NASM), an assembler for the x86 CPU architecture portable to nearly every modern platform, and with code generation for many platforms old and new. As of version 2.07, NASM is now under the Simplified (2-clause) BSD license. The details of the license are available in the documentation. For users of RPM-based Linux distributions (e.g. Fedora, Red Hat, SUSE, ...), you can download the official NASM builds using dnf or yum by installing nasm.repo in your /etc/yum/yum.repos.d directory. NASM was originally developed by Simon Tatham and Julian Hall, and is now maintained by a team led by H. Peter Anvin. We're looking for your comments, suggestions and, of course, bug-reports. Report any suspicious behavior you encounter to help us improve the NASM for everyone! Don't worry if your report is not immediately addressed, even within the first few days, as this is usual for us. Your report will, however, be recorded and dealt with, of course, as time permits."
+author = "Netwide Assembler (NASM) Team"
+year_published = 2025
+clearnet = "https://nasm.us/index.php"
+tags = ["/dev/null", "aren't", "assembler", "assembly language", "change", "development", "going", "infrastructure", "latest", "license"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["https://nasm.us"]
+title = "NASM"
+description = "The Netwide Assembler (NASM) is an assembler and disassembler for the Intel x86 architecture, used by developers worldwide"
+full_description = "This is the project webpage for the Netwide Assembler (NASM), an assembler for the x86 CPU architecture portable to nearly every modern platform, and with code generation for many platforms old and new. As of version 2.07, NASM is now under the Simplified (2-clause) BSD license. The details of the license are available in the documentation. For users of RPM-based Linux distributions (e.g. Fedora, Red Hat, SUSE, ...), you can download the official NASM builds using dnf or yum by installing nasm.repo in your /etc/yum/yum.repos.d directory. NASM was originally developed by Simon Tatham and Julian Hall, and is now maintained by a team led by H. Peter Anvin. We're looking for your comments, suggestions and, of course, bug-reports. Report any suspicious behavior you encounter to help us improve the NASM for everyone! Don't worry if your report is not immediately addressed, even within the first few days, as this is usual for us. Your report will, however, be recorded and dealt with, of course, as time permits."
+author = "Netwide Assembler (NASM) Team"
+year_published = 2025
+clearnet = "https://nasm.us"
+tags = ["/dev/null", "aren't", "assembler", "assembly language", "change", "development", "going", "infrastructure", "latest", "license"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.nasm.us", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org"]
+
+["https://nasm.us/nasm.repo"]
+title = ""
+year_published = 2025
+clearnet = "https://nasm.us/nasm.repo"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["http://www.nasm.us/pub/nasm/snapshots/latest"]
+title = "Index of /pub/nasm/snapshots/latest"
+description = "Description"
+year_published = 2025
+clearnet = "http://www.nasm.us/pub/nasm/snapshots/latest"
+tags = ["/pub/nasm/snapshots/latest", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugzilla.nasm.us", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]
+
+["https://nasm.us/doc/nasmdocc.html"]
+title = "NASM - The Netwide Assembler"
+full_description = "Make the documentation stronger that -O0 or -O1 are probably not what the user wants. See section 2.1.24. Fix a number of issues when building from source, mostly involving configure or dependency generation. In particular, more aggressively avoid cross-compilation problems on Unix/Linux systems automatically invoking WINE. We could end up invoking WINE even when we didn't want to, making configure think it was running native when in fact cross-compiling. Windows host: add embedded manifest file. Without a manifest, Windows applications force a fixed PATH_MAX limit to any pathname; this is unnecessary. Add support for Flexible Return and Exception Delivery (FRED): the LKGS, ERETS and ERETU instructions. Preprocessor: allow the user to specify the desired radix for an evaluated parameter. It doesn't make any direct difference, but can be nice for debugging or turning into strings. See the = modifier in section 4.2.1. Documentation: correct a minor problem in the expression grammar for Dx statements, see section 3.2.1. Preprocessor: add a %hex() function, equivalent to %eval() except that it producess hexadecimal values that are nevertheless valid NASM numeric constants, see section 4.4.5. Preprocessor: fix the parameter number in error messages (should be 1-based, like %num references to multi-line macro arguments.) Documentation: be more clear than the bin format is simply a linker built into NASM. See section 8.1. LOCK XCHG reg,mem would issue a warning for being unlockable, which is incorrect. In this case the reg,mem encoding is simply an alias for the mem,reg encoding. However, XCHG is always locked, so create a new warning (-w+prefix-lock-xchg) to explicitly flag a user-specified LOCK XCHG; default off. Future versions of NASM may remove the LOCK prefix when optimization is enabled. Some target environments may have specific restrictions on what kinds of relocations are possible or allowed. The --reproducible option now leaves the filename field in the COFF object format blank. This was always rather useless since it is only 18 characters long; as such debug formats have to carry their own filename information anyway."
+year_published = 2025
+clearnet = "https://nasm.us/doc/nasmdocc.html"
+tags = ["0.98", "2.16.03", "appendix", "assembler", "history", "nasm", "netwide", "series", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.nasm.us", "bugzilla.nasm.us", "cpan.org", "forum.nasm.us", "github.com", "lists.nasm.us", "opensource.org", "repo.or.cz"]

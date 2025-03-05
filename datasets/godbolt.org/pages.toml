@@ -2,11 +2,10 @@
 title = "Libraries"
 year_published = 2025
 clearnet = "https://godbolt.org/admin/libraries.html"
-category = "SitesList"
 tags = []
 language = "en"
 internal-references = ["none"]
-external-references = ["bsky.app", "conan.io", "cppinsights.io", "github.com", "groups.google.com", "hachyderm.io", "patreon.com", "paypal.com", "quick-bench.com", "stats.compiler-explorer.com", "xania.org"]
+external-references = ["bsky.app", "conan.compiler-explorer.com", "conan.io", "cppinsights.io", "github.com", "groups.google.com", "hachyderm.io", "patreon.com", "paypal.com", "quick-bench.com", "stats.compiler-explorer.com", "xania.org"]
 
 ["https://godbolt.org"]
 title = "Compiler Explorer"
@@ -14,7 +13,6 @@ description = "Compiler Explorer is an interactive online compiler which shows t
 author = "Matt Godbolt"
 year_published = 2025
 clearnet = "https://godbolt.org"
-category = "SitesList"
 tags = ["0.25s", "alert", "browser-local", "compiler", "compilers", "detailed", "editor", "enter", "examples:", "explorer"]
 language = "en"
 internal-references = ["none"]

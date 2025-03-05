@@ -1,0 +1,38 @@
+["https://cachix.org/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 919e77375cf713f2 • Your IP: Click to reveal 134.195.88.131 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://cachix.org/cdn-cgi/l/email-protection"
+tags = ["919e77375cf713f2", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.cachix.org", "cache.nixos.org", "cal.com", "calmfund.com", "cloudflare.com", "docs.cachix.org", "github.com", "iubenda.com", "nix.dev", "scrive.com", "status.cachix.org", "support.cloudflare.com", "twitter.com"]
+
+["https://cachix.org"]
+title = "Cachix - Nix binary cache hosting"
+description = "Cachix - Nix Binary Cache hosting infrastructure"
+full_description = "Never build software twice. Leverage the Nix ecosystem to share binaries between CI, development and deployment environments. Get started Schedule a call Trusted by many businesses Share binaries between all environments Cachix provides a few different ways to share binaries: $ cachix push mycache $ cachix watch-store mycache $ cachix watch-exec mycache nix-build Learn more. Use your binaries seamlessly Run $ cachix use mycache to configure Nix and you're all set! Use auth tokens to protect read access to your binary cache: $ cachix authtoken AUTH-TOKEN. Build faster Everything you need to share binaries. Set up your Nix infrastructure in a few minutes and avoid maintenance work. Garbage Collection To prevent your cache from growing indefinitely, least recently used entries are collected once you reach your storage limit. Access Management Grant your team members write and/or read access to a cache. Allows revoking the token at any time. Continuous Integration Guides Learn how to integrate Cachix with your favorite CI to start sharing binaries. Fast Comes with a number of optimizations to speed up binary cache roundtrips. Deduplication To save space, entries from cache.nixos.org are not stored in your cache. Content Delivery Network Cloudflare CDN enables performance and unlimited bandwidth on all plans. Widely used by the Nix community From Open Source projects to established businesses. Developers 9187 Transferred last month 293 TB Binary Caches 6215 Ready to get started? Get in touch or create an account. Schedule a call Get started"
+year_published = 2025
+clearnet = "https://cachix.org"
+tags = ["access", "account.", "between", "binaries", "build", "cachix", "collection", "community", "company", "continuous"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.cachix.org", "cache.nixos.org", "cal.com", "calmfund.com", "cloudflare.com", "docs.cachix.org", "github.com", "iubenda.com", "nix.dev", "scrive.com", "status.cachix.org", "twitter.com"]
+
+["https://cachix.org/login"]
+title = "Cachix - Nix binary cache hosting"
+year_published = 2025
+clearnet = "https://cachix.org/login"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.cachix.org", "cache.nixos.org", "cal.com", "calmfund.com", "cloudflare.com", "docs.cachix.org", "github.com", "iubenda.com", "nix.dev", "scrive.com", "status.cachix.org", "support.cloudflare.com", "twitter.com"]
+
+["https://cachix.org/signup"]
+title = "Cachix - Nix binary cache hosting"
+year_published = 2025
+clearnet = "https://cachix.org/signup"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.cachix.org", "cache.nixos.org", "cal.com", "calmfund.com", "cloudflare.com", "docs.cachix.org", "github.com", "iubenda.com", "nix.dev", "scrive.com", "status.cachix.org", "support.cloudflare.com", "twitter.com"]

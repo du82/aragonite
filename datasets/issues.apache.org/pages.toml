@@ -1,0 +1,46 @@
+["https://issues.apache.org/jira/issues"]
+title = "Issue Navigator - ASF JIRA"
+full_description = 'Export Tools Export - CSV (All fields) Export - CSV (Current fields) Choose a delimiter Comma (,) Semicolon (;) Vertical bar (|) Caret (^) Export Cancel (function() { var navigatorSidebarElement = jQuery(".navigator-sidebar"); if (JIRA.Issues.FilterPanelModel) { navigatorSidebarElement.toggleClass("collapsed", !JIRA.Issues.FilterPanelModel.prototype.isExpanded()) if (JIRA.Issues.FilterPanelModel.prototype.isExpanded()) { navigatorSidebarElement.css({ width: JIRA.Issues.FilterPanelModel.prototype.getWidth() }); } } })(); Export Tools Export - CSV (All fields) Export - CSV (Current fields) Choose a delimiter Comma (,) Semicolon (;) Vertical bar (|) Caret (^) Export Cancel [{"id":-1,"name":"My open issues","jql":"assignee = currentUser() AND resolution = Unresolved order by updated DESC","isSystem":true,"sharePermissions":[],"requiresLogin":true},{"id":-2,"name":"Reported by me","jql":"reporter = currentUser() order by created DESC","isSystem":true,"sharePermissions":[],"requiresLogin":true},{"id":-4,"name":"All issues","jql":"order by created DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-5,"name":"Open issues","jql":"resolution = Unresolved order by priority DESC,updated DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-9,"name":"Done issues","jql":"statusCategory = Done order by updated DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-3,"name":"Viewed recently","jql":"issuekey in issueHistory() order by lastViewed DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-6,"name":"Created recently","jql":"created >= -1w order by created DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-7,"name":"Resolved recently","jql":"resolutiondate >= -1w order by updated DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false},{"id":-8,"name":"Updated recently","jql":"updated >= -1w order by updated DESC","isSystem":true,"sharePermissions":[],"requiresLogin":false}] 0.3 0'
+year_published = 2025
+clearnet = "https://issues.apache.org/jira/issues"
+tags = ["disabled", "export", "order", "updated"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "atlassian.com", "bugs.php.net", "docs.atlassian.com", "httpd.apache.org", "projects.apache.org", "selfserve.apache.org", "spamassassin.apache.org"]
+
+["https://issues.apache.org/ooo"]
+title = "Apache OpenOffice (AOO) Bugzilla Main Page"
+year_published = 2025
+clearnet = "https://issues.apache.org/ooo"
+tags = ["apache", "authentication,", "browser", "bugzilla", "enabled.", "login", "note:", "notes:", "openoffice", "please"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "atlassian.com", "bugs.php.net", "docs.atlassian.com", "httpd.apache.org", "projects.apache.org", "selfserve.apache.org", "spamassassin.apache.org"]
+
+["https://issues.apache.org/bugzilla"]
+title = "ASF Bugzilla Main Page"
+year_published = 2025
+clearnet = "https://issues.apache.org/bugzilla"
+tags = ["authentication,", "browser", "bugzilla", "enabled.", "login", "note:", "notes:", "please", "supports", "sure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bugs.php.net", "httpd.apache.org", "projects.apache.org", "spamassassin.apache.org"]
+
+["https://issues.apache.org/SpamAssassin"]
+title = "SA Bugzilla Main Page"
+year_published = 2025
+clearnet = "https://issues.apache.org/SpamAssassin"
+tags = ["bugzilla", "note:", "please", "welcome"]
+language = "en"
+internal-references = ["none"]
+external-references = ["httpd.apache.org", "projects.apache.org", "spamassassin.apache.org"]
+
+["https://issues.apache.org"]
+title = "issues.apache.org"
+full_description = "Apache currently hosts two different issue tracking systems, Bugzilla and Jira. Projects may use Github for issue tracking instead. To find out how to report an issue for a particular project, please visit the project resource listing or check the relevant project website."
+year_published = 2025
+clearnet = "https://issues.apache.org"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["projects.apache.org"]

@@ -1,0 +1,65 @@
+["https://abseil.io/about/compatibility"]
+title = "abseil / Abseil Compatibility Guidelines"
+description = "©2017 Abseil | Live at Head"
+full_description = "In general, we avoid making backwards incompatible changes to our C++ APIs (see below for the definition of “API”). Sometimes such changes yield benefits to our customers, in the form of better performance, easier-to-understand APIs, and/or more consistent APIs. When these benefits warrant it, we will announce these changes prominently in our commit messages as well as in the release notes for LTS releases. Nevertheless, we have found that at scale, every change is potentially a breaking change for some user. Though we take reasonable efforts to prevent this, it is possible that backwards incompatible changes go undetected and, therefore, undocumented. We apologize if this is the case and welcome feedback or bug reports to rectify the problem. Users following our recommended live-at-head approach should always be able to temporarily pin their builds to a previous commit in our Git history. Each LTS release should be considered to be a new major version of the library. Previous LTS releases of the library will remain available on the GitHub Releases page. In many cases, you will be able to use an older version even if a newer version has changes that you are unable (or do not have time) to adopt. We request that our users adhere to the following guidelines to avoid accidentally depending on parts of the library we do not consider to be part of the public API and therefore may change (including removal) without notice: By “API” we mean the C++ API exposed by Abseil’s public header files. We are also talking only about API stability – the ABI is subject to change without notice. You should not assume that binary artifacts (e.g. static libraries, shared objects, dynamically loaded libraries, object files) created with one version of the library are usable with newer/older versions of the library. The ABI may, and does, change on “minor revisions”, and even patch releases. Applications developers interact with a C++ library through more than just the C++ symbols and headers. They also need to reference the name of the library in their build scripts. Depending on the build system they use this may be a CMake target, a Bazel rule, a pkg-config module, or just the name of some object in the file system."
+year_published = 2025
+clearnet = "https://abseil.io/about/compatibility"
+tags = ["abseil", "absl.", "apis.", "argument-dependent", "avoid", "bazel", "calling", "calls", "cmake", "comments"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bazel.build", "github.com", "hyrumslaw.com", "opensource.google", "policies.google.com", "stackoverflow.com", "twitter.com"]
+
+["https://abseil.io"]
+title = "abseil / abseil.io"
+description = "©2017 Abseil | Live at Head"
+full_description = "Google has developed many abstractions that either match or closely match features incorporated into C++14, C++17, and beyond. Using the Abseil versions of these abstractions allows you to access these features now, even if your code is not yet ready for life in a post C++11 world. If your code behaves according to our compatibility guidelines, we will do our best not to break you. The libraries we are releasing come with a pedigree: many years of experience using these APIs in Google’s production environments. We’ve seen what works and what doesn’t, what designs lead to bugs, performance problems, and misuse. What you see here is what we found to be a good balance between simplicity and meeting the needs of production use and an ever-evolving codebase. If your use cases are “normal” (or at least, in-line with what we’ve found to be normal), Abseil provides a useful counterpoint to the designs chosen by the C++ standard. When we put out something that conflicts with the standard, we’ll be clear about why we are diverging and try our best to remain interoperable."
+year_published = 2025
+clearnet = "https://abseil.io"
+tags = ["compatibility", "design", "experience", "head", "live", "priorities", "production", "programming?", "standard", "start"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "policies.google.com", "stackoverflow.com", "twitter.com"]
+
+["https://abseil.io/about"]
+title = "abseil / About Abseil"
+description = "©2017 Abseil | Live at Head"
+full_description = "Abseil is an open source collection of C++ libraries drawn from the most fundamental pieces of Google’s internal codebase. These libraries are the nuts-and-bolts that underpin almost everything Google runs. Bits and pieces of these APIs are embedded in most of our open source projects, and Abseil aims to bring them together into one comprehensive project. Abseil encompasses the most basic building blocks of Google’s codebase: code that is production-tested and will be fully maintained for years to come. Our primary purpose in releasing Abseil is to more easily support Google open source projects sharing their C++ code outside of Google. In some cases, Abseil provides pieces missing from the C++ standard; in others, Abseil provides alternatives to the standard for particular use cases we’ve needed in the Google codebase. We denote those cases clearly within the library code we provide you. Abseil is not meant to be competitor to any standard library code; we’ve just found that many of these utilities serve a purpose within our codebase, and we now want to provide those resources to the C++ community as a whole."
+year_published = 2025
+clearnet = "https://abseil.io/about"
+tags = ["abseil"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "policies.google.com", "stackoverflow.com", "twitter.com"]
+
+["https://abseil.io/about/intro"]
+title = "abseil / Introduction to Abseil"
+description = "©2017 Abseil | Live at Head"
+full_description = "Welcome to Abseil! Abseil is an open-source collection of C++ code (compliant to C++14) designed to augment the C++ standard library. This document introduces Abseil and provides an overview of the code we’re providing. The Abseil C++ library is licensed under the terms of the Apache license. See LICENSE for more information."
+year_published = 2025
+clearnet = "https://abseil.io/about/intro"
+tags = ["abseil", "codemap", "contents", "introduction", "license", "links", "table"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bazel.build", "github.com", "hyrumslaw.com", "opensource.google", "policies.google.com", "stackoverflow.com", "twitter.com"]
+
+["https://abseil.io/about/design"]
+title = "abseil / Design Notes"
+description = "©2017 Abseil | Live at Head"
+full_description = "A lot of design work has gone into the code we’re releasing within the Abseil codebase. We’ll be sharing several of our design decisions here, and we’ll be adding more design notes in the future."
+year_published = 2025
+clearnet = "https://abseil.io/about/design"
+tags = ["absl::mutex", "absl::strformat", "b-tree", "charconv", "design", "library", "maps", "notes", "pre-adopted", "random"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bazel.build", "github.com", "hyrumslaw.com", "opensource.google", "policies.google.com", "stackoverflow.com", "twitter.com"]
+
+["https://abseil.io/about/philosophy"]
+title = "abseil / Why Adopt Abseil?"
+description = "©2017 Abseil | Live at Head"
+full_description = "There are a few main reasons we recommend Abseil as your first choice for utility code when starting a new C++ project: The extent to which any of these arguments applies to your project will depend on lots of things: we don’t claim that Abseil is a silver bullet, or a perfect solution for everyone’s problems. On the other hand, these libraries have grown inside Google for many years and we’ve learned a lot in their evolution. We know that these libraries and our upgrade policies can be a good solution for some types of problems that are important in the industry, and over time we’ve learned how to provide this sort of infrastructure in an evolving but maintainable fashion. Google has developed many abstractions that either match or closely match features incorporated into C++14, C++17, and beyond. Using the Abseil versions of these abstractions allows you to access these features now, even if your code is not yet ready for life in a post C++11 world. Take C++17’s std::string_view for example: this type was proposed for standardization largely based on Google’s experience with an internal type we called StringPiece. We’ve done extensive work internally to mutate our StringPiece type to have the same API as string_view, and now we are publishing it with Abseil - not as std::string_view, but as absl::string_view. Why would we do that? Doesn’t that mean there are now two near-identical types? Won’t this cause confusion? We think not: if you look at the preprocessor conditional structure in our string_view.h you’ll see that we are trying to identify whether your C++ installation has std::string_view. If you do, absl::string_view is defined only as an alias to the standard type. If you don’t, you get a C++11/C++14 compatible implementation of the type. This means you can adopt Abseil, and for types we are “pre-releasing” you can use the type from the absl namespace. As soon as your project is built with the appropriate compiler/standard library version, we’ll fall away and leave you with the standard type, albeit spelled funny. Better: as soon as you know that your project will only build with the appropriate language version you can run tools that we will provide to change the places that refer to absl::string_view to spell it std::string_view — since those are the same type, this is safe to do, even across API boundaries."
+year_published = 2025
+clearnet = "https://abseil.io/about/philosophy"
+tags = ["abseil?", "adopt", "choose", "compatibility", "current", "design", "different", "experience", "future", "google"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bazel.build", "github.com", "hyrumslaw.com", "opensource.google", "policies.google.com", "stackoverflow.com", "twitter.com"]

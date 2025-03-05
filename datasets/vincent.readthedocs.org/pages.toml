@@ -1,0 +1,9 @@
+["https://vincent.readthedocs.org"]
+title = "Vincent: A Python to Vega Translator — Vincent 0.4 documentation"
+full_description = "The folks at Trifacta are making it easy to build visualizations on top of D3 with Vega. Vincent makes it easy to build Vega with Python. Vincent allows you to build Vega specifications in a Pythonic way, and performs type-checking to help ensure that your specifications are correct. It also has a number of convenience chart-building methods that quickly turn Python data structures into Vega visualization grammar, enabling graphical exploration. It allows for quick iteration of visualization designs via getters and setters on grammar elements, and outputs the final visualization to JSON. Perhaps most importantly, Vincent has Pandas-Fu, and is built specifically to allow for quick plotting of DataFrames and Series."
+year_published = 2025
+clearnet = "https://vincent.readthedocs.org"
+tags = ["concept¶", "python", "translator¶", "vega", "vincent:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["sphinx.pocoo.org"]

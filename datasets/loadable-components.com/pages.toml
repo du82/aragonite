@@ -1,0 +1,229 @@
+["https://loadable-components.com"]
+title = "Loadable Components - React code splitting"
+description = "The recommended Code Splitting library for React."
+year_published = 2025
+clearnet = "https://loadable-components.com"
+tags = ["code", "components", "easy.", "features", "loadable", "made", "react", "splitting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/api-loadable-server"]
+title = "@loadable/server - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''@loadable/serverChunkExtractorUsed to collect chunks server-side and get them as script tags or script elements.ArgumentsDescriptionoptionsAn object options.options.statsFileStats file path generated using @loadable/webpack-plugin.options.statsStats generated using @loadable/webpack-plugin.options.entrypointsWebpack entrypoints to load (default to ["main"]).options.outputPathOptional output path (for functions using the file system, like requireEntrypoint).options.namespaceNamespace of your application (use only if you have several React apps on the same page).options.inputFileSystemFile system used to read files (default to fs).options.publicPathThe public path used at runtime.You must specify either statsFile or stats to be able to use ChunkExtractor.Using statsFile will automatically reload stats for you if they change.import { ChunkExtractor } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const chunkExtractor = new ChunkExtractor({ statsFile })chunkExtractor.collectChunksWrap your application in a ChunkExtractorManager.ArgumentsDescriptionelementJSX element that will be wrapped in ChunkExtractorManager.const app = chunkExtractor.collectChunks(<YourApp />)chunkExtractor.requireEntrypointRequire the entrypoint of your application as a commonjs module.ArgumentsDescriptionnameOptional name the entrypoint, default to the first one (main).const { default: App } = chunkExtractor.requireEntrypoint()const app = <App />chunkExtractor.getScriptTagsGet scripts as a string of <script> tags.ArgumentsDescriptionattributes or attrFnOptional attributes added to script tags, or a function that receives a chunk and returns the attributes.const body = `<body><div id="root">${html}</div>${chunkExtractor.getScriptTags()}</body>`chunkExtractor.getScriptElementsGet scripts as an array of React <script> elements.ArgumentsDescriptionattributes or attrFnOptional attributes added to script elements, or a function that receives a chunk and returns the attributes.const body = renderToString( <body> <div id="root" dangerouslySetInnerHtml={{ __html: html }} /> {chunkExtractor.getScriptElements()} </body>,)chunkExtractor.getLinkTagsGet "prefetch" and "preload" links as a string of <link> tags.ArgumentsDescriptionattributes or attrFnOptional attributes added to link tags, or a function that receives a chunk and returns the attributes.const head = `<head>${chunkExtractor.getLinkTags()}</head>`chunkExtractor.getLinkElementsGet "prefetch" and "preload" links as an array of React <link> elements.ArgumentsDescriptionattributes or attrFnOptional attributes added to link elements, or a function that receives a chunk and returns the attributes.const head = renderToString(<head>{chunkExtractor.getLinkElements()}</head>)chunkExtractor.getStyleTagsGet style links as a string of <link> tags.ArgumentsDescriptionattributes or attrFnOptional attributes added to style tags, or a function that receives a chunk and returns the attributes.const head = `<head>${chunkExtractor.getStyleTags()}</head>`chunkExtractor.getStyleElementsGet style links as an array of React <link> elements.const head = renderToString(<head>{chunkExtractor.getStyleElements()}</head>)chunkExtractor.getInlineStyleTagsGet inline style links as a string of <link> tags (returns a promise).ArgumentsDescriptionattributes or attrFnOptional attributes added to style tags, or a function that receives a chunk and returns the attributes.chunkExtractor.getInlineStyleTags().then((styleTags) => { const head = `<head>${styleTags}</head>`}chunkExtractor.getInlineStyleElementsGet inline style links as an array of React <link> elements (returns a promise).ArgumentsDescriptionattributes or attrFnOptional attributes added to style elements, or a function that receives a chunk and returns the attributes.chunkExtractor.getInlineStyleElements().then((styleElements) => { const head = renderToString(<head>{styleElements}</head>)}chunkExtractor.getCssStringGet css as a raw string for using directly within app (e.g. in custom AMP style tag)chunkExtractor.getCssString().then((cssString) => { const head = renderToString( <head> <style dangerouslySetInnerHTML={{ __html: cssString }} /> </head> )}ChunkExtractorManagerUsed to inject a ChunkExtractor in the context of your application.import { ChunkExtractor, ChunkExtractorManager } from '@loadable/server'const extractor = new ChunkExtractor()const app = ( <ChunkExtractorManager extractor={extractor}> <YourApp /> </ChunkExtractorManager>)'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/api-loadable-server"
+tags = ["@loadable/server", "added", "array", "attrfnoptional", "attributes", "attributes.const", "chunk", "chunkextractor", "chunkextractor.collectchunks", "chunkextractor.getcssstring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/timeout"]
+title = "Timeout - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "TimeoutInfinite loading is not good for user experience, to avoid it implementing a timeout is a good workaround. You can do it using a third party module like promise-timeout:import loadable from '@loadable/component'import { timeout } from 'promise-timeout'// Wait a maximum of 2s before sending an error.export const OtherComponent = loadable(() => timeout(import('./OtherComponent'), 2000)) Infinite loading is not good for user experience, to avoid it implementing a timeout is a good workaround. You can do it using a third party module like promise-timeout:"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/timeout"
+tags = ["components", "guides", "introduction", "loadable", "timeout"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "css-tricks.com", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/suspense"]
+title = "Suspense - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Suspense@loadable/component exposes a lazy method that acts similarly as React.lazy one.import React, { Suspense } from 'react'import { lazy } from '@loadable/component'const OtherComponent = lazy(() => import('./OtherComponent'))function MyComponent() { return ( <div> <Suspense fallback={<div>Loading...</div>}> <OtherComponent /> </Suspense> </div> )}Use lazy.lib for libraries.⚠️ Suspense is not yet available for server-side rendering."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/suspense"
+tags = ["components", "guides", "introduction", "loadable", "suspense"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "css-tricks.com", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/faq"]
+title = "Frequently Asked Questions - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Frequently Asked QuestionsWhich react versions are supported?As defined in peer dependencies, Loadable Components supports React v16.3+.Which webpack versions are supported?As defined in peer dependencies, Loadable Components supports webpack v4.6+.Which browsers are supported?Loadable Components supports the same set of browsers as the current React version.v5.x (React v16.3+): IE11, IE 9+ (with Map + Set polyfills), all evergreen browsersEvergreen browsers include Chrome and Firefox (and derivatives) as they can be updated regardless of operating system version. Edge and Safari should both also work fine since all versions for the last several years support the relevant APIs.Can I use Loadable Components with server-side rendering of React on top of Ruby on Rails?Yes. It works with React on Rails, but it requires React on Rails Pro. High traffic sites using React on Rails Pro with Loadable Components are popmenu.com and egghead.io."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/faq"
+tags = ["asked", "browsers", "components", "frequently", "guides", "introduction", "loadable", "questions", "rails?", "react"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/error-boundaries"]
+title = "Error boundaries - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Error BoundariesIf the other module fails to load (for example, due to network failure), it will trigger an error. You can handle these errors to show a nice user experience and manage recovery with Error Boundaries. Once you’ve created your Error Boundary, you can use it anywhere above your lazy components to display an error state when there’s a network error.import MyErrorBoundary from './MyErrorBoundary'const OtherComponent = loadable(() => import('./OtherComponent'))const AnotherComponent = loadable(() => import('./AnotherComponent'))const MyComponent = () => ( <div> <MyErrorBoundary> <section> <OtherComponent /> <AnotherComponent /> </section> </MyErrorBoundary> </div>)"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/error-boundaries"
+tags = ["boundaries", "components", "error", "guides", "introduction", "loadable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/fallback"]
+title = "Fallback without Suspense - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Fallback without SuspenseYou can specify a fallback in loadable options.const OtherComponent = loadable(() => import('./OtherComponent'), { fallback: <div>Loading...</div>,})function MyComponent() { return ( <div> <OtherComponent /> </div> )}You can also specify a fallback in props:const OtherComponent = loadable(() => import('./OtherComponent'))function MyComponent() { return ( <div> <OtherComponent fallback={<div>Loading...</div>} /> </div> )}"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/fallback"
+tags = ["components", "fallback", "guides", "introduction", "loadable", "suspense", "without"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/code-splitting"]
+title = "Code Splitting? - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''Code Splitting?Code Splitting is an efficient way to reduce your bundle size: it speeds up the loading of your application and reduces the payload size of your application.Bundling is great, but as your app grows, your bundle will grow too. Especially if you are including large third-party libraries. You need to keep an eye on the code you are including in your bundle so that you don’t accidentally make it so large that your app takes a long time to load.To avoid winding up with a large bundle, it’s good to get ahead of the problem and start “splitting” your bundle. Code-Splitting is a feature supported by bundlers like Webpack and Browserify (via factor-bundle) which can create multiple bundles that can be dynamically loaded at runtime.Code-splitting your app can help you “lazy-load” just the things that are currently needed by the user, which can dramatically improve the performance of your app. While you haven’t reduced the overall amount of code in your app, you’ve avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.import()The best way to introduce code-splitting into your app is through the dynamic import() syntax.Before:import { add } from './math'console.log(add(16, 26))After:import('./math').then(math => { console.log(math.add(16, 26))})Note: The dynamic import() syntax is a ECMAScript (JavaScript) proposal not currently part of the language standard. It is expected to be accepted in the near future.When Webpack comes across this syntax, it automatically starts code-splitting your app.If you’re setting up Webpack yourself, you’ll probably want to read Webpack’s guide on code splitting.When using Babel, you’ll need to make sure that Babel can parse the dynamic import syntax but is not transforming it. For that you will need @babel/plugin-syntax-dynamic-import.Named import()Webpack's default behaviour, is to name them as x.js where x is an incremental number depending on how many dynamic chunks you are importing in your code.This will give a poor view of which file is loading what code.To fix that, webpack introduced magic comments, with which a chunk can be named as follows (ie: math.js). import(/* webpackChunkName: "math" */ './math').then(math => { console.log(math.add(16, 26))})NOTE: When using Server Side Rendering, make sure comment and file path are exactly in the same order as above.Code Splitting + ReactReact supports code splitting out of the box with React.lazy. However it has some limitations, this is why @loadable/component exists.In a React application, most of the time you want to split your components. Splitting a component implies the ability to wait for this component to be loaded (showing a fallback during loading) but also to handle errors.Example of component splitting:import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))function MyComponent() { return ( <div> <OtherComponent /> </div> )}'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/code-splitting"
+tags = ["after:", "before:", "code", "component", "components", "dynamic", "example", "guides", "introduction", "loadable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/dynamic-import"]
+title = "Full dynamic import - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''Full dynamic importWebpack accepts full dynamic imports, you can use them to create a reusable Loadable Component.import loadable from '@loadable/component'const AsyncPage = loadable(props => import(`./${props.page}`))function MyComponent() { return ( <div> <AsyncPage page="Home" /> <AsyncPage page="Contact" /> </div> )}Use a dynamic propertyIf you use Babel plugin, dynamic properties are supported out of the box. Else you have to add cacheKey function: it takes props and returns a cache key.import loadable from '@loadable/component'const AsyncPage = loadable(props => import(`./${props.page}`), { cacheKey: props => props.page,})function MyComponent() { const [page, setPage] = useState('Home') return ( <div> <button onClick={() => setPage('Home')}>Go to home</button> <button onClick={() => setPage('Contact')}>Go to contact</button> {page && <AsyncPage page={page} />} </div> )}'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/dynamic-import"
+tags = ["components", "dynamic", "full", "guides", "import", "introduction", "loadable", "property"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/server-side-rendering"]
+title = "Server Side Rendering - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''Server Side RenderingInstallnpm install @loadable/server && npm install --save-dev @loadable/babel-plugin @loadable/webpack-plugin# or using yarnyarn add @loadable/server && yarn add --dev @loadable/babel-plugin @loadable/webpack-pluginGuide1. Install @loadable/babel-plugin.babelrc{ "plugins": ["@loadable/babel-plugin"]}2. Install @loadable/webpack-pluginwebpack.config.jsconst LoadablePlugin = require('@loadable/webpack-plugin')module.exports = { // ... plugins: [new LoadablePlugin()],}3. Setup ChunkExtractor server-sideimport { ChunkExtractor } from '@loadable/server'// This is the stats file generated by webpack loadable pluginconst statsFile = path.resolve('../dist/loadable-stats.json')// We create an extractor from the statsFileconst extractor = new ChunkExtractor({ statsFile })// Wrap your application using "collectChunks"const jsx = extractor.collectChunks(<YourApp />)// Render your applicationconst html = renderToString(jsx)// You can now collect your script tagsconst scriptTags = extractor.getScriptTags() // or extractor.getScriptElements();// You can also collect your "preload/prefetch" linksconst linkTags = extractor.getLinkTags() // or extractor.getLinkElements();// And you can even collect your style tags (if you use "mini-css-extract-plugin")const styleTags = extractor.getStyleTags() // or extractor.getStyleElements();4. Add loadableReady client-sideLoadable components loads all your scripts asynchronously to ensure optimal performances. All scripts are loaded in parallel, so you have to wait for them to be ready using loadableReady.import { loadableReady } from '@loadable/component'loadableReady(() => { const root = document.getElementById('main') hydrate(<App />, root)})🚀 Checkout the complete example in this repositoryCollecting chunksThe basic API goes as follows:import { renderToString } from 'react-dom/server'import { ChunkExtractor } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const extractor = new ChunkExtractor({ statsFile })const html = renderToString(extractor.collectChunks(<YourApp />))const scriptTags = extractor.getScriptTags() // or extractor.getScriptElements();The collectChunks method wraps your element in a provider. Optionally you can use the ChunkExtractorManager provider directly, instead of this method. Just make sure not to use it on the client-side.import { renderToString } from 'react-dom/server'import { ChunkExtractor, ChunkExtractorManager } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const extractor = new ChunkExtractor({ statsFile })const html = renderToString( <ChunkExtractorManager extractor={extractor}> <YourApp /> </ChunkExtractorManager>,)const scriptTags = extractor.getScriptTags() // or extractor.getScriptElements();The extractor.getScriptTags() returns a string of multiple <script> tags marked as "async". You have to wait for them to be ready using loadableReady.Alternatively the ChunkExtractor also has a getScriptElements() method that returns an array of React elements.Streaming renderingLoadable is compatible with streaming rendering, if you use it you have to include script when the stream is complete.import { renderToNodeStream } from 'react-dom/server'import { ChunkExtractor } from '@loadable/server'// if you're using express.js, you'd have access to the response object "res"// typically you'd want to write some preliminary HTML, since React doesn't handle thisres.write('<html><head><title>Test</title></head><body>')const statsFile = path.resolve('../dist/loadable-stats.json')const chunkExtractor = new ChunkExtractor({ statsFile })const jsx = chunkExtractor.collectChunks(<YourApp />)const stream = renderToNodeStream(jsx)// you'd then pipe the stream into the response object until it's donestream.pipe(res, { end: false })// and finalize the response with closing HTMLstream.on('end', () => res.end(`${chunkExtractor.getScriptTags()}</body></html>`),)Streaming rendering is not compatible with prefetch <link> tags.PrefetchingWebpack prefetching is supported out of the box by Loadable. <link rel="preload"> and <link rel="prefetch"> can be added directly server-side to improve performances.import path from 'path'import { ChunkExtractor, ChunkExtractorManager } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const extractor = new ChunkExtractor({ statsFile })const jsx = extractor.collectChunks(<YourApp />)const html = renderToString(jsx)const linkTags = extractor.getLinkTags() // or chunkExtractor.getLinkElements();const html = `<html> <head>${linkTags}</head> <body> <div id="root">${html}</div> </body></html>`It only works with renderToString API. Since <link> must be added in the <head>, you can't do it using renderToNodeStream.CSSExtracted CSS using plugins like "mini-css-extract-plugin" are automatically collected, you can get them using getStyleTags or getStyleElements.import { renderToString } from 'react-dom/server'import { ChunkExtractor } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const extractor = new ChunkExtractor({ statsFile })const html = renderToString(extractor.collectChunks(<YourApp />))const styleTags = extractor.getStyleTags() // or extractor.getStyleElements();Disable SSR on a specific loadableDisable SSR on a specific loadable component with ssr: false:import loadable from '@loadable/component'// This dynamic import will not be processed server-sideconst Other = loadable(() => import('./Other'), { ssr: false })Override stats.publicPath at runtimeTo override stats.publicPath at runtime, pass in a custom publicPath to the ChunkExtractor constructor:import { ChunkExtractor } from '@loadable/server'const statsFile = path.resolve('../dist/loadable-stats.json')const extractor = new ChunkExtractor({ statsFile, publicPath: 'https://cdn.example.org/v1.1.0/',})ChunkExtractor entrypointsWhen running your build, notice @loadable/webpack-plugin generates a file called loadable-stats.json, which contains information about all your entries and chuncks from webpack.Once that's in place, ChunkExtractor will be responsible of finding your entries into this file.The default behaviour of webpack, is to create an asset called main.js if no named entry is specified, like so.webpack.config.jsmodule.exports = { entry: './src/index.js', // ...}Checkout webpack's entry naming configuration.ChunkExtractor will try to find your main.js, and will look into loadable-stats.json to confirm it's there.If for instance, your wish is to get a different named entry, you will need to pass an entrypoints option.const extractor = new ChunkExtractor({ statsFile, entrypoints: ['client'], // array of webpack entries (default: ['main'])})Using your own stats fileBy default, the webpack plugin adds an asset to the webpack build called loadable-stats.json. This contains the result of running webpack's stats.toJson() with the following options:{ hash: true, publicPath: true, assets: true, chunks: false, modules: false, source: false, errorDetails: false, timings: false,}stats.toJson() is an expensive operation, and it can significantly slow down webpack watching recompiles. If you already have a webpack stats file in your build that includes the necessary options, you may choose to use your existing stats object instead of creating a new one. You can do this as follows:pass your existing stats object into ChunkExtractor via the stats optiondisable both the outputAsset and writeToDisk options in the webpack plugin to prevent it from calling stats.toJson()'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/server-side-rendering"
+tags = ["'@loadable/server'const", "'react-dom/server'import", ".babelrc", "@loadable/babel-plugin", "@loadable/webpack-plugin", "checkout", "chunkextractor", "chunks", "client-side", "collecting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "css-tricks.com", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/prefetching"]
+title = "Prefetching - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''PrefetchingLoadable Components is fully compatible with webpack hints webpackPrefetch and webpackPreload.Most of the time, you want to "prefetch" a component, it means it will be loaded when the browser is idle. You can do it by adding /* webpackPrefetch: true */ inside your import statement.import loadable from '@loadable/component'const OtherComponent = loadable(() => import(/* webpackPrefetch: true */ './OtherComponent'),)You can extract prefetched resources server-side to add <link rel="prefetch"> in your head.Manually preload a componentIt is possible to force the preload of a component. It has the same effect as if the component is rendered for the first time.It can be useful to trigger a preload on mouse over:import loadable from '@loadable/component'const Infos = loadable(() => import('./Infos'))function App() { const [show, setShow] = useState(false) return ( <div> <a onMouseOver={() => Infos.preload()} onClick={() => setShow(true)}> Show Infos </a> {show && <Infos />} </div> )}preload is not available server-side, you should only call it client-side. If you want to use prefetching server-side, use webpack hints instead.preload is aggressive and doesn't take care of network condition and data saving preference of the user. You should call it carefully.'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/prefetching"
+tags = ["component", "components", "guides", "introduction", "loadable", "manually", "prefetching", "preload"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/api-loadable-component"]
+title = "@loadable/component - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''@loadable/componentloadableCreate a loadable component.ArgumentsDescriptionloadFnThe function call to load the component.optionsOptional options.options.resolveComponentFunction to resolve the imported component from the imported module.options.fallbackFallback displayed during the loading.options.ssrIf false, it will not be processed server-side. Default to true.options.cacheKeyCache key function (see dynamic import)import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))options.resolveComponentThis is a function that receives the imported module (what the import() call resolves to) and the props, and returns the component.The default value assumes that the component is exported as a default export. It can be customized to make a loadable component where the imported component is not the default export, or even where a different export is chosen depending on the props. For example:// components.jsexport const Apple = () => 'Apple!'export const Orange = () => 'Orange!'// loadable.jsconst LoadableApple = loadable(() => import('./components'), { resolveComponent: (components) => components.Apple,})const LoadableOrange = loadable(() => import('./components'), { resolveComponent: (components) => components.Orange,})const LoadableFruit = loadable(() => import('./components'), { resolveComponent: (components, props) => components[props.fruit],})Note: The default resolveComponent breaks Typescript type inference due to CommonJS compatibility. To avoid this, you can specify resolveComponent as (imported) => imported.default. This requires that the imported components have ES6/Harmony exports.lazyCreate a loadable component "Suspense" ready.ArgumentsDescriptionloadFnThe function call to load the component.import { lazy } from '@loadable/component'const OtherComponent = lazy(() => import('./OtherComponent'))LoadableComponentA component created using loadable or lazy.PropsDescriptionfallbackFallback displayed during the loading....Props are forwarded as first argument of loadFnLoadableComponent.preloadTriggers the loading of a component.ArgumentsDescriptionargsProps passed to the load function.import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))OtherComponent.preload()This method does not return a Promise intentionally. Use load if you need to wait for the component to be loaded.LoadableComponent.loadForce the loading of a component synchronously, returns a Promise.ArgumentsDescriptionargsProps passed to the load function.import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))OtherComponent.load().then(() => { console.log('Component is loaded!')})If you don't need to know when the component will be loaded, you should use preload instead.loadable.libCreate a loadable library.ArgumentsDescriptionloadFnThe function call to load the component.optionsOptional options.options.resolveComponentFunction to resolve the imported component from the imported module.options.fallbackFallback displayed during the loading.options.ssrIf false, it will not be processed server-side. Default to true.options.cacheKeyCache key function (see dynamic import)import loadable from '@loadable/component'const Moment = loadable.lib(() => import('moment'))lazy.libCreate a loadable library "Suspense" ready.ArgumentsDescriptionloadFnThe function call to load the component.import { lazy } from '@loadable/component'const Moment = lazy.lib(() => import('moment'))LoadableLibraryA component created using loadable.lib or lazy.lib.PropsDescriptionchildrenFunction called when the library is loaded.refAccepts a ref, populated when the library is loaded.fallbackFallback displayed during the loading....Props are forwarded as first argument of loadFnloadableReadyWait for all loadable components to be loaded. This method must only be used with Server Side Rendering, see Server Side Rendering guide.ArgumentsDescriptiondoneFunction called when all components are loaded.optionsOptional options.options.namespaceNamespace of your application (use only if you have several React apps on the same page).import { loadableReady } from '@loadable/component'loadableReady(() => { const root = document.getElementById('main') hydrate(<App />, root)})'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/api-loadable-component"
+tags = ["'@loadable/component'const", "@loadable/component", "call", "component", "components", "default", "displayed", "during", "function", "guides"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/babel-plugin"]
+title = "Babel plugin - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''Babel pluginThis plugin adds support for Server Side Rendering and automatic chunk names.UsageInstall the babel plugin first:npm install --save-dev @loadable/babel-pluginThen add it to your babel configuration like so:{ "plugins": ["@loadable/babel-plugin"]}TransformationThe plugin transforms your code to be ready for Server Side Rendering, it turns a loadable call:import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))into another one with some informations required for Server Side Rendering:import loadable from '@loadable/component'const OtherComponent = loadable({ chunkName() { return 'OtherComponent' }, isReady(props) { if (typeof __webpack_modules__ !== 'undefined') { return !!__webpack_modules__[this.resolve(props)] } return false }, requireAsync: () => import(/* webpackChunkName: "OtherComponent" */ './OtherComponent'), requireSync(props) { const id = this.resolve(props) if (typeof __webpack_require__ !== 'undefined') { return __webpack_require__(id) } return eval('module.require')(id) }, resolve() { if (require.resolveWeak) { return require.resolveWeak('./OtherComponent') } return require('path').resolve(__dirname, './OtherComponent') },})As you can see the "webpackChunkName" annotation is automatically added.On client side, the two code are completely compatible.Please note that babel must not be configured to strip comments, since the chunk name is defined in a comment.Loadable detectionThe detection of a loadable component is based on the keyword "loadable". It is an opinionated choice, it gives you flexibility but it could also be restrictive.This code will not be transformed by the babel plugin:import load from '@loadable/component'const OtherComponent = load(() => import('./OtherComponent'))The load function is not detected, you have to name it loadable.It is restrictive, yes but it could gives you some flexibility. You can create your own loadable function. In the following example we create a custom loadable function with a custom fallback:import baseLoadable from '@loadable/component'function loadable(func) { return baseLoadable(func, { fallback: <div>Loading...</div> })}const OtherComponent = loadable(() => import('./OtherComponent'))Magic commentsTo gives you flexibility and portability, the babel plugin supports magic comment. This way you can create portable "load" functions. To create a "load" function, you have to add /* #__LOADABLE__ */ comment above the declaration of your function (variable or property):const loadOther = /* #__LOADABLE__ */ () => import('./OtherComponent')const OtherComponent = loadable(loadOther)The loadOther function will be transformed into an object, this way you can manipulate function and it is still portable!'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/babel-plugin"
+tags = ["babel", "comments", "components", "create", "detection", "function", "guides", "introduction", "loadable", "magic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/library-splitting"]
+title = "Loading library - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Library Splittingloadable.lib lets you defer the loading of a library. It takes a render props called when the library is loaded.import loadable from '@loadable/component'const Moment = loadable.lib(() => import('moment'))function FromNow({ date }) { return ( <div> <Moment fallback={date.toLocaleDateString()}> {({ default: moment }) => moment(date).fromNow()} </Moment> </div> )}You can also use a ref, populated when the library is loaded.import loadable from '@loadable/component'const Moment = loadable.lib(() => import('moment'))class MyComponent { moment = React.createRef() handleClick = () => { if (this.moment.current) { return alert(this.moment.current.default.format('HH:mm')) } } render() { return ( <div> <button onClick={this.handleClick}>What time is it?</button> <Moment ref={this.moment} /> </div> ) }}You can also pass a function to ref, called when the library is loaded."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/library-splitting"
+tags = ["components", "guides", "introduction", "library", "loadable", "moment", "splitting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/loadable-vs-react-lazy"]
+title = "Comparison with React.lazy - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = '''Comparison with React.lazyWhat are the differences between React.lazy and @loadable/components?React.lazy is the recommended solution for Code Splitting. It uses Suspense and it is maintained by React.If you are already using React.lazy and if you are good with it, you don't need @loadable/component.If you feel limited or if you need SSR, then @loadable/component is the solution.Comparison tableLibrarySuspenseSSRLibrary splittingimport(`./${value}`)React.lazy✅❌❌❌@loadable/component✅✅✅✅SuspenseSuspense is supported by React.lazy and by @loadable/component. @loadable/component can also be used without Suspense.Server Side RenderingSuspense is not available server-side and React.lazy can only work with Suspense. That's why today, React.lazy is not an option if you need Server Side Rendering.@loadable/component provides a complete solution to make Server Side Rendering possible.Library splitting@loadable/component supports library splitting using render props. This is not possible with React.lazy.Full dynamic importFull dynamic import also called agressive code splitting is a feature supported by Webpack. It consists of passing a dynamic value to the dynamic import() function.// All files that could match this pattern will be automatically code splitted.const loadFile = file => import(`./${file}`)In React, it permits to create reusable components:import loadable from '@loadable/component'const AsyncPage = loadable(props => import(`./${props.page}`))function MyComponent() { return ( <div> <AsyncPage page="Home" /> <AsyncPage page="Contact" /> </div> )}This feature is not supported by React.lazy.Note about react-loadablereact-loadable was the recommended way for React code splitting for a long time. However, today it is not maintained any more and it is not compatible with Webpack v4+ and Babel v7+.If you use it, it is recommended to migrate to React.lazy or @loadable/component.'''
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/loadable-vs-react-lazy"
+tags = ["code", "comparison", "components", "dynamic", "full", "guides", "import", "introduction", "library", "loadable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/support"]
+title = "Support - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "SupportSupporting Loadable componentsLoadable Components is an MIT-licensed open source project. It is created an maintained by a single person: Greg Bergé. If you want to help me, then:Sponsor me on GitHub ❤️. Loadable Components is an MIT-licensed open source project. It is created an maintained by a single person: Greg Bergé. If you want to help me, then:"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/support"
+tags = ["components", "guides", "introduction", "loadable", "support", "supporting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "css-tricks.com", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]
+
+["https://loadable-components.com/docs/component-splitting"]
+title = "Component Splitting - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Component Splittingloadable lets you easily import components and reuse it in your code.import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))function MyComponent() { return ( <div> <OtherComponent /> </div> )}"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/component-splitting"
+tags = ["component", "components", "guides", "introduction", "loadable", "splitting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/getting-started"]
+title = "Getting Started - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Getting StartedFollow these few steps to get ready with @loadable/component.InstallationInstalling @loadable/component only takes a single command and you're ready to roll:npm install @loadable/component# or use yarnyarn add @loadable/component@loadable/babel-plugin is required for Server Side Rendering and automatic chunk names generation. @loadable/server and @loadable/webpack-plugin are only required for Server Side Rendering.Split your first componentLoadable lets you render a dynamic import as a regular component.import loadable from '@loadable/component'const OtherComponent = loadable(() => import('./OtherComponent'))function MyComponent() { return ( <div> <OtherComponent /> </div> )}That's it, OtherComponent will now be loaded in a separated bundle!"
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/getting-started"
+tags = ["component", "components", "getting", "guides", "installation", "introduction", "loadable", "split", "started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/api-loadable-webpack-plugin"]
+title = "@loadable/webpack-plugin - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "@loadable/webpack-pluginLoadablePluginCreate a webpack loadable plugin.ArgumentsDescriptionoptionsOptional optionsoptions.filenameStats filename (default to loadable-stats.json)options.outputAssetAlways write stats file to the output.path directory. Defaults to trueoptions.writeToDiskAccepts boolean or object. Always write stats file to disk. Default to false.options.writeToDisk.filenameWrite assets to disk at given filename locationnew LoadablePlugin({ filename: 'stats.json', writeToDisk: true })Writing file to disk can be useful if you are using razzle or webpack-dev-server."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/api-loadable-webpack-plugin"
+tags = ["@loadable/webpack-plugin", "components", "guides", "introduction", "loadable", "loadableplugin"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "reactjs.org"]
+
+["https://loadable-components.com/docs/delay"]
+title = "Delay - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "DelayTo avoid flashing a loader if the loading is very fast, you could implement a minimum delay. There is no built-in API in @loadable/component but you could do it using p-min-delay.import loadable from '@loadable/component'import pMinDelay from 'p-min-delay'// Wait a minimum of 200ms before loading home.export const OtherComponent = loadable(() => pMinDelay(import('./OtherComponent'), 200)) To avoid flashing a loader if the loading is very fast, you could implement a minimum delay. There is no built-in API in @loadable/component but you could do it using p-min-delay."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/delay"
+tags = ["components", "delay", "guides", "introduction", "loadable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "github.com", "npmjs.com", "reactjs.org", "webpack.js.org"]
+
+["https://loadable-components.com/docs/migrate-from-react-loadable"]
+title = "Migrate from react-loadable - Loadable Components"
+description = "The recommended Code Splitting library for React."
+full_description = "Migrate from react-loadableCodemods are tools that can help us make changes in our code automatically. Think of it like 'find and replace', but more flexible.Usagenpx loadable-codemod react-loadable-to-loadable-component ./client/srcCaveatsSince react-loadable and @loadable/component do have differences, it is not possible to make a 100% fully automated codemod to handle all of the change needed. You still need to set up server-side rendering yourself.Updating your server side rendering code to use ChunkExtractorUpdating your webpack configuration to use @loadableUsing loadableReady to hydrate your app on the client side.Please also note that react-loadable comes with stuffs like Loadable.Map, pastDelay, timedOut, delay, etc that do not exist in @loadable/components. If your code were using those features, you will still need to migrate them manually.For loading placeholder, this codemod already tries to render the loader as usual, but with a mocked up props as follows:{ pastDelay: true, error: false, timedOut: false,}Your app should still works, but this means some of your app logic will be lost because @loadable/component simply does not support these features out of the box yet."
+year_published = 2025
+clearnet = "https://loadable-components.com/docs/migrate-from-react-loadable"
+tags = ["caveats", "components", "guides", "introduction", "loadable", "migrate", "react-loadable", "usage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["babeljs.io", "egghead.io", "get.popmenu.com", "github.com", "npmjs.com", "reactjs.org", "shakacode.com", "webpack.js.org"]

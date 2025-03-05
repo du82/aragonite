@@ -1,0 +1,332 @@
+["https://cyberduck.io/irods"]
+title = "iRODS"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/irods"
+tags = ["agencies", "data", "government", "integrated", "irods", "management", "open-source", "organizations", "research", "rule-oriented"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/profiles"]
+title = "Connection Profiles"
+full_description = "Connection profiles (.cyberduckprofile) describe specific connection settings for a hosting provider to make it easier to setup a connection to your provider. A connection profile installed adds a provider option in the protocol selection dropdown menu. Then create a new bookmark and only enter your credentials. Ready to connect! Download and double click the connection profile file (.cyberduckprofile) to open and register the profile with Cyberduck and Mountain Duck or alternatively enable in Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck. Easily activate additional connection profiles not enabled by default in the Profiles tab in Cyberduck → Preferences. Refer to the documentation."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/profiles"
+tags = ["connection", "forward", "hosting", "installation", "profiles", "providers", "setup", "storage", "straight", "supported"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/s3"]
+title = "Amazon S3"
+full_description = "Versioning and MFA Support for bucket versioning and Multi-Factor Authentication Delete. With versioning enabled, revert to any previous version of a file. ACL Configure Access Control Lists (ACLs) for fine grained access permissions. Copy a signed URL for temporary access. Metadata You can edit standard HTTP headers and add custom HTTP headers to files to store metadata and control cache expire settings. Batch editing included. AWS Security Token Service (STS) Read credentials from ~/.aws/credentials and connect with AssumeRole from AWS Security Token Service (STS) with optional Multi-Factor Authentication (MFA). ​Minio is an object storage server built for cloud application developers and devops. Launch your own Amazon S3 compatible object storage server in few seconds. Minio is an open source object storage server with Amazon S3 compatible API. Build cloud-native applications portable across all major public and private clouds. We do not endorse any particular provider. This list is in not exhaustive and in no particular order. Download and double click the connection profile file (.cyberduckprofile) to open and register the profile with Cyberduck and Mountain Duck or alternatively enable in Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck. One simple storage solution that is faster than Amazon S3 yet cheaper than Amazon Glacier. Wasabi's immutable buckets protect you against most common causes of data loss. ​DreamObjects is a cost-effective, public cloud storage service built on top of the open source technology ​Ceph. It is compatible with the APIs of Amazon S3 and Swift based object storage services. Dunkel Cloud Storage (DCS) ist ein Objekt-Storage mit redundanter Datenspeicherung in deutschen Rechenzentren. Object Storage Service (OSS) is a secure, cost-effective, and highly reliable cloud storage service provided by Alibaba Cloud. Oracle Cloud Infrastructure (OCI) provides secure, infinitely scalable, reliable, and on-demand public cloud storage solutions. Businesses can access additional storage capacity in minutes with zero hardware investment. The Oracle Cloud Infrastructure can be accessed from anywhere, at anytime, and from any device connected to the Internet."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/s3"
+tags = ["access", "additions", "alibaba", "amazon", "authentication", "aws2", "aws4-hmac-sha256", "browse", "bucket", "buckets"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/sftp"]
+title = "SFTP (SSH File Transfer Protocol)"
+full_description = "Interoperability Read settings from your existing OpenSSH configuration options including Host aliases, public key authentication preferences and default login user. Integration with Terminal.app to open the current working directory in a shell."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/sftp"
+tags = ["access", "allows", "archives", "authentication", "authentication.", "browse", "ciphers,", "cyberduck", "duck.", "features"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/box"]
+title = "Box"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/box"
+tags = ["authentication", "collaborate", "connection", "digital", "files.", "manage,", "oauth", "profiles", "share,", "version"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "mountainduck.io", "profiles.cyberduck.io", "trac.cyberduck.io"]
+
+["https://cyberduck.io/openstack"]
+title = "OpenStack Swift"
+full_description = "All major authentication methods of OpenStack Identity Service with username, password, access keys and tenants are supported. Multiple Region support listing containers from all available regions. Large object uploads Resumable dynamic segmented part uploads for files larger than 5GB. Large uploads can be resumed when interrupted and make use of multiple concurrent connections for faster transfer rates. Temporary URLs A private object stored in OpenStack Swift can be made publicly available for a limited time using a signed URL. The signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the signed URL from Edit → Copy URL→ Signed URL. CDN You can CDN enable the container using File → Info → Distribution (CDN) if supported by the provider. We do not endorse any particular provider. This list is in not exhaustive and in no particular order. Download and double click the connection profile file (.cyberduckprofile) to open and register the profile with Cyberduck and Mountain Duck or alternatively enable in Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck. Manage your Rackspace Cloud Files storage including the configuration of Akamai content delivery network (CDN). ​Oracle Storage Cloud Service is a secure, scalable, reliable, and on-demand public cloud storage solution. Businesses can access additional storage capacity in minutes with zero hardware investment. The Oracle Storage Cloud Service can be accessed from anywhere, at anytime, and from any device connected to the Internet. Memset Memstore is an exciting new long term storage solution. Based on the OpenStack Object Storage platform, combined with our own impressive infrastructure, Memstore™ is flexible, scalable, easy to use and secure. We take care of the details from disk space to backups; you simply drag and drop your files and leave everything else to us. You only pay for what you use, whether that be 1GB or 1TB, and there are no license fees or hidden costs. Data replication means that your data is unaffected by hardware failures and you can sleep soundly knowing your data is safe with us."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/openstack"
+tags = ["authentication", "backup", "best", "classic", "client", "cloud", "cloud-a", "connect", "connection", "containers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "developer-content.emc.com", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/download"]
+title = "Download"
+full_description = "Version 9.1.3, 27 Feb 2025 MD5 2641e3dd4f09322d1a6c4d83aec1716b Windows 10 (64bit) or later required. Version 9.1.3, 27 Feb 2025 MD5 2e54efe644a10996c1d0ab252df303e5 macOS 10.13 or later on Intel (64bit) or Apple M1 required."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/download"
+tags = ["9.1.3", "allows", "amount", "application", "available", "better!", "change", "changelog", "computers", "consider"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/wasabi"]
+title = "Wasabi"
+full_description = "One simple storage solution that is faster than Amazon S3 yet cheaper than Amazon Glacier. Wasabi's immutable buckets protect you against most common causes of data loss. Install region specific connection profiles from Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/wasabi"
+tags = ["best", "connection", "integration", "party", "profiles", "third", "wasabi", "wasabi."]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/donate"]
+title = "Donate"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/donate"
+tags = ["allows", "amount", "application", "available", "better!", "change", "computers", "consider", "continued", "contributor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/backblaze"]
+title = "Backblaze B2"
+full_description = "Authorized URLs Create an authorized URL to make files available publicly. Choose File → Share…. The shared URL expires in 7 days. File Versioning You can view all revisions of a file in the browser by choosing View → Show Hidden Files in Cyberduck."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/backblaze"
+tags = ["authorized", "backblaze", "buckets", "features", "file", "urls", "versioning"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "mountainduck.io", "profiles.cyberduck.io", "trac.cyberduck.io"]
+
+["https://cyberduck.io/local"]
+title = "Local Filesystem"
+full_description = "You can browse Cryptomator vaults stored on your computer. This includes for example your local synchronized ​Dropbox, ​Google Drive and ​OneDrive directories."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/local"
+tags = ["application.", "browse", "cryptomator", "disk", "download", "drag", "files", "filesystem", "hard", "local"]
+language = "en"
+internal-references = ["none"]
+external-references = ["backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "fsf.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/dracoon"]
+title = "DRACOON"
+full_description = "The storage service is unique providing transparent, zero-knowledge client-side encryption for an enterprise file sharing environment. DRACOON is manufactured and operated in Germany. You can count on strict compliance with the German Federal Data Protection Act for data protection and security. Download and double click the connection profile file (.cyberduckprofile) to open and register the profile with Cyberduck and Mountain Duck or alternatively enable in Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck. The client-side encryption technology Triple-Crypt of DRACOON is fully supported to upload files to encrypted data rooms."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/dracoon"
+tags = ["authentication", "client-side", "cloud", "connection", "dracoon", "encryption", "enterprise", "germany.", "made", "oauth"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/googledrive"]
+title = "Google Drive"
+full_description = "Alternative to Google File Stream. Selectively sync folders and files using Mountain Duck and access files when offline. Team Drive Use the regular Google Drive connection type to see the Team Drives besides My Drive and Shared with me. Shared files Documents shared with you from another Google account can be found inside the top level folder Shared with me."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/googledrive"
+tags = ["access", "computer.", "docs", "documents", "drive", "features", "files", "google", "shared", "syncing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/help"]
+title = "Help"
+full_description = "The registration key is sent to you by email automatically after the transaction has been completed. To recover a lost registration key, enter your email address below to look it up. Open the received registration key with Cyberduck by double-clicking. Make sure the filename of the registration key attached ends with .cyberducklicense. Refer to the documentation if you have trouble receiving or opening the key."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/help"
+tags = ["account", "community.", "contribute", "credentials,", "discuss", "documentation", "everyone", "feature", "features", "fediverse"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/license"]
+title = "License"
+full_description = "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed. The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too. When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things. To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others. For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/license"
+tags = ["conditions", "general", "license", "preamble", "public", "terms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "fsf.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/privacy"]
+title = "Privacy"
+full_description = "We do not store credit card data. All data transmitted is encrypted using Secure Socket Layer (SSL). Refer to the privacy policy of our payment providers. No user data is collected or shared. We do not transfer or disclose your information to third parties. Any data accessed is processed solely on the user’s device. When using third-party storage services, please refer to the corresponding privacy policy of the provider: Accepting the consent screen when signing in with Google to connect to Google Drive will allow Cyberduck to see, edit, create, and delete all of your Google Drive files. Accepting the consent screen when signing in with Google to connect to Google Cloud Storage will allow Cyberduck to manage your data and permissions in Cloud Storage and see the email address for your Google Account."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/privacy"
+tags = ["application", "basis", "changes", "constitutes", "crash", "data", "federal", "payments", "policy.", "privacy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/webdav"]
+title = "WebDAV"
+full_description = "WebDAV is widely deployed in many enterprise file sharing solutions. Whether it is your personal NAS, university or enterprise file sharing solution – our best-of-breed WebDAV client implementation makes it hassle free to mount your files securely on your desktop with Mountain Duck or manage files with Cyberduck. We do not endorse any particular provider. This list is in not exhaustive and in no particular order. is an on-premise, open source file sync and share solution designed to be easy-to-use and highly secure. Enables enterprises to take back control over their data, ensuring compliance, security and instant availability wherever their employees are. Access your files on Seafile without installing their client and synchronizing all files to your computer. Seafile is an enterprise file hosting platform with high reliability and performance. Put files on your own server. Sync and share files across different devices, or access all the files as a virtual disk."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/webdav"
+tags = ["authentication", "best", "bigcommerce", "files", "interoperability", "mediacenter", "methods", "nextcloud", "providers", "seafile"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "seafile.com", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/spectra"]
+title = "Spectra BlackPearl Deep Storage Gateway"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/spectra"
+tags = ["allow", "blackpearl", "cloud", "connection", "data", "deep", "disk,", "gateway", "move", "profiles"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/files.com"]
+title = "Files.com"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/files.com"
+tags = ["authentication", "business,", "connection", "files", "live.", "matter", "profiles", "single"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/ftp"]
+title = "FTP"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/ftp"
+tags = ["authentication", "best", "connections.", "implementation", "interoperability", "methods", "secured", "ssl/tls", "support", "tested"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/acknowledgements"]
+title = "Acknowledgements"
+full_description = 'Portions of this Software may utilize the following copyrighted material, the use of which is hereby acknowledged: GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999 Copyright (C) 1991, 1999 Free Software Foundation, Inc. 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed. [This is the first released version of the Lesser GPL. It also counts as the successor of the GNU Library Public License, version 2, hence the version number 2.1.] TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 0. This License Agreement applies to any software library or other program which contains a notice placed by the copyright holder or other authorized party saying it may be distributed under the terms of this Lesser General Public License (also called "this License"). Each licensee is addressed as "you". A "library" means a collection of software functions and/or data prepared so as to be conveniently linked with application programs (which use some of those functions and data) to form executables. The "Library", below, refers to any such software library or work which has been distributed under these terms. A "work based on the Library" means either the Library or any derivative work under copyright law: that is to say, a work containing the Library or a portion of it, either verbatim or with modifications and/or translated straightforwardly into another language. (Hereinafter, translation is included without limitation in the term "modification".) "Source code" for a work means the preferred form of the work for making modifications to it. For a library, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the library. Activities other than copying, distribution and modification are not covered by this License; they are outside its scope. The act of running a program using the Library is not restricted, and output from such a program is covered only if its contents constitute a work based on the Library (independent of the use of the Library in a tool for writing it). Whether that is true depends on what the Library does and what the program that uses the Library does.'
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/acknowledgements"
+tags = ["acknowledgements", "amazon", "amerige", "andy", "apache", "apple", "backblaze", "baliuka", "bhushan", "brian"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "blog.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "mountainduck.io", "trac.cyberduck.io"]
+
+["https://cyberduck.io"]
+title = """
+Cyberduck | Libre server and cloud storage browser for Mac and        Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &        OneDrive, Google Drive and Dropbox"""
+full_description = "Cyberduck Mountain Duck CLI Connecting to every server. With an easy to use interface, connect to servers, enterprise file sharing and cloud storage. You can find connection profiles for popular hosting service providers. FTPA widely tested FTP (File Transfer Protocol) implementation for the best interoperability with support for FTP over secured SSL/TLS connections. SFTPWith support for strong ciphers, public key and two factor authentication. Read settings from your existing OpenSSH configuration. WebDAVWith interoperability for ownCloud, box.com, Sharepoint and BigCommerce and many other WebDAV servers. TLS mutual (two-way) authentication with client certificate. SMBAccess Windows File Shares or a Samba Linux Server. OpenStack SwiftConnect to Rackspace Cloudfiles or any other OpenStack Swift cloud storage providers. Google Cloud StorageConnect to buckets in Google Cloud Storage and configure as a website endpoint. S3Connect to any Amazon S3 storage region with support for large file uploads. AzureAccess Microsoft Azure Cloud storage on your desktop. Backblaze B2Mount the low cost cloud storage on your desktop. DRACOONVersion 6Enterprise cloud service made in Germany. BoxVersion 8.2Leading organizations secure their data with Box. NextcloudVersion 7Connect to your own on-premise Nextcloud installation with ease.Create share links and view and revert previous versions. Google DriveAccess Google Drive without synchronising documents to your local disk. With URL reference files on mounted volume to open Google Docs documents in the web browser. DropboxAccess Dropbox without synchronising documents to your local disk. OneDriveVersion 6Connect OneDrive Personal, OneDrive Business and Sharepoint Online. Files.comVersion 7Fast, affordable, and available in 7 worldwide regions. ownCloudVersion 7Support for ownCloud Infinite Scale with authentication using OpenID Connect.Create share links and view and revert previous versions. Cryptomator. Client side encryption with Cryptomator interoperable vaults to secure your data on any server or cloud storage. Version 6 Filename Encryption File and directory names are encrypted, directory structures are obfuscated. File Content Encryption Every file gets encrypted individually. Secure and Trustworthy with Open Source No backdoors. No registration or account required. Edit any file with your preferred editor. To edit files, a seamless integration with any external editor application makes it easy to change content quickly. Edit any text or binary file on the server in your preferred application. Share files. Web URL Quickly copy or open the corresponding HTTP URLs of a selected file in your web browser. Includes CDN and pre-signed URLs for S3.Distribute your content in the cloud. Both Amazon CloudFront and Akamai content delivery networks (CDN) can be easily configured to distribute your files worldwide from edge locations. Connect to any server using FTP, SFTP or WebDAV and configure it as the origin of a new Amazon CloudFront CDN distribution. Amazon CloudFront Manage custom origin, basic and streaming CloudFront distributions. Toggle deployment, define CNAMEs, distribution access logging and set the default index file.First class bookmarking. Organize your bookmarks with drag and drop and quickly search using the filter field. Files Drag and drop bookmarks to the Finder.app and drop files onto bookmarks to upload. Spotlight Spotlight Importer for bookmark files. History History of visited servers with timestamp of last access. Import Import Bookmarks from third-party applications.Browse with ease. Browse and move your files quickly in the browser with caching enabled for the best performance. Works with any character encoding for the correct display of Umlaute, Japanese and Chinese. Quick LookQuickly preview files with Quick Look. Press the space key to preview files like in Finder.app without explicitly downloading.AccessibleThe outline view of the browser allows to browse large folder structures efficiently. Cut & paste or drag & drop files to organize.Transfer anything. Limit the number of concurrent transfers and filter files using a regular expression. Resume both interrupted download and uploads. Recursively transfer directories. Download and UploadDrag and drop to and from the browser to download and upload.CopyCopy files directly between servers.SynchronizationSynchronize local with remote directories (and vice versa) and get a preview of affected files before any action is taken.Integration with system technologies. A native citizen of Mac OS X and Windows. Notification center, Gatekeeper and Retina resolution. KeychainAll passwords are stored in the system Keychain as Internet passwords available also to third party applications. Certificates are validated using the trust settings in the Keychain.BonjourAuto discovery of FTP & WebDAV services on the local network.FinderUse Cyberduck as default system wide protocol handler for FTP and SFTP. Open .inetloc files and .duck bookmark files from the Finder.NotificationsNotifications in system tray (Windows) and the Notification Center (Mac).WindowsReads your proxy configuration from network settings. Encrypts passwords limiting access to your account.We are open. Licensed under the GPL. Come in. You can follow the daily development activity, have a look at the roadmap and grab the source code on GitHub. We contribute to other open source projects including OpenStack Swift Client Java Bindings, Rococoa Objective-C Wrapper and SSHJ.International. Speaks your language.English, čeština, Nederlands, Suomi, Français, Deutsch, Italiano, 日本語, 한국어, Norsk, Slovenčina, Español, Português (do Brasil), Português (Europeu), 中文 (简体), 正體中文 (繁體), Русский, Svenska, Dansk, Język Polski, Magyar, Bahasa Indonesia, Català, Cymraeg, ภาษาไทย, Türkçe, Ivrit, Latviešu Valoda, Ελληνικά, Cрпски, ქართული ენა, Slovenščina, українська мова, Română, Hrvatski & Български език."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io"
+tags = ["accessible", "akamai", "amazon", "anything.", "application", "application.", "azure", "backblaze", "best", "binary"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "mountainduck.io", "trac.cyberduck.io"]
+
+["https://cyberduck.io/cryptomator"]
+title = "Cryptomator"
+full_description = "The Cryptomator security architecture in Cyberduck and Mountain Duck has many crucial advantages over other client-side encryption solutions. Secure and Trustworthy with Open Source Open source software that can be audited independently for security. You can rest assured there are no backdoors and no hidden vulnerabilities. No online service subscription or account required. You will always have access to your data without the risk of a service shutting down."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/cryptomator"
+tags = ["access", "account", "adminstrator", "based", "browse", "client", "client-side", "cloud", "comparison", "concepts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/dropbox"]
+title = "Dropbox"
+full_description = "Connect to one or more Dropbox accounts from any computer without installing the official Dropbox client. Alternative to Dropbox client. Selectively sync folders and files using Mountain Duck instead of keeping a full copy of all files on your computer as with the official client from Dropbox. Lock Files in Dropbox for Business Files opened from a volume mounted with Mountain Duck from Dropbox for Business are locked for editing by other users."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/dropbox"
+tags = ["access", "authentication", "business", "computer.", "connection", "dropbox", "features", "files", "lock", "oauth"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/azure"]
+title = "Microsoft Azure"
+full_description = "You can use a Shared Access Signature Token (SAS) when you want to provide access to resources in your storage account to any client not possessing your storage account's access keys. Supports features such as editing metadata, editing ACLs on containers and copying shared signature URLs for giving temporary access to users with a time limited signed URL to files in a container. Access Control (ACL) Edit ACLs in File → Info (⌘-I) → Permissions. To make objects in a container publicly accessible, choose Everyone → READ. Shared Access Signature URLs A private object stored in Azure Storage can be made publicly available for a limited time using a signed URL. The signed URL can be used by anyone to download the object, yet it includes a date and time after which the URL will no longer work. Copy the signed URL from Edit → Copy URL→ Signed URL."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/azure"
+tags = ["access", "authentication", "azure", "blob", "connect", "connection", "control", "ease.", "features", "microsoft"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "blog.cyberduck.io", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "mountainduck.io", "profiles.cyberduck.io", "trac.cyberduck.io"]
+
+["https://cyberduck.io/3.6/Press_3.6_en.txt"]
+title = "300 Multiple Choices"
+year_published = 2025
+clearnet = "https://cyberduck.io/3.6/Press_3.6_en.txt"
+tags = ["choices", "multiple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "seafile.com", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/changelog"]
+title = "Changelog"
+full_description = "9.1.3 27 Feb 2025 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.1.2 13 Jan 2025 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.1.1 05 Dec 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.1.0 05 Dec 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.0.2 12 Sep 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.0.1 24 Jul 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 9.0.0 27 Jun 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.9.0 16 May 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.8.2 08 Apr 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.8.1 14 Mar 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.8.0 08 Mar 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.7.2 11 Jan 2024 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.7.1 04 Nov 2023 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.7.0 18 Oct 2023 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.6.3 10 Aug 2023 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows) 8.6.2 04 Aug 2023 Download (Mac) Download Installer Package (Mac) Download Installer (Windows) Download MSI Package (Windows)"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/changelog"
+tags = ["2.3.1", "2.3.2", "2.3.3", "2.4.3", "2.4.4", "2.4.5", "2.4.6", "2.5.1", "2.5.2", "2.5.3"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "docs.cyberduck.io", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "lists.cyberduck.io", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "tacosw.com", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/onedrive"]
+title = "Microsoft OneDrive and SharePoint Online"
+full_description = "Download and double click the connection profile file (.cyberduckprofile) to open and register the profile with Cyberduck and Mountain Duck or alternatively enable in Preferences → Profiles. Connection profiles are shared between Cyberduck, Cyberduck CLI and Mountain Duck. Login with your *.onmicrosoft.com account to connect to your default SharePoint document library as well as all groups you are a member of. Alternative to OneDrive client. Selectively sync folders and files using Mountain Duck and access files when offline."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/onedrive"
+tags = ["access", "business", "computer.", "connect", "connection", "deutschland", "features", "files", "microsoft", "onedrive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "fsf.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/googlestorage"]
+title = "Google Storage"
+full_description = "Create Buckets Both US and Europe locations are supported and share files securely with an authenticated URLs. Website Configuration To host a static website on Google Cloud Storage, It is possible to define a bucket as a Website Endpoint. The configuration in File → Info (⌘-I) → Distribution allows you to enable website configuration."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/googlestorage"
+tags = ["based", "bucket", "buckets", "compatible", "configuration", "create", "features", "google", "logging", "pricing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apache.org", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]
+
+["https://cyberduck.io/smb"]
+title = "SMB"
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/smb"
+tags = ["connect", "file", "interoperability", "linux", "samba", "server.", "shares", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aws.amazon.com", "backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "defuse.ca", "dropbox.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "google.com", "iterate.ch", "mountainduck.io", "privacy.microsoft.com", "profiles.cyberduck.io", "stripe.com", "svn.cyberduck.ch", "tools.ietf.org", "trac.cyberduck.io", "update.cyberduck.io"]
+
+["https://cyberduck.io/nextcloud"]
+title = "Nextcloud & ownCloud"
+full_description = "Alternative to Nextcloud ior ownCloud client. Selectively sync folders and files using Mountain Duck instead of keeping a full copy of all files on your computer."
+author = "iterate GmbH"
+year_published = 2025
+clearnet = "https://cyberduck.io/nextcloud"
+tags = ["access", "authentication", "computer.", "connection", "date", "features", "files", "modification", "nextcloud", "owncloud"]
+language = "en"
+internal-references = ["none"]
+external-references = ["backblaze.com", "blog.cyberduck.io", "code.google.com", "cryptomator.org", "docs.cyberduck.io", "dracoon.com", "duck.sh", "forum.cyberduck.io", "fosstodon.org", "fsf.org", "github.com", "gnu.org", "iterate.ch", "monkeyfood.com", "mountainduck.io", "profiles.cyberduck.io", "qloudstat.com", "tacosw.com", "tools.ietf.org", "update.cyberduck.io"]

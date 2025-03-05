@@ -1,21 +1,18 @@
+["https://developer.arm.com/search"]
+title = "Search – Arm Developer"
+year_published = 2025
+clearnet = "https://developer.arm.com/search"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["arm.com", "community.arm.com"]
+
 ["https://developer.arm.com/solutions/os/windows-on-arm"]
 title = "Laptops and Desktops"
 description = "Resources dedicated to educating developers on Windows, how to port a current application to Windows on Arm, and information about working with Arm hardware on Android."
 year_published = 2025
 clearnet = "https://developer.arm.com/solutions/os/windows-on-arm"
-category = "SitesList"
 tags = ["community", "desktops", "laptops", "popular", "posts"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arm.com", "community.arm.com"]
-
-["https://developer.arm.com/Mobile%20Graphics%20and%20Gaming"]
-title = "Mobile, Graphics, and Gaming"
-description = "Develop and analyze applications with mobile, graphics and gaming tools, guides, and training for games developers."
-year_published = 2025
-clearnet = "https://developer.arm.com/Mobile%20Graphics%20and%20Gaming"
-category = "SitesList"
-tags = ["community", "gaming", "graphics,", "mobile,", "popular", "posts"]
 language = "en"
 internal-references = ["none"]
 external-references = ["arm.com", "community.arm.com"]
@@ -26,18 +23,26 @@ description = "The Arm Developer website includes documentation, tutorials, supp
 full_description = "Arm Developer HubExplore documentation, tutorials and technical videos from Arm and open-source partners to create top-performing software solutions. Explore Arm Developer Hub DocumentationCommunityDownloadsArm GNU Toolchain DownloadsA ready-to-use, open-source suite of tools for C, C++, and assembly programming. The GNU Arm Embedded Toolchain targets the 32-bit Arm Cortex-A, Arm Cortex-M, and Arm Cortex-R processor families.OpenGL ES EmulatorThe OpenGL ES Emulator library helps software development and testing of next generation applications without an embedded platform. Download the latest version of the OpenGL ES Emulator for Windows and Linux 64-bit builds.FlexNet PublisherDownload the FlexNet software licensing utilities to set up a licensing server for software tools like Arm Development Studio, Keil MDK, Arm Compiler, and Fast Models.HelpOpen a Support CaseFor customers with a support contract, our experts can help during your support contract period. Open a support case for technical problems or inquiries about your Arm IP, or to report bugs or enhancements.My Support CasesFor customers with a support contract, view inquiries about your Arm IP.TrainingLearn more about Arm technologies with virtual and online courses delivered by experienced Arm engineers and official Arm training partners.I Develop ForAIMobile, Graphics, and GamingLaptops and DesktopsServers and Cloud ComputingAutomotiveEmbedded and MicrocontrollersRecommended for you"
 year_published = 2025
 clearnet = "https://developer.arm.com"
-category = "SitesList"
 tags = ["android development", "automotive", "case", "cases", "cloud", "collaborate.", "community", "computing", "desktops", "develop"]
 language = "en"
 internal-references = ["none"]
 external-references = ["arm.com"]
+
+["https://developer.arm.com/Mobile%20Graphics%20and%20Gaming"]
+title = "Mobile, Graphics, and Gaming"
+description = "Develop and analyze applications with mobile, graphics and gaming tools, guides, and training for games developers."
+year_published = 2025
+clearnet = "https://developer.arm.com/Mobile%20Graphics%20and%20Gaming"
+tags = ["community", "gaming", "graphics,", "mobile,", "popular", "posts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arm.com", "community.arm.com"]
 
 ["https://developer.arm.com/unity"]
 title = "Mobile, Graphics, and Gaming"
 description = "Develop and analyze applications with mobile, graphics and gaming tools, guides, and training for games developers."
 year_published = 2025
 clearnet = "https://developer.arm.com/unity"
-category = "SitesList"
 tags = ["community", "gaming", "graphics,", "mobile,", "popular", "posts"]
 language = "en"
 internal-references = ["none"]
@@ -48,18 +53,7 @@ title = "Laptops and Desktops"
 description = "Resources dedicated to educating developers on Windows, how to port a current application to Windows on Arm, and information about working with Arm hardware on Android."
 year_published = 2025
 clearnet = "https://developer.arm.com/solutions/os/android"
-category = "SitesList"
 tags = ["community", "desktops", "laptops", "popular", "posts"]
-language = "en"
-internal-references = ["none"]
-external-references = ["arm.com", "community.arm.com"]
-
-["https://developer.arm.com/search"]
-title = "Search – Arm Developer"
-year_published = 2025
-clearnet = "https://developer.arm.com/search"
-category = "SitesList"
-tags = []
 language = "en"
 internal-references = ["none"]
 external-references = ["arm.com", "community.arm.com"]

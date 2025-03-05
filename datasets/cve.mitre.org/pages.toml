@@ -7,38 +7,7 @@ description = "The mission of the CVE® Program is to identify, define, and cata
 full_description = "You can search the CVE List for a CVE Record if the CVE ID is known. To search by keyword, use a specific term or multiple keywords separated by a space. Your results will be the relevant CVE Records. View the search tips. Attention: CVE Records now include product versions & more on the new CVE.ORG website. Learn about the new and improved CVE Record Format. Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
 year_published = 2025
 clearnet = "https://cve.mitre.org/cve/search_cve_list.html"
-category = "SitesList"
 tags = ["0-day", "adp", "attention:", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud"]
-language = "en"
-internal-references = ["none"]
-external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
-
-["https://cve.mitre.org/cookie_notice.html"]
-title = """
-CVE -
-
-Cookie Notice"""
-description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities."
-full_description = "This Notice describes how the CVE® Program (“the Program,” “we,” “our,” “us”) uses cookies and tracking technologies on its websites (the “Site,” “the Sites”). Like many sites, the Program uses “cookies,” which are small data files that can be sent to your web browser and stored on your computer. Cookies that the Program sets are first-party cookies. Cookies that we allow others to set are called third-party cookies. The Program uses cookies to distinguish you from other users of our website. Cookies also help enable us to improve website performance. These cookies are required to provide content that allows the website to function. We process this information to identify visitors to our site, to authenticate site administrators, to set visitor preferences, to help complete forms, and for security purposes. These cookies allow us to analyze traffic on the site so that we can measure and improve website performance. These cookies may require your permission before they are activated, depending on your jurisdiction. We use Google Analytics to measure how users interact with website content. As users navigate between web pages, Google Analytics provides us data, such as applicable URLs, time of visit, time spent on each webpage, type of browser, and type of operating system. With this information, the Program creates, designs, and updates content based on our user interests. In addition, Google Analytics collects indirectly identifiable information, such as users’ IP addresses, unique IDs, and client IDs. Users who do not want their indirectly identifiable information collected during their visit to our website may opt-out of the Google Analytics tracking service at https://tools.google.com/dlpage/gaoptout/ or disable analytics cookies through our Manage Cookies link. The Program does not use personalization or targeted advertising cookies. These types of cookies are described at the Manage Cookies link. Please note that because these cookies are not used, no cookies will be displayed when selecting the “View Cookies” button."
-year_published = 2025
-clearnet = "https://cve.mitre.org/cookie_notice.html"
-category = "SitesList"
-tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
-language = "en"
-internal-references = ["none"]
-external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
-
-["https://cve.mitre.org/index.html"]
-title = """
-CVE -
-
-CVE"""
-description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities."
-full_description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities. cvelistV5 bulk downloads repository on GitHub includes a “Releases” feed of new & updated CVE Records. Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
-year_published = 2025
-clearnet = "https://cve.mitre.org/index.html"
-category = "SitesList"
-tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
 language = "en"
 internal-references = ["none"]
 external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
@@ -52,11 +21,56 @@ description = "The mission of the CVE® Program is to identify, define, and cata
 full_description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities. cvelistV5 bulk downloads repository on GitHub includes a “Releases” feed of new & updated CVE Records. Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
 year_published = 2025
 clearnet = "https://cve.mitre.org"
-category = "SitesList"
 tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
 language = "en"
 internal-references = ["none"]
 external-references = ["cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mitre.org", "x.com"]
+
+["https://cve.mitre.org/cookie_notice.html"]
+title = """
+CVE -
+
+Cookie Notice"""
+description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities."
+full_description = "This Notice describes how the CVE® Program (“the Program,” “we,” “our,” “us”) uses cookies and tracking technologies on its websites (the “Site,” “the Sites”). Like many sites, the Program uses “cookies,” which are small data files that can be sent to your web browser and stored on your computer. Cookies that the Program sets are first-party cookies. Cookies that we allow others to set are called third-party cookies. The Program uses cookies to distinguish you from other users of our website. Cookies also help enable us to improve website performance. These cookies are required to provide content that allows the website to function. We process this information to identify visitors to our site, to authenticate site administrators, to set visitor preferences, to help complete forms, and for security purposes. These cookies allow us to analyze traffic on the site so that we can measure and improve website performance. These cookies may require your permission before they are activated, depending on your jurisdiction. We use Google Analytics to measure how users interact with website content. As users navigate between web pages, Google Analytics provides us data, such as applicable URLs, time of visit, time spent on each webpage, type of browser, and type of operating system. With this information, the Program creates, designs, and updates content based on our user interests. In addition, Google Analytics collects indirectly identifiable information, such as users’ IP addresses, unique IDs, and client IDs. Users who do not want their indirectly identifiable information collected during their visit to our website may opt-out of the Google Analytics tracking service at https://tools.google.com/dlpage/gaoptout/ or disable analytics cookies through our Manage Cookies link. The Program does not use personalization or targeted advertising cookies. These types of cookies are described at the Manage Cookies link. Please note that because these cookies are not used, no cookies will be displayed when selecting the “View Cookies” button."
+year_published = 2025
+clearnet = "https://cve.mitre.org/cookie_notice.html"
+tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
+language = "en"
+internal-references = ["none"]
+external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
+
+["https://cve.mitre.org/cve/index.html"]
+title = ""
+year_published = 2025
+clearnet = "https://cve.mitre.org/cve/index.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
+
+["https://cve.mitre.org/cve/data_feeds.html"]
+title = ""
+year_published = 2025
+clearnet = "https://cve.mitre.org/cve/data_feeds.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
+
+["https://cve.mitre.org/index.html"]
+title = """
+CVE -
+
+CVE"""
+description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities."
+full_description = "The mission of the CVE® Program is to identify, define, and catalog publicly disclosed cybersecurity vulnerabilities. cvelistV5 bulk downloads repository on GitHub includes a “Releases” feed of new & updated CVE Records. Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
+year_published = 2025
+clearnet = "https://cve.mitre.org/index.html"
+tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
+language = "en"
+internal-references = ["none"]
+external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
 
 ["https://cve.mitre.org/community/board/archive.html"]
 title = """
@@ -67,11 +81,19 @@ description = "The mission of the CVE® Program is to identify, define, and cata
 full_description = "The CVE Board regularly holds teleconferences, and periodically holds face-to-face meetings. Below are summaries of the Board meetings, as recorded in the Board Email Discussion List Archive. The CVE Board has made a commitment to make its discussions available to the public. The following archives of Board messages are available: October 2015 – June 2021 http://common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com/ Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
 year_published = 2025
 clearnet = "https://cve.mitre.org/community/board/archive.html"
-category = "SitesList"
 tags = ["0-day", "adp", "april", "archive", "archives", "august", "authorities", "authorized data publisher", "become", "blogs"]
 language = "en"
 internal-references = ["none"]
 external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "x.com"]
+
+["https://cve.mitre.org/community/board/index.html"]
+title = ""
+year_published = 2025
+clearnet = "https://cve.mitre.org/community/board/index.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
 
 ["https://cve.mitre.org/cve/cna.html"]
 title = """
@@ -82,38 +104,7 @@ description = "The mission of the CVE® Program is to identify, define, and cata
 full_description = "Visit How to Become a Partner to join or view the List of Partners page on the new website to find CNAs, CNA-LRs, Roots, and Top-Level Roots. The CVE Program has begun transitioning to the all-new CVE website at its new CVE.ORG web address. The phased quarterly transition process began on September 29, 2021 and will last for up to one year. Items moved to the new website will no longer be maintained on this website. Learn more about the transition here. Use of the CVE® List and the associated references from this website are subject to the terms of use. CVE is sponsored by the U.S. Department of Homeland Security (DHS) Cybersecurity and Infrastructure Security Agency (CISA). Copyright © 1999–2025, The MITRE Corporation. CVE and the CVE logo are registered trademarks of The MITRE Corporation."
 year_published = 2025
 clearnet = "https://cve.mitre.org/cve/cna.html"
-category = "SitesList"
 tags = ["0-day", "adp", "authorities", "authorized data publisher", "become", "blogs", "board", "cisa", "cloud", "cloud security"]
-language = "en"
-internal-references = ["none"]
-external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
-
-["https://cve.mitre.org/community/board/index.html"]
-title = ""
-year_published = 2025
-clearnet = "https://cve.mitre.org/community/board/index.html"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
-
-["https://cve.mitre.org/cve/index.html"]
-title = ""
-year_published = 2025
-clearnet = "https://cve.mitre.org/cve/index.html"
-category = "SitesList"
-tags = []
-language = "en"
-internal-references = ["none"]
-external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]
-
-["https://cve.mitre.org/cve/data_feeds.html"]
-title = ""
-year_published = 2025
-clearnet = "https://cve.mitre.org/cve/data_feeds.html"
-category = "SitesList"
-tags = []
 language = "en"
 internal-references = ["none"]
 external-references = ["common-vulnerabilities-and-exposures-cve-board.1128451.n5.nabble.com", "cve.org", "cveform.mitre.org", "dhs.gov", "github.com", "mail-archive.com", "marc.info", "mitre.org", "tools.google.com", "x.com"]

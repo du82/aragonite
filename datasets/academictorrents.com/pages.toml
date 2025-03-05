@@ -1,0 +1,640 @@
+["https://academictorrents.com/details/85672347c6f13f6d2909f756e86217ce1b88fa40"]
+title = "Linguistic Data Consortium Corpora Collection - NLP Text and Speech Datasets - Academic Torrents"
+description = """
+Type: Dataset
+Tags:
+\tDataset,   nlp,   natural language,   corpus,   speech,   data,   text,   LDC,   corpora,   Linguistic Data Consortium\t
+
+
+Bibtex:
+
+\t@article{,
+title= {Linguistic Data Consortium Corpora Collection - NLP Text and Speech Datasets},
+journal= {},
+author= {},
+year= {},
+url= {https://www.ldc.upenn.edu},
+abstract= {# Lingustic Data Consortium Corpora
+
+An assortment of datasets collected from [LDC](https://www.ldc.upenn.edu). Search the corpora number on the LDC website for more information about it.
+
+- Archive.org URL: https://archive.org/details/Linguistic_Data_Consortium_Corpora
+
+## Corpora
+
+- LDC2000S86
+- LDC2000S88
+- LDC2000T44
+- LDC2000T46
+- LDC2000T47
+- LDC2000T50
+- LDC2000T52
+- LDC2000T53
+- LDC2001S15
+- LDC2001T02
+- LDC2001T14
+- LDC2001T55
+- LDC2001T57
+- LDC2001T58
+- LDC2002E17
+- LDC2002E18
+- LDC2002E32
+- LDC2002E58
+- LDC2002-27
+- LDC2002-49
+- LDC2002-49
+- LDC2002S09
+- LDC2002S10
+- LDC2002S11
+- LDC2002S13
+- LDC2002S35
+- LDC2002S56
+- LDC2002T01
+- LDC2002T03
+- LDC2002T07
+- LDC2002T31
+- LDC2002T43
+- LDC2003E01
+- LDC2003E04
+- LDC2003E05
+- LDC2003E07
+- LDC2003E08
+- LDC2003E09
+- LDC2003E11
+- LDC2003E14
+- LDC2003E25
+- LDC2003-02
+- LDC2003S01
+- LDC2003T01
+- LDC2003T02
+- LDC2003T06
+- LDC2003T07
+- LDC2003T09
+- LDC2003T11
+- LDC2003T12
+- LDC2003T13
+- LDC2003T17
+- LDC2003T18
+- LDC2004E07
+- LDC2004E08
+- LDC2004E09
+- LDC2004E11
+- LDC2004E12
+- LDC2004E13
+- LDC2004E72
+- LDC2004S02
+- LDC2004S04
+- LDC2004S11
+- LDC2004S13
+- LDC2004T01
+- LDC2004T02
+- LDC2004T04
+- LDC2004T05
+- LDC2004T07
+- LDC2004T08
+- LDC2004T09
+- LDC2004T11
+- LDC2004T12
+- LDC2004T14
+- LDC2004T15
+- LDC2004T16
+- LDC2004T17
+- LDC2004T18
+- LDC2004T19
+- LDC2005E46
+- LDC2005E47
+- LDC2005E85
+- LDC2005S13
+- LDC2005S14
+- LDC2005S26
+- LDC2005T01
+- LDC2005T02
+- LDC2005T03
+- LDC2005T05
+- LDC2005T06
+- LDC2005T07
+- LDC2005T09
+- LDC2005T10
+- LDC2005T12
+- LDC2005T13
+- LDC2005T14
+- LDC2005T16
+- LDC2005T19
+- LDC2005T20
+- LDC2005T23
+- LDC2005T28
+- LDC2005T30
+- LDC2005T32
+- LDC2005T34
+- LDC2005T35
+- LDC2006E17
+- LDC2006E24
+- LDC2006E25
+- LDC2006E26
+- LDC2006E34
+- LDC2006E36
+- LDC2006E82
+- LDC2006E86
+- LDC2006E92
+- LDC2006E93
+- LDC2006E95
+- LDC2006S29
+- LDC2006S31
+- LDC2006S35
+- LDC2006S43
+- LDC2006S45
+- LDC2006T02
+- LDC2006T04
+- LDC2006T06
+- LDC2006T08
+- LDC2006T09
+- LDC2006T10
+- LDC2006T14
+- LDC2006T18
+- LDC2006T19
+- LDC2007E59
+- LDC2007E61
+- LDC2007S03
+- LDC2007S08
+- LDC2007S10
+- LDC2007S11
+- LDC2007S12
+- LDC2007T02
+- LDC2007T03
+- LDC2007T04
+- LDC2007T08
+- LDC2007T09
+- LDC2007T21
+- LDC2007T23
+- LDC2007T24
+- LDC2007T36
+- LDC2008E39
+- LDC2008E40
+- LDC2008E41
+- LDC2008E42
+- LDC2008E62
+- LDC2008-03
+- LDC2008S05
+- LDC2008T02
+- LDC2008T05
+- LDC2008T06
+- LDC2008T08
+- LDC2008T09
+- LDC2008T18
+- LDC2008T23
+- LDC2008T25
+- LDC2009S04
+- LDC2009S05
+- LDC2009T03
+- LDC2009T05
+- LDC2009T06
+- LDC2009T08
+- LDC2009T11
+- LDC2009T12
+- LDC2009T15
+- LDC2009T23
+- LDC2009T24
+- LDC2009T26
+- LDC2010E31
+- LDC2010E82
+- LDC2010S01
+- LDC2010T01
+- LDC2010T03
+- LDC2010T04
+- LDC2010T05
+- LDC2010T06
+- LDC2010T07
+- LDC2010T08
+- LDC2010T13
+- LDC2010T21
+- LDC2011S01
+- LDC2011S04
+- LDC2011S05
+- LDC2011S06
+- LDC2011S08
+- LDC2011S09
+- LDC2011S10
+- LDC2011T03
+- LDC2011T05
+- LDC2011T07
+- LDC2011T08
+- LDC2011T09
+- LDC2011T10
+- LDC2011T12
+- LDC2011T13
+- LDC2012E102
+- LDC2012E29
+- LDC2012E34
+- LDC2012S01
+- LDC2012S02
+- LDC2012T04
+- LDC2012T04
+- LDC2012T07
+- LDC2012T13
+- LDC2012T15
+- LDC2012T21
+- LDC2013E90
+- LDC2013S02
+- LDC2013S05
+- LDC2013S07
+- LDC2013T03
+- LDC2013T04
+- LDC2013T07
+- LDC2013T09
+- LDC2013T11
+- LDC2013T12
+- LDC2013T13
+- LDC2013T15
+- LDC2013T16
+- LDC2013T17
+- LDC2013T19
+- LDC2014S05
+- LDC2014S06
+- LDC2014S07
+- LDC2014T04
+- LDC2014T09
+- LDC2014T11
+- LDC2014T12
+- LDC2014T13
+- LDC2014T15
+- LDC2014T16
+- LDC2014T17
+- LDC2014T20
+- LDC2014T23
+- LDC2014T26
+- LDC2015S01
+- LDC2015S04
+- LDC2015S04
+- LDC2015S07
+- LDC2015S11
+- LDC2015S12
+- LDC2015T01
+- LDC2015T13
+- LDC2015T16
+- LDC2015T21
+- LDC2015T22
+- LDC2015T23
+- LDC2015T24
+- LDC2016S01
+- LDC2016S07
+- LDC2016T04
+- LDC2016T05
+- LDC2016T06
+- LDC2016T09
+- LDC2016T10
+- LDC2016T15
+- LDC2016T17
+- LDC2016T25
+- LDC2017S02
+- LDC2017S07
+- LDC2017S10
+- LDC2017S14
+- LDC2017S21
+- LDC2017S24
+- LDC2017T02
+- LDC2017T04
+- LDC2017T07
+- LDC2017T10
+- LDC2017T16
+- LDC2018T03
+- LDC2018T04
+- LDC2018T15
+- LDC2018T16
+- LDC2018T19
+- LDC2018T22
+- LDC2018T23
+- LDC2018T24
+- LDC2019S07
+- LDC2019S09
+- LDC2019S12
+- LDC2019S20
+- LDC2019T02
+- LDC2019T04
+- LDC2019T05
+- LDC2019T16
+- LDC2020S01
+- LDC2020T02
+- LDC2020T22
+- LDC2021T04
+- LDC2021T11
+- LDC2021T12
+- LDC2021T15
+- LDC93S1
+- LDC93S10
+- LDC93S3A
+- LDC93S5
+- LDC93S6A
+- LDC93S7-T
+- LDC93T1
+- LDC93T3A
+- LDC94S13A
+- LDC94S14A
+- LDC94S19
+- LDC95S24
+- LDC95S26
+- LDC95T13
+- LDC95T21
+- LDC95T6
+- LDC95T7
+- LDC96-14
+- LDC96-15
+- LDC96-16
+- LDC96-17
+- LDC96S35
+- LDC96S35
+- LDC96S37
+- LDC96S46
+- LDC96S47
+- LDC96S48
+- LDC96S49
+- LDC96S50
+- LDC96S51
+- LDC96S52
+- LDC96S53
+- LDC96S54
+- LDC96S55
+- LDC96S56
+- LDC96S57
+- LDC96S58
+- LDC96S59
+- LDC96S60
+- LDC96T10
+- LDC96T16
+- LDC96T17
+- LDC96T18
+- LDC97-18
+- LDC97-20
+- LDC97-42
+- LDC97S42
+- LDC97S43
+- LDC97S44
+- LDC97S45
+- LDC97S62
+- LDC97S66
+- LDC97S66
+- LDC97T12
+- LDC97T14
+- LDC97T15
+- LDC97T19
+- LDC97T22
+- LDC97T62
+- LDC98S71
+- LDC98S77
+- LDC98T24
+- LDC98T25
+- LDC98T26
+- LDC98T28
+- LDC98T29
+- LDC98T30
+- LDC98T31
+- LDC99-22
+- LDC99T36
+- LDC99T42
+},
+keywords= {Dataset, nlp, natural language, corpus, speech, data, text, corpora, LDC, Linguistic Data Consortium},
+terms= {},
+license= {},
+superseded= {}
+}"""
+full_description = "Type: Dataset Tags: Dataset, nlp, natural language, corpus, speech, data, text, LDC, corpora, Linguistic Data Consortium Bibtex: @article{, title= {Linguistic Data Consortium Corpora Collection - NLP Text and Speech Datasets}, journal= {}, author= {}, year= {}, url= {https://www.ldc.upenn.edu}, abstract= {# Lingustic Data Consortium Corpora An assortment of datasets collected from [LDC](https://www.ldc.upenn.edu). Search the corpora number on the LDC website for more information about it. - Archive.org URL: https://archive.org/details/Linguistic_Data_Consortium_Corpora ## Corpora - LDC2000S86 - LDC2000S88 - LDC2000T44 - LDC2000T46 - LDC2000T47 - LDC2000T50 - LDC2000T52 - LDC2000T53 - LDC2001S15 - LDC2001T02 - LDC2001T14 - LDC2001T55 - LDC2001T57 - LDC2001T58 - LDC2002E17 - LDC2002E18 - LDC2002E32 - LDC2002E58 - LDC2002-27 - LDC2002-49 - LDC2002-49 - LDC2002S09 - LDC2002S10 - LDC2002S11 - LDC2002S13 - LDC2002S35 - LDC2002S56 - LDC2002T01 - LDC2002T03 - LDC2002T07 - LDC2002T31 - LDC2002T43 - LDC2003E01 - LDC2003E04 - LDC2003E05 - LDC2003E07 - LDC2003E08 - LDC2003E09 - LDC2003E11 - LDC2003E14 - LDC2003E25 - LDC2003-02 - LDC2003S01 - LDC2003T01 - LDC2003T02 - LDC2003T06 - LDC2003T07 - LDC2003T09 - LDC2003T11 - LDC2003T12 - LDC2003T13 - LDC2003T17 - LDC2003T18 - LDC2004E07 - LDC2004E08 - LDC2004E09 - LDC2004E11 - LDC2004E12 - LDC2004E13 - LDC2004E72 - LDC2004S02 - LDC2004S04 - LDC2004S11 - LDC2004S13 - LDC2004T01 - LDC2004T02 - LDC2004T04 - LDC2004T05 - LDC2004T07 - LDC2004T08 - LDC2004T09 - LDC2004T11 - LDC2004T12 - LDC2004T14 - LDC2004T15 - LDC2004T16 - LDC2004T17 - LDC2004T18 - LDC2004T19 - LDC2005E46 - LDC2005E47 - LDC2005E85 - LDC2005S13 - LDC2005S14 - LDC2005S26 - LDC2005T01 - LDC2005T02 - LDC2005T03 - LDC2005T05 - LDC2005T06 - LDC2005T07 - LDC2005T09 - LDC2005T10 - LDC2005T12 - LDC2005T13 - LDC2005T14 - LDC2005T16 - LDC2005T19 - LDC2005T20 - LDC2005T23 - LDC2005T28 - LDC2005T30 - LDC2005T32 - LDC2005T34 - LDC2005T35 - LDC2006E17 - LDC2006E24 - LDC2006E25 - LDC2006E26 - LDC2006E34 - LDC2006E36 - LDC2006E82 - LDC2006E86 - LDC2006E92 - LDC2006E93 - LDC2006E95 - LDC2006S29 - LDC2006S31 - LDC2006S35 - LDC2006S43 - LDC2006S45 - LDC2006T02 - LDC2006T04 - LDC2006T06 - LDC2006T08 - LDC2006T09 - LDC2006T10 - LDC2006T14 - LDC2006T18 - LDC2006T19 - LDC2007E59 - LDC2007E61 - LDC2007S03 - LDC2007S08 - LDC2007S10 - LDC2007S11 - LDC2007S12 - LDC2007T02 - LDC2007T03 - LDC2007T04 - LDC2007T08 - LDC2007T09 - LDC2007T21 - LDC2007T23 - LDC2007T24 - LDC2007T36 - LDC2008E39 - LDC2008E40 - LDC2008E41 - LDC2008E42 - LDC2008E62 - LDC2008-03 - LDC2008S05 - LDC2008T02 - LDC2008T05 - LDC2008T06 - LDC2008T08 - LDC2008T09 - LDC2008T18 - LDC2008T23 - LDC2008T25 - LDC2009S04 - LDC2009S05 - LDC2009T03 - LDC2009T05 - LDC2009T06 - LDC2009T08 - LDC2009T11 - LDC2009T12 - LDC2009T15 - LDC2009T23 - LDC2009T24 - LDC2009T26 - LDC2010E31 - LDC2010E82 - LDC2010S01 - LDC2010T01 - LDC2010T03 - LDC2010T04 - LDC2010T05 - LDC2010T06 - LDC2010T07 - LDC2010T08 - LDC2010T13 - LDC2010T21 - LDC2011S01 - LDC2011S04 - LDC2011S05 - LDC2011S06 - LDC2011S08 - LDC2011S09 - LDC2011S10 - LDC2011T03 - LDC2011T05 - LDC2011T07 - LDC2011T08 - LDC2011T09 - LDC2011T10 - LDC2011T12 - LDC2011T13 - LDC2012E102 - LDC2012E29 - LDC2012E34 - LDC2012S01 - LDC2012S02 - LDC2012T04 - LDC2012T04 - LDC2012T07 - LDC2012T13 - LDC2012T15 - LDC2012T21 - LDC2013E90 - LDC2013S02 - LDC2013S05 - LDC2013S07 - LDC2013T03 - LDC2013T04 - LDC2013T07 - LDC2013T09 - LDC2013T11 - LDC2013T12 - LDC2013T13 - LDC2013T15 - LDC2013T16 - LDC2013T17 - LDC2013T19 - LDC2014S05 - LDC2014S06 - LDC2014S07 - LDC2014T04 - LDC2014T09 - LDC2014T11 - LDC2014T12 - LDC2014T13 - LDC2014T15 - LDC2014T16 - LDC2014T17 - LDC2014T20 - LDC2014T23 - LDC2014T26 - LDC2015S01 - LDC2015S04 - LDC2015S04 - LDC2015S07 - LDC2015S11 - LDC2015S12 - LDC2015T01 - LDC2015T13 - LDC2015T16 - LDC2015T21 - LDC2015T22 - LDC2015T23 - LDC2015T24 - LDC2016S01 - LDC2016S07 - LDC2016T04 - LDC2016T05 - LDC2016T06 - LDC2016T09 - LDC2016T10 - LDC2016T15 - LDC2016T17 - LDC2016T25 - LDC2017S02 - LDC2017S07 - LDC2017S10 - LDC2017S14 - LDC2017S21 - LDC2017S24 - LDC2017T02 - LDC2017T04 - LDC2017T07 - LDC2017T10 - LDC2017T16 - LDC2018T03 - LDC2018T04 - LDC2018T15 - LDC2018T16 - LDC2018T19 - LDC2018T22 - LDC2018T23 - LDC2018T24 - LDC2019S07 - LDC2019S09 - LDC2019S12 - LDC2019S20 - LDC2019T02 - LDC2019T04 - LDC2019T05 - LDC2019T16 - LDC2020S01 - LDC2020T02 - LDC2020T22 - LDC2021T04 - LDC2021T11 - LDC2021T12 - LDC2021T15 - LDC93S1 - LDC93S10 - LDC93S3A - LDC93S5 - LDC93S6A - LDC93S7-T - LDC93T1 - LDC93T3A - LDC94S13A - LDC94S14A - LDC94S19 - LDC95S24 - LDC95S26 - LDC95T13 - LDC95T21 - LDC95T6 - LDC95T7 - LDC96-14 - LDC96-15 - LDC96-16 - LDC96-17 - LDC96S35 - LDC96S35 - LDC96S37 - LDC96S46 - LDC96S47 - LDC96S48 - LDC96S49 - LDC96S50 - LDC96S51 - LDC96S52 - LDC96S53 - LDC96S54 - LDC96S55 - LDC96S56 - LDC96S57 - LDC96S58 - LDC96S59 - LDC96S60 - LDC96T10 - LDC96T16 - LDC96T17 - LDC96T18 - LDC97-18 - LDC97-20 - LDC97-42 - LDC97S42 - LDC97S43 - LDC97S44 - LDC97S45 - LDC97S62 - LDC97S66 - LDC97S66 - LDC97T12 - LDC97T14 - LDC97T15 - LDC97T19 - LDC97T22 - LDC97T62 - LDC98S71 - LDC98S77 - LDC98T24 - LDC98T25 - LDC98T26 - LDC98T28 - LDC98T29 - LDC98T30 - LDC98T31 - LDC99-22 - LDC99T36 - LDC99T42 }, keywords= {Dataset, nlp, natural language, corpus, speech, data, text, corpora, LDC, Linguistic Data Consortium}, terms= {}, license= {}, superseded= {} }"
+year_published = 2025
+clearnet = "https://academictorrents.com/details/85672347c6f13f6d2909f756e86217ce1b88fa40"
+tags = ["bibtex:", "collection", "consortium", "corpora", "data", "datasets", "dmca", "issued", "linguistic", "notice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/collections.php"]
+title = "Collections - Academic Torrents"
+description = "Collections are curated groups of entries. The goal is to provide a grouping of entries for a specific community, institution, or conference. Each collection contains a description that can be changed by the curator day-to-day. Each collection provides an RSS and CSV feed of it's contents to allow syncing."
+full_description = "Collections are curated groups of entries. The goal is to provide a grouping of entries for a specific community, institution, or conference. Each collection contains a description that can be changed by the curator day-to-day. Each collection provides an RSS and CSV feed of it's contents to allow syncing."
+year_published = 2025
+clearnet = "https://academictorrents.com/collections.php"
+tags = ["academic's", "analysis", "another", "archives", "awesome", "bibliometrics", "boston", "camelyon16", "cancer", "captures"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "bristol.ac.uk", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "github.com", "imperial.ac.uk", "kaust.edu.sa", "mit.edu", "osuosl.org", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "stanford.edu", "um.si", "umb.edu", "umich.edu", "umontreal.ca"]
+
+["https://academictorrents.com/login.php"]
+title = "Login - Academic Torrents"
+description = "We've designed a distributed system for sharing enormous datasets - for researchers, by researchers. The result is a scalable, secure, and fault-tolerant repository for data, with blazing fast download speeds."
+year_published = 2025
+clearnet = "https://academictorrents.com/login.php"
+tags = ["checking", "security...", "sign"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/browse.php"]
+title = ""
+year_published = 2025
+clearnet = "https://academictorrents.com/browse.php"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "bristol.ac.uk", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "github.com", "imperial.ac.uk", "kaust.edu.sa", "mit.edu", "osuosl.org", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "stanford.edu", "um.si", "umb.edu", "umich.edu", "umontreal.ca"]
+
+["https://academictorrents.com/about.php"]
+title = "About — Academic Torrents Documentation 1.0 documentation"
+full_description = "About Academics Torrents was established to meet the demands of science in the age of big data. It utilizes a scalable BitTorrent platform that distributes the burden of hosting data, eliminating the risk of data loss due to the rise and fall of dataset hosting providers. Researchers are empowered to replicate data they are working with and share large datasets without incurring the high costs usually associated with commercial providers. Academic Torrents is a product of the Institute for Reproducible Research (a U.S. 501(c)3 nonprofit). Twitter: @academictorrent Facebook: AcademicTorrents Team Joseph Paul Cohen Henry Z Lo Jonathan Nogueira Mission Personal Statement This service is designed to facilitate storage of all the data used in research, including datasets as well as publications. There are many advantages of using bittorrent technology to disseminate this work. Distributed storage and content delivery provided by anyone. Files can be securely downloaded from other users of the system. They can share the file for a day or a year. Mirroring the content can be done from a desktop computer anywhere. Everyone surrounding this computer will have local access to the data automatically and securely. Bundles of files, not just papers, or any size can be disseminated in this way as long as at least one person can become a seed for that data. Torrent technology allows a group of editors to “seed” their own peer-reviewed published articles with just a torrent client. Each editor can have part or all of the papers stored on their desktops and have a torrent tracker to coordinate the delivery of papers without a dedicated server. One aim of this site is to create the infrastructure to allow open access journals to operate at low cost. By facilitating file transfers, the journal can focus on its core mission of providing world class research. After peer review the paper can be indexed on this site and disseminated throughout our system. Large dataset delivery can be supported by researchers in the field that have the dataset on their machine. A popular large dataset doesn’t need to be housed centrally. Researchers can have part of the dataset they are working on and they can help host it together. Libraries can host this data to host papers from their own campus without becoming the only source of the data. So even if a library’s system is broken other universities can participate in getting that data into the hands of researchers. -Joseph Paul Cohen 2013 joseph /at/ josephpcohen.com Cite Please cite Academic Torrents: Henry Z. Lo. and Cohen, Joseph Paul “Academic Torrents: Scalable Data Distribution.” Neural Information Processing Systems Challenges in Machine Learning (CiML) Workshop, 2016, http://arxiv.org/abs/1603.04395. Cohen, Joseph Paul, and Henry Z. Lo. “Academic Torrents: A Community-Maintained Distributed Repository.” Annual Conference of the Extreme Science and Engineering Discovery Environment, 2014, http://doi.org/10.1145/2616498.2616528. download bibtex file academictorrents.bib @inproceedings{Cohen2014, title = {Academic Torrents: A Community-Maintained Distributed Repository}, author = {Cohen, Joseph Paul and Lo, Henry Z.}, booktitle = {Annual Conference of the Extreme Science and Engineering Discovery Environment}, doi = {10.1145/2616498.2616528}, url = {http://doi.acm.org/10.1145/2616498.2616528}, year = {2014} } @inproceedings{Lo2016, title = {Academic Torrents: Scalable Data Distribution}, author = {Lo, Henry Z. and Cohen, Joseph Paul}, booktitle = {Neural Information Processing Systems Challenges in Machine Learning (CiML) workshop}, arxivId = {1603.04395}, url = {http://arxiv.org/abs/1603.04395}, year = {2016} } Support If you are having issues, please let us knowWe have an issue tracker here: https://github.com/AcademicTorrents/academictorrents-docs/issuesWe have a contact email here: contact@academictorrents.com Legal Please submit DMCA requests using this Google formWe have never received an order to turn over user information. The following torrents have been removed due to DMCA requests: https://academictorrents.com/details/5daa22057577521a378b71e0f0de6a934bd5c2ea https://academictorrents.com/details/a528703c7354567183da4aafaea12ce77e47f6bb https://academictorrents.com/details/3374eb064817a8edd12167b6e9e1300b13d9f08a https://academictorrents.com/details/85672347c6f13f6d2909f756e86217ce1b88fa40 https://academictorrents.com/details/0d366035664fdf51cfbe9f733953ba325776e667 Thanks Python at-python library Martin Weiss Smart Node Team 2014 Jonathan Nogueira Adrian Garay Grigorii Lazari James Lee Luc Nguyen Mani Jalilian dward Grigoryan Java BitTorrent API Team 2015 Alpesh Kothari Gregory McPherran Contributors akmalhisyam Mantas Radzevičius Stefan Parviainen Hanz Gumapac Dennis Yassine Khan Janny (@Reboot_ex)"
+year_published = 2025
+clearnet = "https://academictorrents.com/about.php"
+tags = ["2014", "2015", "about", "at-python", "bittorrent", "cite", "contributors", "java", "legal", "library"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "bristol.ac.uk", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "github.com", "imperial.ac.uk", "kaust.edu.sa", "mit.edu", "osuosl.org", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "stanford.edu", "um.si", "umb.edu", "umich.edu", "umontreal.ca"]
+
+["https://academictorrents.com/upload.php"]
+title = "Login - Academic Torrents"
+description = "We've designed a distributed system for sharing enormous datasets - for researchers, by researchers. The result is a scalable, secure, and fault-tolerant repository for data, with blazing fast download speeds."
+year_published = 2025
+clearnet = "https://academictorrents.com/upload.php"
+tags = ["checking", "security...", "sign"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/details/3374eb064817a8edd12167b6e9e1300b13d9f08a"]
+title = "[Coursera] Social Psychology by Scott Plous (Wesleyan University) - Academic Torrents"
+description = """
+Type: Course
+Tags:
+\t Social,   mooc,   Coursera,  psychology\t
+
+
+Bibtex:
+
+\t@article{,
+title= {[Coursera] Social Psychology by Scott Plous (Wesleyan University)},
+keywords= {psychology, mooc, Social, Coursera},
+journal= {},
+author= {Scott Plous},
+year= {},
+url= {https://www.class-central.com/mooc/555/coursera-social-psychology},
+license= {},
+abstract= {Course Description from Professor Plous:
+
+Each of us is dealt a different hand in life, but we all face similar questions when it comes to human behavior: What leads us to like one person and dislike another? How do conflicts and prejudices develop, and how can they be reduced? Can psychological research help protect the environment, and if so, how? This course offers an introduction to classic and contemporary social psychology, covering topics such as decision making, persuasion, group behavior, personal attraction, and factors that promote health and well-being.
+
+Our focus will be on surprising, entertaining, and intriguing research findings that are easy to apply in daily life. As part of this focus, several homework assignments will encourage you to experiment with your life, observe the results, and analyze what took place. The course will also draw from the web sites of Social Psychology Network, the world's largest online community devoted to social psychology. I hope you'll join me for this course, have fun, and learn some useful information that enriches your life!    },
+superseded= {},
+terms= {}
+}"""
+full_description = "Type: Course Tags: Social, mooc, Coursera, psychology Bibtex: @article{, title= {[Coursera] Social Psychology by Scott Plous (Wesleyan University)}, keywords= {psychology, mooc, Social, Coursera}, journal= {}, author= {Scott Plous}, year= {}, url= {https://www.class-central.com/mooc/555/coursera-social-psychology}, license= {}, abstract= {Course Description from Professor Plous: Each of us is dealt a different hand in life, but we all face similar questions when it comes to human behavior: What leads us to like one person and dislike another? How do conflicts and prejudices develop, and how can they be reduced? Can psychological research help protect the environment, and if so, how? This course offers an introduction to classic and contemporary social psychology, covering topics such as decision making, persuasion, group behavior, personal attraction, and factors that promote health and well-being. Our focus will be on surprising, entertaining, and intriguing research findings that are easy to apply in daily life. As part of this focus, several homework assignments will encourage you to experiment with your life, observe the results, and analyze what took place. The course will also draw from the web sites of Social Psychology Network, the world's largest online community devoted to social psychology. I hope you'll join me for this course, have fun, and learn some useful information that enriches your life! }, superseded= {}, terms= {} }"
+year_published = 2025
+clearnet = "https://academictorrents.com/details/3374eb064817a8edd12167b6e9e1300b13d9f08a"
+tags = ["bibtex:", "dmca", "issued", "notice", "plous", "psychology", "scott", "social", "tags:", "torrent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/details/5daa22057577521a378b71e0f0de6a934bd5c2ea"]
+title = "Artificial Intelligence(EDX) - Academic Torrents"
+description = """
+Type: Course
+Tags:
+\t AI,   intelligence,   course,   deep,   learning,   natural,   language,   processing,   ColumbiaX,   CSMM,   edx,   101x,  artifical\t
+
+
+Bibtex:
+
+\t@article{,
+title= {Artificial Intelligence(EDX)},
+keywords= {artifical, intelligence, course, deep, learning, natural, language, processing, ColumbiaX, CSMM, AI, edx, 101x},
+journal= {},
+author= {ColumbiaX},
+year= {},
+url= {},
+license= {},
+abstract= {Seed},
+superseded= {},
+terms= {}
+}"""
+full_description = "Type: Course Tags: AI, intelligence, course, deep, learning, natural, language, processing, ColumbiaX, CSMM, edx, 101x, artifical Bibtex: @article{, title= {Artificial Intelligence(EDX)}, keywords= {artifical, intelligence, course, deep, learning, natural, language, processing, ColumbiaX, CSMM, AI, edx, 101x}, journal= {}, author= {ColumbiaX}, year= {}, url= {}, license= {}, abstract= {Seed}, superseded= {}, terms= {} }"
+year_published = 2025
+clearnet = "https://academictorrents.com/details/5daa22057577521a378b71e0f0de6a934bd5c2ea"
+tags = ["artificial", "bibtex:", "columbiax", "dmca", "issued", "notice", "tags:", "torrent", "type:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/details/a528703c7354567183da4aafaea12ce77e47f6bb"]
+title = "Morningstar 65000 Daily Funds Price Data Sep 2011- Sep 2021 - Academic Torrents"
+description = """
+Type: Dataset
+Tags:
+\tfinance,   Funds,   Morningstar\t
+
+
+Bibtex:
+
+\t@article{,
+title= {Morningstar 65000 Daily Funds Price Data Sep 2011- Sep 2021},
+journal= {},
+author= {Morningstar},
+year= {},
+url= {},
+abstract= {Daily price data of ~65,000 funds scraped off Morningstar.com
+
+Two database tables supplied as separate SQL scripts, join on SecId
+
+You should just be able to load these into the database of your choice (created with SQL Server 2016)
+
+Funds table has ~65,000 rows (Contains fund name, sectorname, ratings, Returns etc.)
+FundsPrice table has ~97,000,000 rows. Join on SecId
+
+Uncompressed size of FundsPrice table is 16GB(!)
+
+Name: Stage.Funds_Morningstar.Table.7z
+Size: 3976542 bytes (3883 KiB)
+SHA256: 72740F9097B01DCD1DD99398F25152028845A0B8F0EC9ABC82D416C802954391
+
+Name: Stage.FundsPrice_Morningstar.Table.7z
+Size: 517311951 bytes (493 MiB)
+SHA256: 8B5C2FB5BBC32C1144D3937C18D26D242FF1FBF4024B3FF53A12DF70F24862B3
+
+Enjoy!
+
+u/aPir8},
+keywords= {finance, Funds, Morningstar},
+terms= {},
+license= {},
+superseded= {}
+}"""
+full_description = "Type: Dataset Tags: finance, Funds, Morningstar Bibtex: @article{, title= {Morningstar 65000 Daily Funds Price Data Sep 2011- Sep 2021}, journal= {}, author= {Morningstar}, year= {}, url= {}, abstract= {Daily price data of ~65,000 funds scraped off Morningstar.com Two database tables supplied as separate SQL scripts, join on SecId You should just be able to load these into the database of your choice (created with SQL Server 2016) Funds table has ~65,000 rows (Contains fund name, sectorname, ratings, Returns etc.) FundsPrice table has ~97,000,000 rows. Join on SecId Uncompressed size of FundsPrice table is 16GB(!) Name: Stage.Funds_Morningstar.Table.7z Size: 3976542 bytes (3883 KiB) SHA256: 72740F9097B01DCD1DD99398F25152028845A0B8F0EC9ABC82D416C802954391 Name: Stage.FundsPrice_Morningstar.Table.7z Size: 517311951 bytes (493 MiB) SHA256: 8B5C2FB5BBC32C1144D3937C18D26D242FF1FBF4024B3FF53A12DF70F24862B3 Enjoy! u/aPir8}, keywords= {finance, Funds, Morningstar}, terms= {}, license= {}, superseded= {} }"
+year_published = 2025
+clearnet = "https://academictorrents.com/details/a528703c7354567183da4aafaea12ce77e47f6bb"
+tags = ["2011-", "bibtex:", "daily", "data", "dmca", "funds", "issued", "morningstar", "notice", "price"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/details/0d366035664fdf51cfbe9f733953ba325776e667"]
+title = "The Pile An 800GB Dataset of Diverse Text for Language Modeling - Academic Torrents"
+description = """
+Type: Dataset
+Tags:
+\t\t
+
+
+Bibtex:
+
+\t@article{,
+title= {The Pile An 800GB Dataset of Diverse Text for Language Modeling},
+journal= {},
+author= {EleutherAI},
+year= {},
+url= {https://the-eye.eu/public/AI/},
+abstract= {## What is the Pile?
+
+The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together.
+
+## Why is the Pile a good training set?
+Recent work has shown that especially for large models, diversity in data sources improves general cross-domain knowledge of the model, as well as downstream generalization capability. In our evaluations, not only do models trained on the Pile show moderate improvements in traditional language modeling benchmarks, they also show significant improvements on Pile BPB.
+
+## Why is the Pile a good benchmark?
+To score well on Pile BPB (bits per byte), a model must be able to understand many disparate domains including books, github repositories, webpages, chat logs, and medical, physics, math, computer science, and philosophy papers. Pile BPB is a measure of world knowledge and reasoning ability in these domains, making it a robust benchmark of general, cross-domain text modeling ability for large language models.},
+keywords= {},
+terms= {},
+license= {},
+superseded= {}
+}"""
+full_description = "Type: Dataset Tags: Bibtex: @article{, title= {The Pile An 800GB Dataset of Diverse Text for Language Modeling}, journal= {}, author= {EleutherAI}, year= {}, url= {https://the-eye.eu/public/AI/}, abstract= {## What is the Pile? The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together. ## Why is the Pile a good training set? Recent work has shown that especially for large models, diversity in data sources improves general cross-domain knowledge of the model, as well as downstream generalization capability. In our evaluations, not only do models trained on the Pile show moderate improvements in traditional language modeling benchmarks, they also show significant improvements on Pile BPB. ## Why is the Pile a good benchmark? To score well on Pile BPB (bits per byte), a model must be able to understand many disparate domains including books, github repositories, webpages, chat logs, and medical, physics, math, computer science, and philosophy papers. Pile BPB is a measure of world knowledge and reasoning ability in these domains, making it a robust benchmark of general, cross-domain text modeling ability for large language models.}, keywords= {}, terms= {}, license= {}, superseded= {} }"
+year_published = 2025
+clearnet = "https://academictorrents.com/details/0d366035664fdf51cfbe9f733953ba325776e667"
+tags = ["800gb", "bibtex:", "dataset", "diverse", "dmca", "eleutherai", "issued", "language", "modeling", "notice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com/give"]
+title = "Give - Academic Torrents"
+description = "Academics Torrents needs your help to expand our infrastructure to better serve you!"
+full_description = "We are a 501(c)3 non-profit corporation (EIN: 46-5721157) called the Institute for Reproducible Research so all donations are tax deductible. Academics Torrents was founded to address the needs of science in the era of big data. We are currently facilitating the transfer of over 3TB of data per day and over 30,000 visitors/monthly from research institutions from around the world. We need your help to expand our infrastructure to better serve you! Please contact us if you would like to become a node in our network."
+year_published = 2025
+clearnet = "https://academictorrents.com/give"
+tags = ["available", "cite", "data", "deductible", "donation:", "making", 'research."', "statistics:", "thank"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "doi.org", "imperial.ac.uk", "osuosl.org", "paypal.com", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca", "wallet.google.com"]
+
+["https://academictorrents.com"]
+title = "Academic Torrents"
+description = "A distributed system for sharing enormous datasets - for researchers, by researchers. The result is a scalable, secure, and fault-tolerant repository for data, with blazing fast download speeds."
+full_description = '''We've designed a distributed system for sharing enormous datasets - for researchers, by researchers. The result is a scalable, secure, and fault-tolerant repository for data, with blazing fast download speeds. Contact us at document.write('<a href="mailto:contact@' + 'academictorrents.com">contact@' + 'academictorrents.com</a>').'''
+year_published = 2025
+clearnet = "https://academictorrents.com"
+tags = ["127.15tb", "available!", "data", "making", "research"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "bristol.ac.uk", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "github.com", "imperial.ac.uk", "kaust.edu.sa", "mila.quebec", "mit.edu", "osuosl.org", "rapidseedbox.com", "reproducibilityinstitute.org", "seedboxes.cc", "stanford.edu", "um.si", "umb.edu", "umich.edu", "umontreal.ca"]
+
+["https://academictorrents.com/docs/about.html"]
+title = "About — Academic Torrents Documentation 1.0 documentation"
+full_description = "About Academics Torrents was established to meet the demands of science in the age of big data. It utilizes a scalable BitTorrent platform that distributes the burden of hosting data, eliminating the risk of data loss due to the rise and fall of dataset hosting providers. Researchers are empowered to replicate data they are working with and share large datasets without incurring the high costs usually associated with commercial providers. Academic Torrents is a product of the Institute for Reproducible Research (a U.S. 501(c)3 nonprofit). Twitter: @academictorrent Facebook: AcademicTorrents Team Joseph Paul Cohen Henry Z Lo Jonathan Nogueira Mission Personal Statement This service is designed to facilitate storage of all the data used in research, including datasets as well as publications. There are many advantages of using bittorrent technology to disseminate this work. Distributed storage and content delivery provided by anyone. Files can be securely downloaded from other users of the system. They can share the file for a day or a year. Mirroring the content can be done from a desktop computer anywhere. Everyone surrounding this computer will have local access to the data automatically and securely. Bundles of files, not just papers, or any size can be disseminated in this way as long as at least one person can become a seed for that data. Torrent technology allows a group of editors to “seed” their own peer-reviewed published articles with just a torrent client. Each editor can have part or all of the papers stored on their desktops and have a torrent tracker to coordinate the delivery of papers without a dedicated server. One aim of this site is to create the infrastructure to allow open access journals to operate at low cost. By facilitating file transfers, the journal can focus on its core mission of providing world class research. After peer review the paper can be indexed on this site and disseminated throughout our system. Large dataset delivery can be supported by researchers in the field that have the dataset on their machine. A popular large dataset doesn’t need to be housed centrally. Researchers can have part of the dataset they are working on and they can help host it together. Libraries can host this data to host papers from their own campus without becoming the only source of the data. So even if a library’s system is broken other universities can participate in getting that data into the hands of researchers. -Joseph Paul Cohen 2013 joseph /at/ josephpcohen.com Cite Please cite Academic Torrents: Henry Z. Lo. and Cohen, Joseph Paul “Academic Torrents: Scalable Data Distribution.” Neural Information Processing Systems Challenges in Machine Learning (CiML) Workshop, 2016, http://arxiv.org/abs/1603.04395. Cohen, Joseph Paul, and Henry Z. Lo. “Academic Torrents: A Community-Maintained Distributed Repository.” Annual Conference of the Extreme Science and Engineering Discovery Environment, 2014, http://doi.org/10.1145/2616498.2616528. download bibtex file academictorrents.bib @inproceedings{Cohen2014, title = {Academic Torrents: A Community-Maintained Distributed Repository}, author = {Cohen, Joseph Paul and Lo, Henry Z.}, booktitle = {Annual Conference of the Extreme Science and Engineering Discovery Environment}, doi = {10.1145/2616498.2616528}, url = {http://doi.acm.org/10.1145/2616498.2616528}, year = {2014} } @inproceedings{Lo2016, title = {Academic Torrents: Scalable Data Distribution}, author = {Lo, Henry Z. and Cohen, Joseph Paul}, booktitle = {Neural Information Processing Systems Challenges in Machine Learning (CiML) workshop}, arxivId = {1603.04395}, url = {http://arxiv.org/abs/1603.04395}, year = {2016} } Support If you are having issues, please let us knowWe have an issue tracker here: https://github.com/AcademicTorrents/academictorrents-docs/issuesWe have a contact email here: contact@academictorrents.com Legal Please submit DMCA requests using this Google formWe have never received an order to turn over user information. The following torrents have been removed due to DMCA requests: https://academictorrents.com/details/5daa22057577521a378b71e0f0de6a934bd5c2ea https://academictorrents.com/details/a528703c7354567183da4aafaea12ce77e47f6bb https://academictorrents.com/details/3374eb064817a8edd12167b6e9e1300b13d9f08a https://academictorrents.com/details/85672347c6f13f6d2909f756e86217ce1b88fa40 https://academictorrents.com/details/0d366035664fdf51cfbe9f733953ba325776e667 Thanks Python at-python library Martin Weiss Smart Node Team 2014 Jonathan Nogueira Adrian Garay Grigorii Lazari James Lee Luc Nguyen Mani Jalilian dward Grigoryan Java BitTorrent API Team 2015 Alpesh Kothari Gregory McPherran Contributors akmalhisyam Mantas Radzevičius Stefan Parviainen Hanz Gumapac Dennis Yassine Khan Janny (@Reboot_ex)"
+year_published = 2025
+clearnet = "https://academictorrents.com/docs/about.html"
+tags = ["2014", "2015", "about", "at-python", "bittorrent", "cite", "contributors", "java", "legal", "library"]
+language = "en"
+internal-references = ["none"]
+external-references = ["berkeley.edu", "bristol.ac.uk", "cfhcable.com", "cmu.edu", "cornell.edu", "diagnijmegen.nl", "docs.google.com", "github.com", "imperial.ac.uk", "mit.edu", "osuosl.org", "readthedocs.org", "reproducibilityinstitute.org", "seedboxes.cc", "sphinx-doc.org", "twitter.com", "um.si", "umb.edu", "umich.edu", "umontreal.ca"]

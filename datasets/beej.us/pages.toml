@@ -1,0 +1,196 @@
+["https://beej.us/blog"]
+title = "Beej's Bit Bucket"
+full_description = "How to make a scrolling pane in HTML/CSS; in particular, how to wrap it all in a jQuery plugin for easy reuse. An exercise in refactoring code from being closely tied to a page to being less closely tied. This is based on the previous scratcher code. Crank out as many digits of π as you desire! Limited only by your imagination! Crank out your own modest π in the browser, too! (Limited by 64-bit IEEE-754.)"
+year_published = 2025
+clearnet = "https://beej.us/blog"
+tags = ["beej's", "beej@beej.us", "blog", "bucket", "collection", "home", "programming", "tech", "writings"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io"]
+
+["https://beej.us/pizza"]
+title = "The Internet Pizza Server Home Page"
+year_published = 2025
+clearnet = "https://beej.us/pizza"
+tags = ['"beej-bux",', "anyway?", "area", "documents", "general", "gift", "information", "internet", "news", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "caltopo.com", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["https://beej.us/smokeyjoes"]
+title = "Smokey Joe's Cafe"
+description = "Smokey Joe's Cafe information"
+full_description = '''Smokey Joe's was a vegetarian breakfast/lunch joint in Berkeley, CA (at 1620 Shattuck Ave., to be particular). I put this page up so that it wouldn't be forgotten. I spent the morning of 9/11 in there drinking coffee and listening to the radio with Ned and Charlie. Ned was the owner. He used to get mad when people would try to order decaf, but was a fantastic guy. We ate there a lot. Then one sad day—probably around 2005—Ned informed me he was selling the place. "I don't want to die with a spatula in my hand," he said. I've scanned the menu, above, so follow the link to relive your old favorites: Primos, Jeff's Usual, and the Holy Mole Frijole Bowl. Addendum! Ned has written a book! lightnin, one g no apostrophe: a kid in the navy, romance of the sea, realities of war. I can personally certify that this is one of the most touching, human books I've ever read. And you shouldn't miss it, especially if you've ever met him. Buy it now!'''
+year_published = 2025
+clearnet = "https://beej.us/smokeyjoes"
+tags = ["addendum!", "book!", "cafe", "joe's", "now!", "smokey", "written"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "catb.org", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["https://beej.us/graffiti"]
+title = "Graffiti Central"
+year_published = 2025
+clearnet = "https://beej.us/graffiti"
+tags = ["central", "graffiti", "graffiti central"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io"]
+
+["https://beej.us/lh"]
+title = "Beej's Lincoln Highway Stuff"
+full_description = "Created with Blender, units are meters. Textures and measurements are from a marker in Vacaville, CA. The sidebar image to the left was created from this model. (Collada and FBX are exports—I haven't verified them.) This is a map-in-progress from a variety of different sources. It's all sort of a mess at the moment, stuffed in the same file and not well-annotated. I mostly use it for navigation when I'm on the road."
+year_published = 2025
+clearnet = "https://beej.us/lh"
+tags = ["beej's", "highway", "lincoln", "stuff"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "flickr.com", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "lincolnhighwayassoc.org", "mamedev.org", "mapper.acme.com", "mastodon.sdf.org", "plus.google.com", "slackware.com", "youtube.com"]
+
+["https://beej.us/blog/data/html5-canvas-globalcompositeoperation"]
+title = "HTML5 Canvas and globalCompositeOperation"
+full_description = '''Your browser doesn't support HTML canvas. Get a modern browser such as Chrome, Firefox, Opera, or IE9. And then, only then, will you be able to see this demo. Sorry! I haven't had much time to post lately, but I saw a cool little "scratch off" app go by on Hacker News that I thought could be improved upon by using something in HTML5 canvas known as the globalCompositeOperation. So I coded up a demo to show it off. The globalCompositeOperation affects how canvas drawing routines interact with the data that's being drawn upon. There are many different operations, but the default is "source-over", which the spec says: "Display the source image wherever the source image is opaque. Display the destination image elsewhere", which makes a certain kind of sense for what you usually want to do. Another common mode is "copy", which ignores transparency. As the spec says for "copy": "Display the source image instead of the destination image." But, in fact, there are plenty of modes. And some of them are better-supported than others. For this demo, for example, I wanted to use "source-out". Chrome and Safari seemed to be OK with it, but Firefox just left the canvas blank—not too useful. So instead I fell back on using "source-atop", which I also made to work. (A completely different approach to this entire problem might be to record the path you've drawn and use the clip() method to mask out the image, but I have doubts that would be faster.) This is supposed to be demo code, not production code. Nevertheless, several people have asked me how to remove the thumbnails. The answer: delete every line in the JS and HTML that mentions "thumb". Finally, after user requests, I've added a page that shows how to refactor this demo code to make it work with multiple canvases on the same page.'''
+year_published = 2025
+clearnet = "https://beej.us/blog/data/html5-canvas-globalcompositeoperation"
+tags = ["beej's", "beej@beej.us", "blog", "browser", "bucket", "canvas", "canvas.", "doesn't", "globalcompositeoperation", "home"]
+language = "en"
+internal-references = ["none"]
+external-references = ["analyser.oli.tudelft.nl", "asawicki.info", "bend.hackersguild.us", "brianbutko.wordpress.com", "catb.org", "chez.com", "clipartmag.com", "csuchico.edu", "docs.hfbk.net", "en.wikipedia.org", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "lincolnhighwayassoc.org", "oohva.org", "ridebdr.com", "slackware.com", "tobscore.com", "transeurotrail.org", "whatwg.org"]
+
+["https://beej.us/index05.html"]
+title = "Beej's Web Page"
+year_published = 2025
+clearnet = "https://beej.us/index05.html"
+tags = ["beej!╽", "entertain╽", "learn╽", "program╽", "whatever╽", "╼╼╼╼╼┙", "╼╼╼╼╼╮", "╼╼╼╼╼╼╼┙", "╼╼╼╼╼╼╼╮", "╼╼╼╼╼╼╼╼┙"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "flickr.com", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io", "youtube.com"]
+
+["https://beej.us/guide/bgnet"]
+title = "Beej's Guide to Network Programming"
+full_description = 'Hello, one and all! This is my little how-to guide on network programming using Internet sockets, or "sockets programming", for those of you who prefer it. The sockets API, though started by the Berkeley folk, has been ported to many many platforms, including Unix, Linux, and even Windows. Unfortunately, it can be a little, um, "much" to digest the API, but as long as you know some C or C++, this guide should springboard you into the realm of network programming with hopefully as little hassle as humanly possible!'
+year_published = 2025
+clearnet = "https://beej.us/guide/bgnet"
+tags = ["beej's", "book", "broken", "examples:", "guide", "holy", "html:", "internet", "life", "links"]
+language = "en"
+internal-references = ["none"]
+external-references = ["analyser.oli.tudelft.nl", "asawicki.info", "bend.hackersguild.us", "brianbutko.wordpress.com", "catb.org", "chez.com", "clipartmag.com", "csuchico.edu", "docs.hfbk.net", "en.wikipedia.org", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "ridebdr.com", "slackware.com", "tobscore.com", "transeurotrail.org"]
+
+["https://beej.us/rot13"]
+title = ""
+year_published = 2025
+clearnet = "https://beej.us/rot13"
+tags = ["rot13"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "catb.org", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["https://beej.us/bio"]
+title = "Beej's Bio"
+description = "Brian 'Beej Jorgensen' Hall's Bio Page"
+full_description = "The first digital photo of me ever taken, 1993, 136x117 GIF. My hair has since radically changed to be a lot more gray and lot less. And I literally have a gray beard. The Field: Software Developer, 20 years experience. Hewlett-Packard, Freestyle Interactive (a dot-com startup), Z-AXIS (an Activision studio), independent contracting, and co-founded Robot Stampede (a webdev company). Hobbies: Dual-sport motorcycling (DR-Z400S), caving, hiking, mountain biking, GIS (with qGIS), GPS, maps, survey, compass navigation. If you need some kind of fun GIS work, drop me a line. 😁 Currently: Computer Science Instructor at OSU-Cascades. Writing more free books, as always. As it is my passion, I'm going to be in education for the duration. The longest gig I'd had was the last one, the company I co-founded. That lasted 9 years. And after that it was time to turn to my next career: education. In a way, this was coming a full circle. I'd started off with Beej's Guide to Network Programming back in 1995 or so, and it was time to pursue that aspect of the field. To that end, I worked at a CS-oriented bootcamp for a number of years, developing curriculum and instructing. I also occasionally teach Computer Science as an adjunct at the local community college and state university. A good instructor can, over the course of their career, create hundreds of millions or even billions of dollars of GDP. Let's say a teacher teaches 40 students a year for 30 years. And Each of those students goes on to work for 40 years. And, due to the quality of instruction, they earn $10,000 more per year than they would have otherwise. At the bootcamp, each instructor saw a new cohort every month. We went through way more than 40 students per instructor per year. And so, I'm returning to it. It's the same reason I had the Network Programming guide out there in the first place: the hope that people will take the help I've giving and then, either individually or collectively, go on to accomplish more amazing things than I could even think of."
+year_published = 2025
+clearnet = "https://beej.us/bio"
+tags = ["beej's", "between", "commodore", "currently", "education", "field", "hobbies", "osborne", "overview", "what's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io"]
+
+["https://beej.us/gf"]
+title = "Freestyle Interactive Gunfight Unlock Code"
+year_published = 2025
+clearnet = "https://beej.us/gf"
+tags = ["code", "freestyle", "gunfight", "interactive", "unlock"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io"]
+
+["https://beej.us/pgp"]
+title = "Beej's PGP Key"
+description = "Brian 'Beej Jorgensen' Hall's PGP public key"
+year_published = 2025
+clearnet = "https://beej.us/pgp"
+tags = ["beej's", "🔑"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "caltopo.com", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["https://beej.us/guide"]
+title = "Beej's Guides"
+full_description = "Find it useful? Make a donation! Over the years I've accumulated much information on many different things, and I enjoy taking a crack at explaining them to other people. If you're lucky, that's you! The time I spend working on these projects ebbs and flows, but check back some time in the future, and you might find some entirely new stuff."
+year_published = 2025
+clearnet = "https://beej.us/guide"
+tags = ["actual", "beej's", "book!", "bucket", "communication", "concepts", "c—library", "c—tutorial", "debugger", "downloads!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "linkedin.com", "mamedev.org", "mastodon.sdf.org", "mirrors.edge.kernel.org", "reddit.com", "slackware.com", "vice-emu.sourceforge.io"]
+
+["https://beej.us"]
+title = "Beej's Web Page"
+description = "Brian 'Beej Jorgensen' Hall's home page"
+year_published = 2025
+clearnet = "https://beej.us"
+tags = ["beej's", "books", "home", "learn", "places", "stuff", "utilities", "visit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "eff.org", "github.com", "keyoxide.org", "lemmy.sdf.org", "linkedin.com", "mastodon.sdf.org", "reddit.com"]
+
+["https://beej.us/moria"]
+title = "Beej's Moria Page"
+description = "Beej's Moria Page"
+year_published = 2025
+clearnet = "https://beej.us/moria"
+tags = ["binaries", "circle", "classic", "information", "modern", "moria", "online", "play", "social", "sources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["archive.org", "bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "computersmuseum.com", "csuchico.edu", "eff.org", "en.wikipedia.org", "flickr.com", "github.com", "keyoxide.org", "kreativekorp.com", "lemmy.sdf.org", "lincolnhighwayassoc.org", "mamedev.org", "mastodon.sdf.org", "savannah.nongnu.org", "slackware.com", "umoria.org", "youtube.com"]
+
+["http://beej.us/blog"]
+title = "Beej's Bit Bucket"
+full_description = "How to make a scrolling pane in HTML/CSS; in particular, how to wrap it all in a jQuery plugin for easy reuse. An exercise in refactoring code from being closely tied to a page to being less closely tied. This is based on the previous scratcher code. Crank out as many digits of π as you desire! Limited only by your imagination! Crank out your own modest π in the browser, too! (Limited by 64-bit IEEE-754.)"
+year_published = 2025
+clearnet = "http://beej.us/blog"
+tags = ["beej's", "beej@beej.us", "blog", "bucket", "collection", "home", "programming", "tech", "writings"]
+language = "en"
+internal-references = ["none"]
+external-references = ["analyser.oli.tudelft.nl", "asawicki.info", "bend.hackersguild.us", "brianbutko.wordpress.com", "catb.org", "chez.com", "clipartmag.com", "csuchico.edu", "docs.hfbk.net", "en.wikipedia.org", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "ridebdr.com", "slackware.com", "tobscore.com", "transeurotrail.org"]
+
+["https://beej.us/motorcycle"]
+title = "Beej's Motorcycle Page"
+full_description = '''IMPORTANT: USE THESE MAPS AT YOUR OWN RISK! I haven't even ridden half this stuff. Roads might be wrong; water, gas, and other waypoints might be non-existent! It's your adventure! By downloading the maps, you agree to the following terms: THE MAPS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE MAP CREATORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE MAPS OR THE USE OR OTHER DEALINGS IN THE MAPS. Please submit corrections to beej@beej.us. I can't ride all these myself. Maps General notes: "CG" means "Campground" and implies there is at least a pit toilet unless otherwise noted in the description. "Campsite" implies there are no facilities, but might be a convenient place to dry camp. It also implies that it is free to camp there. There is no water at a campground or campsite unless otherwise noted in the waypoint description. There are rivers and streams from time to time—carrying a water filter is recommended. If a waypoint says "filter water" or "creek water", this is where you can use your filter. The GPX files have Garmin-friendly icons. Basecamp should be able to use them without issue. You might have to turn on individual segments of the route on your GPS to see them, depending on the model. For large maps, most GPS models won't be able to display all segments at once. And again, the information on these maps could be out of date or inaccurate. Have a backup plan! Oregon North Cascades Route [GPX] Bend to Hood River or The Dalles. Intersects OBCDR #3 and #4. Oregon Newberry Summer Route [GPX] Bend to Summer Lake. Intersects OBCDR #5 and gets near #2. Oregon Fremont Point Lava Beds Route [GPX] Fremont Point to Lava Beds National Monument. Connects Oregon Newberry Summer Route to OBCDR #3. Intersects OBCDR #2 and #5. Oregon Santiam Crossing Route [GPX] Sisters to Sweet Home or Eugene. Intersects OBCDR #3 and #4. OBCDR #2 Unofficial [GPX] Chemult to Winter Ridge above Summer Lake. OBCDR #3 Unofficial [GPX] Hoodoo Ski Area (above Sisters) to Dorris, CA. OBCDR #4 Unofficial [GPX] Sisters to Seneca (roughly). OBCDR #5 Unofficial [GPX] Fairport to Walla Walla, WA. OBCDR #6 Unofficial [GPX] Crescent Lake area to Coos Bay area. California Trans-Sierra Route [GPX] North San Juan or Nevada City to Verdi, NV California Ponderosa Way Route [GPX] Cohasset to Highway 36 Idaho Magruder Corridor Route [GPX] Darby, MT to Grangeville, ID Idaho Hot Springs Route [GPX] Loop around central Idaho with hot springs. How I Make Maps I use the following to build these maps: CalTopo: main map building tool, exporter A couple custom Python scripts to convert GeoJSON to GPX, join, split, and simplify tracks, give waypoints Garmin-friendly names, etc. The basic process is that I generally make the map in CalTopo using its MVUM layer to verify routes, relying on other resources for the waypoints when necessary. Then I download the map as GeoJSON, and run it through my scripts to produce the GPX files. More Map Resources Some of the resources I use to gather information. CalTopo—Make and explore maps. USFS Interactive Visitor Map—Find camping (and prices and water) and other points of interest. BLM Recreational Opportunities Map—Same thing except for BLM. Pure-Gas—Map of clear gas providers. AAA TripTik—Camping and gas maps. Google Maps—Good for looking up gas station hours. Other map sites: RideBDR Maps and Tracks Official OBCDR Maps Trans-America Trail (Sam Correro) Trans-America Trail (gpsKevin) Great Continental Divide Route International Continental Divide Route Trans-Euro Trail Great Northern Adventure Route If you like these maps, you can support me by sending error reports of things that need to be improved and fixed. That's all I ask! beej@beej.us'''
+year_published = 2025
+clearnet = "https://beej.us/motorcycle"
+tags = ["again,", "backup", "beej@beej.us", "corrections", "date", "inaccurate.", "information", "intersects", "maps", "obcdr"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "caltopo.com", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "groups.google.com", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["https://beej.us/upart"]
+title = "Unicode Pixel Art"
+full_description = "Enter text and whitespace below, then you can cut-and-paste the Unicode result. (Rendering hosed on Android because their monospace font isn't monospace 🤦 but you can still copy it.) xxxx xx xxxxxxxxxx xxxx xxx xx xxx xxxxxx xxxxxxxxxxxx xx xx xx xx xx xxxxxxxx xx xx xx x x xx xx x xx x x x x x x x x x x x xxxxxx x xxxxxxx x xxxxxxxxxx xxx xxx xxx xxxxxxxxxxxx xxxxxxxxxxx xx xx xx xx xx xxxxxxxxx xxxxxxxxxxxxxxxx x x xxx xx xxx x x x x Double width"
+year_published = 2025
+clearnet = "https://beej.us/upart"
+tags = ["pixel", "unicode"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "catb.org", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]
+
+["http://beej.us"]
+title = "Beej's Web Page"
+description = "Brian 'Beej Jorgensen' Hall's home page"
+year_published = 2025
+clearnet = "http://beej.us"
+tags = ["beej's", "books", "home", "learn", "places", "stuff", "utilities", "visit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["analyser.oli.tudelft.nl", "asawicki.info", "bend.hackersguild.us", "brianbutko.wordpress.com", "catb.org", "chez.com", "clipartmag.com", "csuchico.edu", "docs.hfbk.net", "en.wikipedia.org", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "ridebdr.com", "slackware.com", "tobscore.com", "transeurotrail.org"]
+
+["https://beej.us/pirates"]
+title = "Pirate Image Archive"
+full_description = "If you're looking for pictures of pirates, maps, battles, ships, galleons, or treasure (buried and unburied), this is the place! Arrr! Click on the sidebar to get where you're going! Almost all the images in the archive were scanned from the sources. I have made an effort to only select images for which the originals are obviously in the public domain, but I have not spent the effort to verify each image. If any of the original sources are not in the public domain, I will remove them on request. It is my understanding of US copyright law that an accurate reproduction of a public domain painting or two-dimensional image is itself in the public domain. If you are reproducing these for commercial (or any other) use, it's up to you to verify that you have the right to do so in your country. I make no such claim!"
+year_published = 2025
+clearnet = "https://beej.us/pirates"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["bend.hackersguild.us", "blender.org", "brianbutko.wordpress.com", "caltopo.com", "csuchico.edu", "en.wikipedia.org", "flickr.com", "google.com", "gpskevinadventurerides.com", "keys.openpgp.org", "kreativekorp.com", "lincolnhighwayassoc.org", "oohva.org", "plus.google.com", "pure-gas.org", "ridebdr.com", "savannah.nongnu.org", "slackware.com", "transeurotrail.org", "youtube.com"]

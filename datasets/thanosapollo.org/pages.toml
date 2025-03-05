@@ -1,0 +1,422 @@
+["https://thanosapollo.org/tags"]
+title = "Tags | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Tagsbrowsers 2cloud 1cloudflare 1coding 1completions 1drugs-summarized 1eat 1elfeed 1elisp 4emacs 5eshell 1eshell-completions 1firefox 2gentoo 1gnosis 4howto 2immich 1jellyfin 1learning 4linux 2linux-distros 1magit 1med-school-tips 3opinion 1org-gnosis 1penicillins 1presentation 1rss 1searxng 1self-host 4selfhost 1shell 1spaced-repetition 3tech 3thoughts 1vc 1vps 1web 4xmpp 1yeetube 1"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/tags"
+tags = ["tags"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/about"]
+title = "About | Thanos Apollo"
+description = """
+About me
+Hey, I’m Thanos Apollo
+I’m a medical student, my hobbies include:
+
+Programming
+Boxing
+
+I originate from Athens, Greece.  Despite that, I view my self more of
+a nomad since I’ve spent most of my life moving to different cities &
+countries, which is something that I’ve enjoyed and plan to continue
+doing.
+Currently I reside in Sofia, Bulgaria.
+Contact Information
+
+Address: public (@) thanosapollo . org
+PGP: 62B7 58D0 F671 9938 BC09 CECA 339F 736C 3A72 0928
+
+You can get my pgp key by running the following command:"""
+full_description = "HomeAboutTranslations:ἙλληνικάTable of ContentsAbout meContact InformationAbout me#Hey, I’m Thanos ApolloI’m a medical student, my hobbies include:ProgrammingBoxingI originate from Athens, Greece. Despite that, I view my self more of a nomad since I’ve spent most of my life moving to different cities & countries, which is something that I’ve enjoyed and plan to continue doing.Currently I reside in Sofia, Bulgaria.Contact Information#Address: public (@) thanosapollo . orgPGP: 62B7 58D0 F671 9938 BC09 CECA 339F 736C 3A72 0928You can get my pgp key by running the following command:$ curl -sL https://thanosapollo.org/key.asc | gpg --import All legitimate emails from me will be signed with my pgp key."
+author = ""
+year_published = 2025
+year_updated = 2025
+clearnet = "https://thanosapollo.org/about"
+tags = ["contact", "information#"]
+language = "en"
+internal-references = ["none"]
+external-references = ["git.thanosapollo.org", "youtube.com"]
+
+["https://thanosapollo.org/user-manual"]
+title = "User-Manuals | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Gnosis User ManualGnosis is a customizable spaced repetition system designed to enhance memory retention through active recall. It allows users to set specific review intervals for note decks & tags, creating an optimal learning environment tailored to each specific topic. This manual is written for Gnosis version 0.4.0, released on 2024-08-7. Official manual: https://thanosapollo.org/user-manual/gnosis Git repositories: https://git.thanosapollo.org/gnosis 1 Introduction Gnosis (γνῶσις) is a spaced repetition system that enhances memory retention through active recall. It employs a Q&A format, where each note consists of a question, answer, and explanation. Notes are reviewed at optimally spaced intervals based on the user’s success or failure to recall the answer. Key benefits arise from writing out answers when reviewing notes, fostering deeper understanding and improved memory retention. ...Thanos Apollo Org Gnosis User ManualThis manual, authored by Thanos Apollo, offers installation instructions, customization options, and recommendations for effectively using org-gnosis. The documentation furnished herein corresponds to stable version 0.0.5, released on 2025-02-13. Name: Org Gnosis | Organization Of Gnosis (knowledge/information) Homepage: https://thanosapollo.org/projects/org-gnosis/ Org Gnosis (GNU-sis) is an org-mode parsing tool that organizes notes as atomic nodes in an SQLite database. Each heading with an ID is treated as an atomic note (node), storing its metadata, such as title and links, in a relational database to facilitate efficient linking and navigation. ...Thanos Apollo"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/user-manual"
+tags = ["gnosis", "manual", "user", "user-manuals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/projects/org-gnosis"]
+title = "Org Gnosis | Knowledge Management System | Thanos Apollo"
+description = "Knowledge Management System for Emacs Org Mode"
+full_description = '''Home » ProjectsOrg Gnosis | Knowledge Management SystemKnowledge Management System for Emacs Org ModeTranslations:ἙλληνικάTable of ContentsAboutInstallationOrg Gnosis a a minimal org-mode parsing tool that organizes the data of your notes as atomic nodes in an sqlite database.Org Gnosis provides a roam-like workflow, akin to Roam Research, Logseq and org-roam.Git repositories:Main RepositoryCodeberg MirrorUser manual:Official Manual (latest)GNU ELPA (stable release)About#org-gnosis node & org-gnosis-uiEach heading with an ID is treated as an atomic note (node), storing it’s metadata in an relation database to facilitate efficient linking & searching.Special functionality for journaling with journal entries in a separated directory & customizable templates is also available.Installation#org-gnosis is available in GNU ELPARecommended use-package example:(use-package org-gnosis :ensure t :init ;; Example for separated journaling & notes keymap (define-prefix-command 'my/notes-map) (define-prefix-command 'my/journal-map) :config ;; Common settings you might want to tweak to your liking (setf org-gnosis-dir "~/Notes" ;; Whe non-nil, create notes as gpg encrypted files org-gnosis-create-as-gpg nil ;; TODO files, commonly used for templates. org-gnosis-todo-files org-agenda-files ;; Used in #'org-gnosis-todos for template generation org-gnosis-bullet-point-char "+" ;; Default completing-read function org-gnosis-completing-read-func #'org-completing-read ;; Recommended if you use a vertical completion system (e.g vertico) org-gnosis-show-tags t) (defun example/org-gnosis-book-template () (let ((date (format-time-string "%Y-%m-%d")) (book-title (completing-read "Example book: " '("Free Software, Free Society" "How to Take Smart Notes")))) (format "#+DATE: %s \n#+BOOK_TITLE: %s\n\n* Main Idea\n* Key Points\n* Own Thoughts" date book-title))) (add-to-list 'org-gnosis-node-templates '("Book Example" example/org-gnosis-book-template)) :bind (("C-c n" . thanos/notes-map) ("C-c n j" . thanos/journal-map) :map thanos/notes-map ("f" . org-gnosis-find) ("i" . org-gnosis-insert) ("t" . org-gnosis-find-by-tag) :map thanos/journal-map ("j" . org-gnosis-journal) ("f" . org-gnosis-journal-find) ("i" . org-gnosis-journal-insert) :map org-gnosis-mode-map ("C-c C-." . org-gnosis-insert-tag) ("C-c i" . org-id-get-create))) If you already have a note collection, run M-x org-gnosis-db-sync to sync your notes with org-gnosis.'''
+author = ""
+year_published = 2025
+year_updated = 2025
+clearnet = "https://thanosapollo.org/projects/org-gnosis"
+tags = ["about#", "gnosis", "installation#", "knowledge", "management", "notes", "system"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "elpa.gnu.org", "elpa.nongnu.org", "en.wikipedia.org", "git.thanosapollo.org", "gitlab.com", "localhost", "logseq.com", "melpa.org", "orgroam.com", "packages.guix.gnu.org", "roamresearch.com", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/el"]
+title = "Ἀθανάσιος Α."
+description = "Thanos Apollo Personal Website"
+full_description = "Ἀθανάσιος Α.☧ Αὐτὸς γὰρ ἐνηνθρώπησεν, ἵνα ἡμεῖς θεοποιηθῶμεν Ἄρθα Περὶ ἐμοῦ Ἔργα Κατηγορίες Θέματα"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/el"
+tags = ["blog", "emacs", "linux", "med", "thanosapollo", "ἀθανάσιος"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/el/tags"]
+title = "Tags | Ἀθανάσιος Α."
+description = "Thanos Apollo Personal Website"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/el/tags"
+tags = ["eat 1κελυφος 1", "tags"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/education"]
+title = "Education | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Spaced Repetition Software GripesIn this post I’m essentially publicizing my notes on spaced repetition software, and announcing that I’m working on gnosis, a spaced repetition learning extension/package for GNU Emacs. I should also note that I consider Spaced Repetition to be a cheat code for learning, that should be used by every student. ...2024/01/09 Home » CategoriesEducation Spaced Repetition Software GripesIn this post I’m essentially publicizing my notes on spaced repetition software, and announcing that I’m working on gnosis, a spaced repetition learning extension/package for GNU Emacs. I should also note that I consider Spaced Repetition to be a cheat code for learning, that should be used by every student. ...2024/01/09"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/education"
+tags = ["education", "gripes", "repetition", "software", "spaced"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/el/posts"]
+title = "Posts | Ἀθανάσιος Α."
+description = "Posts - Ἀθανάσιος Α."
+full_description = "Ἤμαξ Ως Προσομοιωτής Τερματικοῦ [Video]Μόλις ἀνέβασα ἕνα μικρό βίντεο γιὰ τῆν χρήση τοῦ κειμενογράφου Ἤμαξ ὡς τερματικοῦ, μπορεῖτε νὰ τὸ δεῖτε στὸν YouTube σύνδεσμο ἐδῶ. Ἀκολουθοῦν οι σημειώσεις ποῦ παρουσιάστηκαν στὸ βίντεο, μεταφρασμένες στά Ἑλληνικά ...2025/01/25"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/el/posts"
+tags = ["posts", "προσομοιωτής", "τερματικοῦ", "ως", "ἤμαξ"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/posts/installing-gnu-guix-video"]
+title = "Installing GNU Guix | Using non-free drivers (NonGuix) [Video] | Thanos Apollo"
+description = "Video tutorial installing GNU Guix, using NonGuix."
+full_description = "Home » PostsInstalling GNU Guix | Using non-free drivers (NonGuix) [Video]Video tutorial installing GNU Guix, using NonGuix.2024/12/04Table of ContentsDownload nonguix isoClone nonguix repoInstall Your SystemI’ve just uploaded a video on Installing GNU Guix, which you can find here.Notes shown in the video:GNU Guix is a GNU distributionProvides an emacs-like operating system, using guile scheme as it’s configuration language.Only free software is available OOB, uses linux-libre kernel by default.But since it’s an emacs-like OS, we can configure it however we like, including to use the full linux kernel.Installing Guix, using NonGuix#NonGuix is a Guix channel that provides non-free software, such as non-free drivers & games.NonGuix also provides an iso image that comes with the full linux kernelDownload nonguix iso#Visit nonguix releases pageDownload the iso image & write it to a USB stickExample dd command to use:$ sudo dd if=/path/to/image.iso of=/dev/sdX bs=4M status=progress Clone nonguix repo#After completing the graphical installerClone nonguix repo from https://gitlab.com/nonguix/nonguixCopy the README instructions for channels into /mnt/etc/channels.scmAdd NonGuix modules to your system configuration and use the linux-lts kernel on /mnt/etc/config.scm;; Import nonfree linux module. (use-modules (nongnu packages linux) (nongnu system linux-initrd)) (operating-system (kernel linux-lts) (initrd microcode-initrd) (firmware (list linux-firmware)) ... ) Install Your System#Run the following command to install your system:$ guix time-machine -C /mnt/etc/channels.scm -- system init /mnt/etc/config.scm /mnt Linux« PrevEmacs 30 Built-in Completion UI & Styles [Video] Next »org-gnosis | Roam-like note taking system"
+author = ""
+year_published = 2024
+year_updated = 2025
+clearnet = "https://thanosapollo.org/posts/installing-gnu-guix-video"
+tags = ["clone", "download", "drivers", "emacs-like", "guix", "guix,", "install", "installing", "iso#", "linux"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "git.thanosapollo.org", "gitlab.com", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/search"]
+title = "Search | Thanos Apollo"
+author = ""
+year_published = 2025
+year_updated = 2023
+clearnet = "https://thanosapollo.org/search"
+tags = ["search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/emacs"]
+title = "Emacs | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Emacs As Your Terminal Emulator [Video]Just published a short video on Emacs shell interactions, which you can view here. The following content is the video notes showcased in the video. ...2025/01/25 Progress update on org-gnosis & a graphical interface addition.I’ve been working on a “roam-like” note taking system, to replace & update my current org-roam workflow. This post is a minor update on the current state of it’s development. ...2024/12/18 Emacs 30 Built-in Completion UI & Styles [Video]I just uploaded a short video about Emacs 30 Built-in Completion UI & Styles, which you have find here. Video notes: When referring to “Emacs Completions”, I refer to Completion Styles & UI I’ve often relied on third-party packages to emulate features from other text editors. For instance, I’ve long used vertico, corfu and orderless. While I still recommend these packages, I became curious about using Emacs without depending on third-party options. My current setup tries to emulate my workflow with the packages mentioned above. The catalyst that pushed me to try the built-in completion is the addition of completion-preview-mode in Emacs 30. Mini-buffer completions Emacs does not enable “vertical” completions for the mini-buffer by default, but you can enable fido-vertical-mode which comes built-in with Emacs. fido-mode is an enhanced icomplete-mode that emulates ido-mode, also referred to as fake ido-mode. Completion Styles Changing completion-styles example: (setf completion-styles '(basic flex)) There is a plethora of completion styles, builtin styles include flex, which provides “fuzzy” completions. Completion UI & Code completions Emacs built-in completions have a distinctive approach. Instead of displaying a popup at point, a new Completions buffer appears when invoking completion-at-point. Example configuration: ...2024/12/12 org-gnosis | Roam-like note taking systemorg-roam was my preferred tool for note taking & journaling, but since it’s author seems to have stepped down & it’s implementation is quite different from how I’d approach making a zettelkasten for Emacs, I decided to start working on a new package, named org-gnosis. Goals of this project The primary objective is to achieve full compatibility with existing org-roam notes while resolving current database implementation issues. These goals were met successfully on the first day of development. ...2024/11/21"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/emacs"
+tags = ["addition.", "built-in", "completion", "completions", "current", "elfeed", "emacs", "emulator", "graphical", "interface"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/el/categories"]
+title = "Categories | Ἀθανάσιος Α."
+description = "Thanos Apollo Personal Website"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/el/categories"
+tags = ["bιντεο 1ημαξ 1", "categories"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/posts/page/2"]
+title = "Posts | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "RSS Mastery with RSS-Bridge & Elfeed [Video]I’ve just published a short video covering the basics of RSS, RSS-Bridge & Elfeed, it’s currently available on YouTube. Video notes What is RSS? XML-based web feed that allows users to access updates of websites, without “visiting” the website. Hacktivist including Aaron Swartz contributed to the development of RSS Why use it? Having total control over information you consume Filter/Prioritize content from various sources Bypass algorithms Ad-free reading Offline Access Time saving Allows creation of a personalized & decentralized information hub (+ Emacs RSS) ;; => ’elfeed No matter what RSS reader you choose, they all get the same job done ...2024/11/09 Why I Prefer VC Over Magit [Video]I’ve just uploaded a short video on why I prefer VC over Magit, alongside a quick demo workflow with VC. The video is available on youtube here.2024/11/08 Rewriting Gnosis: 0.4.0 releaseWhat’s the most important thing for storing knowledge? I’d say proper organization of said knowledge, such as with decks for each subject and meaningful tags linking related concepts together across decks, making it easily searchable and accessible. As I started adding more and more notes into gnosis, I found myself wanting to adjust the review algorithm not only for decks but for tags as well. This led me to overhaul the underlying architecture and reimplement key concepts. ...2024/08/07 Penicillins Presentation SummarizedA summarized version of my presentation on penicillins for my pharmacology course. Penicillins are β-lactams antibacterial drugs that inhibit bacterial cell wall synthesis, thus categorized as bactericidal. History Discovered by Alexander Fleming, in 1928. Accidentally observed that staphylococci did not grow around the mold of Penicillium rubens. However, it wasn’t until 1941 the Australian pathologist Howard Florey and German-born British biochemist Ernst Boris Chain successfully developed a method to produce a pure form of penicillin on a large scale. This breakthrough eventually led to mass production, with penicillin becoming widely available by the end of World War II. ...2024/06/12 · Thanos Apollo"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/posts/page/2"
+tags = ["0.4.0", "communication", "elfeed", "getting", "gnosis:", "magit", "mastery", "penicillins", "posts", "prefer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "git.thanosapollo.org", "gitlab.com", "localhost", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org"]
+title = "Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Thanos Apollo☧ A tree is known by its fruit; a man by his deeds. Posts Projects User Manuals About Categories Tags"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org"
+tags = ["apollo", "blog", "emacs", "linux", "med", "thanos", "thanosapollo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["git.thanosapollo.org", "youtube.com"]
+
+["https://thanosapollo.org/projects"]
+title = "Projects | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Gnosis | Spaced Repetition System for GNU EmacsGNU Emacs Spaced Repetition System for note taking and self testing. ... Org Gnosis | Knowledge Management SystemOrg Gnosis a a minimal org-mode parsing tool that organizes the data of your notes as atomic nodes in an sqlite database. Org Gnosis provides a roam-like workflow, akin to Roam Research, Logseq and org-roam. ... Org Gnosis UI | Web UI for Org Gnosisorg-gnosis-ui is a fork of org-roam-ui that provides a Web UI for org-gnosis. ... HomeProjects Gnosis | Spaced Repetition System for GNU EmacsGNU Emacs Spaced Repetition System for note taking and self testing. ...Org Gnosis | Knowledge Management SystemOrg Gnosis a a minimal org-mode parsing tool that organizes the data of your notes as atomic nodes in an sqlite database. Org Gnosis provides a roam-like workflow, akin to Roam Research, Logseq and org-roam. ...Org Gnosis UI | Web UI for Org Gnosisorg-gnosis-ui is a fork of org-roam-ui that provides a Web UI for org-gnosis. ...YeeTube | Emacs YouTube Front EndGNU Emacs YouTube front-end. ..."
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/projects"
+tags = ["emacs", "front", "gnosis", "knowledge", "management", "projects", "repetition", "spaced", "system", "yeetube"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/posts/org-gnosis-progress-1"]
+title = "Progress update on org-gnosis & a graphical interface addition. | Thanos Apollo"
+description = "Progress update on org-gnosis, a roam-like note taking system."
+full_description = "Home » PostsProgress update on org-gnosis & a graphical interface addition.Progress update on org-gnosis, a roam-like note taking system.2024/12/18Table of ContentsGoalsHow things are goingI’ve been working on a “roam-like” note taking system, to replace & update my current org-roam workflow. This post is a minor update on the current state of it’s development.org-gnosis node & my fork of org-roam-uiProject Name: org-gnosis | Organization of GnosisGoals#The goals of org-gnosis are as follows:Keep it minimal, only implement parsing & input data to a database.Do not want to exceed 700 lines of code, currently it’s at 490.Incorporate nodes as sources for gnosis notes.Having nodes as sources can replace my extras section.Make it easily extensibleParsing functionality of org-gnosis should be easily customized to work with other note taking tools.Separate journals from note takingHow things are going#The goals above have been achieved, except for the incorporation with my SRS system & it’s customization to parse non org-mode buffers can be kinda tricky. Despite that, it has been a drop-in replacement for my previous org-roam workflow.I’ve also created a fork of org-roam-ui that I’ve been using to visualize my notes. I will be testing this package and hopefully publishing on either nongnu elpa or melpa soon.If you are interested, try it out from this repo here. If you find any issues or got any questions feel free to email me.LearningGnosis« PrevEmacs As Your Terminal Emulator [Video] Next »Emacs 30 Built-in Completion UI & Styles [Video]"
+author = ""
+year_published = 2024
+year_updated = 2025
+clearnet = "https://thanosapollo.org/posts/org-gnosis-progress-1"
+tags = ["addition.", "gnosis", "goals#", "going#", "graphical", "interface", "learning", "learninggnosis", "name", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "git.thanosapollo.org", "gitlab.com", "localhost", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/posts/emacs-shells-video"]
+title = "Emacs As Your Terminal Emulator [Video] | Thanos Apollo"
+description = "Short video about Emacs shell interactions"
+full_description = '''Home » PostsEmacs As Your Terminal Emulator [Video]Short video about Emacs shell interactions2025/01/25 | Translations:ἙλληνικάTable of Contentsshell-commandasync-shell-commandshell-command-on-regionShellMy configurationEshellMy configurationEatMy configurationTerm & Ansi-TermHow to useJust published a short video on Emacs shell interactions, which you can view here.The following content is the video notes showcased in the video.Emacs offers an enhanced experience for interacting with shell tools & may be the most extensible terminal emulator available.Provides seamless integration between shell tools & editing capabilities.Using shell commands from within a buffer#shell-command#M-! CMD <RET>Run the shell command CMD and display the output.async-shell-command#M-& CMD <RET>Run the shell command CMD asynchronously, and display the outputshell-command-on-region#M-| CMD <RET>Run the shell command CMD with region contents as input; optionally replace the region with the outputEmacs as a Terminal Emulator#Shell#M-x shellA subshell with input and output through an Emacs buffer. You can then give commands interactively.My configuration# (use-package shell :defer t :config (defun thanos/shell (n) "Create or switch to a shell buffer." (interactive "P") (let* ((num (if n (prefix-numeric-value n) nil)) (buf-name (if num (format "*shell<%d>*" num) "*shell*"))) (shell buf-name))) :bind (("C-c v" . thanos/shell) :map shell-mode-map ("C-l" . 'comint-clear-buffer)) :hook ((shell-mode . (lambda () (display-line-numbers-mode -1))))) Eshell#M-x eshellShell implemented entirely in Emacs LispMy configuration# (use-package esh-mode :defer t :config ;; Prompt (defun eshell-git-info () "Return a string with git info." (when (eq (call-process "git" nil nil nil "rev-parse" "--is-inside-work-tree") 0) (let* ((branch-raw (shell-command-to-string "git rev-parse --abbrev-ref HEAD")) (branch (if (or (string-match-p "^fatal" branch-raw) (string-match-p "^error" branch-raw)) "Unknown" (string-trim branch-raw))) (dirty (not (string= "" (string-trim (shell-command-to-string "git status --porcelain"))))) (dirty-info (if dirty " ✎" " ✔"))) (concat (propertize "⎇ " 'face 'modus-themes-fg-green-warmer) (propertize branch 'face 'modus-themes-fg-magenta-warmer) (propertize dirty-info 'face (if dirty 'modus-themes-fg-red 'modus-themes-fg-green)))))) (defun eshell-prompt-multiline () "Eshell Multiline Git prompt." (let ((separator (propertize " | " 'face 'font-lock-comment-face)) (hr (propertize (concat "\n" (make-string (/ (window-total-width) 2) ?─) "\n") 'face 'font-lock-comment-face)) (dir (propertize (format "%s" (abbreviate-file-name (eshell/pwd))) 'face 'modus-themes-fg-yellow-warmer)) (git-info (eshell-git-info)) (time (propertize (format-time-string "%H:%M:%S") 'face 'font-lock-comment-face)) (sign (if (= (user-uid) 0) (propertize "\n#" 'face 'modus-themes-fg-blue-intense) (propertize "\nλ" 'face 'modus-themes-fg-red-warmer)))) (concat hr dir separator git-info separator time sign " "))) (setf eshell-prompt-function 'eshell-prompt-multiline eshell-highlight-prompt nil) ;; Aliases (defun eshell/o (file) "Open FILE." (find-file file)) (defvar thanos/aliases '((ll . "ls -lah") (clear . clear-scrollback))) (defun thanos/set-eshell-aliases (aliases) "Set ALIASES as eshell aliases." ;; Remove aliases file (when (and eshell-aliases-file (file-exists-p eshell-aliases-file)) (delete-file eshell-aliases-file)) (mapc (lambda (alias) (let ((name (symbol-name (car alias))) (command (cdr alias))) (eshell/alias name (cond ((stringp command) command) ((symbolp command) (symbol-name command)) (t (error "Unsupported alias command type")))))) aliases)) ;; Rebinds (defun thanos/eshell-clear () "Interactive call for clear-scrollback." (interactive) (eshell/clear-scrollback)) (defun thanos/eshell-preview-insert () (interactive) (completion-preview-insert) ;; This funciton just deletes the extra space inserted after ;; completion. (delete-char -1)) :bind (("C-c e" . eshell) :map eshell-mode-map ("C-l" . 'thanos/eshell-clear) ("<tab>" . 'thanos/eshell-preview-insert) ("C-M-i" . 'completion-at-point)) :hook ((eshell-mode . (lambda () (thanos/set-eshell-aliases thanos/aliases) (display-line-numbers-mode -1) (eshell-cmpl-mode -1))))) Eat#Emulate a terminal (Eat)xterm-like emulator, written in Emacs Lisp.Although it’s a standalone terminal for Emacs, similar to term, I’ve mostly used this package to enhance eshell.My configuration# (use-package eat :ensure t :config (setf eshell-visual-commands nil eat-term-name "xterm-256color") :bind (("C-c V" . eat)) :hook ((eshell-mode . eat-eshell-mode) (eshell-mode . eat-eshell-visual-command-mode) (eat-mode . (lambda () (visual-line-mode -1))))) Term & Ansi-Term#M-x term | M-x ansi-termansi-term is the same as term, except that it always creates a new buffer and C-x is being marked as an escape-char.Runs a subshell with input and output through an Emacs buffer.How to use#While in term-mode C-c CHAR is equivalent to C-x CHAR.Example C-c o is the global binding C-x o other-windowC-c C-j switches to term-line-mode which allows navigation similar to shellC-c C-k switches back to term-char-modeShellEatNext »Progress update on org-gnosis & a graphical interface addition.'''
+author = ""
+year_published = 2025
+year_updated = 2025
+clearnet = "https://thanosapollo.org/posts/emacs-shells-video"
+tags = ["'face", "ansi-term", "ansi-term#", "async-shell-command#", "buffer#", "command", "commands", "configuration#", "eat", "eat#"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "git.thanosapollo.org", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/categories/self-host"]
+title = "Self-Host | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "XMPP: Getting started with the universal communication standardXMPP is a libre decentralized collection of technologies, alternative to closed communication services. I’ve started self hosting my own xmpp server, and begun moving people from my close circle there. This is a summary of my collection of notes that I made for XMPP thus far, published as a short article. If you are interested in learning more on XMPP I recommend reading their official website. What is XMPP? XMPP stands for eXtensible Messaging and Presence Protocol, it’s a set of libre technologies that can be used for communication services, such as instant messaging, voice & video calls as well as file transfers. This is done by routing XML data. ...2024/04/30 · Thanos Apollo Jellyfin: Powering the Self-Hosted Media RevolutionJellyfin is my favorite service to self host, I’ve been using it for movies & books and I’d even consider using it for photos if not for Immich. Jellyfin is really popular as a self hosted streaming service for movies & TV shows, since those platforms suffer heavily from enshittification. Jellyfin can do much more than stream your favorite movies & TV shows. Whether you’re a movie enthusiast, music lover, or photo fanatic, Jellyfin has got you covered. ...2024/04/04 · Thanos Apollo Immich: Self-hosted Photo & Video ManagementI’ve recently transitioned to a pixel phone with GrapheneOS as my primary device, moving from an iPhone. The only thing that I was missing is having my photos be in sync across all of my devices using iCloud, but despite the convenience of Apple’s iCloud service for syncing photos across devices, it frequently disregards user rights and privacy. Thankfully, Immich offers a self-hosted and enhanced alternative while respecting my privacy & user rights. ...2024/03/25 · Thanos Apollo Cloudflare Tunnel: Bye Bye VPS Services!VPS services, the pinnacle of freedom in the digital world! Nothing quite beats the thrill of entrusting your data and services to a mysterious cloud entity, all while relinquishing control over your hardware. And do not forget the joy of relying on a third-party cloud provider for your hosting needs, that may send you a 104K bill for your static site. Who needs to own their hardware anyway? My new setup For the past ~6 months, I have been relying on a VPS service from Ionos, which offers a decent service for it’s price plans, to host this site & my git server, as well as to occasionally port forward media services such as jellyfin using an ssh tunnel. This weekend, I opted to migrate to an old thinkpad that I had collecting dust plus cloudflare tunnel. ...2024/03/10 · Thanos Apollo"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/self-host"
+tags = ["cloudflare", "communication", "getting", "hosting", "immich:", "jellyfin", "jellyfin:", "management", "media", "photo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/blog"]
+title = "Blog | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "XMPP: Getting started with the universal communication standardXMPP is a libre decentralized collection of technologies, alternative to closed communication services. I’ve started self hosting my own xmpp server, and begun moving people from my close circle there. This is a summary of my collection of notes that I made for XMPP thus far, published as a short article. If you are interested in learning more on XMPP I recommend reading their official website. What is XMPP? XMPP stands for eXtensible Messaging and Presence Protocol, it’s a set of libre technologies that can be used for communication services, such as instant messaging, voice & video calls as well as file transfers. This is done by routing XML data. ...2024/04/30 · Thanos Apollo Immich: Self-hosted Photo & Video ManagementI’ve recently transitioned to a pixel phone with GrapheneOS as my primary device, moving from an iPhone. The only thing that I was missing is having my photos be in sync across all of my devices using iCloud, but despite the convenience of Apple’s iCloud service for syncing photos across devices, it frequently disregards user rights and privacy. Thankfully, Immich offers a self-hosted and enhanced alternative while respecting my privacy & user rights. ...2024/03/25 · Thanos Apollo Cloudflare Tunnel: Bye Bye VPS Services!VPS services, the pinnacle of freedom in the digital world! Nothing quite beats the thrill of entrusting your data and services to a mysterious cloud entity, all while relinquishing control over your hardware. And do not forget the joy of relying on a third-party cloud provider for your hosting needs, that may send you a 104K bill for your static site. Who needs to own their hardware anyway? My new setup For the past ~6 months, I have been relying on a VPS service from Ionos, which offers a decent service for it’s price plans, to host this site & my git server, as well as to occasionally port forward media services such as jellyfin using an ssh tunnel. This weekend, I opted to migrate to an old thinkpad that I had collecting dust plus cloudflare tunnel. ...2024/03/10 · Thanos Apollo"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/blog"
+tags = ["blog", "cloudflare", "communication", "gentoo", "getting", "gripes", "immich:", "linux", "management", "photo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/el/about"]
+title = "Περὶ ἐμοῦ | Ἀθανάσιος Α."
+description = """
+Περὶ ἐμοῦ
+Εἶμαι μαθητὴς ἰατρικῆς, καὶ οἵ ἀπασχολήσεις μοῦ συμπεριλαμβάνουν:
+
+Προγραμματισμό
+Πυγμαχία
+
+Κατάγομαι ἀπὸ τὸ Σούλι· ὅμως θὰ μὲ χαρακτήριζα ὡς πλανόδιο
+Ἕλλην/Ῥωμηός, διότι ἔχω ζήσει τὸ μεγαλύτερο μέρος τῆς ζωῆς μοῦ σὲ
+διαφορτικὲς πόλεις καὶ χώρες.  Αὐτὸ μοῦ ἔχει δώσει εὐχαρίστηση λόγῳ
+τῆς ἀγάπης μοῦ γιὰ τὴν περιπέτεια καὶ τὰ ταξίδια & εὐελπιστῶ νὰ
+συνεχίσω νὰ ζῶ μὲ παρόμοιο.
+Νῦν κατοικῶ στὴν Σόφια, Βουλγαρία
+Πληροφορίες Ἐπικοινωνίας
+
+Ηλ.Διεύθυνση: public (@) thanosapollo . org
+PGP: 62B7 58D0 F671 9938 BC09 CECA 339F 736C 3A72 0928
+
+Μπορεῖτε νὰ λάβετε τὸ pgp κλειδί μοῦ τρέχοντας τὴν παρακάτω ἐντολή"""
+full_description = "ΑρχικήΠερὶ ἐμοῦΜεταφράσεις:EnglishΠίνακας ΠεριεχομένωνΠερὶ ἐμοῦΠληροφορίες ἘπικοινωνίαςΠερὶ ἐμοῦ#Εἶμαι μαθητὴς ἰατρικῆς, καὶ οἵ ἀπασχολήσεις μοῦ συμπεριλαμβάνουν:ΠρογραμματισμόΠυγμαχίαΚατάγομαι ἀπὸ τὸ Σούλι· ὅμως θὰ μὲ χαρακτήριζα ὡς πλανόδιο Ἕλλην/Ῥωμηός, διότι ἔχω ζήσει τὸ μεγαλύτερο μέρος τῆς ζωῆς μοῦ σὲ διαφορτικὲς πόλεις καὶ χώρες. Αὐτὸ μοῦ ἔχει δώσει εὐχαρίστηση λόγῳ τῆς ἀγάπης μοῦ γιὰ τὴν περιπέτεια καὶ τὰ ταξίδια & εὐελπιστῶ νὰ συνεχίσω νὰ ζῶ μὲ παρόμοιο.Νῦν κατοικῶ στὴν Σόφια, ΒουλγαρίαΠληροφορίες Ἐπικοινωνίας#Ηλ.Διεύθυνση: public (@) thanosapollo . orgPGP: 62B7 58D0 F671 9938 BC09 CECA 339F 736C 3A72 0928Μπορεῖτε νὰ λάβετε τὸ pgp κλειδί μοῦ τρέχοντας τὴν παρακάτω ἐντολή$ curl -sL https://thanosapollo.org/key.asc | gpg --import Ἠλεκτρονικὰ μηνύματα ἀπὸ ἐμένα θὰ εἶναι ὑπογεγραμμένα μὲ τὸ κρυπτογραφικό pgp κλειδὶ μοῦ."
+author = ""
+year_published = 2025
+year_updated = 2025
+clearnet = "https://thanosapollo.org/el/about"
+tags = ["μοῦ", "περὶ", "πληροφορίες", "τὸ", "ἐμοῦ", "ἐμοῦ#", "ἐπικοινωνίας#"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/posts"]
+title = "Posts | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Emacs As Your Terminal Emulator [Video]Just published a short video on Emacs shell interactions, which you can view here. The following content is the video notes showcased in the video. ...2025/01/25 Progress update on org-gnosis & a graphical interface addition.I’ve been working on a “roam-like” note taking system, to replace & update my current org-roam workflow. This post is a minor update on the current state of it’s development. ...2024/12/18 Emacs 30 Built-in Completion UI & Styles [Video]I just uploaded a short video about Emacs 30 Built-in Completion UI & Styles, which you have find here. Video notes: When referring to “Emacs Completions”, I refer to Completion Styles & UI I’ve often relied on third-party packages to emulate features from other text editors. For instance, I’ve long used vertico, corfu and orderless. While I still recommend these packages, I became curious about using Emacs without depending on third-party options. My current setup tries to emulate my workflow with the packages mentioned above. The catalyst that pushed me to try the built-in completion is the addition of completion-preview-mode in Emacs 30. Mini-buffer completions Emacs does not enable “vertical” completions for the mini-buffer by default, but you can enable fido-vertical-mode which comes built-in with Emacs. fido-mode is an enhanced icomplete-mode that emulates ido-mode, also referred to as fake ido-mode. Completion Styles Changing completion-styles example: (setf completion-styles '(basic flex)) There is a plethora of completion styles, builtin styles include flex, which provides “fuzzy” completions. Completion UI & Code completions Emacs built-in completions have a distinctive approach. Instead of displaying a popup at point, a new Completions buffer appears when invoking completion-at-point. Example configuration: ...2024/12/12 Installing GNU Guix | Using non-free drivers (NonGuix) [Video]I’ve just uploaded a video on Installing GNU Guix, which you can find here. Notes shown in the video: GNU Guix is a GNU distribution Provides an emacs-like operating system, using guile scheme as it’s configuration language. Only free software is available OOB, uses linux-libre kernel by default. But since it’s an emacs-like OS, we can configure it however we like, including to use the full linux kernel. Installing Guix, using NonGuix NonGuix is a Guix channel that provides non-free software, such as non-free drivers & games. NonGuix also provides an iso image that comes with the full linux kernel Download nonguix iso Visit nonguix releases page Download the iso image & write it to a USB stick Example dd command to use: ...2024/12/04"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/posts"
+tags = ["addition.", "built-in", "completion", "completions", "current", "drivers", "emacs", "emulator", "graphical", "guix"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/pharmacology"]
+title = "Pharmacology | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Penicillins Presentation SummarizedA summarized version of my presentation on penicillins for my pharmacology course. Penicillins are β-lactams antibacterial drugs that inhibit bacterial cell wall synthesis, thus categorized as bactericidal. History Discovered by Alexander Fleming, in 1928. Accidentally observed that staphylococci did not grow around the mold of Penicillium rubens. However, it wasn’t until 1941 the Australian pathologist Howard Florey and German-born British biochemist Ernst Boris Chain successfully developed a method to produce a pure form of penicillin on a large scale. This breakthrough eventually led to mass production, with penicillin becoming widely available by the end of World War II. ...2024/06/12 · Thanos Apollo"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/pharmacology"
+tags = ["penicillins", "pharmacology", "presentation", "summarized"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories"]
+title = "Categories | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "CategoriesBlog 6Education 1Emacs 13Guix 1Linux 1Medicine 2Pharmacology 1Projects 2Self-Host 5Videos 5"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories"
+tags = ["categories"]
+language = "en"
+internal-references = ["none"]
+external-references = ["git.thanosapollo.org", "youtube.com"]
+
+["https://thanosapollo.org/projects/gnosis"]
+title = "Gnosis | Spaced Repetition System for GNU Emacs | Thanos Apollo"
+description = "Spaced Repetition System for GNU Emacs."
+full_description = 'Home » ProjectsGnosis | Spaced Repetition System for GNU EmacsSpaced Repetition System for GNU Emacs.Table of ContentsAboutScreenshotsInstallationGNU Emacs Spaced Repetition System for note taking and self testing.Git repositories:Main RepositoryCodeberg MirrorManual:NonGNU ELPAMirrorAbout#Gnosis (γνῶσις) is a spaced repetition system designed to enhance memory retention through active recall. It uses a Q&A format, with each note comprising a question, answer, and explanation. Notes are reviewed at optimally spaced intervals determined by the user’s recall success or failure. Writing out answers during reviews fosters deeper understanding and significantly improves memory retention.Gnosis algorithm is highly adjustable, allowing users to set specific values not just for note decks but for tags as well.Currently supported note types:Cloze Support for multiple clozes includedMCQMC-Cloze Multiple Choice ClozeBasicDoubley-or-nScreenshots#Basic note review#Basic note answer evaluation#Cloze note type review#Cloze note answer evaluation#Installation#Gnosis is available via NonGNU ELPA, MELPA & GNU GuixExample using use-package(use-package gnosis :ensure t :config (gnosis-modeline-mode) :bind (("C-c g" . gnosis-dashboard))) After installing gnosis, it’s recommended to try out the demo by running M-x gnosis-demo'
+author = ""
+year_published = 2025
+year_updated = 2025
+clearnet = "https://thanosapollo.org/projects/gnosis"
+tags = ["about#", "basic", "cloze", "double", "emacs", "gnosis", "installation#", "mc-cloze", "note", "repetition"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "codeberg.org", "elpa.gnu.org", "elpa.nongnu.org", "en.wikipedia.org", "git.thanosapollo.org", "gitlab.com", "localhost", "melpa.org", "packages.guix.gnu.org", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/posts/emacs-built-in-completions-video"]
+title = "Emacs 30 Built-in Completion UI & Styles [Video] | Thanos Apollo"
+description = "Short video about Emacs 30 Built-in Completion UI & Styles"
+full_description = "Home » PostsEmacs 30 Built-in Completion UI & Styles [Video]Short video about Emacs 30 Built-in Completion UI & Styles2024/12/12Table of ContentsMini-buffer completionsCompletion StylesCompletion UI & Code completionsI just uploaded a short video about Emacs 30 Built-in Completion UI & Styles, which you have find here.Video notes:When referring to “Emacs Completions”, I refer to Completion Styles & UII’ve often relied on third-party packages to emulate features from other text editors. For instance, I’ve long used vertico, corfu and orderless.While I still recommend these packages, I became curious about using Emacs without depending on third-party options.My current setup tries to emulate my workflow with the packages mentioned above.The catalyst that pushed me to try the built-in completion is the addition of completion-preview-mode in Emacs 30.Mini-buffer completions#Emacs does not enable “vertical” completions for the mini-buffer by default, but you can enable fido-vertical-mode which comes built-in with Emacs.fido-mode is an enhanced icomplete-mode that emulates ido-mode, also referred to as fake ido-mode.Completion Styles#Changing completion-styles example: (setf completion-styles '(basic flex)) There is a plethora of completion styles, builtin styles include flex, which provides “fuzzy” completions.Completion UI & Code completions#Emacs built-in completions have a distinctive approach.Instead of displaying a popup at point, a new Completions buffer appears when invoking completion-at-point.Example configuration:(setf completion-styles '(basic flex) completion-auto-select t ;; Show completion on first call completion-auto-help 'visible ;; Display *Completions* upon first request completions-format 'one-column ;; Use only one column completions-sort 'historical ;; Order based on minibuffer history completions-max-height 20 ;; Limit completions to 15 (completions start at line 5) completion-ignore-case t) CompletionsCoding« PrevProgress update on org-gnosis & a graphical interface addition. Next »Installing GNU Guix | Using non-free drivers (NonGuix) [Video]"
+author = ""
+year_published = 2024
+year_updated = 2025
+clearnet = "https://thanosapollo.org/posts/emacs-built-in-completions-video"
+tags = ["built-in", "code", "coding", "completion", "completions", "completions#", "completionscoding", "emacs", "mini-buffer", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtu.be", "youtube.com"]
+
+["https://thanosapollo.org/categories/guix"]
+title = "Guix | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Installing GNU Guix | Using non-free drivers (NonGuix) [Video]I’ve just uploaded a video on Installing GNU Guix, which you can find here. Notes shown in the video: GNU Guix is a GNU distribution Provides an emacs-like operating system, using guile scheme as it’s configuration language. Only free software is available OOB, uses linux-libre kernel by default. But since it’s an emacs-like OS, we can configure it however we like, including to use the full linux kernel. Installing Guix, using NonGuix NonGuix is a Guix channel that provides non-free software, such as non-free drivers & games. NonGuix also provides an iso image that comes with the full linux kernel Download nonguix iso Visit nonguix releases page Download the iso image & write it to a USB stick Example dd command to use: ...2024/12/04"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/guix"
+tags = ["drivers", "guix", "installing", "non-free", "nonguix", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/videos"]
+title = "Videos | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Emacs As Your Terminal Emulator [Video]Just published a short video on Emacs shell interactions, which you can view here. The following content is the video notes showcased in the video. ...2025/01/25 Emacs 30 Built-in Completion UI & Styles [Video]I just uploaded a short video about Emacs 30 Built-in Completion UI & Styles, which you have find here. Video notes: When referring to “Emacs Completions”, I refer to Completion Styles & UI I’ve often relied on third-party packages to emulate features from other text editors. For instance, I’ve long used vertico, corfu and orderless. While I still recommend these packages, I became curious about using Emacs without depending on third-party options. My current setup tries to emulate my workflow with the packages mentioned above. The catalyst that pushed me to try the built-in completion is the addition of completion-preview-mode in Emacs 30. Mini-buffer completions Emacs does not enable “vertical” completions for the mini-buffer by default, but you can enable fido-vertical-mode which comes built-in with Emacs. fido-mode is an enhanced icomplete-mode that emulates ido-mode, also referred to as fake ido-mode. Completion Styles Changing completion-styles example: (setf completion-styles '(basic flex)) There is a plethora of completion styles, builtin styles include flex, which provides “fuzzy” completions. Completion UI & Code completions Emacs built-in completions have a distinctive approach. Instead of displaying a popup at point, a new Completions buffer appears when invoking completion-at-point. Example configuration: ...2024/12/12 Installing GNU Guix | Using non-free drivers (NonGuix) [Video]I’ve just uploaded a video on Installing GNU Guix, which you can find here. Notes shown in the video: GNU Guix is a GNU distribution Provides an emacs-like operating system, using guile scheme as it’s configuration language. Only free software is available OOB, uses linux-libre kernel by default. But since it’s an emacs-like OS, we can configure it however we like, including to use the full linux kernel. Installing Guix, using NonGuix NonGuix is a Guix channel that provides non-free software, such as non-free drivers & games. NonGuix also provides an iso image that comes with the full linux kernel Download nonguix iso Visit nonguix releases page Download the iso image & write it to a USB stick Example dd command to use: ...2024/12/04"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/videos"
+tags = ["built-in", "completion", "completions", "drivers", "elfeed", "emacs", "emulator", "guix", "installing", "magit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/medicine"]
+title = "Medicine | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Penicillins Presentation SummarizedA summarized version of my presentation on penicillins for my pharmacology course. Penicillins are β-lactams antibacterial drugs that inhibit bacterial cell wall synthesis, thus categorized as bactericidal. History Discovered by Alexander Fleming, in 1928. Accidentally observed that staphylococci did not grow around the mold of Penicillium rubens. However, it wasn’t until 1941 the Australian pathologist Howard Florey and German-born British biochemist Ernst Boris Chain successfully developed a method to produce a pure form of penicillin on a large scale. This breakthrough eventually led to mass production, with penicillin becoming widely available by the end of World War II. ...2024/06/12 · Thanos Apollo Spaced Repetition Software GripesIn this post I’m essentially publicizing my notes on spaced repetition software, and announcing that I’m working on gnosis, a spaced repetition learning extension/package for GNU Emacs. I should also note that I consider Spaced Repetition to be a cheat code for learning, that should be used by every student. ...2024/01/09"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/medicine"
+tags = ["gripes", "medicine", "penicillins", "presentation", "repetition", "software", "spaced", "summarized"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/linux"]
+title = "Linux | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "Switching To Gentoo LinuxI’ve leveled up to become a Gentoo user, the most elite nerd species in GNU/Linux Land. All my devices have been transformed into Gentoo machines, and needless to say, I’m ecstatic about it. Disclaimer: This post contains a healthy amount of sarcasm, just in case you didn’t catch on. ...2023/11/12 Home » CategoriesLinux Switching To Gentoo LinuxI’ve leveled up to become a Gentoo user, the most elite nerd species in GNU/Linux Land. All my devices have been transformed into Gentoo machines, and needless to say, I’m ecstatic about it. Disclaimer: This post contains a healthy amount of sarcasm, just in case you didn’t catch on. ...2023/11/12"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/linux"
+tags = ["gentoo", "linux", "switching"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 919ea3011fc2e26c • Your IP: Click to reveal 134.195.88.131 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://thanosapollo.org/cdn-cgi/l/email-protection"
+tags = ["919ea3011fc2e26c", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/categories/projects"]
+title = "Projects | Thanos Apollo"
+description = "Thanos Apollo Personal Website"
+full_description = "org-gnosis | Roam-like note taking systemorg-roam was my preferred tool for note taking & journaling, but since it’s author seems to have stepped down & it’s implementation is quite different from how I’d approach making a zettelkasten for Emacs, I decided to start working on a new package, named org-gnosis. Goals of this project The primary objective is to achieve full compatibility with existing org-roam notes while resolving current database implementation issues. These goals were met successfully on the first day of development. ...2024/11/21 yeetube | Emacs Front-End for YouTube (blog)To learn elisp I decided to work on a project that I’ve felt was missing on the GNU Emacs ecosystem, a direct front-end for YouTube. ...2023/09/20"
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/categories/projects"
+tags = ["emacs", "front-end", "note", "org-gnosis", "projects", "roam-like", "system", "taking", "yeetube", "youtube"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]
+
+["https://thanosapollo.org/el/projects"]
+title = "Projects | Ἀθανάσιος Α."
+description = "Projects - Ἀθανάσιος Α."
+full_description = "Org Gnosis | Σύστημα Ὀργάνωσης ΓνώσεωνΤὸ org-gnosis εἶναι ἕνα ἁπλό καὶ λυτό σύστημα ἀνάλυσης org-mode σημειώσεων. ... ΑρχικήProjects Org Gnosis | Σύστημα Ὀργάνωσης ΓνώσεωνΤὸ org-gnosis εἶναι ἕνα ἁπλό καὶ λυτό σύστημα ἀνάλυσης org-mode σημειώσεων. ... Τὸ org-gnosis εἶναι ἕνα ἁπλό καὶ λυτό σύστημα ἀνάλυσης org-mode σημειώσεων. ..."
+author = ""
+year_published = 2025
+clearnet = "https://thanosapollo.org/el/projects"
+tags = ["gnosis", "projects", "γνώσεων", "σύστημα", "ὀργάνωσης"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "git.thanosapollo.org", "support.cloudflare.com", "youtube.com"]

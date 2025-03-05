@@ -1,0 +1,30 @@
+["https://lemonade.sonnet.io/about"]
+title = "Lemonade"
+description = "Browse and discover Lemmy communities the fruity way."
+full_description = "About back What is Lemonade? Lemonade is a stupid simple Lemmy community browser. Why is Lemonade? People are moving away from sites like Reddit to more open, friendlier online communities (lemmy, kbin). These tools are easy to use, but finding the right community can be a bit of a pain if you're just getting started with federated social media. I wanted to make this easier especially to the less techie users who might find the proces daunting. Lemonade uses the list of communities provided by Feddit, polled daily, and organises it by the number of users and recent activity. Why just Lemmy? Can I see the results from other platforms here? Not yet, but people are working on it! At the moment getting this data for all communities is a bit fiddly. Follow me on mastodon or reach out via my site to get updates on this. I have an idea how to make this site better! Brilliant, then you probably want to click this! back"
+year_published = 2025
+clearnet = "https://lemonade.sonnet.io/about"
+tags = ["better!", "here?", "idea", "lemmy?", "lemonade?", "platforms", "results"]
+language = "en"
+internal-references = ["none"]
+external-references = ["browse.feddit.de", "fedidb.org", "join-lemmy.org", "kbin.pub", "mastodon.cloud", "sonnet.io"]
+
+["https://lemonade.sonnet.io/hot"]
+title = "Lemonade"
+description = "Browse and discover Lemmy communities the fruity way."
+year_published = 2025
+clearnet = "https://lemonade.sonnet.io/hot"
+tags = ["browse", "communities", "communitiesback", "fruitiest", "lemmy", "lemonade"]
+language = "en"
+internal-references = ["none"]
+external-references = ["browse.feddit.de", "fedidb.org", "join-lemmy.org", "kbin.pub", "mastodon.cloud", "sonnet.io"]
+
+["https://lemonade.sonnet.io"]
+title = "Lemonade"
+description = "Browse and discover Lemmy communities the fruity way."
+year_published = 2025
+clearnet = "https://lemonade.sonnet.io"
+tags = ["browse", "communities", "communitiessee", "fruitiest", "lemmy", "lemonade"]
+language = "en"
+internal-references = ["none"]
+external-references = ["browse.feddit.de", "sonnet.io"]

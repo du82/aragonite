@@ -1,0 +1,179 @@
+["https://grml.org/changelogs"]
+title = "Release Notes | Grml.org"
+full_description = "Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/changelogs"
+tags = ["current", "development", "documentation", "getting", "grml", "list", "news", "notes", "release", "releases"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/features"]
+title = "Features and main goals of Grml | Grml.org"
+full_description = "Grml provides an excellent selection of software packages for installation, deployment and system rescue. You’ll get every sysadmin’s favourite tools. The default interactive shell is Zsh and is configured with a very powerful setup (known as grml-zshrc), including a nifty completion mechanism. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/features"
+tags = ["development", "documentation", "easier", "favourite", "features", "getting", "goals", "grml", "grml-crypt", "grml-debootstrap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "daily.grml.org", "debian.org", "download.grml.org", "en.wikipedia.org", "fluxbox.org", "git-scm.com", "git.grml.org", "grml.github.io", "hachyderm.io", "ipxe.org", "irc.oftc.net", "kernel.org", "ml.grml.org", "netcup.com", "paste.debian.net", "serverhunter.com", "snel.com", "wiki.grml.org"]
+
+["https://grml.org/team"]
+title = "The Grml Team | Grml.org"
+full_description = "Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/team"
+tags = ["alumni", "developers", "development", "documentation", "getting", "grml", "news", "sponsors", "team", "thanks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "computerwoche.de", "daily.grml.org", "derstandard.at", "distrofreak.seesaa.net", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "gentoo.org", "git-scm.com", "git.grml.org", "grml.github.io", "h-online.com", "hachyderm.io", "ipxe.org", "manpages.debian.org", "ml.grml.org", "paste.debian.net", "serverhunter.com"]
+
+["https://grml.org/bugs"]
+title = "Reporting Bugs | Grml.org"
+full_description = "Several Grml sub-projects (grml-debootstrap, grml-etc-core, grml2usb,…) have their own repository and issue tracking, see github.com/grml/ to get an overview. If you’re unsure where to report an issue though, feel free to use github.com/grml/grml/issues though. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/bugs"
+tags = ["bugs", "development", "documentation", "getting", "grml", "grml!", "helping", "improve", "news", "reporting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/bugs/known"]
+title = "Known Bugs | Grml.org"
+full_description = "Several Grml sub-projects (grml-debootstrap, grml-etc-core, grml2usb,…) have their own repository and issue tracking, see github.com/grml/ to get an overview. If you’re unsure where to report an issue though, feel free to use github.com/grml/grml/issues though. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/bugs/known"
+tags = ["2024.02", "2024.12", "bugs", "development", "documentation", "getting", "grml", "known", "news", "sponsors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/press"]
+title = "Grml in the press / online / links | Grml.org"
+full_description = "Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/press"
+tags = ["development", "documentation", "english", "german", "getting", "grml", "languages", "links", "magazines", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "computerwoche.de", "daily.grml.org", "derstandard.at", "distrofreak.seesaa.net", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "gentoo.org", "git-scm.com", "git.grml.org", "grml.github.io", "h-online.com", "hachyderm.io", "ipxe.org", "manpages.debian.org", "ml.grml.org", "paste.debian.net", "serverhunter.com"]
+
+["https://grml.org/sponsors"]
+title = "Sponsors | Grml.org"
+full_description = "This is a list of companies or organizations that provide ongoing support to Grml. Thanks to their support and assistance, the Grml project can offer an excessive list of services for our users like free CDs, daily images, mailing lists, website, wiki etc. To be more precise without their support, the Grml project would not be able to provide all the services you know and love. netcup is offering high-quality services in operating and managing web hosting accounts, domains and servers. Located in Karlsruhe, the Internet Service Provider (ISP) today counts more than 200,000 customers, including individuals as well as notable companies. A broad product range with high quality standards at fair prices is what netcup's success is built on. Hostway is an international provider of dedicated hosting, shared hosting, colocation, domain name registration, ecommerce solutions and other Web-based services with a direct presence in 14 countries, and 600,000 customers worldwide. Hostway Deutschland operates 5 independent data centers in Germany, with 24/7 customer access and onsite staff. The network supports IPv4 and IPv6, as well as the operation of high availability solutions, involving different interconnected local or international Hostway data centers. Additionally, the Hostway Enterprise Platform, provides a redundant infrastructure for high performance customized cloud solutions (public, private, and hybrid), including various add-on features, like CDN, IDS/IPS, load balancing, as well as a wide range of managed services. Snel is a Dutch hosting provider. Our company was founded in 2010 and we are located in Rotterdam, a small dynamic city with a passionately beating heart. So in this small city we run a company that has a passionately beating heart for hosting. We provide simple and fast managed and self-managed cloud and dedicated hosting solutions with a great focus on automation. In a world where time is literally money we want our customers to save on both by providing them Cloud VPS, Pure Performance VPS and Dedicated Servers with instant setup and an automated platform with enough features to virtually do anything. We believe that the simplicity of our services and treating customers as friends sets us apart from the competition. Our company exists of a small team but our team is big enough to provide perfect solutions and support to any of your questions."
+year_published = 2025
+clearnet = "https://grml.org/sponsors"
+tags = ["deutschland", "development", "documentation", "getting", "gmbh", "grml", "hostway", "hunter", "netcup", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "computerwoche.de", "daily.grml.org", "derstandard.at", "distrofreak.seesaa.net", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "gentoo.org", "git-scm.com", "git.grml.org", "grml.github.io", "h-online.com", "hachyderm.io", "ipxe.org", "manpages.debian.org", "ml.grml.org", "paste.debian.net", "serverhunter.com"]
+
+["https://grml.org/contact"]
+title = "Contact | Grml.org"
+full_description = "If you want to be notified when a new Grml release is available, subscribe to the read-only Grml announce mailing list. If you want to participate in the user mailing list of Grml, please subscribe to the Grml user mailing list. Anyone can post to this mailing list, but if you are not already subscribed, your message will need moderator approval before being posted. This way we limit the amount of spam that makes it to the list. The Grml user mailing list is also available via NNTP on gmane.io. If you are interested in following the development of Grml, please join us on IRC (see below) and follow current changes on GitHub. You can look at individual repositories and subscribe to changes, issues, PRs, and so on there. Several Grml sub-projects (grml-debootstrap, grml-etc-core, grml2usb,…) have their own repository and issue tracking, see github.com/grml/ to get an overview. If you’re unsure where to report an issue though, feel free to use github.com/grml/grml/issues though. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/contact"
+tags = ["contact", "development", "documentation", "english", "getting", "grml", "list", "lists", "mailing", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "gmane.io", "grml.github.io", "hachyderm.io", "hostway.de", "irc.oftc.net", "ml.grml.org", "netcup.com", "paste.debian.net", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/zsh"]
+title = "Zsh | Grml.org"
+full_description = "One of the main features of the grml system is the zsh (Z shell). The zsh is the default interactive shell of the grml system. On this webpage you will find information regarding the zsh on grml. The grml-zsh-refcard provides a short overview of defined aliases, functions and settings of zsh on the grml system. Download it, print it and improve your zsh skills! grmlzshrc(5) is a manpage providing detailled information about grml’s zsh configuration. On the grml system it is available offline via man grmlzshrc. An online version is available as well: You do not have to use grml/Debian to use grml’s zsh configuration. Just retrieve and install the configuration files in your home directory via executing for example: zsh-lovers is a small project which tries to collect tips, tricks and examples for the Z shell. Authors of the zsh-lovers manual page are Christian ‘strcat’ Schneider, Matthias Kopfermann and Michael Prokop. The zsh-lovers archive includes the zsh-lovers manual page and several zsh configuration files. Get it from the zsh-lovers directory at the grml repository. Notice: If you would like to have zsh-lovers on your Debian system add the following line to /etc/apt/sources.list (run apt-get update && apt-get install zsh-lovers): Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/zsh"
+tags = ["articles:", "configuration", "development", "documentation", "files:", "general/useful:", "german", "getting", "grml", "grml-zsh-config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bash2zsh.com", "blog.grml.org", "computerwoche.de", "daily.grml.org", "derstandard.at", "distrofreak.seesaa.net", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "git.grml.org", "hachyderm.io", "ipxe.org", "manpages.debian.org", "ml.grml.org", "opengroup.org", "paste.debian.net", "serverhunter.com", "strcat.de", "zsh.sourceforge.io"]
+
+["https://grml.org/beta"]
+title = "Beta Versions | Grml.org"
+full_description = "Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/beta"
+tags = ["beta", "build", "candidates", "daily", "development", "documentation", "find", "getting", "grml", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/faq"]
+title = "FAQ for Grml | Grml.org"
+full_description = "Grml is a bootable live system (Live-CD) based on Debian. It is not necessary to install anything to a harddisk. Grml includes a collection of GNU/Linux software especially for system administrators. It specializes on administrative tasks like installation, deployment and system rescue. Since Grml release 2024.12, the grml32 flavour (for 32-bit x86 PCs) as well as the grml96 flavours no longer exist. A new naming convention was introduced to include the architecture and version information, being grml-$FLAVOUR-$VERSION-$ARCH. What was formerly known as grml64 is now known as grml-*-amd64. You will see, for example, grml-full-2024.12-amd64.iso, where amd64 indicates this ISO is for an 64-bit x86 PC. grml-small provides a reduced set of available software compared to grml-full, for example it doesn’t provide the X.org window system. It provides the same Linux kernel image as grml-full and is fully binary compatible. Choose the grml-small flavour if size - for whatever reason - really matters to you. Grml comes close to “argl” or “grrr” in English. People use this when they want to express their dissatisfaction with software (amongst other things). In Austria, Advent wreaths are called Adventkränze, and Adventgrenze is pronounced similarly; however, Grenze is the German word for border. where /dev/sdX is your USB device. Warning: all previously stored data on the USB device will be lost. On our wiki, you will find additional background information on booting from USB. On modern PCs, both dd and grml2usb just work. There are no default passwords - all accounts are locked by default for security reasons. Even local logins are not possible (unless you set a password or create new user accounts as root). You can create valid passwords using sudo passwd [username] from the shell individually. With the boot option ssh a password for the users root and grml is generated and SSH login is enabled. The default language of the Grml system is English (en_US.UTF-8). All other locales are removed by default."
+year_published = 2025
+clearnet = "https://grml.org/faq"
+tags = ["accessibility", "architectures", "available?", "between", "boot", "bugs?", "change", "commercial", "configure", "default"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "daily.grml.org", "debian.org", "en.wikipedia.org", "fluxbox.org", "git.grml.org", "gmane.io", "grml.github.io", "hachyderm.io", "ipxe.org", "irc.oftc.net", "kernel.org", "ml.grml.org", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions", "wiki.debian.org", "wiki.grml.org"]
+
+["https://grml.org/files"]
+title = "Files | Grml.org"
+full_description = 'Note that using the Grml repository on standard Debian systems is not recommended. If you just want our console configuration, read "Make console work comfortable". If you are running Debian stretch or later, you may want to use the following .sources file, which will enforce the suite name and signing keys: Then the following preferences file will keep packages from Grml to replace normal Debian packages, in /etc/apt/preferences.d/grml.pref: Also note that you may have trouble installing the grml-debian-keyring package as APT will complain about the missing key. A workaround is to download it directly: Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:'
+year_published = 2025
+clearnet = "https://grml.org/files"
+tags = ["2024.12", "amd64", "arm64", "changelogs", "current", "development", "documentation", "files", "getting", "grml"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "daily.grml.org", "debian.org", "download.grml.org", "en.wikipedia.org", "fluxbox.org", "git-scm.com", "git.grml.org", "grml.github.io", "hachyderm.io", "ipxe.org", "irc.oftc.net", "kernel.org", "manpages.debian.org", "ml.grml.org", "paste.debian.net", "serverhunter.com", "snel.com", "wiki.grml.org"]
+
+["https://grml.org/download"]
+title = "Download Grml 2024.12 | Grml.org"
+full_description = "Download from a specific mirrorDirect download links:Grml full ISO for 64bit PCs (amd64) [GPG Signature]Grml full ISO for 64bit ARM (arm64) [GPG Signature]Grml small ISO for 64bit PCs (amd64) [GPG Signature]Grml small ISO for 64bit ARM (arm64) [GPG Signature] Alongside the actual download files (ISO, netboot, sources), the Grml mirrors publish the extra files SHA256SUMS-2024.12 and SHA256SUMS-2024.12.gpg.The SHA256SUMS-2024.12 file contains checksums for all available release files.The SHA256SUMS-2024.12.gpg file provides the GnuPG signature for that file.Once you have SHA256SUMS-2024.12 and SHA256SUMS-2024.12.gpg in the same directory as your Grml downloads, verify the checksum file via: If you don't have our GnuPG signing key (key ID 0x96A87872B7EA3737, fingerprint 33CC B136 401A FEC8 43A3 8763 96A8 7872 B7EA 3737), run: The Grml team uses Git for managing software and packages. The repositories are available online at GitHub. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/download"
+tags = ["2024.12", "alternate", "architecture", "boot", "code", "development", "documentation", "download", "downloads", "getting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "daily.grml.org", "debian.org", "download.grml.org", "git-scm.com", "git.grml.org", "github.com", "gmane.io", "grml.github.io", "hachyderm.io", "hostway.de", "irc.oftc.net", "ml.grml.org", "netcup.com", "paste.debian.net", "serverhunter.com", "snel.com", "synpro.solutions", "wiki.grml.org"]
+
+["https://grml.org/screenshots"]
+title = "Screenshots | Grml.org"
+full_description = "This screenshot shows links2 on a framebuffer device. That's what you'll see when running 'grml-info' on the console. This (nostalgic) screenshot shows GNU screen running on console using framebuffer device with zsh and the completion mechanism of zsh running cdrecord. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/screenshots"
+tags = ["bios", "booting", "bootsplash", "console", "development", "documentation", "fluxbox", "getting", "grml", "news"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "computerwoche.de", "daily.grml.org", "derstandard.at", "distrofreak.seesaa.net", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "gentoo.org", "git-scm.com", "git.grml.org", "grml.github.io", "h-online.com", "hachyderm.io", "ipxe.org", "manpages.debian.org", "ml.grml.org", "paste.debian.net", "serverhunter.com"]
+
+["https://grml.org"]
+title = "Grml.org"
+full_description = "Grml is a bootable live system (Live-CD) based on Debian. Grml includes a collection of GNU/Linux software especially for system administrators. Users don't have to install anything on fixed storage. Grml is especially well suited for administrative tasks like installation, deployment and system rescue. Read more... Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org"
+tags = ["based", "current", "debian", "development", "documentation", "getting", "grml", "grml?", "linux", "live"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "netcup.com", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/daily"]
+title = "Daily Grml snapshots | Grml.org"
+full_description = "This page provides automatically generated snapshots of the Grml Linux Live system which were built using grml-live. If you don’t know what Grml is, please see the Grml FAQ. WARNING: Feel free to use the ISOs but please note that they are not official stable releases. They contain the latest code, but bugs are also likely. In fact, these snapshots may not work at all. So: PLEASE USE THEM WITH CAUTION! Note: the first link on each line points to the most recent available snapshot of the corresponding Grml flavour. The linked .sha256 files contain the sha256 checksum of the corresponding snapshot. The link named ‘Older Versions’ points to a directory that contains older available snapshots of the respective Grml flavour (as well as the latest snapshot). Problems? Questions? Contact us. But please do not forget to provide all the relevant information (especially which Grml flavour and version you are referring to). Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/daily"
+tags = ["automatically", "based", "caution!", "contact", "daily", "debian", "development", "documentation", "downloads", "generated"]
+language = "en"
+internal-references = ["none"]
+external-references = ["bash2zsh.com", "blog.grml.org", "daily.grml.org", "derstandard.at", "download.grml.org", "drudo.altervista.org", "dug.net.pl", "en.wikipedia.org", "git.grml.org", "grml.github.io", "h-online.com", "hachyderm.io", "heise-online.co.uk", "ipxe.org", "ml.grml.org", "paste.debian.net", "sourceforge.net", "strcat.de", "wiki.grml.org", "zsh.sourceforge.io"]
+
+["https://grml.org/changelogs/README-grml-2024.12"]
+title = "Release Notes: Grml 2024.12 - codename Adventgrenze | Grml.org"
+full_description = "Grml is a Debian based live system focusing on the needs of system administrators. The 2024.12 release provides fresh software packages from Debian trixie. As usual it also incorporates up to date hardware support and fixes known bugs from previous Grml releases. The following 8 relevant packages have been added (excluding e.g. lib*, fonts*, *-{base,bin,common,core,data}, {gcc,cpp}-*, perl*, python*, ruby* and kernel image): The following 17 Debian packages have been removed/replaced (excluding lib*, fonts*, *-{base,bin,common,core,data}, {gcc,cpp}-*, perl*, python*, ruby* and kernel image): Your comments, bug reports, patches, and suggestions will help fixing bugs and improving future releases. If you find a problem with the release, please check the known bugs list and report problems using information on grml.org/bugs/. We also welcome feature requests and any kind of constructive feedback. If you want to reach out to the Grml team, please visit our contact webpage. The Grml team is available also for commercial support and services. If you are interested in our consulting services, need a special feature in Grml or a custom branded Grml version with your company logo, please reach out to business (at) grml.org Many thanks in this release go to (alphabetically) András Korn, Antoine Beaupré, Christopher Bock, pasja, Patrick Schleizer and unknowndevQwQ for their contributions. To sign up for future Grml announcements, please subscribe to Grml’s announcement list or follow our blog. Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/changelogs/README-grml-2024.12"
+tags = ["2024.12", "32-bit", "6.11", "adventgrenze", "arm64", "bits", "bolts", "boot", "changes", "codename"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "grml.github.io", "hachyderm.io", "hostway.de", "ml.grml.org", "netcup.com", "paste.debian.net", "serverhunter.com", "snel.com", "synpro.solutions"]
+
+["https://grml.org/docs"]
+title = "documentation | Grml.org"
+full_description = "Frequently asked questions and answers can be found in the section FAQ. If you are looking for information on the Zsh take a look at the zsh-webpage. grml-live: build framework based on FAI for generating a grml and Debian based Linux Live system (CD/ISO) Grml is sponsored by several companies. For more information about our sponsors check out the Sponsors webpage. Our main sponsors are:"
+year_published = 2025
+clearnet = "https://grml.org/docs"
+tags = ["development", "documentation", "getting", "grml", "grml-debootstrap", "grml-live", "grml-terminalserver", "grml-x", "grml2usb", "guides"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.grml.org", "chiark.greenend.org.uk", "debian.org", "github.com", "gmane.io", "grml.github.io", "hachyderm.io", "hostway.de", "irc.oftc.net", "ml.grml.org", "netcup.com", "paste.debian.net", "serverhunter.com", "snel.com", "synpro.solutions", "wiki.grml.org"]

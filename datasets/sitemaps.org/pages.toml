@@ -1,0 +1,115 @@
+["http://www.sitemaps.org/protocol.php"]
+title = "sitemaps.org - Protocol"
+full_description = '''The Sitemap protocol format consists of XML tags. All data values in a Sitemap must be entity-escaped. The file itself must be UTF-8 encoded. All other tags are optional. Support for these optional tags may vary among search engines. Refer to each search engine's documentation for details. Also, all URLs in a Sitemap must be from a single host, such as www.example.com or store.example.com. For further details, refer the Sitemap file location The following example shows a Sitemap that contains just one URL and uses all optional tags. The optional tags are in italics. URL of the page. This URL must begin with the protocol (such as http) and end with a trailing slash, if your web server requires it. This value must be less than 2,048 characters. The date of last modification of the page. This date should be in W3C Datetime format. This format allows you to omit the time portion, if desired, and use YYYY-MM-DD. Note that the date must be set to the date the linked page was last modified, not when the sitemap is generated. Note also that this tag is separate from the If-Modified-Since (304) header the server can return, and search engines may use the information from both sources differently. How frequently the page is likely to change. This value provides general information to search engines and may not correlate exactly to how often they crawl the page. Valid values are: The value "always" should be used to describe documents that change each time they are accessed. The value "never" should be used to describe archived URLs. Please note that the value of this tag is considered a hint and not a command. Even though search engine crawlers may consider this information when making decisions, they may crawl pages marked "hourly" less frequently than that, and they may crawl pages marked "yearly" more frequently than that. Crawlers may periodically crawl pages marked "never" so that they can handle unexpected changes to those pages. The priority of this URL relative to other URLs on your site. Valid values range from 0.0 to 1.0. This value does not affect how your pages are compared to pages on other sites—it only lets the search engines know which pages you deem most important for the crawlers.'''
+year_published = 2016
+year_updated = 2016
+clearnet = "http://www.sitemaps.org/protocol.php"
+tags = ["atom", "crawlers", "cross", "date", "definitions", "engine", "engine's", "entity", "escaping", "excluding"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["https://sitemaps.org/terms.php"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = 'This is a contract between you and each of the sponsors of Sitemaps.org: Google, Inc., Yahoo, Inc., and Microsoft Corporation (referred to collectively in this agreement as the “Sponsors,” “we,” or “us”). By using the Sitemaps.org website (the “Website”) you agree to be bound by the following terms and conditions (the "Terms of Service"). These Terms of Service govern your use of the Website. The Sponsors’ copyrights in the sitemaps protocol specification, as published on the Website (the “Specification”), are licensed to you under the Creative Commons Attribution-ShareAlike License (version 2.5). Other than the Sponsors’ copyrights in this Specification, no intellectual property rights of any kind are granted or may arise under these Terms of Service or via your use of Sitemaps, whether express, implied or otherwise. We may modify or terminate the Website, for any reason, and without notice. We also reserve the right to modify these Terms of Service from time to time without notice, and you expressly agree to be bound by such modifications when posted on the Website. Notwithstanding the foregoing, the Sponsors agree that no change that we make to these Terms of Service will terminate or modify the license granted under paragraph 1 above with respect to any use or implementation of the Specification occurring prior to the date that the change is published. Please review these Terms of Service from time to time so that you will be apprised of any changes. The Sponsors reserve the right, at any time, with or without notice to you, to make changes to the Sitemaps protocol and/or the Specification, including, without limitation, to make changes that result in your existing sitemaps files becoming non-compliant with the revised protocol. The Sponsors shall have no liability to you for any such changes. Each of the Sponsors reserves the right to use, or not use, the Sitemaps protocol in whole or in part, on any or all of its products or services, and no Sponsor shall obligated to index, read or otherwise make use of any sitemap published by you. Without limiting the generality of the foregoing, each of the Sponsors reserves the right at any time to discontinue use of the Sitemaps protocol on any or all of its products or services.'
+year_published = 2008
+year_updated = 2008
+clearnet = "https://sitemaps.org/terms.php"
+tags = ["change", "changes", "conditions;", "disclaimer", "liability", "license", "limitation", "miscellaneous", "privacy", "provisions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["https://sitemaps.org/faq.php"]
+title = "sitemaps.org - FAQ"
+full_description = '''Some of the pages on my site use frames. Should I include the frameset URLs or the URLs of the frame contents? As with all XML files, any data values (including URLs) must use entity escape codes for the following characters: ampersand (&), single quote ('), double quote ("), less than (<), and greater than (>). You should also make sure that all URLs follow the RFC-3986 standard for URIs, the RFC-3987 standard for IRIs, and the XML standard. If you are using a script to generate your URLs, you can generally URL escape them as part of that script. You will still need to entity escape them. For instance, the following python script entity escapes http://www.example.com/view?widget=3&count>2 Use W3C Datetime encoding for the lastmod timestamps and all other dates and times in this protocol. For example, 2004-09-22T14:12:14+00:00. This encoding allows you to omit the time portion of the ISO8601 format; for example, 2004-09-22 is also valid. However, if your site changes frequently, you are encouraged to include the time portion so crawlers have more complete information about your site. For static files, this is the actual file update date. You can use the UNIX date command to get this date: For many dynamic URLs, you may be able to easily compute a lastmod date based on when the underlying data was changed or by using some approximation based on periodic updates (if applicable). Using even an approximate date or timestamp can help crawlers avoid crawling URLs that have not changed. This will reduce the bandwidth and CPU requirements for your web servers. It is strongly recommended that you place your Sitemap at the root directory of your HTML server; that is, place it at http://example.com/sitemap.xml. In some situations, you may want to produce different Sitemaps for different paths on your site — e.g., if security permissions in your organization compartmentalize write access to different directories. We assume that if you have the permission to upload http://example.com/path/sitemap.xml, you also have permission to report metadata under http://example.com/path/.'''
+year_published = 2016
+year_updated = 2016
+clearnet = "https://sitemaps.org/faq.php"
+tags = ["asked", "frequently", "questions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "w3.org"]
+
+["http://www.sitemaps.org/faq.php"]
+title = "sitemaps.org - FAQ"
+full_description = '''Some of the pages on my site use frames. Should I include the frameset URLs or the URLs of the frame contents? As with all XML files, any data values (including URLs) must use entity escape codes for the following characters: ampersand (&), single quote ('), double quote ("), less than (<), and greater than (>). You should also make sure that all URLs follow the RFC-3986 standard for URIs, the RFC-3987 standard for IRIs, and the XML standard. If you are using a script to generate your URLs, you can generally URL escape them as part of that script. You will still need to entity escape them. For instance, the following python script entity escapes http://www.example.com/view?widget=3&count>2 Use W3C Datetime encoding for the lastmod timestamps and all other dates and times in this protocol. For example, 2004-09-22T14:12:14+00:00. This encoding allows you to omit the time portion of the ISO8601 format; for example, 2004-09-22 is also valid. However, if your site changes frequently, you are encouraged to include the time portion so crawlers have more complete information about your site. For static files, this is the actual file update date. You can use the UNIX date command to get this date: For many dynamic URLs, you may be able to easily compute a lastmod date based on when the underlying data was changed or by using some approximation based on periodic updates (if applicable). Using even an approximate date or timestamp can help crawlers avoid crawling URLs that have not changed. This will reduce the bandwidth and CPU requirements for your web servers. It is strongly recommended that you place your Sitemap at the root directory of your HTML server; that is, place it at http://example.com/sitemap.xml. In some situations, you may want to produce different Sitemaps for different paths on your site — e.g., if security permissions in your organization compartmentalize write access to different directories. We assume that if you have the permission to upload http://example.com/path/sitemap.xml, you also have permission to report metadata under http://example.com/path/.'''
+year_published = 2016
+year_updated = 2016
+clearnet = "http://www.sitemaps.org/faq.php"
+tags = ["asked", "frequently", "questions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["http://www.sitemaps.org/terms.php"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = 'This is a contract between you and each of the sponsors of Sitemaps.org: Google, Inc., Yahoo, Inc., and Microsoft Corporation (referred to collectively in this agreement as the “Sponsors,” “we,” or “us”). By using the Sitemaps.org website (the “Website”) you agree to be bound by the following terms and conditions (the "Terms of Service"). These Terms of Service govern your use of the Website. The Sponsors’ copyrights in the sitemaps protocol specification, as published on the Website (the “Specification”), are licensed to you under the Creative Commons Attribution-ShareAlike License (version 2.5). Other than the Sponsors’ copyrights in this Specification, no intellectual property rights of any kind are granted or may arise under these Terms of Service or via your use of Sitemaps, whether express, implied or otherwise. We may modify or terminate the Website, for any reason, and without notice. We also reserve the right to modify these Terms of Service from time to time without notice, and you expressly agree to be bound by such modifications when posted on the Website. Notwithstanding the foregoing, the Sponsors agree that no change that we make to these Terms of Service will terminate or modify the license granted under paragraph 1 above with respect to any use or implementation of the Specification occurring prior to the date that the change is published. Please review these Terms of Service from time to time so that you will be apprised of any changes. The Sponsors reserve the right, at any time, with or without notice to you, to make changes to the Sitemaps protocol and/or the Specification, including, without limitation, to make changes that result in your existing sitemaps files becoming non-compliant with the revised protocol. The Sponsors shall have no liability to you for any such changes. Each of the Sponsors reserves the right to use, or not use, the Sitemaps protocol in whole or in part, on any or all of its products or services, and no Sponsor shall obligated to index, read or otherwise make use of any sitemap published by you. Without limiting the generality of the foregoing, each of the Sponsors reserves the right at any time to discontinue use of the Sitemaps protocol on any or all of its products or services.'
+year_published = 2008
+year_updated = 2008
+clearnet = "http://www.sitemaps.org/terms.php"
+tags = ["change", "changes", "conditions;", "disclaimer", "liability", "license", "limitation", "miscellaneous", "privacy", "provisions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["http://www.sitemaps.org/index.php"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = "Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site. Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site. Sitemap 0.90 is offered under the terms of the Attribution-ShareAlike Creative Commons License and has wide adoption, including support from Google, Yahoo!, and Microsoft."
+year_published = 2020
+year_updated = 2020
+clearnet = "http://www.sitemaps.org/index.php"
+tags = ["sitemaps?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["https://sitemaps.org/protocol.php"]
+title = "sitemaps.org - Protocol"
+full_description = '''The Sitemap protocol format consists of XML tags. All data values in a Sitemap must be entity-escaped. The file itself must be UTF-8 encoded. All other tags are optional. Support for these optional tags may vary among search engines. Refer to each search engine's documentation for details. Also, all URLs in a Sitemap must be from a single host, such as www.example.com or store.example.com. For further details, refer the Sitemap file location The following example shows a Sitemap that contains just one URL and uses all optional tags. The optional tags are in italics. URL of the page. This URL must begin with the protocol (such as http) and end with a trailing slash, if your web server requires it. This value must be less than 2,048 characters. The date of last modification of the page. This date should be in W3C Datetime format. This format allows you to omit the time portion, if desired, and use YYYY-MM-DD. Note that the date must be set to the date the linked page was last modified, not when the sitemap is generated. Note also that this tag is separate from the If-Modified-Since (304) header the server can return, and search engines may use the information from both sources differently. How frequently the page is likely to change. This value provides general information to search engines and may not correlate exactly to how often they crawl the page. Valid values are: The value "always" should be used to describe documents that change each time they are accessed. The value "never" should be used to describe archived URLs. Please note that the value of this tag is considered a hint and not a command. Even though search engine crawlers may consider this information when making decisions, they may crawl pages marked "hourly" less frequently than that, and they may crawl pages marked "yearly" more frequently than that. Crawlers may periodically crawl pages marked "never" so that they can handle unexpected changes to those pages. The priority of this URL relative to other URLs on your site. Valid values range from 0.0 to 1.0. This value does not affect how your pages are compared to pages on other sites—it only lets the search engines know which pages you deem most important for the crawlers.'''
+year_published = 2016
+year_updated = 2016
+clearnet = "https://sitemaps.org/protocol.php"
+tags = ["atom", "crawlers", "cross", "date", "definitions", "engine", "engine's", "entity", "escaping", "excluding"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["https://sitemaps.org/index.php"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = "Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site. Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site. Sitemap 0.90 is offered under the terms of the Attribution-ShareAlike Creative Commons License and has wide adoption, including support from Google, Yahoo!, and Microsoft."
+year_published = 2020
+year_updated = 2020
+clearnet = "https://sitemaps.org/index.php"
+tags = ["sitemaps?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]
+
+["https://sitemaps.org"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = "Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site. Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site. Sitemap 0.90 is offered under the terms of the Attribution-ShareAlike Creative Commons License and has wide adoption, including support from Google, Yahoo!, and Microsoft."
+year_published = 2020
+year_updated = 2020
+clearnet = "https://sitemaps.org"
+tags = ["sitemaps?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org"]
+
+["http://www.sitemaps.org"]
+title = "sitemaps.org - Home"
+description = "The Sitemaps protocol enables webmasters to information earch engine about pages on their site that are available for crawling."
+full_description = "Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling. In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) so that search engines can more intelligently crawl the site. Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers to do a better job of crawling your site. Sitemap 0.90 is offered under the terms of the Attribution-ShareAlike Creative Commons License and has wide adoption, including support from Google, Yahoo!, and Microsoft."
+year_published = 2020
+year_updated = 2020
+clearnet = "http://www.sitemaps.org"
+tags = ["sitemaps?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["asg.web.cmu.edu", "creativecommons.org", "ietf.org", "robotstxt.org", "w3.org", "xml.com"]

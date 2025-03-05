@@ -1,0 +1,89 @@
+["https://registry.khronos.org/KTX"]
+title = "Khronos KTX Registry - The Khronos Group Inc"
+full_description = "The KTX registry contains specifications of the core file format and registered Khronos- and vendor-approved extensions adding supercompression schemes and metadata keys. Vendors are strongly encouraged to register schemes and keys to avoid conflicts. Registration is done through the KTX-Specification source repository on GitHub. See Registering Extensions in the KTX specification. There is currently no header file or other canonical machine readable description for either KTX v1 or v2. The KTX Fragment URI specification describes the syntax for constructing URIs to address fragments of a KTX v2 file."
+year_published = 2025
+clearnet = "https://registry.khronos.org/KTX"
+tags = ["account", "adopter", "certificant", "create", "khronos", "login", "member", "registry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/EGL"]
+title = "Khronos EGL Registry - The Khronos Group Inc"
+full_description = "The EGL registry contains specifications of the core API; specifications of Khronos- and vendor-approved EGL extensions; header files corresponding to the specifications; an enumerant and function registry; and other related documentation. The database from which EGL enumerant ranges are reserved and the EGL/egl.h and EGL/eglext.h headers are built is called egl.xml . It uses an XML schema and processing scripts shared with the OpenGL and OpenGL ES registries. If you need to generate modified headers or modify egl.xml, clone the EGL-Registry git repository and see the README.md file to get started. Khronos welcomes comments and bug reports. To provide feedback on the EGL registry itself (such as reporting missing content, bad links, etc.), or on the EGL API, extensions, and headers, file an issue in the EGL-Registry Github project."
+year_published = 2025
+clearnet = "https://registry.khronos.org/EGL"
+tags = ["account", "adopter", "certificant", "create", "khronos", "login", "member", "registry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org"]
+title = "Khronos Registry - The Khronos Group Inc"
+full_description = "The Khronos registry contains specifications, header files, extension specifications, enumerant and function registries, and other related documentation for Khronos APIs, Languages, and related products. The Khronos API Implementers Guide, available in HTML and PDF versions, provides guidelines for implementers of OpenGL ES, OpenVG and other API standards specified by the Khronos Group. The aim of these hints is to provide commonality between implementations to ease the logistical problems faced by developers using multiple different implementations of an API. One of the primary goals is to allow an application binary to run on top of multiple different OpenGL ES / OpenVG / EGL implementations on the same platform. Implementers are strongly urged to comply with these guidelines. WebGL™ Registry (Note: the related TypedArray Registry defined functionality that is now part of the ECMAScript 2015 Language Specification, and has been removed from the Khronos website. Links to that registry now redirect to the corresponding section of the ECMAScript Specification.) Khronos APIs publish header files in their respective registry pages and/or in github repositories linked from those pages. Header files are often shipped as part of packages provided by operating system vendors, hardware vendors, or SDK suppliers. Note that if you download individual header files, several of the APIs depend on the shared header file <KHR/khrplatform.h> , which defines common datatypes and calling convention macros. Khronos welcomes comments and bug reports. To provide feedback on individual API registries, see the index pages for those APIs. To provide feedback on the top-level registry (which is just this index page and the Khronos Implementer's Guide), file an issue in the Registry-Root Github project."
+year_published = 2025
+clearnet = "https://registry.khronos.org"
+tags = ["account", "adopter", "certificant", "collected", "create", "feedback", "files", "header", "khronos", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/ANARI"]
+title = "Khronos ANARI Registry - The Khronos Group Inc"
+full_description = "To provide feedback on the ANARI Specification, file an issue in the KhronosGroup/ANARI-Docs GitHub project. To provide feedback on the ANARI registry itself (such as reporting missing content, bad links, etc.), file an issue in the ANARI-Registry GitHub project."
+year_published = 2025
+clearnet = "https://registry.khronos.org/ANARI"
+tags = ["account", "adopter", "anari", "certificant", "create", "itself", "khronos", "login", "member", "registry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/OpenCL"]
+title = "Khronos OpenCL Registry - The Khronos Group Inc"
+full_description = "The OpenCL registry contains formatted specifications of the OpenCL API, OpenCL C programming language, OpenCL SPIR-V environment, and OpenCL extensions. The OpenCL registry also includes header files, links to reference pages, reference cards, and other related documentation. The asciidoctor source for the specifications in this registry is available in the OpenCL-Docs GitHub repository. The OpenCL specifications are now unified so they describe OpenCL 3.0 and all previous versions of OpenCL, and include khr extensions integrated into the core API and C specification language. Khronos welcomes comments and bug reports. To provide feedback on the OpenCL reference pages, or on the OpenCL registry itself (such as reporting missing content, bad links, etc.), file an issue in the OpenCL-Registry GitHub repository. The extension template for writing an OpenCL extension specification shows the structure of vendor extension specifications in the registry (listed below) and serves as a guide for writing new extension specifications. The template describes the purpose of each section in an extension specification. cl.xml is the registry of reserved OpenCL API enumerant ranges. (Note that following this link will probably not render sensibly in browsers, since the file is not entirely valid XML, simply a manually updated placeholder.) Khronos khr extensions are now integrated into the core API and C language Specifications. These links are to the appropriate extension appendix of the OpenCL API Specification. khr extensions have been removed from the OpenCL Extensions specification, and that document will eventually be retired once its remaining content is integrated elsewhere."
+year_published = 2025
+clearnet = "https://registry.khronos.org/OpenCL"
+tags = ["account", "adopter", "certificant", "create", "khronos", "login", "member", "opencl", "registry"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "cutt.co.jp", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "khronosgroup.github.io", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/DataFormat"]
+title = "Khronos Data Format Specification Registry - The Khronos Group Inc"
+full_description = "The Khronos Data Format Specification registry contains the specification of the Khronos data format descriptor structure and associated headers. Khronos welcomes comments and bug reports. To provide feedback on the Data Format Specification Registry itself (such as reporting missing content, bad links, etc.), file an issue in the DataFormat-Registry Github project."
+year_published = 2025
+clearnet = "https://registry.khronos.org/DataFormat"
+tags = ["1.3.1,", "1.4.0,", "account", "adopter", "april", "certificant", "core", "create", "current", "data"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/NNEF"]
+title = "Khronos NNEF Registry - The Khronos Group Inc"
+full_description = "To provide feedback on the NNEF registry itself (such as reporting missing content, bad links, etc.), file an issue in the NNEF-Registry Github project."
+year_published = 2025
+clearnet = "https://registry.khronos.org/NNEF"
+tags = ["account", "adopter", "certificant", "create", "feedback", "itself", "khronos", "login", "member", "nnef"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/OpenGL"]
+title = "Khronos Combined OpenGL Registry - The Khronos Group Inc"
+full_description = "This site contains the API and Extension registries for the OpenGL family APIs - OpenGL, OpenGL ES, and OpenGL SC. It includes API specifications; specifications of Khronos- and vendor-approved extensions; header files corresponding to the specifications; the XML API Registry definining each API; and related tools and scripts. The web registry is backed by a github repository. Changes committed to the main branch of the repository are reflected on the website. The repository includes everything visible on the registry website - specifications, extensions, headers, XML, and the index pages such as this one - as well as additional documentation and scripts. Problems with the registry or with the underlying specifications may be reported as github Issues. In particular, the registry repository includes formal XML documents defining the APIs and enumerants used in OpenGL, OpenGL ES, OpenGL SC, GLX, and WGL. Changes to these files can be proposed to reserved enumerant ranges to vendors for future use, as well as to add interfaces for new extension APIs. A set of Python scripts are provided to load the XML files and process them into header files. See xml/README.adoc for more details of the API XML registry, how to obtain enumerant allocations, create extension specifications and register them, and other related topics."
+year_published = 2025
+clearnet = "https://registry.khronos.org/OpenGL"
+tags = ["account", "adopter", "certificant", "combined", "create", "khronos", "login", "main", "member", "opengl"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cdnjs.cloudflare.com", "cn.khronos.org", "cutt.co.jp", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "khronosgroup.github.io", "kr.khronos.org", "linkedin.com", "mathjax.org", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]
+
+["https://registry.khronos.org/3DCommerce/AssetCreation"]
+title = "Khronos 3D Commerce Asset Creation Models Specification Registry - The Khronos Group Inc"
+full_description = "The Khronos 3D Commerce Asset Creation Models Specification registry contains specifications created by the 3D Commerce Working Group. Khronos welcomes comments and bug reports. To provide feedback on the Registry itself (such as reporting missing content, bad links, etc.), file an issue in the 3DC-Asset-Creation-Registry Github project."
+year_published = 2025
+clearnet = "https://registry.khronos.org/3DCommerce/AssetCreation"
+tags = ["account", "adopter", "asset", "certificant", "commerce", "create", "creation", "current", "feedback", "guidelines"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cn.khronos.org", "discord.gg", "ecma-international.org", "eepurl.com", "flickr.com", "forums.khronos.org", "github.com", "github.khronos.org", "jp.khronos.org", "khr.io", "khronos.org", "kr.khronos.org", "linkedin.com", "members.khronos.org", "slideshare.net", "twitter.com", "youtube.com"]

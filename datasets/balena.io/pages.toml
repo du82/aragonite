@@ -1,0 +1,207 @@
+["https://balena.io/open"]
+title = "Open-source software to manage connected IoT devices"
+description = "OpenBalena: Deploy and manage connected devices with OpenBalena, using balenaOS for running containers on IoT Linux devices."
+full_description = "Any device that can run balenaOS will work with openBalena. BalenaOS supports many different device types and multiple architectures. Check out the full list of supported devices here. Note that for the beta release, openBalena will only support the Raspberry Pi family, the Intel NUC, the NVIDIA Jetson TX2, and the balenaFin. To run openBalena server, your machine will need the following:Docker >= 18.05.0Docker Compose >= 1.11OpenSSL >= 1.0.0python >= 2.7 or >=3.4To control an existing openBalena instance with the CLI:node.js >= 6Docker >= 18.05.0 Whilst openBalena and balenaCloud share the same core technology, there are some key differences. First, openBalena is self-hosted, whereas balenaCloud is hosted by balena and therefore handles security, maintenance, scaling, and reliability of all the backend services. OpenBalena is also single user, whereas balenaCloud supports multiple users and organizations. OpenBalena also lacks some of the commercial features that define balenaCloud, such as the web-based dashboard and updates with binary container deltas. We’ve added a feature to balenaOS giving devices the ability to join and leave a server. In practice, this means that balena customers will always have the option of setting up an open source server and no longer using the cloud service, while open source users can always migrate to balenaCloud if they need a ready-to-use, commercially supported platform. At balena, we want our relationship to be defined by the value we provide, not by the lockin that is created by the inability to move. We see openBalena as a big step towards removing those barriers to exit (and entry!). Linux containers have become a standard tool in cloud development and deployment workflows. The benefits are numerous, including portability across platforms, easy dependency management, minimal overhead, and more control for developers over how their code runs. The popularity of containers continues to grow: Docker, an open source container engine, has seen especially high traction, with one study showing a 40% increase in adoption over the course of a year. It’s clear that containers matter, and we think they matter even more for the Internet of Things."
+year_published = 2025
+clearnet = "https://balena.io/open"
+tags = ["asked", "built-in", "company", "connected", "container-based", "deploying", "devices", "easy", "fleet", "fleets"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "trust.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/cloud"]
+title = "The container-based platform for deploying IoT fleets - Balena"
+description = "balenaCloud: Provides comprehensive device deployment and management for IoT fleets, helping you develop, deploy, and scale with ease."
+full_description = "We support the Raspberry Pi, Intel NUC, Nvidia Jetson TX2 and many more device types. Using a different board? Get in touch and we will work with you to get it supported."
+year_published = 2025
+clearnet = "https://balena.io/cloud"
+tags = ["100+", "actions", "always", "anywhere", "application", "balena", "balenacloud", "being", "built", "choice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.balena.io", "dashboard.balena-cloud.com", "docs.balena.io", "facebook.com", "forums.balena.io", "github.com", "hub.balena.io", "instagram.com", "linkedin.com", "status.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/master-agreement"]
+title = "Master Service - balena"
+full_description = "This Online Master Agreement (“Agreement”) is by and between Balena Inc., located at 300 Delaware Ave, Suite 210, Wilmington DE 19801 (“Balena” or “Company”) and the individual or legal entity (“Customer” or “You”) who has executed an order form (or other ordering or purchasing document) referencing this agreement or is using the applicable online services, support, and professional services (collectively “Services”) made available by Balena and governs all use by Customer of the Services referenced in such order form.By clicking the “I Accept” button, executing an order form, or by accessing, downloading or otherwise using the Software and Services, You signify your agreement to and acceptance of this agreement and acknowledge that You have read, understand and agree to be bound by its terms. If You are an individual acting on behalf of an entity, You represent and warrant that you have the authority to enter into this agreement on behalf of that entity and to legally bind that entity. If You do not have such authority, you are solely responsible for all acts and omissions relating to your use of the Services. If You do not accept the terms of this agreement, then You are not permitted to, and You must not access, download or otherwise use the Services.This Agreement, including all referenced documents located at the URLs listed below is effective as of the date You first access the Services. Subject to the terms of this Agreement, Company will use commercially reasonable efforts to provide Customer the Services in accordance with any additional terms referenced in an Order Form. As part of the registration process, Customer will identify an administrative user name and password for Customer’s Company account. Company reserves the right to refuse registration of, or cancel passwords it deems inappropriate.Unless otherwise specified, support will be provided on a “reasonable efforts” basis. In order to provide support, Balena may need to remotely access Your devices that utilize the Services. Balena will only access Your devices if necessary to address Your support request and upon grant of access via the access request dialog box in the online user interface. You hereby consent to such access by Balena solely for the purposes of providing support."
+year_published = 2025
+clearnet = "https://balena.io/master-agreement"
+tags = ["agreement", "company", "conditions", "confidential", "disclaimer", "fees", "indemnity", "information", "liability", "limitation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "trust.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/terms-of-service"]
+title = "Terms of Service - balena"
+full_description = 'By using the service ("Service") provided at the Balena website (“Site”), or any services of Balena ("Balena"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). These Terms of Service together with any applicable order form constitute the entire and exclusive understanding and agreement between Balena and you regarding the Service, and these Terms of Service supersede and replace any and all prior oral or written understandings or agreements between Balena and you regarding the Services, however if an order form differs from these Terms of Service then the order form supersedes these Terms of Service.IF YOU ARE ENTERING INTO THESE TERMS OF SERVICE ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU REPRESENT THAT YOU HAVE THE AUTHORITY TO BIND SUCH ENTITY TO THESE TERMS AND CONDITIONS, IN WHICH CASE THE TERMS "YOU" OR "YOUR" WILL REFER TO SUCH ENTITY. IF YOU DO NOT HAVE SUCH AUTHORITY, OR IF YOU DO NOT AGREE WITH THESE TERMS OF SERVICE, YOU MUST NOT ACCEPT THESE TERMS AD CONDITIONS AND MAY NOT USE THE SERVICES. We may modify the Terms of Service at any time, in our sole discretion. If we do so, we’ll let you know either by posting the modified Terms of Service on the Site or through other communications. It’s important that you review the Terms of Service whenever we modify them because if you continue to use the Service after we have posted modified Terms of Service on the Site, you are indicating to us that you agree to be bound by the modified Terms of Service. If you don’t agree to be bound by the modified Terms of Service, then you may not use the Service anymore. Because our Service is evolving over time we may change or discontinue all or any part of the Service, at any time and without notice, at our sole discretion.If you violate any of the terms in this Terms of Service, we can terminate your Account in our sole discretion. You agree to use the Service at your own risk. You must be 13 years or older to use this Service.Only human beings may use the Service, which you can only use if you create an account (“Account”). We don’t allow for bots or other automation tools to register Accounts, and registering an Account this way is prohibited.You must provide the information we need to complete your registration for an Account, including your name, a valid email address, and any other information we ask for during the registration process.You’re not allowed to share your login information with others. Only one person may use a login, but if you are on a plan that includes multiple users, you may create as many separate logins for people as your plan allows.You are responsible for maintaining the security of your Account and password. Balena cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.You are responsible for all Content posted and activity that occurs under your Account (even when Content is posted by others who have Accounts under your Account).The free Account is limited to one per person or legal entity. You can’t have more than one free Account.You may not use the Service for any illegal or unauthorized purpose. When using the Service, you agree not to violate any laws in your jurisdiction (including but not limited to copyright or trademark laws).'
+year_published = 2025
+clearnet = "https://balena.io/terms-of-service"
+tags = ["account", "cancellation", "company", "conditions", "downgrading", "general", "modification", "modifications", "ownership", "payment,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "threshold.vc", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io/pricing"]
+title = "Pricing - balena"
+description = "Pricing: Flexible pricing that scales with your business. Start free with under 10 devices and adjust seats and devices as you grow."
+full_description = '''Have you already deployed devices and would like to use balena? Or perhaps balena does not yet support your board? Already have a fleet of devices deployed in the field?No worries - we can help you remotely migrate your devices to the balenaCloud platform.Contact us to learn more about our brownfield migration tools and services. Don’t see your board on our supported devices list? Don’t worry! We can likely provide support for your Linux device via our Custom Device Support process. Our standard pricing is shown below, but contact us to get a quote for your specific board. The Free plan includes 10 microservices devices. You can have a maximum of 10 total devices shared across all the fleets you create. To learn more, please see balena.io/docs/learn/manage/fleet-types. To add more devices, you’ll need to upgrade to a paid plan. Prototype plans include 30 devices. Pilot plans include 60 devices and Production plans include 110 devices. You can add devices as your fleet grows, although credit-based discounts are only available for Pilot plans and higher. When we talk about included devices we are referring to the logical device instances that are managed by balenaCloud. Physical devices are not included with any of the subscriptions and must be acquired by you. If you're already on a paid plan and need to add more devices, you can simply provision them to your account, and we will automatically bill you for additional devices after subtracting any available Credits. Read more about Credits in the documentation. Yes, though additional devices on the Prototype plan are priced higher than additional devices on Pilot and Production plans, as the Prototype plan is meant to be a "starter" plan for the early stages of your project. At a certain point it will make economic sense for you to upgrade to a Pilot plan than to continue paying for additional devices on the Prototype plan. If you go over the number of devices included in your plan, we will automatically bill you for those additional devices or use any available credits, according to the additional per-device price assigned to your plan. See balena.io/pricing/#devices for more details.'''
+year_published = 2025
+clearnet = "https://balena.io/pricing"
+tags = ["$2,000", "additonal", "admin:", "always", "case", "company", "contact", "craft", "credits", "custom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "custom-device-support.pages.dev", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "trust.balena.io", "twitter.com"]
+
+["https://balena.io/contact-sales"]
+title = "Contact Sales"
+full_description = "We are happy to help you with any questions that might arise about your project and pricing.Get in touch and let’s figure it out."
+year_published = 2025
+clearnet = "https://balena.io/contact-sales"
+tags = ["company", "contact", "sales"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.balena.io", "dashboard.balena-cloud.com", "docs.balena.io", "facebook.com", "forums.balena.io", "github.com", "hub.balena.io", "instagram.com", "linkedin.com", "status.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/partners"]
+title = "Partners"
+full_description = "Here are a few of our partners that we have worked closely with to make sure balena is compatible on the latest versions of their products. Use balenaCloud for cloud-based workflows, Docker container support, and simplified hardware/OS management"
+year_published = 2025
+clearnet = "https://balena.io/partners"
+tags = ["100+", "access", "apps", "available", "balena", "balena's", "balenacloud", "balenaos", "become", "blog,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "trust.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/support"]
+title = "Get in touch for support - balena"
+description = "Support: Direct support from the developers who build balena, with each inquiry seen as a chance to improve the product."
+full_description = "This is the best place to look for an answer to your question.If the forums don't already have what you're looking for, post your own question so a balena engineer or fellow balena user can hep answer it. Device API, SDK and base image docs.Getting started guides, how-tos for advanced features and examples. Dig right into the readme and issues: balena-cli, balena-sdk, balena-sdk-python, balena-base-images, balenaEtcher. We think that most support conversations should happen out in the open. This is why we are creating a shared knowledge base with our users in the balena forums. The forums also enable our users to help one another without needing to rely on the balena team.We believe in the power of support-driven development. The best support we can give you comes directly from the developers who build and maintain balena. Each support inquiry is treated as an opportunity for us to learn and improve our product, documentation, and user experience. The feedback and feature requests we hear from you directly inform our roadmap. Yes! And we’re working on adding tools for users within the same organization to access all of their organization’s support interactions in one place. For SLA-level support, our guaranteed response times are as low as 60 minutes for high severity tickets. Please contact us at sales@balena.io to learn more. All incidents and scheduled maintenance windows are announced at https://status.balena.io/. The status page provides a number of notification options that you can subscribe to like email, text message, RSS and webhooks."
+year_published = 2025
+clearnet = "https://balena.io/support"
+tags = ["asked", "balena", "being", "best", "built", "community", "company", "documentation", "effort", "engineers."]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io/privacy-policy"]
+title = "Privacy Statement - balena"
+full_description = "Protecting your privacy is important to us. This Privacy Policy (“Privacy Policy”) is meant to help you understand how we collect, use and share your personal information and to assist you in exercising the privacy rights available to you. This Privacy Policy applies to personal information processed by us in our business, including on ours Site(s), our mobile applications, and other online or offline offerings (collectively, the “Services”).This Privacy Policy does not apply to any third-party websites, services or applications, even if they are accessible through our Services. Also, please note that, unless we define a term differently in this Privacy Policy, all capitalized terms used in this Privacy Policy have the same meanings as in our Terms and Conditions. So, please make sure that you have read, understand and agree to our Terms and Conditions.This Privacy Policy applies to our operating divisions, subsidiaries, and affiliates, including any additional subsidiary, or affiliate that we may subsequently form. Account Information. If you create an Account, we'll collect certain personal information that can be used to identify you, such as your name, email address, company name and phone number. If you create an Account using your login credentials from one of your Third-Party Accounts, we'll be able to access and collect your name and email address and other personal information that your privacy settings on the Third-Party Account permit us to access.Your Communications with Us. We collect personal information from you such as email address, phone number, or mailing address when you request information about our Services, register for our newsletter, request customer or technical support, apply for a job or otherwise communicate with us.Surveys. We may contact you to participate in surveys. If you decide to participate, you may be asked to provide certain information which may include personal information.Social Media Content. We may offer forums, blogs, or social media pages. Any content you provide on these channels will be considered “public” and is not subject to privacy protections."
+year_published = 2025
+clearnet = "https://balena.io/privacy-policy"
+tags = ["access", "account", "additional", "advertising", "affiliates.", "aggregated", "analytics", "analyze", "asset", "authority"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io/devices"]
+title = "devices"
+full_description = "We designed balenaOS to be easy for any developer to get started using, without needing to have a deep knowledge of embedded development technologies. For every simple thing in the world, there is a great amount of carefully engineered complexity, and that is what we’ve made with balenaOS. We hope one of the supported devices below will meet your needs, but if not, scroll to the bottom to find out more about making your hardware compatible with balenaOS. If you have engineers already familiar with Yocto, feel free to use our Contibution Guidelines to build compatibility for your device and get in touch using the button below when you are ready to merge.Balena can make your device compatible if you don't have Yocto familiarity. Please see our pricing page for related costs."
+year_published = 2025
+clearnet = "https://balena.io/devices"
+tags = ["16gb", "32gb", "64gb", "aarch64", "advantech", "aetina", "ai-64", "am62x", "an510-tx2", "astro"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "enerbrain.com", "enpal.de", "facebook.com", "forums.balena.io", "github.com", "hookamonk.com", "hub.balena.io", "infarm.com", "instagram.com", "linkedin.com", "twitter.com", "youtube.com"]
+
+["https://balena.io/team"]
+title = "Meet our distributed team from around the world - balena"
+description = "balena: A global, remote-first company founded in 2013. Learn about our team, board, and investors."
+year_published = 2025
+clearnet = "https://balena.io/team"
+tags = ["around", "co-ceos", "company", "investors", "leadership", "world!"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "threshold.vc", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io/events"]
+title = "balena Events - Find out where we are going to be"
+year_published = 2025
+clearnet = "https://balena.io/events"
+tags = ["company", "event", "join", "near", "nvidia"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "trust.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/os"]
+title = "Run containers on embedded edge devices - balenaOS"
+description = "balenaOS: An OS optimized for running Docker containers on embedded devices, focusing on reliability and a productive developer workflow."
+full_description = "We think that containers are essential to bringing modern development and deployment capabilities to connected devices. Linux containers, particularly Docker, offer, for the first time, a practical path to using virtualization on embedded devices. Virtual machines and hypervisors have lead to huge leaps in productivity and automation for cloud deployments, but their abstraction of hardware as well as their resource overhead and lack of hardware support means that they are out of the question for embedded scenarios. With OS-level virtualization as implemented for Linux Containers, both those objections are lifted for heterogeneous embedded Linux devices in the 'Internet of Things.' Yocto Linux is an incredible toolkit for generating Linux distributions, with a focus on portability. Yocto’s minimal size and low footprint also make it ideal for running on devices. BalenaOS is built using Yocto at its core, and the balenaOS team maintains numerous BSPs for Yocto, among them the Raspberry Pi, Artik, and CHIP layers. Yocto acts as the foundation for many other embedded operating systems including Ostro, Wind River Linux, and Tizen, therefore acting as a mechanism for sharing best practices and code, benefitting all the resulting operating systems, balenaOS included.Developers some times avoid Yocto due to its extremely minimal userspace and lack of a standard package manager. BalenaOS uses containers to run arbitrary base images within which developers can work, so that their interaction with the host userspace is rare. In this way we get the considerable portability benefits of Yocto, without suffering the workflow drawbacks for application developers. BalenaOS shares a lot with cloud operating systems for containers. We share the focus on minimalism, getting out of the user’s way and letting their container do the heavy lifting, and using Docker, which is the standard way of running containers, and well understood by a large developer community. BalenaOS applies the same principles to a different domain, that of embedded Linux devices, sometimes called “connected devices”, “Internet of Things” or “Industrial Internet”, depending on the use case. While some of the cloud operating systems have been made to run on particular embedded devices, their architecture is geared towards the cloud, where they shine.By applying the container paradigm to the embedded world, the balenaOS team has faced and solved a unique set of challenges that are not common in the cloud and datacentre world, such as:The extreme heterogeneity of device types found in the wild;Severely restricted resource envelopes in terms of storage, CPU, and networking;Devices that are difficult to reach or re-provision upon failure, where power is unstable and may be turned off at any time, or with custom hardware attached.BalenaOS is built for this world from scratch, and our deepest architectural and feature choices have been made exclusively with embedded devices in mind. BalenaOS is built for embedded devices, and this focus continues to drive our architectural objectives."
+year_published = 2025
+clearnet = "https://balena.io/os"
+tags = ["anywhere", "asked", "board", "built", "company", "containers", "device", "devices", "docker", "easy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "trust.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/webinars"]
+title = "Webinars"
+year_published = 2025
+clearnet = "https://balena.io/webinars"
+tags = ["advanced", "balena", "balenaos", "choice", "choosing", "company", "compatible", "custom", "deep", "device"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "threshold.vc", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io/customers"]
+title = "At balena, we love our customers"
+description = "Innovation: From farms to factories, balena enables innovation across industries with IoT solutions for various applications."
+year_published = 2025
+clearnet = "https://balena.io/customers"
+tags = ["always", "balena", "being", "built", "company", "customers", "devices", "fleets", "free", "future"]
+language = "en"
+internal-references = ["none"]
+external-references = ["30mhz.com", "allscripts.com", "autowares.com", "boosterusa.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dyson.com", "enerbrain.com", "facebook.com", "forums.balena.io", "github.com", "hookamonk.com", "hub.balena.io", "infarm.com", "instagram.com", "linkedin.com", "status.balena.io", "youtube.com"]
+
+["https://balena.io/contact"]
+title = "Contact Us - balena"
+description = "Got a questions? Want to learn more about balena? Contact us here and we will make sure your message reaches the right person on our team."
+year_published = 2025
+clearnet = "https://balena.io/contact"
+tags = ["company", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.balena.io", "dashboard.balena-cloud.com", "docs.balena.io", "facebook.com", "forums.balena.io", "github.com", "hub.balena.io", "instagram.com", "linkedin.com", "status.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/security"]
+title = "Securing your IoT Edge devices - balena"
+description = "Balena ensures robust IoT security for your edge devices, protecting your fleet, data, and operations."
+full_description = "Explore our Trust Center to find detailed information about IoT security best practices, industry certifications, and how we keep your data safe. Learn about balena’s approach to IoT security in our whitepaper. Discover how we implement secure device management, data encryption, and compliance measures. Safeguarding security with reliable, verifiable updates, providing consistent application and kernel updates to keep fleets protected from potential attacks. Ensuring IoT compliance with regular security updates and a secure development lifecycle, aligning with ISO 27001, CRA, and more from design to deployment. Providing fleet security with Secure Boot, Full Disk Encryption, and Cloudlink for secure remote access, enabling trusted software execution and protected device communication. Offering secure authentication methods, including credential-based login, OpenID Connect (e.g. GitHub, Google), 2FA, TOTP, and SAML-based Single Sign-On for enterprises. Marco reported a vulnerability in the 2FA recovery key management. We have implemented a mitigations."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://balena.io/security"
+tags = ["approach", "balena", "balena’s", "center", "chat", "company", "customer", "devices", "edge", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "forums.balena.io", "google.com", "infarm.com", "instagram.com", "linkedin.com", "os-docs.balena.io", "tools.google.com", "trust.balena.io", "twitter.com", "youradchoices.ca"]
+
+["https://balena.io"]
+title = "balena - Powerful IoT device management made simple"
+description = "balenaCloud: Manage fleets of IoT Linux devices with balena’s cloud platform. First 10 devices are free. Develop, deploy, and scale your IoT fleet."
+full_description = "We support 80+ device types and offer a Custom Device Support program for devices not on our compatibility list. “I really love that balena’s support is well trained and technical. The first thing I do is reach out to technical support because I know they are going to figure it out. It really feels like balena is a collaborative partner in making our experience successful” “Balena gives us the flexibility to deploy fleets efficiently, and the support is always responsive when we need it.” “With balena, there’s a level of confidence that they’re making the right decisions and taking the right path in how they communicate and grow their platform. We’re closely aligned and we trust their approach and people.” “Everything was about scale, reliability, and finding a mature method in the market that was already proven to work.” “We went down the road of trying to manipulate Linux ourselves, and we came to the conclusion that balenaCloud was the right platform for us” “We can scale much better and handle multiple devices instead of treating them individually - we don’t have to update the devices one by one. Moreover, the API is quite powerful and helps us automate quite a bit of our work. There’s no service we’re aware of that’s comparable.” “balena is head and shoulders ahead of anyone else when it comes to making software and device management easy” “Being able to do software related tasks remotely, and managing and deploying to a large installed base are definitely the killer features of balena. This enables a very fast update cycle and therefore is a booster for the overall development speed of our services.” “balena gave us all the fleet management and OTA stuff that we knew we would need. For example, we’ve got devices deployed across the world now and we can roll out fixes or software updates or support them anywhere in the world sitting from our office in Bristol.” Diagnose, debug and resolve issues at the individual device level with a SSH connection for each device"
+year_published = 2025
+clearnet = "https://balena.io"
+tags = ["30mhz", "application", "balena", "balenacloud", "balenadash", "balenasense", "being", "bosch", "build", "built"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.balena.io", "dashboard.balena-cloud.com", "docs.balena.io", "facebook.com", "forums.balena.io", "github.com", "hub.balena.io", "instagram.com", "linkedin.com", "status.balena.io", "twitter.com", "youtube.com"]
+
+["https://balena.io/engine"]
+title = "balenaEngine - A container engine purpose-built for IoT devices"
+description = "balenaEngine: A container engine for embedded and IoT use cases, compatible with Docker containers, based on Moby Project technology."
+full_description = "As described by Docker, the Moby Project is “an open framework to assemble specialized container systems.” You can read more at The Moby Project website and Moby Project introduction post We think that containers are essential to bringing modern development and deployment capabilities to connected devices. Linux containers, particularly Docker, offer, for the first time, a practical path to using virtualization on embedded devices, without heavy overhead or hardware abstraction layers that get in the way. Docker was primarily designed for datacenters with large, homogenous, well-networked servers. As such it makes tradeoffs that in some cases come in conflict with the need of small, heterogenous, remotely distributed, and differentiated devices, as found in IoT and embedded Linux use cases.With its small footprint and purpose-built features, balenaEngine was made specifically for IoT devices, or any scenario where footprint, bandwidth, power, storage, etc. are a concern. We left out Docker features that we saw as most needed in cloud deployments and therefore not warranting inclusion in a lightweight IoT-focused container engine. Specifically, we’ve excluded:"
+year_published = 2025
+clearnet = "https://balena.io/engine"
+tags = ["asked", "assets", "balenaengine?", "built", "company", "compatible", "conservative", "container", "containers", "deltas"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "enerbrain.com", "facebook.com", "forums.balena.io", "github.com", "hookamonk.com", "hub.balena.io", "infarm.com", "instagram.com", "linkedin.com", "twitter.com", "youtube.com"]
+
+["https://balena.io/etcher"]
+title = "balenaEtcher - Flash OS images to SD cards & USB drives"
+description = "A cross-platform tool to flash OS images onto SD cards and USB drives safely and easily. Free and open source for makers around the world."
+full_description = "If you have a question about Etcher, or are a fan of Etcher and want to help other users troubleshoot their issues, join us in our forum! BalenaEtcher is and always will be free and open sourced, it is maintained by balena staff but we welcome contributions from the community. Your users can now easily install your OS straight from your website, add the flash with Etcher button to your site or blog to get started. Take readings from a BME680 or similar sensors on a Raspberry Pi, store with InfluxDB and view with Grafana. It depends how it fails. Most of the time, a failed flash is due to either a faulty drive or adapter. Retry. Then try with another adaptor, drive or card and usb port.If you're flashing from an url and it fails, try downloading the file first and flash it again from file.Sometimes, things might go wrong, and you end up with a half-flashed drive that is unusable by your operating systems, and common graphical tools might even refuse to get it back to a normal state. To solve these kinds of problems, we've collected a list of fail-proof methods to completely erase your drive in major operating systems. Etcher works on Microsoft Windows 10 and later, Linux (most distros) and macOS 10.10 (Yosemite) and later. Make sure you download the correct version from our downloads section.For Windows 7, 8 or 32 bits, the latest compatible version of Etcher is v7.9.0. Windows images are not bootable without extra treatment that etcher is not designed to do. If you need to make a bootable disk for windows you can find more information in our documentation. Still having issues? Check out the Etcher docs to troubleshoot your problem, search the forums for already opened tickets with the same issue as you which or open your own ticket or issue on the etcher repo, and our support team will be able to help you."
+year_published = 2025
+clearnet = "https://balena.io/etcher"
+tags = ["asked", "balenadash", "balenaetcher?", "balenasense", "beautiful", "better", "burn", "community", "company", "container-based"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allscripts.com", "autowares.com", "blog.docker.com", "boschrexroth.com", "cutii.io", "dashboard.balena-cloud.com", "docs.balena.io", "dwelo.com", "dyson.com", "electronjs.org", "enerbrain.com", "etcher-docs.balena.io", "forums.balena.io", "hookamonk.com", "infarm.com", "instagram.com", "linkedin.com", "trust.balena.io", "twitter.com", "youtube.com"]

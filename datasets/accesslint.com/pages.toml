@@ -1,0 +1,142 @@
+["https://accesslint.com/blog/accesslint-github-marketplace-launch"]
+title = "AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "AccessLint GitHub Marketplace Launch October 17, 2017 We released AccessLint as a GitHub App recently, and today we’ve launched in the GitHub Marketplace. As we reflect on the launch, we’re again revisiting why we created AccessLint, and why you’d want to use it. Why AccessLint? We want to focus on the hard problems in accessibility, design, and inclusion. We’re building AccessLint in response to our frustration with the digital accessibility status quo. We see the same bugs come up again and again in audits, reviews, and litigation. Time spent filing accessibility bug reports and performing fixes for simple issues means less time for research, design and exploration in accessibility. All of our accessibility work should move us towards innovation, but right now we’re stuck playing catch-up. AccessLint helps spot some of these common accessibility issues early in the development process, leaving more time to focus on harder accessibility problems. That way we developers, designers and product owners can focus on advancing the field of digital accessibility, creating a more inclusive world, together. What it does AccessLint gives you time back. Reviews HTML formatted code. Runs a growing list of accessibility tests. Socializes accessibility to your team. Celebrates when you resolve a review comment. Catches some low-hanging accessibility issues before release. What it doesn’t do AccessLint won’t pre-process templates or run dynamic code (e.g. Rails helpers). It won’t replace usability reviews and testing. It won’t audit your entire project. Visit our Help Pages to learn more about the rules we run and what to expect. Add AccessLint to your GitHub project now! It’s free for open source projects."
+year_published = 2017
+clearnet = "https://accesslint.com/blog/accesslint-github-marketplace-launch"
+tags = ["accessibility", "accesslint", "accesslint?", "doesn’t", "github", "launch", "marketplace"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help"]
+title = "Help - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Help How do I install AccessLint? What GitHub permissions does AccessLint require? What’s covered in a review? What file types are supported? How do I change or cancel my plan? If you can’t find your answer, email us at support@accesslint.com Help How do I install AccessLint? What GitHub permissions does AccessLint require? What’s covered in a review? What file types are supported? How do I change or cancel my plan? If you can’t find your answer, email us at support@accesslint.com"
+year_published = 2025
+clearnet = "https://accesslint.com/help"
+tags = ["help"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com"]
+title = "AccessLint - Automated and continuous web accessibility testing"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Automated and continuous web accessibility testing AccessLint is a GitHub App that finds accessibility issues in your pull requests. GitHub Connect with GitHub How it works AccessLint brings automated web accessibility testing into your development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live. Automated and continuous web accessibility testing AccessLint is a GitHub App that finds accessibility issues in your pull requests. GitHub Connect with GitHub How it works AccessLint brings automated web accessibility testing into your development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live."
+year_published = 2025
+clearnet = "https://accesslint.com"
+tags = ["accessibility", "automated", "continuous", "testing", "works"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com"]
+
+["https://accesslint.com/privacy"]
+title = "Privacy Policy - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Privacy Policy Effective date: September 3, 2017 General Information We collect the e-mail addresses of those who sign up with AccessLint, aggregate information on what pages consumers access or visit, and information volunteered by the consumer. The information we collect is used to improve the content of our web pages and the quality of our service, and is not shared with or sold to other organizations for commercial purposes, except to provide products or services you’ve requested, when we have your permission, or under the following circumstances: It is necessary to share information in order to investigate, prevent, or take action regarding illegal activities, suspected fraud, situations involving potential threats to the physical safety of any person, violations of Terms of Service, or as otherwise required by law. We transfer information about you if AccessLint, inc. or AccessLint is acquired by or merged with another company. In this event, AccessLint, inc. will notify you before information about you is transferred and becomes subject to a different privacy policy. Information Gathering and Usage AccessLint, inc. uses collected information for the following general purposes: products and services provision, billing, identification and authentication, services improvement, contact, and research. Cookies A cookie is a small amount of data, which often includes an anonymous unique identifier, that is sent to your browser from a web site’s computers and stored on your computer’s hard drive. Cookies are required to log in to AccessLint to view your subscriptions. Data Storage AccessLint, inc. uses third party vendors and hosting partners to provide the necessary hardware, software, networking, storage, and related technology required to run AccessLint. Although AccessLint, inc. owns the code, databases, and all rights to the AccessLint application, you retain all rights to your data. Source Code AccessLint, inc. employees do not access AccessLint users’ private source code unless AccessLint users give AccessLint, inc. employees explicit written permission to access their source code in order to provide support. AccessLint does not store GitHub credentials. Disclosure AccessLint, inc. may disclose personally identifiable information under special circumstances, such as to comply with subpoenas. Changes AccessLint, inc. may periodically update this policy. We will notify you about significant changes in the way we treat personal information by sending a notice to the primary email address specified in your AccessLint account or by placing a prominent notice on our site. Questions Any questions about the Privacy Policy should be addressed to support@accesslint.com."
+year_published = 2017
+clearnet = "https://accesslint.com/privacy"
+tags = ["accesslint", "accesslint,", "changes", "code", "data", "disclosure", "gathering", "general", "inc.", "information"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/blog/announcing-accesslint-github-app"]
+title = "AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Announcing AccessLint GitHub App August 28, 2017 Friends, we invite you to use the new AccessLint GitHub App. It finds accessibility issues in your Pull Requests, and let's you know right away. The integration with GitHub makes installation quick and easy. Why you'd use AccessLint You care about digital accessibility, and you want automated code review in your GitHub workflow. Maybe you've fixed some issues already, or maybe you want to chip away at issues over time. Either way you want to prevent new issues from here on out. What it does AccessLint adds accessibility to code review. This means quick and timely feedback that's specific to what you've changed. That way, you can stay focused and accountable to the issue at hand, while still moving fast. Here's what AccessLint gets you: Quick, timely, and targeted accessibility feedback, before code goes live. Accountability to fix issues you've introduced right now. Flexibility to fix existing issues over time. How it works AccessLint is super easy to install, and there's no setup. Pick which projects you want reviewed, and AccessLint kicks into action. The next time you open a Pull Request, AccessLint reviews it for issues and adds comments to the code. Right now, AccessLint supports checking for missing image descriptions and missing form labels, in the following templating languages: Haml HTML ERB/Rails Add AccessLint to your GitHub (it's free!)."
+year_published = 2017
+clearnet = "https://accesslint.com/blog/announcing-accesslint-github-app"
+tags = ["accesslint", "announcing", "github", "issues", "works", "you'd"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/blog/new-checks-added"]
+title = "AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "New Checks Added: Valid role Values, Accessible Button Text, and More February 3, 2018 We’re excited to announce additional checks that AccessLint now runs to help you and your team prevent even more accessibility issues from reaching your customers. The next time you open a Pull Request, AccessLint will review your code to check that: Buttons have accessible text Values of the lang attribute on the html element are valid Attributes that start with aria- are valid ARIA attributes Values of the ARIA role attribute are valid A common mishap made by those both familiar with and new to ARIA is accidental misspelling of attribute names and values. Given the vast landscape of the ARIA specification, this isn’t much of a surprise (is it aria-role or role? 1). With AccessLint, you and your team can work fast and be confident that these small blunders won’t slip in over time. Add AccessLint to your GitHub project today! It’s free for open source projects. It’s role 😉 ↩"
+year_published = 2018
+clearnet = "https://accesslint.com/blog/new-checks-added"
+tags = ["accessible", "added:", "aria", "button", "checks", "role", "text,", "valid", "values,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/blog/statuses-and-review-change-requests"]
+title = "AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = '''Statuses and Review Change Requests September 1, 2017 When you've installed the GitHub App, the next time you open a Pull Request you'll notice a new "check" status badge for AccessLint. That's our way of telling you what AccessLint is up to. GitHub supports failure statuses that you can configure to block delivery of code. We don't do that. AccessLint will only show you pending and success statuses, even if you've introduced an issue. We're following a Code Review model instead of a failing build model, so that you have more flexibility while still being accountable. To that end, we've changed the Review from "Comment" to "Request Changes". We hope this drives it home that you really should fix the issue, but we won't go so far as to block delivery.'''
+year_published = 2017
+clearnet = "https://accesslint.com/blog/statuses-and-review-change-requests"
+tags = ["change", "requests", "review", "statuses"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help/change-or-cancel-plan"]
+title = "How do I change or cancel my plan? - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = 'Help How do I change or cancel my plan? To cancel your plan and immediately disconnect AccessLint from all repositories for an account: Visit the AccessLint listing on the GitHub Marketplace. Click on "Edit your plan". Choose the account that you want to cancel for. Click on "Cancel this plan". Help How do I change or cancel my plan? To cancel your plan and immediately disconnect AccessLint from all repositories for an account: Visit the AccessLint listing on the GitHub Marketplace. Click on "Edit your plan". Choose the account that you want to cancel for. Click on "Cancel this plan".'
+year_published = 2025
+clearnet = "https://accesslint.com/help/change-or-cancel-plan"
+tags = ["cancel", "change", "plan?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/blog"]
+title = "Blog - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "New Checks Added: Valid role Values, Accessible Button Text, and More February 3, 2018 We’re excited to announce additional checks that AccessLint now runs to help you and your team prevent even more accessibility issues from reaching your customers. The next time you open a Pull Request, AccessLint will review your code to check that: Buttons have accessible text Values of the lang attribute on the html element are valid Attributes that start with aria- are valid ARIA attributes Values of the ARIA role attribute are valid A common mishap made by those both familiar with and new to ARIA is accidental misspelling of attribute names and values. Given the vast landscape of the ARIA specification, this isn’t much of a surprise (is it aria-role or role? 1). With AccessLint, you and your team can work fast and be confident that these small blunders won’t slip in over time. Add AccessLint to your GitHub project today! It’s free for open source projects. It’s role 😉 ↩ AccessLint GitHub Marketplace Launch October 17, 2017 We released AccessLint as a GitHub App recently, and today we’ve launched in the GitHub Marketplace. As we reflect on the launch, we’re again revisiting why we created AccessLint, and why you’d want to use it. Why AccessLint? We want to focus on the hard problems in accessibility, design, and inclusion. We’re building AccessLint in response to our frustration with the digital accessibility status quo. We see the same bugs come up again and again in audits, reviews, and litigation. Time spent filing accessibility bug reports and performing fixes for simple issues means less time for research, design and exploration in accessibility. All of our accessibility work should move us towards innovation, but right now we’re stuck playing catch-up. AccessLint helps spot some of these common accessibility issues early in the development process, leaving more time to focus on harder accessibility problems. That way we developers, designers and product owners can focus on advancing the field of digital accessibility, creating a more inclusive world, together. What it does AccessLint gives you time back. Reviews HTML formatted code. Runs a growing list of accessibility tests. Socializes accessibility to your team. Celebrates when you resolve a review comment. Catches some low-hanging accessibility issues before release. What it doesn’t do AccessLint won’t pre-process templates or run dynamic code (e.g. Rails helpers). It won’t replace usability reviews and testing. It won’t audit your entire project. Visit our Help Pages to learn more about the rules we run and what to expect. Add AccessLint to your GitHub project now! It’s free for open source projects."
+year_published = 2018
+clearnet = "https://accesslint.com/blog"
+tags = ["accessibility", "accessible", "accesslint", "accesslint?", "added:", "announcing", "aria", "blog", "button", "change"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help/github-permissions"]
+title = "What GitHub permissions does AccessLint require? - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Help What GitHub permissions does AccessLint require? AccessLint requires the following GitHub project permissions for installation: Read access to repository contents Read access to metadata Read and write access to commit statuses Read and write access to issues Read and write access to pull requests Repository Contents (read only) AccessLint uses the Repository Contents permission to access files in your repository related to a Pull Request. We need to see contents of the change you've made in context of the surrounding code to help us identify accessibility issues. We access only the files that you change in a Pull Request, and only during the lifecycle of that Pull Request. Metadata (read only) All GitHub Apps require the Repository Metadata permission . These permissions are a collection of read only endpoints for accessing metadata for various resources that do not leak sensitive private repository information. Commit Statuses (read & write) We use the Commit Status permission to set and update status indicators for your Pull Requests. Issues (read & write) We use the Issues permission to create reviews and associated comments on your Pull Requests. Pull Requests (read & write) We use Pull Requests permission to listen for new Pull Requests and assess those changes for accessibility issues. Visit GitHub’s developer documentation for more details on access these permissions give."
+year_published = 2025
+clearnet = "https://accesslint.com/help/github-permissions"
+tags = ["access", "accesslint", "commit", "contents", "github", "issues", "metadata", "permission", "permissions", "pull"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.github.com", "github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help/supported-file-types"]
+title = "What file types are supported? - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Help What file types are supported? AccessLint will review all files in your pull requests, and identify issues in files that have HTML-style syntax, as well as Markdown. Note that server-side code (e.g. image_tag and label_tag in Rails) is not evaluated. Only fully formed HTML tags will be tested. Help What file types are supported? AccessLint will review all files in your pull requests, and identify issues in files that have HTML-style syntax, as well as Markdown. Note that server-side code (e.g. image_tag and label_tag in Rails) is not evaluated. Only fully formed HTML tags will be tested."
+year_published = 2025
+clearnet = "https://accesslint.com/help/supported-file-types"
+tags = ["file", "supported?", "types"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.github.com", "github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help/what-is-covered"]
+title = "What’s covered in a review? - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Help What’s covered in a review? AccessLint reviews markup in supported file types for these issues: Unlabelled form elements Positive value for tabindex Images with missing alt text. Invalid ARIA attribute names Help What’s covered in a review? AccessLint reviews markup in supported file types for these issues: Unlabelled form elements Positive value for tabindex Images with missing alt text. Invalid ARIA attribute names"
+year_published = 2025
+clearnet = "https://accesslint.com/help/what-is-covered"
+tags = ["covered", "review?", "what’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.github.com", "github.com", "help.accesslint.com", "w3.org"]
+
+["https://accesslint.com/help/install-accesslint"]
+title = "How do I install AccessLint? - AccessLint"
+description = "Automated Web accessibility testing for GitHub pull requests"
+full_description = "Help How do I install AccessLint? Sign into GitHub and visit AccessLint’s Marketplace Listing . Choose the plan that’s right for you (private project review is available in the Professional Plan). Choose which projects you want AccessLint to review. Review and accept the permissions AccessLint requires. The next time you open a Pull Request on GitHub, AccessLint will comment with any accessibility issues we detect. Visit What’s covered in a review? to learn more about what AccessLint looks for."
+year_published = 2025
+clearnet = "https://accesslint.com/help/install-accesslint"
+tags = ["accesslint", "accesslint?", "install"]
+language = "en"
+internal-references = ["none"]
+external-references = ["developer.github.com", "github.com", "help.accesslint.com", "w3.org"]

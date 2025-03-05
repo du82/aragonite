@@ -1,0 +1,707 @@
+["https://eduroam.org/eduroam-companion-app"]
+title = "eduroam Companion App - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = 'eduroam Companion App Get connected, wherever you are eduroam Companion App Get connected, wherever you are Jisc, the UK’s national research and education networking charity, has just released a completely rewritten version of the eduroam companion app for Android and iOS, This new version offers the same functionality as its predecessor, documenting the global eduroam estate and helping end users discover more about and navigate to venues that offer eduroam connectivity. However, it is now much more efficient and future proof. Jisc are able to offer this refresh to the eduroam apps and keep them free to use by reusing the work that’s gone into the companion app for the UK govroam service, which has just passed 3,000 locations (many of which also now carry eduroam alongside). We’d love to hear what you think of the new app, so please review it, or send any comments to mark.o’leary@jisc.ac.uk Find out more about eduroam at Jisc You can find the iOS version on the App Store: Go to App Store and search "eduroam companion" The Android version is here:'
+year_published = 2019
+year_updated = 2022
+clearnet = "https://eduroam.org/eduroam-companion-app"
+tags = ["accessibility", "companion", "consent", "eduroam", "functional", "funding", "global", "information", "manage", "marketing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "instagram.com", "jisc.ac.uk", "play.google.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-news-3"]
+title = "eduroam news - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "eduroam News What's happening with eduroam around the world eduroam News What's happening with eduroam around the world"
+year_published = 2020
+year_updated = 2021
+clearnet = "https://eduroam.org/eduroam-news-3"
+tags = ["accessibility", "consent", "eduroam", "functional", "funding", "global", "information", "manage", "marketing", "organisation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/about/institutions"]
+title = "Connect Your Institution - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "eduroam for universities, research institutes, schools... A single solution for all your mobile connectivity needs eduroam for universities, research institutes, schools... A single solution for all your mobile connectivity needs Why do you need eduroam? With research teams and students becoming ever more mobile, the need to provide visitors with secure access to Wi-Fi can cause large administrative headaches. Resources must be allocated to providing and supporting temporary accounts or institutions must rely on extremely unsecure open networks. New Opportunities With eduroam, your campus becomes a more attractive venue for meetings and conferences, as it allows participants to access the network without assistance, and without tying up your facilities. By connecting to eduroam you provide your researchers, staff and students with access to thousands of participating hotspots world-wide when they are travelling either in your country or globally. For more information on eduroam on campus visit the eduroam wiki What are the benefits of eduroam to institutions? The cost of implementing and maintaining eduroam is modest. The service results in significant cost savings through reduced IT department workload: eduroam provides a single solution that accommodates all the mobile connectivity requirements of an institution - supporting local users connecting to the local network, visitors connecting to the local network and local users connecting to other participating networks. eduroam removes the need to supply temporary accounts to visiting users, so reducing the administrative and support burden imposed by the ever-growing movement of students and researchers between institutions and countries. Because visiting students, staff and researchers use their eduroam 'home' credentials to access Wi-Fi services on campus, they have a quick, easy and secure way to get online without campus IT support. The secure login system means that passwords are kept private at all times and visiting staff can be allocated to a separate VLAN to keep traffic isolated. However, in eduroam a misbehaving user can always be identified with the help of their home institution. eduroam Managed IdP - Making eduroam easy eduroam Managed IdP can help you get your users access to eduroam quickly and easily. Find out More"
+year_published = 2015
+year_updated = 2021
+clearnet = "https://eduroam.org/about/institutions"
+tags = ["access", "accessibility", "connecting", "consent", "eduroam", "functional", "funding", "global", "information", "local"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-security"]
+title = "eduroam Security - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "News What you need to know about the security of public wifi October 22, 2021 By Joeri de Ruiter, Technical Product Manager at SURF Nowadays, wherever you go it is likely that there is free wifi on offer. This can be very convenient when you are... Read More eduroam Security Keeping you safe, wherever you are eduroam Security Keeping you safe, wherever you are Is eduroam safe to use? eduroam is based on the most secure encryption and authentication standards in existence today. Its security by far exceeds typical commercial hotspots. eduroam requires the use of 802.1x which provides end-to-end encryption to ensure that your private user credentials are only available to your home institution. The certificate of your home institution is the only point you need to trust regardless of who operates any intermediate infrastructure. Be aware though that when using the general Internet at an eduroam hotspot, the local site security measures at that hotspot will apply to you as well. For example, the firewall settings at the visited place may be different from those you are used to at home, and as a guest you may have access to fewer services on the Internet than you have at home. Does eduroam use a web portal for authentication? No. Web Portal, Captive Portal or Splash-Screen based authentication mechanisms are not a secure way of accepting eduroam credentials, even if the website is protected by an HTTPS secure connection. What if a webpage asks for my username or password? eduroam will never show a webpage asking for your username and/or password. This is a sign that someone is attempting to hijack your password - do not use any network that requests this information. I heard that my university credentials can leak to attackers under some circumstances. What’s this about? The security model in eduroam is well thought-out and extensively studied (see for example the security section in RFC7593). Your credentials are well-protected as long as your device is correctly configured; such correct configuration is crucial. As long as the needed configuration items are correctly configured, any of the authentication types used in eduroam (PEAP, TTLS-PAP, EAP-TLS) are secure. Your eduroam Identity Provider provides you at minimum with installation instructions which allow the correct and secure configuration - the most critical bit in those being that you configure your device to trust a specific Certification Authority (CA) and the name of the Identity Provider’s server name. Many eduroam Identity Providers go a step further and provide you with installation programs or configuration files which convey the security-relevant information with a simple click-through process. One such is “eduroam CAT” including the “geteduroam” Apps - you may want to check if your institution is listed. Do make use of the installation programs and/or configuration instructions provided by your eduroam Identity Provider to be safe from attacks. If you do not follow the configuration instructions, or in the unlikely case that your eduroam Identity Provider does not provide you with such, then the account data you use to log in into eduroam is indeed at risk against so-called Man-in-the-Middle attacks. For eduroam Identity Providers, not providing sufficient configuration instructions is against the eduroam participation policy. We welcome notices of such cases. P.S.: this problem space is not specific to eduroam - any deployment of Enterprise Wi-Fi is in the same position. News What you need to know about the security of public wifi October 22, 2021 By Joeri de Ruiter, Technical Product Manager at SURF Nowadays, wherever you go it is likely that there is free wifi on offer. This can be very convenient when you are... Read More"
+year_published = 2016
+year_updated = 2021
+clearnet = "https://eduroam.org/eduroam-security"
+tags = ["about?", "accessibility", "asks", "attackers", "authentication?", "circumstances.", "configuration", "consent", "credentials", "eduroam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["autoriteitpersoonsgegevens.nl", "cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "monitor.eduroam.org", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/about/connect-yourself"]
+title = "Connect Yourself - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = '''eduroam for students, researchers and educators Get connected, wherever you are eduroam for students, researchers and educators Get connected, wherever you are Where can I use eduroam? Whether you're moving across campus or spending time studying or working at another research and education institution, eduroam gives you seamless internet connectivity. More than 10,000 eduroam hotspots are available at universities, research centres, academies, many schools, and other research and education institutions in more than 100 territories around the world. As eduroam grows, more and more hotspots are appearing in additional places such as libraries, museums and public spaces such as railway stations and coffee shops. Wherever you see 'eduroam' appear in your list of Wi-Fi networks, you can get online. See the interactive map. How does it work? With eduroam installed on your laptop, mobile phone or other device there's no need to request special accounts or borrow other people's IDs - just activate your device and you should be online. eduroam's secure and privacy-preserving technology means that there is no need to enter usernames and passwords through insecure web browser forms. Your device will identify a valid eduroam access point and log-in automatically. Your password is never shared with any of the access points. Your password for your online identity is provided to you by your 'home' institution - where you are enrolled in study or are employed. Get Started Visit the eduroam Configuration Assistant Tool (CAT) and click the large blue button that says "eduroam user: download your eduroam installer", then select your home institution. If your institution is not included in the list, please lobby your IT department and institution managers to provide the service! What Does it Cost? Thanks to global agreement, the eduroam Wi-Fi roaming service is free-of-charge to users.'''
+year_published = 2015
+year_updated = 2021
+clearnet = "https://eduroam.org/about/connect-yourself"
+tags = ["accessibility", "consent", "cost?", "eduroam", "eduroam?", "functional", "funding", "global", "information", "manage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-privacy-notice"]
+title = "eduroam Privacy Notice - eduroam.org"
+description = "Description of the eduroam Service eduroam (education roaming) is a secure, world-wide roaming access service developed for the international research and education community. eduroam allows any user from an eduroam participating site to get network access at any location that provides eduroam service. The basic principle underpinning the security of eduroam is that the authentication of a"
+full_description = "eduroam Privacy Notice Get connected, wherever you are eduroam Privacy Notice Get connected, wherever you are Description of the eduroam Service eduroam (education roaming) is a secure, world-wide roaming access service developed for the international research and education community. eduroam allows any user from an eduroam participating site to get network access at any location that provides eduroam service. The basic principle underpinning the security of eduroam is that the authentication of a user is carried out at his/her home institution (Identity Provider, IdP) using the institution’s specific authentication method. The authorisation required to allow access to local network resources is carried out by the visited institution (Service Provider, SP). Thus, the eduroam roaming consortium is comprised of many legal entities: (N)ROs, IdPs and SPs. (National) roaming operators ((N)RO) are entities that operate the eduroam service for a country or economy and coordinate the activity of IdPs and SPs in the respective territory. GÉANT is the body which is responsible for the international coordination and interoperability of eduroam. As such GÉANT operates a number of services for the eduroam community, from the technical infrastructure at the European level to supporting services aimed for the world-wide community. Those services are maintained by eduroam Operations Team (OT). This privacy policy concerns part of the eduroam service that is operated and maintained by GÉANT including, but not limited to, the following services: The European level authentication proxy infrastructure, The eduroam database, The eduroam Configuration Assistant Tool (CAT), The eduroam Managed IdP Service, The eduroam F-ticks traffic measurement, The portal with technical information about the service - monitor.eduroam.org, The eduroam wiki, and The eduroam website. eduroam was designed for minimal disclosure of end users’ personal data following the requirement that user must be authenticated by his/her IdP. The design of the system provides and favours the end user anonymization, i.e., the possibility to hide the end user’s identity from any third parties, including providers of eduroam network access (SPs). eduroam technical foundations have a built-in support for end user privacy throughout the authentication process. For all intermediate services, like routing of authentication requests and F-ticks (log format for distributed federations), the service is designed to know *nothing* about the actual identity of an end user, while still maintaining log traces which allow for resolving security incidents, debugging, monitoring and usage statistics. To view the general Privacy Notice for GÉANT, please visit the GÉANT website. Why We Process Personal Data We process various data in order to provide a reliable and secure eduroam service and to ensure and improve the quality of the eduroam supporting service. The eduroam service is designed in a way that we don’t need to know end user identity in order to provide the service. Partners within eduroam community can anonymise potential end user’s private data. We give advice and guidance to the community that recommends the highest levels of anonymity of data in all deployments. For the eduroam Managed IdP service which may be used by some home organisations to outsource technical part of the IdP function, we process personal data in order to provide the end users with the eduroam access credentials in the highest privacy preserving manner. We also collect data related to NROs, IdPS and SPs to enable supporting services and improve incident response and user support. Access to the data collected in the eduroam database and other supporting services which is considered private is limited (via authentication mechanism based on eduGAIN) to responsible personnel of GÉANT and NROs. What Personal Data We Process As part of the eduroam service, we process the following data: When you roam and visit other countries, or as a user of the eduroam Managed IdP service, the European proxy servers will receive and log the following data: your realm (denoting your institution and federation) and MAC addresses. We can also receive your username if you have not chosen to anonymise this data (eduroam Managed IdP always uses opaque usernames). When you roam to another institution within your home country the European proxy servers don’t receive any data because they are not included in that process. The service has a legitimate interest in processing this information. When you roam and visit other countries or other institutions within your federation we may also process for monitoring, measuring and reporting services, in addition to the data mentioned above, the data about visited country, visited institution and authentication outcome. The service has a legitimate interest in processing this information. As part of supporting activities we maintain several public web sites (e.g. web site of the Configuration Assistant Tool - CAT service https://cat.eduroam.org) of) where we collect normal web server logs, i.e. timestamp of access, IP address which requested the page, the page being requested, the HTML result code, etc. The data collected is for the purpose of troubleshooting and debugging potential problems of with eduroam web servers and therefore the service has a legitimate interest in processing this information. The eduroam Operational Team maintains a database where we collect data that may include name, e-mail, phone number of the NROs, IdPS and SPs contacts to enable supporting services and improve incident response and user support. The data is provided by the NROs based on the eduroam Policy Service Definition. eduroam strongly advises NROs to use the function contacts rather than the personal ones. To ensure proper functioning of the eduroam Configuration Assistant Tool (CAT) and of the eduroam Managed IdP service we collect the identifiers and e-mail addresses of the NRO and IdP administrators responsible for the configurations that will be used by the end users. The service has a legitimate interest in processing this information. The eduroam Managed IdP system also stores an arbitrary identifier for you (given by the IdP administrator), and maintains pseudonyms of that identifier for the actual eduroam access credentials. It also stores information about successful authentications linked to those pseudonyms. This processing is part of the contractual requirements for eduroam Managed IdP as part of service delivery. Your IdP administrator for eduroam Managed IdP may choose to send you an invitation link via SMS or e-mail. We will process this data in order to send you the invitation link but the data will not be stored. Who Do We Share Data With? Personal data gathered for website statistics is only shared within the GÉANT Association and the eduroam Operational Team for analysis and reporting. The contact information collected in the eduroam database is used by the OT and NROs in order to resolve security incident and debug problems reported by the end users. Personal data collected for the eduroam Managed IdP are available only to the IdP administrators. All other personal data is held and processed only by the eduroam OT. Personal Data Retention Analytical data for website statistics is currently retained permanently. All data related to roaming are kept for a period of six months, unless a different requirement is set by legislation in individual European countries. Personal data stored as part of your credentials issued via eduroam Managed IdP are kept as long as you use those credentials for eduroam access, and until they are removed by the IdP administrators. SMS or e-mails processed in order to send you invitation links are not retained. Security We support the following processes to ensure the security of your data: Managing, limiting and controlling access to personal data; Resilience of processing systems and services; Your personal data is securely destroyed when no longer required; Regular testing of the effectiveness of measures implemented. With these measures we intent to minimize the risk of disclosure of your personal data. Your Rights You have the following rights regarding your personal data: You have the right to request access to your data; You have the right to ask us to rectify information; You have the right to ask us to erase your personal information; You have the right to object to your data being processed. We keep this Privacy Notice under regular review. This Policy was last updated in November 2018. In order to exercise those rights please contact: GDPR@GEANT.ORG You also have the right to inquire what personal data we hold about you, and to present a complain to the Supervisory Authority (Autoriteit Persoonsgegevens at https://autoriteitpersoonsgegevens.nl) about our personal data processing activities if you feel your personal data is not being managed as described here. Please feel free to contact us for any further questions, through this email address: GDPR@GEANT.ORG Contact Information Data Controller and Contact Data Protection Officer GÉANT Association Hoekenrode 3 1102 BR Amsterdam – Zuidoost Netherlands Telephone number: +31 20 530 4488 email: gdpr@geant.org Jurisdiction Netherlands Dutch Data Protection Authority Autoriteit Persoonsgegevens Postbus 93374 2509 AJ DEN HAAG. Telephone number: (+31) – (0)70 – 888 85 00. Updated, December 2018"
+year_published = 2021
+year_updated = 2021
+clearnet = "https://eduroam.org/eduroam-privacy-notice"
+tags = ["access", "access,", "accessibility", "address", "addresses", "administrators", "arbitrary", "assistant", "authentication", "authentications"]
+language = "en"
+internal-references = ["none"]
+external-references = ["autoriteitpersoonsgegevens.nl", "cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "monitor.eduroam.org", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/about"]
+title = "About eduroam - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "About eduroam Get connected, wherever you are About eduroam Get connected, wherever you are The eduroam initiative started in 2003 with 6 countries. The technology behind eduroam is based on the IEEE 802.1X standard and a hierarchy of RADIUS proxy servers. The task force created a test bed to demonstrate the feasibility of combining a RADIUS-based infrastructure with 802.1X standard technology to provide roaming network access across research and education networks. The initial test was conducted among five institutions located in the Netherlands, Finland, Portugal, Croatia and the UK. Later, other national research and education networking organisations in Europe embraced the idea and gradually started joining the infrastructure, which was then named eduroam. eduroam Governance The Global eduroam Governance Committee was constituted in November 2010 and currently comprises fifteen senior representatives of roaming operators in Africa, Asia-Pacific, Latin America, North America and Europe. Secretariat support is provided by the GÉANT Association, which finalised the charter for global eduroam governance after extensive consultation with eduroam leaders from these regions. The GeGC members are officially appointed by the GÉANT Association on the basis of nominations from their regional roaming operators or confederation. The GÉANT organisation coordinates and supports the Global eduroam Governance Committee (GeGC), which sets technical and organisational standards for the service and authorises compliant ROs to provide eduroam around the world. The members of the GeGC are senior representatives of ROs or confederations of ROs. Representatives for a world region that has a confederation - such as Europe - are nominated by the confederation. In world regions without confederations, the ROs must jointly nominate their GeGC representatives. The GeGC members are officially appointed by GÉANT on the basis of these nominations, and currently are: Africa: Hellen Nakawungu (RENU, Uganda), Guy Halse, (TENET, South Africa), Omo Oaiya (WACREN). Asia-Pacific: Hideaki Goto (Tohoku University, Japan), Deokjai Choi (Chonnam National University, Korea), Paul Hii (AARNet, Australia). Europe: Wenche Backman-Kamila (Funet/CSC, Finland), Paul Dekkers (SURFnet, Netherlands), Stefan Paetow (JISC). Latin America: Luis Castro (CUDI, Mexico), Claudio Chacón (CEDIA, Ecuador), Jean Carlo Faustino (RNP, Brazil). North America & Caribbean: Chris Phillips (CANARIE, Canada), Reeve Ramharry (UWI, Trinidad & Tobago), Sara Jeanes (Internet2, USA). The GeGC includes non-voting experts: Stefan Winter (RESTENA, Luxembourg) Klaas Wierenga (GÉANT) Maarten Kremers Marina Adomeit"
+year_published = 2015
+year_updated = 2025
+clearnet = "https://eduroam.org/about"
+tags = ["accessibility", "africa:", "america", "america:", "asia-pacific:", "caribbean:", "charter", "consent", "eduroam", "europe:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/configuration-assistant-tool-cat"]
+title = "Configuration Assistant Tool (CAT) - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = 'Configuration Assistant Tool (CAT) Get connected, wherever you are Configuration Assistant Tool (CAT) Get connected, wherever you are Configuration Assistant Tool (CAT) The eduroam Configuration Assistant Tool (CAT) has been developed to help organisations offering their users eduroam access. The tool builds customised installers for a range of popular PC and smartphone platforms and enhances the security for the end user. The tool ensures that users are protected against rogue wi-fi hotspots accessing usernames and passwords. The tool builds a specific configuration for each participating organisation and so users should ensure they are downloading the correct installer. If your organisation is not listed on the CAT website then please contact your institutions IT department for advice. To see the list of supported devices, go to https://cat.eduroam.org and click on "About CAT" CAT Website https://cat.eduroam.org/ If your organisation does not have a profile on CAT ask your IT department to set one up - it is quick and easy to do. Technical Resources For source code and documentation for developers https://github.com/GEANT/CAT'
+year_published = 2016
+year_updated = 2021
+clearnet = "https://eduroam.org/configuration-assistant-tool-cat"
+tags = ["accessibility", "assistant", "configuration", "consent", "functional", "funding", "global", "information", "manage", "marketing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/faqs"]
+title = "FAQs - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "FAQs Helping you get connected, wherever you are FAQs Helping you get connected, wherever you are Frequently Asked Questions This page provides answers to the most frequently asked questions relating to eduroam. What is eduroam? Who runs eduroam? I am a student / researcher / professor, can I use eduroam? What does eduroam cost? Can a public WiFi provider offer eduroam? As a network administrator, what do I need to do to set up eduroam in my campus? How does eduroam work? What technology does eduroam use? Is eduroam safe to use? Does eduroam use a captive portal for authentication? Does eduroam work on different platforms? Can you help me configure my device? What is eduroam? eduroam (education roaming) allows users (researchers, teachers, students, staff) from participating institutions to securely access the Internet from any eduroam-enabled institution. The eduroam principle is based on the fact that the user's authentication is done by the user's home institution, whereas the authorisation decision allowing access to the network resources is done by the visited network. To learn more about eduroam, please read also the section about. Who runs eduroam? eduroam is a global initiative supported by GÉANT, the National Research and Education networks and individual institutions. Each participating organisation contributes time, manpower and resources to help support the collaborative efforts. Overall governance of eduroam is provided by the Global eduroam Governance Committee which currently comprises eleven senior representatives of roaming operators in Africa, Asia-Pacific, Latin America, North America and Europe. For more information on how the eduroam service is supported click here. I am a student / researcher / professor, can I use eduroam? As end-user you will only be able to use eduroam if your institution provides electronic identity (e.g. account for network access). In that case you will need to contact your administrator and ask for an account. You (or your network administrator) will have to configure your computer to enable eduroam access. What does eduroam cost? eduroam is free for its users, there is no charge for eduroam use world-wide. The providers of eduroam hotspots make the service available to benefit all members of the research and education community. Can a public WiFi provider offer eduroam? eduroam separates the concepts of authentication (identity providers) and hotspots (service providers) allowing public, commercial or city wifi initiatives to offer eduroam in addition to research and education institutions. What commercial entities cannot do is become identity providers and offer a service to their customers that will work with eduroam. so any partnership with a commercial wifi service needs to respect that users of this hotspot cannot be charged for accessing the network. As a network administrator, what do I need to do to set up eduroam in my campus? In order to enable your users to access eduroam in your campus, you need to maintain an Identity Management System (IdMs), where your users' electronic identities are stored. You also need a RADIUS server, which will have to be connected to your IdMs. To set up an eduroam service point in your institution you have to configure your wireless LAN according to the eduroam requirements. Your institution must be part of an eduroam service, which is provided by your National Roaming Operator (in most cases your National Research and Education Network (NREN)). The NREN in your country must participate in eduroam. To find out more about the NREN in your country please refer to the eduroam map. Your NREN representative will be able to inform you about the formal rules for participation. For more detailed information on how to set up eduroam, please consult the eduroam wiki. How does eduroam work? When a user tries to log on to the wireless network of a visited eduroam-enabled institution, the user's authentication request is sent to the user's home institution. This is done via a hierarchical system of RADIUS servers. The user's home institution verifies the user's credentials and sends to the visited institution (via the RADIUS servers) the result of such a verification. What technology does eduroam use? In eduroam, communication between the access point and the user's home institution is based on IEEE 802.1X standard; 802.1X encompasses the use of EAP, the Extensible Authentication Protocol, which allows for different authentication methods. Depending on the type of EAP method used, either a secure tunnel will be established from the user’s computer to his home institution through which the actual authentication information (username/password etc.) will be carried (EAP-TTLS or PEAP), or mutual authentication by public X.509 certificates, which is not vulnerable to eavesdropping, will be used (EAP-TLS). Is eduroam safe to use? eduroam is based on the most secure encryption and authentication standards in existence today. Its security by far exceeds typical commercial hotspots. Be aware though that when using the general Internet at an eduroam hotspot, the local site security measures at that hotspot will apply to you as well. For example, the firewall settings at the visited place may be different from those you are used to at home, and as a guest you may have access to fewer services on the Internet than you have at home. Does eduroam use a captive portal for authentication? No. Web Portal, Captive Portal or Splash-Screen based authentication mechanisms are not a secure way of accepting eduroam credentials, even if the website is protected by an HTTPS secure connection. The distributed nature of eduroam would mean that many different pages, languages and layouts would be presented to eduroam users making it impossible to distinguish between legitimate and bogus sites (even a consistent layout can be mimicked by an adversary). eduroam requires the use of 802.1x which provides end-to-end encryption to ensure that your private user credentials are only available to your home institution. The certificate of your home institution is the only point you need to trust regardless of who operates any intermediate infrastructure. Web portals require you to trust their infrastructure as they receive your password in clear text, this breaks the end-to-end encryption tenets of eduroam. Does eduroam work on different platforms? eduroam uses open standards to enable cross platform uniform access. This means that eduroam works on Windows, Linux, MAC OS, iOS and Android. Can you help me configure my device? Unfortunately we don't have the resources to provide individual assistance and feedback on device compatibility with eduroam or your local wireless setup. Check with your organizations IT helpdesk in the first instance. Many organisations use the eduroam Configuration Assistant Tool (CAT) which is designed to provide a simple, safe mechanism for configuring devices."
+year_published = 2016
+year_updated = 2021
+clearnet = "https://eduroam.org/faqs"
+tags = ["access", "accessibility", "asked", "authentication", "based", "commercial", "configure", "consent", "different", "education"]
+language = "en"
+internal-references = ["none"]
+external-references = ["autoriteitpersoonsgegevens.nl", "break-charity.org", "cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "monitor.eduroam.org", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-advisories"]
+title = "eduroam Advisories - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "eduroam response to the Blast!RADIUS vulnerability 8 months ago This advisory is the eduroam response to the attack “Blast!RADIUS – RADIUS/UDP considered harmful” as published... Guidelines on the publication of eduroam roaming locations November 28, 2023 Overview eduroam is a secure, world-wide roaming access service developed for the international research and education... eduroam Deployment Considerations on Wi-Fi Certified 6E May 19, 2022 Wi-Fi Certified 6E brings significant change, among others in relation to security questions and the lack of backward... eduroam + OpenRoaming End-User Information February 25, 2022 What is eduroam? eduroam is a global service that provides free, secure Wi-Fi roaming connectivity for the R&E... OpenRoaming and eduroam – Useful Information for eduroam National Roaming Operators (NROs) February 9, 2022 eduroam is a member of the Wireless Broadband Alliance (WBA) and a pioneer member of the OpenRoaming federation service... OpenRoaming and eduroam – Useful Information for eduroam Identity Providers and Service Providers February 9, 2022 eduroam is a member of the Wireless Broadband Alliance (WBA) and a pioneer member of the OpenRoaming federation service... eduroam advisory – Mutual Authentication October 6, 2021 The eduroam team is aware of a vulnerability report originally from WizCase and republished from numerous secondary... Fragmentation and Aggregation Attacks (FragAttacks) and eduroam May 19, 2021 Recently, the Fragmentation and aggregation attacks vulnerability (FragAttacks) has come to light about the risk of... eduroam® and Wi-Fi CERTIFIED WPA3™ Security June 26, 2018 The Wi-Fi Alliance® announcement of Wi-Fi CERTIFIED WPA3™ is mostly focused on WPA3-Personal which isn’t of... Key Reinstallation Attack and WPA2 October 18, 2017 Recently, the news of the Key Reinstallation Attack (KRACK) vulnerability allowing the decryption of WPA2 messages... RADIUS Attribute Issues regarding RFC5580 May 1, 2011 RADIUS Attribute Issues regarding RFC5580 (Operator-Name and others) with several RADIUS servers (including Microsoft..."
+year_published = 2020
+year_updated = 2021
+clearnet = "https://eduroam.org/eduroam-advisories"
+tags = ["accessibility", "advisory", "aggregation", "attack", "attacks", "attribute", "authentication", "blast!radius", "certified", "cipher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-luxembourg-further-expands-in-partnership-with-cfl"]
+title = "eduroam Luxembourg further expands in partnership with CFL - eduroam.org"
+description = "The start of 2025 is off to a flying start for eduroam users. With new hotspots are progressively activated across Luxembourg, and CFL being added as an additional eduroam service provider. In addition, eduroam.lu website gets a new and modern facelift. CFL and Restena offer a secure WiFi access to the research and education community"
+full_description = "eduroam Luxembourg further expands in partnership with CFL 2 months ago Karl Meyer Share This! FacebookXPinterestLinkedIn The start of 2025 is off to a flying start for eduroam users. With new hotspots are progressively activated across Luxembourg, and CFL being added as an additional eduroam service provider. In addition, eduroam.lu website gets a new and modern facelift. CFL and Restena offer a secure WiFi access to the research and education community Based on the ‘CFL Free WiFi’ infrastructure set up by the CFL Infrastructure Manager, a new collaboration has just been established between the CFL and the Restena Foundation . Interconnecting and delivering essential network and security services to actors in research and education, health, culture and public administration in Luxembourg, Restena notably coordinates eduroam in Luxembourg, a service delivered on a global scale. As such, Restena offers its community of users a secure and automatic WiFi connection available in Luxembourg and in over a hundred other countries. The objective of CFL and Restena is to progressively make the eduroam network service available via WiFi terminals located throughout CFL’s railway stations, railway stops and buses. eduroam is used as secure Internet access by a large proportion of daily train users. Thus, secondary school pupils, secondary school teachers, students, university professors and research institute staff, also foreign users visiting Luxembourg on an occasional basis, will automatically connect to eduroam when visiting a station where the eduroam signal is available. “This collaboration enhances our WiFi infrastructure and opens up a new high value-added market.” Marc Hoffmann, Infrastructure Management Director at CFL “Connectivity services contribute greatly to the travel comfort and connectivity of the educational and research community in Luxembourg, which is among the regular customers of our trains!” Marc Wengler, Chief Executive Officer at CFL Find out more here. You may also like News Klaas Wierenga – Founder of eduroam is speaking at the Radius Conference 12,13 March 2025 2 weeks ago News eduroam’s Unmyama helps raise over £140,000 for charity 8 months ago News Introducing extending eduroam: learning beyond the campus 10 months ago About the authorView All Posts Karl Meyer eduroam hits a new record – 8.4 billion authentications in 2024 RENAM expands eduroam service in Moldova: now available in Taraclia Share This! FacebookXPinterestLinkedIn"
+author = "Karl Meyer"
+year_published = 2025
+year_updated = 2025
+clearnet = "https://eduroam.org/eduroam-luxembourg-further-expands-in-partnership-with-cfl"
+tags = ["12,13", "access", "accessibility", "author", "beyond", "campus", "charity", "community", "conference", "consent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "impact.geant.org", "instagram.com", "jisc.ac.uk", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org"]
+title = "Home - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "eduroam provides simple, easy, secure connectivity from thousands of hotspots across more than100 countries. Sign-in once and access wherever you are How does eduroam work? eduroam provides simple, easy, secure connectivity from thousands of hotspots across more than 100 countries. Sign-in once and access wherever you are How does eduroam work? eduroam reaches new heights! in 2024 eduroam authenticated over 8.4 billion national and international authentications a new record! Find out More About eduroam eduroam is based on the most secure encryption and authentication standards available. Its security by far exceeds typical commercial hotspots. Find out about eduroam security here. Locations & Participants Find out where you can #love2eduroam Download the Companion App Locations & Participants Find out where you can #love2eduroam Download the Companion App eduroam – Simple, Easy, Secure eduroam provides simple, easy, secure connectivity from thousands of hotspots across more than 100 countries. https://eduroam.org/wp-content/uploads/2020/03/eduroam.-Easy-simple-and-secure.mp4 eduroam for universities,research institutes and schools is a solution for all your mobileconnectivity needs Find Out More Latest News Klaas Wierenga – Founder of eduroam is speaking at the Radius Conference 12,13 March 2025 News eduroam hits a new record – 8.4 billion authentications in 2024 4 weeks ago News eduroam Luxembourg further expands in partnership with CFL 2 months ago News RENAM expands eduroam service in Moldova: now available in Taraclia 8 months ago News eduroam’s Unmyama helps raise over £140,000 for charity 8 months ago"
+year_published = 2025
+clearnet = "https://eduroam.org"
+tags = ["12,13", "accessibility", "authentications", "available", "billion", "charity", "conference", "consent", "easy,", "eduroam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-and-geant"]
+title = "eduroam and GÉANT - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "eduroam and GÉANT Supporting Global Research and Education eduroam and GÉANT Supporting Global Research and Education eduroam and GÉANT eduroam was pioneered by the GÉANT research and education networking community in Europe. The GÉANT Project works with relevant industry and standardisation groups to find and share solutions related to eduroam technology and security. The registered trademark for eduroam® in Europe is held by the GÉANT organisation, which also helps to promote the deployment of the service. eduroam in Europe The European eduroam service is a large-scale collaboration between hundreds of institutions, the majority of which own and operate the service’s infrastructure. The national and international coordination of this infrastructure is undertaken by the Roaming Operators (ROs) and a central eduroam Operational Team that is funded by the GÉANT Project. The GÉANT project is co-funded by Europe's NRENs and the EU."
+year_published = 2016
+year_updated = 2024
+clearnet = "https://eduroam.org/eduroam-and-geant"
+tags = ["accessibility", "co-funded", "consent", "eduroam", "europe", "europe's", "functional", "funding", "global", "géant"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-hits-a-new-record-8-4-billion-authentications-in-2024"]
+title = "eduroam hits a new record – 8.4 billion authentications in 2024 - eduroam.org"
+description = "Following on from 2023’s record 7.5 billion national and international authentications, eduroam has reached new heights with 8.4 billion auths in 2024 in over 100 countries. As staff, researchers and students resume travel and collaborations then eduroam becomes even more important to help users stay connected. Initiatives increasing eduroam access off-campus such as in South Africa, Uganda,"
+full_description = "eduroam hits a new record – 8.4 billion authentications in 2024 4 weeks ago Karl Meyer Share This! FacebookXPinterestLinkedIn Following on from 2023’s record 7.5 billion national and international authentications, eduroam has reached new heights with 8.4 billion auths in 2024 in over 100 countries. As staff, researchers and students resume travel and collaborations then eduroam becomes even more important to help users stay connected. Initiatives increasing eduroam access off-campus such as in South Africa, Uganda, and Bangladesh have had a major impact in supporting global roaming and eduroam is becoming a vital component of student access services around the world. To find out more about where you can eduroam visit eduroam.org/where You may also like News RENAM expands eduroam service in Moldova: now available in Taraclia 8 months ago News eduroam’s Unmyama helps raise over £140,000 for charity 8 months ago News Introducing extending eduroam: learning beyond the campus 10 months ago About the authorView All Posts Karl Meyer Klaas Wierenga – Founder of eduroam is speaking at the Radius Conference 12,13 March 2025 eduroam Luxembourg further expands in partnership with CFL Share This! FacebookXPinterestLinkedIn"
+author = "Karl Meyer"
+year_published = 2025
+year_updated = 2025
+clearnet = "https://eduroam.org/eduroam-hits-a-new-record-8-4-billion-authentications-in-2024"
+tags = ["accessibility", "authentications", "author", "available", "beyond", "billion", "campus", "charity", "consent", "eduroam"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "impact.geant.org", "instagram.com", "jisc.ac.uk", "play.google.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/about/networks"]
+title = "Connect Your Research & Education Network - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "Help provide eduroam to your community Get connected, wherever you are Help provide eduroam to your community Get connected, wherever you are Global Reach Today research and education are increasingly global with international collaborations working in every field of research. Academics and students are highly mobile with teams joining together from around the globe. How do Institutions and Research and Education Networks support this highly mobile and demanding audience? eduroam helps enable collaboration and mobility by giving students and researchers the ability to roam across more than 100 countries whilst accessing free Wi-Fi services provided by educational establishments. Why eduroam? The benefits of eduroam are immense both for Individuals, Institutions and particularly Research and Education Networks. For individuals the ability to turn on a smartphone, tablet or laptop and immediately get high performance, secure Wi-Fi access transforms the learning experience. No more needing to find free (and possibly insecure) Wi-Fi hotspots – the users’ existing credentials are used to access Wi-Fi wherever they need to connect. For institutions, there is no longer a need to provide insecure shared usernames and passwords or to respond to requests for access. For Research and Education Networks, eduroam offers a unique value added service to the institutions, users and the wider community. By providing eduroam capabilities NRENs can offer a highly visible, highly valued service. By enabling eduroam your users get access in over 100 countries and tens of thousands of access points worldwide. How to set up eduroam The eduroam team can provide research and education network providers a range of services and tools to help you implement eduroam in your region. This support includes: toolkits and guides to set up authentication and access services training on implementing and supporting eduroam workshops to help learn from the experience of other network providers policies to ensure access is managed and controlled safely and securely Configuration Assistant Tool to support rapid deployment of eduroam to institutions and users eduroam Managed IdP - a rapid way to let institutions provide eduroam to their users. Find out more For more information on joining eduroam and providing access to your institutions and users, contact the eduroam team at: help@eduroam.org"
+year_published = 2015
+year_updated = 2021
+clearnet = "https://eduroam.org/about/networks"
+tags = ["access", "accessibility", "consent", "education", "eduroam", "functional", "funding", "global", "help", "highly"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/category/news"]
+title = "News - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "News REANNZ and the National Library of New Zealand team up to provide eduroam at 165 Aotearoa People’s Network Kaharoa (APNK) libraries News Hazrat Shahjalal International Airport, Dhaka, Bangladesh becomes the First International Airport in the Asia-Pacific region to offer eduroam Advisories • News OpenRoaming and eduroam – Useful Information for eduroam Identity Providers and Service Providers News Internet2 Program Helps Bridge Digital Divide for K-12 Districts, Libraries, and Museums With eduroam WiFi News News: BCNET Partners with School District 91 to bring eduroam – Equitable Wi-Fi Access for Higher ed Students in Northern BC News eduroam is proud to be a founding member of the Wireless Broadband Alliance OpenRoaming initiative News eduroam celebrates reaching over 100 countries by becoming a “Product of the Year” finalist in the WiFi Awards Case Studies • News South African students can now access high-speed WiFi in city of Cape Town’s libraries Case Studies • News Ukrainian NREN, URAN, implements eduroam managed IdP to support research institutions Case Studies • News 4,000th public building joins the govroam network, providing roaming service for public sector workers"
+year_published = 2025
+clearnet = "https://eduroam.org/category/news"
+tags = ["#love2eduroam", "#love2eduroam?", "1,000,000", "10th", "12,13", "4,000th", "@tnc19", "access", "accessibility", "across"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-media-and-resources"]
+title = "eduroam media and resources - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "Media and Resources Get connected, wherever you are eduroam Media and Resources Get connected, wherever you are This page provides links to a range of media and resources to help support eduroam around the world. Logo Images The eduroam logo was approved during the Task Force on Mobility meeting that took place in February 2006. You can download the eduroam logo and use it according to the usage guidelines document, and trademark information. eduroam_logo eduroamlogo_guidelines eduroam Marketing Resources (updated April 2021) eduroam branding guidelines April 2021 New Updated (April 2021) eduroam leaflet (pdf) eduroam Global Poster (April 2021) Trade Mark information #love2eduroam Campaign Materials eduroam 8.4 billion 2024 saw 8.4 billion national and international authentications for eduroam. We have a range of gifs and video clips for use to promote this record. Square video 16:9 Video Social Media Images GIFs #love2eduroam sticker Videos https://eduroam.org/wp-content/uploads/2020/03/eduroam.-Easy-simple-and-secure-SUB.mp4 https://eduroam.org/wp-content/uploads/2020/03/eduroam.-Easy-simple-and-secure.mp4 eduroam @ events If your NREN or Campus is hosting an event promoting eduroam we can help with a range of materials. please contact us at info@geant.org for more information."
+year_published = 2016
+year_updated = 2025
+clearnet = "https://eduroam.org/eduroam-media-and-resources"
+tags = ["accessibility", "billion", "consent", "eduroam", "functional", "funding", "global", "information", "manage", "marketing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/geteduroam-get-connected-quickly-and-safely"]
+title = "geteduroam – get connected quickly and safely - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "geteduroam App Get connected, wherever you are geteduroam App Get connected, wherever you are Get the geteduroam app Simplify connecting your devices to eduroam with the geteduroam app. eduroam is designed to provide simple, secure, easy-to-use roaming access to WiFi services for academia. It is now available to millions of students, researchers and staff in over 100 territories and tens of thousands of locations. How do I connect? In order to configure devices to connect to eduroam, The geteduroam app works by tapping into the central eduroam CAT service and manages the required settings for your institution and device to ensure that you are always connecting to a valid, correctly configured, eduroam access point and that your details cannot be accessed. Simply download the geteduroam app to get connected. About geteduroam and CAT eduroam works on many different types of device and because user credentials are managed by the institution, each with their own username and password policies. Because of this, it can sometimes be hard to provide standardised ways for these millions of users to connect their devices for the first time. To help with this, eduroam developed the Configuration Assistance Tool to help organisations on-board their students and staff onto eduroam. (CAT) offered ways for a wide range of different devices (iOS, Android or Windows) to connect to eduroam. However recent changes to the way some operating systems work has meant the CAT alone cannot provide the support needed and so geteduroam was developed. Not all organisations providing eduroam are present on CAT, but by starting to type the name of your organisation, the list of organisations is filtered down. If your organisation cannot be found, please contact your IT department and ask them to join eduroam CAT (it's free through their national eduroam operator). geteduroam is being developed for the global education sector by several organisations in Europe, amongst them NORDUnet and SURF."
+year_published = 2021
+year_updated = 2022
+clearnet = "https://eduroam.org/geteduroam-get-connected-quickly-and-safely"
+tags = ["accessibility", "consent", "devices", "eduroam", "functional", "funding", "geteduroam", "global", "information", "manage"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "autoriteitpersoonsgegevens.nl", "break-charity.org", "cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "geteduroam.app", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "monitor.eduroam.org", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/case-studies"]
+title = "Case studies - eduroam.org"
+description = "The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network."
+full_description = "Case Studies • News South African students can now access high-speed WiFi in city of Cape Town’s libraries July 17, 2019 Case Studies • News Ukrainian NREN, URAN, implements eduroam managed IdP to support research institutions July 16, 2019 Case Studies • News 4,000th public building joins the govroam network, providing roaming service for public sector workers May 17, 2019 Case Studies • News eduroam now available at 12 train stations across the Czech Republic December 18, 2018 eduroam Case Studies Get connected, wherever you are eduroam Case Studies Get connected, wherever you are eduroam - supporting Research and Education around the globe Since its inception in 2003, eduroam has been a major success story for Research and Education. Starting in Europe it has rapidly spread across the world and now students and researchers from over 100 countries can benefit from free, secure, reliable wifi access wherever they are travelling or studying. eduroam supports over 5 million access authentications every day with over 500,000 international authentications daily. eduroam is truly supporting the vision of a global village for Research and Education. eduroam service case study eduroam NHS Beyond the Campus Sustainable Training eduroam news from around the world Case Studies • News South African students can now access high-speed WiFi in city of Cape Town’s libraries July 17, 2019 Case Studies • News Ukrainian NREN, URAN, implements eduroam managed IdP to support research institutions July 16, 2019 Case Studies • News 4,000th public building joins the govroam network, providing roaming service for public sector workers May 17, 2019 Case Studies • News eduroam now available at 12 train stations across the Czech Republic December 18, 2018"
+year_published = 2016
+year_updated = 2021
+clearnet = "https://eduroam.org/case-studies"
+tags = ["4,000th", "access", "accessibility", "across", "african", "around", "available", "building", "cape", "case"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroams-unmyama-helps-raise-over-140000-for-charity"]
+title = "eduroam’s Unmyama helps raise over £140,000 for charity - eduroam.org"
+description = "After the hugely successful #StandingTall giraffe trail in Cambridge where eduroam sponsored a specially designed giraffe outside the iconic Cambridge University Library all the sculptures were auctioned off with proceeds going to the Break Charity. eduroam is proud to support Break which works to provide care-leavers, often the most vulnerable young adults, to have the"
+full_description = "eduroam’s Unmyama helps raise over £140,000 for charity 8 months ago Karl Meyer Share This! FacebookXPinterestLinkedIn After the hugely successful #StandingTall giraffe trail in Cambridge where eduroam sponsored a specially designed giraffe outside the iconic Cambridge University Library all the sculptures were auctioned off with proceeds going to the Break Charity. eduroam is proud to support Break which works to provide care-leavers, often the most vulnerable young adults, to have the best possible work and education opportunities and so we are thrilled to have sponsored a giraffe in the “Standing Tall” sculpture trail around Cambridge. Over the 10 weeks of the trail over 200,000 people took part tracking down the 31 large and 62 smaller giraffes across the city in Cambridge’s first African safari! The eduroam giraffe was created by Lisa Todd who lived in South Africa and collaborates with local crafters and is inspired by the Ubuntu theme which represents the power of community. This design was chosen because eduroam relies on the community of universities around the world coming together to support each other and make eduroam such a global success. In total the auction raised £142,600 to support their work and we are glad to have played a part in this fantastic project. To find out more about Break visit https://www.break-charity.org/cambridge-standing-tall/ You may also like News Klaas Wierenga – Founder of eduroam is speaking at the Radius Conference 12,13 March 2025 2 weeks ago News eduroam hits a new record – 8.4 billion authentications in 2024 4 weeks ago News eduroam Luxembourg further expands in partnership with CFL 2 months ago About the authorView All Posts Karl Meyer RENAM expands eduroam service in Moldova: now available in Taraclia Introducing extending eduroam: learning beyond the campus Share This! FacebookXPinterestLinkedIn News Klaas Wierenga – Founder of eduroam is speaking at the Radius Conference 12,13 March 2025 2 weeks ago"
+author = "Karl Meyer"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://eduroam.org/eduroams-unmyama-helps-raise-over-140000-for-charity"
+tags = ["12,13", "accessibility", "authentications", "author", "billion", "charity", "conference", "consent", "eduroam", "eduroam’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["autoriteitpersoonsgegevens.nl", "break-charity.org", "cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "monitor.eduroam.org", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/cookie-policy-eu"]
+title = "Cookie Policy (EU) - eduroam.org"
+description = """
+Miscellaneous
+\t\tPurpose pending investigation
+\t\tConsent to service miscellaneous
+\t\t
+\t
+\t
+\t\tUsage
+\t\t
+\t
+\t
+\t\tSharing data
+\t\tSharing of data is pending investigation
+\t
+\tPurpose pending investigation
+\tName
+
+SS_deltaBuffer
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-necessary
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-functional
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-performance
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-analytics
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-advertisement
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cookielawinfo-checkbox-others
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_ga
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+PHPSESSID
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wp-settings-time-30
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wordpress_logged_in_86c00cec7a49cea7a79543f732d93c4d
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wpe-auth
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wpEmojiSettingsSupports
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_gid
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_gat
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_gat_gtag_UA_77906174_1
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cmplz_functional
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+cmplz_statistics
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+cmplz_preferences
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+cmplz_marketing
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+klarna_amazon_modal_closed
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+CookieLawInfoConsent
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+viewed_cookie_policy
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wp-settings-7
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wp-settings-time-7
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_lfa
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_ga_LTXH33DVPV
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wordpress_test_cookie
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+cmplz_consented_services
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+cmplz_policy_id
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+cmplz_banner-status
+
+\tExpiration
+
+365 days
+
+\tFunction
+
+
+
+\tName
+
+wp-settings-time-14
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wp-settings-14
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+wp-autosave-1
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+sessionId
+
+\tExpiration
+
+
+
+\tFunction
+
+
+
+\tName
+
+_ga_ZT397BQ101
+
+\tExpiration
+
+
+
+\tFunction"""
+full_description = "Cookie Policy (EU) This Cookie Policy was last updated on April 11, 2024 and applies to citizens and legal permanent residents of the European Economic Area and Switzerland.1. IntroductionOur website, https://eduroam.org (hereinafter: “the website”) uses cookies and other related technologies (for convenience all technologies are referred to as “cookies”). Cookies are also placed by third parties we have engaged. In the document below we inform you about the use of cookies on our website.2. What are cookies?A cookie is a small simple file that is sent along with pages of this website and stored by your browser on the hard drive of your computer or another device. The information stored therein may be returned to our servers or to the servers of the relevant third parties during a subsequent visit.3. What are scripts?A script is a piece of program code that is used to make our website function properly and interactively. This code is executed on our server or on your device.4. What is a web beacon?A web beacon (or a pixel tag) is a small, invisible piece of text or image on a website that is used to monitor traffic on a website. In order to do this, various data about you is stored using web beacons.5. Cookies5.1 Technical or functional cookiesSome cookies ensure that certain parts of the website work properly and that your user preferences remain known. By placing functional cookies, we make it easier for you to visit our website. This way, you do not need to repeatedly enter the same information when visiting our website and, for example, the items remain in your shopping cart until you have paid. We may place these cookies without your consent.5.2 Statistics cookiesWe use statistics cookies to optimize the website experience for our users. With these statistics cookies we get insights in the usage of our website. We ask your permission to place statistics cookies.5.3 Marketing/Tracking cookiesMarketing/Tracking cookies are cookies or any other form of local storage, used to create user profiles to display advertising or to track the user on this website or across several websites for similar marketing purposes.5.4 Social mediaOn our website, we have included content from Instagram to promote web pages (e.g. “like”, “pin”) or share (e.g. “tweet”) on social networks like Instagram. This content is embedded with code derived from Instagram and places cookies. This content might store and process certain information for personalized advertising.Please read the privacy statement of these social networks (which can change regularly) to read what they do with your (personal) data which they process using these cookies. The data that is retrieved is anonymized as much as possible. Instagram is located in the United States.6. Placed cookies Miscellaneous Purpose pending investigation Consent to service miscellaneous Usage Sharing data Sharing of data is pending investigation Purpose pending investigation Name SS_deltaBuffer Expiration Function Name cookielawinfo-checkbox-necessary Expiration Function Name cookielawinfo-checkbox-functional Expiration Function Name cookielawinfo-checkbox-performance Expiration Function Name cookielawinfo-checkbox-analytics Expiration Function Name cookielawinfo-checkbox-advertisement Expiration Function Name cookielawinfo-checkbox-others Expiration Function Name _ga Expiration Function Name PHPSESSID Expiration Function Name wp-settings-time-30 Expiration Function Name wordpress_logged_in_86c00cec7a49cea7a79543f732d93c4d Expiration Function Name wpe-auth Expiration Function Name wpEmojiSettingsSupports Expiration Function Name _gid Expiration Function Name _gat Expiration Function Name _gat_gtag_UA_77906174_1 Expiration Function Name cmplz_functional Expiration 365 days Function Name cmplz_statistics Expiration 365 days Function Name cmplz_preferences Expiration 365 days Function Name cmplz_marketing Expiration 365 days Function Name klarna_amazon_modal_closed Expiration Function Name CookieLawInfoConsent Expiration Function Name viewed_cookie_policy Expiration Function Name wp-settings-7 Expiration Function Name wp-settings-time-7 Expiration Function Name _lfa Expiration Function Name _ga_LTXH33DVPV Expiration Function Name wordpress_test_cookie Expiration Function Name cmplz_consented_services Expiration 365 days Function Name cmplz_policy_id Expiration 365 days Function Name cmplz_banner-status Expiration 365 days Function Name wp-settings-time-14 Expiration Function Name wp-settings-14 Expiration Function Name wp-autosave-1 Expiration Function Name sessionId Expiration Function Name _ga_ZT397BQ101 Expiration Function 7. ConsentWhen you visit our website for the first time, we will show you a pop-up with an explanation about cookies. As soon as you click on “Save preferences”, you consent to us using the categories of cookies and plug-ins you selected in the pop-up, as described in this Cookie Policy. You can disable the use of cookies via your browser, but please note that our website may no longer work properly.7.1 Manage your consent settingsYou have loaded the Cookie Policy without javascript support. On AMP, you can use the manage consent button on the bottom of the page.8. Enabling/disabling and deleting cookiesYou can use your internet browser to automatically or manually delete cookies. You can also specify that certain cookies may not be placed. Another option is to change the settings of your internet browser so that you receive a message each time a cookie is placed. For more information about these options, please refer to the instructions in the Help section of your browser.Please note that our website may not work properly if all cookies are disabled. If you do delete the cookies in your browser, they will be placed again after your consent when you visit our website again.9. Your rights with respect to personal dataYou have the following rights with respect to your personal data: You have the right to know why your personal data is needed, what will happen to it, and how long it will be retained for. Right of access: You have the right to access your personal data that is known to us. Right to rectification: you have the right to supplement, correct, have deleted or blocked your personal data whenever you wish. If you give us your consent to process your data, you have the right to revoke that consent and to have your personal data deleted. Right to transfer your data: you have the right to request all your personal data from the controller and transfer it in its entirety to another controller. Right to object: you may object to the processing of your data. We comply with this, unless there are justified grounds for processing. To exercise these rights, please contact us. Please refer to the contact details at the bottom of this Cookie Policy. If you have a complaint about how we handle your data, we would like to hear from you, but you also have the right to submit a complaint to the supervisory authority (the Data Protection Authority).10. Contact detailsFor questions and/or comments about our Cookie Policy and this statement, please contact us by using the following contact details:GÉANT Nieuw Amsterdam, Level 6, Hoekenrode 3, 1102 BR Netherlands Website: https://eduroam.org Email: gdpr@geant.org Phone number: 020 530 4488This Cookie Policy was synchronized with cookiedatabase.org on July 5, 2024."
+year_published = 2024
+year_updated = 2024
+clearnet = "https://eduroam.org/cookie-policy-eu"
+tags = ["accessibility", "beacon?", "consent", "contact", "cookies.", "cookies?", "data", "days", "deleting", "details"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "instagram.com", "terena.org", "twitter.com", "wiki.geant.org"]
+
+["https://eduroam.org/eduroam-managed-idp"]
+title = "eduroam Managed IdP - eduroam.org"
+description = "Who needs eduroam Managed IdP? eduroam relies on all participating institutions to manage a service that controls all their user identities and responds to connection requests from eduroam access points worldwide. This requires the management and support of an Identity Provider (IdP) Service, a well-managed identity backend, and a RADIUS Server to verify the credentials"
+full_description = 'eduroam Managed IdP Get connected, wherever you are eduroam Managed IdP Get connected, wherever you are Who needs eduroam Managed IdP? eduroam relies on all participating institutions to manage a service that controls all their user identities and responds to connection requests from eduroam access points worldwide. This requires the management and support of an Identity Provider (IdP) Service, a well-managed identity backend, and a RADIUS Server to verify the credentials from that backend and grant user access to eduroam. Many smaller institutions may not have the in-house skills or resources to operate the required services and in particular to maintain their integrity. This is why eduroam Managed IdP has been developed. Product Description eduroam Managed IdP outsources the technical setup of eduroam IdP functions to the eduroam Operations Team. This leaves the institution only having to focus on its users and frees up valuable technical support resource. The system includes: A web-based user management interface where end user credentials for access to eduroam can be created and revoked. A technical infrastructure ("CA") which issues and revokes credentials for users to access to eduroam. A technical infrastructure ("RADIUS") which verifies access credentials and subsequently grants access to eduroam. The eduroam Managed IdP website is available at https://hosted.eduroam.org How it works For NROs (National Roaming Operators) eduroam NRO administrators can invite their IdPs to use eduroam Managed IdP. Enabling or disabling IdPs for eduroam Managed IdP is easily done inside the eduroam Managed IdP administration interface. More information is available in the NRO Manual. For IdP administrators (Institutional administrators) eduroam Managed IdP provides IdP administrators with a simple web-based management interface to add, remove and manage credentials for end users to access eduroam. All internal processes are handled on behalf of IdP administrators. eduroam IdP administrators can use this system to create end user credentials (accounts) according to his/her local institution policy. IdP administrators are fully responsible for the end user credentials they issue. If you are IdP administrator interested in using eduroam Managed IdP, contact your National Roaming Operator (NRO). More information is available in the IdP Administrator Manual. For eduroam users When your institution administrator creates user credentials in Managed eduroam IdP for you, you will receive an invite email with details how to download your setup for eduroam. For more information contact your institution. More Information More information on eduroam Managed IdP is available Here. For National Roaming Operators view the NRO Manual. For IdP administrators view the IdP Administrator Manual. For further information about Managed eduroam IdP contact us at help@eduroam.org.'
+year_published = 2018
+year_updated = 2021
+clearnet = "https://eduroam.org/eduroam-managed-idp"
+tags = ["access", "accessibility", "administrator", "administrators", "available", "consent", "credentials", "description", "eduroam", "eduroam."]
+language = "en"
+internal-references = ["none"]
+external-references = ["cat.eduroam.org", "connect.geant.org", "cookiedatabase.org", "facebook.com", "geant.org", "github.com", "hosted.eduroam.org", "impact.geant.org", "instagram.com", "jisc.ac.uk", "play.google.com", "restena.lu", "terena.org", "twitter.com", "wiki.geant.org"]

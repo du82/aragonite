@@ -1,0 +1,492 @@
+["https://linghao.io/notes/staff-engineer"]
+title = "Staff Engineer"
+description = "Staff Engineer by Will Larson is a great guide to building your career toward a Staff+ engineering role and succeeding within the role. This note consists of quote-worthy excerpts from the book and aims to serve as a verbose version of the book's table of contents."
+full_description = "Staff Engineer by Will Larson is a great guide to building your career toward a Staff+ engineering role and succeeding within the role. This note consists of quote-worthy excerpts from the book and aims to serve as a verbose version of the book's table of contents. This book standardizes on the most common sequence of titles: going from Senior to Staff, followed by Principal, and then Distinguished. It uses the term Staff-plus as an overarching label for Staff, Principal, and Distinguished titles. Many companies only have a subset of these titles, slowly adding more as their team grows, but companies that only have one technical leadership title almost always use Staff. A few companies use an alternative sequence, but they're in the minority. They still do what made them successful as Senior engineers: building relationships, writing software, coordinating projects. However, previously these were the core of their work, now they're auxiliary tasks. Staff engineers speak for their companies' technology. It's far more about understanding and solving the real needs of the organization around you and far less about prioritizing technology and approaches that you personally are excited to learn about. You're far more likely to change your company's long-term trajectory by growing the engineers around you than through personal heroics. The most effective Staff engineer pair a moderate amount of mentorship with considerably more sponsorship (see the distinction). Effective organizations streamline routine decision making. But even companies that are great at making routine decisions often struggle when an unexpected decision shows up -- the sort which is both time-sensitive and important, and it's challenging to even pull the right folks together before the decision needs to get made. Examples are organizational restructure or interview loops for infrequent roles (e.g. those hiring only one person each year) Staff-plus engineers often get unexpectedly pulled into the room where this sort of decision is happening, to inject the engineering context and perspective into a decision while it's still possible to change the outcome. These brief moments of inputs on critical decisions are unduly impactful."
+year_published = 2022
+clearnet = "https://linghao.io/notes/staff-engineer"
+tags = ['"who', "ability", "accelerating", "accomplish", "actions", "actions.", "actually", "aligned", "alone", "always"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "eugenewei.com", "firewatchgame.com", "florencegame.com", "github.com", "jon.bo", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/posts/why-is-ml-runtime-infra-so-hard"]
+title = "Why is ML Runtime Infra So Hard"
+description = "An attempt to reason about the complexity of ML runtime infrastructure from first principles."
+full_description = '''This post is my rough thoughts on the topic while I onboard to the problem space. I wrote this mainly for myself and it's bound to contain problematic statements and reasoning. Take it with a grain of salt. I'd appreciate any discussions on the topic. Let's loosely define an ML Runtime System as a software stack that bridges ML frameworks (think PyTorch, Tensorflow, Jax) and hardware accelerators (think NVIDIA H100s, TPUs), enabling ML developers to (primarily) train and serve ML models. For simplicity, let's also largely disregard the fact that hardware is being constantly iterated on. Instead we focus on engineering software systems based on the currently available set of hardware. Computing on a specific software-hardware stack is already no small feat. Some common requirements to solve for are: On "traditional" stacks, however, this is relatively speaking a solved problem. The domain has been around for longer and the number of variables at play is limited. For instance, developers of distributed query processing systems are mostly only dealing with machines that can be abstracted away as compute resources with CPUs and RAMs. Things like different CPU ISAs, for example, are implementation details. There are also decades worth of frameworks, abstractions, design patterns, and best practices that have been well validated. An ML program, on the other hand, typically has more diverse computing requirements, which in turn necessitates, among other things, a range of hardware accelerators. Each accelerator typically comes with its own software stack. Therefore we end up with multiple interweaving "stacks" of software-hardware paths. In essence, an ML program can be viewed as a computational graph that describes any number of computation units that run in arbitrary orders and on heterogeneous hardware. It's not hard to see how this creates magnitudes more complexities than, say, a system that only runs general-purpose logic purely on CPUs. It's a challenging but highly interesting and rewarding problem space.'''
+year_published = 2024
+clearnet = "https://linghao.io/posts/why-is-ml-runtime-infra-so-hard"
+tags = ["hard", "infra", "runtime", "system"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "blog.kewah.com", "byvoid.com", "codewithoutrules.com", "dnc1994.com", "docs.google.com", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "telegram.org"]
+
+["https://linghao.io/posts/noogler-learning-effective-engineer"]
+title = "Grow @ Google 01: Noogler 成长的必经之痛"
+description = "Grow @ Google 是一个基于我在 Google 的经历来讨论如何成为更高效的软件工程师的系列。本期的话题包括：建立高效的反馈回路；当心不假思索便做下的假设；主导和推动你所负责的项目。"
+full_description = "在「大厂」工作的体验就像当一颗螺丝钉？读过很多软件工程的书却仍会犯下里面的典型错误？感到自己工作效率低下却不知如何改进？要成为一名高效的软件工程师，在理论和实践之间是存在不小的距离需要我们通过广泛学习、勇敢试错和不断反思去跨越的。在 Grow @ Google 这个系列中，我会结合自己在 Google 的工作经历来分享一些经验和教训，帮助大家少走一些弯路。系列中的其他文章请见： 我在 Google 参与的第一个项目主要是修改和运行一个 C++ pipeline 来 backfill1 几年的用户数据。过程如下： 许多人将作为 entry level 工程师在 Google 工作的体验形容为当一颗螺丝钉，而我的感受则是自己所扮演的角色更接近于润滑油一般的存在。一言以蔽之，我所发挥的是「在一个巨大的组织里促成一件事情」的作用。作为一个新人，我需要频繁地借助来自他人的反馈。 为了验证 pipeline 生成的数据是否正确，我们将其与其它数据源进行比较。由于之前存在过的一些 bug 的影响，它们之间并不是 100% 一致的。我们投入了大量的时间和精力去调查数据的不一致，最终找到了超过 10 个 bug，并确认了大约 99.5% 的数据是一致的。 由于部分不一致的数据是对用户可见的，我们需要得到来自 PM 的 approval。这里我们犯的错误是没有及时跟 PM 沟通。后来我们了解到，他们所关心的是在更高的颗粒度上数据之间的差异有多大，并且更侧重于那些用户频繁查询的数据。也就是说，我们闷头所做的调查有很大一部分是无用的。 一个项目往往牵扯到承担不同职能的 stakeholder：工程师、产品经理、销售、客服等等。不同角色的思维模式相去甚远，所关心的问题也往往有比较大的出入。及时 involve 相关的 stakeholder 并明确共识，对个人和整个团队的生产力都有帮助。"
+year_published = 2019
+clearnet = "https://linghao.io/posts/noogler-learning-effective-engineer"
+tags = ["across", "anchoring", "assumptions", "background", "beware", "creating", "early", "effect", "estimating", "expectation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/toefl-gre-prep"]
+title = "如何备考 TOEFL/GRE"
+full_description = "先晒一下成绩以表诚意： TOEFL：14 年 11 月 110；15 年 10 月 112GRE：15 年 10 月 Verbal 161 + Quant 170 + AW 4.0 本文的目的是分享一些对于有一定英语基础的人适用的 DIY 备考经验，而不会讨论诸如“我听力很烂应该怎么提高”之类的问题的。因为这些问题基本上都可以用“努力多练”四个字来回答。当然，本文提到的一些备考资源和工具是完全可以拿来提高自己的弱项的。 T 是一个衡量日常和学术英语能力的考试，而不是一个需要死记硬背考前突击的考试。所以，英语基础比较好的同学并不用花很大的力气去准备。 我第一次考 T 的时候就是做了 15 套 TPO 里面的听力和阅读，除此以外只在考前熟悉了一下口语和写作的题型。 曾经有好几位基础还不错的同学来找我询问 T 的备考策略。他们都提到了要不要花钱去英语培训机构上课。我始终认为那些培训结构除了满足伸手党的惰性和督策一部分极度不自律的人以外没有任何帮助。我也接触过一些培训机构，拿到过一些所谓的内部资料，并不觉得是什么自己动手所比不上的资源。事实上那几位同学听从我的建议 DIY 备考以后几乎都拿到了 100 分以上的成绩。 听力除了因为词汇量和练习量的问题听不懂以外，另一个问题就是注意力不集中，使得原本能听懂的内容也没能听懂。我两次考 T 听力都是满分，即便如此我在考试中照样也遇到了因为一个分心就没听到一个信息点的情况。我的经验是，在考场上不要花太多经历去记笔记，而是专注于听懂材料的内容。一个 Section 里面三篇材料，第一篇是不需要记任何东西的，后面两篇也只需要记一些很明显是分点叙述的关键句。比如材料里面教授说某某艺术流派有三个重要的特点，那么把这三点的第一句记下来就差不多了。虽然题目里一定会考到一些细节，但仔细去听去理解往往比手忙脚乱用笔去记要更容易回忆起细节来。"
+year_published = 2016
+clearnet = "https://linghao.io/posts/toefl-gre-prep"
+tags = ["110；15", "aboboo", "analytical", "competence", "gre：15", "illusion", "magoosh", "quant", "toefl", "toefl/gre"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "dnc1994.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "telegram.org"]
+
+["https://linghao.io/tags/software-engineering"]
+title = "Synthesist in the Shell | TAG: Software Engineering"
+year_published = 2020
+clearnet = "https://linghao.io/tags/software-engineering"
+tags = ["engineering", "software", "tag:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/grow-at-google-02"]
+title = "Grow @ Google 02: 「能用就行」还远远不够"
+description = "Grow @ Google 是一个基于我在 Google 的经历来讨论如何成为更高效的软件工程师的系列。本期的话题包括：在开发中平衡战术和战略的思维方式；再谈反馈回路；在个人和团队之间建立健康的平衡。"
+full_description = "在「大厂」工作的体验就像当一颗螺丝钉？读过很多软件工程的书却仍会犯下里面的典型错误？感到自己工作效率低下却不知如何改进？要成为一名高效的软件工程师，在理论和实践之间是存在不小的距离需要我们通过广泛学习、勇敢试错和不断反思去跨越的。在 Grow @ Google 这个系列中，我会结合自己在 Google 的工作经历来分享一些经验和教训，帮助大家少走一些弯路。系列中的其他文章请见： 站在工程师的角度，代码最终是为解决实际问题服务的。不论它们有多么优美、能给人带来多少理性愉悦，更多的代码就意味着更高的维护成本和更多的潜在 bug。 能够明确和认同这一点，在我看来是作为一个工程师迈向成熟的标志之一。这意味着不再对代码本身持有过度甚至病态的执着，也就能够不带（关于编程语言、工具链和技术栈等的）偏见地去欣赏特定场景下特定解决方案的美。 《A Philosophy of Software Design》是继《The Effective Engineer》之后又一本我相信每个工程师都应该读的书。这本书主要讨论了软件工程中的复杂性（Complexity）从何而来，以及如何降低一个软件系统的复杂度。书中对比了两类不同的工程师在解决问题时会采取的不同思路：Tactical Programming 和 Strategic Programming。 第一类工程师就像战术家，只着眼解决当下的问题：可能是抢修一个 bug，又或者是扫除新 feature 上线的障碍。为了在最短时间内达成目标，他们往往会放宽对代码质量的要求，或是违背工程上的最佳实践；第二类工程师就像着眼全局的战略家，能持之以恒地投入资源从而在完成开发目标的同时逐步地、系统性地提升整个 codebase 的可维护性、可拓展性以及测试覆盖率等。 第一类工程师将复杂性和技术债务带入软件系统，而第二类工程师则是我们应该效仿的对象。在现实中，第一类工程师却往往是多数。我们总能找出理由来为自己辩解，比如「能用就行了」，又比如「上一个维护者的代码就写得稀烂，我没有义务去为了下一个维护者的开发效率而牺牲自己的时间」。然而，这样看待问题的结果往往是搬起石头砸自己的脚。"
+year_published = 2020
+clearnet = "https://linghao.io/posts/grow-at-google-02"
+tags = ["google", "grow", "notes", "世界上有两类工程师", "对孤军奋战说不", "杂谈", "重要的事情说两遍"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "newsweek.com", "noidea.dog", "oreilly.com", "rpi.edu", "stackoverflow.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/my-time-management-system-2020"]
+title = "我的时间管理系统"
+description = "A minimalist approach to time management that tracks and reviews to-dos in a single, easily accessible list."
+full_description = "最近我的朋友 Nova 做了一个时间管理访谈，其形式是由参与者自发回答给定的访谈问题（类似我之前参与的利器访谈），目前已经积累了 20 多篇风格各异的回答。 我认为时间管理的核心永远是 Getting Things Done (GTD) —— 在有限的时间内完成尽量多的事情。我曾经在《过去这五年，我学到了什么》中介绍过自己的 GTD 系统，但当时讲得比较抽象且不够全面。所以，在回答访谈问题之前，我打算先完整介绍一下自己实际在使用的系统。 为什么需要这个列表？短期记忆不是大脑的强项。Todo List 可以为大脑分担「记住我有哪些任务」这一「不重要」的工作——毕竟，任何系统都只能帮你规划任务，最重要的还是执行任务，而这需要大脑全方位的投入1。 为什么只用一个列表？为了避免在不同列表之间切换，降低认知负担。尤其当我们试图调整多个任务之间的相对优先级，或是将任务在「现在做」和「近期做」之间移动时，能够同时在单个屏幕中看到所有任务是非常有帮助的。 用什么工具来维护这个列表？在工具链中越是处于基本和重要地位的部分，就越需要避免过度设计带来的干扰。市面上生产力工具层出不穷，但许多都有过度设计的问题，而我这套系统只需要一个文本编辑工具。理论上来说，一张纸一支笔就可以管理 Todo List。当然为了方便修改，我使用的是朋友 Shu 开发的 Markdown 编辑器 Mak。它是一个以 GitHub Gist 作为存储后端的 Single Page App，平时就作为一个标签页常驻于浏览器中。 当你建立了这样一个单一 Todo List，而它又时刻处于伸手可及之处，你就会频繁地浏览和更新这个列表。这是一种非常有效的自我暗示，可以利用到大脑的排演机制2，去「均摊」做那些相对较困难的任务的精神负担。同时，你也会更倾向于记下转瞬即逝的想法，以及更勤快地调整任务的优先度。"
+year_published = 2020
+clearnet = "https://linghao.io/posts/my-time-management-system-2020"
+tags = ["else", "everything", "list", "notes", "timeboxing", "todo", "为什么只用一个列表？", "为什么需要这个列表？", "对照目标来调整优先度", "总结"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "susandavid.com", "yiming.dev"]
+
+["https://linghao.io/notes/programming-beyond-practices"]
+title = "Programming Beyond Practices"
+description = "Notes on Programming Beyond Practices."
+full_description = "Programming Beyond Practices by Gregory Brown is one of the most insightful books I've read about software engineering. The book is consisted of 8 chapter-length stories that present a series of interesting topics that go beyond the sheer scope of programming. This chapter discusses how exploratory programming techniques can be used to build and ship a meaningful proof of concept for a product idea within hours after development begins. This chapter discusses issues that can crop up whenever a production codebase is gradually extended to fit a new purpose. This chapter discusses some of the various ways that third-party systems can cause failures, as well as how flawed thinking about service integrations can lead to bad decision making. This chapter discusses several straightforward tactics for breaking down and solving challenging problems in a methodical fashion. You should go read the book if you're interested in the specific puzzle used for illustration. This chapter discusses a step-by-step approach to bottom-up software design, and examine the tradeoffs of this way of working. The example here is just-in-time production workflow. You should go read the book if you're interested in pithy details of the whole approach. This chapter discusses how small adjustments to the basic building blocks of a data model can fundamentally change how people interact with a system for the better. This chapter discusses some common anti-patterns that lead to struggles in software project management, and how incremental process improvements at all levels can alleviate some of those pains. This chapter is basically an imagination of what programming would look like in a future where the technology has advanced to a extent that we could focus purely on problem solving and communication rather than writing code. There isn't any takeaways in this chapter. You should go read the book if you're interested in author's depiction of the future. Instead, I'd like to quote some of author's ending remarks to end this post."
+year_published = 2018
+year_updated = 2018
+clearnet = "https://linghao.io/notes/programming-beyond-practices"
+tags = ["antidote", "apporach", "beyond", "bottom", "changes", "chapter", "data", "dependencies", "design", "developing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "book.douban.com", "bytetalk.limboy.me", "codewithoutrules.com", "connascence.io", "darkblueheaven.com", "dnc1994.github.io", "docs.microsoft.com", "douban.com", "drive.google.com", "firewatchgame.com", "limitlesscuriosity.com", "linkedin.com", "martin.kleppmann.com", "neilkakkar.com", "oreilly.com", "perell.com", "practicingruby.com", "space.bilibili.com", "staffeng.com"]
+
+["https://linghao.io/tags/musings"]
+title = "Synthesist in the Shell | TAG: Musings"
+year_published = 2024
+clearnet = "https://linghao.io/tags/musings"
+tags = ["musings", "tag:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/notes/alistair-croll-lean-analytics-growth-hacking"]
+title = "Alistair Croll on Lean Analytics and Growth Hacking"
+description = "Notes on Alistair Croll's talk on Lean Analytics and Growth Hacking."
+full_description = "Prepaid problem: months before you find out that customers are gone. Trick: send out emails some time after subscription. (would you like to cancel model) Growth hacking demystified: Pick a metric to change -> Find correlation -> Test causality -> Optimize the causal factor Growth “hacking” is making a system to do something it wasn’t supposed to do. (e.g. LinkedIn API, early day AirBnB and Craiglist, Airport baggage delivery system) An entrepreneur is (maybe) not a founder. The goal is to discover a new business model in an uncertain environment. Learning trumps planning. A startup is an organization desgined to search for a sustainable repeatable business model. Degrees of uncertainty: Market with unmet need -> Job to be done -> Business diagram -> Business model -> Business plan Three currencies of the Internet: Reputation, Attention, and Money. Startup success is often about your exchange rate between the three."
+year_published = 2016
+clearnet = "https://linghao.io/notes/alistair-croll-lean-analytics-growth-hacking"
+tags = ["alistair", "analytics", "croll", "fail", "growth", "hacking", "lean"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/tl-learnings-2022"]
+title = "Learnings as a Tech Lead"
+description = "What makes a great TL? Sharing what I've learned in the past 1.5 years as a TL at Google. Topics include: engaging in design discussions, leading by example, creating space for others, become better at context switching but limiting work in progress, writing everything down, and book recommendations."
+full_description = "At the two year mark of joining my current team at Google, I became a TL somewhat prematurely due to the previous TL's departure. It has been one and a half years since then and I'm now transitioning into a TLM role on the same team. In this post, I'll share what I've learned about what makes a great TL. This is the most important aspect of being a TL. If you're only gonna do one thing well, it should be this. Design discussions take many forms, from formal engineering design reviews to informal debate on how to write a specific piece of code during code reviews. I've found that the most effective angle is to focus on reducing the project's overall risk. Think about the following during design reviews: One thing I've seen junior engineers struggle with in particular is to structure their design doc. A useful tip is to have a high level overview upfront, and break down the design into a series of critical design decisions. The design doc should then be structured around those, e.g. each critical design decision would make a separate section. It's relatively easy to lead a team of ramped-up junior engineers to implement technical tasks and make progress toward a larger goal. But how do you help grow them into reliable teammates who can fully own their solutions beyond coding -- monitoring, alerting, testing, documentation, etc. How do you nudge them toward working on non-feature work that's in the team's best interest in the long run? If you are their manager, you'd probably have more than a few tricks in your pocket for this. But as a TL, I found leading by example to be the most effective approach. Set an example with your own projects. Design and implement something that adheres to a high quality standard. Then put cherries on top by building monitoring graphs, setting up alerts, adding tests, writing documentation, etc. Your junior teammates will see it's not that hard to do all this. And they will start mimicking your behavior in their own projects. In addition, usually there are some parts of the system that are not owned by anyone. It pays to do some of the above in those parts (a TL probably ends up doing those anyway if nobody else does it). If you're seen personally doing something you've been encouraging others to do, it's much more likely they will agree it's worth their time too."
+year_published = 2022
+clearnet = "https://linghao.io/posts/tl-learnings-2022"
+tags = ["become", "better", "book", "context", "create", "design", "discussions", "down", "engage", "everything"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/notes"]
+title = "Synthesist in the Shell | NOTES"
+year_published = 2022
+clearnet = "https://linghao.io/notes"
+tags = ["notes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anchor.fm", "book.douban.com", "bytetalk.limboy.me", "codewithoutrules.com", "darkblueheaven.com", "dnc1994.github.io", "douban.com", "drive.google.com", "dsdshcym.github.io", "firewatchgame.com", "limitlesscuriosity.com", "linkedin.com", "martin.kleppmann.com", "medium.com", "neilkakkar.com", "oreilly.com", "perell.com", "space.bilibili.com", "spakhm.com", "staffeng.com"]
+
+["https://linghao.io/tags/staff-plus"]
+title = "Synthesist in the Shell | TAG: Staff+"
+year_published = 2024
+clearnet = "https://linghao.io/tags/staff-plus"
+tags = ["staff+", "tag:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "blog.kewah.com", "byvoid.com", "codewithoutrules.com", "dnc1994.com", "docs.google.com", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "telegram.org"]
+
+["https://linghao.io/posts/building-llm-apps-2024"]
+title = "Lessons Learned Building LLM Applications"
+description = "What I wish I knew before starting this journey. Thoughts on prompt engineering, data and evals, iteration velocity, guardrails, and product-market fit."
+full_description = '''In my last role, I spent about a year building Conversational Analytics, an LLM-powered application that lets you ask natural language questions about your data and get insights. I've learned a few lessons along the way that I believe to be still very relevant to anybody building 2B/2C products in this space. Buckle up! Prompt engineering, typically with simple in-context learning techniques such as a handful of few-shot examples, can get you very far in a very short amount of time. Everybody on the team should do some prompt engineering. It has an incredibly low barrier to entry: Anybody from engineers to PMs and designers to executives can play with prompts against a state-of-the-art foundational model with almost 0 cost and 0 setup. It's great for exploring what can be achieved given the current model capabilities and creating demos to secure buy-in for the product vision. In a sense, it democratizes feasibility studies -- if a prompt works well for a few test cases, from that "happy path" we know that it's at least not a totally impossible idea. As you make progress, though, you likely need to move beyond simple prompt engineering and bring in more advanced techniques such as RAG, agentic reasoning, fine-tuning, etc. The possibilities are endless and it's especially challenging to navigate now given all the hype. How do you pick the winning approach? Like the common wisdom says: you can't improve what you can't measure -- you need high-quality evaluation datasets with associated tooling and processes. Make no mistake: While I'm writing about evals after prompt engineering, you should prioritize both from day 1. Creating high-quality datasets for a specific problem domain is not an easy task but there are existing practices to follow. It's usually a bootstrapping process: You start with a handful of manually created samples (they can be sourced from initial prompt engineering efforts) and augment that with a number of synthetic techniques such as asking LLMs to rewrite them into multiple alternatives. Then you can bring in humans in the loop which in turn gives you more and better samples to play with. Many companies inevitably ended up paying external vendors for such data labeling and curation but even that typically requires domain experts to work closely with the vendors to define guidelines and ensure quality of delivered data. Read more about high-quality human data in this brilliant write-up by Lilian Weng.'''
+year_published = 2024
+clearnet = "https://linghao.io/posts/building-llm-apps-2024"
+tags = ["applications", "building", "demo", "engineering", "evals", "initial", "iteration", "learned", "lessons", "maximize"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/posts/superficial-similarity"]
+title = "Superficial Similarity"
+description = "We all know it pays to be aware of biases, but sometimes we just couldn't help it."
+full_description = '''I've been working on a migration for about 5 months. Things were going well, until we are now left with two remaining pieces which turn out to be rather challenging. Then everybody involved with the project had the same epiphany: we could have taken a different approach which makes solving the two pieces trivial. Why didn't we think of that in the first place? Because we didn't write a design document. We executed a very similar migration a year ago and everybody agreed we'd just follow the same path. One colleague actually thought of the alternative approach but dismissed it based on an incorrect assumption which could have been easily verified under 5 minutes. Had we gone through a proper design and review process, we very likely could have avoided not choosing the better approach. The exact same thing happened during my first project at Google. I was working on yet another migration where somebody else had written the design but didn't capture the most challenging aspect of the project due to its superficial similarity with previously executed migrations. I even wrote a blog post about the danger of being blinded by superficial similarities. Recently, I've been reading Staff Engineer by Will Larson. In one chapter he gave a few rules of thumb on deciding whether you need a design document or not. One of them is to require a design if the project takes more than one month of engineering time. Did I think the migration I'm working on would take more than one month? Absolutely. Even the previous migration which we all thought to be so similar took more than 6 months. Still, even if I had wanted to follow Will's rule dogmatically, I probably would still make the mistake because I was so blinded by the superficial similarity. All rules have exceptions. All theories only work within a certain context. However, next time, maybe we'll benefit more from consisently adhering to rules that have stood the test of time instead of convincing ourselves that "this is the time to make an exception".'''
+year_published = 2022
+clearnet = "https://linghao.io/posts/superficial-similarity"
+tags = ["similarity", "superficial"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "strikingly.com", "telegram.org"]
+
+["https://linghao.io/posts/grow-at-google-03"]
+title = "Grow @ Google 03: 文档意识与培养新人"
+description = "Grow @ Google 是一个基于我在 Google 的经历来讨论如何成为更高效的软件工程师的系列。本期的话题包括：培养文档意识和能力；培养新人的心得和益处。"
+full_description = "本文将是短期内 Grow at Google 系列的最后一篇文章，可能也会是近期以软件工程师的自我成长作为话题的最后一篇。 在《Noogler 成长的必经之痛》、《「能用就行」还远远不够》、《「程序员」和「软件工程师」是一回事吗？》这三篇文章中，笔者围绕「如何成为一个更好的软件工程师1」谈了不少话题。包括这些文章在内，本博客绝大部分文章的创作灵感都来自于笔者在学习工作中收获的经验和教训。而随着工作的逐渐稳定，笔者自身的成长速度已经跟不上理想的博客更新速度了。笔者在目前能言之有物的内容，基本都已经分享过了。其中一些核心的老生常谈话题也已经反复出现，比如缩短 Feedback Loop 等。 简而言之，过去那种写博客的思路已经无以为继了。在这篇较为简短的文章之后，笔者将开始尝试把写作重心转移到专注某个单一话题的文章上。话题也会逐渐多样化，包括许多技术之外的内容。敬请期待。 这里所说的文档指的不是 API / 库 / 框架的文档（documentation），而是最普遍意义上的文档（document）。以 Google 为例，我们在工作中大量使用 Google Docs 进行沟通和协作。在开始一个新项目时，产品经理们经常要写 Product Requirements Document (PRD)，而工程师们则要写 Design Doc (DD)2。有时我们也会针对更小的话题写一些 One-pager（实际并不一定只有一页）。 当然，具体采取什么形式和使用哪种工具是次要的。笔者在这里想要呼吁的是：在条件合适的前提下，希望有更多的工程师能够具备使用文档进行沟通和协作的意识和能力。 从半年前开始，笔者承担起了 mentor 刚加入我们团队的新人的责任。总的来说，这是一种不错的体验 manager 的部分职责的方式。笔者在这个过程中积攒了一些心得： 与此同时，笔者也体会到了培养新人的一系列益处。希望有更多的工程师能够愿意花费时间按和精力去培养新人。"
+year_published = 2021
+clearnet = "https://linghao.io/posts/grow-at-google-03"
+tags = ["google", "grow", "notes", "一些杂谈", "培养文档意识和能力", "培养新人的心得和益处", "文档意识与培养新人"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "news.ycombinator.com", "newsweek.com", "noidea.dog", "oreilly.com", "rpi.edu", "stackoverflow.com", "staffeng.com"]
+
+["https://linghao.io/hyperbola"]
+title = "Hyperbola Archive"
+description = "Archive of Hyperbola episodes, my discontinued podcast attempt."
+full_description = "本期节目是独立游戏系列的第一期，我与有过独立游戏开发经验的朋友 Shu 聊了聊游戏作为一种媒介的特殊性，独立游戏的定义、起源和兴起，我们为什么要玩独立游戏等话题，并以 Florence、Firewatch 和 Journey 为例探讨了游戏是如何开展情感叙事的。 本期节目是独立游戏系列的第二期，我与上期嘉宾 Shu 和新嘉宾 K 聊了聊 Jonathan Blow 的最新作品《The Witness / 见证者》，探讨了它在单纯的谜题之上所构建的层层深意。剧透警告：不建议打算玩但还未玩过这款游戏的听众收听本期节目。 本期节目将开辟一个新系列，我会邀请一些从事软件行业的朋友来聊聊软件开发、职业规划、行业见闻等话题。在这期节目中，我与 Ruby 开发者 Yiming 聊了聊各自对敏捷开发（Agile）的理解，实践敏捷开发时遇到的痛点和积累的经验，并交流了如何将敏捷开发的思想运用在生活中的其他方面。 如果全人类都获得了永生的能力会发生什么？让我们又爱又恨的 Deadline 在软件工程和项目管理中发挥的是什么作用？在本期节目中，我与 Ruby 开发者 Yiming 就这些话题进行了一番闲谈。 在大公司工作的体验就像当一颗螺丝钉？看过很多软件工程的书却依然会犯下里面的典型错误？以我在 Google 的实际项目经历为鉴，Yiming 和我讨论了如何成为更高效的软件工程师。"
+year_published = 2025
+clearnet = "https://linghao.io/hyperbola"
+tags = ["agile", "archive", "beyond", "deadline", "hyperbola", "独立游戏与情感叙事", "的重要性"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anchor.fm", "book.douban.com", "bytetalk.limboy.me", "cowlevel.net", "dnc1994.github.io", "douban.com", "drive.google.com", "dsdshcym.github.io", "effectiveengineer.com", "firewatchgame.com", "gcores.com", "github.com", "gulugulufm.github.io", "linkedin.com", "medium.com", "northcountrynotes.org", "oreilly.com", "reddit.com", "space.bilibili.com", "yiming.dev"]
+
+["https://linghao.io/posts/staff-eng-learnings-2024"]
+title = "Becoming a Staff Engineer"
+description = "A post on what helped me grow into a staff engineer in 1.5 years at Google."
+full_description = '''I recently became a staff software engineer at Google, 1.5 years after reaching the senior level. In this post, I'll share a few things that helped the most with my growth. This is not a post about the "requirements" for a staff engineer. But I do want to start by emphasizing a few things that I find crucial for a staff engineer to do well: Starting around the senior level, you'll inevitably face some degree of organizational politics whenever you try to work toward the next level. Hopefully, your organization isn't too toxic and the "politics" is no more than simply a different dimension of the puzzle you need to solve. If you have these mapped out in your head and keep them updated, it makes reasoning about organizational puzzles surprisingly easier. I've worked with a lot of senior and staff+ engineers by now. Apart from apparent gaps in skills and scope, one of the key differences in their mindsets is whether to make it a habit to take a step back. Looking at the bigger picture is how you avoid tunnel vision and find the best leverage point to direct your efforts. The tricky part is there isn't always a bigger picture -- sometimes tunnel vision, or shall we say focused execution, is exactly what's needed to solve the problem. But the fix is simple too: just make it an atomic habit to always look for the bigger picture. The downside is trivial -- at worst you lose a few minutes thinking and maybe asking questions about it. You could do something simple like asking the 5 whys. For example, if a proposal or an existing design feels odd, dig into why. 9 out of 10 times, there are good reasons and historical context behind it. But from those you might just find the idea for your next big project. This one is straightforward. Be the bridge between teams, organizations, and functions. Make things flow between them. However, some of its nuances are not always appreciated. Usually you become the bridge when you own the full scope: you know everything about the system so you become the natural representative when collaborating with interested parties. But there is a reason why you need bridges to cross a river instead of simply jumping over.'''
+year_published = 2024
+year_updated = 2024
+clearnet = "https://linghao.io/posts/staff-eng-learnings-2024"
+tags = ["basics", "becoming", "bridge", "calendar", "dumbest", "engineer", "maps", "patient", "peers", "person"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "huyenchip.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/notes/steven-pinker-linguistics-style-writing"]
+title = "Steven Pinker on Linguistics, Style and Writing"
+description = "Notes on Steven Pinker's lecture on Linguistics, Style and Writing."
+full_description = "Not true in general: good people can write bad prose. E.g. scientist who have nothing to hide and no need to impress. Corollary 1: minimize apologizing. E.g. The problem of language acquisition is extremely complex. It is difficult to give precise definitions of the concept of 'language' and the concept of 'acquisition' and the concept of 'children'. There is much uncertainty about the interpretation of experimental data and a great deal of controversy surrounding the theories. More research needs to be done. Avoids metaconcepts: approach, assumption, concept, condition, context, framework, issue, level, model, paradigm, perspective, process, role, strategy, tendency, variable Present some bits of information to the reader before others (affects how the information is absorbed) The passive is the better construction when the done-to is currently the target of the reader's mental gaze It's all right to split an infinitive in the interest of clarity. Since clarity is the usual reason for splitting, this advice means merely that you can split them whenever you need to. -- Merriam-Webster Unabridged"
+year_published = 2018
+clearnet = "https://linghao.io/notes/steven-pinker-linguistics-style-writing"
+tags = ['"quick', "advice", "americans", "another", "anticipation", "assertions", "assessment", "assistance", "better", "bogus"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "newsweek.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/liqi-interview"]
+title = "利器访谈：创造者和他们的工具"
+description = "「利器社群计划」的访谈。"
+full_description = '工具和灵感，都是利器。当来自不同的领域，不同类型的创造者的工具和灵感互相碰撞的时候，才会迸发出更多的可能性。为了鼓励更多的工具和灵感的出现，我们发起了「利器社群计划」。「利器社群计划」鼓励独立的组织或个人，在自己的平台上分享「利器」。 作为一名刚刚进入第一份全职工作的工程师，很难说自己经历过什么称得上是转折点的事件。硬要说的话，2016 年暑假在 Strikingly 的实习，让我确信了自己喜欢的是开发面向消费者的产品，从而彻底打消了进入学术界的念头。这也算是对职业生涯有重要影响的事件吧。 由于喜欢 X1C 优秀的工业设计和便携性，15 年入坑之后我一直将其作为主力笔记本。而作为一名中度游戏玩家，在 X1C 之外我另有一台联想的游戏本（Y520）。入职以后我在公司主要使用 Linux Workstation，同时还配了一台 13" rMBP。由于在工作之外没有高强度的开发需求，所以目前在家里接有显示器的游戏本加上 MBP 基本可以覆盖日常需求，于是 X1C 正在吃灰。 但如果有朝一日成为了无业游民，我想作为主要生产力的笔记本还会是 X1C。（应该会考虑入 X1 Extreme 作为 Y520 的替代。） 在这之前用的是朋友送的 Cherry G80-3000（青轴），目前在老家吃灰。主要是因为全键盘尺寸携带不便，而且青轴不适合长时间游戏。 我从 2011 年开始就是 iPhone 用户，先后使用过 iPhone 4、iPhone 4S、iPhone 6S 和 iPhone 7。最近由于 7 的电池损耗严重而换到 XS。 我很少在手机上进行生产活动，在社交、娱乐等功能以外主要是将其作为摄影和图片编辑工具。有时我也会用 iBooks 看电子书。手机同时也是保障我个人账户安全的 2nd Factor， 这里想单独提一下 AirPods。因为它实在是太好用了。在 AirPower 遥遥无期的现在，买到就是赚到。'
+year_published = 2018
+clearnet = "https://linghao.io/posts/liqi-interview"
+tags = ["1password", "action（黑轴）", "airpods", "carbon", "filco", "g502", "google", "ipad", "iphone", "lenovo"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "strikingly.com", "telegram.org"]
+
+["https://linghao.io/tags"]
+title = "Synthesist in the Shell | TAGS"
+year_published = 2025
+clearnet = "https://linghao.io/tags"
+tags = ["tags"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/five-year-learning-2013-2018"]
+title = "过去这五年，我学到了什么"
+description = "本文是前一篇五年总结的后续，以如何实现自己的目标为主题整理了过去五年中学到的经验和教训。"
+full_description = "本文是前一篇五年总结的后续。希望就如何实现自己的目标这个话题给各位带来一些启发。 了解自我是伴随每个人终身最重要的课题。人生的早期阶段，尤其是高等教育期间，是了解自我的黄金时期。 进入一个好大学，就读有竞争力的专业，获得优秀的学习成绩，拿到心仪的工作机会。这些固然是非常重要的目标，但不应该仅仅只是目标。达到这些目标的过程同时也应该被看作是了解自我的一种手段。 具体来说，了解自我可以体现在方方面面。比如弄清楚自己一天中什么时候学习、工作效率最高，连续集中注意力的时间上限是多少；又比如探索自己分别擅长和不擅长哪种类型的任务，或是哪种类型的回报对自己的激励作用最强等。 以我的个人经历为例，过去五年间我最重要的两点发现是：1、我完全无法做好自己不发自内心认同的事情。2、我享受做面向用户的产品。这样的自我认识对职业道路的选择就有着重要的指导意义。 在人生的早期阶段，我们面临的困境跟创业者们所面临的困境很像：世界每分每秒都在变化，对事物的认知永远无法达到完全正确，甚至很多时候错得离谱。创业公司拥抱这种现实的方式，是通过快速的迭代和试错，来最大化他们理解市场和用户的速度。 我们可以从中得到许多借鉴。总的来说，每个人都应该把自己当做一家创业公司，接受失败和试错的常态，在考虑多个机会时偏向于能够更多更快地学到新东西的那个选择。 师傅领进门，修行在自身。一个潜在的问题是如何跨越从零到一的槛。基于个人经历，我的建议有： 建立高效的反馈回路对快速的迭代和试错来说至关重要。寻求外界的帮助（比如学校的导师和工作的前辈）或是自行设立衡量指标，用来帮助你在学习新事物或是实验新技巧时了解当前的效果如何以及如何改进。"
+year_published = 2018
+clearnet = "https://linghao.io/posts/five-year-learning-2013-2018"
+tags = ["getting", "mentorship", "prioritization", "things", "了解自我", "利用大脑的排演机制", "基本方法论", "对抗拖延", "对抗焦虑", "寻求"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/notes/how-technology-is-hijacking-your-mind"]
+title = "How Technology is Hijacking Your Mind"
+description = "Notes on How Technology is Hijacking Your Mind."
+full_description = '''1. Millions would fiercely defend our rights to make "free" decisions from a menu of choices, while very few would ask what's not on the menu. Technology hijacks the way we perceive our choices and replaces them with new ones. Pay more attention and you will realize that most of time the options provided don't actually align with your true needs. 2. Average people check their phones 150 times a day. Instead of consciously making choices, what they really do is like playing a slot machine. #1 psychological ingredient in slot machines is intermittent variable reward. Tech designers link a user's action with a variable reward. And addictiveness is maximized when the rate of reward is most variable. Each time we pull our phone out of pocket, we're playing a slot machine to see what notifications we got. 3. The fear of missing something important, even with a remote possibility of 1%, keeps us from unsubscribing newsletters that haven't delivered obvious benefits. Yet the truth is that we don't miss what we don't see. Once you let go of that fear and unplug yourself, all these concerns are gone. 4. When someone tags us in a photo, he's only responding to Facebook's suggestion, not making a conscious choice. The craze for social approval is one of our greatest vulnerabilities. 5. We are all vulnerable to needing to reciprocate others' gestures. Companies like LinkedIn turn your unconscious impulses (to add someone to your network) into social obligations that the other "must" repay. 6. Cornell professor shows that you can trick people into eating 73% more calories by giving them a bottomless bowl that automatically refills as they eat. Netflix does the exact same thing by automatically playing the next episode. 7. Interruption is good for business. Messaging apps prefer to interrupt you immediately and tells the sender that you saw the message, making you feel more obligated to respond. 8. Tech companies always bundle what you need with what they need, making it much harder for you to get things done while pushing you to contribute more to their benefits.'''
+year_published = 2016
+clearnet = "https://linghao.io/notes/how-technology-is-hijacking-your-mind"
+tags = ["hijacking", "mind", "technology"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/improve-english"]
+title = "如何提高英语水平"
+description = "本文从一个比较高的层次谈了谈对如何提高英语水平的理解。"
+full_description = "既然标题口气这么大，那就先放点考试成绩让大家对我的英语水平有个直观的了解（当然，成绩只是考察语言能力的一个角度）： 我不敢说自己是个英语特别好的人，但可以说在目前的需求下对英语还是运用自如的。在此之前，我在很多场合介绍过自己准备托福和 GRE 的经验，却很少谈及 generally 提高英语水平的心得。这是有原因的：一方面是因为我自己最近几年英语水平的提高已经完全是依靠长时间沉浸在有足够输入输出的环境中的积累，而这个状态跟绝大多数向我寻求帮助的人所处的学习阶段相去甚远；另一方面是因为，即使从我自身的经验中提取出能帮助到别人的部分，也是一件比较难的事情。不过我还是尝试了一下，在 15 年 5 月的时候做了一次班内分享，不过当时对一些问题思考的还不够全面。最近又有学妹找我咨询这方面的问题，我思考了一下觉得现在应该能把自己的心得概括得比较到位了，于是就有了这篇文章。 不同于我的其他博文，在本文中我将从一个比较高的层次谈谈自己对英语学习的理解，而不会把重点放在给出全面和具体的建议上面。这也意味着本文可能需要依赖于读者的反馈来进行后续的修改，以充实内容。欢迎任何方面的评论和提问：） 在大学的前两年经常听到的一句自嘲的话是，“高三是我英语水平的巅峰”。然而，如果有谁不只停留在自嘲，而是发自内心这么想的话，那就是错得离谱了。 不再被强迫上英语课，水平就会逐渐下降，这纯粹是无稽之谈。如果一个人每天都有一定量的英语输入和输出，水平不仅不会下降，说不定还能在不花费额外时间的情况下得到提高。 这里的逻辑在于，如果一个人想要提高自己的英语水平，那么一般来说他肯定正处在一个需要他这么做的环境中，也就是我所说的能够保证一定程度的输入和输出量的环境；如果他并没有处在这种环境中，而只是单纯地想提高英语水平，那么他就必须努力去创造这样的环境，否则任何提高都是不可能的。"
+year_published = 2017
+clearnet = "https://linghao.io/posts/improve-english"
+tags = ["fail", "hard", "mooc", "output", "乱序", "例句录音", "写作", "刷剧", "单词", "口译："]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "blog.kewah.com", "byvoid.com", "codewithoutrules.com", "croteam.com", "docs.google.com", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "huyenchip.com", "industrialempathy.com", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "unknown.cat"]
+
+["https://linghao.io/posts/self-awareness-with-tools"]
+title = "Self Awareness with Tools"
+description = "Am I a douchebag if I can't know I'm angry until my phone tells me so?"
+full_description = '''I saw a tweet that jokes about someone on r/QuantifiedSelf, who was asking if there is a wearable that notifies you when you are feeling angry. As you can imagine, the idea was received with many snarky comments. It also got "featured" by one of my favorite tech sarcasm accounts @internetofshit. Apart from obvious privacy concerns, however, is it really that ridiculous? Does one really need to be a douchebag to be unable to sense their anger without using high-tech gadgets? Well, if the subject is anger, probably not many people need help; but sometimes we do tend to overestimate our self-awareness. I became moderately depressed in 2020. I was alternating between feeling desperate and irritable. It was much easier to acknowledge the depression than the irritability. One time, when neighbors upstairs started playing loud music again after repeated reminders, I became so angry that I punched the wall with my fist, a violent act that I found totally unacceptable. I was lucky enough to be well informed and financially covered to receive help from a therapist. One of the things they had me do is to keep a mood diary -- noting down how I feel throughout the day and what I did before each mood change. Several weeks later, I learned things about myself that I haven't been able to previously. I learned that certain things were making me irritable, and when I'm irritable, the smallest things make me overreact. This seems obvious to me now, but I wasn't able to see it at that time with that mental state. I didn't really understand where the anger was coming from until I got some data from the diary. In a similar matter, I've had a fragile digestive system since a very young age -- I get diarrhea easily. It was never serious though: I might take a few trips to the restroom but that is it. Thus, over the years I've somehow "normalized" this issue. I mean, I'm always aware that I get diarrhea more frequently than others, but never thought to figure out by how much. This changed when someone close to me noticed my "irregularities" and prompted me to see a doctor. To narrow down the possible causes, I was asked to keep a diary about what I eat before getting diarrhea. So I did that. In the end I didn't really get any conclusions from the food data, but instead realized that I was averaging one diarrhea per week! In my mind it was nothing close to being this frequent.'''
+year_published = 2022
+clearnet = "https://linghao.io/posts/self-awareness-with-tools"
+tags = ["awareness", "self", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "strikingly.com", "telegram.org"]
+
+["https://linghao.io/tags/study-abroad"]
+title = "Synthesist in the Shell | TAG: Study Abroad"
+year_published = 2017
+clearnet = "https://linghao.io/tags/study-abroad"
+tags = ["abroad", "study", "tag:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jamesclear.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/demystifying-tlm"]
+title = "Demystifying TLMs"
+description = "What does becoming a TLM mean, and should I take the role?"
+full_description = '''A Tech Lead Manager, or a TLM, is a role split between a Tech Lead and an Engineering Manager. Most if not all TLMs come from previous TLs when: TLMs are highly regarded and well sought after, at least by some people and in certain parts of the industry. As a newly minted TLM of 6 months, however, I'm leaning toward the other side of the argument: taking a TLM role could harm your team and your own career growth. The reason is simple. You need to do both the "TL" part and the "M" part of the role. And either of them should have been a full time job. When your manager offers you this position, it could be a fitting recognition of your contributions, or it could be an invitation for disaster. In this post, I will talk about what's the delta from TL to TLM, and why you might or might not want to take the role. Some managerial duties grow linear to the number of reports you have: 1-1s, goal setting, performance reviews, etc. This part is more predictable. There are other duties that you might already be performing previously as a TL. Now that you are a manager, they become official: All of these eat up your time to do TL and IC work. Not to mention that many of them require a completely new set of skills to do well. To make things worse, in some companies TLMs are still mostly evaluated as ICs. So let's say you did 60% of the TL/IC part and 60% of the M part. Then you overworked by 20% and will likely still be considered not as good as an IC who delivered 70% of their expectations. Most TLMs I know, including myself, spend more time on TL/IC work and do some lightweight management. If this applies to you, talk to your pure EM colleagues and give them some hypothetical examples. You'd be amazed by how much more you could have done if you were spending 100% of the time on engineering management. You will be making many more decisions as a TLM, and not just technical ones. You will often need to act on incomplete data and in uncomfortable situations. To give a few examples:'''
+year_published = 2023
+clearnet = "https://linghao.io/posts/demystifying-tlm"
+tags = ["answers", "demystifying", "endgame?", "larger", "part", "right", "still", "then?", "tlms", "what's"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/posts/how-to-be-great-101"]
+title = "How To Be Great 101"
+description = 'A "theory of everything" on how to be great: the most important lessons in my life so far.'
+full_description = '''I've been lucky enough to have had a few accomplishments in my studies and career, for which I've been writing and giving people advice on how to be great on various subjects since middle school. Having just turned 30 this year, however, for the first time in my life I feel reasonably confident that I can now articulate a "theory of everything" on being great (luck excluded, as much as possible). In this first of potentially several posts, I'm sharing with you the most important lessons I've learned. The inspiration for this post, How to Be Great? Just Be Good, Repeatably, said it the best. Being great is not about getting to a destination with meticulous planning and herculean efforts. It's about being consistent in the act of being good, from which greatness emerges as a by-product. Of course, this is a mental distinction, not a material one. You would still set goals and work hard to achieve them. But framing that as a side effect of consistently being good rather than the end result is immensely liberating and empowering! Greatness cannot be planned and few can navigate the path to get there, but most people instinctively know what goodness is or can learn that easily. Being good on one occasion is to do things that create positive changes for our lives; being good consistently is to turn that into behavior patterns that run automatically to help us go beyond goodness and toward greatness. That's it, the single most fundamental axiom in the theory of being great. Everything else, be it an atomic habit, a decision heuristic, a focus ritual, a mental model, a productivity technique, etc, is either a tool of goodness for you to exercise, or a tool to facilitate other tools (finding them, knowing when to apply which, making them easier to hold on to, etc). Excellence is mundane. Superlative performance is really a confluence of dozens of small skills or activities, each one learned or stumbled upon, which have been carefully drilled into habit and then are fitted together in a synthesized whole. There is nothing extraordinary or superhuman in any one of those actions; only the fact that they are done consistently and correctly, and all together, produce excellence. -- The Mundanity of Excellence'''
+year_published = 2024
+clearnet = "https://linghao.io/posts/how-to-be-great-101"
+tags = ["always", "believing", "better", "gets", "good,", "great", "halfway", "knowing", "looking", "repeatably"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "susandavid.com", "yiming.dev"]
+
+["https://linghao.io/notes/stay-gold"]
+title = "初心"
+description = "两个关于「初心」的知乎回答的备份。"
+full_description = "原文这篇 14 年的文章可以说是我的 Backstory。虽然后半段提到的具体目标早已发生了变化，前半段所描述的价值观念依然是我之所以是我的核心。 毫无疑问我在大学里付出的一切努力都是为了成为自己想成为的人，所以要回答这个问题我必须先谈谈自己想成为一个怎样的人。 在三观和理想形成的过程中，我受到了来自这三个人的巨大影响：Randy Pausch、Aaron Sorkin 和 Aaron Swartz。 Randy Pausch 在他举世闻名的「最后一课」上讲述了自己童年时的诸多梦想以及自己是如何逐个实现这些梦想的。他直面死亡的坚强驱使我去读了他与记者 Jeff Zaslow 合著的《The Last Lecture》。书里有许多他在课上没有讲到的细节，其中有一段我一直记得特别清楚。Randy 说他小时候的一个梦想就是去 Disneyland 工作，而长大后他所学的计算机图形学和虚拟现实的知识使他得以参与 Walt Disney Imagineering 的一项虚拟现实项目研究。而之后他在大学里开了一门虚拟现实入门课程，其中有一名学生告诉 Randy 他将来想参与到 Star Wars 电影的制作当中。Randy 当时并不以为意，但没想到若干年后那名学生真的成功地实现了自己的梦想。Randy 在书中说，实现自己的梦想，并能为他人实现梦想打开大门，是一件非常美妙的事情。 第一次知道 Aaron Sorkin，源自去年寒假在某英语培训机构上课时被一位老师推荐的美剧 The Newsroom。它至今是我最爱的一部美剧，没有之一。Sorkin 在剧中刻画了一位新闻主播 Will McAvoy。这里我不打算详述了，因为展开来就是另一篇打算写的文章的主题了。简而言之，Will 自诩堂吉诃德，做着在他人看来过于理想主义的事。他喜欢说自己是「on a mission to civilize」，面对着各种障碍却还是做着整个国家 95% 的人不会去做的事情来改善选民的知情权，尽管他认为那 95% 的人都是大猩猩，尽管有人说他是不是「look down upon us」的时候他毫不犹豫地回答「down are where some people are」。"
+year_published = 2018
+clearnet = "https://linghao.io/notes/stay-gold"
+tags = ["communications.", "engaged", "feature", "help", "ownership.", "right", "sense", "strikingly", "way.", "上线当天排查"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/the-best-things"]
+title = "The Best Things"
+description = "A list of the best things."
+full_description = "脱碳入硅The Impossible DreamSoftware disenchantmentNothing Fails Like SuccessNaval Ravikant: How to Get RichVocabulary as a Meta Mental ModelHow to Be Great? Just Be Good, RepeatablyHow Technology is Hijacking Your Mind Designing Data-Intensive ApplicationsComputer Systems: A Programmer's PerspectiveOperating Systems: Three Easy Pieces Jonathan Blow - Design RebootSteven Pinker - Linguistics, Style and Writing in the 21st Century7 minutes, 26 seconds, and the Fundamental Theorem of Agile Software DevelopmentCheng Lou - On the Spectrum of AbstractionWilson Miner - When We BuildKenneth Stanley - Why Greatness Cannot Be Planned: The Myth of the Objective Outer WildsVA-11 Hall-A: Cyberpunk Bartender ActionSOMAThe Talos PrincipleSuperliminalThe Stanley Parable & The Beginner's GuideManifold GardenObeservationDead SpaceBorderlands 2 & 3 FLCLNeon Genesis EvangelionSerial Experiments Lain楽園追放 -Expelled from Paradise-トップをねらえ！ GunBusterコンクリート・レボルティオ～超人幻想～Gatchaman Crowds現視研昭和元禄落語心中Flip Flappers Blade Runner 20492001: A Space OdysseyPerfect BlueTokyo GodfathersYouthThe SquareGhost in the ShellThe MatrixMission: ImpossibleGirls und Panzer das Finale"
+year_published = 2025
+clearnet = "https://linghao.io/the-best-things"
+tags = ["anime", "best", "books", "coding", "computer", "engineering", "fiction", "games", "general", "misc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/programming-vs-software-engineering"]
+title = "「程序员」和「软件工程师」是一回事吗？"
+description = "「软件工程」区别于「编程」的三个方面是什么？从「程序员」到「软件工程师」的角色转变让我学到了什么？谈谈软件工程中的可持续化开发、Code Review、认知负荷、知识共享、降低犯错成本以及做更好的决策。"
+full_description = "同样是写代码开发软件，有人自称「程序员」，也有人自称「软件工程师」。真要抠字眼的话，这两者之间有怎样的区别呢？Google 今年出版的新书 Software Engineering at Google (SWE Book) 在第一章开头就提出：「编程」和「软件工程」是两回事。 「编程」指生产代码的活动，而「软件工程」则是在此基础上再添加时间这一维度。正如三维的立方体不等同于二维的正方形，距离不等同于速度，「软件工程」也不等同于「编程」。 要区分一种软件开发的模式是更接近于「编程」还是「软件工程」，我们可以问这样一个问题：这份软件的预期生命周期有多长？或者说这份软件需要被维护到什么时候为止？一般而言，这些活动会更接近于「编程」： 而像 Google 搜索或是 Linux 内核这样的项目，它们的生命周期可以认为是无限期的。 在动辄以年为单位的预期生命周期下，改动是不可避免的。一个软件系统即使没有需求上的变动，也必然会由于时间的流逝而面临不得不做的改动，比如： 现代软件工程几乎无一例外都是团队合作的结果。随着规模的扩大，团队组织、项目结构、政策、流程、实践等等都需要跟着 scale。经验告诉我们，一些东西比较容易 scale，而另一些则更为困难。SWE Book 从多个方面进行了具体介绍1，而本文主要关注作为个人可以做的。 在软件工程中做决策也更为有挑战性：风险和机会成本更高、做决策时信息不充分，对问题的理解永远不够全面并且在时刻变化，等等。 对这些区别的认知可以为我们提供一个关于「软件工程师应该怎么做」的框架。 对个人而言，可持续化开发大致就是要实践笔者以前提到过的 Strategic Programming。摘录相关段落如下： ... 就像着眼全局的战略家，能持之以恒地投入资源从而在完成开发目标的同时逐步地、系统性地提升整个 codebase 的可维护性、可拓展性以及测试覆盖率等。"
+year_published = 2020
+clearnet = "https://linghao.io/posts/programming-vs-software-engineering"
+tags = ["code", "hard", "notes", "review", "scale", "things", "trade-off", "减轻认知负荷", "可持续化开发", "后记"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "strikingly.com", "telegram.org"]
+
+["https://linghao.io"]
+title = "Synthesist in the Shell — A blog by Linghao Zhang"
+description = "I create and share knowledge with writing."
+year_published = 2025
+clearnet = "https://linghao.io"
+tags = ["blogroll", "create", "elsewhere", "featured", "hey,", "knowledge", "linghao.", "mottos", "share", "shell"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anchor.fm", "bytetalk.limboy.me", "dnc1994.github.io", "douban.com", "foreseaz.com", "github.com", "gulugulufm.github.io", "justzht.com", "linkedin.com", "paypal.me", "shud.in", "t.me", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/posts/grow-at-google-01"]
+title = "Grow @ Google 01: Noogler 成长的必经之痛"
+description = "Grow @ Google 是一个基于我在 Google 的经历来讨论如何成为更高效的软件工程师的系列。本期的话题包括：建立高效的反馈回路；当心不假思索便做下的假设；主导和推动你所负责的项目。"
+full_description = "在「大厂」工作的体验就像当一颗螺丝钉？读过很多软件工程的书却仍会犯下里面的典型错误？感到自己工作效率低下却不知如何改进？要成为一名高效的软件工程师，在理论和实践之间是存在不小的距离需要我们通过广泛学习、勇敢试错和不断反思去跨越的。在 Grow @ Google 这个系列中，我会结合自己在 Google 的工作经历来分享一些经验和教训，帮助大家少走一些弯路。系列中的其他文章请见： 我在 Google 参与的第一个项目主要是修改和运行一个 C++ pipeline 来 backfill1 几年的用户数据。过程如下： 许多人将作为 entry level 工程师在 Google 工作的体验形容为当一颗螺丝钉，而我的感受则是自己所扮演的角色更接近于润滑油一般的存在。一言以蔽之，我所发挥的是「在一个巨大的组织里促成一件事情」的作用。作为一个新人，我需要频繁地借助来自他人的反馈。 为了验证 pipeline 生成的数据是否正确，我们将其与其它数据源进行比较。由于之前存在过的一些 bug 的影响，它们之间并不是 100% 一致的。我们投入了大量的时间和精力去调查数据的不一致，最终找到了超过 10 个 bug，并确认了大约 99.5% 的数据是一致的。 由于部分不一致的数据是对用户可见的，我们需要得到来自 PM 的 approval。这里我们犯的错误是没有及时跟 PM 沟通。后来我们了解到，他们所关心的是在更高的颗粒度上数据之间的差异有多大，并且更侧重于那些用户频繁查询的数据。也就是说，我们闷头所做的调查有很大一部分是无用的。 一个项目往往牵扯到承担不同职能的 stakeholder：工程师、产品经理、销售、客服等等。不同角色的思维模式相去甚远，所关心的问题也往往有比较大的出入。及时 involve 相关的 stakeholder 并明确共识，对个人和整个团队的生产力都有帮助。"
+year_published = 2019
+clearnet = "https://linghao.io/posts/grow-at-google-01"
+tags = ["across", "anchoring", "assumptions", "background", "beware", "creating", "early", "effect", "estimating", "expectation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "newsweek.com", "noidea.dog", "oreilly.com", "rpi.edu", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts"]
+title = "Synthesist in the Shell | POSTS"
+year_published = 2024
+clearnet = "https://linghao.io/posts"
+tags = ["posts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "eugenewei.com", "firewatchgame.com", "florencegame.com", "github.com", "jon.bo", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/my-subscriptions"]
+title = "My Subscriptions"
+description = "A list of my subscriptions."
+full_description = "A List ApartantirezBYVoidCode Without RulesDavid ParellEugene WeiJohn PalmerJonathan BorichevskiyLimitless CuriosityNeil KakkarNiki TonskyShu DingSlava AkhmechetStaffEngSWYX | Shawn WangYiming Chen灵感买家俱乐部 Am Neumarkt 😱Build Your TMS ChannelDesk of EscherDurov's ChannelFate/TypoFish pondhis young heartJerry Zhang 的频道Manuscripts (≖_≖ )MolunSaysmyNlpTrainingSetR.O.D.ShinlogThe FortThe SociologistUtopiosphere and I don't give a fuckWinnowing WordsWolley NewsYes I Care《一天世界》博客本格异想录个立激群忽冷忽熱怪獸 (archived)看看就好的频道梅林屁话频道奈卜拉自说自话人间指南我的茧小破不入渠🌏銀鈴製作所 Rinling industrie澡堂随笔真空中的球形猫。政治哲学片段摘录 Noclip歪理邪说Game Maker's ToolkitJacob GellerRazbutenJonathan BlowWhat's So Great About That?Adam Millard - The Architect of GamesErrant SignalSam HoganCGP Grey Amber CaseCharlsyJoyceulyssesMartin KleppmannNavalRichorsamimSteven Pinkervirushuo柴斯卡思故渊灰鱼银河系漫游指南元非ハルマキ"
+year_published = 2025
+clearnet = "https://linghao.io/my-subscriptions"
+tags = ["blog", "channel", "misc", "newsletter", "podcast", "subscriptions", "telegram", "youtube"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anchor.fm", "book.douban.com", "bytetalk.limboy.me", "codewithoutrules.com", "darkblueheaven.com", "dnc1994.github.io", "douban.com", "drive.google.com", "dsdshcym.github.io", "firewatchgame.com", "limitlesscuriosity.com", "linkedin.com", "martin.kleppmann.com", "medium.com", "neilkakkar.com", "oreilly.com", "perell.com", "space.bilibili.com", "spakhm.com", "staffeng.com"]
+
+["https://linghao.io/notes/blindsight-excerpts"]
+title = "Excerpts from Blindsight"
+description = "Excerpts from Blindsight."
+full_description = '''Pack animals always tear apart the weaklings in their midst. Every child knows that much instinctively. Watching the world from a distance, it occurred to me at last: I knew exactly what Chelsea had meant, with her Luddite ramblings about desaturated Humanity and the colorless interactions of virtual space. I'd known all along. I'd just never been able to see how it was any different from real life. "I think I'll call you Cygnus," Chelsea said. "The swan?" I said. A bit precious, but it could have been worse. She shook her head. "Black hole. Cygnus X-1." I furrowed my brow at her, but I knew exactly what she meant: a dark, dense object that sucks up the light and destroys everything in its path. I brought her flowers one dusky Tuesday evening when the light was perfect. I pointed out the irony of that romantic old tradition— the severed genitalia of another species, offered as a precopulatory bribe—and then I recited my story just as we were about to fuck. To this day, I still don't know what went wrong. I believed it. They would never have shipped us out fully-assembled if there'd been a cheaper alternative. The will to resist is no less mechanical than the urge to breathe. Both can be subverted with the right neurochemical keys. "Leaders are visionaries with a poorly developed sense of fear and no concept of the odds against them." Surely, said the Optimists, space travel implies enlightenment, for it requires the control of great destructive energies. Any race which can't rise above its own brutal instincts will wipe itself out long before it learns to bridge the interstellar gulf. What is Human history, if not an ongoing succession of greater technologies grinding lesser ones beneath their boots? But the subject wasn't merely Human history, or the unfair advantage that tools gave to any given side; the oppressed snatch up advanced weaponry as readily as the oppressor, given half a chance. No, the real issue was how those tools got there in the first place. The real issue was what tools are for.'''
+year_published = 2019
+clearnet = "https://linghao.io/notes/blindsight-excerpts"
+tags = ["blindsight", "excerpts"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/notes/david-perell-writing-online"]
+title = "David Perell 关于在线写作的建议"
+description = "David Perell 在《The Ultimate Guide to Writing Online》一文中阐述了在线写作的诸多好处，并给出了大量有操作性的建议。本文是对这些建议的精简摘录版本。"
+full_description = "David Perell 在《The Ultimate Guide to Writing Online》一文中阐述了在线写作的诸多好处，并给出了大量有操作性的建议。本文是对这些建议的精简摘录版本。 首先，你要购买自己的域名，搭建自己的网站。你当然也可以借助 Medium 之类的平台来推广自己的文章，但放弃对内容的控制是不明智的。一定要有属于自己的网站！ 从零开始运营博客是一个先有鸡还是先有蛋的问题：在拥有足够数量的读者之前，你并不知道应该着重创作怎样的内容；而没有足够的优质内容，你又很难吸引大量读者。一个解决方案是从甄选他人的优质内容做起，可以有两种做法： 你可以把这个列表发给你选择的作者或是话题领域内的专家，说不定他们会将其分享给自己的读者，从而为你带来流量。 出于种种原因（借口），许多人在一开始会畏惧下笔。跨越这个阶段最好的办法是 develop a bias towards action：优先注重于数量而不是质量。如果能坚持每周发表一篇文章，一年以后你就拥有足够的数据来弄明白究竟应该创作什么内容。 在这个时代，不再只有那些独来独往、逃避社会的人能成为写作者。采取主动、社交和协作3的方式来写作。 写作的主题跟写作本身一样重要。不过时的文章能够持续为你带来新的读者。优先选择那些在三年后依然能有价值的主题来进行写作。 忘记学校教给你的那些写作原则。避免使用晦涩的单词，抛开所谓的字数限制。文风很重要，但内容更为关键。写作的最终目的是传达你的想法，其他所有的东西都要让步。 Copywriters are masters of the written word. They write with clarity, energy, and simplicity, which is exactly what readers on the Internet are looking for. They write in specifics, not generalities. There’s no fluff. They get straight to the point. By writing in a persuasive, outcome-oriented (instead of academic) style, copywriters provoke responses and feedback. They rewrite and rewrite, and only hit publish once they’ve said what they wanted to say in the fewest possible words. In short, most people would improve their writing more by emulating copywriters instead of heeding the advice of famous novelists."
+year_published = 2019
+clearnet = "https://linghao.io/notes/david-perell-writing-online"
+tags = ["david", "notes", "perell", "seo2", "关于在线写作的建议", "创作永不过时的内容", "将传达想法放到第一位", "建立高效的反馈回路", "提高写作质量", "搭建个人网站"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/notes/the-effective-engineer"]
+title = "The Effective Engineer"
+description = "Notes on The Effective Engineer."
+full_description = '''Starting from "time is our most limited resource", The Effective Engineer by Edmond Lau first establishes the methodology of using "leverage" to guide our actions. The book then, from multiple angles, discusses how to become a more effective engineer by focusing on high-leverage activities that produce a disproportionately high impact for a relatively small time investment. Ranging from adopting mindsets, actual execution, to building long-term values, topics involved are complemented with ample examples within the industry. Much content are easily generalizable to areas beyond software engineering as well. A must-read for software engineers. Pareto principle: 80% impact from 20% work -- high-leverage activities that produce a disproportionately high impact for a relatively small time investment. Don't confuse high-leverage activities with easy wins. Many high-leverage activities require consistent applications of effort over long time periods to achieve high impact. Own your story. Instead of apologizing for where your resume doesn't line up, take control of the parts that are within your sphere of influence. When companies pay you for cushy and unchallenging 9-to-5 jobs, what they are actually doing is paying you to accept a much lower intellectual growth rate. Treat yourself like a startup. Startups initially prioritize learning over profitability to increase their chances of success. You would rather invest your financial assets in accounts that pay high interest rates, not low ones. Why would you treat your time -- your most limited asset -- any differently? One of the most powerful leverage points for increasing our learning rate is our choice of work environment -- because we spend so much time at work. Borrow the idea of 20% time from Google, but take it in one- or two-hour chunks each day, because you can then make a daily habit out of improving your skills. Some skills we learn could be cross-functional and help our engineering work. For example, increasing your comfort level in conversing with strangers can help with meeting and interviewing. Other skills might not translate directly into engineering benefits, but the practice of adopting a growth mindset toward them makes us better learners and more willing to stretch beyond our comfort zone.'''
+year_published = 2018
+clearnet = "https://linghao.io/notes/the-effective-engineer"
+tags = ["ability.", "abstractions", "abstractions,", "accuracy", "across", "activities", "actual", "adopt", "analytics", "anchoring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["alistapart.com", "amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "eugenewei.com", "firewatchgame.com", "florencegame.com", "github.com", "jon.bo", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "sans.org", "staffeng.com", "unknown.cat", "yiming.dev"]
+
+["https://linghao.io/posts/notes-learning-how-to-learn"]
+title = "《Learning How to Learn》课程笔记"
+description = "UCSD 开设在 Coursera 上的课程《Learning How to Learn》的笔记。"
+full_description = "这是 UCSD 开设在 Coursera 上的课程 Learning How to Learn 的课程笔记。这门课程主要基于神经科学和认知心理学的一些研究成果讲述高效学习的理论和技巧，涉及了大脑的记忆机制、拖延的成因和应对方式，以及许多关于学习抽象复杂知识的小技巧。 由于时间有限，我只看了视频和通过了所有的 Quiz，Optional Assignment 和参考文献里的内容需要花费数倍的时间去仔细研究。尽管如此我依然感觉获益匪浅，故决定将笔记公开造福大家。 文中几乎所有的观点都是来自于授课材料，我尽量少做二度演绎。这些观点全部有详实的研究作为支撑，相信大家读了以后也能感受到，其中不少内容我们在日常学习中已经深有体会了。 Focused Mode 和 Diffuse Mode 是两种不同的思考状态。对于 Focused Mode 你一定不陌生，当集中精力解决一道数学题时，大脑就是处于 Focused Mode。而 Diffuse Mode 指的是一种放松的思考模式。你可以借助下面这幅 Pinball 的示意图来更好地理解这两个概念。 在左边对应的 Focused Mode 中，思绪很快集中于几个临近的神经元组成的神经回路。而在右边对应的 Diffuse Mode 中，可以看到思绪在随性地跳跃。 要随时牢记，Focused Mode 适合用于解决已经熟练掌握的内容，比如计算个位数乘法；而 Diffuse Mode 则对于新事物的学习至关重要，比如学习一门新的语言。这两种模式也分别对应了两种不同的思维模式：顺序思考（Sequential Thinking）和整体思考（Holistic Thinking）。 要注意在解决问题时，整体思考所获得的灵感必须经由顺序思考来确认其正确性。所以说在理想的学习模式中，你要能够在这两种模式中自如地切换，从而更好地掌握新知识。 Working Memory 就好比计算机的内存，是指大脑用于处理当下的任务的那部分记忆。Working Memory 的大小因人而异，内存比较小的人在学习抽象和复杂的概念时可能就会遇到困难。也就是我们常说的学到后面忘了前面。这种情况的应对办法，一是 Chunking（之后会介绍），二是通过比喻和类推等手段来改变知识的表示。这是因为不同的人思维方式不同，所以他们对知识的不同表示的接受度也就不同，一个表示可能对 A 来说正好能 fit 进他的 Working Memory 中，而对 B 来说却是 overload 了。"
+year_published = 2016
+clearnet = "https://linghao.io/posts/notes-learning-how-to-learn"
+tags = ["analogy", "belief", "brain", "breathing", "centers", "checklist", "chunk", "chunking", "chunks", "competence"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "byvoid.com", "club.q24.io", "codewithoutrules.com", "darkblueheaven.com", "figma.com", "firewatchgame.com", "github.com", "huyenchip.com", "jon.bo", "lilianweng.github.io", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "susandavid.com", "tomato-timer.com", "yiming.dev"]
+
+["https://linghao.io/posts/edit-tech-direction"]
+title = "Editing Technical Direction"
+description = "There's more than one way to scale your impact beyond pure technical complexity."
+full_description = '''In Staff Engineer, Will Larson describes one category of high-leverage activities "Staff-plus engineers" perform that he calls "editing": A surprising number of projects are one small change away from succeeding, one quick modification away from unlocking a new opportunity, or one conversation away from consensus. I think of making those small changes, quick modifications, and short conversations as editing your team's approach. With your organizational privilege, relationships you've built across the company, and ability to see around corners derived from your experience, you can often shift a project's outcomes by investing the smallest ounce of effort, and this is some of the most valuable work you can do. I was enlightened when I read this. It captures concisely something that I've been doing for some time but couldn't quite summarize on my own. I can think of multiple instances where I "edited" our team's technical direction since I became TL a little over one year ago: Alice writes a design proposal to build feature X, which requires three complex sub-systems to be built and integrate seamlessly with each other. Each sub-system takes about a quarter of engineering time. The proposal is deemed too risky by stakeholders. Knowing how to "short-circuit" our existing systems, I suggest first building a MVP which only requires building one sub-system plus some workaround paths elsewhere. With reduced ETA to a prototype, it's much less risky and easier to get buy-in. Bob sets out to build a non-trivial service for feature Y. Having had a conversation with someone from a partner team a few months ago, I know they are working on something very similar and are well ahead in schedule. I arranged for Bob to meet with the partner team to explore the possibility of joining forces. Such synergies avoid reinventing the wheel and strengthen the collaborative relationship between teams. Charlie has spent three quarters on project Z that for various reasons turned out to be much bigger in scope than originally planned. Having been in the same situation a few times, I understand too well how having too much work-in-progress is bad for morale and decreases the overall productivity of the team. I advised Charlie to be firm and "ruthless" when working with the PM to postpone TODO items into phase 2 and prioritizing shipping what has been built.'''
+year_published = 2022
+clearnet = "https://linghao.io/posts/edit-tech-direction"
+tags = ["direction", "editing", "technical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "newsweek.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/dri-vs-owner"]
+title = "Naming Matters: DRI vs. Owner in Software Projects"
+description = "Thoughts on why DRI is a better term than Owner even when we intend to mean the same thing."
+full_description = 'It’s said that Apple coined the term "Directly Responsible Individual" (DRI) to describe the person responsible for ensuring that things get done within a project, no matter how many teams or stakeholders are involved. This concept works well for a variety of obvious reasons, and I’m a fan of it too -- no need to reiterate those here. Instead, I had a quick thought about how the term’s naming itself reinforces its effectiveness. Most companies have an equivalent term, even if it’s not DRI. At Google, for instance, the term "owner" is often used to mean roughly the same thing. The issue I see is that some people equate ownership with a kind of "benevolent dictatorship" -- the idea that because you own something, you make all the decisions (and supposedly they are better decisions because you are the most qualified person to make them). This overlooks a crucial aspect of ownership: accountability. As the owner, you are ultimately responsible for the success or failure of whatever falls under your scope. Ownership demands much more than passively holding a title -- it requires making informed decisions, aligning stakeholders and managing expectations, proactively anticipating and addressing issues, continuously seeking improvements, etc. Naming matters. What I love about DRI is that the phrase "directly responsible" explicitly highlights the accountability aspect, which is often the most important part.'
+year_published = 2024
+clearnet = "https://linghao.io/posts/dri-vs-owner"
+tags = ["matters:", "naming", "owner", "projects", "software"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "newsweek.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/notes/a-philosophy-of-software-design"]
+title = "A Philosophy of Software Design"
+description = "A Philosophy of Software Design is a short yet to-the-point book on high level ideas about how to design a software system with less complexity. This note mostly consists of quote-worthy excerpts from the book and aims to serve as a verbose version of the book's table of contents."
+full_description = '''A Philosophy of Software Design is a short yet to-the-point book on high level ideas on how to design a software system with less complexity. It's a book I would recommend to every entry-level software engineer. This note mostly consists of quote-worthy excerpts from the book and aims to serve as a verbose version of the book's table of contents. Readers can use this note to quickly browse the main arguments of the book, or to locate the chapters of interest that deserves reading. A tip for those who decide to read the book: pay attention to examples, red flags and "taking it too far" sections of the book, which are of great value but are not covered by this note for brevity. The greatest limitation in writing software is our ability to understand the systems we are creating. Definition: complexity is anything related to the structure of a software system that makes it hard to understand and modify the system. It is more apparent to readers than writers. Think of each module in two parts: an interface and an implementation. The best modules are those whose interfaces ware much simpler than their implementations. An abstraction is a simplified view of an entity, which omits unimportant details. An abstraction that omits important details is a false abstraction. Red flag: shallow modules don't help much in the battle against complexity, because the benefit they provide is negated by the cost of learning and using their interfaces. Unfortunately, the value of deep classes is not widely appreciated today. Students are often taught that the most important thing in class design is to break up larger classes into smaller ones. The same advice is often given about methods: "Any methods longer than N lines should be divided into multiple methods" (N can be as low as 10). This approach results in a large number of shallow classes and methods, which add to overall system complexity. Information hiding: each module should encapsulate a few pieces of knowledge, which represent design decisions. The knowledge is embedded in the module's implementation but does not appear in its interface,so it is not visible to other modules.'''
+year_published = 2020
+year_updated = 2020
+clearnet = "https://linghao.io/notes/a-philosophy-of-software-design"
+tags = ['"obvious"', "ability", "abstraction", "aggregation", "almost", "always", "amplification", "another.", "apart", "apis"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "book.douban.com", "bytetalk.limboy.me", "codewithoutrules.com", "darkblueheaven.com", "dnc1994.github.io", "douban.com", "drive.google.com", "firewatchgame.com", "limitlesscuriosity.com", "linkedin.com", "martin.kleppmann.com", "medium.com", "neilkakkar.com", "oreilly.com", "perell.com", "space.bilibili.com", "spakhm.com", "staffeng.com"]
+
+["https://linghao.io/notes/permanent-record-excerpts"]
+title = "Excerpts from Permanent Records"
+description = "Excerpts from Permanent Records."
+full_description = "This is the origin of all hacking: the awareness of a systemic linkage between input and output, between cause and effect. My teachers' systems were terminally flawed. Their instructions for how to achieve the highest grade could be used as instructions for how to achieve the highest freedom—a key to how to avoid doing what I didn't like to do and still slide by. This kind of change is constant, common, and human. But an autobiographical statement is static, the fixed document of a person in flux. This is why the best account that someone can ever give of themselves is not a statement but a pledge—a pledge to the principles they value, and to the vision of the person they hope to become. This, to my thinking, actually represented the great nexus of the Intelligence Community and the tech industry: both are entrenched and unelected powers that pride themselves on maintaining absolute secrecy about their developments. Both believe that they have the solutions for everything, which they never hesitate to unilaterally impose. Above all, they both believe that these solutions are inherently apolitical, because they're based on data, whose prerogatives are regarded as preferable to the chaotic whims of the common citizen. The system was designed so that the perceived cost of escalation exceeded the expected benefit of resolution. At age twenty-four, though, I thought as little of the costs as I did of the benefits; I just cared about the system. I wasn't finished. The 2008 crisis, which laid so much of the foundation for the crises of populism that a decade later would sweep across Europe and America, helped me realize that something that is devastating for the public can be, and often is, beneficial to the elites. This was a lesson that the US government would confirm for me in other contexts, time and again, in the years ahead. America's fundamental laws exist to make the job of law enforcement not easier but harder. This isn't a bug, it's a core feature of democracy."
+year_published = 2019
+clearnet = "https://linghao.io/notes/permanent-record-excerpts"
+tags = ["excerpts", "permanent", "records"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "jon.bo", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/five-year-summary-2013-2018"]
+title = "过去这五年"
+description = "对过去五年的学习工作的总结和记录。"
+full_description = "这是一篇对过去五年的忠实记录。有成功也有失败，有欢笑也有泪水。作为一篇很大程度上为自己而写的回忆录，倘若能对你有些许启发，便是无憾。 在高中准备了两年信息学竞赛却没能拿到全国赛（NOI）资格之后，我通过计算机特长生夏令营保送来到了复旦。那时保送生有一个选择是提前半年过去读预科，上三门数学课并进行 ACM 训练。而我并不打算在大学继续参加算法竞赛，同时也觉得利用高三的时间提高英语能力更为重要，就没有选择去读预科。那一年我的自主学习成果还是不错的：英语水平突飞猛进；掌握了微积分和线性代数的基础知识；开始学习 Python 并尝试写出了一些自动化脚本；还在无意中浅尝了机器学习这一领域。 与那段时光相比，我在复旦的第一年可以说是浑浑噩噩。人生第一次离家独立生活；从三线城市来到一线城市被新鲜事物包围而感到迷失；对 CS 的学术/职业道路缺乏概念，看不清未来在哪；复旦特色的大类加通识教育导致课表上堆满了不感兴趣的课；…… 种种因素叠加起来，我的大一虽然过得还算开心，但在个人发展上几乎一事无成。不仅结结实实吃了三个 C 档成绩使得 GPA 彻底不能看，还经历了许多的半途而废：加入了一打感兴趣的社团却都没有坚持参加，一时兴起买的树莓派在新鲜感褪去之后也惨遭废弃等。单从结果来看，大一做的唯一正确的选择居然是选了一门网球课，从而跟之后成为室友兼良师益友的余神混熟，并且连带着认识了戍爷和 Farter 这两位未来室友。 第二个学期的时候，在余神和戍爷的推荐下，我加入了复旦学生网（STU）这个神奇的组织。我在那里得到了技术启蒙，也结交了好几位至今仍然志同道合的朋友。那时的我简单地满足于写出能工作的脚本，在 STU 与众不同的报名环节还提交了参考朋友代码开发的 Pixiv 图片批量下载工具作为自信作。然而刚加入 STU 没多久，余神就随手表演了如何闭着眼睛写出一个选课信息爬虫。当我还在依葫芦画瓢使用 urllib2 的时候，余神早已建立了使用 requests 和 pyquery 等工具编写爬虫的最佳实践，并且对 HTTP 等原理层面的知识也已经有了切实的掌握。我完全折服于能够将业务逻辑级别的代码写得如此熟练和优美的这种能力，也认识到了自己在技术上是何等的无知。在同一时期，戍爷和 QS 学长的前端入门教学也成为了我进入 Web 开发领域的起始点。"
+year_published = 2018
+clearnet = "https://linghao.io/posts/five-year-summary-2013-2018"
+tags = ["过去这五年"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "neu-reality.com", "newsweek.com", "noidea.dog", "oreilly.com", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/gradapply-diy"]
+title = "DIY 留学申请全攻略"
+description = "本文从申请前需要做的准备，申请时各种材料应当如何处理，以及如何规划和管理申请的进度几个方面展开谈了谈 DIY 留学申请的心得和体会。"
+full_description = "笔者是一名来自复旦大学的 17 Fall CS 方向的 DIY 申请者。在刚刚过去的申请季中，笔者总共申请了美国 14 个大学的 19 个 Master 项目。 关于申请，总是有很多 myth。最经典的一个就是在申请季开始的时候总会有一大堆人打印十几二十份成绩单跑到教务处去盖章。而事实上，现在绝大多数的项目都采用网申系统，在申请时往往只要求上传成绩单的扫描件。以笔者的 19 个项目为例，其中只有 2 个项目要求寄送纸质成绩单。诸如此类的 myth 代代相传，真正有用的信息却总是凌乱琐碎，再加上唯恐天下不乱的各路中介散布各种不负责任的观点，这种信息不对称使我们 DIY 申请者走了许多弯路。 申请本身是一件充满了不确定性的事情。在申请季到来时，我们自身的经历和成就往往不会再有太大的变化。我们要做的就是确保不要引入什么减分项，努力表现出自己的加分项，同时控制和减小各个环节的不确定性。本文的主要目的，就是将笔者在 DIY 申请的过程中感受和了解到的一些重要的信息，经过整理和组织后提取出一些通用的内容，以极高的干货密度分享出来。接下来笔者将从申请前需要做的准备，申请时各种材料应当如何处理，以及如何规划和管理申请的进度几个方面来展开。 提示 1：本文中关于材料具体应该如何准备的部分（比如书写 SOP/PS 的思路）可能只适用于理工科申请，请人文、艺术、商科等方向的读者自行鉴别，兼听则明；而其余部分的内容则基本上对于所有方向的申请都适用。 对于 DIY 申请来说，最重要的就是要有条理。所以在最开始，笔者想要强调很多人都会忽视的两点：看清项目需求，管好申请进度。 这些也是本文将要重点讨论的内容。但与此同时，不同项目对这些材料的要求可能会很不一样，并且大部分项目都会要求一些额外的材料。所以，在申请之前必须先逐个考察和记录好每个项目要求提供的材料清单。"
+year_published = 2017
+clearnet = "https://linghao.io/posts/gradapply-diy"
+tags = ["approach", "extra", "materials", "preparations", "program", "progress", "recommendations", "recommended", "requirements", "schedule"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.com", "anchor.fm", "codewithoutrules.com", "darkblueheaven.com", "ea.com", "figma.com", "firewatchgame.com", "github.com", "goodreads.com", "lilianweng.github.io", "mobiusdigitalgames.com", "myanimelist.net", "nav.al", "neilkakkar.com", "newsweek.com", "noidea.dog", "oreilly.com", "rpi.edu", "staffeng.com", "tomato-timer.com"]
+
+["https://linghao.io/posts/rethink-pessimism"]
+title = "Rethinking Pessimism"
+description = "It's so much better than you think, but also so much worse than you think."
+full_description = "I used to be, and still am to a large extent, a pessimist. Over the years pessimism affected my worldview and guided my actions. In the past few years though, I've changed quite a bit toward optimism. But it was not until recently I start to reflect on those changes, absorb alternative opinions, and philosophize on the nuances of being pessimistic about different things. Like many people frustrated by how history repeats itself again and again, I also believed that humanity is doomed. There are simply too many challenges to solve while we can't help hurting each other. My mind started to change after I listened to Naval's podcast about The Beginning of Infinity (book by David Deutsch). One main theme is that knowledge is infinite, humans are unique in our capability to understand things, and how pessimism is an easy trap to fall into when considering where the future of humanity holds: If you could predict it, you would have invented it already. A lot of our deeply pessimistic world views come from a straight-line linear extrapolation of negative trends while ignoring positive trends. Positive trends mostly come through creativity and knowledge creation, and it's inherently unpredictable. On another front, I'm what some rightfully call a productivity geek. I use everything from Getting Things Done systems to Time Management techniques to work toward achieving personal goals. Because I fear that I won't be able to succeed otherwise, as anything could go wrong. The other day I read The Imperfectionist: It's worse than you think, which made me think that maybe I'm not pessimistic enough: ... you feel overwhelmed by an extremely long to-do list. But it's worse than you think! You think the problem is that you have a huge number of tasks to complete, and insufficient time, and that your only hope is to summon unprecedented reserves of self-discipline, manage your time incredibly well, and somehow power through. Whereas in fact the incoming supply of possible tasks is effectively infinite (and, indeed, your efforts to get through them actually generate more things to do). Getting on top of it all seems like it would be really hard. But it isn't. It's impossible."
+year_published = 2022
+clearnet = "https://linghao.io/posts/rethink-pessimism"
+tags = ["pessimism", "rethinking"]
+language = "en"
+internal-references = ["none"]
+external-references = ["blog.kewah.com", "byvoid.com", "codewithoutrules.com", "docs.google.com", "evastore.jp", "figma.com", "firewatchgame.com", "github.com", "hpl.hp.com", "industrialempathy.com", "liqi.io", "nav.al", "newsweek.com", "noidea.dog", "oreilly.com", "quora.com", "saintgimp.org", "staffeng.com", "strikingly.com", "telegram.org"]

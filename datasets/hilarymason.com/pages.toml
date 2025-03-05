@@ -1,0 +1,215 @@
+["http://hilarymason.com"]
+title = "Hi. I'm Hilary Mason."
+description = "This is the home page's excerpt"
+full_description = "I like to tinker. I’m the Founder & CEO of Fast Forward Labs, a machine intelligence research company, and the Data Scientist in Residence at Accel Partners. I co-founded HackNY, and I’m a member of NYC Resistor. More about Hilary… I like to speak. I speak to audiences around the world about data, machine learning, artificial intelligence, and how to build real, functional, and robust products. I’m optimistic (because this stuff is really cool) and also very pragmatic (because there’s a lot of nonsense and hype out there). More about speaking…"
+year_published = 2025
+clearnet = "http://hilarymason.com"
+tags = ["blog", "follow", "hilary", "mason.", "posts", "recent", "search", "speak.", "tinker.", "updates?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/author/hmason"]
+title = "hmason – Hi. I'm Hilary Mason."
+description = "Read all of the posts by hmason on Hi. I'm Hilary Mason."
+full_description = "Bad IdeasBad Idea Fridays: Bring Your Own Entropy I travel quite a lot, and I’ve developed the habit of always texting myself my hotel room number so I don’t forget it (unfortunately, I really do stay in that many hotels). I recently looked at my texts to myself and realized it seems like a reasonable set of random numbers. Hello, hotel-based entropy*! What can you do with a very very very slow random number generator? You could spend a lifetime generating enough random digits to encrypt a document (you can seed a pseudorandom number generator, of course, but what’s the fun in that?). * Okay, this is a really bad idea. For one thing, I only have seven numbers right now, and that’s not even enough to run against any of the dieharder tests. For another, they aren’t at all random, as there’s a bias in the number of floors and number of rooms in various hotels. Also, 5160 was in Vegas, and so even though I was told to go to the “51st floor” when I got off the elevator and looked out the window I was on the third floor. Vegas is weird. If you do actually want some real random numbers, check out the NIST Randomness Beacon. Not my hotel rooms. ** Okay, here are the actual numbers: 11085 12321 707 613 5160 504 pack glasses 1534 May 5, 2017May 5, 2017 Bad IdeasBad Idea Fridays: An App for Talking to Myself DeepMind’s WaveNet: A Generative Model for Raw Audio paper was one of the most interesting papers last year. It describes a new approach that dramatically increases the accuracy of generating audio, including individual voices. Read more here. So what are people going to do with this? It’s easy to imagine high-quality voice output from Amazon Echo or Siri, or even scary applications, like scam phone calls that sound like they are coming from your own friends or family members (explored here). And that brings us to today’s bad idea. Let’s build an app that allows you to have a conversation with yourself… in your own voice. You can share all of your half-baked ideas and arguments, and have your own voice cheering you on and repeating things back to you! February 17, 2017February 17, 2017"
+year_published = 2017
+clearnet = "https://hilarymason.com/author/hmason"
+tags = ["author:", "back!", "blog", "bring", "cold", "entropy", "follow", "fridays:", "hilary", "hmason"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/2017/01/26/note-to-self-managing-ssh-keys-in-os-x"]
+title = "Note to self: Managing SSH Keys in OS X – Hi. I'm Hilary Mason."
+description = '''I recently acquired a new 13" Macbook Pro. My last machine was from 2012, so I've been having fun catching up on how you actually set up a functional developer environment today (it's basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH…'''
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. Share this:TwitterFacebookLike Loading... Related January 26, 2017notetoself, osx, ssh, tech Published by hmason View all posts by hmason"
+year_published = 2017
+year_updated = 2017
+clearnet = "https://hilarymason.com/2017/01/26/note-to-self-managing-ssh-keys-in-os-x"
+tags = ["back!", "blog", "cold", "follow", "fridays:", "hilary", "hmason", "idea", "keys", "managing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/about"]
+title = "About – Hi. I'm Hilary Mason."
+description = "This is just a short excerpt for the about page."
+full_description = "Hi, I’m Hilary. Simply: I make beautiful things with data. I’m the Founder of Fast Forward Labs, a machine intelligence research company, and the Data Scientist in Residence at Accel. Previously, I was the Chief Scientist at bitly. I also co-founded of HackNY, co-host DataGotham, and am a member of NYCResistor. More: I believe technology should give us superpowers. At Fast Forward Labs, we are building those superpowers. I’m a Data Scientist in Residence at Accel, where I get the chance to advise companies large and small on their data strategy. I spent four years as Chief Scientist at bitly, where I led an amazing team that studied attention on the internet in realtime, doing a mix of research, exploration, and engineering. I co-founded HackNY, a non-profit that helps talented engineering students find their way into the startup community of creative technologists in New York City. I’m an enthusiastic member of the larger conspiracy to evolve the emerging discipline of data science. I’m a native New Yorker and I love this city and the technology community here. I am an advisor to a few organizations that I adore, including Mortar, knod.es, collective[i], and DataKind. I’m a mentor to Betaspring, the Providence, Rhode Island-based startup accelerator, and the Harvard Business School Digital Initiative. I was a member of Mayor Bloomberg’s Technology and Innovation Advisory Council, which was a fascinating way to learn how government and industry can work together. I’ve received a few honors, like the TechFellows Engineering Leadership award, and was on the Forbes 40 under 40 Ones to Watch list and Crain’s New York 40 under Forty list. I’ve also been in Glamour, the WSJ, Fast Company, Scientific American, and more, which has made my mother very happy. I like to give talks, and have spoken about how to replace yourself with a very small shell script, on e-mail hacking, machine learning: a love story, and more. I also keep a fun mostly photo-oriented blog of mostly New York adventures at hilary.nyc. Like Loading..."
+year_published = 2016
+year_updated = 2017
+clearnet = "https://hilarymason.com/about"
+tags = ["blog", "data", "follow", "hilary", "i’m", "mason.", "posts", "recent", "scientist", "search"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/tag/tech"]
+title = "tech – Hi. I'm Hilary Mason."
+description = "Posts about tech written by hmason"
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. January 26, 2017notetoself, osx, ssh, tech"
+year_published = 2017
+clearnet = "https://hilarymason.com/tag/tech"
+tags = ["blog", "follow", "hilary", "keys", "managing", "mason.", "note", "notetoself", "notetoself, osx, ssh, tech", "osx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/2017/01/27/bad-idea-fridays-cold-storage"]
+title = "Bad Idea Fridays: Cold Storage – Hi. I'm Hilary Mason."
+description = "I'm a fan of having lots of ideas, and that means you have to be open to the ones that, on the surface, are ridiculous. The best ideas often start as a bad idea. When you're willing to push the boundaries, you're more likely to stumble onto something really interesting. Every Friday, I'm going to share a ridiculously bad…"
+full_description = "Bad IdeasBad Idea Fridays: Cold Storage I’m a fan of having lots of ideas, and that means you have to be open to the ones that, on the surface, are ridiculous. The best ideas often start as a bad idea. When you’re willing to push the boundaries, you’re more likely to stumble onto something really interesting. Every Friday, I’m going to share a ridiculously bad idea. This should be very easy for me (I have a ton of them), it’ll keep me posting on a regular cadence, and it should also motivate me to write more, since I don’t just want this blog full of bad ideas. Today’s bad idea is for storage of immutable historical data. When you have data you need to put in cold storage that won’t ever change, why not build a giant XY carving robot, install it against a blank wall in your office lobby, and have the data chiseled into the wall? You can even come up with a design scheme that makes it beautiful. You solve your storage and interior decoration problems at the same time! Need to retrieve the data? Just take a photo, and decode it. The idea of storing digital data on old media isn’t new. I’ve just yet to see it on a grand scale. Share this:TwitterFacebookLike Loading... Related January 27, 2017 Published by hmason View all posts by hmason"
+year_published = 2017
+year_updated = 2017
+clearnet = "https://hilarymason.com/2017/01/27/bad-idea-fridays-cold-storage"
+tags = ["blog", "cold", "follow", "fridays:", "hilary", "hmason", "idea", "keys", "managing", "mason."]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/2017/02/17/bad-idea-fridays-an-app-for-talking-to-myself"]
+title = "Bad Idea Fridays: An App for Talking to Myself – Hi. I'm Hilary Mason."
+description = "DeepMind's WaveNet: A Generative Model for Raw Audio paper was one of the most interesting papers last year. It describes a new approach that dramatically increases the accuracy of generating audio, including individual voices. Read more here. So what are people going to do with this? It's easy to imagine high-quality voice output from Amazon Echo or Siri, or…"
+full_description = "Bad IdeasBad Idea Fridays: An App for Talking to Myself DeepMind’s WaveNet: A Generative Model for Raw Audio paper was one of the most interesting papers last year. It describes a new approach that dramatically increases the accuracy of generating audio, including individual voices. Read more here. So what are people going to do with this? It’s easy to imagine high-quality voice output from Amazon Echo or Siri, or even scary applications, like scam phone calls that sound like they are coming from your own friends or family members (explored here). And that brings us to today’s bad idea. Let’s build an app that allows you to have a conversation with yourself… in your own voice. You can share all of your half-baked ideas and arguments, and have your own voice cheering you on and repeating things back to you! Share this:TwitterFacebookLike Loading... Related February 17, 2017February 17, 2017 Published by hmason View all posts by hmason"
+year_published = 2017
+year_updated = 2017
+clearnet = "https://hilarymason.com/2017/02/17/bad-idea-fridays-an-app-for-talking-to-myself"
+tags = ["blog", "bring", "cold", "entropy", "follow", "fridays:", "hilary", "hmason", "idea", "mason."]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/contact"]
+title = "Contact – Hi. I'm Hilary Mason."
+description = "This is just a short excerpt for the contact page."
+full_description = 'Hello! I love e-mail (I really do). If you send me a note I will do my best to get back to you. However, I receive a lot of e-mail, so please do be patient, and try to stick to things that I’m uniquely able to answer. Name(required) Email(required) Website Comment(required) Submit Δdocument.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() ); Like Loading... Hello! I love e-mail (I really do). If you send me a note I will do my best to get back to you. However, I receive a lot of e-mail, so please do be patient, and try to stick to things that I’m uniquely able to answer. Name(required) Email(required) Website Comment(required) Submit Δdocument.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() ); Like Loading...'
+year_published = 2016
+year_updated = 2017
+clearnet = "https://hilarymason.com/contact"
+tags = ["blog", "contact", "follow", "hilary", "mason.", "posts", "recent", "search", "updates?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/2017/05/05/bad-idea-fridays-bring-your-own-entropy"]
+title = "Bad Idea Fridays: Bring Your Own Entropy – Hi. I'm Hilary Mason."
+description = "I travel quite a lot, and I've developed the habit of always texting myself my hotel room number so I don't forget it (unfortunately, I really do stay in that many hotels). I recently looked at my texts to myself and realized it seems like a reasonable set of random numbers. Hello, hotel-based entropy*! What…"
+full_description = "Bad IdeasBad Idea Fridays: Bring Your Own Entropy I travel quite a lot, and I’ve developed the habit of always texting myself my hotel room number so I don’t forget it (unfortunately, I really do stay in that many hotels). I recently looked at my texts to myself and realized it seems like a reasonable set of random numbers. Hello, hotel-based entropy*! What can you do with a very very very slow random number generator? You could spend a lifetime generating enough random digits to encrypt a document (you can seed a pseudorandom number generator, of course, but what’s the fun in that?). * Okay, this is a really bad idea. For one thing, I only have seven numbers right now, and that’s not even enough to run against any of the dieharder tests. For another, they aren’t at all random, as there’s a bias in the number of floors and number of rooms in various hotels. Also, 5160 was in Vegas, and so even though I was told to go to the “51st floor” when I got off the elevator and looked out the window I was on the third floor. Vegas is weird. If you do actually want some real random numbers, check out the NIST Randomness Beacon. Not my hotel rooms. ** Okay, here are the actual numbers: 11085 12321 707 613 5160 504 pack glasses 1534 Share this:TwitterFacebookLike Loading... Related May 5, 2017May 5, 2017 Published by hmason View all posts by hmason"
+year_published = 2017
+year_updated = 2017
+clearnet = "https://hilarymason.com/2017/05/05/bad-idea-fridays-bring-your-own-entropy"
+tags = ["blog", "bring", "entropy", "follow", "fridays:", "hilary", "hmason", "idea", "mason.", "myself"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/category/notes-to-self"]
+title = "Notes to Self – Hi. I'm Hilary Mason."
+description = "Posts about Notes to Self written by hmason"
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. January 26, 2017notetoself, osx, ssh, tech"
+year_published = 2017
+clearnet = "https://hilarymason.com/category/notes-to-self"
+tags = ["blog", "category:", "follow", "hilary", "keys", "managing", "mason.", "note", "notes", "notetoself"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/tag/osx"]
+title = "osx – Hi. I'm Hilary Mason."
+description = "Posts about osx written by hmason"
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. January 26, 2017notetoself, osx, ssh, tech"
+year_published = 2017
+clearnet = "https://hilarymason.com/tag/osx"
+tags = ["blog", "follow", "hilary", "keys", "managing", "mason.", "note", "notetoself", "notetoself, osx, ssh, tech", "osx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/tag/notetoself"]
+title = "notetoself – Hi. I'm Hilary Mason."
+description = "Posts about notetoself written by hmason"
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. January 26, 2017notetoself, osx, ssh, tech"
+year_published = 2017
+clearnet = "https://hilarymason.com/tag/notetoself"
+tags = ["blog", "follow", "hilary", "keys", "managing", "mason.", "note", "notetoself", "notetoself, osx, ssh, tech", "osx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/speaking"]
+title = "Speaking – Hi. I'm Hilary Mason."
+description = "I speak to audiences around the world about data, machine learning, artificial intelligence, and how to build real, functional, and robust products. I’m optimistic (because this stuff is really cool) and also very pragmatic (because there’s a lot of nonsense and hype out there). I enjoy speaking to general audiences about AI and machine learning,…"
+full_description = "Speaking I speak to audiences around the world about data, machine learning, artificial intelligence, and how to build real, functional, and robust products. I’m optimistic (because this stuff is really cool) and also very pragmatic (because there’s a lot of nonsense and hype out there). I enjoy speaking to general audiences about AI and machine learning, data science, and how to think about data-driven business and product development, and to technical audiences about algorithms and system design (and more!). Many of my talks are available on youtube, but here are a few recent talks and old favorites: If you would like to invite me to speak, please get in touch. Share this:TwitterFacebookLike Loading..."
+year_published = 2017
+year_updated = 2017
+clearnet = "https://hilarymason.com/speaking"
+tags = ["blog", "follow", "hilary", "mason.", "posts", "recent", "search", "share", "speaking", "this:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/category/bad-ideas"]
+title = "Bad Ideas – Hi. I'm Hilary Mason."
+description = "Posts about Bad Ideas written by hmason"
+full_description = "Bad IdeasBad Idea Fridays: Bring Your Own Entropy I travel quite a lot, and I’ve developed the habit of always texting myself my hotel room number so I don’t forget it (unfortunately, I really do stay in that many hotels). I recently looked at my texts to myself and realized it seems like a reasonable set of random numbers. Hello, hotel-based entropy*! What can you do with a very very very slow random number generator? You could spend a lifetime generating enough random digits to encrypt a document (you can seed a pseudorandom number generator, of course, but what’s the fun in that?). * Okay, this is a really bad idea. For one thing, I only have seven numbers right now, and that’s not even enough to run against any of the dieharder tests. For another, they aren’t at all random, as there’s a bias in the number of floors and number of rooms in various hotels. Also, 5160 was in Vegas, and so even though I was told to go to the “51st floor” when I got off the elevator and looked out the window I was on the third floor. Vegas is weird. If you do actually want some real random numbers, check out the NIST Randomness Beacon. Not my hotel rooms. ** Okay, here are the actual numbers: 11085 12321 707 613 5160 504 pack glasses 1534 May 5, 2017May 5, 2017 Bad IdeasBad Idea Fridays: An App for Talking to Myself DeepMind’s WaveNet: A Generative Model for Raw Audio paper was one of the most interesting papers last year. It describes a new approach that dramatically increases the accuracy of generating audio, including individual voices. Read more here. So what are people going to do with this? It’s easy to imagine high-quality voice output from Amazon Echo or Siri, or even scary applications, like scam phone calls that sound like they are coming from your own friends or family members (explored here). And that brings us to today’s bad idea. Let’s build an app that allows you to have a conversation with yourself… in your own voice. You can share all of your half-baked ideas and arguments, and have your own voice cheering you on and repeating things back to you! February 17, 2017February 17, 2017"
+year_published = 2017
+clearnet = "https://hilarymason.com/category/bad-ideas"
+tags = ["blog", "bring", "category:", "cold", "entropy", "follow", "fridays:", "hilary", "idea", "idea."]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/tag/ssh"]
+title = "ssh – Hi. I'm Hilary Mason."
+description = "Posts about ssh written by hmason"
+full_description = "Notes to SelfNote to self: Managing SSH Keys in OS X I recently acquired a new 13″ Macbook Pro. My last machine was from 2012, so I’ve been having fun catching up on how you actually set up a functional developer environment today (it’s basically the same as in 2012). I had to look up how to get OS X Sierra (10.12) to remember my SSH keys. This behavior has changed to mimic standard OpenSSH behavior, which is a good thing! First, add the key to your OS X keychain: ssh-add -k [key_file] Then, when you start a shell, run this: ssh-add -A I added it to my .bash_profile and it’s working quite nicely. January 26, 2017notetoself, osx, ssh, tech"
+year_published = 2017
+clearnet = "https://hilarymason.com/tag/ssh"
+tags = ["blog", "follow", "hilary", "keys", "managing", "mason.", "note", "notetoself", "notetoself, osx, ssh, tech", "osx"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com"]
+title = "Hi. I'm Hilary Mason."
+description = "This is the home page's excerpt"
+full_description = "I like to tinker. I’m the Founder & CEO of Fast Forward Labs, a machine intelligence research company, and the Data Scientist in Residence at Accel Partners. I co-founded HackNY, and I’m a member of NYC Resistor. More about Hilary… I like to speak. I speak to audiences around the world about data, machine learning, artificial intelligence, and how to build real, functional, and robust products. I’m optimistic (because this stuff is really cool) and also very pragmatic (because there’s a lot of nonsense and hype out there). More about speaking…"
+year_published = 2025
+clearnet = "https://hilarymason.com"
+tags = ["blog", "follow", "hilary", "mason.", "posts", "recent", "search", "speak.", "tinker.", "updates?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "facebook.com", "fastforwardlabs.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/blog"]
+title = "Blog – Hi. I'm Hilary Mason."
+full_description = "Bad IdeasBad Idea Fridays: Bring Your Own Entropy I travel quite a lot, and I’ve developed the habit of always texting myself my hotel room number so I don’t forget it (unfortunately, I really do stay in that many hotels). I recently looked at my texts to myself and realized it seems like a reasonable set of random numbers. Hello, hotel-based entropy*! What can you do with a very very very slow random number generator? You could spend a lifetime generating enough random digits to encrypt a document (you can seed a pseudorandom number generator, of course, but what’s the fun in that?). * Okay, this is a really bad idea. For one thing, I only have seven numbers right now, and that’s not even enough to run against any of the dieharder tests. For another, they aren’t at all random, as there’s a bias in the number of floors and number of rooms in various hotels. Also, 5160 was in Vegas, and so even though I was told to go to the “51st floor” when I got off the elevator and looked out the window I was on the third floor. Vegas is weird. If you do actually want some real random numbers, check out the NIST Randomness Beacon. Not my hotel rooms. ** Okay, here are the actual numbers: 11085 12321 707 613 5160 504 pack glasses 1534 May 5, 2017May 5, 2017 Bad IdeasBad Idea Fridays: An App for Talking to Myself DeepMind’s WaveNet: A Generative Model for Raw Audio paper was one of the most interesting papers last year. It describes a new approach that dramatically increases the accuracy of generating audio, including individual voices. Read more here. So what are people going to do with this? It’s easy to imagine high-quality voice output from Amazon Echo or Siri, or even scary applications, like scam phone calls that sound like they are coming from your own friends or family members (explored here). And that brings us to today’s bad idea. Let’s build an app that allows you to have a conversation with yourself… in your own voice. You can share all of your half-baked ideas and arguments, and have your own voice cheering you on and repeating things back to you! February 17, 2017February 17, 2017"
+year_published = 2017
+clearnet = "https://hilarymason.com/blog"
+tags = ["back!", "blog", "bring", "cold", "entropy", "follow", "fridays:", "hilary", "idea", "idea."]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me"]
+
+["https://hilarymason.com/2016/12/31/first-blog-post"]
+title = "Welcome back! – Hi. I'm Hilary Mason."
+description = "This is a content-free welcome post."
+full_description = "hilarymason.com lives again! I’ve migrated to hosted wordpress, so keeping the server up is no longer my problem. 😁 I’d like this site to help you figure out who I am and what I do, share what I’m working on now, let people get in touch, and be a place for me to share some personal thoughts and works-in-progress. If you have suggestions, I’d love to hear them. Like Loading... Related December 31, 2016January 22, 2017 Published by hmason View all posts by hmason hilarymason.com lives again! I’ve migrated to hosted wordpress, so keeping the server up is no longer my problem. 😁 I’d like this site to help you figure out who I am and what I do, share what I’m working on now, let people get in touch, and be a place for me to share some personal thoughts and works-in-progress. If you have suggestions, I’d love to hear them. Like Loading... Related December 31, 2016January 22, 2017 Published by hmason View all posts by hmason Post navigation Next Next post: Note to self: Managing SSH Keys in OS X"
+year_published = 2016
+year_updated = 2017
+clearnet = "https://hilarymason.com/2016/12/31/first-blog-post"
+tags = ["back!", "blog", "follow", "hilary", "hmason", "keys", "managing", "mason.", "navigation", "note"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]
+
+["https://hilarymason.com/category/uncategorized"]
+title = "Uncategorized – Hi. I'm Hilary Mason."
+description = "Posts about Uncategorized written by hmason"
+full_description = "UncategorizedWelcome back! hilarymason.com lives again! I’ve migrated to hosted wordpress, so keeping the server up is no longer my problem. 😁 I’d like this site to help you figure out who I am and what I do, share what I’m working on now, let people get in touch, and be a place for me to share some personal thoughts and works-in-progress. If you have suggestions, I’d love to hear them. December 31, 2016January 22, 2017 Category: Uncategorized UncategorizedWelcome back! hilarymason.com lives again! I’ve migrated to hosted wordpress, so keeping the server up is no longer my problem. 😁 I’d like this site to help you figure out who I am and what I do, share what I’m working on now, let people get in touch, and be a place for me to share some personal thoughts and works-in-progress. If you have suggestions, I’d love to hear them. December 31, 2016January 22, 2017"
+year_published = 2016
+clearnet = "https://hilarymason.com/category/uncategorized"
+tags = ["back!", "blog", "category:", "follow", "hilary", "mason.", "posts", "recent", "search", "uncategorized"]
+language = "en"
+internal-references = ["none"]
+external-references = ["accel.com", "arxiv.org", "deepmind.com", "extremetech.com", "facebook.com", "fastforwardlabs.com", "github.com", "hackny.org", "instagram.com", "linkedin.com", "nycresistor.com", "phy.duke.edu", "subscribe.wordpress.com", "tinyletter.com", "twitter.com", "vanityfair.com", "wordpress.com", "wp.me", "youtube.com"]

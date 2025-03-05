@@ -1,0 +1,155 @@
+["https://seehuhn.de/pages/bilder.html"]
+title = "Mathematische Bildergalerie"
+description = "Bilder von unterschiedlichen mathematischen Objekten."
+full_description = "Diese Seite enthält einige Bilder, die ich zu unterschiedlichen Zwecken irgendwann einmal erzeugt habe. Jedermann darf diese Bilder gerne für eigene Zwecke verwenden und weiterverbreiten, aber natürlich freue ich mich, wenn ich als Quelle genannt werde. Durch Anklicken der kleinen Bilder erhält man größere Versionen. Copyright © 2011 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2011
+year_updated = 2011
+clearnet = "https://seehuhn.de/pages/bilder.html"
+tags = ["bildergalerie", "mathematische"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.co.uk", "amazon.com", "antipope.org", "arxiv.org", "bio3d.pbworks.com", "blog.mikemccandless.com", "choosemypcc.org.uk", "code.google.com", "commons.wikimedia.org", "core77.com", "de.wikipedia.org", "defra.gov.uk", "developer.mozilla.org", "discussions.apple.com", "docs.python.org", "dx.doi.org", "eps.leeds.ac.uk", "leeds.ac.uk", "m.seehuhn.de", "teaching.seehuhn.de"]
+
+["https://seehuhn.de/pages/software.html"]
+title = "Programme"
+description = "Liste von Computerprogrammen und Ähnlichem."
+full_description = "Für meine eigenen Programme verwende ich meistens die Programmiersprache C, manchmal auch C++ oder Python. Einige Programme, die ich im Lauf der Zeit geschrieben habe, finden sich auf dieser Seite. Vermutlich lassen sie sich nur auf Unix-Systemen compilieren. Über Kommentare oder Verbesserungsvorschläge zu den Programmen würde ich mich sehr freuen. Copyright © 2011 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2011
+year_updated = 2011
+clearnet = "https://seehuhn.de/pages/software.html"
+tags = ["mathe", "programme", "sonstiges", "spiele"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "python.org", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li", "usgo.org"]
+
+["https://seehuhn.de/sitemap.html"]
+title = "Sitemap"
+full_description = "Copyright © 2017 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2025
+clearnet = "https://seehuhn.de/sitemap.html"
+tags = ["juggling", "linux", "mathematics", "miscellaneous", "publications", "sitemap", "software", "tutorials"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "python.org", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li", "usgo.org"]
+
+["https://seehuhn.de/pages/maths.html"]
+title = "Mathematical Homepage of Jochen Voss"
+description = "I am a mathematician, interested in probability, statistical computing and applied mathematics.  This page gives an overview over some of my mathematical interests."
+full_description = "With Andrew Stuart and Martin Hairer I am exploring how infinite dimensional Langevin sampling can be used to sample from conditioned distributions of solutions of stochastic differential equations. Our method is based on constructing a partial stochastic differential equation which has the conditioned target density as its stationary distribution. Example: the following picture shows a path from the solution of a stochastic differential equation on the time interval [0,100], conditioned on having the value -1 at time 0 and having the value +1 at time 100. The drift has -1 and +1 as stable equilibrium points and 0 as an unstable equilibrium point. This method yields a new algorithm for the (non-linear) Kalman filter/smoother. One can view the pair of signal and observation as the solution of a two-dimensional stochastic differential equation. Our method can then be used to study the distribution of the signal conditioned on a given observation. Together with my brother Andreas Voss I work on a parameter estimation problem for diffusion processes which arises in psychology when modelling speeded binary decision processes. My Diplomarbeit (approximately equivalent to an MSc thesis) deals with a topic related to diffusion processes: There I consider the question how fast one can distinguish between two different given diffusions, when observing a single path over long intervals of time. In my PhD thesis I prove a large deviation result about the behaviour of diffusions under a strong drift. Copyright © 2012 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2012
+year_updated = 2012
+clearnet = "https://seehuhn.de/pages/maths.html"
+tags = ["analysis", "conditional", "contents", "deviations", "diffusion", "homepage", "jochen", "large", "mathematical", "miscellaneous"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "developer.mozilla.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "maths.warwick.ac.uk", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li"]
+
+["https://seehuhn.de/pages/keys.html"]
+title = "PGP Schlüssel"
+description = "Öffentliche GnuPG/PGP Schlüssel von Jochen Voß"
+full_description = 'GnuPG und PGP sind Verschlüsselungsprogramme, die nach dem "public key"-Verfahren arbeiten. Damit kann man z.B. Emails verschlüsseln und signieren. Ich freue mich über signierte und verschlüsselte Emails. Meine Schlüssel kann man entweder auf einem Keyserver finden, oder von hier bekommen: Mein Schlüssel ist mit etlichen digitalen Signaturen versehen, die helfen, die Echtheit meines Schlüssels sicherzustellen. Es gibt spezielle Programme, um Ketten solcher Signaturen zwischen zwei gegebenen Schlüsseln zu finden, z.B. den Experimental PGP key path finder von Jonathan McDowell und die PGP pathfinder & key statistics Seite von Henk P. Penning. Die Quelltexte auf dieser Webseite sind ebenfalls alle digital signiert. Dadurch kann man nachprüfen, ob die Quelltexte auf der Webseite tatsächlich meiner Version entsprechen. Das Programm GnuPG verwendet dazu die Option --verify. Die Ausgabe sollte etwa folgendermaßen aussehen: Ich bin gerne bereit, Schlüssel für GnuPG zu signieren. Dazu solltest Du Deinen Schlüssel auf einen öffentlichen Keyserver exportieren und danach mit mir einen Termin für ein Treffen vereinbaren. Mitbringen solltest Du einen Zettel, auf dem der "fingerprint" Deines Schlüssels steht (damit wir wissen, daß wir über denselben Schlüssel reden), und einen Personalausweis (damit ich bestätigen kann, daß Du Du bist). Copyright © 2012 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license.'
+author = "Jochen Voss"
+year_published = 2012
+year_updated = 2012
+clearnet = "https://seehuhn.de/pages/keys.html"
+tags = ["gnupg", "quelltexte", "schlüssel", "signaturen", "signierte"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "amazon.co.uk", "antipope.org", "arxiv.org", "bio3d.pbworks.com", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "de.wikipedia.org", "developer.mozilla.org", "discussions.apple.com", "eps.leeds.ac.uk", "leeds.ac.uk", "lists.uni-kl.de", "m.seehuhn.de", "pgp.mit.edu", "pgpi.org", "teaching.seehuhn.de", "the.earth.li"]
+
+["https://seehuhn.de/photos"]
+title = "Photos"
+full_description = "Copyright © 2011 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2025
+clearnet = "https://seehuhn.de/photos"
+tags = ["photos"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "python.org", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li", "usgo.org"]
+
+["https://seehuhn.de/pages/misc.html"]
+title = "Miscellaneous Things"
+description = "list of miscellaneous pages"
+full_description = "This section of my home page contains a few pages which do not fit readily into the other categories. Copyright © 2012–2024 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://seehuhn.de/pages/misc.html"
+tags = ["miscellaneous", "things"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "developer.mozilla.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "maths.warwick.ac.uk", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li"]
+
+["https://seehuhn.de/blog"]
+title = "Jochen's Blog"
+description = """
+I am happy to announce the release of fast-dm version 30.2. This
+release fixes some memory leaks found by
+Valgrind. You can download the program
+from the Fast-dm homepage."""
+full_description = '''Fast-dm version 30.2 released 2015-04-17 I am happy to announce the release of fast-dm version 30.2. This release fixes some memory leaks found by Valgrind. You can download the program from the Fast-dm homepage. "new" paper 2015-02-06 A new paper, together with my PhD student Mark Webster and my colleague Stuart Barber, has been published today! S. Barber, J. Voss and M. Webster: The Rate of Convergence for Approximate Bayesian Computation. Electronic Journal of Statistics, vol. 9, pp. 80–105, 2015. DOI:10.1214/15-EJS988, arXiv:1311.2038, more… This paper took a long time to be published, but I think it is worth the wait. slow article 2014-03-04 I am very happy to announce that a very old (nearly forgotten?) article has finally appeared. We chose the journal because we had heard the rumour that they have a fast turnaround, but this plan didn't work out: the article was submitted 23 September 2011 and accepted on 21 February 2012. But then came a two year wait, and the article only has appeared just now: K.V. Mardia and J. Voss: Some Fundamental Properties of a Multivariate von Mises Distribution. Communications in Statistics — Theory and Methods, vol. 43, pp. 1132–1144, 2014. DOI:10.1080/03610926.2012.670353, arXiv:1109.6042, more… New PhD position 2013-11-22 Do you want to do a PhD on Bayesian Uncertainty Quantification with me? Are you good with maths and computers? As part of the new, NERC funded, doctoral training centre I am advertising for a PhD position. Details can be found on the DTP web page, the deadline for applications is 24 January 2014, start of the PhD is October 2014. The Rate of Convergence for Approximate Bayesian Computation 2013-11-08 I am very happy to report that after a long struggle we have finally finished (and submitted) a new paper today: S. Barber, J. Voss and M. Webster: The Rate of Convergence for Approximate Bayesian Computation. Electronic Journal of Statistics, vol. 9, pp. 80–105, 2015. DOI:10.1214/15-EJS988, arXiv:1311.2038, more… The paper studies the convergence of ABC estimates to the correct value. In particular, we prove that the method converges under very weak conditions, we show that the tolerance parameter δ should be chosen proportional to n-1/4, where n is the number of accepted ABC samples, and we determine the speed of convergence under optimal choice of δ. Hopefully, these results prove useful for others, too.'''
+author = "Jochen Voss"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://seehuhn.de/blog"
+tags = ['"bio3d"', '"gem', '"jvlisting"', '"new"', "$134,000,000,000", "0.6.1", "0.6.2", "2007-09-24", "2007-09-29", "2007-10-17"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.co.uk", "amazon.com", "antipope.org", "arxiv.org", "bio3d.pbworks.com", "blog.mikemccandless.com", "choosemypcc.org.uk", "code.google.com", "commons.wikimedia.org", "core77.com", "creativecommons.org", "de.wikipedia.org", "defra.gov.uk", "developer.mozilla.org", "discussions.apple.com", "docs.python.org", "dx.doi.org", "eps.leeds.ac.uk", "leeds.ac.uk", "teaching.seehuhn.de"]
+
+["https://seehuhn.de/pages/comp.html"]
+title = "Wasting Time"
+description = "Computer Stuff"
+full_description = "Computers can be quite fascinating objects, which help you to waste a lot of time. I use them for this purpose regularly. On my pages here you can find the following things. Copyright © 2011 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2011
+year_updated = 2011
+clearnet = "https://seehuhn.de/pages/comp.html"
+tags = ["wasting"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.co.uk", "amazon.com", "antipope.org", "arxiv.org", "bio3d.pbworks.com", "blog.mikemccandless.com", "choosemypcc.org.uk", "code.google.com", "commons.wikimedia.org", "core77.com", "de.wikipedia.org", "defra.gov.uk", "developer.mozilla.org", "discussions.apple.com", "docs.python.org", "dx.doi.org", "eps.leeds.ac.uk", "leeds.ac.uk", "m.seehuhn.de", "teaching.seehuhn.de"]
+
+["https://seehuhn.de/publications"]
+title = "Publications by Jochen Voss"
+description = "A complete list of my publications."
+full_description = "Publications by Jochen Voss By Jochen Voss, updated 2024-09-24 This is a complete list of my publications. You can click on the titles to get more information. My Google scholar page may also contain interesting information. 2024 Heat Transfer Modeling and Optimal Thermal Management of Electric Vehicle Battery Systems Written in collaboration with A. Mahmood, T. Cockerill, G. de Boer and H. Thompson. Energies, vol. 17, no. 18, 4575, 2024. DOI:10.3390/en17184575, more… 2021 On the Estimation of Entropy in the FastICA Algorithm Written in collaboration with E. Issoglio and P. Smith. Journal of Multivariate Analysis, vol. 181, 104689, 2021. DOI:10.1016/j.jmva.2020.104689, arXiv:1805.10206, more… 2020 Using Ice Cores and Gaussian Process Emulation to Recover Changes in the Greenland Ice Sheet During the Last Interglacial Written in collaboration with D. Domingo, I. Malmierca-Vallet, L. Sime and E. Capron. Journal of Geophysical Research: Earth Surface, vol. e2019JF005237, 2020. DOI:10.1029/2019JF005237, more… 2019 What can Palaeoclimate Modelling do for you? Written in collaboration with A.M. Haywood, P.J. Valdes, T. Aze, N. Barlow, A. Burke, A.M. Dolan, A.S. von der Heydt, D.J. Hill, S.S.R. Jamieson, B.L. Otto-Bliesner, U. Salzmann and E. Saupe. Earth Systems and Environment, vol. 3, no. 1, pp. 1–18, 2019. DOI:10.1007/s41748-019-00093-1, more… Sequential sampling models with variable boundaries and non-normal noise: A comparison of six models Written in collaboration with A. Voss, V. Lerche and U. Mertens. Psychonomic Bulletin & Review, vol. 26, no. 3, pp. 813–832, 2019. DOI:10.3758/s13423-018-1560-4, more… 2017 Waste Disposal in Late Iron Age and Early Roman Silchester: A Geochemical Comparison of Pits, Post Holes, Ditches and Wells in Insula IX Written in collaboration with C. van Zwieten, S.R. Cook, M.G. Fulford, N.A. Pankhurst and C.M. Barnett. Journal of Archaeological Science: Reports, vol. 15, pp. 1–7, 2017. DOI:10.1016/j.jasrep.2017.06.044, more… A New Quantitative Approach to Identify Reworking in Eocene to Miocene Pollen Records from Offshore Antarctica Using Red Fluorescence and Digital Imaging Written in collaboration with S.L. Strother, U. Salzmann, F. Sangiorgi, P.K. Bijl, J. Pross, C. Escutia, A. Salabarnada, M.J. Pound and J. Woodward. Biogeosciences, vol. 14, pp. 2089–2100, 2017. DOI:10.5194/bg-14-2089-2017, more… 2015 Assessing Cognitive Processes with Diffusion Model Analyses: a Tutorial Based on fast-dm-30 Written in collaboration with A. Voss and V. Lerche. Frontiers in Psychology, 2015. DOI:10.3389/fpsyg.2015.00336, more… The Rate of Convergence for Approximate Bayesian Computation Written in collaboration with S. Barber and M. Webster. Electronic Journal of Statistics, vol. 9, pp. 80–105, 2015. DOI:10.1214/15-EJS988, arXiv:1311.2038, more… 2014 Characterising the Use of Urban Space: a Geochemical Case Study from Calleva Atrebatum (Silchester, Hampshire, UK) Insula IX During the Late First/Early Second Century AD Written in collaboration with S. Cook, A.S. Clarke and M.G. Fulford. Journal of Archaeological Science, vol. 50, pp. 108–116, 2014. DOI:10.1016/j.jas.2014.07.003, more… An Introduction to Statistical Computing: A Simulation-Based Approach Wiley, 2014. link, more… Some Fundamental Properties of a Multivariate von Mises Distribution Written in collaboration with K.V. Mardia. Communications in Statistics — Theory and Methods, vol. 43, pp. 1132–1144, 2014. DOI:10.1080/03610926.2012.670353, arXiv:1109.6042, more… 2013 Challenges in quantifying Pliocene terrestrial warming revealed by data-model discord Written in collaboration with U. Salzmann, A.M. Dolan, A.M. Haywood, W.-L. Chan, D.J. Hill, A. Abe-Ouchi, B. Otto-Bliesner, F.J. Bragg, M.A. Chandler, C. Contoux, H.J. Dowsett, A. Jost, Y. Kamae, G. Lohmann, D.J. Lunt, S.J. Pickering, M.J. Pound, G. Ramstein, N.A. Rosenbloom, L. Sohl, C. Stepanek, H. Ueda and Z. Zhang. Nature Climate Change, no. 3, pp. 969–974, 2013. DOI:10.1038/nclimate2008, more… MAP Estimators and their Consistency in Bayesian Nonparametric Inverse Problems Written in collaboration with M. Dashti, K.J.H. Law and A.M. Stuart. Inverse Problems, vol. 29, no. 9, 2013. DOI:10.1088/0266-5611/29/9/095017, arXiv:1303.4795, more… 2012 The Effect of Finite Element Discretisation on the Stationary Distribution of SPDEs Communications in Mathematical Sciences, vol. 10, no. 4, pp. 1143–1159, 2012. DOI:10.4310/CMS.2012.v10.n4.a6, arXiv:1110.4653, more… 2011 Approximations to the Stochastic Burgers Equation Written in collaboration with M. Hairer. Journal of Nonlinear Science, vol. 12, no. 6, pp. 897–920, 2011. DOI:10.1007/s00332-011-9104-3, arXiv:1005.4438, more… Signal Processing Problems on Function Space: Bayesian Formulation, Stochastic PDEs and Effective MCMC Methods Written in collaboration with M. Hairer and A.M. Stuart. Pages 833–873 in The Oxford Handbook of Nonlinear Filtering, Dan Crisan and Boris Rozovsky (editors), Oxford University Press, 2011. link, preprint:pdf, more… Sampling Conditioned Hypoelliptic Diffusions Written in collaboration with M. Hairer and A.M. Stuart. Annals of Applied Probability, vol. 21, no. 2, pp. 669–698, 2011. DOI:10.1214/10-AAP708, arXiv:0908.0162, more… 2010 Separating Response-Execution Bias from Decision Bias: Arguments for an Additional Parameter in Ratcliff's Diffusion Model Written in collaboration with A. Voss and K.C. Klauer. British Journal of Mathematical and Statistical Psychology, vol. 63, no. 3, pp. 539–555, 2010. DOI:10.1348/000711009X477581, preprint:pdf, more… 2009 Upper and Lower Bounds in Exponential Tauberian Theorems Tbilisi Mathematical Journal, vol. 2, pp. 41–50, 2009. link, arXiv:0908.0642, more… Matrix Analysis and Algorithms Written in collaboration with A.M. Stuart. Lecture notes, 2009. preprint:pdf, more… Sampling Conditioned Diffusions Written in collaboration with M. Hairer and A.M. Stuart. Pages 159–186 in Trends in Stochastic Analysis, Cambridge University Press, vol. 353 of London Mathematical Society Lecture Note Series, 2009. link, preprint:pdf, more… 2008 A Fast Numerical Algorithm for the Estimation of Diffusion-Model Parameters Written in collaboration with A. Voss. Journal of Mathematical Psychology, vol. 52, pp. 1–9, 2008. DOI:10.1016/j.jmp.2007.09.005, preprint:pdf, more… Large Deviations for One Dimensional Diffusions with a Strong Drift Electronic Journal of Probability, vol. 13, no. 53, pp. 1479–1526, 2008. link, preprint:pdf, more… MCMC Methods for Diffusion Bridges Written in collaboration with A. Beskos, G.O. Roberts and A.M. Stuart. Stochastics and Dynamics, vol. 8, no. 3, pp. 319–350, 2008. DOI:10.1142/S0219493708002378, preprint:pdf, more… Data Assimilation: Mathematical and Statistical Perspectives Written in collaboration with A. Apte, C.K.R.T. Jones and A.M. Stuart. International Journal for Numerical Methods in Fluids, vol. 56, no. 8, pp. 1033–1046, 2008. DOI:10.1002/fld.1698, preprint:pdf, more… 2007 Fast-Dm: a Free Programm for Efficient Diffusion Model Analysis Written in collaboration with A. Voss. Behavior Research Methods, vol. 39, no. 4, pp. 767–775, 2007. link, preprint:pdf, more… Analysis of SPDEs Arising in Path Sampling, Part II: The Nonlinear Case Written in collaboration with M. Hairer and A.M. Stuart. Annals of Applied Probability, vol. 17, no. 5, pp. 1657–1706, 2007. DOI:10.1214/07-AAP441, arXiv:math/0601092, more… Sampling The Posterior: An Approach to Non-Gaussian Data Assimilation Written in collaboration with A. Apte, M. Hairer and A.M. Stuart. Physica D: Nonlinear Phenomena, vol. 230, no. 1–2, pp. 50–64, 2007. DOI:10.1016/j.physd.2006.06.009, preprint:pdf, more… 2005 Analysis of SPDEs arising in Path Sampling, Part I: The Gaussian Case Written in collaboration with M. Hairer, A.M. Stuart and P. Wiberg. Communications in Mathematical Sciences, vol. 3, no. 4, pp. 587–603, 2005. link, arXiv:math/0601095, more… 2004 Interpreting the Parameters of the Diffusion Model: An Empirical Validation Written in collaboration with A. Voss and K. Rothermund. Memory & Cognition, vol. 32, no. 7, pp. 1206–1220, 2004. link, preprint:pdf, more… Some Large Deviation Results for Diffusion Processes PhD thesis, University of Kaiserslautern, Germany, 2004. link, preprint:pdf, more… Conditional Path Sampling of SDEs and the Langevin MCMC Method Written in collaboration with A.M. Stuart and P. Wiberg. Communications in Mathematical Sciences, vol. 2, no. 4, pp. 685–697, 2004. link, preprint:pdf, more… 2003 Übungsaufgaben zur Analysis Available for download from the author's homepage, 2003. preprint:pdf, more… 1997 Über die Asymptotik des Bayesrisikos bei Diffusionsprozessen Diplomarbeit, Universität Kaiserslautern, 1997. link, preprint:ps, more…"
+author = "Jochen Voss"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://seehuhn.de/publications"
+tags = ["2008.", "a.m.", "additional", "algorithm", "algorithms", "analyses:", "analysis", "antarctica", "approach", "approximate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["addons.mozilla.org", "antipope.org", "arxiv.org", "choosemypcc.org.uk", "code.google.com", "core77.com", "ctan.org", "discussions.apple.com", "eps.leeds.ac.uk", "intlpress.com", "m.seehuhn.de", "math.washington.edu", "pgp.mit.edu", "pgpi.org", "psychologie.uni-heidelberg.de", "python.org", "tcms.org.ge", "teaching.seehuhn.de", "the.earth.li", "usgo.org"]
+
+["https://seehuhn.de"]
+title = "Some Random Remarks"
+description = "Private homepage of Jochen Voss, including publications, computer programs, some photos and a blog."
+full_description = "I am a lecturer at the statistics department of the University of Leeds. The web pages here form my private homepage; there is also a separate work homepage. Copyright © 2017–2024 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://seehuhn.de"
+tags = ["random", "remarks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "eps.leeds.ac.uk", "leeds.ac.uk", "teaching.seehuhn.de"]
+
+["https://seehuhn.de/pages/juggling.html"]
+title = "Juggling and Unicycling"
+description = "Jochen's juggling activities."
+full_description = "My favourite juggling props are balls. But to some extent I can handle clubs as well, and I also own a unicycle. Copyright © 2011 Jochen Voss. All content on this website (including text, pictures, and any other original works), unless otherwise noted, is licensed under the CC BY-SA 4.0 license."
+author = "Jochen Voss"
+year_published = 2011
+year_updated = 2011
+clearnet = "https://seehuhn.de/pages/juggling.html"
+tags = ["juggling", "unicycling"]
+language = "en"
+internal-references = ["none"]
+external-references = ["amazon.co.uk", "amazon.com", "arxiv.org", "bio3d.pbworks.com", "choosemypcc.org.uk", "code.google.com", "commons.wikimedia.org", "core77.com", "de.wikipedia.org", "defra.gov.uk", "developer.mozilla.org", "discussions.apple.com", "dx.doi.org", "eps.leeds.ac.uk", "leeds.ac.uk", "lists.uni-kl.de", "m.seehuhn.de", "sunion.warwick.ac.uk", "teaching.seehuhn.de", "www-user.rhrk.uni-kl.de"]

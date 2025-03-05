@@ -1,0 +1,853 @@
+["https://wynnnetherland.com/reviews/alexander-hamilton"]
+title = "Alexander Hamilton"
+description = 'My review of "Alexander Hamilton" by Ron Chernow.'
+full_description = "A fascinating narrative of the life of Alexander Hamilton and the early republic. There's an odd comfort in knowing our political polarization and paranoia of foreign actors dates to the founding. Perhaps these times aren't as uncommon as we think."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/alexander-hamilton"
+tags = ["alexander", "hamilton", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/switch-context-with-less-friction-using-stateful-tmux-workspaces"]
+title = "Switch context with less friction using stateful tmux workspaces"
+description = "Multiple workspaces with tmux has changed the way I work."
+full_description = "As developers, we are well aware of the evils of context switching. Hopping between software projects often means making the mental transition between programming languages and business domains. But hop we must. Getting your tools to switch as fast as you do can be even harder. For this problem, tmux has changed the way I work. Think of tmux as a window manager for your terminal. Instead of terminal tabs, you can run multiple terminal sessions, stitched together into a single terminal window. Evan Travers recently wrote a great introduction to tmux sessions, windows, and panes, the building blocks of what I call tmux workspaces. I use the venerable Vim as my text editor, so each one of these tools is terminal-based. Since tmux is scriptable, I can unfurl instant workspaces for projects according to own my personal workspace preferences: Running mx from the project root, I build a workspace for working on this blog that includes windows for vim, a shell prompt, a console using racksh, and Foreman to start the server for local preview. The script will look for a tmux session based on the current folder name. If no such session is found, it creates one: If the folder has a .tmux file, it will run that script to create a custom layout for that project, otherwise it will create four stock windows. It will always create windows for my $EDITOR and a shell. For projects that have console and server scripts, as most of my projects do, the script will create windows for those as well. If a session already exists, the script will instead attach to the previous session, letting me pick up where I left off. tmux's scriptable command line interface lets me build workspaces quickly, but it's tmux's stateful sessions that make it truly remarkable. Knowing I can quickly reconstruct a workspace makes context switching cheap. Detaching from a workspace, letting it run in the background, makes context switching almost free. I can even jump between workspaces using tmux's built-in session chooser:"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/switch-context-with-less-friction-using-stateful-tmux-workspaces"
+tags = ["console", "context", "database", "development", "editor", "friction", "netherland", "remote", "repl", "scriptable"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/arlo-finch-in-the-valley-of-fire"]
+title = "Arlo Finch in the Valley of Fire (Arlo Finch, #1)"
+description = 'My review of "Arlo Finch in the Valley of Fire (Arlo Finch, #1)" by John August.'
+full_description = "A fun, fantasy-laden mountain adventure story for young readers that doesn't speak down to them. I picked up this book to read with my ten year old and couldn't put it down myself."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/arlo-finch-in-the-valley-of-fire"
+tags = ["arlo", "finch", "finch,", "fire", "netherland", "valley", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/looking-for-my-next-great-team"]
+title = "Looking for my next great team"
+description = "An outline for what I'm looking for in my next role."
+full_description = "Twenty years in, I'm still thankful to make a living doing what I love to do: developing software and building engineering teams. I enjoy the creative process, solving problems, and defining & refining the way we work to ship code to provide value. Due to some harsh startup realities, I'm unexpectedly looking for my next opportunity to join and grow a great engineering team. I'm T-shaped, a generalizing specialist, a Jack-of-all-trades, master of some. I'm driven by curiosity. You don't make it long in this line of work if you're not a lifelong learner. I don't like to work alone. I like being stretched by people with more experience and specialized knowledge as much as I love mentoring and sharing what I've learned. I've gained some experience in: I've worked as an individual contributor. I've led small teams, large teams, and teams of teams. Each role has its own unique set of benefits and challenges. Ideally, my next role would afford me opportunities for: If you're looking for proven technical leadership to help build your engineering team, let's connect."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/looking-for-my-next-great-team"
+tags = ["apis", "graphql", "great", "ideal", "leadership", "leadership.", "learn.", "looking", "netherland", "next"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/project-badges-ease-or-sleaze"]
+title = "Project badges: ease or sleaze?"
+description = "Team builder. API nerd."
+full_description = "Erik and Mislav have an interesting discussion going on a Faraday commit on the merits of those badges in GitHub repository READMEs. I use them in a few of my projects, but lack of consistent size and Retina support have me leaning towards removing them."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/project-badges-ease-or-sleaze"
+tags = ["badges:", "ease", "netherland", "project", "sleaze?", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hkarthik.me", "lists.w3.org", "mikeindustries.com", "netlify.com", "octopress.org", "orrka.com", "visionmedia.github.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/engineering-team-identity"]
+title = "Engineering team identity"
+description = "Both distributed and co-located teams can benefit from getting explicit about their role within the broader organization. Here are some practical things to  include in your team's intranet page or GitHub team repository README."
+full_description = "I recently shared some tips for helping teams define how its members work together. You could think of that as defining your internal interfaces. As your organization grows, it's also important to define your external interface, outlining how other teams and individuals in the org work with your team. Both distributed and co-located teams can benefit from getting explicit about their role within the broader organization. Here are some practical things to include in your team's intranet page or GitHub team repository README. Include a team roster with names and photos or avatars. Every team has its own unique identity, but try to put a human face on the work you do, especially in remote environments. In an industry of overloaded terms, avoid confusion and clearly state why your team exists, its raison d'etre. Call it your mission statement if you like, just keep the language aspirational yet grounded, something the entire team can buy into. Why it's important: Getting explicit about your team's purpose helps frame what you work on, and what you don't. Every organization has seams, gaps, and overlap. Building on your team's purpose, outline your team's areas of responsibility, enumerating the services and swaths of the code base your team maintains. If you share responsibility with other teams, get explicit about that, too. Why it's important: Discoverability accelerates work, especially in distributed organizations. Use your team page to outline your areas of responsibility and link to documentation that might answer someone's question and save your inbox. When you're seeking help, an unresponsive team can cause frustration and quickly erode trust. It's better to preemptively let others know what things fall out of your area of responsibility than constantly field @mentions for things you don't handle. Why it's important: Failing to get explicit about what your team does (and does not do) can lead to unmet expectations and mistrust from those outside your team, impacting your ability to deliver."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/engineering-team-identity"
+tags = ["advertise", "areas", "cause", "clearly", "don't", "engineering", "erode", "exists", "frustration", "goals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com", "wired.com"]
+
+["https://wynnnetherland.com/journal/on-keeping-up"]
+title = "On keeping up"
+description = "At 40, I've been building the web for roughly twenty years. Over that time, I've seen a pattern of enthusiasm, skepticism, cynicism, and growth emerge, sort of like my own personal Gartner cycle."
+full_description = '''In tech, every day brings a new language, a new framework, a new architecture that promises to deliver on the failed promises of the current stack. Our response to new technology shapes our work, our careers, and even ourselves. At 40, I've been building the web for roughly twenty years. Over that time, I've seen a pattern of enthusiasm, skepticism, cynicism, and growth emerge, sort of like my own personal Gartner cycle. Curiosity. Engineering requires a desire to learn how things work and discover new ways to solve problems. Curious developers will be drawn to new tools, wanting to test them out for themselves and pick up a new skill or technique. Excitement. There's a thrill in the "unboxing" of a new release and taking its features for a spin. You start to imagine the time saved on the next project and the code you won't have to write. If you're not careful this can lead to a form of software consumerism, thinking all solutions are available via a package manager or app store. Fear. The FOMO factor. If you're hired for your proficiency in a language or framework, you may think the way to stay in demand is discovering and learning the next trend. Maybe you're more motivated by belonging to a community (or wanting influence within a community.) You fear getting left out or left behind. Novelty is an illusion. Hang around long enough and you'll observe not just the pace of change, but its waves and its rhythms. Take a look around. While your blue jeans morphed from straight leg to tapered to bootcut or back, your code went from thin client to rich client to isomorphic. Your JavaScript was extracted from your markup, only to have your markup infused in your JavaScript. Wait a little longer and it will all come full circle. So at some point, you stop trying to follow the trends. You develop your own tastes, pick your favorite tools, and get to work. You receive new tech with an informed skepticism. There will always be something new, and if it's indeed good, there will be time to learn it down the road. That "new framework smell" fades fast. True satisfaction comes from taking what you know and applying it to the problems in front of you. Instead of jumping on the next bandwagon, you're happy to wave at this one as it rolls on by.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/on-keeping-up"
+tags = ["attention", "cultivate", "curiosity.", "curmudgeonry.", "cynicism", "enthusiasm", "excitement.", "fear.", "feeling", "goals."]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/arlo-finch-in-the-kingdom-of-shadows"]
+title = "Arlo Finch in the Kingdom of Shadows"
+description = 'My review of "Arlo Finch in the Kingdom of Shadows" by John August.'
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/arlo-finch-in-the-kingdom-of-shadows"
+tags = ["arlo", "finch", "kingdom", "netherland", "shadows", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/i-love-the-smell-of-facepalm-in-the-morning"]
+title = "I love the smell of facepalm in the morning"
+description = "In which I share some of my workday hacks."
+full_description = '''Most of us have a time of day when we're in the groove. If you believe the stereotype, developers work best late at night, fuelled by caffeine in the soft glow of a computer screen. Not me. I'm a morning person. I'm often up at 5AM and in full stride by 7:30. I think best before noon, as usually evidenced by last night's work. Early in my career, I would double down on frustrating bugs. Late nights would stretch into the wee hours of the morning. In time, I learned that stepping away from code can be just as productive as stepping through code. Solutions often seem "obvious" when you return to them after a break. For me, that's usually the next morning. Create before consuming. Following a tip from Jason Rudolph, I've started setting aside time each morning for creative work. Starting the morning with some writing or other thought-intensive work has yielded better results and put me in a better frame of mind to jump into the tasks of the day. Batch email, issue triage, and mundane tasks during non-peak hours. Tim Ferris helped make "batching" popular years ago. I try to tackle the bulk of my batch processing in the afternoons and reserve my mornings for tasks that require more focus. End the day with a failing test. Perhaps the biggest thing I've learned to do is set myself up for the next morning. A failing test can verify a bug or describe how a new feature should behave. I don't have to have the implementation or the impact to the rest of the codebase figured out before I walk away. I can tackle those bigger questions the next day, when I'm fresh.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/i-love-the-smell-of-facepalm-in-the-morning"
+tags = ["batch", "before", "consuming.", "create", "during", "email,", "facepalm", "failing", "hours.", "issue"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick"]
+title = "Octopress Classic is the new Kubrick"
+description = "Covering the bleeding edge lands me on many a geek blog. I've noticed a trend in the last year or so - an increasing number of stock Octopress blogs."
+full_description = "Covering the bleeding edge lands me on many a geek blog. I've noticed a trend in the last year or so - an increasing number of stock Octopress blogs. Octopress from Brandon Mathis is a geek's dream blogging system. Building on Jekyll, Brandon bundles a responsive layout, syntax highlighting, Disqus comments, and a long list of other plugins in a delicious static-based (yet Heroku friendly) package. It's no wonder that Octopress has become popular. I can't help but draw a parallel with the rise of WordPress in the mid 2000s. As its ease of use drew in new bloggers, it quickly became easy to spot a WordPress blog. Link rolls, archive calendar controls, default sidebar items, and popular plugins could be found on almost any new blog you read (including mine at the time). Most even didn't even bother to customize Kubrick, the default theme created by Michael Heilemann. The web soon exploded with websites with blue block headers. I mean the title of this post as a compliment to Brandon and the success of Octopress. I just wince when I see the geek web turning slate gray. Content is your voice, but design is your on-stage presentation. Make no mistake, content is still king, but if your blog looks like all the other blogs in your niche, you've got to work harder to get your voice heard. If you haven't customized your blog, when a reader is dropped onto your blog from Twitter or Reddit or wherever, you're missing an opportunity to identify yourself with the great post that brought them there. So the real question is why wouldn't you customize the look of your blog? If you're rocking Octopress, Brandon has step-by-step guides for customizing both templates and the Sass-based styles. With even small color tweaks, you can add your own personal attitude, as Karthik and Scott have done. Add a custom header and you can take it even farther, as the Octopress web site does. While you can take Octopress customization a long way, I use NestaCMS on this site because I find it less opinionated than Jekyll. Nesta also gives me the option to have dynamic content, with the same git-based publishing workflow Jekyll offers."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/octopress-classic-is-the-new-kubrick"
+tags = ["blog?", "classic", "customize", "kubrick", "netherland", "octopress", "personal", "sandbox", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hkarthik.me", "mikeindustries.com", "netlify.com", "octopress.org", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/shipping-and-the-art-of-getting-thing-done"]
+title = "Shipping and the art of Getting *Thing* Done"
+description = "Bigger blocks of focused time results in more ships."
+full_description = "My career began in a cube farm over fifteen years ago. It seemed everyone at that time had a Franklin Planner and could enumerate their big rocks for the week on commmand. These were those high priority tasks that just had to get done. The analogy held that if you were filling a jar, you'd put the big rocks in before the smaller pebbles and sand. Some years later, as Getting Things Done reached near cult status, we sought not only to prioritize tasks, but squeeze out every bit of productivity from the rest of our schedules by assigning a @context to all the pebbles and sand. The thinking was, if you've got just five minutes before the next status meeting, you check your pre-categorized task list to see what phone call, email, or airline reservation you could get done. When applied within the constraints of typical corporate culture, both of these philosophies aim to bring efficiency to a system under internal pressure from excess meetings and a fixed workday. It's well known that at GitHub we have few meetings. Tom and others have written about how meetings kill productivity. I saw one of the best analogies for this just last week on Twitter: While much has been written about the death of productivity in a meeting, we often overlook what pressures fixed blocks of time put on the rest of our schedules. It's not really even about meetings as much as it is about all fixed blocks of time. Meetings and appointments definitely qualify, but so do fixed workday boundaries. I'm a morning person and will often start my workday way earlier than my teammates. Some Hubbers are night owls and their workday doesn't really get going until I'm headed to bed. A flexible work schedule means each person can maximize their schedule for long uninterrupted blocks of time. As my schedule fills up, what happens before each block of scheduled time? No matter how good I get at multi-tasking, that important thing gets pushed out because I don't have time to fully context shift and work on it effectively in the time available. The more fixed items I have on my sechedule, the harder it is to jump into a large task."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/shipping-and-the-art-of-getting-thing-done"
+tags = ["context", "created", "defrag", "don't", "done.", "effectively", "equal.", "everyone", "flex", "focus"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/thanks-jim"]
+title = "Thanks, Jim"
+description = "Jim, it was fitting that I heard of your passing at a Ruby conference."
+full_description = "Jim, it was fitting that I heard of your passing at a Ruby conference — a conference you keynoted just last year. Over breakfast, we sat and shared stories. Sure, we mentioned some things you made, but the lion's share of the conversation was about the man you are. Your humility. Your passion for teaching. Your willingness to help the most noob among us. Every time I run rake I'll think of you and reflect on the impact you had on the Ruby community. You are already missed."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/thanks-jim"
+tags = ["netherland", "thanks,", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/contextual-todo-list-counts-in-your-zsh-prompt"]
+title = "Contextual TODO list counts in your zsh prompt"
+description = "Team builder. API nerd."
+full_description = "One of the nuggets I picked up from Zach Holman's dotfiles was putting a count of my todo.txt items in my right side zsh prompt. That little number now nags me any time I use my terminal. Then I had the idea of displaying contextual counts for all those TODO, FIXME, and HACK notes we often use in our projects. With some help from Jesse, my dream has come true: Now, if I'm in a project with any of those custom notes, the counts appear in my right side prompt in addition to my regular personal todo.txt tally. Check the function in my dotfiles repo if you're interested or have ideas on how to improve it."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/contextual-todo-list-counts-in-your-zsh-prompt"
+tags = ["contextual", "counts", "list", "netherland", "prompt", "todo", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "assets.thoughtworks.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "goodreads.com", "google.github.io", "itunes.apple.com", "jessedearing.com", "lg.gd", "netlify.com", "thechangelog.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/speed-up-your-api-development-sniff-your-network-calls-on-osx-with-http-scoop"]
+title = "Speed up your API development, sniff your network calls on OSX with HTTPScoop"
+description = "I love HTTPScoop, a great little app to sniff your HTTP requests."
+full_description = "HTTPScoop from Tuffcode is a neat way to see what network calls are going on from all the applications in OS X. It's perfect for debugging API calls or creating fixtures for API wrapper tests."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/speed-up-your-api-development-sniff-your-network-calls-on-osx-with-http-scoop"
+tags = ["calls", "development,", "netherland", "network", "sniff", "speed", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/hello-in-vision"]
+title = "Hello InVision"
+description = "I'm excited to be joining InVision as a Principal Engineer working on Studio."
+full_description = "The response to my previous post was amazing. Within a week, I had met with people from a half dozen companies trying to find the best fit. By the end of the next week, I had a great offer in hand with a company where I felt I could make a real impact. Then I met Nick one Wednesday for lunch. Over tacos, we reflected on how the development landscape had changed in the twenty years since we'd started, especially on the frontend. Though still rapidly evolving, the rise of design systems and component frameworks makes it feel like we're closing in on the reality of a shared process between designers and developers. Nick works at InVision, a company who has been enabling designers and developers to collaborate better for years. Nick asked if I'd be interested in exploring a role there. I told him that I definitely would, but I already had an offer in hand, and I didn't want to string that company along indefinitely. I was hoping to give them an answer by the end of the week. He said he understood and would talk to his boss and see what they could do. The next 48 hours were a blur. Thursday, I met with Kirby, Nick's manager, and we had an engaging conversation about the product, the tech stack, and scaling engineering teams. That evening I got a call from Clay, an InVision recruiter, asking my availability for interviews the next day. I cleared my calendar, and he scheduled five back-to-back interviews via video calls on Friday. I've run the interview gauntlet many times, but never have I had a series of effortless conversations as these. By 3pm that day, I had received an offer to join InVision as a Principal Engineer working on Studio. I was thrilled to accept."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/hello-in-vision"
+tags = ["hello", "invision", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/enhance-your-site-search-with-open-search"]
+title = "Enhance your site search with OpenSearch"
+description = "If your web site provides its own search function, set up to let your users search from the browser search box."
+full_description = "If your web site provides its own search function, set up OpenSearch to let your users search from the browser search box. With two simple steps you can let users hit your site's search page without forcing them to visit first."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/enhance-your-site-search-with-open-search"
+tags = ["enhance", "netherland", "opensearch", "search", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "chriseppstein.github.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "netlify.com", "oreilly.com", "thoughtworks.com", "w3.org", "wired.com", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/a-stylesheet-authors-guide-to-terminal-colors"]
+title = "A stylesheet author's guide to terminal colors"
+description = "tldr; Use grc to add stylesheets and personal color settings for your favorite terminal apps."
+full_description = '''Like Merlin in The Once and Future King I feel as if I'm getting younger as I advance in my development career. When I started writing ASP Classic™ in the late 90s I was captive to the GUI. The DOS prompt held no real power and .ini files were something you fiddled with when a driver was misbehaving. Sophisticated developers of sophisticated applications, I was told, used property pages to configure their apps. These little tab-laden modal dialogs were never more than a right click away from anywhere it seemed. When I left .NET and Windows development for Ruby on Rails in 2006, I was thrust into a *nix world where the terminal is not only embraced but celebrated. In the past few years, I've come to love text mode. Last year, after a Changelog episode on Vim, I made the switch full time to the venerated terminal editor. In the last month, I made the switch to Solarized (dark) as my system-wide color scheme and am loving it. With a pleasing palette in place, I now try to make effective use of it across my entire toolchain. Before looking at how to colorize your terminal apps, let's remind ourselves why terminal colors can be useful. Good syntax highlighting employs both of these principles. Type names, string values, and delimiters are given different weight or color treatment from the rest of the code. As with any good thing, moderation is the key to colorizing. Call out what's important, aim for readability. Color has its uses beyond the text editor. Many popular development frameworks ship with some degree of color support. The Rails log, for instance, supports ANSI color codes out of the box thanks to the config.colorize_logging option. Foreman also provides great color support: Both of these apps provide color support via inline ANSI color codes. If you're familiar with CSS, you might think of these as inline styles of sorts. Let's look at how Rails does it using ActiveSupport::LogSubscriber: First, a palette of color constants maps to an ANSI sequence to render that color. It's important to note here that these named color constants aren't the same as named colors in CSS. For instance red in CSS is always #ff000, but in the terminal, RED or \e[31m, is determined by the user's terminal color scheme. Solarized provides a great mapping table between terminal color names and various color spaces.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/a-stylesheet-authors-guide-to-terminal-colors"
+tags = ["author's", "color", "colorize", "colors", "contrast.", "guide", "important", "meaning.", "netherland", "prompt"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "lg.gd", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/local-exclusions-in-git"]
+title = "Local exclusions in Git"
+description = "A small utility to wrangle local exclusions in Git."
+full_description = "Suppose you have files you want to keep in your local folder without adding them to the Git index. Normally you'd add a rule to the project's .gitignore. If you want to avoid adding per-user cruft (and a Git commit) you can add exclusion rules to your global excludes file. This is a handy approach to ignore any per-project editor config and tmp files across all of your Git projects, but it's not a great fit for the one-off file in a single project. Git provides another way to keep files out of the index via rules in .git/info/exclude. These rules are only applied locally and not shared with other clones. I've run into enough scenarios to find this approach useful, but not often enough to remember the details, so I added the subcommand Git forgot, saving me several trips to Stack Overflow. This little script accepts a pattern, creates the exclude file if necessary, and saves the pattern to the file:"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/local-exclusions-in-git"
+tags = ["custom", "exclude", "exclusions", "local", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/on-vendor-prefixes"]
+title = "On vendor prefixes"
+description = "Vendor prefixes are a pain, but we have them for a reason. Use Sass and stay happy."
+full_description = '''There has been much written lately on vendor prefixes. While some have called for abolition altogether, ironically enough the CSSWG itself is mulling over making -webkit part of the spec. It's enough to make you wonder if the web punditry ever build anything with the languages and tools they help shape. Vendor prefixes are a way for browsers to support features before the spec for a feature is finalized. Early on, implementations of border-radius and gradient rules differed between Firefox and WebKit browsers because the standards had not been established. Without the -webkit and -moz vendor prefixes, it would be impossible for developers to use these features because a single syntax would cause breakage in the other browsers. Adoption would have been much slower without the freedom vendor prefixes provide. Thus, they are a necessary evil. That the CSSWG is even considering supporting -webkit for non WebKit browsers is beyond me. Remy Sharp says it well: This is pandora's box, no matter how you look at it. Once you add a single -webkit vendor prefix the expectation of the developer changes. If you can use a -webkit prefix in Firefox for gradients (for transforms), why can't I use it for other things like CSS masks. And then other things. If developers are lazy today, by adding -webkit prefixes to other browsers it'll allow us to be even lazier, and by adding -webkit to the spec, the CSS working group will have set the presidence that we can, as developers, put any prefixes property in the other browsers. If you're going to put -webkit on everything, then the browser wars are over and we're not much better off than the days of style="FILTER:progid:DXImageTransform.Microsoft.MotionBlur (strength=9, direction=90)". The recent actions of the CSSWG aside, I normally don't worry about vendor prefixes too much. I let my tools handle them for me. The Compass CSS3 module has long made dealing with prefix soup a snap. I can choose to support as many or as few browsers as I want just by setting some configuration variables in my stylesheet.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/on-vendor-prefixes"
+tags = ["better", "deal", "engine", "netherland", "prefixes", "rendering", "tooling", "unique", "vendor", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hkarthik.me", "lists.w3.org", "mikeindustries.com", "netlify.com", "octopress.org", "orrka.com", "visionmedia.github.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/oops-cant-find-a-feed"]
+title = "Oops, can't find a feed"
+description = "Team builder. API nerd."
+full_description = "Call me old school, but I still use RSS. Sure, I use Twitter and other social media to get my news, too, but I still like to geek out in my newsreader and track my favorite sites and authors. It's part of my funnel for this site and The Changelog. Despite what you've heard, the death knell of RSS was a bit premature). You must believe in RSS, too, because many of you have some fantastic sites and you put the Subscribe or RSS button really large right there in the sidebar. This means that you hope someone will take the time to actually subscribe, right? Do a favor for eager would be subscribers (like me) and link to your syndication feed in the <head> of your website: With just a little effort browsers (and their human users) will pick up on your feed and reduce the subscription process to a single click."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/oops-cant-find-a-feed"
+tags = ["can't", "feed", "find", "netherland", "oops,", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hkarthik.me", "lists.w3.org", "mikeindustries.com", "netlify.com", "octopress.org", "orrka.com", "visionmedia.github.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/how-we-work"]
+title = "How we work"
+description = '''Has your team written down its process? There's incredible value in having a document that outlines "How we work."'''
+full_description = "If I learned anything from multiple seasons of self-employment it's this: working on the business is just as important as working in the business. For the self-employed, consultants particularly, there's a tension between serving your current clients — the in the business part — and improving how you line up new work, pay the bills, hire, and the rest of the on the business part. Software engineers like working in the business. We like to solve problems, especially technical problems. We like this kind of work because the problems are often curated for us. By the time they land in the backlog, problems are fairly well-defined and require technical skill to solve. But like any human endeavor, the business itself faces its own challenges, some technical, some social. I believe any organization's ability to deliver great software comes down not to individual talent but how well its smallest teams work together. This doesn't happen accidentally. It takes intentional effort and leaving space in the schedule for each member to work on the team while they work in the team. Highly functioning teams have a shared understanding of how the team works, and each member knows their role. Here are some practical ways to develop that shared understanding. Write it down. For many teams, their process is oral tradition, a mental mosaic comprised of each member's perception of how the team works, colored by their role and tenure in the organization. If you want a shared understanding of your process across the team, you need to write it down. Keep it lightweight. The goal of any team process is to achieve the goals of the team. In software engineering, that often means shipping quality software at the most sustainable velocity. Seek the fewest number of guardrails to keep everyone on the happy path. Define process as expression of values. Nobody likes process for process sake. People, especially new team members, are much more prone to accept a step in the process once they understand the intent behind it. Consider writing your process as a series of value statements: because we value x, we do y. Doing so not only embeds the why alongside the how, it reminds everyone that decisions are often tradeoffs between competing values, not simply choosing to value something or not."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/how-we-work"
+tags = ["ability", "accountable.", "believe", "buy-in", "comes", "define", "deliver", "down", "down.", "encourage,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/engineering-onboarding"]
+title = "Engineering onboarding"
+description = "Even with the best HR department, successful onboarding requires effort from the whole team. Here are some practical ways you and your team can onboard engineers with greater speed and success."
+full_description = '''As an engineering team leader, your role in the hiring process doesn't end with an accepted offer. New hires need to be onboarded as productive members of the team. Even with the best HR department, successful onboarding requires effort from the whole team. Here are some practical ways you and your team can onboard engineers with greater speed and success. The time to start preparing for a new team member is long before they join, sometimes before you have an actual name to plug into the org chart. Put some thought into what a new person needs to know and the people they need to meet in that first couple weeks, and start making a list of TODOs. New folks benefit greatly from having a buddy throughout the process, and that is likely not their manager. There are exceptions — brand new or very small teams may have no choice — but in general, managers don't have the availability or the hands-on perspective new hires need. Where you can, assign a peer to be an onboarding buddy for new people. Treat an onboarding event like any other chore you'd track in your project issue tracker. Create a list of everything that needs to happen, who needs to complete the item, and share it with your new hire and their buddy. Task lists in GitHub issues are perfect for this. Provide context for each item on the list and link to any outside resources the new team member will need to complete each task. Be clear about which items are more time sensitive and try to give a rough time frame to have each item completed (Today, This week, Next week, etc.) Hopefully if you've put in the work to find and interview technical people, you've got a backlog waiting on them. That may sound obvious, but I've joined teams where my first assignment was to "sit tight" — once for weeks. Before a new team member reports for duty, compose a list of items that would help them contribute quickly. Most teams identify more work than they can possibly complete. As part of your ongoing triage process, make a note of lower priority issues that require little or no background context to complete. Tagging those items with a Good first issue label provides a backlog for new team members to get started quickly.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/engineering-onboarding"
+tags = ["advocate", "arrive", "assign", "before", "better", "buddy", "buddy.", "checklist", "contribution", "create"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com", "wired.com"]
+
+["https://wynnnetherland.com/reviews"]
+title = "Recently read"
+description = "Notes from notable recent reading."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews"
+tags = ["book", "netherland", "reviews", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/sitemap"]
+title = "Sitemap"
+description = "Team builder. API nerd."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/sitemap"
+tags = ["journal", "linked", "netherland", "reviews", "sitemap", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/into-the-wild"]
+title = "Into the Wild"
+description = 'My review of "Into the Wild" by Jon Krakauer.'
+full_description = "Because this book has been frequently mentioned in books I've read on writing compelling non-fiction narrative, it had been on my reading list for some time. With Fairbanks 142 back in the news recently, I decided to give it a read. A well-written biography explores the complexities and contradictions of its subject, and this one does just that. With each passing chapter I found myself changing my opinion of Chris McCandless and his journey into the wild. While the author's non-linear storytelling, handful of historical digressions, and first hand perspective of Alaska might at first seem like a stunt to stretch a magazine article into a full length book, in the end the reader is left with a clearer perspective of Chris's short life. With just as much philosophy and literature as frozen landscapes and wild animals, it's an entertaining read."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/into-the-wild"
+tags = ["netherland", "wild", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/archives"]
+title = "The Archives"
+description = "All posts and reviews."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/archives"
+tags = ["archives", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["24ways.org", "37signals.com", "alexyoung.org", "benheine.com", "bigrubyconf.com", "blog.peepcode.com", "blog.sanctum.geek.nz", "blog.steveklabnik.com", "blogs.wsj.com", "carbonfive.github.io", "chadfowler.com", "chrisbowler.com", "chriseppstein.github.com", "commandcenter.blogspot.com", "facebook.com", "github.com", "goodreads.com", "netlify.com", "thoughtworks.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/arlo-finch-in-the-lake-of-the-moon-arlo-finch-2"]
+title = "Arlo Finch in the Lake of the Moon (Arlo Finch, #2)"
+description = 'My review of "Arlo Finch in the Lake of the Moon (Arlo Finch, #2)" by John August.'
+full_description = "Arlo Finch goes to camp for more supernatural outdoor adventure . Looking forward to the third book in the series."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/arlo-finch-in-the-lake-of-the-moon-arlo-finch-2"
+tags = ["arlo", "finch", "finch,", "lake", "moon", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/dead-wake"]
+title = "Dead Wake: The Last Crossing of the Lusitania"
+description = 'My review of "Dead Wake: The Last Crossing of the Lusitania" by Erik Larson.'
+full_description = "Larson shatters the perception that the Lusitania was a mere footnote to America's entry to WWI. If Titanic was the story of hubris vs. floating ice, this tale of disaster at sea is one of cold-blooded, state-sponsored murder. Though the sinking would eventually tip the balance of power in the worldwide conflagration and reshape history, Dead Wake is ultimately the telling of scores of interconnected human stories of luck, misfortune, life, death, and survival."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/dead-wake"
+tags = ["crossing", "dead", "last", "lusitania", "netherland", "wake:", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/confessions-of-a-food-catholic"]
+title = "Confessions of a Food Catholic"
+description = 'My review of "Confessions of a Food Catholic" by Douglas Wilson.'
+full_description = '''Funny and entertaining, chock-full of reason and pith in the punchy style you'd expect from Wilson. He goes after our modern day attitudes about food that become barriers to fellowship and enjoyment of God's good gifts, showing how "many of us have turned it into a recurring opportunity for fear, shame, and guilt."'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/confessions-of-a-food-catholic"
+tags = ["catholic", "confessions", "food", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/astoria"]
+title = "Astoria: John Jacob Astor and Thomas Jefferson's Lost Pacific Empire: A Story of Wealth, Ambition, and Survival"
+description = '''My review of "Astoria: John Jacob Astor and Thomas Jefferson's Lost Pacific Empire: A Story of Wealth, Ambition, and Survival" by Peter     Stark.'''
+full_description = "I had never heard of Astor's land and sea expeditions to the Northwest, perhaps because the second war with Great Britain dominates U.S. history of that period. This book is an entertaining page turner, as rough in parts as the wilderness landscapes in which it's set. There's more than enough adventure, characters, and conflict for at least a couple of seasons, should Netflix come calling."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/astoria"
+tags = ["ambition,", "astor", "astoria:", "empire:", "jacob", "jefferson's", "john", "lost", "netherland", "pacific"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/git-hub-is-a-fish-bowl"]
+title = "GitHub is a fish bowl"
+description = "Team builder. API nerd."
+full_description = '''When you create a public repository on GitHub, the whole world can watch you work. As developers, we feel the need to say "But wait, it's not done yet!" @pengwynn thanks for the mention, positive response so, far…I was planning do an announcement once it gets a little polish But that's the whole point of social coding isn't it? In addition to just sharing code, aren't we supposed seek out those developers more skilled than we are and learn a thing or two? After all, if we were only interested in deconstructing finished products, there would be no Food Network. The same goes with software. Watching a project come together is a chance to peek into how software is built. I started watching Rick's Faraday project when it only was a few commits old (before it was even called Faraday if I recall correctly). Rick's approach to REST wrappers seemed intriguing and he graciously fielded my questions as I started using it in a few pet projects. I liked it so much I began spreading the word at conferences and meetups, and out of that came Faraday Middleware. Faraday is now appearing in all sorts of Ruby projects and enjoys a growing network. Mislav is doing a great job moving the project forward. Speaking for myself, it's doubtful if I would have been involved at all had I not caught Rick working one weekend in the fish bowl.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/git-hub-is-a-fish-bowl"
+tags = ["bowl", "fish", "github", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "mitchellh.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/reviews/echo-island"]
+title = "Echo Island"
+description = 'My review of "Echo Island" by Jared C. Wilson.'
+full_description = "Slow and a bit awkward to get started, but a veritable page-turner by the halfway point. Even though written for a Young Adult audience, it provoked me to think about my own story within the greater story."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/echo-island"
+tags = ["echo", "island", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/countdown-to-zero-day"]
+title = "Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon"
+description = '''My review of "Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon" by Kim Zetter.'''
+full_description = "An eye-opening look at the vulnerabilities inherent in a connected world, this book tells the story of the first large scale cyberweapon (that we know of) through the eyes of those that discovered it. It's a sober reminder for those of us who write software for a living that what we create can also be co-opted for destructive purposes. It's also a call to contemplate the implications of our software-controlled economy and how it is changing the landscape of warfare."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/countdown-to-zero-day"
+tags = ["countdown", "day:", "digital", "launch", "netherland", "stuxnet", "weapon", "world's", "wynn", "zero"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/linked/my-year-in-books"]
+title = "My Year in Books"
+description = "Team builder. API nerd."
+full_description = "This year I racked up just over ten thousand pages across twenty-five books. Here are a few of my favorites. Biography and military history continued to top my reading list for another year. At the top of both these categories was Grant, Ron Chernow's thousand page biography of the Civil War general and 18th U.S. President. As I mentioned in my review, it may be my favorite Chernow book so far. Seldom does such great storytelling meet such an epic story as in this book. In clear, descriptive language with military detail approaching any Clancy novel, the authors tell the story of Indy, her crew, their successful secret mission to deliver the world's first nuclear weapon, their loss at sea, and the pursuit of justice for their captain. From sea to courtroom, it's an entertaining blend of action, adventure, courage, perseverance, love, heartbreak, loss, and redemption."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/linked/my-year-in-books"
+tags = ["books", "grant", "indianapolis", "netherland", "reading", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com"]
+title = "Wynn Netherland"
+description = "Team builder. API nerd."
+full_description = "This year I racked up just over ten thousand pages across twenty-five books. Here are a few of my favorites. Biography and military history continued to top my reading list for another year. At the top of both these categories was Grant, Ron Chernow's thousand page biography of the Civil War general and 18th U.S. President. As I mentioned in my review, it may be my favorite Chernow book so far. Seldom does such great storytelling meet such an epic story as in this book. In clear, descriptive language with military detail approaching any Clancy novel, the authors tell the story of Indy, her crew, their successful secret mission to deliver the world's first nuclear weapon, their loss at sea, and the pursuit of justice for their captain. From sea to courtroom, it's an entertaining blend of action, adventure, courage, perseverance, love, heartbreak, loss, and redemption. ThoughtWorks has released their latest technology radar (PDF), a semi-annual analysis of the industry landscape from their vantage point as software consultants. I've enjoyed reading past issues as a way to mindfully keep up with trends and discover new tools. With topics broken down into techniques, tools, platforms, and languages & frameworks, past reports have helped clarify my thinking and given me a concrete way to talk about patterns and techniques already in use. I'm also a little puzzled how GraphQL fell off the radar without landing in the Adopt category. Maybe because it's already arrived. Both distributed and co-located teams can benefit from getting explicit about their role within the broader organization. Here are some practical things to include in your team's intranet page or GitHub team repository README. Even with the best HR department, successful onboarding requires effort from the whole team. Here are some practical ways you and your team can onboard engineers with greater speed and success. Inconsistency is a tax. We often struggle so hard to handle inconsistency in the problem domain, we never notice the cost of inconsistency in our code."
+year_published = 2025
+clearnet = "https://wynnnetherland.com"
+tags = ["american", "bird", "bird:", "blitz", "bolivar:", "books", "call", "churchill,", "command", "consistency"]
+language = "en"
+internal-references = ["none"]
+external-references = ["assets.thoughtworks.com", "github.com", "goodreads.com", "netlify.com", "thoughtworks.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/grant"]
+title = "Grant"
+description = 'My review of "Grant" by Ron Chernow.'
+full_description = "Perhaps my favorite Chernow book to date, which is saying a lot. I'm not sure if it's because I learned much about Grant (growing up in the South, I knew little of his life before Vicksburg and after Appomattox, even though he served two terms as President) or because I found him relatable. Loyal to a fault, a little too eager to trust, he was a man ill-equipped for ordinary life yet seemed to thrive in a crisis. As always, Chernow employs a full cast. The focus is on Grant, but by the end I felt invested in Washburne, Rawlins, Sherman, and even the hard-to-like members of his family."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/grant"
+tags = ["grant", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/dont-tell-me-how-fast-i-read"]
+title = "Don't tell me how fast I read"
+description = "Team builder. API nerd."
+full_description = '''I'm not sure who originated the practice, but when I see "5 min read" or "10 min read" on Medium and elsewhere, my first reaction is how do you know? While I think Medium's huge photo headers and "Next in" footer-based navigation greatly enhance the presentation of long form essays online, I think estimated reading times are a feature that need to go the way of social sharing buttons, blog rolls, and tag clouds. Reading estimates appear to be a more approachable way to indicate article length based on word count and the reading speed of the average reader. After all, "5 min read" seems clearer than "1,350 words", doesn't it? I've written a fair amount and word counts still mean nothing to me. But neither do estimated reading times. My decision to read a piece has never once been informed by how long the site suggests it would take me to read it. If it looks interesting, I'll start reading. If I run out of time, I'll save it for later. The web already has built-in indicator of content size -- the scrollbar. Since reading estimates simply divide the total words by the speed of an average reader, there's an implied assumption that I'm going to read the entire piece and not follow hyperlinks to other content. I would hate to see actual reading times for Wikipedia articles. There's an even bigger, more personal reason I don't like reading estimates. I don't read as fast as I would like. I blame farsightedness, astigmatism, a wandering mind, and a strong desire to read for comprehension. Sure, how I feel about my own reading ability is my problem, but I'd bet I'm not the only one who feels this way.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/dont-tell-me-how-fast-i-read"
+tags = ["assume", "don't", "estimated", "fast", "insulting", "irrelevant", "know?", "linear", "neither", "netherland"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "amazon.com", "assets.thoughtworks.com", "bigrubyconf.com", "blogs.wsj.com", "chriseppstein.github.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "netlify.com", "oreilly.com", "thoughtworks.com", "w3.org", "wired.com"]
+
+["https://wynnnetherland.com/journal/ask-me-about"]
+title = "Ask me about..."
+description = "What excites you so much, you can't help but share it with anyone who will listen?"
+full_description = "I spoke at a design conference once that had a little different take on lanyards. I'm not sure if they were designed to save the staff time and money or to serve as social prompts for introverts during the breaks. Perhaps both. Instead of the usual attendee and speaker credentials, they gave everyone a blank version made of dry-erase material with two pre-printed headings: Name and Ask me about. When my daughter found mine laying on my desk, she wiped it clean and made it her own: She has always been quick with a funny furry or feathered factoid, so she didn't even hesitate to think about it. Sharing her love for animals seemed as natural as sharing her name. How about you? What excites you so much you can't not talk about it? We each wear a virtual lanyard like this around with us, but instead of writing in dry-erase marker, we reveal our passions in conversation. We all have topics that energize us, as if we held some positive (or negative) charge. What language, tool, framework, technique, or other topic animates you? What brings you so much joy (or pain) that you can't help telling others?"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/ask-me-about"
+tags = ["about...", "animals", "animates", "framework,", "language,", "netherland", "reagan", "technique,", "tool,", "topic"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "goodreads.com", "google.github.io", "itunes.apple.com", "lg.gd", "netlify.com", "thechangelog.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/font-face-made-easy-with-font-squirrel"]
+title = "@font-face made easy with Font Squirrel"
+description = "Font Squirrel is a great resource to find free fonts to use with @font-face."
+full_description = "When designing the new Orrka site, I wanted more punch in my typography. Let's face it, web typography is boring. It's 2009 and as and industry I think we web designers have gotten our money's worth out of Helvetica and its ilk. Sure, alternatives abound such as sIFR, Cufón, and good old image replacement, but what we really want is simple, standards-based, and legal typography choices. We want every machine on the Internet to have every font from MyFonts installed so we could just use font-family and call it a day. Well maybe that's extreme. We want every machine on the Internet to have the fonts we want to use installed. Font Squirrel is like many font sites you already use — except these fonts are 100% free for commercial use and many have licenses that allow embedding on the web. To use a font downloaded from Font Squirrel, copy the font files to location on your server. Next, add bulletproof @font-face syntax to your stylesheet:"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/font-face-made-easy-with-font-squirrel"
+tags = ["@font-face", "choices", "easy", "expand", "font", "looking", "made", "netherland", "rescue", "squirrel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "mitchellh.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/reviews/longitude-the-true-story-of-a-lone-genius-who-solved-the-greatest-scientific-problem-of-his-time"]
+title = "Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time"
+description = 'My review of "Longitude: The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time" by Dava Sobel.'
+full_description = "Today we don't consider longitude a problem. Unless you make your living on the sea, chances are it's just another number, half of the answer to where am I? after we drive off the beaten path. This book is the fascinating account of the struggle to find a method for calculating longitude at sea and the bounty paid by the British government to anyone who could do so. With a blend of timekeeping nerdery, scientific theory, ocean exploration, and human conflict, it's an entertaining read."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/longitude-the-true-story-of-a-lone-genius-who-solved-the-greatest-scientific-problem-of-his-time"
+tags = ["genius", "greatest", "lone", "longitude:", "netherland", "problem", "scientific", "solved", "story", "true"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/the-call-of-the-wild"]
+title = "The Call of the Wild"
+description = 'My review of "The Call of the Wild" by Jack London.'
+full_description = "I started this one after having read Into the Wild, another book set in the Alaskan wilderness. I can see why the subject of that book liked it so much."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/the-call-of-the-wild"
+tags = ["call", "netherland", "wild", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/css-mixins-vs-multiple-classes"]
+title = "CSS Mixins vs. multiple classes"
+description = "A growing number of CSS meta-frameworks provide support for mixins. While CSS mixins provide a number of benefits, for me, they come with trade-offs."
+full_description = '''Pretty basic so far. But what happens when the styles become a bit more complex? Take the following example: Using selector groups in this case leads to less maintainable code in that you have to keep updating the permutations of selector groups. A common solution is to factor common properties into classes: The idea is that we group common styles into reusable classes that can be added to elements as needed. Breaking the styles down into rounded and box classes, lets us use them independently. To my knowledge, Sass, heavily influenced by the Ruby language in which it's implemented, brought the idea of mixins to CSS. Consider this example: If you're a newcomer to Sass, this example might be a bit hard to follow. Basically, we declare a mixin named rounded with a set of styles. These styles are then mixed into the elements in the following selectors. When compiled, this Sass stylesheet yields the following CSS: With a single mixin we can reuse rules in a parameter-driven fashion to create two sets of styles, one with a 5px border radius one with 3px. Nifty, huh? I'm a big fan of Sass, especially as implemented in the Compass meta-framework, and use this mixin approach frequently. However, in moving away from multiple css classes to mixins, I've noticed I've lost a part of my development workflow that I've come to depend on - quick style spelunking with Firebug. When using multiple classes, the Firebug style inspector can take me to the exact line where the style was defined. With the mixin approach, these styles are now mixed into each rule. Firebug will of course show me the styles in each rule, but now I don't know where they come from unless I leave my browser and traverse my Sass code. Something else I do frequently in Firebug is playing eye doctor. You know "Better? Worse? Better Worse?" I add and remove additional css classes to elements to quickly apply and remove styles to play with different design aspects (like trying out rounded corners, etc.). When using Blueprint CSS's css classes, I can quickly prototype layouts and increase/decrease column widths just by modifying CSS classes like span-10 or span-12. When using Compass's mixin approach, I get all that grid layout goodness mixed into my semantic selectors. However since it's much harder to edit a dozen CSS style properties than to toggle a CSS class I lose the ability to quickly play around with the layout.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/css-mixins-vs-multiple-classes"
+tags = ["approach", "classes", "conclusion", "mixins", "mixins:", "multiple", "netherland", "programmatic", "tradeoff", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "amazon.com", "assets.thoughtworks.com", "bigrubyconf.com", "blogs.wsj.com", "chriseppstein.github.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "netlify.com", "oreilly.com", "thoughtworks.com", "w3.org", "wired.com"]
+
+["https://wynnnetherland.com/journal/font-face-off-typekit-vs-font-squirrel"]
+title = "@font-face-off: Typekit vs. Font Squirrel"
+description = "Now that the curtain has come down and now Typekit is available to all, let's see how Typekit and the previously mentioned Font Squirrel stack up head-to-head."
+full_description = '''Now that the curtain has come down and now Typekit is available to all, let's see how Typekit and the previously mentioned Font Squirrel stack up head-to-head. It's ironic to even compare font selection between these services when we've been stuck with such a limited set of web safe fonts for nearly two decades. Even so, it's interesting to compare both the depth and quality of the fonts provided. Comparing font quality is somewhat subjective, but heading into this comparison, I expected to find a much higher caliber set of fonts on Typekit since their business model includes negotiating with foundries to license fonts for web embedding that otherwise wouldn't be. However, I find no real difference between the quality of fonts provided, and some free (as in speech and beer) fonts appear on both. Let's face it. A big part of punching up your web typography is actually finding the right font. Let's see how each site helps you wade through all those typefaces. Both sites do a great job of previewing fonts including specimens and weights & styles, but each site offers some unique features. Once you've picked that perfect font, you've got to add it to your site. The process is a bit different for each service. One of the recurring questions that arises in discussing Typekit with my designer friends is, "What if they go down?" Honestly, chances are your site will be down more than theirs. You can't peddle unapplied truth. While you can no doubt create great designs with the web safe font stacks, if you're running a site that touts the breakthroughs of web typography, how about giving us something more to look at than Arial and Georgia. I find it surprising that I couldn't find an example of Typekit using the fonts they serve in their own site out side of their gallery. The bottom line is both of these services are great and are advancing web typography. The decision as to which to use comes down to what font you need, your budget, and how comfortable you are editing your own CSS and hosting your own fonts. So go kick the tires on both and make something beautiful!'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/font-face-off-typekit-vs-font-squirrel"
+tags = ["@font-face-off:", "font", "netherland", "squirrel", "typekit", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "mitchellh.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/reviews/big-week"]
+title = "Big Week: The Biggest Air Battle of World War Two"
+description = 'My review of "Big Week: The Biggest Air Battle of World War Two" by James  Holland.'
+full_description = 'Two years before being nominated for best actor for his role in “It’s a Wonderful Life” (for which the film won an Oscar for technical achievement for simulating falling snow), Major James Stewart was among the thousands of pilots and crew who flew through ice and snow to battle the German Luftwaffe. Seventy-five years ago, before D-Day and the Allied invasion of France, there was Big Week, an aerial offensive like no other. An all-out effort to cripple the air defenses of the Third Reich in preparation for an upcoming land assault, wave upon wave of American and British heavy bombers and their "little friends" streamed across the skies to tangle with Messerschmitts and their exhausted crews over the cities of German military production. In artful storytelling, Holland follows airmen from both sides of the conflict through successful operations, bailouts, and crash landings against the backdrop of evolving strategy and tactics. The aircraft loom as large as the men that flew them. Growing up putting together models of the P-51 Mustang, P-47 Thunderbolt, and P-38 Lightning, I found the backstory for these aircraft as compelling as the stories of the airmen themselves.'
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/big-week"
+tags = ["battle", "biggest", "netherland", "week:", "world", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/about"]
+title = "About me"
+description = "Team builder. API nerd."
+full_description = "Twenty-five years in, I'm still thankful to make a living doing what I love to do: developing software and building engineering teams. I enjoy the creative process, solving problems, and defining & refining the way we work to ship code to provide value. I'm T-shaped, a generalizing specialist, a Jack-of-all-trades, master of some. I'm driven by curiosity. You don't make it long in this line of work if you're not a lifelong learner. I don't like to work alone. I like being stretched by people with more experience and specialized knowledge as much as I love mentoring and sharing what I've learned. I've gained some experience in:"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/about"
+tags = ["apis", "graphql", "i’m", "leadership", "netherland", "platform,", "process", "react", "wynn", "wynn."]
+language = "en"
+internal-references = ["none"]
+external-references = ["assets.thoughtworks.com", "en.wikipedia.org", "facebook.com", "github.com", "goodreads.com", "netlify.com", "thoughtworks.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/my-interview-with-linux-format"]
+title = "My interview with Linux Format"
+description = "Team builder. API nerd."
+full_description = "I sat down with Linux Format at OSCON 2014 and chatted about some of my favorite things — APIs, Ruby, and GitHub. I cringed at the title, but bad puns are pretty much my personal brand anyway."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/my-interview-with-linux-format"
+tags = ["format", "interview", "linux", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/radio-silence-and-the-remote-worker"]
+title = "Radio silence and the remote worker"
+description = "Team builder. API nerd."
+full_description = "Years ago, before I began working remotely full time, I would often steal away to a hidden conference room on some sparsely inhabited floor to hide out and work. Getting work done often meant getting away from the office chatter. The sounds of other people working can be overwhelming. It doesn't take much to overload my senses and shut down my brain. The nature of remote work changes the nature of communication. Chatter for remote workers comes in a different form. Messages are often asynchronous and non-blocking. The result is longer periods of intense focus and concentration. Productivity ensues. As much as we still complain about our clogged inboxes, for remote workers, noise is seldom the problem. It's silence. If a little quiet is good for work, then more quiet should be better, right? For me, a prolonged lull in email, chat room conversations, and @mentions can have its own negative effects. Even the most independent people need regular human interaction. I normally work at home, where we also homeschool our kids. When not at home, I frequent local coffee shops with friends in the industry. I'm rarely alone. Yet the co-workers I work with most are in North Carolina and South Dakota, quite the hike from North Texas. When online communication lapses, it's easy to feel isolated with that kind of distance between team members. We all have our areas of expertise within our organizations. We are the keepers of certain domain knowledge. While it can become taxing to constantly field questions, there's a joy in sharing that knowledge with others. For better or worse, we often form our identities on being The API Guy, The JavaScript Gal, The HR Lady, or The Product Person. When people stop asking you questions it's easy to begin doubting (however misguidedly) the value you bring to the team. Chatter is seldom constant. Every din will eventually recede during periods of travel, holidays, and life events. It's the artificial lulls that you have to watch. Here are some things that help me handle that cycle."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/radio-silence-and-the-remote-worker"
+tags = ["alone.", "crisis", "embrace", "handling", "identity", "isolation", "netherland", "never", "other.", "radio"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org", "youtube.com"]
+
+["https://wynnnetherland.com/journal/iterative-music-is-my-focus-jam"]
+title = "Iterative music is my focus jam"
+description = "Music can be an effective firewall between the ears and the brain, enabling you to hear your own thoughts."
+full_description = '''Programming requires focus. For the developer, distractions come in many forms. While you can mute notifications, shut down Twitter, and close your email client, it's often hard to escape the auditory bombardment of your environment. As a remote worker, I split my time between a home office and my favorite coffee shops. Each has an audio profile that can impede focus during thought intensive work. Music can be an effective firewall between the ears and the brain, enabling you to hear your own thoughts. I listen to a wide range of music, most often on Rdio. I enjoy singer-songwriters with lyrical depth, most anything from the 60s, and the nostalgic 80s tracks of my youth. But when I need to dig deep and focus on some work, I often spin a short playlist of songs that mirror the work at hand. Most creative work is iterative. The artist passes over the same part of the creation over and over again, refining the work to look more like the vision. Designers will often start with a low fidelity sketch before building a user interface in pixels. Illustrators will fill notebook pages with multiple poses, angles, and expressions to capture a character in a single moment. When writing articles or creating slide decks, I find it helpful to start with an outline of Markdown headings and flesh out my thoughts before investing in too many words. For slides especially, I struggle to stay in Markdown as long as I can, knowing that as soon as I jump into Keynote, I'll be battling the distraction of pixel perfection. Whether building new features or refactoring exisiting code, developers work iteratively, too. We write new tests or change some code, run the test suite, and move bit-by-bit effecting change in the project. I've long had a "Coding" playlist in iTunes and now Rdio. As I've refined it over the years, I've discovered some attributes that make a great personal coding soundtrack. Familiarity. Humans are obsessed with new, and music is no exception. We love discovering and sharing songs with our friends. Social music sites like Last.fm, Rdio, and Spotify have made that easier than ever. When I'm trying to focus, new can be a distraction. My mind wanders off after a lyric or a riff and away from the task at hand.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/iterative-music-is-my-focus-jam"
+tags = ["between", "brain,", "coding", "creative", "ears", "effective", "enabling", "familiarity.", "favorite", "firewall"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/dotfiles-discovery"]
+title = "Dotfiles discovery"
+description = "It's amazing what you can learn from OPD."
+full_description = "One of the joys of moving away from Windows has been having most of my personal settings for editors and command line tools stored in simple text files I can take with me from machine to machine. You wouldn't think twice about working on a serious project without source control, yet so many developers don't version their dotfiles. I admit, that was me for far too long. I customized so little on my Mac that it didn't seem like it was worth the trouble. I finally decided to set up my own dotfiles repo using Josh Nichols' Homesick gem. I quickly realized that having my dotfiles versioned in source control brought a freedom to tinker. I could try new keybindings or color schemes and not feel like I was making a huge investment. Then I read Zach Holman's post and it changed the way I looked at other people's dotfiles. Tucked away inside of these little text files are valuable tips of tricks, simple insights into how other developers work. There are few different ways to find interesting dotfile repos on GitHub. Of course there's a Google search. You could also do a repository search on GitHub. I've found the best dotfiles by searching for known config file names on GitHub. I spend a good part of the day in the Git command line so I'm always on on the lookout for good Git aliases like these: As Joshua Clayton put it on a recent episode of The Changelog, ultimately if you don't think your dotfiles are the best you're Doing it Wrong™. (His dotfiles are very good, by the way.) Cherry pick what you like in other dotfiles. Keep what works, throw out what doesn't. Build your own light saber. Rebuild it with confidence."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/dotfiles-discovery"
+tags = ["discovery", "dotfiles", "netherland", "summary", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "chriseppstein.github.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "netlify.com", "oreilly.com", "thoughtworks.com", "w3.org", "wired.com", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/supercharge-your-static-site-with-netlify"]
+title = "Supercharge your static site with Netlify"
+description = "I am loving Netlify for static site publishing - HTTPS for custom domains, redirects, a nice CLI, and more."
+full_description = "I've enjoyed using static site generators since discovering Webby nearly ten years ago. Not only do static sites perform better, they're often simpler to set up and deploy. GitHub pages is perhaps the easiest — push to your Git repository and GitHub will serve your site with some basic CDN fronting, thanks to Fastly. It's also free. For a bit more control, you can also roll your own static host using services like Amazon S3 and Cloudfront at minimal cost. Yet I've built enough blogs, brochures, and documentation sites to know the gaps and when to reach for an application server. Even with sophisticated JavaScript-powered frontends, applications often require authentication, server-side redirects, proxied API access, custom security headers and other needs beyond serving static content. I recently discovered Netlify, which adds some features that make static sites more viable in many cases. If you're using GitHub Pages because it's free, you'll enjoy some benefits from Netlify's free tier as well. SSL. I've long wanted to serve this site over HTTPS. Previously, I hosted via GitHub Pages and while GitHub supports HTTPS for sites that run on *.github.io, there's no official support for configuring SSL for sites with a custom domain name. Netlify made it simple to set up. Broader generator support. While GitHub will build your Pages site using Jekyll, Netlify supports practically any static stite generator. Just push your changes up to GitHub and Netlify will take it from there. Live build output. Ever wonder what went wrong with your Jekyll build on GitHub? Netlify streams live build output so you're never in the dark. Atomic deploys. Each build gets its own URL, letting you preview, publish, and rollback to any build with a single click. Multiple deploy contexts. You can configure build options based on the context, giving you the flexiblity to alter the output for a deploy preview. Redirects. Link rot is a real problem. Purely static sites don't have an elegant way to redirect users when content moves without resorting to JavaScript or <meta> tag tricks. Netlify supports flexible server-side redirects to point users to moved content, change your permalink format, or provide pretty URLs, even for push state."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/supercharge-your-static-site-with-netlify"
+tags = ["api.", "atomic", "basics", "bonus:", "branch", "broader", "build", "command", "contexts.", "deploy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "thoughtworks.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/books-that-changed-america"]
+title = "Books that Changed America"
+description = 'My review of "Books that Changed America" by Robert B. Downs.'
+full_description = "I found this hardback at the used bookstore and really enjoyed it. Events immediately in the author's rearview mirror are smaller than they appear as contemporary fame might have led the author to overstate the impact of some of the books in later chapters. Nonetheless, this book is an excellent survey of books that shaped American public opinion from the Revolutionary period until its publication in the 1960s. Framing each in their own unique historical contexts, the author outlines the lasting impact of twenty five books from Paine's Common Sense through Rachel Carson's Silent Spring. Valuable enough for readers today for its original historical literary analysis, Downs' book is an interesting read sixty years later, providing as much insight into Downs' own time period in 1960s America as for the historical setting of each work therein."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/books-that-changed-america"
+tags = ["america", "books", "changed", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/linked/2017-thought-works-technology-radar"]
+title = "2017 ThoughtWorks Technology Radar"
+description = "Team builder. API nerd."
+full_description = "ThoughtWorks has released their latest technology radar (PDF), a semi-annual analysis of the industry landscape from their vantage point as software consultants. I've enjoyed reading past issues as a way to mindfully keep up with trends and discover new tools. With topics broken down into techniques, tools, platforms, and languages & frameworks, past reports have helped clarify my thinking and given me a concrete way to talk about patterns and techniques already in use. I'm also a little puzzled how GraphQL fell off the radar without landing in the Adopt category. Maybe because it's already arrived."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/linked/2017-thought-works-technology-radar"
+tags = ["netherland", "radar", "technology", "thoughtworks", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/bird-by-bird-some-instructions-on-writing-and-life"]
+title = "Bird by Bird: Some Instructions on Writing and Life"
+description = 'My review of "Bird by Bird: Some Instructions on Writing and Life" by Anne Lamott.'
+full_description = "I picked up this book expecting to learn something about writing, which I certainly did. More importantly, I came away with a broader perspective and a deeper interest in the people in my life. With so much of her philosophy of life laid bare, there's much to disagree with, but more to be challenged and entertained by in the process."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/bird-by-bird-some-instructions-on-writing-and-life"
+tags = ["bird", "bird:", "instructions", "life", "netherland", "writing", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/a-tech-book-readers-lament"]
+title = "A tech book reader's lament"
+description = "I miss the larger, more vibrant technical bookshelf from twenty years ago."
+full_description = '''In college I worked the closing shift at a large chain office supply store. I'd spend my "lunch" breaks at the bookstore next door in a wingback chair poring over a stack of computer programming books and smelling the overpriced coffee — neither of which I could afford. I'm not sure if there ever was a Golden Age for the printed technical book, but the late 90s were pretty good for newbies like me. There were books for Dummies, books for Idiots, books to Teach Yourself Anything in 21 Days, even By Example if you like. There were rather thick books that purported to be the Bible for a given subject, and of course, an array of colorful books with rare animals on the covers. Wrox published my favorite series though. Usually containing Beginning or Professional in an easy to spot yellow title on a red background below a grid of black and white author head shots those books were thick, often more than a thousand pages. On the rare occasion I had fifty bucks to lay down for a book, it was usually a Wrox title because they tended to have something other titles didn't: shelf life. When I stepped into the corporate world some years later, it seemed the Computers & Technology section at the bookstore had spilled over into the corporate cube farm. Every coworker had a mini library of their own, and we often lent titles to one another. There was also the special collection of antiquities, known as the manager's office. While usually the largest collection, it also was full of books on languages and tools that people just didn't use anymore. Looking back, some of those titles may have been two or three years old, max. It's that small shelf life and cost of print production that sent most technical content into digital formats or online. Note taking. I write in books. I underline and make notes. Highlighting and annotation features are available for digital formats, and I use those when available. But there's something about reading a book with a Ticonderoga #2 in hand that engages my brain, helping me to interact with the text better.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/a-tech-book-readers-lament"
+tags = ["access.", "always", "approachability.", "book", "books", "clarity", "contents.", "deep", "dimensions.", "distraction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "lg.gd", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/app-store-change-logs-the-good-the-bad-and-the-silly"]
+title = "App Store change logs: the good, the bad, and the silly"
+description = "The quality and detail of App Store application change logs varies a great deal."
+full_description = "Maybe I have an unhealthy obsession with changelogs, but when I see pending updates to download from the App Store, I want to know what's new and what's fixed. I only tap 'Update all' after I've checked out the changelog for each updated app one-by-one. Some developers do a great job at communicating changes. Some do not. What does a nice, informative update look like? Runkeeper, my favorite iOS fitness app, does a fantastic job of providing the right level of detail. Seeing such a long list of bug fixes doesn't scare me as a user. Instead, this sort of transparency shows me the app is under active development and that any issues I find have a good shot at getting fixed. It seems the bigger the company behind an app, the less detailed the changelog. Take the latest update for the DirectTV app: While terse changelogs like these provide little info, verbosity isn't a cure-all, either. This post was sparked by an update today to my favorite iOS pastime, Words with Friends. The latest version actually includes some nice new features, but it's couched in cutesy language that leaves you looking for a TLDR;"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/app-store-change-logs-the-good-the-bad-and-the-silly"
+tags = ["bad,", "change", "good,", "logs:", "netherland", "silly", "store", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "goodreads.com", "google.github.io", "itunes.apple.com", "lg.gd", "netlify.com", "thechangelog.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/bolivar-american-liberator"]
+title = "Bolivar: American Liberator"
+description = 'My review of "Bolivar: American Liberator" by Marie Arana.'
+full_description = "Of all the biographies I have read, I can't remember one that I enjoyed nearly as much as Bolívar: American Liberator. Immersive as it is expansive, it's narrative non-fiction at its best. While perhaps slightly too generous to her subject at times, Arana tells the story of how Bolívar became the Liberator of six South American countries, driven by a vision of a unified America freed from Spain. Through her thorough research, she captures the people and settings in Bolívar's life in incredible detail. Her main conclusion, that his failure to translate his military acumen to the political sphere set the stage for the next two centuries of South American politics, makes it a relevant read."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/bolivar-american-liberator"
+tags = ["american", "bolivar:", "liberator", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/reviews/the-splendid-and-the-vile-a-saga-of-churchill-family-and-defiance-during-the-blitz"]
+title = "The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz"
+description = 'My review of "The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz" by Erik Larson.'
+full_description = "A fascinating history of The Blitz. With a narrative lens focusing mostly on the concentric social circles around Winston Churchill, Larson does an excellent job of portraying the precarious situation Britain faced in standing alone against the Nazi aerial bombardment and impending invasion until America's entry into the war in 1941."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/the-splendid-and-the-vile-a-saga-of-churchill-family-and-defiance-during-the-blitz"
+tags = ["blitz", "churchill,", "defiance", "during", "family,", "netherland", "saga", "splendid", "vile:", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/how-to-get-great-support-as-a-technical-user"]
+title = "How to get great support as a technical user"
+description = "Team builder. API nerd."
+full_description = '''One of my favorite parts of working at GitHub is helping our Supportocats answer support requests. Since I focus mainly on the GitHub API, I get to work with our more technical users. I've shopped at BestBuy enough to know what it's like when you think you know more than the staff. Nearly nine months of helping technoweenie pursue Inbox 0 at the API Help Desk has changed the way I ask for tech support for other products and services. In the software industry, many of us have friends who have founded or work on some of our favorite services and tools. With those personal relationships, it seems easier to shoot an @reply or DM on Twitter. For site down questions, that's often good enough, but 140 chars just isn't conducive to describing (much less troubleshooting) most issues. For GitHub, our support form makes it simple to reach out and say Halp! Sending an email to support@github.com works, too. Including "API" in the subject line routes you straight to the API team. Many open source projects have mailing lists, issue trackers, and IRC rooms to talk about issues. Find the right channel before you send a flurry of questions to a project maintainer. Once your request makes it to the top of the support queue, it has to be grok'd by a human. Verbosity is your foe here. The more you write, the longer it takes to distill your words into your actual issue. Not just once, but each time your ticket is passed to someone else on the team, it has to be reinterpreted. Your chances of getting speedy help go up substantially if you can avoid that dreaded "more info please" follow up. Photos, screenshots, URLs, stack traces, and other facts help speed up the six stages of debugging. If you're calling a HTTP API, the developer has a hard time refuting curl output. Many request tools thread messages by subject or ticket number. You might be tempted to reply to that six month old email because the person who helped you last time seemed to know what they were talking about. Unless the issue is directly related, chances are you're delaying your new ticket because there's more previous conversation to wade through on the other end.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/how-to-get-great-support-as-a-technical-user"
+tags = ["channel", "classy", "details", "don't", "great", "include", "insecure", "issues", "netherland", "piggyback"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "mitchellh.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/patches-speak-louder-than-words"]
+title = "Patches speak louder than words"
+description = "Think about submitting a pull request the next time you want to open an issue on a project."
+full_description = '''Fundamentally, issue trackers track two types of things: features you want to build and bugs you need to fix. The next time you decide to add an issue to a GitHub repository, consider sending a pull request instead. Since pull requests are issues with code attached, you may be thinking "wait why would I start with code, shouldn't we talk about this first?" Maybe. For many situations, starting with a pull request can often create a more effective discussion of the change. A pull request can demonstrate behavior and get everyone in a shared context in order to start a discussion. You don't have to wait until a branch is production-ready to open a pull request. For bugs, start with a failing test. In our age of cloud-based continuous integration services, a failing test can quickly demonstrate a bug without requiring anyone to pull down your branch locally to run the test suite. For features, you might start with a UI mockup. Fake the behavior you'd like to add and get agreement on how it should work before you think about how to implement the new feature. Some changes are an effort to pay down technical debt. They're often refactorings that the team would like to do "someday," but nobody acts because no one is quite sure how much effort it involves. Spike it in a branch and open a pull request. These spikes are a great way to make code changes and let the test suite tell you how much carnage ensues. Opening a pull request requires more effort than just opening an issue. Pull requests show how much you care. It's easy to complain about a bug or wish out loud for a new feature. A pull request says you believe in the change so strongly that you're willing to contribute to a solution. Pull requests help maintainers scale. Reviewing and merging patches takes less effort than making every change themselves. Pull requests are an effective way to bring along new maintainers into a project, demonstrating both skill and desire. It's easy to become emotionally involved with the code or words we write. Just because there's code attached doesn't mean you should be. Don't be afraid to let go of code in a branch. Some code exists just to prove something won't work. Often, the questions surfaced are more valuable than the code itself.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/patches-speak-louder-than-words"
+tags = ["attached", "branch", "care.", "clarify", "demonstrating", "desire", "don't", "failing", "fish", "game"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hkarthik.me", "lists.w3.org", "mikeindustries.com", "netlify.com", "octopress.org", "orrka.com", "visionmedia.github.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/reviews/animal-farm"]
+title = "Animal Farm"
+description = 'My review of "Animal Farm" by George Orwell.'
+full_description = "Better than I had remembered it twenty years ago, perhaps because it's more timely now. Maybe I've just seen more pigs."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/animal-farm"
+tags = ["animal", "farm", "netherland", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/destiny-of-the-republic"]
+title = "Destiny of the Republic: A Tale of Madness, Medicine and the Murder of a President"
+description = 'My review of "Destiny of the Republic: A Tale of Madness, Medicine and the Murder of a President" by Candice Millard.'
+full_description = "Nominated for President during a brokered convention, murdered mere months into his term, Garfield was on the national stage but a moment and has seemed to fade from the nation's memory altogether. This book is not an exhaustive biography, but a well-paced story nonetheless. Part murder plot, part medical drama, it's a fascinating glimpse of America and the presidency in the last decades of the 19th century."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/destiny-of-the-republic"
+tags = ["destiny", "madness,", "medicine", "murder", "netherland", "president", "republic:", "tale", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/empire-of-the-summer-moon"]
+title = "Empire of the Summer Moon: Quanah Parker and the Rise and Fall of the Comanches, the Most Powerful Indian Tribe in American History"
+description = 'My review of "Empire of the Summer Moon: Quanah Parker and the Rise and Fall of the Comanches, the Most Powerful Indian Tribe in American History" by S.C. Gwynne.'
+full_description = "A vivid history of Comancheria, its conquering of and collision with other cultures in what is now New Mexico, Texas, and Oklahoma. Though disturbing and shocking in places, the story could not be told without acknowledging the brutality executed by and on the Comanche people. Born in Southwestern Oklahoma and now living in North Texas, I felt a special connection to the people and landscape. My mother's family is from Comanche County, Oklahoma and farmed over three hundred acres of land once a part of that set aside as the last vestige of grassland once ruled by perhaps the most adept cavalry in the world."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/empire-of-the-summer-moon"
+tags = ["american", "comanches,", "empire", "fall", "history", "indian", "moon:", "netherland", "parker", "powerful"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/engineering-consistency"]
+title = "Engineering consistency"
+description = "Inconsistency is a tax. We often struggle so hard to handle inconsistency in the problem domain, we never notice the cost of inconsistency in our code."
+full_description = "Southwest Airlines only flies 737s, saving them on maintenance costs and giving them greater flexibility to move aircraft between routes. Inconsistency is a tax. Any mature software project is littered with conditional code to handle the edge cases, the business rule exceptions, the differences. We often struggle so hard to handle inconsistency in the problem domain, we never notice the cost of inconsistency in our code. When you sit down to write code to meet a business requirement, there's a series of questions in the back of your head: As developers, we've got enough UX considerations and Big O questions with any feature, we don't need our code base bringing its own. Every inconsistency in your project adds cognitive overhead, which David Demaree succinctly defines this way: how many logical connections or jumps your brain has to make in order to understand or contextualize the thing you’re looking at. Every inconsistency in your project loads up required context to work in the project, adding ongoing cost borne by the team as they build new features. Sometimes you pay the cost all at once because inconsistent code is harder to refactor. Inconsistent naming conventions, folder structures, and syntax all make it more difficult to automate changes to code. The cost of that inconsistency is often more code to handle the exceptions, time, and energy spent outside of the actual problem domain. As an industry that creates software to solve problems, we have a natural inclination to reach for software to solve the problems we face writing software. Sometimes that works. Frameworks. We tend to think about frameworks primarily as abstractions, tools for reducing complexity, but many frameworks employ convention over configuration, effectively codifying consistency in the framework itself. I've worked on a lot of Rails projects in the last dozen years and never had to wonder where to put a model, view, or controller. Style guides. Teams and communities often develop their own syntactical tastes and document those preferences. GitHub, Airbnb, and Google have all published their own opinionated guides."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/engineering-consistency"
+tags = ["adding", "break", "code", "consistency", "context", "cost", "down.", "engineering", "fewer", "form"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com", "wired.com"]
+
+["https://wynnnetherland.com/journal/extending-the-command-line"]
+title = "Extending the command line"
+description = "The next time you think about writing another shell alias, consider these more advanced approaches to extending CLI apps."
+full_description = "I was relatively late to the terminal party. Spending the first half of my career in a Windows world, I viewed the command line as an artifact of its DOS legacy, not an environment to do anything productive. Two things happened in the mid 2000s to change that. Apple switched to Intel and bundled a Unix kernel with OS X. Around the same time, Ruby on Rails captured the imagination of a growing number of developers like me who were looking for a better way to build web applications. Rails has always embraced the command line. From the very first screencast it was apparent that you interacted with Rails through scripts and text files, not wizards and property panes. Not long after I began riding the Rails there was a moment when the terminal was no longer a command line interface but my command line interface. Like many command line newcomers, I began creating aliases to save some keystrokes and make oft-used commands easier to remember. For many developers, Git is the application that brings them to a terminal interface, and it, too, supports aliases. You can create Git aliases programmatically via git config: Some of the above implementations resemble mini-applications. Thankfully, for more complex tasks Git provides a more robust way to write command line extensions. Git will look for any executable prefixed with git- in your PATH and extend its command line interface. Here's a simple but practical example, an executable named git-conflicts in my bin folder. Now when I'm in the middle of a merge or rebase and I encounter conflicts I can run git conflicts to list only the files with conflicts. Building on top of that, I have another script named git-edit-conflicts that will open those files in $EDITOR, which for me is Vim: Another frequently used git-* script of mine is git-ci for checking the build status of my current branch via the GitHub API, regardless of the continuous integration provider: With that output, I can CMD+Click the URL in iTerm or run git ci -o to open the link to the build on the CI provider's web site automatically."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/extending-the-command-line"
+tags = ["aliases", "beyond", "command", "extending", "it's", "line", "netherland", "organization", "simple", "wrapping"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/flint-lint-your-project-for-sources-of-contributor-friction"]
+title = "Flint: lint your project for sources of contributor friction"
+description = "Team builder. API nerd."
+full_description = "I wrote previously on the benefits of bootstrapping consistency. Predictable scripts for automating setup and running tests greatly reduce the friction for newcomers to a project. Recently, I've jumped back into some of my older projects and immediately felt the pain of not having bootstrap or test scripts to get up and running. Wanting a way to quickly check a project for these missing scripts and (other items that help reduce contributor friction), I wrote Flint as a small Bash script. Here's what it does: While Bash was a good fit for the initial version, I have some ideas for Flint that really demand a higher level language: Ruby is my primary language, and I've written plenty of CLI apps in Ruby, but I thought I'd give Go a shot for this one, primarily for the reasons Mitchell Hashimoto and Jeremy Saenz have written about. It's still early, but I've enjoyed writing a command line app in Go. Jeremy's cli.go project has captured much of the declarative expressiveness I like about David Copeland's gli CLI framework for Ruby."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/flint-lint-your-project-for-sources-of-contributor-friction"
+tags = ["based", "contributor", "files", "flint:", "friction", "github", "issue", "lint", "missing", "netherland"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "chriseppstein.github.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mitchellh.com", "netlify.com", "oreilly.com", "thoughtworks.com", "w3.org", "wired.com", "zachholman.com"]
+
+["https://wynnnetherland.com/journal/sass-up-your-word-press-themes-with-compass"]
+title = "Sass up your WordPress themes with Compass"
+description = "I don't always use WordPress. But when I do, I use compass-wordpress."
+full_description = "I'm a Rubyist. But I'm also a pragmatic front-end developer. When I have to write a full-stack solution, I pick Rails or Sinatra because writing Ruby is a joy and the Ruby ecosystem is so darn cool. But when I have to create a CMS-based site for myself or a client I love the usability and community behind WordPress. Although I can reluctantly lay Ruby aside when I extend WordPress, I really miss my syntactically awesome stylesheets. Until now. After turning my buddy (and Haml/Sass/Compass ninja) Adam onto Thematic, the awesome WordPress theme framework from Ian Stewart, we quickly started lamenting our loss of mixins, nested rules, variables, and bundled patterns we got from Sass and Compass. Fueled by a dream of writing WordPress themes without curly braces and armed with some info from Chris Eppstein, we hammered out a new gem - compass-wordpress. Since compass-wordpress is a Ruby gem, you install it and its dependencies via ruby gems. If you haven't yet switched to Gemcutter, you'll need to do that first: Compass will also be installed if you don't have it. If you're new to Compass, head over to the wiki and checkout all the great info over there. To stamp out a new blank WordPress template, drop into your themes folder in a terminal and run the compass command: In this example we're creating a new Thematic child theme. (You already have the Thematic theme unpacked to your themes folder right?) Let's look at what we've got in our shiny new theme: If you want a different folder structure for your Sass and compiled css files, you can pass advanced options in the command line: The only change to your theme development workflow is using Sass instead of CSS. We compile that Sass into CSS using the compass command again. This will launch a process to watch your source files and automatically re-compile your CSS referenced in your theme. As long as this process is running, you can just refresh your browser to view your changes. When you're done, just CTRL-C to stop the compass process and deploy your theme as you normally would. It's that simple!"
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/sass-up-your-word-press-themes-with-compass"
+tags = ["compass", "compass-wordpress", "developing", "features", "installation", "introducing", "involved", "netherland", "sass", "theme"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/the-motivation-for-public-speaking"]
+title = "The motivation for public speaking"
+description = "Public speaking is easier if you find that one thing you just have to share."
+full_description = "I'm enjoying Zach Holman's new site where he shares his thoughts on public speaking. He does a fantastic job of breaking down the process of developing a talk. While I'm nowhere nearly as prolific as Zach, I do speak at conferences a few times a year. I get asked how I got into public speaking and if I have any advice for others wanting to do the same. I respond by asking the same question I now ask myself when I sit down to develop a deck for an upcoming talk — why do you want to speak? For many of us, the first time we spoke in a public setting was in school, because we had to. The fear of public humiliation can be a good motivator. Stronger yet might be the fear of a bad grade. If strong enough, such fear can fuel long hours of preparation to meet the expectations of the course. These types of scenes get repeated in the business world. Swap the instructor for your boss and the class with upper management and you have the same fear-driven situation. Many people see speaking as a gateway to a better gig, a way to market a startup, or part of expanding their personal brand. Some seek broader influence or access to other leaders in their industry. There's nothing wrong with any of these as secondary goals. The trouble starts after you submit a talk to an influential conference and it gets accepted. Often you find yourself once again motivated by fear, only this time it comes with doubt. Imposter syndrome can undermine your confidence and your entire development process is riddled with anxiety. I've noticed the decks for talks I've given when motivatated by fear or ambition took a long time to develop. The process was usually front-loaded with a long period of procrastination. I needed the adrenaline rush of seeing the event date approaching to focus my thinking and jump into the process. I've given too many talks this way, with slides created in the last forty-eight hours before the event. There have been times, however, when creating a deck has come easy. I started the process well in advance and continued to refine the deck up until the day of the talk. Looking back, my motivation in those instances was not fear but desire - desire to tell people about something I cared about very deeply."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/the-motivation-for-public-speaking"
+tags = ["ambition", "burden", "desire", "fear", "motivation", "netherland", "public", "speaking", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/the-pirates-laffite-the-treacherous-world-of-the-corsairs-of-the-gulf"]
+title = "The Pirates Laffite: The Treacherous World of the Corsairs of the Gulf"
+description = 'My review of "The Pirates Laffite: The Treacherous World of the Corsairs of the Gulf" by William C. Davis.'
+full_description = "This isn't the book I thought I was getting. I expected to learn more about the famous pirates I had heard about in eighth grade Louisiana History class, especially their involvement in the Battle of New Orleans. Instead, it's a detailed history of America's southern and westward expansion along the Gulf coast and the new nation's dance with Spain and her former colonies. Jean and Pierre aren't the subjects of the story as much as they are lenses though which we observe the political climate of New Orleans, Louisiana, Florida, Texas, Mexico, South America in the early 19th century. Though minutiae and endless shipping manifests obscure much of the storytelling, by the end I came away with a better idea of how New Orleans came to be the unique Southern city that it is."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/the-pirates-laffite-the-treacherous-world-of-the-corsairs-of-the-gulf"
+tags = ["corsairs", "gulf", "laffite:", "netherland", "pirates", "treacherous", "world", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/rubyists-meet-underscore-js-your-new-favorite-java-script-library"]
+title = "Rubyists: Meet Underscore.js, your new favorite JavaScript library"
+description = "Underscore.js brings a lot of utility functions to JavaScript."
+full_description = "One of my favorite aspects of developing in Rails is the console. The ability to load and interact with my Ruby objects without using the browser is powerful. Thanks to Firebug for Firefox and Web Inspector for Webkit, I also have a console for my client-side JavaScript. I wish jQuery were as powerful when traversing raw JavaScript objects as it is traversing the DOM. Well it seems I have two wishes left for the first has been granted in Underscore.js. Underscore.js is a new JavaScript framework from DocumentCloud that brings a powerful set of utility functions to JavaScript with a disctinct Ruby flavor and without monkey-patching the native JavaScript types by extending via prototype. Just as Prototype.js and jQuery employ the $ function, Underscore adds all of this goodness via the _ function. When chaining, Underscore returns a wrapped set, a special container object (like jQuery does for wrapped sets of elements returned via a selector). To get the last value in the chain, simply call value. Many of the same Ruby Enumerable and Array functions you've come to know and love are implemented including: each, map, detect, select, reject, all, any, include, max, min, sortBy, toArray, size, first, last, compact, flatten, uniq, and zip plus some new ones you'll love. bind a function to a context object, meaning that whenever the function is called, the value of this will be the context. Optionally, bind arguments to the function to pre-fill them, also known as currying. Compiles JavaScript templates into functions that can be evaluated for rendering. Useful for rendering complicated bits of HTML from JSON data sources. Template functions can both interpolate variables, using <%= … %>, as well as execute arbitrary JavaScript code, with <% … %>. When you evaluate a template function, pass in a context object that has properties corresponding to the template's free variables. If you're writing a one-off, you can pass the context object as the second parameter to template in order to render immediately instead of returning a template function."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/rubyists-meet-underscore-js-your-new-favorite-java-script-library"
+tags = ["download", "enjoy", "favorite", "horsepower!", "javascript", "library", "meet", "netherland", "pure", "rubyists:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org", "youtube.com"]
+
+["https://wynnnetherland.com/journal/making-a-habit-of-saying-thanks"]
+title = "Making a habit of saying thanks"
+description = "A co-worker once sent me an email I'll never forget. It was a simple thank you note, only a few sentences, but it had a big impact."
+full_description = '''A co-worker once sent me an email I'll never forget. It was a simple thank you note, only a few sentences, but it had a big impact. It was spontaneous. We typically treat thank you notes as social receipts. Someone gives us a gift or hosts us for dinner, and we express our appreciation with a small note. Thanks is often transactional. When was the last time someone sincerely thanked you for your work outside of a performance review cycle or not immediately following some major accomplishment? It was specific and personal. He highlighted my individual contributions to the team, even linking to specific pull requests and comments. There was no hint of solicitation or expectation. We're trained to look for the fine print, even in email. There's always an angle. A long lost colleague you haven't heard from in years suddenly reconnects — oh, by the way, they're looking for new career opportunities, can you help? (Not that there's anything wrong with that kind of email. You bet, happy to. What are you looking for?) But that's what made this email even more remarkable. There was no "by the way", no embedded solicitation. Reflecting on the impression his note made on me, I wanted to pay it forward. I wanted to get intentional about expressing gratitude to others in the organization. Schedule spontaneity. From the recipient's point of view, I wanted them to feel the joy of receiving a note of thanks out of the blue. To make that happen consistently, I had to put it on my schedule. I began to set aside half an hour each week to send out thank you notes (long before Fallon I might add). Before long I started making an on deck list, an editorial calendar of sorts. Develop a format, but be sincere. I wanted each note to be heartfelt, personal, and encouraging. After the first few, a format emerged: I just wanted to drop you a note and say I'm glad you're here. I love the way you [some ongoing impactful work] like you did here: [link to a recent instance]. We can always count on you to bring your [unique innate quality] to make the team better. Your work has an impact and it doesn't go unnoticed.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/making-a-habit-of-saying-thanks"
+tags = ["develop", "expectation.", "explicit", "format,", "gratitude", "habit", "hint", "making", "netherland", "notes."]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.docker.com", "fourhourworkweek.com", "github.com", "goodreads.com", "google.github.io", "hub.github.com", "mikeindustries.com", "netlify.com", "oreilly.com", "orrka.com", "w3.org", "zachholman.com"]
+
+["https://wynnnetherland.com/books"]
+title = "In print"
+description = "Wynn Netherland books in print."
+full_description = "My first book with Manning, with long time friend Rupak Ganguly, covers building advanced server-side controls in ASP.NET. Chris McCroskey and I contributed Chapter 15, a case study on Tweet Congress, which took home a SXSW Web Award in 2009. Written for both designers and developers, this book demonstrates the power of both Sass and Compass through a series of examples that address common pain points associated with traditional stylesheet authoring."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/books"
+tags = ["netherland", "print", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "alexyoung.org", "amazon.com", "assets.thoughtworks.com", "bigrubyconf.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "chriseppstein.github.com", "css-tricks.com", "csswizardry.com", "damienkatz.net", "en.wikipedia.org", "github.com", "goodreads.com", "netlify.com", "thoughtworks.com", "twitter.com"]
+
+["https://wynnnetherland.com/journal/putting-the-emote-in-remote-work"]
+title = "Putting the emote in remote work"
+description = "Emoji is a big part of the way we work at GitHub."
+full_description = '''I had the opportunity to chat with an entire gSchool class via Skype a couple of weeks ago and share my thoughts on development and my experience of working at GitHub. One student asked me to share some keys to working remotely since she had heard a large percentage of GitHubbers are outside of San Francisco. I should develop a more thoughtful response to that question, drawing from experience of working remotely as both an employee and an employer for the last seven years. Since I was put on the spot, however, I shared the first three tips that came to mind: Unless everyone is in the same room, synchronous meetings are wrought with laggy connections, half-duplex speakerphone mics, and lonely soliloquies into unknowingly-muted handsets. For effective distributed and remote teams, communication becomes primarily written and async. In such environs, it's often difficult for the reader to have the same context as the writer. The author's tone might be hard to discern. Believe it or not, emoji can help. At GitHub, emoji autocomplete is built into almost every tool we use. Whether we're using GitHub to build GitHub or using internal tools like our custom workstreaming, hiring, or help desk apps, our written communication is steeped in emoji. But why? Emoji express emotion. This may seem obvious, especially if, like me, you once thought the term emoji shared a common etymology with emoticon, those text-based smileys that have adorned email since 1982. Emoji literally means "picture letter", but those pictures can help express emotion. Saying "good job :zap:" carries more feeling than with words alone. "Removing trailing whitespace" is much more fun with a little :fire:. Emoji encourage brevity. One of the problems with electronic communication is that we get so much of it. Shakespeare said "Brevity is the soul of Twitter," or (something like that). A :metal:, :+1:, or :shipit: can be just as effective as "awesome", "I'm onboard with that", or "Looks good, ship it." Emoji reinforce your words. Some emoji serve to back up your message. One of my favorites combos is :microscope::checkered_flag:. Translation: "science wins."'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/putting-the-emote-in-remote-work"
+tags = ["better", "brevity.", "cannot.", "carve", "communication", "consider", "emoji", "emoji.", "emote", "emotion."]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "assets.thoughtworks.com", "blogs.wsj.com", "commandcenter.blogspot.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org", "youtube.com"]
+
+["https://wynnnetherland.com/journal/suppress-generated-java-script-on-git-hub-diffs"]
+title = "Suppress generated JavaScript on GitHub diffs"
+description = "Speed up code review for diffs with generated JavaScript"
+full_description = "Babel generates most of the JavaScript I deploy these days. This makes pull requests a little noisy since I have to skip over the generated output in the dist folder to review the actual source changes in src. I recently stumbled across this Thoughtbot post that showed how to suppress diffs for certain files on GitHub using a .gitattributes file, and I wondered if it would work for this use case. As it turns out, it does. To start, create a .gitattributes file in your repository root if you don't already have one and add the following line: Now make a change to something in your src/ folder that will change the generated output in dist/ and push your changes up to a new branch on GitHub. Diffs for generated JavaScript files are no longer loaded by default, but you can always load them manually if you need to view them."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/suppress-generated-java-script-on-git-hub-diffs"
+tags = ["diffs", "generated", "github", "javascript", "netherland", "suppress", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/journal/reed-esaus-growing-list-of-vim-plugins-for-writers"]
+title = "Reed Esau's growing list of Vim plugins for writers"
+description = "Recently, Reed Esau has amassed quite a list of Vim plugins for writers."
+full_description = "vim-pencil aims to make Vim an effective tool for writing prose, bundling a handful of tweaks to handle (and even detect) line wrap modes. iA Writer is an elegant word processor, marred only by its lack of Vim. It does have a nice color scheme, however. vim-wheel provides screen-anchored cursor movement for Vim, merging j and k with the scrolling of <CTRL-E> and <CTRL-Y>. vim-wordy goes way beyond words to avoid in tech writing and uncovers common usage problems in your writing."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/reed-esaus-growing-list-of-vim-plugins-for-writers"
+tags = [":colorscheme", "appearance", "based", "beyond", "bring", "broader", "changing", "environment.", "esau's", "goes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org", "youtube.com"]
+
+["https://wynnnetherland.com/journal/quick-tip-use-ap-idock-to-hunt-down-missing-methods"]
+title = "Quick tip: Use APIdock to hunt down missing methods"
+description = "APIDock is a great resource to find when a method first appeared in your favorite API."
+full_description = '''From time to time, we all to have step into older projects and add features. Suddenly that old standby method you'd come to love is giving you a method_missing. How do you go about finding out which version of Rails introduced it so you can upgrade or monkey patch? APIdock has your back. I bring this up because all too many gems depend on Active Support from Rails and introducing a new gem into an older Rails project can lead to some headaches when Active Support versions collide. So when asked to debug my gem in an older project the error message was puzzling: undefined method `present?' for "status":String String in this case is just a red herring. How do I know that? (Pretend for a minute you don't use present? all the time or that you're a noob). A quick search on APIdock tells us that Active Support added this method in version 2.2.1. I know this because the navigation is enabled for this method starting in 2.2.1. So, mystery solved. My friend can now monkey patch his way out of this one or upgrade to a later version of Active Support. Pick your poison.'''
+year_published = 2025
+clearnet = "https://wynnnetherland.com/journal/quick-tip-use-ap-idock-to-hunt-down-missing-methods"
+tags = ["apidock", "down", "hunt", "methods", "missing", "netherland", "quick", "tip:", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "csswizardry.com", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "thoughtworks.com", "visionmedia.github.com", "w3.org", "youtube.com"]
+
+["https://wynnnetherland.com/reviews/guns-germs-and-steel-the-fates-of-human-societies"]
+title = "Guns, Germs and Steel: The Fates of Human Societies"
+description = 'My review of "Guns, Germs and Steel: The Fates of Human Societies" by Jared Diamond.'
+full_description = "Unable to stick with the hardback edition years ago, I recently decided to give it another try in audio form. Incredibly dry and often tedious, it reads more like a textbook than general non-fiction. Even so, I found his telling of the unfolding of the development of human civilizations on each continent fascinating. Perhaps in attempting to debunk the Great Man theory of history he arrives at sort of an environmental fatalism that leaves little room for other explanations."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/guns-germs-and-steel-the-fates-of-human-societies"
+tags = ["fates", "germs", "guns,", "human", "netherland", "societies", "steel:", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]
+
+["https://wynnnetherland.com/linked/asdf-extendable-version-manager"]
+title = "asdf: Extendable version manager"
+description = "Team builder. API nerd."
+full_description = "If your work involves multiple languages and multiple tools for managing versions, check out asdf, an extendable version manager that provides a single consistent interface for managing them all: I've been using asdf as my primary version manager for Ruby and Node for a few weeks and am really liking it."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/linked/asdf-extendable-version-manager"
+tags = ["asdf:", "extendable", "manager", "netherland", "version", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["abstractfonts.com", "amazon.com", "apidock.com", "assets.thoughtworks.com", "blogs.wsj.com", "compass-style.org", "css-tricks.com", "docs.rubygems.org", "github.com", "google.github.io", "hkarthik.me", "hub.github.com", "lists.w3.org", "mikeindustries.com", "netlify.com", "orrka.com", "pages.github.com", "robots.thoughtbot.com", "visionmedia.github.com", "w3.org"]
+
+["https://wynnnetherland.com/reviews/things-that-matter-three-decades-of-passions-pastimes-and-politics"]
+title = "Things That Matter: Three Decades of Passions, Pastimes and Politics"
+description = 'My review of "Things That Matter: Three Decades of Passions, Pastimes and Politics" by Charles Krauthammer.'
+full_description = "Like many, I was introduced to Charles Krauthammer via television. His wry wit and concision were perfectly suited to the medium, but it is as a weekly columnist and writer that he is most remembered. This collection of columns and essays displays the depth and breadth of his thinking on topics ranging from the Cold War to stem cell research. Having consumed this book via Audible, my only nit is with the audio production. Unprepared for the change in narrator midway through, it felt like losing Charles a second time."
+year_published = 2025
+clearnet = "https://wynnnetherland.com/reviews/things-that-matter-three-decades-of-passions-pastimes-and-politics"
+tags = ["decades", "matter:", "netherland", "passions,", "pastimes", "politics", "things", "three", "wynn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3.7designs.co", "37signals.com", "adobe.com", "amazon.com", "assets.thoughtworks.com", "blog.marshill.com", "blog.sanctum.geek.nz", "blogs.wsj.com", "carbonfive.github.io", "css-tricks.com", "damienkatz.net", "docs.docker.com", "en.wikipedia.org", "github.com", "golang.org", "goodreads.com", "google.github.io", "log.demaree.me", "netlify.com", "twitter.com"]

@@ -1,0 +1,546 @@
+["https://docs.kdab.com/kdbindings/1.0.0"]
+title = "KDBindings - KDBindings 1.0.1 - Reactive programming & data binding in C++"
+description = "KDBindings Documentation - Reactive programming & data binding in C++"
+full_description = 'KDBindings¶ Reactive programming & data binding in C++ From plain C++ you get: Signals + Slots. Properties templated on the contained type. Property bindings allowing reactive code to be written without having to do all the low-level, error prone plumbing by hand. Lazy evaluation of property bindings. No more broken bindings. Totally stand-alone "header-only" library. No heavy Qt dependency. Can still be used with Qt if you so wish. Using KDBindings¶ KDBindings requires a C++ compiler with C++17 support. Find more information at: detailed browsable API reference our assorted example programs Contact¶ Visit us on GitHub: https://github.com/KDAB/KDBindings Email info@kdab.com for questions about copyright, licensing or commercial support. Stay up-to-date with KDAB product announcements: KDAB Newsletter KDAB Blogs KDAB on Twitter Licensing¶ KDBindings is © Klarälvdalens Datakonsult AB and available under the terms of the MIT license. Contact KDAB at info@kdab.com if you need different licensing options. KDBindings includes these source files, also available under the terms of the MIT license: doctest.h - the lightest feature-rich C++ single-header testing framework for unit tests and TDD (C) 2016-2021 Viktor Kirilov vik.kirilov@gmail.com genindex_array.h (C) 2021 Jeremy Burns (adapted by KDAB for KDBindings) Get Involved¶ Please submit your contributions or issue reports from our GitHub space at https://github.com/KDAB/KDBindings Contact info@kdab.com for more information. About KDAB¶ KDBindings is supported and maintained by Klarälvdalens Datakonsult AB (KDAB). The KDAB Group is the global No.1 software consultancy for Qt, C++ and OpenGL applications across desktop, embedded and mobile platforms. The KDAB Group provides consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe on Qt as well as C++, OpenGL, 3D and more. Please visit https://www.kdab.com to meet the people who write code like this. Updated on 2024-07-13 at 00:00:32 +0000'
+author = "Klarälvdalens Datakonsult AB (KDAB)"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdbindings/1.0.0"
+tags = ["1.0.1", "binding", "contact¶", "data", "getting", "involved¶", "kdab", "kdab¶", "kdbindings", "kdbindings¶"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.3.1"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.3.1"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.4.3"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.4.3"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.6.0"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.6.0"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets-manual"]
+title = "Index of /kddockwidgets-manual"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets-manual"
+tags = ["/kddockwidgets-manual", "index"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.7.2"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.7.2"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.2"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. Copyright (C) 2010-2014 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@.nosp@m.kdab.nosp@m..com> This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.2"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray-manual"]
+title = "GammaRay User Manual"
+description = """
+What is GammaRay?
+GammaRay is an introspection tool for Qt applications developed by KDAB. Leveraging the QObject introspection mechanism it allows you to observe and manipulate your application at runtime. This works both locally on your workstation and remotely on an embedded target.
+Augmenting your instruction-level debugger, GammaRay allows you to work on a much higher level, with the same concepts as the frameworks you use. This is especially useful for the more complex Qt frameworks such as model/view, state machines, or scene graphs.
+When trying to analyze bugs in your application, a instruction-level debugger is usually your first tool of choice, and rightfully so. Debuggers allow you to follow the program flow and allow you to inspect the state of objects or variables. When using a debugger with proper Qt integration, such as in QtCreator, it will also handle Qt's own data types correctly. However, when dealing with complex frameworks this level of detail is often too low-level. Keeping an overview in a large scene graph or following the complex interactions between models and views can quickly become a cumbersome task.
+GammaRay addresses this by providing domain-specific debugging aids on a much higher level. It provides easy ways of navigating through the complex internal structures you find in some Qt frameworks, such as the QtQuick scene graphs, model/view, QTextDocument, state machines, and more. Unlike the debugger, GammaRay understands those internal structures and can present them in a meaningful way.
+GammaRay is available for all major platforms and can inspect applications right from the start or attach to an already running one. It also supports remote debugging, which is especially valuable when working on embedded systems.
+
+Table Of Contents
+
+Getting Started
+Installation
+Basic Operations
+Graphical Launcher
+GammaRay Client
+Qt Creator Integration
+Command Line Interface
+
+
+Tools
+Qt Quick 2 Inspector
+Widget Inspector
+Graphics Scene Inspector
+Qt3D Inspector
+Styles
+Web Inspector
+State Machine Debugger
+Messages
+Signal Plotter
+Timers
+Events
+Wayland Compositors
+Script Engine Debugger
+Object Browser
+Actions
+Models
+Text Documents
+Resources
+Translations
+Meta Object Browser
+Meta Type Browser
+Geo Positioning
+Font Browser
+Locales
+Mime Types
+Network
+Text Codecs
+System Information
+
+
+Object Inspection
+Properties
+Methods
+Connections
+Enums and Flags
+Class Info
+Stack Trace
+Bindings
+QML Context
+QML Type
+Scene Graph Material
+Scene Graph Geometry
+Scene Graph Texture
+Paint Analyzer
+Widget Attributes
+Qt3D Geometry Inspector
+Application Attributes
+HTTP Cookies
+
+
+Problem Reporter
+Examples
+Advanced Usage
+Licenses and Attributions"""
+full_description = "GammaRay User Manual What is GammaRay? GammaRay is an introspection tool for Qt applications developed by KDAB. Leveraging the QObject introspection mechanism it allows you to observe and manipulate your application at runtime. This works both locally on your workstation and remotely on an embedded target. Augmenting your instruction-level debugger, GammaRay allows you to work on a much higher level, with the same concepts as the frameworks you use. This is especially useful for the more complex Qt frameworks such as model/view, state machines, or scene graphs. When trying to analyze bugs in your application, a instruction-level debugger is usually your first tool of choice, and rightfully so. Debuggers allow you to follow the program flow and allow you to inspect the state of objects or variables. When using a debugger with proper Qt integration, such as in QtCreator, it will also handle Qt's own data types correctly. However, when dealing with complex frameworks this level of detail is often too low-level. Keeping an overview in a large scene graph or following the complex interactions between models and views can quickly become a cumbersome task. GammaRay addresses this by providing domain-specific debugging aids on a much higher level. It provides easy ways of navigating through the complex internal structures you find in some Qt frameworks, such as the QtQuick scene graphs, model/view, QTextDocument, state machines, and more. Unlike the debugger, GammaRay understands those internal structures and can present them in a meaningful way. GammaRay is available for all major platforms and can inspect applications right from the start or attach to an already running one. It also supports remote debugging, which is especially valuable when working on embedded systems. Table Of Contents Getting Started Installation Basic Operations Graphical Launcher GammaRay Client Qt Creator Integration Command Line Interface Tools Qt Quick 2 Inspector Widget Inspector Graphics Scene Inspector Qt3D Inspector Styles Web Inspector State Machine Debugger Messages Signal Plotter Timers Events Wayland Compositors Script Engine Debugger Object Browser Actions Models Text Documents Resources Translations Meta Object Browser Meta Type Browser Geo Positioning Font Browser Locales Mime Types Network Text Codecs System Information Object Inspection Properties Methods Connections Enums and Flags Class Info Stack Trace Bindings QML Context QML Type Scene Graph Material Scene Graph Geometry Scene Graph Texture Paint Analyzer Widget Attributes Qt3D Geometry Inspector Application Attributes HTTP Cookies Problem Reporter Examples Advanced Usage Licenses and Attributions Getting Started"
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray-manual"
+tags = ["browser", "complex", "contents", "debugger", "gammaray", "gammaray?", "graph", "inspector", "manual", "scene"]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.6"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.6"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.11"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2021 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.11"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.5.1"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.5.1"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.6.2"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.6.2"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.1"]
+title = "KDDockWidgets API Documentation: KDDockWidgets"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. A full demo lives in examples/dockwidgets/, it showcasts most of the features. A simpler example lives in examples/minimal/, which might be more indicated to learn the API, as it's less overwelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change this location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. Make sure you have pyside2, shiboken2 and shiboken2-generator installed. As this time, you cannot get shiboken2-generator because the wheels are not on PyPi. To use the wheels do this: % pip3 install \ –index-url=http://download.qt.io/official_releases/QtForPython/ \ –trusted-host download.qt.io \ shiboken2 pyside2 shiboken2_generator The bindings will be installed to the passed -DCMAKE_INSTALL_PREFIX, which might require setting the PYTHONPATH env variable to point to that path when running applications. Alternatively, configure the bindings install location by passing -DKDDockWidgets_PYTHON_BINDINGS_INSTALL_PREFIX=/usr/lib/python3.8/site-packages to CMake (adjust to the python path on your system).'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.1"
+tags = ["bindings", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation", "python", "roadmap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.9"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2018 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.9"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/latest"]
+title = "Redirecting..."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/latest"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "kdab.github.io", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.1.0"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. Copyright (C) 2010-2014 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@.nosp@m.kdab.nosp@m..com> This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.1.0"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.4.1"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.4.1"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com"]
+title = "KDAB Documentation Portal"
+description = "We offer professional services, Qt consulting and development, Qt Courses, Qt Training, Qt components, Qt software and Qt books. Our developers are expert in Qt Programming and Multiplatform Software Engineering."
+full_description = "API Documentation KD ChartSelect version latest 3.0.0 2.7.2 2.7.1 2.7.0 2.6.2 2.6.1 2.6.0 2.6 2.5.1 2.5.0 2.5 2.4.3 2.4.2 2.4.1 2.4.0 2.4 2.3.1 2.3 KD ReportsSelect version latest 2.2.0 2.1.0 2.0.0 1.9.0 1.8.2 1.8.1 1.8.0 1.7.0 1.6.0 1.5.0 1.4.0 1.3.0 1.2.0 KD SoapSelect version latest 2.2.0 2.1.0 2.0.0 1.9.1 1.9.0 1.8.0 1.7.0 1.6.0 1.5.0 1.4.0 1.3.0 1.2.0 1.10.0 1.1.0 1.0.0 KD StateMachineEditorSelect version latest 1.3.0 1.3 1.2 1.1 1.0 GammaRaySelect version latest 3.0 2.9 2.8.1 2.8 2.7 2.6 2.5 2.4 2.3 2.2 2.11 2.10 2.1.0 2.0 1.3 KD DockWidgetsSelect version latest 2.1.0 2.0.0 1.7.0 1.6.0 1.5.0 1.4.0 1.4 1.3 1.2 1.1 1.0 KD BindingsSelect version latest 1.0.0 KDSingleApplicationSelect version latest 1.1.0 1.0.0 KDGpuSelect version unstable latest 0.6.0 KDSPDSetupSelect version latest KuesaSelect version latest 2.1.0 2.0.2 2.0 KDWinUtilsSelect version latest 1.0 Manuals knut-manual kddockwidgets-manual gammaray-manual kuesa-manual"
+year_published = 2025
+clearnet = "https://docs.kdab.com"
+tags = ["2.1.0", "charts", "latest", "multiplatform development", "professional services", "qt books", "qt components", "qt consulting and development", "qt courses", "qt programming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.7.0"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.7.0"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.7"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2017 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.7"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.2"]
+title = "KDDockWidgets API Documentation: KDDockWidgets"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. A full demo lives in examples/dockwidgets/, it showcasts most of the features. A simpler example lives in examples/minimal/, which might be more indicated to learn the API, as it's less overwelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change this location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to point the CMAKE_MODULE_PATH environment variable depending on where you installed KDDockWidgets. Make sure you have pyside2, shiboken2 and shiboken2-generator installed. As this time, you cannot get shiboken2-generator because the wheels are not on PyPi. To use the wheels do this: % pip3 install \ –index-url=http://download.qt.io/official_releases/QtForPython/ \ –trusted-host download.qt.io \ shiboken2 pyside2 shiboken2_generator'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.2"
+tags = ["bindings", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation", "python", "roadmap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.4"]
+title = "KDDockWidgets API Documentation: Main Page"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. We also have an in browser demo. Note however that this demo isn't fully featured, as it's running on Qt for WebAssembly. A simpler example can be found in examples/minimal, which might be more indicated to learn the API, as it's less overwhelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change the installation location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to modify the CMAKE_PREFIX_PATH environment variable depending on where you installed KDDockWidgets. We'll try to remain source-compatible across versions. API will get a deprecation notice before being removed in the next version. Note that this source-compatibility effort is only for the public API. Private API (headers ending in _p.h) might change so you shouldn't depend on them. Private API is only exposed so more advanced users can override, for example paintEvent(), and not so they can change internal business logic.'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.4"
+tags = ["bindings", "capture", "documentation", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "travis-ci.com", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.0"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. Copyright (C) 2010-2014 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@.nosp@m.kdab.nosp@m..com> This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. Our software products increase Qt productivity and our Qt trainers have trained 50% of commercial Qt developers globally. Please visit http://www.kdab.com to meet the people who write code like this. We also offer Qt training courses."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.0"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.0"]
+title = "KDDockWidgets API Documentation: KDDockWidgets"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. A full demo lives in examples/dockwidgets/, it showcasts most of the features. A simpler example lives in examples/minimal/, which might be more indicated to learn the API, as it's less overwelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change this location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. Make sure you have pyside2, shiboken2 and shiboken2-generator installed. As this time, you cannot get shiboken2-generator because the wheels are not on PyPi. To use the wheels do this: % pip3 install \ –index-url=http://download.qt.io/official_releases/QtForPython/ \ –trusted-host download.qt.io \ shiboken2 pyside2 shiboken2_generator The bindings will be installed to the passed -DCMAKE_INSTALL_PREFIX, which might require setting the PYTHONPATH env variable to point to that path when running applications. Alternatively, configure the bindings install location by passing -DPYTHON_BINDINGS_INSTALL_PREFIX=/usr/lib/python3.8/site-packages to CMake (adjust to the python path on your system).'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.0"
+tags = ["bindings", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation", "python", "roadmap"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.7.1"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.7.1"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.4.2"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.4.2"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["http://docs.kdab.com"]
+title = "KDAB Documentation Portal"
+description = "We offer professional services, Qt consulting and development, Qt Courses, Qt Training, Qt components, Qt software and Qt books. Our developers are expert in Qt Programming and Multiplatform Software Engineering."
+full_description = "API Documentation KD ChartSelect version latest 3.0.0 2.7.2 2.7.1 2.7.0 2.6.2 2.6.1 2.6.0 2.6 2.5.1 2.5.0 2.5 2.4.3 2.4.2 2.4.1 2.4.0 2.4 2.3.1 2.3 KD ReportsSelect version latest 2.2.0 2.1.0 2.0.0 1.9.0 1.8.2 1.8.1 1.8.0 1.7.0 1.6.0 1.5.0 1.4.0 1.3.0 1.2.0 KD SoapSelect version latest 2.2.0 2.1.0 2.0.0 1.9.1 1.9.0 1.8.0 1.7.0 1.6.0 1.5.0 1.4.0 1.3.0 1.2.0 1.10.0 1.1.0 1.0.0 KD StateMachineEditorSelect version latest 1.3.0 1.3 1.2 1.1 1.0 GammaRaySelect version latest 3.0 2.9 2.8.1 2.8 2.7 2.6 2.5 2.4 2.3 2.2 2.11 2.10 2.1.0 2.0 1.3 KD DockWidgetsSelect version latest 2.1.0 2.0.0 1.7.0 1.6.0 1.5.0 1.4.0 1.4 1.3 1.2 1.1 1.0 KD BindingsSelect version latest 1.0.0 KDSingleApplicationSelect version latest 1.1.0 1.0.0 KDGpuSelect version unstable latest 0.6.0 KDSPDSetupSelect version latest KuesaSelect version latest 2.1.0 2.0.2 2.0 KDWinUtilsSelect version latest 1.0 Manuals knut-manual kddockwidgets-manual gammaray-manual kuesa-manual"
+year_published = 2025
+clearnet = "http://docs.kdab.com"
+tags = ["2.1.0", "charts", "latest", "multiplatform development", "professional services", "qt books", "qt components", "qt consulting and development", "qt courses", "qt programming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.4"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. The GammaRay Software is (C) 2010-2015 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.4"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.10"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2018 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.10"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/3.0.0"]
+title = "KD Chart API Documentation: KD Chart API Documentation"
+full_description = "KD Chart is a tool for creating business and scientific charts. It provides developers with a sophisticated way to customize layouts and to design and manage large numbers of axes. Since all configuration settings have practical defaults, you can usually get by with tweaking just a few parameters and then relying on the defaults for the rest. KD Chart requires Qt5.15.0 or newer, and a compiler with C++11 support. Qt6 support is added starting with KD Chart version 3.0, and requires a compiler with C++17 support. After reading the introductory overview files in docs/ you will find more information at these places: Please submit your contributions or issue reports to our GitHub space at https://github.com/KDAB/KDChart. The KD Chart Software is © Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the MIT license. The KDAB Group is the global No.1 software consultancy for Qt, C++ and OpenGL applications across desktop, embedded and mobile platforms. The KDAB Group provides consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe on Qt as well as C++, OpenGL, 3D and more. KD CHART and the KD CHART logo are registered trademarks of Klaralvdalens Datakonsult AB in the European Union, the United States, and/or other countries. Other product and company names and logos may be trademarks or registered trademarks of their respective companies."
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/3.0.0"
+tags = ["chart", "contact", "documentation", "introduction", "involved", "kdab", "license", "using"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.6"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2016 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.6"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.8"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2017 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.8"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.6.0"]
+title = "KDDockWidgets API Documentation: KDDockWidgets"
+full_description = '''⚠️⚠️: If you're using QtQuick/QML it's recommended to use 2.0 branch. 1.x will continue to receive bug fixes for a long time but only for QtWidgets frontend. KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. We also have an in browser demo. Note however that this demo isn't fully featured, as it's running on Qt for WebAssembly. Open a terminal capable of building Qt applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. Change the installation location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to CMake. A simpler example can be found in examples/minimal, which might be more indicated to learn the API, as it's less overwhelming than the full demo. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to modify the CMAKE_PREFIX_PATH environment variable depending on where you installed KDDockWidgets. There's currently two lines of development: v1 which is very mature and stable and v2 which is an ongoing effort to make KDDW support multiple "frontends" (QtWidgets, QtQuick and even non-Qt technologies, like flutter).'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.6.0"
+tags = ["bindings", "building", "capture", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "travis-ci.com", "twitter.com"]
+
+["https://docs.kdab.com/kdbindings/latest"]
+title = "Redirecting..."
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdbindings/latest"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/3.0"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2023 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See GPL-2.0-or-later.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/3.0"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.8.1"]
+title = "GammaRay API Documentation: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2017 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.8.1"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.3"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.3"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.4"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.4"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.4.0"]
+title = "KDDockWidgets API Documentation: Main Page"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. We also have an in browser demo. Note however that this demo isn't fully featured, as it's running on Qt for WebAssembly. A simpler example can be found in examples/minimal, which might be more indicated to learn the API, as it's less overwhelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change the installation location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to modify the CMAKE_PREFIX_PATH environment variable depending on where you installed KDDockWidgets. We'll try to remain source-compatible across versions. API will get a deprecation notice before being removed in the next version. Note that this source-compatibility effort is only for the public API. Private API (headers ending in _p.h) might change so you shouldn't depend on them. Private API is only exposed so more advanced users can override, for example paintEvent(), and not so they can change internal business logic.'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.4.0"
+tags = ["bindings", "capture", "documentation", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "travis-ci.com", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.3"]
+title = "KDDockWidgets API Documentation: KDDockWidgets"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. We also have an in browser demo. Note however that this demo isn't fully featured, as it's running on Qt for WebAssembly. A simpler example can be found in examples/minimal, which might be more indicated to learn the API, as it's less overwhelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework: The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change the installation location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to modify the CMAKE_PREFIX_PATH environment variable depending on where you installed KDDockWidgets. We'll try to remain source-compatible across versions. API will get a deprecation notice before being removed in the next version. Note that this source-compatibility effort is only for the public API. Private API (headers ending in _p.h) might change so you shouldn't depend on them. Private API is only exposed so more advanced users can override, for example paintEvent(), and not so they can change internal business logic.'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.3"
+tags = ["bindings", "capture", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing", "motivation", "python"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/latest"]
+title = "Redirecting..."
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/latest"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.5.0"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.5.0"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.4.0"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.4.0"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.5"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.5"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.3"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. The GammaRay Software is (C) 2010-2015 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. We continue to help develop parts of Qt and are one of the major contributors to the Qt Project. We can give advanced or standard trainings anywhere around the globe."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.3"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/1.3"]
+title = "GammaRay: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. Starting with version 1.2, GammaRay provides the ability to write your own plugins. This documentation describes the API for doing just that. Copyright (C) 2010-2013 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@.nosp@m.kdab.nosp@m..com> This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA. KDAB, the Qt experts, provide consulting and mentoring for developing Qt applications from scratch and in porting from all popular and legacy frameworks to Qt. Our software products increase Qt productivity and our Qt trainers have trained 50% of commercial Qt developers globally. Please visit http://www.kdab.com to meet the people who write code like this. We also offer Qt training courses."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/1.3"
+tags = ["features", "gammaray", "inspection", "kdab", "license", "manipulation", "plugins", "qt-application", "tool."]
+language = "en"
+internal-references = ["none"]
+external-references = ["customers.kdab.com", "doc.qt.io", "facebook.com", "kdab.com", "twitter.com"]
+
+["https://docs.kdab.com/kdchart/2.6.1"]
+title = "KD Chart 2: Main Page"
+year_published = 2025
+clearnet = "https://docs.kdab.com/kdchart/2.6.1"
+tags = ["chart", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "twitter.com"]
+
+["https://docs.kdab.com/kddockwidgets/1.5.0"]
+title = "KDDockWidgets API Documentation: Main Page"
+full_description = '''KDDockWidgets is a Qt dock widget library written by KDAB, suitable for replacing QDockWidget and implementing advanced functionalities missing in Qt. Although KDDockWidgets is ready to be used out of the box, it can also be seen as a framework to allow building very tailored custom docking systems. It tries to expose every internal widget and every knob for the app developer to tune. Throughout the years KDAB contributed and funded bug fixes and features to QDockWidget. Sadly, this was very painful. Each bug fix or feature took many days of implementation, and an equal number of days just to fix dozens of regressions. QDockWidget mixes GUI code with logic with state, making it very hard to move forward with new features. Furthermore, our customers were getting more creative with their requests, so it was clear we needed a better docking framework. We also have an in browser demo. Note however that this demo isn't fully featured, as it's running on Qt for WebAssembly. A simpler example can be found in examples/minimal, which might be more indicated to learn the API, as it's less overwhelming than the full demo. Open a terminal capable of building Qt5 applications. Make sure you have cmake, ninja, compiler, Qt, etc in PATH. Adapt the instructions to suit your cmake generator and operating system. Build and install the KDDockWidgets framework (see the "Building" section below for more info): The installation directory defaults to c:\KDAB\KDDockWidgets-<version> on Windows and /usr/local/KDAB/KDDockWidgets-<version> on non-Windows. You can change the installation location by passing the option -DCMAKE_INSTALL_PREFIX=/install/path to cmake. and link to the imported target KDAB::kddockwidgets. That's all you need to do (the imported target also brings in the include directories) You may also need to modify the CMAKE_PREFIX_PATH environment variable depending on where you installed KDDockWidgets. We'll try to remain source and binary compatible across versions. API will get a deprecation notice before being removed in the next version. Note that this compatibility effort is only for the public API. Private API (headers ending in _p.h) might change so you shouldn't depend on them. Private API is only exposed so more advanced users can override, for example paintEvent(), and not so they can change internal business logic.'''
+year_published = 2025
+clearnet = "https://docs.kdab.com/kddockwidgets/1.5.0"
+tags = ["bindings", "building", "capture", "documentation", "examples", "features", "involved", "kdab", "kddockwidgets", "licensing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "demos.kdab.com", "doc.qt.io", "download.qt.io", "doxygen.org", "facebook.com", "gist.github.com", "github.com", "kdab.com", "kdab.github.io", "news.kdab.com", "org.qt-project.qtcore", "travis-ci.com", "twitter.com"]
+
+["https://docs.kdab.com/gammaray/2.5"]
+title = "GammaRay API Documentaion: GammaRay - Qt-application inspection and manipulation tool."
+full_description = "GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent. GammaRay uses various DLL injection techniques to hook into an application at runtime and provide access to a lot of interesting information. GammaRay provides API for two use-cases, plugins to extend GammaRay in order to support additional frameworks, and integration of the GammaRay client and/or launcher in an IDE. Both use-cases are described below. Plugins enable you to extend GammaRay to support inspection of additional frameworks. Typically there are two plugins per framework, one for the probe containing the logic to extract the relevant information from the target application, and one for the client containing the graphical user interface. GammaRay ships with a large set of plugins for various Qt frameworks that can serve as examples for all the features described below. Additional external plugins can be found here: Probe plugins have a number of options to make their specific data types known to the existing GammaRay infrastructure (like the object browser or the property editor): A pair of probe and client plugins can also extend the property view that many existing tools use by additional tabs. Similarly, it is possible to use the unified property editor in own tools. This is done by GammaRay::PropertyController on the probe side and GammaRay::PropertyWidget on the client side. GammaRay ships with a stand-alone launcher and client, but you can also integrate those two components into an IDE. The launcher is the component of GammaRay that takes care of starting a target application or attaching to a running one, and injecting a suitable GammaRay probe into it. The following classes provide essential functionality for this: The client is the main user interface of GammaRay when connected to a target application. The key elements for embedding the client UI are: The GammaRay Software is (C) 2010-2016 Klarälvdalens Datakonsult AB (KDAB), and is available under the terms of the GPL version 2 (or any later version, at your option). See LICENSE.GPL.txt for license details."
+year_published = 2025
+clearnet = "https://docs.kdab.com/gammaray/2.5"
+tags = ["access", "client", "data", "editor", "entry", "gammaray", "inspection", "integration", "kdab", "launcher"]
+language = "en"
+internal-references = ["none"]
+external-references = ["codereview.qt-project.org", "customers.kdab.com", "doc.qt.io", "facebook.com", "github.com", "kdab.com", "org.qt-project.qtcore", "twitter.com"]

@@ -1,0 +1,549 @@
+["https://h2.jaguarpaw.co.uk/posts/exists"]
+title = "exists"
+full_description = 'In Haskell we can use Rank2Types or RankNTypes to pass arguments which contain universally quantified parameters, for example We can also make datatypes that contain existential variables, that means we know they have some type, but we don’t know which. Why can’t we do this? Well, the reason that we can manipulate forall is that it desugars directly into something in the polymorphic lambda calculus (System F). The type (modulo desugaring of the typeclass contexts). Here /\ is a higher-level lambda, and its use means that the caller of the argument (i.e. the body of showBoth) gets to choose to instantiate the a to possibly many different types and use that function at all of them. On the other hand, there is nothing for exists to directly desugar to. We would like the type where the {...} notation indicates a dependent sum. However, there is no such construction available in Haskell’s Core intermediate language. I certainly recall seeing these dependent products in some presentations of polymorphic lambda calculus so perhaps there is no impediment to them in principle.'
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/exists"
+tags = ["exists", "haskell", "keyword?", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/comments"]
+title = "comments"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/comments"
+tags = ["comments", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/behaviour-changes-flag-day"]
+title = "behaviour-changes-flag-day"
+full_description = "At work (Groq) we recently upgraded the version of GHC that we use from 8.10 to 9.6, along with many of the Haskell packages we depend on. I wrote about the changes to our code that this required in “Upgrading from GHC 8.10 to GHC 9.6 – an experience report”. That article touches on the risks associated with being forced to make many changes at once: if a problem occurs it can be hard to diagnose and it can be hard to fix. After that article was written I discovered that such a problem, albeit a benign one, had occurred. The present article explains the situation. We use Nix’s nixpkgs to provide GHC and Haskell packages. Consequently, we upgraded GHC and our Haskell packages at exactly the same time by upgrading to a later version of nixpkgs, specifically all in the same commit to our source code repository. I’m not familiar with Nix or nixpkgs so I can’t explain exactly why we followed the approach of upgrading GHC and all packages at the same time but it was deemed to be the most straightforward of a variety of different options. Regardless, that means we experienced a “flag day”. Paraphrasing Wikipedia’s definition and elaboration: A flag day is a change which requires a complete conversion of a sizable body of software. The change is large and expensive, and—in the event of failure—similarly difficult and expensive to reverse. The situation may arise if there are limitations on backward compatibility and forward compatibility among system components, which then requires that updates be performed almost simultaneously (during a “flag day cutover”). This contrasts with the method of gradually phased-in upgrades, which avoids the disruption of service caused by en masse upgrades. In the language of my previous article, a “flag day cutover” is required when incorporating a large number of “breaking fixes”. By contrast, “forward compatible mitigations” can be made as “gradually phased-in upgrades”. We experienced a “failure” of a sort after our flag day, albeit a benign one, specifically the failure of a golden test, that is, a test that checks for exact equality of the output of a particular function or program. Golden tests often over-specify behaviour and that was the case here too: the output artifact under test was a program for Groq’s LPU1, and although the binary contents of the program file differed before and after flag day, it produced the same results, so the test was too strict."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/behaviour-changes-flag-day"
+tags = ["appendix:", "behaviour", "behaviour-changes-flag-day", "cause?", "changes", "flag", "links", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "groq.com", "hackage.haskell.org", "haskell.org", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/bells-theorem-made-simpler"]
+title = "bells-theorem-made-simpler"
+full_description = '''Bell’s theorem is a mathematical result which proves that quantum physics is incompatible with what are called “local hidden-variable theories”. John Stewart Bell came up with a mathematical inequality that “local hidden-variable theories” must satisfy, yet it was subsequently demonstrated by experiment that quantum systems can violate the inequality. One philosophical interpretation is that the physical world is non-local: actions in one part of the physical universe can instantaneously affect other parts of the universe. Einstein called this “spooky action at a distance”. A first undergraduate course in quantum mechanics is enough to understand Bell’s theorem but nonetheless I found the standard treatments completely incomprehensible, not mathematically incomprehensible but incomprehensible in their meaning. I struggled to internalise the meaning of the inequality or why it should be surprising that it could be violated. This article presents the treatment that I find most accessible. I hope you find it as fascinating as I do! We will look at the CHSH inequality because it is slightly more general than Bell’s original inequality. It states that if there are physical observables \(a\), \(b\), \(a'\) and \(b'\), each of which can take on only values \(-1\) or \(+1\), then \[ |E(a, b) - E(a, b’) + E(a’, b) + E(a’, b’)| \leq 2 \] where each \(E(x, y)\) is called the “quantum correlation” between an observation \(x\) and an observation \(y\). “Quantum correlation” sounds mysterious but it’s just the expectation of the product of \(x\) and \(y\): \[ E(x, y) = \mathbb{E}(xy) \] It is of little benefit that the definition of “quantum correlation” is technically simple. I still have no intuition about it! The CHSH inequality is equally mysterious. I have no intuition about whether it is something that could be violated or not. I have much more intuition about probabilities than “quantum correlations”. Luckily the “quantum correlation” can be rewritten simply in terms of probabilities. After doing so the CHSH inequality will become very natural! We start by observing that, because \(x\) and \(y\) can take on only values \(+1\) and \(-1\), \[ E(x, y) = \mathbb{E}(xy) = \mathbb{P}(x = y) - \mathbb{P}(x \ne y) = 1 - 2\mathbb{P}(x \ne y) \] so we can rewrite the CHSH inequality as \[ |1 - 2\mathbb{P}(a \ne b) - 1 + 2\mathbb{P}(a \ne b’) + 1 - 2\mathbb{P}(a’ \ne b) + 1 - 2\mathbb{P}(a’ \ne b’)| \leq 2 \] and after some algebra we conclude that \[ \mathbb{P}(a \ne b’) \leq \mathbb{P}(a \ne b) + \mathbb{P}(a’ \ne b) + \mathbb{P}(a’ \ne b’) \]'''
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bells-theorem-made-simpler"
+tags = ["bells-theorem-made-simpler", "bell’s", "chsh", "inequality", "interesting", "introduction", "made", "reading", "simpler", "theorem"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "groq.com", "haskell.org", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/fold"]
+title = "fold"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/fold"
+tags = ["fold", "folding", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "en.wikipedia.org", "fpcomplete.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "mobile.twitter.com", "msn.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/greenspun"]
+title = "greenspun"
+full_description = "Any sufficiently complicated mathematical proof contains an ad hoc, informally-specified, bug-ridden, inflexible implementation of half of type theory."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/greenspun"
+tags = ["greenspun", "greenspun’s", "logic", "mathematical", "rule", "tenth", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/hascallstack-domain-errors"]
+title = "hascallstack-domain-errors"
+full_description = "HasCallStack is a feature in Haskell’s compiler, GHC, that is frequently used to annotate exceptions with the call stack at the point in the program from which they were thrown. For example, I can define an exception type that, as well as a message, contains a CallStack: The feature makes debugging easier by allowing the origin of of an exception to be discovered. But it is useful for more than just exceptions: it is also useful for error messages in domain specific languages. In this article we’ll look at an example of such a use case. At Groq, one of the things we use Haskell for is to provide an embedded domain specific assembly language (an “assembly EDSL”) for our novel chip, the “LPU”. The assembly language allows us to define a program, which consists of a sequence of instructions to run on each processor on the chip and a collection of data values (called “constants”) that are loaded alongside the program to particular addresses in the chip’s memory. Let’s have a look at how we can implement part of this in Haskell, restricting ourselves, for simplicity, to specifying the constant values and addresses. For the purposes of this article, we’ll say that a memory address (Address) is an Int, and a constant value placed at an address (Data) is a list of Word8 of length 8 (i.e. a list of 8 bytes). In practice we would probably use newtype or data definitions but to keep things simple in this article we’ll just use type synonyms. Let’s see how we can arrange that. Firstly, we’ll need an Assembly monad. Here I’m using Bluefin for the implementation. The implementation is roughly equivalent to a Writer [Constant] monad (from the transformers library) or a Stream (Of Constant) monad (from the streaming library). (For the monad instance, see the appendix.) Then what should the function constant do? It should yield the arguments we give it into the stream, so that when we run the stream we pick them up. For the assembly stage, let’s collect the constants together and put them in a Map (from the containers library) keyed by Address:"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/hascallstack-domain-errors"
+tags = ["annotate", "appendix", "assembly", "callstack", "conclusion", "detecting", "domain", "duplicates", "edsl", "errors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/a-perspective-on-higher-haskell"]
+title = "a-perspective-on-higher-haskell"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/a-perspective-on-higher-haskell"
+tags = ["haskell", "haskell?", "higher", "perspective", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "golem.ph.utexas.edu", "web.jaguarpaw.co.uk"]
+
+["https://h2.jaguarpaw.co.uk/posts/bluefin-streams-finalize-promptly"]
+title = "bluefin-streams-finalize-promptly"
+full_description = "The pipes and conduit streaming abstractions have a problem: despite having special-purpose bracketing operations they don’t finalize promptly in the presence of exceptions. Bluefin, by contrast, has two benefits: it can bracket its streams with general-purpose operations, and those brackets finalize promptly. What does “finalize promptly” mean? And why is it a problem to not finalize promptly? Read on to find out. When we have acquired, and have been using, a scarce resource (for example a file handle) we need to “finalize it promptly”, that is, “release” or “clean it up” as soon as possible after we no longer need it, so that it can be reused. If a program component is guaranteed to promptly finalize the resources it holds it is sometimes called “resource safe”. One element of the Haskell ecosystem that provides a form of prompt finalization is Control.Exception.bracket. The type and intended usage of bracket are: When the bracket call executes the resource is firstly acquired and then secondly used (the part of the program that uses the resource is often called “the body”) . Thirdly, the resource is released once the body finishes, regardless of whether the body finished normally or by throwing an uncaught exception. Below, bracketExample brackets the usage of a file handle. It opens a file, throws an exception if the file is too big, and then subsequently closes the file. (When it opens and closes the file it also prints a message to tell us that it is doing so.) If the body terminates with an exception then the file is also closed, as desired (and the exception is rethrown from bracket). Bracketing of resources is a very useful, general concept. Streaming abstractions like those provided by pipes, conduit and Bluefin need to support prompt finalization, through some form of bracketing, because we want to be able to implement streaming computations that hold resources. For example, we might want to implement a producer that yields all lines from a file. To be resource safe, that producer must close the handle to the file when it terminates, either normally or through an exception."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bluefin-streams-finalize-promptly"
+tags = ["benefits", "bluefin", "bluefin’s", "bracketing", "conclusion", "conduit", "exception", "finalization", "finalize", "how?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/extensible-effects-mtl"]
+title = "extensible-effects-mtl"
+full_description = "Oleg suggested to me the following example which shows how easily one can abstract the client in the Extensible Effects framework: The same result can be achieved with the MTL, but the CoT type needs a MonadFunctor instance so that we can use hoist. I don’t know if CoT as implemented via ContT can be given such an instance. As such I implemened my own version like this The reimplementation is remarkably similar to the original with just some hoists added. Running it gives exactly the result desired Note: Later Oleg pointed out to me that the definition of th above only works on transformer stacks two deep, where the second is ReaderT. It seems to me that any more deeply nested stack can be converted to one where the ReaderT occurs at the second layer, using, for example However, this introduces a lot more awkwardness which Extensible Effects doesn’t have, the latter being designed exactly to avoid this kind of thing. So perhaps this is a good example to demonstrate exactly what problem it is that Extensible Effects solves. The concept of MFunctor and its method hoist seem to play a crucial role here. In the case of a free monad I would guess that the MFunctor instance comes for free, i.e. free monads always support hoist. This seems to be a crucial missing element from the MTL to allow effects to work with each other in a generic manner. I need to think about this more …"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/extensible-effects-mtl"
+tags = ["examples", "extensible-effects", "extensible-effects-mtl", "further", "questions", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fpcomplete.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/git-rebase-conflicts-display"]
+title = "git-rebase-conflicts-display"
+full_description = "In the article Resolving git rebase conflicts I explain a procedure for resolving git rebase conflicts. It requires understanding the logical (semantic) intent of the rebased commit and applying it to the current state of the base branch. There are two ways we can better understand the logical intent of the rebased commit. Firstly, we could try looking at the (diff3-style) conflict hunk. For example it might look as follows. The intent of the rebased commit is to transform the middle hunk section into the bottom hunk section, in this case to remove foo3(). Secondly, we could look at the output of git show REBASE_HEAD. This gives us a “unified diff” that may be easier to read. It will look something like the following. The downside is that we will see all of the rebased commit, not just the conflicting parts. Can we combine the best of both? Rebase conflict markers would be more helpful displayed in a different form. We need to see exactly two things: the diff of the rebased commit at the conflict location and the context of the target branch. From the examples in the prior article, where we had Unfortunately we cannot patch this into git ourselves because the conflict style choices is hard-coded into git. Nonetheless, an editor plugin or even text-to-text processor could rewrite the diff3 style into the “context plus diff style” I propose. I have written a demo in Haskell."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/git-rebase-conflicts-display"
+tags = ["better", "conflicts", "display", "git-rebase-conflicts-display", "rebase", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/bluefin-versus-oop"]
+title = "bluefin-versus-oop"
+full_description = "In “OOP is not that bad, actually”, Ömer Sinan Ağacan describes a task that he says “mainstream statically-typed OOP languages do well”. He defines OOP [object oriented programming] as statically-typed programming with classes, inheritance, subtyping and virtual calls. Ultimately I interpret the article not as advocating for OOP, but rather as advocating for programming against well-defined interfaces that can be instantiated with a variety of implementations. I’m strongly in support. However, I think the task is better solved by Haskell, a statically-typed functional language, than by an OOP language (as Ömer defines it). In particular, I don’t see inheritance and subtyping as particularly valuable for this task. We start with a basic logger interface. In Haskell an interface is a type, here Logger. This is like the Logger type that Ömer defined, except using the Eff type from my effect system Bluefin instead of IO. (Most of what I say in this article will apply equally well to IO or Eff and I’ll explain at the end why I think Eff is better.) Then we need a bit of ceremony to define a Handle instance and the log function that we define in terms of the Handle implementation. (This is in principle derivable using Template Haskell or Generics but I haven’t implemented that in Bluefin yet. Mea culpa. I’m including this boilerplate in the article to be honest and explicit.) Then immediately we can define a function, exampleWithLogger, which uses the Logger interface. It prints some messages to stdout (using putStrLn) and logs some messages to the Logger (using log). Having such a function is not useful until we have a way to instantiate the Logger interface. Here’s one: it prints log messages to stdout. (useImplIn and effIO io are Bluefin incantations. The same code using IO instead of Eff wouldn’t have them.) I can instantiate the Logger interface and use it to run the example, like this: Another example that Ömer uses is a logger which only logs above a certain severity. Bluefin can do that too! Ömer suggested that the minimum severity logger should be created afresh, but I actually think it’s better to take an existing logger and wrap it into a minimum severity logger. That sounds more useful, more object-oriented, and in any case more interesting, so let’s do it: withLogAboveSeverityLogger creates a logger that logs to an existing Logger (passed in as an argument), but only when the severity is above some minimum severity."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bluefin-versus-oop"
+tags = ["acknowledgements", "appendix", "bluefin", "bluefin-versus-oop", "conclusion", "effect", "file", "haskell?", "logger", "minimum"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/bret-victor-talks"]
+title = "bret-victor-talks"
+full_description = "can you really do everything you might want to do by having familiarity with only a small number of concepts and techniques?"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bret-victor-talks"
+tags = ["bret", "bret-victor-talks", "change", "climate", "future", "inventing", "media", "principle", "programming", "seeing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/accidentally-exponential"]
+title = "accidentally-exponential"
+full_description = "I accidentally introduced exponential run time into a compiler I was writing and did not realise for over three years. Once upon a time I was writing an AST to represent expressions in a programming language. In reality the language was SQL, but for the sake accessibility let’s pretend it was a simple arithmetic language that allows us to write zero, one, and (non-empty) sums and products. The reason why Zero has an argument will be explained in due course. First, let’s implement wrapper functions to provide a nice API and write an example expression. We expect the example expression to evaluate to 2 * 2, i.e. 4. Let’s write an evaluator and check. The evaluator will be recursive on the structure of terms of type Expr. We are good functional programmers so we will write a data type and general fold function to encapsulate the recursion pattern. They basically write themselves, given the definition of Expr. Now I’ll explain the reason for the argument to the Zero constructor. The backend that we are targeting doesn’t have a very good concept of Zero! We can happily send One to it but sending Zero is quite tricky. In reality the backend is SQL and it’s not terribly straightforward to generically represent an empty query in SQL. Instead of dealing with that problem directly, my approach was to give Expr a type parameter. Then expressions of type Expr () can contain Zero and expressions of type Expr Void cannot. Expressions that might contain Zero need to have it removed before the query is sent to the backend. The following function removes all occurrences of Zero from an expression. If the expression itself was actually zero it returns Nothing, otherwise it returns a Just. Because the type parameter in the return type is polymorphic we have a static guarantee that the result doesn’t contain any Zeros! is valid, so let’s use that instead. After all, more polymorphism gives fewer places for bugs to hide, right? removeZero calculates the correct result but regrettably it has exponential run time! How can this be? The point of expressing removeZero in terms of a fold function was to make it brainlessly simple to write it efficiently and correctly."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/accidentally-exponential"
+tags = ["accidentally", "accidentally-exponential", "aligned", "compiler", "conclusion", "exponential", "introduction", "language", "reality", "stars"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "web.jaguarpaw.co.uk"]
+
+["https://h2.jaguarpaw.co.uk/posts/foldl-traverses-state-foldr-traverses-anything"]
+title = "foldl-traverses-state-foldr-traverses-anything"
+full_description = "Avi Press gave an excellent talk at Scale By the Bay 2023 about difficulties using Haskell at a startup. He mentions that even experienced Haskellers don’t always know how to use fundamental parts of the language. In particular, In this article I’ll deduce a firm rule that allows you to make the correct choice. I will stick to the versions of these functions that operate on lists; their generalization to Foldable warrants a separate article. In summary, the answer is We’ll work with the traditional definitions of foldl and foldr, given below. The implementations in base are more complicated, for performance reasons, but the reasoning in this article applies to them too. Ostensibly, the difference between foldl and foldr is the that former “associates a binary operation to the left” and the latter “associates a binary operation to the right”, as follows. Those are indeed descriptions of the calculated results, but that distinction is not particularly important. If we only care about the result then it’s easy enough to convert between foldl and foldr, as shown below. The important difference is how they calculate the result; the conversion below does not preserve behaviour. For example, foldl (-) 0 calculates a sequence of subtractions in constant space1; foldr (flip (-)) 0 uses O(n) space. So what is the precise difference between how the two folds calculate their results? Consider this: suppose we didn’t have foldl, we only had traverse for State. Nonetheless, we could recover foldl! (In fact we only need traverse_, a weaker form of traverse, and in these examples we’ll use for_ = flip traverse_ for syntactic convenience.) The example below shows how. It converts a function that performs for_ (restricted to State) into a function that performs foldl. And not only can we get foldl from for_ (restricted to State), we can get for_ (restricted to State) from foldl. They are equivalent! Importantly, they are equivalent in both result and performance characteristics."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/foldl-traverses-state-foldr-traverses-anything"
+tags = ["always", "anything", "appendix:", "calculations", "commentary", "conclusion", "definitions", "difference", "difference?", "equivalent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/flexport-ceo-wrong-bottleneck"]
+title = "flexport-ceo-wrong-bottleneck"
+full_description = "I recently read Eliyahu Goldratt’s The Goal, a “business novel” about how to increase capacity in a manufacturing plant, whose lessons can be applied more widely, to logistics and beyond. Over the last few days, themes from the book have been playing out in public, particularly on Twitter, as a consequence of the gridlock at California’s Los Angeles and Long Beach ports. The CEO (Ryan Petersen) of Flexport (a freight forwarding and customs brokerage startup) has tweeted voluminously about the logistical “bottlenecks” he has discovered on a couple of intelligence-gathering expeditions, firstly to talk to dock workers and secondly to observe dock operations from the water. “Bottlenecks” (or “constraints”) are exactly what The Goal is about. Given that I’ve read a book and I have critical thinking capacities I deem myself suitably qualified to critique the CEO of a billion-dollar logistics company. Let’s go! [Disclaimer: I don’t know anything about operations at Flexport. I don’t know whether Petersen has taken the right or wrong actions or decisions regarding his business and California’s ports. On the other hand I am convinced the way that he explained the situation on Twitter doesn’t make sense. That’s what this article is about.] In the first thread (about talking to the dock workers) Petersen explains that, although the docks have started operating 24/7, trucks are not arriving 24/7 to take away offloaded containers. In the second thread (describing how he observed dock operations from the water) he claims that What’s his rationale for the claim that the bottleneck is yard space? Well, it seems that there are currently a lot more imports from China than exports to China so the trucks that took full containers from the port are bringing back empty ones. Apparently you can’t get empty containers off your dockyard by loading them onto ships because shipping companies are not being paid enough to take empty containers or because it’s dangerous to carry empty containers. Stacks of empty containers are building up at ports leaving too little space for ships to be unloaded. The problem compounds when truckers bringing empty containers back to the port find no space to leave them, so they can’t exchange their container for a full one, so full containers stay at the port. An overload of containers is jamming up port operations, empty containers cannot be removed by ship nor can full containers be removed by truck!"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/flexport-ceo-wrong-bottleneck"
+tags = ["actual", "addendum", "bottleneck", "burden", "california’s", "conclusion", "constraint", "flexport-ceo-wrong-bottleneck", "flexport’s", "marketing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "en.wikipedia.org", "fpcomplete.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "mobile.twitter.com", "msn.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/dante-for-dummies"]
+title = "dante-for-dummies"
+full_description = "The article is old, from before I knew how to manage Emacs packages properly (the secret: use straight.el). My new article “How I use dante” is much better and I suggest you read it instead of this one. I wanted to get started with Dante: Emacs mode for Interactive Haskell but found it difficult for various reasons. Here’s how I managed it. Dante tries to work out what sort of project you are working in so it know how to launch GHCi. The way it works this out is through dante-repl-command-line-methods-alist. It checks for stack.yaml before .cabal. I have both but I want to use cabal so I had to delete the stack entry. I used M-x customize-group to do this, in the “Dante Repl Command Line Methods Alist” setting."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/dante-for-dummies"
+tags = ["dante", "dante-for-dummies", "dummies", "outdated!", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/demystifying-dlist"]
+title = "demystifying-dlist"
+full_description = '''You may have heard that repeated left-associated appends on linked lists are slow. You may also have heard that the “difference list”, implemented in Haskell as “DList”, makes left-associated appends reasonable. The type of DList is somewhat mysterious. What’s really going on? In this article I will explain with nice diagrams. Suppose I append some lists using (++) in some arbitrary fashion. What evaluations are performed as we pattern match on the result, pulling off the head? I’ll show you an example Haskell expression, and then a graphical representation to explain the resulting computation. The expression is so we walk down the left branch of the first (++) node and pattern match the child node. However, the child node is itself a (++) node, so we again walk down the left branch and pattern match the grandchild. We have to keep walking down the left branches until we reach an already-evaluated list cell, in this case as. Then if as is a cons a:as' we replace as with as' and float the a back to the top. Thus it has taken \(O(d)\) operations to pattern match our structure, where \(d\) is number of left branches from the root to the leaf containing as. If we keep pattern matching on the result, continuing to pull off the head of each resulting tail, then we perform \(O(d)\) operations each time we pull off the next element of as. Retrieving all of as thus takes \(O(dn)\) operations, where \(n\) is the length of \(as\). Once all of as has been floated up to the top, the (++) node is replaced by bs and we start matching bs, now walking \(d-1\) steps down the tree to retrieve each element. In general, it seems that to retrieve a single element from a list ls in the append expression takes \(O(l)\) operations where \(l\) is the number of left branches you have to traverse to reach the leaf containing ls. Left branches correspond to left-associated appends, so this is why left-associated appends are problematic. However, contrary to popular belief, it seems that the list as is not walked several times in the construction of the result. This belief may be a hangover from those who are more familiar with the behaviour of strict languages.'''
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/demystifying-dlist"
+tags = ["better?", "conclusion", "demystifying", "demystifying-dlist", "dlist", "functions?", "generalizing", "improving", "introduction", "lists"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "ia.samaltman.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/extensible-effects-interleaving"]
+title = "extensible-effects-interleaving"
+full_description = "In their paper “Extensible Effects”, Kiselyov, Sabry and Swords (KSS) introduce an effect system for Haskell that is an alternative to the classical monad transformers approach. There is a Haskell library of the same name implementing the ideas of the paper. Dan Doel noted in a recent article that this is one of many papers which investigate effects and their associated handlers, in large part aiming to move from what is seen to be the “static” approach of monad transformers, to the supposedly more “dynamic” approach of algebraic effects. Dan’s article is a defence of the classical monad transformers approach, and he argues convincingly “that the staticness [of monad transformers] can actually be a useful property, that certain ways of harnessing it can make the confusing constructions less so, and … that algebraic effects perhaps aren’t so different from what we are already using”. KSS give two examples where they claim their approach is superior to monad transformers. The first is that it is awkward to combine exceptions with non-determinism. However, Dan implements a simple alternative to catchError and ensures that the exception handler removes from the set of effects. In this way he efficiently disposes with the supposed awkwardess. The second objection of KSS is that a certain interleaving of a read effect with coroutines is impossible to achieve with monad transformers. In this article I will demonstrate that contrary to KSS’s assertion, this interleaving is possible with monad transformers, and moreover straightforward. catchError from the mtl runs a monad transformer stack that contains an “exception raising” layer and handles any exceptions with a handler that can potentially rethrow them. The definition has the following signature The monad m is the same in the argument and return value, thus any exceptions that are rethrown are rethrown at exactly the same level of the stack. As KSS note, this does result in a particular inflexibility when mixing effects."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/extensible-effects-interleaving"
+tags = ["conclusion", "coroutines", "effects", "exceptions", "extensible-effects,", "interleaving", "introduction", "monad", "non-determinism", "transformers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fpcomplete.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/articles-forthcoming"]
+title = "articles-forthcoming"
+full_description = "that has a “different value” depending on where in your program it is called. This seems undesirable! https://discourse.haskell.org/t/solving-a-resourcet-related-space-leak-in-production/11007/11?u=tomjaguarpaw Ömer Sinan Ağacan wrote an article explaining the benefits of object oriented design. He started explaining a Haskell-based solution but didn’t take it far enough. The job can be finished using Bluefin. foldl? Just use for_. foldl'? Just use for_. foldM? Just use for_. mapAccumL? Just use for_. mapAccumLM? Just use for_. concatMap? Just use for_. mapMaybe? Just use for_. loop? Just use for_. Looking at the iterator dichotomy of “push/internal” vs “pull/external” through a Bluefin lens."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/articles-forthcoming"
+tags = ["articles-forthcoming", "forthcoming", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "themotte.org", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/decentralised-issue-trackers"]
+title = "decentralised-issue-trackers"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/decentralised-issue-trackers"
+tags = ["decentralised", "decentralised-issue-trackers", "issue", "trackers", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/alternatives-convert-products-to-sums"]
+title = "alternatives-convert-products-to-sums"
+full_description = "Next we will consider what sort of functors convert products to sums. We need a function which converts an empty product to an empty sum: It would also be nice to simplify our interface to pair. We can get a function of a somewhat nicer type are exactly what is required for an Alternative instance, and so Alternatives are functors which convert products to sums."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/alternatives-convert-products-to-sums"
+tags = ["alternatives", "convert", "products", "sums", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "ia.samaltman.com", "independent.co.uk", "palladiummag.com", "themotte.org", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/automatic-differentiation-worked-examples"]
+title = "automatic-differentiation-worked-examples"
+full_description = "This article demonstrates how to perform source transformations on a program to generate forward mode and reverse mode derivative programs (automatic differentiation, or “AD”). My aim is to write the shortest possible article that communicates all the essential features of a source-to-source AD system with a particular focus on making the reverse mode transformation clear. The goal of brevity means that a lot of possible commentary has been omitted. If you find this makes some part of the article hard to understand then please contact me and I’ll do my best to clarify. In particular this article contains hardly any mathematical content at all. I hope that the reader who is familiar with multivariate calculus will be able to obtain an intuitive understanding of how AD relates to mathematical techniques he or she is already familiar with. A more in-depth description of the relationship will have to wait for another article. Let’s consider the following pseudocode program that performs some elementary arithmetic through a sequence of assignment statements. x and y are not defined in the program so I’m going to informally consider them to be “inputs”; v is not used anywhere so I’m going to consider it to be the “output”. (I won’t burden the article by formalising these notions here.) We’ll do a small amount of preparation to our original program which will preserve its behaviour and get it into a form in which it is straightforward to apply the automatic differentiation (AD) algorithms. It is possible to apply AD algorithms without doing these transformations first but then the AD algorithms would have to do equivalent operations implicitly. Doing these transformations first is a kind of separation of concerns. Let’s use prefix functions instead of infix operators. Infix operators are more familiar for arithmetic but the AD algorithms will be clearer to present if we use prefix functions. Additionally I want every function to have exactly one argument (although that argument may be a tuple). Single-argument style will make the reverse mode transformation much clearer (although it does not make any difference for forward mode). For example, x1 + x2 would become add (x1, x2). Our program becomes"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/automatic-differentiation-worked-examples"
+tags = ["acknowledgements", "additional", "argument", "automatic", "code", "conclusion", "cover", "derivative", "differentiation", "differentiation:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "haskell.org", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "themotte.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/automatic-differentiation-worked-examples-maths"]
+title = "automatic-differentiation-worked-examples-maths"
+full_description = 'The article contains the maths needed to justify the transformations in Automatic differentiation: source-to-source worked examples. For full generality our differentiation will need to be able to handle functions that take multiple values as arguments and return multiple values. Let’s consider an example of multivariate differential calculus, that is, partial differentiation, using the following equation (which happens to be the change of 2d coordinates from polar to rectangular but that’s not important here). If you are familiar with multivariable calculus then you will be able to write down the partial derivatives \[ \frac{\partial x}{\partial r} = \cos \theta; \,\, \frac{\partial x}{\partial \theta} = -r \sin \theta; \,\, \frac{\partial y}{\partial r} = \sin \theta; \,\, \frac{\partial y}{\partial \theta} = r \cos \theta \] This collection of facts could well be considered to be “the” derivative of the above equation but for our purposes we need to go one step further and combine the facts above with the multivariate chain rule of differential calculus. Let’s see what that means. Suppose that \(r\) and \(\theta\) themselves were functions of a single real variable \(t\). Then by the chain rule we would have \[ \left(\frac{dx}{dt}, \frac{dy}{dt} \right) = \left(\frac{\partial x}{\partial r} \frac{dr}{dt} + \frac{\partial x}{\partial \theta} \frac{d\theta}{dt}, \, \frac{\partial y}{\partial r} \frac{dr}{dt} + \frac{\partial y}{\partial \theta} \frac{d\theta}{dt}\right) \] Because \(t\) is arbitrary I’m going to take a liberty with notation to keep \(t\) implicit and write \[ \left(dx, dy \right) = \left(\frac{\partial x}{\partial r} dr + \frac{\partial x}{\partial \theta} d\theta, \, \frac{\partial y}{\partial r} dr + \frac{\partial y}{\partial \theta} d\theta\right) \] This liberty serves to make the notation a bit neater. If you prefer to mentally insert \(\frac{}{dt}\) in several places to get back to the original form then please do so. \[ \left(dx, dy \right) = \left(\cos \theta \, dr - r \sin \theta \, d\theta, \, \sin \theta \, dr + r \cos \theta \, d\theta\right) \]'
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/automatic-differentiation-worked-examples-maths"
+tags = ["addition", "automatic", "between", "correspondence", "derivative", "determining", "differentials", "differentiation", "differentiation:", "division"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "haskell.org", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "themotte.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/bluefin-all"]
+title = "bluefin-all"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bluefin-all"
+tags = ["bluefin", "bluefin-all", "external", "posts", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "groq.com", "haskell.org", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/attribute-grammar"]
+title = "attribute-grammar"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/attribute-grammar"
+tags = ["attribute", "attribute-grammar", "grammar", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "haskell.org", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "themotte.org", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/data-map-strict-map-not-strict-map"]
+title = "data-map-strict-map-not-strict-map"
+full_description = "Summary: I was surprised when I learned that Data.Map.Strict.Map is not strict. Its laziness has serious consequences for attempts at space leak free programming in Haskell. The Haskell containers package has a module called Data.Map which provides an associative container type. That module just re-exports Data.Map.Lazy so it is a lazy associative container type. What does the word “lazy” mean here? Have a look at this example: We started with an empty map, inserted the entry undefined under the key 0, and then deleted the entry under key 0. The result was an empty map. We call this data structure “lazy” because its operations do not evaluate the entries it contains. Instead the entries are left as unevaluated thunks until some consumer evaluates them. (The tree structure of the map and the keys of the map are not lazy, however.) We know the map does not evaluate its entries because if it did we would have seen an exception when it came to evaluate undefined. The strict map ensures that the entries are always kept evaluated (when the map itself is). We see that it tried to evaluate undefined and thus raised an exception. The strict version is useful for avoiding space leaks when making many adjustments to a map. It avoids the entries becoming unevaluated thunks, growing in size. For example, this function has a space leak: If we want to make a larger data type that contains an associative map and that has many modifications performed to it over the lifetime of a program should we should use a strict map like this It’s a trick question! Suppose I diligently chose the first option but my colleague who was using my data type comes to me and says “I have a space leak when using MyData”. How could that be?! Data.Map.Strict.Map is not a strict map. It is the same type as Data.Map.Lazy.Map! We saw strict behaviour above because Data.Map.Strict is a strict interface to a lazy map. It does not itself provide a strict map. The documentation is explicit about this"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/data-map-strict-map-not-strict-map"
+tags = ["data.map.strict.map", "haskell’s", "strict", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/gnucash"]
+title = "gnucash"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/gnucash"
+tags = ["gnucash", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/good-design-and-type-safety-in-yahtzee"]
+title = "good-design-and-type-safety-in-yahtzee"
+full_description = "Mark Dominus wrote an article asking how to take advantage of Haskell’s type safety in a simple dice-rolling simulation function for the game Yahtzee. He added wrapper types so that one cannot mistakenly apply the function to values that merely have the correct type “by accident”. He says the result is “unreadable” and “unmaintainable”. It certainly doesn’t look nice! I’d claim it’s not even of much practical safety benefit (although I suppose that depends on what the rest of the program looks like). I don’t claim this code is any good; I was just hacking around exploring the problem space. But it does do what I wanted. But we can’t just expect to sprinkle type safety on a bad design and get something good. Type safety and good design are qualities that evolve symbiotically. By using type safety merely to make things safer for our callers we miss out on a host of benefits. Type safety should be used to guide us in the design of our implementations, which our callers never see. In fact I would argue that Mark is trying to add type safety in exactly the wrong way. If there is an interface whose implementation we don’t control then all we can do is to slap a type safe wrapper on it and be done with it. That is of some benefit. On the other hand, if we do control the implementation then the type safe wrapper specifies invariants that we can take advantage of inside the implementation. They can help us write the implementation. We should build type safe structures and combinators relevant to our domain and implement our solution in terms of those. Likewise we should look at our solution and factor out repeated patterns into type safe structures and combinators relevant to our domain. This is symbiotic evolution! Type safety and good design proceed hand-in-hand along the road of implementation evolution. Type safety nudges us in the direction of good design and good design nudges us in the direction of type safety. One of the reasons I prefer Haskell to other languages is that the compiler can enforce the type safety end of this bargain. On the other hand, there’s no reason a design in Python, say, can’t be guided by “type safety” in the same sense as a design in Haskell. It’s just that the “type safety” won’t be checked by any tooling and so there’s no evolutionary pressure in that direction (Python’s recent type annotations notwithstanding)."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/good-design-and-type-safety-in-yahtzee"
+tags = ["another", "arguments", "avoid", "better", "blindness", "boolean", "catch-all", "check", "design", "don’t"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/harder-with-static-types"]
+title = "harder-with-static-types"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/harder-with-static-types"
+tags = ["harder", "harder-with-static-types", "static", "types?", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/git-survival-guide"]
+title = "git-survival-guide"
+full_description = "It is my most used git command. I run it after almost every other git operation to maintain a clear understanding of the current repository state. If you only want to see the topology of the tree instead of every commit then add --simplify-by-decoration. (You might like to read Ian Miell’s “git log – The Good Parts”.) (or -N). I don’t use git add because it adds the file to the staging area. I don’t want to bother with the staging area. The latter will interactively rebase the collection of patches <from>..<to> onto <target> (<from> is exclusive, <to> inclusive). It’s always a reasonable idea to rebase interactively so at least you can see the list of commits that will be rebased. It might turn out you got some of the arguments wrong and then you can bail out early (by deleting all the text from the interactive rebase instruction file, saving it, and closing the editor). There are many, many guides on the web about “how to split a git commit”. All the ones that I have seen give some version of the “Splitting Commits” recipe from the git rebase man page. That recipe is fiddly for a non-expert and one can easily find oneself in a confused state. On the other hand the recipe can easily be made robust and packaged in a script that gives the user helpful hints and can’t fail – so that’s what I did! By default git status shows untracked, unignored files. I don’t need to ignore files because I use git commit --patch. On the other hand I don’t want to see untracked, unignored files in git status. Instead I use git status -uno which supresses display of untracked files. (in git commit --patch, git checkout --patch, git stash --patch, etc.) interactive.singleKey=true requires the Perl module Term::ReadKey. On Debian this is available in the libterm-readkey-perl package. I never use the staging area. It is a piece of mutable state and I’d rather remove it from my mental model. You do not need to touch the staging area if you use git commit --patch. (Apparently empirical research has validated the hypothesis that the staging area is a major pain point for users in practice.)"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/git-survival-guide"
+tags = ["advanced", "branch", "care", "changes", "commands", "config", "conflict", "darcs", "don’t", "ever"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "raw.githubusercontent.com", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/exploratory-programming"]
+title = "exploratory-programming"
+full_description = "There is a general but fallacious impression that dynamically typed languages like Lisp are more appropriate for prototyping because it is “easy” to modify Lisp programs. The reason this impression is false is that serious prototypes can be large and complex programs, and if one changes the representation of data in one part of the prototype it can be a long, error-prone, and labor intensive process to trace all the consequences of such changes when using a dynamically typed language."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/exploratory-programming"
+tags = ["exploratory", "exploratory-programming", "programming", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/opaleyes-api-breakage-policy"]
+title = "opaleyes-api-breakage-policy"
+full_description = "I am the maintainer of Opaleye, a Haskell package for writing queries against PostgreSQL. Occasionally I “break the API” of Opaleye, that is, I release a new version of the package such that some code written against the previous version of the package won’t work with the new version1. Such breakage imposes a cost on Opaleye’s users: it takes effort to change code to make it work with the new version. There is a related cost which is often left unaccounted for: it takes effort even to discover what changes need to be made! In my experience of being on the receiving end of API breakage the latter cost is actually the more severe. Once I know what change needs to be made I can come up with a plan and accurately assess the effort involved. On the other hand, if the only information that I receive is a compile error, and no breadcrumbs pointing me in the direction of a solution, then I am left staring at a long-tailed distribution: for all I know fixing the breakage could take me a minute, an hour or a day. Under such uncertainty I am disinclined to even start. The aim of Opaleye is to be of service to users, so if API breakage imposes a cost on users then why break the API at all? Firstly, as sole maintainer I need to keep my burden light, and striving for a small API surface area is one way of doing that. Secondly, our understanding of Opaleye best practice evolves over time, and I want to nudge users towards best practice. Thirdly, I want the API to be approachable, and removing old, deprecated parts of the API helps that end. This rationale is the justification for occasional API breakage. The alternative is to keep old, discouraged parts of the API around, but to warn against them, deprioritise them in documentation and avoid mentioning them in polite conversation. That alternative is a valid approach too, perhaps even a desirable approach if one has the resources to deal with the mental overhead, but I don’t feel that I do. So, the aim of the Opaleye breakage policy is to strike a balance between keeping the API small, simple, easy to understand and maintainable on the one hand, and reducing the costs of churn on the user on the other. Later versions will inevitably become incompatible with user code written against older versions, but there is much that can be done to mitigate the costs on the user, to “hold the user’s hand” through the process, and make their life easier, some of which the rest of this article will describe."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/opaleyes-api-breakage-policy"
+tags = ["avoid", "break?", "breakage", "classes", "concrete", "cycle", "deprecation", "difficulties", "examples", "flag"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "projects.haskell.org", "pvp.haskell.org", "raw.githubusercontent.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/brooks-on-types"]
+title = "brooks-on-types"
+full_description = "Show me your function bodies and conceal your types, and I shall continue to be mystified. Show me your types, and I won’t usually need your function bodies; they’ll be obvious."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/brooks-on-types"
+tags = ["brookes", "brooks-on-types", "fred", "types", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/functional-looping"]
+title = "functional-looping"
+full_description = "Explicit looping is commonplace in imperative programming languages. For example, this is how I might write a loop in Python. There are a couple of small differences between the Python version and the Haskell version, and two bigger ones. The small ones are that in the Haskell version we explicitly continue by naming myLoop whereas the Python version explicitly breaks instead, and naturally the Haskell version explicitly passes the state for the next iteration. The two bigger differences make the Haskell version clumsier. Firstly we have to name myLoop and call it explicitly. Secondly the initial state (0) is passed in far from the definition of myLoop. How can we fix this? Let’s define a genereric looping combinator, loop. To make my loop less clumsy I want to avoid naming myLoop and I want to pass the initial state in to loop directly. This suggests I want to write something like but what can I pass as the second argument to body? It needs to be something that takes the updated state and continues with the loop. But that’s just flip loop body! So I can define Note that flip loop body state = body (flip loop body) state so flip loop body = body (flip loop body). If we write fix f = f (fix f) then loop = flip fix. N.B. fix is normally written as fix f = let x = f x in x for efficiency."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/functional-looping"
+tags = ["cryptic", "functional", "functional-looping", "looping", "remarks", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/dimensions-functional-programming"]
+title = "dimensions-functional-programming"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/dimensions-functional-programming"
+tags = ["acknowledgements", "dimensions", "functional", "programming", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/dsl"]
+title = "dsl"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/dsl"
+tags = ["edsl", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/extended-set-theory"]
+title = "extended-set-theory"
+full_description = "Extended set theory seems to be a very complicated mess simply to put tuples with column names on some sort of solid foundation. Why a structural set theory is not enough is unclear, although structural set theory certainly did not exist when Childs came up with his theory (some time in the 1970s)."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/extended-set-theory"
+tags = ["extended", "extended-set-theory", "theory", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk"]
+title = "The H2 Wiki"
+full_description = "The H2 Wiki is dedicated to thoughts on technology and Haskell. The name is in homage to The C2 Wiki."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk"
+tags = ["articles", "contact", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "web.jaguarpaw.co.uk"]
+
+["https://h2.jaguarpaw.co.uk/posts/complaining-about-languages"]
+title = "complaining-about-languages"
+full_description = "If you complain about a programming language, please classify each complaint into at least one of the following categories."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/complaining-about-languages"
+tags = ["complain", "complaining-about-languages", "language", "programming", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drossbucket.com", "en.wikipedia.org", "ghc.gitlab.haskell.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/bluefin-prevents-handles-leaking"]
+title = "bluefin-prevents-handles-leaking"
+full_description = "Haskell’s System.IO.withFile has a nice resource safety property. It also has a problem which its Bluefin equivalent fixes. Let’s have a look. It allows us to open a file by its path, and then interact with it in the “body” of the withFile using its “file handle” (of type System.IO.Handle). When the body has finished withFile will automatically close the file, releasing its Handle. File handles are a scarce resource so it’s important to release them promptly. withFile saves us work by taking care of that for us automatically. Here’s an example Even better, withFile is “bracketed”. That means that it releases its Handle even when the body it terminated by an exception: But all is not good. Nothing stops us leaking the handle from withFile and attempting to access it after it has been closed. For example, the following code errors out at run time: Bluefin’s version of withFile doesn’t suffer from the same problem. If we try to write code that leaks the handle from withFile we get a type error. The type of the handle that Bluefin’s withFile provides to its body is Handle e (that’s a Bluefin.System.IO.Handle), i.e. it is tagged with the Bluefin effect type e. The forall that binds e prevents us from smuggling the handle out as part of r, the return type of the block. This technique is an augmented version of the one used by runST to avoid leaking STRefs."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bluefin-prevents-handles-leaking"
+tags = ["bluefin", "handles", "leaking", "prevents", "rescue", "wiki", "withfile"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "groq.com", "haskell.org", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/ai-doom-posterity"]
+title = "ai-doom-posterity"
+full_description = "the more I look at the LLM revolution the more worried I am that we should be counting in months rather than years As bad as climate change is, AI is likely to get us first I think - we may only have 2-5 years (vs 20-50 with climate). We need to slam the brakes on AGI development now. If we go back to things like the bio weapons or cyber [attacks], you can have really very dangerous threats to humans that could kill many humans – not all humans – simply from where we would expect models to be in two years’ time. The top scientists at the biggest AI firms believe that they can make artificial intelligence a billion times more powerful than today’s most advanced models, creating “something like a god” within five years AGI will absolutely be achieved in AT MOST 3 years. Probably less. I guarantee. And it will be able to write any imaginable software faster than the fastest human dev team in the world could, for pennies. These next three years might be the last few years that I work. … I stand at the edge of a technological development that seems likely, should it arrive, to end employment as I know it. Yudkowsky can’t make predictions about what the trajectory to AI doom will look like because one can only know the end state not the trajectory, yet he claims that the trajectory in the last two decades is evidence that we’re converging on the end state."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/ai-doom-posterity"
+tags = ["ai-doom-posterity", "doom", "non-doom", "notes", "posterity", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "ia.samaltman.com", "independent.co.uk", "palladiummag.com", "themotte.org", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/api-design"]
+title = "api-design"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/api-design"
+tags = ["api-design", "design", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["c2.com", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "ia.samaltman.com", "independent.co.uk", "palladiummag.com", "themotte.org", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/forum-comments"]
+title = "forum-comments"
+full_description = "There’s a recurring pattern where a commenter will put forth a proposition and then in lieu of providing evidence say “Google ‘X’”. This seems to be inefficient. It will cost one person’s time (the commenter’s) to search for the best link. It will cost n people’s time for the readers to search for it. The commenter ought to have sufficient faith in the quality of their comment to believe that n >= 1. Therefore it’s of net benefit to the community for the commenter to do the work of searching. Furthermore, since the commenter is asking the readers to search for something something they are assuming the readers are not already familiar with it. Therefore it is much easier for the commenter to select a high quality reference than for a reader to do so. I often observe respondants starting their response with “I disagree” and then writing a comment that in no way contradicts the parent post! I suspect some people just want to be curmudgeonly."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/forum-comments"
+tags = ["agreeing.", "comments", "disagree.”", "forum", "forum-comments", "google", "observe", "things", "wiki", "“i"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/ghc-8.10-9.6-experience-report"]
+title = "ghc-8.10-9.6-experience-report"
+full_description = "At work (Groq) we recently upgraded the version of GHC that we use from 8.10 to 9.6, along with many of the Haskell packages we depend on. Some of the changes to GHC and the packages we depend on were “breaking changes”, that is, changes which forced us to change our own code in response. This document details all such changes that we had to make to our own code. Hopefully it serves as a measure of the effort required to keep up with breaking changes in the Haskell ecosystem, encourages library and compiler maintainers to avoid making breaking changes where reasonable, and where breaking changes are made, to make them in a way that allows forward-compatible mitigations rather than breaking fixes. I distinguish two kinds of behavior-preserving changes that are required in response to an upgrade which contains breaking changes: “forward-compatible mitigations” and “breaking fixes”. Foward-compatible mitigations are those changes that can be made to the codebase before the upgrade such that no further changes need to be made at the same time as the upgrade. For example, suppose that library “mylibrary” version 1 exports functionOld, which is deprecated, and functionNew which is identical except it is not deprecated. Further suppose that mylibrary version 2 removes functionOld. A forward-compatible mitigation would be to replace uses of functionOld with functionNew. Subsequently, the code works equally well with mylibrary version 1 and with mylibrary version 2, so no change needs to be made at the same time as the upgrade of mylibrary from version 1 to version 2. By contrast, breaking fixes are those changes that only work after an upgrade. For example, suppose that library “anotherlibrary” version 1 exports anotherFunction :: A -> B -> C, and anotherlibrary version 2 exports anotherFunction :: B -> A -> C, which is identical except that the argument order is switched. A breaking fix would be to replace all uses of anotherFunction by flip anotherFunction. Breaking fixes complicate an upgrade because they can’t be made before or after the upgrade but must be made at exactly the same time."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/ghc-8.10-9.6-experience-report"
+tags = ["8.10", "breaking", "changes", "fixes", "forward-compatible", "ghc-8.10-9.6-experience-report", "libraries", "mitigations", "tools", "turning"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/exitfailure-doesnt-exit"]
+title = "exitfailure-doesnt-exit"
+full_description = "Haskell’s base library contains System.Exit.exitFailure. From the name, it sounds as though running it ought to cause your Haskell program to exit (with a failure exit code). But it doesn’t, at least not directly. Instead it throws an exception of type ExitCode (specifically, ExitFailure 1). Then it is the responsibility of some exception handler to catch that exception and cause the program to exit appropriately. What handler is that? It is real_handler in GHC.Internal.TopHandler. It has a special case for ExitCode exceptions: exit ultimately calls the runtime system (RTS) function shutdownHaskellAndExit, which causes the RTS to exit and thus the program to terminate. Why then, instead of exiting by throwing an exception, don’t we just expose that exit function and call it directly? The documentation for exitWith explains: As an ExitCode is an Exception, it can be caught using the functions of Control.Exception. This means that cleanup computations added with bracket (from Control.Exception) are also executed properly on exitWith. Using the exception system to trigger program exit allows resources that were allocated in a bracket, but are not managed by the RTS, such as files on disk, to be cleaned up before program exit. That’s useful. But exceptions-for-exit also has strange consequences: if the ExitCode exception is caught then the program won’t exit! If a try block catches ExitCode, and the body ends up calling one of the exit functions then the program will not exit. The correct workaround is to not do that: don’t catch ExitCode exceptions (and don’t catch SomeException either, which is the “catch all” exception). Similarly, if forkIO spawns a child thread and the child thread ends up calling one of the exit functions then forkIO swallows the exception and the program will not exit. The following code misleadingly prints main: ExitFailure 1 (as forkIO catches, prints, and discards the ExitCode exception) and then ends up looping forever in threadDelays. That’s probably not what we wanted! A workaround is to use the async package rather than forkIO. async provides structured concurrency primitives that are harder to misuse. In particular, when a thread forked by async terminates with an exception then async rethrows the exception to the parent thread."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/exitfailure-doesnt-exit"
+tags = ["doesn’t", "exit", "exitfailure", "exitfailure-doesnt-exit", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "gitlab.haskell.org", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/backups"]
+title = "backups"
+full_description = "Implementation robustness: You don’t want to lose the state of a higher level service due to losing state in a lower level service."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/backups"
+tags = ["backups", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "hackage.haskell.org", "haskell.org", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "themotte.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/git-rebase-conflicts"]
+title = "git-rebase-conflicts"
+full_description = "This article is about git rebase conflicts. A similar article with slightly different technical details could be written for git merge conflicts. I use “merge” as a non-technical term for combining the content of two different repository states, not to refer to git mergeing specifically. When a git rebase conflict occurs you will be presented with a conflict region (or “hunk”) that shows why the rebased commit couldn’t be applied to the base branch. To resolve a rebase conflict, your task is to apply the logically-intended (i.e. semantic) change of the rebased commit to the base branch. Some merge tools (for example Emacs SMerge) offer you the option to “keep their changes” or “keep our changes”. This is almost always wrong. The whole point of merging (remember, I’m using that word in the non-technical sense, not to refer to git mergeing specifically) is to combine two conflicting things, not to choose one over the other. By choosing one you ignore a change in the other that may be required by other parts of the same commit (parts that may not see because they merged without conflict!). The existence of a conflict means that the patches could not be merged textually. However, the aim is actually to merge them semantically. Merge tools are rarely (perhaps never) clever enough to be able to perform semantic merges so they settle for textual merges. In the cases where textual merges are not possible the task is left to human ingenuity. Key takeaway: the aim is to apply the logical (i.e. semantic) content of the rebased commit to the base branch. Resolving a rebase conflict requires understanding the logically intended (semantic) change of the rebased commit and applying it manually to the base branch. Here is the procedure to follow. The details will be explained by way of example later. Use the diff3 conflict style option because it shows important information in the conflict markers that would otherwise be absent. Either look at the difference between the middle hunk section and the bottom hunk section of the marked conflict, or"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/git-rebase-conflicts"
+tags = ["adding", "addition,", "base", "branch", "commit", "conclusion", "conflict", "conflicts", "diff3?", "different"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cs.tufts.edu", "discourse.haskell.org", "dl.acm.org", "dominiccummings.com", "drossbucket.com", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "iai.uni-bonn.de", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "mobile.twitter.com", "okmij.org", "projects.haskell.org", "stackoverflow.com", "tminka.github.io", "web.jaguarpaw.co.uk", "wiki.haskell.org"]
+
+["https://h2.jaguarpaw.co.uk/posts/bluefin-plucking-constraints"]
+title = "bluefin-plucking-constraints"
+full_description = "One of the promises of strongly-typed, pure functional programming is to “make invalid states unrepresentable”. We can broaden the slogan to “make invalid behaviours unrepresentable”. Indeed, that’s one of the purposes of effect systems in Haskell: to circumscribe an operation’s range of observable behaviours. Typically, effect systems provide a way of “handling” effects, that is, removing effects from the range of observable behaviours. Matt Parsons calls the technique for handling effects in the “MTL effect system” “plucking constraints”. The Bluefin effect system, like MTL, uses a system of constraints to track effects and allows effects to be handled, reducing the range of observable behaviours. Let’s have a look at how that works, after first looking at how it works in transformers and MTL, for comparison. The possible behaviour of such an operation is “manipulating an Int state, eventually terminating with a () unless a String exception was thrown”. So far so good. But the story gets even better: we can handle effects, to reduce the range of valid behaviour. For example, we could choose to handle the exception by adding the length of the thrown String to the Int state, as follows: Then handleLengthTrans operTrans :: State Int (). We have reduced the range of possible behaviour to “manipulate an Int state but do not (observably) throw an exception” (despite the fact that the implementation uses an exception). Typically, however, we don’t want to write concrete monad transformer stacks. One alternative is MTL-style constraints, for example: Exactly the same implementation as handleLengthTrans works for this MTL-style function too, although the type is an MTL-style one. Then handleLengthMTL operMTL :: MonadState Int m => m (). Again, the possible behaviour is “manipulate an Int state but do not (observably) throw an exception”. How does this business with MonadError and MonadState work to allow us to handle an effect? Well, that’s the technique that Matt calls “plucking constraints”. Let’s consider the two types involved, renaming the type variable in operMTL from m to m' to avoid confusion."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/bluefin-plucking-constraints"
+tags = ["bluefin", "bluefin-plucking-constraints", "commentary", "conclusion", "constraints", "incoherence", "incoherent", "instances", "plucking", "questions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "c2.com", "discourse.haskell.org", "en.wikipedia.org", "github.com", "golem.ph.utexas.edu", "groq.com", "haskell.org", "independent.co.uk", "kantin.sabanciuniv.edu", "lobste.rs", "medium.com", "osa1.net", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "x.com", "yahoo.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/dominic-cummings"]
+title = "dominic-cummings"
+full_description = "it appears to me that there is only one way to get a rational and balanced discussion. Directors should hire a second advisor to make the case against the proposed acquisition, with its fee contingent on the deal not going through without this the data our neural networks are trained on are the words of others, i.e. their attempts to make persuasive arguments to develop not “gut feel” but the right kind of gut feel, i.e. gut feel based on having an intrinsic understanding of the system rather than gut feel based on not wanting to let your drinking buddy down One reason Victor’s stuff hasn’t come to pass is because the market for consumer applications is far larger (1000x?) than tools"
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/dominic-cummings"
+tags = ["cummings", "dominic", "dominic-cummings", "notes", "wiki"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "haskellforall.com", "iai.uni-bonn.de", "independent.co.uk", "lobste.rs", "medium.com", "news.ycombinator.com", "palladiummag.com", "projects.haskell.org", "stackage.org", "twitter.com", "web.jaguarpaw.co.uk", "yahoo.com", "yesodweb.com"]
+
+["https://h2.jaguarpaw.co.uk/posts/data-structures-matter"]
+title = "data-structures-matter"
+full_description = "What if focusing on the correct data structure, while still understanding your algorithm, could improve maintainability and collaterally speed up execution by a factor of over 15x compared to over-engineered C# code? You are given an input array whose each element represents the height of a line towers. The width of every tower is 1. It starts raining. How much water is collected between the towers? The trouble is, it’s quite slow (7.2s – including setting up the world, since you didn’t exclude that from your benchmark). From here you have two options. Your first option is to write a long rant about how slow this code is and share it on the internet. Your second option is to use the right data structure and get a 114x speed up (61ms) for almost zero effort. This popular hipster code is also 15x faster than some over-engineered C# code. The drawback of the fast Haskell code is that it’s not so easy to change if your boss decides to shift the requirements under you because he believes there are real towers filling with water and insists that he wants to be able to drill holes in the walls. Use the correct data structure. If you’re not sure, hold back on the sarcasm and ask Porges to help you out. He seems to be a smart cookie."
+author = ""
+year_published = 2025
+clearnet = "https://h2.jaguarpaw.co.uk/posts/data-structures-matter"
+tags = ["abstract", "acknowledgements", "conclusion", "correct", "cutting", "data", "data-structures-matter", "introduction", "long", "mattered"]
+language = "en"
+internal-references = ["none"]
+external-references = ["arxiv.org", "discourse.haskell.org", "drive.google.com", "drossbucket.com", "en.wikipedia.org", "fsharpforfunandprofit.com", "ghc.gitlab.haskell.org", "github.com", "ia.samaltman.com", "independent.co.uk", "lobste.rs", "medium.com", "palladiummag.com", "stackage.org", "tminka.github.io", "twitter.com", "web.jaguarpaw.co.uk", "wiki.haskell.org", "yahoo.com", "yesodweb.com"]

@@ -1,0 +1,30 @@
+["https://reveal-hugo.dzello.com/extending-layout-example"]
+title = "Extend layout with configuration"
+full_description = "If you are using an existing theme and you want to a specific CSS class or add a dynamic function using javascript. It is possible to extend existing layout. Same as CSS you can extend your presentation with javascript using partials or with custom_js in your configuration: Here the slide has an additional css class custom using slide shortcode. This class is hosted in a custom CSS."
+year_published = 2025
+clearnet = "https://reveal-hugo.dzello.com/extending-layout-example"
+tags = ["example", "existing", "extend", "extending", "javascript", "layout"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.gitlab.com", "forestry.io", "github.com", "gohugo.io", "highlightjs.org", "joshed.io", "mermaid-js.github.io", "netlify.com", "revealjs.com", "unsplash.com"]
+
+["https://reveal-hugo.dzello.com"]
+title = "reveal-hugo"
+description = "A Hugo theme for creating Reveal.js presentations"
+full_description = "💡 Note: When using inline math only (no math code block present), you have to set math=true in the frontmatter of your slide page. 💡 Note: for code blocks support (```math ...```), hugo highlighting must be on (codeFences = true in config.toml). If you want to set codeFences = false, use the math shortcode. 💡 Note: for code blocks support (```mermaid ...```), hugo highlighting must be on (codeFences = true in config.toml) Themes control the look and feel of your presentation. Set the theme param to any valid Reveal.js theme. To use a custom Reveal.js theme, place the CSS file in the static directory and set the custom_theme param. To use Hugo pipes to build a custom Reveal.js theme, place the source file (SCSS / PostCSS) in the assets directory and set the custom_theme_compile param. Use the mermaid shortcode if you need to enable reveal-js highlighting module (codeFences = false). Otherwise, when codeFences = true, ```mermaid ``` codeblocks are also supported. More info. Use this shortcode when you need to customize slide attributes like id, class, background color and transition. 💡 Tip: Setting a slide’s id attribute makes it easy to link to from other parts of the presentation. Store sets of common slide attributes in front matter variables and apply them to slides with the template attribute. Create templates in config.toml, _index.md or the current page’s front matter. Put them under the templates key with a meaningful name: If a template exists in multiple configurations, it’s properties will be merged. If a property is declared multiple times, the order of precedence is: 💡 All other slide shortcode attributes (background, transition, etc.) can be used and will be applied to each slide in the data template entry. Add speaker notes (with markdown) to your presentation with the note shortcode. Type ’s’ to see this slide’s speaker notes."
+year_published = 2025
+clearnet = "https://reveal-hugo.dzello.com"
+tags = ["bundled", "code", "configuration", "cool", "custom", "designed", "diagrams", "display", "docs", "equations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.gitlab.com", "forestry.io", "github.com", "gohugo.io", "highlightjs.org", "joshed.io", "mermaid-js.github.io", "netlify.com", "revealjs.com", "unsplash.com"]
+
+["https://reveal-hugo.dzello.com/custom-theme-example"]
+title = "Custom theme example presentation"
+full_description = "This presentation uses a custom Reveal.js theme written in SCSS that is compiled by Hugo, using Hugo pipes. No separate build process is required, which means you can iterate on your theme and your content at the same time. Note: to use a custom theme that doesn’t need compilation, put it in the static directory and do not set the custom_theme_compile parameter. It will be served to the browser directly."
+year_published = 2025
+clearnet = "https://reveal-hugo.dzello.com/custom-theme-example"
+tags = ["custom", "themes", "🖌", "😄"]
+language = "en"
+internal-references = ["none"]
+external-references = ["docs.gitlab.com", "forestry.io", "github.com", "gohugo.io", "highlightjs.org", "joshed.io", "mermaid-js.github.io", "netlify.com", "revealjs.com", "unsplash.com"]

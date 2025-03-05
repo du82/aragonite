@@ -1,0 +1,340 @@
+["https://mise.jdx.dev/cli/doctor.html"]
+title = "mise doctor | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise doctor ​Usage: mise doctor [-J --json] <SUBCOMMAND>Aliases: drSource code: src/cli/doctor/mod.rsCheck mise installation for possible problemsFlags ​-J --json ​Subcommands ​mise doctor path [-f --full]Examples:$ mise doctor [WARN] plugin node is not installed mise doctor ​Usage: mise doctor [-J --json] <SUBCOMMAND>Aliases: drSource code: src/cli/doctor/mod.rsCheck mise installation for possible problemsFlags ​-J --json ​Subcommands ​mise doctor path [-f --full]Examples:$ mise doctor [WARN] plugin node is not installed Edit this pageLast updated: PagerPrevious pagemise deactivateNext pagemise doctor path"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/doctor.html"
+tags = ["--json", "advanced", "alias", "aliases", "backends", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/env.html"]
+title = "mise env | mise-en-place"
+description = "mise-en-place documentation"
+full_description = '''mise env ​Usage: mise env [FLAGS] [TOOL@VERSION]...Aliases: eSource code: src/cli/env.rsExports env vars to activate mise a single timeUse this if you don't want to permanently install mise. It's not necessary to use this if you have mise activate in your shell rc file.Arguments ​[TOOL@VERSION]... ​Tool(s) to useFlags ​-J --json ​Output in JSON format--json-extended ​Output in JSON format with additional information (source, tool)-D --dotenv ​Output in dotenv format-s --shell <SHELL> ​Shell type to generate environment variables forChoices:bashelvishfishnuxonshzshpwshExamples:eval "$(mise env -s bash)" eval "$(mise env -s zsh)" mise env -s fish | source execx($(mise env -s xonsh))'''
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/env.html"
+tags = ["--dotenv", "--json", "--json-extended", "--shell", "advanced", "alias", "aliases", "arguments", "backends", "cache"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/alias/ls.html"]
+title = "mise alias ls | mise-en-place"
+description = "mise-en-place documentation"
+full_description = '''mise alias ls ​Usage: mise alias ls [--no-header] [TOOL]Aliases: listSource code: src/cli/alias/ls.rsList aliases Shows the aliases that can be specified. These can come from user config or from plugins in bin/list-aliases.For user config, aliases are defined like the following in ~/.config/mise/config.toml:[alias.node.versions] lts = "22.0.0"Arguments ​[TOOL] ​Show aliases for <TOOL>Flags ​--no-header ​Don't show table headerExamples:$ mise aliases node lts-jod 22 mise alias ls ​Usage: mise alias ls [--no-header] [TOOL]Aliases: listSource code: src/cli/alias/ls.rsList aliases Shows the aliases that can be specified. These can come from user config or from plugins in bin/list-aliases.For user config, aliases are defined like the following in ~/.config/mise/config.toml:[alias.node.versions] lts = "22.0.0"Arguments ​[TOOL] ​Show aliases for <TOOL>Flags ​--no-header ​Don't show table headerExamples:$ mise aliases node lts-jod 22 Edit this pageLast updated: PagerPrevious pagemise alias getNext pagemise alias set'''
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/alias/ls.html"
+tags = ["--no-header", "advanced", "alias", "aliases", "arguments", "backends", "cache", "code", "config", "configuration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/alias/unset.html"]
+title = "mise alias unset | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise alias unset ​Usage: mise alias unset <PLUGIN> <ALIAS>Aliases: rm, remove, delete, delSource code: src/cli/alias/unset.rsClears an alias for a pluginThis modifies the contents of ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to remove the alias from<ALIAS> ​The alias to removeExamples:mise alias unset node lts-jod mise alias unset ​Usage: mise alias unset <PLUGIN> <ALIAS>Aliases: rm, remove, delete, delSource code: src/cli/alias/unset.rsClears an alias for a pluginThis modifies the contents of ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to remove the alias from<ALIAS> ​The alias to removeExamples:mise alias unset node lts-jod Edit this pageLast updated: PagerPrevious pagemise alias setNext pagemise backends"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/alias/unset.html"
+tags = ["advanced", "alias", "aliases", "arguments", "backends", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/cache/clear.html"]
+title = "mise cache clear | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise cache clear ​Usage: mise cache clear [PLUGIN]...Aliases: cSource code: src/cli/cache/clear.rsDeletes all cache files in miseArguments ​[PLUGIN]... ​Plugin(s) to clear cache for e.g.: node, python mise cache clear ​Usage: mise cache clear [PLUGIN]...Aliases: cSource code: src/cli/cache/clear.rsDeletes all cache files in miseArguments ​[PLUGIN]... ​Plugin(s) to clear cache for e.g.: node, python Edit this pageLast updated: PagerPrevious pagemise cacheNext pagemise cache prune"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/cache/clear.html"
+tags = ["advanced", "alias", "aliases", "arguments", "backends", "cache", "clear", "code", "config", "configuration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/backends/ls.html"]
+title = "mise backends ls | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise backends ls ​Usage: mise backends lsAliases: listSource code: src/cli/backends/ls.rsList built-in backendsExamples:$ mise backends ls aqua asdf cargo core dotnet gem go npm pipx spm ubi vfox mise backends ls ​Usage: mise backends lsAliases: listSource code: src/cli/backends/ls.rsList built-in backendsExamples:$ mise backends ls aqua asdf cargo core dotnet gem go npm pipx spm ubi vfox Edit this pageLast updated: PagerPrevious pagemise backendsNext pagemise bin-paths"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/backends/ls.html"
+tags = ["advanced", "alias", "aliases", "backends", "bin-paths", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/about.html"]
+title = "About | mise-en-place"
+description = "mise-en-place documentation"
+full_description = '''About ​mise (pronounced "meez") or "mise-en-place" is a development environment setup tool. The name refers to a French culinary phrase that roughly translates to "setup" or "put in place". The idea is that before one begins cooking, they should have all their utensils and ingredients ready to go in their place.mise does the same for your projects. Using its mise.toml config file, you'll have a consistent way to setup and interact with your projects no matter what language they're written in.Its functionality is grouped into 3 categories described below.mise installs and manages dev tools/runtimes like node, python, or terraform both simplifying installing these tools and allowing you to specify which version of these tools to use in different projects. mise supports hundreds of dev tools.mise manages environment variables letting you specify configuration like AWS_ACCESS_KEY_ID that may differ between projects. It can also be used to automatically activate a Python virtualenv when entering projects too.mise is a task runner that can be used to share common tasks within a project among developers and make things like running tasks on file changes easy.Contact ​mise was initially created by Jeff Dickey. The goal is to make local development of software easy and consistent across languages. Jeff has spent many years building dev tools and thinking about the problems that mise addresses.This project is simply a labor of love. Jeff created it because he wanted to make your life as a developer easier. We hope you find it useful. Feedback is a massive driver for us. If you have anything positive or negative to say-even if it's just to say hi-please reach out to me either on Twitter, Mastodon, Discord, or jdx at this domain.'''
+year_published = 2025
+clearnet = "https://mise.jdx.dev/about.html"
+tags = ["advanced", "alias", "backends", "cache", "config", "configuration", "contact", "cookbook", "core", "doctor"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/bin-paths.html"]
+title = "mise bin-paths | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise bin-paths ​Usage: mise bin-paths [TOOL@VERSION]...Source code: src/cli/bin_paths.rsList all the active runtime bin pathsArguments ​[TOOL@VERSION]... ​Tool(s) to look up e.g.: ruby@3 mise bin-paths ​Usage: mise bin-paths [TOOL@VERSION]...Source code: src/cli/bin_paths.rsList all the active runtime bin pathsArguments ​[TOOL@VERSION]... ​Tool(s) to look up e.g.: ruby@3 Edit this pageLast updated: PagerPrevious pagemise backends lsNext pagemise cache"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/bin-paths.html"
+tags = ["advanced", "alias", "arguments", "backends", "bin-paths", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/doctor/path.html"]
+title = "mise doctor path | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise doctor path ​Usage: mise doctor path [-f --full]Source code: src/cli/doctor/path.rsPrint the current PATH entries mise is providingFlags ​-f --full ​Print all entries including those not provided by miseExamples:Get the current PATH entries mise is providing $ mise path /home/user/.local/share/mise/installs/node/24.0.0/bin /home/user/.local/share/mise/installs/rust/1.90.0/bin /home/user/.local/share/mise/installs/python/3.10.0/bin mise doctor path ​Usage: mise doctor path [-f --full]Source code: src/cli/doctor/path.rsPrint the current PATH entries mise is providingFlags ​-f --full ​Print all entries including those not provided by miseExamples:Get the current PATH entries mise is providing $ mise path /home/user/.local/share/mise/installs/node/24.0.0/bin /home/user/.local/share/mise/installs/rust/1.90.0/bin /home/user/.local/share/mise/installs/python/3.10.0/bin Edit this pageLast updated: PagerPrevious pagemise doctorNext pagemise en"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/doctor/path.html"
+tags = ["--full", "advanced", "alias", "backends", "cache", "code", "config", "configuration", "cookbook", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/cache/prune.html"]
+title = "mise cache prune | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise cache prune ​Usage: mise cache prune [--dry-run] [-v --verbose...] [PLUGIN]...Aliases: pSource code: src/cli/cache/prune.rsRemoves stale mise cache filesBy default, this command will remove files that have not been accessed in 30 days. Change this with the MISE_CACHE_PRUNE_AGE environment variable.Arguments ​[PLUGIN]... ​Plugin(s) to clear cache for e.g.: node, pythonFlags ​--dry-run ​Just show what would be pruned-v --verbose... ​Show pruned files mise cache prune ​Usage: mise cache prune [--dry-run] [-v --verbose...] [PLUGIN]...Aliases: pSource code: src/cli/cache/prune.rsRemoves stale mise cache filesBy default, this command will remove files that have not been accessed in 30 days. Change this with the MISE_CACHE_PRUNE_AGE environment variable.Arguments ​[PLUGIN]... ​Plugin(s) to clear cache for e.g.: node, pythonFlags ​--dry-run ​Just show what would be pruned-v --verbose... ​Show pruned files Edit this pageLast updated: PagerPrevious pagemise cache clearNext pagemise completion"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/cache/prune.html"
+tags = ["--dry-run", "--verbose...", "advanced", "alias", "aliases", "arguments", "backends", "cache", "clear", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/config/generate.html"]
+title = "mise config generate | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise config generate ​Usage: mise config generate [-t --tool-versions <TOOL_VERSIONS>] [-o --output <OUTPUT>]Aliases: gSource code: src/cli/config/generate.rs[experimental] Generate a mise.toml fileFlags ​-t --tool-versions <TOOL_VERSIONS> ​Path to a .tool-versions file to import tools from-o --output <OUTPUT> ​Output to file instead of stdoutExamples:mise cf generate > mise.toml mise cf generate --output=mise.toml mise config generate ​Usage: mise config generate [-t --tool-versions <TOOL_VERSIONS>] [-o --output <OUTPUT>]Aliases: gSource code: src/cli/config/generate.rs[experimental] Generate a mise.toml fileFlags ​-t --tool-versions <TOOL_VERSIONS> ​Path to a .tool-versions file to import tools from-o --output <OUTPUT> ​Output to file instead of stdoutExamples:mise cf generate > mise.toml mise cf generate --output=mise.toml Edit this pageLast updated: PagerPrevious pagemise configNext pagemise config get"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/config/generate.html"
+tags = ["--output", "--tool-versions", "advanced", "alias", "aliases", "backends", "cache", "code", "config", "configuration"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cache-behavior.html"]
+title = "Cache Behavior | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "Cache Behavior ​mise makes use of caching in many places in order to be efficient. The details about how long to keep cache for should eventually all be configurable. There may be gaps in the current behavior where things are hardcoded, but I'm happy to add more settings to cover whatever config is needed.Below I explain the behavior it uses around caching. If you're seeing behavior where things don't appear to be updating, this is a good place to start.Plugin/Runtime Cache ​Each plugin has a cache that's stored in ~/$MISE_CACHE_DIR/<PLUGIN>. It stores the list of versions available for that plugin (mise ls-remote <PLUGIN>), the idiomatic filenames (see below), the list of aliases, the bin directories within each runtime installation, and the result of running exec-env after the runtime was installed.Remote versions are updated daily by default. The file is zlib messagepack, if you want to view it you can run the following (requires msgpack-cli).shcat ~/$MISE_CACHE_DIR/node/remote_versions.msgpack.z | perl -e 'use Compress::Raw::Zlib;my $d=new Compress::Raw::Zlib::Inflate();my $o;undef $/;$d->inflate(<>,$o);print $o;' | msgpack-cli decodeNote that the caching of exec-env may be problematic if the script isn't simply exporting static values. The vast majority of exec-env scripts only export static values, but if you're working with a plugin that has a dynamic exec-env submit a ticket and we can try to figure out what to do.Caching exec-env massively improved the performance of mise since it requires calling bash every time mise is initialized. Ideally, we can keep this behavior."
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cache-behavior.html"
+tags = ["advanced", "alias", "backends", "behavior", "cache", "config", "configuration", "cookbook", "core", "directory"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/backends.html"]
+title = "mise backends | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise backends ​Usage: mise backends <SUBCOMMAND>Aliases: bSource code: src/cli/backends/mod.rsManage backendsSubcommands ​mise backends ls mise backends ​Usage: mise backends <SUBCOMMAND>Aliases: bSource code: src/cli/backends/mod.rsManage backendsSubcommands ​mise backends ls Edit this pageLast updated: PagerPrevious pagemise alias unsetNext pagemise backends ls"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/backends.html"
+tags = ["advanced", "alias", "aliases", "backends", "cache", "code", "config", "configuration", "cookbook", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/config/get.html"]
+title = "mise config get | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise config get ​Usage: mise config get [-f --file <FILE>] [KEY]Source code: src/cli/config/get.rsDisplay the value of a setting in a mise.toml fileArguments ​[KEY] ​The path of the config to displayFlags ​-f --file <FILE> ​The path to the mise.toml file to editIf not provided, the nearest mise.toml file will be usedExamples:$ mise toml get tools.python 3.12 mise config get ​Usage: mise config get [-f --file <FILE>] [KEY]Source code: src/cli/config/get.rsDisplay the value of a setting in a mise.toml fileArguments ​[KEY] ​The path of the config to displayFlags ​-f --file <FILE> ​The path to the mise.toml file to editIf not provided, the nearest mise.toml file will be usedExamples:$ mise toml get tools.python 3.12 Edit this pageLast updated: PagerPrevious pagemise config generateNext pagemise config ls"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/config/get.html"
+tags = ["--file", "advanced", "alias", "arguments", "backends", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/config/set.html"]
+title = "mise config set | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise config set ​Usage: mise config set [-f --file <FILE>] [-t --type <TYPE>] <KEY> <VALUE>Source code: src/cli/config/set.rsSet the value of a setting in a mise.toml fileArguments ​<KEY> ​The path of the config to display<VALUE> ​The value to set the key toFlags ​-f --file <FILE> ​The path to the mise.toml file to editIf not provided, the nearest mise.toml file will be used-t --type <TYPE> ​Choices:inferstringintegerfloatboollistExamples:$ mise config set tools.python 3.12 $ mise config set settings.always_keep_download true $ mise config set env.TEST_ENV_VAR ABC $ mise config set settings.disable_tools --type list node,rust # Type for `settings` is inferred $ mise config set settings.jobs 4"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/config/set.html"
+tags = ["--file", "--type", "advanced", "alias", "arguments", "backends", "cache", "choices:", "code", "config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/alias.html"]
+title = "mise alias | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise alias ​Usage: mise alias [-p --plugin <PLUGIN>] [--no-header] <SUBCOMMAND>Aliases: aSource code: src/cli/alias/mod.rsManage version aliases.Flags ​-p --plugin <PLUGIN> ​filter aliases by plugin--no-header ​Don't show table headerSubcommands ​mise alias get <PLUGIN> <ALIAS>mise alias ls [--no-header] [TOOL]mise alias set <ARGS>…mise alias unset <PLUGIN> <ALIAS> mise alias ​Usage: mise alias [-p --plugin <PLUGIN>] [--no-header] <SUBCOMMAND>Aliases: aSource code: src/cli/alias/mod.rsManage version aliases.Flags ​-p --plugin <PLUGIN> ​filter aliases by plugin--no-header ​Don't show table headerSubcommands ​mise alias get <PLUGIN> <ALIAS>mise alias ls [--no-header] [TOOL]mise alias set <ARGS>…mise alias unset <PLUGIN> <ALIAS> Edit this pageLast updated: PagerPrevious pagemise activateNext pagemise alias get"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/alias.html"
+tags = ["--no-header", "--plugin", "activate", "advanced", "alias", "aliases", "backends", "cache", "code", "config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/config.html"]
+title = "mise config | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise config ​Usage: mise config [FLAGS] <SUBCOMMAND>Aliases: cfgSource code: src/cli/config/mod.rsManage config filesFlags ​--no-header ​Do not print table header--tracked-configs ​List all tracked config files-J --json ​Output in JSON formatSubcommands ​mise config generate [-t --tool-versions <TOOL_VERSIONS>] [-o --output <OUTPUT>]mise config get [-f --file <FILE>] [KEY]mise config ls [FLAGS]mise config set [-f --file <FILE>] [-t --type <TYPE>] <KEY> <VALUE>Examples:$ mise config ls Path Tools ~/.config/mise/config.toml pitchfork ~/src/mise/mise.toml actionlint, bun, cargo-binstall, cargo:cargo-edit, cargo:cargo-insta"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/config.html"
+tags = ["--json", "--no-header", "--tracked-configs", "advanced", "alias", "aliases", "backends", "cache", "code", "completion"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev"]
+title = "Home | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "🛠️Dev Toolsmise is a polyglot tool version manager. It replaces tools like asdf, nvm, pyenv, rbenv, etc. ⚙Environmentsmise allows you to switch sets of env vars in different project directories. It can replace direnv."
+year_published = 2025
+clearnet = "https://mise.jdx.dev"
+tags = ["environments", "mise-en-place", "tasks", "tools"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "github.com"]
+
+["https://mise.jdx.dev/cli/cache.html"]
+title = "mise cache | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise cache ​Usage: mise cache <SUBCOMMAND>Source code: src/cli/cache/mod.rsManage the mise cacheRun mise cache with no args to view the current cache directory.Subcommands ​mise cache clear [PLUGIN]...mise cache prune [--dry-run] [-v --verbose...] [PLUGIN]... mise cache ​Usage: mise cache <SUBCOMMAND>Source code: src/cli/cache/mod.rsManage the mise cacheRun mise cache with no args to view the current cache directory.Subcommands ​mise cache clear [PLUGIN]...mise cache prune [--dry-run] [-v --verbose...] [PLUGIN]... Edit this pageLast updated: PagerPrevious pagemise bin-pathsNext pagemise cache clear"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/cache.html"
+tags = ["advanced", "alias", "backends", "bin-paths", "cache", "clear", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/alias/get.html"]
+title = "mise alias get | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise alias get ​Usage: mise alias get <PLUGIN> <ALIAS>Source code: src/cli/alias/get.rsShow an alias for a pluginThis is the contents of an alias.<PLUGIN> entry in ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to show the alias for<ALIAS> ​The alias to showExamples:$ mise alias get node lts-hydrogen 20.0.0 mise alias get ​Usage: mise alias get <PLUGIN> <ALIAS>Source code: src/cli/alias/get.rsShow an alias for a pluginThis is the contents of an alias.<PLUGIN> entry in ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to show the alias for<ALIAS> ​The alias to showExamples:$ mise alias get node lts-hydrogen 20.0.0 Edit this pageLast updated: PagerPrevious pagemise aliasNext pagemise alias ls"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/alias/get.html"
+tags = ["advanced", "alias", "arguments", "backends", "cache", "code", "config", "configuration", "cookbook", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/getting-started.html"]
+title = "Getting Started | mise-en-place"
+description = "mise-en-place documentation"
+full_description = '''Getting Started ​This will show you how to install mise and get started with it. This is a suitable way when using an interactive shell like bash, zsh, or fish.1. Install mise CLI ​See installing mise for other ways to install mise (macport, apt, yum, nix, etc.).Linux/macOSBrewWindowsDebian/Ubuntu (apt)Fedora (dnf)shellcurl https://mise.run | shBy default, mise will be installed to ~/.local/bin (this is simply a suggestion. mise can be installed anywhere). You can verify the installation by running:shell~/.local/bin/mise --version # mise 2024.x.x~/.local/bin does not need to be in PATH. mise will automatically add its own directory to PATH when activated.mise respects MISE_DATA_DIR and XDG_DATA_HOME if you'd like to change these locations.2. mise exec and run ​Once mise is installed, you can immediately start using it. mise can be used to install and run tools, launch tasks, and manage environment variables.The most essential feature mise provides is the ability to run tools with specific versions. A simple way to run a shell command with a given tool is to use mise x|exec. For example, here is how you can start a Python 3 interactive shell (REPL):In the examples below, use ~/.local/bin/mise (or the absolute path to mise) if mise is not already on PATHshmise exec python@3 -- python # this will download and install Python if it is not already installed # Python 3.13.2 # >>> ...or run node 22:shmise exec node@22 -- node -v # v22.x.xmise x|exec is a powerful way to load the current mise context (tools & environment variables) without modifying your shell session or running ad-hoc commands with mise tools set. Installing tools is as simple as running mise use|u.shellmise use --global node@22 # install node 22 and set it as the global default mise exec -- node my-script.js # run my-script.js with node 22...Another useful command is mise r|run which allows you to run a mise task or a script with the mise context.TIPYou can set a shell alias in your shell's rc file like alias x="mise x --" to save some keystrokes.3. Activate mise optional ​While using mise x|exec is useful, for interactive shells, you might prefer to activate mise to automatically load the mise context (tools and environment variables) in your shell session. Another option is to use shims.mise activate method updates your environment variable and PATH every time your prompt is run to ensure you use the correct versions.Shims are symlinks to the mise binary that intercept commands and load the appropriate environment. Note that shims do not support all the features of mise activate.For interactive shells, mise activate is recommended. In non-interactive sessions, like CI/CD, IDEs, and scripts, using shims might work best. You can also not use any and call mise exec/run directly instead. See this guide for more information.Here is how you can activate mise depending on your shell and the installation method:https://mise.runBrewWindowsOther package managersbashzshfishshecho 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrcshecho 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrcshecho '~/.local/bin/mise activate fish | source' >> ~/.config/fish/config.fishMake sure you restart your shell session after modifying your rc file in order for it to take effect. You can run mise dr|doctor to verify that mise is correctly installed and activated.Now that mise is activated or its shims have been added to PATH, node is also available directly! (without using mise exec):shmise use --global node@22 node -v # v22.x.xNote that when you ran mise use --global node@22, mise updated the global mise configuration.~/.config/mise/config.tomltoml[tools] node = "22"4. Next steps ​Follow the walkthrough for more examples on how to use mise.Set up the autocompletion ​See autocompletion to learn how to set up autocompletion for your shell.GitHub API rate limiting ​WARNINGMany tools in mise require the use of the GitHub API. Unauthenticated requests to the GitHub API are often rate limited. If you see 4xx errors while using mise, you can set MISE_GITHUB_TOKEN or GITHUB_TOKEN to a token generated from here which will likely fix the issue. The token does not require any scopes.'''
+year_published = 2025
+clearnet = "https://mise.jdx.dev/getting-started.html"
+tags = ['"22"', "activate", "advanced", "alias", "autocompletion", "backends", "cache", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/config/ls.html"]
+title = "mise config ls | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise config ls ​Usage: mise config ls [FLAGS]Aliases: listSource code: src/cli/config/ls.rsList config files currently in useFlags ​--no-header ​Do not print table header--tracked-configs ​List all tracked config files-J --json ​Output in JSON formatExamples:$ mise config ls Path Tools ~/.config/mise/config.toml pitchfork ~/src/mise/mise.toml actionlint, bun, cargo-binstall, cargo:cargo-edit, cargo:cargo-insta mise config ls ​Usage: mise config ls [FLAGS]Aliases: listSource code: src/cli/config/ls.rsList config files currently in useFlags ​--no-header ​Do not print table header--tracked-configs ​List all tracked config files-J --json ​Output in JSON formatExamples:$ mise config ls Path Tools ~/.config/mise/config.toml pitchfork ~/src/mise/mise.toml actionlint, bun, cargo-binstall, cargo:cargo-edit, cargo:cargo-insta Edit this pageLast updated: PagerPrevious pagemise config getNext pagemise config set"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/config/ls.html"
+tags = ["--json", "--no-header", "--tracked-configs", "advanced", "alias", "aliases", "backends", "cache", "code", "config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/deactivate.html"]
+title = "mise deactivate | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise deactivate ​Usage: mise deactivateSource code: src/cli/deactivate.rsDisable mise for current shell sessionThis can be used to temporarily disable mise in a shell session.Examples:mise deactivate mise deactivate ​Usage: mise deactivateSource code: src/cli/deactivate.rsDisable mise for current shell sessionThis can be used to temporarily disable mise in a shell session.Examples:mise deactivate Edit this pageLast updated: PagerPrevious pagemise config setNext pagemise doctor"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/deactivate.html"
+tags = ["advanced", "alias", "backends", "cache", "code", "config", "configuration", "cookbook", "core", "deactivate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/exec.html"]
+title = "mise exec | mise-en-place"
+description = "mise-en-place documentation"
+full_description = 'mise exec ​Usage: mise exec [FLAGS] [TOOL@VERSION]... [-- COMMAND]...Aliases: xSource code: src/cli/exec.rsExecute a command with tool(s) setuse this to avoid modifying the shell session or running ad-hoc commands with mise tools set.Tools will be loaded from mise.toml, though they can be overridden with <RUNTIME> args Note that only the plugin specified will be overridden, so if a mise.toml file includes "node 20" but you run mise exec [email protected]; it will still load node@20.The "--" separates runtimes from the commands to pass along to the subprocess.Arguments ​[TOOL@VERSION]... ​Tool(s) to start e.g.: node@20 [email protected][-- COMMAND]... ​Command string to execute (same as --command)Flags ​-c --command <C> ​Command string to execute-j --jobs <JOBS> ​Number of jobs to run in parallel [default: 4]--raw ​Directly pipe stdin/stdout/stderr from plugin to user Sets --jobs=1Examples:$ mise exec node@20 -- node ./app.js # launch app.js using node-20.x $ mise x node@20 -- node ./app.js # shorter alias # Specify command as a string: $ mise exec node@20 [email protected] --command "node -v && python -V" # Run a command in a different directory: $ mise x -C /path/to/project node@20 -- node ./app.js'
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/exec.html"
+tags = ["--command", "--jobs", "--raw", "advanced", "alias", "aliases", "arguments", "backends", "cache", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/alias/set.html"]
+title = "mise alias set | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise alias set ​Usage: mise alias set <ARGS>…Aliases: add, createSource code: src/cli/alias/set.rsAdd/update an alias for a pluginThis modifies the contents of ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to set the alias for<ALIAS> ​The alias to set<VALUE> ​The value to set the alias toExamples:mise alias set node lts-jod 22.0.0 mise alias set ​Usage: mise alias set <ARGS>…Aliases: add, createSource code: src/cli/alias/set.rsAdd/update an alias for a pluginThis modifies the contents of ~/.config/mise/config.tomlArguments ​<PLUGIN> ​The plugin to set the alias for<ALIAS> ​The alias to set<VALUE> ​The value to set the alias toExamples:mise alias set node lts-jod 22.0.0 Edit this pageLast updated: PagerPrevious pagemise alias lsNext pagemise alias unset"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/alias/set.html"
+tags = ["advanced", "alias", "aliases", "arguments", "backends", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/fmt.html"]
+title = "mise fmt | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise fmt ​Usage: mise fmt [-a --all]Source code: src/cli/fmt.rsFormats mise.tomlSorts keys and cleans up whitespace in mise.tomlFlags ​-a --all ​Format all files from the current directoryExamples:mise fmt mise fmt ​Usage: mise fmt [-a --all]Source code: src/cli/fmt.rsFormats mise.tomlSorts keys and cleans up whitespace in mise.tomlFlags ​-a --all ​Format all files from the current directoryExamples:mise fmt Edit this pageLast updated: PagerPrevious pagemise execNext pagemise generate"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/fmt.html"
+tags = ["--all", "advanced", "alias", "backends", "cache", "code", "config", "configuration", "cookbook", "core"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/en.html"]
+title = "mise en | mise-en-place"
+description = "mise-en-place documentation"
+full_description = 'mise en ​Usage: mise en [-s --shell <SHELL>] [DIR]Source code: src/cli/en.rs[experimental] starts a new shell with the mise environment built from the current configurationThis is an alternative to mise activate that allows you to explicitly start a mise session. It will have the tools and environment variables in the configs loaded. Note that changing directories will not update the mise environment.Arguments ​[DIR] ​Directory to start the shell inDefault: .Flags ​-s --shell <SHELL> ​Shell to startDefaults to $SHELLExamples:$ mise en . $ node -v v20.0.0 Skip loading bashrc: $ mise en -s "bash --norc" Skip loading zshrc: $ mise en -s "zsh -f"'
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/en.html"
+tags = ["--shell", "advanced", "alias", "arguments", "backends", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/generate.html"]
+title = "mise generate | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise generate ​Usage: mise generate <SUBCOMMAND>Aliases: genSource code: src/cli/generate/mod.rs[experimental] Generate files for various tools/servicesSubcommands ​mise generate bootstrap [FLAGS]mise generate config [-t --tool-versions <TOOL_VERSIONS>] [-o --output <OUTPUT>]mise generate devcontainer [FLAGS]mise generate git-pre-commit [FLAGS]mise generate github-action [FLAGS]mise generate task-docs [FLAGS]mise generate task-stubs [-m --mise-bin <MISE_BIN>] [-d --dir <DIR>] mise generate ​Usage: mise generate <SUBCOMMAND>Aliases: genSource code: src/cli/generate/mod.rs[experimental] Generate files for various tools/servicesSubcommands ​mise generate bootstrap [FLAGS]mise generate config [-t --tool-versions <TOOL_VERSIONS>] [-o --output <OUTPUT>]mise generate devcontainer [FLAGS]mise generate git-pre-commit [FLAGS]mise generate github-action [FLAGS]mise generate task-docs [FLAGS]mise generate task-stubs [-m --mise-bin <MISE_BIN>] [-d --dir <DIR>] Edit this pageLast updated: PagerPrevious pagemise fmtNext pagemise generate bootstrap"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/generate.html"
+tags = ["advanced", "alias", "aliases", "backends", "bootstrap", "cache", "code", "config", "configuration", "cookbook"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/generate/bootstrap.html"]
+title = "mise generate bootstrap | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise generate bootstrap ​Usage: mise generate bootstrap [FLAGS]Source code: src/cli/generate/bootstrap.rs[experimental] Generate a script to download+execute miseThis is designed to be used in a project where contributors may not have mise installed.Flags ​-l --localize ​Sandboxes mise internal directories like MISE_DATA_DIR and MISE_CACHE_DIR into a .mise directory in the projectThis is necessary if users may use a different version of mise outside the project.--localized-dir <LOCALIZED_DIR> ​Directory to put localized data into-V --version <VERSION> ​Specify mise version to fetch-w --write <WRITE> ​instead of outputting the script to stdout, write to a file and make it executableExamples:mise generate bootstrap >./bin/mise chmod +x ./bin/mise ./bin/mise install – automatically downloads mise to .mise if not already installed"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/generate/bootstrap.html"
+tags = ["--localize", "--localized-dir", "--version", "--write", "advanced", "alias", "backends", "bootstrap", "cache", "code"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/activate.html"]
+title = "mise activate | mise-en-place"
+description = "mise-en-place documentation"
+full_description = '''mise activate ​Usage: mise activate [FLAGS] [SHELL_TYPE]Source code: src/cli/activate.rsInitializes mise in the current shell sessionThis should go into your shell's rc file or login shell. Otherwise, it will only take effect in the current session. (e.g. ~/.zshrc, ~/.zprofile, ~/.zshenv, ~/.bashrc, ~/.bash_profile, ~/.profile, ~/.config/fish/config.fish, or $PROFILE for powershell)Typically, this can be added with something like the following:echo 'eval "$(mise activate zsh)"' >> ~/.zshrcHowever, this requires that "mise" is in your PATH. If it is not, you need to specify the full path like this:echo 'eval "$(/path/to/mise activate zsh)"' >> ~/.zshrcCustomize status output with status settings.Arguments ​[SHELL_TYPE] ​Shell type to generate the script forChoices:bashelvishfishnuxonshzshpwshFlags ​--shims ​Use shims instead of modifying PATH Effectively the same as:PATH="$HOME/.local/share/mise/shims:$PATH"mise activate --shims does not support all the features of mise activate. See https://mise.jdx.dev/dev-tools/shims.html#shims-vs-path for more information-q --quiet ​Suppress non-error messages--no-hook-env ​Do not automatically call hook-envThis can be helpful for debugging mise. If you run eval "$(mise activate --no-hook-env)", then you can call mise hook-env manually which will output the env vars to stdout without actually modifying the environment. That way you can do things like mise hook-env --trace to get more information or just see the values that hook-env is outputting.Examples:eval "$(mise activate bash)" eval "$(mise activate zsh)" mise activate fish | source execx($(mise activate xonsh)) (&mise activate pwsh) | Out-String | Invoke-Expression'''
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/activate.html"
+tags = ["--no-hook-env", "--quiet", "--shims", "activate", "advanced", "alias", "arguments", "backends", "cache", "choices:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]
+
+["https://mise.jdx.dev/cli/completion.html"]
+title = "mise completion | mise-en-place"
+description = "mise-en-place documentation"
+full_description = "mise completion ​Usage: mise completion [--include-bash-completion-lib] [SHELL]Source code: src/cli/completion.rsGenerate shell completionsArguments ​[SHELL] ​Shell type to generate completions forChoices:bashfishzshFlags ​--include-bash-completion-lib ​Include the bash completion library in the bash completion scriptThis is required for completions to work in bash, but it is not included by default you may source it separately or enable this flag to include it in the script.Examples:mise completion bash > /etc/bash_completion.d/mise mise completion zsh > /usr/local/share/zsh/site-functions/_mise mise completion fish > ~/.config/fish/completions/mise.fish"
+year_published = 2025
+clearnet = "https://mise.jdx.dev/cli/completion.html"
+tags = ["--include-bash-completion-lib", "advanced", "alias", "arguments", "backends", "cache", "choices:", "code", "completion", "config"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "fosstodon.org", "github.com", "jdx.dev", "twitter.com"]

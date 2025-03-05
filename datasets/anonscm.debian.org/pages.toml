@@ -1,0 +1,9 @@
+["https://anonscm.debian.org"]
+title = "anonscm"
+full_description = "The alioth.debian.org service is discontinued. Its replacement is a GitLab instance at salsa.debian.org. Migration documentation is available on the wiki, and an archive of VCS repositories can be found on alioth-archive.debian.org."
+year_published = 2025
+clearnet = "https://anonscm.debian.org"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["alioth-archive.debian.org", "salsa.debian.org", "wiki.debian.org"]

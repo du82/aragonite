@@ -1,0 +1,740 @@
+["http://rsb.org.uk"]
+title = "Royal Society of Biology"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "http://rsb.org.uk"
+tags = ["2025-2030", "available", "biocides", "biological", "biology", "bioscience", "brand", "briefing", "cited", "debate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/careers-and-cpd"]
+title = "Careers & CPD"
+description = "The best ways of researching the right career for you"
+full_description = "Careers & CPD Pursuing a career in biology is stimulating and rewarding. The RSB support biologists with career advice, professional recognition and training events. Registers The Society recognises professional biologists through Registers licences, including: Registered Science Technician (RSciTech) Registered Scientist (RSci) Chartered Scientist (CSci) Chartered Biologist (CBiol) Chartered Science Teacher (CSciTeach) Careers There are a range of options available for secondary school pupils and university students to find out more about a career in biology. To get started take a look at our careers pages for more information on work experience, apprenticeships, university, jobs and more. Training Our training programme is expanding, offering a wide range of courses for all abilities and interests both personal and professional, including persuasive scientific writing, presentation skills and drug development. Courses are offered at a substantial discount to members. View our current courses and book your place now. See a full list of the Society's past training events. CPD The importance of keeping up to date is particularly necessary in today's demanding society. CPD is a useful tool for achieving and demonstrating such ability and competence."
+year_published = 2025
+clearnet = "https://rsb.org.uk/careers-and-cpd"
+tags = ["careers", "chartered biologist", "chartered scientist", "cpd", "registered science technician", "registered scientist", "registers", "training"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "futuremorph.org", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/about-us/style-guide"]
+title = "Style Guide"
+description = '''
+This page is a guide to help keep styling consistent across the website. If you are an external visitor, you probably won't find this page very interesting.
+The title above which is an &lt;h1&gt; heading inside a &lt;header&gt; element comes from the "Title" field in the CMS. The banner image, also above is the "Full Article Image" from the CMS.
+This guide applies to the main website only.
+This is a Top Level Heading h1
+The above heading appears in blue and bold font. You should not need to set headings bold. Currently, headings should contain text only and not images or links.
+All headings currently display in 13px font with a 17px line height. They are aligned left, against the margin.
+This is a Second Level Heading h2
+Second level headings are black and bold. Again please do not use bold or any other markup to change this.
+This is a Third Level Heading h3
+Third level headings appear in blue ordinary weight font.
+This is a Fourth Level Heading
+These show up in grey bold.
+Paragraphs
+Ordinary text will appear in paragraphs like this one which end here.
+Paragraphs have 10px of top and bottom margin. Please don't put in blank lines or headings to add more space. If there's something wrong with the spacing in an article, then the problem probably appears elsewhere and should be fixed in the style-sheet.
+Paragraphs Containing Images
+If you place an image in a paragraph, it will float to the left of the text, like this Biology week image (left). Headings will not float next to images. The exact layout in the editor might not be exactly what you see on the site and remember that your article has to display on mobile screens so the text might wrap differently.
+When you start a new paragraph, the text will still float around an image in the previous paragraph.
+But when you add a Heading (h3)
+It will start on a new line. As mentioned above.
+
+Page Breaks
+The break, above causes the page to have an index at the top. If you don't add any breaks, the article has no index and the reader just needs to scroll down to read to the end. With breaks, there are "next" buttons to navigate to the next page.
+Links
+You can link to other articles on the site like the "About us" article. If there's any punctuation around a link, like quotes or a full stop, make sure it's not inside the link. Links are not underlined on this site. They are green and change to white with a green background when you hover over them. This is part of the site design. Please do not use bold to highlight links.
+Lists
+There are two kinds of list:-
+
+Ones with numbers;
+Such as;
+One;
+Two; and
+Three.
+
+And ones with bullets:-
+
+First;
+Second;
+third.
+
+Currently these don't display correctly in the editor but please don't try to create lists by using full stops in separate paragraphs. Things like screen readers may understand pages better when they can see a list rather than paragraphs that start with full stops.
+More on Images
+Images can float to the right, if you set that when you add the image. Images will have 15 pixels of margin around them except on the side next to the margin.
+Don't try to add empty paragraphs or headings to add spacing. If there's something wrong with the template then please ask for it to be fixed. Images normally will float into the next paragraph, as mentioned above. This doesn't happen with images in the last paragraph in an article. It's important not to add empty paragraphs at the end of an article as this can cause an image to float outside the area of the article at the bottom.
+If this were the last paragraph it would have no margin at the bottom so it would fit up against the bottom of the page. Also the owl to the left won't stick out of the bottom of the article. If you have problems with spaces at the bottom of an article or if an image sticks out, then you may have empty paragraphs at the bottom. When you have page breaks, there is a next or previous button at the page bottom.
+Images that are full width, like this one  can be uploaded as 550px width. Images where the width is set to 500-599 will be displayed at the width of the page.
+Figures with Captions
+We don't have an editor component for this, but this is the better way to display an image caption:-
+Figure 1: This is a caption'''
+full_description = '''Style Guide Article Index Style Guide page-breaks All Pages Page 1 of 2This page is a guide to help keep styling consistent across the website. If you are an external visitor, you probably won't find this page very interesting. The title above which is an <h1> heading inside a <header> element comes from the "Title" field in the CMS. The banner image, also above is the "Full Article Image" from the CMS. This guide applies to the main website only. This is a Top Level Heading h1 The above heading appears in blue and bold font. You should not need to set headings bold. Currently, headings should contain text only and not images or links. All headings currently display in 13px font with a 17px line height. They are aligned left, against the margin. This is a Second Level Heading h2 Second level headings are black and bold. Again please do not use bold or any other markup to change this. This is a Third Level Heading h3 Third level headings appear in blue ordinary weight font. This is a Fourth Level Heading These show up in grey bold. Paragraphs Ordinary text will appear in paragraphs like this one which end here. Paragraphs have 10px of top and bottom margin. Please don't put in blank lines or headings to add more space. If there's something wrong with the spacing in an article, then the problem probably appears elsewhere and should be fixed in the style-sheet. Paragraphs Containing Images If you place an image in a paragraph, it will float to the left of the text, like this Biology week image (left). Headings will not float next to images. The exact layout in the editor might not be exactly what you see on the site and remember that your article has to display on mobile screens so the text might wrap differently. When you start a new paragraph, the text will still float around an image in the previous paragraph. But when you add a Heading (h3) It will start on a new line. As mentioned above. Next'''
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/style-guide"
+tags = ["biological", "biology", "bioscience", "containing", "guide", "heading", "headings", "images", "index", "level"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "futuremorph.org", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/component/banners/click/118"]
+title = "Signs of Spring Survey"
+description = """
+The Royal Society of Biology is working in partnership with the Field Studies Council to bring you the Signs of Spring survey 2025.
+Signs of Spring is a survey asking members of the public to record ten signs of Spring across the UK.
+We'd love you to get involved by looking out for any of the ten indicator species or events shown below, and when you see one, record it using our short survey.
+Click here to access the Signs of Spring survey
+Anytime you are out in your local area, we would like you to lookout for the following Signs of Spring, record where and when you saw the sign of spring as well as the weather at the time. We want to capture early and late signs of spring, so the survey is open until 18th June 2025.
+
+
+
+
+
+
+
+
+
+
+
+Bluebells
+
+
+Bumblebees
+
+
+Butterflies
+
+
+Daffodils
+
+
+Dragonflies/damselflies
+
+
+
+
+
+
+
+
+
+
+
+Frogspawn
+
+
+Hazel catkins
+
+
+Ladybirds
+
+
+Lawn first cut
+
+
+Snowdrops
+
+
+
+
+When looking for signs of spring and completing the survey, please ensure you stay safe and are dressed appropriately for the weather.
+Results of the observations recorded using the survey will be available on a live map and chart below.
+
+We will be collecting data on the same 10 indicator species and events as in 2024. We hope by expanding the number of categories and collecting additional data on the time and weather for each sighting, over time, we can track changes to the signs of spring and make observations about the potential impacts of changes in the environment.
+You can read about the 2024 results here.
+In partnership with:
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;"""
+full_description = "Signs of Spring Survey The Royal Society of Biology is working in partnership with the Field Studies Council to bring you the Signs of Spring survey 2025. Signs of Spring is a survey asking members of the public to record ten signs of Spring across the UK. We'd love you to get involved by looking out for any of the ten indicator species or events shown below, and when you see one, record it using our short survey. Click here to access the Signs of Spring survey Anytime you are out in your local area, we would like you to lookout for the following Signs of Spring, record where and when you saw the sign of spring as well as the weather at the time. We want to capture early and late signs of spring, so the survey is open until 18th June 2025. Bluebells Bumblebees Butterflies Daffodils Dragonflies/damselflies Frogspawn Hazel catkins Ladybirds Lawn first cut Snowdrops When looking for signs of spring and completing the survey, please ensure you stay safe and are dressed appropriately for the weather. Results of the observations recorded using the survey will be available on a live map and chart below. We will be collecting data on the same 10 indicator species and events as in 2024. We hope by expanding the number of categories and collecting additional data on the time and weather for each sighting, over time, we can track changes to the signs of spring and make observations about the potential impacts of changes in the environment. You can read about the 2024 results here. In partnership with:"
+year_published = 2025
+clearnet = "https://rsb.org.uk/component/banners/click/118"
+tags = ["2025.", "access", "biological", "biology", "bioscience", "bluebells", "bring", "bumblebees", "butterflies", "catkins"]
+language = "en"
+internal-references = ["none"]
+external-references = ["biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "facebook.com", "genetics.org.uk", "har.mrc.ac.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/careers-and-cpd/registers"]
+title = "Registers"
+description = "Professional Development is essential for today's biologists."
+full_description = "Professional Registers Professional development is essential for today's biologists. Professionalism is continually strived for but encompasses much more than just a job specification. To be truly professional, one must adhere to the ethics and conduct of your area of practice, maintain the standards of knowledge and practice necessary to fulfil your role, and participate in Continuing Professional Development (CPD). Registers Through a licence, offered by the Science Council, the Royal Society of Biology is now able to offer members four registers: Registered Science Technician (RSciTech) Registered Scientist (RSci) Chartered Scientist (CSci) Chartered Science Teacher (CSciTeach) This is in addition to our Chartered Biologist (CBiol) status. All those who are committed to the biological sciences in academia, industry, education and research are eligible to join their appropriate register. All these registers can be applied for my visiting mySociety. Our Professional Registers Comparison document contains a full list of registers administered by the Society. Continuing Professional Development CPD is an important area of most career paths. It offers a mechanism by which you can document the work you do above and beyond your job role, aiding upwards progression. At the Society we promote the importance of CPD to all our members and provide a simple system for maintaining your progress throughout the year. CPD illustrates the number of activities you currently participate in, which count towards your annual submission. Our CPD scheme is wide ranging as we appreciate our members come from all areas of the life sciences, and the development of one member may differ widely from the development of another. Elections The initial cost for registration is £20 for RSciTech, £25 for RSci, £55 for CBiol, £55 for CSciTeach and £55 for CSci. Once you are accepted to a register, you will be required to pay an annual renewal fee of £20 for RSciTech, £25 for RSci, £25 for CBiol, £55 for CSciTeach and £55 for CSci. Please note that this is in addition to the annual membership fee, and that a paid up membership is a requirement of professional registration. Elections for the registers are quarterly, occurring on the 1st January, April, July, October. We recommend you submit your application at least 6 weeks before election in order for it to be considered in time. Please note that this suggested timing is based on a straightforward application, and should your submission merit further discussion, it may be postponed until the following election. The Royal Society of Biology is committed to ensuring equal opportunities in the life sciences, and supports diversity at school and higher education, in the workplace and training."
+year_published = 2025
+clearnet = "https://rsb.org.uk/careers-and-cpd/registers"
+tags = ["careers", "continuing", "cpd", "development", "elections", "professional", "professional development", "registers", "£55"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "facebook.com", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "nuffieldfoundation.org", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/careers-and-cpd/training"]
+title = "Training"
+description = "The Society organises workshops and event which carry continuing professional development (CPD) credits."
+full_description = '''Training The Society's training programme is expanding; we offer courses to suit all interests and competencies, from enthusiastic students to high level professionals. Our aim is to promote interest in biology and enable individuals to continue their professional development (CPD). All attendees who complete our training courses will receive a certificate of attendance and achieve CPD points that count towards our CPD scheme. In-person training Attending a face to face training course can develop your skills and knowledge and provide opportunities for you to network and learn from others. Below is a list of the RSB training topics, subject to confirmations. Please see our upcoming training courses on our events page. • Artificial Intelligence and Machine Learning for Biological Application• Introduction to Ecology• Introduction to Reproducible Analyses in R• Laboratory Health and Safety and COSHH• Leadership in a Laboratory Environment• Programming for Biologists using Python In the laboratory• Aseptic Technique• Cell Culture: The Basics• Tissue Culture: The Basics• Microscopy & Microbiology Practical• DNA Analysis• Enzyme Linked Immunoabsorbant Assay (ELISA)• Polymerase Chain Reaction (PCR)• Protein Analysis To register your interest in any topics above not currently listed on the events page, please email training@rsb.org.uk In house training The RSB can organise training courses for your staff in a range of areas within the biosciences. We can also take bulk-bookings for our training courses. If you have staff or students in your organisation who would benefit from up-skilling, then please contact us at training@rsb.org.uk Online training The RSB's online courses, on myLearning are highly interactive, containing exercises, videos and an area for taking notes. Online training provides flexible option to train in your own time, for those who may be unable to attend our face-to-face courses. Our online training courses currently include: Gopher Science Lab, aimed at teachers and educators of science Animals used for Scientific Purposes Introduction to Trusteeship and Governance Core Business Skills for Biologists Writing for Non Specialist Audiences Persuasive Scientific Writing There are more courses in development and will be coming soon. Visit myLearning to find out more. Bespoke CPD for biology teachers The Royal Society of Biology is committed to supporting and encouraging the study of biology at primary, secondary and higher levels across the UK, working in coordination with our member organisations and with the broader scientific community. In the ever-changing world of biosciences, we have identified the need for further biology-specific training and CPD for science teachers. The Royal Society of Biology can offer tailored, subject specific teacher training for GCSEs/A-level qualifications (or equivalent). Training courses can be delivered in-person within your place of work, or via video conferencing. The RSB’s network of experienced teachers, professionals and academics can work with you to tailor the event to suit your specific needs. To begin planning this training and receive a quote, please contact the RSB at training@rsb.org.uk providing an overview of your requirements. You may want training on how to deliver a GCSE or A Level required practical, a deeper knowledge of epigenetics or on how ecology and protein structure might be linked together on an exam paper. Dates for training courses can be flexible to suit your organisations needs and availability. Whatever your requirements, just ask. Training discounts for members and Member Organisations Discounts of up to 50% are available to our individual members Discounts of up to 30% are available to our Full and Supporting Member Organisations, HUBS members and SCAS members Group-booking discounts are available, for members and full and supporting Member Organisations who would like to send multiple staff on the same course. Please email training@rsb.org.uk to find out more. For individual course fees please see the course pages on our website. Training course approval Royal Society of Biology training approval scheme is an independant process which reviews and provides recognition for organisations offering high quality training relevant to the biosceince community. Please download our guidance doucment for more information. To enquire about training approval, please contact us at training@rsb.org.uk. Approved courses: Marine Fish ID Skills, Marine Biological Association Introduction to Plankton, Marine Biological Association Introduction to image analysis, Francis Crick Institute CBIAS napari workshop 2024, Francis Crick Institute Colony management, Francis Crick Institute Microscopy: multidimensional image analysis, Francis Crick Institute High-dimensional data analysis for cytometry, Francis Crick Institute Mouse Necopsy and Tissue Processing, MRC Harwell Practical Laboratory Skills, MRC Harwell Courses are approved for CPD purposes only; approval does not imply they will fulfill any regulatory requirements. The RSB is not responsible for course delivery and as such will not be held liable in the event of any dispute between the course provider and attendees. Training Testimonials "Really interactive and fun" "In depth, good use of practical work" "Well structured. There were a lot of opportunities for practice which was good" "Great facilitator; clearly very knowledgeable and approachable. Very hands-on. Good balance of theory and practice." "Enjoyed how practical it was and that we received lots of genuine and useful feedback from the trainer." "Fascinating subject matter, very well covered. Right amount of detail, easy to follow and engage with. Like the incorporation of group work." "Very clear and concise material, very knowledgeable course leader, very inclusive and happy to talk through experiences with everyone, good open atmosphere, good examples and nice to talk about own experience." Certificate Training Programmes Industry Skills Certificate The Industry Skills Certificate is an initiative by the Royal Society of Biology, designed to increase the employability of scientists into industry, either for the first time or from academia. The certificate aims to provide a set of industry specific skills and knowledge gained through the participation in online and in-person training courses. For further details please visit our webpage or contact training@rsb.org.uk Technical Skills Certificate The Technical Skills Certificate is the latest initiative by the Royal Society of Biology, which follows on from the successful launch of the Industry Skills Certificate in 2019. This certificate is designed to support the professional development of technical staff working in higher education, industry or in a private laboratory. For further details please visit our webpage or contact training@rsb.org.uk RSB Partners With HEaTED HEaTED is the leading organisation for Higher Education and Technician Educational Development, delivering skills, training and networking for all specialisms and disciplines of the technical workforce. As the National Technician Development Centre’s (NTDC) training arm, HEaTED offers CPD courses and networking opportunities specificially designed for individuals in the technical community, aiming to develop technical staff, no matter their discipline or stage of their career. As a partner of the RSB, HEaTED offer a 50% discount on all their training courses to RSB members, for more information on their training courses please see the HEaTED website. Share your suggestions In order to ensure that the courses we offer are relevant to those working in the life sciences sector, we survey our membership on an annual basis and appeal to our employer members for intelligence on industry needs. We’re always keen to expand our training programme, so please do contact us with your training needs and suggestions. If you would be interested in developing a training course for our online training platform please complete our online course proposal form and email it to training@rsb.org.uk Training newsletter Every month we publish a newsletter which details our current training events, online courses and opportunities to get involved. Email us to sign up now.'''
+year_published = 2025
+clearnet = "https://rsb.org.uk/careers-and-cpd/training"
+tags = ["approval", "bespoke", "biology", "certificate", "contact", "course", "courses", "cpd", "crick", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "facebook.com", "genetics.org.uk", "har.mrc.ac.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/about-us/error-page"]
+title = "Error page"
+description = "Error page to say that there is an error or a page has moved"
+full_description = "Sorry! This page has moved We have recently launched a new website and the page you are looking for has moved. If the page you are looking for doesn't appear in menu above then try using the search box at the top of the page. We are sorry for any inconvenience. Sorry! This page has moved We have recently launched a new website and the page you are looking for has moved. If the page you are looking for doesn't appear in menu above then try using the search box at the top of the page. We are sorry for any inconvenience."
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/error-page"
+tags = ["biological", "biology", "bioscience", "moved", "professional", "sorry!", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/component/banners/click/120"]
+title = "Regional events grants"
+description = """
+The Royal Society of Biology (RSB) is offering grants of up to £1,000 to help you create inspiring events or activities that celebrate the biosciences and engage diverse audiences
+These new grants support initiatives that ignite curiosity, highlight ground-breaking research, and showcase local biological projects such as biodiversity hotspots or citizen science.
+We are looking to fund events and activities that encourage collaboration within the bioscience community, promote RSB membership, and make the biosciences more accessible. Subsequent rounds will be refined based on member feedback.
+Whether you are planning a biology workshop, talk series, or community project, these grants can help bring your vision to life.
+Download our event ideas guide for inspiration and start shaping your project today.
+How to apply
+Applications open on 30 January 2025 and close at 23:59 on 30 March 2025.
+To apply, you will need to:
+
+Provide details of your proposed event, including how the grant will be used and the benefits for attendees.
+Review our submission guidance to help prepare your answers.
+Submit your application via our online form.
+
+Note: Grants are awarded for future events scheduled between 1 May 2025 and 31 August 2026. Another round of grants will open later in the year.
+Eligibility
+Before applying, please ensure you meet the following criteria:
+
+You are an RSB member (affiliate, associate, member, or Fellow grade).
+Or, you have submitted and paid for membership and are awaiting election.
+Previous grant recipients are eligible to reapply.
+Grants are not available for events that have already occurred.
+
+Contact
+If you have any queries regarding eligibility or submission, please contact regions@rsb.org.uk
+&nbsp;"""
+full_description = "Regional Events Grants The Royal Society of Biology (RSB) is offering grants of up to £1,000 to help you create inspiring events or activities that celebrate the biosciences and engage diverse audiences These new grants support initiatives that ignite curiosity, highlight ground-breaking research, and showcase local biological projects such as biodiversity hotspots or citizen science. We are looking to fund events and activities that encourage collaboration within the bioscience community, promote RSB membership, and make the biosciences more accessible. Subsequent rounds will be refined based on member feedback. Whether you are planning a biology workshop, talk series, or community project, these grants can help bring your vision to life. Download our event ideas guide for inspiration and start shaping your project today. How to apply Applications open on 30 January 2025 and close at 23:59 on 30 March 2025. To apply, you will need to: Provide details of your proposed event, including how the grant will be used and the benefits for attendees. Review our submission guidance to help prepare your answers. Submit your application via our online form. Note: Grants are awarded for future events scheduled between 1 May 2025 and 31 August 2026. Another round of grants will open later in the year. Eligibility Before applying, please ensure you meet the following criteria: You are an RSB member (affiliate, associate, member, or Fellow grade). Or, you have submitted and paid for membership and are awaiting election. Previous grant recipients are eligible to reapply. Grants are not available for events that have already occurred. Contact If you have any queries regarding eligibility or submission, please contact regions@rsb.org.uk"
+year_published = 2025
+clearnet = "https://rsb.org.uk/component/banners/click/120"
+tags = ["2025.", "23:59", "activities", "applications", "apply", "audiences", "august", "biological", "biology", "bioscience"]
+language = "en"
+internal-references = ["none"]
+external-references = ["biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "facebook.com", "genetics.org.uk", "goto.rsb.org.uk", "har.mrc.ac.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/donate"]
+title = "Donate"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "https://rsb.org.uk/donate"
+tags = ["biological", "biology", "bioscience", "professional", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/education/hubs"]
+title = "Heads of University Biosciences"
+description = "Heads of University Biosciences (HUBS) is a Special Interest Group of the Society of Biology"
+full_description = "HUBS Heads of University Biosciences (HUBS) is a Special Interest Group of the Royal Society of Biology, and builds on the work of the previous Heads of Biological Sciences. The Group is open to heads of departments and subject leads or nominees, and aims to address the particular challenges of managing biological and life science departments and units in UK higher education (HE). HUBS acts as a forum for discussing issues on the provision and funding of research and teaching in the biological sciences, and as a source of informed comment on the consultations of the day that affect HE institutions delivering in the biological and life sciences. HUBS runs an annual meetings for members, which features sessions on higher education policy, research, and teaching and learning in the biosciences. The HE Bioscience Teacher of the Year Award is made at this meeting. For more details please see the HUBS news and events page. As a Special Interest Group of the Society, HUBS contributes to national debates on priorities in the biosciences, and our higher education policy work is informed by upwards of 3,000 academic specialists in the UK's academic departments. We invite any higher education institutions not currently involved to join the group and help develop it to make it relevant to and supportive of the biosciences across the UK and internationally. Further details about joining HUBS are on the membership page. For more information on the Society's HE work including HE policy responses, our work on the Degree Accreditation Programme and our HE teaching awards, please see the higher education policy section of our website. Read the HUBS constitution Read the HUBS 2024-2027 Strategy Document Follow us on X (formerly Twitter) @BiosciHeads ECLbio@HUBS Connect This is an online platform developed by Early Career Lecturers in Biosciences Forum and Heads of University Biosciences hosted by the AdvanceHE Connect. This reference point for bioscience teachers and investigators provides curated resources for teaching, research, scientific outreach and funding. The site delivers online support materials for new lectures, as well as webinar recordings of past workshops on a variety of topics. This platform also serves as secure and safe forum of exchanging ideas and experiences among the bioscience lecturers community. It is open to any HUBS member university.To connect: Register with AdvanceHE connect here: https://connect.advance-he.ac.uk/signup Once logged in, click on the connect tab and search for HUBS in the righthand side search box, the HUBS-ECLBio Biosciences Lecturer Resources and community will appear Request to join the HUBS-ECLBio community"
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/hubs"
+tags = ["biological", "biology,", "biosciences", "builds", "connect", "eclbio@hubs", "education", "events", "group", "heads"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/contact-us"]
+title = "Contact us"
+description = """
+Head office address
+Royal Society of Biology1 Naoroji StreetLondonWC1X 0GB
+Telephone
+020 3925 3440
+For membership enquiries: 020 3925 3441
+Email enquiries
+Membership: membership@rsb.org.uk Education: education.policy@rsb.org.ukEngagement: engagement@rsb.org.ukTraining: training@rsb.org.ukRegisters: registers@rsb.org.uk Science Policy: policy@rsb.org.uk Press enquiries: parliamentaryandpublicaffairs@rsb.org.ukEvents: events@rsb.org.ukThe Biologist: biologist@rsb.org.uk Journal of Biological Education: jbe@rsb.org.uk
+Advertising
+There are a range of opportunities available for those wishing to advertise to our 23,000 members. From the award-winning membership magazine The Biologist, to our tailored website and jobs board, contact tom.ireland@rsb.org.uk for more information.
+Complaints
+The Royal Society of Biology aims to maintain high standards across all of its activities.
+If you wish to make a complaint, you can find out how to do so via the RSB Complaints Procedure."""
+full_description = "Contact Us Head office address Royal Society of Biology1 Naoroji StreetLondonWC1X 0GB Telephone 020 3925 3440 For membership enquiries: 020 3925 3441 Email enquiries Membership: membership@rsb.org.uk Education: education.policy@rsb.org.ukEngagement: engagement@rsb.org.ukTraining: training@rsb.org.ukRegisters: registers@rsb.org.uk Science Policy: policy@rsb.org.uk Press enquiries: parliamentaryandpublicaffairs@rsb.org.ukEvents: events@rsb.org.ukThe Biologist: biologist@rsb.org.uk Journal of Biological Education: jbe@rsb.org.uk Advertising There are a range of opportunities available for those wishing to advertise to our 23,000 members. From the award-winning membership magazine The Biologist, to our tailored website and jobs board, contact tom.ireland@rsb.org.uk for more information. Complaints The Royal Society of Biology aims to maintain high standards across all of its activities. If you wish to make a complaint, you can find out how to do so via the RSB Complaints Procedure."
+year_published = 2025
+clearnet = "https://rsb.org.uk/contact-us"
+tags = ["address", "advertising", "complaints", "contact", "email", "enquiries", "head", "map", "office", "telephone"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/about-us/governance"]
+title = "Governance"
+description = "Governing documents for the Society of Biology including strategy document"
+full_description = "Governance Governance documents regarding the aims, processes and codes of conduct of the Royal Society of Biology (RSB) and our members are all publicly available The RSB is incorporated by a Royal Charter and further governed by the Bylaws and Regulations. In 2019, the Society celebrated 40 years of the Charter, which is agreed by Her Royal Majesty's Privy Council, as are the Bylaws. The Royal Charter outlines the parameters within which the RSB can operate and the charitable objectives it must adhere to. The Bylaws detail the structure of the organisation and the Regulations provide instructions on the day-to-day functioning of the Society. The RSB Council has the power to amend the Regulations. Royal Charter Bylaws Regulations Annual report and accounts The RSB financial year runs from 1st October to 30th September. Each year we publish a report detailing all the work that has gone on during the financial year, as well as the full set of accounts which are formally approved by our membership at Annual General Meetings. Annual report and accounts for year end September 2023 Annual report and accounts for year end September 2022 Annual report and accounts for year end September 2021 Annual report and accounts for year end September 2020 Annual report and accounts for year end September 2019 Annual report and accounts for year end September 2018 Annual report and accounts for year end September 2017 Annual report and accounts for year end September 2016 Other useful governing documents Professional Code of Conduct Council Member/Trustee Role Description"
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/governance"
+tags = ["accounts", "aims,", "annual", "available", "biology", "codes", "conduct", "documents", "governance", "governing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/education/tpn"]
+title = "Teaching Policy Network"
+description = """
+The Royal Society of Biology’s (RSB) Teaching Policy Network (TPN) is a platform for educators to contribute to education policy, inform key discussions, and shape standards across the education sector. The TPN works alongside our Teaching Policy Advisory Group (TPAG), giving teachers and educators at all career stages a voice in shaping the future of teaching.
+Key features of the TPN
+
+Informal structure: TPN members can engage without extensive time commitments. Participation is flexible, and members can choose their level of involvement.
+Diverse representation: The network aims to include teachers, Initial Teacher Education (ITE) representatives, and RSB members from across the UK, representing a wide range of specialisms from early years to higher education.
+Support: The TPN will be supported by members of TPAG, ensuring guidance and assistance.
+
+Goals of the TPN
+
+Short-term: Establish connections within the teaching community and share best practices.
+Medium-term: Inform policy discussions, specifically on&nbsp;biology and science curriculum and qualifications, teacher recruitment, retention and training. Develop research leadership skills, moving from anecdotal contributions to evidence-based advocacy.
+Long-term: Foster a stronger teacher community, promote professional development, and positively influence education policies.
+
+If your school’s Head of Biology, Head of Science, CPD Lead, or Senior Leadership Team members aren’t yet involved, we encourage you to connect them with the TPN. Their input will help shape discussions and influence policy decisions that affect educators nationwide.
+We look forward to working with you and your colleagues to continue supporting and empowering the teaching community.
+How to Join the Teaching Policy Network
+If you’re interested in joining the TPN and contributing to the future of education policy you can join through our Schools and Colleges Affiliation Scheme (SCAS) or please email us at: education.policy@rsb.org.uk."""
+full_description = "Teaching Policy Network The Royal Society of Biology’s (RSB) Teaching Policy Network (TPN) is a platform for educators to contribute to education policy, inform key discussions, and shape standards across the education sector. The TPN works alongside our Teaching Policy Advisory Group (TPAG), giving teachers and educators at all career stages a voice in shaping the future of teaching. Key features of the TPN Informal structure: TPN members can engage without extensive time commitments. Participation is flexible, and members can choose their level of involvement. Diverse representation: The network aims to include teachers, Initial Teacher Education (ITE) representatives, and RSB members from across the UK, representing a wide range of specialisms from early years to higher education. Support: The TPN will be supported by members of TPAG, ensuring guidance and assistance. Goals of the TPN Short-term: Establish connections within the teaching community and share best practices. Medium-term: Inform policy discussions, specifically on biology and science curriculum and qualifications, teacher recruitment, retention and training. Develop research leadership skills, moving from anecdotal contributions to evidence-based advocacy. Long-term: Foster a stronger teacher community, promote professional development, and positively influence education policies. If your school’s Head of Biology, Head of Science, CPD Lead, or Senior Leadership Team members aren’t yet involved, we encourage you to connect them with the TPN. Their input will help shape discussions and influence policy decisions that affect educators nationwide. We look forward to working with you and your colleagues to continue supporting and empowering the teaching community. How to Join the Teaching Policy Network If you’re interested in joining the TPN and contributing to the future of education policy you can join through our Schools and Colleges Affiliation Scheme (SCAS) or please email us at: education.policy@rsb.org.uk."
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/tpn"
+tags = ["advisory", "affiliation", "biological", "biology", "bioscience", "colleges", "diverse", "education", "features", "goals"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/events/biology-week-2015"]
+title = "Biology Week 2015"
+description = "Get involved in Biology Week 2015"
+full_description = "Biology Week 2015 An annual celebration of the biosciences, with events around the UK and beyond Biology Week 2015 was a huge success. If you would like to organise your own event for Biology Week 2017 contact Karen Patel. Saturday 10 October 2015 Visit to Erddig for Apple Festival Family day out with cider pressing, cookery demos, an apple trail and more (North Wales) UK Fungus Day 2015 Events around the UK and Ireland exploring the amazing world of fungi In the light of Nature - organisms that light up their world Activities on light-producing organisms at Family Festival of Science (Dorset) Brain Beanbag Family Neuroscience activities at the Midlothian Science Festival The Time-Travelling Operating Theatre Learn about changes in medical operations and the future of surgery (Edinburgh) Big Biology Day Cardiff - Biology Rocks! Biology Week meets Earth Science Week at this biosciences & geology festival (Cardiff) The Heart and the Head An evening of music and genetic storytelling with Wellcome Trust researchers (Oxford) Epigenetics, the language of genes What do genes do, and how are they switched on and off? (Glasgow) Marine algae and ocean chemistry Test how greenhouse gases affect ocean chemistry and marine life (Glasgow) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Cells, Genes and Microscopes A different activity each hour (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Sunday 11 October 2015 UK Fungus Day 2015 Events around the UK and Ireland exploring the amazing world of fungi Annual Fungal Foray of the Chantries Investigating the macro-fungi of the Chantries with Professor Maurice Moss (Surrey) Epigenetics, the language of genes What do genes do, and how are they switched on and off? (Glasgow) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Monday 12 October 2015 Remote Scotland Expedition Team Find out about the wonderful wildlife that Scotland has to offer (Glasgow) Special Pub Quiz A fun pub quiz with a biology theme in honour of Biology Week (Germany) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Islay Wildlife Join the Remote Scotland Expedition team to learn all about the wildlife of Islay (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Cardiff Metropolitan University Biology Week 12-15: Quizzes, debates and biology bake-offs (Cardiff) Tuesday 13 October 2015 Synthetic Biology debate Synthetic life: how far could it go? In partnership with the Biochemical Society (London) Desert Conservation Talk exploring the challenges of conserving wildlife and habitats of the Sahara (Bristol) Obesity and Diabetes: The Paradox of Health and Wealth Charter lecture on the interrelationships of obesity and type 2 diabetes (Birmingham) Project Coral Student lecture on a multi-year coral sexual reproduction research project (London) How to Clone a Mammoth Lecture and discussion on the possibility of cloning mammoths (Derby) Dino hunt at Heysham Libraryq Family fun dinosaur hunt for Earth Science Week (Lancashire) It's a (human) Knockout! Gene knockouts: lecture at the Centre of the Cell (London) Alzheimer's Disease: Big Problem, Big Data, Big Solution? Evening lecture on Alzheimer’s disease and the challenges it poses to society (London) Marine algae and ocean chemistry Test how greenhouse gases affect ocean chemistry and marine life (Glasgow) Wonderful Whales Join Whale and Dolphin Conservation to learn more about marine mammals (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Cardiff Metropolitan University Biology Week 12-15: Quizzes, debates and biology bake-offs (Cardiff) Wednesday 14 October 2015 Parliamentary Reception at the House of Commons in partnership with the BBSRC Invitation only (London) Thames Valley branch Annual General Meeting and lecture Enjoy a fascinating lecture on a recent clinical success story (Berkshire) Badgers & Bovine tuberculosis – a black-and-white issue? Lecture on the disease and approaches to managing it (Armagh) What’s in a Face? Lecture on the biology of attractiveness and its importance (Plymouth) Formula 1 and its Contributions to Healthcare Gresham College Lecture on the parallels between the two worlds (London) Society and Biology: The view from anthropology Free schools' taster day to see Roehampton University's integrated programme (London) Dino hunt at Heysham Library Family fun dinosaur hunt for Earth Science Week (Lancashire) Lab Experience Day A chance for primary school students to try their hand at isolating DNA (Birmingham) A Lot of Rot - Research of a Fungal Ecologist Talk on fungal ecology and research findings (Newcastle upon Tyne) Epigenetics, the language of genes What do genes do, and how are they switched on and off? (Glasgow) Cells, Genes and Microscopes A different activity each hour (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Cardiff Metropolitan University Biology Week 12-15: Quizzes, debates and biology bake-offs (Cardiff) Thursday 15 October 2015 RSB Annual Awards Ceremony Awarding photography, science communication, essay writing & book prizes (London) Monitoring Biological Diversity from Space Talk on developing tools for sustainable management of natural resources (Surrey) The National and Global Impact of Dementia Debate on awareness of research into the impacts of dementia and dementia care (Keele) Evolution from beyond genetics? A Linnean Society talk on evolutionary synthesis in plants (London) A Body in the River Lecture on the application of environmental science in murder investigations (London) Dino hunt at Heysham Library Family fun dinosaur hunt for Earth Science Week (Lancashire) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Cardiff Metropolitan University Biology Week 12-15: Quizzes, debates and biology bake-offs (Cardiff) Friday 16 October 2015 Secret Lives of Garden Birds A British Naturalists' Association talk (Essex) Physiology Friday Activities, competitions and citizen science from the Physiological Society Newcastle University A-level Study Day A day of events to support A-level biology students (Newcastle upon Tyne) Remote Scotland Expedition Team Find out about the wonderful wildlife that Scotland has to offer (Glasgow) Islay Wildlife Join the Remote Scotland Expedition team to learn all about the wildlife of Islay (Glasgow) Learn CPR Learn the important life-saving skill of CPR for 'European Restart a Heart Day' (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Cardiff Metropolitan University Biology Week 12-15: Quizzes, debates and biology bake-offs (Cardiff) Saturday 17 October 2015 Big Biology Day Cambridge A whole day of hands-on biology fun for all, brought to your by scientists (Cambridge) Big Biology Day at Staffordshire University Fun, engaging hands on science for all the family (Staffordshire) Imagineer STEM Community Day Free family event on the theme of space and future technology (Middlesbrough) A wildlife walk at Gorhambury and along the Ver Valley British Naturalists' Association exploration day of the river valley (Hertfordshire) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Cells, Genes and Microscopes A different activity each hour (Glasgow) Saving Scotland’s Red Squirrels Learn all about squirrel conservation and the struggles of saving them (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon) Sunday 18 October 2015 Fungal Foray Forage with the British Naturalists' Association at Wentworth Garden Centre (Yorkshire) How good are we at detecting impostors? Test your imposter-detecting skills in fun experiments (Glasgow) Sidmouth Science Festival 2015 09-18: Talks, hands-on activities and more on the science in our lives (Devon)"
+year_published = 2025
+clearnet = "https://rsb.org.uk/events/biology-week-2015"
+tags = ["09-18:", "12-15:", "a-level", "activities", "algae", "along", "alzheimer's", "annual", "anthropology", "apple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "ukfungusday.co.uk", "youtube.com"]
+
+["https://rsb.org.uk/about-us/committees"]
+title = "Committees"
+description = "The Society of Biology has two Principal Committees: Education, Training and Policy (ETP) and Membership, Marketing and Communications (MMC)."
+full_description = "Committees Principal Committee The Royal Society of Biology has two Principal Committees, which reports directly to Council: Education and Science Policy Committee (ESP) ESP develop the Society’s strategies, policies and priorities across public policy and education. Membership and Professional Affairs (MPA) MPA develop and review the Society’s strategies, policies and processes that support individual members and Member Organisations throughout their lifetime with the RSB. Other Committees Working groups, committees and staff carry out the day-to-day activities of the Society. Accreditation Committee Previously the Accreditation Working Group and Degree Accreditation Committee; this committee develops and oversees accreditation on behalf of Council. Biology Curriculum Committee The role of this committee is to develop a comprehensive view of an appropriate school biology curriculum, form primary to the end of formal secondary education. Careers Committee Previously the Biosciences Careers Group; this new committee aims to support and inform career-related decision making for students and other stakeholders. Employer Advisory Network The group provides an interface between employers and the Royal Society of Biology. Member Organisation Education Policy Advisory Group This committee provides a mechanism for Member Organisations (MOs) to inform the Society's education policy work and all levels - from primary school, through to secondary schools, colleges and higher education. Primary Working Group This group was formed to support the work of the biology curriculum committee and be a source of expertise on primary science education. Journal of Biological Education Editorial Board Editorial board for the Society's international journal which covers policy, curriculum developments and the latest results of research into the teaching, learning and assessment of biology. The Biologist Editorial Board Editorial board for the Society's members' magazine that carries the full richness and diversity of biology. Events Working Group The group oversees the delivery of events for individual and organisational members. Get involved Most committees are comprised, at least in part, by members or Fellows of the Royal Society of Biology. If you are interested in becoming a member of a committee and would like to contribute your skills and expertise to advancing the Society, take a look at our current opportunities."
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/committees"
+tags = ["accreditation", "advisory", "affairs", "biological", "biologist", "biology", "biology.", "bioscience", "board", "careers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/component/banners/click/119"]
+title = "Regional events grants"
+description = """
+The Royal Society of Biology (RSB) is offering grants of up to £1,000 to help you create inspiring events or activities that celebrate the biosciences and engage diverse audiences
+These new grants support initiatives that ignite curiosity, highlight ground-breaking research, and showcase local biological projects such as biodiversity hotspots or citizen science.
+We are looking to fund events and activities that encourage collaboration within the bioscience community, promote RSB membership, and make the biosciences more accessible. Subsequent rounds will be refined based on member feedback.
+Whether you are planning a biology workshop, talk series, or community project, these grants can help bring your vision to life.
+Download our event ideas guide for inspiration and start shaping your project today.
+How to apply
+Applications open on 30 January 2025 and close at 23:59 on 30 March 2025.
+To apply, you will need to:
+
+Provide details of your proposed event, including how the grant will be used and the benefits for attendees.
+Review our submission guidance to help prepare your answers.
+Submit your application via our online form.
+
+Note: Grants are awarded for future events scheduled between 1 May 2025 and 31 August 2026. Another round of grants will open later in the year.
+Eligibility
+Before applying, please ensure you meet the following criteria:
+
+You are an RSB member (affiliate, associate, member, or Fellow grade).
+Or, you have submitted and paid for membership and are awaiting election.
+Previous grant recipients are eligible to reapply.
+Grants are not available for events that have already occurred.
+
+Contact
+If you have any queries regarding eligibility or submission, please contact regions@rsb.org.uk
+&nbsp;"""
+full_description = "Regional Events Grants The Royal Society of Biology (RSB) is offering grants of up to £1,000 to help you create inspiring events or activities that celebrate the biosciences and engage diverse audiences These new grants support initiatives that ignite curiosity, highlight ground-breaking research, and showcase local biological projects such as biodiversity hotspots or citizen science. We are looking to fund events and activities that encourage collaboration within the bioscience community, promote RSB membership, and make the biosciences more accessible. Subsequent rounds will be refined based on member feedback. Whether you are planning a biology workshop, talk series, or community project, these grants can help bring your vision to life. Download our event ideas guide for inspiration and start shaping your project today. How to apply Applications open on 30 January 2025 and close at 23:59 on 30 March 2025. To apply, you will need to: Provide details of your proposed event, including how the grant will be used and the benefits for attendees. Review our submission guidance to help prepare your answers. Submit your application via our online form. Note: Grants are awarded for future events scheduled between 1 May 2025 and 31 August 2026. Another round of grants will open later in the year. Eligibility Before applying, please ensure you meet the following criteria: You are an RSB member (affiliate, associate, member, or Fellow grade). Or, you have submitted and paid for membership and are awaiting election. Previous grant recipients are eligible to reapply. Grants are not available for events that have already occurred. Contact If you have any queries regarding eligibility or submission, please contact regions@rsb.org.uk"
+year_published = 2025
+clearnet = "https://rsb.org.uk/component/banners/click/119"
+tags = ["2025.", "23:59", "activities", "applications", "apply", "audiences", "august", "biological", "biology", "bioscience"]
+language = "en"
+internal-references = ["none"]
+external-references = ["biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "facebook.com", "genetics.org.uk", "goto.rsb.org.uk", "har.mrc.ac.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/component/banners/click/82"]
+title = "Journal of Biological Education"
+description = "Journal of Biological Education is an international journal that covers policy and curriculum developments"
+full_description = "Journal of Biological Education The Journal of Biological Education is an international journal that publishes the latest research into the teaching, learning and assessment of biology. It is owned by the Royal Society of Biology and published by Taylor and Francis. The journal aims to bridge the gap between research and practice, providing information, ideas and opinion, in addition to critical examinations of advances in biology research and teaching. Through the coverage of policy and curriculum developments, the latest results of research into the teaching, learning and assessment of biology are brought to the fore. Special emphasis is placed on research relevant to educational practice, guided by educational realities in systems, schools, colleges and universities. Papers that are theoretically informed and methodologically rigorous are welcomed. Subscription Fees We offer a special print-only subscription rate for Royal Society of Biology members for an annual fee of £40 (complete the subscription form or contact the RSB membership team for more details). Under the RSB's Schools and Colleges Affiliation Scheme (SCAS) UK-based schools and colleges can subscribe to the journal for just £60. Non-member subscription rates for the journal can be found on the Taylor and Francis website. Please contact the Taylor and Francis customer services team if you have any queries or would like to take out a subscription. Archive The archive of the journal and the current issue can be accessed at Taylor and Francis online. Details of the editorial board, instructions for authors and the journal scope are also available. Read a sample issue. Research Guidelines All articles that appear in the JBE must adhere to the ARRIVE guidelines for the reporting of in vivo experiments. The guidelines have been developed by the NC3Rs to improve standards of reporting of animal experiments, and ensure research featured in the JBE is based on sound and ethical experiments."
+year_published = 2025
+clearnet = "https://rsb.org.uk/component/banners/click/82"
+tags = ["archive", "biological", "biology", "education", "fees", "guidelines", "journal", "research", "routledge", "subscription"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/education"]
+title = "Education"
+description = """
+We are committed to supporting and encouraging the study of biology at primary, secondary and tertiary levels across the UK, working in coordination with our member organisations and with the broader scientific community.
+Steered by our Education and Science Policy Committee, we aim to do this through bringing together the education and science communities, informing policymakers, providing impartial, evidence based advice and being seen as the leading voice for biology.
+RSB’s three year plan Biology Changing the World identifies the aims of our policy teams under the theme of influence.
+We have also identified education priorities for 2023 – 2028,&nbsp;outlining important factors that contribute to excellent biology teaching and learning in the UK, for all students at all levels, and underpinning our policy work:
+
+All young people should have an unbroken chain of experts teaching the sciencedisciplines
+All young people should experience curricula and assessments which prepare them to be scientifically literate, able to make scientifically informed choices, and ready them for a diverse and evolving world of work.
+
+Education Policy Advisory Group
+RSB Member Organisations are invited to join our Education Policy Advisory Group, meeting quarterly to share current education priorities and discuss emerging education policy issues at all levels. RSB regularly responds to calls for evidence, consultations and inquiries. Full consultation responses can be found on our consultation response page or searchable policy resource library.
+We work closely with the Association for Science Education, Institute of Physics, Royal Society and Royal Society of Chemistry, collaborating and coordinating on shared school education messages for the sciences, with a focus on teaching and curriculum. Previously under the umbrella of SCORE, these societies continue to work together as part of the Science Education Policy Alliance (SEPA) to advise governments, regulators and awarding bodies. In Scotland we meet regularly with these and other organisations as the Learned Societies Group, convened by the Royal Society of Edinburgh.
+Committees
+Our Curriculum Committee is developing a framework for a coherent 5 – 19 biology curriculum, aiming to influence policy makers, curriculum designers and specification designers across the UK. Up to date information the progress of our framework can be found at www.rsb.org.uk/curriculum
+The education policy team also supports RSB’s special interest group Biology Education Research Group, who meet regularly to discuss members’ own research and to inform the Society’s education policy activities.
+The RSB also has a collection of useful resources and opportunities for teachers, schools and students.
+Useful resources
+We have developed resources to support teachers and students in primary, secondary and higher education. There are also informal activities for teachers to use on our outreach and biology for all pages.
+&nbsp;
+Competitions &amp; Awards
+Students have a chance to show their brilliance in biology whilst taking part in our competitions. Whilst teachers can gain recognition with awards for excellence in teaching at university, secondary and primary school level and by applying for the Chartered Science Teacher register.
+Become a RSB member
+If you would like to join us, membership is available for teachers and lecturers, 14-19 year old students, undergraduate and postgraduate students, schools and university departments. Find out more by contacting the membership team."""
+full_description = "Education Policy We are committed to supporting and encouraging the study of biology at primary, secondary and tertiary levels across the UK, working in coordination with our member organisations and with the broader scientific community. Steered by our Education and Science Policy Committee, we aim to do this through bringing together the education and science communities, informing policymakers, providing impartial, evidence based advice and being seen as the leading voice for biology. RSB’s three year plan Biology Changing the World identifies the aims of our policy teams under the theme of influence. We have also identified education priorities for 2023 – 2028, outlining important factors that contribute to excellent biology teaching and learning in the UK, for all students at all levels, and underpinning our policy work: All young people should have an unbroken chain of experts teaching the sciencedisciplines All young people should experience curricula and assessments which prepare them to be scientifically literate, able to make scientifically informed choices, and ready them for a diverse and evolving world of work. Education Policy Advisory Group RSB Member Organisations are invited to join our Education Policy Advisory Group, meeting quarterly to share current education priorities and discuss emerging education policy issues at all levels. RSB regularly responds to calls for evidence, consultations and inquiries. Full consultation responses can be found on our consultation response page or searchable policy resource library. We work closely with the Association for Science Education, Institute of Physics, Royal Society and Royal Society of Chemistry, collaborating and coordinating on shared school education messages for the sciences, with a focus on teaching and curriculum. Previously under the umbrella of SCORE, these societies continue to work together as part of the Science Education Policy Alliance (SEPA) to advise governments, regulators and awarding bodies. In Scotland we meet regularly with these and other organisations as the Learned Societies Group, convened by the Royal Society of Edinburgh. Committees Our Curriculum Committee is developing a framework for a coherent 5 – 19 biology curriculum, aiming to influence policy makers, curriculum designers and specification designers across the UK. Up to date information the progress of our framework can be found at www.rsb.org.uk/curriculum The education policy team also supports RSB’s special interest group Biology Education Research Group, who meet regularly to discuss members’ own research and to inform the Society’s education policy activities. The RSB also has a collection of useful resources and opportunities for teachers, schools and students. Useful resources We have developed resources to support teachers and students in primary, secondary and higher education. There are also informal activities for teachers to use on our outreach and biology for all pages. Competitions & Awards Students have a chance to show their brilliance in biology whilst taking part in our competitions. Whilst teachers can gain recognition with awards for excellence in teaching at university, secondary and primary school level and by applying for the Chartered Science Teacher register. Become a RSB member If you would like to join us, membership is available for teachers and lecturers, 14-19 year old students, undergraduate and postgraduate students, schools and university departments. Find out more by contacting the membership team."
+year_published = 2025
+clearnet = "https://rsb.org.uk/education"
+tags = ["advisory", "awards", "become", "biological", "biology", "bioscience", "committees", "competitions", "education", "group"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/about-us/our-team"]
+title = "Our team"
+description = "Society of Biology staff contact details."
+full_description = "Our Team CEO team Download an organogram of the CEO Team Dr Mark Downs CBiol CSci FRSB Chief Executive Jennifer Crosk Executive Assistant 020 3925 3472 Jen provides support to the chief executive, council and senior management team and manages human resources. Membership Services & Events Download a department organogram or call 020 3925 3441 for general membership enquiries. Mark Leach MRSB Director 020 3925 3446 Mark is responsible for overall strategy of the RSB’s membership and activities relating to recruitment and retention, third party services, events and regional activity, and facilities and governance. Membership and Events Karen Patel CBiol MRSB Head of Membership and Events 020 3925 3443 Karen is responsible for the strategy, implementation and delivery of membership engagement and growth activities. She oversees the events programme, event funding, and events for external clients. Shameema Haque MRSB Membership Engagement Manager 020 3925 3442 Shameema manages individual and organisational membership recruitment, retention and engagement processes and oversees a range of membership networks. Chris Longmore MRSB Membership Engagement Officer (MOs) 020 3925 3453 Chris supports membership growth and relationships with external organisations including full, supporting and affiliated Member Organisations (MOs), and employer networks. Eden Bloomfield Membership Engagement Officer 020 3925 3448 Eden supports Shameema with the recruitment, retention and engagement of individual members. Emma Chaplin AMRSB Membership Engagement Officer 020 3642 9678 Emma supports Shameema with the recruitment, retention and engagement of individual members. Lucy Eckersley MRSB Senior Events Officer 020 3925 3445 Lucy manages the planning, execution, and evaluation of the RSB's events programme and supports end-to-end event delivery for external clients. Eleanor Barrand Events Officer 020 3925 3444 Eleanor supports the planning, delivery, and evaluation of the RSB's events programme and leads the management of selected external events for clients. Membership and Client Services Andy Stephens Client Services Operations Lead 020 3925 3450 Andy provides the day-to-day administration for the British Society for Genetic Medicine, the British Society of Animal Science, and oversees the activities of the client services team. Charlie Brown MRSB Membership Officer 020 3925 3452 Charlie manages the day-to-day membership administration for the Genetics Society, British Lichen Society, and the International Society for Affective Disorders. Zoha Tauseef AMRSB Membership Assistant 020 3925 3451 Zoha manages the day-to-day administration for the Heads of University Biosciences (an RSB special interest group), Fisheries Society of the British Isles, and the Anatomical Society. Freya Bambridge AMRSB Membership Assistant 020 3925 3463 Freya provides day-to-day administration for the British Society for Neuroendocrinology, Laboratory Animal Science Association and the Freshwater Biological Association. Accreditation and Professional Affairs Download a department organogram or get in touch via training@rsb.org.uk Paul Trimmer MRSB Director 020 3925 3456 Paul is responsible for the strategy, implementation and delivery of RSB's professional development activity including the Degree Accreditation Programme, training, professional registers and careers. Degree Accreditation Tessa Gibson MRSB Senior Accreditation Officer 020 3925 3455 Tessa manages the accreditation application process, supports institutions and the associated committee. Alice Foster Accreditation Officer 020 3925 3454 Alice facilitates the accreditation application process, supports institutions and provides administrative support to the associate director and associated committee. Professional Affairs Dr Tia Salter MRSB Senior Professional Development Officer 020 3925 3460 Tia manages the development and delivery of the RSB's professional development activity including careers work and the professional registers. Dr Raksha Gohel MRSB Training and Registers Officer 020 3925 3458 Raksha supports the delivery and development of the RSB's training centre and professional registers, and careers committee. Emily Lunn AMRSB Training and Registers Officer 020 3925 3447 Emily supports the delivery and development of the RSB's training centre and professional registers, and CPD audit. Policy and Publications Download a department organogram or direct general enquiries to policy@rsb.org.uk Dr Arianne Matlin MRSB Associate Director of Policy and Publishing 020 3925 3468 Arianne is responsible for ensuring that RSB develops, delivers and communicates a programme of policy work to support and maximise the benefit of biosciences to society, and promote the interests of people in the biosciences sector. Education Policy Lauren McLeod MRSB Head of Education Policy 020 3925 3462 Lauren manages the RSB's education policy work from primary to tertiary education across all four UK nations. She supports collaboration with partner organisations through the Science Education Policy Alliance and Learned Societies Group in Scotland, and the work of RSB’s Curriculum Committee and Education Policy Advisory Group. Shabana Brightley MRSB Education Policy Officer 020 3925 3478 Shabana leads on education policy related to initial teacher training, recruitment, retention and CPD and supports the Biology Education Research Group, Teaching Policy Advisory Group and network. Tara Nadi Education Policy Assistant 020 3925 3440 ext 3497 Tara provides administrative support to the Science Education Policy Alliance, working closely with Association for Science Education, Institute of Physics, Royal Society and Royal Society of Chemistry on policy areas covering primary and secondary education in the sciences. Science Policy Dr Laura Marshall MRCVS MRSB Head of Science Policy 020 3925 3469 Laura advances and manages the RSB's complete portfolio of science policy work - focusing on strategy, team development, partnerships, impact measurement and communication. Dr Jade Hall MRSB Senior Science Policy Officer (Equality, Diversity, Inclusion and Culture) 020 3925 3466 Jade leads delivery of our science policy outputs relevant to biosciences research culture. She supports the RSB Diversity and Inclusion Working Group and RSB Diversity and Inclusion Network. She convenes cross-team collaboration to develop and deliver the RSB’s equality, diversity and inclusion commitments. Kieran Woof MRSB Senior Science Policy Officer (Plant and Environmental Sciences) 020 3925 3470 Kieran leads delivery of our science policy outputs relevant to the plant and environmental sciences. He supports the RSB Plant Science Group and the Natural Capital Initiative. He convenes cross-team collaboration to develop and deliver the RSB’s climate and nature commitments. Sabrina Fleurimé MRSB Science Policy Officer (Research Landscape) 020 3432 8504 Sabrina leads and supports delivery of our science policy outputs relevant to the biosciences research landscape (including research funding, workforce, infrastructure and communications). She supports the RSB Education and Science Policy Committee. Dr Steph Preston Science Policy Assistant (Animal and Biomedical Sciences) Steph provides co-secretariat support for the UK Bioscience Sector Coalition helping to facilitate collaborative, coordinated policy work between member organisations. Publications Tom Ireland MRSB Managing Editor 020 3925 3464 Tom is editor of the RSB's membership magazine, The Biologist, both in print and online, and advises on our external communications. Charlotte Cross Senior Publications Officer 020 3925 3465 Charlotte supports RSB’s partner publications, including the Journal of Biological Education, Emerging Topics in Life Sciences, and the Oxford Biology Primers series. She also assists with The Biologist magazine. Communications and Public Affairs Download a department organogram or get in touch via engagement@rsb.org.uk Susie Rabin MRSB Associate Director of Communications and Public Affairs 020 3925 5607 Susie oversees the communications and public affairs team, which includes press and social media, outreach and engagement, competitions, awards, grants, and engagement with Parliament. Dr Amanda Hardy MRSB Senior Outreach, Engagement and Grants Officer 020 3925 3459 Amanda is responsible for the strategy, implementation and delivery of engagement activities and is chair of the RSB's Outreach and Engagement working group. Clare Simm Senior Digital Communications and Marketing Officer 020 3930 9927 Clare coordinates content for the RSB's website and is responsible for RSB's social media and digital marketing. Veronica Kocovska MRSB Communications and Media Officer 020 3773 0867 Veronica coordinates RSB's media coverage, is responsible for writing and communicating RSB news and updates, and hosts the Biosphere podcast. Sadiyah Diallo-Geny Digital Content and Design Officer 020 3773 8825 Sadiyah coordinates the RSB's marketing activity, brand development, messaging and design work."
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/our-team"
+tags = ["accreditation", "administration", "affairs", "amrsb", "assistant", "associate", "biological", "biology", "biomedical", "bioscience"]
+language = "en"
+internal-references = ["none"]
+external-references = ["anatsoc.org.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "facebook.com", "fba.org.uk", "fsbi.org.uk", "genetics.org.uk", "instagram.com", "isad.org.uk", "itnproductions.co.uk", "jobs.rsb.org.uk", "lasa.co.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "neuroendo.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/education/berg"]
+title = "Biology Education Research Group"
+description = """
+The Biology Education Research Group (BERG) was formed in 2010 with the aim of bringing together those with a strong interest and expertise in the field of education research in the biosciences. The BERG membership comprises of academics working in university education departments from across the UK, biology educators in schools and colleges, and representatives from other organisations with an interest in furthering biology education research.
+BERG became a special interest group of the Royal Society of Biology in June 2014 and is involved in:
+
+developing projects which bridge the transition from research into policy or practice
+promoting and furthering biology-based education research in the UK and overseas
+contributing to the Society’s journal, the Journal of Biological Education (JBE)
+informing the Society’s education and education policy activities, by providing guidance and evidence
+supporting the Society to grow its evidence-base on relevant educational issues
+lobbying on current biology education research issues
+
+The current co-chairs of BERG&nbsp;are Dr Caroline Smith and Ms Francesca Gale MRSB.
+If you are interested in becoming a member of BERG please contact Shabana Brightley, Education Policy Officer at the Royal Society of Biology.
+BERG host a day of biology education research talks at the Association for Science Education annual conference. Synopsis of the presentations and the slides can be found on the BERG sharing education research page.
+Members of BERG are affiliated with the following organisations:Babraham InstituteBlackpool and the Fylde CollegeDurham UniversityField Studies CouncilHills Road Sixth Form CollegeInstitute of EducationKing's College LondonNational Science Learning CentresPlymouth UniversityScience and Plants for SchoolsSt. Mary's CollegeUniversity of BirminghamUniversity of BristolUniversity of CambridgeUniversity of DundeeUniversity of GlasgowUniversity of HullUniversity of LeedsUniversity of NottinghamUniversity of ReadingUniversity of SalfordUniversity of SouthamptonUniversity of SussexUniversity of WorcesterUniversity of YorkUniversity of York Science Education GroupWellcome Connecting ScienceWellcome Trust"""
+full_description = "BERG The Biology Education Research Group (BERG) was formed in 2010 with the aim of bringing together those with a strong interest and expertise in the field of education research in the biosciences. The BERG membership comprises of academics working in university education departments from across the UK, biology educators in schools and colleges, and representatives from other organisations with an interest in furthering biology education research. BERG became a special interest group of the Royal Society of Biology in June 2014 and is involved in: developing projects which bridge the transition from research into policy or practice promoting and furthering biology-based education research in the UK and overseas contributing to the Society’s journal, the Journal of Biological Education (JBE) informing the Society’s education and education policy activities, by providing guidance and evidence supporting the Society to grow its evidence-base on relevant educational issues lobbying on current biology education research issues The current co-chairs of BERG are Dr Caroline Smith and Ms Francesca Gale MRSB. If you are interested in becoming a member of BERG please contact Shabana Brightley, Education Policy Officer at the Royal Society of Biology. BERG host a day of biology education research talks at the Association for Science Education annual conference. Synopsis of the presentations and the slides can be found on the BERG sharing education research page. Members of BERG are affiliated with the following organisations:Babraham InstituteBlackpool and the Fylde CollegeDurham UniversityField Studies CouncilHills Road Sixth Form CollegeInstitute of EducationKing's College LondonNational Science Learning CentresPlymouth UniversityScience and Plants for SchoolsSt. Mary's CollegeUniversity of BirminghamUniversity of BristolUniversity of CambridgeUniversity of DundeeUniversity of GlasgowUniversity of HullUniversity of LeedsUniversity of NottinghamUniversity of ReadingUniversity of SalfordUniversity of SouthamptonUniversity of SussexUniversity of WorcesterUniversity of YorkUniversity of York Science Education GroupWellcome Connecting ScienceWellcome Trust"
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/berg"
+tags = ["berg", "biological", "biology", "bioscience", "education", "professional", "research", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/events/antibody-drug-conjugates-revisited"]
+title = "Antibody Drug Conjugates Revisited"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "Plant Health Series: The importance of plant health in One Health Date05.03.25Start time14:00End time15:00WhereOnline (Zoom) Log in or register to make a booking Plant Health Series: The importance of plant health in One Health A talk as part of the RSB Plant Health Series This keynote address will be delivered by Sarah Brunel, Implementation and Facilitation Unit (IFU) lead at the International Plant Protection Convention (IPPC). The emergence and subsequent spread of pests and diseases can have a devastating economic, environmental, and public health impact across populations, affecting biodiversity, food security, and commercial trading. As new plant health threats continue to emerge, it is important to consider plant health in the context of One Health, and integrate this into appropriate practice and principles. Effective statutory protections and standards in this area, alongside controls to stop the spread of pests, play a critical role in mitigating future plant pandemics. The IPPC aims to help implement these practices, developing international standards and procedures in this sector. This talk will be followed by an opportunity for an audience Q&A and discussion, chaired by Professor Jeremy Pritchard FRSB, University of Birmingham. The speaker Sarah Brunel leads the Implementation and Facilitation Unit (IFU), which coordinates implementation, facilitation and capacity development activities such as the production of IPPC guides and training materials, phytosanitary capacity evaluations and capacity strengthening activities to address emerging pests. Sarah's focus is on the coordination of implementation projects and management of the IFU's workplan, including staffing, budgeting, resource mobilisation and strategies. She is the IPPC Secretariat's lead on One Health. Sarah is also the secretariat's liaison with organisations such as the Standards and Trade Development Facility (STDF), Centre for Agriculture and Bioscience International (CABI), Comité de Liaison Entreprenariat - Agriculture - Dévelopement (COLEAD), the European Union and the Europead Feed Safety Authority (EFSA). Sarah is an agricultural engineer from the Institut Supérieurr d'Agriculture Rhône-Alpes (ISARA). She has a master's degree in international affairs and another in anthropology from the Sorbonne University and the French Museum of Natural History, respectively. She has more than 20 years of national, regional and international experience in plant protection, pest and disease control policies and legistaltion, implementation of standards for phytosanitary measures, environmental protection and capacity development. She is a French national and speakers English, French, Italian and Spanish. Audience This event is open to all, but will be particularly relevant to scientists including those working in areas related to plant health. Continuing Professional Development (CPD) This event is approved by the Royal Society of Biology for purposes of CPD and can be counted as 3 CPD points. If you are a member of the Plant Health professional register, this CPD contributes to maintaining your registration. Special requirements If you have any accessibility requirements, please let us know during your booking, and we will do what we can to accommodate your needs. Cost and booking Bookings for this event will open in due course. If you have any questions, please email Ellie Barrand at events@rsb.org.uk Contact For booking, website or events queries, please contact Ellie Barrand at events@rsb.org.uk or on 020 3925 3444."
+year_published = 2025
+clearnet = "https://rsb.org.uk/events/antibody-drug-conjugates-revisited"
+tags = ["audience", "biological", "biology", "bioscience", "booking", "capacity", "contact", "continuing", "cost", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/component/banners/click/121"]
+title = "Home"
+description = """
+Find out about the variety of careers open to bioscience students at the annual Royal Society of Biology Bioscience Careers Day (BCD).
+Event format 
+This year the Bioscience Careers Day will take place online on Tuesday 25 - Thursday 27 March, from 12:30-14:30 via Zoom and will include:
+
+ 
+
+Talks from industry professionals about the variety of careers available to bioscience graduates
+A chance to ask questions to representatives from learned societies and top organisations
+Interactive sessions designed to boost your skills in mastering the art of science communication
+
+
+
+ 
+Topics included careers in pharmaceutical science, science communication, AI and machine learning and many more. 
+
+Programme
+The theme for this year's BCD is bioscience careers in the modern day and a draft programme is available to view.  We've previously had talks on careers in industry, science communication, publishing, academia, ecology, patent law, teaching and more at past events. Download top presentations from past events. What career would you like to know more about? Get in touch with the events team at events@rsb.org.uk or contact us on social media @RoyalSocBio using #RSBCareersDay.
+
+Tuesday 25 March - Science communication interactive panel: learn how to effectively share scientific ideas with a diverse audience
+Wednesday 26 March - AI and machine learning: areas of the biosciences they are transforming and the skills needed to get involved
+Thursday 27 March - Career paths outside of academia/ industry: explore the different options available 
+
+Attendees to more than one session will receive a certificate of attendance. There will also be the opportunity to win free access to RSB training in Artificial Intelligence and Machine Learning or Writing for Non-specialist Audiences.
+Who can attend
+BCD is aimed at undergraduate and master's students. Recent bioscience graduates, PhD students, postdocs, careers advisors and school/ college students considering a bioscience degree are also very welcome. Employers, if you would like to connect with talented students focused on their future careers, visit our sponsorship opportunities pages, or contact Ellie Barrand at events@rsb.org.uk to discuss opportunities. 
+ 
+If you are an employer wanting to find out more about sponsoring this event, please get in touch by emailing Ellie Barrand at events@rsb.org.uk 
+Sponsorship opportunities 
+If you would like to get involved in BCD and showcase the opportunities your company can offer to bioscience graduates, please visit our Sponsors and Supporters page to view our sponsorship packages. 
+
+Cost
+RSB members - £5
+Member of a Careers Committee organisation (see below) - £5
+Non-member - £10
+Bookings and bulk bookings
+Bookings for this event can be made via the event page. You can submit questions for speakers ahead of time by emailing your questions to events@rsb.org.uk
+If you would like to organise for a group of your students to attend, please email events@rsb.org.uk
+
+Contact 
+Please direct all enquiries to Ellie Barrand at events@rsb.org.uk or on 020 3925 3444. 
+
+
+Continuing Professional Development (CPD)
+This event has been approved by the Royal Society of Biology for purposes of CPD and can be counted as 18 CPD points.
+
+Cancellation policy
+Over 10 working days before the event = 100% refund less 25% administration feeBetween 5 and 10 working days before the event = 50% refund less 25% administration feeLess than 5 working days before the event = 0% refund 
+For more information, please visit the terms and conditions on the RSB website. 
+
+
+Careers Committee 
+This event is supported by the following organisations, who have worked collaboratively with the Royal Society of Biology to bring together a diverse line-up of speakers for this event. The Association of the British Pharmaceutical Industry, the Biochemical Society, the British Ecological Society, the British Pharmacological Society, the British Society for Immunology, the Gatsby Plant Science Education Programme, the Microbiology Society, the Society for Experimental Biology and the Physiological Society."""
+full_description = "The theme for this year's BCD is bioscience careers in the modern day and a draft programme is available to view. We've previously had talks on careers in industry, science communication, publishing, academia, ecology, patent law, teaching and more at past events. Download top presentations from past events. What career would you like to know more about? Get in touch with the events team at events@rsb.org.uk or contact us on social media @RoyalSocBio using #RSBCareersDay. Attendees to more than one session will receive a certificate of attendance. There will also be the opportunity to win free access to RSB training in Artificial Intelligence and Machine Learning or Writing for Non-specialist Audiences. If you would like to get involved in BCD and showcase the opportunities your company can offer to bioscience graduates, please visit our Sponsors and Supporters page to view our sponsorship packages. Bookings for this event can be made via the event page. You can submit questions for speakers ahead of time by emailing your questions to events@rsb.org.uk Over 10 working days before the event = 100% refund less 25% administration feeBetween 5 and 10 working days before the event = 50% refund less 25% administration feeLess than 5 working days before the event = 0% refund"
+year_published = 2025
+clearnet = "https://rsb.org.uk/component/banners/click/121"
+tags = ["annual", "attend", "biology", "bioscience", "bookings", "bulk", "cancellation", "careers", "committee", "connect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nationaltechnicianscentre.ac.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/about-us/system-error-page"]
+title = "System error page"
+description = "Error page to say that there is an error or a page has moved"
+full_description = "Sorry! This page has moved We have recently launched a new website and the page you are looking for has moved. If the page doesn't appear in menu above please try using the search box at the top of the page, or get in touch. We are sorry for any inconvenience. Sorry! This page has moved We have recently launched a new website and the page you are looking for has moved. If the page doesn't appear in menu above please try using the search box at the top of the page, or get in touch. We are sorry for any inconvenience."
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/system-error-page"
+tags = ["biological", "biology", "bioscience", "moved", "professional", "sorry!", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "futuremorph.org", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/about-us/itn-productions-partnership"]
+title = "ITN Productions"
+description = """
+ITN Productions&nbsp;produces bespoke creative and commercial content for broadcasters, businesses, brands, rights holders and digital channels. Industry News forms part of this offering and is a communications tool for leading industry bodies and national associations produced in a broadcast news-style&nbsp;programme&nbsp;format, including interviews, news items and sponsored editorial profiles.&nbsp;&nbsp;
+The RSB has partnered up with ITN Productions to produce two current-affair style programmes. In 2018 ITN Productions produced 'Addressing Global Challenges' in partnership with 17 other biosciences organisations, and in 2019 they produced 'Biology impacting Lives' with another seven organisations.&nbsp;"""
+full_description = "ITN Productions partnership ITN Productions produces bespoke creative and commercial content for broadcasters, businesses, brands, rights holders and digital channels. Industry News forms part of this offering and is a communications tool for leading industry bodies and national associations produced in a broadcast news-style programme format, including interviews, news items and sponsored editorial profiles. The RSB has partnered up with ITN Productions to produce two current-affair style programmes. In 2018 ITN Productions produced 'Addressing Global Challenges' in partnership with 17 other biosciences organisations, and in 2019 they produced 'Biology impacting Lives' with another seven organisations."
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/itn-productions-partnership"
+tags = ["biological", "biology", "bioscience", "partnership", "productions", "professional", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "itnproductions.co.uk", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["http://www.rsb.org.uk/about-us"]
+title = "About the Royal Society of Biology"
+description = "The Royal Society of Biology is a single unified voice for biology: advising Government and influencing policy; advancing education and professional development; supporting our members, and engaging and encouraging public interest in the life sciences."
+full_description = "About Us The Royal Society of Biology is a single unified voice for biology: advising Government and influencing policy; advancing education and professional development; supporting our members, and engaging and encouraging public interest in the life sciences. The Society represents a diverse membership of individuals, learned societies and other organisations. Individual members include practising scientists, students at all levels, professionals in academia, industry and education, and non-professionals with an interest in biology. Our vision Is of a world that values biology’s contribution to improving life for all. Our mission Is to be a unifying voice for biology for the public benefit; to provide impartial evidence-based advice; to raise professional standards; to support biologists throughout their careers; to engage the public with our work; to support the bioscience community and to provide events and other fora for information exchange in the biosciences. Our values Vocal: we are a strong voice for biology Advancing: we advance interest, education, professional development and policy in the biosciences through our membership, staff and volunteers Leading: we consult and represent our profession with a proactive and honest approach to the public, governments and policymakers Uniting: we bring together individuals and organisations to promote our vision, enhance quality and develop standards Evolving: we enhance and develop our resources to meet the evolving needs of the sector, our membership and the UK Inclusive: we promote diversity and equality for all in the biosciences Inspiring: we aim to inspire our members and the wider public with the wonders of biology through effective communication and engagement We use the terms biology, biosciences, life sciences, and biological sciences interchangeably to encompass all areas of the science of life from molecules, through whole organisms to ecosystems and across every specialism. The Royal Society of Biology integrates equality, diversity and inclusion (EDI) as an important part of our business plan, and continued engagement from our Board of Trustees, staff and members reflects the importance of these values. The Royal Society of Biology is committed to embedding and communicating EDI strategies throughout the organisation and its activities. We acknowledge the importance of diversity at all learning and career stages to ensure equal opportunities and create an inclusive environment that welcomes, attracts and benefits from a variety of experiences, skills, qualities and perspectives. We strive to tackle barriers and create a life science community that is representative of the wider society we serve. The Royal Society of Biology recognises its environmental and societal responsibilities, and as a unifying voice for biology, we are committed to: becoming a carbon neutral and nature positive organisation, through quick and sustainable actions, in a way that will provide long-term benefit to the environment, biodiversity and people of our planet. helping both our individual and organisational members to reduce their respective carbon footprints and negative impacts on nature, with flexibility and recognition of community and organisational differences. advocating for evidence-based government policies that address environmental sustainability challenges. RSB will continue to lead in convening, championing and synthesising bioscience expertise and evidence, to provide recommendations to policymakers. Our Climate and Nature Strategy is available to download here. The Royal Society of Biology is a registered charity (No. 277981) and is incorporated by Royal Charter."
+year_published = 2025
+clearnet = "http://www.rsb.org.uk/about-us"
+tags = ["across", "advancing:", "areas", "biological", "biology", "biology,", "bioscience", "biosciences,", "ecosystems", "encompass"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/about-us/mysociety"]
+title = "mySociety"
+description = """
+We have a new mySociety website where you can manage your Personal Data, Membership, CPD, Newsletter subscriptions and register for Events
+Login
+Use your existing login details at https://my.rsb.org.uk
+Our professional registers and Gopher Schools registration pages have also moved.
+Contact
+If you have any queries please get in touch with our membership team at membership@rsb.org.uk
+&nbsp;"""
+full_description = "New Portal We have a new mySociety website where you can manage your Personal Data, Membership, CPD, Newsletter subscriptions and register for Events Login Use your existing login details at https://my.rsb.org.uk Our professional registers and Gopher Schools registration pages have also moved. Contact If you have any queries please get in touch with our membership team at membership@rsb.org.uk New Portal We have a new mySociety website where you can manage your Personal Data, Membership, CPD, Newsletter subscriptions and register for Events Login Use your existing login details at https://my.rsb.org.uk Our professional registers and Gopher Schools registration pages have also moved. Contact If you have any queries please get in touch with our membership team at membership@rsb.org.uk"
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/mysociety"
+tags = ["biological", "biology", "bioscience", "contact", "cpd,", "data,", "events", "login", "manage", "membership,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "itnproductions.co.uk", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/education/accreditation"]
+title = "Degree accreditation programme"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/accreditation"
+tags = ["accreditation", "biological", "biology", "bioscience", "find", "mean", "professional", "united kingdom"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/academics"]
+title = "Academics"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = '"As a bioscience educator, if your sessions drive your students to grow intellectually, to deep dive into an exciting biological world or make a difference in their career journey, then consider applying for the Bioscience Teacher of the Year Award!" © 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter'
+year_published = 2025
+clearnet = "https://rsb.org.uk/academics"
+tags = ["about…", "biological", "biology", "bioscience", "careers", "education", "find", "grants", "higher", "membership"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "futuremorph.org", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/education/tpag"]
+title = "Teaching Policy Advisory Group"
+description = "This group provides a platform for teachers and educators from diverse backgrounds to influence the Royal Society of Biology's (RSB) policies, share their expertise, and collaboratively address pressing issues in school-level teaching across the UK."
+full_description = "Teaching Policy Advisory Group The Teaching Policy Advisory Group (TPAG) envisions a future where educators are not only essential members of the biosciences community but also active participants in shaping the policies governing their profession. This group provides a platform for teachers and educators from diverse backgrounds to influence the Royal Society of Biology (RSB)'s education policies, share their expertise, and collaboratively address pressing issues in school-level teaching across the UK. The Royal Society of Biology published its education priorities for 2023 – 2028, outlining important factors that contribute to excellent biology teaching and learning in the UK, for all students at all levels, and underpinning our policy work: All young people should have an unbroken chain of experts teaching the science disciplines All young people should experience curricula and assessments which prepare them to be scientifically literate, able to make scientifically informed choices, and ready them for a diverse and evolving world of work. The Teaching Policy Advisory Group's terms of reference are to: advise RSB on key issues impacting the teaching sector that can be addressed through existing and potential policy positions advise on the Society's responses to external consultations on teacher training, retention, recruitment and CPD matters inform and guide the Teaching Policy Network, ensuring that decisions are based on expert advice and the latest research in education policy facilitate collaboration among education professionals, allowing them to connect, share insights, and exchange best practices within the teaching community offer valuable professional development opportunities through webinars, networking events, and consultations, empowering teachers to enhance their skills and knowledge promote the work and vision of RSB by engaging with teaching gatekeepers and stakeholders, including students, teachers, teacher educators, education researchers, governments, regulators, and awarding bodies advise the Society's ESP committee on any matters associated with teacher training, retention, recruitment and CPD. Members of the Teaching Policy Advisory Group Dr Elizabeth (Liz) Lakin FRSB - Chair Charles Gill MRSB Clare Draper Helen Faulkner MRSB Karen Kerr FRSB Mike Cassidy FRSB Kevin O'Dell FRSB Patricia Carruthers Emma Yhnell MRSB Jacqueline Davidson Gray Karen Stephens Joanna Igoe Donna Dawkins Dr Annie McRobbie Observers Arianne Matlin MRSB Lauren McLeod MRSB Shabana Brightley MRSB If you are interested in joining the Teaching Policy Network, please sign up here for expressions of interest."
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/tpag"
+tags = ["advisory", "bioscience teacher training", "bioscience teaching", "education", "frsb", "group", "group's", "members", "mrsb", "observers"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/about-us/strategic-partners-group"]
+title = "Strategic partners group"
+description = "Major funders that support the Society of Biology"
+full_description = "Strategic Partners Group The Royal Society of Biology would like to thank the following partner organisations for supporting our vision Anatomical Society Applied Microbiology International Biochemical Society British Ecological Society British Pharmacological Society British Society for Immunology Genetics Society Society for Experimental Biology Strategic Partners Group The Royal Society of Biology would like to thank the following partner organisations for supporting our vision Anatomical Society Applied Microbiology International Biochemical Society British Ecological Society British Pharmacological Society British Society for Immunology Genetics Society Society for Experimental Biology"
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/strategic-partners-group"
+tags = ["biological", "biology", "bioscience", "following", "group", "organisations", "partner", "partners", "professional", "royal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "futuremorph.org", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/about-us/partnerships"]
+title = "Partnerships"
+description = "The Society has key partnerships with several sister organisations to support pan-science work."
+full_description = "Partnerships Acting as one voice for the biosciences, the Royal Society of Biology has key partnerships with several sister organisations outside of our wide Member Organisation base, supporting their pan-science work. Links to their websites, a short synopsis and the work we do together can be found below. ITN Productions ITN Productions Industry News produces bespoke creative and commercial content for broadcasters, businesses, brands, rights holders and digital channels. Industry News forms part of this offering and is a communications tool for leading industry bodies and national associations produced in a broadcast news-style programme format, including interviews, news items and sponsored editorial profiles. The RSB has partnered up with ITN Productions to produce two current-affair style programmes. In 2018 ITN Productions produced 'Addressing Global Challenges' in partnership with 17 other biosciences organisations, and in 2019 they produced 'Biology impacting Lives' with another seven organisations. Science Council The Science Council is a membership organisation that brings together learned societies and professional bodies across science and its applications. The Science Council provides a single point of contact for those wishing to contact or work with the science community. The Science Council’s Future Morph website for young people, parents and teachers provides information on a wide range of careers. As a member of the Science Council, the RSB is a licensed body providing its professional registers (RSciTech, RSci, CSci and CSciTeach) to our members, linked to annual CPD. Campaign for Science and Engineering The Campaign for Science & Engineering (CaSE) is the leading independent advocate for science and engineering in the UK. We are supporting members of CaSE and work collaboratively with them on specific projects of joint interest. Science Edcation Policy Alliance - SEPA The Association for Science Education, the Institute of Physics, the Royal Society, the Royal Society of Biology and Royal Society of Chemistry work together as an alliance to support science education in schools. This alliance is convened by Dame Athene Donald. Previously this partnership was called SCORE, the Science Community Representing Education. Learned Societies' Group on STEM Education in ScotlandThe Royal Society of Biology works in collaboration with the Royal Society of Chemistry, the Institute of Physics, the Association for Science Education, the British Computer Society, the Edinburgh Mathematical Society, the Scottish Mathematical Council, the Royal Society of Edinburgh and The Institute of Engineering and Technology as part of the Learned Societies' Group for STEM Education in Scotland. The group is Chaired by Professor Martin Hendry FRSE and focuses on Scottish education policy issues. The Primary Curriculum Advisory Group (PCAG)The Primary Curriculum Advisory Group comprised of Professor Jane Turner, Professor Lynne Bianchi, Ali Eley, Liz Lawrence and Dr Alex Sinclair, and were called upon by the Association for Science Education, the Institure of Physics, the Royal Society of Biology and the Royal Society of Chemistry in 2019 to create recommendations to influence future discussions regarding primary science curriculum design. Foundation of Science and Technology The Foundation's purpose is to provide a neutral platform for debate of policy issues that have a science, engineering or technology element. The Foundation also provides a support service to learned and professional societies. Keith Lawrey is the Learned Societies' liaison officer for the Foundation and is in regular contact with Society. The Royal Society of Biology is a member of the Foundation for Science and Technology. Parliamentary and Scientific Committee The Parliamentary and Scientific Committee provides a long term liaison between Parliamentarians and scientific bodies, science-based industry and the academic world. The main aim is to focus on those issues where science and politics meet, highlighting the relevance of scientific and technological developments to matters of public interest and to the development of policy. Science in Parliament is the Committee's quarterly Journal. It presents a complete and unique record of science and technology matters in both Houses of Parliament and the European Community. It provides insights into the information and briefings supplied to Members of Parliament on scientific subjects. The Royal Society of Biology is a member of the Parliamentary and Scientific Committee, and the Society's director of parliamentary affairs, Dr Stephen Benn, is the Vice-Chair of the Advisory Panel of the Committee. Science Media Centre Science Media Centre (SMC) is an independent press office providing journalists with scientific evidence and expertise, including interviews with leading experts to timely press briefings on topical issues. The Royal Society of Biology makes a modest annual donation towards the running costs of the SMC, which also acts as an observer member of the Animal Science Group. Sense About Science Sense About Science works in partnership with scientific bodies, research publishers, policy makers, the public and the media to change discussions about science and evidence. Its Voice of Young Science network engages hundreds of early career researchers in public debates about research and evidence. The Royal Society of Biology frequently provides support and event partnership for early career researcher events and is a co-funder (with a number of other organisations) of a project exploring communication around GM issues in plant science. Athena Forum The Athena Forum was set up in 2008 as a successor organisation to the Athena Project which ran from 1999 to 2007. Its mission is to provide a strategic oversight of developments that seek to, or have proven to, advance the career progression and representation of women in science, technology, mathematics, and medicine (STEMM) in UK higher education. Its members are nominated by the UK's leading scientific professional and learned societies. The Royal Society of Biology is a founding organisation of the Forum and is represented on the committee by Dr Jacqui Piner CBiol FRSB. All Party Parliamentary Group on Biodiversity The All-Party Parliamentary group for biodiversity aims to provide a forum for cross-party parliamentarians, senior policy makers, academics, leading industry figures and other interested parties to have an informed discussion on all aspects of protecting biodiversity in the UK and abroad. The Society is a member of the Group. Association of Learned and Professional Society Publishers The Association of Learned and Professional Society Publishers was formed in 1972 with 24 society members. Today ALPSP has more than 315 member organisations in 39 countries and is the largest international trade association for scholarly and professional publishers. We aim to serve, represent and strengthen the community of scholarly publishers, and those who work with them. The Society is a member of the Association. Association for Science Education (ASE) The ASE is the largest subject association in the UK that support all those involved in science education from pre-school to higher education; members include teachers, technicians, tutors and advisers. RSB members can benefit from a 30% discount on their ASE membership and the RSB offers a reciprocal agreement to ASE members. To take advantage of this reduction, contact membership@rsb.org.uk"
+year_published = 2025
+clearnet = "https://rsb.org.uk/about-us/partnerships"
+tags = ["alliance", "association", "athena", "biodiversity", "biological", "biology", "bioscience", "campaign", "centre", "committee"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "britishlichensociety.org.uk", "bsas.org.uk", "facebook.com", "fba.org.uk", "fsbi.org.uk", "futuremorph.org", "genetics.org.uk", "instagram.com", "linkedin.com", "neuroendo.org.uk", "publications.parliament.uk", "rse.org.uk", "sciencecampaign.org.uk", "sciencecouncil.org", "scienceinparliament.org.uk", "senseaboutscience.org", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/careers-and-cpd/careers"]
+title = "Careers"
+description = "Careers advice from the Royal Society of Biology"
+full_description = "Careers Take control of your future Biology offers a wide range of career options and opportunities for school-leavers, apprentices, graduates, and postgraduates. Whichever stage of your career you're at - from deciding whether to study biology at school, college or university, to working out what to do after you graduate - the Royal Society of Biology is here to help. Working as a biologist First of all, there's no such thing as a typical biologist. Entering a career in biology could take you in almost any direction you can think of, and to anywhere in the world."
+year_published = 2025
+clearnet = "https://rsb.org.uk/careers-and-cpd/careers"
+tags = ["biological", "biologist", "biology", "bioscience", "careers", "control", "future", "professional", "united kingdom", "working"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "facebook.com", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "nuffieldfoundation.org", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/contact"]
+title = "Contact us"
+description = """
+Head office address
+Royal Society of Biology1 Naoroji StreetLondonWC1X 0GB
+Telephone
+020 3925 3440
+For membership enquiries: 020 3925 3441
+Email enquiries
+Membership: membership@rsb.org.uk Education: education.policy@rsb.org.ukEngagement: engagement@rsb.org.ukTraining: training@rsb.org.ukRegisters: registers@rsb.org.uk Science Policy: policy@rsb.org.uk Press enquiries: parliamentaryandpublicaffairs@rsb.org.ukEvents: events@rsb.org.ukThe Biologist: biologist@rsb.org.uk Journal of Biological Education: jbe@rsb.org.uk
+Advertising
+There are a range of opportunities available for those wishing to advertise to our 23,000 members. From the award-winning membership magazine The Biologist, to our tailored website and jobs board, contact tom.ireland@rsb.org.uk for more information.
+Complaints
+The Royal Society of Biology aims to maintain high standards across all of its activities.
+If you wish to make a complaint, you can find out how to do so via the RSB Complaints Procedure."""
+full_description = "Contact Us Head office address Royal Society of Biology1 Naoroji StreetLondonWC1X 0GB Telephone 020 3925 3440 For membership enquiries: 020 3925 3441 Email enquiries Membership: membership@rsb.org.uk Education: education.policy@rsb.org.ukEngagement: engagement@rsb.org.ukTraining: training@rsb.org.ukRegisters: registers@rsb.org.uk Science Policy: policy@rsb.org.uk Press enquiries: parliamentaryandpublicaffairs@rsb.org.ukEvents: events@rsb.org.ukThe Biologist: biologist@rsb.org.uk Journal of Biological Education: jbe@rsb.org.uk Advertising There are a range of opportunities available for those wishing to advertise to our 23,000 members. From the award-winning membership magazine The Biologist, to our tailored website and jobs board, contact tom.ireland@rsb.org.uk for more information. Complaints The Royal Society of Biology aims to maintain high standards across all of its activities. If you wish to make a complaint, you can find out how to do so via the RSB Complaints Procedure."
+year_published = 2025
+clearnet = "https://rsb.org.uk/contact"
+tags = ["address", "advertising", "complaints", "contact", "email", "enquiries", "head", "map", "office", "telephone"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/education/publications"]
+title = "Publications"
+description = """
+Our publications and specialist journals produced by our Member Organisations 
+The Biologist is the Society's quarterly member magazine that carries the full richness and diversity of biology. Science is brought to life with stimulating and authoritative features, while topical pieces discuss science policy, new developments or controversial issues.
+The Journal of Biological Education is an international journal that publishes the latest research into the teaching, learning and assessment of biology. It is owned by the Royal Society of Biology and published by Routledge.
+Emerging Topics in Life Sciences
+Science is rapidly changing and boundaries between disciplines are blurring. To support the needs of researchers who are moving fields or require an overview of an emerging topic, we are delighted to announce Emerging Topics in Life Sciences, a brand new journal coming in early 2017 jointly owned by the Royal Society of Biology and the Biochemical Society.
+Covering research-driven reviews, each issue will focus on new or growing fields of life science research. Written for an interdisciplinary audience ranging from students and early career researchers to established scientists who are switching fields or adopting new techniques, each issue will be guest edited by an expert in the field allowing researchers to remain up t -date with recent advances, useful overviews and emerging trends across the life sciences.
+Our Member Organisations produce a range of excellent specialist journals covering the latest advances in the fields of biochemistry, ecology, pharmacology, immunology, microbiology, endocrinology, physiology and more."""
+full_description = "Publications Our publications and specialist journals produced by our Member Organisations The Biologist is the Society's quarterly member magazine that carries the full richness and diversity of biology. Science is brought to life with stimulating and authoritative features, while topical pieces discuss science policy, new developments or controversial issues. The Journal of Biological Education is an international journal that publishes the latest research into the teaching, learning and assessment of biology. It is owned by the Royal Society of Biology and published by Routledge. Emerging Topics in Life Sciences Science is rapidly changing and boundaries between disciplines are blurring. To support the needs of researchers who are moving fields or require an overview of an emerging topic, we are delighted to announce Emerging Topics in Life Sciences, a brand new journal coming in early 2017 jointly owned by the Royal Society of Biology and the Biochemical Society. Covering research-driven reviews, each issue will focus on new or growing fields of life science research. Written for an interdisciplinary audience ranging from students and early career researchers to established scientists who are switching fields or adopting new techniques, each issue will be guest edited by an expert in the field allowing researchers to remain up t -date with recent advances, useful overviews and emerging trends across the life sciences. Our Member Organisations produce a range of excellent specialist journals covering the latest advances in the fields of biochemistry, ecology, pharmacology, immunology, microbiology, endocrinology, physiology and more."
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/publications"
+tags = ["biological", "biology", "bioscience", "education", "emerging", "fields", "journals", "life", "member", "organisations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/education/teaching-resources"]
+title = "Teaching resources"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "https://rsb.org.uk/education/teaching-resources"
+tags = ["activity", "biological", "biology", "bioscience", "education", "free", "higher", "primary", "professional", "resources"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk/events"]
+title = "Events"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "https://rsb.org.uk/events"
+tags = ["01.05.25", "01.12.24", "05.03.25", "16.03.25", "17.03.25", "biological", "biology", "bioscience", "book", "event"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "bcd.rsb.org.uk", "bps.ac.uk", "britishlichensociety.org.uk", "bsas.org.uk", "bsgm.org.uk", "contentwithpurpose.co.uk", "crick.ac.uk", "futuremorph.org", "har.mrc.ac.uk", "linkedin.com", "microbiologysociety.org", "nc3rs.org.uk", "nuffieldfoundation.org", "physoc.org", "publications.parliament.uk", "scibermonkey.org", "sciencecouncil.org", "senseaboutscience.org", "youtube.com"]
+
+["https://rsb.org.uk"]
+title = "Royal Society of Biology"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "https://rsb.org.uk"
+tags = ["2025-2030", "available", "biocides", "biological", "biology", "bioscience", "brand", "briefing", "cited", "debate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]
+
+["https://rsb.org.uk/careers-and-cpd/cpd"]
+title = "CPD"
+description = "CPD is the process through which an individual maintains and extends the knowledge and skills necessary for lifelong professional competence"
+full_description = "CPD Continuing Professional Development (CPD) can be defined as 'the process through which an individual maintains and extends the knowledge and skills necessary for lifelong professional competence'. Why do CPD? In a fast moving world, it is ever more important to keep up to date in order to maintain standards and demonstrate competence. As the professional body for biologists, we recognise that a diverse range of knowledge, skills and attributes are required by bioscientists working in numerous and varied professions. Our CPD scheme is wide ranging as we appreciate our members come from all areas of the life sciences, and the development of one member may differ widely from the development of another. Our CPD scheme is points based. We ask that you attain 50 CPD points throughout the year, allocating between one and three points per hour depending on the activity. What activities count towards CPD? Almost any activity that develops your valuable skills as a life science employee qualifies for CPD. A small selection includes: training staff, learning a new practical technique, presenting at a conference, volunteering, and self-study in any area of biological interest. Our CPD Guide contains a full list of the varied activities which can count towards an individual's CPD record. We also help you meet the targets for annual progression with RSB CPD approved events all of which are worth 3 points per hour. Upcoming Approved Events are always in our Members Newsletter. The RSB offers in person training and online training via myLearning which can also count towards your CPD. Many other RSB external, and member organisation events may also contribute to your development. As a member of the Society, you gain access to our online members' portal (mySociety), where you can register to begin recording CPD. Each activity is uploaded individually, along with a description of the event, the time spent on it and statements reflecting on how it has impacted on your professional development. You can add activities as frequently as you wish and upon completion of your CPD year with 50 points achieved or more, you will be issued a certificate. How do I log my CPD? When recording your CPD online on myCPD (through mySociety) please ensure that you address the following standards when completing the ‘My Review’ section: A registrant must seek to ensure that their CPD has contributed to the quality of their practice. In this section you should write a statement on how the activity has benefitted your professional practice. The purpose of this section is to help you reflect on the activity, thinking about what you learnt and how it has impacted you. A written reflection also provides evidence of the activity undertaken. A registrant must seek to ensure that their CPD benefits the users of the service (employee, customer, student etc). In this section you should write a statement on how others (such as a colleague, employee, student, or the wider community) have benefitted from the CPD activities you have undertaken if applicable. For more information on CPD, see the Science Council CPD Assessment Criteria, the CPD Guide pdf or email us. Example CPD records Example RSciTech CPD Record Example RSci CPD Record Example CSci CPD Record"
+year_published = 2025
+clearnet = "https://rsb.org.uk/careers-and-cpd/cpd"
+tags = ["'the", "activities", "activity", "benefits", "competence'.", "continuing", "contributed", "count", "cpd", "cpd?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ase.org.uk", "biochemistry.org", "bps.ac.uk", "britishecologicalsociety.org", "britishlichensociety.org.uk", "bsas.org.uk", "contentwithpurpose.co.uk", "facebook.com", "genetics.org.uk", "immunology.org", "neuroendo.org.uk", "nuffieldfoundation.org", "publications.parliament.uk", "rse.org.uk", "scibermonkey.org", "sciencecampaign.org.uk", "sebiology.org", "senseaboutscience.org", "thebiologist.rsb.org.uk", "vincentdesign.co.uk"]
+
+["http://www.rsb.org.uk"]
+title = "Royal Society of Biology"
+description = "The leading professional body representing many of the learned societies and other organisations making up the diverse landscape of the biological sciences, as well as thousands of individuals"
+full_description = "© 2013-25, Royal Society of Biology, 1 Naoroji Street, London WC1X 0GBRegistered Charity No. 277981, Incorporated by Royal Charter"
+year_published = 2025
+clearnet = "http://www.rsb.org.uk"
+tags = ["2025-2030", "available", "biocides", "biological", "biology", "bioscience", "brand", "briefing", "cited", "debate"]
+language = "en"
+internal-references = ["none"]
+external-references = ["facebook.com", "instagram.com", "jobs.rsb.org.uk", "learn.rsb.org.uk", "linkedin.com", "my.rsb.org.uk", "thebiologist.rsb.org.uk", "twitter.com", "vincentdesign.co.uk"]

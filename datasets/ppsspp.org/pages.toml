@@ -1,0 +1,587 @@
+["https://ppsspp.org/docs/reference"]
+title = "Reference - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference"
+tags = ["adreno", "android", "arguments", "articles", "background", "binds?", "command", "community", "configs", "creating"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be"]
+
+["https://ppsspp.org/blog/1-18-release-announcement"]
+title = "1.18 is here! - PPSSPP"
+full_description = "WARNING: There is a critical metadata parsing bug in 1.18 that may affect many devices when running homebrew apps and demos, or even having them in your folder. This is fixed in 1.18.1. If you're on Android and already have it installed from Google Play, your update will arrive within a week (to catch crashes early). iOS will also receive the update on the App Store. Howevwer, the Apple Store review process has been problematic recently (if this continues, a lengthy write-up is coming...), so it may take a quite long time before it's up, unfortunately."
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/1-18-release-announcement"
+tags = ["1.17", "1.18", "1.18.1", "2024-11-03", "announcement", "blog", "brick", "community", "development", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/getting-started/using-original-fonts"]
+title = "Using original PSP fonts - PPSSPP"
+full_description = "Some games don't supply their own fonts, but instead make use of the fonts built-in to the PSP firmware. PPSSPP ships with some free replacement fonts, but a few games will look better if you use the original fonts instead. If you have dumped the PSP firmware yourself from a real PSP, you can place the files in this location in your memstick directory: On the Windows build, you can also replace the fonts directly in the assets subdirectory, but the above will also work."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/using-original-fonts"
+tags = ["articles", "community", "development", "documentation", "fonts", "getting started", "multiplayer", "original", "psp hardware", "reference"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/psp-hardware"]
+title = "PSP hardware - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/psp-hardware"
+tags = ["allegrex", "articles", "community", "cpu - allegrex", "development", "documentation", "getting started", "gpu - the ge", "hardware", "infrastructure"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be"]
+
+["https://ppsspp.org/blog/1-15-release-process"]
+title = "The 1.15.x release process - PPSSPP"
+full_description = "The 1.15.x release series has been out now for a couple of weeks, including some point-releases. These have been made mostly as direct response to crash reports but also for some other fixes. Time to summarize! While looking at performance to eliminate some regressions, I found plenty of additional room for improvements, and I have a bunch of good changes pending. Mostly though, these will need serious testing so I cannot merge them until after we're done with the main series of 1.15.x releases, to keep things simple. But expect serious performance improvements on old devices in 1.16!"
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/1-15-release-process"
+tags = ["1.15.x", "1.16", "2023-05-22", "blog", "community", "development", "documentation", "henrik", "ppsspp", "process"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/reference/whygold"]
+title = "PPSSPP Gold - the what and why - PPSSPP"
+full_description = "More platforms are planned to be added in the future, but as these are by far the most popular four, they got done first. Whether you own PPSSPP Gold for one of those platforms or not, feel free to use the free version on any platforms you have, as much as you want. A: The payment provider uses the phone number in its algorithms to prevent credit card fraud. It is not actually used - you will not get calls from anyone and it's not stored."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference/whygold"
+tags = ["android", "articles", "available", "community", "development", "documentation", "edition", "enter", "feature", "for?"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/docs"]
+title = "Documentation - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs"
+tags = ["allegrex", "articles", "asked", "community", "development", "documentation", "frequently", "getting", "getting started", "hardware"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tags", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/reference/mac"]
+title = "PPSSPP on macOS - PPSSPP"
+full_description = "You can now download PPSSPP as a regular .dmg file, which you can just open, and then drag PPSSPP to Applications, the way you install most normal Mac apps. The operating system might warn you that it's downloaded from the internet, just accept that, of course. Currently, the Mac build's user data is stored in .config/ppsspp under your home directory. In there, you'll find a PSP folder, after which it's organized the normal way (it corresponds to the PSP folder on a real PSP memory stick, with the usual PPSSPP additions, like PSP/SYSTEM/ppsspp.ini and PSP/PPSSPP_STATE/.)."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference/mac"
+tags = ["articles", "community", "data?", "development", "documentation", "getting started", "hacking", "installation", "macos", "multiplayer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/blog/1-17-release-announcement"]
+title = "1.17 is out! - PPSSPP"
+full_description = "PPSSPP 1.17 is now out! Get it on the download page! If you're on Android and already have it installed from Google Play, your update will arrive within a week (to catch crashes early). For the first time, you can now sign up to receive beta versions automatically. This is easier and safer than installing APKs from the buildbot, and you make a valuable contribution to development. See details here. CHD was originally a format for compressing hard drives from arcade games in MAME, but has since became the most popular format for storing ISOs for CD- and DVD-based video game consoles. PSP already has a different format, CSO, which can be used to similarly loss-lessly compress ISOs, and as a bonus, unlike CHD, these actually work on the real hardware. So you might ask, why support CHD? It does provide a slightly better compression ratio, but the main reason is that it's simply been requested a lot. Many people seem to familiarize themselves with a set of tools, and since CHD works to compress ISOs for most other systems, people just want to stick with it. So now we support it. IMPORTANT! You MUST use the createdvd command from recent versions of chdman to generate your CHDs. createcd will work but there will be severe performance problems. See issue #18798."
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/1-17-release-announcement"
+tags = ["1.16", "1.17", "1.18", "2024-01-26", "announcement", "beta", "blog", "community", "development", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/news/release-1.17"]
+title = "PPSSPP 1.17 is out! - PPSSPP"
+full_description = "NOTE! As usual, the Android version on Google Play will as usual roll out slowly over multiple days in order to catch any bad crashes early, so you may have to wait a few days before you receive the update."
+year_published = 2025
+clearnet = "https://ppsspp.org/news/release-1.17"
+tags = ["1.17", "1.17.1", "2024-01-27", "android", "beta", "buildbot,", "builds", "community", "controller", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/docs/development/getting-started"]
+title = "Introduction - PPSSPP"
+full_description = '''PPSSPP is a PSP emulator written in C++. It translates PSP CPU instructions directly into optimized x86, x64, ARM or ARM64 machine code, using JIT recompilers (dynarecs). PPSSPP can thus run on quite low-spec hardware, including stronger ARM-based phones and tablets, as long as there's OpenGL ES 2.0 support. PPSSPP is an open source project, licensed under the GPL 2.0 (or later). Anyone is welcome to contribute their improvements to the code. The code is hosted at the GitHub page for PPSSPP, using the Git source control system. Following the Dolphin tradition, the PPSSPP project is very open. Anyone can participate directly in the development by making pull requests, and if you make substantial contributions you may be given rights to commit directly. You may find yourself relying on the logs a lot to figure out what's really going on. As PPSSPP simulates the PSP OS, we get something similar to a Unix-style strace. There's a headless (no display/audio) build, which is very useful when running the pspautotests through test.py - highly recommended way to find issues. The Windows port and the Qt build have interactive debuggers (Qt currently broken). This is not available for mobile platforms and "SDL" builds. PPSSPP is a HLE ("high level emulation") emulator, it simulates the PSP OS as seen by the game rather than the full hardware. A program running on the PSP OS can send raw display lists to the graphics chips, but can't access the flash controller or the Media Engine directly, instead it has to go through libraries and the PSP OS kernel. We simply simulate these. This is a lot of work though, the PSP OS is large and has plenty of functionality so achieving 100% compatibility is difficult bordering on the impossible. We can get close though. Since this emulator implements most of the PSP OS in order to run games, testing it against the real thing is critical. Some other PSP emulator authors have collaborated around creating a test suite called pspautotests, and we have picked that up and expanded it. There are two scripts: test.py and gentest.py. gentest.py uses psplink to run a test program on your real PSP and captures the text output and saves it as [test].expected. Then you can run the same test in PPSSPP by using test.py, which will automatically compare the output to the expected output.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/getting-started"
+tags = ["access", "android", "arm-based", "articles", "automated", "beta", "building", "code", "commit", "community"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/faq"]
+title = "FAQ - Frequently Asked Questions - PPSSPP"
+full_description = '''You need to have your PSP games as .ISO or .CSO files. I do not have the right to distribute those with the app, so you'll have to provide them on your own. Buy PPSSPP Gold! Available for Android and PC. It's the same as the regular version functionally (see Why Gold?), but by buying it you support the development of PPSSPP. Note that PPSSPP Gold is only available for Android, Windows, macOS, but you can of course buy it even if it doesn't support your favorite platform as a way to support the project. Why not? The domain name ppsspp.org was available, unlike the corresponding domains for many other alternatives I considered. Today I probably would have named it something different and more pronounceable. At least it's kinda fun watching various YouTube personalities try to pronounce it - sorry! PPSSPP can run on most modern iOS versions, and is now available on the App Store, in addition to sideloading. On sideloaded versions, the JIT works, but the App Store versions are generally fine too. See the Downloads page for links and more info. No. PS Vita has a completely different machine architecture, much more powerful than the PSP and with different security technologies. I don't have either the information needed nor the time. Do look into the Vita3K project though! They are making good progress, although game compatibility is still quite low. Install it exactly the same way as you would on a PSP, that is, copy the files to PSP/GAME or PSP/SAVEDATA (depending on the DLC) on the memory stick. In the Android version of PPSSPP, the memory stick is simply the SD card or USB storage of your phone, PPSSPP will create a PSP folder in the root of that. On Windows without installer, the memory stick is the "memstick" subdirectory in the PPSSPP folder. On iOS, it's in /User/Documents/PSP/. On Mac and Linux, it's in ~/.config/PPSSPP. No. PPSSPP simulates the BIOS and the entire internal operating system. It does not currently emulate enough of the hardware for the actual PSP operating system to run inside of PPSSPP, so even if you have a copy of it, PPSSPP can't run it.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/faq"
+tags = ['"git"', '"just-in-time', '"you', ".chd", "1.12+.", "1.14", "able", "about?", "access", "adhoc"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/requestgold"]
+title = "PPSSPP Cross License - PPSSPP"
+full_description = "Since you already have PPSSPP Gold for Windows and macOS, you are eligible to request one Google Play promo code, which can be redeemed for PPSSPP Gold for Android free on any Google Play account. Note: If you have requested a code before, you'll get the same one again, which might thus already be spent. Then please send an e-mail to [email protected], attaching your Google Play receipt. I try to handle all requests within 72 hours, often faster."
+year_published = 2025
+clearnet = "https://ppsspp.org/requestgold"
+tags = ["android", "android?", "code", "community", "cross", "documentation", "gold", "google", "ios,", "license"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "support.google.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/getting-started"]
+title = "Getting started - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started"
+tags = ["android", "articles", "asked", "community", "data", "demos", "development", "device", "documentation", "dumping"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tags", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/development/tips-and-tricks"]
+title = "Development tips & tricks - PPSSPP"
+full_description = "It's inconvenient to directly edit compat.ini since it's built into the APK's asset subdirectory, but you can put a separate compat.ini in your PSP/SYSTEM directory. It will be automatically merged with the one from assets in the APK. The quickest way to check what machine code was generated when you compiled some C++ function, is to, in Visual Studio, set a breakpoint on the code, then run until it gets hit, and then press Ctrl+Alt+D to show disassembly. Best used to verify that your SIMD instrinsics don't do something silly, like reload a matrix for every vertex for example..."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/tips-and-tricks"
+tags = ["android", "articles", "checking", "code", "community", "compat.ini", "developer", "development", "docker", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/intro"]
+title = "Documentation & Help - PPSSPP"
+full_description = '''If you can't find what you're looking for above, use the menu to the left (or the "three lines" or "hamburger" menu in the top right if you're on mobile) to browse the documentation.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/intro"
+tags = ["articles", "asked", "community", "development", "documentation", "frequently", "getting started", "help", "multiplayer", "psp hardware"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tags", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/download"]
+title = "Download - PPSSPP"
+full_description = "Want to try new builds early, to help testing and debugging of new releases? Click here for information! A page where you can download cube.elf and builds for Switch, BlackBerry 10, MeeGo and other esoteric or old platforms. Please note that these development builds can be unstable - if one doesn't work, try an earlier one. And backup your save games!"
+year_published = 2025
+clearnet = "https://ppsspp.org/download"
+tags = ["android", "beta", "builds", "community", "development", "documentation", "download", "downloads", "free", "gold"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/blog/tags/ppsspp"]
+title = "Development blog - PPSSPP"
+full_description = '''In short, the Gold version of PPSSPP for iOS is stuck in review, and I am thus unable to update it at all, and I am also unable to update any aspect of the store presence, like the description. For now, I recommend all iOS users to use the free version of PPSSPP, even if you paid for Gold. PPSSPP is an open source PSP emulator, that lets you run your own PlayStation Portable games on your various devices. PPSSPP is officially available on Android through Google Play, PC, Mac, and recently iOS through the App Store. There is also a Linux flatpak build. The project is ongoing for more than 11 years now, and has been downloaded over 100M times. It has millions of active users on Android. PPSSPP is completely free to download (and compile if you want, since it's open source) but there's also an optional paid version to finance the development and maintenance of the project, buildbot, website, etc. The paid "Gold" version is, except cosmetically, identical to the free version. I've chosen this monetization model on the App Store to keep it consistent with the other platforms, where it's often the most practical one. In May this year, Apple changed its policies and started allowing game console emulators on the App Store. The change was of course followed by a bunch of emulator releases. Here are a few examples: For some time now, I have simply not been able to update the paid iOS version on Apple's App Store. The free version flies through review in a few hours, while the near-identical paid version is just stuck. Below is an authentic conversation with App Store Review. This is the second conversation, I previously had a much longer one, but it disappeared when I submitted a new build. The arguments were the same, just more rounds of back-and-forth. Your app's metadata contains content that is similar to third-party content, which may create a misleading association with another developer's app or intellectual property. We understand that the mentioning of the console is to provide more context to the users, including trademarked terms such as "PSP" in a non-referential way is still not appropriate.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/tags/ppsspp"
+tags = ["1.15", "1.15.x", "1.16", "1.17", "1.18", "1.18.1", "2023-01-22", "2023-04-30", "2023-05-22", "2023-09-09"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/articles"]
+title = "Articles - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/articles"
+tags = ["articles", "binds?", "bugs", "community", "development", "documentation", "driver", "getting started", "multiplayer", "psp hardware"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/docs/psp-hardware/cpu/allegrex-overview"]
+title = "Overview - PPSSPP"
+full_description = '''The PSP's main CPU is a 32-bit MIPS architecture derivative, usually running at 222 MHz or 333 MHz. Initially it always ran at 222, but later PSP firmware versions opened up the faster speed, at the cost of higher battery power consumption. The PSP also has a second, stripped-down CPU called the Media Engine. It's basically the same as an Allegrex but with the VFPU removed (see below), and a different function accelerator added. It performs high-level tasks like decoding video or audio formats, and cannot (officially) be programmed directly. It's got the standard MIPS integer instruction set, with a few handy additions (additional multiply-add instructions, some bitfield manipulation and byteswapping instructions). It also has the VFPU, a very unusual vector processor. Unlike the VU units on the PS2, it shares a single instruction fetcher with the main CPU, though it can execute in parallel with the normal FPU and integer units. Synchronization is mostly automatic. It does not have an MMU but still allows for limited memory protection, enough to separate the kernel and user memory space from each other. There's also some rather unusually explicit control of the cache, which is useful when interacting with the GPU - the GPU cannot read out of the CPU cache, so you must manually make sure that all data you feed it has been "written back" to RAM/VRAM.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/psp-hardware/cpu/allegrex-overview"
+tags = ["allegrex", "articles", "community", "cpu - allegrex", "development", "documentation", "features", "getting started", "gpu - the ge", "management"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/troubleshooting"]
+title = "Troubleshooting - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/troubleshooting"
+tags = ["android", "articles", "black", "bloom", "buttons", "can't", "community", "controller", "crashing!", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be"]
+
+["https://ppsspp.org/devbuilds"]
+title = "Development Builds - PPSSPP"
+full_description = "Please note that these development builds can be unstable - if one doesn't work, try an earlier one. And backup your save games!"
+year_published = 2025
+clearnet = "https://ppsspp.org/devbuilds"
+tags = ["builds", "community", "development", "documentation", "ppsspp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/development/glossary"]
+title = "Glossary - PPSSPP"
+full_description = "The PSP's main CPU. It's a 333MHz MIPS processor with a whole bunch of custom extensions, including a SIMD vector instruction set, and a few very convenient bit manipulation instructions. Most games run it at 222MHz to save power, but some make full use of it. The PSP's secondary CPU. This one is never directly accessed by commercial games, and PPSSPP thus does not emulate it directly. It's used in the implementation of platform libraries like sceMpeg, that PPSSPP catch and emulates through HLE instead. It has some unknown extensions to help with decoding h.264 and Atrac+. A small number of homebrew apps for the PSP make use of this processor to run their own code. This includes later versions of the N64 emulator Daedalus, which thus won't run on the emulator. Additionally, it's believed that PopStation, Sony's PSX emulator, does the same thing, which is why it'll also not run. The PSP has some special powers in this area, though. It doesn't only support 4-bit or 8-bit paletted texture formats (where each pixel simply represents a plan index into a palette), but also CLUT16 and CLUT32 formats. Since palette RAM can only fit a maximum of 512 16-bit colors, or more commonly 256 32-bit colors, you'd think that this wouldn't have much use, but you can simply alias a texture in this format on top of a framebuffer that has been rendered to in RGBA8888 or say RGB565 formats - or even a depth buffer. Then, there are parameters to select which range of bits should be used to index into the palette. Hence, it's possible to do some very tricky stuff that involves looking up rendered color data in a palette in a variety of ways. For example, the lens flare effect in Burnout Dominator makes some very creative use of this, and so do effects in a number of other games."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/glossary"
+tags = ["allegrex", "articles", "clut", "community", "development", "differences", "documentation", "engine", "getting started", "glossary"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/blog/lens-flare-burnout-dominator"]
+title = "The lens flare in Burnout - PPSSPP"
+full_description = "In these posts, I'm going to look at some of the more interesting visual effects that games accomplish on the PSP, and how they do it. The PSP's GPU is very limited by modern standards, but it's still capable of quite a lot of interesting things if your really know how to use it. Lens flare effects are easy to do on modern GPUs. There are lots of different approaches, both image-based which can handle light sources of any shape but are generally not very detailed, and sprite-based, which are more limited in terms of the light source, but can look really complex and colorful. There are queries that can be used to figure out how many pixels actually got rendered when drawing the sun sprite, for example, that can be used to control the size and shape of the lens flare on the next frame, or you can read back the Z buffer directly while drawing the sprites. On old-school, fixed-function hardware such as that of the PSP, where you can’t even do multitexturing, and definitely can’t run any shader code, people had to get quite imaginative to achieve these effects. And the authors of Burnout Dominator certainly were, as we will see. Let's start by looking at the wrong result - the way it was in PPSSPP before I started investigating the effect: As you can see, the lens flare effect is visible going into the tunnel, and through various trees and stuff. First, it makes a backup copy of a 14x14 rectangle around the sun location on-screen, and then renders a black and a white rectangle on top, with only the black one being depth tested. The result is a binary mask of where the sun is visible. It then downsamples (through bilinear filtering) this binary image to 8x8, sitting out in the unused border of the main framebuffer. Then, it downsamples this 8x8 image three more times, until we reach a single value, which is thus the average of the black and white pixels, and thus an effective measurement of the coverage. The final value is for some obscure reason spread out over four pixels."
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/lens-flare-burnout-dominator"
+tags = ["2023-01-22", "applying", "blog", "burnout", "community", "computing", "coverage", "deep", "development", "documentation"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/multiplayer"]
+title = "Multiplayer - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/multiplayer"
+tags = ["ad-hoc", "articles", "community", "development", "documentation", "getting started", "infrastructure", "list", "mode", "multiplayer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/media"]
+title = "Media - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/media"
+tags = ["community", "documentation", "screenshots", "videos"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/news/release-1.18"]
+title = "PPSSPP 1.18 is here! - PPSSPP"
+full_description = "NOTE! As usual, the Android version on Google Play will as usual roll out slowly over multiple days in order to catch any bad crashes early, so you may have to wait a few days before you receive the update."
+year_published = 2025
+clearnet = "https://ppsspp.org/news/release-1.18"
+tags = ["1.18", "1.18.1", "2024-11-03", "available", "community", "debugging", "documentation", "emulation", "fixes", "gold"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/login"]
+title = "Login - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/login"
+tags = ["account", "community", "documentation", "login"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/development"]
+title = "Development - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development"
+tags = ["android", "articles", "beta", "community", "developer", "development", "differences", "documentation", "getting started", "glossary"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tags", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/reference/retro-achievements"]
+title = "RetroAchievements - setup and use - PPSSPP"
+full_description = '''RetroAchievements are similar to Xbox achievements or PlayStation trophies, except that they're created and defined by a volunteer community. Just like other retro consoles, the PSP itself has no native concept of achievement/trophies. However, this can be added with emulation! Not only achievements are supported, but also global leaderboards in games that have scores or times. RetroAchievements are supported from PPSSPP version 1.16. The feature is not supported in 1.15.4 and older. First, create an account on the RetroAchievements website. Then, in PPSSPP's RetroAchievements settings, enter the same username and password. After that, simply run games, and if they have achievement sets made for them, they'll be activated. Also, you might want to enable Hardcore Mode, see below. In Hardcore Mode, a number of the emulator's features that are particularly prone to cheating are disabled, such as save states and slowing down time. Speeding up time is still allowed. We previously called it Challenge Mode, but we have now switched to the RetroAchievements standard, which is Hardcore mode. Loading states is strictly disallowed, but it can sometimes be useful to save state, especially for development or confirming missed achievements. For this case, we have an option in the RetroAchievements developer settings, "Allow Save State in Hardcore Mode (but not Load State)". Lets you unlock achievements again. Note that this does not affect the real unlock status - you'll just get the notification again if you fulfill the conditions, such as completing a level or whatever it was. This is mainly useful for development - for regular gameplay, it gets confusing. These are achievements that have been removed, or are in development, or have simply been considered not really worth having. Unfortunately, it's often the case that only one or two regions of a game are supported. Click the link "Supported game files" on the game's page on that site to find out. All existing achievements were created for the PPSSPP core in RALibRetro, which has the same timing and plugins as RetroArch. Unfortunately, due to deficiencies in libretro's design, achievement checks don't run at the correct time in RALibRetro or RetroArch - so if your achievement works correctly in RetroArch and not in PPSSPP standalone, the achievement is broken.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference/retro-achievements"
+tags = ["achievement", "achievements", "additional", "articles", "community", "developing", "development", "documentation", "encore", "games"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/docs/getting-started/recommended-hardware"]
+title = "Recommended hardware for PPSSPP - PPSSPP"
+full_description = "Nearly any PC made the last 15 years will have little to no issue running PPSSPP. It can be a good idea to upgrade your graphics drivers, if possible. Any M1 or later Mac will run it fine. It also works on many Intel Macs but has issues on Radeon GPUs on Mac, unfortunately. PPSSPP is compatible with almost any game controller. This page lists some things that have been tested to work."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/recommended-hardware"
+tags = ["android", "articles", "community", "controllers", "data", "development", "devices", "documentation", "getting started", "hardware"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/reference/use-texture-replacement"]
+title = "Using texture replacement packs - PPSSPP"
+full_description = "To install a texture replacement pack, just open the zip file directly in PPSSPP, as if it was a game. Use the games tab or the Load... button. PPSSPP will take care of installing it in the correct location, and unpacking it if necessary (PPSSPP now supports reading from zip files directly, if textures.ini is in the root directory of the zip). If you want to install a zipped texture pack manually, create a folder with the game ID in TEXTURES (such as NPJH50505), rename your zip to textures.zip, and put it in the folder. You can also install manually. The place for textures are in PSP/TEXTURES, in subdirectories by game ID (without hyphen)."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference/use-texture-replacement"
+tags = ["articles", "binds?", "community", "configs", "custom", "development", "documentation", "finding", "game", "getting started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/contact"]
+title = "Contact - PPSSPP"
+full_description = "The PPSSPP Discord is the easiest way to get in touch with other people in the community, and is also useful for quick bug reports and similar. Before that he worked at NVIDIA, and previously Soundtrack Your Brand, and a long time before that Google Zürich. This website was previously built with Docusaurus, but it's now been replaced by a static site built by a fully-custom generator written in Rust. Source code to generator and site"
+year_published = 2025
+clearnet = "https://ppsspp.org/contact"
+tags = ["community", "community,", "contact", "discord", "documentation", "e-mail", "forums", "info,", "links", "ppsspp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "millionthline.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tags", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/development/beta-testing"]
+title = "Beta Testing on Android - PPSSPP"
+full_description = '''A few weeks before each new official release, a beta release will be rolled out to participating people, containing most of the new features that will be in the next release. Additionally, there'll be a build every couple of months between major releases. We only have a beta testing program for Android since Google Play provides convenient tools to automatically roll out new builds to participants. We don't have anything like that yet on the other platforms. On PC, if you want to help testing stuff before release, download the latest development build from the buildbot and report results. Beta builds can have bugs and instabilities, but will usually be usable. If you see unexpected behavior or odd crashes, please report them, as explained below. If you make a save state in a beta build, it will not load if you go back to the previous "normal" build, but it will load in future versions. Regular in-game save games are portable back and forth, assuming you keep the files around. On Android 11 or higher, make sure you are using a manually-selected folder for memstick data. More information. If you have installed PPSSPP through an APK previously, for example from the buildbot, you will have to uninstall, and install again from Google Play, in order to get your automatic beta updates. Either report bugs using our GitHub issue tracker, or join the discord (instructions here) and report your issues in the #general channel. But before reporting, please do a search of the GitHub issue tracker to see if your problem is already known!'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/beta-testing"
+tags = ["1.17", "android", "articles", "beta", "bugs", "community", "developer", "development", "documentation", "features"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/reference/ios-support"]
+title = "PPSSPP for iOS - PPSSPP"
+full_description = '''Sometime in April-May 2024, Apple changed their App Store policy to allow emulator apps in the App Store. This finally made it possible to release an official iOS version of PPSSPP! This also means that going forward, the iOS version will be prioritized about as highly as the Android and PC versions for features and performance work. However - updates may be delayed, sometimes severely, due to Apple's rather unpredicatable review process. The one serious limitation of functionality that PPSSPP (and other emulators) are still subject to on iOS is the inability to "JIT", that is, to generate machine code at runtime and run it. This is very useful when emulating foreign CPU architectures such as the PSP's CPU (known as Allegrex). Fortunately, the PSP does not require a JIT compiler to be emulated at full speed on modern iOS devices, although it would reduce battery consumption to be able to do it. Before the policy change, you had to "sideload" PPSSPP onto an iPhone, which there are many ways to do. You still have to do this if you want JIT functionality, but since as mentioend it's not that critical for PSP emulation performance, I expect fewer people will pick this option. IMPORTANT: This guide is unofficial - the project is not responsible for any negative results, and will not answer questions about it. You're on your own!'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/reference/ios-support"
+tags = ["articles", "community", "development", "documentation", "features", "getting started", "guide", "installation", "limitations", "macos"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/buygold"]
+title = "Buy PPSSPP Gold - PPSSPP"
+full_description = "IMPORTANT! The email address you use while paying will receive the download link, so make sure it's right. If you have not received an email within an hour, please contact [email protected] and I'll have a look. Please note that all price options get you the same thing: the permanent right to download PPSSPP Gold for Windows and macOS, a gold account on this site, and Gold downloads for more platforms in the future."
+year_published = 2025
+clearnet = "https://ppsspp.org/buygold"
+tags = ["1.18.1", "already!", "android", "community", "documentation", "gamer", "gold", "grandmaster", "hangaround", "information"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "flathub.org", "folium.emuplace.app", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "tags", "x.com", "youtu.be"]
+
+["https://ppsspp.org/docs/settings/hidden"]
+title = "Hidden settings - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/settings/hidden"
+tags = ["articles", "community", "development", "documentation", "getting started", "hidden", "multiplayer", "psp hardware", "recommended", "reference"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/getting-started/how-to-get-demos-and-homebrew"]
+title = "Demos & Homebrew - PPSSPP"
+full_description = '''Many game companies released downloadable demo versions of their games for the PSP. Most of these can run in PPSSPP. These files are legal and free to download. The PSP was released in 2005, and contained a number of bugs that made it easy to run your own code on the device. A large community of hackers emerged who figured out how it worked and wrote their own software for the device. There's now a lot of little homemade games to run, and a free homebrew "SDK" (software development kit) to make your own. If you have manually downloaded homebrew, unzip it and put the game folder in PSP/GAME in your memstick directory.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/how-to-get-demos-and-homebrew"
+tags = ["articles", "community", "demos", "development", "device?", "documentation", "dumping", "find", "games", "getting started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/news/ppsspp-legacy"]
+title = "PPSSPP Legacy APK is now available - PPSSPP"
+full_description = "This special Android APK targets an older SDK version than the official builds, and is thus unaffected by the Scoped Storage API requirement. This can help various Android TV devices where you are currently unable to pick a folder to load an ISO from. Note that this can not be uploaded onto Google Play since it doesn't meet current requirements. The only way to install it is to sideload it via ADB or similar. If you know how to use APK files, you know what you need to do."
+year_published = 2025
+clearnet = "https://ppsspp.org/news/ppsspp-legacy"
+tags = ["1.17.4", "1.18", "2024-08-15", "available", "community", "documentation", "gold", "henrik", "here!", "legacy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/getting-started/installing-games-android"]
+title = "How to move PSP games to your mobile device - PPSSPP"
+full_description = '''Connect your Android device (phone, tablet, etc) to your PC using a USB cable. Likely, the one you charge the device with will work just fine. You can now create a new folder to store your ISOs in, if you haven't already (it's recommended that it's separate from the "PSP" folder where system files and save games go, but it does work to use the same folder). A quick way is by pressing Ctrl+Shift+N and typing the name of your new folder. Finally, after starting PPSSPP on your device, you'll be able to either directly browse to it (Android 10 or older, or old installs), or you'll be able to click Browse... and select it. Open the device in Finder. Click the Files tab, then you should see PPSSPP and/or PPSSPP Gold listed. After this, the ISO files will be located on the virtual "memory stick". Just pick them from the Games tab (click Home if you can't find the files).'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/installing-games-android"
+tags = ["android", "articles", "community", "data", "development", "device", "documentation", "dumping", "games", "getting started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/getting-started/dumping-games"]
+title = "Dumping UMD games - PPSSPP"
+full_description = '''To read a game disc into an ISO is called "dumping" for historical reasons - it's old computer lingo for copying every single bit of a medium to a file, for archival storage or other use. PPSSPP can play files directly from these formats without decompressing them first, which makes them much more practical than keeping your ISOs files in .ZIP or .RAR archives. CSO is the oldest and most well-tested compressed ISO format for PSP, and it's compatible with various custom firmwares for the real PSP, so the files are playable from a memory stick on hardware. It has a good compression ratio, performs very well in PPSSPP, practically as fast or faster than ISO, depending on how slow the drive is you're reading from. CHD is supported from PPSSPP 1.17, and stands for Compressed Hard Drive. It's MAME's format, originally made for archiving arcade game hard drives, but later repurposed for disc-based systems. It has a slightly better compression ratio than CSO, but to perform properly, PSP ISOs need to be compressed to CHD in the DVD mode (createdvd), and with 2048-byte "hunk" (sector) size. Other sector sizes may get better support in the future. The tool to create CHD files is called chdman and is distributed with MAME. You want to use a recent version to compress PSP ISOs. Here's the command line for compressing a PSP ISO to CHD with chdman, once you have acquired the tool: PPSSPP 1.17.1 also supports an additional mode, using zstd for compression, which might perform slightly better: Preferably, don't use the createcd or createraw commands. createdvd is what you want to use for best performance. If you have digital downloads on your real PSP, they can be used directly on PPSSPP. Just copy the EBOOT.PBP over. Note that this has not been tested as much as ISO loading so there may still be issues with some games.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/dumping-games"
+tags = ["articles", "community", "compressed", "demos", "development", "device", "digital", "documentation", "downloads", "dumping"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/getting-started/save-data-and-storage"]
+title = "Save data and storage on Android - PPSSPP"
+full_description = '''PSP save data storage on Android 11+ with PPSSPP 1.12+ is a bit more complicated than it used to be, due to the new Android restrictions that we have to abide by. The real PSP stores savedata and downloaded game demos and similar on something called a "Memory Stick", basically a micro-SD, though a bit bigger physically. To simulate this storage, PPSSPP uses a regular folder on your file system. In the case of Android, traditionally PPSSPP has simply used the root of what's called "External storage", the storage you can access directly via USB. In Android 11, 12 and later, PPSSPP (like other apps) is no longer able to just ask for wide permission to read/write to your device external storage. Instead, it has to ask for your permission to write to a folder on a per-folder basis. The exception is if you upgraded from an earlier version, or if you're on Android 11 and use PPSSPP 1.11 or earlier and are on Android 11 (since older versions of PPSSPP didn't target Android 12, it's excepted from the rules on Android 11, for complicated reasons). To this end, on startup, PPSSPP will ask you to choose or create a folder for PSP data storage. If you don't, PPSSPP will have to resort to storing PSP savedata and similar in what's called the app's "External Files" folder, which is located in /Android/Data/org.ppsspp.ppsspp, or /Android/Data/org.ppsspp.ppssppgold. The setup I recommend is to simply create a PSP folder at the root of your storage. Note that this doesn't mean you have to store your ISO/CSO files here, they can be anywhere or in multiple locations - not a problem. First, when PPSSPP starts (or later in Settings/System/Memory Stick Location), choose "Create or use existing folder". You'll get the below folder picker. (If you don't, and instead get a red error message, click here). If you already have a PSP folder from an older installation of PPSSPP, just pick it, and click Use this folder. You're done. If your folder is named PSP, PPSSPP will not create a subdirectory called PSP inside it, and instead use the folder directly as the PSP directory in the root of the virtual memstick.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/save-data-and-storage"
+tags = ["android", "articles", "background", "community", "data", "development", "device", "documentation", "games", "getting started"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/getting-started/system-requirements"]
+title = "System requirements - PPSSPP"
+full_description = "PPSSPP is very efficient and can play most PSP games at great graphical quality on almost any PC or Mac hardware made in the last 10 years or even more. Do make sure to keep your graphics drivers up to date. Any Android device made in the last 10 years will be able to run PPSSPP, but performance will vary. Generally most newer devices that are not budget models will run all games without major performance issues."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/system-requirements"
+tags = ["android", "articles", "community", "development", "documentation", "fonts", "getting started", "hardware", "linux,", "multiplayer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/psp-hardware/gpu/image-formats"]
+title = "Image formats and tricks - PPSSPP"
+full_description = '''The PSP supports a relatively wide range of image formats, and can freely "cast" between them. That means that it can render to a buffer in R5G6B5 format for example, and then texture from it as if it was a CLUT16 texture. This allows for a huge variety of crazy tricks - for the zaniest example I've seen so far, check out this blog post about the lens flare in Burnout Dominator. The DXT formats don't perform well, likely due to being expanded to full RGBA in the texture cache, so see little use. One note is that the data order is reversed from the PC one. CLUT stands for Color Look Up Table, also commonly known as paletted image formats. There are four on the PSP: CLUT4, CLUT8, CLUT16 or CLUT32, where the number specifies the number of bits that represent each pixel. When using these formats, in reality it only does an 4-bit or 8-bit CLUT lookup because the available palette memory just isn't bigger than 256 entries. However, there's a shift and a mask property, that can be used to pick out any 8-or-smaller set of bits from each pixel of the source texture. It's also possible to texture from depth buffers, but unlike color buffers these are not organized linearly. To resolve this, the PSP has some extra logic in its memory addressing that lets you use special VRAM addresses to "unswizzle" the buffers, so they look like regular CLUT or RGB buffers as needed.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/psp-hardware/gpu/image-formats"
+tags = ["articles", "buffer", "clut", "community", "cpu - allegrex", "depth", "development", "documentation", "formats", "functionality"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/development/wsl"]
+title = "PPSSPP on WSL - PPSSPP"
+full_description = '''WSL or Windows Services for Linux is a convenient way to run a Linux VM on Windows. It's well-integrated and quite convenient. Recently, it has even added graphics support and it's now possible to build and run PPSSPP on WSL2, which can be very useful for debugging - especially for running various tools that only exist or work better on Linux like valgrind, address-sanitizer etc. PPSSPP now provides .vscode/tasks.json and .vscode/launch.json for your convenience, so debugging should "just work". The build task just runs a debug build, important to be aware of. Change it to --release or add an additional task if desired. Here's an example where we both use suppressions, and generate new ones (that you can then take from suppressions.log and simplify and copy to valgrind-wsl2.supp):'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/wsl"
+tags = ["articles", "community", "development", "differences", "documentation", "getting started", "known", "multiplayer", "porting", "ppsspp"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/settings"]
+title = "Settings - PPSSPP"
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/settings"
+tags = ["articles", "audio", "buttons", "community", "control", "development", "documentation", "getting started", "graphics", "hidden"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be"]
+
+["https://ppsspp.org"]
+title = "PPSSPP - PSP emulator for Android, Windows, Linux, macOS, iOS - PPSSPP"
+full_description = "PPSSPP can run your PSP games on your PC or Android phone in full HD resolution or even higher. It can also upscale textures to make them sharper, and you can enable post-processing shaders to adjust color and brightness the way you like, and other effects. PPSSPP is an open source project, licensed under the GPL 2.0 (or later). Anyone is welcome to contribute improvements to the code. Thanks to many such contributions, PPSSPP's compatibility is steadily increasing, letting us all play our PSP games on devices of our choice."
+year_published = 2025
+clearnet = "https://ppsspp.org"
+tags = ["1.18.1", "community", "documentation", "emulator", "enhance", "experience!", "free", "games", "latest", "links"]
+language = "en"
+internal-references = ["none"]
+external-references = ["discord.gg", "forums.ppsspp.org", "github.com", "x.com"]
+
+["https://ppsspp.org/news/ppsspp-gold-still-stuck"]
+title = "PPSSPP Gold still stuck in App Store Review - PPSSPP"
+full_description = "Here's a summary of the situation, along with the rejection letters, my replies and App Store Review's responses. I recommend all iOS users to use the free version of PPSSPP until this can be resolved, even if you paid for Gold to support the project!"
+year_published = 2025
+clearnet = "https://ppsspp.org/news/ppsspp-gold-still-stuck"
+tags = ["1.18", "2024-11-26", "community", "documentation", "gold", "henrik", "here!", "news", "ppsspp", "release"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/blog"]
+title = "Development blog - PPSSPP"
+full_description = '''In short, the Gold version of PPSSPP for iOS is stuck in review, and I am thus unable to update it at all, and I am also unable to update any aspect of the store presence, like the description. For now, I recommend all iOS users to use the free version of PPSSPP, even if you paid for Gold. PPSSPP is an open source PSP emulator, that lets you run your own PlayStation Portable games on your various devices. PPSSPP is officially available on Android through Google Play, PC, Mac, and recently iOS through the App Store. There is also a Linux flatpak build. The project is ongoing for more than 11 years now, and has been downloaded over 100M times. It has millions of active users on Android. PPSSPP is completely free to download (and compile if you want, since it's open source) but there's also an optional paid version to finance the development and maintenance of the project, buildbot, website, etc. The paid "Gold" version is, except cosmetically, identical to the free version. I've chosen this monetization model on the App Store to keep it consistent with the other platforms, where it's often the most practical one. In May this year, Apple changed its policies and started allowing game console emulators on the App Store. The change was of course followed by a bunch of emulator releases. Here are a few examples: For some time now, I have simply not been able to update the paid iOS version on Apple's App Store. The free version flies through review in a few hours, while the near-identical paid version is just stuck. Below is an authentic conversation with App Store Review. This is the second conversation, I previously had a much longer one, but it disappeared when I submitted a new build. The arguments were the same, just more rounds of back-and-forth. Your app's metadata contains content that is similar to third-party content, which may create a misleading association with another developer's app or intellectual property. We understand that the mentioning of the console is to provide more context to the users, including trademarked terms such as "PSP" in a non-referential way is still not appropriate.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/blog"
+tags = ["1.15", "1.15.x", "1.16", "1.17", "1.18", "1.18.1", "2023-01-22", "2023-04-30", "2023-05-22", "2023-09-09"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "developer.apple.com", "discord.gg", "en.wikipedia.org", "essentials.applesurveys.com", "faq.deltaemulator.com", "flathub.org", "folium.emuplace.app", "forums.ppsspp.org", "github.com", "henrikrydgard.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "tags", "x.com", "youtu.be"]
+
+["https://ppsspp.org/news/release-1.16"]
+title = "PPSSPP 1.16 is out! - PPSSPP"
+full_description = "Please note that as usual, the Android version on Google Play will as usual roll out slowly over multiple days in order to catch any bad crashes early, so you may have to wait a few days before you receive the update. Special thanks to [Unknown] for the new JIT compilers, and fp64 for finally cracking the vrnd instruction."
+year_published = 2025
+clearnet = "https://ppsspp.org/news/release-1.16"
+tags = ["1.15.4", "1.16", "1.16.1", "1.16.2", "1.16.3", "1.16.4", "1.16.5", "1.16.6", "2023-09-09", "android"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "youtu.be", "youtube.com"]
+
+["https://ppsspp.org/privacy"]
+title = "Privacy policy - PPSSPP - PPSSPP"
+full_description = "When you run a game that uses the PSP Camera, PPSSPP 1.5 or later may ask you for permission to use your device's camera to emulate it. This is only used within the game, and no images are ever uploaded anywhere. The only data collected is voluntary compatibility reports. This data is collected completely anonymously, only when manually enabled, and no personal data is ever collected or stored. The only data collected is voluntary compatibility reports. This data is collected completely anonymously, only when manually enabled, and no personal data is ever collected or stored. The only data collected is voluntary compatibility reports. This data is collected completely anonymously only when manually enabled, and no personal data is ever collected or stored. PPSSPP Gold for Windows/macOS can be purchased here. All purchase data is handled by Fastspring.com. Username and email are stored too, for the purposes of allowing log-ins and download of new versions of PPSSPP Gold in the future. Your e-mail address is kept private and will never be exposed in any way or used for any kind of marketing. The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security."
+year_published = 2025
+clearnet = "https://ppsspp.org/privacy"
+tags = ["android", "collection", "community", "documentation", "information", "platforms", "ppsspp", "privacy", "security", "windows"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/development/developer-tools"]
+title = "Developer tools - PPSSPP"
+full_description = '''A large amount of obscure settings and test screens that have been added over the years as needed to help development. Here are some guides to some of them that might be useful. This section will be expanded over time. This is due to graduate out to the normal settings soon, although, "Save new textures" kind of still belongs here so not sure what to do. When this is checked, new textures encountered while running a game will be saved to /PSP/TEXTURES/{GAME_ID}/new under your memstick directory. Directly recompiles MIPS code to native code for the platform PPSSPP runs on. Performs very well and is the default choice. Recompiles blocks of MIPS instructions into a specially designed "intermediate representation", which is faster to interpret than directly interpreting raw MIPS instructions. It also runs some optimization passes on this intermediate representation so it can often reduce the raw amount of instructions to interpret, compared to the regular interpreter. This takes the output from the IR interpreter and recompiles into native code. Theoretically, and also in practice most of the time, this can generate better code and thus runs faster than the Dynarec (JIT). However, it's not as well tested. Lets you selectively enable/disable different parts of the JIT. Useful for debugging, but checking these boxes will only make things slower, so not recommended for general use (like most of the things in developer tools). This makes a "DevMenu" button show up during gameplay, which provides direct access to a bunch of handy tools. It's also the only way to access the JIT block viewer and the shader viewer. Lets you choose one of a variety of overlays that shows various shows realtime information which can be useful for debugging games. It is primarily a developer option. This turns on and off multi-threaded rendering when using the Vulkan backend. Turning it off will generally lose you some performance. In reality, this is only useful for debugging. Shows a screen that tests some obscure state combinations that have been problematic in the past. Most modern phones pass these tests with flying colors.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/developer-tools"
+tags = ["allow", "android", "articles", "beta", "boot", "channels", "community", "core", "debug", "debugger"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org", "youtu.be"]
+
+["https://ppsspp.org/docs/development/known-differences"]
+title = "Known differences from the real PSP - PPSSPP"
+full_description = "PPSSPP tries to replicate the behavior of a real PSP, with regards to running games, as closely as possible, but there are known differences. Some of them are described below. Our audio reverb implementation is modeled on the PSX reverb function - we know that the PSP's reverb effect is different in some way, as the result is sometimes too loud, sometimes too weak, but it's very hard to know exactly how. The PSP firmware includes a set of fonts, that a small percentage of games use for some of their user interface. Unfortunately, these are of course copyrighted, so cannot be supplied with PPSSPP. It's possible to dump fonts on your own and have PPSSPP use them, but PPSSPP also has a set of built-in fonts that are very close in metric and work well for most games, so it's not really something to worry about, though some text may just look a little off compared to the real thing. The MIPS CPU in the PSP has separate data and instruction caches. The data cache can be easily bypassed by game code by doing | 0x40000000 to any pointer. This is mainly useful for writing data all the way out to RAM immediately so that the GPU can read it immediately, without any need for cache flushing. There's also a full set of cache invalidation instructions and other cache control functions. PPSSPP just pretends the caches are invisible, which they should be if games use them correctly. Which they don't always do - it's believed that a graphical glitch with fires in the Prince of Persia games is caused by some kind of cache misuse. The VFPU is a vector co-processor that is controlled with the same instruction stream as the main CPU. It has a lot of very complex instructions like cosines, square roots and so forth, and we haven't figured out the exact formulas behind these so instead we use approximations that are quick to compute. Additionally, dot products use a cool mantissa-aligning optimization, causing quite different results from a naive series of multiplications and adds. This means however there are sometimes some accuracy issues, especially in replays (such as the Ridge Racer built-in replays) that can go out of sync, and various physical and graphical problems such as shaking feet in Tekken 6 (since fixed)."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/known-differences"
+tags = ["accurate", "accurately", "articles", "atrac", "bit-accurate", "caches", "color", "community", "depth", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/docs/development/translation"]
+title = "Translation - PPSSPP"
+full_description = "PPSSPP is translated into a multitude of languages, but as you may have noticed, many of the translations are far from complete, and there are many still missing. Unfortunately it's not possible to have an on-duty team adding translations of every new string as they appear, so translations are dependent on volunteer efforts. If you'd like to contribute to translation, the easiest way to get started and to be able to test directly in the app is to use the Windows or another desktop version, and go into assets/lang under the main PPSSPP directory, and open the .ini file for the language you want to help with, and make or copy your changes there. To add a new language, just add a new language .ini file, and also add an entry in assets/langregion.ini. The language ini file should be named according to this table, or similar. When you make changes here, you may have to restart PPSSPP for them to take effect. Alternatively, you can directly to go to the assets/lang folder on GitHub and start editing the .ini file for the language you know. Once happy with your changes, you can submit a pull request on GitHub, or just email the finished .ini file to the maintainer."
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/development/translation"
+tags = ["articles", "community", "contribute", "development", "documentation", "editing", "file", "getting started", "multiplayer", "psp hardware"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "discord.gg", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/cdn-cgi/l/email-protection"]
+title = "Email Protection | Cloudflare"
+full_description = "The website from which you got to this page is protected by Cloudflare. Email addresses on that page have been hidden in order to keep them from being accessed by malicious bots. You must enable Javascript in your browser in order to decode the e-mail address. If you have a website and are interested in protecting it in a similar way, you can sign up for Cloudflare. Cloudflare Ray ID: 919e82822f5a141c • Your IP: Click to reveal 134.195.88.131 • Performance & security by Cloudflare"
+year_published = 2025
+clearnet = "https://ppsspp.org/cdn-cgi/l/email-protection"
+tags = ["919e82822f5a141c", "access", "address", "browser", "decode", "e-mail", "email", "enable", "javascript", "order"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cloudflare.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/docs/getting-started/introduction"]
+title = "Introduction to PPSSPP - PPSSPP"
+full_description = '''PPSSPP is a PSP emulator, which means that it can run games and other software that was originally made for the Sony PSP. The PSP had multiple types of software. The two most common are native PSP games on UMD discs and downloadable games (that were stored in the directory PSP/GAME on the "memory stick"). But there were also UMD Video discs, and PS1 games that could run in a proprietary emulator. PPSSPP does not run those. On Android, you can install PPSSPP like any other app from the Google Play Store or from the Huawei store, if that's what your device has. If your device doesn't have access to these stores, you can install the app by downloading the APK and then "side-loading" it onto your device. On PC, you have the option of a "portable" install (just a zip file to unzip where you want it) or you can use a traditional installer. Generally, the defaults should be fine, unless you want to set up controllers and so on. However, PPSSPP has a lot of functionality which means a lot of different settings. See the Settings section. On Android, if you installed PPSSPP from the Play or Huawei store, the app will auto update from time to time. New releases are made 2-3 times per year. If you installed via APK, you'll have to manually update by simply installing the new version on top of the old one. On PC, if you're using an installer, just download the new installer and run it, or alternatively if you do manual ZIP installs, just unzip the new version on top of the old one, overwriting files as you go. This will not touch your save data. Similarly on Mac, just download the new version and install it on top of the old one. Your data will not be lost. The original PSP saved data in a directory structure on the memory stick you had plugged into the device. PPSSPP mimics this by designating a folder as the memory stick and handling it exactly the same as the original hardware. On Android, on Android 10 and older, the memory stick will simply be /PSP in your USB-accessible storage partition. However, on Android 11 or newer, you have to create and choose a folder yourself. I recommend creating a PSP folder in the root of your storage, but it's up to you. See Save data and storage for more information.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/docs/getting-started/introduction"
+tags = ["articles", "community", "data", "development", "documentation", "games", "getting", "getting started", "installing", "introduction"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/legacybuilds"]
+title = "Ports, legacy builds and other downloads - PPSSPP"
+full_description = "You'll need a Switch enabled for homebrew to run this (and a 7z unpacker). You won't find an explanation about that here! The Legacy Edition for Android lets you use old permission rules on new devices, which can help Android TV devices without folder browsers. This is a Pandora port of PPSSPP. You will have to figure out how to install it :) Thanks to ptitSeb. A simple PSP program that draws a spinning cube. For testing that the emu works on your device before you dump your UMDs. PPSSPP 1.8 from March, 2019 is the last release that works on Windows XP. Newer versions simply do not launch. This is a BlackBerry 10 port of PPSSPP. Sideload the .bar from your computer using Sachesi or Chrome extension. Thanks to xsacha for doing the build. Once upon a time, long long ago, I ported PPSSPP to Windows Phone. Unfortunately I never got it to run well enough to be worth releasing, since JIT is fundamentally broken on Windows Phone (due to the lack of an API to invalidate the instruction cache), and the graphics driver was barely functional, causing many glitches."
+year_published = 2025
+clearnet = "https://ppsspp.org/legacybuilds"
+tags = ["android", "blackberry", "builds", "community", "cube", "documentation", "downloads", "edition", "harmattan", "legacy"]
+language = "en"
+internal-references = ["none"]
+external-references = ["copetti.org", "docusaurus.io", "dolphin-emu.org", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "issuetracker.google.com", "mamedev.org", "patreon.com", "play.google.com", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "testflight.apple.com", "tieba.baidu.com", "vita3k.org"]
+
+["https://ppsspp.org/news"]
+title = "Release News - PPSSPP"
+full_description = "Here's a summary of the situation, along with the rejection letters, my replies and App Store Review's responses. I recommend all iOS users to use the free version of PPSSPP until this can be resolved, even if you paid for Gold to support the project! NOTE! As usual, the Android version on Google Play will as usual roll out slowly over multiple days in order to catch any bad crashes early, so you may have to wait a few days before you receive the update. This special Android APK targets an older SDK version than the official builds, and is thus unaffected by the Scoped Storage API requirement. This can help various Android TV devices where you are currently unable to pick a folder to load an ISO from. Note that this can not be uploaded onto Google Play since it doesn't meet current requirements. The only way to install it is to sideload it via ADB or similar. If you know how to use APK files, you know what you need to do. PPSSPP for iOS 1.17.4 is out, however the Gold version is unfortuntately stuck in App Store review. If you have the free version installed, it will update automatically. PPSSPP for iOS 1.17.3 has now been released, both Gold and regular, and if you have one of them installed, you should be receiving the update shortly. The version that's online now is the same as the current Gold version, it includes these new features and fixes: PPSSPP for iOS 1.17.2, both regular and Gold, have been sent for review. The Gold version has passed and will roll out today. For the free version status, see below. This is the status of my apps in the App Store as I'm writing this, just before triggering the rollout of 1.17.2: Below you can find Apple's complaint (which, if accurate, would also apply to the Gold version, since it had the same contents in the homebrew store). Note that despite the complaint giving a 14-day deadline, the app was taken down immediately, which is odd. Additionally, in my opinion the complaint is incorrect because I don't believe anything previously on the homebrew store actually did infringe upon copyright."
+year_published = 2025
+clearnet = "https://ppsspp.org/news"
+tags = ["0.31", "0.5:", "0.6.1", "0.7.5", "0.7.6!", "0.7.6:", "0.8.1", "0.9.1", "0.9.5", "0.9.6"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/blog/tags/rendering-tricks"]
+title = "Development blog - PPSSPP"
+full_description = "In these posts, I'm going to look at some of the more interesting visual effects that games accomplish on the PSP, and how they do it. The PSP's GPU is very limited by modern standards, but it's still capable of quite a lot of interesting things if your really know how to use it. Lens flare effects are easy to do on modern GPUs. There are lots of different approaches, both image-based which can handle light sources of any shape but are generally not very detailed, and sprite-based, which are more limited in terms of the light source, but can look really complex and colorful. There are queries that can be used to figure out how many pixels actually got rendered when drawing the sun sprite, for example, that can be used to control the size and shape of the lens flare on the next frame, or you can read back the Z buffer directly while drawing the sprites. On old-school, fixed-function hardware such as that of the PSP, where you can’t even do multitexturing, and definitely can’t run any shader code, people had to get quite imaginative to achieve these effects. And the authors of Burnout Dominator certainly were, as we will see. Let's start by looking at the wrong result - the way it was in PPSSPP before I started investigating the effect: As you can see, the lens flare effect is visible going into the tunnel, and through various trees and stuff. First, it makes a backup copy of a 14x14 rectangle around the sun location on-screen, and then renders a black and a white rectangle on top, with only the black one being depth tested. The result is a binary mask of where the sun is visible. It then downsamples (through bilinear filtering) this binary image to 8x8, sitting out in the unused border of the main framebuffer. Then, it downsamples this 8x8 image three more times, until we reach a single value, which is thus the average of the black and white pixels, and thus an effective measurement of the coverage. The final value is for some obscure reason spread out over four pixels."
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/tags/rendering-tricks"
+tags = ["1.18", "2023-01-22", "applying", "blog", "burnout", "community", "computing", "coverage", "deep", "development"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]
+
+["https://ppsspp.org/blog/stuck-in-app-store-review"]
+title = "Talking to an App Store Review brick wall - PPSSPP"
+full_description = '''In short, the Gold version of PPSSPP for iOS is stuck in review, and I am thus unable to update it at all, and I am also unable to update any aspect of the store presence, like the description. For now, I recommend all iOS users to use the free version of PPSSPP, even if you paid for Gold. PPSSPP is an open source PSP emulator, that lets you run your own PlayStation Portable games on your various devices. PPSSPP is officially available on Android through Google Play, PC, Mac, and recently iOS through the App Store. There is also a Linux flatpak build. The project is ongoing for more than 11 years now, and has been downloaded over 100M times. It has millions of active users on Android. PPSSPP is completely free to download (and compile if you want, since it's open source) but there's also an optional paid version to finance the development and maintenance of the project, buildbot, website, etc. The paid "Gold" version is, except cosmetically, identical to the free version. I've chosen this monetization model on the App Store to keep it consistent with the other platforms, where it's often the most practical one. In May this year, Apple changed its policies and started allowing game console emulators on the App Store. The change was of course followed by a bunch of emulator releases. Here are a few examples: For some time now, I have simply not been able to update the paid iOS version on Apple's App Store. The free version flies through review in a few hours, while the near-identical paid version is just stuck. Below is an authentic conversation with App Store Review. This is the second conversation, I previously had a much longer one, but it disappeared when I submitted a new build. The arguments were the same, just more rounds of back-and-forth. Your app's metadata contains content that is similar to third-party content, which may create a misleading association with another developer's app or intellectual property. We understand that the mentioning of the console is to provide more context to the users, including trademarked terms such as "PSP" in a non-referential way is still not appropriate.'''
+year_published = 2025
+clearnet = "https://ppsspp.org/blog/stuck-in-app-store-review"
+tags = ["1.18", "2024-11-26", "5.2.2", "apple", "blog", "brick", "community", "conclusion", "copycats", "design"]
+language = "en"
+internal-references = ["none"]
+external-references = ["apps.apple.com", "discord.gg", "docusaurus.io", "embark-studios.com", "en.wikipedia.org", "essentials.applesurveys.com", "f-droid.org", "faq.deltaemulator.com", "flathub.org", "forums.ppsspp.org", "github.com", "millionthline.com", "patreon.com", "play.google.com", "retroachievements.org", "retroarch.com", "richwhitehouse.com", "soundtrackyourbrand.com", "tieba.baidu.com", "youtu.be"]

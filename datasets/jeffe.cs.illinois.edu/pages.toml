@@ -1,0 +1,695 @@
+["https://jeffe.cs.illinois.edu/teaching/comptop/2023"]
+title = "One-Dimensional Computational Topology"
+full_description = '''This course is an introduction to my favorite facet of computational topology: Algorithms for curves and graphs embedded in the plane or other surfaces. Algorithmic questions about curves have been a driving force in topology since its inception more than a century ago. Planar and near-planar graphs have long been fertile ground for algorithms research, both because they naturally model many classes of networks that arise in practice, and because they admit simpler and faster algorithms than more general graphs. There is a rich interplay between these two domains, drawing on a common pool of techniques from geometry, topology, and combinatorics. Potential topics include topological graph theory; homotopy, homology, and other topological invariants; specialized algorithms for shortest paths, maximum flows, and minimum cuts; efficient approximation schemes for NP-hard problems; and applications in VLSI design, computer graphics, computer vision, motion planning, geographic information systems, and other areas of computing. Specific topics will depend on the interest and expertise of the students. Students in all areas of computer science, mathematics, and related disciplines are welcome. CS 473 and/or Math 525 are recommended as prerequisites, but not required; necessary background material will be introduced as needed. Undergraduates interested in taking this course should petition for a registration override as soon as possible. This course does not satisfy the "Theory and Algorithms" breadth requirement for MCS and MS students, but it can be used to satisfy the Advanced Coursework requirement. The selection of topics in this class is necessarily limited by the finiteness of a single semester and by my own interests and expertise. Important topics in computational topology that I will not cover this semester, except perhaps briefly in passing, include automatic groups, knot theory, 3-manifolds, cell complexes (simplicial, cubical, Delta, CW, simplicial sets), algorithms for CAT(0)-complexes, discrete Morse theory, normal surface theory, configuration spaces, dynamical systems, persistent homology and its generalizations, surface reconstruction, manifold learning, topological data analysis, embedding obstructions, higher-order homotopy, discrete differential geometry, applied Hodge theory, fixed-point theorems, PPAD-completeness, algebraic complexity, $\exists\mathbb{R}$-hardness and "Murphy's Law" universality, evasiveness of graph properties, impossibility results in distributed computing, and topological quantum computing. The full diversity of techniques, results, applications, and even definitions of computational topology could easily fill a dozen courses.'''
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/teaching/comptop/2023"
+tags = ["2013,", "2017,", "2020,", "2–3", "6zw4d7", "announcements", "class", "classes", "computational", "course"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.de", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "pbs.org", "prairielearn.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/copyright.html"]
+title = "Copyright notice"
+full_description = '''Take a look at the copyright transfer agreement that all ACM authors are required to sign. Almost every publisher requires a similar contract, forcing the author to relinquish, at least in principle, all rights to their own work. (To their credit, ACM and most other publishers now explicitly allow papers to be posted to the author's web site "for limited non-commercial distribution".) According to ACM, this transfer of rights is necessary to ensure the "quality" and "integrity" of their publications, and to "protect the author's interests against plagiarism". Yeah, right. And monkeys might fly out of my butt. The issue is especially frustrating in light of the growing number of volunteer- and grant-supported electronic distribution methods, which on the one hand have much lower costs than traditional paper journals (if any!), and on the other hand recognize that the purpose of scientific publication is to disseminate information, not to make a profit. Many electronic journals, such as the Electronic Journal of Combinatorics and the The Journal of Graph Algorithms and Applications, have much less annoying agreements. The arXiv requires no copyright transfer at all. Let's not even mention voluntary page charges, or their mutant offspring, "author-pays" open access. As David Eppstein aptly put it, "Outside of academia, publishers who charge their authors for the privilege of being published are known as vanity presses." I encourage you to copy and distribute any of these papers, in any medium, for any noncommercial purpose, at no charge to anyone. That's why they're here! However, if any money (beyond the actual cost of reproduction) is going to change hands, you need permission first, and you won't get it from me. The Fair Use clauses of United States copyright law explicitly allow you to make personal copies of any copyrighted work for research or teaching use, including multiple copies for classroom use. For more information/propaganda about copyright issues, see the Association of Research Libraries' Copyright and Intellectual Property site and their "Subversive" Proposal for Electronic Publishing, as well as the white paper "Who Should Own Scientific Papers?" by Steven Bachrach et al.'''
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/copyright.html"
+tags = ["advances", "agencies", "anyone.", "anything", "art.", "articles", 'arts."', "assures", "author.", "authors"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/hexmesh.html"]
+title = "Efficiently Hex-Meshing Things with Topology"
+full_description = "Discrete & Computational Geometry 52(3):427–449, 2014 (special issue of invited papers from the 29th Annual Symposium on Computational Geometry)"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/hexmesh.html"
+tags = ["abstract:", "efficiently", "hex-meshing", "things", "topology"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/multishort.html"]
+title = "Multiple-Source Shortest Paths in Embedded Graphs"
+full_description = "Preliminary version (without my contributions) in Proceedings of the 18th Annual ACM-SIAM Symposium on Discrete Algorithms, 89–97, 2007."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/multishort.html"
+tags = ["abstract:", "also:", "embedded", "graphs", "multiple-source", "paths", "shortest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu", "www1.bell-labs.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/convex.html"]
+title = "New lower bounds for convex hull problems in odd dimensions"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/convex.html"
+tags = ["abstract:", "bounds", "convex", "correct", "dimensions", "hull", "lower", "problems"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/boundary.html"]
+title = "Output-Sensitive Algorithms for Computing Nearest-Neighbor Decision Boundaries"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/boundary.html"
+tags = ["abstract:", "algorithms", "boundaries", "computing", "decision", "nearest-neighbor", "output-sensitive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/essential.html"]
+title = "Computing the Shortest Essential Cycle"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/essential.html"
+tags = ["abstract:", "computing", "cycle", "essential", "shortest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/compgeom"]
+title = "Computational Geometry Pages"
+description = "A comprehensive directory of computational geometry resources"
+full_description = "Welcome to the Computational Geometry Pages, a (hopefully) comprehensive directory of computational geometry resources both on and off the Internet. If there is something you'd like to see here, please send me email. Contributions and suggestions from the community are always welcome! Other essential computational geometry sites include Nina Amenta's Directory of Computational Geometry Software, Hervé Brönnimann's CG Tribune (a newsletter with events and announcements), David Eppstein's Geometry in Action (describing applications of computational geometry in the Real World), and the Los Alamos e­print archive's collection of computational geometry papers [new, recent, current, search] moderated by Joe O'Rourke. There are also several excellent Web pages devoted to theoretical computer science in general. See especially Suresh Venkatasubramanian's Theoretical Computer Science on the Web and the ACM SIGACT home page. General Resources The Computational Geometry Impact Task Force Report Discussion Related resources Web Directories Really important stuff Computational geometers Other computational geometry pages Miscellaneous Discussion Forums Mailing lists Usenet newsgroups Newsletters Related Subjects Geometric application areas Geometry and discrete mathematics Theoretical computer science Computer science in general Research and Teaching Research Groups Course Materials Job Announcements Events Past Events Computational geometry Algorithms Geometric application areas Upcoming Events Upcoming events Ongoing events Upcoming Deadlines Other Calendars Literature Bibliographies The Geometry Literature Database Other bibliographies Comprehensive Specific Technical report and preprint services Journals Primary computational geometry journals Related journals Algorithms and complexity Graphics and other applications Mathematics Journal publishers Other journal lists Special Journal Issues Upcoming deadlines Published To appear Books Textbooks and primary references Surveys and collections Specialized and related topics Publishers For conference proceedings, see Past Events Software Software Libraries Nina Amenta's Directory of Computational Geometry Software Integrated libraries Other collections Code Robust low­level primitives Combinatorics and discrete math Geometric optimization Convex hulls and convex polytopes Voronoi diagrams and Delaunay triangulations Operations on polygons Mesh generation and manipulation Geometric modeling Visibility computation Visualization tools Other Interactive Software Delaunay triangulations and Voronoi diagrams Other"
+author = "Jeff Erickson"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/compgeom"
+tags = ['"a-href-equals"', "adage", "air.", "algorithm", "algorithmic", "almost", "anything", "appreciate", "better", "bibliographies"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/disjoint.html"]
+title = "Four Shortest Vertex-Disjoint Paths in Planar Graphs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/disjoint.html"
+tags = ["abstract:", "four", "graphs", "paths", "planar", "shortest", "vertex-disjoint"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/barycenter.html"]
+title = "Planar and Toroidal Morphs Made Easier"
+full_description = "🔥To appear in Proceedings of the 29th International Symposium on Graph Drawing and Network Visualization, 2021. Lecture Notes in Computer Science 12868, Springer. 🔥Submitted by invitation to the special issue of Journal of Graph Algorithms and Applications devoted to the conference. First, we give a much simpler algorithm to construct piecewise-linear morphs between planar straight-line graphs. Specifically, given isomorphic straight-line drawings Γ₀ and Γ₁ of the same 3-connected planar graph, with the same convex outer face, we construct a morph from Γ₀ to Γ₁ that consists of O(n) unidirectional morphing steps, in O(n1+ω/2) time. Our algorithm entirely avoids the classical edge-collapsing strategy dating back to Cairns; instead, in each morphing step, we interpolate the pair of weights associated with a single edge. Second, we describe a natural extension of barycentric interpolation to geodesic graphs on the flat torus. Barycentric interpolation cannot be applied directly in this setting, because the linear systems defining intermediate vertex positions are not necessarily solvable. We describe a simple scaling strategy that circumvents this issue. Computing the appropriate scaling requires O(nω/2) time, after which we can can compute the drawing at any point in the morph in O(nω/2) time. Our algorithm is considerably simpler than the recent algorithm of Chambers et al. and produces more natural morphs. Our techniques also yield a simple proof of a conjecture of Connelly et al. for geodesic torus triangulations."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/barycenter.html"
+tags = ["abstract:", "easier", "made", "morphs", "planar", "toroidal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/conelb.html"]
+title = "On the Complexity of Halfspace Volume Queries"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/conelb.html"
+tags = ["abstract:", "complexity", "halfsapce", "queries", "volume"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/arith.html"]
+title = "Finding longest arithmetic progressions"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/arith.html"
+tags = ["abstract:", "arithmetic", "finding", "longest", "progressions"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/local.html"]
+title = "Local Polyhedra and Geometric Graphs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/local.html"
+tags = ["abstract:", "geometric", "graphs", "local", "polyhedra"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/kimpix.html"]
+title = "Pictures of/by Kim"
+full_description = '''Here's a picture from Kim's recently completed PhD thesis, "An All Pseudo­Anosov Subgroup for the Genus Two Surface". You'll have to ask her what it means.'''
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/kimpix.html"
+tags = ["of/by", "pictures"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "pbs.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/carrots.html"]
+title = "Minimum-Cost Coverage of Point Sets by Disks"
+full_description = "We obtain several new results, including (a) exact and approximation algorithms for selecting transmission points on a given line in order to cover the demand points; (b) approximation algorithms (and an algebraic intractability result) for selecting an optimal line on which to place transmission points to cover the demand points; and (c) a polynomial-time approximation scheme for the problem of computing a minimum cost covering tour, in which the total cost is a linear combination of the transmission cost for the set of disks and the length of a path that connects the centers of the disks."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/carrots.html"
+tags = ["abstract:", "coverage", "disks", "minimum-cost", "point", "rumors", "sets", "shoes", "spread", "voice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["http://jeffe.cs.illinois.edu"]
+title = "Jeff Erickson"
+full_description = "Jeff Erickson Sohaib and Sara Abbasi Professor Siebel School of Computing and Data Science University of Illinois Urbana-Champaign Contact Info Research CV [pdf] Publications (by subject) Teaching Fall 2025: CS/ECE 374: Algorithms & Models of Computation (tentative) 🔥 Spring 2025: CS 598: Advanced Data Structures Fall 2024: CS/Math 473: Algorithms (co-taught with Makrand Sinha) Spring 2024: CS 225 Honors Fall 2023: CS/ECE 374: Algorithms & Models of Computation Spring 2023: CS 598: 1D Computational Topology TheorieLearn: Autograded scaffolding for CS theory classes 🔥 We are hiring Spring 2025 developers! Public practice problems! Free algorithms textbook and other course materials Paperback edition available from Amazon Current Students Katherine Braught (co-advised with Colleen Lewis) Hongxuan Chen (co-advised with Geoffery Herman) Christian Howard Alex Jin My most prestigious academic award ever. Family!"
+year_published = 2025
+clearnet = "http://jeffe.cs.illinois.edu"
+tags = ["2023:", "2024:", "2025:", "abbasi", "able", "academic", "algorithms", "always", "award", "beer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "pbs.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/degen.html"]
+title = "Better lower bounds on detecting affine and spherical degeneracies"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/degen.html"
+tags = ["abstract:", "affine", "better", "bounds", "degeneracies", "detecting", "erratum", "lower", "note:", "spherical"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/linsat.html"]
+title = "Lower bounds for linear satisfiability problems"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/linsat.html"
+tags = ["abstract:", "bounds", "linear", "lower", "note:", "problems", "satisfiability"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/homcover.html"]
+title = "Minimum Cuts and Shortest Non-Separating Cycles via Homology Covers"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/homcover.html"
+tags = ["abstract:", "covers", "cuts", "cycles", "homology", "minimum", "non-separating", "shortest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/capture.html"]
+title = "Capturing a Convex Object with Three Discs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/capture.html"
+tags = ["abstract:", "capturing", "convex", "discs", "object", "three"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/hopcroft.html"]
+title = "New lower bounds for Hopcroft's problem"
+full_description = "Technical Report A/04/94, Fachberiech Informatik, Universität des Saarlandes, Saarbrücken, Germany."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/hopcroft.html"
+tags = ["abstract:", "also:", "bounds", "hopcroft's", "improvements!", "lower", "problem", "recent", "update"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/research.html"]
+title = "Jeff Erickson's Research"
+full_description = "Almost all of my algorithms research has been supported by the National Science Foundation, under a Mathematical Sciences Research Postdoctoral Fellowship, a CAREER award (CCF-0093348), and several other grants (DMR-0121695, CCF-0219594, DMS-0528086, CCF-0915519, OCI-0948393, CCF-1408763, and CCF-1725544). I was also supported by a Sloan Research Fellowship from 1999 to 2002. My computer science education research has been supported by multiple grants from the Strategic Instructional Innovations Program in the Grainger College of Engineering, with additional in-kind support from the Siebel School for Computing and Data Science, and more recently by the National Science Foundation (CCF-2434363)."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/research.html"
+tags = ['"lower', '"theoretical', "8:30", "algorithms,", "alper", "amir", "berkeley,", "bounds", "bunde", "came"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "acs.oakland.edu", "ae3.grainger.illinois.edu", "algo.inf.uni-tuebingen.de", "asee.org", "auburn.edu", "cg.scs.carleton.ca", "cgi.di.uoa.gr", "cgroenland.wordpress.com", "christianjhoward.me", "cise.ufl.edu", "courses.engr.illinois.edu", "flickr.com", "hobotopia.com", "illinois.edu", "katherinebraught.github.io", "math.uiuc.edu", "pbs.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/gohog.html"]
+title = "Greedy Optimal Homotopy and Homology Generators"
+full_description = "Note: Since this paper appeared, Éric Colin de Verdière discovered a considerably simpler proof that the greedy system of loops is optimal."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/gohog.html"
+tags = ["abstract:", "generators", "greedy", "homology", "homotopy", "john", "memory", "note:", "optimal", "whittlesey"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/dehn.html"]
+title = "Transforming Curves on Surfaces Redux"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/dehn.html"
+tags = ["abstract:", "curves", "redux", "surfaces", "transforming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/3dbsp.html"]
+title = "Kinetic BSPs for intersecting segments and disjoint triangles"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/3dbsp.html"
+tags = ["abstract:", "binary", "disjoint", "intersecting", "kinetic", "partitions", "segments", "space", "triangles"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/blocking.html"]
+title = ""
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/blocking.html"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/holiest.html"]
+title = "Holiest minimum-cost paths and flows in surface graphs"
+full_description = "Finally, we open the black box to generalize a recent linear-time algorithm for multiple-source shortest paths in unweighted undirected planar graphs to work in arbitrary surfaces. Our algorithm runs in O(g²n log g) time in this setting, and can be used to give improved linear-time algorithms for several problems in unweighted, undirected, surface-embedded graphs of constant genus, including the computation of minimum cuts, shortest topologically non-trivial cycles, and minimum homology bases."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/holiest.html"
+tags = ["abstract:", "flows", "graphs", "holiest", "minimum-cost", "paths", "surface"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/fastweak.html"]
+title = "Recognizing Weakly Simple Polygons"
+full_description = "Discrete & Computational Geometry 58(4):785–821, 2017. (Special issue of invited papers from the 32nd International Symposium on Computational Geometry)"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/fastweak.html"
+tags = ["abstract:", "polygons", "recognizing", "simple", "weakly"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/halfempty.html"]
+title = "New Lower Bounds for Halfspace Emptiness"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/halfempty.html"
+tags = ["abstract:", "bounds", "emptiness", "halfspace", "lower"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/optcycles.html"]
+title = "Combinatorial optimization of cycles and bases"
+full_description = "Advances in Applied and Computational Topology (Afra Zomorodian, editor), pp. 195–228. Proceedings of Symposia in Applied Mathematics 70, American Mathematical Society, 2012. (Proceedings of the Short Course on Computational Topology at the 2011 Joint Mathematics Meetings)"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/optcycles.html"
+tags = ["abstract:", "bases", "combinatorial", "cycles", "optimization"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu", "www1.bell-labs.com"]
+
+["https://jeffe.cs.illinois.edu/index.html"]
+title = "Jeff Erickson"
+full_description = "Jeff Erickson Sohaib and Sara Abbasi Professor Siebel School of Computing and Data Science University of Illinois Urbana-Champaign Contact Info Research CV [pdf] Publications (by subject) Teaching Fall 2025: CS/ECE 374: Algorithms & Models of Computation (tentative) 🔥 Spring 2025: CS 598: Advanced Data Structures Fall 2024: CS/Math 473: Algorithms (co-taught with Makrand Sinha) Spring 2024: CS 225 Honors Fall 2023: CS/ECE 374: Algorithms & Models of Computation Spring 2023: CS 598: 1D Computational Topology TheorieLearn: Autograded scaffolding for CS theory classes 🔥 We are hiring Spring 2025 developers! Public practice problems! Free algorithms textbook and other course materials Paperback edition available from Amazon Current Students Katherine Braught (co-advised with Colleen Lewis) Hongxuan Chen (co-advised with Geoffery Herman) Christian Howard Alex Jin My most prestigious academic award ever. Family!"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/index.html"
+tags = ["2023:", "2024:", "2025:", "abbasi", "able", "academic", "algorithms", "always", "award", "beer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/flat2flat.html"]
+title = "Flat-State Connectivity of Linkages under Dihedral Motions"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/flat2flat.html"
+tags = ["abstract:", "connectivity", "dihedral", "flat-state", "linkages", "motions", "under"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "scs.carleton.ca", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/minpoly.html"]
+title = "Optimal Curve Straightening is ∃ℝ-Complete"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/minpoly.html"
+tags = ["abstract:", "curve", "optimal", "straightening", "∃ℝ-complete"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/fusible.html"]
+title = "Fusible Numbers and Peano Arithmetic"
+full_description = "Proceedings of the 36th Annual ACM/IEEE Symposium on Logic in Computer Science, 1–13, 2021. Distinguished Paper. 🔥Submitted by invitation to the special issue of Logical Methods in Computer Science devoted to the conference."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/fusible.html"
+tags = ["abstract:", "arithmetic", "fusible", "numbers", "peano"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/gridvis.html"]
+title = "Finite-resolution hidden surface removal"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/gridvis.html"
+tags = ["abstract:", "finite­resolution", "hidden", "removal", "surface"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/ccw.html"]
+title = "Topologically Trivial Closed Walks in Directed Surface Graphs"
+full_description = "🔥 Discrete & Computational Geometry 64(4):1253–1294, 2020. (Special issue of invited papers from the 35th International Symposium on Computational Geometry) We also describe three polynomial-time algorithms to compute shortest contractible closed walks, depending on whether the fundamental group of the surface is free, abelian, or hyperbolic. A key step in our algorithm for hyperbolic surfaces is the construction of a context-free grammar with O(g2L2) non-terminals that generates all contractible closed walks of length at most L, and only contractible closed walks, in a system of quads of genus g≥2. Finally, we show that computing shortest simple contractible cycles, shortest simple bounding cycles, and shortest bounding closed walks are all NP-hard."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/ccw.html"
+tags = ["abstract:", "closed", "directed", "graphs", "surface", "topologically", "trivial", "walks"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/teaching/225H"]
+title = "CS 225 Honors — Spring 2024"
+full_description = '''Potential topics include sequence data structures (stacks, queues, steques, quacks, deques, dynamic arrays, catenable lists, list ordering), amortized analysis, time/space tradeoffs, self-adjusting data structures, competitive analysis, disjoint-set data structures, randomized data structures, ordered dictionaries (AVL trees, red-black trees, splay trees, scapegoat trees, treaps, skip lists), priority queues (binary heaps, Fibonacci heaps, quake heaps, pairing heaps), text data structures (ropes), and geometric data structures (range trees, interval trees, sweepline algorithms, multilevel search trees). Obviously we won't cover everything in this list. As a "description of special work to be completed for honors credit" in the HCLA, write "Additional exercises on data structure design and analysis". Each college runs its own independent James Scholar program, and different colleges have different deadlines for submitting HCLAs. These are the deadlines I have found online, in chronological order, but you should confirm your deadline well in advance with your college advisor: Satisfactory completion of the honors coursework earns you an "H" after your CS 225 grade (assuming that grade is B– or better), which has no effect on your GPA. Satisfactory completion of the honors coursework earns you a grade of "S" (satisfactory) in CS 199–225, which has no effect on your GPA.'''
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/teaching/225H"
+tags = ["honors", "james", "obviously", "potential", "scholar:", "spring"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ae3.grainger.illinois.edu", "algo.inf.uni-tuebingen.de", "asee.org", "auburn.edu", "cise.ufl.edu", "courses.engr.illinois.edu", "creativecommons.org", "cs.cmu.edu", "cs.uwaterloo.ca", "donsheehy.github.io", "flickr.com", "hdfs.illinois.edu", "illinois.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "mathjax.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/kollide.html"]
+title = "Separation-sensitive collision detection for convex objects"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/kollide.html"
+tags = ["abstract:", "collision", "convex", "detection", "objects", "separation­sensitive"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/flipturn.html"]
+title = "Flipturning polygons"
+full_description = "Technical Report UU-CS-2000-31, Department of Computer Science, Utrecht University, 2000. arXiv:cs.CG/0008010"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/flipturn.html"
+tags = ["abstract:", "flipturning", "polygons"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "gordo.us.es", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/layering.html"]
+title = "Novice Difficulties in Graph Layering for Algorithm Design"
+full_description = "To appear in Proceedings of the 56th ACM Technical Symposium on Computer Science Education, V. 2, 2025."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/layering.html"
+tags = ["abstract:", "algorithm", "design", "difficulties", "graph", "layering", "novice"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/biblook.html"]
+title = "Biblook/bibindex 2.9"
+description = "Public domain software for searching bibtex files"
+full_description = '''Bibindex is a support program that creates an index file for later use by biblook. You run bibindex once for each bibtex file you have. The indexing makes searching with biblook much faster than using something like grep or emacs. For details on how the indexing is done, see the bibindex man page. Version 2.9 of bibindex/biblook was released on March 30, 1998. Thanks to Sariel Har-Peled, biblook now supports limited pattern matching. Search terms can contain multiple instances of ? (meaning any single character) and * (any string, including the empty string). For example, the query "find title *oi?t*" will find entries with title words like "disjoint", "moist", "points", "oiltanker", etc. Biblook and bibindex were written by me, with numerous additions and bug fixes by other folks, especially Nelson Beebe, Sariel Har-Peled, Bill Jones, and Erik Schoenfelder. Their specific contributions are noted in the revision histories at the beginning of the source files. Bill Jones has completely taken over maintenance of the program, as part of the computational geometry bibliography project. Versions of biblook and bibindex through 2.9 are in the public domain. That means you may use them, modify them, an even sell them to your heart's content, at your own risk, without my permission. Version 2.10, which includes the GNU readline utility, is distributed with Debian Linux under the Gnu Public Licence, thanks to a cute little meme-infestation clause. Both programs are written in ANSI C and should compile under any ANSI-compliant C compiler. (I recommend gcc.) The version 2.9 source code is available as 44K gzipped tar file.'''
+author = "Jeff Erickson"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/biblook.html"
+tags = ["1998.", "bibindex", "bibindex/biblook", "bibliography", "biblook", "biblook/bibindex", "bibtex", "domain", "march", "public"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/teaching/datastructures"]
+title = "Advanced Data Structures"
+full_description = "I will be traveling during finals week, so I have moved the project presentations to the last week and a half of classes, and moved the project proposal deadline back one week (to March 31). The paper chase deadline is unchanged. Unfortunately, I do not expect that everyone who wants to take the class will eventually get in. So far registration has been limited to computer science graduate students. In principle, registration will open to all students by the first week of the semester; in practice, however, registration slots will open only if currently registered students drop. Registration will be on a first-come-first-served basis, and I cannot promise that late registration will be possible. Students who are still interested in taking the class are welcome to attend the lectures if and only if seats are available. All lectures will be recorded. This course will survey important developments in data structures that go beyond the typical undergraduate computer science curriculum. Potential topics include: balanced search trees, priority queues (e.g., Fibonacci heaps), amortized analysis, the union-find problem, hashing, geometric data structures (e.g., range searching), approximate nearest neighbor search (e.g., locality-sensitive hashing), bit-packing techniques (e.g., fusion trees and succinct data structures), persistent data structures, dynamic graph algorithms (e.g., dynamic connectivity and shortest paths), distance oracles, strings and text indexing (e.g., suffix trees), I/O-efficient data structures, and (conditional) lower bounds. The precise topics will depend on the interests and background of the course participants. Prerequisites: Students in all areas of computer science and related disciplines are welcome, including algorithmically mature undergraduates. Undergraduates interested in taking this course should petition for a registration override as soon as possible. A theoretically-oriented undergraduate algorithms course at the level of CS 473 is a prerequisite; however, specific background material will be introduced as needed."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/teaching/datastructures"
+tags = ["advanced", "announcements", "available", "class", "completely", "corrected", "course", "data", "full.", "homework"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.de", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "pbs.org", "prairielearn.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/cdsimple.html"]
+title = "Kinetic collision detection for two simple polygons"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/cdsimple.html"
+tags = ["abstract:", "collision", "detection", "kinetic", "polygons", "simple"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/global.html"]
+title = "Global Minimum Cuts in Surface Embedded Graphs"
+full_description = "Previously, the best time bounds known for this problem followed from two algorithms for general sparse graphs: a randomized algorithm of Karger that runs in O(n log3n) time and succeeds with high probability, and a deterministic algorithm of Nagamochi and Ibaraki that runs in O(n2 log n) time. We can also achieve a deterministic gO(g)n2log log n time bound by repeatedly applying the best known algorithm for minimum (s,t)-cuts in surface graphs. The bulk of our work focuses on the case where the dual of the minimum cut splits the underlying surface into multiple components with positive genus."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/global.html"
+tags = ["abstract:", "cuts", "embedded", "global", "graphs", "minimum", "note:", "surface"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu"]
+title = "Jeff Erickson"
+full_description = "Jeff Erickson Sohaib and Sara Abbasi Professor Siebel School of Computing and Data Science University of Illinois Urbana-Champaign Contact Info Research CV [pdf] Publications (by subject) Teaching Fall 2025: CS/ECE 374: Algorithms & Models of Computation (tentative) 🔥 Spring 2025: CS 598: Advanced Data Structures Fall 2024: CS/Math 473: Algorithms (co-taught with Makrand Sinha) Spring 2024: CS 225 Honors Fall 2023: CS/ECE 374: Algorithms & Models of Computation Spring 2023: CS 598: 1D Computational Topology TheorieLearn: Autograded scaffolding for CS theory classes 🔥 We are hiring Spring 2025 developers! Public practice problems! Free algorithms textbook and other course materials Paperback edition available from Amazon Current Students Katherine Braught (co-advised with Colleen Lewis) Hongxuan Chen (co-advised with Geoffery Herman) Christian Howard Alex Jin My most prestigious academic award ever. Family!"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu"
+tags = ["2023:", "2024:", "2025:", "abbasi", "able", "academic", "algorithms", "always", "award", "beer"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "amazon.com", "christianjhoward.me", "courses.engr.illinois.edu", "cs.illinois.edu", "en.wikipedia.org", "forms.gle", "illinois.edu", "katherinebraught.github.io", "kibo.com", "linkedin.com", "makrandsinha.github.io", "prairielearn.org", "publish.illinois.edu", "quora.com", "safetoc.org", "theorielearn.github.io", "youtu.be", "youtube.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/frechet.html"]
+title = "Walking Your Dog in the Woods in Polynomial Time"
+full_description = "Computational Geometry: Theory and Applications 43(3):295–311, 2010. (Special issue of invited papers from the 24th Annual Symposium on Computational Geometry) My final contribution to Elsevier. (Here are some reasons.)"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/frechet.html"
+tags = ["abstract:", "contribution", "elsevier.", "final", "polynomial", "walking", "woods"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "suncats.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/mctorus.html"]
+title = "A Toroidal Maxwell-Cremona-Delaunay Correspondence"
+full_description = "🔥 Full version invited and submitted to the special issue of Journal of Computational Geomettry devoted to the conference."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/mctorus.html"
+tags = ["abstract:", "correspondence", "maxwell-cremona-delaunay", "toroidal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/halfslab.html"]
+title = "On the Least Median Square Problem"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/halfslab.html"
+tags = ["abstract:", "least", "median", "problem", "square"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/kindex.html"]
+title = "Indexing moving points"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/kindex.html"
+tags = ["abstract:", "also:", "indexing", "moving", "points"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/teaching/index.html"]
+title = "Jeff Erickson's Teaching"
+full_description = "Give a man a fish, and he'll eat for a day. Teach a man to fish, and he'll eat for a lifetime. Teach a man to teach, and the whole village will eat forever, but you'll be out of a job."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/teaching/index.html"
+tags = ["2022:", "day.", "erickson's", "fish,", "forever,", "he'll", "hell", "isn't", "jeff", "job."]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "pbs.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/motwork.html"]
+title = "Algorithmic Issues in Modeling Motion"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/motwork.html"
+tags = ["abstract:", "algorithmic", "issues", "modeling", "motion"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu", "www1.bell-labs.com"]
+
+["https://jeffe.cs.illinois.edu/address.html"]
+title = "Jeff Erickson's Contact Info"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/address.html"
+tags = ["administrative:", "contact", "electronic:", "erickson's", "info", "jeff", "physical:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "amazon.com", "city.urbana.il.us", "courses.engr.illinois.edu", "cs.illinois.edu", "en.wikipedia.org", "forms.gle", "illinois.edu", "katherinebraught.github.io", "linkedin.com", "makrandsinha.github.io", "maps.google.com", "prairielearn.org", "publish.illinois.edu", "quora.com", "safetoc.org", "state.il.us", "theorielearn.github.io", "youtu.be", "youtube.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/cycles.html"]
+title = "Raising roofs, crashing cycles, and playing pool"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/cycles.html"
+tags = ["abstract:", "applications", "crashing", "cycles,", "data", "finding", "interactions", "pairwise", "playing", "pool:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/fsmbuilder.html"]
+title = "FSM Builder: A Tool for Writing Autograded Finite Automata Questions"
+full_description = "To appear in Proceedings of the 29th Annual ACM Conference on Innovation and Technology in Computer Science Education, 2024. We introduce the FSM Builder, a new pedagogical tool enabling students to practice constructing DFAs and NFAs with a graphical editor, giving personalized feedback and partial credit. The algorithms used for generating these are heavily inspired by previous works. The key advantages to its competitors are greater flexibility and scalability. This is because the FSM Builder is implemented using efficient algorithms from an open source package, allowing for easy extension and question creation. We discuss the implementation of the tool, how it stands out from previous tools, and takeaways from experiences of using the tool in multiple large courses. Survey results indicate the interface and feedback provided by the tool were useful to students."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/fsmbuilder.html"
+tags = ["abstract:", "autograded", "automata", "builder:", "finite", "questions", "tool", "writing"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/dihedral.html"]
+title = """
+Preprocessing chains for fast dihedral rotations is hard or
+even impossible"""
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/dihedral.html"
+tags = ["abstract:", "chains", "dihedral", "fast", "hard", "impossible", "preprocessing", "rotations"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/chordsep.html"]
+title = "Separating Point Sets in Polygonal Environments"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/chordsep.html"
+tags = ["abstract:", "environments", "point", "polygonal", "separating", "sets"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/index.html"]
+title = "Jeff Erickson's Publications"
+full_description = "Each paper title is a link to the abstract, publication history, copyright information, and electronic copies of that paper. Some of these pages are out of date. Please send me email if you want a more recent version any paper than you can find here. *Stars indicate co-authors who made significant contributions to the paper as students. New papers, changes in publication status, and other additions are marked 🔥 for a few months (or until I remember to unmark them). The square icons are direct links to the most recent electronic versions."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/index.html"
+tags = ['"theorielearn"', "1960s", "3-polytopes", "70s.", "academic", "academicians", "adaptive", "affine", "algebraic", "algorithm"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "ae3.grainger.illinois.edu", "algo.inf.uni-tuebingen.de", "asee.org", "auburn.edu", "cg.scs.carleton.ca", "cgi.di.uoa.gr", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "courses.engr.illinois.edu", "flickr.com", "hobotopia.com", "illinois.edu", "katherinebraught.github.io", "math.uiuc.edu", "pbs.org", "prairielearn.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/parshort.html"]
+title = "Maximum Flows and Parametric Shortest Paths in Planar Graphs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/parshort.html"
+tags = ["abstract:", "also:", "flows", "graphs", "maximum", "parametric", "paths", "planar", "shortest"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu", "www1.bell-labs.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/latex.html"]
+title = "Useful LaTeX Macros"
+author = "Jeff Erickson"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/latex.html"
+tags = ["abuser.bst:", "fixacm.sty:", "handout.sty:", "jeffe.sty:", "jeffeproc.sty:", "latex", "macros", "myconcrete.sty:", "scribe.sty:", "useful"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "socg20.inf.ethz.ch", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/award.html"]
+title = "Jeff Erickson's most prestigious award"
+full_description = "Every year, the Computer Science Graduate Student Organization at UIUC has a new T-shirt. Designs are submitted by graduate students and judged by a vote among the CSGSO officers. The winning T-shirt design in 2002 was submitted by Howard Sun. I first heard about the design after it won. The first time I saw it was on the actual T-shirt, being worn by an actual graduate student."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/award.html"
+tags = ["award,", "ever", "prestigious"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "amazon.com", "articles.chicagotribune.com", "city.urbana.il.us", "courses.engr.illinois.edu", "cs.illinois.edu", "en.wikipedia.org", "forms.gle", "illinois.edu", "katherinebraught.github.io", "linkedin.com", "makrandsinha.github.io", "maps.google.com", "prairielearn.org", "publish.illinois.edu", "safetoc.org", "state.il.us", "theorielearn.github.io", "youtu.be", "youtube.com"]
+
+["https://jeffe.cs.illinois.edu/family.html"]
+title = "Jeff Erickson's Family"
+description = "Jeff Erickson's home page"
+full_description = "Dad used to keep an electric hammer in his office. It looked just like a regular claw hammer, but it had a brass plate with a toggle switch and a red LED on the end of the handle. When anyone asked how it worked, Dad would flip the toggle switch, the LED would light up, and he'd say “There, now it's on.” People say this story explains a lot about me."
+author = "Jeff Erickson"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/family.html"
+tags = ["erickson's", "family", "jeff"]
+language = "en"
+internal-references = ["none"]
+external-references = ["3dpancakes.typepad.com", "amazon.com", "bruce-campbell.com", "christianjhoward.me", "courses.engr.illinois.edu", "cs.illinois.edu", "flickr.com", "illinois.edu", "katherinebraught.github.io", "kibo.com", "linkedin.com", "maps.google.com", "math.uiuc.edu", "portraitartist.com", "quora.com", "safetoc.org", "theorielearn.github.io", "valis.cs.uiuc.edu", "youtu.be", "youtube.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/cubeflip.html"]
+title = "Flipping Cubical Meshes"
+full_description = "Extended abstract (without my contributions) in Proceedings of the 10th International Meshing Roundtable, 19-29, 2001."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/cubeflip.html"
+tags = ["abstract:", "cubical", "flipping", "meshes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/extlower.html"]
+title = "Lower Bounds for External Algebraic Decision Trees"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/extlower.html"
+tags = ["abstract:", "algebraic", "bounds", "decision", "external", "lower", "note:", "trees"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/formats.html"]
+title = "Jeff Erickson's Publications: File Formats"
+full_description = '''On the individual pages for most papers, I also include pointers to "official" electronic versions on their publishers' web sites. (See the copyright notice.) Some form of payment or subscription (by you or by your institution) is usually required to access these files. For a few of my earlier papers, the publisher-provided electronic versions are low-quality scans of hardcopy papers; in particular, crucial features like shading and thin or dotted lines are missing from some figures. Caveat emptor! Over the next several months I expect to add links to DOIs for each paper directly on the summary page.'''
+author = "Jeff Erickson"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/formats.html"
+tags = ["file", "format", "information"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "gordo.us.es", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/eellipse.html"]
+title = "Empty-Ellipse Graphs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/eellipse.html"
+tags = ["abstract:", "empty-ellipse", "graphs"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/electrical.html"]
+title = "Lower Bounds for Electrical Reduction on Surfaces"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/electrical.html"
+tags = ["abstract:", "bounds", "electrical", "lower", "reduction", "surfaces"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/lincon.html"]
+title = "Efficient searching with linear constraints"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/lincon.html"
+tags = ["abstract:", "also:", "constraints", "efficient", "linear", "searching"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "ams.sunysb.edu", "asee.org", "cgroenland.wordpress.com", "cis.tu-graz.ac.at", "cs.unb.ca", "dabacon.org", "eliotwrobson.github.io", "isternet.sk", "katherinebraught.github.io", "kuro5hin.org", "las.illinois.edu", "math.ucsb.edu", "matsun1.matesco.unican.es", "npal.cs.tsukuba.ac.jp", "opendatastructures.org", "prtraits.com", "publiclibraryofscience.org", "sciencedirect.com", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/teaching/algorithms"]
+title = "Algorithms by Jeff Erickson"
+full_description = "This web page contains a free electronic version of my self-published textbook Algorithms, along with other lecture notes I have written for various theoretical computer science classes at the University of Illinois, Urbana-Champaign since 1998. Bug reports. After years of trying and failing to manage bug reports by email, I now maintain an issue-tracking page at GitHub. If you find an error in the textbook, in the lecture notes, or in any other materials, please submit a bug report. All other feedback is welcome as well. Permissions. Anyone is welcome to download, print, use, copy, and/or distribute anything on this page, either electronically or on paper. You do not need to ask my permission, although I would appreciate hearing from you if you find this material useful. If you redistribute any of this material, please include a link back to this web page, either directly or through the mnemomic shortcut http://algorithms.wtf. Specifically: Please do not ask me for solutions to the exercises. See the course materials page for an explanation. Context. This material is the primary reference for two regularly-offered theoretical computer science courses at Illinois: CS 374 and CS 473. I taught these courses most recently in Spring 2018 and Spring 2017, respectively. I maintain a complete archive of my past homeworks, exams, and lab handouts on a separate page. Prerequisites. The textbook assumes knowledge of discrete math (especially induction) and basic data structures and algorithms (especially recursion) consistent with the prerequisite courses CS 173 and CS 225 at Illinois. (See the for more details.) For a thorough overview of prerequisite material, I strongly recommend the following resources:"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/teaching/algorithms"
+tags = ["algorithms", "book", "chapters:", "computation", "context.", "cut:", "dance", "director's", "edition,", "entire"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ae3.grainger.illinois.edu", "algo.inf.uni-tuebingen.de", "amazon.es", "amazon.it", "asee.org", "auburn.edu", "cise.ufl.edu", "courses.engr.illinois.edu", "creativecommons.org", "cs.cmu.edu", "cs.uwaterloo.ca", "flickr.com", "hdfs.illinois.edu", "illinois.edu", "katherinebraught.github.io", "math.uiuc.edu", "mathjax.org", "opendatastructures.org", "quora.com", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/crum.html"]
+title = """
+Arbitrarily large neighborly families of    congruent symmetric convex 3-polytopes"""
+full_description = "Discrete Geometry: In Honor of W. Kuperberg's 60th Birthday (András Bezdek, editor), Marcel-Dekker, 2003, pp. 267-278. arXiv:math.CO/0106095"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/crum.html"
+tags = ["3-polytopes", "abstract:", "arbitrarily", "congruent", "convex", "families", "large", "neighborly", "note:", "symmetric"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/atsp.html"]
+title = "A Near-Optimal Approximation Algorithm for Asymmetric TSP on Embedded Graphs"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/atsp.html"
+tags = ["abstract:", "algorithm", "approximation", "asymmetric", "embedded", "graphs", "near-optimal"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "cgm.cs.mcgill.ca", "cgroenland.wordpress.com", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.jhu.edu", "cs.unb.ca", "flickr.com", "hobotopia.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "opendatastructures.org", "quora.com", "robotics.stanford.edu", "valis.cs.uiuc.edu"]
+
+["https://jeffe.cs.illinois.edu/pubs/category.html"]
+title = "Jeff Erickson's Publications by Subject"
+full_description = "Each title below is a link to the abstract, publication history, copyright information, and electronic copies of that paper. The square icons are direct links to the most recent electronic versions. A more detailed reverse-chronological list of my papers is also available. Many papers appear in more than one category! Most of my work in this area involves one-dimensional objects—curves and graphs—embedded in the plane or on some other surface. I've arbitrarily subdivided these papers into three sub-categories, depending on whether the primary object of study is a curve on some surface (possibly represented by a closed walk in some embedded graph), a graph embedded on some surface (in which one wants to compute graphy things like shortest paths and maximum flows), or a surface represented by a graph embedding. Admittedly, this subdivision is deeply spongy; several papers fall under multiple sub-categories. Voronoi diagrams are everywhere, from turtle shells to giraffe skins to foam in the kitchen sink. Along with their combinatorial duals, Delaunay triangulations, they have been an object of formal scientific study for well over a hundred years. In computer science, they have applications ranging from nearest neighbor searching, to color quantization, to reconstruction of surfaces from digital images. Despite all this attention, there are still questions left to answer! A polygonal chain is a sequence of line segments joined end-to-end. These papers study the configuration spaces of polygonal chains under simple classes of pivot operations, such as rotating a subchain around an edge, cutting out a subchain and regluing it backwards, or flexing a constant number of angles. Problems in this area have applications in robot motion planning and molecular modeling. Almost all of the work in this category was done at annual workshops run by Godfried Toussaint at McGill University's Bellairs Research Institute in Barbados. Thus, be it understood, to demonstrate a theorem, it is neither necessary nor even advantageous to know what it means.... [A] machine might be imagined where the assumptions were put in at one end, while the theorems came out at the other, like the legendary Chicago machine where the pigs go in alive and come out transformed into hams and sausages. No more than these machines need the mathematician know what he does."
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/category.html"
+tags = ["advantageous", "algorithms", "alive", "ancient", "assumptions", "being", "bounds", "came", "cell", "chains"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ae3.grainger.illinois.edu", "amazon.com", "bruce-campbell.com", "courses.engr.illinois.edu", "cs.illinois.edu", "flickr.com", "graphics.stanford.edu", "illinois.edu", "katherinebraught.github.io", "linkedin.com", "maps.google.com", "math.uiuc.edu", "portraitartist.com", "quora.com", "safetoc.org", "siebelschool.illinois.edu", "theorielearn.github.io", "valis.cs.uiuc.edu", "youtu.be", "youtube.com"]
+
+["https://jeffe.cs.illinois.edu/pubs/defect.html"]
+title = "Electrical Reduction, Homotopy Moves, and Defect"
+year_published = 2025
+clearnet = "https://jeffe.cs.illinois.edu/pubs/defect.html"
+tags = ["abstract:", "defect", "electrical", "homotopy", "moves,", "note:", "reduction,"]
+language = "en"
+internal-references = ["none"]
+external-references = ["acs.oakland.edu", "amazon.es", "asee.org", "brickisland.net", "christianjhoward.me", "commfaculty.fullerton.edu", "cs.arizona.edu", "cs.jhu.edu", "flickr.com", "home.cs.colorado.edu", "katherinebraught.github.io", "las.illinois.edu", "math.uiuc.edu", "matsun1.matesco.unican.es", "opendatastructures.org", "publiclibraryofscience.org", "quora.com", "sciencedirect.com", "valis.cs.uiuc.edu", "www-cvr.ai.uiuc.edu"]

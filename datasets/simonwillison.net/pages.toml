@@ -1,0 +1,855 @@
+["https://simonwillison.net/2022"]
+title = "Archive for 2022"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2022"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "allenai.org", "anthropic.com", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "fire.ca.gov", "gist.github.com", "github.com", "t.co", "til.simonwillison.net", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/14/controlledVocabularies"]
+title = "Controlled vocabularies"
+description = "Christina Wodtke: Mind your phraseology!, a tutorial on controlled vocabularies. The concept is very similar to that used by TopicMaps—relationships are defined between terms that take in to account hierarchies, …"
+full_description = "Christina Wodtke: Mind your phraseology!, a tutorial on controlled vocabularies. The concept is very similar to that used by TopicMaps—relationships are defined between terms that take in to account hierarchies, associated terms and even alternative spellings. I’m planning an overhaul of the category / metadata system used on this blog in the near future and Christina’s tutorial has given me a whole load of new ideas."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/controlledVocabularies"
+tags = ["articles", "controlled", "next:", "previous:", "recent", "simon", "vocabularies", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/1/mysqlTextLimits"]
+title = "MySQL text limits"
+description = "Today’s scary discovery: MySQL TEXT fields have a limit of 65,000 bytes. If you insert anything larger than that in to a normal TEXT field mySQL will silently truncate your …"
+full_description = "Today’s scary discovery: MySQL TEXT fields have a limit of 65,000 bytes. If you insert anything larger than that in to a normal TEXT field mySQL will silently truncate your data without telling you (meaning software checks are probably a good idea). MEDIUMTEXT will store 16 million characters and LONGTEXT can handle over 4 trillion, but this information does not appear to be readily available in the online mySQL manual (although it is hinted at in this table). Something to bare in mind when designing database applications."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/mysqlTextLimits"
+tags = ["articles", "limits", "mysql", "next:", "previous:", "recent", "simon", "text", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2002/Aug/15/funWithFOLDOC"]
+title = "Fun with FOLDOC"
+description = "The Free On-Line Dictionary of Computing does exactly what it says on the tin. It is available under the GNU Free Documentation License so I grabbed a copy of the …"
+full_description = "The Free On-Line Dictionary of Computing does exactly what it says on the tin. It is available under the GNU Free Documentation License so I grabbed a copy of the archive (which expands to a 4MB text file) and had a go at dumping it in to a mySQL database. I haven’t done anything with it yet (apart from putting together a rudimentary interface) but I have a few ideas for interesting ways of reusing the data."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/15/funWithFOLDOC"
+tags = ["articles", "foldoc", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Dec/7/prompts-js"]
+title = "Prompts.js"
+description = "I’ve been putting the new o1 model from OpenAI through its paces, in particular for code. I’m very impressed—it feels like it’s giving me a similar code quality to Claude …"
+full_description = '''I’ve been putting the new o1 model from OpenAI through its paces, in particular for code. I’m very impressed—it feels like it’s giving me a similar code quality to Claude 3.5 Sonnet, at least for Python and JavaScript and Bash... but it’s returning output noticeably faster. I decided to try building a library I’ve had in mind for a while—an await ... based alternative implementation of the browser’s built-in alert(), confirm() and prompt() functions. In the past every time I’ve used it in Python or JavaScript I’ve had an expectation that the thing I’m awaiting is going to return as quickly as possible—that I’m really just using this as a performance hack to unblock the event loop and allow it to do something else while I’m waiting for an operation to complete. That’s not actually necessary at all! There’s no reason not to use await for operations that could take a long time to complete, such as a user interacting with a modal dialog. Having LLMs around to help prototype this kind of library idea is really fun. This is another example of something I probably wouldn’t have bothered exploring without a model to do most of the code writing work for me. I didn’t quite get it with a single prompt, but after a little bit of back-and-forth with o1 I got what I wanted—the main thing missing at first was sensible keyboard support (in particular the Enter and Escape keys). await Prompts.alert("hi there"); -> displays a modal with a message and waits for you to click OK on it await Prompts.confirm("Are you sure") -> an OK and cancel option, returns true or false<br> await Prompts.prompt("What is your name?") -> a form asking the user's name, an OK button and cancel - if cancel returns null otherwise returns a string These are equivalent to the browser builtin alert() and confirm() and prompt() - but I want them to work as async functions and to implement their own thing where they dull out the screen and show as a nicely styled modal I then got Google’s new gemini-exp-1206 model to write the first draft of the README, this time via my LLM tool:'''
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/7/prompts-js"
+tags = ["articles", "chatgpt", "gemini        59", "javascript        702", "llm        145", "llms", "llms        950", "next:", "npm        19", "o1        27"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "allenai.org", "berthub.eu", "bloomberg.com", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "npmjs.com", "openai.com", "pyodide.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2002/Aug/15/moreMailingListEtiquette"]
+title = "More mailing list etiquette"
+description = "Madhu Menon: Avoiding personal conflict on mailing lists."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/15/moreMailingListEtiquette"
+tags = ["articles", "etiquette", "list", "mailing", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Nov/12/qwen25-coder"]
+title = "Qwen2.5-Coder-32B is an LLM that can code well that runs on my Mac"
+description = "There’s a whole lot of buzz around the new Qwen2.5-Coder Series of open source (Apache 2.0 licensed) LLM releases from Alibaba’s Qwen research team. On first impression it looks like …"
+full_description = "There’s a whole lot of buzz around the new Qwen2.5-Coder Series of open source (Apache 2.0 licensed) LLM releases from Alibaba’s Qwen research team. On first impression it looks like the buzz is well deserved. Qwen2.5-Coder-32B-Instruct has become the current SOTA open-source code model, matching the coding capabilities of GPT-4o. That’s a big claim for a 32B model that’s small enough that it can run on my 64GB MacBook Pro M2. The Qwen published scores look impressive, comparing favorably with GPT-4o and Claude 3.5 Sonnet (October 2024) edition across various code-related benchmarks: How about benchmarks from other researchers? Paul Gauthier’s Aider benchmarks have a great reputation and Paul reports: The new Qwen 2.5 Coder models did very well on aider’s code editing benchmark. The 32B Instruct model scored in between GPT-4o and 3.5 Haiku. 84% 3.5 Sonnet, 75% 3.5 Haiku, 74% Qwen2.5 Coder 32B, 71% GPT-4o, 69% Qwen2.5 Coder 14B, 58% Qwen2.5 Coder 7B That was for the Aider “whole edit” benchmark. The “diff” benchmark scores well too, with Qwen2.5 Coder 32B tying with GPT-4o (but a little behind Claude 3.5 Haiku). My attempts to run the Qwen/Qwen2.5-Coder-32B-Instruct-GGUF Q8 using llm-gguf were a bit too slow, because I don’t have that compiled to use my Mac’s GPU at the moment. That fetched a 20GB quantized file. I ran a prompt through that using my LLM tool and Sergey Alexandrov’s llm-ollama plugin like this: Here’s the result. The code worked, but I had to work around a frustrating ssl bug first (which wouldn’t have been an issue if I’d allowed the model to use requests or httpx instead of the standard library). I also tried running it using the Apple Silicon fast array framework MLX using the mlx-llm library directly, run via uv like this: Questionable Pelican SVG drawings aside, this is a really promising development. 32GB is just small enough that I can run the model on my Mac without having to quit every other application I’m running, and both the speed and the quality of the results feel genuinely competitive with the current best of the hosted models."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/12/qwen25-coder"
+tags = ["ai        1118", "articles", "code", "devices", "edge-llms        69", "generative-ai        961", "llm        145", "llms", "llms        950", "mlx        11"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "allenai.org", "berthub.eu", "bloomberg.com", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "npmjs.com", "openai.com", "pyodide.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2024/Oct/27/llm-jq"]
+title = "Run a prompt to generate and execute jq programs using llm-jq"
+description = "llm-jq is a brand new plugin for LLM which lets you pipe JSON directly into the llm jq command along with a human-language description of how you’d like to manipulate …"
+full_description = "llm-jq is a brand new plugin for LLM which lets you pipe JSON directly into the llm jq command along with a human-language description of how you’d like to manipulate that JSON and have a jq program generated and executed for you on the fly. The JQ CLI should just BE a ChatGPT client, so there’s no pretense of actually understanding this syntax. Cut out the middleman, just look up what I’m trying to do, for me. The JSON result is sent to standard output, the jq program it generated and executed is sent to standard error. Add the -s/--silent option to tell it not to output the program, or the -v/--verbose option for verbose output that shows the prompt it sent to the LLM as well. Under the hood it passes the first 1024 bytes of the JSON piped to it plus the program description “count by user login, top 3” to the default LLM model (usually gpt-4o-mini unless you set another with e.g. llm models default claude-3.5-sonnet) and system prompt. It then runs jq in a subprocess and pipes in the full JSON that was passed to it. Return only the jq program to be executed as a raw string, no string delimiters wrapping it, no yapping, no markdown, no fenced code blocks, what you return will be passed to subprocess.check_output('jq', [...]) directly. For example, if the user asks: extract the name of the first person You return only: .people[0].name I used Claude to figure out how to pipe content from the parent process to the child and detect and return the correct exit code. This is Run a prompt to generate and execute jq programs using llm-jq by Simon Willison, posted on 27th October 2024."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Oct/27/llm-jq"
+tags = ["ai        1118", "articles", "chatgpt", "execute", "generate", "generative-ai        961", "jq        11", "llm        145", "llm-jq", "llms"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "allenai.org", "berthub.eu", "cims.nyu.edu", "daringfireball.net", "datasette.cloud", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "maplibre.org", "micropip.pyodide.org", "nomic.ai", "openai.com", "pyodide.org", "smcacre.gov", "sqlite.org", "t.co", "timeanddate.com", "verdad.app"]
+
+["https://simonwillison.net/2008"]
+title = "Archive for 2008"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2008"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/14/sitepointCssExperiment"]
+title = "SitePoint CSS experiment"
+description = "SitePoint are trialling a new design for their front page. For fun, I had a go at recreating the new design using structural XHTML and CSS. The result isn’t my …"
+full_description = "SitePoint are trialling a new design for their front page. For fun, I had a go at recreating the new design using structural XHTML and CSS. The result isn’t my normal style (I normally avoid fixed pixel font sizes and go for liquid rather than fixed width layouts) but replicates the existing design nicely and looks good in IE 5/6, Mozilla and Opera 6 on Windows. Netscape 4 doesn’t get the stylesheet and I have yet to try it out on a mac."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/sitepointCssExperiment"
+tags = ["articles", "experiment", "next:", "previous:", "recent", "simon", "sitepoint", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Nov/9/visualizing-local-election-results"]
+title = "Visualizing local election results with Datasette, Observable and MapLibre GL"
+description = "Alex Garcia and myself hosted the first Datasette Open Office Hours on Friday—a live-streamed video session where we hacked on a project together and took questions and tips from community …"
+full_description = "Alex Garcia and myself hosted the first Datasette Open Office Hours on Friday—a live-streamed video session where we hacked on a project together and took questions and tips from community members on Discord. We didn’t record this one (surprisingly not a feature that Discord offers) but we hope to do more of these and record them in the future. Every county appears to handle counting and publishing election results differently. For San Mateo County the results are published on this page, and detailed per-precinct and per-candidate breakdowns are made available as a CSV file. (I optimistically set up a Git scraper for these results in simonw/scrape-san-mateo-county-election-results-2024 only to learn that the CSV is updated just once a day, not continually as the ballots are counted.) I’m particularly invested in the results of the Granada Community Services District board member elections. Our little town of El Granada is in “unincorporated San Mateo County” which means we don’t have a mayor or any local officials, so the closest we get to hyper-local government is the officials that run our local sewage and parks organization! My partner Natalie ran the candidate forum event (effectively the debate) featuring three of the four candidates running for the two open places on the board. I started by using the pre-configured datasette-import plugin to import the data from the CSV file into a fresh table: The table imported cleanly, but all of the columns from the CSV were still being treated as text. I used the datasette-edit-schema plugin to switch the relevant columns to integers so that we could run sums and sorts against them. The resulting 15,589 rows represent counts from individual precincts around the county for each of the races and measures on the ballot, with a row per precinct per candidate/choice per race. Since I’m interested in the Granada Community Services District election, I applied a facet on “Contest_title” and then used that to select that specific race."
+author = "Simon Willison"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simonwillison.net/2024/Nov/9/visualizing-local-election-results"
+tags = ["alex-garcia        31", "articles", "datasette        431", "datasette,", "datasette-cloud        45", "election", "geospatial        12", "gis        54", "local", "maplibre"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "allenai.org", "berthub.eu", "cims.nyu.edu", "daringfireball.net", "datasette.cloud", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "maplibre.org", "micropip.pyodide.org", "nomic.ai", "openai.com", "pyodide.org", "smcacre.gov", "sqlite.org", "t.co", "timeanddate.com", "verdad.app"]
+
+["https://simonwillison.net/2002/Aug/11/benefitsOfXhtml"]
+title = "Benefits of XHTML"
+description = "Phil Ringnalda is questioning the point of XHTML. The single, huge advantage it has over HTML is that XHTML can be parsed by anything (or any language) with an XML …"
+full_description = "Phil Ringnalda is questioning the point of XHTML. The single, huge advantage it has over HTML is that XHTML can be parsed by anything (or any language) with an XML parser. As an example, a few weeks ago I was asked to write a script to grab links from a bunch of HTML pages and insert them in to a database. I solved the problem with a combination of PHP’s strip_tags() function and XML parsing abilities, by killing off every tag that wasn’t an <a> tag and slapping on a start and end element to turn the document in to valid XML—a step that would not have been necessary had the page used XHTML in the first place. While upgrading to XHTML may have few immediate benefits, the ease with which it can be parsed has very real benefits further down the line. Writing content in XHTML now will make it much easier to re-use that content in the future. Update: I should have checked the date on his entry before I posted—this is from way back in December 2001"
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/11/benefitsOfXhtml"
+tags = ["articles", "benefits", "next:", "previous:", "recent", "simon", "weblog", "willison’s", "xhtml"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Dec/9/llama-33-70b"]
+title = "I can now run a GPT-4 class model on my laptop"
+description = "Meta’s new Llama 3.3 70B is a genuinely GPT-4 class Large Language Model that runs on my laptop. Just 20 months ago I was amazed to see something that felt …"
+full_description = "Just 20 months ago I was amazed to see something that felt GPT-3 class run on that same machine. The quality of models that are accessible on consumer hardware has improved dramatically in the past two years. My laptop is a 64GB MacBook Pro M2, which I got in January 2023—two months after the initial release of ChatGPT. All of my experiments running LLMs on a laptop have used this same machine. In March 2023 I wrote that Large language models are having their Stable Diffusion moment after running Meta’s initial LLaMA release (think of that as Llama 1.0) via the then-brand-new llama.cpp. I said: As my laptop started to spit out text at me I genuinely had a feeling that the world was about to change I had a moment of déjà vu the day before yesterday, when I ran Llama 3.3 70B on the same laptop for the first time. This model delivers similar performance to Llama 3.1 405B with cost effective inference that’s feasible to run locally on common developer workstations. Llama 3.1 405B is their much larger best-in-class model, which is very much in the same weight class as GPT-4 and friends. Everything I’ve seen so far from Llama 3.3 70B suggests that it holds up to that standard. I honestly didn’t think this was possible—I assumed that anything as useful as GPT-4 would require many times more resources than are available to me on my consumer-grade laptop. I’m so excited by the continual efficiency improvements we’re seeing in running these impressively capable models. In the proprietary hosted world it’s giving us incredibly cheap and fast models like Gemini 1.5 Flash, GPT-4o mini and Amazon Nova. In the openly licensed world it’s giving us increasingly powerful models we can run directly on our own devices. I don’t expect that this model would work well with much less than my 64GB of RAM. The first time I tried it consumed every remaining bit of available memory and hard-crashed my Mac! For my second attempt I made sure not to have Firefox and VS Code running at the same time and it worked just fine."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/9/llama-33-70b"
+tags = ["ai        1118", "articles", "class", "devices", "edge-llms        69", "generative-ai        961", "gpt-4", "gpt-4        43", "laptop", "llama        67"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "allenai.org", "berthub.eu", "bloomberg.com", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "npmjs.com", "openai.com", "pyodide.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2012"]
+title = "Archive for 2012"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2012"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2024/Dec/22/link-blog"]
+title = "My approach to running a link blog"
+description = "I started running a basic link blog on this domain back in November 2003—publishing links (which I called “blogmarks”) with a title, URL, short snippet of commentary and a “via” …"
+full_description = "I started running a basic link blog on this domain back in November 2003—publishing links (which I called “blogmarks”) with a title, URL, short snippet of commentary and a “via” link where appropriate. In April of this year I finally upgraded my link blog to support Markdown, allowing me to expand my link blog into something with a lot more room. The way I use my link blog has evolved substantially in the eight months since then. I’m going to describe the informal set of guidelines I’ve set myself for how I link blog, in the hope that it might encourage other people to give this a try themselves. The point of that article was to emphasize that blogging doesn’t have to be about unique insights. The value is in writing frequently and having something to show for it over time—worthwhile even if you don’t attract much of an audience (or any audience at all). In that article I proposed two categories of content that are low stakes and high value: things I learned and descriptions of my projects. I realize now that link blogging deserves to be included a third category of low stakes, high value writing. We could think of that category as things I’ve found. That’s the purpose of my link blog: it’s an ongoing log of things I’ve found—effectively a combination of public bookmarks and my own thoughts and commentary on why those things are interesting. When I first started link blogging I would often post a link with a one sentence summary of the linked content, and maybe a tiny piece of opinionated commentary. After I upgraded my link blog to support additional markup (links, images, quotations) I decided to be more ambitious. Here are some of the things I try to do: There are a lot of great link blogs out there, but the one that has influenced me the most in how I approach my own is John Gruber’s Daring Fireball. I really like the way he mixes commentary, quotations and value-added relevant information. The technology behind my link blog is probably the least interesting thing about it. It’s part of my simonwillisonblog Django application—the main model is called Blogmark and it inherits from a BaseModel defining things like tags and draft modes that are shared across my other types of content (entries and quotations)."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/22/link-blog"
+tags = ["approach", "articles", "blog", "blogging        70", "code", "descriptions", "direct", "django        567", "extra", "feel"]
+language = "en"
+internal-references = ["none"]
+external-references = ["allenai.org", "berthub.eu", "bsky.app", "caniuse.com", "cursor.com", "daringfireball.net", "docs.anthropic.com", "docs.djangoproject.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "groq.com", "llm.datasette.io", "micropip.pyodide.org", "openai.com", "pyodide.org", "t.co", "til.simonwillison.net", "timeanddate.com", "youtube.com"]
+
+["https://simonwillison.net/2009"]
+title = "Archive for 2009"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2009"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2024/Nov/7/project-verdad"]
+title = "Project: VERDAD—tracking misinformation in radio broadcasts using Gemini 1.5"
+description = "I’m starting a new interview series called Project. The idea is to interview people who are building interesting data projects and talk about what they’ve built, how they built it, …"
+full_description = "I’m starting a new interview series called Project. The idea is to interview people who are building interesting data projects and talk about what they’ve built, how they built it, and what they learned along the way. The first episode is a conversation with Rajiv Sinclair from Public Data Works about VERDAD, a brand new project in collaboration with journalist Martina Guzmán that aims to track misinformation in radio broadcasts around the USA. VERDAD hits a whole bunch of my interests at once. It’s a beautiful example of scrappy data journalism in action, and it attempts something that simply would not have been possible just a year ago by taking advantage of new LLM tools. You can watch the half hour interview on YouTube. Read on for the shownotes and some highlights from our conversation. VERDAD tracks radio broadcasts from 48 different talk radio radio stations across the USA, primarily in Spanish. Audio from these stations is archived as MP3s, transcribed and then analyzed to identify potential examples of political misinformation. The result is “snippets” of audio accompanied by the trancript, an English translation, categories indicating the type of misinformation that may be present and an LLM-generated explanation of why that snippet was selected. These are then presented in an interface for human reviewers, who can listen directly to the audio in question, update the categories and add their own comments as well. VERDAD processes around a thousand hours of audio content a day—way more than any team of journalists or researchers could attempt to listen to manually. Rajiv initially tried to get Gemini 1.5 Flash to do both the transcription and the misinformation detection, but found that asking that model to do two things at once frequently confused it. Instead, he switched to a separate prompt running that transcript against Gemini 1.5 Pro. Here’s that more complex prompt—it’s 50KB is size and includes a whole bunch of interesting sections, including plenty of examples and a detailed JSON schema."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/7/project-verdad"
+tags = ["ai        1118", "arabic-speaking", "articles", "broadcasts", "change", "climate", "common", "communities", "cultural/regional", "data-journalism        52"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "nomic.ai", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com", "verdad.app"]
+
+["https://simonwillison.net/2020"]
+title = "Archive for 2020"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2020"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/12/archivistGoesLive"]
+title = "Archivist goes live"
+description = "After a successful private beta, the new searchable css-discuss archive is ready for use by the general public. If you spot any bugs or have any suggestions for improving the …"
+full_description = "After a successful private beta, the new searchable css-discuss archive is ready for use by the general public. If you spot any bugs or have any suggestions for improving the archive please drop me a line. The archive includes all messages sent to the css-discuss mailing list since the list started back in January, and should be of great interest to anyone with an interest in CSS. The archive software is written in PHP and uses mySQL for storage."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/12/archivistGoesLive"
+tags = ["archivist", "articles", "goes", "live", "next:", "previous:", "projects        465", "recent", "simon", "weblog"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/1/cssSelectorsTutorial"]
+title = "CSS selectors tutorial"
+description = "Since it took me a while to find this page today, here is it for future reference. Westciv’s Guide to CSS Selectors is an excellent explanation of selectors, a key …"
+full_description = "Since it took me a while to find this page today, here is it for future reference. Westciv’s Guide to CSS Selectors is an excellent explanation of selectors, a key element of CSS. A good understanding selectors makes styling any part of a document possible with less code and more flexibility."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/cssSelectorsTutorial"
+tags = ["articles", "next:", "previous:", "recent", "selectors", "simon", "tutorial", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "bloomberg.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2024/Dec/20/live-blog-the-12th-day-of-openai"]
+title = "Live blog: the 12th day of OpenAI—“Early evals for OpenAI o3”"
+description = "It’s the final day of OpenAI’s 12 Days of OpenAI launch series, and since I built a live blogging system a couple of months ago I’ve decided to roll it …"
+full_description = '''It’s the final day of OpenAI’s 12 Days of OpenAI launch series, and since I built a live blogging system a couple of months ago I’ve decided to roll it out again to provide live commentary during the half hour event, which kicks off at 10am San Francisco time. 09:44 I'll be honest, I haven't been paying close attention to the rumors about today - mainly because I can't evaluate if they're credible (based on insider information) or just excitable hype. The main themes I've seen are a possible o3 model (skipping o2 because that's already a global brand name) or a GPT-4.5. 09:48 The source of that o3 rumor is this story on The Information from yesterday: OpenAI Preps ‘o3’ Reasoning Model - you'll have to register for an account to read it. 09:51 In case you missed it, here's my roundup of the LLM announcements in December 2024 so far. They were a lot. 09:55 The fact that this is now titled "Early evals for OpenAI o3" seems to indicate that we won't get a new model to try out ourselves, which is a little disappointing. 10:00 Since today is about o3, it's worth digging a little more into this new but fascinating field of inference scaling models. o1-mini and o1-preview were the first of these, all the way back in September. Since then we've seen similar models from Qwen (QwQ), DeepSeek (DeepSeek-R1-Lite-Preview) and Google (Gemini 2.0 Flash Thinking). 10:05 Lots of benchmark talk - I guess that was hinted at by the title of the session, "Early evals for OpenAI o3". 10:05 Mark: "We have one more surprise for you" - bringing in Greg Kamradt of the foundation behind the ARC benchmark, unbeaten for five years. The ARC AGI test is all about input and output examples. It's basically a collection of visual puzzles. 10:09 Greg: "We need more enduring benchmarks like ARC AGI" - partnering with OpenAI to develop future benchmarks. 10:11 Now hearing from OpenAI researcher Hongyu Ren, who trained o3-mini. It's not available to general users today but is now open to safety researchers.'''
+author = "Simon Willison"
+year_published = 2020
+clearnet = "https://simonwillison.net/2024/Dec/20/live-blog-the-12th-day-of-openai"
+tags = ["09:34", "09:44", "09:48", "09:49", "09:51", "09:53", "09:55", "09:57", "10:00", "10:01"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aider.chat", "allenai.org", "aws.amazon.com", "berthub.eu", "caniuse.com", "cerebras.ai", "cursor.com", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "groq.com", "llm.datasette.io", "micropip.pyodide.org", "openai.com", "pyodide.org", "t.co", "til.simonwillison.net", "timeanddate.com", "youtube.com"]
+
+["https://simonwillison.net/2007"]
+title = "Archive for 2007"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2007"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2019"]
+title = "Archive for 2019"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2019"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/14/optimisingJavascript"]
+title = "Optimising Javascript"
+description = "A thread on SitePoint lead me to these two excellent tutorials: Javascript Optimisation and Tackling JavaScript strict warnings."
+full_description = "A thread on SitePoint lead me to these two excellent tutorials: Javascript Optimisation and Tackling JavaScript strict warnings."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/optimisingJavascript"
+tags = ["articles", "javascript", "javascript        702", "next:", "optimising", "previous:", "recent", "simon", "sitepoint        13", "weblog"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Nov/4/haiku"]
+title = "Claude 3.5 Haiku"
+description = "Anthropic released Claude 3.5 Haiku today, a few days later than expected (they said it would be out by the end of October). I was expecting this to be a …"
+full_description = "Anthropic released Claude 3.5 Haiku today, a few days later than expected (they said it would be out by the end of October). I was expecting this to be a complete replacement for their existing Claude 3 Haiku model, in the same way that Claude 3.5 Sonnet eclipsed the existing Claude 3 Sonnet while maintaining the same pricing. Claude 3.5 Haiku is different. First, it doesn’t (yet) support image inputs—so Claude 3 Haiku remains the least expensive Anthropic model for handling those. Secondly, it’s not priced the same as the previous Haiku. That was $0.25/million input and $1.25/million for output—the new 3.5 Haiku is 4x that at $1/million input and $5/million output. During final testing, Haiku surpassed Claude 3 Opus, our previous flagship model, on many benchmarks—at a fraction of the cost. Given that Anthropic claim that their new Haiku out-performs their older Claude 3 Opus (still $15/m input and $75/m output!) this price isn’t disappointing, but it’s a small surprise nonetheless. I released a new version of my llm-claude-3 plugin with support for the new model. You can install (or upgrade) the plugin and run it like this: I added the new price to my LLM pricing calculator, which inspired me to extract this comparison table for the leading models from Gemini, Anthropic and OpenAI. Here they are sorted from least to most expensive: Gemini 1.5 Flash-8B remains the model to beat on pricing: it’s 1/6th of the price of the new Haiku—far less capable, but still extremely useful for tasks such as audio transcription. Also notable from Anthropic’s model comparison table: Claude 3.5 Haiku has a max output of 8,192 tokens (same as 3.5 Sonnet, but twice that of Claude 3 Opus and Claude 3 Haiku). 3.5 Haiku has a training cut-off date of July 2024, the most recent of any Anthropic model. 3.5 Sonnet is April 2024 and the Claude 3 family are all August 2023."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/4/haiku"
+tags = ["ai        1118", "anthropic        120", "articles", "claude", "claude        124", "gemini        59", "generative-ai        961", "haiku", "llm        145", "llm-pricing        22"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "nomic.ai", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2011"]
+title = "Archive for 2011"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2011"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2016"]
+title = "Archive for 2016"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2016"
+tags = ["archive", "august", "december", "november", "october", "september", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2024/Dec/24/qvq"]
+title = "Trying out QvQ—Qwen’s new visual reasoning model"
+description = "I thought we were done for major model releases in 2024, but apparently not: Alibaba’s Qwen team just dropped the Apache 2.0 licensed Qwen licensed (the license changed) QvQ-72B-Preview, “an …"
+full_description = "I thought we were done for major model releases in 2024, but apparently not: Alibaba’s Qwen team just dropped the Apache 2.0 licensed Qwen licensed (the license changed) QvQ-72B-Preview, “an experimental research model focusing on enhancing visual reasoning capabilities”. Their blog post is titled QvQ: To See the World with Wisdom—similar flowery language to their QwQ announcement QwQ: Reflect Deeply on the Boundaries of the Unknown a few weeks ago in November. It’s a vision-focused follow-up to QwQ, which I wrote about previousy. QwQ is an impressive openly licensed inference-scaling model: give it a prompt and it will think out loud over many tokens while trying to derive a good answer, similar to OpenAI’s o1 and o3 models. The new QvQ adds vision to the mix. You can try it out on Hugging Face Spaces—it accepts an image and a single prompt and then streams out a very long response where it thinks through the problem you have posed it. There’s no option to send a follow-up prompt. I’ve tried it out with a bunch of things, with mixed results—but it’s really fun seeing how it works through a problem. So I’ve got this picture of some pelicans, and I need to count them. Let me see... First off, I know that pelicans are those big birds with the massive beaks, right? [...] So, that’s four pelicans in total. But, I notice that on the far right of the image, there’s part of another bird, maybe a pelican’s back or tail feathers, but it’s not fully in the frame, so I don’t think I should count it as a whole pelican. Something about the tone of voice it uses, “First off, I know that pelicans are those big birds with the massive beaks, right?”, tickles me. I also tried this on a much harder image—it counted 17 which looks about right to me but honestly I have trouble with that image myself. It produced a very lengthy chain of thought that was almost entirely incorrect, but had some interesting “ideas” in it: In Game of Life, each cell’s state in the next generation is determined by its current state and the states of its eight neighbors."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/24/qvq"
+tags = ["ai        1118", "articles", "generative-ai        961", "hugging-face        14", "llms        950", "mlx        11", "model", "next:", "previous:", "python        1104"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aistudio.google.com", "allenai.org", "ben-evans.com", "berthub.eu", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "docs.astral.sh", "docs.djangoproject.com", "esdiscuss.org", "fedi.simonwillison.net", "fire.ca.gov", "huggingface.co", "micropip.pyodide.org", "openai.com", "pyodide.org", "t.co", "theinformation.com", "timeanddate.com"]
+
+["https://simonwillison.net/2023"]
+title = "Archive for 2023"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2023"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "news.ycombinator.com", "playwright.dev", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2024/Oct/29/llm-multi-modal"]
+title = "You can now run prompts against images, audio and video in your terminal using LLM"
+description = "I released LLM 0.17 last night, the latest version of my combined CLI tool and Python library for interacting with hundreds of different Large Language Models such as GPT-4o, Llama, …"
+full_description = "I released LLM 0.17 last night, the latest version of my combined CLI tool and Python library for interacting with hundreds of different Large Language Models such as GPT-4o, Llama, Claude and Gemini. The signature feature of 0.17 is that LLM can now be used to prompt multi-modal models—which means you can now use it to send images, audio and video files to LLMs that can handle them. Here’s an example. First, install LLM—using brew install llm or pipx install llm or uv tool install llm, pick your favourite. If you have it installed already you made need to upgrade to 0.17, e.g. with brew upgrade llm. The -a option stands for --attachment. Attachments can be specified as URLs, as paths to files on disk or as - to read from data piped into the tool. The image features a brown pelican standing on rocky terrain near a body of water. The pelican has a distinct coloration, with dark feathers on its body and a lighter-colored head. Its long bill is characteristic of the species, and it appears to be looking out towards the water. In the background, there are boats, suggesting a marina or coastal area. The lighting indicates it may be a sunny day, enhancing the scene’s natural beauty. The image shows a pelican standing on rocks near a body of water. The bird has a large, long bill and predominantly gray feathers with a lighter head and neck. In the background, there is a docked boat, giving the impression of a marina or harbor setting. The lighting suggests it might be sunny, highlighting the pelican’s features. That time it cost 435 prompt tokens (GPT-4o mini charges higher tokens per image than GPT-4o) and the total was 0.1787 cents. Models in LLM are defined by plugins. The application ships with a default OpenAI plugin to get people started, but there are dozens of other plugins providing access to different models, including models that can run directly on your own device. Plugins need to be upgraded to add support for multi-modal input—here’s documentation on how to do that. I’ve shipped three plugins with support for multi-modal attachments so far: llm-gemini, llm-claude-3 and llm-mistral (for Pixtral)."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Oct/29/llm-multi-modal"
+tags = ["12th", "against", "ai        1118", "anthropic        120", "articles", "audio", "chatgpt", "claude        124", "gemini        59", "generative-ai        961"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "bloomberg.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2024/Nov/22/weeknotes"]
+title = "Weeknotes: asynchronous LLMs, synchronous embeddings, and I kind of started a podcast"
+description = "These past few weeks I’ve been bringing Datasette and LLM together and distracting myself with a new sort-of-podcast crossed with a live streaming experiment. Project: interviewing people about their projects …"
+full_description = "These past few weeks I’ve been bringing Datasette and LLM together and distracting myself with a new sort-of-podcast crossed with a live streaming experiment. My response to the recent US election was to stress-code, and then to stress-podcast. On the morning after the election I started a video series called Project (I guess you could call it a “vlog”?) where I interview people about their interesting data projects. The first episode was with Rajiv Sinclair talking about his project VERDAD, tracking misinformation on US broadcast radio. The second was with Philip James talking about Civic Band, his project to scrape and search PDF meeting minutes and agendas from US local municipalities. I was a guest on another podcast-like thing too: an Ars Technica Live sesison with Benj Edwards, which I wrote about in Notes from Bing Chat—Our First Encounter With Manipulative AI. I also started a new thing with Alex Garcia called Datasette Public Office Hours, which we plan to run approximately once every two weeks as a live-streamed Friday conversation about Datasette and related projects. I wrote up our first session in Visualizing local election results with Datasette, Observable and MapLibre GL. The Civic Band interview was part of our second session—I still need to write about the rest of that session about sqlite-vec, embeddings and some future Datasette AI features, but you can watch the full video on YouTube. I need to write this up in full, but last weekend I quietly released LLM 0.18 with a huge new feature: plugins can now provide asynchronous versions of their models, ready to be used with Python’s asyncio. I built this for Datasette, which is built entirely around ASGI and needs to be able to run LLM models asynchronously to enable all sorts of interesting AI features. LLM provides async OpenAI models, and I’ve also versions of the llm-gemini, llm-claude-3 and llm-mistral plugins that enable async models as well. I’ve also been working on adding token accounting to LLM, to keep track of how many input and output tokens a prompt has used across multiple different models. I have an alpha release with that but it’s not yet fully stable."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/22/weeknotes"
+tags = ["0.10a0", "0.11", "0.19a2", "0.1a0", "0.2a0", "0.4.2", "0.9a0", "3.38a0", "articles", "asgi-csrf"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "nomic.ai", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2002/Aug/14/tidakada"]
+title = "Tidakada"
+description = "Spotted in my referrals: tidak ada, a beautifully designed blog covering web development and other related topics. This is another great example of what you can achieve with some creative …"
+full_description = "Spotted in my referrals: tidak ada, a beautifully designed blog covering web development and other related topics. This is another great example of what you can achieve with some creative CSS."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/tidakada"
+tags = ["articles", "next:", "previous:", "recent", "simon", "tidakada", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/12/dChatReleased"]
+title = "dChat released"
+description = "Glen Murphy has released the source code to his innovative dChat PHP/DHTML chat system. I’ve been playing around with it this morning and it’s a very nice piece of software. …"
+full_description = "Glen Murphy has released the source code to his innovative dChat PHP/DHTML chat system. I’ve been playing around with it this morning and it’s a very nice piece of software. dChat uses an interesting take on the remote scripting concept, using the DOM to append <script> elements to the head of the document in order to grab additional information from the server without refreshing the page. Unfortunately this technique does not work in IE on the Mac, but it works fine on Mozilla and IE/Windows."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/12/dChatReleased"
+tags = ["articles", "dchat", "next:", "previous:", "recent", "released", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/1/iKnowImBloodyWellSubscribed"]
+title = "I know I’m bloody well subscribed"
+description = "It’s the first day of the month. I don’t believe in rabbits, but I do believe in Mailman—I just had my fourth “monthly reminder” email of the day. It beats …"
+full_description = "It’s the first day of the month. I don’t believe in rabbits, but I do believe in Mailman—I just had my fourth “monthly reminder” email of the day. It beats me why the lists I am subscribed to see fit to email me once a month to remind me of my description—you would have thought the dozens of emails I get from them every day would be enough of a hint. In my opinion this is one default option the web could do without."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/iKnowImBloodyWellSubscribed"
+tags = ["articles", "bloody", "i’m", "next:", "previous:", "recent", "simon", "subscribed", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "bloomberg.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "list.org", "lmarena.ai", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2002/Aug/1/lumsInCSS"]
+title = "LUMS in CSS"
+description = "I’ve been messing around with CSS today, trying to convert this page to use standards compliant CSS and XHTML while keeping the overall look and feel. My efforts so far …"
+full_description = "I’ve been messing around with CSS today, trying to convert this page to use standards compliant CSS and XHTML while keeping the overall look and feel. My efforts so far can be seen here—I’ve knocked the HTML file size down from 27KB to 7KB (although that doesn’t take the new external CSS file in to account) and it seems to work in Opera, Mozilla and IE on Windows. There is a slight issue at 800x600 (the breadcrumbs dissapear) and it looks terminally boring in Netscape 4 but on the whole it’s come out pretty well."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/lumsInCSS"
+tags = ["articles", "lums", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2024/Nov/19/notes-from-bing-chat"]
+title = "Notes from Bing Chat—Our First Encounter With Manipulative AI"
+description = "I participated in an Ars Live conversation with Benj Edwards of Ars Technica today, talking about that wild period of LLM history last year when Microsoft launched Bing Chat and …"
+full_description = "I participated in an Ars Live conversation with Benj Edwards of Ars Technica today, talking about that wild period of LLM history last year when Microsoft launched Bing Chat and it instantly started misbehaving, gaslighting and defaming people. I ran the video through MacWhisper, extracted a transcript and used Claude to identify relevant articles I should link to. Here’s that background information to accompany the talk. This is Notes from Bing Chat—Our First Encounter With Manipulative AI by Simon Willison, posted on 19th November 2024. Previous: Project: Civic Band - scraping and searching PDF meeting minutes from hundreds of municipalities"
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/19/notes-from-bing-chat"
+tags = ["ai        1118", "arstechnica        8", "articles", "benj-edwards        15", "bing", "bing        26", "chat—our", "encounter", "ethics        150", "generative-ai        961"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2020/Oct/9/git-scraping"]
+title = "Git scraping: track changes over time by scraping to a Git repository"
+description = "Git scraping is the name I’ve given a scraping technique that I’ve been experimenting with for a few years now. It’s really effective, and more people should use it. Update …"
+full_description = "Git scraping is the name I’ve given a scraping technique that I’ve been experimenting with for a few years now. It’s really effective, and more people should use it. Update 5th March 2021: I presented a version of this post as a five minute lightning talk at NICAR 2021, which includes a live coding demo of building a new git scraper. Update 5th January 2022: I released a tool called git-history that helps analyze data that has been collected using this technique. The internet is full of interesting data that changes over time. These changes can sometimes be more interesting than the underlying static data—The @nyt_diff Twitter account tracks changes made to New York Times headlines for example, which offers a fascinating insight into that publication’s editorial process. We already have a great tool for efficiently tracking changes to text over time: Git. And GitHub Actions (and other CI systems) make it easy to create a scraper that runs every few minutes, records the current state of a resource and records changes to that resource over time in the commit history. Here’s a recent example. Fires continue to rage in California, and the CAL FIRE website offers an incident map showing the latest fire activity around the state. Firing up the Firefox Network pane, filtering to requests triggered by XHR and sorting by size, largest first reveals this endpoint: So... I started running a git scraper against it. My scraper lives in the simonw/ca-fires-history repository on GitHub. Every 20 minutes it grabs the latest copy of that JSON endpoint, pretty-prints it (for diff readability) using jq and commits it back to the repo if it has changed. This means I now have a commit log of changes to that information about fires in California. Here’s an example commit showing that last night the Zogg Fires percentage contained increased from 90% to 92%, the number of personnel involved dropped from 968 to 798 and the number of engines responding dropped from 82 to 59. The implementation of the scraper is entirely contained in a single GitHub Actions workflow. It’s in a file called .github/workflows/scrape.yml which looks like this:"
+author = "Simon Willison"
+year_published = 2020
+year_updated = 2020
+clearnet = "https://simonwillison.net/2020/Oct/9/git-scraping"
+tags = ["2021:", "2022:", "articles", "changes", "git        50", "git-scraping        31", "github        142", "github-actions        51", "january", "march"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "allenai.org", "anthropic.com", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "fire.ca.gov", "gist.github.com", "github.com", "t.co", "til.simonwillison.net", "twitter.com"]
+
+["https://simonwillison.net/2024/Oct/30/monthnotes"]
+title = "W̶e̶e̶k̶n̶o̶t̶e̶s̶  Monthnotes for October"
+description = "I try to publish weeknotes at least once every two weeks. It’s been four since the last entry, so I guess this one counts as monthnotes instead. In my defense, …"
+full_description = "I try to publish weeknotes at least once every two weeks. It’s been four since the last entry, so I guess this one counts as monthnotes instead. In my defense, the reason I’ve fallen behind on weeknotes is that I’ve been publishing a lot of long-form blog entries this month. A lot of LLM stuff happened. OpenAI had their DevDay, which I used as an opportunity to try out live blogging for the first time. I figured out video scraping with Google Gemini and generally got excited about how incredibly inexpensive the Gemini models are. Anthropic launched Computer Use and JavaScript analysis, and the month ended with GitHub Universe. My big achievement of the month was finally shipping multi-modal support for my LLM tool. This has been almost a year in the making: GPT-4 vision kicked off the new era of vision LLMs at OpenAI DevDay last November and I’ve been watching the space with keen interest ever since. I had a couple of false starts at the feature, which was difficult at first because LLM acts as a cross-model abstraction layer, and it’s hard to design those effectively without plenty of examples of different models. Initially I thought the feature would just be for images, but then Google Gemini launched the ability to feed in PDFs, audio files and videos as well. That’s why I renamed it from -i/--image to -a/--attachment—I’m glad I hadn’t committed to the image UI before realizing that file attachments could be so much more. I’m really happy with how the feature turned out. The one missing piece at the moment is local models: I prototyped some incomplete local model plugins to verify the API design would work, but I’ve not yet pushed any of them to a state where I think they’re ready to release. My research into mistral.rs was part of that process. Now that attachments have landed I’m free to start thinking about the next major LLM feature. I’m leaning towards tool usage: enough models have tool use / structured output capabilities now that I think I can design an abstraction layer that works across all of them. The combination of tool use with LLM’s plugin system is really fun to think about."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Oct/30/monthnotes"
+tags = ["0.1.1", "0.17", "0.1a0", "0.65", "articles", "claude-to-sqlite", "datasette", "datasette-examples", "files-to-prompt", "llm        145"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "bloomberg.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2006"]
+title = "Archive for 2006"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2006"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2002/Aug/1/cetis"]
+title = "CETIS"
+description = "CETIS is the Centre for Education Technology Interoperability Standards. Their site is regularly updated and contains a wealth of information about a whole range of interesting technologies, including metadata standards …"
+full_description = "CETIS is the Centre for Education Technology Interoperability Standards. Their site is regularly updated and contains a wealth of information about a whole range of interesting technologies, including metadata standards and plenty of stuff on web services and XML. It also acts as an interesting insight in to technology plans within the UK’s academic community."
+author = "Simon Willison"
+year_published = 2002
+year_updated = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/cetis"
+tags = ["articles", "cetis", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "bloomberg.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2024/Dec/20/december-in-llms-has-been-a-lot"]
+title = "December in LLMs has been a lot"
+description = "I had big plans for December: for one thing, I was hoping to get to an actual RC of Datasette 1.0, in preparation for a full release in January. Instead, …"
+full_description = "I had big plans for December: for one thing, I was hoping to get to an actual RC of Datasette 1.0, in preparation for a full release in January. Instead, I’ve found myself distracted by a constant barrage of new LLM releases. On December 4th Amazon introduced the Amazon Nova family of multi-modal models—clearly priced to compete with the excellent and inexpensive Gemini 1.5 series from Google. I got those working with LLM via a new llm-bedrock plugin. The next big release was Llama 3.3 70B-Instruct, on December 6th. Meta claimed that this 70B model was comparable in quality to their much larger 405B model, and those claims seem to hold weight. I wrote about how I can now run a GPT-4 class model on my laptop—the same laptop that was running a GPT-3 class model just 20 months ago. Llama 3.3 70B has started showing up from API providers now, including super-fast hosted versions from both Groq (276 tokens/second) and Cerebras (a quite frankly absurd 2,200 tokens/second). If you haven’t tried Val Town’s Cerebras Coder demo you really should. I think the huge gains in model efficiency are one of the defining stories of LLMs in 2024. It’s not just the local models that have benefited: the price of proprietary hosted LLMs has dropped through the floor, a result of both competition between vendors and the increasing efficiency of the models themselves. Last year the running joke was that every time Google put out a new Gemini release OpenAI would ship something more impressive that same day to undermine them. The tides have turned! This month Google shipped four updates that took the wind out of OpenAI’s sails. The first was gemini-exp-1206 on December 6th, an experimental model that jumped straight to the top of some of the leaderboards. Was this our first glimpse of Gemini 2.0? That was followed by Gemini 2.0 Flash on December 11th, the first official release in Google’s Gemini 2.0 series. The streaming support was particularly impressive, with https://aistudio.google.com/live demonstrating streaming audio and webcam communication with the multi-modal LLM a full day before OpenAI released their own streaming camera/audio features in an update to ChatGPT."
+author = "Simon Willison"
+year_published = 2020
+clearnet = "https://simonwillison.net/2024/Dec/20/december-in-llms-has-been-a-lot"
+tags = ["0.0.4", "0.10", "0.11", "0.19.1", "0.1a0", "0.65.1", "3.38", "70b-instruct", "ai        1118", "amazon"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aider.chat", "allenai.org", "api-docs.deepseek.com", "aws.amazon.com", "berthub.eu", "caniuse.com", "cerebras.ai", "cursor.com", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "groq.com", "llm.datasette.io", "micropip.pyodide.org", "news.ycombinator.com", "openai.com", "pyodide.org", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2010"]
+title = "Archive for 2010"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2010"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2024"]
+title = "Archive for 2024"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2024"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "news.ycombinator.com", "playwright.dev", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2018"]
+title = "Archive for 2018"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2018"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/1/stylesOfBlogging"]
+title = "Styles of blogging"
+description = "There’s a great discussion going on at the heart of things concerning different styles of blogging and the way the format is evolving. The range of formats evident across the …"
+full_description = "There’s a great discussion going on at the heart of things concerning different styles of blogging and the way the format is evolving. The range of formats evident across the blogosphere fascinates me—there are as many different styles as there are blogs, and each blogger’s style is constantly evolving. Personally I want to move towards more of a unique-content-generation model (as opposed to my current link farm) but at the same time my experiments with meta data mean that the more “shallow” content I have the more chance I will get to do interesting things with relationships between entries."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/stylesOfBlogging"
+tags = ["articles", "blogging", "next:", "previous:", "recent", "simon", "styles", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2003"]
+title = "Archive for 2003"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2003"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2002"]
+title = "Archive for 2002"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2002"
+tags = ["archive", "august", "december", "july", "june", "november", "october", "september", "simon", "weblog"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2022/Mar/14/shot-scraper-template"]
+title = "Instantly create a GitHub repository to take screenshots of a web page"
+description = "I just released shot-scraper-template, a GitHub repository template that helps you start taking automated screenshots of a web page by filling out a form. shot-scraper is my command line tool …"
+full_description = "I just released shot-scraper-template, a GitHub repository template that helps you start taking automated screenshots of a web page by filling out a form. shot-scraper is my command line tool for taking screenshots of web pages and scraping data from them using JavaScript. One of its uses is to help create and maintain screenshots for documentation, making it easy to update them to include changes to the design of the underlying pages. To make this as easy as possible, I’ve created a GitHub repository template that automates the process of setting up shot-scraper to run against a URL. Pick a name for your new repository and paste the URL of the page you want to screenshot into the description field. That’s it! Your new repository will be created, a GitHub Actions automation script will run for a few seconds and your new screenshot will be added to the repository as a file called shot.png. Here’s an example repository I created using the template: simonw/simonwillison-net-shot—and here’s the shot.png file from that repo: You can re-take the screenshot any time you want by clicking the “Run workflow” button in the Actions tab: You can edit that file to change the settings that apply to your screenshot, or to add further URLs to take shots of like this: The workflow triggers when a change is made to the repository (including edits to the shots.yml file) or when the user manually clicks “Run workflow”. This is the trick that makes everything else work, which I picked up from Bruno Rocha last year. It ensures that this workflow job only runs on copies of the template, not on the initial template repository itself. This is necessary because a later step creates a file in the repository if it doesn’t yet exist based on the description URL provided by the user. This is boilerplate that I use in most of my GitHub Actions workflows: it sets up Python 3.10, and also configures a cache such that Python requirements in a requirements.txt file persist from one invocation to another without having to be re-downloaded from PyPI."
+author = "Simon Willison"
+year_published = 2022
+clearnet = "https://simonwillison.net/2022/Mar/14/shot-scraper-template"
+tags = ["articles", "create", "documentation        52", "github", "github-actions        51", "instantly", "next:", "previous:", "projects        465", "recent"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "news.ycombinator.com", "playwright.dev", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2002/Aug/14/phpAndID3Tags"]
+title = "PHP and ID3 tags"
+description = "MP3 Piranha is a clever application which indexes your MP3 collection and uses the Amazon Web Service API to look up the album cover, related albums and provide a link …"
+full_description = "MP3 Piranha is a clever application which indexes your MP3 collection and uses the Amazon Web Service API to look up the album cover, related albums and provide a link to buy the album from Amazon. Out of curiosity, I ran a search for a PHP library to decode ID3 tags to see if such a thing could be built with PHP, and came up with this script by Leknor. The class is well written and I learnt a lot about ID3 tags looking through it—it seems they take up the last 128 bytes of an MP3 file and can be decoded using PHP’s unpack() function."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/phpAndID3Tags"
+tags = ["articles", "next:", "previous:", "recent", "simon", "tags", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/14/alchemistContest"]
+title = "Alchemist contest"
+description = "AlltheWeb.com introduced an innovative feature called Alchemist a while ago which allows visitors to customise the site by specifying the URL to their own style sheet. They have now announced …"
+full_description = "AlltheWeb.com introduced an innovative feature called Alchemist a while ago which allows visitors to customise the site by specifying the URL to their own style sheet. They have now announced a CSS design contest for the service, with top prizes of $750 in Amazon vouchers available for three categories (“Simple, Yet Beautiful”, “To CSS Infinity and Beyond” and “So 22nd Century”). This is a great oportunity for advocates of CSS to show just how powerful it really is."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/alchemistContest"
+tags = ["alchemist", "articles", "contest", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/15/CSSTrickery"]
+title = "CSS Trickery"
+description = "New CSS Experiment: Trickery with Floats and Negative Margins, inspired by this message on css-discuss. By applying both position: relative and a negative margin to a floated element it is …"
+full_description = "New CSS Experiment: Trickery with Floats and Negative Margins, inspired by this message on css-discuss. By applying both position: relative and a negative margin to a floated element it is possible to pull it out of the flow of text in to the margin of the document. I have used a variant of this technique in the third revision of my SitePoint in CSS demonstration."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/15/CSSTrickery"
+tags = ["articles", "next:", "previous:", "recent", "simon", "trickery", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/1/ooooooooooh"]
+title = "Ooooooooooh"
+description = "placenamehere.com: Chris Casciano’s Digital Playground. I love this design—Chris uses beautiful black and white photos for page backgrounds and carefully positions the main navigational element on each page to fit …"
+full_description = "placenamehere.com: Chris Casciano’s Digital Playground. I love this design—Chris uses beautiful black and white photos for page backgrounds and carefully positions the main navigational element on each page to fit in with the background image. This is a great example of the new design techniques being made possible by a combination of CSS and creative talent. I just wish I had some of the latter :)"
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/ooooooooooh"
+tags = ["articles", "next:", "ooooooooooh", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "huggingface.co", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2015"]
+title = "Archive for 2015"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2015"
+tags = ["archive", "december", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2013"]
+title = "Archive for 2013"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2013"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2024/Dec/31/llms-in-2024"]
+title = "Things we learned about LLMs in 2024"
+description = "A lot has happened in the world of Large Language Models over the course of 2024. Here’s a review of things we figured out about the field in the past …"
+full_description = "A lot has happened in the world of Large Language Models over the course of 2024. Here’s a review of things we figured out about the field in the past twelve months, plus my attempt at identifying key themes and pivotal moments. In my December 2023 review I wrote about how We don’t yet know how to build GPT-4—OpenAI’s best model was almost a year old at that point, yet no other AI lab had produced anything better. What did OpenAI know that the rest of us didn’t? I’m relieved that this has changed completely in the past twelve months. 18 organizations now have models on the Chatbot Arena Leaderboard that rank higher than the original GPT-4 from March 2023 (GPT-4-0314 on the board)—70 models in total. The earliest of those was Google’s Gemini 1.5 Pro, released in February. In addition to producing GPT-4 level outputs, it introduced several brand new capabilities to the field—most notably its 1 million (and then later 2 million) token input context length, and the ability to input video. I wrote about this at the time in The killer app of Gemini Pro 1.5 is video, which earned me a short appearance as a talking head in the Google I/O opening keynote in May. Gemini 1.5 Pro also illustrated one of the key themes of 2024: increased context lengths. Last year most models accepted 4,096 or 8,192 tokens, with the notable exception of Claude 2.1 which accepted 200,000. Today every serious provider has a 100,000+ token model, and Google’s Gemini series accepts up to 2 million. Longer inputs dramatically increase the scope of problems that can be solved with an LLM: you can now throw in an entire book and ask questions about its contents, but more importantly you can feed in a lot of example code to help the model correctly solve a coding problem. LLM use-cases that involve long inputs are far more interesting to me than short prompts that rely purely on the information already baked into the model weights. Many of my tools were built using this pattern. Getting back to models that beat GPT-4: Anthropic’s Claude 3 series launched in March, and Claude 3 Opus quickly became my new favourite daily-driver. They upped the ante even more in June with the launch of Claude 3.5 Sonnet—a model that is still my favourite six months later (though it got a significant upgrade on October 22, confusingly keeping the same 3.5 version number. Anthropic fans have since taken to calling it Claude 3.6)."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/31/llms-in-2024"
+tags = ["$1.68", "ai        1118", "annual", "anthropic        120", "application", "articles", "artifacts", "claude", "context", "full"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aisnakeoil.com", "aistudio.google.com", "allenai.org", "ben-evans.com", "berthub.eu", "bloomberg.com", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "docs.djangoproject.com", "esdiscuss.org", "fedi.simonwillison.net", "huggingface.co", "lmarena.ai", "micropip.pyodide.org", "openai.com", "pyodide.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2002/Aug/14/qTagBad"]
+title = "Q tag bad"
+description = "Mark Pilgrim explains why the <q> tag is bad for accessibility."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/qTagBad"
+tags = ["accessibility        64", "articles", "html        81", "mark-pilgrim        61", "next:", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2006/Jan/20/escape"]
+title = "Escaping regular expression characters in JavaScript"
+description = "JavaScript’s support for regular expressions is generally pretty good, but there is one notable omission: an escaping mechanism for literal strings. Say for example you need to create a regular …"
+full_description = "JavaScript’s support for regular expressions is generally pretty good, but there is one notable omission: an escaping mechanism for literal strings. Say for example you need to create a regular expression that removes a specific string from the end of a string. If you know the string you want to remove when you write the script this is easy: But what if the string to be removed comes from a variable? You’ll need to construct a regular expression from the variable, using the RegExp constructor function: But what if the string you want to remove may contain regular expression metacharacters—characters like $ or . that affect the behaviour of the expression? Languages such as Python provide functions for escaping these characters (see re.escape); with JavaScript you have to write your own. This deals with another common problem in JavaScript: compiling a regular expression once (rather than every time you use it) while keeping it local to a function. argmuments.callee inside a function always refers to the function itself, and since JavaScript functions are objects you can store properties on them. In this case, the first time the function is run it compiles a regular expression and stashes it in the sRE property. On subsequent calls the pre-compiled expression can be reused. In the above snippet I’ve added my function as a property of the RegExp constructor. There’s no pressing reason to do this other than a desire to keep generic functionality relating to regular expression handling the same place. If you rename the function it will still work as expected, since the use of arguments.callee eliminates any coupling between the function definition and the rest of the code. This is Escaping regular expression characters in JavaScript by Simon Willison, posted on 20th January 2006."
+author = "Simon Willison"
+year_published = 2020
+clearnet = "https://simonwillison.net/2006/Jan/20/escape"
+tags = ["18th", "articles", "characters", "escaping", "escaping        4", "expression", "javascript", "javascript        702", "next:", "previous:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net"]
+title = "Simon Willison’s Weblog"
+full_description = '''llm-anthropic #24: Use new URL parameter to send attachments. Anthropic released a neat quality of life improvement today. Alex Albert: We've added the ability to specify a public facing URL as the source for an image / document block in the Anthropic API Prior to this, any time you wanted to send an image to the Claude API you needed to base64-encode it and then include that data in the JSON. This got pretty bulky, especially in conversation scenarios where the same image data needs to get passed in every follow-up prompt. I implemented this for llm-anthropic and shipped it just now in version 0.15.1 (here's the commit) - I went with a patch release version number bump because this is effectively a performance optimization which doesn't provide any new features, previously LLM would accept URLs just fine and would download and then base64 them behind the scenes. In testing this out I had a really impressive result from Claude 3.7 Sonnet. I found a newspaper page from 1900 on the Library of Congress (the "Worcester spy.") and fed a URL to the PDF into Sonnet like this: I haven't checked every sentence but it appears to have done an excellent job, at a cost of 16 cents. As another experiment, I tried running that against my example people template from the schemas feature I released this morning: That only gave me two results - so I tried an alternative approach where I looped the OCR text back through the same template, using llm logs --cid with the logged conversation ID and -r to extract just the raw response from the logs: strip-tags 0.6. It's been a while since I updated this tool, but in investigating a tricky mistake in my tutorial for LLM schemas I discovered a bug that I needed to fix. For some time, I’ve argued that a common conception of AI is misguided. This is the idea that AI systems like large language and vision models are individual intelligent agents, analogous to human agents. Instead, I’ve argued that these models are “cultural technologies” like writing, print, pictures, libraries, internet search engines, and Wikipedia. Cultural technologies allow humans to access the information that other humans have created in an effective and wide-ranging way, and they play an important role in increasing human capacities.'''
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net"
+tags = ["#3:34 pm / ai", "#9:56 pm / ai", "#24:", "0.14", "1.08", "94.49", "actions", "aider", "andrej", "anthropic 120"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2024/Nov/27/storing-times-for-human-events"]
+title = "Storing times for human events"
+description = "I’ve worked on various event websites in the past, and one of the unintuitively difficult problems that inevitably comes up is the best way to store the time that an …"
+full_description = "I’ve worked on various event websites in the past, and one of the unintuitively difficult problems that inevitably comes up is the best way to store the time that an event is happening. Based on that past experience, here’s my current recommendation. This is the expanded version of a comment I posted on lobste.rs a few days ago, which ended up attracting a bunch of attention on Twitter. An event happens on a date, at a time. The precise details of that time are very important: if you tell people to show up to your event at 7pm and it turns out they should have arrived at 6pm they’ll miss an hour of the event! Some of the worst bugs an events website can have are the ones that result in human beings traveling to a place at a time and finding that the event they came for is not happening at the time they expected. Any time you talk to database engineers about dates and times you’re likely to get the same advice: store everything in UTC. Dates and times are complicated enough that the only unambiguous way to store them is in UTC—no daylight savings or timezones to worry about, it records the exact moment since the dawn of the universe at which the event will take place. Then, when you display those times to users, you can convert them to that user’s current timezone—neatly available these days using the Intl.DateTimeFormat().resolvedOptions().timeZone browser API. There’s a variant of this advice which you’re more likely to hear from the PostgreSQL faithful: use TIMESTAMP WITH TIME ZONE or its convenient alias timestamptz. This stores the exact value in UTC and sounds like it might store the timezone too... but it doesn’t! All that’s stored is that UTC value, converted from whatever timezone was active or specified when the value was inserted. If I arrange an evening meetup for next year on December 3rd at 6pm, I mean 6pm local time, by whatever definition of local time is active on that particular date. Maybe you asked the user to select the timezone as part of the event creation process. This is not a particularly great question: most users don’t particularly care about timezones, or may not understand and respect them to the same extent as professional software developers."
+author = "Simon Willison"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simonwillison.net/2024/Nov/27/storing-times-for-human-events"
+tags = ["articles", "changes", "databases        104", "error", "event", "events", "events        108", "figure", "human", "incorrect"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "nomic.ai", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2014"]
+title = "Archive for 2014"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2014"
+tags = ["april", "archive", "february", "january", "march", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2002/Aug/1/realWorldStyle"]
+title = "Real World Style"
+description = "Real World Style: These techniques work. I know, because I use them every day in my real world job. Mark Newhouse provides a whole site dedicated to CSS tips, tricks …"
+full_description = "Real World Style: These techniques work. I know, because I use them every day in my real world job. Mark Newhouse provides a whole site dedicated to CSS tips, tricks and full blown public domain layouts specifically designed to work with Netscape 4 (and Unix machines). This is an invaluable resource for web developers who want to start using modern techniques but still have to cater for an audience with troublesome browser preferences."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/1/realWorldStyle"
+tags = ["articles", "next:", "previous:", "real", "recent", "simon", "style", "weblog", "willison’s", "world"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "aistudio.google.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "answers.microsoft.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "hetzner.com", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "verdad.app"]
+
+["https://simonwillison.net/2002/Aug/14/bulletinBoardSpam"]
+title = "Bulletin board spam"
+description = "My friend Tim recently received a spam from a company called TrafficBBS, who specialise in bulk submissions to 50,000 search engines and 120,000+ BBS (web based bulletin boards). A quick …"
+full_description = "My friend Tim recently received a spam from a company called TrafficBBS, who specialise in bulk submissions to 50,000 search engines and 120,000+ BBS (web based bulletin boards). A quick look at their list of targetted forums reveals that they are spidering and spamming a whole bunch of simple web based forum scripts that don’t require user authentication, such as WWWBoard. This is a form of spam I wasn’t aware of until now. It’s scary to think how easily the system could be expanded to automatically register on more advanced widespread forum systems such as vBulletin. Incidentally, their crawler (or one of them) identifies itself as PHP/4.2.1 and uses the IP address 211.101.236.142."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/14/bulletinBoardSpam"
+tags = ["120,000+", "articles", "board", "bulletin", "next:", "previous:", "recent", "simon", "spam", "weblog"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2002/Aug/16/aPlanForSpam"]
+title = "A plan for spam"
+description = "Paul Graham: A Plan for Spam. Paul suggests using content based filters that learn from users specifically marking messages as spam or legitimate mail. The system then picks emails apart …"
+full_description = "Paul Graham: A Plan for Spam. Paul suggests using content based filters that learn from users specifically marking messages as spam or legitimate mail. The system then picks emails apart looking for commmon terms (in both the body and the header of the message) that can then be used later on to identify spam messages. He claims his test have let through only 5 per 1000 spams, with 0 false positives. Impressive stuff, and great reading for the excellent explanations of some advanced alogithmic and statistical techniques."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/16/aPlanForSpam"
+tags = ["articles", "next:", "plan", "previous:", "recent", "simon", "spam", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Dec/10/chatgpt-canvas"]
+title = "ChatGPT Canvas can make API requests now, but it’s complicated"
+description = "Today’s 12 Days of OpenAI release concerned ChatGPT Canvas, a new ChatGPT feature that enables ChatGPT to pop open a side panel with a shared editor in it where you …"
+full_description = "Today’s 12 Days of OpenAI release concerned ChatGPT Canvas, a new ChatGPT feature that enables ChatGPT to pop open a side panel with a shared editor in it where you can collaborate with ChatGPT on editing a document or writing code. I’m always excited to see a new form of UI on top of LLMs, and it’s great seeing OpenAI stretch out beyond pure chat for this. It’s definitely worth playing around with to get a feel for how a collaborative human+LLM interface can work. The feature where you can ask ChatGPT for “comments on my document” and it will attach them Google Docs style is particularly neat. I wanted to focus in on one particular aspect of Canvas, because it illustrates a concept I’ve been talking about for a little while now: the increasing complexity of fully understanding the capabilities of core LLM tools. If a canvas editor contains Python code, ChatGPT adds a new “Run” button at the top of the editor. ChatGPT has had the ability to run Python for a long time via the excellent Code Interpreter feature, which executes Python server-side in a tightly locked down Kubernetes container managed by OpenAI. The new Canvas run button is not the same thing—it’s an entirely new implementation of code execution that runs code directly in your browser using Pyodide (Python compiled to WebAssembly). “Python in canvas can make network requests”‽ This is a very new capability. ChatGPT Code Interpreter has all network access blocked, but apparently ChatGPT Canvas Python does not share that limitation. I tested this a little bit and it turns out it can make direct HTTP calls from your browser to anywhere online with compatible CORS headers. (Understanding CORS is a recurring theme in working with LLMs as a consumer, which I find deeply amusing because it remains a pretty obscure topic even among professional web developers.) Claude Artifacts allow full JavaScript execution in a Canvas-like interface within Claude, but even those are severely restricted in terms of the endpoints they can access. OpenAI have apparently made the opposite decision, throwing everything wide open as far as allowed network request targets go."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/10/chatgpt-canvas"
+tags = ["ai        1118", "articles", "canvas", "chatgpt", "chatgpt        138", "complicated", "cors        20", "generative-ai        961", "it's", "it’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aider.chat", "allenai.org", "anthropic.com", "aws.amazon.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "fmworldcup.com", "gist.github.com", "micropip.pyodide.org", "news.ycombinator.com", "openai.com", "playwright.dev", "pyodide.org", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2024/Dec/4/amazon-nova"]
+title = "First impressions of the new Amazon Nova LLMs (via a new llm-bedrock plugin)"
+description = "Amazon released three new Large Language Models yesterday at their AWS re:Invent conference. The new model family is called Amazon Nova and comes in three sizes: Micro, Lite and Pro. …"
+full_description = "Amazon released three new Large Language Models yesterday at their AWS re:Invent conference. The new model family is called Amazon Nova and comes in three sizes: Micro, Lite and Pro. I built a new LLM plugin called llm-bedrock for accessing the models in the terminal via boto3 and the Amazon Bedrock API. My initial impressions from trying out the models are that they’re mainly competitive with the Google Gemini family. They are extremely inexpensive—Nova Micro slightly undercuts even previously cheapest model Gemini 1.5 Flash-8B—can handle quite large context and the two larger models can handle images, video and PDFs. Amazon list their pricing in price per 1,000 input tokens. Almost everyone else uses price per million, so I’ve done the conversion. As you can see, Nova Micro is .25 of a cent cheaper on input and 1 cent cheaper on output than previous champion Gemini 1.5 Flash-8B. So Nova Pro isn’t priced the same as those top-tier models, in fact it’s priced about the same as Claude 3.5 Haiku (after their new 20% price drop). Amazon Nova Premier – Our most capable multimodal model for complex reasoning tasks and for use as the best teacher for distilling custom models. Amazon Nova Premier is still in training. We’re targeting availability in early 2025. Comparing models based on token pricing doesn’t capture the entire picture because models use different tokenizers and hence may use up different numbers of tokens for the same input, especially with images and video added to the mix. I’d like to implement a good way to compare those counts in the future. In terms of capabilities: all of the above models can handle image inputs now, with the exception of Amazon Nova Micro and o1-mini and o1-preview which are text only. Video support is currently unique to the Gemini and Nova models—Anthropic and OpenAI don’t have any that handle video yet. See Amazon Nova video understanding limitations for more details. Nova models can’t handle audio, and in fact ignore audio in video that they analyze (treating it as a sequence of images). Gemini models have audio input, as does OpenAI’s gpt-4o-audio-preview model ($100/$200 for input/output of those audio tokens)."
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/4/amazon-nova"
+tags = ["ai        1118", "amazon", "amazon        67", "anthropic        120", "articles", "gamoa", "gemini        59", "generative-ai        961", "impressions", "llm        145"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aisnakeoil.com", "aistudio.google.com", "allenai.org", "berthub.eu", "bloomberg.com", "cerebras.ai", "daringfireball.net", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "huggingface.co", "livebench.ai", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "openai.com", "pyodide.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2024/Dec/19/one-shot-python-tools"]
+title = "Building Python tools with a one-shot prompt using uv run and Claude Projects"
+description = "I’ve written a lot about how I’ve been using Claude to build one-shot HTML+JavaScript applications via Claude Artifacts. I recently started using a similar pattern to create one-shot Python utilities, …"
+full_description = "I’ve written a lot about how I’ve been using Claude to build one-shot HTML+JavaScript applications via Claude Artifacts. I recently started using a similar pattern to create one-shot Python utilities, using a custom Claude Project combined with the dependency management capabilities of uv. (In LLM jargon a “one-shot” prompt is a prompt that produces the complete desired result on the first attempt. Confusingly it also sometimes means a prompt that includes a single example of the desired output format. Here I’m using the first of those two definitions.) I had another round of battle with Amazon S3 today trying to figure out why a file in one of my buckets couldn’t be accessed via a public URL. I can't access the file at EXAMPLE_S3_URL. Write me a Python CLI tool using Click and boto3 which takes a URL of that form and then uses EVERY single boto3 trick in the book to try and debug why the file is returning a 404 Crucially, I didn’t have to take any extra steps to install any of the dependencies that the script needed. That’s because the script starts with this magic comment: This is an example of inline script dependencies, a feature described in PEP 723 and implemented by uv run. Running the script causes uv to create a temporary virtual environment with those dependencies installed, a process that takes just a few milliseconds once the uv cache has been populated. This even works if the script is specified by a URL! Anyone with uv installed can run the following command (provided you trust me not to have replaced the script with something malicious) to debug one of their own S3 buckets: The reason I can one-shot scripts like this now is that I’ve set up a Claude Project called “Python app”. Projects can have custom instructions, and I used those to “teach” Claude how to take advantage of inline script dependencies: These files can include dependencies on libraries such as Click. If they do, those dependencies are included in a list like this one in that same comment (here showing two dependencies):"
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/19/one-shot-python-tools"
+tags = ["ai        1118", "articles", "aws        67", "building", "chatgpt", "claude", "claude        124", "generative-ai        961", "llms", "llms        950"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aider.chat", "allenai.org", "anthropic.com", "api-docs.deepseek.com", "aws.amazon.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "llm.datasette.io", "micropip.pyodide.org", "news.ycombinator.com", "openai.com", "pyodide.org", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2024/Nov/25/ask-questions-of-sqlite"]
+title = "Ask questions of SQLite databases and CSV/JSON files in your terminal"
+description = "I built a new plugin for my sqlite-utils CLI tool that lets you ask human-language questions directly of SQLite databases and CSV/JSON files on your computer. It’s called sqlite-utils-ask. Here’s …"
+full_description = "I built a new plugin for my sqlite-utils CLI tool that lets you ask human-language questions directly of SQLite databases and CSV/JSON files on your computer. It picks up API keys from an OPENAI_API_KEY environment variable, or you can install LLM and use llm keys set openai to store a key in a configuration file. This command will extract the SQL schema for the provided database file, send that through an LLM along with your question, get back a SQL query and attempt to run it to derive a result. If the SQL query fails to execute (due to a syntax error of some kind) it passes that error back to the model for corrections and retries up to three times before giving up. I’ve truncated the above to just the relevant table—it actually includes the full schema of every table in that database. By default, the tool sends just that database schema and your question to the LLM. If you add the -e/--examples option it will also include five common values for each of the text columns in that schema with an average length less than 32 characters. This can sometimes help get a better result, for example sending values “CA” and “FL” and “TX” for a state column can tip the model of that it should use state abbreviations rather than full names in its queries. The core sqlite-utils CLI usually works against SQLite files directly, but three years ago I added the ability to run SQL queries against CSV and JSON files directly with the sqlite-utils memory command. This works by loading that data into an in-memory SQLite database before executing a SQL query. This command accepts one or more files, and you can provide a mix of CSV, TSV and JSON. Each provided file will be imported into a different table, allowing the model to construct join queries where necessary. The core of the plugin is implemented as around 250 lines of Python, using the sqlite-utils register_commands() plugin hook to add the ask and ask-files commands. It adds LLM as a dependency, and takes advantage of LLM’s Python API to abstract over the details of talking to the models. This means sqlite-utils-ask can use any of the models supported by LLM or its plugins—if you want to run your prompt through Claude 3.5 Sonnet you can do this:"
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Nov/25/ask-questions-of-sqlite"
+tags = ["ai        1118", "articles", "csv/json", "databases", "files", "generative-ai        961", "llm        145", "llms        950", "next:", "plugins        106"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "cims.nyu.edu", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "nomic.ai", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]
+
+["https://simonwillison.net/2017"]
+title = "Archive for 2017"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2017"
+tags = ["april", "archive", "august", "december", "january", "july", "june", "march", "november", "october"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "cursor.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "github.com", "twitter.com"]
+
+["https://simonwillison.net/2005"]
+title = "Archive for 2005"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2005"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2002/Aug/15/patentedIMBots"]
+title = "Patented IMBots"
+description = "I wonder if these muppets have heard of eggdrop (created 1993). Something tells me prior art for this one won’t be too hard to find."
+full_description = "I wonder if these muppets have heard of eggdrop (created 1993). Something tells me prior art for this one won’t be too hard to find."
+author = "Simon Willison"
+year_published = 2002
+clearnet = "https://simonwillison.net/2002/Aug/15/patentedIMBots"
+tags = ["articles", "imbots", "next:", "patented", "previous:", "recent", "simon", "weblog", "willison’s"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "archivist.incutio.com", "arstechnica.com", "cerebras.ai", "civic.band", "datasette.io", "docs.anthropic.com", "fedi.simonwillison.net", "list.org", "lmarena.ai", "lums.lancs.ac.uk", "micropip.pyodide.org", "realworldstyle.com", "smcacre.gov", "two.pairlist.net", "verdad.app", "weblog.delacour.net"]
+
+["https://simonwillison.net/2024/Dec/19/gemini-thinking-mode"]
+title = "Gemini 2.0 Flash “Thinking mode”"
+description = "Those new model releases just keep on flowing. Today it’s Google’s snappily named gemini-2.0-flash-thinking-exp, their first entrant into the o1-style inference scaling class of models. I posted about a great …"
+full_description = 'Those new model releases just keep on flowing. Today it’s Google’s snappily named gemini-2.0-flash-thinking-exp, their first entrant into the o1-style inference scaling class of models. I posted about a great essay about the significance of these just this morning. Gemini 2.0 Flash Thinking Mode is an experimental model that’s trained to generate the “thinking process” the model goes through as part of its response. As a result, Thinking Mode is capable of stronger reasoning capabilities in its responses than the base Gemini 2.0 Flash model. The best source of example prompts I’ve found so far is the Gemini 2.0 Flash Thinking cookbook—a Jupyter notebook full of demonstrations of what the model can do. That’s the same answer as Google provided in their example notebook, so I’m presuming it’s correct. Impressive! This thought process involves a combination of visual thinking, knowledge of SVG syntax, and iterative refinement. The key is to break down the problem into manageable parts and build up the image piece by piece. Even experienced SVG creators often go through several adjustments before arriving at the final version.00" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg"> <g> <!-- Bicycle Frame --> So maybe not an artistic genius, but it’s interesting to read through its chain of thought for that task. It’s very clear now that inference scaling is the next big area of research for the large labs. We’ve seen models from OpenAI (o1), Qwen (QwQ), DeepSeek (DeepSeek-R1-Lite-Preview) and now Google Gemini. I’m interested to hear if Anthropic or Meta or Mistral or Amazon have anything cooking in this category.'
+author = "Simon Willison"
+year_published = 2024
+clearnet = "https://simonwillison.net/2024/Dec/19/gemini-thinking-mode"
+tags = ["ai        1118", "articles", "flash", "gemini", "gemini        59", "generative-ai        961", "google        348", "llm        145", "llms        950", "mode”"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aider.chat", "allenai.org", "anthropic.com", "api-docs.deepseek.com", "aws.amazon.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "cursor.com", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "gist.github.com", "llm.datasette.io", "micropip.pyodide.org", "news.ycombinator.com", "openai.com", "pyodide.org", "t.co", "til.simonwillison.net"]
+
+["https://simonwillison.net/2004"]
+title = "Archive for 2004"
+full_description = "2002 / 2003 / 2004 / 2005 / 2006 / 2007 / 2008 / 2009 / 2010 / 2011 / 2012 / 2013 / 2014 / 2015 / 2016 / 2017 / 2018 / 2019 / 2020 / 2021 / 2022 / 2023 / 2024 / 2025"
+author = "Simon Willison"
+year_published = 2025
+clearnet = "https://simonwillison.net/2004"
+tags = ["april", "archive", "august", "december", "february", "january", "july", "june", "march", "november"]
+language = "en"
+internal-references = ["none"]
+external-references = ["ai.google.dev", "aider.chat", "allenai.org", "anthropic.com", "arxiv.org", "aws.amazon.com", "ben-evans.com", "berthub.eu", "caniuse.com", "chroniclingamerica.loc.gov", "claude.ai", "codeium.com", "cursor.com", "developers.googleblog.com", "docs.anthropic.com", "docs.python.org", "embracethered.com", "esdiscuss.org", "gist.github.com", "github.com"]
+
+["https://simonwillison.net/2024/Nov/16/civic-band"]
+title = "Project: Civic Band—scraping and searching PDF meeting minutes from hundreds of municipalities"
+description = "I interviewed Philip James about Civic Band, his “slowly growing collection of databases of the minutes from civic governments”. Philip demonstrated the site and talked through his pipeline for scraping …"
+full_description = "I interviewed Philip James about Civic Band, his “slowly growing collection of databases of the minutes from civic governments”. Philip demonstrated the site and talked through his pipeline for scraping and indexing meeting minutes from many different local government authorities around the USA. Philip was inspired to start thinking more about local government after the 2016 US election. He realised that there was a huge amount of information about decisions made by local authorities tucked away in their meeting minutes,but that information was hidden away in thousands of PDF files across many different websites. There was this massive backlog of basically every decision that had ever been made by one of these bodies. But it was almost impossible to discover because it lives in these systems where the method of exchange is a PDF. Philip lives in Alameda, which makes its minutes available via this portal powered by Legistar. It turns out there are a small number of vendors that provide this kind of software tool, so once you’ve written a scraper for one it’s likely to work for many others as well. It’s running the datasette-search-all plugin and has both tables configured for full-text search. Here’s a search for housing: The public Civic Band sites all run using Datasette in Docker Containers—one container per municipality. They’re hosted on a single Hetzner machine. The ingestion pipeline runs separately from the main hosting environment, using a Mac Mini on Philp’s desk at home. OCR works by breaking each PDF up into images and then running Tesseract OCR against them directly on the Mac Mini. This processes in the order of 10,000 or less new pages of documents a day. Philip treats PDF as a normalization target, because the pipeline is designed around documents with pages of text. In the rare event that a municipality publishes documents in another format such as .docx he converts them to PDF before processing. PNG images of the PDF pages are served via a CDN, and the OCRd text is written to SQLite database files—one per municipality. SQLite FTS provides full-text search."
+author = "Simon Willison"
+year_published = 2024
+year_updated = 2024
+clearnet = "https://simonwillison.net/2024/Nov/16/civic-band"
+tags = ["articles", "band", "band—scraping", "civic", "data-journalism        52", "datasette        431", "hundreds", "meeting", "minutes", "municipalities"]
+language = "en"
+internal-references = ["none"]
+external-references = ["aisnakeoil.com", "alameda.ca.civic.band", "alameda.legistar.com", "allenai.org", "berthub.eu", "cerebras.ai", "daringfireball.net", "datasette.io", "docs.anthropic.com", "esdiscuss.org", "fedi.simonwillison.net", "lmarena.ai", "micropip.pyodide.org", "ndurner.github.io", "npmjs.com", "openai.com", "pyodide.org", "sqlite.org", "t.co", "timeanddate.com"]

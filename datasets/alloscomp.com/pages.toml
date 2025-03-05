@@ -1,0 +1,29 @@
+["https://alloscomp.com"]
+title = "Alloscomp : Home"
+full_description = "I'm a software engineer living in San Francisco. I graduated from the University of Cincinnati in 2014 with a BSEE, MBA, and a minor in Mathematics. I'm @aftbit on Twitter and keybase. I've held an amateur radio licence since 10/10/2002, first under the callsign KC8UWJ, then under WI3G. Visit my amateur radio homepage for more details. Most of my personal work can be found on my GitHub profile. I have worked with Python (including flask and django), Ruby (Ruby on Rails and Sinatra), Javascript, C++ (including Qt4), and C#. I use Arch Linux as my primary operating system. Once you've used Linux for programming, you can never go back! If you need to contact me regarding the site, email webmaster@alloscomp.com. If you need to contact me personally, send an email to swansone@alloscomp.com. If you'd like to send me secure, encrypted email or give me access to a server, my GPG and SSH public keys can be found here."
+year_published = 2025
+clearnet = "https://alloscomp.com"
+tags = ["bitcoin", "calculator", "cook!", "employment", "mining", "miscellaneous", "projects", "selected", "self-employment", "sometimes"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cinele.com", "cliftonlabs.com", "etegent.com", "evil32.com", "github.com", "keybase.io", "nlign.com", "priceyak.com", "sometimesicook.net", "twitter.com", "wi3g.net", "zinc.io"]
+
+["https://alloscomp.com/bitcoin/calculator"]
+title = "Alloscomp : Bitcoin Mining Calculator"
+full_description = "Got your shiny new ASIC miner? Wondering when it will pay off? If you enter your hash rate below, this page will calculate your expected earnings in both Bitcoins and dollars over various time periods (day, week, and month). It will not attempt to extrapolate difficulty or price changes -- it provides only instantaneous calculations (how much you'd make if all conditions remained as they were right now). Next difficulty retarget occurs at block 885965.0 (eta 5715.2 days): 1.19029138494e+14 / +7.7% [est.]"
+year_published = 2025
+clearnet = "https://alloscomp.com/bitcoin/calculator"
+tags = ["bitcoin", "calculator", "mining", "sponsored"]
+language = "en"
+internal-references = ["none"]
+external-references = ["cinele.com", "cliftonlabs.com", "etegent.com", "evil32.com", "github.com", "keybase.io", "nlign.com", "priceyak.com", "sometimesicook.net", "twitter.com", "wi3g.net", "zinc.io"]
+
+["https://alloscomp.com/keys"]
+title = "Alloscomp : My Public Keys"
+full_description = "I've transitioned to a new key, E620C8A74BAF5D09. It's a 4096-bit RSA key that should last me at least a decade. I won't revoke the old key for a while, as I have no reason to assume that it's broken, but please use the new key for all correspondance. I've created an official transition statement which you can read here. If you need to give me access to an account over SSH, the easiest and most convenient method is for you to add this SSH key to your .ssh/authorized_keys file."
+year_published = 2025
+clearnet = "https://alloscomp.com/keys"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["cinele.com", "cliftonlabs.com", "etegent.com", "evil32.com", "github.com", "keybase.io", "nlign.com", "priceyak.com", "sometimesicook.net", "twitter.com", "wi3g.net", "zinc.io"]
