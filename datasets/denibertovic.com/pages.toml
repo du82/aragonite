@@ -1,0 +1,200 @@
+["https://denibertovic.com/categories/clusters"]
+title = "Deni Bertovic :: Posts about clusters"
+full_description = "Posts about clusters [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about clusters [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/clusters"
+tags = ["clusters", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/haskell-showroom"]
+title = "Deni Bertovic :: Posts about haskell showroom"
+full_description = "Posts about haskell showroom [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about haskell showroom [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/haskell-showroom"
+tags = ["haskell", "license", "posts", "showroom", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/linux"]
+title = "Deni Bertovic :: Posts about linux"
+full_description = "Posts about linux [2021-12-09] How I do backups [2014-04-06] Setting up Systemd on Debian in 10 minutes License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about linux [2021-12-09] How I do backups [2014-04-06] Setting up Systemd on Debian in 10 minutes"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/linux"
+tags = ["license", "linux", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/devops"]
+title = "Deni Bertovic :: Posts about devops"
+full_description = "Posts about devops [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about devops [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/devops"
+tags = ["devops", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/nixos"]
+title = "Deni Bertovic :: Posts about nixos"
+full_description = "License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/nixos"
+tags = ["license", "nixos", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/open-source"]
+title = "Deni Bertovic :: Posts about open source"
+full_description = "Posts about open source [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about open source [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/open-source"
+tags = ["license", "open", "posts", "source", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/index-3.html"]
+title = "Deni Bertovic :: Deni Bertovic (old posts, page 3)"
+full_description = "2016-09-08 Haskell and Docker: Down the rabbit hole and back For the past couple of years I've been learning Haskell, and while I enjoy reading new materials in forms of books, papers, blogs posts and even tweets, thankfully I quickly came to realize that the best way to learn is to build things. That's not to say I just jumped right in. I spent a long time just playing around with the language, exploring various language features, libraries and getting to know the ecosystem in general. Not doing anything serious 1. At the time that was a bit more painful than now because now-a-days there's a lot more resources and organized materials around. The community has really stepped up! 2 Anyhow... Building things. I've been using docker since it was released and have grown from resident docker fan-boy to resident expert over time. Also I've been involved with the Python API wrapper since the early days so it made sense to try and write a Haskell API wrapper. At the time that was the closest I came to web development (the docker daemon listens on a HTTP API) as I felt comfortable. The first attempt was awful. But it worked! I was able to launch containers and everything. Of course, the API of the library was horrendous. There were very little type guarantees for anything and the whole thing was just one big giant IO blob. Having realized this, I went on a crusade to learn all the fancy type machinery and make use of every trick and extension under the sun. That attempt went on and off for a couple of months until I realized that I created a monster and that I didn't need half the stuff I was using. So, having went from one extreme to the other I decided to delete everything and start fresh. I had some guidance from a couple of friends (thank you!) and I was getting pretty close to an API I was (more) happy with and that should be usable by most people. The library being usable was one criteria, but the other one was that it's more or less straightforward to contribute to. The reason being that the Docker Engine API is kind of huge at this point and I'm certainly either going to miss something, or implement it wrong, and it should be more or less easy for anyone to go in, and contribute a bugfix or a feature. Naturally, this dragged on since obviously I was doing this for fun and in my spare time. Thankfully, I got help somewhere along the way when James Parker jumped in. He was instrumental in getting the library in better shape so that we can finally release that major refactored version. Read more… docker haskell"
+year_published = 2016
+clearnet = "https://denibertovic.com/index-3.html"
+tags = ["docker", """
+docker            haskell""", "docker:", "down", "handling", "haskell", "hole", "license", "permissions", "rabbit"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "jamesparker.me", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/index.html"]
+title = "Deni Bertovic :: Tags"
+full_description = "License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/index.html"
+tags = ["license", "tags", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/haskell"]
+title = "Deni Bertovic :: Posts about haskell"
+full_description = "Posts about haskell [2021-12-09] How I do backups [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces [2016-09-08] Haskell and Docker: Down the rabbit hole and back License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about haskell [2021-12-09] How I do backups [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces [2016-09-08] Haskell and Docker: Down the rabbit hole and back"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/haskell"
+tags = ["haskell", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/archive.html"]
+title = "Deni Bertovic :: Archive"
+full_description = "Archive [2023-06-19] New homelab machine [2021-12-09] How I do backups [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces [2016-09-08] Haskell and Docker: Down the rabbit hole and back [2016-02-17] Handling Permissions with Docker Volumes [2014-06-18] Celery - Best Practices [2014-04-06] Setting up Systemd on Debian in 10 minutes [2014-02-03] Docker and Logstash: Smarter Log Management For Your Containers [2014-01-18] Classes for all the things? [2013-09-04] The switch to Nikola [2013-08-06] One-liner Instant Postgres for your development environment [2012-10-01] Pixbin.us just got an API [2012-09-01] Finally License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/archive.html"
+tags = ["archive", "license", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/denv"]
+title = "Deni Bertovic :: Posts about denv"
+full_description = "Posts about denv [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about denv [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/denv"
+tags = ["denv", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/kubectl"]
+title = "Deni Bertovic :: Posts about kubectl"
+full_description = "Posts about kubectl [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about kubectl [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/kubectl"
+tags = ["kubectl", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/pages/talks"]
+title = "Deni Bertovic :: Talks"
+full_description = "Talks Realtime Notifications with Python, SocketIO and PostgreSQL Celery best practices Supercharge your development environment using Docker - Europython 2014 video | Webcampzg 2014 video First Docker Zagreb Meetup - Docker-101 License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Talks Realtime Notifications with Python, SocketIO and PostgreSQL Celery best practices Supercharge your development environment using Docker - Europython 2014 video | Webcampzg 2014 video First Docker Zagreb Meetup - Docker-101"
+year_published = 2025
+clearnet = "https://denibertovic.com/pages/talks"
+tags = ["license", "talks", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "jamesparker.me", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com", "youtube.com"]
+
+["https://denibertovic.com/pages/about-me"]
+title = "Deni Bertovic :: About Me"
+full_description = "About Me Hi, my name is Deni. I'm a Software Engineer based in Europe. I offer Haskell, Purescript, Python, DevOps consulting services. I specialize in implementing modern DevOps practices using tools like Docker, Kubernetes, Terraform etc. If your company needs help with dockerizing your legacy application, implementing a CI/CD pipeline for deploying to a Kubernets cluster (on AWS or GCP), feel free to reach out. Check out my Github repo for some of my open source work. License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/pages/about-me"
+tags = ["license", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "jamesparker.me", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/backups"]
+title = "Deni Bertovic :: Posts about backups"
+full_description = "License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/backups"
+tags = ["backups", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/kubernetes"]
+title = "Deni Bertovic :: Posts about kubernetes"
+full_description = "Posts about kubernetes [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about kubernetes [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/kubernetes"
+tags = ["kubernetes", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/functional-programming"]
+title = "Deni Bertovic :: Posts about functional programming"
+full_description = "Posts about functional programming [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces [2014-01-18] Classes for all the things? License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Posts about functional programming [2019-05-12] Haskell Showroom: Switching between different AWS accounts [2019-01-14] Haskell Showroom: How to switch between multiple kubernetes clusters and namespaces [2014-01-18] Classes for all the things?"
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/functional-programming"
+tags = ["functional", "license", "posts", "programming", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/homelab"]
+title = "Deni Bertovic :: Posts about homelab"
+full_description = "License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/homelab"
+tags = ["homelab", "license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com"]
+title = "Deni Bertovic"
+full_description = "2023-06-19 New homelab machine I've been meaning to share the new addition to my homelab setup for a while now but just never got around to it. It's a beast that's definitely overkill but I wanted to play around and future proof as much as possible. It initially started as a project to replace my old 2-bay Synology NAS. I needed an upgrade, storage wise, but I also wanted to switch to ZFS, and since Synology doesn't support ZFS I knew I'd have to build my own rig. That in turn meant I needed to figure out what I was going to install on the thing. Initially I looked at openmediavault but it didn't seem to support ZFS at the time (I don't know if this is still true). Then I looked at FreeNAS as they were going through their rebranding to TrueNAS - but I was weary about switching to FreeBSD at the time. I wanted something that I knew well (Linux) and that I can easily customize. Before you mention TrueNAS Scale (which is Linux based) it wasn't ready at the time1 and I was hesitant about all the cruft that comes pre-installed with it (my main issue with Synology). I guess I wanted to install and configure stuff my way when I need it. Read more… homelab nixos 2021-12-09 How I do backups Backups are important! I don't just mean for production environments either - you should back up your laptop regularly and in an automated fashion. I've started doing regular backups of my machines after suffering 2 consecutive drive failures with one of my laptops. After something like that (which BTW never happened since XD) you kind of realize that backups are not just a nice thing to have, but a hard requirement. In this blog post I'll outline how I've set up my on-site backup solution. Read more… backups haskell linux 2019-05-12 Haskell Showroom: Switching between different AWS accounts In my previous post I talked about denv and how I switch between different Kubernetes clusters. I also talked about the importance of being explicit about which environment you're currently working on, easily switching between and deactivating an environment so that we don't run accidental commands in the wrong context. Continuing this series, in this post I will talk about how to effectively switch between different AWS accounts. Read more… aws denv devops functional programming haskell haskell showroom open source"
+year_published = 2023
+clearnet = "https://denibertovic.com"
+tags = ["accounts", "aws", "backups", "between", "clusters", "denv", "devops", "different", "don't", "functional programming"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]
+
+["https://denibertovic.com/categories/aws"]
+title = "Deni Bertovic :: Posts about aws"
+full_description = "License The blog posts are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+year_published = 2025
+clearnet = "https://denibertovic.com/categories/aws"
+tags = ["license", "posts", "touch"]
+language = "en"
+internal-references = ["none"]
+external-references = ["creativecommons.org", "github.com", "hr.linkedin.com", "instagram.com", "openmediavault.org", "openzfs.org", "truenas.com", "twitter.com"]

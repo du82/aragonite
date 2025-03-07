@@ -1,0 +1,43 @@
+["https://ethereal.email/help"]
+title = "Ethereal Email"
+full_description = "Inbound email functionality was previously enabled by default for all Ethereal.email accounts. Unfortunately, this feature was exploited by cyber criminals due to the ease of creating anonymous accounts. Since it is not feasible to validate each account individually, and Ethereal.email’s primary objective is to provide test endpoints for outbound emails, we have decided to discontinue the inbound email service. To generate email accounts with inbound access with Nodemailer (v6.9.14 or newer), you have to have the ETHEREAL_API_KEY environment variable set. You can get this key from Postal System's account page here if you are a paid subscriber."
+author = "Andris Reinman"
+year_published = 2025
+clearnet = "https://ethereal.email/help"
+tags = ["disabled?", "email", "help", "inbound"]
+language = "en"
+internal-references = ["none"]
+external-references = ["emailengine.app", "nodemailer.com", "postalsys.com"]
+
+["https://ethereal.email"]
+title = "Ethereal Email"
+full_description = "Ethereal is a fake SMTP service, mostly aimed at Nodemailer and EmailEngine users (but not limited to). It's a completely free anti-transactional email service where messages never get delivered. Instead, you can generate a vanity email account right from Nodemailer, send an email using that account just as you would with any other SMTP provider and finally preview the sent message here as no emails are actually delivered. Ethereal addresses act as real IMAP/POP3 accounts. You can access sent and received messages using your favorite email client, whatever that happens to be. The same account acts as a real inbound email address. You can send emails to that address from anywhere and these messages also end up on the account mailbox. All account registration can be handled by the Nodemailer API. If you have lost authentication details for a previous account, then just create a new one."
+author = "Andris Reinman"
+year_published = 2025
+clearnet = "https://ethereal.email"
+tags = ["account", "automatic", "create", "emailengine", "ethereal", "imap/pop3", "inbound"]
+language = "en"
+internal-references = ["none"]
+external-references = ["emailengine.app", "nodemailer.com"]
+
+["https://ethereal.email/faq"]
+title = """
+Ethereal Email     | FAQ"""
+full_description = "Ethereal is a free email-catching service, mostly aimed at (but not limited to) Nodemailer users. Configure Ethereal as your outbound SMTP service and start sending mail. Nothing is actually delivered. All emails are caught and stored for review. What makes Ethereal stand out is the IMAP support and the freedom to create as many accounts as you wish, even programmatically. Ethereal is mostly useful for app development. Instead of configuring a real email account for sending mail, your application can automatically request an Ethereal test account and use it for message delivery. You get the same experience as using any other mail service provider, and you can configure it as an outbound mail server and send your transactional or marketing emails through the Ethereal service. Unlike real email services, Ethereal only accepts mail for delivery but never actually delivers anything. Instead, you get a URL (or use your favorite IMAP app) to conveniently preview the sent messages. Ethereal accounts can be created by Nodemailer using the nodemailer.createTestAccount(callback) method (or if you want to create accounts the old way, then from the login page). This method requests a new account (or uses a cached account) from Ethereal and returns related information. All Ethereal accounts look exactly like any other SMTP service account. For applications trying to send mail, there's no difference whatsoever. Once you have sent your message using an Ethereal account, you can get a message preview URL with the nodemailer.getTestMessageUrl(info) method (the info object is the response from sendMail). Open that URL in your web browser to see the sent message. Message URLs are public and do not require authentication. Or, to be more correct, the authentication info is encoded into the URL. Alternatively, you can log in either here and see the messages page or use your favorite IMAP/POP3 client to access the sent messages. You sure don't have to, even though you can. Account details are cached in memory, so if you make two account requests from the same process, you only create one new account. If you do not want to list sent messages, then you don't have to worry about accounts. If you do, though, then you should store the account details somewhere and reuse these. Normally, you would generate a single account and use it for all your testing."
+author = "Andris Reinman"
+year_published = 2025
+clearnet = "https://ethereal.email/faq"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["emailengine.app", "nodemailer.com"]
+
+["https://ethereal.email/login"]
+title = "Ethereal Email"
+author = "Andris Reinman"
+year_published = 2025
+clearnet = "https://ethereal.email/login"
+tags = []
+language = "en"
+internal-references = ["none"]
+external-references = ["emailengine.app", "nodemailer.com", "postalsys.com"]

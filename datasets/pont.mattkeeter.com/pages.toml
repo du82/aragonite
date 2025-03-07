@@ -1,0 +1,27 @@
+["https://pont.mattkeeter.com/rules.html"]
+title = "Pont Rules"
+full_description = '''To create a new room, enter your name and click "Create new room" (or press Enter). Your room's code will be in the top left; send it to your friends. To join a room, enter your name and the code that your friend send you, then click "Join existing room" (or press Enter). Pieces must be placed so that each connected row or column shares either a shape or a color, without duplicates. In the example below, all tiles in the row are orange, and all tiles in the column are X shaped. Each move may only contribute to one connected row or column. The move below is invalid because the two pieces are not contributing to the same line. There are six colors and six shapes, so each connected line cannot contain more than six pieces (since duplicates are not allowed). Near the end of the game, you may not be able to exchange your entire hand (if the bag has fewer than six pieces left) Each move scores one point for each tile in a line that is touched by the move. The move below adds a tile, producing a line of length 4, and therefore scores 4 points. It's possible for a move to contribute to more than one line. The move below scores 3 points for the horizontal (green) line, plus 2 points for the vertical (circles) line, for a total of 5 points. Completing a line gives a 6-point bonus, in addition to the 6 points from the line itself. The move below is worth 12 points.'''
+year_published = 2025
+clearnet = "https://pont.mattkeeter.com/rules.html"
+tags = ["ending", "exchanging", "game", "joining", "pieces", "placing", "rules", "scoring", "taking", "turn"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "mattkeeter.com", "twitter.com"]
+
+["https://pont.mattkeeter.com/index.html"]
+title = "Pont"
+year_published = 2025
+clearnet = "https://pont.mattkeeter.com/index.html"
+tags = ["name:", "room:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "mattkeeter.com", "twitter.com"]
+
+["https://pont.mattkeeter.com"]
+title = "Pont"
+year_published = 2025
+clearnet = "https://pont.mattkeeter.com"
+tags = ["name:", "room:"]
+language = "en"
+internal-references = ["none"]
+external-references = ["github.com", "mattkeeter.com", "twitter.com"]
