@@ -26,10 +26,12 @@ use toml::Value;
 use crate::benchmarks::search_benchmark;
 use crate::common::url_utils::{is_homepage, get_domain_name};
 use crate::common::document_to_html::document_to_html;
+use crate::common::filter::{FilterType, apply_filter};
 
 #[derive(FromForm)]
 pub struct SearchForm {
     query: String,
+    filter: Option<String>,
 }
 
 use std::time::SystemTime;
@@ -43,17 +45,27 @@ pub fn random_search() -> Result<Redirect, std::io::Error> {
         .unwrap()
         .as_secs();
     let query = queries[(time as usize) % queries.len()];
-    Ok(Redirect::to(uri!(search_get(q = Some(query.to_string())))))
+
+    // Manually construct the URI string
+    let uri = format!("/search?q={}", query);
+    Ok(Redirect::to(uri))
 }
 
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(search_get(q = Some(search_form.into_inner().query))))
+    let form = search_form.into_inner();
+
+    // Manually construct the URI string with optional filter
+    let uri = match &form.filter {
+        Some(filter) => format!("/search?q={}&filter={}", form.query, filter),
+        None => format!("/search?q={}", form.query),
+    };
+
+    Redirect::to(uri)
 }
 
-#[get("/search?<q>")]
-pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
-
+#[get("/search?<q>&<filter>")]
+pub fn search_get(q: Option<String>, filter: Option<String>) -> Result<RawHtml<String>, Redirect> {
     // Benchmarks trigger
     if q.as_deref() == Some("--run-benchmark") {
         let benchmark_results = run_benchmarks();
@@ -61,9 +73,8 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
     }
 
     // Search logic
-    match tantivy_processor(q.as_deref().unwrap_or("")) {
+    match tantivy_processor(q.as_deref().unwrap_or(""), filter.as_deref()) {
         Ok((results, duration)) => {
-            //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
@@ -73,6 +84,14 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                                 .to_string(),
                         ));
                     }
+
+                    // Add filter information to the statistics if a filter is applied
+                    let filter_info = if let Some(filter_str) = filter {
+                        format!(" (filtered by: {})", filter_str)
+                    } else {
+                        "".to_string()
+                    };
+
                     let num_results = results.len();
                     let result_word = if num_results == 1 {
                         "result"
@@ -104,83 +123,8 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
-                    let search_box_statistics = format!("Search results for '{}'", query);
-                    contents = contents
-                        .replace("{{statistics}}", &statistics)
-                        .replace("{{search_box_statistics}}", &search_box_statistics);
-                    search_results = search_results
-                        .replace("\", ", "")
-                        .replace("\",", "")
-                        .replace("\"", "")
-                        .replace(">[<", "><")
-                        .replace(">]<", "");
-                    contents = format!("{}{}{}", contents, search_results, search_results_footer);
-                    Ok(RawHtml(contents))
-                }
-                None => Err(Redirect::to("/")),
-            }
-        }
-        Err(e) => {
-            println!("Error creating index: {:?}", e);
-            Err(Redirect::to("/"))
-        }
-    }
-}
-
-#[post("/mobile", data = "<search_form>")]
-pub fn mobile_search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(mobile_search_get(q = Some(search_form.into_inner().query))))
-}
-
-#[get("/mobile?<q>")]
-pub fn mobile_search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
-    match tantivy_processor(q.as_deref().unwrap_or("")) {
-        Ok((results, duration)) => {
-            //println!("{:#?}", results);
-            match q {
-                Some(query) => {
-                    let trimmed_query = query.trim_start();
-                    if trimmed_query.len() < 1 || query.len() > 128 {
-                        return Ok(RawHtml(
-                            "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
-                                .to_string(),
-                        ));
-                    }
-                    let num_results = results.len();
-                    let result_word = if num_results == 1 {
-                        "results"
-                    } else {
-                        "results"
-                    };
-                    let mut search_results =
-                        format!("<div class='results-container'>{:?}</div>", results);
-                    let search_results_footer = format!(
-                        "<div class='main-footer'>
-                        <div class='footer-container'>
-                            <a href='about'>
-                            About Us
-                            </a>|
-                            <a href='privacy'>
-                            Privacy Policy
-                            </a>|
-                            <a href='jobs'>
-                            Careers
-                            </a>|
-                            <a href='donate'>
-                            Donate
-                            </a>|
-                            <a href='settings'>
-                            Settings
-                            </a>
-                            <p>Don't be Hypocrites // <b>2024 Aragonite</b>, Some rights reserved</p>
-                        </div>
-                        </div>"
-                    );
-                    let mut file = File::open("static/serps/mobile.html").unwrap();
-                    let mut contents = String::new();
-                    file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
+                    let statistics = format!("<div class='statistics'><span><h3>{} {}{} for: {}</h3><p>(retrieved in {} ms)</p></span></div>",
+                        num_results, result_word, filter_info, query, duration.as_millis());
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents
                         .replace("{{statistics}}", &statistics)
@@ -216,7 +160,7 @@ pub fn run_benchmarks() -> String {
     }
 }
 
-pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)> {
+pub fn tantivy_processor(query: &str, filter: Option<&str>) -> tantivy::Result<(Vec<String>, Duration)> {
     // Define the schema and how to index it
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
@@ -224,8 +168,11 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let description = schema_builder.add_text_field("description", TEXT | STORED);
     let full_description = schema_builder.add_text_field("full_description", TEXT | STORED);
     let author = schema_builder.add_text_field("author", TEXT | STORED);
-    let _year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
-    let _year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+
+    // Numeric fields - use STORED and FAST only, not TEXT
+    let year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
+    let year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+
     let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
     let _onion = schema_builder.add_text_field("onion", TEXT | STORED);
     let _status = schema_builder.add_text_field("status", TEXT | STORED);
@@ -240,9 +187,12 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let _religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
-    let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
-    let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
-    let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
+    let _privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
+    let _human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
+
+    // Another numeric field - use STORED and FAST only, not TEXT
+    let _instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
+
     let _language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
 
@@ -345,10 +295,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     );
 
     // Set default operator to AND and configure field boosts
-        //query_parser.set_conjunction_by_default();
-        query_parser.set_field_boost(title, 3.0);      // Title matches are 3x more important
-        query_parser.set_field_boost(author, 2.0);     // Author matches are 2x more important
-        query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
+    //query_parser.set_conjunction_by_default();
+    query_parser.set_field_boost(title, 3.0);      // Title matches are 3x more important
+    query_parser.set_field_boost(author, 2.0);     // Author matches are 2x more important
+    query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
 
 
     // Split the query into words
@@ -422,6 +372,12 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         let term = Term::from_field_text(field, &field_value);
         let field_query = TermQuery::new(term, IndexRecordOption::Basic);
         final_query.push((Occur::Must, Box::new(field_query)));
+    }
+
+    // Apply filter if specified
+    if let Some(filter_str) = filter {
+        let filter_type = FilterType::from_str(filter_str);
+        apply_filter(&filter_type, &schema, &mut final_query)?;
     }
 
     // Output of the final query after parsing
