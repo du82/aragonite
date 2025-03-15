@@ -1,5 +1,5 @@
 use crate::search::tantivy_processor;
-use std::fs::{self, File, OpenOptions};
+use std::fs::{self, OpenOptions};
 use std::io::Write;
 use std::time::{Duration, Instant, SystemTime};
 use std::process::Command;
@@ -97,14 +97,17 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
         .map(String::from)
         .collect::<Vec<String>>();
 
-    if queries.is_empty() {
+    let queries = if queries.is_empty() {
         println!("No valid queries found in random.txt");
         // Add some default test queries
-        let mut queries = Vec::new();
-        queries.push("privacy".to_string());
-        queries.push("security".to_string());
-        queries.push("encryption".to_string());
-    }
+        vec![
+            "privacy".to_string(),
+            "security".to_string(),
+            "encryption".to_string(),
+        ]
+    } else {
+        queries
+    };
 
     let mut metrics = Vec::new();
     let benchmark_start = Instant::now();
@@ -121,7 +124,7 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
         // Run each query 5 times to get better performance metrics
         for _ in 0..5 {
-            match tantivy_processor(&query.trim()) {
+            match tantivy_processor(&query.trim(), None) {
                 Ok((results, duration)) => {
                     metrics.push(BenchmarkMetrics {
                         query: query.clone(),
@@ -140,6 +143,11 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
     // Calculate summary statistics
     let total_queries = metrics.len();
+    if total_queries == 0 {
+        println!("No successful queries were run");
+        return Ok(());
+    }
+
     let total_duration = benchmark_start.elapsed();
 
     let durations: Vec<u128> = metrics.iter()
@@ -177,7 +185,7 @@ fn save_benchmark_results(
     let mut file = OpenOptions::new()
         .write(true)
         .create(true)
-        .append(true)
+        .truncate(true)  // This will overwrite previous results instead of appending
         .open("benchmark_results.txt")?;
 
     // Write timestamp and system info

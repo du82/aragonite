@@ -31,8 +31,6 @@ fn rocket() -> Rocket<Build> {
             routes::midnight_theme,
             search::search_get,
             search::search_post,
-            search::mobile_search_get,
-            search::mobile_search_post,
             search::random_search,
         ])
         .attach(ThemeMiddleware)
