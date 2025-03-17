@@ -1,5 +1,8 @@
 // search.rs
 
+use crate::benchmarks::search_benchmark;
+use crate::common::document_to_html::document_to_html;
+use crate::common::url_utils::{get_domain_name, is_homepage};
 use rocket::form::{Form, FromForm};
 use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
@@ -23,9 +26,6 @@ use tantivy::Index;
 use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
-use crate::benchmarks::search_benchmark;
-use crate::common::url_utils::{is_homepage, get_domain_name};
-use crate::common::document_to_html::document_to_html;
 
 #[derive(FromForm)]
 pub struct SearchForm {
@@ -53,7 +53,6 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 
 #[get("/search?<q>")]
 pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
-
     // Benchmarks trigger
     if q.as_deref() == Some("--run-benchmark") {
         let benchmark_results = run_benchmarks();
@@ -96,7 +95,7 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                             <a href='settings'>
                             Settings </a>
                             <p class='centered-text'>
-                            Don't be Hypocrites
+                            Aragonite 2025
                             </p>
                         </div>
                         </div>"
@@ -130,13 +129,14 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
 
 pub fn run_benchmarks() -> String {
     match search_benchmark::run_search_benchmark() {
-        Ok(_) => {
-            match std::fs::read_to_string("benchmark_results.txt") {
-                Ok(contents) => format!("<pre style='white-space: pre-wrap; font-family: monospace;'>{}</pre>", contents),
-                Err(e) => format!("Error reading benchmark results: {}", e)
-            }
+        Ok(_) => match std::fs::read_to_string("benchmark_results.txt") {
+            Ok(contents) => format!(
+                "<pre style='white-space: pre-wrap; font-family: monospace;'>{}</pre>",
+                contents
+            ),
+            Err(e) => format!("Error reading benchmark results: {}", e),
         },
-        Err(e) => format!("Error running benchmarks: {}", e)
+        Err(e) => format!("Error running benchmarks: {}", e),
     }
 }
 
@@ -161,7 +161,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let _regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
     let _nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
-    let _religious_affiliation = schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
+    let _religious_affiliation =
+        schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
     let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
@@ -269,11 +270,10 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     );
 
     // Set default operator to AND and configure field boosts
-        //query_parser.set_conjunction_by_default();
-        query_parser.set_field_boost(title, 3.0);      // Title matches are 3x more important
-        query_parser.set_field_boost(author, 2.0);     // Author matches are 2x more important
-        query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
-
+    //query_parser.set_conjunction_by_default();
+    query_parser.set_field_boost(title, 3.0); // Title matches are 3x more important
+    query_parser.set_field_boost(author, 2.0); // Author matches are 2x more important
+    query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
 
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
@@ -355,7 +355,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
     let config: Value = config_str.parse().unwrap();
 
     // Get the number of results per query from Config.toml
-    let results_per_query = config.get("engine")
+    let results_per_query = config
+        .get("engine")
         .and_then(|engine| engine.get("results_per_query"))
         .and_then(Value::as_integer)
         .unwrap_or(50) as usize;
@@ -367,9 +368,7 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
         let retrieved_doc = searcher.doc(doc_address)?;
 
         // Check each term's matches across different fields
-        let query_terms: Vec<String> = query.split_whitespace()
-            .map(|s| s.to_lowercase())
-            .collect();
+        let query_terms: Vec<String> = query.split_whitespace().map(|s| s.to_lowercase()).collect();
 
         // Track where each term matched
         let mut author_matches = 0;
@@ -377,7 +376,8 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
         for term in &query_terms {
             // Check author field
-            if let Some(tantivy::schema::Value::Str(author_text)) = retrieved_doc.get_first(author) {
+            if let Some(tantivy::schema::Value::Str(author_text)) = retrieved_doc.get_first(author)
+            {
                 if author_text.to_lowercase().contains(term) {
                     author_matches += 1;
                 }
@@ -386,7 +386,9 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
             // Check content fields
             let mut found_in_content = false;
             for field in &[title, description, full_description] {
-                if let Some(tantivy::schema::Value::Str(field_text)) = retrieved_doc.get_first(*field) {
+                if let Some(tantivy::schema::Value::Str(field_text)) =
+                    retrieved_doc.get_first(*field)
+                {
                     if field_text.to_lowercase().contains(term) {
                         found_in_content = true;
                         break;
