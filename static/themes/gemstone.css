@@ -14,7 +14,7 @@
     }
 
     .landing-body {
-        background: #1d1d1d;
+        background: #0f0f0f;
         background-size: cover;
         height: 100vh;
         color: #d9e8fe;
@@ -57,7 +57,7 @@
 
     .header {
         padding: 10px;
-        background: #1d1d1d;
+        background: #161616;
         color: #d9e8fe;
         position: fixed;
         width: 100%;
@@ -142,23 +142,23 @@
     }
 
     a {
-        color: #db2266;
+        color: #8dc5e8;
         text-decoration: none;
     }
 
     a:hover {
-        color: #bdf4e4;
-        text-decoration: none;
+        color: none;
+        text-decoration: underline;
     }
 
     .donate-link {
-        color: #db2266;
+        color: #8dc5e8;
         text-decoration: none;
     }
 
     .donate-link:hover {
-        color: #bdf4e4;
-        text-decoration: none;
+        color: none;
+        text-decoration: underline;
     }
 
     /*----------------Results Container----------------*/
@@ -183,6 +183,7 @@
 
     .search-result-description {
         margin-bottom: 0px;
+        font-size: 14px;
     }
 
     .search-result-description {
@@ -190,7 +191,10 @@
     }
 
     .search-result-url-row {
-        margin: 0;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #adadad;
     }
 
     .search-result-url {
@@ -216,7 +220,7 @@
     .pill {
         cursor: pointer;
         background: #303030;
-        color: #db2266;
+        color: #adadad;
         border-color: #2e2e2e;
         border-width: 1px;
         border-style: solid;
@@ -225,14 +229,14 @@
         padding-right: 5px;
         padding-top: 3px;
         padding-bottom: 3px;
-        font-size: 16px;
+        font-size: 12px;
         width: fit-content;
         margin-right: 5px;
     }
 
     .pill[type="submit"]:hover {
         background-color: #bdf4e4;
-        color: #323232;
+        color: #adadad;
     }
 
     .border-box {
@@ -256,9 +260,11 @@
     }
 
     .search-tabs-row {
-        overflow: auto;
+        overflow: hidden;
         white-space: nowrap;
         display: flex;
+        margin-left: 0px;
+        font-size: 13px;
     }
 
     .search-tab {
@@ -275,7 +281,7 @@
         margin: 0;
         padding: 0;
         margin-right: 15px;
-        border-bottom: solid #db2266;
+        border-bottom: solid #adadad;
         border-width: 2px;
     }
 
@@ -324,19 +330,19 @@
     input {
         cursor: pointer;
         background: #303030;
-        color: #db2266;
+        color: #adadad;
         border-color: #2e2e2e;
         border-width: 1px;
         border-style: solid;
         border-radius: 6px;
         padding: 10px;
         font-size: 16px;
-        width: fill-parent;
+        width: fit-content;
     }
 
     input[type="submit"]:hover {
-        background-color: #bdf4e4;
-        color: #323232;
+        background-color: #3d3d3d;
+        color: #adadad;
     }
 
     /*----------------Footer----------------*/
