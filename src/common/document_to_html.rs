@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 use tantivy::schema::Schema;
-use tantivy::Document;
 use tantivy::schema::Value;
+use tantivy::Document;
 
 pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
     let mut fields = HashMap::new();

@@ -49,6 +49,7 @@ name = "aragonite"
 version = "0.1.0"
 dependencies = [
  "rand",
+ "regex",
  "rocket",
  "tantivy",
  "toml 0.5.11",

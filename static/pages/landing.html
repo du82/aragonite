@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
    _____ ____ _____
   /    /      \    \
@@ -11,43 +11,43 @@
 -->
 <!-- You won't find any JavaScript here, just a dynamically generated page! -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{name}}</title>
-    <meta property="og:description" content="A soverign search engine" />
-    <meta property="og:image" content="static/themes/media/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{theme}}" />
-  </head>
-  <body class="landing-body">
-    <div class="landing-outer-container">
-      <form class="landing-container" action="/search" method="post">
-        <h1 class="landing-gradient-text">{{name}}<sup>{{greek}}</sup></h1>
-        <div style="display: flex">
-          <input
-            class="search-box"
-            type="search"
-            name="query"
-            placeholder="{{search_string}}"
-            required
-          />
-          <input type="submit" value="Search" />
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{name}}</title>
+        <meta property="og:description" content="A soverign search engine" />
+        <meta property="og:image" content="static/themes/media/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{theme}}" />
+    </head>
+    <body class="landing-body">
+        <div class="landing-outer-container">
+            <form class="landing-container" action="/search" method="post">
+                <h1 class="landing-gradient-text">
+                    {{name}}<sup>{{greek}}</sup>
+                </h1>
+                <div style="display: flex">
+                    <input
+                        class="search-box"
+                        type="search"
+                        name="query"
+                        placeholder="{{search_string}}"
+                        required
+                    />
+                    <input type="submit" value="Search" />
+                </div>
+                <div class="search-result-related-row">
+                    <a class="pill" href="/about">About our project</a>
+                    <a class="pill" href="/syntax">Learn our syntax</a>
+                </div>
+            </form>
         </div>
-        <div class="search-result-related-row">
-          <a class="pill" href="/about">About our project</a>
-          <a class="pill" href="/syntax">Learn our syntax</a>
-        </div>
-      </form>
-    </div>
-    <footer class="landing-container">
-      <div class="landing-footer-container">
-        <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
-        <a href="privacy"> Privacy </a>|
-        <a href="/settings"> Settings </a>
-        <p class="centered-text">
-          Don't be Hypocrites | Mirror updated: {{mirror_updated}}
-        </p>
-      </div>
-    </footer>
-  </body>
+        <footer class="landing-container">
+            <div class="landing-footer-container">
+                <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
+                <a href="privacy"> Privacy </a>|
+                <a href="/settings"> Settings </a>
+                <p class="centered-text">Mirror updated: {{mirror_updated}}</p>
+            </div>
+        </footer>
+    </body>
 </html>
