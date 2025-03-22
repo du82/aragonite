@@ -86,11 +86,11 @@
     .landing {
         display: flex;
         flex-direction: column;
-        background-color: #2e2e2e;
+        background-color: #161616;
         color: #d9e8fe;
         border-radius: 8px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
         margin-top: 130px;
         margin-bottom: 25px;
         max-width: 600px;
@@ -184,10 +184,6 @@
     .search-result-description {
         margin-bottom: 0px;
         font-size: 14px;
-    }
-
-    .search-result-description {
-        margin-bottom: 0px;
     }
 
     .search-result-url-row {
@@ -366,7 +362,7 @@
     .footer-container {
         flex-direction: column;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 10%;
         max-width: fit-content;
     }
 
@@ -491,7 +487,7 @@
     .landing {
         display: flex;
         flex-direction: column;
-        background-color: #2e2e2e;
+        background-color: #161616;
         color: #d9e8fe;
         border-radius: 8px;
         margin-left: 100px;
