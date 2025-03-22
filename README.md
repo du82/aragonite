@@ -1,8 +1,6 @@
-# Aragonite<sup>α</sup> Research
+# Aragonite<sup>α</sup>
 
- We are a data science company building a search engine for from scratch that values your privacy, while providing a programming-style syntax for more accurate results.
-
- `http://aragonite.xyz:12345/`
+We are developing a privacy-focused search engine with a sovereign index from the ground up, leveraging multi-threaded Rust. Our engine does not log anything or use any JavaScript at all, and makes the absolute minimum number of required requests.
 
  ### The 'Why'
 
