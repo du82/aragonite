@@ -1,9 +1,0 @@
-["https://libusb.info"]
-title = "libusb"
-full_description = "libusb is a C library that provides generic access to USB devices. It is intended to be used by developers to facilitate the production of applications that communicate with USB hardware. It is portable: Using a single cross-platform API, it provides access to USB devices on Linux, macOS, Windows, etc. It is user-mode: No special privilege or elevation is required for the application to communicate with a device. If you are using Linux, chances are your distribution already includes libusb, so you probably just need to reference the libusb header in your source. For other platforms, or if you want to use the very latest, you are encouraged to recompile from source. Please check the Downloads menu. Once you have secured your access to the library and its header, please check the libusb API or the libusb samples. The old site (.org) is now obsolete, please use libusb.info. All of the current libusb development team has moved to libusb.info."
-year_published = 2025
-clearnet = "https://libusb.info"
-tags = ["additional", "consult", "good!", "happened", "information,", "libusb", "libusb.info", "overview", "platforms", "please"]
-language = "en"
-internal-references = ["none"]
-external-references = ["cssmenumaker.com", "github.com", "libusb.sourceforge.io", "lists.sourceforge.net", "sourceforge.net"]

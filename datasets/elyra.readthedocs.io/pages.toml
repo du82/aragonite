@@ -1,9 +1,0 @@
-["https://elyra.readthedocs.io"]
-title = "Elyra Documentation — Elyra 3.16.0.dev0 documentation"
-full_description = "Elyra Documentation Elyra is a set of AI-centric extensions to JupyterLab Notebooks. Getting Started Overview Installation Starting Elyra Articles, blog posts, and other resources Tutorials and examples Getting help Changelog Troubleshooting User Guide The Elyra JupyterLab interface Command line interface Configuring the pipeline editor Runtime Configuration Runtime Image Configuration Pipelines Pipeline components Requirements and best practices for custom pipeline components Best practices for file-based pipeline nodes System-level environment variables used in file-based pipeline nodes Enhanced Script Support Code Snippets Recipes Deploying Elyra & JupyterHub in a Kubernetes environment Deploying Kubeflow Pipelines Locally for Elyra Deploying Open Data Hub with Elyra Using Elyra with the Kubeflow Notebook Server Running Elyra in an air-gapped environment Creating a custom runtime container image Visualizing output from your notebooks or Python scripts in the Kubeflow Pipelines UI Configuring Apache Airflow on Kubernetes for use with Elyra Developer Guide Contributing to Elyra Development Workflow Analyzing automated test failures Issues Workflow Logging Metadata Services Pipelines How to develop a component catalog connector Extension Trackers Elyra Release Elyra refresh on Open Data Hub"
-year_published = 2025
-clearnet = "https://elyra.readthedocs.io"
-tags = ["documentation", "elyra"]
-language = "en"
-internal-references = ["none"]
-external-references = ["github.com", "readthedocs.org", "sphinx-doc.org"]
