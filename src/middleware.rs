@@ -5,7 +5,9 @@ use rocket::{Request, Response};
 use std::fs;
 use std::io::Cursor;
 use std::process::Command;
+use std::sync::Mutex;
 use toml::Value;
+use crate::filter::FilterManager;
 
 pub struct ThemeMiddleware;
 
@@ -34,6 +36,26 @@ impl Fairing for ThemeMiddleware {
                 return;
             }
         };
+        
+        // Apply safe search settings from cookies
+        if let Some(filter_manager) = request.rocket().state::<Mutex<FilterManager>>() {
+            let mut filter = filter_manager.lock().unwrap();
+            
+            // Get safe search enabled status from cookie
+            if let Some(cookie) = request.cookies().get("safe_search_enabled") {
+                if let Ok(enabled) = cookie.value().parse::<bool>() {
+                    filter.enable(enabled);
+                }
+            }
+            
+            // Get safe search level from cookie
+            if let Some(cookie) = request.cookies().get("safe_search_level") {
+                let level = cookie.value();
+                if level == "off" || level == "moderate" || level == "strict" {
+                    filter.set_level(level);
+                }
+            }
+        }
 
         // Only modify HTML responses
         if response.content_type() != Some(ContentType::HTML) {

@@ -206,11 +206,39 @@
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
-        background-color: #292929;
+        background-color: #f9f9f9;
         border-radius: 6px;
         padding: 8px;
-        margin: 20px 10px 8px 10px;
+        margin: 20px 8px 8px 8px;
         line-height: 1.2;
+    }
+    
+    .filter-message {
+        background-color: #f9f9f9;
+        border-radius: 6px;
+        padding: 20px;
+        margin: 30px 8px;
+        text-align: center;
+        border-left: 4px solid #db2266;
+    }
+    
+    .filter-message h2 {
+        margin-top: 0;
+        color: #db2266;
+    }
+    
+    .filter-message {
+        background-color: #292929;
+        border-radius: 6px;
+        padding: 20px;
+        margin: 30px 10px;
+        text-align: center;
+        border-left: 4px solid #db2266;
+    }
+    
+    .filter-message h2 {
+        margin-top: 0;
+        color: #db2266;
     }
 
     .pill {

@@ -1,0 +1,48 @@
+[safe_search]
+enabled = true            # Default is true for safe search
+level = "moderate"        # Options: "off", "moderate", "strict"
+
+# These filter lists are applied based on the safe search level
+[filter_lists]
+
+# Terms to filter when level is "moderate" or "strict"
+moderate = [
+    "pornography",
+    "explicit content",
+    "adult content",
+    "XXX",
+    "NSFW",
+    "nude",
+    "nudity"
+]
+
+# Additional terms to filter when level is "strict"
+strict = [
+    "violence",
+    "gore",
+    "death",
+    "gambling",
+    "drugs",
+    "alcohol",
+    "tobacco",
+    "weapons",
+    "hate speech",
+    "profanity",
+    "curse words"
+]
+
+# You can add additional filter categories as needed
+[category_filters]
+enabled = false          # Whether to filter by category
+blocked_categories = [
+    "adult",
+    "gambling"
+]
+
+# Domain-specific filters
+[domain_filters]
+enabled = false          # Whether to filter by domain
+blocked_domains = [
+    "adult-example.com",
+    "gambling-example.com"
+]

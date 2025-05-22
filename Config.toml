@@ -6,6 +6,8 @@ mirror_updated = "Mar 17, 2025" # Date of the last mirror update
 [features]
 neofetch_enabled = false     # Default false, allows end users to see the output of neofetch on the host
 search_string_enabled = true # Default true, shows random text string from search_string.txt in search box
+safe_search_enabled = true   # Default true, enables content filtering based on filters.toml
 
 [engine]
 results_per_query = 250 # Default 50, number of search results to show per query
+safe_search_level = "moderate" # Default "moderate", can be "off", "moderate", or "strict"

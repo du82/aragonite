@@ -2,7 +2,10 @@ use rocket::get;
 use rocket::http::{Cookie, CookieJar};
 use rocket::response::Redirect;
 use rocket::fs::NamedFile;
+use rocket::State;
 use std::path::Path;
+use std::sync::Mutex;
+use crate::filter::FilterManager;
 
 // -----Routes-----
 
@@ -44,6 +47,33 @@ pub async fn mirrors() -> Result<NamedFile, std::io::Error> {
 #[get("/settings")]
 pub async fn settings() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/settings.html")).await
+}
+
+// Safe Search Routes
+#[get("/safe_search?<enabled>")]
+pub fn safe_search_toggle(enabled: bool, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<Redirect, std::io::Error> {
+    cookies.add(Cookie::new("safe_search_enabled", enabled.to_string()));
+    
+    let mut filter_manager = filter_manager.lock().unwrap();
+    filter_manager.enable(enabled);
+    
+    Ok(Redirect::to("/settings"))
+}
+
+#[get("/safe_search_level?<level>")]
+pub fn safe_search_level(level: String, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<Redirect, std::io::Error> {
+    // Validate level
+    let valid_level = match level.as_str() {
+        "off" | "moderate" | "strict" => level.clone(),
+        _ => "moderate".to_string(), // Default to moderate if invalid
+    };
+    
+    cookies.add(Cookie::new("safe_search_level", valid_level.clone()));
+    
+    let mut filter_manager = filter_manager.lock().unwrap();
+    filter_manager.set_level(&valid_level);
+    
+    Ok(Redirect::to("/settings"))
 }
 
 #[get("/syntax")]

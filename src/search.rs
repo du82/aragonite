@@ -2,15 +2,17 @@
 
 use crate::benchmarks::search_benchmark;
 use crate::common::document_to_html::document_to_html;
-use crate::common::url_utils::{get_domain_name, is_homepage};
+use crate::common::url_utils::{get_domain_name, is_homepage, extract_domain};
+use crate::filter::FilterManager;
 use rocket::form::{Form, FromForm};
 use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
 use rocket::uri;
-use rocket::{get, post};
+use rocket::{get, post, State};
 use std::fs;
 use std::fs::File;
 use std::io::Read;
+use std::sync::Mutex;
 use std::time::{Duration, Instant};
 use tantivy::collector::TopDocs;
 use tantivy::doc;
@@ -52,17 +54,67 @@ pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
 }
 
 #[get("/search?<q>")]
-pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
+pub fn search_get(q: Option<String>, filter_manager: &State<Mutex<FilterManager>>) -> Result<RawHtml<String>, Redirect> {
     // Benchmarks trigger
     if q.as_deref() == Some("--run-benchmark") {
         let benchmark_results = run_benchmarks();
         return Ok(RawHtml(benchmark_results));
     }
 
-    // Search logic
-    match tantivy_processor(q.as_deref().unwrap_or("")) {
+    // Check query with filter manager
+    let query_string = q.as_deref().unwrap_or("");
+    
+    let mut filter_manager = filter_manager.lock().unwrap();
+    let is_filtered = filter_manager.should_filter_query(query_string);
+    
+    // If query is filtered, show a message
+    if is_filtered {
+        let mut file = File::open("static/serps/web.html").unwrap();
+        let mut contents = String::new();
+        file.read_to_string(&mut contents).unwrap();
+        
+        let statistics = format!("<div class='statistics'><span><h3>Safe Search is enabled</h3></span></div>");
+        let search_box_statistics = format!("Search results for '{}'", query_string);
+        contents = contents
+            .replace("{{statistics}}", &statistics)
+            .replace("{{search_box_statistics}}", &search_box_statistics);
+        
+        let safe_search_message = 
+            "<div class='results-container'>
+                <div class='search-result'>
+                    <h3>Safe Search is enabled</h3>
+                    <p class='search-result-description'>Your search has been filtered due to potentially sensitive content. You can adjust safe search settings in the <a href='/settings'>Settings</a> page.</p>
+                </div>
+            </div>";
+        
+        let search_results_footer = format!(
+            "<div class='main-footer'>
+            <div class='footer-container'>
+                <a href='donate'>
+                Donate
+                </a>|
+                <a href='mirrors'>
+                Mirrors
+                </a>|
+                <a href='privacy'>
+                Privacy
+                </a>|
+                <a href='settings'>
+                Settings </a>
+                <p class='centered-text'>
+                Aragonite 2025
+                </p>
+            </div>
+            </div>"
+        );
+        
+        contents = format!("{}{}{}", contents, safe_search_message, search_results_footer);
+        return Ok(RawHtml(contents));
+    }
+
+    // Continue with normal search logic
+    match tantivy_processor(query_string, &filter_manager) {
         Ok((results, duration)) => {
-            //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
@@ -103,7 +155,16 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis());
+                    
+                    // Add safe search status to statistics
+                    let safe_search_status = if filter_manager.is_enabled() {
+                        format!(" • Safe Search: {}", filter_manager.get_level())
+                    } else {
+                        " • Safe Search: off".to_string()
+                    };
+                    
+                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms{})</p></span></div>", 
+                        num_results, result_word, query, duration.as_millis(), safe_search_status);
                     let search_box_statistics = format!("Search results for '{}'", query);
                     contents = contents
                         .replace("{{statistics}}", &statistics)
@@ -121,8 +182,8 @@ pub fn search_get(q: Option<String>) -> Result<RawHtml<String>, Redirect> {
             }
         }
         Err(e) => {
-            println!("Error creating index: {:?}", e);
-            Err(Redirect::to("/"))
+            eprintln!("Error creating index: {:?}", e);
+            Ok(RawHtml(format!("<h1>Error creating index</h1><p>{}</p>", e)))
         }
     }
 }
@@ -140,7 +201,7 @@ pub fn run_benchmarks() -> String {
     }
 }
 
-pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)> {
+pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy::Result<(Vec<String>, Duration)> {
     // Define the schema and how to index it
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
@@ -192,10 +253,11 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
                 }
 
                 if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                    let path_str = path.to_string_lossy().to_string();
                     let data = fs::read_to_string(&path)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("Error reading file '{}': {}", path_str, e)))?;
                     let value: Value = toml::from_str(&data)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("Error parsing TOML in file '{}': {}", path_str, e)))?;
 
                     if let Some(tables) = value.as_table() {
                         for (_name, table) in tables {
@@ -369,6 +431,30 @@ pub fn tantivy_processor(query: &str) -> tantivy::Result<(Vec<String>, Duration)
 
         // Check each term's matches across different fields
         let query_terms: Vec<String> = query.split_whitespace().map(|s| s.to_lowercase()).collect();
+
+        // Check if document should be filtered based on safe search settings
+        let mut should_filter = false;
+        
+        // Check domain filtering
+        if let Some(tantivy::schema::Value::Str(url_text)) = retrieved_doc.get_first(url) {
+            if let Some(domain) = extract_domain(url_text) {
+                if filter_manager.should_filter_domain(&domain) {
+                    should_filter = true;
+                }
+            }
+        }
+        
+        // Check category filtering
+        if let Some(tantivy::schema::Value::Str(category_text)) = retrieved_doc.get_first(category) {
+            if filter_manager.should_filter_category(category_text) {
+                should_filter = true;
+            }
+        }
+        
+        // Skip this document if it should be filtered
+        if should_filter {
+            continue;
+        }
 
         // Track where each term matched
         let mut author_matches = 0;

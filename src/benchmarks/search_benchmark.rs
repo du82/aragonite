@@ -1,5 +1,7 @@
 use crate::search::tantivy_processor;
-use std::fs::{self, File, OpenOptions};
+use crate::filter::FilterManager;
+use std::fs::{self, OpenOptions};
+use std::sync::Mutex;
 use std::io::Write;
 use std::time::{Duration, Instant, SystemTime};
 use std::process::Command;
@@ -121,7 +123,10 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
         // Run each query 5 times to get better performance metrics
         for _ in 0..5 {
-            match tantivy_processor(&query.trim()) {
+            // Create a dummy filter manager for benchmarking
+            let filter_manager = FilterManager::new();
+        
+            match tantivy_processor(&query.trim(), &filter_manager) {
                 Ok((results, duration)) => {
                     metrics.push(BenchmarkMetrics {
                         query: query.clone(),
