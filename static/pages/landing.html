@@ -33,6 +33,7 @@
                         placeholder="{{search_string}}"
                         required
                     />
+                    <input type="hidden" name="ss" value="{{safe_search_value}}" />
                     <input type="submit" value="Search" />
                 </div>
                 <div class="search-result-related-row">
@@ -49,5 +50,6 @@
                 <p class="centered-text">Mirror updated: {{mirror_updated}}</p>
             </div>
         </footer>
+
     </body>
 </html>

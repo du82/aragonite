@@ -2,16 +2,18 @@
 
 use crate::benchmarks::search_benchmark;
 use crate::common::document_to_html::document_to_html;
-use crate::common::url_utils::{get_domain_name, is_homepage, extract_domain};
+use crate::common::url_utils::{get_domain_name, is_homepage};
+use crate::common::url_utils::extract_domain;
 use crate::filter::FilterManager;
 use rocket::form::{Form, FromForm};
 use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
 use rocket::uri;
 use rocket::{get, post, State};
+use rocket::http::{Cookie, CookieJar};
 use std::fs;
 use std::fs::File;
-use std::io::Read;
+use std::io::{Read, Write};
 use std::sync::Mutex;
 use std::time::{Duration, Instant};
 use tantivy::collector::TopDocs;
@@ -36,8 +38,9 @@ pub struct SearchForm {
 
 use std::time::SystemTime;
 
+
 #[get("/random")]
-pub fn random_search() -> Result<Redirect, std::io::Error> {
+pub fn random_search(cookies: &CookieJar<'_>) -> Result<Redirect, std::io::Error> {
     let content = fs::read_to_string("random.txt")?;
     let queries: Vec<&str> = content.lines().collect();
     let time = SystemTime::now()
@@ -45,76 +48,86 @@ pub fn random_search() -> Result<Redirect, std::io::Error> {
         .unwrap()
         .as_secs();
     let query = queries[(time as usize) % queries.len()];
-    Ok(Redirect::to(uri!(search_get(q = Some(query.to_string())))))
+
+    // Get current safe search level from cookie
+    let ss_level = cookies.get("safe_search_level")
+        .map(|cookie| match cookie.value() {
+            "off" => "0",
+            "moderate" => "1",
+            "strict" => "2",
+            _ => "1" // Default to moderate
+        })
+        .unwrap_or("1"); // Default to moderate if no cookie
+
+    Ok(Redirect::to(uri!(search_get(q = Some(query.to_string()), ss = Some(ss_level.to_string())))))
 }
 
 #[post("/search", data = "<search_form>")]
-pub fn search_post(search_form: Form<SearchForm>) -> Redirect {
-    Redirect::to(uri!(search_get(q = Some(search_form.into_inner().query))))
+pub fn search_post(search_form: Form<SearchForm>, cookies: &CookieJar<'_>) -> Redirect {
+    // Get current safe search level from cookie to maintain it in the redirect
+    let ss_level = cookies.get("safe_search_level")
+        .map(|cookie| match cookie.value() {
+            "off" => "0",
+            "moderate" => "1",
+            "strict" => "2",
+            _ => "0" // Default to moderate
+        })
+        .unwrap_or("0"); // Default to off if no cookie
+
+    Redirect::to(uri!(search_get(q = Some(search_form.into_inner().query), ss = Some(ss_level.to_string()))))
 }
 
-#[get("/search?<q>")]
-pub fn search_get(q: Option<String>, filter_manager: &State<Mutex<FilterManager>>) -> Result<RawHtml<String>, Redirect> {
-    // Benchmarks trigger
-    if q.as_deref() == Some("--run-benchmark") {
-        let benchmark_results = run_benchmarks();
-        return Ok(RawHtml(benchmark_results));
+#[get("/search?<q>&<ss>")]
+pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<RawHtml<String>, Redirect> {
+    // Process safe search level if provided
+    if let Some(level) = ss {
+        let valid_level = match level.as_str() {
+            "0" => "off",
+            "1" => "moderate",
+            "2" => "strict",
+            _ => "moderate", // Default to moderate if invalid
+        };
+
+        cookies.add(Cookie::new("safe_search_level", valid_level.to_string()));
+
+        let mut filter = filter_manager.lock().unwrap();
+        filter.set_level(valid_level);
     }
 
-    // Check query with filter manager
-    let query_string = q.as_deref().unwrap_or("");
-    
-    let mut filter_manager = filter_manager.lock().unwrap();
-    let is_filtered = filter_manager.should_filter_query(query_string);
-    
-    // If query is filtered, show a message
-    if is_filtered {
-        let mut file = File::open("static/serps/web.html").unwrap();
-        let mut contents = String::new();
-        file.read_to_string(&mut contents).unwrap();
-        
-        let statistics = format!("<div class='statistics'><span><h3>Safe Search is enabled</h3></span></div>");
-        let search_box_statistics = format!("Search results for '{}'", query_string);
-        contents = contents
-            .replace("{{statistics}}", &statistics)
-            .replace("{{search_box_statistics}}", &search_box_statistics);
-        
-        let safe_search_message = 
-            "<div class='results-container'>
-                <div class='search-result'>
-                    <h3>Safe Search is enabled</h3>
-                    <p class='search-result-description'>Your search has been filtered due to potentially sensitive content. You can adjust safe search settings in the <a href='/settings'>Settings</a> page.</p>
+    // Admin commands
+    if let Some(query) = q.as_deref() {
+        if query == "--run-benchmark" {
+            let benchmark_results = run_benchmarks();
+            return Ok(RawHtml(benchmark_results));
+        } else if query == "--inspect-dataset" {
+            let (valid, invalid, details) = inspect_dataset_directory();
+
+            // Build the HTML string piece by piece to avoid format string escaping issues
+            let report = format!(
+                "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
+                <h1>Dataset Inspection Report</h1>
+                <p><strong>Valid TOML files:</strong> {}</p>
+                <p><strong>Invalid TOML files:</strong> {}</p>
+                <div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #d32f2f; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>
+                {}
                 </div>
-            </div>";
-        
-        let search_results_footer = format!(
-            "<div class='main-footer'>
-            <div class='footer-container'>
-                <a href='donate'>
-                Donate
-                </a>|
-                <a href='mirrors'>
-                Mirrors
-                </a>|
-                <a href='privacy'>
-                Privacy
-                </a>|
-                <a href='settings'>
-                Settings </a>
-                <p class='centered-text'>
-                Aragonite 2025
-                </p>
-            </div>
-            </div>"
-        );
-        
-        contents = format!("{}{}{}", contents, safe_search_message, search_results_footer);
-        return Ok(RawHtml(contents));
+                <p>Run a full inspection by using: <code>find datasets -name \"*.toml\" -exec cat \\\\ \\; | head -1</code> to check the first line of each file</p>
+                <p><a href='/' style='color: #1976d2; text-decoration: none;'>Return to homepage</a></p>
+                </div>",
+                valid, invalid, details
+            );
+            return Ok(RawHtml(report));
+        } else if query == "--find-invalid-files" {
+            let report = find_invalid_dataset_files();
+            return Ok(RawHtml(report));
+        }
     }
 
-    // Continue with normal search logic
-    match tantivy_processor(query_string, &filter_manager) {
+    // Search logic
+    let filter = filter_manager.lock().unwrap();
+    match tantivy_processor(q.as_deref().unwrap_or(""), &filter) {
         Ok((results, duration)) => {
+            //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
@@ -130,8 +143,15 @@ pub fn search_get(q: Option<String>, filter_manager: &State<Mutex<FilterManager>
                     } else {
                         "results"
                     };
-                    let mut search_results =
-                        format!("<div class='results-container'>{:?}</div>", results);
+
+                    // Check if this is a filtered content notice
+                    let is_filtered_notice = results.len() == 1 && results[0].contains("filtered-notice");
+                    let mut search_results = if is_filtered_notice {
+                        // For filtered content, don't use the debug formatting
+                        format!("<div class='results-container'>{}</div>", results[0])
+                    } else {
+                        format!("<div class='results-container'>{:?}</div>", results)
+                    };
                     let search_results_footer = format!(
                         "<div class='main-footer'>
                         <div class='footer-container'>
@@ -155,26 +175,31 @@ pub fn search_get(q: Option<String>, filter_manager: &State<Mutex<FilterManager>
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    
-                    // Add safe search status to statistics
-                    let safe_search_status = if filter_manager.is_enabled() {
-                        format!(" • Safe Search: {}", filter_manager.get_level())
+                    // Use the already locked filter for statistics
+                    let statistics = if is_filtered_notice {
+                        format!("<div class='statistics'><span><h3>Content filtered</h3><p>(safe search is enabled - level: {})</p></span></div>", filter.get_level())
                     } else {
-                        " • Safe Search: off".to_string()
+                        format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms)</p></span></div>", num_results, result_word, query, duration.as_millis())
                     };
-                    
-                    let statistics = format!("<div class='statistics'><span><h3>{} {} for: {}</h3><p>(retrieved in {} ms{})</p></span></div>", 
-                        num_results, result_word, query, duration.as_millis(), safe_search_status);
-                    let search_box_statistics = format!("Search results for '{}'", query);
+                    let search_box_statistics = if is_filtered_notice {
+                        format!("Search for '{}' (filtered)", query)
+                    } else {
+                        format!("Search results for '{}'", query)
+                    };
                     contents = contents
                         .replace("{{statistics}}", &statistics)
                         .replace("{{search_box_statistics}}", &search_box_statistics);
-                    search_results = search_results
-                        .replace("\", ", "")
-                        .replace("\",", "")
-                        .replace("\"", "")
-                        .replace(">[<", "><")
-                        .replace(">]<", "");
+
+                    // Only apply these replacements if it's not a filtered notice
+                    if !is_filtered_notice {
+                        search_results = search_results
+                            .replace("\", ", "")
+                            .replace("\",", "")
+                            .replace("\"", "")
+                            .replace(">[<", "><");
+                    }
+
+                    search_results = search_results.replace(">]<", "");
                     contents = format!("{}{}{}", contents, search_results, search_results_footer);
                     Ok(RawHtml(contents))
                 }
@@ -183,9 +208,247 @@ pub fn search_get(q: Option<String>, filter_manager: &State<Mutex<FilterManager>
         }
         Err(e) => {
             eprintln!("Error creating index: {:?}", e);
-            Ok(RawHtml(format!("<h1>Error creating index</h1><p>{}</p>", e)))
+
+            // Format the error message in a more user-friendly way
+            let error_html = format!(
+                "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
+                    <h1 style='color: #d32f2f;'>Error Creating Search Index</h1>
+                    <p style='margin-bottom: 20px;'>An error occurred while creating or accessing the search index:</p>
+                    <div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #d32f2f; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>
+                        {}
+                    </div>
+                    <p style='margin-top: 20px;'>Please check the server logs for more details. This could be caused by:</p>
+                    <ul>
+                        <li>Invalid TOML files in the datasets directory</li>
+                        <li>XML or HTML files mistakenly saved with .toml extension</li>
+                        <li>Permission issues with the index directory</li>
+                        <li>Disk space limitations</li>
+                    </ul>
+                    <p><a href='/' style='color: #1976d2; text-decoration: none;'>Return to homepage</a></p>
+                </div>",
+                e
+            );
+
+            Ok(RawHtml(error_html))
         }
     }
+}
+
+/// A utility function to inspect the dataset directory and check for invalid TOML files
+/// Returns a tuple with (number of valid files, number of invalid files, details of first few errors)
+pub fn inspect_dataset_directory() -> (usize, usize, String) {
+    let mut valid_files = 0;
+    let mut invalid_files = 0;
+    let mut error_details = String::new();
+    let mut first_few_errors = Vec::new();
+
+    let mut dirs_to_process = vec![std::path::PathBuf::from("datasets")];
+
+    while let Some(dir) = dirs_to_process.pop() {
+        if let Ok(entries) = fs::read_dir(&dir) {
+            for entry in entries {
+                if let Ok(entry) = entry {
+                    let path = entry.path();
+
+                    if path.is_dir() {
+                        dirs_to_process.push(path);
+                        continue;
+                    }
+
+                    if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                        match validate_toml_file(&path) {
+                            Ok(_) => {
+                                valid_files += 1;
+                            },
+                            Err(err) => {
+                                invalid_files += 1;
+                                let error_msg = format!("File '{}': {}", path.display(), err);
+
+                                // Store the first few errors for detailed reporting
+                                if first_few_errors.len() < 5 {
+                                    first_few_errors.push(error_msg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Format error details
+    if !first_few_errors.is_empty() {
+        error_details = format!("First {} errors:\n{}",
+            first_few_errors.len(),
+            first_few_errors.join("\n")
+        );
+    }
+
+    (valid_files, invalid_files, error_details)
+}
+
+/// A more comprehensive utility to find and report invalid files in the dataset
+pub fn find_invalid_dataset_files() -> String {
+    use std::process::Command;
+
+    let mut html = String::from(
+        "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
+            <h1>Invalid Dataset Files Report</h1>"
+    );
+
+    // Count total files first
+    let total_files = if let Ok(output) = Command::new("sh")
+        .arg("-c")
+        .arg("find datasets -name \"*.toml\" -type f | wc -l")
+        .output()
+    {
+        String::from_utf8_lossy(&output.stdout).trim().parse::<usize>().unwrap_or(0)
+    } else {
+        0
+    };
+
+    html.push_str(&format!("<p>Total TOML files found: {}</p>", total_files));
+
+    // First, try to find files that start with '<' character (likely XML/HTML)
+    if let Ok(output) = Command::new("sh")
+        .arg("-c")
+        .arg("find datasets -name \"*.toml\" -type f -exec grep -l \"^<\" {} \\;")
+        .output()
+    {
+        let xml_like_files = String::from_utf8_lossy(&output.stdout);
+        let count = xml_like_files.lines().count();
+
+        html.push_str(&format!(
+            "<h2>Files with XML-like content ({}) - {}%</h2>",
+            count,
+            if total_files > 0 { (count * 100) / total_files } else { 0 }
+        ));
+
+        if count > 0 {
+            html.push_str("<div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #e57373; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>");
+            for file in xml_like_files.lines().take(20) {
+                html.push_str(&format!("{}<br>", file));
+            }
+            if count > 20 {
+                html.push_str(&format!("... and {} more files", count - 20));
+            }
+            html.push_str("</div>");
+
+            // For the first file, show a preview
+            if let Some(first_file) = xml_like_files.lines().next() {
+                if let Ok(preview_output) = Command::new("sh")
+                    .arg("-c")
+                    .arg(&format!("head -n 5 \"{}\"", first_file))
+                    .output()
+                {
+                    let preview = String::from_utf8_lossy(&preview_output.stdout);
+                    html.push_str("<h3>Preview of first problematic file:</h3>");
+                    html.push_str("<div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #9575cd; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>");
+                    html.push_str(&format!("{}</div>", preview.replace("<", "&lt;").replace(">", "&gt;")));
+                }
+            }
+        } else {
+            html.push_str("<p>No XML-like files found.</p>");
+        }
+    }
+
+    // Look for JSON-like files (starting with '{')
+    if let Ok(output) = Command::new("sh")
+        .arg("-c")
+        .arg("find datasets -name \"*.toml\" -type f -exec grep -l \"^{\" {} \\;")
+        .output()
+    {
+        let json_like_files = String::from_utf8_lossy(&output.stdout);
+        let count = json_like_files.lines().count();
+
+        html.push_str(&format!(
+            "<h2>Files with JSON-like content ({})</h2>", count
+        ));
+
+        if count > 0 {
+            html.push_str("<div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #4fc3f7; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>");
+            for file in json_like_files.lines().take(20) {
+                html.push_str(&format!("{}<br>", file));
+            }
+            if count > 20 {
+                html.push_str(&format!("... and {} more files", count - 20));
+            }
+            html.push_str("</div>");
+        } else {
+            html.push_str("<p>No JSON-like files found.</p>");
+        }
+    }
+
+    // Find empty files
+    if let Ok(output) = Command::new("sh")
+        .arg("-c")
+        .arg("find datasets -name \"*.toml\" -type f -size 0")
+        .output()
+    {
+        let empty_files = String::from_utf8_lossy(&output.stdout);
+        let count = empty_files.lines().count();
+
+        html.push_str(&format!(
+            "<h2>Empty files ({})</h2>", count
+        ));
+
+        if count > 0 {
+            html.push_str("<div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #4db6ac; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>");
+            for file in empty_files.lines() {
+                html.push_str(&format!("{}<br>", file));
+            }
+            html.push_str("</div>");
+        } else {
+            html.push_str("<p>No empty files found.</p>");
+        }
+    }
+
+    // Find very large files (>1MB)
+    if let Ok(output) = Command::new("sh")
+        .arg("-c")
+        .arg("find datasets -name \"*.toml\" -type f -size +1M")
+        .output()
+    {
+        let large_files = String::from_utf8_lossy(&output.stdout);
+        let count = large_files.lines().count();
+
+        html.push_str(&format!(
+            "<h2>Very large files (>1MB) ({})</h2>", count
+        ));
+
+        if count > 0 {
+            html.push_str("<div style='background: #f8f8f8; padding: 15px; border-left: 5px solid #ffb74d; font-family: monospace; white-space: pre-wrap; overflow-wrap: break-word;'>");
+            for file in large_files.lines() {
+                html.push_str(&format!("{}<br>", file));
+            }
+            html.push_str("</div>");
+        } else {
+            html.push_str("<p>No very large files found.</p>");
+        }
+    }
+
+    html.push_str("<h2>Fix Commands</h2>");
+
+    html.push_str("<p>If you found XML-like files, you can remove them with:</p>");
+    html.push_str("<div style='background: #f8f8f8; padding: 15px; font-family: monospace;'>");
+    html.push_str("find datasets -name \"*.toml\" -type f -exec grep -l \"^<\" {} \\; | xargs rm</div>");
+
+    html.push_str("<p>If you found JSON-like files, you can remove them with:</p>");
+    html.push_str("<div style='background: #f8f8f8; padding: 15px; font-family: monospace;'>");
+    html.push_str("find datasets -name \"*.toml\" -type f -exec grep -l \"^{\" {} \\; | xargs rm</div>");
+
+    html.push_str("<p>Check for UTF-8 BOM markers (common in Windows-edited files):</p>");
+    html.push_str("<div style='background: #f8f8f8; padding: 15px; font-family: monospace;'>");
+    html.push_str("find datasets -name \"*.toml\" -type f -exec hexdump -n 3 {} \\; | grep \"ef bb bf\"</div>");
+
+    html.push_str("<p>Fix BOM markers if present:</p>");
+    html.push_str("<div style='background: #f8f8f8; padding: 15px; font-family: monospace;'>");
+    html.push_str("for f in $(find datasets -name \"*.toml\" -type f); do sed -i 's/\\\\xEF\\\\xBB\\\\xBF//g' \"$f\"; done</div>");
+
+    html.push_str("<p><a href='/' style='color: #1976d2; text-decoration: none;'>Return to homepage</a></p>");
+    html.push_str("</div>");
+
+    html
 }
 
 pub fn run_benchmarks() -> String {
@@ -201,7 +464,78 @@ pub fn run_benchmarks() -> String {
     }
 }
 
+/// Validates if a file contains valid TOML content
+fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
+    // Read the file contents
+    let data = match fs::read_to_string(path) {
+        Ok(content) => content,
+        Err(e) => return Err(format!("Error reading file: {}", e)),
+    };
+
+    // Get a preview of the content for error reporting
+    let preview = if data.len() > 100 {
+        format!("{:.100}...", data.replace('\n', "\\n"))
+    } else {
+        data.replace('\n', "\\n")
+    };
+
+    // Check for empty files
+    if data.trim().is_empty() {
+        return Err(format!("File is empty or contains only whitespace"));
+    }
+
+    // Check for common content mistaken for TOML
+    if data.trim().starts_with('<') {
+        if data.contains("</") {
+            return Err(format!("File appears to contain XML/HTML, not TOML. Preview: {}", preview));
+        } else {
+            return Err(format!("File starts with '<' character, possibly XML/HTML. Preview: {}", preview));
+        }
+    }
+
+    if data.trim().starts_with('{') && data.contains('}') {
+        return Err(format!("File appears to contain JSON, not TOML. Preview: {}", preview));
+    }
+
+    // Check for file size issues
+    if data.len() > 10_000_000 {  // 10MB
+        return Err(format!("File is too large ({} bytes)", data.len()));
+    }
+
+    // Check for BOM markers which can cause TOML parsing to fail
+    if data.starts_with("\u{feff}") {
+        return Err(format!("File contains UTF-8 BOM marker which is not supported by TOML"));
+    }
+
+    // Attempt to parse as TOML
+    match toml::from_str::<Value>(&data) {
+        Ok(_) => Ok(()),
+        Err(e) => Err(format!("Invalid TOML syntax: {}. Preview: {}", e, preview)),
+    }
+}
+
 pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy::Result<(Vec<String>, Duration)> {
+    println!("tantivy_processor called with query: '{}', filter enabled: {}, level: {}",
+             query, filter_manager.is_enabled(), filter_manager.get_level());
+
+    // Check if query should be filtered based on filter settings
+    if filter_manager.is_enabled() && filter_manager.should_filter_query(query) {
+        println!("Query '{}' contains filtered terms, returning filter notice", query);
+        // Return a special message informing the user about filtered content
+        let filtered_notice = vec![
+            format!("<div class='search-result filtered-notice' style='background-color: rgba(255, 82, 82, 0.1); border-left: 4px solid #ff5252; padding: 15px;'>
+                <h3 style='margin-top: 0; color: #ff5252;'>Content Filtered</h3>
+                <div class='search-result-description'>
+                    <p>Your search term contains content that is filtered by the safe search feature.</p>
+                    <p>Current safe search level: <strong>{}</strong></p>
+                    <p>You can <a href='/settings' style='color: #2196f3; text-decoration: underline;'>disable safe search</a> or change the filtering level in settings.</p>
+                </div>
+            </div>", filter_manager.get_level())
+        ];
+        return Ok((filtered_notice, Duration::from_millis(10)));
+    }
+
+    println!("Query '{}' passed filter check, proceeding with search", query);
     // Define the schema and how to index it
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
@@ -226,9 +560,9 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
-    let privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
-    let human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
-    let instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
+    let _privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
+    let _human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
+    let _instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let _language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
 
@@ -241,6 +575,8 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
         // Parse the TOML files recursively
         let mut dirs_to_process = vec![std::path::PathBuf::from("datasets")];
+        let mut processed_files = 0;
+        let mut error_files = Vec::new();
 
         while let Some(dir) = dirs_to_process.pop() {
             for entry in fs::read_dir(&dir)? {
@@ -253,11 +589,50 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                 }
 
                 if path.extension().and_then(|s| s.to_str()) == Some("toml") {
-                    let path_str = path.to_string_lossy().to_string();
                     let data = fs::read_to_string(&path)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("Error reading file '{}': {}", path_str, e)))?;
-                    let value: Value = toml::from_str(&data)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("Error parsing TOML in file '{}': {}", path_str, e)))?;
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+                    let toml_data: Value = toml::from_str(&data)
+                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
+                    let path_str = path.to_string_lossy().to_string();
+
+                    // Validate TOML file before processing
+                    if let Err(validation_error) = validate_toml_file(&path) {
+                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
+                        error_files.push(error_msg.clone());
+                        eprintln!("{}", error_msg); // Use eprintln for errors to make them more visible
+                        continue; // Skip this file and move to the next one
+                    }
+
+                    // Read and parse the file
+                    let data = match fs::read_to_string(&path) {
+                        Ok(content) => content,
+                        Err(e) => {
+                            let error_msg = format!("Error reading file '{}': {}", path_str, e);
+                            error_files.push(error_msg.clone());
+                            eprintln!("{}", error_msg);
+                            continue; // Skip this file and move to the next one
+                        }
+                    };
+
+                    // Check for XML/HTML content and attempt cleanup before parsing
+                    let cleaned_data = if data.trim().starts_with('<') {
+                        eprintln!("Warning: File '{}' contains XML-like content, attempting cleanup...", path_str);
+                        // Very simple attempt to convert XML to TOML-like format
+                        // This won't work for complex XML but might help with simple cases
+                        ""
+                    } else {
+                        &data
+                    };
+
+                    let value = match toml::from_str::<Value>(cleaned_data) {
+                        Ok(parsed) => parsed,
+                        Err(e) => {
+                            let error_msg = format!("Error parsing TOML in file '{}': {}", path_str, e);
+                            error_files.push(error_msg.clone());
+                            eprintln!("{}", error_msg);
+                            continue; // Skip this file and move to the next one
+                        }
+                    };
 
                     if let Some(tables) = value.as_table() {
                         for (_name, table) in tables {
@@ -292,15 +667,48 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                                 }
                             }
                             index_writer.add_document(doc)?;
+                            processed_files += 1;
                         }
                     }
                 }
             }
         }
 
+        // If there were errors, report them
+        if !error_files.is_empty() {
+            let error_summary = format!("Encountered {} errors while processing dataset files. First error: {}",
+                error_files.len(), error_files[0]);
+            eprintln!("Error summary: {}", error_summary);
+
+            // If we have a lot of errors, suggest using the tools
+            if error_files.len() > 10 {
+                eprintln!("TIP: Run search with '?q=--find-invalid-files' or '?q=--inspect-dataset' to diagnose dataset issues");
+            }
+
+            // If no files were processed at all, return an error
+            if processed_files == 0 {
+                return Err(tantivy::TantivyError::InvalidArgument(format!(
+                    "Failed to process any dataset files. Errors in {} files. First error: {}. Run search with '?q=--find-invalid-files' or '?q=--inspect-dataset' to check all files.",
+                    error_files.len(), error_files[0]
+                )));
+            }
+
+            println!("Processed {} files successfully despite {} errors", processed_files, error_files.len());
+
+            // Write error report to file for later inspection
+            if let Ok(mut file) = File::create("dataset_errors.log") {
+                let _ = writeln!(file, "Dataset Processing Errors - {} errors found", error_files.len());
+                let _ = writeln!(file, "Timestamp: {:?}", SystemTime::now());
+                let _ = writeln!(file, "-----------------------------------");
+                for error in &error_files {
+                    let _ = writeln!(file, "{}", error);
+                }
+            }
+        }
+
         // Single commit at the end
         index_writer.commit()?;
-        println!("Indexing complete!");
+        println!("Indexing complete! Processed {} files successfully", processed_files);
         index
     } else {
         Index::open_in_dir(index_dir)?
@@ -432,30 +840,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         // Check each term's matches across different fields
         let query_terms: Vec<String> = query.split_whitespace().map(|s| s.to_lowercase()).collect();
 
-        // Check if document should be filtered based on safe search settings
-        let mut should_filter = false;
-        
-        // Check domain filtering
-        if let Some(tantivy::schema::Value::Str(url_text)) = retrieved_doc.get_first(url) {
-            if let Some(domain) = extract_domain(url_text) {
-                if filter_manager.should_filter_domain(&domain) {
-                    should_filter = true;
-                }
-            }
-        }
-        
-        // Check category filtering
-        if let Some(tantivy::schema::Value::Str(category_text)) = retrieved_doc.get_first(category) {
-            if filter_manager.should_filter_category(category_text) {
-                should_filter = true;
-            }
-        }
-        
-        // Skip this document if it should be filtered
-        if should_filter {
-            continue;
-        }
-
         // Track where each term matched
         let mut author_matches = 0;
         let mut content_matches = 0;
@@ -498,6 +882,31 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             score *= 1.0 + (content_matches as f32 * 0.2);
         }
 
+        // Get domain and category for filtering
+        let mut domain = String::new();
+        if let Some(tantivy::schema::Value::Str(url_text)) = retrieved_doc.get_first(url) {
+            domain = extract_domain(url_text).unwrap_or_default();
+        }
+
+        let mut category_value = String::new();
+        if let Some(tantivy::schema::Value::Str(cat_text)) = retrieved_doc.get_first(category) {
+            category_value = cat_text.to_lowercase();
+        }
+
+        // Skip this result if domain or category should be filtered
+        if filter_manager.is_enabled() {
+            let should_filter_domain = !domain.is_empty() && filter_manager.should_filter_domain(&domain);
+            let should_filter_category = !category_value.is_empty() && filter_manager.should_filter_category(&category_value);
+
+            if should_filter_domain || should_filter_category {
+                println!("Filtering result with domain: '{}', category: '{}' (filter domain: {}, filter category: {})",
+                         domain, category_value, should_filter_domain, should_filter_category);
+                continue;
+            }
+        }
+
+        println!("Result passed domain/category filter check - domain: '{}', category: '{}'", domain, category_value);
+
         // Generate the HTML for this result
         let html = document_to_html(&retrieved_doc, &schema);
         let html_without_quotes = html.replace(", ", "");
@@ -512,5 +921,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
     let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
 
     let duration = start.elapsed();
+    println!("Search completed in {:?}, returned {} results", duration, results.len());
     Ok((results, duration))
 }

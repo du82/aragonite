@@ -4,45 +4,149 @@ level = "moderate"        # Options: "off", "moderate", "strict"
 
 # These filter lists are applied based on the safe search level
 [filter_lists]
-
+# Terms ALWAYS filtered regardless of safe search level (legal requirements)
+off = [
+    # Child Sexual Abuse Material (CSAM) - Always blocked
+    "child pornography", "child porn", "cp", "cheese pizza", "c p", "ch1ld p0rn",
+    "kiddie porn", "pedo", "pedophile", "pedophilia", "child abuse", "child exploitation",
+    "minor porn", "underage porn", "teen porn", "preteen", "jailbait", "barely legal",
+    "loli", "lolicon", "shota", "shotacon", "toddler",
+    "school girl", "school boy", "kindergarten", "daycare", "playground", "sandbox",
+    "young model", "child model", "naturist child", "nudist child", "family nudist",
+    "child nudity", "naked child", "nude child", "bathing child", "changing child",
+    "grooming", "child groomer", "predator", "child predator", "kiddy fiddler",
+    "chester", "nonce", "pervert", "creep", "inappropriate touching", "child abuse images",
+    "csam", "csem", "cam", "sexual abuse material", "exploitation material",
+    "r@ygold", "raygold", "pthc", "ptsc", "hussyfan", "babyj", "bibigon",
+    "kdquality", "lsm", "lsb", "ls-magazine", "little star", "young paradise",
+    "candydoll", "newstar", "playtoy", "sweetloli", "teenage hardcore", "forbidden fruit",
+    "12yo", "13yo", "14yo", "15yo", "16yo", "17yo", "preteen hardcore",
+    "primary school", "elementary", "middle school", "high school student",
+    "age play", "ddlg", "daddy dom little girl", "mdlb", "abdl", "little space",
+    "age gap", "old young", "teacher student", "babysitter", "nanny cam"
+]
 # Terms to filter when level is "moderate" or "strict"
 moderate = [
-    "pornography",
-    "explicit content",
-    "adult content",
-    "XXX",
-    "NSFW",
-    "nude",
-    "nudity"
+    # Adult/Sexual Content
+    "pornography", "porno", "xxx", "adult content", "explicit content",
+    "nsfw", "not safe for work", "nudity", "erotic", "erotica",
+    "adult entertainment", "stripper", "escort", "prostitute", "brothel",
+    "cam girl", "camgirl", "onlyfans", "fetish", "bdsm", "bondage",
+    "dominatrix", "masturbation", "orgasm", "adult toys", "vibrator",
+    "pornhub", "xnxx", "xvideos", "redtube", "youporn", "spankbang",
+    "milf", "dilf", "thot", "simp", "daddy", "mommy", "step-mom", "step-dad",
+    "barely legal", "teen porn", "jailbait", "loli", "shota", "r34", "rule34",
+    "hentai", "doujin", "ecchi", "ahegao", "waifu", "husbando", "lewds",
+    "spank bank", "fap", "schlick", "nut", "bust", "load", "cream",
+    "bukkake", "gangbang", "threesome", "orgy", "dp", "anal", "oral",
+    "blowjob", "handjob", "footjob", "rimjob", "deepthroat", "facial",
+    "cumshot", "creampie", "squirt", "wet", "moist", "tight", "loose",
+    "hard", "stiff", "throbbing", "pounding", "riding", "missionary",
+    "doggy", "cowgirl", "reverse cowgirl", "69", "bj", "hj", "dtf",
+
+    # Dating/Hookup Related
+    "hookup", "casual sex", "one night stand", "friends with benefits",
+    "sugar daddy", "sugar baby", "affair", "cheating", "adultery",
+    "swingers", "swinging", "netflix and chill", "smash", "hit it",
+    "tap that", "slide into dms", "booty call", "fwb", "nsa"
 ]
 
 # Additional terms to filter when level is "strict"
 strict = [
-    "violence",
-    "gore",
-    "death",
-    "gambling",
-    "drugs",
-    "alcohol",
-    "tobacco",
-    "weapons",
-    "hate speech",
-    "profanity",
-    "curse words"
+    # Violence & Gore
+    "gore", "gory", "bloody", "murder", "killing", "torture", "brutal",
+    "savage", "massacre", "slaughter", "execution", "assassin", "hitman",
+    "assault", "abuse", "domestic violence", "child abuse", "animal cruelty",
+    "snuff", "gore site", "bestgore", "liveleak", "watchpeopledie", "rotten",
+    "ogrish", "beheading", "decapitation", "mutilation", "dismemberment",
+    "corpse", "cadaver", "autopsy", "morgue", "necrophilia", "cannibalism",
+    "serial killer", "mass murder", "school shooter", "terrorist attack",
+    "lynching", "hanging", "electric chair", "lethal injection", "gas chamber",
+
+    # Self-Harm & Suicide
+    "suicide", "self-harm", "cutting", "overdose", "hanging", "drowning",
+    "suicide methods", "how to kill yourself", "painless suicide", "suicide pact",
+    "cutting techniques", "self-mutilation", "razor blade", "self-injury",
+    "suicidal thoughts", "end it all", "kill myself", "want to die",
+    "rope neck", "jump off", "pills overdose", "wrist cutting", "self-destruct",
+
+    # Weapons & Explosives
+    "weapons", "firearms", "rifle", "pistol", "revolver", "shotgun",
+    "machine gun", "assault rifle", "ammunition", "bullets", "bomb", "explosive",
+    "dynamite", "grenade", "missile", "rocket", "nuclear weapon", "chemical weapon",
+    "biological weapon", "poison gas", "nerve agent", "anthrax", "ricin",
+    "pipe bomb", "car bomb", "suicide bomber", "ied", "roadside bomb",
+    "ak47", "ar15", "glock", "uzi", "kalashnikov", "sniper rifle",
+
+    # Drugs & Substances
+    "drug dealer", "cocaine", "heroin", "methamphetamine", "meth",
+    "crack cocaine", "lsd", "ecstasy", "molly", "hashish", "opium", "morphine",
+    "fentanyl", "ketamine", "date rape drug", "drug trafficking",
+    "narcotics", "dealer", "pusher", "junkie", "addict", "drug lab",
+    "crystal meth", "ice", "snow", "blow", "smack", "horse", "junk",
+    "speed", "uppers", "downers", "pills", "tabs", "rocks", "powder",
+    "needle", "syringe", "spoon", "cook", "shoot up", "mainline",
+    "overdose", "od", "withdrawal", "detox", "rehab", "methadone",
+
+    # Gambling
+    "gambling addiction", "problem gambling", "casino", "poker", "blackjack",
+    "roulette", "slots", "lottery", "betting", "sports betting", "bookmaker",
+    "bookie", "jackpot", "online gambling", "casino games", "slot machine",
+    "fruit machine", "one-armed bandit", "high roller", "whale", "shark",
+
+    # Terrorism & Extremism
+    "terrorism", "terrorist", "extremist", "bomb making", "explosive device",
+    "mass shooting", "attack planning", "radicalization", "recruitment",
+    "jihad", "martyrdom", "infidel", "holy war", "caliphate", "isis", "al qaeda",
+    "taliban", "suicide bombing", "car ramming", "truck attack", "knife attack",
+
+    # Eating Disorders
+    "anorexia", "bulimia", "pro-ana", "pro-mia", "thinspo", "eating disorder",
+    "purging", "laxatives", "diet pills", "starvation", "bone thin", "skinny legend",
+    "ana", "mia", "ed", "restriction", "binge", "purge", "body check",
+
+    # Human Trafficking & Exploitation
+    "human trafficking", "child trafficking", "organ trafficking", "smuggling",
+    "sex trafficking", "forced labor", "modern slavery", "child exploitation",
+    "child pornography", "cp", "cheese pizza", "jailbait", "child abuse",
+    "grooming", "predator", "pedophile", "minor", "underage", "loli", "shota"
 ]
 
-# You can add additional filter categories as needed
+# Category-based filtering
 [category_filters]
-enabled = false          # Whether to filter by category
+enabled = true          # Whether to filter by category
 blocked_categories = [
     "adult",
-    "gambling"
+    "pornography",
+    "gambling",
+    "violence",
+    "weapons",
+    "drugs",
+    "self-harm",
+    "illegal-activities",
+    "terrorism",
+    "extremism",
+    "malware",
+    "phishing",
+    "fraud",
+    "eating-disorders",
+    "suicide"
 ]
 
 # Domain-specific filters
 [domain_filters]
-enabled = false          # Whether to filter by domain
+enabled = true          # Whether to filter by domain
 blocked_domains = [
-    "adult-example.com",
-    "gambling-example.com"
+    # Adult Content Sites
+    "pornhub.com", "xnxx.com", "xvideos.com", "redtube.com", "youporn.com",
+    "spankbang.com", "tube8.com", "xtube.com", "beeg.com", "xhamster.com",
+    "pornmd.com", "sex.com", "cam4.com", "chaturbate.com", "myfreecams.com",
+    "livejasmin.com", "flirt4free.com", "streamate.com", "onlyfans.com",
+
+    # Gambling Sites
+    "bet365.com", "pokerstars.com", "888casino.com", "betfair.com",
+
+    # Violence/Gore Sites
+    "bestgore.com", "liveleak.com", "rotten.com", "ogrish.com",
+    "documenting-reality.com", "crazyshit.com", "goregrish.com"
 ]

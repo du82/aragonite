@@ -38,12 +38,17 @@ impl Fairing for ThemeMiddleware {
         };
         
         // Apply safe search settings from cookies
+        let mut safe_search_enabled = true; // Default to enabled
+        let mut safe_search_level = "moderate"; // Default to moderate
+        let mut safe_search_value = "1"; // Default numeric value for moderate
+        
         if let Some(filter_manager) = request.rocket().state::<Mutex<FilterManager>>() {
             let mut filter = filter_manager.lock().unwrap();
             
             // Get safe search enabled status from cookie
             if let Some(cookie) = request.cookies().get("safe_search_enabled") {
                 if let Ok(enabled) = cookie.value().parse::<bool>() {
+                    safe_search_enabled = enabled;
                     filter.enable(enabled);
                 }
             }
@@ -52,7 +57,16 @@ impl Fairing for ThemeMiddleware {
             if let Some(cookie) = request.cookies().get("safe_search_level") {
                 let level = cookie.value();
                 if level == "off" || level == "moderate" || level == "strict" {
+                    safe_search_level = level;
                     filter.set_level(level);
+                    
+                    // Set numeric value for URL parameter
+                    safe_search_value = match level {
+                        "off" => "0",
+                        "moderate" => "1",
+                        "strict" => "2",
+                        _ => "1", // Default to moderate
+                    };
                 }
             }
         }
@@ -70,7 +84,28 @@ impl Fairing for ThemeMiddleware {
             .unwrap_or_else(|| "gemstone.css".to_string());
 
         if let Ok(body) = response.body_mut().to_string().await {
-            let modified_body = body.replace("{{theme}}", &format!("themes/{}", theme));
+            let mut modified_body = body.replace("{{theme}}", &format!("themes/{}", theme));
+            
+            // Replace safe search template variables
+            modified_body = modified_body.replace("{{safe_search_value}}", safe_search_value);
+            
+            // Set checkbox checked status based on safe search enabled
+            if safe_search_enabled {
+                modified_body = modified_body.replace("{{safe_search_checked}}", "checked");
+                modified_body = modified_body.replace("{{safe_search_off_checked}}", "");
+            } else {
+                modified_body = modified_body.replace("{{safe_search_checked}}", "");
+                modified_body = modified_body.replace("{{safe_search_off_checked}}", "checked");
+            }
+            
+            // Set dropdown selected status based on safe search level
+            modified_body = modified_body.replace("{{level_off_selected}}", 
+                if safe_search_level == "off" { "selected" } else { "" });
+            modified_body = modified_body.replace("{{level_moderate_selected}}", 
+                if safe_search_level == "moderate" { "selected" } else { "" });
+            modified_body = modified_body.replace("{{level_strict_selected}}", 
+                if safe_search_level == "strict" { "selected" } else { "" });
+                
             let size = modified_body.len();
             response.set_sized_body(size, Cursor::new(modified_body));
         }
