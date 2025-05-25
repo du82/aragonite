@@ -4,7 +4,7 @@ level = "moderate"        # Options: "off", "moderate", "strict"
 
 # These filter lists are applied based on the safe search level
 [filter_lists]
-# Terms ALWAYS filtered regardless of safe search level (legal requirements)
+# Terms ALWAYS filtered regardless of safe search level
 off = [
     # Child Sexual Abuse Material (CSAM) - Always blocked
     "child pornography", "child porn", "cp", "cheese pizza", "c p", "ch1ld p0rn",
@@ -21,7 +21,6 @@ off = [
     "kdquality", "lsm", "lsb", "ls-magazine", "little star", "young paradise",
     "candydoll", "newstar", "playtoy", "sweetloli", "teenage hardcore", "forbidden fruit",
     "12yo", "13yo", "14yo", "15yo", "16yo", "17yo", "preteen hardcore",
-    "primary school", "elementary", "middle school", "high school student",
     "age play", "ddlg", "daddy dom little girl", "mdlb", "abdl", "little space",
     "age gap", "old young", "teacher student", "babysitter", "nanny cam"
 ]
@@ -43,6 +42,24 @@ moderate = [
     "cumshot", "creampie", "squirt", "wet", "moist", "tight", "loose",
     "hard", "stiff", "throbbing", "pounding", "riding", "missionary",
     "doggy", "cowgirl", "reverse cowgirl", "69", "bj", "hj", "dtf",
+
+    # Child Sexual Abuse Material (CSAM) - Always blocked
+    "child pornography", "child porn", "cp", "cheese pizza", "c p", "ch1ld p0rn",
+    "kiddie porn", "pedo", "pedophile", "pedophilia", "child abuse", "child exploitation",
+    "minor porn", "underage porn", "teen porn", "preteen", "jailbait", "barely legal",
+    "loli", "lolicon", "shota", "shotacon", "toddler",
+    "school girl", "school boy", "kindergarten", "daycare", "playground", "sandbox",
+    "young model", "child model", "naturist child", "nudist child", "family nudist",
+    "child nudity", "naked child", "nude child", "bathing child", "changing child",
+    "grooming", "child groomer", "predator", "child predator", "kiddy fiddler",
+    "chester", "nonce", "pervert", "creep", "inappropriate touching", "child abuse images",
+    "csam", "csem", "cam", "sexual abuse material", "exploitation material",
+    "r@ygold", "raygold", "pthc", "ptsc", "hussyfan", "babyj", "bibigon",
+    "kdquality", "lsm", "lsb", "ls-magazine", "little star", "young paradise",
+    "candydoll", "newstar", "playtoy", "sweetloli", "teenage hardcore", "forbidden fruit",
+    "12yo", "13yo", "14yo", "15yo", "16yo", "17yo", "preteen hardcore",
+    "age play", "ddlg", "daddy dom little girl", "mdlb", "abdl", "little space",
+    "age gap", "old young", "teacher student", "babysitter", "nanny cam",
 
     # Dating/Hookup Related
     "hookup", "casual sex", "one night stand", "friends with benefits",
@@ -109,7 +126,25 @@ strict = [
     "human trafficking", "child trafficking", "organ trafficking", "smuggling",
     "sex trafficking", "forced labor", "modern slavery", "child exploitation",
     "child pornography", "cp", "cheese pizza", "jailbait", "child abuse",
-    "grooming", "predator", "pedophile", "minor", "underage", "loli", "shota"
+    "grooming", "predator", "pedophile", "minor", "underage", "loli", "shota",
+
+    # Child Sexual Abuse Material (CSAM) - Always blocked
+    "child pornography", "child porn", "cp", "cheese pizza", "c p", "ch1ld p0rn",
+    "kiddie porn", "pedo", "pedophile", "pedophilia", "child abuse", "child exploitation",
+    "minor porn", "underage porn", "teen porn", "preteen", "jailbait", "barely legal",
+    "loli", "lolicon", "shota", "shotacon", "toddler",
+    "school girl", "school boy", "kindergarten", "daycare", "playground", "sandbox",
+    "young model", "child model", "naturist child", "nudist child", "family nudist",
+    "child nudity", "naked child", "nude child", "bathing child", "changing child",
+    "grooming", "child groomer", "predator", "child predator", "kiddy fiddler",
+    "chester", "nonce", "pervert", "creep", "inappropriate touching", "child abuse images",
+    "csam", "csem", "cam", "sexual abuse material", "exploitation material",
+    "r@ygold", "raygold", "pthc", "ptsc", "hussyfan", "babyj", "bibigon",
+    "kdquality", "lsm", "lsb", "ls-magazine", "little star", "young paradise",
+    "candydoll", "newstar", "playtoy", "sweetloli", "teenage hardcore", "forbidden fruit",
+    "12yo", "13yo", "14yo", "15yo", "16yo", "17yo", "preteen hardcore",
+    "age play", "ddlg", "daddy dom little girl", "mdlb", "abdl", "little space",
+    "age gap", "old young", "teacher student", "babysitter", "nanny cam"
 ]
 
 # Category-based filtering
