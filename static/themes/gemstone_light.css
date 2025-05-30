@@ -613,6 +613,20 @@
         margin: 20px 8px 8px 8px;
         line-height: 1.2;
     }
+    
+    .filter-message {
+        background-color: #f0f0f0;
+        border-radius: 6px;
+        padding: 20px;
+        margin: 30px 8px;
+        text-align: center;
+        border-left: 4px solid #db2266;
+    }
+    
+    .filter-message h2 {
+        margin-top: 0;
+        color: #db2266;
+    }
 
     .pill {
         cursor: pointer;
