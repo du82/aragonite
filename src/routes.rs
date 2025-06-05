@@ -49,7 +49,8 @@ pub async fn settings() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/settings.html")).await
 }
 
-// Safe Search Routes
+// -----Safe Search-----
+
 #[get("/safe_search?<enabled>")]
 pub fn safe_search_toggle(enabled: bool, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<Redirect, std::io::Error> {
     cookies.add(Cookie::new("safe_search_enabled", enabled.to_string()));
