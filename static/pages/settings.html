@@ -77,14 +77,13 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="content">
             <div class="landing">
                 <h2>Settings</h2>
-                
+
                 <!-- Theme Settings -->
                 <div class="border-box" style="margin-top: 20px; margin-bottom: 20px;">
-                    <h3>Theme Settings</h3>
                     <form action="/themes">
                         <label for="selection">Choose a theme:</label>
                         <select
@@ -104,28 +103,12 @@
                         <input type="submit" value="Set Theme" />
                     </form>
                 </div>
-                
+
                 <!-- Safe Search Settings -->
                 <div class="border-box" style="margin-top: 20px; margin-bottom: 20px;">
-                    <h3>Safe Search Settings</h3>
-                    
-                    <div style="margin-bottom: 15px;">
-                        <form action="/safe_search">
-                            <p>Enable Safe Search:</p>
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <input type="radio" id="safe_search_on" name="enabled" value="true" {{safe_search_checked}}>
-                                <label for="safe_search_on" style="margin-left: 5px;">On</label>
-                                
-                                <input type="radio" id="safe_search_off" name="enabled" value="false" {{safe_search_off_checked}} style="margin-left: 20px;">
-                                <label for="safe_search_off" style="margin-left: 5px;">Off</label>
-                            </div>
-                            <input type="submit" value="Save Setting" />
-                        </form>
-                    </div>
-                    
                     <div>
                         <form action="/safe_search_level">
-                            <label for="level">Safe Search Level:</label>
+                            <label for="level">Safe Search Level (off by default):</label>
                             <select
                                 name="level"
                                 class="drop-down"
@@ -147,7 +130,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="main-footer">
             <div class="footer-container">
                 <a href="donate"> Donate </a>| <a href="mirrors"> Mirrors </a>|
