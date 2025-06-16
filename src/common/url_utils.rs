@@ -1,3 +1,5 @@
+// url_utils.rs
+
 /// Extracts domain name from a URL string without requiring url parsing
 pub fn extract_domain(url: &str) -> Option<String> {
     // Remove protocol if present
