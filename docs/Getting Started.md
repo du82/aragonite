@@ -179,13 +179,28 @@ Aragonite supports several advanced search features:
 
 ## Reindexing Data
 
-If you modify your datasets, you need to clear the index to rebuild it:
+If you modify your datasets, you need to clear the index to rebuild it. There are two ways to do this:
+
+### Method 1: Using the reindex flag
+
+You can use the built-in reindex flag to automatically clear the index directory and rebuild it:
+
+```bash
+cargo run -i
+```
+
+The `-i` flag will delete all contents of the index folder and trigger reindexing when the server starts.
+
+### Method 2: Manual reindexing
+
+Alternatively, you can manually clear the index and restart the server:
 
 ```bash
 rm -rf index/*
+cargo run
 ```
 
-Then restart the server to rebuild the index from the updated datasets.
+Both methods will rebuild the index from the updated datasets.
 
 ## Troubleshooting
 
