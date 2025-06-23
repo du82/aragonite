@@ -30,6 +30,7 @@ use tantivy::Index;
 use tantivy::ReloadPolicy;
 use tantivy::Term;
 use toml::Value;
+use regex::Regex;
 
 #[derive(FromForm)]
 pub struct SearchForm {
@@ -62,6 +63,18 @@ pub fn random_search(cookies: &CookieJar<'_>) -> Result<Redirect, std::io::Error
     Ok(Redirect::to(uri!(search_get(q = Some(query.to_string()), ss = Some(ss_level.to_string())))))
 }
 
+fn sanitize_query(query: &str) -> String {
+    let special_chars = &['^', '[', ']', '{', '}', '(', ')', '\\', '*', '+', '|', '&', '!', ':', '~'];
+
+    let mut sanitized = query.to_string();
+    for &c in special_chars {
+        sanitized = sanitized.replace(c, "");
+    }
+
+    let re = Regex::new(r"\s+").unwrap();
+    re.replace_all(&sanitized, " ").trim().to_string()
+}
+
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>, cookies: &CookieJar<'_>) -> Redirect {
     // Get current safe search level from cookie to maintain it in the redirect
@@ -74,11 +87,13 @@ pub fn search_post(search_form: Form<SearchForm>, cookies: &CookieJar<'_>) -> Re
         })
         .unwrap_or("0"); // Default to off if no cookie
 
-    Redirect::to(uri!(search_get(q = Some(search_form.into_inner().query), ss = Some(ss_level.to_string()))))
+    let sanitized_query = sanitize_query(&search_form.into_inner().query);
+    Redirect::to(uri!(search_get(q = Some(sanitized_query), ss = Some(ss_level.to_string()))))
 }
 
 #[get("/search?<q>&<ss>")]
 pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<RawHtml<String>, Redirect> {
+    let sanitized_q = q.as_ref().map(|query| sanitize_query(query));
     // Process safe search level if provided
     if let Some(level) = ss {
         let valid_level = match level.as_str() {
@@ -511,7 +526,8 @@ fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
 }
 
 pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy::Result<(Vec<String>, Duration)> {
-    if filter_manager.is_enabled() && filter_manager.should_filter_query(query) {
+    let sanitized_query = sanitize_query(query);
+    if filter_manager.is_enabled() && filter_manager.should_filter_query(&sanitized_query) {
         // Return a special message informing the user about filtered content
         let filtered_notice = vec![
             format!("<div class='search-result filtered-notice' style='background-color: rgba(255, 82, 82, 0.1); border-left: 4px solid #ff5252; padding: 15px;'>
@@ -732,8 +748,7 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
     query_parser.set_field_boost(author, 2.0);
     query_parser.set_field_boost(description, 1.5);
 
-    // Split the query into words
-    let words: Vec<&str> = query.split_whitespace().collect();
+    let words: Vec<&str> = sanitized_query.split_whitespace().collect();
 
     // Sort words by modifier type (include, exclude, mandatory, field)
     let (include_words, exclude_words, mandatory_words, field_queries): (
