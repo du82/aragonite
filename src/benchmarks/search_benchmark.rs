@@ -1,3 +1,6 @@
+// Benchmarking utility for search engine performance testing
+// Measures query response times and result counts across multiple queries
+
 use crate::search::tantivy_processor;
 use crate::filter::FilterManager;
 use std::fs::{self, OpenOptions};
@@ -7,12 +10,14 @@ use std::time::{Duration, Instant, SystemTime};
 use std::process::Command;
 use std::thread;
 
+// System information for benchmark context
 pub struct SystemInfo {
     os: String,
     cpu_info: String,
     total_memory_mb: u64,
 }
 
+// Individual query metrics
 pub struct BenchmarkMetrics {
     query: String,
     duration_ms: u128,
@@ -21,6 +26,7 @@ pub struct BenchmarkMetrics {
     thread_id: String,
 }
 
+// Summary statistics across all benchmark queries
 pub struct BenchmarkSummary {
     total_queries: usize,
     avg_duration_ms: f64,
@@ -32,6 +38,7 @@ pub struct BenchmarkSummary {
     system_info: SystemInfo,
 }
 
+// Collects current system information for context
 fn get_system_info() -> SystemInfo {
     let os = std::env::consts::OS.to_string();
 
@@ -80,6 +87,7 @@ fn get_system_info() -> SystemInfo {
     }
 }
 
+// Main benchmark function that runs multiple search queries and collects metrics
 pub fn run_search_benchmark() -> Result<(), std::io::Error> {
     println!("Starting search engine benchmark...");
 
@@ -175,6 +183,7 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
     Ok(())
 }
 
+// Writes benchmark results to a file for later analysis
 fn save_benchmark_results(
     metrics: &[BenchmarkMetrics],
     summary: &BenchmarkSummary,
@@ -219,6 +228,7 @@ fn save_benchmark_results(
     Ok(())
 }
 
+// Displays benchmark summary to console
 fn print_summary(summary: &BenchmarkSummary) {
     println!("\nBenchmark Summary:");
     println!("Server Information:");

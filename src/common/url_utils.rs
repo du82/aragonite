@@ -1,4 +1,4 @@
-// url_utils.rs
+// URL utility functions for domain extraction and homepage detection
 
 /// Extracts domain name from a URL string without requiring url parsing
 pub fn extract_domain(url: &str) -> Option<String> {
@@ -54,7 +54,6 @@ pub fn is_homepage(url: &str) -> bool {
     }
 }
 
-/// Extracts the base domain name without TLD for matching
 /// Extracts the base domain name without TLD for matching
 pub fn get_domain_name(url: &str) -> Option<String> {
     extract_domain(url).map(|domain| {
