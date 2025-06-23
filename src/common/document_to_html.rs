@@ -1,4 +1,4 @@
-// document_to_html.rs
+// Convert Tantivy documents to HTML for display
 
 use std::collections::HashMap;
 use tantivy::schema::Schema;

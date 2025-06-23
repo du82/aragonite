@@ -1,4 +1,4 @@
-// main.rs
+// Application entry point
 
 #[macro_use]
 extern crate rocket;
@@ -18,7 +18,7 @@ use middleware::ThemeMiddleware;
 fn rocket() -> Rocket<Build> {
     // Initialize filter manager
     let filter_manager = filter::FilterManager::new();
-    
+
     rocket::build()
         .mount(
             "/",
@@ -46,6 +46,6 @@ fn rocket() -> Rocket<Build> {
             ],
         )
         .attach(ThemeMiddleware)
-        .manage(Mutex::new(HashMap::<String, String>::new())) // This is the session store
-        .manage(Mutex::new(filter_manager)) // Store the filter manager
+        .manage(Mutex::new(HashMap::<String, String>::new()))
+        .manage(Mutex::new(filter_manager))
 }

@@ -1,4 +1,4 @@
-// routes.rs
+// Core route handlers
 
 use rocket::get;
 use rocket::http::{Cookie, CookieJar};
@@ -8,8 +8,6 @@ use rocket::State;
 use std::path::Path;
 use std::sync::Mutex;
 use crate::filter::FilterManager;
-
-// -----Routes-----
 
 #[get("/")]
 pub async fn index() -> Result<NamedFile, std::io::Error> {
@@ -51,7 +49,7 @@ pub async fn settings() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/settings.html")).await
 }
 
-// -----Safe Search-----
+// Safe Search routes
 
 #[get("/safe_search?<enabled>")]
 pub fn safe_search_toggle(enabled: bool, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<Redirect, std::io::Error> {
@@ -84,7 +82,7 @@ pub async fn syntax() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/pages/syntax.html")).await
 }
 
-// -----Themes-----
+// Theme routes
 
 #[get("/themes/media/logo.png")]
 pub async fn logo_image() -> Result<NamedFile, std::io::Error> {
@@ -111,7 +109,7 @@ pub async fn midnight_theme() -> Result<NamedFile, std::io::Error> {
     NamedFile::open(Path::new("static/themes/midnight.css")).await
 }
 
-// -----Theme Selector-----
+// Theme selection handler
 
 #[get("/themes?<selection>")]
 pub async fn theme_selector(selection: Option<String>, cookies: &CookieJar<'_>) -> Result<Redirect, std::io::Error> {

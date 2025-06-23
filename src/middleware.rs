@@ -1,4 +1,4 @@
-// middleware.rs
+// Theme and template middleware
 
 use rand::seq::SliceRandom;
 use rocket::fairing::{Fairing, Info, Kind};

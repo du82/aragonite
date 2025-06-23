@@ -1,4 +1,4 @@
-// filters.rs
+// Filter manager for content filtering
 
 use std::collections::HashSet;
 use std::fs;
@@ -53,7 +53,7 @@ impl FilterManager {
     }
 
     fn load_filters(&mut self) {
-        println!("Loading filters for level: {}", self.level);
+
         match fs::read_to_string("filters.toml") {
             Ok(filters_str) => {
                 if let Ok(filters) = filters_str.parse::<Value>() {
@@ -62,11 +62,9 @@ impl FilterManager {
                         // Always load moderate terms if level is moderate or strict
                         if self.level == "moderate" || self.level == "strict" {
                             if let Some(moderate_terms) = filter_lists.get("moderate").and_then(Value::as_array) {
-                                println!("Loading {} moderate filter terms", moderate_terms.len());
                                 for term in moderate_terms {
                                     if let Some(term_str) = term.as_str() {
                                         self.filter_terms.insert(term_str.to_lowercase());
-                                        println!("Added moderate filter term: '{}'", term_str.to_lowercase());
                                     }
                                 }
                             }
@@ -75,11 +73,9 @@ impl FilterManager {
                         // Add strict terms if level is strict
                         if self.level == "strict" {
                             if let Some(strict_terms) = filter_lists.get("strict").and_then(Value::as_array) {
-                                println!("Loading {} strict filter terms", strict_terms.len());
                                 for term in strict_terms {
                                     if let Some(term_str) = term.as_str() {
                                         self.filter_terms.insert(term_str.to_lowercase());
-                                        println!("Added strict filter term: '{}'", term_str.to_lowercase());
                                     }
                                 }
                             }
@@ -132,25 +128,19 @@ impl FilterManager {
     }
 
     pub fn should_filter_query(&self, query: &str) -> bool {
-        println!("Checking if query should be filtered: '{}', enabled: {}, level: {}", query, self.enabled, self.level);
-        
         if !self.enabled || self.level == "off" {
-            println!("Filtering disabled or level off, not filtering");
             return false;
         }
 
         let query_lower = query.to_lowercase();
         
         // Check if query contains any filtered terms
-        println!("Number of filter terms loaded: {}", self.filter_terms.len());
         for term in &self.filter_terms {
             if query_lower.contains(term) {
-                println!("Query contains filtered term: '{}', filtering", term);
                 return true;
             }
         }
 
-        println!("No filtered terms found in query, not filtering");
         false
     }
 
@@ -173,16 +163,13 @@ impl FilterManager {
     }
 
     pub fn set_level(&mut self, level: &str) {
-        println!("Setting safe search level to: {}", level);
         self.level = level.to_string();
         // Reload filters after changing the level
         self.filter_terms.clear();
         self.load_filters();
-        println!("After reload: {} filter terms loaded", self.filter_terms.len());
     }
 
     pub fn enable(&mut self, enabled: bool) {
-        println!("Setting safe search enabled to: {}", enabled);
         self.enabled = enabled;
     }
 }

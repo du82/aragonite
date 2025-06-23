@@ -1,4 +1,4 @@
-// search.rs
+// Search functionality implementation
 
 use crate::benchmarks::search_benchmark;
 use crate::common::document_to_html::document_to_html;
@@ -94,7 +94,7 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         filter.set_level(valid_level);
     }
 
-    // Admin commands
+    // Handle admin commands
     if let Some(query) = q.as_deref() {
         if query == "--run-benchmark" {
             let benchmark_results = run_benchmarks();
@@ -102,7 +102,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         } else if query == "--inspect-dataset" {
             let (valid, invalid, details) = inspect_dataset_directory();
 
-            // Build the HTML string piece by piece to avoid format string escaping issues
             let report = format!(
                 "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
                 <h1>Dataset Inspection Report</h1>
@@ -123,11 +122,9 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         }
     }
 
-    // Search logic
     let filter = filter_manager.lock().unwrap();
     match tantivy_processor(q.as_deref().unwrap_or(""), &filter) {
         Ok((results, duration)) => {
-            //println!("{:#?}", results);
             match q {
                 Some(query) => {
                     let trimmed_query = query.trim_start();
@@ -502,7 +499,6 @@ fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
         return Err(format!("File is too large ({} bytes)", data.len()));
     }
 
-    // Check for BOM markers which can cause TOML parsing to fail
     if data.starts_with("\u{feff}") {
         return Err(format!("File contains UTF-8 BOM marker which is not supported by TOML"));
     }
@@ -515,12 +511,7 @@ fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
 }
 
 pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy::Result<(Vec<String>, Duration)> {
-    println!("tantivy_processor called with query: '{}', filter enabled: {}, level: {}",
-             query, filter_manager.is_enabled(), filter_manager.get_level());
-
-    // Check if query should be filtered based on filter settings
     if filter_manager.is_enabled() && filter_manager.should_filter_query(query) {
-        println!("Query '{}' contains filtered terms, returning filter notice", query);
         // Return a special message informing the user about filtered content
         let filtered_notice = vec![
             format!("<div class='search-result filtered-notice' style='background-color: rgba(255, 82, 82, 0.1); border-left: 4px solid #ff5252; padding: 15px;'>
@@ -535,7 +526,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         return Ok((filtered_notice, Duration::from_millis(10)));
     }
 
-    println!("Query '{}' passed filter check, proceeding with search", query);
     // Define the schema and how to index it
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
@@ -708,13 +698,11 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
         // Single commit at the end
         index_writer.commit()?;
-        println!("Indexing complete! Processed {} files successfully", processed_files);
         index
     } else {
         Index::open_in_dir(index_dir)?
     };
 
-    // Searching the index
     let reader = index
         .reader_builder()
         .reload_policy(ReloadPolicy::OnCommit)
@@ -724,7 +712,7 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
     let searcher = reader.searcher();
 
-    // First create the basic query parser
+    // Create query parser
     let mut query_parser = QueryParser::for_index(
         &index,
         vec![
@@ -739,16 +727,15 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         ],
     );
 
-    // Set default operator to AND and configure field boosts
-    //query_parser.set_conjunction_by_default();
-    query_parser.set_field_boost(title, 3.0); // Title matches are 3x more important
-    query_parser.set_field_boost(author, 2.0); // Author matches are 2x more important
-    query_parser.set_field_boost(description, 1.5); // Description matches are 1.5x more important
+    // Configure field boosts
+    query_parser.set_field_boost(title, 3.0);
+    query_parser.set_field_boost(author, 2.0);
+    query_parser.set_field_boost(description, 1.5);
 
     // Split the query into words
     let words: Vec<&str> = query.split_whitespace().collect();
 
-    // Separate the words to include, exclude, and mandatory
+    // Sort words by modifier type (include, exclude, mandatory, field)
     let (include_words, exclude_words, mandatory_words, field_queries): (
         Vec<&str>,
         Vec<&str>,
