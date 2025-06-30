@@ -9,6 +9,7 @@ use rocket::form::{Form, FromForm};
 use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
 use rocket::uri;
+use std::sync::OnceLock;
 use rocket::{get, post, State};
 use rocket::http::{Cookie, CookieJar};
 use std::fs;
@@ -268,15 +269,27 @@ pub fn inspect_dataset_directory() -> (usize, usize, String) {
                     }
 
                     if path.extension().and_then(|s| s.to_str()) == Some("toml") {
-                        match validate_toml_file(&path) {
+                        // Read the file once
+                        let data = match fs::read_to_string(&path) {
+                            Ok(content) => content,
+                            Err(e) => {
+                                invalid_files += 1;
+                                let error_msg = format!("File '{}': Error reading file: {}", path.display(), e);
+                                if first_few_errors.len() < 5 {
+                                    first_few_errors.push(error_msg);
+                                }
+                                continue;
+                            }
+                        };
+                        
+                        // Validate TOML content
+                        match validate_toml_content(&data) {
                             Ok(_) => {
                                 valid_files += 1;
                             },
-                            Err(err) => {
+                            Err(e) => {
                                 invalid_files += 1;
-                                let error_msg = format!("File '{}': {}", path.display(), err);
-
-                                // Store the first few errors for detailed reporting
+                                let error_msg = format!("File '{}': Invalid TOML syntax: {}", path.display(), e);
                                 if first_few_errors.len() < 5 {
                                     first_few_errors.push(error_msg);
                                 }
@@ -476,14 +489,9 @@ pub fn run_benchmarks() -> String {
     }
 }
 
-/// Validates if a file contains valid TOML content
-fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
-    // Read the file contents
-    let data = match fs::read_to_string(path) {
-        Ok(content) => content,
-        Err(e) => return Err(format!("Error reading file: {}", e)),
-    };
-
+/// Validates if a file contains valid TOML content without reading the file again
+/// Validates TOML content from a string without reading the file again
+fn validate_toml_content(data: &str) -> Result<(), String> {
     // Get a preview of the content for error reporting
     let preview = if data.len() > 100 {
         format!("{:.100}...", data.replace('\n', "\\n"))
@@ -519,7 +527,7 @@ fn validate_toml_file(path: &std::path::Path) -> Result<(), String> {
     }
 
     // Attempt to parse as TOML
-    match toml::from_str::<Value>(&data) {
+    match toml::from_str::<Value>(data) {
         Ok(_) => Ok(()),
         Err(e) => Err(format!("Invalid TOML syntax: {}. Preview: {}", e, preview)),
     }
@@ -595,21 +603,9 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                 }
 
                 if path.extension().and_then(|s| s.to_str()) == Some("toml") {
-                    let data = fs::read_to_string(&path)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
-                    let toml_data: Value = toml::from_str(&data)
-                        .map_err(|e| tantivy::TantivyError::InvalidArgument(format!("{}", e)))?;
                     let path_str = path.to_string_lossy().to_string();
 
-                    // Validate TOML file before processing
-                    if let Err(validation_error) = validate_toml_file(&path) {
-                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
-                        error_files.push(error_msg.clone());
-                        eprintln!("{}", error_msg); // Use eprintln for errors to make them more visible
-                        continue; // Skip this file and move to the next one
-                    }
-
-                    // Read and parse the file
+                    // Read the file only once
                     let data = match fs::read_to_string(&path) {
                         Ok(content) => content,
                         Err(e) => {
@@ -620,17 +616,16 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                         }
                     };
 
-                    // Check for XML/HTML content and attempt cleanup before parsing
-                    let cleaned_data = if data.trim().starts_with('<') {
-                        eprintln!("Warning: File '{}' contains XML-like content, attempting cleanup...", path_str);
-                        // Very simple attempt to convert XML to TOML-like format
-                        // This won't work for complex XML but might help with simple cases
-                        ""
-                    } else {
-                        &data
-                    };
+                    // Validate TOML content in one step
+                    if let Err(validation_error) = validate_toml_content(&data) {
+                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
+                        error_files.push(error_msg.clone());
+                        eprintln!("{}", error_msg);
+                        continue; // Skip this file and move to the next one
+                    }
 
-                    let value = match toml::from_str::<Value>(cleaned_data) {
+                    // Parse TOML only once (we know it's valid from validation)
+                    let value = match toml::from_str::<Value>(&data) {
                         Ok(parsed) => parsed,
                         Err(e) => {
                             let error_msg = format!("Error parsing TOML in file '{}': {}", path_str, e);
@@ -823,8 +818,12 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
     // Output of the final query after parsing
     let final_query = BooleanQuery::from(final_query);
 
-    let config_str = fs::read_to_string("Config.toml").unwrap();
-    let config: Value = config_str.parse().unwrap();
+    // Use cached configuration with thread-safe lazy initialization
+    static CONFIG: OnceLock<Value> = OnceLock::new();
+    let config = CONFIG.get_or_init(|| {
+        let config_str = fs::read_to_string("Config.toml").unwrap();
+        config_str.parse().unwrap()
+    });
 
     // Get the number of results per query from Config.toml
     let results_per_query = config
