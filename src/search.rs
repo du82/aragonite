@@ -65,7 +65,7 @@ pub fn random_search(cookies: &CookieJar<'_>) -> Result<Redirect, std::io::Error
 }
 
 fn sanitize_query(query: &str) -> String {
-    let special_chars = &['^', '[', ']', '{', '}', '(', ')', '\\', '*', '+', '|', '&', '!', ':', '~'];
+    let special_chars = &['^', '[', ']', '{', '}', '(', ')', '\\', '*', '+', '|', '&', '!', ':', '~', '>', '<'];
 
     let mut sanitized = query.to_string();
     for &c in special_chars {
@@ -148,7 +148,7 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
     }
 
     let filter = filter_manager.lock().unwrap();
-    
+
     // If sanitized query is None (empty after sanitization), return empty results
     if sanitized_q.is_none() && q.is_some() {
         // Return empty results template rather than error for visually empty queries
@@ -164,7 +164,7 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
             </div>"
         )));
     }
-    
+
     match tantivy_processor(sanitized_q.as_deref().unwrap_or(""), &filter) {
         Ok((results, duration)) => {
             match sanitized_q {
@@ -307,7 +307,7 @@ pub fn inspect_dataset_directory() -> (usize, usize, String) {
                                 continue;
                             }
                         };
-                        
+
                         // Validate TOML content
                         match validate_toml_content(&data) {
                             Ok(_) => {
