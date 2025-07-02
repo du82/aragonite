@@ -89,12 +89,21 @@ pub fn search_post(search_form: Form<SearchForm>, cookies: &CookieJar<'_>) -> Re
         .unwrap_or("0"); // Default to off if no cookie
 
     let sanitized_query = sanitize_query(&search_form.into_inner().query);
-    Redirect::to(uri!(search_get(q = Some(sanitized_query), ss = Some(ss_level.to_string()))))
+    // Only pass the query if it's not empty after sanitization
+    if sanitized_query.trim().is_empty() {
+        Redirect::to(uri!(search_get(q = None::<String>, ss = Some(ss_level.to_string()))))
+    } else {
+        Redirect::to(uri!(search_get(q = Some(sanitized_query), ss = Some(ss_level.to_string()))))
+    }
 }
 
 #[get("/search?<q>&<ss>")]
 pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>, filter_manager: &State<Mutex<FilterManager>>) -> Result<RawHtml<String>, Redirect> {
-    let sanitized_q = q.as_ref().map(|query| sanitize_query(query));
+    // Sanitize query and filter out empty results
+    let sanitized_q = q.as_ref().map(|query| {
+        let sanitized = sanitize_query(query);
+        if sanitized.trim().is_empty() { None } else { Some(sanitized) }
+    }).flatten();
     // Process safe search level if provided
     if let Some(level) = ss {
         let valid_level = match level.as_str() {
@@ -139,12 +148,29 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
     }
 
     let filter = filter_manager.lock().unwrap();
-    match tantivy_processor(q.as_deref().unwrap_or(""), &filter) {
+    
+    // If sanitized query is None (empty after sanitization), return empty results
+    if sanitized_q.is_none() && q.is_some() {
+        // Return empty results template rather than error for visually empty queries
+        return Ok(RawHtml(format!(
+            "<div class='results-container'><p>No results found</p></div>
+            <div class='main-footer'>
+                <div class='footer-container'>
+                    <a href='donate'>Donate</a>|
+                    <a href='mirrors'>Mirrors</a>|
+                    <a href='privacy'>Privacy</a>|
+                    <a href='settings'>Settings</a>
+                </div>
+            </div>"
+        )));
+    }
+    
+    match tantivy_processor(sanitized_q.as_deref().unwrap_or(""), &filter) {
         Ok((results, duration)) => {
-            match q {
+            match sanitized_q {
                 Some(query) => {
-                    let trimmed_query = query.trim_start();
-                    if trimmed_query.len() < 1 || query.len() > 128 {
+                    // Only check length for non-empty queries
+                    if query.len() > 128 {
                         return Ok(RawHtml(
                             "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
                                 .to_string(),
