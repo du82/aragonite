@@ -10,14 +10,12 @@ use std::time::{Duration, Instant, SystemTime};
 use std::process::Command;
 use std::thread;
 
-// System information for benchmark context
 pub struct SystemInfo {
     os: String,
     cpu_info: String,
     total_memory_mb: u64,
 }
 
-// Individual query metrics
 pub struct BenchmarkMetrics {
     query: String,
     duration_ms: u128,
@@ -26,7 +24,6 @@ pub struct BenchmarkMetrics {
     thread_id: String,
 }
 
-// Summary statistics across all benchmark queries
 pub struct BenchmarkSummary {
     total_queries: usize,
     avg_duration_ms: f64,
@@ -38,11 +35,9 @@ pub struct BenchmarkSummary {
     system_info: SystemInfo,
 }
 
-// Collects current system information for context
 fn get_system_info() -> SystemInfo {
     let os = std::env::consts::OS.to_string();
 
-    // Get CPU info - this works on Unix-like systems
     let cpu_info = Command::new("sh")
         .arg("-c")
         .arg("grep 'model name' /proc/cpuinfo | head -1 || sysctl -n machdep.cpu.brand_string || echo 'Unknown CPU'")
@@ -50,7 +45,6 @@ fn get_system_info() -> SystemInfo {
         .map(|output| String::from_utf8_lossy(&output.stdout).trim().to_string())
         .unwrap_or_else(|_| "Unknown CPU".to_string());
 
-    // Get total memory
     let total_memory_mb = if cfg!(target_os = "linux") {
         Command::new("sh")
             .arg("-c")
@@ -87,7 +81,6 @@ fn get_system_info() -> SystemInfo {
     }
 }
 
-// Main benchmark function that runs multiple search queries and collects metrics
 pub fn run_search_benchmark() -> Result<(), std::io::Error> {
     println!("Starting search engine benchmark...");
 
@@ -97,7 +90,6 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
     println!("CPU Info: {}", system_info.cpu_info);
     println!("Total Memory: {} MB", system_info.total_memory_mb);
 
-    // Load test queries from random.txt
     let queries = fs::read_to_string("random.txt")?
         .lines()
         .filter(|line| {
@@ -109,7 +101,6 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
     if queries.is_empty() {
         println!("No valid queries found in random.txt");
-        // Add some default test queries
         let mut queries = Vec::new();
         queries.push("privacy".to_string());
         queries.push("security".to_string());
@@ -121,7 +112,6 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
     // Run benchmarks
     for query in &queries {
-        // Skip empty queries or those that are too short
         if query.trim().len() < 1 {
             println!("Skipping empty query");
             continue;
@@ -129,11 +119,9 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
 
         println!("Testing query: {}", query);
 
-        // Run each query 5 times to get better performance metrics
         for _ in 0..5 {
-            // Create a dummy filter manager for benchmarking
             let filter_manager = FilterManager::new();
-        
+
             match tantivy_processor(&query.trim(), &filter_manager) {
                 Ok((results, duration)) => {
                     metrics.push(BenchmarkMetrics {
@@ -151,7 +139,6 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
         }
     }
 
-    // Calculate summary statistics
     let total_queries = metrics.len();
     let total_duration = benchmark_start.elapsed();
 
@@ -174,16 +161,13 @@ pub fn run_search_benchmark() -> Result<(), std::io::Error> {
         system_info,
     };
 
-    // Save results to file
     save_benchmark_results(&metrics, &summary)?;
 
-    // Print summary to console
     print_summary(&summary);
 
     Ok(())
 }
 
-// Writes benchmark results to a file for later analysis
 fn save_benchmark_results(
     metrics: &[BenchmarkMetrics],
     summary: &BenchmarkSummary,
@@ -194,7 +178,6 @@ fn save_benchmark_results(
         .append(true)
         .open("benchmark_results.txt")?;
 
-    // Write timestamp and system info
     writeln!(file, "\n=== Benchmark Results - {} ===",
         SystemTime::now().duration_since(SystemTime::UNIX_EPOCH)
             .unwrap()
@@ -205,7 +188,6 @@ fn save_benchmark_results(
     writeln!(file, "CPU Info: {}", summary.system_info.cpu_info)?;
     writeln!(file, "Total Memory: {} MB", summary.system_info.total_memory_mb)?;
 
-    // Write summary
     writeln!(file, "\nSummary:")?;
     writeln!(file, "Total Queries: {}", summary.total_queries)?;
     writeln!(file, "Average Duration: {:.2}ms", summary.avg_duration_ms)?;
@@ -215,7 +197,6 @@ fn save_benchmark_results(
     writeln!(file, "Avg Results Per Query: {:.2}", summary.avg_results_per_query)?;
     writeln!(file, "Total Benchmark Duration: {:?}", summary.total_duration)?;
 
-    // Write detailed metrics
     writeln!(file, "\nDetailed Metrics:")?;
     for metric in metrics {
         writeln!(file, "Query: '{}' - Duration: {}ms, Results: {}, Thread: {}",
@@ -228,7 +209,6 @@ fn save_benchmark_results(
     Ok(())
 }
 
-// Displays benchmark summary to console
 fn print_summary(summary: &BenchmarkSummary) {
     println!("\nBenchmark Summary:");
     println!("Server Information:");
