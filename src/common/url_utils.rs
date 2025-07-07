@@ -1,36 +1,26 @@
 // URL utility functions for domain extraction and homepage detection
 
-/// Extracts domain name from a URL string without requiring url parsing
 pub fn extract_domain(url: &str) -> Option<String> {
-    // Remove protocol if present
     let without_protocol = url.split("://").nth(1).unwrap_or(url);
 
-    // Handle potential query parameters and fragments
     let base_url = without_protocol.split('?').next()?;
     let base_url = base_url.split('#').next()?;
 
-    // Get the domain part (everything before the first slash)
     let domain = base_url.split('/').next()?;
 
-    // Remove www. prefix if present and trim any whitespace
     Some(domain.trim_start_matches("www.").trim().to_string())
 }
 
-/// Checks if URL likely points to a homepage
 pub fn is_homepage(url: &str) -> bool {
-    // Remove protocol if present
     let without_protocol = url.split("://").nth(1).unwrap_or(url);
 
-    // Remove query parameters and fragments
     let base_url = without_protocol.split('?').next().unwrap_or(without_protocol);
     let base_url = base_url.split('#').next().unwrap_or(base_url);
 
-    // Split on slashes and filter out empty segments
     let parts: Vec<&str> = base_url.split('/')
         .filter(|&s| !s.is_empty())
         .collect();
 
-    // Check various homepage patterns
     match parts.len() {
         0 => true,  // Empty path
         1 => true,  // Just domain
@@ -54,15 +44,12 @@ pub fn is_homepage(url: &str) -> bool {
     }
 }
 
-/// Extracts the base domain name without TLD for matching
 pub fn get_domain_name(url: &str) -> Option<String> {
     extract_domain(url).map(|domain| {
         let parts: Vec<&str> = domain.split('.').collect();
         if parts.len() >= 2 {
-            // Always take the leftmost part, whether it's a subdomain or main domain
             parts[0].to_string()
         } else {
-            // Single part domain
             domain
         }
     })
