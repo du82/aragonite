@@ -139,7 +139,7 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         (true, true) => "".to_string(),
     };
 
-    // Only display one instant answer per query
+    // Instant Answer
     let mut instant_answer_sent = false;
     let instant_answer = if !instant_answer_sent {
         instant_answer_sent = true;
@@ -154,7 +154,6 @@ pub fn document_to_html(doc: &Document, schema: &Schema) -> String {
         "".to_string()
     };
 
-    // Conditionally show the instant answer or search results list
     let result_html = if instant_answer == "sports" {
         format!("<div class='instant-answer'><details><summary>Instant Answer - never sponsored</summary><div class='search-result'><h3><a href='{}' target='_blank' rel='noopener noreferrer'>{}</a></h3><p class='sports-description'>{}</p><div class='sports-related-row'>{}{}{}{}{}{}</div></div></details></div>",
         url, title, description, ptr_html, hrr_html, author_html, category_html, tags_html, language_html)
