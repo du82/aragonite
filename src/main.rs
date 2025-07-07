@@ -18,30 +18,28 @@ mod routes;
 mod search;
 use middleware::ThemeMiddleware;
 
-// Remove all files in a directory
 fn clear_directory(path: &Path) -> io::Result<()> {
     if !path.exists() {
         fs::create_dir_all(path)?;
         return Ok(());
     }
-    
+
     for entry in fs::read_dir(path)? {
         let entry = entry?;
         let entry_path = entry.path();
-        
+
         if entry_path.is_dir() {
             fs::remove_dir_all(entry_path)?;
         } else {
             fs::remove_file(entry_path)?;
         }
     }
-    
+
     Ok(())
 }
 
 #[launch]
 fn rocket() -> Rocket<Build> {
-    // Check for reindex flag
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 && args.contains(&"-i".to_string()) {
         println!("Reindex flag detected. Clearing index directory...");
@@ -52,8 +50,7 @@ fn rocket() -> Rocket<Build> {
             println!("Index directory cleared successfully.");
         }
     }
-    
-    // Initialize filter manager
+
     let filter_manager = filter::FilterManager::new();
 
     rocket::build()
