@@ -15,8 +15,9 @@
 6] `sudo apt-install build-essential`
 7] `sudo chown -R $USER:$USER /home/user/aragonite`
 8] `cargo run`
+9] Check Terminal to find port Rocket launched on after successful run.
 
-Check that the .onion is working, go to the URL in Tor, and prime the index with an initial search query.
+Final] Check that the .onion is working and looking for the correct port. Go to the URL in Tor, and prime the index with an initial search query.
 
 ## Automatic updating (Git supply chain)
 
