@@ -57,9 +57,9 @@ pub fn random_search(cookies: &CookieJar<'_>) -> Result<Redirect, std::io::Error
             "off" => "0",
             "moderate" => "1",
             "strict" => "2",
-            _ => "1" // Default to moderate
+            _ => "1"
         })
-        .unwrap_or("1"); // Default to moderate if no cookie
+        .unwrap_or("1");
 
     Ok(Redirect::to(uri!(search_get(q = Some(query.to_string()), ss = Some(ss_level.to_string())))))
 }
@@ -78,18 +78,16 @@ fn sanitize_query(query: &str) -> String {
 
 #[post("/search", data = "<search_form>")]
 pub fn search_post(search_form: Form<SearchForm>, cookies: &CookieJar<'_>) -> Redirect {
-    // Get current safe search level from cookie to maintain it in the redirect
     let ss_level = cookies.get("safe_search_level")
         .map(|cookie| match cookie.value() {
             "off" => "0",
             "moderate" => "1",
             "strict" => "2",
-            _ => "0" // Default to moderate
+            _ => "0"
         })
-        .unwrap_or("0"); // Default to off if no cookie
+        .unwrap_or("0");
 
     let sanitized_query = sanitize_query(&search_form.into_inner().query);
-    // Only pass the query if it's not empty after sanitization
     if sanitized_query.trim().is_empty() {
         Redirect::to(uri!(search_get(q = None::<String>, ss = Some(ss_level.to_string()))))
     } else {
@@ -104,13 +102,12 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         let sanitized = sanitize_query(query);
         if sanitized.trim().is_empty() { None } else { Some(sanitized) }
     }).flatten();
-    // Process safe search level if provided
     if let Some(level) = ss {
         let valid_level = match level.as_str() {
             "0" => "off",
             "1" => "moderate",
             "2" => "strict",
-            _ => "moderate", // Default to moderate if invalid
+            _ => "moderate",
         };
 
         cookies.add(Cookie::new("safe_search_level", valid_level.to_string()));
@@ -119,7 +116,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         filter.set_level(valid_level);
     }
 
-    // Handle admin commands
     if let Some(query) = q.as_deref() {
         if query == "--run-benchmark" {
             let benchmark_results = run_benchmarks();
@@ -149,9 +145,7 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
 
     let filter = filter_manager.lock().unwrap();
 
-    // If sanitized query is None (empty after sanitization), return empty results
     if sanitized_q.is_none() && q.is_some() {
-        // Return empty results template rather than error for visually empty queries
         return Ok(RawHtml(format!(
             "<div class='results-container'><p>No results found</p></div>
             <div class='main-footer'>
@@ -169,7 +163,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         Ok((results, duration)) => {
             match sanitized_q {
                 Some(query) => {
-                    // Only check length for non-empty queries
                     if query.len() > 128 {
                         return Ok(RawHtml(
                             "<h1>Error: Search query must be between 1 and 128 characters long.</h1>"
@@ -183,10 +176,8 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
                         "results"
                     };
 
-                    // Check if this is a filtered content notice
                     let is_filtered_notice = results.len() == 1 && results[0].contains("filtered-notice");
                     let mut search_results = if is_filtered_notice {
-                        // For filtered content, don't use the debug formatting
                         format!("<div class='results-container'>{}</div>", results[0])
                     } else {
                         format!("<div class='results-container'>{:?}</div>", results)
@@ -214,7 +205,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
                     let mut file = File::open("static/serps/web.html").unwrap();
                     let mut contents = String::new();
                     file.read_to_string(&mut contents).unwrap();
-                    // Use the already locked filter for statistics
                     let statistics = if is_filtered_notice {
                         format!("<div class='statistics'><span><h3>Content filtered</h3><p>(safe search is enabled - level: {})</p></span></div>", filter.get_level())
                     } else {
@@ -229,7 +219,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
                         .replace("{{statistics}}", &statistics)
                         .replace("{{search_box_statistics}}", &search_box_statistics);
 
-                    // Only apply these replacements if it's not a filtered notice
                     if !is_filtered_notice {
                         search_results = search_results
                             .replace("\", ", "")
@@ -248,7 +237,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         Err(e) => {
             eprintln!("Error creating index: {:?}", e);
 
-            // Format the error message in a more user-friendly way
             let error_html = format!(
                 "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
                     <h1 style='color: #d32f2f;'>Error Creating Search Index</h1>
@@ -273,8 +261,6 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
     }
 }
 
-/// A utility function to inspect the dataset directory and check for invalid TOML files
-/// Returns a tuple with (number of valid files, number of invalid files, details of first few errors)
 pub fn inspect_dataset_directory() -> (usize, usize, String) {
     let mut valid_files = 0;
     let mut invalid_files = 0;
@@ -308,7 +294,6 @@ pub fn inspect_dataset_directory() -> (usize, usize, String) {
                             }
                         };
 
-                        // Validate TOML content
                         match validate_toml_content(&data) {
                             Ok(_) => {
                                 valid_files += 1;
@@ -327,7 +312,6 @@ pub fn inspect_dataset_directory() -> (usize, usize, String) {
         }
     }
 
-    // Format error details
     if !first_few_errors.is_empty() {
         error_details = format!("First {} errors:\n{}",
             first_few_errors.len(),
@@ -338,7 +322,6 @@ pub fn inspect_dataset_directory() -> (usize, usize, String) {
     (valid_files, invalid_files, error_details)
 }
 
-/// A more comprehensive utility to find and report invalid files in the dataset
 pub fn find_invalid_dataset_files() -> String {
     use std::process::Command;
 
@@ -347,7 +330,6 @@ pub fn find_invalid_dataset_files() -> String {
             <h1>Invalid Dataset Files Report</h1>"
     );
 
-    // Count total files first
     let total_files = if let Ok(output) = Command::new("sh")
         .arg("-c")
         .arg("find datasets -name \"*.toml\" -type f | wc -l")
@@ -360,7 +342,6 @@ pub fn find_invalid_dataset_files() -> String {
 
     html.push_str(&format!("<p>Total TOML files found: {}</p>", total_files));
 
-    // First, try to find files that start with '<' character (likely XML/HTML)
     if let Ok(output) = Command::new("sh")
         .arg("-c")
         .arg("find datasets -name \"*.toml\" -type f -exec grep -l \"^<\" {} \\;")
@@ -385,7 +366,6 @@ pub fn find_invalid_dataset_files() -> String {
             }
             html.push_str("</div>");
 
-            // For the first file, show a preview
             if let Some(first_file) = xml_like_files.lines().next() {
                 if let Ok(preview_output) = Command::new("sh")
                     .arg("-c")
@@ -403,7 +383,6 @@ pub fn find_invalid_dataset_files() -> String {
         }
     }
 
-    // Look for JSON-like files (starting with '{')
     if let Ok(output) = Command::new("sh")
         .arg("-c")
         .arg("find datasets -name \"*.toml\" -type f -exec grep -l \"^{\" {} \\;")
@@ -430,7 +409,6 @@ pub fn find_invalid_dataset_files() -> String {
         }
     }
 
-    // Find empty files
     if let Ok(output) = Command::new("sh")
         .arg("-c")
         .arg("find datasets -name \"*.toml\" -type f -size 0")
@@ -454,7 +432,6 @@ pub fn find_invalid_dataset_files() -> String {
         }
     }
 
-    // Find very large files (>1MB)
     if let Ok(output) = Command::new("sh")
         .arg("-c")
         .arg("find datasets -name \"*.toml\" -type f -size +1M")
@@ -515,22 +492,17 @@ pub fn run_benchmarks() -> String {
     }
 }
 
-/// Validates if a file contains valid TOML content without reading the file again
-/// Validates TOML content from a string without reading the file again
 fn validate_toml_content(data: &str) -> Result<(), String> {
-    // Get a preview of the content for error reporting
     let preview = if data.len() > 100 {
         format!("{:.100}...", data.replace('\n', "\\n"))
     } else {
         data.replace('\n', "\\n")
     };
 
-    // Check for empty files
     if data.trim().is_empty() {
         return Err(format!("File is empty or contains only whitespace"));
     }
 
-    // Check for common content mistaken for TOML
     if data.trim().starts_with('<') {
         if data.contains("</") {
             return Err(format!("File appears to contain XML/HTML, not TOML. Preview: {}", preview));
@@ -543,7 +515,6 @@ fn validate_toml_content(data: &str) -> Result<(), String> {
         return Err(format!("File appears to contain JSON, not TOML. Preview: {}", preview));
     }
 
-    // Check for file size issues
     if data.len() > 10_000_000 {  // 10MB
         return Err(format!("File is too large ({} bytes)", data.len()));
     }
@@ -552,7 +523,6 @@ fn validate_toml_content(data: &str) -> Result<(), String> {
         return Err(format!("File contains UTF-8 BOM marker which is not supported by TOML"));
     }
 
-    // Attempt to parse as TOML
     match toml::from_str::<Value>(data) {
         Ok(_) => Ok(()),
         Err(e) => Err(format!("Invalid TOML syntax: {}. Preview: {}", e, preview)),
@@ -562,7 +532,6 @@ fn validate_toml_content(data: &str) -> Result<(), String> {
 pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy::Result<(Vec<String>, Duration)> {
     let sanitized_query = sanitize_query(query);
     if filter_manager.is_enabled() && filter_manager.should_filter_query(&sanitized_query) {
-        // Return a special message informing the user about filtered content
         let filtered_notice = vec![
             format!("<div class='search-result filtered-notice' style='background-color: rgba(255, 82, 82, 0.1); border-left: 4px solid #ff5252; padding: 15px;'>
                 <h3 style='margin-top: 0; color: #ff5252;'>Content Filtered</h3>
@@ -576,7 +545,7 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         return Ok((filtered_notice, Duration::from_millis(10)));
     }
 
-    // Define the schema and how to index it
+    // Define Schema
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
     let title = schema_builder.add_text_field("title", TEXT | STORED);
@@ -607,10 +576,8 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
     let schema = schema_builder.build();
 
     let index = if fs::read_dir(index_dir)?.count() == 0 {
-        // Create the index
         let index = Index::create_in_dir("index", schema.clone())?;
 
-        // Create a single writer for all documents
         let mut index_writer = index.writer(50_000_000)?;
 
         // Parse the TOML files recursively
@@ -631,33 +598,30 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                 if path.extension().and_then(|s| s.to_str()) == Some("toml") {
                     let path_str = path.to_string_lossy().to_string();
 
-                    // Read the file only once
                     let data = match fs::read_to_string(&path) {
                         Ok(content) => content,
                         Err(e) => {
                             let error_msg = format!("Error reading file '{}': {}", path_str, e);
                             error_files.push(error_msg.clone());
                             eprintln!("{}", error_msg);
-                            continue; // Skip this file and move to the next one
+                            continue;
                         }
                     };
 
-                    // Validate TOML content in one step
                     if let Err(validation_error) = validate_toml_content(&data) {
                         let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
                         error_files.push(error_msg.clone());
                         eprintln!("{}", error_msg);
-                        continue; // Skip this file and move to the next one
+                        continue;
                     }
 
-                    // Parse TOML only once (we know it's valid from validation)
                     let value = match toml::from_str::<Value>(&data) {
                         Ok(parsed) => parsed,
                         Err(e) => {
                             let error_msg = format!("Error parsing TOML in file '{}': {}", path_str, e);
                             error_files.push(error_msg.clone());
                             eprintln!("{}", error_msg);
-                            continue; // Skip this file and move to the next one
+                            continue;
                         }
                     };
 
@@ -665,7 +629,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                         for (_name, table) in tables {
                             let mut doc = Document::new();
 
-                            // Add the relative path as source for namespacing
                             if let Ok(source_field) = schema.get_field("source") {
                                 if let Ok(rel_path) = path.strip_prefix("datasets") {
                                     if let Some(parent) = rel_path.parent() {
@@ -701,18 +664,15 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             }
         }
 
-        // If there were errors, report them
         if !error_files.is_empty() {
             let error_summary = format!("Encountered {} errors while processing dataset files. First error: {}",
                 error_files.len(), error_files[0]);
             eprintln!("Error summary: {}", error_summary);
 
-            // If we have a lot of errors, suggest using the tools
             if error_files.len() > 10 {
                 eprintln!("TIP: Run search with '?q=--find-invalid-files' or '?q=--inspect-dataset' to diagnose dataset issues");
             }
 
-            // If no files were processed at all, return an error
             if processed_files == 0 {
                 return Err(tantivy::TantivyError::InvalidArgument(format!(
                     "Failed to process any dataset files. Errors in {} files. First error: {}. Run search with '?q=--find-invalid-files' or '?q=--inspect-dataset' to check all files.",
@@ -722,7 +682,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
             println!("Processed {} files successfully despite {} errors", processed_files, error_files.len());
 
-            // Write error report to file for later inspection
             if let Ok(mut file) = File::create("dataset_errors.log") {
                 let _ = writeln!(file, "Dataset Processing Errors - {} errors found", error_files.len());
                 let _ = writeln!(file, "Timestamp: {:?}", SystemTime::now());
@@ -733,7 +692,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             }
         }
 
-        // Single commit at the end
         index_writer.commit()?;
         index
     } else {
@@ -749,7 +707,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
     let searcher = reader.searcher();
 
-    // Create query parser
     let mut query_parser = QueryParser::for_index(
         &index,
         vec![
@@ -764,14 +721,12 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         ],
     );
 
-    // Configure field boosts
     query_parser.set_field_boost(title, 3.0);
     query_parser.set_field_boost(author, 2.0);
     query_parser.set_field_boost(description, 1.5);
 
     let words: Vec<&str> = sanitized_query.split_whitespace().collect();
 
-    // Sort words by modifier type (include, exclude, mandatory, field)
     let (include_words, exclude_words, mandatory_words, field_queries): (
         Vec<&str>,
         Vec<&str>,
@@ -796,21 +751,18 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         },
     );
 
-    // Create a query for the words to include
     let include_query = if !include_words.is_empty() {
         Some(query_parser.parse_query(&include_words.join(" "))?)
     } else {
         None
     };
 
-    // Create a query for the words to exclude
     let exclude_query = if !exclude_words.is_empty() {
         Some(query_parser.parse_query(&exclude_words.join(" "))?)
     } else {
         None
     };
 
-    // Create a query for the mandatory words
     let mandatory_query = if !mandatory_words.is_empty() {
         Some(query_parser.parse_query(&mandatory_words.join(" "))?)
     } else {
@@ -841,7 +793,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         final_query.push((Occur::Must, Box::new(field_query)));
     }
 
-    // Output of the final query after parsing
     let final_query = BooleanQuery::from(final_query);
 
     // Use cached configuration with thread-safe lazy initialization
@@ -851,7 +802,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         config_str.parse().unwrap()
     });
 
-    // Get the number of results per query from Config.toml
     let results_per_query = config
         .get("engine")
         .and_then(|engine| engine.get("results_per_query"))
@@ -864,15 +814,12 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
     for (mut score, doc_address) in top_docs {
         let retrieved_doc = searcher.doc(doc_address)?;
 
-        // Check each term's matches across different fields
         let query_terms: Vec<String> = query.split_whitespace().map(|s| s.to_lowercase()).collect();
 
-        // Track where each term matched
         let mut author_matches = 0;
         let mut content_matches = 0;
 
         for term in &query_terms {
-            // Check author field
             if let Some(tantivy::schema::Value::Str(author_text)) = retrieved_doc.get_first(author)
             {
                 if author_text.to_lowercase().contains(term) {
@@ -899,17 +846,13 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
         // Apply relationship-based scoring
         if author_matches > 0 && content_matches > 0 {
-            // Highest boost when terms match both author and content
             score *= 1.0 + (author_matches as f32 * 0.5) + (content_matches as f32 * 0.3);
         } else if author_matches > 0 {
-            // Good boost for author matches
             score *= 1.0 + (author_matches as f32 * 0.4);
         } else if content_matches > 0 {
-            // Smaller boost for content matches
             score *= 1.0 + (content_matches as f32 * 0.2);
         }
 
-        // Get domain and category for filtering
         let mut domain = String::new();
         if let Some(tantivy::schema::Value::Str(url_text)) = retrieved_doc.get_first(url) {
             domain = extract_domain(url_text).unwrap_or_default();
@@ -920,7 +863,6 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             category_value = cat_text.to_lowercase();
         }
 
-        // Skip this result if domain or category should be filtered
         if filter_manager.is_enabled() {
             let should_filter_domain = !domain.is_empty() && filter_manager.should_filter_domain(&domain);
             let should_filter_category = !category_value.is_empty() && filter_manager.should_filter_category(&category_value);
@@ -934,17 +876,14 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
         println!("Result passed domain/category filter check - domain: '{}', category: '{}'", domain, category_value);
 
-        // Generate the HTML for this result
         let html = document_to_html(&retrieved_doc, &schema);
         let html_without_quotes = html.replace(", ", "");
 
         scored_results.push((score, html_without_quotes));
     }
 
-    // Sort the results by score in descending order
     scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unwrap());
 
-    // Extract the html_without_quotes for each pair
     let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
 
     let duration = start.elapsed();
