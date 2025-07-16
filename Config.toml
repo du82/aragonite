@@ -7,7 +7,15 @@ mirror_updated = "Jul 7, 2025"      # Date of the last mirror update
 neofetch_enabled = false
 search_string_enabled = true
 safe_search_enabled = true
+incremental_indexing_enabled = true   # Enable incremental indexing for faster updates
 
 [engine]
 results_per_query = 250             # Default 50, number of search results to show per query
 safe_search_level = "moderate"      # Default "moderate", can be "off", "moderate", or "strict"
+
+[indexing]
+buffer_size_mb = 150                # Memory buffer size for indexing in MB (0 for auto-detect)
+parallel_processing = true          # Use multi-threaded processing for indexing
+optimize_after_indexing = true      # Run index optimization after indexing
+max_file_size_mb = 5                # Maximum TOML file size to process in MB
+batch_commit_size = 10000           # Number of documents to add before committing during indexing

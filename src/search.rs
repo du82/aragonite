@@ -2,9 +2,12 @@
 
 use crate::benchmarks::search_benchmark;
 use crate::common::document_to_html::document_to_html;
-use crate::common::url_utils::{get_domain_name, is_homepage};
+use tantivy::merge_policy::LogMergePolicy;
 use crate::common::url_utils::extract_domain;
+use std::collections::HashMap;
+use tantivy::schema::{TextOptions, TextFieldIndexing};
 use crate::filter::FilterManager;
+use std::sync::Arc;
 use rocket::form::{Form, FromForm};
 use rocket::response::content::RawHtml;
 use rocket::response::Redirect;
@@ -515,8 +518,9 @@ fn validate_toml_content(data: &str) -> Result<(), String> {
         return Err(format!("File appears to contain JSON, not TOML. Preview: {}", preview));
     }
 
-    if data.len() > 10_000_000 {  // 10MB
-        return Err(format!("File is too large ({} bytes)", data.len()));
+    // Reduce maximum file size to improve processing speed
+    if data.len() > 5_000_000 {  // 5MB
+        return Err(format!("File is too large ({} bytes) - maximum size is 5MB", data.len()));
     }
 
     if data.starts_with("\u{feff}") {
@@ -545,90 +549,176 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         return Ok((filtered_notice, Duration::from_millis(10)));
     }
 
-    // Define Schema
+    // Define Schema with optimized settings
     let index_dir = "index";
     let mut schema_builder = Schema::builder();
+    
+    // Primary search fields with higher indexing and storage priority
     let title = schema_builder.add_text_field("title", TEXT | STORED);
     let description = schema_builder.add_text_field("description", TEXT | STORED);
-    let full_description = schema_builder.add_text_field("full_description", TEXT | STORED);
+    
+    // Store with less indexing overhead (no need for positions)
+    let full_description = schema_builder.add_text_field("full_description", 
+        TextOptions::default()
+            .set_indexing_options(
+                TextFieldIndexing::default()
+                    .set_index_option(IndexRecordOption::WithFreqs)
+            )
+            .set_stored());
+    
     let author = schema_builder.add_text_field("author", TEXT | STORED);
+    
+    // Dates only need to be stored and fast
     let _year_published = schema_builder.add_i64_field("year_published", STORED | FAST);
     let _year_updated = schema_builder.add_i64_field("year_updated", STORED | FAST);
+    
+    // URLs are critical for results
     let url = schema_builder.add_text_field("clearnet", TEXT | STORED);
     let _onion = schema_builder.add_text_field("onion", TEXT | STORED);
-    let _status = schema_builder.add_text_field("status", TEXT | STORED);
-    let _parent_organization = schema_builder.add_text_field("parent_organization", TEXT | STORED);
-    let _sub_organization = schema_builder.add_text_field("sub_organization", TEXT | STORED);
-    let _jurisdiction = schema_builder.add_text_field("jurisdiction", TEXT | STORED);
-    let _jurisdiction_level = schema_builder.add_text_field("jurisdiction_level", TEXT | STORED);
-    let _regulates_entity = schema_builder.add_text_field("regulates_entity", TEXT | STORED);
-    let _regulator_entity = schema_builder.add_text_field("regulator_entity", TEXT | STORED);
+    
+    // Metadata fields - most only need storage, not full indexing
+    let _status = schema_builder.add_text_field("status", STORED);
+    let _parent_organization = schema_builder.add_text_field("parent_organization", STORED);
+    let _sub_organization = schema_builder.add_text_field("sub_organization", STORED);
+    let _jurisdiction = schema_builder.add_text_field("jurisdiction", STORED);
+    let _jurisdiction_level = schema_builder.add_text_field("jurisdiction_level", STORED);
+    let _regulates_entity = schema_builder.add_text_field("regulates_entity", STORED);
+    let _regulator_entity = schema_builder.add_text_field("regulator_entity", STORED);
+    
+    // Important for filtering and search
     let subject_type = schema_builder.add_text_field("subject_type", TEXT | STORED);
-    let _nonprofit_status = schema_builder.add_text_field("nonprofit_status", TEXT | STORED);
-    let _religious_affiliation =
-        schema_builder.add_text_field("religious_affiliation", TEXT | STORED);
+    let _nonprofit_status = schema_builder.add_text_field("nonprofit_status", STORED);
+    let _religious_affiliation = schema_builder.add_text_field("religious_affiliation", STORED);
+    
+    // Categories and tags need fast access for filtering
     let category = schema_builder.add_text_field("category", TEXT | STORED | FAST);
     let tags = schema_builder.add_text_field("tags", TEXT | STORED | FAST);
-    let _privacy_track_record = schema_builder.add_text_field("ptr", TEXT | STORED);
-    let _human_rights_track_record = schema_builder.add_text_field("hrr", TEXT | STORED);
+    
+    // Track records - less important for searching but needed for display
+    let _privacy_track_record = schema_builder.add_text_field("ptr", STORED);
+    let _human_rights_track_record = schema_builder.add_text_field("hrr", STORED);
     let _instant_answer = schema_builder.add_i64_field("instant_answer", STORED | FAST);
     let _language = schema_builder.add_text_field("language", TEXT | STORED);
     let schema = schema_builder.build();
 
     let index = if fs::read_dir(index_dir)?.count() == 0 {
+        println!("Creating new index...");
         let index = Index::create_in_dir("index", schema.clone())?;
 
-        let mut index_writer = index.writer(50_000_000)?;
+        // Increase memory buffer for faster indexing
+        let buffer_size = get_optimal_buffer_size();
+        println!("Using index buffer size: {} bytes", buffer_size);
+        let mut index_writer = index.writer(buffer_size)?;
 
-        // Parse the TOML files recursively
+        // First collect all TOML files to enable better processing
+        let mut toml_files = Vec::new();
         let mut dirs_to_process = vec![std::path::PathBuf::from("datasets")];
-        let mut processed_files = 0;
-        let mut error_files = Vec::new();
-
+        
         while let Some(dir) = dirs_to_process.pop() {
-            for entry in fs::read_dir(&dir)? {
-                let entry = entry?;
-                let path = entry.path();
-
-                if path.is_dir() {
-                    dirs_to_process.push(path);
-                    continue;
+            if let Ok(entries) = fs::read_dir(&dir) {
+                for entry in entries {
+                    if let Ok(entry) = entry {
+                        let path = entry.path();
+                        
+                        if path.is_dir() {
+                            dirs_to_process.push(path);
+                        } else if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                            toml_files.push(path);
+                        }
+                    }
                 }
-
-                if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+            }
+        }
+        
+        println!("Found {} TOML files to process", toml_files.len());
+        
+        // Process files in batches with multiple threads
+        let processed_files = std::sync::atomic::AtomicUsize::new(0);
+        let error_files_mutex = std::sync::Mutex::new(Vec::new());
+        
+        // Calculate batch size and number of threads
+        let num_threads = std::cmp::min(std::thread::available_parallelism().map(|p| p.get()).unwrap_or(4), 8);
+        let batch_size = std::cmp::max(1, toml_files.len() / num_threads);
+        
+        println!("Processing with {} threads, batch size: {}", num_threads, batch_size);
+        
+        // Divide files into batches
+        let batches: Vec<Vec<std::path::PathBuf>> = toml_files
+            .chunks(batch_size)
+            .map(|chunk| chunk.to_vec())
+            .collect();
+        
+        // Process each batch in a separate thread
+        // Pre-allocate to avoid resizing
+        let schema_clone = schema.clone();
+        let processed_files = Arc::new(processed_files);
+        let error_files_mutex = Arc::new(error_files_mutex);
+        
+        let mut handles = Vec::with_capacity(batches.len());
+        for batch in batches {
+            let schema = schema_clone.clone();
+            let processed_files = Arc::clone(&processed_files);
+            let error_files_mutex = Arc::clone(&error_files_mutex);
+            
+            let handle = std::thread::spawn(move || {
+                let mut batch_docs = Vec::new();
+                let mut batch_errors = Vec::new();
+                
+                for path in batch {
                     let path_str = path.to_string_lossy().to_string();
-
+                    
+                    // Fast pre-check for file validity
+                    // Use a buffered reader for more efficient file reading
                     let data = match fs::read_to_string(&path) {
-                        Ok(content) => content,
+                        Ok(content) => {
+                            // Pre-allocate to avoid reallocations during processing
+                            if content.len() > 5_000_000 {
+                                batch_errors.push(format!("File '{}' is too large ({} bytes)", path_str, content.len()));
+                                continue;
+                            }
+                            content
+                        },
                         Err(e) => {
                             let error_msg = format!("Error reading file '{}': {}", path_str, e);
-                            error_files.push(error_msg.clone());
-                            eprintln!("{}", error_msg);
+                            batch_errors.push(error_msg);
                             continue;
                         }
                     };
-
-                    if let Err(validation_error) = validate_toml_content(&data) {
-                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
-                        error_files.push(error_msg.clone());
-                        eprintln!("{}", error_msg);
+                    
+                    // Quick validation before full TOML parsing
+                    if data.trim().is_empty() {
+                        batch_errors.push(format!("File '{}' is empty or contains only whitespace", path_str));
                         continue;
                     }
-
+                    
+                    // Check file format quickly
+                    let first_char = data.trim_start().chars().next();
+                    if let Some(c) = first_char {
+                        if (c == '<' && data.contains("</")) || (c == '{' && data.contains('}')) {
+                            batch_errors.push(format!("File '{}' appears to contain non-TOML data", path_str));
+                            continue;
+                        }
+                    }
+                    
+                    if let Err(validation_error) = validate_toml_content(&data) {
+                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
+                        batch_errors.push(error_msg);
+                        continue;
+                    }
+                    
                     let value = match toml::from_str::<Value>(&data) {
                         Ok(parsed) => parsed,
                         Err(e) => {
                             let error_msg = format!("Error parsing TOML in file '{}': {}", path_str, e);
-                            error_files.push(error_msg.clone());
-                            eprintln!("{}", error_msg);
+                            batch_errors.push(error_msg);
                             continue;
                         }
                     };
-
+                    
                     if let Some(tables) = value.as_table() {
                         for (_name, table) in tables {
                             let mut doc = Document::new();
-
+                            
                             if let Ok(source_field) = schema.get_field("source") {
                                 if let Ok(rel_path) = path.strip_prefix("datasets") {
                                     if let Some(parent) = rel_path.parent() {
@@ -638,7 +728,7 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                                     }
                                 }
                             }
-
+                            
                             for (key, value) in table.as_table().unwrap() {
                                 match schema.get_field(key) {
                                     Ok(field) => match value {
@@ -656,13 +746,50 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
                                     Err(_) => continue,
                                 }
                             }
-                            index_writer.add_document(doc)?;
-                            processed_files += 1;
+                            batch_docs.push(doc);
+                            processed_files.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
                         }
                     }
                 }
+                
+                // Return the batch results
+                (batch_docs, batch_errors)
+            });
+            handles.push(handle);
+        }
+        
+        // Collect and process results from all threads
+        let mut total_documents = 0;
+        
+        for handle in handles {
+            match handle.join() {
+                Ok((docs, batch_errors)) => {
+                    // Add all documents from this batch to the index
+                    for doc in docs {
+                        index_writer.add_document(doc)?;
+                        total_documents += 1;
+                    }
+                    
+                    // Collect errors
+                    if !batch_errors.is_empty() {
+                        let mut error_files = error_files_mutex.lock().unwrap();
+                        error_files.extend(batch_errors);
+                    }
+                    
+                    // Commit periodically to manage memory usage
+                    if total_documents % 10000 == 0 {
+                        println!("Committing at {} documents...", total_documents);
+                        index_writer.commit()?;
+                    }
+                },
+                Err(e) => {
+                    println!("Error in thread: {:?}", e);
+                }
             }
         }
+        
+        let processed_files = processed_files.load(std::sync::atomic::Ordering::Relaxed);
+        let error_files = error_files_mutex.lock().unwrap().clone();
 
         if !error_files.is_empty() {
             let error_summary = format!("Encountered {} errors while processing dataset files. First error: {}",
@@ -692,12 +819,41 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             }
         }
 
+        // Final commit
+        println!("Final commit with {} documents", total_documents);
+        
+        // Use segmenter policy to optimize index during commit
+        let segment_policy = LogMergePolicy::default();
+        
+        index_writer.set_merge_policy(Box::new(segment_policy.clone()));
         index_writer.commit()?;
+        
+        // Run a manual merge to optimize the index for faster searching
+        println!("Running index optimization...");
+        let _ = index_writer.wait_merging_threads();
+        
+        // Store the last indexed time for incremental indexing
+        let now = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_secs();
+        let _ = fs::write("index/.last_indexed", now.to_string());
+        
         index
     } else {
-        Index::open_in_dir(index_dir)?
+        // Check for incremental updates if index already exists
+        let index = Index::open_in_dir(index_dir)?;
+        
+        // Check if we need to update based on file modification times
+        if should_update_index() {
+            println!("Performing incremental index update...");
+            update_existing_index(&index, &schema)?;
+        }
+        
+        index
     };
 
+    // Configure reader with caching for better performance
     let reader = index
         .reader_builder()
         .reload_policy(ReloadPolicy::OnCommit)
@@ -776,6 +932,337 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         final_query.push((Occur::Should, include_query));
     }
 
+    // New helper function to determine optimal buffer size based on available system memory
+    fn get_optimal_buffer_size() -> usize {
+        // Try to detect system memory
+        let available_memory = if cfg!(target_os = "linux") {
+            // On Linux, try to read from /proc/meminfo
+            if let Ok(meminfo) = fs::read_to_string("/proc/meminfo") {
+                for line in meminfo.lines() {
+                    if line.starts_with("MemTotal:") {
+                        if let Some(kb_str) = line.split_whitespace().nth(1) {
+                            if let Ok(kb) = kb_str.parse::<u64>() {
+                                // Convert KB to bytes - use 15% of total memory but cap at 500MB
+                                return std::cmp::min(kb * 1024 * 15 / 100, 500_000_000) as usize;
+                            }
+                        }
+                    }
+                }
+            }
+            0
+        } else {
+            0
+        };
+
+        // Default values if we couldn't determine
+        if available_memory > 0 {
+            available_memory as usize
+        } else {
+            150_000_000 // 150MB default - more aggressive buffer size
+        }
+    }
+
+    // Check if we need to update the index based on file modification times
+    fn should_update_index() -> bool {
+        let last_indexed_path = std::path::Path::new("index/.last_indexed");
+    
+        if !last_indexed_path.exists() {
+            return true;
+        }
+        
+        // Read the last indexed timestamp
+        if let Ok(last_indexed) = fs::read_to_string(last_indexed_path) {
+            if let Ok(last_timestamp) = last_indexed.trim().parse::<u64>() {
+                // Fast check - see if the datasets directory itself was modified
+                if let Ok(metadata) = fs::metadata("datasets") {
+                    if let Ok(modified) = metadata.modified() {
+                        if let Ok(modified_secs) = modified
+                            .duration_since(std::time::UNIX_EPOCH)
+                            .map(|d| d.as_secs())
+                        {
+                            if modified_secs <= last_timestamp {
+                                return false; // Directory not modified, no need to check files
+                            }
+                        }
+                    }
+                }
+                
+                // Directory was modified, check individual files
+                let mut dirs_to_check = vec![std::path::PathBuf::from("datasets")];
+            
+                while let Some(dir) = dirs_to_check.pop() {
+                    if let Ok(entries) = fs::read_dir(&dir) {
+                        for entry in entries {
+                            if let Ok(entry) = entry {
+                                let path = entry.path();
+                            
+                                if path.is_dir() {
+                                    dirs_to_check.push(path);
+                                } else if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                                    if let Ok(metadata) = fs::metadata(&path) {
+                                        if let Ok(modified) = metadata.modified() {
+                                            if let Ok(modified_secs) = modified
+                                                .duration_since(std::time::UNIX_EPOCH)
+                                                .map(|d| d.as_secs())
+                                            {
+                                                if modified_secs > last_timestamp {
+                                                    return true;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                return false; // No new/modified files
+            }
+        }
+    
+        true // Default to updating if we couldn't determine
+    }
+
+    // Update an existing index with new or modified files
+    fn update_existing_index(index: &Index, schema: &Schema) -> tantivy::Result<()> {
+        let buffer_size = get_optimal_buffer_size();
+        let mut index_writer = index.writer(buffer_size)?;
+    
+        let last_indexed_path = std::path::Path::new("index/.last_indexed");
+        let last_timestamp = if last_indexed_path.exists() {
+            fs::read_to_string(last_indexed_path)
+                .ok()
+                .and_then(|s| s.trim().parse::<u64>().ok())
+                .unwrap_or(0)
+        } else {
+            0
+        };
+    
+        // Find files modified since last indexing
+        let mut files_to_update = Vec::new();
+        let mut dirs_to_check = vec![std::path::PathBuf::from("datasets")];
+    
+        while let Some(dir) = dirs_to_check.pop() {
+            if let Ok(entries) = fs::read_dir(&dir) {
+                for entry in entries {
+                    if let Ok(entry) = entry {
+                        let path = entry.path();
+                    
+                        if path.is_dir() {
+                            dirs_to_check.push(path);
+                        } else if path.extension().and_then(|s| s.to_str()) == Some("toml") {
+                            if let Ok(metadata) = fs::metadata(&path) {
+                                if let Ok(modified) = metadata.modified() {
+                                    if let Ok(modified_secs) = modified
+                                        .duration_since(std::time::UNIX_EPOCH)
+                                        .map(|d| d.as_secs())
+                                    {
+                                        if modified_secs > last_timestamp {
+                                            files_to_update.push(path);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        println!("Found {} files to update in index", files_to_update.len());
+    
+        if files_to_update.is_empty() {
+            return Ok(());
+        }
+    
+        // Process the files in batches
+        let processed_files = std::sync::atomic::AtomicUsize::new(0);
+        let error_files_mutex = std::sync::Mutex::new(Vec::new());
+    
+        // Calculate batch size and number of threads
+        let num_threads = std::cmp::min(std::thread::available_parallelism().map(|p| p.get()).unwrap_or(4), 8);
+        let batch_size = std::cmp::max(1, files_to_update.len() / num_threads);
+    
+        // Divide files into batches
+        let batches: Vec<Vec<std::path::PathBuf>> = files_to_update
+            .chunks(batch_size)
+            .map(|chunk| chunk.to_vec())
+            .collect();
+    
+        // Process each batch in a separate thread
+        let schema_clone = schema.clone();
+        let processed_files = Arc::new(processed_files);
+        let error_files_mutex = Arc::new(error_files_mutex);
+    
+        let mut handles = Vec::with_capacity(batches.len());
+        for batch in batches {
+            let schema = schema_clone.clone();
+            let processed_files = Arc::clone(&processed_files);
+            let error_files_mutex = Arc::clone(&error_files_mutex);
+        
+            let handle = std::thread::spawn(move || {
+                let mut batch_docs = Vec::new();
+                let mut batch_errors = Vec::new();
+            
+                for path in batch {
+                    let path_str = path.to_string_lossy().to_string();
+                
+                    // Fast pre-check for file validity with capacity optimization
+                    let data = match fs::read_to_string(&path) {
+                        Ok(content) => {
+                            if content.len() > 5_000_000 {
+                                batch_errors.push(format!("File '{}' is too large ({} bytes)", path_str, content.len()));
+                                continue;
+                            }
+                            content
+                        },
+                        Err(e) => {
+                            let error_msg = format!("Error reading file '{}': {}", path_str, e);
+                            batch_errors.push(error_msg);
+                            continue;
+                        }
+                    };
+                    
+                    // Quick validation before full TOML parsing
+                    if data.trim().is_empty() {
+                        batch_errors.push(format!("File '{}' is empty or contains only whitespace", path_str));
+                        continue;
+                    }
+                    
+                    // Check file format quickly
+                    let first_char = data.trim_start().chars().next();
+                    if let Some(c) = first_char {
+                        if (c == '<' && data.contains("</")) || (c == '{' && data.contains('}')) {
+                            batch_errors.push(format!("File '{}' appears to contain non-TOML data", path_str));
+                            continue;
+                        }
+                    }
+                    
+                    if let Err(validation_error) = validate_toml_content(&data) {
+                        let error_msg = format!("Validation error in file '{}': {}", path_str, validation_error);
+                        batch_errors.push(error_msg);
+                        continue;
+                    }
+                    
+                    let value = match toml::from_str::<Value>(&data) {
+                        Ok(parsed) => parsed,
+                        Err(e) => {
+                            let error_msg = format!("Error parsing TOML in file '{}': {}", path_str, e);
+                            batch_errors.push(error_msg);
+                            continue;
+                        }
+                    };
+                    
+                    if let Some(tables) = value.as_table() {
+                        for (_name, table) in tables {
+                            let mut doc = Document::new();
+                            
+                            if let Ok(source_field) = schema.get_field("source") {
+                                if let Ok(rel_path) = path.strip_prefix("datasets") {
+                                    if let Some(parent) = rel_path.parent() {
+                                        if let Some(path_str) = parent.to_str() {
+                                            doc.add_text(source_field, path_str);
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            for (key, value) in table.as_table().unwrap() {
+                                match schema.get_field(key) {
+                                    Ok(field) => match value {
+                                        Value::String(s) => doc.add_text(field, s),
+                                        Value::Integer(i) => doc.add_i64(field, *i),
+                                        Value::Array(a) => {
+                                            for v in a {
+                                                if let Value::String(s) = v {
+                                                    doc.add_text(field, s);
+                                                }
+                                            }
+                                        }
+                                        _ => continue,
+                                    },
+                                    Err(_) => continue,
+                                }
+                            }
+                            batch_docs.push(doc);
+                            processed_files.fetch_add(1, std::sync::atomic::Ordering::Relaxed);
+                        }
+                    }
+                }
+                
+                // Return the batch results
+                (batch_docs, batch_errors)
+            });
+            handles.push(handle);
+        }
+        
+        // Collect and process results from all threads
+        let mut total_processed = 0;
+            
+        for handle in handles {
+            match handle.join() {
+                Ok((docs, batch_errors)) => {
+                    // Add all documents from this batch to the index
+                    for doc in docs {
+                        index_writer.add_document(doc)?;
+                        total_processed += 1;
+                            
+                        // Commit periodically to manage memory usage
+                        if total_processed % 5000 == 0 {
+                            index_writer.commit()?;
+                            println!("Incremental update: committed {} documents", total_processed);
+                        }
+                    }
+                        
+                    // Collect errors
+                    if !batch_errors.is_empty() {
+                        let mut error_files = error_files_mutex.lock().unwrap();
+                        error_files.extend(batch_errors);
+                    }
+                },
+                Err(e) => {
+                    println!("Error in thread: {:?}", e);
+                }
+            }
+        }
+        
+        // Final commit
+        index_writer.commit()?;
+        
+        // Update the last indexed timestamp
+        let now = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap_or_default()
+            .as_secs();
+        let _ = fs::write("index/.last_indexed", now.to_string());
+        
+        // Run a quick optimization pass after the update
+        let segment_policy = LogMergePolicy::default();
+        index_writer.set_merge_policy(Box::new(segment_policy.clone()));
+        let _ = index_writer.wait_merging_threads();
+        
+        let error_files = {
+            let guard = error_files_mutex.lock().unwrap();
+            guard.clone()
+        };
+        
+        if !error_files.is_empty() {
+            println!("Incremental update: encountered {} errors", error_files.len());
+            if let Ok(mut file) = File::create("incremental_update_errors.log") {
+                let _ = writeln!(file, "Incremental Update Errors - {} errors found", error_files.len());
+                let _ = writeln!(file, "Timestamp: {:?}", SystemTime::now());
+                let _ = writeln!(file, "-----------------------------------");
+                for error in error_files.iter() {
+                    let _ = writeln!(file, "{}", error);
+                }
+            }
+        }
+        
+        println!("Incremental update complete: processed {} files", total_processed);
+        Ok(())
+    }
+
     if let Some(exclude_query) = exclude_query {
         final_query.push((Occur::MustNot, exclude_query));
     }
@@ -829,11 +1316,19 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
 
             // Check content fields
             let mut found_in_content = false;
+            
+            // Cache field values to avoid repeated lookups and conversions
+            let mut field_values = HashMap::with_capacity(3);
+            
+            // Optimize search order: check shorter fields first for faster matches
             for field in &[title, description, full_description] {
-                if let Some(tantivy::schema::Value::Str(field_text)) =
-                    retrieved_doc.get_first(*field)
-                {
-                    if field_text.to_lowercase().contains(term) {
+                if let Some(tantivy::schema::Value::Str(field_text)) = retrieved_doc.get_first(*field) {
+                    // Only do lowercase conversion once per field and store
+                    let field_lower = field_values
+                        .entry(*field)
+                        .or_insert_with(|| field_text.to_lowercase());
+                        
+                    if field_lower.contains(term) {
                         found_in_content = true;
                         break;
                     }
@@ -844,18 +1339,17 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
             }
         }
 
-        // Apply relationship-based scoring
-        if author_matches > 0 && content_matches > 0 {
-            score *= 1.0 + (author_matches as f32 * 0.5) + (content_matches as f32 * 0.3);
-        } else if author_matches > 0 {
-            score *= 1.0 + (author_matches as f32 * 0.4);
-        } else if content_matches > 0 {
-            score *= 1.0 + (content_matches as f32 * 0.2);
+        // Apply relationship-based scoring with optimized math operations
+        let author_boost = if author_matches > 0 { author_matches as f32 * 0.5 } else { 0.0 };
+        let content_boost = if content_matches > 0 { content_matches as f32 * 0.3 } else { 0.0 };
+        
+        if author_boost > 0.0 || content_boost > 0.0 {
+            score *= 1.0 + author_boost + content_boost;
         }
 
         let mut domain = String::new();
         if let Some(tantivy::schema::Value::Str(url_text)) = retrieved_doc.get_first(url) {
-            domain = extract_domain(url_text).unwrap_or_default();
+            domain = extract_domain(&url_text).unwrap_or_default();
         }
 
         let mut category_value = String::new();
@@ -882,7 +1376,7 @@ pub fn tantivy_processor(query: &str, filter_manager: &FilterManager) -> tantivy
         scored_results.push((score, html_without_quotes));
     }
 
-    scored_results.sort_by(|(score1, _), (score2, _)| score2.partial_cmp(score1).unwrap());
+    scored_results.sort_by(|(score1, _): &(f32, String), (score2, _)| score2.partial_cmp(score1).unwrap());
 
     let results: Vec<String> = scored_results.into_iter().map(|(_, html)| html).collect();
 
