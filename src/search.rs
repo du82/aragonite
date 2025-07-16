@@ -239,6 +239,12 @@ pub fn search_get(q: Option<String>, ss: Option<String>, cookies: &CookieJar<'_>
         }
         Err(e) => {
             eprintln!("Error creating index: {:?}", e);
+            
+            // Check if this is the specific "FieldDoesNotHavePositionsIndexed" error
+            if e.to_string().contains("FieldDoesNotHavePositionsIndexed") {
+                // Redirect to homepage instead of showing error
+                return Err(Redirect::to("/"));
+            }
 
             let error_html = format!(
                 "<div style='max-width: 800px; margin: 50px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px;'>
