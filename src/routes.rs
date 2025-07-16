@@ -118,3 +118,10 @@ pub async fn theme_selector(selection: Option<String>, cookies: &CookieJar<'_>) 
 
     Ok(Redirect::to("/settings"))
 }
+
+/// Catch-all route handler for any undefined routes
+/// This will redirect any unknown path to the homepage
+#[get("/<_..>", rank = 100)]
+pub fn catch_all_redirect() -> Redirect {
+    Redirect::to("/")
+}

@@ -76,6 +76,7 @@ fn rocket() -> Rocket<Build> {
                 search::search_get,
                 search::search_post,
                 search::random_search,
+                routes::catch_all_redirect,
             ],
         )
         .attach(ThemeMiddleware)
