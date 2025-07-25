@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 toml = "0.5"
-rocket = "0.5.1"
+rocket = { version = "0.5.1", features = ["tls"] }
 rand = "0.8.5"
 tantivy = "=0.21.1"
 regex = "1"
