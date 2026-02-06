@@ -1,6 +1,12 @@
 # Aragonite<sup>α</sup>
 
-We are developing a privacy-focused search engine with a sovereign index from the ground up, leveraging multi-threaded Rust. Our engine does not log anything or use any JavaScript at all, and makes the absolute minimum number of required requests.
+We are developing a privacy-focused search engine with a sovereign index from the ground up, leveraging multi-threaded Rust. Our engine does not log anything or use any JavaScript at all, and makes one response per request.
+
+No to bloat.\
+No to glowie.\
+No to spyware.\
+No to subpoena.\
+No! No! No! No!
 
  ### The 'Why'
 
