@@ -20,17 +20,17 @@ We have a value proposition no one else brings to the table.
 
 - No JavaScript or WASM. Fully auditable client-side.
 - Robust syntax options. Our filters are hyperspecific.
-- Independant index.
-- No logs. IP Addresses and Search Queries are stored in RAM. Nothing is stored when you end your session.
+- Independant index. No to Google! No to DuckFuckGo! No to Whoogle! No to Searx/ng!
+- No logs. IP Addresses and Search Queries are stored in RAM. Nothing is stored on disk.
 - Indepdendent engine built from the ground up, designed for security, and extensively battle tested it.
 - We track privacy and human rights violations of various entities.
 - We show you the small web.
 - We index the dark web.
 - We offer an official Tor site.
+- We don't censor. You choose to disable what you don't wish to see.
 - We offer distributed mirror instances.
-- We have a custom data format.
+- We have a custom data format based on open standards.
 - Minimal dependencies. No reliance on 3rd parties.
-- `neofetch` in the search bar, to see the hardware any instance is running on.
 
 ### The Aragonite Search Engine: Licensing
 
