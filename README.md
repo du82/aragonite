@@ -34,4 +34,4 @@ We have a value proposition no one else brings to the table.
 
 ### The Aragonite Search Engine: Licensing
 
-This software is proprietary and all source code, algorithms, and datasets are to be considered part of the public domain. Please Read `LICENSE.md` for more details.
+This software is open source and all source code, algorithms, and datasets are to be considered part of the public domain. Please Read `LICENSE.md` for more details.
